@@ -1,0 +1,154 @@
+{
+  "id": "botw_monster_waterblight_ganon",
+  "summary": "Ira de Ganon que tomou Vah Ruta e matou Mipha. Luta com lança e magia de gelo; o olho e os chifres são pontos fracos, e Gelítis e Estátis viram armas contra ela. Deixa Contêiner de coração e a Dádiva de Mipha.",
+  "description": "A Ira áquea de Ganon é a Ira de Ganon (Blight Ganon) responsável pela morte da Campeã Zora Mipha. O compendium diz que ela ataca com uma lança e magia de gelo. Ela surge dentro de Vah Ruta quando Link tenta ativar o terminal principal; se a Fera não for libertada, aparece no Castelo de Hyrule antes de Ganon, a Calamidade. Os pontos fracos são o olho e os chifres: flechadas repetidas em qualquer um deles a derrubam e a deixam atordoada, e uma flecha no olho cancela o ataque que ela estiver preparando. Flechas ancestrais e Flechas eletrizantes causam dano maior, e a Espada Mestra, se Link já a tiver, sobe de 30 para 60 de ataque dentro de Ruta.\n\nNa primeira fase, ela estoca, arremessa a lança ou a gira num grande círculo. Link pode criar blocos de Gelítis entre os dois: ao atacar, a Ira quebra a lança no gelo e fica exposta. Outra opção é a Esquiva perfeita contra a estocada ou o giro, seguida de Frenesi, e aparar a lança arremessada com uma Defesa perfeita a atordoa.\n\nCom metade da vida, a água sobe e surgem quatro plataformas. A Ira se teletransporta para cima de uma delas e invoca blocos de gelo que avançam contra Link, quase sempre seguidos de um arremesso de lança. Gelítis destrói esses blocos; para feri-la, Link pode ficar em outra plataforma e atirar flechas, ou aplicar Estátis num bloco de gelo que se aproxima e golpeá-lo para lançá-lo de volta contra ela. Vencida, liberta o espírito de Mipha, que entrega a Dádiva de Mipha, e deixa cair um Contêiner de coração.",
+  "locations": [
+    "Interior da Fera Divina Vah Ruta, ao tentar ativar o terminal principal.",
+    "Castelo de Hyrule, apenas se Vah Ruta não tiver sido libertada.",
+    "Reino ilusório de Vah Ruta, na missão \"EX Champion Mipha's Song\" (DLC 2)."
+  ],
+  "obtaining": [
+    "Derrotá-la rende um Contêiner de coração; Mipha então concede a Dádiva de Mipha.",
+    "Não volta com a Lua de sangue; só pode ser reenfrentada no Reino ilusório do DLC 2."
+  ],
+  "uses": [
+    "Libertar a Fera Divina Vah Ruta, que depois ajuda a enfraquecer Ganon, a Calamidade.",
+    "Obter um Contêiner de coração e a Dádiva de Mipha."
+  ],
+  "effects": [
+    "Estocadas, arremessos e giros de lança; blocos de gelo que avançam sobre Link na segunda fase."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas repetidas no olho ou nos chifres a derrubam atordoada; uma flecha no olho cancela o ataque em preparo. Flechas ancestrais e eletrizantes causam mais dano.",
+      "applications": ["Na segunda fase, atirar de outra plataforma."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelitis",
+      "status": "confirmado",
+      "result": "Blocos de Gelítis entre Link e a Ira fazem-na quebrar a lança ao atacar, abrindo espaço para golpes. Na segunda fase, Gelítis também destrói os blocos de gelo que ela invoca.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Cryonis"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Na segunda fase, aplicar Estátis num bloco de gelo que se aproxima e golpeá-lo devolve o bloco contra a Ira.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Aparar a lança arremessada com Defesa perfeita a atordoa. Uma Esquiva perfeita contra a estocada ou o giro permite um Frenesi.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Recebe golpes quando está atordoada ou depois de quebrar a lança no gelo. A Espada Mestra fica com 60 de ataque dentro de Ruta.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Flechas eletrizantes estão entre as que causam dano maior a ela.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "É ela quem usa gelo: invoca blocos e esferas de gelo, que podem ser destruídos com Gelítis. O efeito de ataques de gelo sobre ela não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Cryonis"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Na segunda fase o nível da água sobe e restam quatro plataformas; ela se teletransporta entre elas.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito do fogo sobre ela."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ela."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ela."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nesta luta."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "A arena alagada e as plataformas da segunda fase definem a luta: ficar em outra plataforma é a forma segura de atacá-la à distância.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "O gelo dela contra ela",
+      "text": "Os blocos de gelo da segunda fase são uma arma de mão dupla: congelados com Estátis e golpeados, voltam contra a Ira. Gelítis, por sua vez, cria escudos que quebram a lança dela na primeira fase.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A vida depende da ordem",
+      "text": "A primeira Ira enfrentada numa Fera Divina tem 800 de vida, a segunda 1.200, a terceira 1.600 e a quarta 2.000. No Reino ilusório do DLC 2 todas têm 1.500, e no Sanctum do castelo sempre 2.000.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O pedido de Mipha",
+      "text": "Mipha avisa que aquela criatura é obra de Ganon, conta que lutou o quanto pôde mas morreu diante dela há 100 anos, e diz confiar que Link está preparado.",
+      "sources": ["zw:Phantom Ganon", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Contêiner esquecido",
+      "text": "Se Link não pegar o Contêiner de coração e ativar o terminal principal, o contêiner aparece ao lado dele depois que ele é transportado para fora da Fera Divina.",
+      "sources": ["zw:Divine Beast"]
+    }
+  ],
+  "advanced_uses": [
+    "Começar a luta com Flechas ancestrais ou eletrizantes no olho para derrubá-la rapidamente.",
+    "Usar Gelítis como escudo na primeira fase e Estátis nos blocos de gelo na segunda."
+  ],
+  "limitations": [
+    "Na segunda fase, ela fica em outra plataforma, fora do alcance de golpes corpo a corpo."
+  ],
+  "related": [
+    { "id": "botw_ability_miphas_grace", "relation": "Dom recebido após a vitória" },
+    { "id": "botw_rune_cryonis", "relation": "Quebra a lança dela e destrói os blocos de gelo" },
+    { "id": "botw_rune_stasis", "relation": "Devolve os blocos de gelo contra ela" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Causa dano maior" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Causa dano maior" },
+    { "id": "botw_weapon_master_sword", "relation": "Sobe para 60 de ataque dentro de Ruta" },
+    { "id": "botw_monster_windblight_ganon", "relation": "Outra Ira de Ganon" },
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Outra Ira de Ganon" },
+    { "id": "botw_monster_fireblight_ganon", "relation": "Outra Ira de Ganon" },
+    { "id": "botw_monster_calamity_ganon", "relation": "Criador das Iras" }
+  ],
+  "capabilities": ["gera_gelo", "reage_eletricidade", "habilidade_especial"],
+  "verification_status": "verificado"
+}

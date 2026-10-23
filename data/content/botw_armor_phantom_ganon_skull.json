@@ -1,0 +1,178 @@
+{
+  "id": "botw_armor_phantom_ganon_skull",
+  "summary": "Crânio do DLC The Champions' Ballad, preso sob a mais alta das três quedas d'água entre Corta Lake e o Lago Floria. Dá Furtividade aumentada; o conjunto completo engana monstros Stal e fortalece armas de osso.",
+  "description": "Segundo a descrição, o Crânio de Ganon Fantasma estaria habitado por uma entidade sombria parecida com o próprio Grande Rei do Mal; o conjunto é inspirado no Ganon Fantasma de Ocarina of Time. Exclusivo do pacote de DLC The Champions' Ballad, faz parte da missão secundária “EX Treasure: Dark Armor”: o diário de Misko nas Deya Village Ruins diz que as peças estão “no mar de árvores de Faron”. O baú escondido do crânio fica submerso sob a mais alta das três quedas d'água que descem de Corta Lake rumo ao Lago Floria, e precisa ser puxado da cachoeira com Magnétis.\n\nDá Furtividade aumentada nível 1 (−20% do ruído de Link) e 4 de defesa fixa — não pode ser melhorado nem tingido. Como o Conjunto de Ganon Fantasma não admite melhorias, seus bônus valem só por vestir as três peças: Disfarce Stal (Stalboblins, Stalmoblins e Stallagalfos não atacam, e Stalnoxes são enganados por algum tempo) e Ataque com ossos aumentado (+80% com armas de osso). As pessoas se assustam com Link usando o conjunto. Depois de achado, Granté o vende por 50 rupias.",
+  "locations": [
+    "Faron: sob a mais alta das três quedas d'água entre Corta Lake e o Lago Floria (baú escondido, puxado com Magnétis)."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Dark Armor” (DLC The Champions' Ballad), iniciada pelo diário de Misko nas Deya Village Ruins.",
+    "Reposição: Granté o vende por 50 rupias em Tarrey Town depois da primeira obtenção."
+  ],
+  "uses": [
+    "Aumentar a furtividade.",
+    "Completar o Conjunto de Ganon Fantasma para enganar monstros Stal e fortalecer armas de osso."
+  ],
+  "effects": [
+    "Furtividade aumentada nível 1.",
+    "Conjunto completo (sem melhorias): Disfarce Stal e Ataque com ossos aumentado (+80%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 4 de defesa fixa e dá Furtividade aumentada nível 1 (Link faz 20% menos ruído).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto de Ganon Fantasma completo",
+      "status": "confirmado",
+      "result": "Com a Armadura e as Grevas de Ganon Fantasma, ativa o Disfarce Stal e o Ataque com ossos aumentado (+80% de ataque com armas de osso), além de somar três níveis de Furtividade aumentada.",
+      "conditions": [
+        "As três peças vestidas; o conjunto não pode ser melhorado e não precisa disso."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Phantom Ganon Set"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "monstros Stal (conjunto completo)",
+      "status": "confirmado",
+      "result": "Stalboblins, Stalmoblins e Stallagalfos não atacam enquanto Link não os atacar, e os Stalnoxes são enganados temporariamente. O disfarce acaba se um inimigo não afetado atacar Link.",
+      "conditions": [
+        "Conjunto de Ganon Fantasma completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus sem passar pela Grande Fada",
+      "text": "Ao contrário da maioria dos conjuntos, o de Ganon Fantasma ativa seus bônus sem melhorias, já que as armaduras do DLC não podem ser melhoradas.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quais armas contam como “de osso”",
+      "text": "O Ataque com ossos aumentado vale para 15 armas: Braço de Koboblin, Braço de Lagalfos, Braço de Moblin, Taco Kobo dracônico, Clava Kobo dracônica, Lança Kobo dracônica, Arco Kobo dracônico, Clava Moblin dracônica, Lança Moblin dracônica, Clava Kobo pontuda, Lança Kobo pontuda, Arco Kobo pontudo, Clava Moblin pontuda, Lança Moblin espinhosa e Arco Lagal. O Taco Kobo pontudo não aparece na lista.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, com o conjunto completo, carregar uma Clava Moblin dracônica ou uma Lança Kobo dracônica: os monstros Stal deixam Link em paz e as armas de osso causam 80% a mais de dano quando ele decidir atacar."
+  ],
+  "limitations": [
+    "Defesa fixa de 4, sem melhorias nem tingimento.",
+    "O Disfarce Stal não protege de monstros comuns.",
+    "Exige o DLC The Champions' Ballad."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_phantom_ganon_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_greaves",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_radiant_mask",
+      "relation": "Peça de outro conjunto com os mesmos bônus (★★)"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Monstro enganado pelo Disfarce Stal"
+    },
+    {
+      "id": "botw_monster_stalnox",
+      "relation": "Enganado temporariamente pelo Disfarce Stal"
+    },
+    {
+      "id": "botw_weapon_dragonbone_moblin_club",
+      "relation": "Arma de osso fortalecida pelo bônus"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para tirar o baú da cachoeira"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "furtividade",
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

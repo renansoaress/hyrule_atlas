@@ -1,0 +1,104 @@
+{
+  "id": "botw_mechanic_critical_hit",
+  "summary": "Golpe de dano dobrado. Acontece de três formas: flecha na cabeça ou no olho do inimigo, arma arremessada que acerta o alvo e o último golpe de uma arma antes de quebrar. Um som característico avisa o crítico.",
+  "description": "O Acerto crítico causa o dobro do dano normal da arma. As três formas descritas pelo Zelda Wiki são reproduzíveis: acertar a cabeça ou o olho de um inimigo com uma flecha; arremessar uma arma (botão R) que atinja o inimigo — ela quebra no impacto; e quebrar uma arma golpeando um inimigo, já que o último golpe de toda arma antes de se partir é sempre crítico. O jogo sinaliza o acerto com um som próprio: agudo para flechas e um estalo alto para armas corpo a corpo.\n\nAlém disso, armas podem vir com o bônus \"Acerto crítico\", que faz o último golpe de uma sequência de ataques causar dano dobrado e desequilibrar o inimigo. Esse é um bônus de nível branco, e o Zelda Wiki observa que, quando o nível do mundo sobe o bastante, os bônus brancos deixam de aparecer. O Ataque-surpresa é um fenômeno parecido, porém mais forte (8 vezes o dano).",
+  "locations": [
+    "Qualquer combate."
+  ],
+  "obtaining": [
+    "Sempre disponível; o bônus \"Acerto crítico\" vem aleatoriamente em armas de baús e de inimigos."
+  ],
+  "uses": [
+    "Aproveitar armas quase quebradas arremessando-as.",
+    "Tiros na cabeça para derrubar vigias e atordoar Guardiões e Centaleões."
+  ],
+  "effects": [
+    "Dano dobrado no golpe crítico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Três gatilhos garantem o crítico: flecha na cabeça ou no olho, arma arremessada que acerta o inimigo e o golpe que quebra a arma.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça causa dano dobrado; vigias em torres podem ser derrotados na hora com um tiro na cabeça; no olho de um Guardião, atordoa e causa dano extra.",
+      "applications": [
+        "Pairar numa corrente ascendente criada pelo fogo de um Centaleão e acertar-lhe a cabeça: atordoa e dobra o dano.",
+        "Flechas explosivas também dobram o dano na cabeça."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Arrow", "zw:Guardian", "zw:Lynel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arma arremessada com R que acerta diretamente um inimigo quebra imediatamente e causa crítico garantido.",
+      "side_effects": ["A arma é perdida.", "A Espada Mestra não pode ser arremessada; com R ela dispara o feixe de espada quando a vida está cheia."],
+      "applications": ["Arremessar armas com três usos ou menos (ícone piscando em vermelho)."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "zw:Tips and Tricks", "zw:Master Sword"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "O último golpe de uma arma antes de quebrar é sempre crítico. Com o bônus \"Acerto crítico\", o último golpe de cada sequência de ataques causa dano dobrado e desequilibra o inimigo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability", "zw:Weapon Bonus", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "montar",
+      "variant": "Centaleão",
+      "status": "confirmado",
+      "result": "A regra do golpe final crítico também vale ao atacar montado num Centaleão, situação em que a arma não perde durabilidade (até cinco golpes por montaria).",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Durability", "zw:Lynel"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Centaleão",
+      "status": "confirmado",
+      "result": "Centaleões não são derrubados pelos golpes e não largam a arma nem quando atordoados por um crítico.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus que some com o tempo",
+      "text": "O bônus \"Acerto crítico\" é de nível branco. Quando o nível do mundo (contagem oculta de monstros derrotados) sobe o bastante, as armas passam a vir só com bônus amarelos, e o Acerto crítico praticamente deixa de existir no jogo.",
+      "sources": ["zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ouça o crítico",
+      "text": "O jogo toca um som agudo quando uma flecha causa crítico e um estalo alto quando o crítico vem de uma arma corpo a corpo.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Montar num Centaleão com uma arma prestes a quebrar: como a arma não perde durabilidade montada, a regra do golpe final continua valendo a cada golpe.",
+    "Guardar armas fracas para arremessar como críticos garantidos."
+  ],
+  "limitations": [
+    "Arremessar consome a arma.",
+    "O bônus \"Acerto crítico\" fica indisponível em fases avançadas do jogo."
+  ],
+  "related": [
+    { "id": "botw_mechanic_durability", "relation": "Golpe final crítico ao quebrar" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "Golpe de 8 vezes o dano" },
+    { "id": "botw_arrow_arrow", "relation": "Tiro na cabeça dobra o dano" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Também dobra o dano na cabeça" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Flecha no olho atordoa" },
+    { "id": "botw_monster_lynel", "relation": "Crítico na cabeça e ataques montados" },
+    { "id": "botw_weapon_master_sword", "relation": "Não pode ser arremessada" },
+    { "id": "botw_weapon_travelers_sword", "relation": "Exemplo de arma com bônus possíveis" }
+  ],
+  "capabilities": ["ataque"],
+  "verification_status": "verificado"
+}

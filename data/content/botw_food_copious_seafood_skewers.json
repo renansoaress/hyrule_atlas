@@ -1,0 +1,101 @@
+{
+  "id": "botw_food_copious_seafood_skewers",
+  "summary": "Espetinho farto com quatro tipos diferentes de frutos do mar. Só ganha efeito com Robalo hyruliano + Carpa tricolor + dois frutos do mar distintos que tenham o mesmo efeito.",
+  "description": "Os Espetinhos fartos de frutos do mar pedem quatro tipos diferentes de frutos do mar — peixes, caranguejos ou caramujos. A descrição do jogo brinca que é só um monte de coisas enfiadas num espeto, mas ainda assim um prato gostoso.\n\nComo a maioria dos frutos do mar tem efeito, a variedade obrigatória costuma anular tudo. Segundo o Zelda Wiki, a única forma de obter efeito é usar os dois peixes sem efeito — Robalo hyruliano e Carpa tricolor — e completar com dois frutos do mar diferentes que tenham o mesmo efeito. Assim saem as versões nutritiva (Salmão nutritivo, Caramujo nutritivo ou Robalo nutritivo), energizante (Robalo enérgico com Caranguejo esperto), valente (Carpa valente, Pargo valente ou Caranguejo espadachim), blindada (Carpa blindada, Pargo blindado ou Caranguejo couraçado) e discreta (Truta discreta com Caramujo discreto).\n\nComo os dois ingredientes de efeito são diferentes entre si, as descrições de inventário das versões valente e blindada já falam em nível médio — exemplo da regra de que ingredientes distintos com o mesmo efeito elevam o nível.",
+  "obtaining": [
+    "Cozinhar numa Panela quatro tipos diferentes de frutos do mar."
+  ],
+  "uses": [
+    "Cura de vários corações.",
+    "Ataque ou Defesa aumentados de nível médio com a combinação certa."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações, sem efeito.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Robalo hyruliano + Carpa tricolor + dois entre Salmão nutritivo, Caramujo nutritivo e Robalo nutritivo.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Robalo hyruliano + Carpa tricolor + Robalo enérgico + Caranguejo esperto.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — dois entre Carpa valente, Pargo valente e Caranguejo espadachim; nível médio segundo a descrição.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — dois entre Carpa blindada, Pargo blindado e Caranguejo couraçado; nível médio segundo a descrição.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Truta discreta + Caramujo discreto; nível baixo segundo a descrição."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Na combinação Robalo hyruliano + Carpa tricolor + dois frutos do mar distintos de mesmo efeito, ganha o efeito desses dois; valente e blindada chegam ao nível médio.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "A receita exata para ter efeito",
+      "text": "Robalo hyruliano e Carpa tricolor são os frutos do mar sem efeito; eles preenchem dois dos quatro tipos exigidos sem atrapalhar. Os outros dois precisam ser diferentes entre si, mas com o mesmo efeito.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível médio por variedade",
+      "text": "Ingredientes diferentes com o mesmo efeito fortalecem mais o prato do que repetir um único ingrediente. Por isso as versões valente e blindada deste espetinho já saem com efeito de nível médio.",
+      "sources": [
+        "zw:Food",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "O Zelda Wiki não cita versões picante, refrescante, isolante, veloz ou tenaz.",
+    "Quatro frutos do mar com efeitos variados anulam tudo e resultam na versão comum."
+  ],
+  "related": [
+    {
+      "id": "botw_food_fish_skewer",
+      "relation": "Espetinho simples de peixe"
+    },
+    {
+      "id": "botw_food_seafood_skewer",
+      "relation": "Espetinho simples de caranguejo ou caramujo"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito exigido nas versões com efeito"
+    },
+    {
+      "id": "botw_creature_sanke_carp",
+      "relation": "Peixe sem efeito exigido nas versões com efeito"
+    },
+    {
+      "id": "botw_food_copious_meat_skewers",
+      "relation": "Equivalente farto com carnes"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

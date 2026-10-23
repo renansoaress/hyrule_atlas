@@ -1,0 +1,151 @@
+{
+  "id": "botw_monster_cursed_moblin",
+  "summary": "Crânio de Moblin reanimado pela Malícia, cuspido por Poças de Malícia nas Feras Divinas e no Castelo de Hyrule. Bate os dentes antes de investir; mais resistente que o de Koboblin, mas cai com um golpe.",
+  "description": "O Moblin amaldiçoado é a cabeça de um Moblin ressuscitada pela Malícia. Segundo o compendium, a única coisa que restou de quem ele foi é a ferocidade típica dos Moblins, então ataca qualquer um que se aproxime; o texto acrescenta que esses crânios são mais resistentes que os de Koboblin. Costumam bater as mandíbulas e então investir contra Link.\n\nComo os outros monstros amaldiçoados, nasce de Poças de Malícia que têm boca: quando o Olho brilhante preso à Malícia percebe Link, a boca passa a cuspir Moblins amaldiçoados continuamente. Ainda assim, qualquer arma o derrota com um golpe, e a forma de encerrar o problema é destruir o Olho brilhante. Aparece nas Feras Divinas e na Primeira e na Segunda Portaria (First Gatehouse e Second Gatehouse) do Castelo de Hyrule, e não deixa espólio.",
+  "locations": [
+    "Feras Divinas.",
+    "Castelo de Hyrule, na Primeira e na Segunda Portaria (First Gatehouse e Second Gatehouse).",
+    "Sempre saindo de Poças de Malícia com boca."
+  ],
+  "obtaining": [
+    "Não deixa materiais; a tabela de espólio não utilizada nos arquivos do jogo está vazia."
+  ],
+  "uses": [
+    "Registro no compendium (entrada nº 157)."
+  ],
+  "effects": [
+    "Mordidas e investidas; a Poça de Malícia de onde sai também fere quem a toca."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Um golpe de qualquer arma o derrota, mas outros continuam surgindo até que o Olho brilhante seja destruído.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no Olho brilhante destrói o olho, faz sumir a Poça de Malícia ligada a ele e encerra o surgimento de crânios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Glowing Eyeball"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo nos crânios amaldiçoados."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo nos crânios amaldiçoados."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de eletricidade nos crânios amaldiçoados."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não tratam de água em relação a esse monstro."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões no crânio em si."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota detonada perto do Olho brilhante o destrói e corta a fonte de crânios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Glowing Eyeball"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos; o crânio não é um deles.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Depende de Poças de Malícia com boca: o Olho brilhante vê Link e a boca começa a cuspir crânios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Glowing Eyeball"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Mais duro que o crânio de Koboblin",
+      "text": "O compendium diz que os Moblins amaldiçoados são mais resistentes que os crânios de Koboblin — embora, na prática, um golpe de qualquer arma baste para destruí-los.",
+      "sources": [
+        "comp",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Espólio vazio",
+      "text": "Há nos arquivos internos do jogo uma tabela de espólio para o Moblin amaldiçoado que nunca é usada, e ela não contém nenhum material.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Atirar no Olho brilhante de longe antes de entrar na sala ou no pátio, evitando a fila de crânios."
+  ],
+  "limitations": [
+    "Não deixa materiais nem armas."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_cursed_bokoblin",
+      "relation": "Crânio amaldiçoado das mesmas poças"
+    },
+    {
+      "id": "botw_monster_cursed_lizalfos",
+      "relation": "Crânio amaldiçoado das mesmas poças"
+    },
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Espécie de origem"
+    },
+    {
+      "id": "botw_monster_stalmoblin",
+      "relation": "Outra forma de Moblin morto-vivo"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Destrói o Olho brilhante"
+    }
+  ],
+  "capabilities": [
+    "vence_rapido"
+  ],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,176 @@
+{
+  "id": "botw_armor_gerudo_top",
+  "summary": "Blusa aberta e ventilada do Traje Gerudo, peça indispensável do disfarce para entrar na Cidade Gerudo. Com o traje completo dá Resistência ao calor nível 1; não pode ser melhorada.",
+  "description": "A Blusa Gerudo é a peça de torso do Traje Gerudo, com o Véu Gerudo e o Sirwal Gerudo. A descrição a apresenta como a roupa típica das Gerudo, popular pelo corte aberto e ventilado e pelas marcas tradicionais. Vilia vende o traje completo por 600 rupias no Bazar Kara Kara durante a Missão principal \"Forbidden City Entry\"; depois, a blusa pode ser comprada avulsa por 180 rupias na Fashion Passion, na Cidade Gerudo, onde vem tingida de branco.\n\nSozinha, não tem efeito. Com o traje completo, permite entrar na Cidade Gerudo e ativa o bônus Resistente ao calor (um nível de Resistência ao calor), que vale sem melhorias, já que as peças Gerudo não podem ser melhoradas. Diferentemente do sirwal, a blusa não tem substituto tolerado pelos guardas: as exceções aceitas na cidade são só as Botas de areia, as Botas de neve e o Elmo do trovão. A tabela de dados do Zelda Wiki registra defesa 1, mas o texto do artigo fala em 3 — o valor precisa ser conferido no jogo. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Bazar Kara Kara, com Vilia (traje completo).",
+    "Loja Fashion Passion, na Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Comprar o traje completo de Vilia por 600 rupias, na Missão principal \"Forbidden City Entry\".",
+    "Comprar a blusa avulsa por 180 rupias na Fashion Passion."
+  ],
+  "uses": [
+    "Peça obrigatória do disfarce para entrar e circular na Cidade Gerudo.",
+    "Completar o traje para ter Resistência ao calor sem melhorias."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Traje Gerudo completo: Resistente ao calor (equivale a Resistência ao calor nível 1)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "variant": "peça isolada",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só soma defesa; não tem efeito próprio.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Traje Gerudo completo",
+      "status": "confirmado",
+      "result": "Com o Véu Gerudo, a Blusa Gerudo e o Sirwal Gerudo vestidos, Link passa por mulher e pode entrar na Cidade Gerudo, e ganha o bônus Resistente ao calor (Heat-Resistant), equivalente a um nível de Resistência ao calor. As peças não podem ser melhoradas, então o bônus vale desde a compra.",
+      "conditions": [
+        "Na cidade, as Botas de areia, as Botas de neve e o Elmo do trovão podem substituir peças do traje sem que os guardas expulsem Link."
+      ],
+      "side_effects": [
+        "Tirar o traje dentro da cidade faz Link ser expulso, exceto no Clube Secreto Gerudo."
+      ],
+      "applications": [
+        "Iniciar a Missão secundária \"The Eighth Heroine\": Bozai só puxa conversa com Link vestido de Gerudo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Gerudo Outfit",
+        "zw:Set Bonus",
+        "zw:Gerudo Town",
+        "zw:The Eighth Heroine"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "peça isolada",
+      "status": "sem_efeito",
+      "result": "Uma peça Gerudo sozinha não protege do calor do deserto.",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "Traje Gerudo completo",
+      "status": "confirmado",
+      "result": "O traje completo imita um nível de Resistência ao calor, suficiente para o calor diurno comum do Deserto Gerudo, e soma com outro efeito de nível 1 (como um Elixir refrescante) para chegar a dois níveis.",
+      "side_effects": [
+        "Não protege do clima escaldante da Montanha da Morte."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Heat",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O único lugar para tirar o disfarce",
+      "text": "Dentro da Cidade Gerudo, Link é expulso se tirar o traje — menos no Clube Secreto Gerudo, cuja dona percebe que ele é homem e não se importa.",
+      "sources": [
+        "zw:Gerudo Secret Club"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Moda de cores",
+      "text": "Saula, da Fashion Passion, explica que está na moda entre as Gerudo tingir as roupas na Tinturaria Kochi, em Hateno, e sugere que Link compre mais trajes para ter cores diferentes.",
+      "sources": [
+        "zw:Fashion Passion"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para manter o disfarce e ganhar velocidade na areia, vista a blusa e o véu com as Botas de areia — o bônus de calor do traje completo se perde, mas a cidade em si já protege do calor e do frio."
+  ],
+  "limitations": [
+    "Não pode ser melhorada.",
+    "O valor exato de defesa diverge entre as fontes (1 ou 3)."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_gerudo_outfit",
+      "relation": "Traje do qual faz parte"
+    },
+    {
+      "id": "botw_armor_gerudo_veil",
+      "relation": "Peça de cabeça do traje"
+    },
+    {
+      "id": "botw_armor_gerudo_sirwal",
+      "relation": "Peça de pernas do traje"
+    },
+    {
+      "id": "botw_armor_sand_boots",
+      "relation": "Botas aceitas na Cidade Gerudo com a blusa e o véu"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Elmo aceito pelos guardas da cidade"
+    },
+    {
+      "id": "botw_armor_desert_voe_spaulder",
+      "relation": "Equivalente masculino vendido no Clube Secreto"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "item_de_missao"
+  ],
+  "verification_status": "a_verificar"
+}

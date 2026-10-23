@@ -1,0 +1,282 @@
+{
+  "id": "botw_material_raw_gourmet_meat",
+  "summary": "O corte mais nobre, de animais grandes como búfalos, lobos e ursos. Crua cura 3 corações; selada, 4,5. Trott, no Outskirt Stable, paga 100 rupias por unidade, quase o triplo do preço de loja (35).",
+  "description": "A Carne de primeira (Raw Gourmet Meat) é o corte premiado, normalmente de um animal grande, que \"qualquer conhecedor classificaria como gourmet\". Cai de Búfalos-d'água, Raposas da neve, Lobos larápios e pé-gelados, Coiotes do deserto, Alces de Tabantha, Rinocerontes chifrelongos, Ursos melívoros e Grão-ursos, e Mezer e Stamm a vendem por 140 rupias. Crua, já recupera 3 corações.\n\nNo fogo vira Bife de carne de primeira selado (4,5 corações); no frio extremo, na água gelada ou com ataques de gelo, vira Carne de primeira congelada (3 corações e 1 minuto de Resistência ao calor). Na panela, é obrigatória na Tigela de arroz com carne de primeira, no Curry de carne de primeira e no Espetinho temperado de carne de primeira, e pode ser trocada pela Ave inteira no Ensopado de carne de primeira, na Carne de primeira grelhada no sal e na Fritada de carne de primeira e frutos do mar. Seu uso mais lucrativo, porém, é a Missão secundária \"A Rare Find\": Trott, no Outskirt Stable, sonha com carne de primeira e paga 100 rupias por unidade — e continua comprando depois da missão.",
+  "locations": [
+    "Búfalos-d'água, Raposas da neve, Lobos larápios, Coiotes do deserto, Lobos pé-gelados, Alces de Tabantha, Rinocerontes chifrelongos, Ursos melívoros e Grão-ursos.",
+    "Mercadores Mezer (Dueling Peaks Stable) e Stamm (South Akkala Stable–Vila Tarrey)."
+  ],
+  "obtaining": [
+    "Caçar os animais listados.",
+    "Comprar de Mezer ou Stamm (140 rupias)."
+  ],
+  "uses": [
+    "Missão secundária \"A Rare Find\": Trott, no Outskirt Stable, paga 100 rupias por unidade, sem limite depois da missão.",
+    "Cura imediata: 3 corações crua, 4,5 como Bife de carne de primeira selado.",
+    "Receitas exclusivas: Tigela de arroz com carne de primeira, Curry de carne de primeira e Espetinho temperado de carne de primeira.",
+    "Com a Ave inteira como alternativa: Ensopado de carne de primeira, Carne de primeira grelhada no sal e Fritada de carne de primeira e frutos do mar.",
+    "Receitas de \"qualquer carne\", como Espetinho de carne, Carne glaceada e Bife apimentado.",
+    "Venda: 35 rupias numa loja (selada, também 35; congelada, 40)."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 3 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "variant": "Trott",
+      "status": "confirmado",
+      "result": "Trott, no Outskirt Stable, compra Carne de primeira por 100 rupias cada, durante e depois da missão \"A Rare Find\".",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Numa loja, vale 35 rupias crua, 35 selada e 40 congelada.",
+      "sources": [
+        "zw",
+        "zw:Seared Gourmet Steak",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Bife de carne de primeira selado, que recupera 4,5 corações, sem efeito especial.",
+      "conditions": [
+        "Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "produces": [
+        "botw_food_seared_gourmet_steak"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Bife de carne de primeira selado.",
+      "produces": [
+        "botw_food_seared_gourmet_steak"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no clima escaldante de Eldin, assa sozinha.",
+      "produces": [
+        "botw_food_seared_gourmet_steak"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Seared Gourmet Steak",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingida por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, vira Carne de primeira congelada.",
+      "produces": [
+        "botw_food_icy_gourmet_meat"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gelado ou em água gelada, vira Carne de primeira congelada: 3 corações e 1:00 de Resistência ao calor nível 1.",
+      "produces": [
+        "botw_food_icy_gourmet_meat"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma elemental",
+      "status": "confirmado",
+      "result": "Golpeada com arma de fogo (Espada flamejante, Grã-Espada flamejante, Lança carbonizante), assa; com arma de gelo (Espada álgida, Grã-Espada álgida, Lança congelante), congela.",
+      "produces": [
+        "botw_food_seared_gourmet_steak",
+        "botw_food_icy_gourmet_meat"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a carne com uma arma comum."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada para assar perto do fogo ou congelar no frio; Pastores hylianos comem carne largada perto deles.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Hylian Retriever"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da carne à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Em água gelada, congela; as fontes não dizem o que acontece em água comum.",
+      "produces": [
+        "botw_food_icy_gourmet_meat"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a carne não é metálica.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a carne largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, a cura dobra (6 corações por unidade). É obrigatória em três pratos \"de primeira\" e divide outros três com a Ave inteira.",
+      "produces": [
+        "botw_food_gourmet_meat_and_rice_bowl",
+        "botw_food_gourmet_meat_curry",
+        "botw_food_gourmet_spiced_meat_skewer",
+        "botw_food_gourmet_meat_stew",
+        "botw_food_salt_grilled_gourmet_meat",
+        "botw_food_gourmet_meat_and_seafood_fry"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Trott paga quase o triplo",
+      "text": "Numa loja, a Carne de primeira vale 35 rupias; Trott paga 100. Como ele aceita a carne a qualquer momento depois de \"A Rare Find\", caçar animais grandes e levar a carne a ele vira uma fonte de renda estável.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Assar não valoriza",
+      "text": "O Bife de carne de primeira selado vale as mesmas 35 rupias da carne crua, enquanto a versão congelada sobe para 40. Para vender, congele; para curar, asse.",
+      "sources": [
+        "zw:Seared Gourmet Steak",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ave inteira como substituta",
+      "text": "Pela lógica de receitas do Zelda Wiki, Ensopado, Carne grelhada no sal e Fritada com frutos do mar \"de primeira\" aceitam Carne de primeira ou Ave inteira; a Tigela de arroz, o Curry e o Espetinho temperado \"de primeira\" só aceitam a Carne de primeira.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde a Carne de primeira para Trott em vez de vendê-la numa loja quando precisar de rupias: cada unidade rende 65 rupias a mais.",
+    "Para viagens ao Deserto Gerudo, a Carne de primeira congelada combina boa cura (3 corações) com 1 minuto de Resistência ao calor."
+  ],
+  "limitations": [
+    "Assada não sobe de preço; nenhum preparo sem panela dá efeitos especiais além da resistência ao calor da versão congelada."
+  ],
+  "related": [
+    {
+      "id": "botw_food_seared_gourmet_steak",
+      "relation": "Resultado de assar no fogo"
+    },
+    {
+      "id": "botw_food_icy_gourmet_meat",
+      "relation": "Resultado de congelar"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Substituta em três receitas \"de primeira\""
+    },
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne de mamífero de nível abaixo"
+    },
+    {
+      "id": "botw_creature_water_buffalo",
+      "relation": "Animal que a deixa"
+    },
+    {
+      "id": "botw_creature_grizzlemaw_bear",
+      "relation": "Animal que a deixa"
+    },
+    {
+      "id": "botw_creature_maraudo_wolf",
+      "relation": "Animal que a deixa"
+    },
+    {
+      "id": "botw_food_gourmet_meat_curry",
+      "relation": "Prato que exige Carne de primeira"
+    },
+    {
+      "id": "botw_mechanic_cooking",
+      "relation": "Regras de culinária"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "reage_fogo",
+    "reage_gelo",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

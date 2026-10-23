@@ -1,0 +1,230 @@
+{
+  "id": "botw_weapon_rusty_halberd",
+  "summary": "Alabarda antiga corroída pela exposição ao tempo (ataque 5, durabilidade 15). Um Octoroc rochoso a limpa e devolve como outra lança — de Lança do viajante a, com sorte, Alabarda real.",
+  "description": "A Alabarda enferrujada é uma arma de haste provavelmente usada por cavaleiros de uma era passada; a ponta está em mau estado por ter ficado muito tempo exposta ao tempo, o que explica a durabilidade de apenas 15. Faz parte do equipamento enferrujado, ao lado da Espada enferrujada, do Montante enferrujado e do Escudo enferrujado, e aparece na Grande Floresta de Hyrule e na Pradaria de Hyrule, principalmente perto de ruínas.\n\nO valor dela está no Octoroc rochoso: se for posta à frente de um deles enquanto ele inspira, o monstro a aspira, mastiga e cospe de volta limpa. O resultado é sorteado — 50% Lança do viajante, 35% Lança do soldado, 10% Alabarda do cavaleiro e 5% Alabarda real. Como as demais armas de metal, conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Grande Floresta de Hyrule e Pradaria de Hyrule, especialmente perto de ruínas."
+  ],
+  "obtaining": [
+    "Recolher nas ruínas dessas regiões.",
+    "A Lua de sangue repõe as armas largadas pelo mundo."
+  ],
+  "uses": [
+    "Matéria-prima para o Octoroc rochoso: depois de limpa, vira uma lança melhor.",
+    "Arma descartável para golpes rápidos ou para arremessar."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Um Octoroc rochoso que aspire a alabarda enquanto inspira faz uma pausa para mastigá-la e a cospe limpa: 50% Lança do viajante, 35% Lança do soldado, 10% Alabarda do cavaleiro e 5% Alabarda real.",
+      "conditions": [
+        "Largar a alabarda no caminho do ar aspirado por um Octoroc rochoso."
+      ],
+      "side_effects": [
+        "Se Link tentar aparar a arma cuspida com o escudo, ela o atravessa."
+      ],
+      "applications": [
+        "Transformar uma arma quase inútil numa lança melhor, com chance de Alabarda real."
+      ],
+      "produces": [
+        "botw_weapon_travelers_spear",
+        "botw_weapon_soldiers_spear",
+        "botw_weapon_knights_halberd",
+        "botw_weapon_royal_halberd"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cada Octoroc rochoso tem limite",
+      "text": "Segundo o Zelda Wiki, a Lua de sangue reinicia a capacidade de cada Octoroc rochoso de repor armas — sinal de que ela se esgota. As fontes não detalham se esse limite vale também para a limpeza de armas enferrujadas; se um Octoroc parar de aspirar, procure outro ou espere a próxima Lua de sangue.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Onde encontrar os Octorocs rochosos",
+      "text": "Os Octorocs rochosos vivem principalmente no Cânion de Eldin e na Cordilheira de Eldin, mas também aparecem nas Montanhas Gerudo.",
+      "sources": [
+        "zw:Rock Octorok"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Alabarda enferrujada pode surgir com um bônus branco (comum) — ataque +4 a +5, durabilidade +2 a +3 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +6 a +10, durabilidade +4 a +7 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Leve várias Alabardas enferrujadas até Octorocs rochosos diferentes em Eldin para multiplicar as chances de obter uma Alabarda real."
+  ],
+  "limitations": [
+    "Dano e durabilidade baixíssimos (5 e 15).",
+    "A limpeza é sorteada: na maioria das vezes, o resultado é uma Lança do viajante."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Limpa a alabarda e a devolve como outra lança"
+    },
+    {
+      "id": "botw_weapon_travelers_spear",
+      "relation": "Resultado da limpeza (50%)"
+    },
+    {
+      "id": "botw_weapon_soldiers_spear",
+      "relation": "Resultado da limpeza (35%)"
+    },
+    {
+      "id": "botw_weapon_knights_halberd",
+      "relation": "Resultado da limpeza (10%)"
+    },
+    {
+      "id": "botw_weapon_royal_halberd",
+      "relation": "Resultado da limpeza (5%)"
+    },
+    {
+      "id": "botw_weapon_rusty_broadsword",
+      "relation": "Mesmo arquétipo (enferrujado), uma mão"
+    },
+    {
+      "id": "botw_weapon_rusty_claymore",
+      "relation": "Mesmo arquétipo (enferrujado), duas mãos"
+    },
+    {
+      "id": "botw_shield_rusty_shield",
+      "relation": "Escudo enferrujado"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

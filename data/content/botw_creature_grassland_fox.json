@@ -1,0 +1,80 @@
+{
+  "id": "botw_creature_grassland_fox",
+  "summary": "Raposa laranja de cauda fofa com ponta branca, comum em campos e bosques de Hyrule. Solitária e onívora, foge ao ver Link e deixa Carne de terceira quando abatida.",
+  "description": "A Raposa do prado é um animal de porte médio, com dorso, flancos e cauda laranja, peito, garganta e focinho brancos, patas e orelhas pretas e pequenas marcas como sobrancelhas acima dos olhos. Apesar do nome, vive tanto em campos quanto em bosques: o compendium cita a Pradaria de Hyrule e a Grande Nascente de Lanayru, e ela também é comum nos Cerros de Hyrule e na Grande Floresta de Hyrule.\n\nDiferente de outras raposas, não anda em bando e age sozinha. É onívora: caça animais menores, mas muitas vezes se contenta com frutas e insetos. Foge quando percebe Link e, abatida, deixa Carne de terceira. A Raposa da neve é uma raça dela adaptada ao frio.",
+  "locations": [
+    "Pradaria de Hyrule e Grande Nascente de Lanayru (compendium); também Cerros de Hyrule e Grande Floresta de Hyrule."
+  ],
+  "obtaining": [
+    "Não pode ser capturada; é caçada pela carne."
+  ],
+  "uses": [
+    "Fonte de Carne de terceira.",
+    "Registrar sua foto no compendium (entrada nº 19)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge ao perceber Link por perto. Anda sozinha, nunca em bando.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fox"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser abatida; deixa Carne de terceira.",
+      "produces": ["botw_material_raw_meat"],
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Fox", "zw:Raw Meat"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que a raposa pode ser abatida, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Animal de porte médio; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Solitária por natureza",
+      "text": "O compendium destaca que, ao contrário de outras raposas, a Raposa do prado age de forma independente em vez de formar bandos.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "A Carne de terceira vira Bife selado se exposta ao fogo e Carne de terceira congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Deixa apenas Carne de terceira, ao contrário da Raposa da neve, que rende carnes melhores."
+  ],
+  "related": [
+    { "id": "botw_creature_snowcoat_fox", "relation": "Raça adaptada ao frio, que deixa carnes melhores" },
+    { "id": "botw_material_raw_meat", "relation": "Carne deixada ao ser abatida" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

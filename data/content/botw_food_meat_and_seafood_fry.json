@@ -1,0 +1,144 @@
+{
+  "id": "botw_food_meat_and_seafood_fry",
+  "summary": "Fritada de carne com fruto do mar. Na versão picante (Carne de terceira, Pimenta de fogo e Robalo hyruliano), é o prato perdido do Velho do Grande Platô, que paga com o Gibão aquecido.",
+  "description": "A Fritada de carne e frutos do mar junta carne e qualquer fruto do mar; a descrição do jogo fala de um prato farto de frutos do mar frescos cozidos com carne. A versão comum sai com frutos do mar sem efeito, como Robalo hyruliano e Carpa tricolor, ou com frutos do mar de efeitos contrários. Como a carne é neutra, o efeito costuma vir do fruto do mar: refrescante (Truta glacial), isolante (Truta voltaica), energizante (Robalo enérgico ou Caranguejo esperto), nutritiva (Robalo nutritivo, Salmão nutritivo ou Caramujo nutritivo), valente (Carpa valente, Pargo valente ou Caranguejo espadachim), discreta (Truta discreta), picante (Truta rescaldada) e blindada (Carpa blindada, Pargo blindado ou Caranguejo couraçado); tenaz e veloz dependem de um ingrediente extra.\n\nNo Grande Platô, o diário do Velho, na cabana dele, conta que ele criou uma fritada picante de carne e frutos do mar que o mantém aquecido no frio, a ponto de dispensar o Gibão aquecido — mas esqueceu de anotar a receita, lembrando só da Carne de terceira e da Pimenta de fogo. Ele promete o gibão a quem completar o prato. Ao ver Link com a fritada picante, o Velho pede a receita, se espanta por ter esquecido o Robalo hyruliano e entrega o Gibão aquecido. Depois, ele anota a receita certa no diário e lamenta: esqueceu que o efeito do prato tem tempo limitado, ao contrário do gibão.\n\nCom carnes melhores, o prato muda de nível: Carne de segunda ou Sobrecoxa geram a Fritada de carne de segunda e frutos do mar, e Carne de primeira ou Ave inteira, a Fritada de carne de primeira e frutos do mar.",
+  "locations": [
+    "Diário do Velho (The Old Man's Diary): na cabana do Velho, no Grande Platô.",
+    "Carne de terceira no Grande Platô: o Velho sugere caçar na Forest of Spirits, no norte do platô.",
+    "Carne de terceira: deixada por Javalis da mata, Bodes da montanha e Raposas do prado; vendida pelos mercadores Cambo e Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer carne + qualquer fruto do mar.",
+    "Versão picante do Velho: Carne de terceira + Pimenta de fogo + Robalo hyruliano."
+  ],
+  "uses": [
+    "Entregar a versão picante ao Velho, no Grande Platô, para ganhar o Gibão aquecido.",
+    "Cura de vários corações com o efeito do fruto do mar escolhido.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (frutos do mar sem efeito ou de efeitos opostos): recupera vários corações.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Truta rescaldada ou, na receita do Velho, com Pimenta de fogo.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Truta glacial.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Truta voltaica.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Robalo enérgico ou Caranguejo esperto.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Robalo nutritivo, Salmão nutritivo ou Caramujo nutritivo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Carpa valente, Pargo valente ou Caranguejo espadachim.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Truta discreta.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Carpa blindada, Pargo blindado ou Caranguejo couraçado.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — ingrediente tenaz extra.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — ingrediente veloz extra."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O fruto do mar (ou um ingrediente extra) define o efeito; a versão picante dá Resistência ao frio por tempo limitado, como o próprio Velho descobre.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Old Man"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "entregar ao Velho",
+      "status": "confirmado",
+      "result": "Ao mostrar a fritada picante ao Velho e contar a receita, Link recebe o Gibão aquecido.",
+      "conditions": [
+        "Ter a versão picante da fritada na algibeira e mostrá-la ao Velho no Grande Platô (ele aceita ver qualquer prato que Link cozinhar)."
+      ],
+      "side_effects": [
+        "O Velho anota a receita no diário (páginas extras) e depois se arrepende de ter dado o gibão."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Old Man",
+        "zw:The Old Man's Diary"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O ingrediente esquecido",
+      "text": "O diário do Velho só lembra de Carne de terceira e Pimenta de fogo. O terceiro ingrediente, que ele mesmo se espanta por ter esquecido, é o Robalo hyruliano — que transforma a mistura numa fritada de carne e frutos do mar.",
+      "sources": [
+        "zw:Old Man",
+        "zw:The Old Man's Diary"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Gibão garantido mesmo sem o prato",
+      "text": "O Gibão aquecido também é dado pelo Velho no King's Tomb, no alto do Mount Hylia, e, se Link sair do Grande Platô sem recebê-lo, um baú de pedra aparece na cabana com o gibão. Ele ainda é vendido na Ventest Clothing Boutique, em Hateno.",
+      "sources": [
+        "zw:Warm Doublet"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Crítico de culinária",
+      "text": "Link pode mostrar ao Velho qualquer prato que cozinhar; ele comenta a qualidade com frases como \"Nada mal. Certamente não está bom... mas também não está ruim.\" Só a fritada picante o deixa surpreso.",
+      "sources": [
+        "zw:Old Man"
+      ]
+    }
+  ],
+  "limitations": [
+    "A Pimenta de fogo dá Resistência ao frio por tempo limitado; o gibão protege enquanto estiver vestido, como o próprio Velho reconhece no diário.",
+    "Com Carne de segunda, Sobrecoxa, Carne de primeira ou Ave inteira, o prato muda para as versões de segunda e de primeira."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_warm_doublet",
+      "relation": "Recompensa do Velho pela versão picante"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne da receita do Velho"
+    },
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Ingrediente picante da receita do Velho"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe esquecido pelo Velho"
+    },
+    {
+      "id": "botw_food_prime_meat_and_seafood_fry",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_food_gourmet_meat_and_seafood_fry",
+      "relation": "Versão com Carne de primeira ou Ave inteira"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

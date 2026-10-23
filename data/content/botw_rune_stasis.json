@@ -1,0 +1,117 @@
+{
+  "id": "botw_rune_stasis",
+  "summary": "Runa que congela um objeto no tempo por até 10 s e acumula a energia dos golpes que ele recebe, lançando-o quando o tempo volta. A versão Estátis + também paralisa inimigos por um curto período.",
+  "description": "Estátis é a runa obtida no Santuário Owa Daim, no Planalto (Great Plateau). Ela suspende um objeto no tempo: ele fica envolto num brilho amarelo, completamente imóvel, e ao fim do efeito retoma o movimento que tinha antes. Serve para deter obstáculos perigosos, como rochas rolando, ou para parar engrenagens e outras peças de quebra-cabeça.\n\nO segredo da runa é a energia cinética. Enquanto o objeto está suspenso, cada golpe de arma soma energia, e uma seta amarela indica a direção em que ele será disparado. Quando o tempo volta a correr, tudo é liberado de uma vez, o que permite lançar até objetos muito pesados, como rochas. O efeito dura no máximo 10 segundos e a recarga também é de 10 segundos, mas soltar o objeto antes encurta a espera.\n\nNa Missão secundária \"Slated for Upgrades\", Purah transforma a runa em Estátis + em troca de 3 Núcleos ancestrais, no Laboratório de Hateno (Hateno Ancient Tech Lab). A versão + passa a funcionar também em inimigos: eles ficam paralisados por pouco tempo e, enquanto isso, não podem ser congelados, queimados nem eletrocutados. Em inimigos o efeito acaba bem mais rápido, mas a recarga continua sendo de 10 segundos.",
+  "locations": [
+    "Santuário Owa Daim, no Planalto.",
+    "Laboratório de Hateno (Vila Hateno): local da melhoria para Estátis +."
+  ],
+  "obtaining": [
+    "Extrair a runa no terminal (Guidance Stone) do Santuário Owa Daim.",
+    "Estátis +: entregar 3 Núcleos ancestrais a Purah durante a Missão secundária \"Slated for Upgrades\"."
+  ],
+  "uses": [
+    "Parar obstáculos em movimento (rochas rolando, engrenagens, plataformas) para atravessá-los.",
+    "Lançar objetos pesados acumulando energia cinética com golpes de arma.",
+    "Lançar um Barril explosivo para que exploda onde cair.",
+    "Estátis +: paralisar inimigos para atacá-los ou fugir."
+  ],
+  "effects": [
+    "Duração máxima de 10 segundos em objetos; recarga de 10 segundos, menor se o objeto for liberado antes.",
+    "Estátis +: paralisa inimigos por um período mais curto; durante o efeito eles ficam imunes a congelamento, queimadura e choque."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Suspende o objeto no tempo, envolto em brilho amarelo; ao fim, ele retoma o movimento anterior.",
+      "conditions": ["Recarga completa; a versão básica só funciona em objetos, não em inimigos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cada golpe num objeto suspenso acumula energia cinética; uma seta amarela mostra a direção do lançamento, que ocorre quando o efeito termina.",
+      "applications": ["Arremessar rochas até buracos de quebra-cabeças Korok em terreno plano.", "Mover a grande laje de pedra na muralha ao norte de uma das torres do Castelo de Hyrule."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Boulder", "zw:Hyrule Castle (Dungeon)"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Um Barril explosivo em Estátis, golpeado, é lançado e explode no ponto de impacto.",
+      "applications": ["Bombardear acampamentos de monstros à distância."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Bomb Barrel", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota também soma energia a um objeto suspenso.",
+      "applications": ["Na Missão de santuário \"Trial of Thunder\", lançar as esferas de volta ao platô com armas ou Bombas remotas."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Trial of Thunder"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Com Estátis +, inimigos ficam paralisados por pouco tempo e imunes a gelo, fogo e choque enquanto durar o efeito. Guardiões paralisados enquanto carregam o laser ficam atordoados depois, mesmo sem terem sido golpeados.",
+      "conditions": ["Exige a melhoria Estátis +."],
+      "side_effects": ["Não adianta usar flechas elementais durante o efeito: o inimigo está imune a elas."],
+      "applications": ["Interromper o disparo de um Guardião persecutório, altívago ou torreta."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Guardian Stalker", "zw:Guardian Skywatcher", "zw:Guardian Turret"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Troncos de árvores derrubadas, rochas, baús metálicos e barris explosivos podem ser suspensos.",
+      "kind": "mecanica",
+      "sources": ["zw:Tree", "zw:Boulder", "zw:Iron Treasure Chest", "zw:Bomb Barrel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Devolver o bloco de gelo à Ira áquea",
+      "text": "Contra a Ira áquea de Ganon, Link pode usar Estátis num bloco de gelo que vem em sua direção e golpeá-lo para lançá-lo de volta contra o chefe.",
+      "sources": ["zw:Waterblight Ganon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Imune ao tempo parado",
+      "text": "O Mestre Kohga e suas rochas nunca podem ser detidos com Estátis. Segundo o Zelda Wiki, ele é o único Sheikah notável com essa característica: até o Monge Maz Koshia pode ser paralisado.",
+      "sources": ["zw:Master Kohga"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Recarga mais curta soltando antes",
+      "text": "A recarga de 10 segundos diminui se Link encerrar a Estátis antes do tempo máximo; em inimigos (Estátis +), o efeito acaba mais cedo, mas a recarga não diminui.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Golpear repetidamente um objeto suspenso com uma arma forte para lançá-lo longe; a direção é a da seta amarela.",
+    "Com Estátis +, paralisar um inimigo perigoso para encaixar golpes sem resposta ou ganhar tempo para fugir."
+  ],
+  "limitations": [
+    "A versão básica não afeta inimigos.",
+    "Duração máxima de 10 segundos; em inimigos, bem menos.",
+    "Inimigos paralisados não sofrem efeitos elementais durante a Estátis +.",
+    "Mestre Kohga e suas rochas são imunes."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa da Tabuleta Sheikah" },
+    { "id": "botw_material_ancient_core", "relation": "3 unidades para a melhoria Estátis +" },
+    { "id": "botw_object_boulder", "relation": "Objeto pesado que pode ser lançado" },
+    { "id": "botw_object_explosive_barrel", "relation": "Explode onde cair após ser lançado" },
+    { "id": "botw_object_tree", "relation": "Troncos derrubados podem ser suspensos" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Fica atordoado se paralisado ao carregar o laser" },
+    { "id": "botw_monster_waterblight_ganon", "relation": "Blocos de gelo podem ser devolvidos" },
+    { "id": "botw_monster_master_kohga", "relation": "Imune à Estátis" },
+    { "id": "botw_rune_remote_bomb", "relation": "Combinação para lançar objetos" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

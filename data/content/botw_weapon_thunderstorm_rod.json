@@ -1,0 +1,184 @@
+{
+  "id": "botw_weapon_thunderstorm_rod",
+  "summary": "Versão superior da Varinha do raio: cada golpe lança três esferas de eletricidade e o ataque giratório dispara oito. Sua gema guarda eletricidade dos Cerros de Hyrule. Carregado pelos Feitiçanos do trovão.",
+  "description": "O Cajado trovejante é a versão mais forte da Varinha do raio. Segundo o jogo, sua gema contém eletricidade dos Cerros de Hyrule, e o cajado quebra quando essa eletricidade acaba. Cada movimento gera três esferas elétricas que avançam em frente, e o ataque giratório solta oito disparos de uma vez em direções diferentes. É carregado principalmente pelos Feitiçanos do trovão, que o usam para lançar três esferas de eletricidade, invocar Chulchuls e Morcis elétricos e convocar tempestades que atingem Link se ele estiver com armas metálicas; derrotados, eles deixam o cajado.\n\nComo toda varinha, é frágil: quebra fácil se atingir diretamente objetos ou inimigos e também se gasta pelo uso prolongado; usado em excesso, perde a magia por um tempo até recarregar. Apesar do elemento, não é feito de metal: não atrai raios, não conduz eletricidade, não queima no fogo nem em clima escaldante, flutua em água funda e não responde a Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Cerros de Hyrule (locais comuns segundo o compendium).",
+    "Nas mãos dos Feitiçanos do trovão."
+  ],
+  "obtaining": [
+    "Derrotar um Feitiçano do trovão: ele deixa cair o cajado.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Eletrocutar grupos de inimigos à distância com três esferas por golpe.",
+    "Ataque elétrico seguro para Link, já que o cajado não conduz eletricidade nem atrai raios."
+  ],
+  "effects": [
+    "Três esferas elétricas por golpe; oito no ataque giratório."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe lança três esferas elétricas que avançam em frente; o ataque giratório solta oito disparos em direções diferentes.",
+      "conditions": [
+        "O cajado precisa ter energia mágica; após uso excessivo, fica sem magia até recarregar."
+      ],
+      "side_effects": [
+        "Bater diretamente em objetos ou inimigos quebra o cajado com facilidade."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "O botão de arremesso não solta o cajado: Link o mantém na mão e lança três esferas elétricas na direção do movimento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "O cajado em si não conduz eletricidade: não é metálico.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "applications": [
+        "Boa arma para enfrentar o Feitiçano do trovão, cujas tempestades atingem quem carrega armas metálicas."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Thunder Wizzrobe"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: pode ser usado perto de fogo e em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnético e não pode ser manipulado com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos do trovão o usam para lançar três esferas elétricas, invocar Chulchuls e Morcis elétricos e convocar tempestades que atingem Link se ele empunhar armas de metal; ao serem derrotados, deixam o cajado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunder Wizzrobe",
+        "zw:Wizzrobe"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Energia mágica e recarga",
+      "text": "Nos parâmetros extraídos, a energia máxima do cajado é 400 e cada uso consome 100: quatro disparos seguidos antes de esgotar. A energia volta aos poucos (taxa de recuperação 10 a cada intervalo de 90, em unidades internas do jogo).",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Três vezes a força da Varinha do raio",
+      "text": "O parâmetro de poder da magia (MagicPower) do Cajado trovejante é 30, contra 10 da Varinha do raio, e o alcance das esferas (MagicRange) é 60, o dobro dos 30 da versão básica.",
+      "sources": [
+        "dm",
+        "zw:Lightning Rod"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o cajado pode surgir com bônus de ataque de +5 a +6 (nível comum) ou +7 a +16 (nível dourado) e bônus de durabilidade de +4 a +7 (ou +8 a +16 no nível dourado). O multiplicador de lançamento fica em 1×, então o bônus de lançamento longo não muda nada. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra um Feitiçano do trovão, trocar armas, arcos e escudos de metal por equipamento não metálico evita atrair os raios das tempestades que ele invoca."
+  ],
+  "limitations": [
+    "Muito frágil no corpo a corpo.",
+    "Quatro disparos seguidos esgotam a magia até a recarga.",
+    "Quebra quando a durabilidade acaba, mesmo só pelo uso da magia."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lightning_rod",
+      "relation": "Versão mais fraca"
+    },
+    {
+      "id": "botw_monster_thunder_wizzrobe",
+      "relation": "Monstro que o empunha e derruba"
+    },
+    {
+      "id": "botw_weapon_meteor_rod",
+      "relation": "Equivalente de fogo"
+    },
+    {
+      "id": "botw_weapon_blizzard_rod",
+      "relation": "Equivalente de gelo"
+    },
+    {
+      "id": "botw_weapon_thunderblade",
+      "relation": "Arma elétrica de uma mão corpo a corpo"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Não atrai raios"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "eletrocuta_inimigos",
+    "flutua",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

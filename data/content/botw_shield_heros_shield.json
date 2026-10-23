@@ -1,0 +1,117 @@
+{
+  "id": "botw_shield_heros_shield",
+  "summary": "Escudo do herói que navegou pelos mares (The Wind Waker), exclusivo do amiibo de Zelda de The Wind Waker. Defesa 65 e durabilidade 90, a segunda maior do jogo. É o único escudo sem entrada no compendium.",
+  "description": "O Escudo do herói é o escudo do herói da Era do Grande Mar, de The Wind Waker. A descrição do jogo conta que ele teria sido o favorito de um herói que viajou pelos mares abertos e que era uma herança de família passada por muitas gerações. Em BOTW, só aparece de forma aleatória nos baús invocados ao escanear o amiibo de Zelda da série de 30º aniversário com tema de The Wind Waker; como o sorteio se repete, dá para conseguir vários.\n\nCom Defesa 65 e durabilidade 90, é o segundo escudo mais durável do jogo, atrás apenas do Escudo hyliano, e supera o Resplendor da aurora nos dois atributos. É também o único escudo de BOTW sem entrada no Hyrule Compendium, então não pode ser fotografado para ele.\n\nÉ de metal: conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser recuperado com Magnétis; não queima.",
+  "locations": [
+    "Não aparece no mapa; existe apenas em baús invocados pelo amiibo."
+  ],
+  "obtaining": [
+    "Escanear com a runa amiibo o amiibo de Zelda (série de 30º aniversário, tema The Wind Waker). O escudo pode sair no baú de forma aleatória.",
+    "Para recuperar um exemplar quebrado, escanear o mesmo amiibo de novo em outro dia: o jogo limita alguns amiibo a um uso diário."
+  ],
+  "uses": [
+    "Escudo de longa duração para todo o jogo, com Defesa alta.",
+    "Prancha durável para Surfar com escudo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além da alta defesa e durabilidade."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 65; a durabilidade de 90 aguenta lutas longas. A Defesa perfeita não gasta durabilidade.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1); a durabilidade alta permite surfar bastante antes de se preocupar.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, solta faíscas e atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo do fundo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus de amiibo e um bug de escudos",
+      "text": "Os parâmetros preveem Durabilidade aumentada de +9 a +18 (branco) ou +19 a +45 (amarelo) e Defesa aumentada de +7 a +12 (branco) ou +13 a +24 (amarelo). Itens de baús de amiibo vêm sempre no valor máximo da faixa e o bônus aparece como branco mesmo quando é amarelo. Por um bug, o bônus branco de Defesa de escudos de amiibo é aplicado à durabilidade e exibido como Durability Up; por isso o Escudo do herói nunca tem Shield Guard Up branco. Pela combinação dessas regras, os resultados esperados são +18 ou +12 de durabilidade (branco), +45 de durabilidade ou +24 de Defesa (amarelo).",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Amiibo Rune"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Sem página no compendium",
+      "text": "Na lista de escudos de BOTW, o Escudo do herói é o único marcado como sem entrada no Hyrule Compendium.",
+      "sources": ["zw:Shields in Breath of the Wild"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Herança de The Wind Waker",
+      "text": "O escudo vem da Era do Grande Mar. Outros itens desse herói, como o Conjunto do herói dos ventos e o Bumerangue da brisa, saem do amiibo de Toon Link, não do de Zelda.",
+      "sources": ["zw", "zw:Hero of Winds Set", "zw:Sea-Breeze Boomerang"]
+    }
+  ],
+  "advanced_uses": [
+    "Como sempre chega no valor máximo de bônus, vale repetir o escaneamento até conseguir um exemplar com o Durability Up+ de +45, chegando a 135 de durabilidade."
+  ],
+  "limitations": [
+    "Só existe para quem tem o amiibo de Zelda de The Wind Waker; a chance de sair no baú é aleatória.",
+    "Metálico: perigoso em tempestades e contra ataques elétricos."
+  ],
+  "related": [
+    { "id": "botw_shield_hylian_shield", "relation": "Único escudo mais durável" },
+    { "id": "botw_shield_daybreaker", "relation": "Escudo único com Defesa e durabilidade menores" },
+    { "id": "botw_armorset_hero_of_winds_set", "relation": "Equipamento do mesmo herói, do amiibo de Toon Link" },
+    { "id": "botw_weapon_sea_breeze_boomerang", "relation": "Arma do mesmo herói, do amiibo de Toon Link" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para obtê-lo" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

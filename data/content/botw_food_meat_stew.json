@@ -1,0 +1,112 @@
+{
+  "id": "botw_food_meat_stew",
+  "summary": "Ensopado de Carne de terceira ou Coxa com Trigo de Tabantha, Manteiga de cabra e Leite fresco, prato tradicional que \"deixa barrigas satisfeitas em toda Hyrule\". Um espaço livre para efeito.",
+  "description": "O Ensopado de carne leva Carne de terceira ou Coxa, Trigo de Tabantha, Manteiga de cabra e Leite fresco. A descrição do jogo diz que a carne farta deste prato tradicional deixa barrigas satisfeitas em toda Hyrule. Cura alguns corações.\n\nCom quatro ingredientes obrigatórios e nenhum com efeito, o quinto espaço decide a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nÉ o primeiro degrau da linha de ensopados: Carne de segunda ou Sobrecoxa geram o Ensopado de carne de segunda, e Carne de primeira ou Ave inteira, o Ensopado de carne de primeira. Repare que aqui carne e ave andam juntas em cada nível (terceira com Coxa, segunda com Sobrecoxa, primeira com Ave inteira), ao contrário dos curries, que têm linhas separadas para aves.",
+  "locations": [
+    "Carne de terceira: deixada por Javalis da mata, Bodes da montanha e Raposas do prado; vendida pelos mercadores Cambo e Mezer.",
+    "Coxa: deixada por Pombos silvestres, Corvos da montanha, Patos de peito verde, Garças azuladas, Garças rosadas e Gaivotas; vendida pelo mercador Mezer.",
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Carne de terceira ou Coxa + Trigo de Tabantha + Manteiga de cabra + Leite fresco."
+  ],
+  "uses": [
+    "Cura com um espaço livre para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O quinto ingrediente define o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Carne e ave no mesmo nível",
+      "text": "Nos ensopados, cada nível aceita uma carne e uma ave: Carne de terceira ou Coxa aqui, Carne de segunda ou Sobrecoxa no de segunda, Carne de primeira ou Ave inteira no de primeira.",
+      "sources": [
+        "zw",
+        "zw:Raw Bird Drumstick",
+        "zw:Raw Bird Thigh",
+        "zw:Raw Whole Bird"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_bird_drumstick",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_prime_meat_stew",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_food_gourmet_meat_stew",
+      "relation": "Versão com Carne de primeira ou Ave inteira"
+    },
+    {
+      "id": "botw_food_pumpkin_stew",
+      "relation": "Ensopado com Abóbora robusta na mesma base"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

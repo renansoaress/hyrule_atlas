@@ -1,0 +1,131 @@
+{
+  "id": "botw_creature_cucco",
+  "summary": "A galinha de Hyrule, criada pelos ovos em vilas e estábulos. Segurada no alto, permite planar curtas distâncias; atacada quatro vezes, chama uma revoada vingativa que persegue Link — ou o monstro que a agrediu.",
+  "description": "Os Cuccos são aves que vivem em áreas povoadas, como vilas e estábulos, ciscando o chão à procura de insetos; o compendium cita Necluda Ocidental e Necluda Oriental. São criados principalmente pelos ovos, mas algumas pessoas os mantêm como bichos de estimação — Cado, em Kakariko, escolheu os seus Cuccos em vez da esposa.\n\nLink pode pegar um Cucco e, ao saltar de um lugar alto segurando-o, planar por distâncias curtas; voos longos consomem o Medidor de vigor. Golpeado com armas ou flechas, o Cucco cacareja, tenta fugir e às vezes deixa cair um Ovo. Na quarta agressão, porém, uma cena mostra o Cucco convocando o seu \"esquadrão da vingança\", e uma revoada de Cuccos passa a atacar Link. O mesmo vale para monstros: se um inimigo atacar um Cucco uma única vez, a revoada parte para cima dele. O ataque termina se Link descansar numa fogueira ou panela, ou se entrar numa construção.",
+  "locations": [
+    "Vilas e estábulos de Hyrule; o compendium cita Necluda Ocidental e Necluda Oriental.",
+    "Vila Kakariko, onde Cado cria dez Cuccos (missão \"Flown the Coop\")."
+  ],
+  "obtaining": [
+    "Não é obtido como item: Link pode apenas pegá-lo e carregá-lo nas mãos."
+  ],
+  "uses": [
+    "Planar curtas distâncias segurando-o ao saltar de um ponto alto.",
+    "Fonte ocasional de Ovo quando golpeado.",
+    "Missão secundária \"Flown the Coop\": devolver a Cado os dez Cuccos que fugiram rende uma rupia roxa.",
+    "Atrair monstros para atacarem um Cucco e deixar que a revoada os ataque."
+  ],
+  "effects": [
+    "Segurado em queda, faz Link planar como um pequeno planador."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Passeia tranquilamente e cisca o chão; pode ser pego e carregado.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "planar",
+      "status": "confirmado",
+      "result": "Saltando de um lugar alto com o Cucco nas mãos, Link plana por curtas distâncias. Voos longos esgotam o Medidor de vigor.",
+      "conditions": ["Segurar o Cucco e saltar de uma altura."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cado"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "O Cucco cacareja, tenta fugir e às vezes deixa cair um Ovo. Na quarta agressão, convoca uma revoada de Cuccos que ataca Link.",
+      "side_effects": ["Durante a revoada, o Cucco que a chamou fica parado repetindo a animação até o ataque terminar."],
+      "applications": ["Descansar numa fogueira ou panela, ou entrar numa construção, encerra o ataque."],
+      "produces": ["botw_material_bird_egg"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas têm o mesmo efeito dos golpes: o Cucco foge, pode deixar cair um Ovo e, após quatro acertos, chama a revoada.",
+      "produces": ["botw_material_bird_egg"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Se um monstro atacar um Cucco uma única vez, a revoada de Cuccos ataca o monstro.",
+      "applications": ["Enganar inimigos para que ataquem um Cucco e deixá-los à mercê do bando."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Descansar numa fogueira ou panela enquanto a revoada ataca encerra o ataque.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria (mas pode ser carregada para planar)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O esquadrão da vingança",
+      "text": "Na quarta agressão, uma cena mostra o Cucco pulando e soltando penas enquanto chama reforços; depois, uma revoada de Cuccos ataca Link. Para escapar, descanse numa fogueira ou panela, ou entre numa construção.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Revoada contra monstros",
+      "text": "Basta um monstro atacar um Cucco uma vez para que a revoada se volte contra ele — uma forma curiosa de usar o \"esquadrão\" a favor de Link.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Os Cuccos de Cado",
+      "text": "Cado, guarda de Impa em Kakariko, escolheu os Cuccos quando a esposa o fez decidir entre ela e as aves. Ao meio-dia, descobre que quase todos fugiram e inicia \"Flown the Coop\"; com os dez de volta, dá uma rupia roxa a Link e diz que voar com um Cucco é a maior alegria da vida dele.",
+      "sources": ["zw:Cado"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Galinha ou Cucco?",
+      "text": "Alguns personagens de BOTW mostram saber o que são galinhas. Segundo o Zelda Wiki, a única diferença entre galinhas e Cuccos na série é que os Cuccos permitem planar quando erguidos acima da cabeça.",
+      "sources": ["zw"]
+    }
+  ],
+  "limitations": [
+    "Planar com ele gasta vigor em voos longos.",
+    "Atacá-lo repetidamente provoca a revoada."
+  ],
+  "related": [
+    { "id": "botw_material_bird_egg", "relation": "Pode cair quando o Cucco é golpeado" },
+    { "id": "botw_keyitem_paraglider", "relation": "O Cucco funciona como um planador improvisado" },
+    { "id": "botw_object_campfire", "relation": "Descansar nela encerra a revoada" },
+    { "id": "botw_object_cooking_pot", "relation": "Descansar nela encerra a revoada" },
+    { "id": "botw_mechanic_stamina", "relation": "Planar longas distâncias com o Cucco gasta vigor" }
+  ],
+  "capabilities": ["habilidade_especial", "item_de_missao"],
+  "verification_status": "verificado"
+}

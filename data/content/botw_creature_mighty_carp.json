@@ -1,0 +1,139 @@
+{
+  "id": "botw_creature_mighty_carp",
+  "summary": "Carpa de água doce do Altiplano de Akkala e da Grande Nascente de Lanayru, com um composto no fígado que estimula os músculos. Cozida, dá Ataque aumentado; crua, recupera 1 coração.",
+  "description": "A Carpa valente vive em água doce junto das carpas comuns — o texto do jogo brinca que ela convive com seus parentes \"menos valentes\". É encontrada principalmente no Altiplano de Akkala e na Grande Nascente de Lanayru. Segundo o jogo, um composto no fígado dela promove o crescimento muscular, e por isso os pratos preparados com ela aumentam temporariamente o poder de ataque (efeito Ataque aumentado).\n\nCrua, recupera 1 coração. Na panela, entra nas receitas de peixe e de fruto do mar, e também é um dos ingredientes valentes que podem ser somados a um Elixir valente para que ele cure. Como as outras carpas, vira Carpa assada no fogo e Carpa congelada no gelo — itens comuns a todas as carpas, sem o efeito de ataque.",
+  "locations": [
+    "Águas doces do Altiplano de Akkala e da Grande Nascente de Lanayru."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ela, viva ou morta."
+  ],
+  "uses": [
+    "Pratos de Ataque aumentado: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Frutos do mar à meunière e as demais receitas de peixe ou fruto do mar.",
+    "Ingrediente valente de um Elixir valente, que passa a recuperar corações.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Crua: recupera 1 coração.",
+    "Na panela: Ataque aumentado temporário."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhada à mão enquanto Link nada, viva ou morta.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma carpa viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Carpa valente dão Ataque aumentado temporário, que vale para todas as armas.",
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somada a um Elixir valente (Escaravelho brigão + parte de monstro), faz o elixir também recuperar corações.",
+      "produces": ["botw_elixir_mighty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Mighty Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 10 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Carpa assada, sem o efeito de ataque.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada perto do fogo, assa e vira Carpa assada.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima abrasador, vira Carpa assada.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriada com gelo, vira Carpa congelada.",
+      "produces": ["botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gélido ou água gelada, vira Carpa congelada.",
+      "produces": ["botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre esta carpa."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Variedade vale mais que quantidade",
+      "text": "Repetir a mesma carpa no prato só alonga o efeito; misturar ingredientes diferentes com o mesmo efeito (como Bananas valentes, Ferromelo, Protechofra ou Caranguejo espadachim) prolonga e também pode subir o Ataque aumentado de nível baixo para médio ou alto.",
+      "sources": ["zw:Food", "zw:Mighty Elixir"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Assada, perde o cheiro",
+      "text": "Segundo a descrição da Carpa assada, assar a carpa de água doce ajuda a disfarçar parte do mau cheiro do peixe, deixando a carne grossa mais fácil de comer.",
+      "sources": ["zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de uma luta difícil, um prato com várias Carpas valentes e outros ingredientes valentes rende Ataque aumentado de nível mais alto."
+  ],
+  "limitations": [
+    "Assada ou congelada, perde o Ataque aumentado.",
+    "Misturada a ingredientes com outro efeito, o prato fica só com o efeito predominante."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_carp", "relation": "Resultado de expô-la ao fogo" },
+    { "id": "botw_food_frozen_carp", "relation": "Resultado de congelá-la" },
+    { "id": "botw_elixir_mighty_elixir", "relation": "Pode ser somada como ingrediente valente" },
+    { "id": "botw_creature_mighty_porgy", "relation": "Peixe de água salgada com o mesmo efeito" },
+    { "id": "botw_creature_armored_carp", "relation": "Outra carpa, de efeito defensivo" },
+    { "id": "botw_creature_bladed_rhino_beetle", "relation": "Bicho base do Elixir valente" }
+  ],
+  "capabilities": ["cura", "ataque", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

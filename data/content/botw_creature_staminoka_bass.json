@@ -1,0 +1,143 @@
+{
+  "id": "botw_creature_staminoka_bass",
+  "summary": "Robalo hyruliano que cresceu por nunca ter sido pego. Cru recupera 1 coração; na panela, a longevidade dele vira Recuperação de vigor. Assado ou congelado, perde esse efeito.",
+  "description": "O Robalo enérgico é, segundo o próprio jogo, um Robalo hyruliano que chegou ao maior tamanho possível por nunca ter sido apanhado — \"até agora\", brinca a descrição. Vive nas mesmas águas que o robalo comum (o compendium cita a Pradaria de Hyrule e Necluda Ocidental) e também pode ser comprado do mercador ambulante Bugut. Foge quando Link se aproxima, mas pode ser apanhado à mão nadando, vivo ou morto.\n\nCru, recupera só 1 coração; o valor dele está na panela: a vida longa se traduz em pratos que restauram bastante vigor (efeito Recuperação de vigor). Entra em todas as receitas de \"qualquer peixe\" e \"qualquer fruto do mar\". Também é um dos ingredientes energizantes que podem ir num Elixir energizante para que ele recupere corações além do vigor.\n\nExposto ao fogo vira Robalo assado e, congelado, Robalo congelado — os mesmos produtos do Robalo hyruliano, e sem o efeito de vigor.",
+  "locations": [
+    "Águas de Hyrule em geral; o compendium cita a Pradaria de Hyrule e Necluda Ocidental como locais comuns."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ele, vivo ou morto.",
+    "Comprar do mercador ambulante Bugut por 72 rupias (1 unidade em estoque, que se renova)."
+  ],
+  "uses": [
+    "Pratos de Recuperação de vigor: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Torta de peixe e as demais receitas de peixe ou fruto do mar.",
+    "Ingrediente energizante de um Elixir energizante (com um bicho energizante e uma parte de monstro), para que o elixir também cure.",
+    "Venda: 18 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: Recuperação de vigor (restaura parte do Medidor de vigor na hora)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhado à mão enquanto Link nada, vivo ou morto.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um Robalo enérgico vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Dá aos pratos o efeito Recuperação de vigor, por causa da vida longa do peixe.",
+      "applications": ["Recuperar vigor durante escaladas e nado longos."],
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_fish_pie", "botw_food_glazed_seafood"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Adicionado a um Elixir energizante (bicho energizante + parte de monstro), faz o elixir também recuperar corações.",
+      "conditions": ["Pelo menos um Gafanhoto agitado ou um Escaravelho vibrante e uma parte de monstro na mesma receita."],
+      "produces": ["botw_elixir_energizing_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Energizing Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração; o texto do jogo associa o efeito de vigor ao prato cozido.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 18 rupias; Bugut o vende por 72.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimado pelo fogo, vira Robalo assado, que recupera mais corações mas não tem efeitos.",
+      "side_effects": ["O efeito de vigor se perde: assados nunca recebem efeitos."],
+      "produces": ["botw_food_roasted_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, assa e vira Robalo assado.",
+      "produces": ["botw_food_roasted_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Robalo assado.",
+      "produces": ["botw_food_roasted_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Exposto ao gelo (Flecha congelante ou armas de gelo), vira Robalo congelado.",
+      "produces": ["botw_food_frozen_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Robalo congelado.",
+      "produces": ["botw_food_frozen_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este peixe."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um veterano das águas",
+      "text": "O texto do jogo descreve o Robalo enérgico como um Robalo hyruliano que se tornou o maior peixe por nunca ter sido pego \"(até agora)\"; o Zelda Wiki confirma que robalos comuns que escapam amadurecem nesta forma.",
+      "sources": ["comp", "zw:Hyrule Bass"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assar desperdiça o peixe",
+      "text": "Assado ou congelado, ele vira exatamente os mesmos itens do Robalo hyruliano (Robalo assado e Robalo congelado). O assado só recupera mais corações e não guarda o efeito de vigor, então só vale a pena levá-lo à panela.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Num Elixir energizante, trocar parte das partes de monstro por Robalos enérgicos faz o elixir curar além de restaurar vigor."
+  ],
+  "limitations": [
+    "O efeito de vigor descrito pelo jogo é o do prato cozido (\"a cooked dish\"); assado ou congelado, não o mantém.",
+    "Comprado de Bugut custa quatro vezes o valor de venda."
+  ],
+  "related": [
+    { "id": "botw_creature_hyrule_bass", "relation": "Robalo comum que amadurece nesta forma" },
+    { "id": "botw_food_roasted_bass", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_bass", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_elixir_energizing_elixir", "relation": "Pode entrar como ingrediente energizante" },
+    { "id": "botw_creature_bright_eyed_crab", "relation": "Outro fruto do mar de Recuperação de vigor" },
+    { "id": "botw_mechanic_stamina", "relation": "Efeito: recupera vigor" }
+  ],
+  "capabilities": ["cura", "vigor", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

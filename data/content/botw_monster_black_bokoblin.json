@@ -1,0 +1,159 @@
+{
+  "id": "botw_monster_black_bokoblin",
+  "summary": "Koboblin de terceiro nível, com 240 pontos de vida e armas Kobo dracônicas. Quando perde a arma, vai buscar outra; nas torres, além de tocar a corneta, atira flechas nos intrusos.",
+  "description": "O compendium descreve o Koboblin preto como um dos tipos mais perigosos da espécie: extremamente resistente (240 pontos de vida) e muitas vezes armado com equipamento avançado. O equipamento típico é a linha Kobo dracônica — Clava Kobo dracônica e Taco Kobo dracônico, reforçados com ossos fossilizados —, e o Zelda Wiki registra que Koboblins de níveis mais altos também usam armas hylianas, como a Espada larga do soldado, a Espada do cavaleiro e a Espada real.\n\nCompartilha o padrão de ataque dos outros Koboblins: golpes amplos e pancadas de cima para baixo com a arma. Se a arma for perdida ou roubada, procura qualquer outra disponível por perto e passa a usá-la. Em alguns acampamentos fica no alto das torres de vigia, de onde toca a corneta para alertar os demais e, equipado com arco, dispara flechas contra quem se aproxima. Também aparece em estradas atacando viajantes e sai para caçar a cavalo.\n\nSurge à medida que a contagem oculta de monstros derrotados cresce; segundo o Zelda Wiki, por volta da libertação da primeira Fera Divina os Koboblins pretos começam a aparecer.",
+  "locations": [
+    "Pradaria de Hyrule e Montanhas Gerudo, segundo o compendium.",
+    "Acampamentos de monstros (inclusive no alto de torres de vigia) e estradas, onde ataca viajantes.",
+    "Caçando a cavalo."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Koboblin, Presa de Koboblin e Vísceras de Koboblin.",
+    "Costuma carregar armas Kobo dracônicas, que ficam disponíveis ao derrotá-lo.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte confiável de armas Kobo dracônicas para a fase intermediária do jogo.",
+    "Fonte de Vísceras de Koboblin.",
+    "Registro no compendium (entrada nº 105)."
+  ],
+  "effects": [
+    "Golpes pesados com armas dracônicas; de longe, flechas disparadas das torres."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Aguenta muito castigo (240 pontos de vida) e ataca com golpes amplos e pancadas. Se perder a arma, vai atrás de outra arma disponível nas redondezas.",
+      "applications": ["Recolher as armas soltas do acampamento antes da luta deixa o Koboblin preto sem reposição."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "Koboblins dormem à noite; um Ataque-surpresa multiplica por 8 o dano da arma e é a forma mais rápida de reduzir a vida alta do Koboblin preto.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Bokoblin", "zw:Sneakstrike"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça causa dano dobrado; um vigia numa torre de observação morre com uma flecha na cabeça — útil contra o Koboblin preto arqueiro antes que ele dispare ou toque a corneta.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit", "zw:Arrow", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e sofre dano. As armas Kobo dracônicas têm base de madeira e queimam.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Bokoblin Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que estilhaça o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o fazem largar a arma dracônica — que Link pode então pegar.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Como todos os Koboblins, não nada e se afoga em água funda.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas o atingem; ele também pode pegar Barris explosivos para arremessar.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow", "zw:Bokoblin"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano normalmente; inimigos podem chutar a bomba ou pegá-la e arremessá-la de volta.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Paralisável apenas com Estátis+, por pouco tempo; durante o efeito fica imune a gelo, fogo e choque.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado pela runa, mas sofre dano de objetos metálicos lançados com Magnétis. Armas Kobo dracônicas não são magnéticas; já espadas hylianas que ele carregue são de metal.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Tips and Tricks", "zw:Bokoblin Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Ocupa torres de vigia, de onde toca corneta e atira flechas; no chão, arremessa rochas, Barris e Barris explosivos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Bokoblin"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Koboblin",
+      "status": "confirmado",
+      "result": "A Máscara de Koboblin ou a de Majora fazem os Koboblins, inclusive os pretos, não atacarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Reposição de armas",
+      "text": "O Zelda Wiki destaca que, se a arma do Koboblin preto for perdida ou roubada, ele procura outra disponível por perto. Combinado à dica do jogo de que monstros deixam armas largadas no acampamento, isso torna valioso recolher essas armas antes de lutar.",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quando ele começa a aparecer",
+      "text": "Koboblins pretos fazem parte da progressão oculta de inimigos: conforme Link derrota monstros, os acampamentos passam a ter variantes mais fortes, e os pretos começam a surgir por volta da libertação da primeira Fera Divina.",
+      "sources": ["zw:Enemy"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue e Modo Mestre",
+      "text": "Revive em toda Lua de sangue. No Modo Mestre, sobe um nível como os demais inimigos e regenera vida gradualmente até um limite.",
+      "sources": ["zw:Blood Moon", "zw:Master Mode"]
+    }
+  ],
+  "advanced_uses": [
+    "Chocá-lo com uma arma elétrica ou Flecha eletrizante para tomar uma arma Kobo dracônica sem precisar derrotá-lo.",
+    "Eliminar os Koboblins pretos das torres com flechas na cabeça antes de entrar no acampamento."
+  ],
+  "limitations": [
+    "Muito resistente para armas fracas; lutas diretas gastam bastante durabilidade.",
+    "Flechas ancestrais o desintegram junto com a arma, sem materiais."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_bokoblin", "relation": "Variante anterior" },
+    { "id": "botw_monster_silver_bokoblin", "relation": "Variante seguinte" },
+    { "id": "botw_monster_bokoblin", "relation": "Forma básica da espécie" },
+    { "id": "botw_weapon_dragonbone_boko_club", "relation": "Arma típica" },
+    { "id": "botw_weapon_dragonbone_boko_bat", "relation": "Arma típica" },
+    { "id": "botw_material_bokoblin_guts", "relation": "Parte de terceiro nível" },
+    { "id": "botw_material_bokoblin_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_bokoblin_fang", "relation": "Parte deixada ao ser derrotado" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

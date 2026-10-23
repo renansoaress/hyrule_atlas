@@ -1,0 +1,76 @@
+{
+  "id": "botw_armorset_barbarian_set",
+  "summary": "Armadura de uma antiga tribo guerreira de Faron, escondida nos santuários dos três labirintos de Lomei. Cada peça dá Ataque aumentado; em ★★ o conjunto corta pela metade o vigor dos ataques carregados.",
+  "description": "O Conjunto bárbaro reúne o Elmo bárbaro, a Armadura bárbara e as Faixas de perna bárbaras. Pelas descrições dos itens, foi usado por uma antiga tribo belicosa da região de Faron. Cada peça está num baú dentro de um Santuário diferente, no fim dos três labirintos de Lomei: Tu Ka'loh (Ilha do Labirinto Lomei), Dila Maag (Labirinto Lomei Sul) e Qaza Tokki (Labirinto Lomei Norte).\n\nCada peça concede um nível de Ataque aumentado, e o efeito se acumula: com as três peças, Link chega ao nível 3, o máximo, que aumenta o ataque em 50%. Com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ativa o bônus de economia de vigor no ataque carregado (Charge Atk. Stamina Up), que reduz em 50% o vigor gasto nesses golpes.\n\nÉ o principal conjunto ofensivo do jogo. As melhorias exigem partes de Centaleão e, no último nível, lascas dos chifres dos dragões. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Tu Ka'loh, na Ilha do Labirinto Lomei (Lomei Labyrinth Island).",
+    "Santuário Dila Maag, no Labirinto Lomei Sul (South Lomei Labyrinth).",
+    "Santuário Qaza Tokki, no Labirinto Lomei Norte (North Lomei Labyrinth).",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Elmo bárbaro: baú do Santuário Tu Ka'loh, na Ilha do Labirinto Lomei.",
+    "Armadura bárbara: baú do Santuário Dila Maag, no Labirinto Lomei Sul.",
+    "Faixas de perna bárbaras: baú do Santuário Qaza Tokki, no Labirinto Lomei Norte.",
+    "Depois de obter uma peça, Granté passa a vendê-la em Tarrey Town por 4.000 rupias."
+  ],
+  "uses": [
+    "Aumentar o dano de qualquer arma em até 50% com as três peças.",
+    "Economizar vigor em golpes carregados (giratórios e de armas pesadas) quando as peças estão em ★★."
+  ],
+  "effects": [
+    "Cada peça: Ataque aumentado (um nível por peça; o efeito chega ao nível 3, +50%).",
+    "Bônus de conjunto (três peças em ★★): ataques carregados consomem 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças juntas somam Ataque aumentado de nível 3 (+50% de ataque); em ★★ ativam também a redução de 50% no vigor dos ataques carregados.",
+      "conditions": [
+        "Elmo, armadura e faixas bárbaras equipados ao mesmo tempo.",
+        "Para o bônus de vigor: todas as peças com ★★."
+      ],
+      "applications": [
+        "Usar golpes giratórios com montantes por mais tempo sem esgotar o vigor."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Ataque aumentado já no limite",
+      "text": "O efeito Ataque aumentado tem três níveis (+20%, +30% e +50%) e para no nível 3. Como cada peça bárbara dá um nível, o conjunto completo já atinge o teto: comer pratos de Ataque aumentado com as três peças não aumenta mais o efeito.",
+      "sources": ["zw:Added Effect", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma tribo guerreira de Faron",
+      "text": "As descrições dos itens associam o conjunto a uma antiga tribo guerreira da região de Faron. Na última melhoria, cada peça pede a lasca de chifre de um dragão diferente: Dinraal para o elmo, Farosh para a armadura e Naydra para as faixas de perna.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar o conjunto em ★★ com armas de duas mãos: o ataque carregado giratório gasta metade do vigor e cada golpe recebe +50% de ataque."
+  ],
+  "limitations": [
+    "Os três santuários ficam no fim de labirintos grandes em regiões distantes entre si.",
+    "As melhorias exigem Chifres, Cascos e Vísceras de Centaleão, além de lascas de chifre de Farosh, Dinraal e Naydra no último nível.",
+    "Somar comida de Ataque aumentado não ultrapassa o nível 3 do efeito."
+  ],
+  "related": [
+    { "id": "botw_armor_barbarian_helm", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_barbarian_armor", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_barbarian_leg_wraps", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_fierce_deity_set", "relation": "Outro conjunto com Ataque aumentado e o mesmo bônus de vigor" },
+    { "id": "botw_armorset_royal_guard_set", "relation": "Também reduz o vigor dos ataques carregados" },
+    { "id": "botw_material_lynel_horn", "relation": "Material das melhorias" },
+    { "id": "botw_material_shard_of_faroshs_horn", "relation": "Material da última melhoria da Armadura bárbara" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["ataque"],
+  "verification_status": "verificado"
+}

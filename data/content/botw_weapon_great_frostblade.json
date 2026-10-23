@@ -1,0 +1,188 @@
+{
+  "id": "botw_weapon_great_frostblade",
+  "summary": "Grã-espada mágica forjada com minério do permafrost de Hebra (ataque 30). Brilhando em azul, congela os inimigos; mata inimigos de fogo com um golpe e dá Resistência ao calor.",
+  "description": "A Grã-Espada álgida faz parte do Equipamento mágico. O jogo conta que ela foi forjada fundindo minério encontrado no permafrost das Cordilheiras de Hebra e que, ao atacar quando a lâmina brilha em azul, ela expele ar congelante. Por isso é comum em Hebra, e também na Pradaria de Hyrule, especialmente em volta do Castelo de Hyrule.\n\nCom a lâmina carregada, os golpes congelam os inimigos atingidos, e inimigos de fogo, como o Lagalfos ígneo e o Feitiçano ígneo, caem com um único golpe. Equipada, ela concede um nível de Resistência ao calor. A energia gasta em cada golpe elemental volta sozinha com o tempo. Como todas as grã-espadas elementais, é feita de metal: conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis; não queima.",
+  "locations": [
+    "Cordilheiras de Hebra e Pradaria de Hyrule, especialmente nos arredores do Castelo de Hyrule."
+  ],
+  "obtaining": [
+    "Recolher nessas regiões; armas deixadas no mundo voltam a aparecer depois da Lua de sangue.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Congelar inimigos para encadear golpes enquanto eles estão imobilizados.",
+    "Derrotar o Lagalfos ígneo e o Feitiçano ígneo com um golpe.",
+    "Proteção contra o calor: equipada, dá um nível de Resistência ao calor."
+  ],
+  "effects": [
+    "Golpes com a lâmina brilhando expelem ar congelante e congelam o alvo.",
+    "Um nível de Resistência ao calor enquanto equipada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos, sem escudo. Quando a lâmina brilha em azul, o golpe solta ar congelante que congela o inimigo atingido; cada golpe elemental gasta energia, recuperada depois de uma pausa nos ataques. O ataque carregado é o giro que consome vigor.",
+      "conditions": [
+        "Lâmina brilhando (com energia)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançada contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada, concede um nível de Resistência ao calor. Isso não substitui a Proteção contra chamas exigida no clima escaldante de Eldin.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Puxá-la de volta com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Congela os inimigos atingidos com a lâmina carregada; inimigos de fogo, como o Lagalfos ígneo e o Feitiçano ígneo, são derrotados com um só golpe.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quantos golpes congelantes por carga",
+      "text": "Pelos parâmetros extraídos, a lâmina guarda 2.000 unidades de energia e cada golpe elemental consome 500 — quatro golpes congelantes seguidos com a carga cheia. A recuperação começa 60 quadros após o último ataque, a 20 unidades por quadro. Trocar de arma recarrega a energia imediatamente.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Weapon Parameters"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +11, Durabilidade aumentada de +5 a +15 ou Acerto crítico; no nível dourado (amarelo): Ataque de +12 a +18, Durabilidade de +16 a +30 ou Lançamento longo (×1,5 a ×2).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Congele o inimigo com um golpe carregado de energia e aproveite enquanto ele está imobilizado; se a energia acabar, trocar de arma e voltar recarrega a lâmina na hora."
+  ],
+  "limitations": [
+    "Sem energia, os golpes não congelam até a recarga.",
+    "A Resistência ao calor não protege das chamas de Eldin.",
+    "Metálica: atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Versão de uma mão"
+    },
+    {
+      "id": "botw_weapon_great_flameblade",
+      "relation": "Grã-espada de fogo"
+    },
+    {
+      "id": "botw_weapon_great_thunderblade",
+      "relation": "Grã-espada elétrica"
+    },
+    {
+      "id": "botw_monster_fire_breath_lizalfos",
+      "relation": "Derrotado com um golpe"
+    },
+    {
+      "id": "botw_monster_fire_wizzrobe",
+      "relation": "Derrotado com um golpe"
+    },
+    {
+      "id": "botw_mechanic_ice",
+      "relation": "Congela os inimigos atingidos"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "congela_inimigos",
+    "protege_calor",
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

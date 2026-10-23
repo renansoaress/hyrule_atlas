@@ -1,0 +1,148 @@
+{
+  "id": "botw_armorset_zora_set",
+  "summary": "Conjunto Zora ligado ao Domínio Zora: a armadura feita por Mipha para Link permite subir cachoeiras e o elmo dá golpe giratório na água. Cada peça acelera o nado; em ★★ os impulsos gastam 75% menos vigor.",
+  "description": "O Conjunto Zora é formado pelo Elmo Zora, pela Armadura Zora e pelas Grevas Zora, todas ligadas a missões no Domínio Zora ou perto dele. A Armadura Zora é entregue pelo Rei Dorephan durante a missão principal \"Divine Beast Vah Ruta\": segundo a tradição, cada princesa Zora confecciona essa armadura para o futuro marido, e a de Link foi feita à mão por Mipha. O Elmo Zora está num baú submerso no Lago Toto, indicado pela Missão secundária \"Zora Stone Monuments\", e as Grevas Zora são a recompensa de Laflat por uma foto de Centaleão na Missão secundária \"Lynel Safari\".\n\nCada peça dá um nível de Natação mais rápida (+30%, +60% e +100% nos níveis 1 a 3), e duas peças têm habilidades próprias: a Armadura Zora permite subir cachoeiras nadando a partir da base, e o Elmo Zora, feito de escamas de dragão segundo o jogo, permite um golpe giratório na água. Com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto reduz em 75% o vigor gasto em impulsos e golpes giratórios a nado (Swim Dash Stamina Up).\n\nPor causa da história por trás dela, a Armadura Zora não pode ser vendida. As melhorias usam partes de Lagalfos, Robalos e, no último nível, Opalas. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Domínio Zora: o Rei Dorephan entrega a Armadura Zora.",
+    "Lago Toto: baú submerso com o Elmo Zora.",
+    "Laflat entrega as Grevas Zora em troca de uma foto de Centaleão."
+  ],
+  "obtaining": [
+    "Armadura Zora: presente do Rei Dorephan em \"Divine Beast Vah Ruta\" (se a algibeira estiver cheia, ele espera Link abrir espaço).",
+    "Elmo Zora: baú submerso no Lago Toto, ligado a \"Zora Stone Monuments\".",
+    "Grevas Zora: mostrar a Laflat uma foto de Centaleão em \"Lynel Safari\"."
+  ],
+  "uses": [
+    "Subir cachoeiras nadando (Armadura Zora).",
+    "Nadar muito mais rápido e atacar inimigos na água com o golpe giratório (Elmo Zora).",
+    "Em ★★, dar impulsos a nado gastando bem menos vigor."
+  ],
+  "effects": [
+    "Cada peça: Natação mais rápida (um nível por peça; as três chegam ao nível 3, +100%).",
+    "Armadura Zora: subir cachoeiras.",
+    "Elmo Zora: golpe giratório na água (5 de dano, pode refletir alguns projéteis).",
+    "Bônus de conjunto (três peças em ★★): impulso e golpe giratório a nado com 75% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Natação mais rápida de nível 3; em ★★ o conjunto reduz em 75% o vigor dos impulsos e golpes giratórios a nado.",
+      "conditions": [
+        "Elmo, armadura e grevas Zora vestidos juntos; para o bônus, todos com ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Com a Armadura Zora, Link sobe cachoeiras a partir da base; ao chegar ao topo, é lançado acima dela e abre o Planador automaticamente. Com o Elmo Zora, pode dar um golpe giratório nadando.",
+      "side_effects": [
+        "Durante a subida da cachoeira, Link não consegue se mover para os lados nem interromper a subida, a menos que tire a armadura."
+      ],
+      "applications": [
+        "Usar cachoeiras como atalhos verticais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um presente de casamento",
+      "text": "A descrição diz que a armadura é feita por cada geração de princesas Zora para o futuro marido. Muzu, contrariado, diz que Mipha a fez com as próprias mãos e que ela é importante demais para ser confiada a um \"hyliano suspeito\"; Sidon revela que Mipha tinha sentimentos por Link.",
+      "sources": [
+        "zw:Zora Armor"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Golpe giratório que reflete projéteis",
+      "text": "O golpe giratório do Elmo Zora causa 5 de dano e pode refletir alguns projéteis inimigos enquanto Link nada.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Uma armadura que não se vende",
+      "text": "Ao contrário da maioria das armaduras, a Armadura Zora não pode ser vendida, por causa da história que carrega.",
+      "sources": [
+        "zw:Zora Armor"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao chegar ao topo de uma cachoeira, o Planador abre sozinho: aproveite para planar até pontos distantes sem gastar vigor de escalada.",
+    "Em ★★, o golpe giratório do elmo fica barato em vigor, o que ajuda a lutar contra inimigos enquanto Link nada."
+  ],
+  "limitations": [
+    "Subir cachoeiras exige a Armadura Zora; o elmo e as grevas sozinhos não permitem.",
+    "A Armadura Zora não pode ser vendida.",
+    "O bônus de vigor exige as três peças em ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Peça de cabeça do conjunto (golpe giratório na água)"
+    },
+    {
+      "id": "botw_armor_zora_armor",
+      "relation": "Peça de torso do conjunto (subir cachoeiras)"
+    },
+    {
+      "id": "botw_armor_zora_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armorset_salvager_armor_set",
+      "relation": "Mesmo bônus de nado, sem melhorias"
+    },
+    {
+      "id": "botw_armorset_royal_guard_set",
+      "relation": "Tem o mesmo bônus de impulso a nado, oculto"
+    },
+    {
+      "id": "botw_armor_vah_ruta_divine_helm",
+      "relation": "Também dá Natação mais rápida"
+    },
+    {
+      "id": "botw_keyitem_paraglider",
+      "relation": "Abre sozinho no topo das cachoeiras"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "A foto de um Centaleão rende as grevas"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "O conjunto acelera o nado"
+    },
+    {
+      "id": "botw_mechanic_great_fairy_fountain",
+      "relation": "Onde as peças são melhoradas"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "As peças podem ser tingidas"
+    }
+  ],
+  "capabilities": [
+    "velocidade",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

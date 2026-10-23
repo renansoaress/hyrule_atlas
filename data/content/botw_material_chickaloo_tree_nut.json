@@ -1,0 +1,146 @@
+{
+  "id": "botw_material_chickaloo_tree_nut",
+  "summary": "Noz apreciada por passarinhos: cai de pardais abatidos, aparece em árvores e no chão das florestas e até nos canais do Domínio Zora. Crua cura 1/4 de coração; alternativa à Bolota no Bolo de nozes.",
+  "description": "A Noz é a semente de árvore que, segundo o jogo, os pássaros pequenos adoram. Link a obtém abatendo qualquer tipo de pardal, vasculhando árvores e o chão das florestas ou nos canais de água do Domínio Zora (Zora's Domain); as árvores grossas demais para serem cortadas costumam ter nozes na copa. Crua, recupera um quarto de coração e tem, nas palavras do jogo, um \"efeito menor\"; também pode ser usada como tempero em outras receitas.\n\nNa culinária, pode substituir a Bolota nas duas receitas de nozes — Bolo de nozes e Nozes salteadas — e, como ela, não conta como fruta. Exposta ao fogo, vira Noz tostada. Na Tinturaria Kochi, entra no corante carmesim.",
+  "locations": [
+    "Árvores e chão das florestas de Hyrule; copas de árvores grossas.",
+    "Canais de água do Domínio Zora."
+  ],
+  "obtaining": [
+    "Recolher em árvores e no chão das florestas.",
+    "Abater pardais de qualquer tipo.",
+    "Os dados estruturados não listam lojas que vendam a noz."
+  ],
+  "uses": [
+    "Alternativa à Bolota no Bolo de nozes (com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra) e nas Nozes salteadas.",
+    "Ingrediente do corante carmesim na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Sem efeito especial; cura um quarto de coração crua."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Tree Nut"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma noz largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Noz tostada, de aroma mais intenso e que cura mais que a crua.",
+      "side_effects": ["As fontes divergem sobre a cura da Noz tostada: a página dela fala em 1 coração; a tabela de comidas assadas, em meio coração."],
+      "produces": ["botw_food_roasted_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Tree Nut", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Noz tostada.",
+      "produces": ["botw_food_roasted_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Tree Nut"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, tosta ao ser largada.",
+      "produces": ["botw_food_roasted_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Tree Nut", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; a lista de Comidas congeladas não inclui nozes.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Embora apareça nos canais do Domínio Zora, as fontes não dizem como a noz se comporta na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a noz não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Serve no lugar da Bolota no Bolo de nozes e nas Nozes salteadas. Não conta como fruta nas receitas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fruit"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera um quarto de coração.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Tempero de passarinho",
+      "text": "A descrição do jogo diz que pássaros pequenos adoram essa noz e que ela pode ser usada como tempero em outras receitas — coerente com o fato de os pardais a deixarem ao serem abatidos.",
+      "sources": ["jogo", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Noz não é fruta",
+      "text": "Na lógica das receitas, a Noz e a Bolota não contam como frutas: não completam pratos de \"qualquer fruta\", como a Compota de frutas.",
+      "sources": ["zw:Fruit"]
+    }
+  ],
+  "advanced_uses": [
+    "Quando faltam bolotas, use nozes para fazer Bolo de nozes ou Nozes salteadas."
+  ],
+  "limitations": [
+    "Cura pouco e não tem efeito especial.",
+    "Não serve para receitas de fruta."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_tree_nut", "relation": "Resultado de expor a noz ao fogo" },
+    { "id": "botw_food_nutcake", "relation": "Exige bolota ou noz" },
+    { "id": "botw_food_sauteed_nuts", "relation": "Exige bolota ou noz" },
+    { "id": "botw_material_acorn", "relation": "Alternativa à noz nas receitas de nozes" },
+    { "id": "botw_creature_common_sparrow", "relation": "Pardais deixam nozes ao serem abatidos" },
+    { "id": "botw_object_tree", "relation": "Árvores grossas guardam nozes na copa" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante carmesim" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "a_verificar"
+}

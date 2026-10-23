@@ -1,0 +1,129 @@
+{
+  "id": "botw_monster_stone_talus_rare",
+  "summary": "Tálus rochoso com Depósito de minério raro no corpo (900 de vida): rende as melhores gemas entre os Tálus rochosos, de Topázio a Diamante. Aparece sobretudo na Pradaria de Hyrule e na Fronteira de Tabantha.",
+  "description": "O Tálus rochoso (raro) troca o minério comum por um Depósito de minério raro — o compendium diz que o depósito contém grande quantidade de minério precioso. Por isso tende a deixar recompensas mais valiosas que os outros Tálus rochosos: Sílex, Âmbar, Opala, Topázio, Rubi, Safira e Diamante.\n\nO comportamento é o de sempre: finge ser uma formação rochosa e só se move quando Link chega perto, ataca com braços pesados, despenca para a frente e lança pedaços do corpo. Só o depósito raro recebe dano; o Zelda Wiki aponta a Marreta de ferro, outras ferramentas de mineração e as Flechas explosivas como especialmente eficazes.\n\nCom 900 de vida, é o mais resistente dos Tálus rochosos. Um dos exemplares fica nos subterrâneos do Castelo de Hyrule.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e na Fronteira de Tabantha.",
+    "Pontos citados pelo Zelda Wiki: oeste do Castelo de Hyrule, oeste do Vatorsa Snowfield, Platô Illumeni, sul da Ponte Kolami, Cratera Gisa, Tabantha Hills e os subterrâneos do Castelo de Hyrule."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Sílex, Âmbar, Opala, Topázio, Rubi, Safira e Diamante, em quantidades variadas.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de gemas valiosas (Safira, Rubi, Topázio e Diamante).",
+    "Conta para a Medalha de honra: Tálus, de Kilton."
+  ],
+  "effects": [
+    "Socos e varridas, queda de corpo inteiro e fragmentos de rocha arremessados."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Disfarçado de formação rochosa, começa a se mover e atacar quando Link se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só o Depósito de minério raro recebe dano; Marreta de ferro e outras ferramentas de mineração são particularmente eficazes.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas no corpo de pedra não ferem; acertar o depósito causa dano e, como nos demais Tálus rochosos, derruba o monstro de cara no chão.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Stone Talus"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem efeito do fogo nesta variação."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Flechas explosivas estão entre as fraquezas citadas para o depósito raro.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Como nos demais Tálus rochosos, uma Bomba remota arranca os braços por um tempo e facilita chegar ao minério.",
+      "side_effects": ["Os braços se regeneram em pouco tempo."],
+      "kind": "mecanica",
+      "sources": ["zw:Stone Talus"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Feito de pedra, não é movido por Magnétis, que só age sobre metal.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na forma inativa se confunde com o relevo rochoso.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Conta para a Medalha de honra: Tálus",
+      "text": "Kilton inclui todos os Tálus rochosos (raros) na contagem necessária para a Medalha de honra: Tálus, disponível depois da primeira vitória contra Ganon, a Calamidade.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um Tálus dentro do castelo",
+      "text": "Entre os locais listados para esta variação estão os subterrâneos do Castelo de Hyrule (Hyrule Castle Underground).",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Priorizar este Tálus quando o objetivo é juntar Safiras, Rubis e Diamantes para melhorias de armadura ou venda."
+  ],
+  "limitations": [
+    "É o Tálus rochoso com mais vida (900); só o depósito raro recebe dano."
+  ],
+  "related": [
+    { "id": "botw_monster_stone_talus", "relation": "Forma comum da espécie" },
+    { "id": "botw_monster_stone_talus_luminous", "relation": "Outra variação de minério" },
+    { "id": "botw_treasure_rare_ore_deposit", "relation": "Ponto fraco que ele carrega" },
+    { "id": "botw_material_diamond", "relation": "Possível recompensa" },
+    { "id": "botw_material_sapphire", "relation": "Possível recompensa" },
+    { "id": "botw_material_ruby", "relation": "Possível recompensa" },
+    { "id": "botw_material_topaz", "relation": "Possível recompensa" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Ferramenta de mineração eficaz contra ele" },
+    { "id": "botw_keyitem_medal_of_honor_talus", "relation": "Prêmio de Kilton" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

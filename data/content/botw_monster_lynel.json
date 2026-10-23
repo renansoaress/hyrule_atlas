@@ -1,0 +1,196 @@
+{
+  "id": "botw_monster_lynel",
+  "summary": "O Centaleão de juba vermelha é o tipo básico da espécie (2.000 de vida). Resiste a todos os elementos, encara Link por 30 segundos antes de lutar e pode ser montado para golpear sem gastar durabilidade.",
+  "description": "Metade homem, metade cavalo, com feições de leão, o Centaleão vive em Hyrule desde tempos antigos e é descrito pelo compendium como um dos monstros mais perigosos do reino, graças à inteligência, à resistência e a uma resistência natural a todos os elementos. O de juba vermelha é a primeira das cinco variações (vermelha, juba azul, juba branca, prateada e a dourada do Modo Mestre). Ele não dorme e passa a noite acordado. Ao avistar Link, o Centaleão normalmente não ataca: fica encarando-o por 30 segundos, o que dá tempo para fugir. Sacar ou brandir uma arma, mirar o arco, usar qualquer runa ou chegar perto demais encerra essa trégua.\n\nEm combate alterna golpes com a arma, investidas, pisoteios e bolas de fogo cuspidas; também se teletransporta quando fica preso em terreno irregular ou se afasta demais do território. Não é derrubado por golpes (nem pela Marreta bóim) e por isso nunca larga a arma antes de morrer. Os pontos fracos são a cabeça, que atordoa o monstro e recebe dano dobrado de flechas, e as costas: depois de atordoá-lo, ou logo após certas investidas, Link pode montá-lo e golpear até cinco vezes sem que a arma perca durabilidade.\n\nUsa exclusivamente armas da linha centaleônica — no caso do de juba vermelha, o primeiro nível dessa linha — e pode carregar flechas comuns, incendiárias, congelantes, eletrizantes ou explosivas. Ao morrer, deixa Chifre, Casco e Vísceras de Centaleão, além das armas e de um maço das suas flechas.",
+  "locations": [
+    "Segundo o compendium, é comum na Grande Nascente de Lanayru e na Pradaria de Hyrule.",
+    "O Zelda Wiki contabiliza 22 Centaleões espalhados por Hyrule (de todas as cores); a maioria muda de cor conforme o nível do mundo progride.",
+    "No Modo Mestre, um Centaleão adicional aparece no Grande Planalto (Great Plateau); dois outros aparecem na Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Chifre de Centaleão, Casco de Centaleão e Vísceras de Centaleão, além das armas que empunhava (Espada, Lança ou Maça centaleônica, Defesa centaleônica e Arco centaleônico) e um maço das flechas que usava.",
+    "Volta a aparecer no mesmo lugar depois de cada Lua de sangue, como quase todos os inimigos abatidos."
+  ],
+  "uses": [
+    "Fonte exclusiva da linha centaleônica de equipamento.",
+    "Fonte de Chifre, Casco e Vísceras de Centaleão (partes de monstro para elixires, melhorias de armadura e troca por Mon na loja de Kilton).",
+    "Fonte de maços de flechas elementais e explosivas, que ele deixa junto com as armas."
+  ],
+  "effects": [
+    "Ataques corpo a corpo com armas centaleônicas, investidas, pisoteio e bolas de fogo cuspidas.",
+    "As bolas de fogo criam correntes ascendentes que Link pode aproveitar com o Planador."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao ver Link, encara-o por 30 segundos sem atacar. Ataca antes disso se Link sacar ou brandir uma arma, mirar o arco, usar uma runa ou se aproximar demais.",
+      "conditions": ["Não ter causado dano a ele nem iniciado o combate antes."],
+      "side_effects": [
+        "Se ele perder Link de vista e o reencontrar, volta a encarar por 30 segundos — mas só se a luta ainda não tiver começado.",
+        "Sem arma sacada, segue Link quando ele está longe."
+      ],
+      "applications": ["Atravessar o território de um Centaleão sem lutar, desde que Link se afaste dentro do prazo."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Recebe dano normalmente, mas não é empurrado nem derrubado por golpes, nem mesmo pela Marreta bóim; por isso não larga a arma nem quando atordoado por um acerto crítico.",
+      "side_effects": ["Golpeá-lo ou fazê-lo recuar com o escudo inicia o combate imediatamente, sem a encarada."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha na cabeça atordoa o Centaleão e causa dano dobrado.",
+      "applications": [
+        "Planar nas correntes ascendentes geradas pelas bolas de fogo dele e atirar na cabeça do alto.",
+        "Atordoá-lo com uma flecha e montá-lo em seguida."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Resiste: todo Centaleão é resistente a ataques elementais e aos efeitos que eles provocam, incluindo o fogo.",
+      "side_effects": ["Ele próprio usa fogo: cospe bolas de fogo e pode portar Flechas incendiárias."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resiste a ataques de gelo e ao efeito de congelamento, como a todos os elementos.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resiste a ataques elétricos e a seus efeitos. A única exceção citada é a Fúria de Urbosa, que ignora essa resistência.",
+      "applications": ["Usar a Fúria de Urbosa para causar dano elétrico e atordoá-lo apesar da resistência."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Urbosa's Fury"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes de BOTW não descrevem o que acontece se um Centaleão cair na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de explosões (Flechas explosivas, barris) sobre o Centaleão; a resistência citada vale para ataques elementais."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Usar qualquer runa à vista dele, inclusive a Bomba remota, encerra a encarada e o faz atacar. O dano da bomba sobre ele não é detalhado nas fontes.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Ativar Estátis à vista dele durante a encarada provoca o ataque. As fontes não detalham o efeito de Estátis+ especificamente sobre Centaleões.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Centaleão em si não é um deles. Usar a runa à vista dele, porém, também encerra a trégua.",
+      "sources": ["zw:Magnesis", "zw"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado temporariamente: aproximando-se por trás sem ser notado, pulando nele enquanto está atordoado, caindo do Planador sobre ele ou logo após uma das duas investidas (a carga direta e a corrida seguida de golpe de arma). Montado, Link golpeia até cinco vezes com qualquer arma sem gastar durabilidade.",
+      "conditions": ["Ter vigor: se o Medidor de vigor se esgotar, Link é arremessado e perde um quarto de coração."],
+      "side_effects": ["Ao contrário de cavalos e outras criaturas montáveis, o Centaleão não pode ser acalmado nem domado.", "Montá-lo também inicia o combate."],
+      "applications": ["Causar muito dano com armas fortes sem desgastá-las."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "A maioria dos ataques pode ser rebatida com Defesa perfeita ou evitada com Esquiva perfeita, o que deixa o Centaleão vulnerável a contra-ataques.",
+      "side_effects": ["Defesas centaleônicas perdem durabilidade ao aparar, ao contrário dos demais escudos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Teletransporta-se quando fica preso em terreno irregular ou quando se afasta demais do seu território, para fugir brevemente ou perseguir Link. Só para de atacar depois que Link sai das redondezas.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes montados e o golpe final crítico",
+      "text": "A página de Durabilidade lembra que o último golpe de uma arma antes de quebrar é sempre crítico (dano dobrado) e que essa regra também vale montado no Centaleão, já que os golpes montados não consomem durabilidade.",
+      "sources": ["zw:Durability"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Máscaras que enganam",
+      "text": "A Máscara de Centaleão, vendida por Kilton na loja Fang and Bone por 999 Mon depois de três Feras Divinas libertadas, e a Máscara de Majora disfarçam Link por pouco tempo; o Centaleão acaba percebendo o disfarce e ataca. A Máscara de Centaleão não impede que outros inimigos da área ataquem.",
+      "sources": ["zw", "zw:Lynel Mask"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O Centaleão diferente do Monte Ploymus",
+      "text": "O Centaleão do Monte Ploymus (Ploymus Mountain) foi programado de outro jeito: ataca assim que vê Link (salvo com as máscaras), não ruge ao patrulhar, não percebe de imediato golpes pelas costas nem aparadas com Defesa centaleônica, ouve Link mesmo com três níveis de furtividade e não tem o bracelete no braço esquerdo. Ele e os das guaritas do Castelo de Hyrule não mudam de tipo com o nível do mundo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Armas de duas mãos em uma só",
+      "text": "O Centaleão empunha Maças e Lanças centaleônicas com uma mão, embora para Link sejam armas de duas mãos. O único Centaleão que foge da linha centaleônica é o das Ruínas do Coliseu (Coliseum Ruins), que usa uma Espada flamejante quando aparece como Centaleão prateado.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Volta com a Lua de sangue",
+      "text": "Como quase todo inimigo abatido, o Centaleão é revivido à meia-noite da Lua de sangue, no mesmo lugar, junto com as armas que portava.",
+      "sources": ["zw:Blood Moon"]
+    }
+  ],
+  "advanced_uses": [
+    "Atordoar com flecha na cabeça e montar repetidamente: cinco golpes montados por ciclo sem desgaste de armas.",
+    "Aparar as investidas e golpes com Defesa perfeita, ou fazer Esquiva perfeita para abrir um Frenesi."
+  ],
+  "limitations": [
+    "Imune na prática a truques elementais: fogo, gelo e eletricidade não produzem os efeitos habituais (exceto a Fúria de Urbosa).",
+    "Não pode ser domado nem registrado; a montaria dura só enquanto houver vigor e até ele se soltar.",
+    "Não larga a arma durante a luta, mesmo com acertos críticos."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_maned_lynel", "relation": "Variação mais forte (juba azul)" },
+    { "id": "botw_monster_white_maned_lynel", "relation": "Variação de juba branca" },
+    { "id": "botw_monster_silver_lynel", "relation": "Variação prateada" },
+    { "id": "botw_monster_golden_lynel_mm", "relation": "Variação dourada do Modo Mestre" },
+    { "id": "botw_material_lynel_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lynel_hoof", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lynel_guts", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_weapon_lynel_sword", "relation": "Arma da linha centaleônica que ele empunha" },
+    { "id": "botw_weapon_lynel_crusher", "relation": "Arma de duas mãos que ele usa com uma só" },
+    { "id": "botw_shield_lynel_shield", "relation": "Escudo que ele carrega; perde durabilidade ao aparar" },
+    { "id": "botw_bow_lynel_bow", "relation": "Arco que ele usa" },
+    { "id": "botw_armor_lynel_mask", "relation": "Disfarce temporário vendido por Kilton" },
+    { "id": "botw_armor_majoras_mask", "relation": "Também engana Centaleões por pouco tempo" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Única exceção à resistência elemental" },
+    { "id": "botw_mechanic_durability", "relation": "Golpes montados não gastam durabilidade" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Revive o monstro" }
+  ],
+  "capabilities": ["gera_fogo", "montavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

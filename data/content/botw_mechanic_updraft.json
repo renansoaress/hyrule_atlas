@@ -1,0 +1,111 @@
+{
+  "id": "botw_mechanic_updraft",
+  "summary": "Corrente de ar que empurra Link para cima com o Planador aberto. Nasce de grama ou Pimentas de fogo em chamas, de respiros no solo, da passagem dos dragões e da Vendaval de Revali; as dos dragões e do campo de voo Arás recarregam o Vigor.",
+  "description": "Correntes ascendentes elevam Link enquanto ele plana. Para usá-las, basta abrir o Planador (X no ar) sobre a corrente. A fonte mais comum é o fogo: quando ele se espalha pela grama — ou pega em Pimentas de fogo —, gera uma coluna de ar quente; o fogo dos ataques de Centaleão e o calor do Tálus ígneo titã também criam correntes. Há ainda respiros naturais no chão que funcionam o tempo todo.\n\nAlgumas correntes fazem mais que elevar. Os dragões geram correntes ascendentes ao voar, e abrir o Planador dentro delas regenera todo o Vigor de Link, além de permitir acompanhar a altura do dragão. As correntes constantes do campo de treino de voo dos Arás (Flight Range) também recarregam o Vigor, exceto durante a missão \"EX Champion Revali's Song\". A Vendaval de Revali lança Link para o alto e deixa uma corrente que pode ser reaproveitada até sumir.",
+  "locations": [
+    "Respiros naturais espalhados por Hyrule.",
+    "Campo de treino de voo dos Arás, no Desfiladeiro Dronoc (Cordilheiras de Hebra).",
+    "Rota dos dragões Dinraal, Farosh e Naydra.",
+    "Lago Darman, onde o Tálus ígneo titã gera uma corrente constante; primeiros quatro andares das Provas Intermediárias da Provação da Espada."
+  ],
+  "obtaining": [
+    "Incendiar grama (Flecha incendiária, Tocha, arma em chamas) ou Pimentas de fogo.",
+    "Usar a Vendaval de Revali, recebida após libertar Vah Medoh."
+  ],
+  "uses": [
+    "Ganhar altura para planar longe ou alcançar plataformas.",
+    "Subir sobre um acampamento e atirar do alto em câmera lenta.",
+    "Recarregar o Vigor nas correntes dos dragões."
+  ],
+  "effects": [
+    "Impulso vertical com o Planador aberto; correntes de dragão regeneram todo o Vigor."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Abrir o Planador (X no ar) sobre uma corrente ascendente faz Link subir.",
+      "conditions": ["Ter o Planador e vigor para mantê-lo aberto."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Paraglider", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Fogo espalhando-se pela grama, ou pegando em Pimentas de fogo, cria uma corrente ascendente; grandes áreas de grama em chamas geram correntes fortes.",
+      "conditions": ["Grama ou pimentas em chamas; a chuva apaga o fogo exposto."],
+      "applications": ["Incendiar a grama, subir na corrente e atirar nos inimigos lá de cima."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire", "zw:Tips and Tricks", "zw:Rain"]
+    },
+    {
+      "action": "vento",
+      "variant": "dragões",
+      "status": "confirmado",
+      "result": "Os dragões criam correntes ao voar; abrir o Planador dentro delas regenera todo o Vigor e permite acompanhar a altura do dragão.",
+      "applications": ["Subir junto de Farosh, Dinraal ou Naydra para atirar e obter materiais de dragão."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Farosh"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Respiros naturais no chão produzem correntes permanentes. No campo de voo dos Arás, as correntes constantes sempre recarregam o Vigor, salvo durante \"EX Champion Revali's Song\".",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Flight Range"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Os ataques de fogo dos Centaleões criam correntes que permitem pairar e acertar-lhes a cabeça com flechas, atordoando-os com dano dobrado. O Tálus ígneo titã emite tanto calor que mantém uma corrente constante ao redor.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lynel", "zw:Igneo Talus"]
+    },
+    {
+      "action": "equipar",
+      "variant": "Vendaval de Revali",
+      "status": "confirmado",
+      "result": "A Vendaval de Revali lança Link para o alto e cria uma corrente reutilizável até desaparecer. Pode ser usada três vezes antes de recarregar por 6 minutos (2 minutos na versão +); não funciona dentro de santuários.",
+      "kind": "mecanica",
+      "sources": ["zw:Revali's Gale"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Câmera lenta no alto",
+      "text": "Mirar o arco no ar desacelera o tempo, mas consome vigor depressa; subir numa corrente ascendente antes de mirar dá tempo e altura para vários tiros. Abrir o Planador encerra a mira.",
+      "sources": ["zw:Paraglider", "zw:Bow"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Vendaval que Revali errou",
+      "text": "Na lembrança da DLC \"Champion Revali's Song\", Revali, exausto, tenta criar sua corrente no campo de voo, é engolido pelo redemoinho e cai; depois de aceitar o convite de Zelda, domina a técnica e acerta todos os alvos.",
+      "sources": ["zw:Revali's Gale", "zw:Flight Range"]
+    }
+  ],
+  "advanced_uses": [
+    "Num dia seco, incendiar a grama a favor do vento perto de um acampamento: o fogo atinge os inimigos e a corrente leva Link ao alto para atirar em câmera lenta.",
+    "Planar dentro da corrente de um dragão para recuperar o Vigor no meio de uma travessia longa."
+  ],
+  "limitations": [
+    "Sem fogo (ou na chuva), não há corrente nas áreas de grama.",
+    "Planar continua gastando vigor fora das correntes que regeneram."
+  ],
+  "related": [
+    { "id": "botw_keyitem_paraglider", "relation": "Necessário para aproveitar as correntes" },
+    { "id": "botw_ability_revalis_gale", "relation": "Cria uma corrente reutilizável" },
+    { "id": "botw_object_grass", "relation": "Grama em chamas gera correntes" },
+    { "id": "botw_material_spicy_pepper", "relation": "Pimentas em chamas geram correntes" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Acende a grama à distância" },
+    { "id": "botw_monster_farosh", "relation": "Dragão cuja corrente regenera o Vigor" },
+    { "id": "botw_monster_dinraal", "relation": "Dragão cuja corrente regenera o Vigor" },
+    { "id": "botw_monster_naydra", "relation": "Dragão cuja corrente regenera o Vigor" },
+    { "id": "botw_monster_lynel", "relation": "Ataques de fogo criam correntes" },
+    { "id": "botw_monster_igneo_talus_titan", "relation": "Gera corrente constante" },
+    { "id": "botw_mechanic_fire", "relation": "Fonte principal das correntes" },
+    { "id": "botw_mechanic_stamina", "relation": "Planar consome vigor" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

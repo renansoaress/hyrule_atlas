@@ -1,0 +1,109 @@
+{
+  "id": "botw_food_mushroom_rice_balls",
+  "summary": "Bolinhos de Arroz hyliano com qualquer cogumelo, embrulhados em folhas. Só dois ingredientes obrigatórios: sobram três espaços para empilhar cogumelos do mesmo efeito.",
+  "description": "Os Bolinhos de arroz com cogumelos são uma das receitas mais simples com efeito: basta Arroz hyliano e um cogumelo. O cogumelo escolhido decide a variante — Glacimelo (Resistência ao calor), Flamelo (Resistência ao frio), Aterramelo (Resistência a choques), Energimelo (Recuperação de vigor), Cogumelo tenaz (Vigor extra), Agilimelo (Velocidade aumentada), Trufa nutritiva ou Trufona nutritiva (Corações extras), Ferromelo (Ataque aumentado), Blindamelo (Defesa aumentada) ou Silencimelo (Furtividade aumentada). Cogumelo hyliano, ou cogumelos de efeitos diferentes, dão a versão comum. O inventário descreve o aroma dos cogumelos subindo quando se abre o embrulho de folhas.\n\nComo só dois ingredientes são obrigatórios, a panela ainda comporta três cogumelos a mais do mesmo efeito, o que deixa o efeito mais forte e mais longo. Cuidado com a ordem de prioridade das receitas: com Manteiga de cabra e Halita o prato vira Risoto de cogumelos, e se houver carne ou frutos do mar junto com o arroz o jogo prioriza os Bolinhos de arroz com carne ou com frutos do mar.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano e pelo menos um cogumelo."
+  ],
+  "uses": [
+    "Prato de efeito barato, montado com cogumelos colhidos e arroz.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (a quantidade depende dos ingredientes).",
+    "Efeito definido pelos cogumelos: Resistência ao calor, Resistência ao frio, Resistência a choques, Recuperação de vigor, Vigor extra, Velocidade aumentada, Corações extras, Ataque aumentado, Defesa aumentada ou Furtividade aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos cogumelos usados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "manteiga e halita",
+      "status": "confirmado",
+      "result": "Acrescentar Manteiga de cabra e Halita ao arroz com cogumelo transforma o prato em Risoto de cogumelos, receita de prioridade maior.",
+      "produces": [
+        "botw_food_mushroom_risotto"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne ou frutos do mar",
+      "status": "confirmado",
+      "result": "Com carne ou frutos do mar na panela, o arroz forma Bolinhos de arroz com carne ou Bolinhos de arroz com frutos do mar, que vêm antes na ordem de receitas.",
+      "produces": [
+        "botw_food_meaty_rice_balls",
+        "botw_food_seafood_rice_balls"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Quatro cogumelos iguais",
+      "text": "Com arroz ocupando só um espaço, dá para usar quatro cogumelos do mesmo efeito. Repetir ingredientes de efeito temporizado aumenta a duração, e misturar cogumelos diferentes do mesmo efeito pode elevar o nível do efeito.",
+      "sources": [
+        "zw:Food",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cogumelos de efeitos diferentes se anulam.",
+    "Carne, frutos do mar, ou manteiga com halita mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_mushroom_risotto",
+      "relation": "O que se obtém ao acrescentar manteiga e halita"
+    },
+    {
+      "id": "botw_food_meaty_rice_balls",
+      "relation": "Receita que tem prioridade quando há carne"
+    },
+    {
+      "id": "botw_food_veggie_rice_balls",
+      "relation": "Mesma ideia com legumes, ervas ou flores"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Prato só de cogumelos, sem arroz"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

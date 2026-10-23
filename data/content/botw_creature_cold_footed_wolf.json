@@ -1,0 +1,96 @@
+{
+  "id": "botw_creature_cold_footed_wolf",
+  "summary": "Raça de Lobo larápio adaptada à neve, de pelo branco que camufla. Caça em matilhas de cerca de três nas Cordilheiras de Hebra e Montanhas Gerudo; é mais resistente que o parente e deixa carne de segunda ou de primeira.",
+  "description": "O Lobo pé-gelado é uma raça do Lobo larápio adaptada aos climas gelados de Hyrule. Vive em matilhas nas Cordilheiras de Hebra e nas Montanhas Gerudo, e também aparece na Tabantha Tundra e no Monte Lanayru. O pelo branco o diferencia dos outros lobos e funciona como camuflagem na neve, o que, segundo o compendium, o torna ainda mais perigoso; a adaptação ao ambiente hostil também o deixou consideravelmente mais resistente que o Lobo larápio.\n\nO comportamento é o mesmo da raça de origem: matilhas de cerca de três, que farejam o chão e se espreguiçam quando tranquilas. Ao avistar Link, um lobo uiva para alertar os outros e a matilha o persegue, cerca e ataca em revezamento. Se um deles for ferido ou morto, os demais se dispersam e recuam, e nenhum ataca Link se ele estiver a cavalo. Morto, deixa Carne de segunda ou Carne de primeira.",
+  "locations": [
+    "Cordilheiras de Hebra e Montanhas Gerudo (compendium); também Tabantha Tundra e Monte Lanayru."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Fonte de Carne de segunda e Carne de primeira.",
+    "A Carne de primeira pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\").",
+    "Registrar sua foto no compendium (entrada nº 23)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano das mordidas."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao avistar Link, uiva, e a matilha o persegue, cerca e ataca em revezamento. O pelo branco dificulta enxergá-los na neve.",
+      "conditions": ["Não atacam Link se ele estiver a cavalo."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Ferir ou matar um lobo faz a matilha se dispersar. Morto, deixa Carne de segunda ou Carne de primeira.",
+      "produces": ["botw_material_raw_prime_meat", "botw_material_raw_gourmet_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Wolf"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que ferir um lobo dispersa a matilha, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Como os demais lobos selvagens, a matilha recua se Link estiver fora do alcance, por exemplo em cima de uma árvore.",
+      "kind": "mecanica",
+      "sources": ["zw:Wolf"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Quebrar a matilha",
+      "text": "Ferir ou matar um único lobo basta para que os outros se dispersem e recuem; ficar fora de alcance, como no alto de uma árvore, também encerra o ataque.",
+      "sources": ["zw", "zw:Wolf"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mais resistente que o Lobo larápio",
+      "text": "O compendium afirma que, por ter se adaptado ao ambiente hostil das montanhas nevadas, o Lobo pé-gelado é consideravelmente mais resistente que o Lobo larápio.",
+      "sources": ["comp"]
+    }
+  ],
+  "limitations": [
+    "Camuflado na neve: pode surpreender Link antes de ser visto.",
+    "Sempre em grupo."
+  ],
+  "related": [
+    { "id": "botw_creature_maraudo_wolf", "relation": "Raça de origem, das florestas" },
+    { "id": "botw_creature_wasteland_coyote", "relation": "Caça em matilha de forma parecida, no deserto" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Carne deixada ao ser abatido" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

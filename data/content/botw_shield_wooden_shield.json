@@ -1,0 +1,189 @@
+{
+  "id": "botw_shield_wooden_shield",
+  "summary": "Escudo de madeira leve e simples, para lutadores inexperientes (Defesa 2, durabilidade 12). Russ o vende por 30 rupias como prancha de surfe, e Frelly o inclui no aluguel de Morsareia.",
+  "description": "O Escudo de madeira é o escudo de iniciante por excelência: leve, simples e, segundo o jogo, bom para lutadores com pouca experiência — aguenta ataques leves, mas bloquear golpes fortes não é recomendado. Com Defesa 2, só fica acima da Tampa de panela; a durabilidade (12) é razoável para um escudo tão básico.\n\nÉ encontrado abandonado ou nas mãos de inimigos de nível baixo na Pradaria de Hyrule e em Necluda Oriental, e tem duas fontes \"comerciais\" ligadas ao surfe: Russ, dos Shield Breakers, vende um por 30 rupias e incentiva Link a Surfar com escudo; e Frelly, que aluga Morsareias na Cidade Gerudo, inclui um Escudo de madeira no aluguel para quem não tem escudo — 50 rupias no total, em vez das 20 do aluguel simples. Selmie também o dá como prêmio de consolação para tempos acima de 3:30.\n\nComo é de madeira, pega fogo, queima no calor de Eldin, flutua e não reage a Magnétis nem a raios.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Oriental, abandonado ou com inimigos de nível baixo."
+  ],
+  "obtaining": [
+    "Comprar de Russ, na Trilby Plain, por 30 rupias.",
+    "Alugar uma Morsareia com Frelly sem ter escudo: ela inclui um Escudo de madeira, e o aluguel passa de 20 para 50 rupias.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos acima de 3:30."
+  ],
+  "uses": [
+    "Escudo de iniciante para ataques leves.",
+    "Prancha barata para Surfar com escudo, como o próprio Russ sugere.",
+    "Requisito para montar Morsareias, que exigem um escudo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além de bloquear ataques leves."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Aguenta ataques leves; com Defesa 2, golpes fortes consomem muita durabilidade, como o próprio jogo adverte. A Defesa perfeita não gasta durabilidade.",
+      "conditions": [
+        "Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "jogo",
+        "zw",
+        "zw:Template:BotW Shield Parameters",
+        "zw:Shield"
+      ]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": [
+        "Pular e apertar A enquanto segura ZL no ar."
+      ],
+      "side_effects": [
+        "Em pedra perde durabilidade rapidamente; em neve e areia não perde."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Shield Surfing"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "Morsareia",
+      "status": "confirmado",
+      "result": "Serve de prancha para ser puxado por uma Morsareia no Deserto Gerudo; sem escudo não é possível montar nela.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Sand Seal",
+        "zw:Frelly"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e perde durabilidade aos poucos enquanto queima.",
+      "side_effects": [
+        "Guardar o escudo ou molhá-lo interrompe a queima."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Shields in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Shock Arrow"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantado com Magnétis.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +6 (nível amarelo) e com Defesa do escudo aumentada de +1 a +4 (branco) ou +5 a +8 (amarelo).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Kit de surfe na loja de Russ",
+      "text": "Russ vende três escudos — o de madeira (30 rupias), o do soldado (100) e o do cavaleiro (300) — e cada compra vem com um comentário sobre surfe: ao levar o de madeira, ele incentiva Link a experimentar o surfe com escudo.",
+      "sources": [
+        "zw",
+        "zw:Soldier's Shield",
+        "zw:Knight's Shield"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo como prancha descartável no minijogo de Selmie e nas encostas de Hebra: em neve o surfe não consome durabilidade, então até o escudo mais barato serve."
+  ],
+  "limitations": [
+    "Defesa 2: inadequado para bloquear golpes fortes.",
+    "Queima se equipado em Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_sand_seal",
+      "relation": "Frelly inclui o escudo no aluguel de Morsareias"
+    },
+    {
+      "id": "botw_shield_soldiers_shield",
+      "relation": "Também vendido por Russ (100 rupias)"
+    },
+    {
+      "id": "botw_shield_knights_shield",
+      "relation": "Também vendido por Russ (300 rupias)"
+    },
+    {
+      "id": "botw_shield_pot_lid",
+      "relation": "Único escudo com Defesa ainda menor"
+    },
+    {
+      "id": "botw_shield_emblazoned_shield",
+      "relation": "Escudo decorado com apenas 1 ponto a mais de Defesa"
+    },
+    {
+      "id": "botw_mechanic_shield_surfing",
+      "relation": "Russ o recomenda para surfar; prêmio de Selmie acima de 3:30"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua"
+  ],
+  "verification_status": "verificado"
+}

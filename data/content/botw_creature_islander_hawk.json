@@ -1,0 +1,80 @@
+{
+  "id": "botw_creature_islander_hawk",
+  "summary": "Gavião carnívoro que plana calmamente sobre planícies e planaltos, caçando pequenos animais e outras aves com garras e bico afiados. Abatido em pleno voo, deixa uma Sobrecoxa.",
+  "description": "O Gavião insular é uma ave de rapina carnívora que vive em planícies e planaltos; o compendium cita a Pradaria de Hyrule e os Cerros de Hyrule. Usa as garras e o bico afiados para capturar e comer pequenos animais e outras aves, que procura do alto enquanto plana tranquilamente pelo céu.\n\nComo a maioria das aves, pode ser caçado por Link como alimento: abatido, deixa uma Sobrecoxa, carne de ave de melhor qualidade que a Coxa.",
+  "locations": [
+    "Céu da Pradaria de Hyrule e dos Cerros de Hyrule (compendium)."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Sobrecoxa."
+  ],
+  "uses": [
+    "Fonte de Sobrecoxa, necessária para Curry de sobrecoxa e Pilaf de sobrecoxa.",
+    "Registrar sua foto no compendium (entrada nº 44)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes só o descrevem planando no céu; não detalham a reação à aproximação de Link."
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser caçado como alimento; ao morrer, deixa uma Sobrecoxa.",
+      "conditions": ["Voa alto, por isso o ataque precisa ser à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_raw_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hawk", "zw:Raw Bird Thigh", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra o gavião, que vive no ar."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Predador de outras aves",
+      "text": "Segundo o compendium, o Gavião insular come pequenos animais e também outras aves, procurando as presas do alto enquanto plana.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "A Sobrecoxa vira Sobrecoxa assada se exposta ao fogo e Sobrecoxa congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Voa alto e longe, o que exige pontaria para abatê-lo."
+  ],
+  "related": [
+    { "id": "botw_material_raw_bird_thigh", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_food_prime_poultry_curry", "relation": "Receita que exige Sobrecoxa" },
+    { "id": "botw_food_roasted_bird_thigh", "relation": "Sobrecoxa exposta ao fogo" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

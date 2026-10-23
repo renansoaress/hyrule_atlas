@@ -1,0 +1,138 @@
+{
+  "id": "botw_food_monster_cake",
+  "summary": "Bolo de Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e Extrato de monstro: receita secreta da família real, pedida em duas missões secundárias, com cura e efeitos sorteados.",
+  "description": "O Bolo de monstro é a versão \"monstruosa\" dos bolos de Hyrule: leva a mesma base de Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra do Bolo de nozes ou da Torta de abóbora, mas troca o ingrediente principal pelo Extrato de monstro, o condimento criado por Kilton. Por causa do extrato, a quantidade de corações recuperada e a força e a duração de qualquer efeito são sorteadas a cada cozimento. Como a receita já ocupa quatro dos cinco espaços da panela, cabe apenas um ingrediente extra, e é ele que define a variante: um ingrediente \"valente\" gera a versão com Ataque aumentado, um \"nutritivo\" a versão que cura tudo e dá Corações extras, e assim por diante.\n\nO segundo livro da biblioteca do Castelo de Hyrule apresenta o bolo como receita secreta da família real e prato favorito de um chanceler, mas avisa que ele deixa a cabeça \"confusa\" e pode estimular planos malignos. Na prática, o prato vale mais pelas missões do que pela cura: Gotter, no Estábulo Riverside, aceita-o em \"A Royal Recipe\", e Ruli, em Tarrey Town, precisa dele para curar a filha em \"A Parent's Love\".",
+  "obtaining": [
+    "Cozinhar numa Panela Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e Extrato de monstro; um quinto ingrediente de efeito é opcional.",
+    "O Extrato de monstro é vendido por Kilton, à noite, na loja Fang and Bone (9 Mon), e também é dado como recompensa por resgatar Chabi."
+  ],
+  "uses": [
+    "Missão secundária \"A Royal Recipe\" (Gotter, Estábulo Riverside): entregar um Bolo de monstro ou um Bolo de frutas rende uma Rupia prateada.",
+    "Missão secundária \"A Parent's Love\" (Ruli, Tarrey Town): o Bolo de monstro é o bolo que devolve a saúde a Hunnie; a recompensa é uma Rupia dourada.",
+    "Recuperar corações, com resultado imprevisível.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera uma quantidade aleatória de corações, definida pelo Extrato de monstro no momento do cozimento.",
+    "Com um quinto ingrediente de efeito, ganha a versão correspondente: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\").",
+    "A duração base de efeitos temporizados é sorteada entre 1:00, 10:00 e 30:00."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da variante; a cura e a força ou duração do efeito foram sorteadas pelo Extrato de monstro quando o bolo foi feito.",
+      "side_effects": [
+        "O sorteio pode reduzir a cura a 1/4 de coração ou o efeito à força mínima."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "quinto ingrediente",
+      "status": "confirmado",
+      "result": "Um único ingrediente com efeito adicionado aos quatro obrigatórios transforma o bolo na versão desse efeito (por exemplo, ingrediente \"blindado\" → versão com Defesa aumentada).",
+      "conditions": [
+        "Só sobra um espaço na panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O extrato troca o crítico por um sorteio",
+      "text": "Pratos com Extrato de monstro nunca recebem o bônus crítico de cozimento. Em vez disso, o jogo escolhe entre a cura e a força do efeito e aplica uma mudança: para pior (cura de 1/4 de coração ou efeito com força mínima) ou para melhor (3 corações a mais ou um nível a mais de efeito).",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Gotter não exige a visita ao castelo",
+      "text": "Em \"A Royal Recipe\", ler os livros da biblioteca do Castelo de Hyrule é opcional: basta voltar ao Estábulo Riverside com o bolo na algibeira. Se Link tiver também um Bolo de frutas, é esse que Gotter escolhe.",
+      "sources": [
+        "zw:A Royal Recipe"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Reações dos clientes",
+      "text": "Gotter começa comparando a primeira mordida a morder um Chulchul, corrige-se e diz que o bolo estimula o cérebro como levar uma surra de um Rinox. Ruli, por sua vez, estranha o cheiro forte, mas decide não reclamar porque o bolo pode curar Hunnie — e cura.",
+      "sources": [
+        "zw",
+        "zw:A Parent's Love"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Se quiser entregar o Bolo de monstro a Gotter e guardar um Bolo de frutas, deixe o Bolo de frutas fora da algibeira: com os dois, ele escolhe o de frutas.",
+    "Como o resultado é sorteado, cozinhar alguns bolos com o mesmo ingrediente de efeito e guardar o melhor é a forma de tentar um efeito mais forte."
+  ],
+  "limitations": [
+    "Cura imprevisível: pode ficar em apenas 1/4 de coração.",
+    "Aceita só um ingrediente extra.",
+    "Nunca recebe bônus crítico de cozimento.",
+    "Depende do Extrato de monstro, vendido apenas por Kilton e só à noite."
+  ],
+  "related": [
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Ingrediente que torna o resultado aleatório"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_fruitcake",
+      "relation": "Outro bolo aceito por Gotter em \"A Royal Recipe\" (tem prioridade)"
+    },
+    {
+      "id": "botw_food_monster_soup",
+      "relation": "Mesma base de trigo e manteiga com extrato, trocando o açúcar pelo leite"
+    },
+    {
+      "id": "botw_food_nutcake",
+      "relation": "Bolo com a mesma base de trigo, açúcar e manteiga"
+    },
+    {
+      "id": "botw_mechanic_cooking",
+      "relation": "Regras gerais de culinária"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

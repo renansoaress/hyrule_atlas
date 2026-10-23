@@ -1,0 +1,69 @@
+{
+  "id": "botw_keyitem_rudanias_emblem",
+  "summary": "Símbolo de uma provação do fogo concluída (DLC The Champions' Ballad). Os três emblemas vêm dos santuários das provações de Daruk na região de Eldin e abrem a revanche contra a Ira ígnea de Ganon.",
+  "description": "Os Emblemas de Rudania são coletados na missão principal \"EX Champion Daruk's Song\", da DLC The Champions' Ballad, e entregues pelos monges dos santuários Kamia Omuna, Sharo Lun e Rinu Honika. Segundo a descrição do item, são o símbolo de uma provação do fogo concluída por quem deseja controlar uma Fera Divina; reunir três leva a um novo desafio.\n\nO monumento da missão surge no Cânion de Eldin, numa saliência sobre o Rio Golow, depois das provações do Grande Platô. Kass, preocupado com o calor, canta os versos sobre as provações de Daruk, que podem ser feitas em qualquer ordem: derrotar o Tálus ígneo titã na margem do Lago Darman revela Kamia Omuna; seguir os anéis luminosos a partir do topo da Montanha da Morte revela Sharo Lun; e cair em segurança no anel luminoso sobre a lava do Lago Darb (Darb Pond) revela Rinu Honika.\n\nCom os três emblemas, Link vai até Vah Rudania, onde a voz de um monge os troca por uma provação no Reino Ilusório: uma nova luta contra a Ira ígnea de Ganon no topo da Fera Divina, com o Conjunto antichamas melhorado duas vezes, o Racha-Rocha, o Arco do cavaleiro, cinco Flechas congelantes e alguns pratos. Depois, Kass canta \"Champion Daruk's Song\", que desbloqueia uma memória, e Daruk melhora sua habilidade: a Proteção de Daruk + recarrega em seis minutos.",
+  "locations": [
+    "Santuários Kamia Omuna, Sharo Lun e Rinu Honika, revelados pelas provações de Daruk na região de Eldin."
+  ],
+  "obtaining": [
+    "Concluir as provações do Grande Platô em \"EX The Champions' Ballad\" (DLC) para revelar o monumento do Cânion de Eldin.",
+    "Completar cada provação e o santuário correspondente; o monge de cada um entrega um emblema."
+  ],
+  "uses": [
+    "Trocar os três emblemas, em Vah Rudania, pela revanche contra a Ira ígnea de Ganon no Reino Ilusório.",
+    "Concluir \"EX Champion Daruk's Song\" e receber a Proteção de Daruk +."
+  ],
+  "effects": [
+    "Sem efeito direto; os três emblemas são consumidos para iniciar a provação."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao se aproximar de Vah Rudania com os três emblemas, a voz de um monge os toma em troca da provação no Reino Ilusório.",
+      "conditions": ["Ter os três Emblemas de Rudania.", "Estar na missão \"EX Champion Daruk's Song\"."],
+      "side_effects": ["Os emblemas saem da algibeira."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:EX Champion Daruk's Song", "zw:Illusory Realm"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Equipamento do Reino Ilusório",
+      "text": "Na luta, Link usa o Conjunto antichamas melhorado duas vezes, o Racha-Rocha, o Arco do cavaleiro, cinco Flechas congelantes, Bife selado, Blindamelo tostado e Maçã assada. Depois de três derrotas, recebe uma fada; depois de seis, comida ou elixires extras.",
+      "sources": ["zw:EX Champion Daruk's Song", "zw:Illusory Realm"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Revanche liberada",
+      "text": "Concluída a missão, Link pode voltar a Vah Rudania e enfrentar a Ira ígnea de Ganon de novo quando quiser, sem emblemas. As revanches não contam para o nível de mundo.",
+      "sources": ["zw", "zw:Illusory Realm"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Kass e o calor",
+      "text": "Ao encontrar Link no Cânion de Eldin, Kass pergunta se ele também tomou muitos Elixires corta-fogo; se Link negar, Kass conclui que ele deve ser naturalmente imune ao calor. Yunobo e Bludo contaram a ele as histórias de Daruk.",
+      "sources": ["zw:EX Champion Daruk's Song"]
+    }
+  ],
+  "advanced_uses": [
+    "Traga proteção contra o clima escaldante para as provações na Montanha da Morte; no Reino Ilusório, o próprio jogo fornece o Conjunto antichamas em ★★."
+  ],
+  "limitations": [
+    "Exige a DLC The Champions' Ballad e as provações do Grande Platô.",
+    "Os emblemas não têm outro uso além da troca em Vah Rudania."
+  ],
+  "related": [
+    { "id": "botw_monster_fireblight_ganon", "relation": "Chefe enfrentado no Reino Ilusório" },
+    { "id": "botw_ability_daruks_protection", "relation": "Habilidade melhorada ao fim da missão" },
+    { "id": "botw_monster_igneo_talus_titan", "relation": "Derrotá-lo revela Kamia Omuna" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Fornecido em ★★ no Reino Ilusório" },
+    { "id": "botw_weapon_boulder_breaker", "relation": "Arma fornecida no Reino Ilusório" },
+    { "id": "botw_arrow_ice_arrow", "relation": "Flechas fornecidas no Reino Ilusório" },
+    { "id": "botw_keyitem_rutas_emblem", "relation": "Emblema equivalente de Mipha" },
+    { "id": "botw_keyitem_picture_of_the_champions", "relation": "Recompensa final da balada dos Campeões" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

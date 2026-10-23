@@ -1,0 +1,136 @@
+{
+  "id": "botw_monster_fire_breath_lizalfos",
+  "summary": "Lagalfos vermelho-alaranjado que cospe um jato de fogo, comum em regiões vulcânicas e no Deserto Gerudo. Qualquer ataque de gelo o mata na hora — uma única Flecha congelante basta.",
+  "description": "O Lagalfos ígneo é a variante elemental de fogo da espécie, fácil de distinguir pela coloração vermelha e laranja. O compendium diz que o sopro de fogo o torna bem perigoso, mas que a exposição ao frio o mata instantaneamente. Vive principalmente em áreas vulcânicas — o compendium cita o Cânion de Eldin e o Deserto Gerudo, e o Zelda Wiki menciona a Montanha da Morte —, e também já foi visto em partes de Akkala. Como os outros Lagalfos, é ágil e se camufla para se misturar ao ambiente.\n\nAlém dos golpes e da agilidade típicos da espécie, solta uma rajada contínua de fogo. Em compensação, a fraqueza é absoluta: Flecha congelante, Varinha de gelo, Cajado glacial ou armas de gelo como a Espada álgida derrotam-no com um único acerto. Tem 288 pontos de vida para quem preferir o combate comum. Pode deixar Chifre de Lagalfos, Garra de Lagalfos e a Cauda de Lagalfos ígneo, exclusiva dele.",
+  "locations": [
+    "Cânion de Eldin e Deserto Gerudo, segundo o compendium; também Montanha da Morte e algumas áreas de Akkala.",
+    "Regiões de clima escaldante, muitas vezes camuflado no terreno."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos, Garra de Lagalfos e Cauda de Lagalfos ígneo.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Única fonte de Cauda de Lagalfos ígneo, parte de terceiro nível para elixires.",
+    "Registro no compendium (entrada nº 117)."
+  ],
+  "effects": [
+    "O jato de fogo incendeia Link; o bônus do Conjunto antichamas completo torna Link imune a todo dano de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Qualquer ataque de gelo o derrota instantaneamente: uma única Flecha congelante, um golpe de Varinha de gelo ou de arma de gelo.",
+      "applications": ["Levar algumas Flechas congelantes para Eldin e o deserto resolve esses combates em segundos."],
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "zw:Ice Arrow", "zw:Ice Rod", "zw:Enemy", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Sem gelo, é preciso vencer 288 pontos de vida de um inimigo ágil que também cospe fogo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas comuns na cabeça causam dano dobrado; mas a Flecha congelante o mata com um só acerto.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit", "zw:Ice Arrow"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Lagalfos ígneo é imune ou resistente a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques atordoam inimigos e os forçam a largar a arma.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem a variante ígnea na água; os Lagalfos em geral são bons nadadores."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões causam dano; atenção: Flechas explosivas não podem ser usadas no clima escaldante perto da Montanha da Morte, pois explodem assim que o arco é puxado.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Arrow", "zw:Bomb Barrel"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo; nesse estado ele fica imune a congelamento, então não adianta paralisar e depois usar gelo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos lançados com Magnétis o atingem.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se no ambiente como os demais Lagalfos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "A Máscara de Lagalfos e a de Majora fazem os Lagalfos ignorarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Fraqueza elemental absoluta",
+      "text": "Monstros de fogo morrem na hora quando atingidos por gelo, e vice-versa. No caso do Lagalfos ígneo, o próprio compendium avisa que a exposição ao frio o mata instantaneamente, e o Zelda Wiki confirma o efeito com uma única Flecha congelante ou um golpe de Varinha de gelo.",
+      "sources": ["zw:Enemy", "comp", "zw:Ice Arrow", "zw:Ice Rod"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fora do vulcão",
+      "text": "Apesar de preferir áreas vulcânicas, o compendium registra avistamentos na região de Akkala.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar a Varinha de gelo ou o Cajado glacial: seus projéteis de gelo eliminam o Lagalfos ígneo à distância sem gastar flechas."
+  ],
+  "limitations": [
+    "Flechas explosivas não funcionam no clima escaldante da Montanha da Morte.",
+    "Armas e escudos de madeira equipados pegam fogo no clima escaldante de Eldin."
+  ],
+  "related": [
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_monster_ice_breath_lizalfos", "relation": "Variante oposta, morta por fogo" },
+    { "id": "botw_material_red_lizalfos_tail", "relation": "Parte exclusiva" },
+    { "id": "botw_arrow_ice_arrow", "relation": "Mata-o com um acerto" },
+    { "id": "botw_weapon_ice_rod", "relation": "Mata-o com um acerto" },
+    { "id": "botw_weapon_frostblade", "relation": "Arma de gelo, eficaz contra ele" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Bônus que anula dano de fogo" }
+  ],
+  "capabilities": ["gera_fogo", "reage_gelo", "vence_rapido"],
+  "verification_status": "parcial"
+}

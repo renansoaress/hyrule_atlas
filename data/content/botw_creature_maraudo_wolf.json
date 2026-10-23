@@ -1,0 +1,104 @@
+{
+  "id": "botw_creature_maraudo_wolf",
+  "summary": "Lobo cinzento que caça em matilhas de cerca de três: uiva para chamar os outros, cerca Link e ataca em revezamento. Ferir ou matar um faz a matilha recuar; a cavalo, Link não é atacado.",
+  "description": "O Lobo larápio é um lobo carnívoro e muito agressivo, comum na Fronteira de Tabantha e na Grande Floresta de Hyrule e presente também em Akkala. Embora seja hostil, o jogo o classifica como criatura, não como monstro. Nunca anda sozinho: as matilhas têm em média três indivíduos, que se comunicam por uivos — se ouvir esse chamado na floresta, é bom ter cuidado, avisa o compendium.\n\nQuando um lobo avista Link, uiva para alertar a matilha e parte em perseguição. Os lobos o cercam e se revezam em investidas com mordidas, que causam dano ao contato. A matilha, porém, é \"esperta o bastante\" para fugir quando um dos seus é ferido ou morto, e recua também se Link estiver num lugar fora de alcance, como em cima de uma árvore. Não atacam quem está montado a cavalo. Abatidos, deixam Carne de segunda ou Carne de primeira.",
+  "locations": [
+    "Fronteira de Tabantha e Grande Floresta de Hyrule (compendium); também em Akkala."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Fonte de Carne de segunda e Carne de primeira.",
+    "A Carne de primeira pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\").",
+    "Registrar sua foto no compendium (entrada nº 21)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano das mordidas."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao avistar Link, o lobo uiva para a matilha, persegue, cerca e ataca em revezamento.",
+      "conditions": ["Não atacam Link se ele estiver montado a cavalo."],
+      "side_effects": ["Mordidas causam dano ao contato."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Wolf"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Ferir ou matar um lobo faz o resto da matilha se dispersar e recuar. Morto, deixa Carne de segunda ou Carne de primeira.",
+      "applications": ["Concentrar o ataque em um só lobo para encerrar o confronto rapidamente."],
+      "produces": ["botw_material_raw_prime_meat", "botw_material_raw_gourmet_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Wolf"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que ferir um lobo dispersa a matilha, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "A matilha recua se Link estiver num ponto onde os lobos não o alcançam, como em cima de uma árvore.",
+      "kind": "mecanica",
+      "sources": ["zw:Wolf"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Quebrar a matilha",
+      "text": "Basta ferir ou matar um dos lobos para que os demais se dispersem e recuem. Subir num lugar inacessível, como uma árvore, também faz a matilha desistir.",
+      "sources": ["zw", "zw:Wolf", "comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Imunidade a cavalo",
+      "text": "Os lobos não tentam atacar Link enquanto ele está montado a cavalo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Criatura hostil",
+      "text": "Em BOTW, quase todos os animais hostis são classificados como monstros, mas o Lobo larápio é uma das exceções: é tratado como criatura mesmo atacando Link.",
+      "sources": ["zw:Enemy"]
+    }
+  ],
+  "limitations": [
+    "Sempre em grupo: enfrentá-los a pé significa lidar com vários ao mesmo tempo."
+  ],
+  "related": [
+    { "id": "botw_creature_cold_footed_wolf", "relation": "Raça adaptada à neve, mais resistente" },
+    { "id": "botw_creature_wasteland_coyote", "relation": "Caça em matilha de forma parecida, no deserto" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_creature_horse", "relation": "A cavalo, Link não é atacado" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

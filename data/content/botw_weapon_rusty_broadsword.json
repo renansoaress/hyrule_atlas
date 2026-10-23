@@ -1,0 +1,189 @@
+{
+  "id": "botw_weapon_rusty_broadsword",
+  "summary": "Espada outrora temível, hoje enferrujada e frágil. Vale mais como bilhete de loteria: um Octoroc rochoso que a engole devolve uma espada limpa — do viajante, do soldado, do cavaleiro ou, com 5% de chance, real.",
+  "description": "A Espada enferrujada pertence ao equipamento enferrujado (Rusty Gear), armas que se deterioraram com o tempo. A descrição do jogo diz que ela já viu dias melhores: ainda causa algum dano nas mãos certas, mas quebra depressa. É comum na Pradaria de Hyrule e no Cânion de Eldin, abandonada ou nas mãos de inimigos de nível baixo, e uma delas aparece dentro de uma pedra numa ilhota do lago perto do Templo do Tempo, no Planalto.\n\nO uso mais interessante é com os Octorocs rochosos: se um deles aspirar a espada enquanto inspira, ele para para mastigá-la e a cospe de volta limpa — como Espada do viajante (50%), Espada larga do soldado (35%), Espada do cavaleiro (10%) ou Espada real (5%). Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser erguida com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Pradaria de Hyrule e Cânion de Eldin (locais comuns segundo o compendium).",
+    "Dentro de uma pedra numa pequena ilha do lago perto do Templo do Tempo, no Planalto."
+  ],
+  "obtaining": [
+    "Recolher espadas abandonadas ou derrotar inimigos de nível baixo que a empunhem.",
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Guardião (série Breath of the Wild) com a runa amiibo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Trocar por uma espada limpa com um Octoroc rochoso.",
+    "Arma de emergência no começo do jogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo; quebra rapidamente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Atrai raios durante tempestades.",
+      "applications": [
+        "Por ser descartável, é a espada ideal para largar perto de inimigos e deixar o raio cair sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Um Octoroc rochoso que aspire a espada a mastiga e a cospe de volta limpa: Espada do viajante (50%), Espada larga do soldado (35%), Espada do cavaleiro (10%) ou Espada real (5%).",
+      "conditions": [
+        "Colocar a espada à frente do Octoroc rochoso enquanto ele inspira."
+      ],
+      "side_effects": [
+        "A espada cuspida vem como projétil; tentar rebatê-la com Defesa perfeita não funciona — ela atravessa Link."
+      ],
+      "produces": [
+        "botw_weapon_travelers_sword",
+        "botw_weapon_soldiers_broadsword",
+        "botw_weapon_knights_broadsword",
+        "botw_weapon_royal_broadsword"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +4 a +6 (nível comum) ou +7 a +10 (nível dourado), bônus de durabilidade de +1 a +2 (ou +3 a +4 no nível dourado) e lançamento longo de 1,5× a 2×. Ela não pode receber o bônus de acerto crítico, que faria o último golpe de uma sequência causar dano dobrado.",
+      "sources": [
+        "dm",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Onde fazer a troca",
+      "text": "Os Octorocs rochosos vivem principalmente no Cânion de Eldin e na Cordilheira de Eldin, e também nas Montanhas Gerudo — o Cânion de Eldin é, ao mesmo tempo, um dos lugares onde as Espadas enferrujadas são comuns.",
+      "sources": [
+        "zw:Rock Octorok",
+        "comp"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Juntar várias Espadas enferrujadas e levá-las a um Octoroc rochoso para tentar conseguir Espadas do cavaleiro e reais."
+  ],
+  "limitations": [
+    "Durabilidade e ataque muito baixos.",
+    "Não pode receber o bônus de acerto crítico."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Limpa a espada e a devolve melhorada"
+    },
+    {
+      "id": "botw_weapon_travelers_sword",
+      "relation": "Resultado mais comum da limpeza (50%)"
+    },
+    {
+      "id": "botw_weapon_soldiers_broadsword",
+      "relation": "Resultado da limpeza (35%)"
+    },
+    {
+      "id": "botw_weapon_knights_broadsword",
+      "relation": "Resultado da limpeza (10%)"
+    },
+    {
+      "id": "botw_weapon_royal_broadsword",
+      "relation": "Resultado mais raro da limpeza (5%)"
+    },
+    {
+      "id": "botw_weapon_rusty_claymore",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_rusty_halberd",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_shield_rusty_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

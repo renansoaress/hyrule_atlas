@@ -1,0 +1,98 @@
+{
+  "id": "botw_food_fish_and_mushroom_skewer",
+  "summary": "Espetinho de qualquer peixe com qualquer cogumelo. O efeito pode vir de qualquer dos dois, e juntar peixe e cogumelo do mesmo efeito eleva o nível, como nas versões valente e blindada.",
+  "description": "O Espetinho de peixe e cogumelo é feito com qualquer peixe e qualquer cogumelo; a descrição do jogo fala de peixe fresco espetado ao lado de cogumelos aromáticos. Cura alguns corações, e a versão comum sai com ingredientes sem efeito (como Robalo hyruliano, Carpa tricolor e Cogumelo hyliano) ou de efeitos que se anulam.\n\nO efeito pode vir do peixe, do cogumelo ou de uma fruta acrescentada. O Zelda Wiki lista: nutritiva (Salmão nutritivo, Robalo nutritivo, Trufa nutritiva, Trufona nutritiva ou Durião nutritivo), tenaz (Cogumelo tenaz), energizante (Robalo enérgico, Energimelo ou Caranguejo esperto), veloz (Agilimelo ou Grãos de lótus-fugaz), picante (Truta rescaldada ou Flamelo), isolante (Truta voltaica, Aterramelo ou Fruta isolante), valente (Carpa valente, Pargo valente, Ferromelo ou Bananas valentes), blindada (Carpa blindada, Pargo blindado ou Blindamelo), discreta (Truta discreta ou Silencimelo) e refrescante (Truta glacial, Glacimelo ou Melancia oásica).\n\nComo peixe e cogumelo são ingredientes diferentes, juntar os dois com o mesmo efeito reforça o prato: as descrições de inventário citadas para as versões valente, blindada e isolante já falam em nível médio.",
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer peixe + qualquer cogumelo."
+  ],
+  "uses": [
+    "Prato de efeito flexível, com fontes de efeito vindas do rio e da floresta.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações, sem efeito.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Salmão nutritivo, Robalo nutritivo, Trufa nutritiva, Trufona nutritiva ou Durião nutritivo.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — Cogumelo tenaz.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Robalo enérgico, Energimelo ou Caranguejo esperto.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — Agilimelo ou Grãos de lótus-fugaz.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Truta rescaldada ou Flamelo.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Truta voltaica, Aterramelo ou Fruta isolante.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Carpa valente, Pargo valente, Ferromelo ou Bananas valentes.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Carpa blindada, Pargo blindado ou Blindamelo.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Truta discreta ou Silencimelo.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Truta glacial, Glacimelo ou Melancia oásica."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O peixe, o cogumelo ou uma fruta com efeito definem a versão; com peixe e cogumelo do mesmo efeito, o nível sobe.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Peixe e cogumelo do mesmo efeito",
+      "text": "Combinar, por exemplo, Carpa valente com Ferromelo ou Carpa blindada com Blindamelo junta dois ingredientes diferentes com o mesmo efeito, o que eleva o nível do efeito. As descrições citadas pelo Zelda Wiki mostram versões valente e blindada de nível médio.",
+      "sources": [
+        "zw",
+        "zw:Food",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Peixe e cogumelo de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_food_fish_skewer",
+      "relation": "Espetinho só de peixe"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Espetinho só de cogumelo"
+    },
+    {
+      "id": "botw_food_meat_and_mushroom_skewer",
+      "relation": "Mesmo espetinho com carne no lugar do peixe"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

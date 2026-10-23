@@ -1,0 +1,201 @@
+{
+  "id": "botw_material_apple",
+  "summary": "Fruta vermelha comum nas árvores de toda Hyrule. Crua cura meio coração; no fogo vira Maçã assada (3/4 de coração). Também serve para agradar cavalos e é pedida em duas missões secundárias.",
+  "description": "A Maçã é a fruta mais comum de Hyrule: cresce em macieiras espalhadas pelo mapa e é uma das primeiras fontes de cura do jogo. Comida crua, recupera meio coração. Exposta ao fogo, vira Maçã assada, que recupera três quartos de coração — o próprio Velho do Grande Platô comenta que assá-la a deixa mais gostosa e nutritiva. Não tem efeito culinário próprio, mas, como todo ingrediente sem efeito, soma tempo à duração quando entra numa receita com efeito.\n\nAlém da culinária, a Maçã é um dos três alimentos que aumentam a afeição dos cavalos, é ingrediente do corante vermelho na Tinturaria Kochi e resolve o primeiro enigma de Walton na Missão secundária \"Riddles of Hyrule\". Na forma assada, é a encomenda de Juney na missão \"The Apple of My Eye\", na Vila dos Arás.",
+  "locations": [
+    "Macieiras em toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Oriental como locais comuns.",
+    "Lojas: General Shoppe de Daz, na Floresta Korok (Korok Forest), e o mercador ambulante Gartan, que circula entre o Gerudo Canyon Stable e a Cidade Gerudo — 12 rupias cada."
+  ],
+  "obtaining": [
+    "Colher diretamente da árvore (subindo nela), derrubar as maçãs com flechas ou derrubar a própria macieira.",
+    "Rinoxes comuns podem deixar maçãs ao serem derrotados.",
+    "Comprar nas lojas citadas acima."
+  ],
+  "uses": [
+    "Cura rápida: meio coração crua, três quartos de coração assada.",
+    "Ingrediente obrigatório de Torta de maçã, Maçã com mel e Maçã quente na manteiga; vale como a fruta \"maçã ou framboesa\" exigida pelo Bolo de frutas.",
+    "Entra nas receitas de fruta genéricas (Compota de frutas, Compota farta de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Alimentar cavalos para aumentar a afeição deles por Link.",
+    "Ingrediente do corante vermelho na Tinturaria Kochi, em Hateno.",
+    "Missões: primeiro enigma de Walton (\"Riddles of Hyrule\") e, assada, o pedido de Juney (\"The Apple of My Eye\").",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração (exemplo do Zelda Wiki: Melancia oásica + Maçã = 3:00 de Resistência ao calor)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão a partir da algibeira; é assim que se entrega a maçã a Walton (sobre a folha à frente dele) e que se assa a fruta numa fogueira ou no calor de Eldin.",
+      "applications": ["Responder ao primeiro enigma de Walton.", "Assar várias maçãs de uma vez junto a uma fogueira."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Riddles of Hyrule", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma maçã largada no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "macieira",
+      "status": "confirmado",
+      "result": "Derrubar a macieira com uma arma cortante faz as maçãs caírem.",
+      "conditions": ["Árvore fina ou média (as muito grossas não podem ser cortadas)."],
+      "kind": "mecanica",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "action": "flecha",
+      "variant": "macieira",
+      "status": "confirmado",
+      "result": "Uma flecha disparada contra a copa derruba as maçãs da árvore.",
+      "applications": ["Colher maçãs de árvores altas sem escalar."],
+      "kind": "mecanica",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "action": "bomba_remota",
+      "variant": "macieira",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota pode derrubar a macieira, e as maçãs caem com ela.",
+      "kind": "mecanica",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Maçã assada, que recupera 3/4 de coração.",
+      "conditions": ["Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "side_effects": ["A versão assada perde qualquer possibilidade de efeito culinário: só recupera corações."],
+      "applications": ["Ganhar 50% a mais de cura sem precisar de panela.", "Produzir a Maçã assada pedida por Juney."],
+      "produces": ["botw_food_baked_apple"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food", "zw:The Apple of My Eye"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Maçã assada.",
+      "produces": ["botw_food_baked_apple"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:The Apple of My Eye"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima escaldante (Cânion de Eldin e Montanha da Morte), assa sozinha e vira Maçã assada.",
+      "produces": ["botw_food_baked_apple"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:The Apple of My Eye"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: segundo a fonte, só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela no frio extremo nem em água gelada; a lista de Comidas congeladas não inclui frutas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da maçã à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a maçã largada na água flutua ou afunda."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a maçã não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma maçã largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Sem efeito próprio, entra em pratos de fruta e é obrigatória em Torta de maçã, Maçã com mel e Maçã quente na manteiga. Numa receita com efeito, acrescenta 30 segundos à duração.",
+      "conditions": ["Panela acesa; até cinco ingredientes."],
+      "side_effects": ["Torta de frutas e Frutas com mel aceitam qualquer fruta, menos a maçã."],
+      "applications": ["Completar uma receita de efeito sem cancelar o efeito principal, ganhando tempo extra."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Fruit"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera meio coração.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "jogo"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar cavalo",
+      "status": "confirmado",
+      "result": "Dar maçãs a um cavalo aumenta rapidamente a afeição dele por Link.",
+      "applications": ["Reduzir as rebeldias de um cavalo recém-domado."],
+      "kind": "mecanica",
+      "sources": ["zw:Horse"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A Maçã assada que vale prata",
+      "text": "Na Vila dos Arás, Juney ameaça se divorciar do marido se ele não lhe trouxer uma Maçã assada. Basta assar uma maçã e conversar com ela: ela sente o cheiro, aceita o presente e paga com uma rupia prateada, completando \"The Apple of My Eye\". Ela continua aceitando maçãs assadas depois.",
+      "sources": ["zw:The Apple of My Eye"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Exceção nas receitas de fruta",
+      "text": "Torta de frutas e Frutas com mel aceitam qualquer fruta, exceto a maçã — com ela, o resultado é a Torta de maçã ou a Maçã com mel. Já o Bolo de frutas exige justamente uma maçã ou uma framboesa, mais outra fruta.",
+      "sources": ["zw", "zw:Fruit"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O conselho do Velho",
+      "text": "No Grande Platô, o Velho explica que alimentos simples como maçãs podem ser comidos crus, mas que assá-los no fogo os torna mais saborosos e nutritivos — é a primeira dica do jogo sobre comida assada.",
+      "sources": ["jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Use maçãs para completar panelas de efeito: cada uma soma 30 segundos à duração sem substituir o efeito dos outros ingredientes.",
+    "Assadas, empilham até 999 na algibeira de comida, ao contrário dos pratos de panela, que ocupam um espaço cada."
+  ],
+  "limitations": [
+    "Não dá nenhum efeito especial, nem crua, nem assada, nem cozida sozinha.",
+    "Não serve para Torta de frutas nem para Frutas com mel."
+  ],
+  "related": [
+    { "id": "botw_food_baked_apple", "relation": "Resultado de expor a maçã ao fogo" },
+    { "id": "botw_food_apple_pie", "relation": "Prato que exige maçã" },
+    { "id": "botw_food_honeyed_apple", "relation": "Prato que exige maçã" },
+    { "id": "botw_food_hot_buttered_apple", "relation": "Prato que exige maçã" },
+    { "id": "botw_food_fruitcake", "relation": "Exige maçã ou framboesa" },
+    { "id": "botw_food_simmered_fruit", "relation": "Prato de fruta genérico" },
+    { "id": "botw_creature_horse", "relation": "Maçãs aumentam a afeição dos cavalos" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixar maçãs" },
+    { "id": "botw_object_tree", "relation": "Macieiras: colheita, flechas ou derrubada" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante vermelho" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "item_de_missao"],
+  "verification_status": "verificado"
+}

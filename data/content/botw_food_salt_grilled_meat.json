@@ -1,0 +1,89 @@
+{
+  "id": "botw_food_salt_grilled_meat",
+  "summary": "Carne de terceira ou Coxa esfregadas na Halita e grelhadas, o prato de quem está com poucos ingredientes. Três espaços livres para efeitos.",
+  "description": "A Carne grelhada no sal leva Carne de terceira ou Coxa e Halita. O inventário a recomenda justamente para quando faltam ingredientes: é só esfregar a carne no sal e cozinhar. Sozinha, apenas recupera corações; com três espaços livres, recebe ingredientes de efeito que se somam (ou se anulam, se forem de efeitos diferentes).\n\nÉ o grelhado de carne mais simples, e o último dos três testados pelo jogo: Carne de primeira, Ave inteira, Carne de segunda ou Sobrecoxa na mesma panela mudam o prato para o grelhado da carne mais nobre. Na tabela de ingredientes neutros do Zelda Wiki, a Carne de terceira vale 1 coração, menos que as carnes das outras versões (1,5 e 3). Com Arroz hyliano, a Carne de terceira vira Tigela de arroz com carne; a Coxa não forma tigela e cai nos Bolinhos de arroz com carne.",
+  "obtaining": [
+    "Cozinhar numa Panela Carne de terceira ou Coxa e Halita, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Prato rápido com a carne mais comum.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne mais nobre ou arroz",
+      "status": "confirmado",
+      "result": "Uma carne mais nobre na panela muda o prato para o grelhado dela; Arroz hyliano com Carne de terceira forma Tigela de arroz com carne, e com Coxa, Bolinhos de arroz com carne.",
+      "produces": [
+        "botw_food_salt_grilled_prime_meat",
+        "botw_food_salt_grilled_gourmet_meat",
+        "botw_food_meat_and_rice_bowl",
+        "botw_food_meaty_rice_balls"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da ordem entre os grelhados de carne e das receitas com arroz, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Menor cura entre os grelhados de carne.",
+    "Carnes mais nobres na panela mudam o nome do prato."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_bird_drumstick",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_salt_grilled_prime_meat",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_food_salt_grilled_gourmet_meat",
+      "relation": "Versão com Carne de primeira ou Ave inteira"
+    },
+    {
+      "id": "botw_food_meat_and_rice_bowl",
+      "relation": "Resultado com Carne de terceira e arroz"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

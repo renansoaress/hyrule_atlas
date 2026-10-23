@@ -1,0 +1,160 @@
+{
+  "id": "botw_armor_climbing_boots",
+  "summary": "Botas de escalada com biqueira antiderrapante de tecnologia ancestral: Link escala 20% mais rápido. Ficam no Santuário Tahno O'ah, no Monte Lanayru.",
+  "description": "As Botas de escalada estão no Santuário Tahno O'ah, no Monte Lanayru, e formam o Conjunto de escalada com a Bandana de escalada e o Traje de escalada. Depois de obtidas, Granté passa a vendê-las por 4.000 rupias na Vila de Nício (Tarrey Town). A descrição fala em biqueiras antiderrapantes que ajudam a se agarrar às paredes graças a tecnologia ancestral.\n\nCada peça dá um nível de Escalada mais rápida: +20% de velocidade, +30% com duas e +40% com três. O vigor gasto sobe na mesma proporção, então Link escala mais depressa, mas não mais longe. Com as três peças em ★★, o conjunto ativa o Salto escalando econômico: saltar na parede gasta metade do vigor. Apesar das biqueiras, as botas não evitam que Link escorregue em paredes molhadas pela chuva.\n\nA defesa vai de 3 a 20. As melhorias combinam asas de Morci (comum, elétrico, glacial e ígneo) com ingredientes de velocidade; a última pede 15 Violetas velozes. Podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Tahno O'ah, no Monte Lanayru.",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Abrir o baú do Santuário Tahno O'ah, no Monte Lanayru.",
+    "Recomprar de Granté por 4.000 rupias depois de já tê-las obtido."
+  ],
+  "uses": [
+    "Escalar paredes e penhascos mais depressa.",
+    "Completar o Conjunto de escalada para economizar vigor nos saltos de escalada."
+  ],
+  "effects": [
+    "Escalada mais rápida, nível 1 (+20%).",
+    "Bônus de conjunto (três peças em ★★): saltos durante a escalada custam 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Escalada mais rápida: Link escala 20% mais rápido (30% com dois níveis e 40% com três, o máximo). Com a Bandana de escalada, o Traje de escalada e as Botas de escalada, todos em ★★, ativa o bônus Salto escalando econômico (Climb Jump Stamina Up): saltar durante a escalada custa 50% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "side_effects": [
+        "O gasto de vigor por segundo sobe na mesma proporção da velocidade, então a distância total que Link consegue escalar não aumenta."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Wall-Climb Speed Up",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "chuva",
+      "status": "sem_efeito",
+      "result": "Apesar da descrição falar em equipamento antiderrapante, a peça não impede que Link escorregue ao escalar paredes molhadas pela chuva.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Mais rápido, não mais longe",
+      "text": "Escalada mais rápida aumenta a velocidade, mas o consumo de vigor cresce na mesma proporção. A altura máxima que Link alcança com um Medidor de vigor cheio continua a mesma; o ganho real está no bônus de conjunto, que barateia os saltos.",
+      "sources": [
+        "zw:Wall-Climb Speed Up",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Soma com o Capuz de Ravio",
+      "text": "O efeito se multiplica com o aumento de velocidade lateral de escalada do Capuz de Ravio.",
+      "sources": [
+        "zw:Wall-Climb Speed Up"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto em ★★, prefira subir paredes com saltos de escalada: cada salto custa metade do vigor normal, enquanto a escalada comum continua gastando vigor na mesma proporção da velocidade."
+  ],
+  "limitations": [
+    "Não impede escorregões na chuva.",
+    "A velocidade extra não aumenta a distância total escalada."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_climbers_bandanna",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_climbing_gear",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_ravios_hood",
+      "relation": "Seu efeito lateral se multiplica com o das botas"
+    },
+    {
+      "id": "botw_material_swift_violet",
+      "relation": "Material da última melhoria (15 unidades)"
+    },
+    {
+      "id": "botw_mechanic_climbing",
+      "relation": "Mecânica acelerada pela peça"
+    },
+    {
+      "id": "botw_mechanic_rain",
+      "relation": "A chuva continua fazendo Link escorregar"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

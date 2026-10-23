@@ -1,0 +1,121 @@
+{
+  "id": "botw_monster_guardian_scout_ii",
+  "summary": "Guardião batedor armado (100 de vida, ou 375 nos Santuários \"A Minor Test of Strength\"). Empunha uma Espada, Lança ou Escudo guardiões ou uma Acha ancestral e deixa a arma ao ser derrotado.",
+  "description": "O Guardião batedor 2.0 é a versão melhorada do batedor básico: além do laser, foi projetado para manejar armas, como diz o compendium, para testar melhor a habilidade de combate de quem enfrenta as provações. Ele é o adversário dos Santuários da série \"A Minor Test of Strength\" (prova de força menor), onde tem 375 de vida, e aparece também em outros Santuários, com 100.\n\nCostuma portar uma Espada guardiã, um Escudo guardião, uma Lança guardiã ou uma Acha ancestral, e deixa essa arma ao ser destruído. Os batedores dos Santuários de prova de força podem usar o laser para queimar o chão ao redor repetidas vezes, empurrando Link para trás, e, quando estão perto de serem destruídos, carregam um laser mais forte que não pode ser interrompido. Escudos da linha guardiã desviam os feixes dos batedores.\n\nUm Guardião batedor 2.0 único, azul e translúcido, aparece no Santuário Ta'loh Naeg como tutorial: ele só é derrotado quando Link o acerta com um ataque carregado depois de receber a instrução, não importa quanto dano já tenha sofrido.",
+  "locations": [
+    "Santuários \"A Minor Test of Strength\" e outros, como Dah Hesho, Dah Kaso, Ka'o Makagh, Kaam Ya'tak, Katah Chuki, Noya Neha, Pumaag Nitae, Rok Uwog, Sah Dahaj, Shae Mo'sah, Shora Hah, Soh Kofi, Ta'loh Naeg, Yah Rin e Ruvo Korbah (DLC 2).",
+    "Feras Divinas Vah Naboris, Vah Medoh e Vah Ruta.",
+    "Provação da Espada (DLC 1) e Provação Final (DLC 2)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende a arma que empunhava (Espada guardiã, Escudo guardião, Lança guardiã ou Acha ancestral) e materiais como Parafuso, Mola, Engrenagem e Eixo ancestrais.",
+    "Revive com a Lua de sangue, exceto o exemplar azul de treino do Santuário Ta'loh Naeg."
+  ],
+  "uses": [
+    "Fonte da linha guardiã básica de armas e escudos."
+  ],
+  "effects": [
+    "Golpes com armas guardiãs, laser e, nos Santuários de prova de força, laser que queima o chão em volta."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Luta corpo a corpo com uma arma guardiã. O exemplar azul de Ta'loh Naeg só é derrotado por um ataque carregado, independentemente do dano sofrido.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Escudos da linha guardiã desviam os feixes dos batedores, e lasers de Guardiões podem ser devolvidos com Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian Gear", "zw:Perfect Guard"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "O olho é o ponto fraco dos Guardiões; flechas nele causam dano extra e atordoam, e uma Flecha ancestral no olho destrói o Guardião.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Nos Santuários de prova de força, pode varrer o chão ao redor com o laser várias vezes, jogando Link para trás. Perto de ser destruído, carrega um laser mais forte que não pode ser interrompido.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre ele."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As armas que ele porta não são metálicas (linha guardiã), e nenhuma fonte descreve Magnétis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O batedor de treino",
+      "text": "No Santuário Ta'loh Naeg há um Guardião batedor 2.0 azul e translúcido que serve de tutorial: só cai quando Link usa o ataque carregado indicado, e é uma das exceções que a Lua de sangue não revive.",
+      "sources": ["zw", "zw:Blood Moon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Laser final imparável",
+      "text": "Os batedores dos Santuários de prova de força, quando estão quase destruídos, carregam um laser mais forte que não pode ser interrompido — convém recuar ou estar pronto para a Defesa perfeita.",
+      "sources": ["zw:Guardian"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o Escudo guardião deixado por um batedor para desviar os lasers dos próximos."
+  ],
+  "limitations": [
+    "A arma que ele deixa é da linha guardiã básica, de baixa durabilidade."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_scout_i", "relation": "Versão sem armas" },
+    { "id": "botw_monster_guardian_scout_iii", "relation": "Versão seguinte, com duas armas" },
+    { "id": "botw_weapon_guardian_sword", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_weapon_guardian_spear", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_shield_guardian_shield", "relation": "Escudo que pode portar; desvia feixes de batedores" },
+    { "id": "botw_weapon_ancient_battle_axe", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Devolve lasers de Guardiões" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "parcial"
+}

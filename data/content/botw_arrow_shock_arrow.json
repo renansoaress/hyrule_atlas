@@ -1,0 +1,164 @@
+{
+  "id": "botw_arrow_shock_arrow",
+  "summary": "Flecha carregada de eletricidade (+20 de dano) que eletrocuta e atordoa o alvo e o faz largar o que tem nas mãos. Fica mais forte na chuva, eletrifica a água e é obrigatória contra a Fera Divina Vah Ruta.",
+  "description": "A Flecha eletrizante carrega o poder da eletricidade e estreia na série em Breath of the Wild. Segundo a descrição do jogo, ela se parte ao impactar e canaliza eletricidade para os objetos próximos, sendo incrivelmente eficaz contra metal ou qualquer coisa molhada. Funciona com qualquer arco que use flechas comuns e soma 20 ao ataque do arco — o dobro das Flechas incendiária e congelante.\n\nQuem é atingido fica eletrocutado e atordoado por alguns instantes, e Link, se estiver com itens equipados, os deixa cair. Disparada numa massa de água, cria uma área de dano em volta do ponto de impacto; na chuva, causa dano extra. A descarga também percorre objetos condutores, como caixas e armas de metal.\n\nTem papel na história: Link precisa dela para enfrentar a Fera Divina Vah Ruta ao lado de Sidon, e Muzu revela que o estoque está no território do Centaleão do Monte Ploymus.",
+  "locations": [
+    "Grande Nascente de Lanayru e Pradaria de Hyrule (locais comuns segundo o compendium).",
+    "Território do Centaleão do Monte Ploymus, onde fica o estoque usado na missão de Vah Ruta."
+  ],
+  "obtaining": [
+    "Recolher em baús ou como drop de inimigos arqueiros; costuma aparecer avulsa, às vezes em feixes.",
+    "Comprar na loja de flechas da Cidade Gerudo (Arrow Specialty Shop), na General Shoppe da Floresta Korok, na filial de Tarrey Town do Slippery Falcon, na loja de Shaillu no Bazar Kara Kara, no mercado de peixes de Vila Lurelin e com Jini, no Mounted Archery Camp, apenas durante a chuva."
+  ],
+  "uses": [
+    "Missão principal \"Divine Beast Vah Ruta\": Muzu estima que Link precisa de pelo menos vinte.",
+    "Desarmar e atordoar inimigos; eletrificar inimigos dentro da água."
+  ],
+  "effects": [
+    "+20 de dano sobre o ataque do arco.",
+    "Eletrocuta e atordoa o alvo por instantes."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Disparada por qualquer arco que use flechas comuns, soma 20 ao ataque do arco e se desfaz numa explosão elétrica no impacto, eletrocutando e atordoando o alvo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "É uma fonte de eletricidade à distância: a descarga se propaga por objetos condutores, como caixas de metal e armas de metal.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Disparada numa massa de água, cria uma área de dano elétrico em volta do ponto de impacto. A descrição do jogo também a recomenda contra qualquer coisa molhada.",
+      "applications": [
+        "Atingir inimigos que estão nadando ou dentro de poças."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Causa dano extra quando usada na chuva.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha eletrizante com fogo."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha eletrizante com gelo."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Eletrocuta e atordoa o inimigo por instantes. É especialmente eficaz contra alvos de metal ou molhados.",
+      "side_effects": [
+        "Koboblins, Moblins, Lagalfos e Centaleões às vezes a usam; atingido, Link fica atordoado e larga os itens equipados.",
+        "Todos os Centaleões resistem a ataques elementais e aos efeitos deles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Conduz eletricidade por objetos de metal do cenário, como caixas de metal, e eletrifica a água ao redor do impacto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O ponto fraco dos Zora",
+      "text": "Sidon admite que os Zora, como povo aquático, são terrivelmente vulneráveis à eletricidade. Seggin é uma exceção: segundo Sidon, ele é bem resistente a choques para um Zora, chegou a usar uma Flecha eletrizante e, com isso, a água diminuiu um pouco.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Estoque no Monte Ploymus",
+      "text": "Na missão de Vah Ruta, Muzu fica encarregado de localizar as Flechas eletrizantes, mas só revela onde estão depois de se convencer de que Mipha amava Link: o território do Centaleão do Monte Ploymus. Ele calcula que Link vai precisar de pelo menos vinte.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Mais forte e mais vendida na chuva",
+      "text": "Daz comenta que a Flecha eletrizante causa dano extra na chuva — e Jini, no Mounted Archery Camp, só a vende enquanto está chovendo.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use-a contra inimigos molhados ou dentro da água, que a descrição do jogo aponta como alvos ideais.",
+    "Em dias de chuva, priorize esta flecha pelo dano extra."
+  ],
+  "limitations": [
+    "Centaleões resistem ao atordoamento.",
+    "Inimigos arqueiros que a usam podem fazer Link largar o equipamento."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "O Centaleão do Monte Ploymus guarda o estoque da missão de Vah Ruta"
+    },
+    {
+      "id": "botw_mechanic_electricity",
+      "relation": "Regras gerais de eletricidade"
+    },
+    {
+      "id": "botw_mechanic_rain",
+      "relation": "Aumenta o dano da flecha"
+    },
+    {
+      "id": "botw_object_metal_box",
+      "relation": "Conduz a descarga elétrica"
+    },
+    {
+      "id": "botw_monster_electric_lizalfos",
+      "relation": "Outro portador de eletricidade"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "eletrocuta_inimigos",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

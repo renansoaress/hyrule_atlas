@@ -1,0 +1,116 @@
+{
+  "id": "botw_food_cream_of_mushroom_soup",
+  "summary": "Sopa de cogumelo, uma planta (legume, erva ou flor), Leite fresco e Halita. Ao contrário das outras sopas cremosas de legumes, aceita cenouras; dez versões com efeito.",
+  "description": "O Creme de cogumelos leva qualquer cogumelo, qualquer legume, erva ou flor, Leite fresco e Halita. A descrição do jogo diz que a sopa é tão encorpada que vale por uma refeição. A versão comum sai quando os ingredientes não têm efeito ou quando dois deles têm efeitos contrários: cura 4 corações e vale 30 rupias.\n\nO efeito vem do cogumelo ou da planta: Trufa nutritiva ou Trufona nutritiva geram a versão nutritiva (50 rupias); Energimelo a energizante (7 corações, 40 rupias); Cogumelo tenaz ou Cenoura tenaz a tenaz (5 corações, 40 rupias); Agilimelo a veloz; Flamelo a picante; Aterramelo a isolante; Ferromelo a valente (40 rupias); Blindamelo a blindada (40 rupias); Silencimelo a discreta; e Glacimelo a refrescante. As versões sem preço destacado curam 4 corações e valem 30 rupias.\n\nA diferença em relação ao Creme de legumes, à Sopa cremosa de carne e à Sopa cremosa de frutos do mar é que aqui cenouras são permitidas: a própria versão tenaz pode ser feita com Cenoura tenaz, enquanto nas outras sopas cenouras e abóboras transformam o prato em Sopa cremosa de legumes.",
+  "locations": [
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer cogumelo + qualquer legume, erva ou flor + Leite fresco + Halita."
+  ],
+  "uses": [
+    "Sopa de efeito versátil: o cogumelo escolhido define a versão.",
+    "Venda: de 30 a 50 rupias."
+  ],
+  "effects": [
+    "Versão comum: recupera 4 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Trufa nutritiva ou Trufona nutritiva; 50 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Energimelo; 7 corações, 40 rupias.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — com Cogumelo tenaz ou Cenoura tenaz; 5 corações, 40 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Agilimelo; 4 corações, 30 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Flamelo; 4 corações, 30 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Aterramelo; 4 corações, 30 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Ferromelo; 4 corações, 40 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com Blindamelo; 4 corações, 40 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — com Silencimelo; a descrição citada fala em nível médio; 4 corações, 30 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Glacimelo; 4 corações, 30 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4 corações, sem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O cogumelo ou a planta com efeito definem a versão; quase todas curam 4 corações, exceto a energizante (7) e a tenaz (5).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale de 30 a 50 rupias: 30 na versão comum, 40 nas versões energizante, tenaz, valente e blindada e 50 na nutritiva.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A sopa cremosa que aceita cenoura",
+      "text": "No Creme de legumes e nas sopas cremosas de carne e de frutos do mar, Cenoura veloz, Cenoura tenaz e Abóbora robusta transformam o prato em Sopa cremosa de legumes. No Creme de cogumelos não há essa exceção: a Cenoura tenaz é até uma das formas de fazer a versão tenaz.",
+      "sources": [
+        "zw",
+        "zw:Cream of Vegetable Soup"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para uma versão mais forte, combine um cogumelo e uma planta do mesmo efeito (por exemplo, Cogumelo tenaz com Cenoura tenaz): ingredientes diferentes com o mesmo efeito reforçam mais o prato do que repetir um só."
+  ],
+  "limitations": [
+    "Dois ingredientes de efeitos diferentes se anulam e a sopa sai comum."
+  ],
+  "related": [
+    {
+      "id": "botw_food_cream_of_vegetable_soup",
+      "relation": "Sopa cremosa sem cogumelo, que não aceita cenouras"
+    },
+    {
+      "id": "botw_food_creamy_meat_soup",
+      "relation": "Sopa cremosa com carne"
+    },
+    {
+      "id": "botw_food_creamy_seafood_soup",
+      "relation": "Sopa cremosa com fruto do mar"
+    },
+    {
+      "id": "botw_material_hearty_truffle",
+      "relation": "Gera a versão nutritiva"
+    },
+    {
+      "id": "botw_material_endura_shroom",
+      "relation": "Gera a versão tenaz"
+    },
+    {
+      "id": "botw_material_endura_carrot",
+      "relation": "Também gera a versão tenaz"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,143 @@
+{
+  "id": "botw_monster_decayed_guardian",
+  "summary": "Guardião persecutório arruinado na Grande Calamidade, enterrado e sem patas (500 de vida). Parece desligado até Link chegar perto; uma única Defesa perfeita no laser o destrói na hora.",
+  "description": "O Guardião deteriorado é um Guardião persecutório destruído durante a Grande Calamidade, há 100 anos. Exposto ao tempo por um século, perdeu as patas e a mobilidade e ficou meio enterrado no chão. O compendium alerta que alguns desses modelos abandonados despertam e atacam quando alguém se aproxima: eles parecem inativos, mas acendem e miram o laser em Link assim que ele chega perto.\n\nApesar de não se mover, é perigoso porque costuma estar em pontos estratégicos e, depois de atacado, tende a entrar em pane e disparar vários lasers em sequência. Em compensação, é o Guardião mais fácil de eliminar com técnica: uma Defesa perfeita com qualquer escudo no laser o derrota instantaneamente. Uma flecha no olho o atordoa, e Estátis+ aplicada enquanto ele carrega o disparo também o deixa atordoado.\n\nO Templo Esquecido (Forgotten Temple) abriga uma quantidade enorme deles, colocados ali como sentinelas pelos antigos Sheikah há 10.000 anos, e todos miram em Link no momento em que ele entra. Derrotado, deixa Parafuso, Mola, Engrenagem e Eixo ancestrais — mas não Núcleos.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e no Castelo de Hyrule.",
+    "Pontos citados pelo Zelda Wiki: Templo Esquecido, Forte Hateno, Castelo de Hyrule e ruínas da cidade, Torre Central, Torre de Akkala, Eastern Abbey, Ash Swamp, pico Daval, Monte Drena, East Gerudo Mesa, Military Training Camp, Ilha do Labirinto Lomei, Quarry Ruins, Torin Wetland e Vatorsa Snowfield, entre outros.",
+    "Também aparece na Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Parafuso ancestral, Mola ancestral, Engrenagem ancestral e Eixo ancestral."
+  ],
+  "uses": [
+    "Fonte de materiais ancestrais comuns.",
+    "Alvo ideal para treinar a Defesa perfeita contra lasers, já que uma aparada basta."
+  ],
+  "effects": [
+    "Laser de Guardião, que ateia fogo onde atinge; em pane, rajadas de lasers seguidos."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Parece inativo até Link se aproximar; então acende e mira o laser nele.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Uma Defesa perfeita com qualquer escudo no laser derrota o Guardião deteriorado instantaneamente.",
+      "applications": ["Eliminar vários deles só com o escudo, sem gastar armas nem flechas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Perfect Guard"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes causam dano, mas depois de atacado ele tende a entrar em pane e disparar vários lasers seguidos. Armas ancestrais e a Espada Mestra são especialmente eficazes contra Guardiões corrompidos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Guardian"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no olho o atordoa temporariamente; uma Flecha ancestral no olho destrói Guardiões na hora.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O laser ateia fogo onde atinge. O efeito do fogo sobre o próprio Guardião não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação relevante sobre água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Estátis+ usada enquanto ele carrega o laser o deixa atordoado em seguida, mesmo sem golpes durante o congelamento.",
+      "conditions": ["Runa melhorada para Estátis+."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis num Guardião deteriorado."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Não se move: fica enterrado no mesmo ponto, muitas vezes vigiando estradas e ruínas. No Templo Esquecido, dezenas deles miram em Link ao mesmo tempo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Sentinelas de 10.000 anos",
+      "text": "Os Guardiões deteriorados do Templo Esquecido foram colocados ali como guardas pelos antigos Sheikah há 10.000 anos, e todos tomam mira em Link no instante em que ele entra.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Modo Mestre atrasa o disparo",
+      "text": "No Modo Mestre, eles às vezes demoram um pouco mais para disparar, para atrapalhar o tempo da Defesa perfeita.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ativos voltam, carcaças não",
+      "text": "Como inimigos, os Guardiões deteriorados revivem com a Lua de sangue; já os inativos que servem só para revirar em busca de peças ancestrais não são afetados por ela.",
+      "sources": ["zw:Blood Moon"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o Guardião deteriorado para praticar o tempo da Defesa perfeita: um acerto encerra a luta."
+  ],
+  "limitations": [
+    "Não deixa Núcleo ancestral nem Núcleo ancestral gigante.",
+    "Depois de atacado, pode disparar lasers em sequência rápida."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_stalker", "relation": "Modelo original, com patas" },
+    { "id": "botw_monster_guardian_turret", "relation": "Outro Guardião fixo" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Destrói o Guardião com uma aparada" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Destrói Guardiões ao acertar o olho" },
+    { "id": "botw_rune_stasis", "relation": "Estátis+ o atordoa durante a carga" },
+    { "id": "botw_material_ancient_screw", "relation": "Possível recompensa" },
+    { "id": "botw_material_ancient_spring", "relation": "Possível recompensa" },
+    { "id": "botw_material_ancient_gear", "relation": "Possível recompensa" },
+    { "id": "botw_material_ancient_shaft", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["gera_fogo", "habilidade_especial", "vence_rapido"],
+  "verification_status": "verificado"
+}

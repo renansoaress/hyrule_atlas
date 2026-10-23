@@ -1,0 +1,90 @@
+{
+  "id": "botw_food_creamy_heart_soup",
+  "summary": "Sopa doce de Melancia oásica, Fruta isolante, rabanete nutritivo e Leite fresco que, diz o jogo, aproxima quem a divide. Não tem versão com efeito; com o rabanete grande cura 11 corações.",
+  "description": "A Sopa cremosa do coração exige quatro ingredientes bem específicos: Melancia oásica, Fruta isolante, Leite fresco e um rabanete — Rabanete nutritivo ou Rabanete nutritivo grande. Com o rabanete comum a sopa cura 8 corações e vale 50 rupias; com o grande, cura 11 corações e vale 70. Ao contrário da maioria dos pratos, não existe nenhuma versão com efeito, o que é coerente com a regra geral: os três ingredientes principais têm efeitos diferentes (refrescante, isolante e nutritivo), que se anulam.\n\nA descrição do jogo é romântica: saborear esta sopa doce com outra pessoa aproxima os dois. Na Cidade Gerudo, a professora Ashai conta que planejava uma aula de culinária sobre a Sopa cremosa do coração, mas esqueceu o nome do \"legume em forma de coração\" da receita; ao recitá-la para Link, cita todos os ingredientes, menos os rabanetes.",
+  "locations": [
+    "Aula de culinária de Ashai: à noite, na casa dela, na Cidade Gerudo (onde a receita é mencionada).",
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Melancia oásica + Fruta isolante + Rabanete nutritivo (ou Rabanete nutritivo grande) + Leite fresco."
+  ],
+  "uses": [
+    "Cura de 8 corações (rabanete comum) ou 11 corações (rabanete grande), sem efeito.",
+    "Venda: 50 ou 70 rupias."
+  ],
+  "effects": [
+    "Sem efeito adicional em qualquer versão: recupera 8 corações com Rabanete nutritivo ou 11 com Rabanete nutritivo grande."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 8 corações (com Rabanete nutritivo) ou 11 corações (com Rabanete nutritivo grande), sem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 50 rupias com Rabanete nutritivo e 70 rupias com Rabanete nutritivo grande.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A aula que Ashai não conseguiu dar",
+      "text": "Antes da aula noturna de culinária, Ashai diz que pretendia ensinar a Sopa cremosa do coração, mas não se lembra do nome do legume em forma de coração. Ela recita a receita inteira deixando de fora justamente os rabanetes.",
+      "sources": [
+        "zw",
+        "zw:Ashai"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma sopa para dividir",
+      "text": "A descrição de inventário diz que apreciar esta sopa doce com outra pessoa aproxima os dois; já Ashai se refere ao rabanete da receita como o legume \"em forma de coração\".",
+      "sources": [
+        "jogo",
+        "zw:Ashai"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não pode ter efeito.",
+    "Exige quatro ingredientes específicos; a única troca possível é entre os dois tamanhos de rabanete."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hydromelon",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_voltfruit",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_hearty_radish",
+      "relation": "Rabanete aceito (8 corações)"
+    },
+    {
+      "id": "botw_material_big_hearty_radish",
+      "relation": "Rabanete aceito (11 corações)"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

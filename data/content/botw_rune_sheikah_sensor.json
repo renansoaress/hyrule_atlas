@@ -1,0 +1,79 @@
+{
+  "id": "botw_rune_sheikah_sensor",
+  "summary": "Função da Tabuleta que apita mais alto conforme Link se aproxima de um Santuário. A versão Sensor Sheikah +, liberada por Purah com 3 Parafusos ancestrais, rastreia qualquer entrada já registrada no compêndio.",
+  "description": "O Sensor Sheikah é uma das runas básicas da Tabuleta Sheikah. Ele é desbloqueado ao ativar qualquer Torre Sheikah depois de sair do Planalto (Great Plateau) ou ao reparar a Tabuleta no Laboratório de Hateno (Hateno Ancient Tech Lab). Na forma básica, detecta apenas Santuários: o sinal fica mais forte, e o apito mais alto, quando Link está voltado para um santuário próximo.\n\nDurante a Missão secundária \"Slated for Upgrades\", Purah o transforma em Sensor Sheikah + em troca de 3 Parafusos ancestrais. A versão + rastreia qualquer coisa registrada no Compêndio de Hyrule, ou seja, tudo o que Link fotografou com a Câmera ou comprou de Symin. Logo depois da melhoria, Symin pede para ver o sensor e inicia a missão \"Sunshroom Sensing\": fotografar um Flamelo atrás do laboratório e depois achar três deles com o sensor. A recompensa são 3 Trufas nutritivas, e depois disso Symin passa a vender fotos do compêndio.",
+  "locations": [
+    "Qualquer Torre Sheikah fora do Planalto (desbloqueio da versão básica).",
+    "Laboratório de Hateno, na Vila Hateno (versão básica, ao reparar a Tabuleta, e melhoria para Sensor Sheikah +)."
+  ],
+  "obtaining": [
+    "Ativar uma Torre Sheikah depois de deixar o Planalto, ou reparar a Tabuleta Sheikah no Laboratório de Hateno.",
+    "Sensor Sheikah +: entregar 3 Parafusos ancestrais a Purah na Missão secundária \"Slated for Upgrades\"."
+  ],
+  "uses": [
+    "Encontrar Santuários escondidos seguindo a intensidade do sinal.",
+    "Sensor Sheikah +: rastrear materiais, criaturas, monstros, equipamentos e baús já registrados no compêndio.",
+    "Localizar Lagartos corta-fogo na missão \"Fireproof Lizard Roundup\", em Eldin."
+  ],
+  "effects": [
+    "Sinal sonoro e visual que se intensifica na direção do alvo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Na versão básica, indica Santuários próximos, apitando mais alto quanto mais perto; na versão +, indica o alvo do compêndio escolhido.",
+      "conditions": ["Versão +: o alvo precisa estar registrado no Compêndio de Hyrule."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sensor +", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Baús de metal e baús \"EX\" da DLC são detectados pelo Sensor Sheikah + como baús do tesouro comuns, sem distinção.",
+      "kind": "mecanica",
+      "sources": ["zw:Iron Treasure Chest", "zw:Hidden Chest", "zw:Bonus Chest"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "glitch",
+      "title": "Baú fantasma na cabana do Velho",
+      "text": "Se Link conseguir o Gibão aquecido no Planalto conversando com o rei no Monte Hylia ou entregando o prato pedido pelo Velho, o baú alternativo da cabana nunca aparece; mesmo assim, o Sensor Sheikah continua detectando um baú ali. Esse baú fica inacessível para sempre naquele jogo salvo.",
+      "sources": ["zw:Permanently Missable Items"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lobo Link segue o sinal",
+      "text": "Com o amiibo de Lobo Link ativo, ele conduz Link até a fonte do sinal captado pelo Sensor Sheikah.",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Conflito sobre a obtenção da versão +",
+      "text": "A página da Câmera no Zelda Wiki diz que Link recebe o Sensor Sheikah + junto com o compêndio, mas as páginas do Sensor +, das runas, do laboratório e da missão \"Slated for Upgrades\" concordam que ele é uma melhoria paga com 3 Parafusos ancestrais. Esta ficha segue a maioria das fontes.",
+      "sources": ["zw:Camera", "zw:Sensor +", "zw:Slated for Upgrades"]
+    }
+  ],
+  "advanced_uses": [
+    "Fotografar materiais raros na primeira vez que forem vistos e depois usar o Sensor Sheikah + para farmá-los.",
+    "Escolher Baú do tesouro como alvo do Sensor Sheikah + para varrer uma região em busca de baús esquecidos."
+  ],
+  "limitations": [
+    "A versão básica só detecta Santuários.",
+    "A versão + só rastreia o que já está registrado no compêndio.",
+    "O sensor não diferencia baús de metal, de madeira ou \"EX\"."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa básica da Tabuleta Sheikah" },
+    { "id": "botw_material_ancient_screw", "relation": "3 unidades para o Sensor Sheikah +" },
+    { "id": "botw_rune_camera", "relation": "Registra no compêndio o que a versão + rastreia" },
+    { "id": "botw_material_sunshroom", "relation": "Alvo da missão \"Sunshroom Sensing\"" },
+    { "id": "botw_material_hearty_truffle", "relation": "Recompensa da missão \"Sunshroom Sensing\" (3 unidades)" },
+    { "id": "botw_creature_fireproof_lizard", "relation": "Pode ser localizado com o sensor" },
+    { "id": "botw_treasure_treasure_chest", "relation": "Alvo possível da versão +" },
+    { "id": "botw_armor_warm_doublet", "relation": "Ligado ao glitch do baú na cabana do Velho" }
+  ],
+  "capabilities": ["revela_recursos"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "botw_armorset_hero_of_the_sky_set",
+  "summary": "Roupa de Link de Skyward Sword, obtida só com o amiibo de Link de Skyward Sword. Sem efeito por peça; em ★★ o conjunto aumenta em 50% o dano do feixe da Espada Mestra. Melhora com Safiras.",
+  "description": "O Conjunto do herói do céu é formado pelo Gorro do céu, pela Túnica do céu e pelas Calças do céu, e reproduz a roupa de Link em The Legend of Zelda: Skyward Sword. As peças só são obtidas com a runa amiibo, escaneando o amiibo de Link de Skyward Sword: cada leitura cria um baú com pequena chance de conter uma peça, e como o amiibo só pode ser usado uma vez por dia real, completar o conjunto leva pelo menos três dias.\n\nAs peças não têm efeito individual. Com as três melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ativa o aumento do feixe da Espada Mestra (Master Sword Beam Up): o disparo de energia que a espada lança quando Link está com a vida cheia causa 50% a mais de dano, somando-se ao bônus da espada desperta. Cada nível de melhoria pede Safiras e um Fragmento de estrela por peça.\n\nO conjunto não pode ser tingido na Tinturaria Kochi. É um dos seis conjuntos de \"herói\" que compartilham esse mesmo bônus.",
+  "locations": [
+    "Não aparece no mapa: surge em baús criados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Skyward Sword) com a runa amiibo; cada leitura gera um baú com pequena chance de conter uma peça.",
+    "Limite de uma leitura por dia real: são necessários pelo menos três dias reais para o conjunto."
+  ],
+  "uses": [
+    "Reforçar o feixe da Espada Mestra para atacar à distância com a vida cheia.",
+    "Peça de coleção para fãs de Skyward Sword."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Bônus de conjunto (três peças em ★★): +50% de dano no feixe da Espada Mestra."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças em ★★, o feixe disparado pela Espada Mestra causa 50% a mais de dano, acumulando com o aumento da espada desperta.",
+      "conditions": [
+        "Gorro, túnica e calças do céu vestidos juntos, todos com ★★.",
+        "Ter a Espada Mestra e disparar o feixe com a vida cheia."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Master Sword"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Como funciona o feixe",
+      "text": "A Espada Mestra só dispara o feixe quando Link está com a vida cheia. O golpe causa 10 de dano base, o alcance cresce com o número de Recipientes de coração e cada disparo gasta um pouco da energia da espada, a menos que ela tenha sido despertada permanentemente ao concluir o santuário do Monge da Espada, da DLC.",
+      "sources": ["zw:Master Sword"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Referência a Skyward Sword",
+      "text": "O conjunto reproduz a roupa do Link de Skyward Sword, e o próprio feixe da Espada Mestra em Breath of the Wild imita o disparo de energia daquele jogo.",
+      "sources": ["zw", "zw:Master Sword"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Doze Fragmentos de estrela",
+      "text": "Todos os quatro níveis de melhoria pedem um Fragmento de estrela por peça, além de Safiras (1, 3, 5 e 10). Levar o conjunto ao máximo exige 12 Fragmentos de estrela.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Em ★★ e com muitos Recipientes de coração, o feixe vira um ataque à distância forte contra inimigos que ficam fora do alcance da espada."
+  ],
+  "limitations": [
+    "Depende do amiibo de Link (Skyward Sword) e da sorte nos baús.",
+    "O bônus só beneficia o feixe da Espada Mestra, que exige vida cheia.",
+    "Não pode ser tingido."
+  ],
+  "related": [
+    { "id": "botw_armor_cap_of_the_sky", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_tunic_of_the_sky", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_trousers_of_the_sky", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_weapon_master_sword", "relation": "Arma cujo feixe o bônus fortalece" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para obter as peças" },
+    { "id": "botw_material_sapphire", "relation": "Material de todas as melhorias" },
+    { "id": "botw_material_star_fragment", "relation": "Exigido em todos os níveis de melhoria" },
+    { "id": "botw_armorset_hero_of_the_wild_set", "relation": "Outro conjunto com o mesmo bônus" },
+    { "id": "botw_armor_ravios_hood", "relation": "Também aumenta o feixe da Espada Mestra (efeito oculto)" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" }
+  ],
+  "capabilities": ["ataque"],
+  "verification_status": "verificado"
+}

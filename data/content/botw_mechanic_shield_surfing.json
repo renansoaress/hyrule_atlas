@@ -1,0 +1,90 @@
+{
+  "id": "botw_mechanic_shield_surfing",
+  "summary": "Descer encostas de neve, areia ou grama em cima do escudo (pular com o escudo erguido e apertar A no ar). Em neve e areia não gasta o escudo; em rocha o desgasta rápido. Na chuva é mais rápido e gasta menos.",
+  "description": "Surfar com escudo transforma qualquer escudo numa prancha. Com o escudo erguido (ZL), Link pula e aperta A ainda no ar para subir nele, deslizando morro abaixo como num snowboard. Cada escudo tem atrito e velocidade próprios, assim como cada tipo de superfície.\n\nO custo é a durabilidade, e ele depende do terreno: sobre terreno áspero, como as rochas da Montanha da Morte, o escudo se desgasta rapidamente e pode quebrar; em caminhos de terra ou grama o desgaste é bem menor; em areia e neve não há desgaste nenhum. A chuva reduz ainda mais o dano ao escudo e aumenta a velocidade. Os dados do jogo guardam até um bônus de arma não usado, \"Shield Surf Up\", que reduziria o atrito do escudo na descida.",
+  "locations": [
+    "Qualquer encosta com neve, areia ou grama; regiões nevadas e dunas do Deserto Gerudo são as que não desgastam o escudo."
+  ],
+  "obtaining": [
+    "Disponível desde o início; basta ter um escudo."
+  ],
+  "uses": [
+    "Descer montanhas rapidamente sem gastar vigor do Planador.",
+    "Atravessar campos de neve e dunas."
+  ],
+  "effects": [
+    "Deslocamento rápido morro abaixo sobre o escudo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Com o escudo erguido (ZL), pular e apertar A no ar faz Link subir no escudo e deslizar pela encosta.",
+      "conditions": ["Escudo equipado.", "Encosta de neve, areia ou grama."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "variant": "neve e areia",
+      "status": "confirmado",
+      "result": "Surfar sobre neve ou areia não causa nenhum desgaste ao escudo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability"]
+    },
+    {
+      "action": "cenario",
+      "variant": "rocha e terreno áspero",
+      "status": "confirmado",
+      "result": "Em terreno áspero, como as rochas da Montanha da Morte, a durabilidade cai depressa e o escudo pode quebrar; em terra e grama o desgaste é bem menor.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability", "zw:Shield"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Na chuva, surfar desgasta menos o escudo e fica mais rápido.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Escudos diferentes têm atrito e velocidade diferentes na descida.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "montar",
+      "variant": "Morsareia",
+      "status": "confirmado",
+      "result": "Para ser rebocado por uma Morsareia no deserto, Link precisa ter um escudo equipado; quem não tem paga 50 rupias em vez de 20 para alugar uma com escudo na Cidade Gerudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Sand Seal", "zw:Tips and Tricks"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Bônus de surfe nunca usado",
+      "text": "Os arquivos do jogo contêm um bônus de arma amarelo não utilizado, \"Shield Surf Up\", que multiplicaria o atrito do escudo por 0,2 durante o surfe.",
+      "sources": ["zw:Weapon Bonus"]
+    }
+  ],
+  "advanced_uses": [
+    "Preferir rotas por neve ou areia ao surfar com um escudo valioso: o desgaste é zero.",
+    "Aproveitar dias de chuva para descidas mais rápidas."
+  ],
+  "limitations": [
+    "Desgasta o escudo em terreno áspero.",
+    "Exige uma encosta; em terreno plano não há impulso."
+  ],
+  "related": [
+    { "id": "botw_mechanic_durability", "relation": "Desgaste do escudo no surfe" },
+    { "id": "botw_mechanic_rain", "relation": "Chuva acelera e reduz o desgaste" },
+    { "id": "botw_creature_sand_seal", "relation": "Rebocar-se numa Morsareia exige escudo" },
+    { "id": "botw_shield_travelers_shield", "relation": "Exemplo de escudo comum usado como prancha" }
+  ],
+  "capabilities": ["velocidade"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "botw_armorset_climbing_set",
+  "summary": "Bandana, traje e botas de escalada guardados em três santuários. Cada peça acelera a escalada; em ★★ o salto durante a escalada gasta metade do vigor. Não impede escorregar na chuva.",
+  "description": "O Conjunto de escalada é composto pela Bandana de escalada, pelo Traje de escalada e pelas Botas de escalada. Cada peça fica num baú de um Santuário: Ree Dahee (nos Dueling Peaks), Chaas Qeta (Ilha Tenoko) e Tahno O'ah (Monte Lanayru). Depois de obter uma peça, Granté passa a vendê-la em Tarrey Town.\n\nCada peça concede um nível de Escalada mais rápida (20%, 30% e 40% nos níveis 1 a 3). Um detalhe pouco óbvio: o gasto de vigor aumenta na mesma proporção, então o efeito sobe paredes mais depressa, mas não aumenta a distância total que Link consegue escalar com um Medidor de vigor. O que realmente economiza vigor é o bônus de conjunto: com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o salto durante a escalada consome 50% menos vigor (Climb Jump Stamina Up).\n\nApesar do que a descrição do equipamento sugere, o conjunto não impede que Link escorregue ao escalar na chuva. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Ree Dahee, nos Dueling Peaks.",
+    "Santuário Chaas Qeta, na Ilha Tenoko.",
+    "Santuário Tahno O'ah, no Monte Lanayru.",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Bandana de escalada: baú do Santuário Ree Dahee.",
+    "Traje de escalada: baú do Santuário Chaas Qeta.",
+    "Botas de escalada: baú do Santuário Tahno O'ah.",
+    "Recompra com Granté, em Tarrey Town, por 4.000 rupias cada."
+  ],
+  "uses": [
+    "Subir paredes, torres e penhascos mais rápido.",
+    "Economizar vigor nos saltos de escalada quando o conjunto está em ★★."
+  ],
+  "effects": [
+    "Cada peça: Escalada mais rápida (um nível por peça, até o nível 3, +40%).",
+    "Bônus de conjunto (três peças em ★★): o salto durante a escalada gasta 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Escalada mais rápida de nível 3; em ★★ o salto na parede passa a custar metade do vigor.",
+      "conditions": [
+        "Bandana, traje e botas de escalada vestidos juntos.",
+        "Para o bônus: todas as peças com ★★."
+      ],
+      "side_effects": [
+        "A velocidade extra vem acompanhada de gasto de vigor proporcionalmente maior; só o bônus de salto economiza vigor de fato."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    },
+    {
+      "action": "chuva",
+      "status": "sem_efeito",
+      "result": "Não impede que Link escorregue nas paredes molhadas durante a chuva.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Mais rápido, não mais longe",
+      "text": "O efeito Escalada mais rápida aumenta o consumo de vigor na mesma proporção da velocidade, portanto não aumenta a altura máxima que dá para escalar. A economia real vem do bônus de conjunto, que reduz pela metade o custo do salto em escalada.",
+      "sources": ["zw:Added Effect", "zw:Set Bonus"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Combinação com elixir de velocidade",
+      "text": "O efeito Velocidade aumentada de pratos e elixires imita a Escalada mais rápida e se acumula com ela, mas só até o limite do nível 3. Com as três peças, o efeito de escalada já está no máximo.",
+      "sources": ["zw:Added Effect"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Também no Conjunto da guarda real",
+      "text": "A redução de 50% no vigor do salto em escalada existe, oculta, no Conjunto da guarda real, que não precisa de melhorias.",
+      "sources": ["zw:Set Bonus"]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto em ★★, os saltos de escalada custam metade do vigor normal, o que permite usá-los com bem menos risco de esgotar o Medidor de vigor no meio de uma parede longa."
+  ],
+  "limitations": [
+    "Não evita escorregar na chuva.",
+    "A velocidade maior consome vigor mais rápido.",
+    "Melhorias pedem asas de Morci (comum, elétrico, glacial e ígneo) junto com Agilimelo, Lagarto fujão, Sapo apressado e Violeta veloz."
+  ],
+  "related": [
+    { "id": "botw_armor_climbers_bandanna", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_climbing_gear", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_climbing_boots", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_royal_guard_set", "relation": "Tem o mesmo bônus de salto em escalada, oculto" },
+    { "id": "botw_mechanic_climbing", "relation": "Mecânica de escalada" },
+    { "id": "botw_mechanic_rain", "relation": "A chuva continua fazendo Link escorregar" },
+    { "id": "botw_mechanic_stamina", "relation": "O bônus reduz o gasto de vigor" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["velocidade", "habilidade_especial"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,158 @@
+{
+  "id": "botw_weapon_moonlight_scimitar",
+  "summary": "Cimitarra Gerudo decorada com entalhes delicados e lâmina gravada extremamente afiada, que no passado era usada em cerimônias de festivais. Mais forte e durável que a Cimitarra Gerudo comum; metálica.",
+  "description": "A Cimitarra meia-lua pertence ao equipamento Gerudo (Gerudo Gear). Segundo o jogo, entalhes Gerudo delicados decoram a lâmina curva, que é extremamente afiada, e a arma teria servido a propósitos cerimoniais em festivais. Em combate, supera a Cimitarra Gerudo comum tanto em ataque (25 contra 16) quanto em durabilidade (32 contra 23). Aparece por todo o Deserto Gerudo e nas Montanhas Gerudo, especialmente dentro e ao redor da Cidade Gerudo.\n\nComo as demais armas Gerudo de metal, atrai raios quando equipada em tempestades, conduz eletricidade, afunda na água e pode ser recuperada com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Deserto Gerudo e Montanhas Gerudo, principalmente dentro e ao redor da Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Procurar dentro e ao redor da Cidade Gerudo, onde ela é mais comum.",
+    "Pode aparecer nos baús gerados pela runa amiibo com o amiibo de Link (Rider) ou o de Urbosa, ambos da série Breath of the Wild.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão de bom equilíbrio entre dano e durabilidade para a região Gerudo.",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a arma voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem a Cimitarra meia-lua."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a cimitarra pode surgir com bônus de ataque de +2 a +4 (nível comum) ou +5 a +6 (nível dourado), bônus de durabilidade de +4 a +7 (ou +8 a +16 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Arma de festival",
+      "text": "A descrição do item sugere que a cimitarra era usada em cerimônias de festivais Gerudo antes de virar arma de combate.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Metálica: perigosa em tempestades e contra os Lagalfos elétricos do deserto.",
+    "Os bônus de ataque possíveis são pequenos (no máximo +6); vale mais pelo bônus de durabilidade."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_gerudo_scimitar",
+      "relation": "Cimitarra Gerudo comum, mais fraca"
+    },
+    {
+      "id": "botw_weapon_scimitar_of_the_seven",
+      "relation": "Cimitarra lendária de Urbosa"
+    },
+    {
+      "id": "botw_shield_gerudo_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_shield_radiant_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_electric_lizalfos",
+      "relation": "Inimigo elétrico comum no deserto"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

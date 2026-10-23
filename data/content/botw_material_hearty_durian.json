@@ -1,0 +1,158 @@
+{
+  "id": "botw_material_hearty_durian",
+  "summary": "O \"rei das frutas\", de cheiro forte, cresce nas matas de Faron. Cru cura 3 corações e, na panela, dá Corações extras (aumento temporário do máximo de corações). Assado cura 4,5, mas vale menos na venda.",
+  "description": "O Durião nutritivo ganhou o apelido de \"rei das frutas\" pelo cheiro forte — referência ao durião real, que tem o mesmo apelido. É a fruta mais restauradora do jogo: cru, recupera 3 corações, e qualquer prato de panela que o leve ganha o efeito Corações extras, que aumenta temporariamente o máximo de corações de Link. Exposto ao fogo, vira Durião nutritivo assado, que cura 4,5 corações, mas perde o efeito e, curiosamente, vale menos na venda (12 rupias, contra 15 do cru).\n\nCresce em árvores das áreas arborizadas dos Prados de Faron (o compendium também cita Necluda Ocidental). Pode ser comprado do mercador ambulante Chumin e na barraca de frutas de Lorn, na Cidade Gerudo, e às vezes cai de Rinoxes comuns derrotados. Na Tinturaria Kochi, é um dos ingredientes do corante amarelo-claro.",
+  "locations": [
+    "Árvores nas áreas arborizadas dos Prados de Faron; o compendium cita também Necluda Ocidental.",
+    "Lojas: Chumin (entre a Vila Lurelin e o Highland Stable), por 50 rupias, e Lorn's Fruit Stand, na Cidade Gerudo, por 60 rupias."
+  ],
+  "obtaining": [
+    "Colher nas árvores de Faron.",
+    "Rinoxes comuns podem deixá-lo ao serem derrotados.",
+    "Comprar com Chumin ou na barraca de Lorn."
+  ],
+  "uses": [
+    "Ingrediente para pratos com Corações extras.",
+    "Cura imediata alta: 3 corações cru, 4,5 corações assado.",
+    "Receitas de fruta genéricas (Compota de frutas, Compota farta de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Cozido: Corações extras — aumenta temporariamente o máximo de corações. Mais unidades ou mais ingredientes do mesmo tipo de efeito tornam o efeito mais forte."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; junto ao fogo ou no clima escaldante de Eldin, assa sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um durião largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Assado por chamas diretas, vira Durião nutritivo assado, que recupera 4,5 corações sem nenhum efeito.",
+      "side_effects": ["Perde o efeito Corações extras.", "O valor de venda cai de 15 para 12 rupias."],
+      "applications": ["Cura grande e empilhável quando não há panela por perto."],
+      "produces": ["botw_food_roasted_hearty_durian"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food", "zw:Roasted Hearty Durian"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Durião nutritivo assado.",
+      "produces": ["botw_food_roasted_hearty_durian"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, assa sozinho ao ser largado no chão.",
+      "produces": ["botw_food_roasted_hearty_durian"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Hearty Durian"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do durião na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o durião não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Um ou mais duriões na panela dão ao prato o efeito Corações extras. Usar mais ingredientes com esse efeito aumenta a quantidade de corações extras.",
+      "conditions": ["Não misturar com ingredientes de outro efeito: o prato fica só com o efeito predominante, ou com nenhum se eles se anularem."],
+      "side_effects": ["Corações extras não se acumulam entre pratos: comer um segundo prato desse efeito mantém apenas o mais forte.", "A vida de Link não passa de 30 corações no total."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Extra Hearts"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 3 corações (sem efeito).",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 15 rupias — mais do que a versão assada, que vale 12.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Assar desvaloriza",
+      "text": "Ao contrário de muitos ingredientes que valem mais depois de assados, o durião cai de 15 para 12 rupias na venda quando vira Durião nutritivo assado. Se a ideia é vender, venda-o cru.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Roasted Hearty Durian"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O \"rei das frutas\"",
+      "text": "O apelido vem do durião real, conhecido pelo mesmo título e pelo cheiro forte. A descrição do Durião nutritivo assado lamenta que assá-lo não tira o odor característico.",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Não combina com bebida",
+      "text": "Segundo o Zelda Wiki, o jogo desaconselha comer duriões junto com bebidas alcoólicas, sem explicar o motivo — outra semelhança com a fruta real.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para um prato de muitos corações extras, combine duriões com outros ingredientes de Corações extras (trufas, rabanetes): ingredientes diferentes do mesmo efeito tendem a render bônus maiores que repetir o mesmo item.",
+    "Guarde alguns crus para cura de emergência de 3 corações sem precisar cozinhar."
+  ],
+  "limitations": [
+    "Assado perde o efeito Corações extras e vale menos na venda.",
+    "Corações extras de pratos diferentes não se somam."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_hearty_durian", "relation": "Resultado de expor o durião ao fogo" },
+    { "id": "botw_material_hearty_truffle", "relation": "Outro ingrediente de Corações extras" },
+    { "id": "botw_material_hearty_radish", "relation": "Outro ingrediente de Corações extras" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_food_simmered_fruit", "relation": "Prato de fruta genérico" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixá-lo" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo-claro" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "verificado"
+}

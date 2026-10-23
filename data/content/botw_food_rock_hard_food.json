@@ -1,0 +1,115 @@
+{
+  "id": "botw_food_rock_hard_food",
+  "summary": "Prato fracassado que surge sempre que Madeira ou minérios (gemas, Sílex, Pedra luminosa) vão à panela. Recupera só 1/4 de coração, não tem efeito e vale 2 rupias.",
+  "description": "A Comida dura como pedra é o resultado de uma receita inválida: aparece sempre que há Madeira ou algum minério na panela — Âmbar, Diamante, Sílex, Pedra luminosa, Opala, Rubi, Safira ou Topázio —, e tem prioridade até sobre a Comida duvidosa. Não importa o que mais seja usado. Ela recupera apenas 1/4 de coração, não tem efeito, não recebe bônus crítico e é vendida por 2 rupias, qualquer que seja o valor das gemas sacrificadas. O inventário a descreve como um prato que deu errado por causa do ingrediente errado: mastigar não será divertido, mas ela \"enche a barriga\" num aperto.\n\nA única saída para não desperdiçar a panela é uma Fada: quando a receita normalmente daria Comida dura como pedra, a fada transforma o resultado num Tônico de fada. No mundo, quem insiste no erro é Moza, uma aspirante a chef perto do Santuário Ishto Soh, nas Montanhas Gerudo: seu \"prato luxuoso de carne\" consiste em carne de ave ou bife com minério fresco e, como ela mesma admite, sempre vira Comida dura como pedra.",
+  "locations": [
+    "Moza, que ensina a \"receita\" do prato luxuoso de carne, fica perto do Santuário Ishto Soh, nas Montanhas Gerudo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela qualquer combinação que inclua Madeira, Âmbar, Diamante, Sílex, Pedra luminosa, Opala, Rubi, Safira ou Topázio."
+  ],
+  "uses": [
+    "Recuperar 1/4 de coração em emergência.",
+    "Venda por 2 rupias."
+  ],
+  "effects": [
+    "Recupera 1/4 de coração.",
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera apenas 1/4 de coração, sem efeito algum.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Fada na panela",
+      "status": "confirmado",
+      "result": "Se uma Fada for colocada numa receita que daria Comida dura como pedra, o resultado passa a ser um Tônico de fada.",
+      "produces": [
+        "botw_elixir_fairy_tonic"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por apenas 2 rupias, não importa quais ingredientes (nem quantas gemas) tenham sido usados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O \"prato luxuoso de carne\" de Moza",
+      "text": "Moza recomenda preparar carne de ave ou bife e jogar \"minério fresquinho\" na panela, porque cozinhar carne com minério brilhante seria a única forma de fazer um prato luxuoso. Ela confessa que sempre obtém Comida dura como pedra e não entende de onde vem tanta \"pedra\".",
+      "sources": [
+        "zw",
+        "zw:Moza"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mais forte que a Comida duvidosa",
+      "text": "Se a panela tiver ao mesmo tempo Madeira ou minério e uma combinação que daria Comida duvidosa (por exemplo, partes de monstro sem bicho), o resultado é Comida dura como pedra.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Diamante na panela",
+      "text": "Até o Diamante, a gema mais valiosa, vira Comida dura como pedra quando cozido — e o prato resultante continua valendo só 2 rupias.",
+      "sources": [
+        "zw:Diamond",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Nenhum efeito e nenhum bônus crítico.",
+    "Desperdiça os ingredientes usados, inclusive gemas caras."
+  ],
+  "related": [
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "O outro prato fracassado, que perde a prioridade para este"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Ingrediente que sempre causa este resultado"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Gema que, cozida, vira este prato"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Minério que causa este resultado"
+    },
+    {
+      "id": "botw_creature_fairy",
+      "relation": "Na panela, troca o resultado por Tônico de fada"
+    },
+    {
+      "id": "botw_elixir_fairy_tonic",
+      "relation": "Resultado ao incluir uma Fada"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

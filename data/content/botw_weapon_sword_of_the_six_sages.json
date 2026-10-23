@@ -1,0 +1,164 @@
+{
+  "id": "botw_weapon_sword_of_the_six_sages",
+  "summary": "Espada longa dos Seis Sábios de Twilight Princess, exclusiva do amiibo de Ganondorf (ataque 48, durabilidade 50). A lâmina brilha com um lustro sagrado e ilumina lugares escuros.",
+  "description": "O Montante do crepúsculo é a espada longa que, segundo o jogo, os Seis Sábios forjaram para selar um rei demônio no mundo em que o herói lutou contra as feras do crepúsculo — uma referência a Twilight Princess, cuja bainha de Ganondorf ele reaproveita. Em Breath of the Wild é uma arma de duas mãos exclusiva de amiibo: há uma chance rara de ela aparecer no baú gerado pelo amiibo de Ganondorf (Super Smash Bros.), mas só depois de Link domar pelo menos uma Fera Divina.\n\nA lâmina \"brilha com um lustro sagrado\", e o brilho é real: ela emite luz em áreas escuras, como as Ruínas de Thyphlo (Thyphlo Ruins). Se quebrar ou for perdida, pode ser obtida de novo com o mesmo amiibo. Feita de metal, conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis; não queima.",
+  "locations": [
+    "Não existe no mapa: só sai de baús gerados pelo amiibo de Ganondorf (Super Smash Bros.)."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Ganondorf com a runa amiibo depois de domar ao menos uma Fera Divina; a espada é um prêmio raro.",
+    "Usar o amiibo de novo para conseguir uma substituta se ela quebrar ou se perder.",
+    "Armas de amiibo recebem sempre o valor máximo do nível de bônus sorteado."
+  ],
+  "uses": [
+    "Fonte de luz em lugares escuros, como as Ruínas de Thyphlo, enquanto empunhada.",
+    "Arma de duas mãos de ataque e durabilidade altos.",
+    "Como espada, corta árvores; por ser de metal, acende sílex."
+  ],
+  "effects": [
+    "A lâmina brilha e ilumina áreas escuras."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e fortes de duas mãos, sem escudo, com o giro carregado que gasta vigor e termina numa pancada para baixo. Em áreas escuras, a lâmina brilha e clareia os arredores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "side_effects": [
+        "Só pode ser reposta pelo amiibo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes só descrevem a obtenção por amiibo; não há registro de monstros que a empunhem."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +10, Durabilidade aumentada de +8 a +25 ou Acerto crítico; no nível dourado (amarelo): Ataque de +11 a +19, Durabilidade de +26 a +43 ou Lançamento longo (×1,5 a ×2). Como armas de amiibo recebem o valor máximo do nível, uma cópia com Durabilidade dourada chega a 93 usos — embora o ícone mostre o bônus como branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A bainha de Ganondorf",
+      "text": "A bainha do Montante do crepúsculo é a mesma usada por Ganondorf em Twilight Princess, e a descrição do jogo liga a espada aos Seis Sábios que tentaram selar um rei demônio naquele mundo.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Equipe-a para explorar as Ruínas de Thyphlo e outros locais escuros: o brilho da lâmina ajuda a enxergar sem que Link precise trocar a arma por uma Tocha."
+  ],
+  "limitations": [
+    "Exclusiva do amiibo de Ganondorf e só depois da primeira Fera Divina domada.",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_golden_claymore",
+      "relation": "Arma comum do mesmo amiibo de Ganondorf"
+    },
+    {
+      "id": "botw_weapon_biggorons_sword",
+      "relation": "Outra arma de duas mãos exclusiva de amiibo"
+    },
+    {
+      "id": "botw_weapon_fierce_deity_sword",
+      "relation": "Outra arma de duas mãos exclusiva de amiibo"
+    },
+    {
+      "id": "botw_weapon_torch",
+      "relation": "Alternativa de iluminação em áreas escuras"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Runa usada para obtê-la"
+    }
+  ],
+  "capabilities": [
+    "ilumina",
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

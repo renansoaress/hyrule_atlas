@@ -1,0 +1,102 @@
+{
+  "id": "botw_elixir_fairy_tonic",
+  "summary": "Elixir de cura feito com Fadas na Panela: cada Fada rende 10 corações e não há efeito extra. Também é o que sai quando uma Fada entra numa receita de elixir, de Comida duvidosa ou de comida dura como pedra.",
+  "description": "O Tônico de fada é o único elixir que não usa bicho nem parte de monstro: basta pôr ao menos uma Fada numa Panela. Crua, uma Fada restaura 5 corações quando usada (ou ao reviver Link); cozida, sua recuperação dobra, e o Zelda Wiki registra que cada Fada acrescenta 10 corações à receita. Quanto mais Fadas, mais forte o tônico.\n\nA regra que define o resultado tem consequências práticas. Uma Fada junto de ingredientes de refeição apenas soma corações ao prato. Mas, se a receita fosse virar elixir, Comida duvidosa ou comida dura como pedra, a Fada a converte em Tônico de fada — que nunca concede efeitos. Ou seja: uma Fada esquecida na mão estraga um elixir de resistência, mas também salva uma receita que daria errado.",
+  "locations": [
+    "Não aparece pronto no mundo segundo as fontes; as Fadas surgem na Grama cortada, nas Fontes da Grande Fada e voando em certos pontos."
+  ],
+  "obtaining": [
+    "Cozinhar uma ou mais Fadas sozinhas numa Panela.",
+    "Cozinhar uma Fada com uma combinação que resultaria em elixir, Comida duvidosa ou comida dura como pedra."
+  ],
+  "uses": [
+    "Cura grande e portátil, sem gastar a Fada como reanimação automática.",
+    "Aproveitar Fadas nas salas de descanso da Provação da Espada, que trazem Panela e Fadas."
+  ],
+  "effects": [
+    "Recupera corações (10 por Fada, segundo o Zelda Wiki).",
+    "Nunca concede efeitos adicionais."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Restaura corações; o jogo o descreve como um elixir de recuperação poderoso, de aroma doce.",
+      "side_effects": ["Não dá nenhum efeito de resistência ou de atributo."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Fadas sozinhas na Panela viram Tônico de fada; cada Fada acrescenta 10 corações (a cura crua dela é 5 e dobra no cozimento).",
+      "applications": ["Juntar várias Fadas num só tônico para uma cura concentrada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild", "zw:Fairy"]
+    },
+    {
+      "action": "misturar",
+      "variant": "com bichos e partes de monstro",
+      "status": "confirmado",
+      "result": "Se a receita seria um elixir, a Fada a transforma em Tônico de fada e o efeito do bicho se perde.",
+      "side_effects": ["Erro comum ao preparar elixires de resistência."],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "misturar",
+      "variant": "com receitas que falhariam",
+      "status": "confirmado",
+      "result": "Combinações que dariam Comida duvidosa ou comida dura como pedra (ex.: com Madeira ou gemas) viram Tônico de fada quando há uma Fada na receita.",
+      "applications": ["Uma Fada \"conserta\" uma receita inválida, ao custo de perder qualquer efeito."],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "misturar",
+      "variant": "com ingredientes de refeição",
+      "status": "confirmado",
+      "result": "Junto de frutas, carnes, cogumelos e afins, a Fada não gera tônico: apenas soma 10 corações ao prato.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale sempre apenas 2 rupias, independentemente das Fadas e ingredientes usados.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Fada guardada ou tônico?",
+      "text": "Guardada na algibeira, a Fada sai sozinha quando Link perde o último coração e restaura 5 corações; se a Dádiva de Mipha estiver ativa e carregada, ela tem prioridade. Cozida, a mesma Fada rende 10 corações, mas exige que o jogador beba o tônico a tempo.",
+      "sources": ["zw:Fairy", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Limite de três Fadas",
+      "text": "Com três ou mais Fadas na algibeira, elas param de aparecer no mundo até Link ficar abaixo desse número — transformar algumas em tônico libera novas aparições.",
+      "sources": ["zw:Fairy"]
+    }
+  ],
+  "advanced_uses": [
+    "Nas salas de descanso da Provação da Espada há Panela e Fadas: cozinhá-las ali é a forma de levar cura para os andares seguintes, já que Link entra sem comida."
+  ],
+  "limitations": [
+    "Vale só 2 rupias: não serve para lucrar.",
+    "Uma Fada em qualquer receita de elixir apaga o efeito."
+  ],
+  "related": [
+    { "id": "botw_creature_fairy", "relation": "Único ingrediente necessário" },
+    { "id": "botw_ability_miphas_grace", "relation": "Tem prioridade sobre a Fada na reanimação" },
+    { "id": "botw_food_dubious_food", "relation": "Receita falha que a Fada converte em tônico" },
+    { "id": "botw_food_rock_hard_food", "relation": "Receita falha que a Fada converte em tônico" },
+    { "id": "botw_mechanic_trial_of_the_sword", "relation": "Salas de descanso com Panela e Fadas" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Local onde as Fadas aparecem" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de cozimento" }
+  ],
+  "capabilities": ["cura"],
+  "verification_status": "verificado"
+}

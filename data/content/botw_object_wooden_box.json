@@ -1,0 +1,98 @@
+{
+  "id": "botw_object_wooden_box",
+  "summary": "Caixa de madeira que guarda flechas, maçãs, bolotas, comida assada ou rupias. Quebrá-la libera o conteúdo; queimá-la também, mas assa os alimentos que estiverem dentro. O visual muda conforme a região.",
+  "description": "As Caixas de madeira estão espalhadas por toda Hyrule e funcionam como pequenos depósitos de itens: podem conter flechas, Maçãs, Bolotas, comida assada e até rupias, que em BOTW não caem da grama nem da maioria dos monstros. Para pegar o conteúdo, basta quebrar a caixa. O modelo muda de acordo com a região — o Zelda Wiki registra, por exemplo, o tipo característico de Eldin — e nas Cordilheiras de Hebra as caixas podem guardar carne congelada.\n\nO fogo é um atalho com efeito colateral: incendiar a caixa também libera o que está dentro, mas os alimentos crus saem assados. As caixas ainda podem ser empurradas pelo cenário, e alguns amiibos lidos com a runa amiibo fazem surgir caixas cheias de flechas ou materiais.",
+  "locations": [
+    "Por toda Hyrule: acampamentos, estábulos, ruínas e vilas.",
+    "Cordilheiras de Hebra, onde podem conter carne congelada.",
+    "Atrás da cabana do Selmie's Spot, onde duas caixas guardam materiais."
+  ],
+  "obtaining": [
+    "Objeto do cenário; alguns amiibos lidos com a runa amiibo também fazem surgir caixas."
+  ],
+  "uses": [
+    "Quebrar para obter flechas, alimentos, materiais e rupias.",
+    "Empurrar pelo cenário."
+  ],
+  "effects": [
+    "Nenhum efeito próprio; o valor está no conteúdo."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Quebrar a caixa libera o conteúdo (flechas, Maçãs, Bolotas, comida assada, materiais ou rupias).",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Rupee", "zw:Selmie's Spot"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Incendiar a caixa também libera o conteúdo, mas os alimentos crus dentro dela saem assados.",
+      "side_effects": ["Ingredientes crus perdem a forma original ao serem assados (por exemplo, Maçã vira Maçã assada)."],
+      "produces": ["botw_food_baked_apple", "botw_food_roasted_acorn"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "usar",
+      "variant": "empurrar",
+      "status": "confirmado",
+      "result": "Caixas podem ser empurradas pelo cenário.",
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "É de madeira; Magnétis só atua sobre objetos metálicos.",
+      "sources": ["zw", "zw:Magnesis"]
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes de BOTW não descrevem especificamente o efeito de bombas sobre a caixa."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não dizem se a caixa pode ser congelada com Estátis."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o comportamento da caixa na água."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Inscrição nas lonas",
+      "text": "As lonas que cobrem as caixas de madeira dos estábulos têm uma inscrição que, traduzida, significa \"Cavalo\".",
+      "sources": ["zw:Stable"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Carne congelada em Hebra",
+      "text": "Nas Cordilheiras de Hebra, caixas de madeira podem conter Carne de terceira congelada.",
+      "sources": ["zw:Icy Meat"]
+    }
+  ],
+  "advanced_uses": [
+    "Quebrar a caixa com um golpe em vez de queimá-la quando se quer o alimento cru, por exemplo para usá-lo numa receita."
+  ],
+  "limitations": [
+    "Queimar a caixa assa os alimentos crus que estiverem dentro.",
+    "O conteúdo varia de caixa para caixa."
+  ],
+  "related": [
+    { "id": "botw_object_barrel", "relation": "Outro contêiner quebrável do cenário" },
+    { "id": "botw_object_metal_box", "relation": "Versão de metal, resistente e magnética" },
+    { "id": "botw_food_icy_meat", "relation": "Encontrada em caixas de Hebra" },
+    { "id": "botw_food_baked_apple", "relation": "O que vira uma Maçã de dentro de uma caixa queimada" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Alguns amiibos fazem surgir caixas" },
+    { "id": "botw_mechanic_fire", "relation": "Queima a caixa e assa o conteúdo" }
+  ],
+  "capabilities": ["inflamavel", "reage_fogo"],
+  "verification_status": "parcial"
+}

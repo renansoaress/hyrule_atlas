@@ -1,0 +1,94 @@
+{
+  "id": "botw_food_pepper_steak",
+  "summary": "Qualquer carne cozida com Pimenta de fogo amassada, que tira o gosto de caça. Como toda carne é neutra, a receita básica já dá Resistência ao frio.",
+  "description": "O Bife apimentado é feito com qualquer carne e uma Pimenta de fogo; o inventário explica que a carne é cozida na pimenta amassada, o que suaviza o gosto de caça e realça o sabor. Como nenhuma carne de BOTW tem efeito próprio, a receita original já sai na versão apimentada, com Resistência ao frio. A versão comum, sem efeito, só é obtida acrescentando um ingrediente de efeito contrário, como um cogumelo ou um legume de outro tipo.\n\nA receita é testada antes de Carne no vapor e de Espetinho de carne e cogumelo, então juntar um cogumelo ou legume à carne com pimenta mantém o Bife apimentado (só mudando o efeito). As exceções são as receitas de prioridade maior: Abóbora robusta com carne forma Abóbora recheada com carne, frutos do mar com carne formam uma fritada, e — pela tabela de prioridades do Zelda Wiki — dois tipos diferentes de carne formam Espetinho de carne, assim como outra fruta junto da pimenta forma Compota de frutas.",
+  "obtaining": [
+    "Cozinhar numa Panela qualquer carne crua e uma Pimenta de fogo."
+  ],
+  "uses": [
+    "Resistência ao frio barata para regiões geladas, usando carne de caça.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (a carne define boa parte da cura).",
+    "Na receita original: Resistência ao frio.",
+    "Com ingrediente de efeito diferente: os efeitos se anulam e o prato não tem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na versão apimentada, concede Resistência ao frio de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "cogumelo ou legume",
+      "status": "confirmado",
+      "result": "Um cogumelo ou legume com efeito diferente do picante anula a pimenta; o prato continua sendo Bife apimentado, na versão comum.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Mais pimenta, mais tempo",
+      "text": "Como a receita só exige uma carne e uma pimenta, sobram três espaços: repetir Pimentas de fogo (ou somar Erva geleira ou Flamelo, também picantes) prolonga a Resistência ao frio.",
+      "sources": [
+        "zw:Food",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só oferece Resistência ao frio.",
+    "Abóbora robusta, frutos do mar, uma segunda carne diferente ou outra fruta mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_pepper_seafood",
+      "relation": "Mesma ideia com frutos do mar"
+    },
+    {
+      "id": "botw_food_sauteed_peppers",
+      "relation": "Prato feito só de pimentas"
+    },
+    {
+      "id": "botw_food_meat_stuffed_pumpkin",
+      "relation": "Receita que tem prioridade quando há Abóbora robusta"
+    },
+    {
+      "id": "botw_food_steamed_meat",
+      "relation": "Carne com legume, sem pimenta"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

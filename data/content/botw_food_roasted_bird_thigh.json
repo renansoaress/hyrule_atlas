@@ -1,0 +1,151 @@
+{
+  "id": "botw_food_roasted_bird_thigh",
+  "summary": "Sobrecoxa selada no fogo, crocante por fora e suculenta por dentro. Cura 2,25 corações (crua, 1,5) e vale 24 rupias; o Rinox preto também pode deixá-la cair.",
+  "description": "A Sobrecoxa — carne de ave de qualidade, deixada por Pombo colorido, Pombo rubro, Pombo branco, Gavião insular e Avestruz de Eldin — vira Sobrecoxa assada quando encosta no fogo ou fica no chão escaldante de Eldin. O texto do jogo a descreve como carne nobre selada à perfeição: crocante por fora, suculenta por dentro.\n\nA cura sobe de 1,5 para 2,25 corações e o valor de venda, de 15 para 24 rupias. Congelada, a mesma carne vira Sobrecoxa congelada, que vale ainda mais (28 rupias) e dá Resistência ao calor, mas não aumenta a cura.",
+  "locations": [
+    "Prepara-se a partir de Sobrecoxas numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox preto pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor uma Sobrecoxa ao fogo ou largá-la no chão em clima escaldante.",
+    "Derrotar um Rinox preto: 10% de chance na tabela de comidas dele (lote de 5 a 6)."
+  ],
+  "uses": [
+    "Cura de 2,25 corações.",
+    "Venda: 24 rupias."
+  ],
+  "effects": [
+    "Recupera 2,25 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Sobrecoxa — queima por alguns instantes e se transforma em Sobrecoxa assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Sobrecoxa assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Sobrecoxa no chão para que o ingrediente asse sozinho e vire Sobrecoxa assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 2,25 corações, contra 1,5 coração da Sobrecoxa crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 24 rupias; a Sobrecoxa crua vale 15.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Raw Bird Thigh"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Sobrecoxa assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Assada cura mais, congelada vende mais",
+      "text": "Da mesma Sobrecoxa saem duas versões: a assada (2,25 corações, 24 rupias) e a congelada (28 rupias e Resistência ao calor, sem ganho de cura).",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Frozen Food",
+        "zw:Frozen Bird Thigh"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "No cardápio do Rinox preto",
+      "text": "O Rinox preto deixa cair carnes assadas; a Sobrecoxa assada aparece com 10% de chance, junto com o Bife de carne de segunda selado.",
+      "sources": [
+        "zw",
+        "zw:Black Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_bird_thigh",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_frozen_bird_thigh",
+      "relation": "Versão congelada da mesma carne"
+    },
+    {
+      "id": "botw_food_roasted_bird_drumstick",
+      "relation": "Assado da carne de ave comum"
+    },
+    {
+      "id": "botw_food_roasted_whole_bird",
+      "relation": "Assado da carne de ave de primeira"
+    },
+    {
+      "id": "botw_monster_black_hinox",
+      "relation": "Pode deixá-la cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

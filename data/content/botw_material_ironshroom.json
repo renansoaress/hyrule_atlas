@@ -1,0 +1,146 @@
+{
+  "id": "botw_material_ironshroom",
+  "summary": "Cogumelo de chapéu duríssimo, comum perto das árvores da região de Necluda. Cozido, dá Defesa aumentada; cru cura meio coração. No fogo, o exterior duro fica crocante (Blindamelo tostado).",
+  "description": "O Blindamelo tem um chapéu muito duro, e é essa resistência que os pratos de panela transmitem a Link: cozido, concede Defesa aumentada, que soma 4, 12 ou 24 pontos de defesa conforme o nível do efeito. Cresce perto das árvores na região de Necluda — o compendium cita Necluda Ocidental e Necluda Oriental. Cru, recupera meio coração; exposto ao fogo, vira Blindamelo tostado, cujo exterior antes duro fica crocante e saboroso, mas sem efeito.\n\nÉ vendido na Spore Store, na Floresta Korok, na barraca de Ardin, na Cidade Gerudo, e pelos mercadores ambulantes Kanny e Stamm, por 20 rupias. Na Tinturaria Kochi, entra no corante marrom. Não é usado em melhorias de armadura.",
+  "locations": [
+    "Perto das árvores na região de Necluda (Necluda Ocidental e Necluda Oriental, segundo o compendium).",
+    "Lojas: Spore Store, barraca de Ardin, Kanny e Stamm — 20 rupias."
+  ],
+  "obtaining": [
+    "Colher perto das árvores.",
+    "Comprar nas lojas citadas."
+  ],
+  "uses": [
+    "Pratos de Defesa aumentada.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante marrom na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozido: Defesa aumentada (+4, +12 ou +24 de defesa nos níveis 1, 2 e 3)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Apesar do chapéu duro, as fontes não descrevem o efeito de golpear um Blindamelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Blindamelo tostado, que recupera 3/4 de coração segundo a tabela de comidas assadas.",
+      "side_effects": ["Perde a Defesa aumentada.", "Tostado vale 5 rupias, o mesmo que cru."],
+      "produces": ["botw_food_toasty_ironshroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Blindamelo tostado.",
+      "produces": ["botw_food_toasty_ironshroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_ironshroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; apesar do nome, o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Defesa aumentada. Mais unidades prolongam o efeito; combinado com Abóbora robusta ou Amaranto blindado, prolonga e pode elevar o nível até o 3 (+24 de defesa).",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Defense Up"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não aumenta a defesa.",
+      "kind": "mecanica",
+      "sources": ["comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 5 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quanto rende a defesa",
+      "text": "Defesa aumentada soma 4, 12 ou 24 pontos de defesa nos níveis 1, 2 e 3; o nível 3 é o máximo. Misturar Blindamelos com outros ingredientes de defesa é o caminho para os níveis mais altos.",
+      "sources": ["zw:Defense Up", "zw:Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Duro por fora",
+      "text": "A descrição do Blindamelo tostado comenta que o exterior, antes resistente, fica crocante e gostoso depois de exposto à chama.",
+      "sources": ["zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Abóboras robustas e Amarantos blindados para buscar Defesa aumentada de nível 3."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Defesa aumentada; só cozido.",
+    "Não é usado em melhorias de armadura."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_ironshroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_material_fortified_pumpkin", "relation": "Outro ingrediente de Defesa aumentada" },
+    { "id": "botw_material_armoranth", "relation": "Outro ingrediente de Defesa aumentada" },
+    { "id": "botw_material_razorshroom", "relation": "Vendido nas mesmas lojas, com efeito de ataque" },
+    { "id": "botw_elixir_tough_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_food_mushroom_skewer", "relation": "Receita de cogumelo" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante marrom" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "defesa"],
+  "verification_status": "verificado"
+}

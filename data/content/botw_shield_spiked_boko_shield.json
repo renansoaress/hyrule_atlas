@@ -1,0 +1,117 @@
+{
+  "id": "botw_shield_spiked_boko_shield",
+  "summary": "Escudo Kobo de madeira um pouco mais forte, reforçado com ossos de animais; típico dos Koboblins azuis. Pela tabela de escudos, Defesa 10 e durabilidade 7 — mas os dados estruturados divergem.",
+  "description": "O Escudo Kobo pontudo é o degrau intermediário dos escudos dos Koboblins: uma casca de madeira um pouco mais resistente, reforçada com ossos de animais. É usado com frequência pelos Koboblins azuis de Necluda Oriental e dos Prados de Faron e pertence ao equipamento dos Koboblins (Bokoblin Gear), entre o Escudo Kobo e o Escudo Kobo dracônico.\n\nA tabela de escudos do Zelda Wiki e os parâmetros do escudo indicam Defesa 10 e durabilidade 7, o segundo valor de durabilidade mais baixo do jogo, só acima do Escudo Kobo. Outras fontes estruturadas divergem (veja os segredos), por isso esses números merecem verificação.\n\nComo todo escudo de madeira, pega fogo, queima no calor de Eldin, flutua e não é afetado por Magnétis nem por raios.",
+  "locations": [
+    "Necluda Oriental e Prados de Faron, nas mãos de Koboblins azuis."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins azuis que o carregam.",
+    "Baú invocado pelo amiibo de Koboblin (série Breath of the Wild), com chance de conter um Escudo Kobo pontudo."
+  ],
+  "uses": [
+    "Escudo descartável do começo do jogo, um pouco mais protetor que o Escudo Kobo.",
+    "Prancha para Surfar com escudo em neve e areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial; os ossos são só reforço, sem dano extra documentado."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia ataques fracos; com pouca durabilidade, quebra depois de poucos golpes. A Defesa perfeita não gasta durabilidade.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e perde durabilidade aos poucos enquanto queima.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantado com Magnétis.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Escudo comum dos Koboblins azuis em Necluda Oriental e nos Prados de Faron.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros do escudo, pode surgir com Durabilidade aumentada de +1 (nível branco) ou +2 (nível amarelo) e com Defesa do escudo aumentada de +4 a +6 (branco) ou +9 a +14 (amarelo). Como o registro desses parâmetros usa o mesmo nome interno do Escudo Kobo dracônico (veja abaixo), os valores pedem confirmação.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Números em conflito nas fontes",
+      "text": "A tabela de escudos e os parâmetros (Life 7, GuardPower 10) indicam Defesa 10 e durabilidade 7. Já as propriedades do item no mesmo conjunto de dados trazem força 1 e durabilidade 10 — valores idênticos aos da Tampa de panela —, e a entrada do compendium registra ataque 10 e defesa 0, como se os campos estivessem trocados. Além disso, o nome interno informado (Weapon_Shield_006) é o mesmo do Escudo Kobo dracônico.",
+      "sources": ["dm", "zw:Shields in Breath of the Wild", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo apenas como prancha de neve ou areia, terrenos onde o surfe não consome durabilidade."
+  ],
+  "limitations": [
+    "Durabilidade muito baixa.",
+    "Os valores exatos de Defesa e durabilidade divergem entre as fontes estruturadas."
+  ],
+  "related": [
+    { "id": "botw_shield_boko_shield", "relation": "Versão básica" },
+    { "id": "botw_shield_dragonbone_boko_shield", "relation": "Versão mais forte; compartilha o nome interno nos dados" },
+    { "id": "botw_weapon_spiked_boko_club", "relation": "Mesmo arquétipo e nível (pontudo)" },
+    { "id": "botw_weapon_spiked_boko_spear", "relation": "Mesmo arquétipo e nível (pontudo)" },
+    { "id": "botw_bow_spiked_boko_bow", "relation": "Mesmo arquétipo e nível (pontudo)" },
+    { "id": "botw_monster_blue_bokoblin", "relation": "Monstro que o empunha" },
+    { "id": "botw_rune_amiibo_rune", "relation": "O amiibo de Koboblin pode invocá-lo num baú" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "a_verificar"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "botw_material_mighty_bananas",
+  "summary": "Bananas tropicais que, cozidas, dão Ataque aumentado. São a obsessão do Clã Yiga: Espadachins Yiga param para comê-las no esconderijo e até o Monge Maz Koshia interrompe a luta por elas.",
+  "description": "As Bananas valentes crescem principalmente nas florestas tropicais de Faron, segundo o jogo; o Zelda Wiki cita também Necluda Ocidental e a Ilha Eventide. Cruas, recuperam meio coração; cozidas, concedem Ataque aumentado graças à quantidade de proteína e calorias, como explica Nali. Expostas ao fogo, viram Bananas valentes assadas (3/4 de coração), sem efeito. São obrigatórias nas Bananas fritas e contam como fruta nas receitas genéricas.\n\nO lado mais curioso é o Clã Yiga, que é obcecado por elas: o esconderijo do clã guarda muitas bananas, todo Soldado Yiga e todo Espadachim Yiga deixa bananas ao ser derrotado, e os Espadachins que patrulham o Esconderijo do Clã Yiga se desviam da rota para comer bananas largadas no chão. Até o Monge Maz Koshia para de lutar para comê-las se Link as largar durante o combate. As bananas também são um dos três alimentos preferidos dos Sheikah, junto com a Cenoura veloz e a Abóbora robusta.",
+  "locations": [
+    "Florestas tropicais de Faron (local citado pelo compendium); o Zelda Wiki menciona ainda Necluda Ocidental e a Ilha Eventide.",
+    "Esconderijo do Clã Yiga, que guarda muitas bananas.",
+    "Loja: armazém de Emri no Bazar Kara Kara, por 20 rupias."
+  ],
+  "obtaining": [
+    "Colher nos cachos das florestas tropicais.",
+    "Derrotar Soldados Yiga e Espadachins Yiga: todos deixam bananas.",
+    "Rinoxes comuns podem deixá-las ao serem derrotados.",
+    "Comprar com Emri, no Bazar Kara Kara."
+  ],
+  "uses": [
+    "Pratos de Ataque aumentado.",
+    "Obrigatórias nas Bananas fritas (com Trigo de Tabantha e Cana-de-açúcar).",
+    "Isca para distrair membros do Clã Yiga no esconderijo e o Monge Maz Koshia.",
+    "Receitas de fruta genéricas (Compota de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozidas: Ataque aumentado (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Largadas no chão, atraem os Espadachins Yiga do esconderijo, que saem da rota para comê-las.",
+      "conditions": ["Dentro do Esconderijo do Clã Yiga, perto de um Espadachim em patrulha."],
+      "applications": ["Abrir caminho em trechos de furtividade difíceis do esconderijo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Espadachins Yiga desviam a patrulha para comer bananas largadas, e o Monge Maz Koshia interrompe a luta para comê-las se Link as largar durante o combate.",
+      "applications": ["Ganhar uma pausa no combate contra o Monge Maz Koshia.", "Distrair guardas Yiga sem ser visto."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear bananas largadas."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Expostas ao fogo, viram Bananas valentes assadas, que recuperam 3/4 de coração.",
+      "side_effects": ["Perdem o Ataque aumentado; o interior vira uma calda grudenta, segundo a descrição do jogo."],
+      "applications": ["Vender: assadas valem 8 rupias, contra 5 das cruas."],
+      "produces": ["botw_food_roasted_mighty_bananas"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largadas junto a uma fogueira acesa, viram Bananas valentes assadas.",
+      "produces": ["botw_food_roasted_mighty_bananas"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, assam ao serem largadas no chão.",
+      "produces": ["botw_food_roasted_mighty_bananas"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não têm versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congelam; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento das bananas na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; as bananas não são metálicas.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a elas."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concedem Ataque aumentado. Mais unidades prolongam o efeito; combinadas com Ferromelo ou Protechofra (mesmo efeito), prolongam e podem elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Attack Up"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cruas, recuperam meio coração e não aumentam o ataque.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendidas por 5 rupias; assadas, valem 8.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Bananas contra o Clã Yiga",
+      "text": "No Esconderijo do Clã Yiga, os Espadachins em patrulha abandonam a rota para comer bananas largadas no chão. Jogá-las nos trechos que parecem impossíveis de atravessar sem ser visto é a solução indicada pelo Zelda Wiki.",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Nem o monge resiste",
+      "text": "Se Link largar Bananas valentes durante a luta contra o Monge Maz Koshia, ele para de combater para comê-las.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fruta favorita dos Sheikah",
+      "text": "As Bananas valentes são um dos três alimentos preferidos dos Sheikah, ao lado da Cenoura veloz e da Abóbora robusta — os três cozidos dão efeitos de combate ou movimento (ataque, velocidade e defesa).",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de entrar no Esconderijo do Clã Yiga, leve bananas para distrair os Espadachins; elas também são repostas ao derrotar membros do clã.",
+    "Combine bananas com Ferromelos e Protechofras para um prato de Ataque aumentado de nível mais alto."
+  ],
+  "limitations": [
+    "Cruas ou assadas não dão Ataque aumentado; só cozidas."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_mighty_bananas", "relation": "Resultado de expor as bananas ao fogo" },
+    { "id": "botw_food_fried_bananas", "relation": "Prato que exige Bananas valentes" },
+    { "id": "botw_monster_yiga_blademaster", "relation": "Deixa bananas e se distrai com elas" },
+    { "id": "botw_monster_yiga_footsoldier", "relation": "Deixa bananas ao ser derrotado" },
+    { "id": "botw_monster_monk_maz_koshia", "relation": "Para de lutar para comer bananas" },
+    { "id": "botw_material_razorshroom", "relation": "Outro ingrediente de Ataque aumentado" },
+    { "id": "botw_material_mighty_thistle", "relation": "Outro ingrediente de Ataque aumentado" },
+    { "id": "botw_elixir_mighty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixá-las" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "ataque", "habilidade_especial"],
+  "verification_status": "verificado"
+}

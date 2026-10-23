@@ -1,0 +1,105 @@
+{
+  "id": "botw_food_gourmet_spiced_meat_skewer",
+  "summary": "Espetinho de Carne de primeira com Tempero Goron, \"numa categoria própria\" segundo o jogo. Leva só dois ingredientes, deixando três espaços livres para efeito.",
+  "description": "O Espetinho temperado de carne de primeira precisa apenas de Carne de primeira e Tempero Goron. A descrição do jogo diz que o aroma rico e a textura suculenta dessa carne de alta qualidade a colocam numa categoria própria. Cura alguns corações.\n\nCom dois ingredientes obrigatórios sem efeito, sobram três espaços na panela, e ingredientes extras de efeito definem a versão: refrescante, isolante, tenaz, energizante, veloz, nutritivo, valente, discreto, picante ou blindado.\n\nÉ o topo da linha de espetinhos temperados: Carne de terceira gera o Espetinho temperado de carne, e Carne de segunda, o Espetinho temperado de carne de segunda. Ao lembrar os pratos da corte com que sonhava na infância, Gotter, do Riverside Stable, cita \"carne temperada de primeira\" (gourmet spiced meat).",
+  "locations": [
+    "Carne de primeira: deixada por Búfalo-d'água, Raposa da neve, Lobo larápio, Coiote do deserto, Lobo pé-gelado, Alce de Tabantha, Rinoceronte chifrelongo, Urso melívoro e Grão-urso.",
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Carne de primeira + Tempero Goron."
+  ],
+  "uses": [
+    "Prato de carne nobre com três espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ingredientes extras de efeito definem a versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Lembrado por Gotter",
+      "text": "Ao contar que o tataravô foi chef do Castelo de Hyrule, Gotter lista \"gourmet spiced meat\" entre os pratos da corte que sonhava provar, ao lado de curry de frutos do mar, risoto de cogumelos e pudim de ovos.",
+      "sources": [
+        "zw:A Royal Recipe"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de cozinhar, compare: Trott, no Outskirt Stable, paga 100 rupias por cada Carne de primeira depois da Missão secundária \"A Rare Find\"."
+  ],
+  "limitations": [
+    "Só aceita Carne de primeira como carne.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_spiced_meat_skewer",
+      "relation": "Versão com Carne de terceira"
+    },
+    {
+      "id": "botw_food_prime_spiced_meat_skewer",
+      "relation": "Versão com Carne de segunda"
+    },
+    {
+      "id": "botw_food_salt_grilled_gourmet_meat",
+      "relation": "Carne de primeira com Halita em vez de tempero"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

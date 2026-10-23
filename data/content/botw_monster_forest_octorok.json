@@ -1,0 +1,129 @@
+{
+  "id": "botw_monster_forest_octorok",
+  "summary": "Octoroc que trocou a água pela floresta: enterra-se disfarçado de arbusto e cospe pedras em quem passa. Cortar o arbusto o tira do esconderijo; rebater a pedra com o escudo o mata.",
+  "description": "Segundo o compendium, o Octoroc da floresta é originalmente uma espécie aquática que se adaptou à vida na mata. Fica escondido no chão, entre as árvores, disfarçado de grama ou de um arbusto inofensivo, e pula para fora quando alguém passa por perto. Depois de ver Link, cospe pedras de longe. O compendium cita os Cerros de Hyrule e o Coração de Akkala como locais comuns.\n\nAs pedras podem ser rebatidas com qualquer escudo: de perto, a pedra devolvida o mata na hora, e a Defesa perfeita a manda de volta mais rápido, permitindo abatê-lo de mais longe. Se o arbusto que o cobre for cortado ou atingido por uma flecha, ele salta do chão desnorteado e fica exposto. Tem 8 pontos de vida e pode deixar Tentáculo de Octoroc, Olho de Octoroc e Balão de Octoroc.",
+  "locations": [
+    "Florestas e matas; o compendium cita os Cerros de Hyrule e o Coração de Akkala.",
+    "Escondido no chão, disfarçado de arbusto ou grama."
+  ],
+  "obtaining": [
+    "Pode deixar Tentáculo de Octoroc, Olho de Octoroc e Balão de Octoroc.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de partes de Octoroc, inclusive o Balão de Octoroc.",
+    "Registro no compendium (entrada nº 93)."
+  ],
+  "effects": [
+    "Pedras cuspidas a distância."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloquear com qualquer escudo rebate a pedra; de perto, ela o mata na hora. A Defesa perfeita devolve a pedra mais rápido e de mais longe.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Octorok"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cortar o arbusto que o cobre faz com que ele salte do chão desnorteado, exposto a golpes.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no disfarce o obriga a se revelar; flechas também o atingem quando está exposto.",
+      "kind": "mecanica",
+      "sources": ["zw:Octorok", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo no Octoroc da floresta nem no arbusto que o disfarça."
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Flechas congelantes congelam inimigos atingidos; as fontes não descrevem efeito especial neste Octoroc.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Flechas eletrizantes eletrocutam e atordoam inimigos atingidos; nenhum efeito especial é descrito para ele.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Apesar da origem aquática citada pelo compendium, as fontes não descrevem o Octoroc da floresta na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões sobre ele escondido no chão."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio quando ele está exposto.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Disfarça-se de arbusto ou grama, enterrado no chão da floresta, e pula quando alguém passa.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Polvo que mudou de casa",
+      "text": "O compendium explica que o Octoroc da floresta descende de uma espécie aquática que se adaptou à mata — daí o disfarce vegetal no lugar da planta aquática do Octoroc aquático.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Pedra devolvida",
+      "text": "Rebatida com o escudo, a pedra do Octoroc da floresta o mata se ele estiver perto o bastante; com a Defesa perfeita, a pedra volta mais rápido e o alcance aumenta.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Desconfiar de arbustos isolados em trilhas de floresta: uma flecha no disfarce revela o Octoroc antes que ele atire."
+  ],
+  "limitations": [
+    "Ao se esconder no chão, só sai se o disfarce for atingido."
+  ],
+  "related": [
+    { "id": "botw_monster_water_octorok", "relation": "Octoroc aquático, espécie de origem" },
+    { "id": "botw_monster_snow_octorok", "relation": "Octoroc com disfarce semelhante na neve" },
+    { "id": "botw_material_octo_balloon", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_octorok_tentacle", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_octorok_eyeball", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Devolve a pedra com mais força" }
+  ],
+  "capabilities": ["vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

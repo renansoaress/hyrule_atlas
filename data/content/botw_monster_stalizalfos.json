@@ -1,0 +1,130 @@
+{
+  "id": "botw_monster_stalizalfos",
+  "summary": "Esqueleto de Lagalfos que emerge à noite e se desmonta com um golpe sólido. Destrua o crânio antes que o corpo o alcance; o Braço de Lagalfos que ele solta volta como bumerangue quando arremessado.",
+  "description": "Os Stallagalfos são os restos esqueléticos de Lagalfos que saem da terra durante a noite. O compendium diz que continuam tão astutos quanto antes, mesmo sendo apenas ossos empilhados, mas muito mais frágeis: um único golpe sólido os reduz a pedaços. Enquanto o crânio estiver intacto, eles se levantam e voltam a lutar — e às vezes pegam o crânio errado, sem parecer se importar.\n\nPodem carregar armas como o Bimerangue Lagal; desarmados, golpeiam com a cauda ou tentam dar uma estocada com a língua. Depois de desmontados, os ossos se reconstroem sem a cabeça e caminham até ela, enquanto o crânio pula e rola em direção ao corpo. Destruir a cabeça antes da reunião derrota o Stallagalfos de vez. O braço solto vira o Braço de Lagalfos, uma arma frágil de osso que, arremessada, funciona como bumerangue e volta para Link.\n\nComo os demais monstros esqueléticos, só deixa partes de primeiro e segundo nível: Chifre e Garra de Lagalfos.",
+  "locations": [
+    "Surge do chão à noite; o compendium cita o Deserto Gerudo e os Cerros de Hyrule como locais comuns."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos e Garra de Lagalfos.",
+    "Deixa o Braço de Lagalfos, além da arma que estivesse empunhando."
+  ],
+  "uses": [
+    "Fonte noturna de Chifres e Garras de Lagalfos.",
+    "Única fonte do Braço de Lagalfos.",
+    "Registro no compendium (entrada nº 116)."
+  ],
+  "effects": [
+    "Golpes de arma, de cauda e tentativas de estocada com a língua."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Qualquer ataque o desmonta temporariamente; destruir o crânio antes que o corpo se reúna a ele o derrota de vez.",
+      "applications": ["Golpear o crânio no chão logo depois de desmontá-lo."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes do Stallagalfos não descrevem o efeito de flechas no corpo ou no crânio."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de fogo no Stallagalfos."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de gelo no Stallagalfos."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de choques no Stallagalfos."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se submergir o crânio do Stallagalfos o derrota (isso é documentado só para o Stalboblin)."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de explosões no Stallagalfos."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito da Bomba remota no Stallagalfos."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "A Estátis+ paralisa inimigos por pouco tempo; a versão básica não os afeta.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Ossos não são metálicos, e Magnétis só move objetos metálicos.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o Stallagalfos usando objetos do cenário."
+    },
+    {
+      "action": "aproximar",
+      "variant": "com disfarce",
+      "status": "confirmado",
+      "result": "Com a Máscara de Lagalfos, a Máscara de Majora ou o disfarce contra monstros Stal do Conjunto radiante (melhorado duas vezes) ou do Conjunto de Ganon Fantasma, ele só ataca se Link atacar primeiro.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Radiant Set", "zw:Phantom Ganon Set"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Braço de Lagalfos, o bumerangue de osso",
+      "text": "O Braço de Lagalfos só é obtido derrotando Stallagalfos. Arremessado, age como bumerangue e volta para Link; continua se debatendo mesmo separado do corpo. Por ser de osso, flutua, não atrai raios, não conduz eletricidade e não queima.",
+      "sources": ["zw:Lizalfos Arm"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A língua que não sai",
+      "text": "Sem arma, o Stallagalfos tenta dar estocadas com a língua — o Zelda Wiki observa que o golpe nem chega a acontecer, já que ele é um morto-vivo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Crânio trocado",
+      "text": "O compendium comenta que eles às vezes pegam o crânio errado, mas nunca parecem se importar.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Recolher o Braço de Lagalfos e usá-lo como bumerangue que volta, poupando as armas melhores durante a noite."
+  ],
+  "limitations": [
+    "Não deixa Caudas de Lagalfos.",
+    "O Braço de Lagalfos é muito frágil."
+  ],
+  "related": [
+    { "id": "botw_monster_lizalfos", "relation": "Monstro vivo do qual é o esqueleto" },
+    { "id": "botw_monster_stalkoblin", "relation": "Equivalente esquelético dos Koboblins" },
+    { "id": "botw_monster_stalmoblin", "relation": "Equivalente esquelético dos Moblins" },
+    { "id": "botw_weapon_lizalfos_arm", "relation": "Braço que deixa" },
+    { "id": "botw_armor_lizalfos_mask", "relation": "Disfarce que impede seus ataques" },
+    { "id": "botw_armorset_radiant_set", "relation": "Disfarce contra monstros Stal" },
+    { "id": "botw_material_lizalfos_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lizalfos_talon", "relation": "Parte deixada ao ser derrotado" }
+  ],
+  "capabilities": ["vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

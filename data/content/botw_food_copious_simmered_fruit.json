@@ -1,0 +1,101 @@
+{
+  "id": "botw_food_copious_simmered_fruit",
+  "summary": "Compota farta com quatro frutas diferentes. Para ter efeito, junte Maçã, Framboesa e Coco (frutas sem efeito) e uma quarta fruta com efeito, como Durião nutritivo ou Bananas valentes.",
+  "description": "A Compota farta de frutas exige quatro frutas diferentes; com menos variedade, o prato é a Compota de frutas. Segundo a descrição do jogo, os sabores das várias frutas convivem em perfeita harmonia. A versão sem efeito aparece quando pelo menos duas das frutas têm efeitos diferentes, que se anulam.\n\nPara obter efeito, o Zelda Wiki indica a combinação Maçã + Framboesa + Coco — as três frutas sem efeito — mais uma quarta fruta que define a versão: Durião nutritivo (nutritiva), Grãos de lótus-fugaz (veloz), Pimenta de fogo (picante), Fruta isolante (isolante), Bananas valentes (valente) ou Melancia oásica (refrescante). Repare que, nas receitas, Pimenta de fogo e Grãos de lótus-fugaz contam como frutas.",
+  "obtaining": [
+    "Cozinhar numa Panela quatro frutas diferentes."
+  ],
+  "uses": [
+    "Cura de alguns corações.",
+    "Versões com efeito usando três frutas neutras e uma com efeito."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações, sem efeito.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Durião nutritivo.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Grãos de lótus-fugaz; nível baixo.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Pimenta de fogo; nível baixo.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Fruta isolante; nível baixo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Bananas valentes; nível baixo.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Melancia oásica; nível baixo."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com Maçã, Framboesa e Coco mais uma fruta de efeito, a compota ganha o efeito dessa quarta fruta (nível baixo nas versões temporárias).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Três frutas neutras e uma com efeito",
+      "text": "Maçã, Framboesa e Coco não têm efeito e completam três dos quatro tipos exigidos. A quarta fruta é a única fonte de efeito; se houver duas frutas com efeitos diferentes, a compota sai comum.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "O Zelda Wiki não cita versões energizante, tenaz, blindada ou discreta.",
+    "Com menos de quatro frutas diferentes, o resultado é a Compota de frutas."
+  ],
+  "related": [
+    {
+      "id": "botw_food_simmered_fruit",
+      "relation": "Versão simples"
+    },
+    {
+      "id": "botw_material_apple",
+      "relation": "Fruta sem efeito da combinação"
+    },
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Fruta sem efeito da combinação"
+    },
+    {
+      "id": "botw_material_palm_fruit",
+      "relation": "Fruta sem efeito da combinação"
+    },
+    {
+      "id": "botw_material_hearty_durian",
+      "relation": "Gera a versão nutritiva"
+    },
+    {
+      "id": "botw_material_mighty_bananas",
+      "relation": "Gera a versão valente"
+    },
+    {
+      "id": "botw_material_hydromelon",
+      "relation": "Gera a versão refrescante"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

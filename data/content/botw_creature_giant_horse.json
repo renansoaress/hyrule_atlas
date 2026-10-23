@@ -1,0 +1,130 @@
+{
+  "id": "botw_creature_giant_horse",
+  "summary": "Cavalo negro de crina laranja, último da sua linhagem, que vive na Taobab Grassland, em Faron. Tem força 5 (a máxima) e vigor 0: não tem nenhuma espora, mas cobre muito chão com passadas enormes.",
+  "description": "O Cavalo gigante é um cavalo selvagem enorme, de pelagem cor de carvão com crina e cauda laranja, que circula junto de um bando de cavalos normais na Taobab Grassland. O compendium o descreve como o último da sua espécie, com capacidades físicas muito superiores às dos cavalos comuns e um temperamento extremamente selvagem: \"é um cavalo que escolhe o seu cavaleiro\". Domá-lo exige pelo menos duas rodas de vigor.\n\nComo montaria, é um extremo: força 5, a mais alta possível, e vigor zero, ou seja, não consegue usar esporas nem galopar em disparada. A velocidade dele é classificada como baixa, mas na prática anda bem mais rápido que outros cavalos com o mesmo valor, porque cada passo é muito maior. Ao ser registrado, recebe automaticamente sela e rédea do conjunto próprio para cavalos gigantes, e os estábulos se recusam a trocá-las porque não têm nada que sirva nele.",
+  "locations": [
+    "Taobab Grassland, na região de Faron, misturado a um bando de cavalos de tamanho normal.",
+    "O caminho a partir do Mounted Archery Camp passa pelas Oseira Plains, onde há dois Centaleões."
+  ],
+  "obtaining": [
+    "Aproximar-se furtivamente e montá-lo na Taobab Grassland; a doma exige pelo menos duas rodas de vigor.",
+    "Registrar num estábulo (20 rupias, como qualquer cavalo); ele recebe o conjunto de sela e rédea para cavalo gigante."
+  ],
+  "uses": [
+    "Montaria de força máxima, capaz de atropelar monstros com facilidade, segundo o diário da missão.",
+    "Missão secundária \"Hunt for the Giant Horse\": mostrá-lo a Straia, no Mounted Archery Camp, rende uma rupia prateada."
+  ],
+  "effects": [
+    "Força 5 (máxima) e vigor 0: nenhuma espora disponível.",
+    "Passadas largas compensam em parte a velocidade baixa."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Como qualquer cavalo selvagem, foge se perceber Link; a aproximação deve ser furtiva.",
+      "conditions": ["Andar agachado, de preferência por trás."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado e domado, mas o temperamento extremamente selvagem exige pelo menos duas rodas de vigor para acalmá-lo.",
+      "conditions": ["Ter ao menos duas rodas de vigor (ou recuperar vigor durante a doma)."],
+      "side_effects": ["Sem esporas: pressionar para acelerar não produz galope em disparada."],
+      "applications": ["Depois de domado, pode ser levado até Straia passando pelos Centaleões sem lutar."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Hunt for the Giant Horse"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar",
+      "status": "confirmado",
+      "result": "Uma Cenoura tenaz só aumenta o vínculo: como ele não tem esporas, não recebe as três esporas extras que a cenoura dá aos outros cavalos.",
+      "kind": "mecanica",
+      "sources": ["zw:Endura Carrot"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes específicas do Cavalo gigante não descrevem ataques a ele; vale a regra geral de que cavalos registrados podem morrer e ser revividos por Malanya."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o efeito de flechas no Cavalo gigante."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Lento no papel, rápido na prática",
+      "text": "A velocidade do Cavalo gigante aparece como baixa, mas ele percorre o terreno consideravelmente mais rápido que outros cavalos com o mesmo valor de velocidade, porque dá passos muito maiores.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Equipamento fixo",
+      "text": "Registrado, recebe o conjunto de sela e rédea próprio para cavalos gigantes. Ele e Epona são os únicos cavalos que não podem trocar de equipamento: os funcionários dizem não ter nada grande o bastante e que ele não gostaria que mexessem na crina.",
+      "sources": ["zw", "zw:Horse Gear"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cenoura tenaz sem esporas",
+      "text": "Alimentá-lo com Cenoura tenaz não dá as três esporas extras, porque ele não tem esporas; só o vínculo aumenta.",
+      "sources": ["zw:Endura Carrot"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Recusado por Zyle",
+      "text": "Na missão \"Good-Sized Horse\", Zyle pede um cavalo \"não muito grande\" e recusa o Cavalo gigante por causa do tamanho.",
+      "sources": ["zw:Good-Sized Horse"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Espécie endêmica",
+      "text": "Straia, que estuda a fauna da região, conclui que o Cavalo gigante é uma espécie nativa daquela área; ele chegou a confundir um monstro com forma de cavalo com o animal antes de pedir ajuda a Link.",
+      "sources": ["zw:Hunt for the Giant Horse"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis de BOTW, ao lado do Cavalo, Cavalo branco, Senhor da Montanha, Cervo e Corça da montanha, Stalcavalo, Urso melívoro e Grão-urso.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo para cavalgar até os Centaleões das Oseira Plains e passar por eles sem lutar, como sugere a missão de Straia."
+  ],
+  "limitations": [
+    "Não tem esporas nem galope em disparada.",
+    "Não aceita troca de sela, rédea ou crina.",
+    "Domá-lo exige pelo menos duas rodas de vigor."
+  ],
+  "related": [
+    { "id": "botw_creature_horse", "relation": "Cavalos comuns e regras gerais de doma e registro" },
+    { "id": "botw_creature_white_horse", "relation": "O oposto: vigor 5, o máximo" },
+    { "id": "botw_creature_epona", "relation": "Também não aceita troca de equipamento" },
+    { "id": "botw_material_endura_carrot", "relation": "Só aumenta o vínculo, sem esporas extras" },
+    { "id": "botw_monster_lynel", "relation": "Dois Centaleões guardam o caminho até ele" },
+    { "id": "botw_mechanic_stable", "relation": "Registro e equipamento próprio" }
+  ],
+  "capabilities": ["montavel", "habilidade_especial", "item_de_missao"],
+  "verification_status": "verificado"
+}

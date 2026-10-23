@@ -1,0 +1,121 @@
+{
+  "id": "botw_mechanic_thunderstorm",
+  "summary": "Chuva com raios aleatórios. Armas, arcos e escudos de metal equipados faíscam e acabam atraindo um raio sobre Link; objetos metálicos e inimigos armados com metal também atraem. Desequipar o metal ou usar o Elmo do trovão evita o golpe.",
+  "description": "Tempestades de raios ocorrem em Akkala, na Hyrule central, em Faron, em Lanayru e em Necluda, e também podem acontecer durante nevascas, como no Monte Hylia. Durante a tempestade chove (com todas as regras da Chuva) e raios caem ao acaso. O perigo real vem do metal: qualquer arma, arco ou escudo metálico que Link tenha equipado começa a soltar faíscas, aviso de que um raio vai cair sobre ele. O dano é extremo, a menos que Link tire o equipamento antes do golpe ou use o Elmo do trovão, que neutraliza o raio.\n\nA regra vale para todos: armas de metal empunhadas por inimigos também faíscam e atraem raios para a posição deles, e objetos metálicos do cenário, como os blocos de metal de certos quebra-cabeças, também chamam descargas. Equipamento de madeira (Tocha, Folha Korok), de tecnologia ancestral (Escudo guardião) e as varinhas elementais não atraem raios.",
+  "locations": [
+    "Akkala, Hyrule central, Faron, Lanayru e Necluda; também durante neve, como no Monte Hylia.",
+    "O Planalto Thundra (Cerros de Hyrule) e o Lago Calora (Necluda Ocidental) ficam sob tempestade permanente até as missões de santuário \"Trial of Thunder\" e \"A Song of Storms\" serem resolvidas.",
+    "Primeiros cinco andares das Provas Finais da Provação da Espada: selva sob tempestade."
+  ],
+  "obtaining": [
+    "Fenômeno climático aleatório; Feitiçanos elétricos e do trovão também podem provocar tempestades na área, que se desfazem quando eles são derrotados."
+  ],
+  "uses": [
+    "Fazer os raios caírem sobre inimigos armados com metal.",
+    "Aproveitar a chuva da tempestade para se aproximar sem ser ouvido."
+  ],
+  "effects": [
+    "Raios aleatórios e raios direcionados a quem carrega metal; chuva contínua."
+  ],
+  "interactions": [
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipamento metálico equipado faísca durante a tempestade e, em seguida, Link é atingido por um raio de dano extremo.",
+      "conditions": ["Arma, arco ou escudo de metal equipado durante a tempestade."],
+      "side_effects": ["Faíscas no equipamento são o aviso de que o raio vai cair."],
+      "applications": ["Ao ouvir trovões, trocar o equipamento por madeira ou desequipar o metal."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Desequipar o item metálico antes do raio evita o golpe. O Elmo do trovão (Imunidade a raios) neutraliza o raio, e o Conjunto de borracha melhorado duas vezes anula dano de eletricidade e de raios. O bônus do Conjunto voe do deserto reduz dano elétrico, mas não o dano da explosão do raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Lightning-Proof", "zw:Set Bonus"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Armas, escudos e arcos de metal empunhados por inimigos também faíscam e atraem raios para a posição deles.",
+      "applications": ["Manter distância de inimigos armados com metal durante a tempestade e deixar o raio fazer o trabalho."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lightning"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Objetos metálicos, como os blocos de metal de quebra-cabeças, também atraem raios; é preciso manter distância deles.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning"]
+    },
+    {
+      "action": "cenario",
+      "variant": "itens que não atraem",
+      "status": "sem_efeito",
+      "result": "Tochas e Folhas Korok (madeira), o Escudo guardião (tecnologia ancestral) e as varinhas elementais não atraem raios.",
+      "kind": "mecanica",
+      "sources": ["zw:Brazier", "zw:Korok Leaf", "zw:Guardian Shield", "zw:Fire Rod", "zw:Ice Rod", "zw:Lightning Rod"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A tempestade traz chuva: superfícies escorregadias, fogo exposto apagado e passos abafados.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Rain"]
+    },
+    {
+      "action": "usar",
+      "variant": "Feitiçanos",
+      "status": "confirmado",
+      "result": "Feitiçanos elétricos podem causar tempestades na área; Feitiçanos do trovão invocam tempestades que atingem Link se ele empunhar metal. O tempo volta ao normal quando o Feitiçano é derrotado.",
+      "kind": "mecanica",
+      "sources": ["zw:Electric Wizzrobe", "zw:Thunder Wizzrobe"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tempestades que terminam com missões",
+      "text": "O Planalto Thundra e o Lago Calora começam o jogo sob tempestade permanente. Ela só passa quando Link resolve \"Trial of Thunder\" e \"A Song of Storms\" e ativa os santuários correspondentes; o Conjunto de borracha está no santuário Toh Yahsa, revelado no Planalto Thundra.",
+      "sources": ["zw", "zw:Thundra Plateau", "zw:Rubber Armor"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Espada Mestra também atrai",
+      "text": "Mesmo lendária, a Espada Mestra é de metal: atrai raios se estiver equipada numa tempestade e conduz eletricidade — embora nunca seja derrubada das mãos de Link.",
+      "sources": ["zw:Master Sword"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Superstição confirmada",
+      "text": "Uma das dicas de carregamento diz que \"pode parecer superstição\", mas os raios parecem cair com frequência em objetos de metal, e recomenda desequipar tudo o que for metálico ao ouvir trovões.",
+      "sources": ["zw:Tips and Tricks"]
+    }
+  ],
+  "advanced_uses": [
+    "Equipar uma arma de metal até ela faiscar e então largá-la perto de um acampamento: objetos metálicos no chão também atraem raios, e Link se afasta antes da descarga.",
+    "Lutar com armas de madeira ou ancestrais durante tempestades para nunca virar para-raios."
+  ],
+  "limitations": [
+    "O raio que atinge Link causa dano extremo.",
+    "Escaladas ficam escorregadias por causa da chuva."
+  ],
+  "related": [
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Imunidade a raios com o bônus do conjunto" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Bônus que não reduz a explosão do raio" },
+    { "id": "botw_weapon_travelers_sword", "relation": "Exemplo de arma metálica que atrai raios" },
+    { "id": "botw_weapon_master_sword", "relation": "Atrai raios por ser de metal" },
+    { "id": "botw_weapon_torch", "relation": "Madeira: não atrai raios" },
+    { "id": "botw_shield_guardian_shield", "relation": "Tecnologia ancestral: não atrai raios" },
+    { "id": "botw_object_metal_box", "relation": "Objeto metálico que atrai raios" },
+    { "id": "botw_monster_thunder_wizzrobe", "relation": "Invoca tempestades" },
+    { "id": "botw_monster_electric_wizzrobe", "relation": "Pode causar tempestades" },
+    { "id": "botw_mechanic_rain", "relation": "A tempestade traz chuva" },
+    { "id": "botw_mechanic_electricity", "relation": "Regras de eletricidade e condução" }
+  ],
+  "capabilities": ["atrai_raios", "gera_eletricidade"],
+  "verification_status": "verificado"
+}

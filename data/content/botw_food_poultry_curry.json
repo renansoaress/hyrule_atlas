@@ -1,0 +1,97 @@
+{
+  "id": "botw_food_poultry_curry",
+  "summary": "Curry comum de Coxa, Arroz hyliano e Tempero Goron. É o último curry de carne testado pelo jogo: qualquer outra carne na panela muda o prato para o curry dela.",
+  "description": "O Curry de coxa é feito com uma Coxa, Arroz hyliano e Tempero Goron; o inventário diz que a carne saborosa combina com o aroma do tempero neste curry popular. A receita aceita apenas a Coxa: com Sobrecoxa o prato é Curry de sobrecoxa, com Ave inteira é Curry de ave inteira, e com Carne de terceira é Curry de carne. Sem ingredientes extras, só recupera corações; os dois espaços livres permitem somar ingredientes de efeito (dois \"valentes\" para Ataque aumentado, por exemplo).\n\nNa ordem em que o jogo testa os curries, o de coxa é o último dos de carne. Se Link colocar a Coxa junto com qualquer outra carne, o resultado recebe o nome do curry dessa outra carne. O Tempero Goron, por sua vez, é um ingrediente que vale a pena: acrescenta 1:30 à duração do efeito e eleva para 10% a chance extra de bônus crítico.",
+  "obtaining": [
+    "Cozinhar numa Panela uma Coxa, Arroz hyliano e Tempero Goron, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Curry acessível, já que a Coxa é a carne de ave mais comum.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "outra carne",
+      "status": "confirmado",
+      "result": "Qualquer outra carne junto da Coxa muda o prato para o curry correspondente (de ave inteira, de carne de segunda, de sobrecoxa, de carne...), testados antes do Curry de coxa.",
+      "produces": [
+        "botw_food_prime_poultry_curry",
+        "botw_food_gourmet_poultry_curry",
+        "botw_food_meat_curry",
+        "botw_food_prime_meat_curry"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O tempero rende tempo",
+      "text": "Entre os ingredientes neutros comuns, o Tempero Goron está entre os que mais acrescentam duração (1:30, como o Ovo; só algumas partes de dragão acrescentam mais), além de elevar para 10% a chance extra de crítico.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita Coxa como carne.",
+    "Qualquer outra carne na panela muda a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_bird_drumstick",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_prime_poultry_curry",
+      "relation": "Versão com Sobrecoxa"
+    },
+    {
+      "id": "botw_food_gourmet_poultry_curry",
+      "relation": "Versão com Ave inteira"
+    },
+    {
+      "id": "botw_food_poultry_pilaf",
+      "relation": "Outro prato de Coxa com arroz"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

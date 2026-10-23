@@ -1,0 +1,99 @@
+{
+  "id": "botw_armorset_ancient_set",
+  "summary": "Armadura feita pelo Forno ancestral de Akkala com peças de Guardião. Cada peça reduz o dano de Guardiões; com as três em ★★, as armas ancestrais causam 80% a mais de dano.",
+  "description": "O Conjunto ancestral é formado pelo Elmo ancestral, pela Couraça ancestral e pelas Grevas ancestrais. As três peças são fabricadas pelo Forno ancestral do laboratório de tecnologia ancestral de Akkala, que cobra rupias e materiais ancestrais por peça. Segundo o próprio jogo, a armadura foi criada com tecnologia Sheikah a partir de partes de Guardião e reduz o dano recebido de armas ancestrais. Cada peça concede um nível de Resistência a Guardiões (20%, 30% e 50% de redução nos níveis 1, 2 e 3), e a defesa do conjunto é muito alta, no mesmo patamar do Conjunto do soldado.\n\nO bônus de conjunto é a Proficiência ancestral (Ancient Proficiency): com as três peças vestidas e cada uma melhorada pelo menos duas vezes (★★) por uma Grande Fada, as armas ancestrais causam 80% a mais de dano, efeito que se multiplica com o Ataque aumentado. O elmo pode ser trocado por qualquer um dos quatro elmos divinos (Vah Medoh, Vah Naboris, Vah Rudania ou Vah Ruta), desde que ele também esteja em ★★.\n\nNa prática, é o conjunto ideal para enfrentar Guardiões e para quem luta com armas ancestrais e guardiãs. As peças podem ser tingidas na Tinturaria Kochi, em Hateno.",
+  "locations": [
+    "Laboratório de tecnologia ancestral de Akkala (Akkala Ancient Tech Lab), onde fica o Forno ancestral, no Altiplano de Akkala."
+  ],
+  "obtaining": [
+    "Comprar cada peça no Forno ancestral por 2.000 rupias mais materiais ancestrais (o elmo pede Engrenagens, Eixos e Núcleos ancestrais; a couraça troca os eixos por Parafusos; as grevas, por Molas).",
+    "O Forno ancestral só funciona depois que a fornalha do laboratório é reacesa com a Chama azul durante a Missão secundária \"Robbie's Research\".",
+    "Os elmos divinos, que substituem o Elmo ancestral no bônus, saem do amiibo dos Campeões: Revali (Vah Medoh), Urbosa (Vah Naboris), Daruk (Vah Rudania) e Mipha (Vah Ruta)."
+  ],
+  "uses": [
+    "Reduzir o dano dos ataques de Guardiões.",
+    "Potencializar armas ancestrais quando as três peças estão em ★★.",
+    "Defesa alta para o fim do jogo, já que a última melhoria leva cada peça a 28 de defesa."
+  ],
+  "effects": [
+    "Cada peça: Resistência a Guardiões (um nível por peça, até o máximo de nível 3).",
+    "Bônus de conjunto (três peças em ★★): Proficiência ancestral, +80% de ataque com armas ancestrais, multiplicativo com Ataque aumentado."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças vestidas, cada uma melhorada pelo menos duas vezes, ativa a Proficiência ancestral: armas ancestrais causam 80% a mais de dano.",
+      "conditions": [
+        "Elmo ancestral (ou um elmo divino), Couraça ancestral e Grevas ancestrais equipados ao mesmo tempo.",
+        "Todas as peças com pelo menos ★★ numa Fonte da Grande Fada."
+      ],
+      "side_effects": [
+        "Sem as melhorias, só valem os efeitos individuais de Resistência a Guardiões."
+      ],
+      "applications": [
+        "Combinar com comida de Ataque aumentado: os dois multiplicadores se acumulam."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Ancient Proficiency"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões",
+      "status": "confirmado",
+      "result": "Reduz o dano recebido de Guardiões em 20%, 30% ou 50% conforme o nível acumulado do efeito; a redução é aplicada depois de descontada a defesa de Link.",
+      "conditions": ["Ataque vindo de um Guardião."],
+      "side_effects": [
+        "Não reduz o dano de inimigos que não são Guardiões, mesmo que empunhem armas ancestrais."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Elmos divinos contam como peça do conjunto",
+      "text": "Qualquer um dos quatro elmos divinos (Vah Medoh, Vah Naboris, Vah Rudania ou Vah Ruta) completa o bônus no lugar do Elmo ancestral, com a Couraça e as Grevas ancestrais, desde que as três peças estejam em ★★. Assim dá para somar a Proficiência ancestral ao efeito próprio do elmo divino, como exibir a vida dos inimigos e uma resistência elemental.",
+      "sources": ["zw:Ancient Proficiency", "zw:Vah Medoh Divine Helm"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Multiplica com Ataque aumentado",
+      "text": "O aumento de 80% da Proficiência ancestral é multiplicativo com o efeito Ataque aumentado de pratos e elixires, e não apenas somado a ele.",
+      "sources": ["zw:Ancient Proficiency"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O forno que já foi uma Pedra-guia",
+      "text": "O Forno ancestral é uma antiga Pedra-guia de Kakariko levada por Robbie para Akkala e remodelada para refinar materiais e fabricar equipamentos. Robbie a chamava de \"Cherry\", nome que deixou de usar para não irritar a esposa, Jerrin. O forno também não reconhece Link e o chama de \"FamiliarNameMissing\".",
+      "sources": ["zw:Ancient Oven"]
+    }
+  ],
+  "advanced_uses": [
+    "Para lutas contra Guardiões persecutórios, use o conjunto completo em ★★ com uma arma ancestral ou guardiã: menos dano recebido e muito mais dano causado.",
+    "Trocar o Elmo ancestral pelo Elmo divino de Vah Medoh, por exemplo, mantém o bônus e acrescenta Resistência ao frio e a exibição da vida dos inimigos."
+  ],
+  "limitations": [
+    "O bônus exige as três peças em ★★; melhorias altas pedem materiais ancestrais em grande quantidade e, no último nível, Fragmento de estrela e Núcleo ancestral gigante.",
+    "A Resistência a Guardiões não protege contra outros inimigos que usem armas ancestrais."
+  ],
+  "related": [
+    { "id": "botw_armor_ancient_helm", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_ancient_cuirass", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_ancient_greaves", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armor_vah_medoh_divine_helm", "relation": "Substitui o elmo no bônus de conjunto" },
+    { "id": "botw_armor_vah_naboris_divine_helm", "relation": "Substitui o elmo no bônus de conjunto" },
+    { "id": "botw_armor_vah_rudania_divine_helm", "relation": "Substitui o elmo no bônus de conjunto" },
+    { "id": "botw_armor_vah_ruta_divine_helm", "relation": "Substitui o elmo no bônus de conjunto" },
+    { "id": "botw_weapon_guardian_sword_plus_plus", "relation": "Arma guardiã beneficiada pela Proficiência ancestral" },
+    { "id": "botw_bow_ancient_bow", "relation": "Arma ancestral" },
+    { "id": "botw_material_ancient_core", "relation": "Material de compra e melhoria" },
+    { "id": "botw_material_giant_ancient_core", "relation": "Material da última melhoria" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Guardião cujo dano o conjunto reduz" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["ataque", "defesa", "habilidade_especial"],
+  "verification_status": "verificado"
+}

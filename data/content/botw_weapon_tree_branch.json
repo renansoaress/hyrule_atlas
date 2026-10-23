@@ -1,0 +1,179 @@
+{
+  "id": "botw_weapon_tree_branch",
+  "summary": "Galho comum encontrado perto de árvores e arbustos — fraco (ataque 2), mas, como diz o jogo, surpreendentemente equilibrado. Pega fogo, flutua, não conduz eletricidade, e um deles na Ponte de Hylia esconde um Korok.",
+  "description": "O Galho é a arma mais simples de Breath of the Wild, encontrado no chão perto de árvores e arbustos. A descrição do jogo admite que galhos assim são muito comuns, mas surpreendentemente bem equilibrados: não causam muito dano, porém servem de arma numa emergência. Funciona como arma de uma mão e, ao ser arremessado, sai da mão de Link como qualquer arma comum.\n\nPor ser de madeira, é inflamável e pega fogo em contato com chamas ou em clima escaldante — o que o torna uma fonte improvisada de fogo. Não é magnético, não atrai raios, não conduz eletricidade e flutua em água funda. Num dos pilares centrais da Ponte de Hylia, um Galho é o esconderijo de um Korok: ao pegá-lo, o Korok aparece e entrega uma Semente Korok.",
+  "locations": [
+    "Perto de árvores e arbustos por toda Hyrule; Pradaria de Hyrule e Necluda Ocidental são os locais comuns citados pelo compendium.",
+    "Num dos pilares centrais da Ponte de Hylia, como esconderijo de um Korok."
+  ],
+  "obtaining": [
+    "Pegar do chão perto de árvores e arbustos.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma de emergência quando não há nada melhor.",
+    "Fonte de fogo improvisada: aceso numa chama, pode incendiar grama e acender lenha.",
+    "Pegar o Galho da Ponte de Hylia revela um Korok e rende uma Semente Korok."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo; causa muito pouco dano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Ao ser arremessado, o galho sai da mão de Link; se acertar um inimigo, quebra e o golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "É inflamável e pega fogo em contato com chamas ou em clima escaldante.",
+      "side_effects": [
+        "Nas áreas escaldantes de Eldin, armas inflamáveis queimam e desaparecem se ficarem expostas por muito tempo."
+      ],
+      "applications": [
+        "Acender lenha para fazer uma fogueira.",
+        "Incendiar grama e cipós."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Fire",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnético e não pode ser manipulado com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem galhos."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Num dos pilares centrais da Ponte de Hylia, o Galho é um esconderijo natural de Korok: pegá-lo faz o Korok aparecer (\"Yahaha! You found me!\", na versão em inglês) e entregar uma Semente Korok.",
+      "produces": [
+        "botw_keyitem_korok_seed"
+      ],
+      "kind": "curiosidade",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o galho pode surgir com bônus de ataque de +2 (nível comum) ou +3 a +4 (nível dourado), bônus de durabilidade de +1 (ou +2 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O Korok da Ponte de Hylia",
+      "text": "Um dos esconderijos de Korok do jogo é justamente um Galho comum largado num dos pilares centrais da Ponte de Hylia — quem pega o galho para usar como arma acaba encontrando uma Semente Korok.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o galho aceso para levar fogo de uma fogueira até grama ou lenha próximas, sem gastar Flechas de fogo."
+  ],
+  "limitations": [
+    "Ataque (2) e durabilidade (4) mínimos.",
+    "Madeira: queima perto do fogo e em clima escaldante.",
+    "Arma contundente: não corta árvores."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_korok_seed",
+      "relation": "Recompensa do Korok escondido no galho da Ponte de Hylia"
+    },
+    {
+      "id": "botw_weapon_torch",
+      "relation": "Outra arma de madeira para carregar fogo"
+    },
+    {
+      "id": "botw_weapon_boko_club",
+      "relation": "Clava Kobo, que o jogo descreve como \"essencialmente um galho\""
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Aceso, acende lenha"
+    },
+    {
+      "id": "botw_object_tree",
+      "relation": "Galhos aparecem perto de árvores e arbustos"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

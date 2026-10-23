@@ -1,0 +1,150 @@
+{
+  "id": "botw_armor_midnas_helmet",
+  "summary": "Elmo inspirado no de Midna, do DLC The Master Trials, achado nas Sage Temple Ruins. Tem 7 de defesa fixa, Resistência a Guardiões e o efeito oculto Poder ancestral aumentado.",
+  "description": "O Elmo de Midna lembra o que a princesa do crepúsculo usava ao lutar ao lado do Herói do Crepúsculo. Exclusivo do pacote de DLC The Master Trials, é o objetivo da missão secundária “EX Treasure: Twilight Relic”: o diário de Misko, ladrão que roubou relíquias do Castelo de Hyrule, diz que o elmo está nas ruínas de um templo “encharcado pelas águas do Rio Regencia”. O baú escondido, enterrado no chão, fica nas Sage Temple Ruins.\n\nDá Resistência a Guardiões nível 1 (−20% de dano de Guardiões) e o efeito oculto Poder ancestral aumentado (+20% de ataque com armas ancestrais). A defesa é 7 e não muda: o elmo não pode ser melhorado por Grandes Fadas nem tingido na Tinturaria Kochi. Depois de achado, Granté o vende por 50 rupias em Tarrey Town.",
+  "locations": [
+    "Sage Temple Ruins, junto ao Rio Regencia: baú escondido enterrado no chão."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Twilight Relic” (DLC The Master Trials), iniciada pelo diário de Misko nas Outpost Ruins.",
+    "Reposição: Granté o vende por 50 rupias depois da primeira obtenção."
+  ],
+  "uses": [
+    "Reduzir o dano de Guardiões sem gastar materiais com melhorias.",
+    "Aumentar o ataque das armas ancestrais."
+  ],
+  "effects": [
+    "Resistência a Guardiões nível 1.",
+    "Poder ancestral aumentado (oculto): +20% de ataque com armas ancestrais."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 7 de defesa fixa, Resistência a Guardiões nível 1 e o efeito oculto Poder ancestral aumentado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões",
+      "status": "confirmado",
+      "result": "Resistência a Guardiões nível 1: o dano recebido de Guardiões cai 20% (30% no nível 2 e 50% no nível 3, o máximo). A redução é calculada depois de descontada a defesa total de Link.",
+      "conditions": [
+        "Vale para ataques de Guardiões; não reduz o dano de inimigos comuns que empunham armas ancestrais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Guardian Resist Up",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Relíquia roubada por Misko",
+      "text": "A família real de Hyrule colecionava trajes históricos, que foram roubados pelo bandido Misko e escondidos em baús pelo reino; o elmo do crepúsculo é uma dessas peças, e o Diário de Aventuras registra o roubo.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mesmo par de efeitos da Tiara de diamante",
+      "text": "Resistência a Guardiões e Poder ancestral aumentado só aparecem juntos em duas peças de cabeça: o Elmo de Midna e a Tiara de diamante. A tiara pode ser melhorada até 28 de defesa; o elmo fica sempre em 7.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Guardian Resist Up"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "No começo do jogo, com o DLC, o elmo dá 7 de defesa e proteção contra Guardiões sem nenhum custo de melhoria."
+  ],
+  "limitations": [
+    "Não pode ser melhorado nem tingido.",
+    "Exige o DLC The Master Trials."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_diamond_circlet",
+      "relation": "Única outra peça de cabeça com os mesmos dois efeitos"
+    },
+    {
+      "id": "botw_armor_ancient_helm",
+      "relation": "Outra peça com Resistência a Guardiões"
+    },
+    {
+      "id": "botw_armor_zants_helmet",
+      "relation": "Outro elmo de Twilight Princess roubado por Misko"
+    },
+    {
+      "id": "botw_armor_cap_of_twilight",
+      "relation": "Gorro do Herói do Crepúsculo"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Inimigo contra o qual a Resistência a Guardiões atua"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

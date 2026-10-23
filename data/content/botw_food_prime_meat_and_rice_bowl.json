@@ -1,0 +1,99 @@
+{
+  "id": "botw_food_prime_meat_and_rice_bowl",
+  "summary": "Tigela de Carne de segunda, Arroz hyliano e Halita, \"refeição séria\" para quem caça. Só aceita Carne de segunda: a Sobrecoxa não forma esta tigela.",
+  "description": "A Tigela de arroz com carne de segunda leva Carne de segunda, Arroz hyliano e Halita; o inventário a apresenta como uma tigela carregada de carne de qualidade, o fim da busca por uma \"refeição séria\". Sem extras, só recupera corações; com dois espaços livres, aceita ingredientes de efeito que se somam (ou se anulam, se forem de efeitos diferentes).\n\nO detalhe que a separa de outros pratos \"de segunda\" é que ela não aceita a Sobrecoxa: a tabela de receitas só lista a Carne de segunda. Com Sobrecoxa, arroz e halita, nenhuma tigela corresponde, e o jogo segue até os Bolinhos de arroz com carne. A hierarquia também conta: se houver Carne de primeira junto, o resultado é a Tigela de arroz com carne de primeira, testada antes; com Carne de terceira sozinha, a Tigela de arroz com carne.",
+  "obtaining": [
+    "Cozinhar numa Panela Carne de segunda, Arroz hyliano e Halita, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Recuperar corações com carne de caça de qualidade média.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Sobrecoxa no lugar da carne",
+      "status": "confirmado",
+      "result": "Sobrecoxa, Arroz hyliano e Halita não formam esta tigela: o resultado são Bolinhos de arroz com carne.",
+      "produces": [
+        "botw_food_meaty_rice_balls"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Carne de primeira junto",
+      "status": "confirmado",
+      "result": "Com Carne de primeira na panela, o jogo prioriza a Tigela de arroz com carne de primeira.",
+      "produces": [
+        "botw_food_gourmet_meat_and_rice_bowl"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da restrição à Carne de segunda e da ordem de prioridade entre as tigelas, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Não aceita Sobrecoxa.",
+    "Carne de primeira na panela muda o prato para a tigela de primeira."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_meat_and_rice_bowl",
+      "relation": "Versão com Carne de terceira"
+    },
+    {
+      "id": "botw_food_gourmet_meat_and_rice_bowl",
+      "relation": "Versão com Carne de primeira (prioridade maior)"
+    },
+    {
+      "id": "botw_food_meaty_rice_balls",
+      "relation": "O que sai com Sobrecoxa no lugar da carne"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

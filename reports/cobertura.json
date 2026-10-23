@@ -1,0 +1,703 @@
+{
+  "generated_at": "2026-10-23T23:06:03.691Z",
+  "totals": {
+    "referencia": 878,
+    "no_atlas": 878,
+    "redigidas": 878,
+    "verificadas": 757,
+    "parciais": 83,
+    "a_verificar": 38,
+    "interacoes": 6902,
+    "segredos": 1981
+  },
+  "interacoes_por_status": {
+    "confirmado": 4079,
+    "sem_efeito": 1259,
+    "nao_aplicavel": 40,
+    "desconhecido": 1524
+  },
+  "categorias": [
+    {
+      "key": "materiais",
+      "label": "Materiais e ingredientes",
+      "referencia": 113,
+      "no_atlas": 113,
+      "redigidas": 113,
+      "verificadas": 95,
+      "parciais": 12,
+      "a_verificar": 6,
+      "interacoes": 1443,
+      "interacoes_por_status": {
+        "confirmado": 550,
+        "sem_efeito": 209,
+        "nao_aplicavel": 4,
+        "desconhecido": 680
+      },
+      "segredos": 284,
+      "segredos_por_tipo": {
+        "mecanica": 123,
+        "curiosidade": 110,
+        "tecnica_avancada": 49,
+        "glitch": 0,
+        "nao_verificado": 2
+      },
+      "nomes": {
+        "oficial": 1,
+        "oficial_secundaria": 110,
+        "nao_oficial": 2
+      },
+      "imagens_principais": {
+        "icon": 77,
+        "compendium": 36
+      },
+      "ids_parciais": [
+        "botw_material_blue_nightshade",
+        "botw_material_cool_safflina",
+        "botw_material_electric_safflina",
+        "botw_material_hyrule_herb",
+        "botw_material_opal",
+        "botw_material_ruby",
+        "botw_material_sapphire",
+        "botw_material_silent_princess",
+        "botw_material_star_fragment",
+        "botw_material_swift_violet",
+        "botw_material_topaz",
+        "botw_material_warm_safflina"
+      ],
+      "ids_a_verificar": [
+        "botw_material_chickaloo_tree_nut",
+        "botw_material_endura_carrot",
+        "botw_material_hylian_shroom",
+        "botw_material_molduga_fin",
+        "botw_material_stamella_shroom",
+        "botw_material_wildberry"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "armas",
+      "label": "Armas",
+      "referencia": 128,
+      "no_atlas": 128,
+      "redigidas": 128,
+      "verificadas": 117,
+      "parciais": 1,
+      "a_verificar": 10,
+      "interacoes": 1096,
+      "interacoes_por_status": {
+        "confirmado": 804,
+        "sem_efeito": 250,
+        "nao_aplicavel": 3,
+        "desconhecido": 39
+      },
+      "segredos": 320,
+      "segredos_por_tipo": {
+        "mecanica": 209,
+        "curiosidade": 89,
+        "tecnica_avancada": 18,
+        "glitch": 4,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 128,
+        "nao_oficial": 0
+      },
+      "imagens_principais": {
+        "compendium": 122,
+        "icon": 6
+      },
+      "ids_parciais": [
+        "botw_weapon_one_hit_obliterator"
+      ],
+      "ids_a_verificar": [
+        "botw_weapon_boko_bat",
+        "botw_weapon_boko_club",
+        "botw_weapon_fierce_deity_sword",
+        "botw_weapon_fire_rod",
+        "botw_weapon_korok_leaf",
+        "botw_weapon_lizal_forked_boomerang",
+        "botw_weapon_lizal_tri_boomerang",
+        "botw_weapon_soldiers_broadsword",
+        "botw_weapon_spiked_boko_bat",
+        "botw_weapon_spring_loaded_hammer"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "arcos",
+      "label": "Arcos",
+      "referencia": 26,
+      "no_atlas": 26,
+      "redigidas": 26,
+      "verificadas": 24,
+      "parciais": 2,
+      "a_verificar": 0,
+      "interacoes": 183,
+      "interacoes_por_status": {
+        "confirmado": 108,
+        "sem_efeito": 66,
+        "nao_aplicavel": 0,
+        "desconhecido": 9
+      },
+      "segredos": 66,
+      "segredos_por_tipo": {
+        "mecanica": 44,
+        "curiosidade": 22,
+        "tecnica_avancada": 0,
+        "glitch": 0,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 26,
+        "nao_oficial": 0
+      },
+      "imagens_principais": {
+        "compendium": 25,
+        "icon": 1
+      },
+      "ids_parciais": [
+        "botw_bow_bow_of_light",
+        "botw_bow_twilight_bow"
+      ],
+      "ids_a_verificar": [],
+      "ids_pendentes": []
+    },
+    {
+      "key": "flechas",
+      "label": "Flechas",
+      "referencia": 7,
+      "no_atlas": 7,
+      "redigidas": 7,
+      "verificadas": 3,
+      "parciais": 4,
+      "a_verificar": 0,
+      "interacoes": 59,
+      "interacoes_por_status": {
+        "confirmado": 34,
+        "sem_efeito": 0,
+        "nao_aplicavel": 0,
+        "desconhecido": 25
+      },
+      "segredos": 19,
+      "segredos_por_tipo": {
+        "mecanica": 9,
+        "curiosidade": 7,
+        "tecnica_avancada": 3,
+        "glitch": 0,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 6,
+        "nao_oficial": 1
+      },
+      "imagens_principais": {
+        "compendium": 6,
+        "icon": 1
+      },
+      "ids_parciais": [
+        "botw_arrow_bomb_arrow",
+        "botw_arrow_fire_arrow",
+        "botw_arrow_ice_arrow",
+        "botw_arrow_light_arrow"
+      ],
+      "ids_a_verificar": [],
+      "ids_pendentes": []
+    },
+    {
+      "key": "escudos",
+      "label": "Escudos",
+      "referencia": 33,
+      "no_atlas": 33,
+      "redigidas": 33,
+      "verificadas": 32,
+      "parciais": 0,
+      "a_verificar": 1,
+      "interacoes": 286,
+      "interacoes_por_status": {
+        "confirmado": 196,
+        "sem_efeito": 90,
+        "nao_aplicavel": 0,
+        "desconhecido": 0
+      },
+      "segredos": 84,
+      "segredos_por_tipo": {
+        "mecanica": 48,
+        "curiosidade": 29,
+        "tecnica_avancada": 5,
+        "glitch": 0,
+        "nao_verificado": 2
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 32,
+        "nao_oficial": 1
+      },
+      "imagens_principais": {
+        "compendium": 32,
+        "icon": 1
+      },
+      "ids_parciais": [],
+      "ids_a_verificar": [
+        "botw_shield_spiked_boko_shield"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "armaduras",
+      "label": "Armaduras e roupas",
+      "referencia": 134,
+      "no_atlas": 134,
+      "redigidas": 134,
+      "verificadas": 126,
+      "parciais": 5,
+      "a_verificar": 3,
+      "interacoes": 804,
+      "interacoes_por_status": {
+        "confirmado": 266,
+        "sem_efeito": 536,
+        "nao_aplicavel": 0,
+        "desconhecido": 2
+      },
+      "segredos": 287,
+      "segredos_por_tipo": {
+        "mecanica": 148,
+        "curiosidade": 117,
+        "tecnica_avancada": 19,
+        "glitch": 1,
+        "nao_verificado": 2
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 0,
+        "nao_oficial": 134
+      },
+      "imagens_principais": {
+        "icon": 107,
+        "composicao": 27
+      },
+      "ids_parciais": [
+        "botw_armor_island_lobster_shirt",
+        "botw_armor_nintendo_switch_shirt",
+        "botw_armor_radiant_shirt",
+        "botw_armor_radiant_tights",
+        "botw_armor_sheiks_mask"
+      ],
+      "ids_a_verificar": [
+        "botw_armor_gerudo_top",
+        "botw_armor_royal_guard_boots",
+        "botw_armor_tingles_shirt"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "culinaria",
+      "label": "Pratos e elixires",
+      "referencia": 189,
+      "no_atlas": 189,
+      "redigidas": 189,
+      "verificadas": 173,
+      "parciais": 4,
+      "a_verificar": 12,
+      "interacoes": 784,
+      "interacoes_por_status": {
+        "confirmado": 699,
+        "sem_efeito": 4,
+        "nao_aplicavel": 0,
+        "desconhecido": 81
+      },
+      "segredos": 274,
+      "segredos_por_tipo": {
+        "mecanica": 160,
+        "curiosidade": 81,
+        "tecnica_avancada": 23,
+        "glitch": 0,
+        "nao_verificado": 10
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 0,
+        "nao_oficial": 189
+      },
+      "imagens_principais": {
+        "icon": 189
+      },
+      "ids_parciais": [
+        "botw_food_copious_fried_wild_greens",
+        "botw_food_copious_mushroom_skewers",
+        "botw_food_dubious_food",
+        "botw_food_meat_skewer"
+      ],
+      "ids_a_verificar": [
+        "botw_elixir_energizing_elixir",
+        "botw_food_frozen_bass",
+        "botw_food_frozen_bird_thigh",
+        "botw_food_frozen_crab",
+        "botw_food_gourmet_meat_and_rice_bowl",
+        "botw_food_plain_crepe",
+        "botw_food_roasted_endura_carrot",
+        "botw_food_roasted_hearty_salmon",
+        "botw_food_roasted_tree_nut",
+        "botw_food_roasted_wildberry",
+        "botw_food_toasty_hylian_shroom",
+        "botw_food_toasty_stamella_shroom"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "criaturas",
+      "label": "Criaturas e montarias",
+      "referencia": 84,
+      "no_atlas": 84,
+      "redigidas": 84,
+      "verificadas": 69,
+      "parciais": 12,
+      "a_verificar": 3,
+      "interacoes": 770,
+      "interacoes_por_status": {
+        "confirmado": 407,
+        "sem_efeito": 18,
+        "nao_aplicavel": 24,
+        "desconhecido": 321
+      },
+      "segredos": 185,
+      "segredos_por_tipo": {
+        "mecanica": 63,
+        "curiosidade": 105,
+        "tecnica_avancada": 17,
+        "glitch": 0,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 80,
+        "oficial_secundaria": 1,
+        "nao_oficial": 3
+      },
+      "imagens_principais": {
+        "compendium": 83,
+        "model": 1
+      },
+      "ids_parciais": [
+        "botw_creature_bladed_rhino_beetle",
+        "botw_creature_bright_eyed_crab",
+        "botw_creature_cold_darner",
+        "botw_creature_donkey",
+        "botw_creature_electric_darner",
+        "botw_creature_energetic_rhino_beetle",
+        "botw_creature_highland_sheep",
+        "botw_creature_rugged_rhino_beetle",
+        "botw_creature_smotherwing_butterfly",
+        "botw_creature_sneaky_river_snail",
+        "botw_creature_sunset_firefly",
+        "botw_creature_warm_darner"
+      ],
+      "ids_a_verificar": [
+        "botw_creature_hearty_blueshell_snail",
+        "botw_creature_honeyvore_bear",
+        "botw_creature_water_buffalo"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "monstros",
+      "label": "Monstros e chefes",
+      "referencia": 86,
+      "no_atlas": 86,
+      "redigidas": 86,
+      "verificadas": 51,
+      "parciais": 35,
+      "a_verificar": 0,
+      "interacoes": 1094,
+      "interacoes_por_status": {
+        "confirmado": 692,
+        "sem_efeito": 49,
+        "nao_aplicavel": 8,
+        "desconhecido": 345
+      },
+      "segredos": 245,
+      "segredos_por_tipo": {
+        "mecanica": 129,
+        "curiosidade": 98,
+        "tecnica_avancada": 17,
+        "glitch": 1,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 3,
+        "oficial_secundaria": 26,
+        "nao_oficial": 57
+      },
+      "imagens_principais": {
+        "compendium": 86
+      },
+      "ids_parciais": [
+        "botw_monster_blizzrobe",
+        "botw_monster_calamity_ganon",
+        "botw_monster_cursed_bokoblin",
+        "botw_monster_cursed_lizalfos",
+        "botw_monster_cursed_moblin",
+        "botw_monster_electric_chuchu",
+        "botw_monster_electric_keese",
+        "botw_monster_electric_lizalfos",
+        "botw_monster_electric_wizzrobe",
+        "botw_monster_fire_breath_lizalfos",
+        "botw_monster_fire_chuchu",
+        "botw_monster_fire_wizzrobe",
+        "botw_monster_forest_octorok",
+        "botw_monster_frost_pebblit",
+        "botw_monster_golden_bokoblin_mm",
+        "botw_monster_guardian_scout_i",
+        "botw_monster_guardian_scout_ii",
+        "botw_monster_guardian_scout_iii",
+        "botw_monster_guardian_scout_iv",
+        "botw_monster_ice_breath_lizalfos",
+        "botw_monster_ice_chuchu",
+        "botw_monster_ice_keese",
+        "botw_monster_ice_wizzrobe",
+        "botw_monster_igneo_pebblit",
+        "botw_monster_meteo_wizzrobe",
+        "botw_monster_rock_octorok",
+        "botw_monster_sentry",
+        "botw_monster_sky_octorok_mm",
+        "botw_monster_snow_octorok",
+        "botw_monster_stalizalfos",
+        "botw_monster_stalkoblin",
+        "botw_monster_stalmoblin",
+        "botw_monster_thunder_wizzrobe",
+        "botw_monster_treasure_octorok",
+        "botw_monster_water_octorok"
+      ],
+      "ids_a_verificar": [],
+      "ids_pendentes": []
+    },
+    {
+      "key": "itens_chave",
+      "label": "Itens-chave",
+      "referencia": 28,
+      "no_atlas": 28,
+      "redigidas": 28,
+      "verificadas": 26,
+      "parciais": 2,
+      "a_verificar": 0,
+      "interacoes": 45,
+      "interacoes_por_status": {
+        "confirmado": 29,
+        "sem_efeito": 15,
+        "nao_aplicavel": 1,
+        "desconhecido": 0
+      },
+      "segredos": 64,
+      "segredos_por_tipo": {
+        "mecanica": 27,
+        "curiosidade": 28,
+        "tecnica_avancada": 7,
+        "glitch": 2,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 3,
+        "nao_oficial": 25
+      },
+      "imagens_principais": {
+        "icon": 28
+      },
+      "ids_parciais": [
+        "botw_keyitem_classified_envelope",
+        "botw_keyitem_medal_of_honor_talus"
+      ],
+      "ids_a_verificar": [],
+      "ids_pendentes": []
+    },
+    {
+      "key": "runas",
+      "label": "Runas e habilidades",
+      "referencia": 12,
+      "no_atlas": 12,
+      "redigidas": 12,
+      "verificadas": 12,
+      "parciais": 0,
+      "a_verificar": 0,
+      "interacoes": 59,
+      "interacoes_por_status": {
+        "confirmado": 52,
+        "sem_efeito": 6,
+        "nao_aplicavel": 0,
+        "desconhecido": 1
+      },
+      "segredos": 47,
+      "segredos_por_tipo": {
+        "mecanica": 23,
+        "curiosidade": 16,
+        "tecnica_avancada": 5,
+        "glitch": 3,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 6,
+        "oficial_secundaria": 5,
+        "nao_oficial": 1
+      },
+      "imagens_principais": {
+        "icon": 12
+      },
+      "ids_parciais": [],
+      "ids_a_verificar": [],
+      "ids_pendentes": []
+    },
+    {
+      "key": "mecanicas",
+      "label": "Mecânicas",
+      "referencia": 25,
+      "no_atlas": 25,
+      "redigidas": 25,
+      "verificadas": 22,
+      "parciais": 1,
+      "a_verificar": 2,
+      "interacoes": 180,
+      "interacoes_por_status": {
+        "confirmado": 171,
+        "sem_efeito": 7,
+        "nao_aplicavel": 0,
+        "desconhecido": 2
+      },
+      "segredos": 68,
+      "segredos_por_tipo": {
+        "mecanica": 30,
+        "curiosidade": 31,
+        "tecnica_avancada": 6,
+        "glitch": 1,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 9,
+        "oficial_secundaria": 0,
+        "nao_oficial": 16
+      },
+      "imagens_principais": {
+        "screenshot": 15,
+        "artwork": 2,
+        "icon": 6,
+        "model": 2
+      },
+      "ids_parciais": [
+        "botw_mechanic_heros_path_mode"
+      ],
+      "ids_a_verificar": [
+        "botw_mechanic_blood_moon",
+        "botw_mechanic_electricity"
+      ],
+      "ids_pendentes": []
+    },
+    {
+      "key": "objetos",
+      "label": "Objetos do cenário",
+      "referencia": 9,
+      "no_atlas": 9,
+      "redigidas": 9,
+      "verificadas": 4,
+      "parciais": 5,
+      "a_verificar": 0,
+      "interacoes": 71,
+      "interacoes_por_status": {
+        "confirmado": 48,
+        "sem_efeito": 5,
+        "nao_aplicavel": 0,
+        "desconhecido": 18
+      },
+      "segredos": 24,
+      "segredos_por_tipo": {
+        "mecanica": 13,
+        "curiosidade": 7,
+        "tecnica_avancada": 4,
+        "glitch": 0,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 0,
+        "nao_oficial": 9
+      },
+      "imagens_principais": {
+        "model": 8,
+        "screenshot": 1
+      },
+      "ids_parciais": [
+        "botw_object_barrel",
+        "botw_object_boulder",
+        "botw_object_explosive_barrel",
+        "botw_object_metal_box",
+        "botw_object_wooden_box"
+      ],
+      "ids_a_verificar": [],
+      "ids_pendentes": []
+    },
+    {
+      "key": "tesouros",
+      "label": "Tesouros e depósitos",
+      "referencia": 4,
+      "no_atlas": 4,
+      "redigidas": 4,
+      "verificadas": 3,
+      "parciais": 0,
+      "a_verificar": 1,
+      "interacoes": 28,
+      "interacoes_por_status": {
+        "confirmado": 23,
+        "sem_efeito": 4,
+        "nao_aplicavel": 0,
+        "desconhecido": 1
+      },
+      "segredos": 14,
+      "segredos_por_tipo": {
+        "mecanica": 8,
+        "curiosidade": 4,
+        "tecnica_avancada": 1,
+        "glitch": 1,
+        "nao_verificado": 0
+      },
+      "nomes": {
+        "oficial": 0,
+        "oficial_secundaria": 0,
+        "nao_oficial": 4
+      },
+      "imagens_principais": {
+        "compendium": 4
+      },
+      "ids_parciais": [],
+      "ids_a_verificar": [
+        "botw_treasure_rare_ore_deposit"
+      ],
+      "ids_pendentes": []
+    }
+  ],
+  "conflitos_inventario": [
+    {
+      "kind": "propriedades_ignoradas",
+      "name": "Ancient Orb",
+      "note": "Objeto de cenário (orbe ancestral de quebra-cabeças), não é item de inventário."
+    },
+    {
+      "kind": "propriedades_ignoradas",
+      "name": "Horn",
+      "note": "Corneta usada por monstros; objeto sem página de BOTW (stub), não é item de inventário."
+    },
+    {
+      "kind": "dlc_divergente",
+      "name": "Korok Mask",
+      "lista": "TCB",
+      "pagina_do_item": "TMT",
+      "escolhido": "TMT"
+    }
+  ],
+  "conflitos_nomes": [
+    {
+      "name_en": "Staminoka Bass",
+      "zeldawiki": "Robalo enérgico",
+      "coelhonews": "Robalo Energético",
+      "chosen": "Robalo enérgico"
+    }
+  ]
+}

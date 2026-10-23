@@ -1,0 +1,127 @@
+{
+  "id": "botw_object_grass",
+  "summary": "Grama que, cortada com lâmina, pode soltar Gafanhotos agitados, Lagartos fujões, Sapos apressados, Arroz hyliano, Trigo de Tabantha e, raramente, Fadas. Seca, pega fogo fácil e o incêndio gera correntes ascendentes.",
+  "description": "A grama de BOTW é mais que decoração. Cortá-la com uma lâmina pode revelar pequenos animais e ingredientes escondidos: Gafanhotos agitados, Lagartos fujões, Sapos apressados e, raramente, Fadas, além de Arroz hyliano (em Necluda Oriental) e Trigo de Tabantha (na Fronteira de Tabantha). Cortar grama não gasta a durabilidade da arma. Rupias, ao contrário dos jogos antigos, não aparecem na grama.\n\nO fogo transforma a grama em arma e em ferramenta de exploração. A grama seca pega fogo com muita facilidade e o incêndio se espalha rápido — e o vento o espalha ainda mais depressa. Uma Flecha incendiária na grama alta pode atingir vários inimigos ao mesmo tempo, e Chulchuls ígneos e Morcis ígneos incendeiam a grama por onde passam. Um campo em chamas cria uma corrente ascendente: abrindo o Planador sobre ela, Link é lançado para o alto. A grama alta também esconde Link, e agachar-se nela dificulta que os inimigos o vejam.",
+  "locations": [
+    "Por toda Hyrule; Arroz hyliano aparece ao cortar grama em Necluda Oriental e Trigo de Tabantha, na Fronteira de Tabantha."
+  ],
+  "obtaining": [
+    "Objeto do cenário; não é coletável."
+  ],
+  "uses": [
+    "Cortar para encontrar insetos, lagartos, sapos, Fadas, Arroz hyliano e Trigo de Tabantha.",
+    "Queimar para criar correntes ascendentes e ganhar altura com o Planador.",
+    "Incendiar para ferir grupos de inimigos.",
+    "Agachar-se na grama alta para não ser detectado.",
+    "Surfar com escudo em encostas gramadas, o que desgasta pouco o escudo."
+  ],
+  "effects": [
+    "Nenhum efeito próprio; o fogo na grama gera corrente ascendente."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cortar a grama com uma lâmina pode revelar Gafanhotos agitados, Lagartos fujões, Sapos apressados, Arroz hyliano, Trigo de Tabantha e, raramente, Fadas. Não consome durabilidade da arma.",
+      "side_effects": ["O Racha-Rocha, apesar de descrito como afiado, não corta grama."],
+      "produces": ["botw_creature_restless_cricket", "botw_creature_hightail_lizard", "botw_creature_hot_footed_frog", "botw_material_hylian_rice", "botw_material_tabantha_wheat", "botw_creature_fairy"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability", "zw:Boulder Breaker", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "A grama seca pega fogo com muita facilidade e o fogo se espalha rápido; um campo em chamas gera uma corrente ascendente.",
+      "side_effects": ["Cuidado ao carregar uma Tocha acesa perto de grama seca."],
+      "applications": [
+        "Abrir o Planador sobre a grama queimando para subir e atirar flechas nos inimigos de cima.",
+        "Usar Flechas incendiárias na grama seca para atingir vários inimigos de uma vez."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks", "zw:Fire", "zw:Updraft", "zw:Paraglider"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "O vento espalha o fogo na grama rapidamente; a rajada de uma Folha Korok também aviva e espalha as chamas.",
+      "applications": ["Levar o fogo pela grama até um acampamento de monstros a favor do vento."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Fire", "zw:Korok Leaf"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Chulchuls ígneos deixam rastros de fogo que incendeiam a grama, e Morcis ígneos põem fogo em superfícies inflamáveis como a grama. Octorocs da neve se disfarçam como um tufo de grama.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Chuchu", "zw:Fire Keese", "zw:Snow Octorok"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Agachar-se na grama alta torna Link menos visível para os inimigos.",
+      "kind": "mecanica",
+      "sources": ["zw:Stealth", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva apaga imediatamente o fogo exposto, inclusive o da grama.",
+      "kind": "mecanica",
+      "sources": ["zw:Rain"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Grama não é metálica; Magnétis não a afeta.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se explosões cortam ou incendeiam a grama."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Grama não dá rupias",
+      "text": "Em BOTW, ao contrário de jogos anteriores, cortar grama não faz aparecer rupias.",
+      "sources": ["zw:Rupee"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Elevador de fogo",
+      "text": "Incendiar a grama e abrir o Planador sobre o fogo lança Link para cima. A dica do jogo lembra que, quando o fogo se espalha, cria uma corrente ascendente que leva o Planador alto no céu.",
+      "sources": ["zw:Updraft", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Octoroc disfarçado",
+      "text": "O Octoroc da neve se esconde sob a neve com um tufo de grama na cabeça; golpear essa grama o força a sair.",
+      "sources": ["zw:Snow Octorok"]
+    }
+  ],
+  "advanced_uses": [
+    "Atear fogo à grama a favor do vento, longe de Link, para atingir um acampamento inteiro.",
+    "Criar a própria corrente ascendente incendiando a grama quando não há penhascos para planar."
+  ],
+  "limitations": [
+    "Nem toda arma corta: o Racha-Rocha, embora descrito como afiado, não corta grama.",
+    "A chuva apaga o fogo e impede o truque da corrente ascendente.",
+    "O fogo também queima Link se ele ficar no meio das chamas."
+  ],
+  "related": [
+    { "id": "botw_mechanic_fire", "relation": "A grama seca espalha fogo rapidamente" },
+    { "id": "botw_mechanic_updraft", "relation": "Grama em chamas cria corrente ascendente" },
+    { "id": "botw_keyitem_paraglider", "relation": "Aproveita a corrente ascendente do incêndio" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Incendeia a grama à distância" },
+    { "id": "botw_weapon_korok_leaf", "relation": "A rajada espalha o fogo" },
+    { "id": "botw_creature_restless_cricket", "relation": "Pode aparecer ao cortar grama" },
+    { "id": "botw_material_hylian_rice", "relation": "Encontrado ao cortar grama em Necluda Oriental" },
+    { "id": "botw_material_tabantha_wheat", "relation": "Encontrado ao cortar grama na Fronteira de Tabantha" },
+    { "id": "botw_creature_fairy", "relation": "Rara ao cortar grama" },
+    { "id": "botw_monster_snow_octorok", "relation": "Disfarça-se de tufo de grama" }
+  ],
+  "capabilities": ["inflamavel", "furtividade", "revela_recursos"],
+  "verification_status": "verificado"
+}

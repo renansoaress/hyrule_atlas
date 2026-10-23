@@ -1,0 +1,141 @@
+{
+  "id": "botw_material_blue_nightshade",
+  "summary": "Planta das áreas tranquilas que brilha suavemente à noite, o que facilita encontrá-la. Cozida, dá Furtividade aumentada; é a base dos dois primeiros níveis do Conjunto furtivo e o presente da missão de Wabbin.",
+  "description": "A Beladona azul cresce nas áreas mais tranquilas de Hyrule — o compendium cita Necluda Ocidental e a Grande Nascente de Lanayru —, e muitas delas ficam ao redor da Fonte da Grande Fada Cotera, nos arredores da Vila Kakariko. À noite, emite um brilho suave que ajuda a localizá-la. Não recupera corações crua; seu valor está na panela, onde concede Furtividade aumentada, efeito que reduz o barulho de Link para se aproximar de monstros e animais.\n\nNas Grandes Fadas, é o material de entrada do Conjunto furtivo, vendido em Kakariko: 3 por peça no primeiro nível e 5 por peça (com 5 Vaga-lumes do poente) no segundo. Também protagoniza a Missão secundária \"A Gift of Nightshade\", em que o tímido Wabbin quer presentear Perda com a flor favorita dela. Na Tinturaria Kochi, entra no corante azul.",
+  "locations": [
+    "Necluda Ocidental e Grande Nascente de Lanayru (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Muitas ao redor da Fonte da Grande Fada Cotera, perto da Vila Kakariko.",
+    "Mais fácil de achar à noite, quando brilha."
+  ],
+  "obtaining": [
+    "Colher nos locais citados. Os dados estruturados não listam lojas que vendam a planta."
+  ],
+  "uses": [
+    "Pratos de Furtividade aumentada.",
+    "Melhoria de armadura: 3 por peça no 1º nível e 5 por peça (+5 Vaga-lumes do poente) no 2º nível de Máscara furtiva, Peitoral furtivo e Meia-calça furtiva.",
+    "Missão secundária \"A Gift of Nightshade\": conseguir uma Beladona azul para Wabbin e entregá-la a Perda.",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante azul na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Cozida: Furtividade aumentada (até o nível 3)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a planta no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a planta largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe uma versão assada da Beladona azul na lista de comidas assadas, e as fontes não dizem o que acontece se ela for exposta ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-la numa fogueira; ela não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da planta na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a planta não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Furtividade aumentada. Mais unidades prolongam o efeito; combinada com Silencimelo ou Princesa plácida (mesmo efeito), prolonga e pode elevar o nível, até o máximo de 3.",
+      "side_effects": ["Correr em disparada faz barulho seja qual for o nível de furtividade."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Stealth"]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Crua, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": ["comp", "zw:Flower"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 4 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Brilho noturno",
+      "text": "A planta emite um brilho suave à noite, o que torna a coleta mais fácil depois que escurece.",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um presente entre tímidos",
+      "text": "Em \"A Gift of Nightshade\", Wabbin consegue a flor com a ajuda de Link, mas trava de nervoso e pede que Link a entregue a Perda. Ela desconfia — chega a perguntar se ele é um espião Yiga —, até que Wabbin revela que a Beladona azul também é a flor favorita dele e que sempre quis dá-la ao seu verdadeiro amor. Depois da confissão, Wabbin recompensa Link com rupias.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quanto separar para o Conjunto furtivo",
+      "text": "Os dois primeiros níveis das três peças do Conjunto furtivo consomem 24 Beladonas azuis no total: 3 por peça no 1º nível e 5 por peça no 2º.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Colha à noite ao redor da fonte de Cotera, onde o brilho denuncia as plantas, para juntar as 24 necessárias ao Conjunto furtivo.",
+    "Misture com Silencimelos e Princesas plácidas para Furtividade aumentada de nível 3."
+  ],
+  "limitations": [
+    "Crua não cura nada.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ela não está documentado."
+  ],
+  "related": [
+    { "id": "botw_armorset_stealth_set", "relation": "Usa a planta nos 1º e 2º níveis de melhoria" },
+    { "id": "botw_armor_stealth_mask", "relation": "1º nível: 3; 2º nível: 5 + 5 Vaga-lumes do poente" },
+    { "id": "botw_armor_stealth_chest_guard", "relation": "1º nível: 3; 2º nível: 5 + 5 Vaga-lumes do poente" },
+    { "id": "botw_armor_stealth_tights", "relation": "1º nível: 3; 2º nível: 5 + 5 Vaga-lumes do poente" },
+    { "id": "botw_creature_sunset_firefly", "relation": "Acompanha a planta no 2º nível do Conjunto furtivo" },
+    { "id": "botw_material_silent_shroom", "relation": "Outro ingrediente de Furtividade aumentada" },
+    { "id": "botw_material_silent_princess", "relation": "Outro ingrediente de Furtividade aumentada" },
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Cresce em abundância perto da fonte de Cotera" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul" }
+  ],
+  "capabilities": ["furtividade", "item_de_missao"],
+  "verification_status": "parcial"
+}

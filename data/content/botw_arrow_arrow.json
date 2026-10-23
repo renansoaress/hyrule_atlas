@@ -1,0 +1,183 @@
+{
+  "id": "botw_arrow_arrow",
+  "summary": "A flecha comum, de haste entalhada em madeira resistente. Serve em qualquer arco, exceto nos que só disparam Flechas de luz; acende ao passar pelo fogo e causa dano dobrado na cabeça.",
+  "description": "A Flecha é a munição básica de todos os arcos do jogo, com exceção do Arco do crepúsculo e do Arco da Luz, que só disparam Flechas de luz. Segundo a descrição do jogo, a haste é entalhada na madeira de uma árvore resistente. É muito comum: aparece avulsa ou em feixes, em baús, como drop de inimigos arqueiros e à venda em várias lojas. Link também pode recolher as flechas que os inimigos erram e que ficam cravadas no chão.\n\nUm acerto na cabeça causa o dobro do dano (acerto crítico), e vigias em postos de observação são derrotados na hora com um tiro na cabeça. Acertar o olho de um Guardião o atordoa por alguns instantes. As flechas se cravam em alguns objetos, como madeira, e em certos materiais, como o Cogumelo hyliano.\n\nEmbora seja a flecha mais simples, ela interage com o fogo: atirada através de uma chama, sai acesa e espalha fogo para grama, madeira e tochas; no clima escaldante de Eldin, acende sozinha ao ser tensionada. Também é ingrediente das Flechas ancestrais fabricadas no laboratório de Akkala.",
+  "locations": [
+    "Pradaria de Hyrule e Cânion de Eldin (locais comuns segundo o compendium).",
+    "Em baús por toda Hyrule e com inimigos arqueiros: Koboblins, Moblins, Lagalfos e Centaleões."
+  ],
+  "obtaining": [
+    "Recolher em baús, como drop de inimigos arqueiros ou pegando as flechas que os inimigos erram.",
+    "Comprar avulsa ou em feixes: loja de flechas da Cidade Gerudo (Arrow Specialty Shop), Coral Reef no Domínio Zora, East Wind em Vila Hateno, General Shoppe na Floresta Korok, Slippery Falcon na vila dos Arás e a filial de Tarrey Town, The Curious Quiver em Vila Kakariko, a loja de Shaillu no Bazar Kara Kara, o mercado de peixes de Vila Lurelin, Botrick no Outskirt Stable, Beedle, Gartan (Deserto Gerudo e Gerudo Canyon Stable), Giro (na floresta perto dos Dueling Peaks) e Jini (Mounted Archery Camp)."
+  ],
+  "uses": [
+    "Munição de qualquer arco que use flechas comuns.",
+    "Ingrediente das Flechas ancestrais no Forno ancestral do laboratório de Akkala (1, 3 ou 5 flechas, conforme o pacote).",
+    "Atordoar Guardiões com um tiro no olho e derrotar vigias com um tiro na cabeça."
+  ],
+  "effects": [
+    "Causa o dano do arco usado; o dobro em acertos na cabeça."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Disparada por qualquer arco, exceto o Arco do crepúsculo e o Arco da Luz. Acertos na cabeça causam dano dobrado, e vigias em postos de observação caem com um único tiro na cabeça. Pode ser disparada a cavalo e do Corcel de Hyrule zero.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Atirada através do fogo, a flecha sai acesa e pode espalhar as chamas para objetos inflamáveis, como grama, madeira e tochas.",
+      "conditions": [
+        "A flecha precisa atravessar uma fonte de fogo, como uma fogueira."
+      ],
+      "applications": [
+        "Acender tochas e grama à distância sem gastar Flechas incendiárias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, a flecha se acende ao ser tensionada e causa dano de fogo ao acertar objetos inflamáveis ou inimigos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem efeito de gelo sobre a flecha comum."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem efeito de eletricidade sobre a flecha comum."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a flecha comum na água."
+    },
+    {
+      "action": "chuva",
+      "status": "desconhecido",
+      "result": "As fontes não detalham se uma flecha acesa no fogo se apaga na chuva; elas só afirmam que a chuva apaga fogos expostos e que Flechas incendiárias não incendeiam nada enquanto chove."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Atinge e fere inimigos à distância; alguns pontos fracos reagem de forma especial: o olho de um Guardião o deixa atordoado, o chifre do Lagalfos elétrico descarrega eletricidade nos arredores e a cabeça dos Feitiçanos os atordoa.",
+      "side_effects": [
+        "Koboblins, Moblins, Lagalfos e Centaleões também usam arcos e flechas contra Link."
+      ],
+      "applications": [
+        "Derrotar um Centaleão rende um feixe das flechas que ele usava, além das armas.",
+        "Disparar no chifre de um Lagalfos elétrico para eletrocutar os inimigos próximos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Guardian",
+        "zw:Electric Lizalfos",
+        "zw:Ice Wizzrobe",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Crava-se em madeira e em alguns materiais, como o Cogumelo hyliano. Acertar um depósito de minério gera faíscas que podem iniciar fogo, e um tiro numa Bomba remota a detona.",
+      "applications": [
+        "Detonar Bombas remotas à distância com um tiro.",
+        "Fazer faíscas num depósito de minério para acender grama próxima."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ore Deposit",
+        "zw:Remote Bomb"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tiro único em vigias",
+      "text": "Inimigos de vigia em postos de observação morrem na hora com um tiro de flecha na cabeça.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Acerto crítico com som próprio",
+      "text": "Acertos na cabeça ou no olho com flecha são acertos críticos, com dano dobrado. O jogo marca o crítico de flecha com um som agudo característico.",
+      "sources": [
+        "zw:Critical Hit",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Flecha incendiária improvisada",
+      "text": "Disparar uma flecha comum através de uma fogueira ou de outra chama a acende, e ela passa a espalhar fogo como uma Flecha incendiária — útil quando as incendiárias acabaram.",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em Eldin, flechas comuns já saem acesas: use-as para incendiar inimigos e grama sem gastar Flechas incendiárias.",
+    "Recolha as flechas que os inimigos arqueiros erram para repor a munição durante o combate."
+  ],
+  "limitations": [
+    "Não funciona no Arco da Luz nem no Arco do crepúsculo.",
+    "Sem efeito elemental próprio."
+  ],
+  "related": [
+    {
+      "id": "botw_arrow_fire_arrow",
+      "relation": "Versão com fogo"
+    },
+    {
+      "id": "botw_arrow_ancient_arrow",
+      "relation": "Fabricada no laboratório de Akkala usando flechas comuns"
+    },
+    {
+      "id": "botw_bow_travelers_bow",
+      "relation": "Arco básico que a dispara"
+    },
+    {
+      "id": "botw_mechanic_critical_hit",
+      "relation": "Tiros na cabeça causam dano dobrado"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Fica atordoado com uma flecha no olho"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Pode ser detonada com uma flecha"
+    },
+    {
+      "id": "botw_treasure_ore_deposit",
+      "relation": "Gera faíscas ao ser atingido por flecha"
+    }
+  ],
+  "capabilities": [
+    "reage_fogo"
+  ],
+  "verification_status": "verificado"
+}

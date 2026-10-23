@@ -1,0 +1,116 @@
+{
+  "id": "botw_creature_cold_darner",
+  "summary": "Libélula das regiões frias, como os Cerros de Hyrule e a Fronteira de Tabantha, que prefere a sombra ao sol. Com partes de monstro vira Elixir refrescante — o remédio que o Ará Guy precisa no Bazar Kara Kara.",
+  "description": "A Libélula gélida vive em regiões frias de Hyrule, como os Cerros de Hyrule e a Fronteira de Tabantha. Segundo o jogo, ela prefere a sombra fresca das árvores ao calor do sol, e suas asas dissipam o calor do corpo. Também é vendida pela mercadora ambulante Maypin e por Beedle, inclusive no Bazar Kara Kara e no Estábulo Woodland, por 10 rupias.\n\nCozida com partes de monstro, produz o Elixir refrescante, que dá um nível de Resistência ao calor — essencial para atravessar o Deserto Gerudo de dia. Cada libélula acrescenta 2:30 de duração. Ingredientes refrescantes como Melancia oásica, Glacimelo, Erva fogueira e Truta glacial podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante azul.\n\nÉ peça de duas Missões secundárias: em \"An Ice Guy\", o Ará Guy, preso pelo calor no Bazar Kara Kara, precisa de um Elixir refrescante feito com uma Libélula gélida ou uma Borboleta invernal; em \"Little Sister's Big Request\", Jana, do Estábulo South Akkala, pede as três libélulas (gélida, cálida e do relâmpago) para o aniversário da irmã Gleema.",
+  "locations": [
+    "Regiões frias de Hyrule, como os Cerros de Hyrule e a Fronteira de Tabantha."
+  ],
+  "obtaining": [
+    "Apanhar nas regiões frias.",
+    "Comprar de Maypin ou de Beedle (inclusive no Bazar Kara Kara e no Estábulo Woodland) por 10 rupias."
+  ],
+  "uses": [
+    "Elixir refrescante: cozinhar com pelo menos uma parte de monstro.",
+    "Missão secundária \"An Ice Guy\": base do Elixir refrescante entregue a Guy (recompensa: Rupia roxa).",
+    "Missão secundária \"Little Sister's Big Request\": uma das três libélulas pedidas por Jana (recompensa: Rupia prateada).",
+    "Ingrediente do corante azul na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Resistência ao calor de um nível; +2:30 de duração por libélula."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como a libélula reage à aproximação de Link. Em geral, agachar-se aumenta a furtividade perto de animais."
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma libélula viva largada da algibeira. Na missão de Jana, as libélulas são entregues a Gleema, sem detalhes sobre soltá-las."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir refrescante (Resistência ao calor). Cada libélula acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinada com a Borboleta invernal, da mesma categoria."],
+      "applications": ["Somar Melancia oásica, Glacimelo, Erva fogueira ou Truta glacial para que o elixir também cure."],
+      "produces": ["botw_elixir_chilly_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Chilly Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com bichos de efeito oposto",
+      "status": "confirmado",
+      "result": "Misturada a um bicho picante (como a Libélula cálida) e a uma parte de monstro, os efeitos se anulam e o resultado é Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Maypin e Beedle cobram 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a libélula exposta ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre a libélula."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Solução rápida para \"An Ice Guy\"",
+      "text": "Guy ouviu dizer que os insetos refrescantes estão nas Montanhas Gerudo, mas não quer enfrentar os monstros de lá. Não é preciso subir as montanhas: Beedle, ali mesmo no Bazar Kara Kara, vende Libélulas gélidas por 10 rupias; basta cozinhar uma com qualquer parte de monstro.",
+      "sources": ["zw:An Ice Guy"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A irmã que odeia libélulas",
+      "text": "Gleema viu as três libélulas num livro, mas a irmã Jana achou os olhos delas assustadores. Mesmo assim, Jana pede a Link que as traga para o aniversário de Gleema — e, na hora, não consegue tocá-las. Quando Gleema corre para mostrá-las, Jana grita de pavor.",
+      "sources": ["zw", "zw:Little Sister's Big Request", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Várias libélulas com uma parte de monstro de longa duração alongam o Elixir refrescante, até o limite de 30 minutos que um elixir pode ter."
+  ],
+  "limitations": [
+    "O Elixir refrescante dá apenas um nível de Resistência ao calor.",
+    "Não misture com bichos de Resistência ao frio: os efeitos se anulam e o resultado é Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_elixir_chilly_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_winterwing_butterfly", "relation": "Outro bicho refrescante" },
+    { "id": "botw_creature_warm_darner", "relation": "Libélula de efeito oposto, também pedida por Jana" },
+    { "id": "botw_creature_electric_darner", "relation": "Terceira libélula pedida por Jana" },
+    { "id": "botw_creature_chillfin_trout", "relation": "Ingrediente refrescante que faz o elixir curar" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul" }
+  ],
+  "capabilities": ["protege_calor", "item_de_missao"],
+  "verification_status": "parcial"
+}

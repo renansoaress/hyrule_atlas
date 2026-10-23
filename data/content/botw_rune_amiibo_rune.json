@@ -1,0 +1,113 @@
+{
+  "id": "botw_rune_amiibo_rune",
+  "summary": "Runa opcional que, ao ler um amiibo, faz surgir materiais, contêineres e às vezes um baú com itens exclusivos. Amiibos de Link podem trazer Epona; o de Lobo Link invoca um companheiro. Alguns só valem uma vez por dia.",
+  "description": "A runa amiibo só aparece se a opção estiver ativada no menu de opções; nesse caso, é liberada depois que Link conclui um Santuário do Planalto (Great Plateau). Ao escanear um amiibo, ela faz surgir materiais e outros itens; alguns amiibos também soltam Caixas de madeira, Barris ou outros contêineres, que liberam flechas ou materiais quando destruídos, e muitos invocam um Baú do tesouro, às vezes com itens que só se conseguem por amiibo. A descrição do jogo avisa que nunca se sabe o que vai aparecer e que alguns amiibos só podem ser usados uma vez por dia.\n\nOs sorteios seguem tabelas. Os itens comuns sempre aparecem; os raros têm 20% de chance cada; o conteúdo do baú é um prêmio grande em 80% dos casos e um prêmio máximo em 20%. Quatro prêmios grandes seguidos do mesmo amiibo garantem um prêmio máximo na quinta leitura. As tabelas mudam ao longo da aventura: uma no início, outra depois de obter o Planador e a última depois de libertar a primeira Fera Divina. A runa não funciona dentro de Santuários, durante a provação da Ilha Eventide nem na Provação da Espada (Sword Monk's Shrine).",
+  "locations": [
+    "Tabuleta Sheikah, depois de concluir um Santuário do Planalto com a opção de amiibo ativada."
+  ],
+  "obtaining": [
+    "Ativar a opção de amiibo no menu de opções e concluir um Santuário do Planalto."
+  ],
+  "uses": [
+    "Obter materiais, flechas e alimentos extras com figuras amiibo.",
+    "Conseguir equipamentos exclusivos de amiibo (como os conjuntos de heróis de outros jogos) em baús do tesouro.",
+    "Invocar Epona com amiibos de Link compatíveis e Lobo Link como companheiro."
+  ],
+  "effects": [
+    "Faz surgir itens, contêineres e baús perto de Link; o resultado depende do amiibo e da tabela de sorteio."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Escanear um amiibo faz aparecer itens comuns garantidos, itens raros com 20% de chance cada e, conforme o amiibo, um baú com 80% de chance de prêmio grande e 20% de prêmio máximo.",
+      "conditions": [
+        "Opção de amiibo ativada.",
+        "Fora de Santuários, da provação da Ilha Eventide e da Provação da Espada.",
+        "Alguns amiibos só podem ser usados uma vez por dia."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Na primeira leitura num jogo salvo, o amiibo de Link da série Super Smash Bros. ou o Link (Twilight Princess) da série The Legend of Zelda invoca Epona, sem outros itens.",
+      "conditions": ["Usar numa área em que cavalos são permitidos; caso contrário, a runa solta itens normalmente."],
+      "produces": ["botw_creature_epona"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "amiibo de Lobo Link",
+      "status": "confirmado",
+      "result": "O amiibo de Lobo Link invoca o lobo como companheiro de viagem; ele não pode ser chamado em vilas e masmorras e desaparece se Link entrar numa delas.",
+      "side_effects": ["Escaneado dentro dessas áreas, o amiibo não tem efeito."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Alguns amiibos fazem surgir Caixas de madeira, Barris ou outros contêineres que liberam flechas ou materiais quando destruídos; baús de metal também podem aparecer como recompensa.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Iron Treasure Chest"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Prêmio máximo garantido",
+      "text": "Se o mesmo amiibo der quatro prêmios grandes seguidos (mesmo que outros amiibos sejam lidos no meio), a quinta leitura dele garante um prêmio máximo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Peças repetidas bloqueadas",
+      "text": "Peças de um conjunto de armadura de amiibo que Link já possui não voltam a aparecer até ele completar o conjunto. A Rédea e a Sela do viajante só podem ser obtidas uma vez, e Flechas ancestrais só aparecem depois de obtidas por outro meio.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Elmos divinos pelos amiibos dos Campeões",
+      "text": "Se um amiibo de Campeão der um baú de prêmio máximo, o Elmo divino da Fera correspondente é garantido, desde que pelo menos uma Fera Divina tenha sido libertada e Link ainda não tenha esse elmo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus sempre no máximo",
+      "text": "Armas de baús de amiibo sempre vêm com bônus, e com o valor máximo do nível sorteado (branco ou amarelo), embora o texto apareça em branco em qualquer caso.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "glitch",
+      "title": "Escudos com durabilidade dupla",
+      "text": "Por um bug, escudos de amiibo que deveriam vir com o bônus branco de defesa aplicam esse valor à durabilidade e o exibem como bônus de durabilidade. Assim, escudos de amiibo nunca recebem o bônus de defesa simples e têm dois valores possíveis de durabilidade extra; o bônus de defesa de segundo nível não é afetado.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Ler os amiibos dos Campeões depois de libertar uma Fera Divina para ter chance de ganhar o Elmo divino correspondente.",
+    "Contar as leituras de um mesmo amiibo: após quatro prêmios grandes seguidos, a quinta leitura é prêmio máximo."
+  ],
+  "limitations": [
+    "Exige figuras amiibo físicas e a opção ativada.",
+    "Não funciona dentro de Santuários, na Ilha Eventide durante a provação nem na Provação da Espada.",
+    "Alguns amiibos têm limite de uma leitura por dia.",
+    "Lobo Link não entra em vilas nem masmorras."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa da Tabuleta Sheikah" },
+    { "id": "botw_creature_epona", "relation": "Invocada por amiibos de Link compatíveis" },
+    { "id": "botw_treasure_treasure_chest", "relation": "Baús surgem como recompensa de amiibo" },
+    { "id": "botw_object_wooden_box", "relation": "Contêiner que alguns amiibos fazem surgir" },
+    { "id": "botw_object_barrel", "relation": "Contêiner que alguns amiibos fazem surgir" },
+    { "id": "botw_armor_vah_ruta_divine_helm", "relation": "Elmo garantido no prêmio máximo do amiibo de Mipha" },
+    { "id": "botw_keyitem_travelers_saddle", "relation": "Só pode ser obtida uma vez por amiibo" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Só aparece depois de obtida por outro meio" },
+    { "id": "botw_mechanic_trial_of_the_sword", "relation": "A runa não funciona na Provação da Espada" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

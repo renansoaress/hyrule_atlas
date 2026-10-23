@@ -1,0 +1,142 @@
+{
+  "id": "botw_monster_keese",
+  "summary": "Morcego de um olho só que sai à noite e ataca em bandos com voo imprevisível. Tem 1 ponto de vida: qualquer golpe o derruba, uma Defesa perfeita na investida o mata na hora e a rajada da Folha Korok o joga no chão.",
+  "description": "O Morci é um monstro noturno parecido com um morcego, com dentes afiados e um único olho brilhante. Aparece à noite em campo aberto e às vezes pendurado no teto de cavernas; o compendium cita a Pradaria de Hyrule e Necluda Oriental como locais comuns. O voo imprevisível torna a luta irritante, mas, como lembra o compendium, ele é fraco o bastante para cair com um único golpe — e até um bando inteiro pode ser dispersado com um só ataque.\n\nTem apenas 1 ponto de vida. Além do golpe direto, há dois atalhos: aparar a investida com uma Defesa perfeita o mata instantaneamente, e a rajada da Folha Korok o derruba no chão por um momento antes que ele volte a voar. Pode deixar Asa de Morci e Olho de Morci. As variantes elementais (Morci ígneo, glacial e elétrico) seguem o mesmo padrão de voo, mas acrescentam efeitos de fogo, gelo ou eletricidade ao contato.",
+  "locations": [
+    "À noite, em toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Oriental.",
+    "Teto de cavernas."
+  ],
+  "obtaining": [
+    "Pode deixar Asa de Morci e Olho de Morci.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Asas de Morci e Olhos de Morci para elixires e Mon.",
+    "Registro no compendium (entrada nº 88)."
+  ],
+  "effects": [
+    "Mordidas em investida, sem efeito elemental."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Com 1 ponto de vida, cai com um único golpe; um ataque amplo pode dispersar um bando inteiro.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Aparar com Defesa perfeita o Morci que investe contra Link o mata instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Qualquer flecha que o acerte o derruba; o difícil é mirar no voo imprevisível.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Uma Flecha incendiária que o acerte o derruba, como qualquer ataque; as fontes não descrevem reação especial do Morci comum ao fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Arrow"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Uma Flecha congelante que o acerte também basta, dado o único ponto de vida.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Uma Flecha eletrizante que o acerte o derruba; nenhuma interação especial é descrita.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Morci comum com água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões causam dano em área a inimigos, o que resolve bandos inteiros de uma vez.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb", "comp"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos dentro do raio; útil quando o bando se aglomera.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A rajada da Folha Korok o derruba no chão por um momento, antes de ele voltar a voar.",
+      "applications": ["Golpeá-lo enquanto está no chão, sem precisar acertar o voo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Korok Leaf"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pende do teto de cavernas e sai à noite, frequentemente em bandos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Defesa perfeita mortal",
+      "text": "O Zelda Wiki registra que aparar um Morci no momento da investida, com Defesa perfeita, o mata instantaneamente — uma alternativa a tentar acertá-lo no voo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Derrubado pelo vento",
+      "text": "Quando soprados pela Folha Korok, os Morcis caem no chão por um instante antes de voltar a voar.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Contra um bando, segurar o escudo e aparar cada investida com Defesa perfeita."
+  ],
+  "limitations": [
+    "O voo imprevisível dificulta acertos com flecha."
+  ],
+  "related": [
+    { "id": "botw_monster_fire_keese", "relation": "Variante de fogo" },
+    { "id": "botw_monster_ice_keese", "relation": "Variante de gelo" },
+    { "id": "botw_monster_electric_keese", "relation": "Variante elétrica" },
+    { "id": "botw_material_keese_wing", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_keese_eyeball", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_weapon_korok_leaf", "relation": "A rajada o derruba" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Mata-o na investida" }
+  ],
+  "capabilities": ["vence_rapido"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,178 @@
+{
+  "id": "botw_food_frozen_bass",
+  "summary": "\"Que peixe frio!\": robalo congelado no frio extremo ou na água gelada. Dá Resistência ao calor por 1 minuto, vale 14 rupias e, pelas fontes, cura 2 corações — o dobro do robalo cru.",
+  "description": "O Robalo hyruliano e o Robalo enérgico viram Robalo congelado quando expostos ao clima congelante, à água gelada ou a ataques de gelo. A descrição do jogo abre com um trocadilho (\"That's one cold fish\") e avisa que comê-lo não recupera muitos corações, mas baixa um pouco a temperatura do corpo: como toda comida congelada, dá Resistência ao calor de nível 1 por um minuto.\n\nAs fontes dão 2 corações ao Robalo congelado, embora o Zelda Wiki afirme que congelar não muda a cura do ingrediente — e o robalo cru cura só 1. Se o valor estiver certo, o congelado supera o Robalo assado nos dois quesitos: cura mais (2 contra 1,5) e vale mais (14 contra 9 rupias). Para o Robalo enérgico, que vale 18 cru, congelar ainda é prejuízo.",
+  "locations": [
+    "Prepara-se a partir de Robalos hyrulianos ou Robalos enérgicos em regiões de clima congelante — Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia — ou na água gelada de Hebra Falls, Hebra Headspring, Hebra Plunge e do River of the Dead."
+  ],
+  "obtaining": [
+    "Largar um robalo no chão de uma região de clima congelante, como as Cordilheiras de Hebra ou o Monte Lanayru.",
+    "Jogar um robalo na água gelada (Cold Water), como a de Hebra Plunge ou a do River of the Dead.",
+    "Acertar um robalo com uma Flecha congelante ou com Espada álgida, Grã-Espada álgida ou Lança congelante."
+  ],
+  "uses": [
+    "Refresco rápido para o calor diurno do Deserto Gerudo.",
+    "Venda: 14 rupias."
+  ],
+  "effects": [
+    "Recupera 2 corações, segundo a página do item e a tabela de comidas congeladas.",
+    "Resistência ao calor de nível 1 (baixo) por 1 minuto."
+  ],
+  "interactions": [
+    {
+      "action": "frio_extremo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: basta largar um Robalo hyruliano ou um Robalo enérgico no chão de uma região de clima congelante para que o ingrediente endureça e vire Robalo congelado.",
+      "conditions": [
+        "Clima congelante: Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia (no pico nevado do Grande Platô) ou pontos altos como o topo do Castelo de Hyrule."
+      ],
+      "side_effects": [
+        "O mesmo frio fere Link aos poucos se ele não tiver Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Freezing Climate",
+        "zw:Mount Hylia"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Jogar um Robalo hyruliano ou um Robalo enérgico na água gelada (Cold Water) das regiões frias também congela o ingrediente, que vira Robalo congelado.",
+      "conditions": [
+        "Água gelada, como a de Hebra Falls, Hebra Headspring e Hebra Plunge (Fronteira de Tabantha) e a do River of the Dead, no Grande Platô."
+      ],
+      "side_effects": [
+        "Não entre na água: nadar nela tira meio coração a cada 0,5 s, e nenhuma roupa ou comida protege."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cold Water",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingir um Robalo hyruliano ou um Robalo enérgico com uma Flecha congelante ou com golpes de Espada álgida, Grã-Espada álgida ou Lança congelante também produz Robalo congelado.",
+      "applications": [
+        "Congelar a pesca ou a caça na hora, longe das regiões frias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 2 corações e concede Resistência ao calor de nível 1 por 1 minuto.",
+      "side_effects": [
+        "Como todo efeito temporário de comida, a Resistência ao calor substitui qualquer outro efeito de comida ou elixir que estiver ativo — inclusive um efeito refrescante mais forte ou mais longo."
+      ],
+      "applications": [
+        "Proteção curta contra o calor diurno do Deserto Gerudo sem passar pela Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 14 rupias; cru, o Robalo hyruliano vale 6 e o Robalo enérgico, 18.",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Hyrule Bass",
+        "zw:Staminoka Bass"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Robalo congelado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece ao expor Robalo congelado ao fogo (se descongela ou se vira a versão assada)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "Por que cura mais que o cru?",
+      "text": "O Zelda Wiki diz que congelar não altera a cura do ingrediente, mas registra 2 corações para o Robalo congelado, enquanto os dois robalos crus curam 1. As fontes consultadas não explicam a diferença."
+    },
+    {
+      "kind": "mecanica",
+      "title": "Melhor que assado?",
+      "text": "Pelas tabelas do Zelda Wiki, o mesmo robalo rende 1,5 coração e 9 rupias assado, ou 2 corações, 14 rupias e Resistência ao calor congelado.",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível 1 e só contra o calor do deserto",
+      "text": "Toda comida congelada dá um nível de Resistência ao calor por um minuto. Esse efeito evita o dano do calor do Deserto Gerudo de dia, mas as zonas de calor extremo do sul e do oeste do deserto pedem dois níveis, e ele não ajuda contra o clima escaldante, o fogo ou a lava de Eldin.",
+      "sources": [
+        "zw:Food",
+        "zw:Frozen Food",
+        "zw:Added Effect",
+        "zw:Extremely Hot Zone",
+        "zw:Heat"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Dá só Resistência ao calor de nível 1: não basta para as zonas de calor extremo do sul e do oeste do Deserto Gerudo, que exigem nível 2.",
+    "Não serve para Eldin: Resistência ao calor não protege do clima escaldante, do fogo nem da lava — para isso é preciso Proteção contra chamas.",
+    "Comer durante outro efeito temporário (ataque, defesa, um Elixir refrescante etc.) troca esse efeito pela Resistência ao calor de 1 minuto."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_staminoka_bass",
+      "relation": "Ingrediente cru (vale mais cru)"
+    },
+    {
+      "id": "botw_food_roasted_bass",
+      "relation": "Versão assada dos mesmos robalos"
+    },
+    {
+      "id": "botw_food_frozen_hearty_bass",
+      "relation": "Versão congelada do Robalo nutritivo"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Congela o ingrediente cru à distância"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Resistência ao calor mais longa e mais forte"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_calor"
+  ],
+  "verification_status": "a_verificar"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "botw_armorset_gerudo_outfit",
+  "summary": "Disfarce feminino que permite a Link entrar na Cidade Gerudo, vendido por Vilia no Bazar Kara Kara. O traje completo dá Resistência ao calor de nível 1; não pode ser melhorado, mas pode ser tingido.",
+  "description": "O Traje Gerudo é composto pelo Véu Gerudo, pela Blusa Gerudo e pelo Sirwal Gerudo. Homens não podem entrar na Cidade Gerudo, e durante a missão principal \"Forbidden City Entry\" Link descobre, no telhado da hospedaria do Bazar Kara Kara, a misteriosa Vilia, que vende o traje completo por 600 rupias. Vestido com as três peças, Link passa a ser visto como mulher por todos e entra na cidade sem ser barrado. Depois, as peças também são vendidas separadamente por Saula na loja Fashion Passion, dentro da cidade, por 180 rupias cada (540 no total).\n\nAs peças isoladas não têm efeito especial. O traje completo concede um bônus de Resistência ao calor equivalente ao nível 1 — Vilia comenta que a roupa ajuda com as temperaturas do deserto — e esse bônus se soma a outro efeito de nível 1, chegando ao nível 2, o máximo. O conjunto não pode ser melhorado por Grandes Fadas, por isso o bônus vale desde a compra.\n\nO disfarce é flexível: o Elmo do trovão, as Botas de areia e as Botas de neve podem substituir o Véu e o Sirwal sem quebrar o disfarce na cidade. O traje pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Telhado da hospedaria do Bazar Kara Kara, onde Vilia vende o traje completo.",
+    "Fashion Passion, loja de roupas da Cidade Gerudo, que vende as peças separadas."
+  ],
+  "obtaining": [
+    "Comprar de Vilia por 600 rupias durante \"Forbidden City Entry\" (o traje completo de uma vez).",
+    "Depois, comprar peças avulsas de Saula, na Fashion Passion, por 180 rupias cada."
+  ],
+  "uses": [
+    "Entrar na Cidade Gerudo, onde homens são proibidos: é a solução da missão principal \"Forbidden City Entry\".",
+    "Suportar o calor do deserto durante o dia."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Traje completo: disfarce que permite entrar na Cidade Gerudo e Resistência ao calor de nível 1 (bônus de conjunto)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças, Link é visto como mulher e pode entrar na Cidade Gerudo; também ganha Resistência ao calor de nível 1.",
+      "conditions": ["Véu, blusa e sirwal Gerudo vestidos juntos (véu e sirwal podem ser trocados por peças específicas, veja os segredos)."],
+      "applications": ["Concluir \"Forbidden City Entry\" e acessar as lojas e missões da cidade."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Forbidden City Entry", "zw:Set Bonus"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "O traje completo protege do calor extremo do deserto como uma Resistência ao calor de nível 1, somável a outro efeito de nível 1.",
+      "side_effects": ["Não protege do clima escaldante da Montanha da Morte, do fogo nem da lava."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus", "zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Disfarce com peças trocadas",
+      "text": "Depois de obter o Elmo do trovão, as Botas de areia ou as Botas de neve, Link pode usá-los no lugar do Véu Gerudo e do Sirwal Gerudo e continuar disfarçado dentro da cidade, ganhando os efeitos dessas peças.",
+      "sources": ["zw:Disguise (Mechanic)"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus de calor sem melhorias",
+      "text": "Como o traje não pode ser melhorado, a Resistência ao calor do conjunto não exige ★★. Ela se acumula com um efeito de nível 1 (de um Elixir refrescante, por exemplo) para alcançar o nível 2.",
+      "sources": ["zw:Set Bonus", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Vilia e Robsten",
+      "text": "Se Link insinuar que Vilia é um homem, ela nega e o manda embora; se ele elogiar sua beleza, ela diz que a roupa só realça a aparência. No bazar, o comerciante Robsten se pergunta onde ela comprou as roupas Gerudo e imagina que talvez ele também pudesse usá-las.",
+      "sources": ["zw", "zw:Forbidden City Entry"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine o traje com um Elixir refrescante de nível 1 para ter Resistência ao calor de nível 2 no deserto."
+  ],
+  "limitations": [
+    "Não pode ser melhorado por Grandes Fadas.",
+    "Os efeitos só valem com o traje completo (ou com as substituições aceitas pelo disfarce)."
+  ],
+  "related": [
+    { "id": "botw_armor_gerudo_veil", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_gerudo_top", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_gerudo_sirwal", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armor_thunder_helm", "relation": "Pode substituir o Véu Gerudo no disfarce" },
+    { "id": "botw_armor_sand_boots", "relation": "Pode substituir o Sirwal Gerudo no disfarce" },
+    { "id": "botw_armor_snow_boots", "relation": "Pode substituir o Sirwal Gerudo no disfarce" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Alternativa melhorável contra o calor do deserto" },
+    { "id": "botw_elixir_chilly_elixir", "relation": "Soma Resistência ao calor ao bônus do traje" },
+    { "id": "botw_mechanic_dye", "relation": "O traje pode ser tingido" }
+  ],
+  "capabilities": ["protege_calor", "habilidade_especial", "item_de_missao"],
+  "verification_status": "verificado"
+}

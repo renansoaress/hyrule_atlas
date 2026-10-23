@@ -1,0 +1,59 @@
+{
+  "id": "botw_keyitem_travel_medallion",
+  "summary": "Medalhão de tecnologia ancestral (DLC The Master Trials) que registra a posição atual como ponto de teletransporte. Só um ponto por vez; fica escondido sob a Ilha do Labirinto Lomei.",
+  "description": "O Teletransportador (Travel Medallion) é uma ferramenta misteriosa feita com tecnologia ancestral esquecida, exclusiva da DLC The Master Trials. Pela algibeira, Link o usa para registrar o lugar onde está como um portal de viagem no mapa; depois, pode se teletransportar para lá como faria para um santuário ou torre. Apenas um local pode ficar registrado de cada vez: usar o medalhão em outro lugar substitui o ponto anterior.\n\nO medalhão é o objetivo da Missão secundária \"EX Teleportation Rumors!\". Na Super Rumor Mill V2, sobre a mesa do Estábulo South Akkala, Traysi fala do \"sonho do teletransporte\" e de um medalhão antigo que levaria o dono instantaneamente para onde ele o tivesse colocado, guardado num baú \"sob um labirinto no nordeste de Akkala\" — e dá ao boato a nota máxima de cinco estrelas. O baú fica na parede sul da grande câmara subterrânea da Ilha do Labirinto Lomei.\n\nNa prática, o medalhão funciona como um portal de viagem portátil, útil para voltar a pontos sem santuário por perto: uma área de coleta, um chefe ou a entrada de uma missão longa.",
+  "locations": [
+    "Câmara subterrânea sob a Ilha do Labirinto Lomei (Lomei Labyrinth Island), no nordeste de Akkala, num baú da parede sul."
+  ],
+  "obtaining": [
+    "Com a DLC The Master Trials, ler a Super Rumor Mill V2 no Estábulo South Akkala (\"EX Teleportation Rumors!\"; a missão também é ativada ao carregar o mundo depois de sair do Grande Platô).",
+    "Chegar à câmara sob a Ilha do Labirinto Lomei e abrir o baú da parede sul."
+  ],
+  "uses": [
+    "Criar um ponto de teletransporte em qualquer lugar e voltar a ele mais tarde.",
+    "Marcar locais de coleta, chefes ou áreas sem santuário próximo."
+  ],
+  "effects": [
+    "Registra a posição atual como portal de viagem no mapa (um por vez)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Usado a partir da algibeira, transforma a posição atual de Link num portal de viagem; o portal antigo, se existir, é substituído.",
+      "conditions": ["Ter o medalhão nos itens-chave."],
+      "side_effects": ["Só um ponto pode existir por vez."],
+      "applications": ["Voltar instantaneamente a um lugar de farm ou a uma área sem santuário."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Travel Gate", "jogo"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Cinco estrelas de Traysi",
+      "text": "Na revista de boatos, Traysi diz que o medalhão parece \"perfeito para viajantes, aventureiros e amantes de boatos\" e deixa ao leitor decidir se é verdade ou só um belo sonho, com recomendação de cinco estrelas.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Um portal portátil",
+      "text": "Os portais de viagem normais ficam diante de cada santuário, no topo das torres e nos dois laboratórios de tecnologia ancestral. O Teletransportador é o único que Link pode colocar onde quiser.",
+      "sources": ["zw:Travel Gate"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de explorar uma área remota, registre o ponto na entrada para voltar direto a ela depois de se teletransportar para comprar ou cozinhar."
+  ],
+  "limitations": [
+    "Apenas um ponto registrado por vez.",
+    "Exige a DLC The Master Trials e a viagem até o fundo da Ilha do Labirinto Lomei."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Usa o mesmo sistema de teletransporte" },
+    { "id": "botw_armorset_barbarian_set", "relation": "Uma peça também fica na Ilha do Labirinto Lomei (Santuário Tu Ka'loh)" },
+    { "id": "botw_mechanic_stable", "relation": "A pista está no Estábulo South Akkala" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

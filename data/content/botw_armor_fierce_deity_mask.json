@@ -1,0 +1,170 @@
+{
+  "id": "botw_armor_fierce_deity_mask",
+  "summary": "Máscara do herói de Majora's Mask, obtida só com o amiibo Link (Majora's Mask). Dá Ataque aumentado nível 1 e tem olhos que brilham no escuro; o conjunto ★★ reduz à metade o vigor dos ataques carregados.",
+  "description": "Segundo a descrição, a Máscara da Deidade Feroz foi usada por um herói vindo de um mundo em que a lua ameaçava cair; parece assustadora, mas confere um “poder feroz e divino”. O Zelda Wiki observa que se trata da mesma máscara da era do Herói do Tempo, embora sem os poderes que tinha. Só sai dos baús invocados pela runa amiibo com o amiibo Link (Majora's Mask), com pequena chance por leitura.\n\nDá Ataque aumentado nível 1 (+20%) e, como a Máscara de Majora, tem olhos que brilham e ficam visíveis em lugares escuros, como as Ruínas de Thyphlo. Com a Armadura e as Botas da Deidade Feroz a ★★, ativa a Economia de vigor no ataque carregado (−50% de vigor). A defesa vai de 3 a 20; as melhorias pedem partes de Rinox, uma parte de Dinraal por nível (escama, garra, lasca da presa e lasca do chifre) e 2 Vísceras de Centaleão no último. Não pode ser tingida.",
+  "locations": [
+    "Não há local fixo: surge em baús invocados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Ler o amiibo Link (Majora's Mask) com a runa amiibo; cada baú tem pequena chance de trazer uma peça do Conjunto da Deidade Feroz."
+  ],
+  "uses": [
+    "Aumentar o ataque em 20%.",
+    "Completar o Conjunto da Deidade Feroz para economizar vigor em ataques carregados."
+  ],
+  "effects": [
+    "Ataque aumentado nível 1 (+20%).",
+    "Bônus de conjunto Economia de vigor no ataque carregado (−50%) com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo) e dá Ataque aumentado nível 1. Os olhos da máscara brilham em ambientes escuros.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto da Deidade Feroz ★★",
+      "status": "confirmado",
+      "result": "Com Armadura e Botas da Deidade Feroz, todas ★★, os ataques carregados gastam 50% menos vigor.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fierce Deity Set",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Ataque nível 3 com as três peças",
+      "text": "Cada peça da Deidade Feroz dá um nível de Ataque aumentado; vestidas juntas, chegam ao nível 3 (+50%), o teto do efeito.",
+      "sources": [
+        "zw:Fierce Deity Set",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Peças repetidas não caem",
+      "text": "Enquanto o conjunto não estiver completo, a runa amiibo não sorteia de novo uma peça de armadura que Link já tenha; o Zelda Wiki estima ao menos três dias reais para reunir o conjunto, já que o amiibo é lido uma vez por dia.",
+      "sources": [
+        "zw:amiibo Rune",
+        "zw:Fierce Deity Set"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Olhos que acendem no escuro",
+      "text": "Os olhos da máscara brilham como os da Máscara de Majora, e o efeito fica evidente em lugares muito escuros, como as Ruínas de Thyphlo.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O conjunto completo une Ataque aumentado nível 3 e ataques carregados mais baratos, a mesma combinação do Conjunto bárbaro."
+  ],
+  "limitations": [
+    "Depende do amiibo Link (Majora's Mask).",
+    "Não pode ser tingida.",
+    "Melhorias exigem partes de Dinraal em todos os níveis."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_fierce_deity_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_fierce_deity_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_fierce_deity_boots",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_majoras_mask",
+      "relation": "Outra máscara com olhos que brilham"
+    },
+    {
+      "id": "botw_armor_barbarian_helm",
+      "relation": "Mesmo efeito individual e mesmo bônus de conjunto"
+    },
+    {
+      "id": "botw_monster_dinraal",
+      "relation": "Dragão cujas partes são usadas nas melhorias"
+    },
+    {
+      "id": "botw_material_hinox_guts",
+      "relation": "Material do 3º nível"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Única forma de obtenção"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

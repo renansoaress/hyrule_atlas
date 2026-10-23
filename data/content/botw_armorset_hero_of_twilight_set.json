@@ -1,0 +1,68 @@
+{
+  "id": "botw_armorset_hero_of_twilight_set",
+  "summary": "Roupa de Link de Twilight Princess, liberada pelo amiibo de Link de Super Smash Bros. ou de Twilight Princess. Sem efeito por peça; em ★★ dá +50% ao feixe da Espada Mestra. Melhora com Topázio.",
+  "description": "O Conjunto do herói do crepúsculo reúne o Gorro do crepúsculo, a Túnica do crepúsculo e as Calças do crepúsculo, e reproduz a roupa de Link em The Legend of Zelda: Twilight Princess. As peças são obtidas com a runa amiibo, escaneando o amiibo de Link da série Super Smash Bros. ou o amiibo de Link de Twilight Princess. Cada leitura faz surgir um baú com pequena chance de conter uma das peças, e como cada amiibo só pode ser lido uma vez por dia real, o conjunto exige no mínimo três dias reais.\n\nAs peças não têm efeito individual. Com as três melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ativa o aumento do feixe da Espada Mestra (Master Sword Beam Up), +50% de dano no disparo de energia que a espada lança quando Link está com a vida cheia.\n\nAs melhorias usam Topázio (1, 3, 5 e 10 por peça) e um Fragmento de estrela por peça a cada nível. O conjunto não pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Não aparece no mapa: surge em baús criados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Super Smash Bros.) ou o amiibo de Link (Twilight Princess) com a runa amiibo; cada leitura gera um baú com pequena chance de conter uma peça.",
+    "Limite de uma leitura por dia real para cada amiibo."
+  ],
+  "uses": [
+    "Reforçar o feixe da Espada Mestra quando as peças estão em ★★.",
+    "Visual de Twilight Princess."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Bônus de conjunto (três peças em ★★): +50% de dano no feixe da Espada Mestra."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças em ★★, o feixe da Espada Mestra causa 50% a mais de dano, somado ao aumento da espada desperta.",
+      "conditions": [
+        "Gorro, túnica e calças do crepúsculo vestidos juntos, todos com ★★.",
+        "Disparar o feixe com a vida cheia."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Master Sword"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Os mesmos amiibo trazem Epona",
+      "text": "Na primeira leitura, o amiibo de Link de Super Smash Bros. ou o de Twilight Princess entrega Epona, cavalo com velocidade, vigor e força 4. As leituras seguintes passam a gerar baús que podem conter as peças deste conjunto.",
+      "sources": ["zw:Horse", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Referência a Twilight Princess",
+      "text": "O conjunto reproduz o traje de Link em Twilight Princess; o mesmo amiibo de Twilight Princess também é uma das formas de obter Epona.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Epona é obtida com a primeira leitura desses amiibo, então conte com uma leitura a mais antes de começar a juntar as peças."
+  ],
+  "limitations": [
+    "Depende de amiibo e da sorte nos baús.",
+    "O bônus só afeta o feixe da Espada Mestra, que exige vida cheia.",
+    "Não pode ser tingido."
+  ],
+  "related": [
+    { "id": "botw_armor_cap_of_twilight", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_tunic_of_twilight", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_trousers_of_twilight", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_creature_epona", "relation": "Entregue na primeira leitura dos mesmos amiibo" },
+    { "id": "botw_weapon_master_sword", "relation": "Arma cujo feixe o bônus fortalece" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para obter as peças" },
+    { "id": "botw_material_topaz", "relation": "Material de todas as melhorias" },
+    { "id": "botw_material_star_fragment", "relation": "Exigido em todos os níveis de melhoria" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" }
+  ],
+  "capabilities": ["ataque"],
+  "verification_status": "verificado"
+}

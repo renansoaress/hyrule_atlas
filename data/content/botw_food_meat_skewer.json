@@ -1,0 +1,110 @@
+{
+  "id": "botw_food_meat_skewer",
+  "summary": "O prato de carne mais simples: de uma a três carnes no espeto. Quatro tipos diferentes viram Espetinhos fartos; tempero, halita, pimenta, cogumelos ou plantas levam a outras receitas.",
+  "description": "O Espetinho de carne é feito com uma a três carnes de qualquer tipo; a descrição do jogo fala de um lanche suculento e farto de pedacinhos de carne grelhados no espeto. Cura alguns corações, conforme a quantidade e a qualidade das carnes.\n\nPor ser a receita de carne mais básica, quase todo acréscimo a transforma em outro prato. Quatro tipos diferentes de carne formam os Espetinhos fartos de carne; Tempero Goron leva aos espetinhos temperados; Halita, às carnes grelhadas no sal; Pimenta de fogo, ao Bife apimentado; Mel de abelha, à Carne glaceada; cogumelos, ao Espetinho de carne e cogumelo; legumes, ervas ou flores, à Carne no vapor; e frutos do mar, às fritadas de carne e frutos do mar.\n\nO Zelda Wiki lista dez versões com efeito para o espetinho (refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante e blindada), \"feitas adicionando ingredientes\" do efeito, mas não diz quais ingredientes fazem isso sem mudar a receita.",
+  "locations": [
+    "Carne de terceira: deixada por Javalis da mata, Bodes da montanha e Raposas do prado; vendida pelos mercadores Cambo e Mezer.",
+    "Coxa: deixada por Pombos silvestres, Corvos da montanha, Patos de peito verde, Garças azuladas, Garças rosadas e Gaivotas; vendida pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela de uma a três carnes."
+  ],
+  "uses": [
+    "Cura rápida com carnes caçadas.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações, conforme as carnes.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações, conforme a quantidade e a qualidade das carnes.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O Zelda Wiki cita versões com efeito obtidas ao adicionar ingredientes do efeito, sem detalhar quais.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Receita que muda com qualquer extra",
+      "text": "A tabela de refeições mostra receitas de dois ingredientes para carne com tempero, halita, pimenta, mel, cogumelos, plantas e frutos do mar. Por isso o espetinho só se mantém com carne pura — e, com quatro carnes diferentes, vira a versão farta.",
+      "sources": [
+        "zw:Meal",
+        "zw:Copious Meat Skewers"
+      ]
+    }
+  ],
+  "limitations": [
+    "Com quatro tipos diferentes de carne, vira Espetinhos fartos de carne.",
+    "Não está claro nas fontes quais ingredientes geram as versões com efeito sem transformar o prato."
+  ],
+  "related": [
+    {
+      "id": "botw_food_copious_meat_skewers",
+      "relation": "Versão farta, com quatro carnes diferentes"
+    },
+    {
+      "id": "botw_food_spiced_meat_skewer",
+      "relation": "Carne com Tempero Goron"
+    },
+    {
+      "id": "botw_food_pepper_steak",
+      "relation": "Carne com Pimenta de fogo"
+    },
+    {
+      "id": "botw_food_glazed_meat",
+      "relation": "Carne com Mel de abelha"
+    },
+    {
+      "id": "botw_food_meat_and_mushroom_skewer",
+      "relation": "Carne com cogumelo"
+    },
+    {
+      "id": "botw_food_steamed_meat",
+      "relation": "Carne com legume, erva ou flor"
+    },
+    {
+      "id": "botw_food_salt_grilled_meat",
+      "relation": "Carne com Halita"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "parcial"
+}

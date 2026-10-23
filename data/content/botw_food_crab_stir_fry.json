@@ -1,0 +1,105 @@
+{
+  "id": "botw_food_crab_stir_fry",
+  "summary": "O prato de caranguejo mais simples: só Tempero Goron e um caranguejo. Deixa três espaços livres na panela; a versão comum (7 corações, 50 rupias) pede dois caranguejos diferentes.",
+  "description": "O Caranguejo salteado precisa apenas de Tempero Goron e de qualquer caranguejo; segundo a descrição do jogo, o tempero combina perfeitamente com o sabor da carne. Com um só caranguejo, o prato herda o efeito dele: o Caranguejo esperto gera a versão energizante (5 corações), o Caranguejo espadachim a valente (2 corações) e o Caranguejo couraçado a blindada (5 corações) — as três valem 30 rupias.\n\nPara a versão comum, use dois caranguejos de tipos diferentes ou acrescente um terceiro ingrediente de efeito contrário: o prato passa a curar 7 corações e vale 50 rupias. Por ter só dois ingredientes obrigatórios, é o prato de caranguejo que mais deixa espaço livre na panela (três espaços), enquanto a Omelete de caranguejo com arroz e o Risoto de caranguejo ocupam quatro.",
+  "locations": [
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Tempero Goron + Caranguejo esperto, espadachim ou couraçado."
+  ],
+  "uses": [
+    "Recuperação de vigor, Ataque aumentado ou Defesa aumentada com poucos ingredientes.",
+    "Venda: de 30 a 50 rupias."
+  ],
+  "effects": [
+    "Versão comum (dois caranguejos diferentes ou terceiro ingrediente de efeito oposto): recupera 7 corações.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Caranguejo esperto; 5 corações, 30 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Caranguejo espadachim; nível baixo; 2 corações, 30 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com Caranguejo couraçado; nível baixo; 5 corações, 30 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 7 corações quando os efeitos foram anulados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um único tipo de caranguejo, ganha o efeito dele; a versão valente é a que menos cura (2 corações).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 50 rupias na versão comum e 30 em qualquer versão com efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Espaço para reforçar o efeito",
+      "text": "Como só dois espaços são obrigatórios, os outros três podem receber mais caranguejos do mesmo tipo. Pela regra geral da culinária, repetir o ingrediente de efeito prolonga ou fortalece esse efeito.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "A versão valente cura apenas 2 corações.",
+    "Depende do Tempero Goron, vendido em poucos lugares."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_bright_eyed_crab",
+      "relation": "Gera a versão energizante"
+    },
+    {
+      "id": "botw_creature_razorclaw_crab",
+      "relation": "Gera a versão valente"
+    },
+    {
+      "id": "botw_creature_ironshell_crab",
+      "relation": "Gera a versão blindada"
+    },
+    {
+      "id": "botw_food_crab_omelet_with_rice",
+      "relation": "Prato de caranguejo com arroz e ovo"
+    },
+    {
+      "id": "botw_food_crab_risotto",
+      "relation": "Prato de caranguejo com arroz e manteiga"
+    },
+    {
+      "id": "botw_food_salt_grilled_crab",
+      "relation": "Caranguejo com Halita em vez de Tempero Goron"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "ataque",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

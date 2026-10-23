@@ -1,0 +1,145 @@
+{
+  "id": "botw_monster_golden_lizalfos_mm",
+  "summary": "Exclusivo do Modo Mestre: o Lagalfos mais forte, com 1296 pontos de vida e resistência a eletricidade, supostamente um prateado transformado por um raio. Pode deixar pedras preciosas.",
+  "description": "O Lagalfos dourado existe apenas no Modo Mestre, incluído no Pacote de Conteúdo Adicional 1 (The Master Trials), em que os monstros dourados formam o nível mais alto de cada espécie. Tem 1296 pontos de vida. Segundo o compendium, diz-se que são Lagalfos prateados que se transformaram misteriosamente depois de serem atingidos por um raio — o que explicaria a alta tolerância a ataques elétricos.\n\nUsa armas fortes, com bônus variados, e mantém as habilidades da espécie: nada, se camufla, embosca e cospe água. Pode deixar Chifre, Garra e Cauda de Lagalfos e pedras preciosas (Âmbar, Opala, Topázio, Rubi, Safira e Diamante). Como todo inimigo do Modo Mestre, regenera vida com o tempo, até um limite, e percebe Link com mais facilidade.",
+  "locations": [
+    "Apenas no Modo Mestre, como topo da progressão de inimigos."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre, Garra e Cauda de Lagalfos e pedras preciosas (Âmbar, Opala, Topázio, Rubi, Safira e Diamante).",
+    "Suas armas costumam ter bônus.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de armas Lagal com bônus e de pedras preciosas no Modo Mestre."
+  ],
+  "effects": [
+    "Golpes fortes e jatos de água; no Modo Mestre não há proteção contra morte em um golpe."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Exige muito dano: 1296 pontos de vida e regeneração gradual (limitada) do Modo Mestre.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Master Mode"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado como outros inimigos.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Pode ser congelado com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resistente a ataques elétricos, ligados pelo compendium à lenda do raio.",
+      "applications": ["Preferir fogo, gelo e explosões."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Armas metálicas de inimigos atraem raios em tempestades; o equipamento Lagal é quase todo de metal. A fonte não diz se a resistência elétrica reduz o dano do raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Lagalfos nadam bem e não se afogam.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas causam dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; armas Lagal metálicas largadas podem ser puxadas com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se e embosca como os demais Lagalfos.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "As máscaras de Lagalfos e de Majora fazem os Lagalfos ignorarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Prateados atingidos por raios",
+      "text": "O compendium registra a crença de que os Lagalfos dourados são prateados transformados após serem atingidos por um raio, o que explicaria a tolerância a eletricidade.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Modo Mestre",
+      "text": "No Modo Mestre, os inimigos sobem um nível, percebem Link com mais facilidade e regeneram vida até um limite; os monstros dourados são o nível acima dos prateados.",
+      "sources": ["zw:Master Mode", "zw:Enemy"]
+    }
+  ],
+  "advanced_uses": [
+    "Atacar sem pausas longas, com fogo, gelo ou explosões, para vencer a regeneração."
+  ],
+  "limitations": [
+    "Não existe no modo normal.",
+    "Resistente a eletricidade.",
+    "Regenera vida aos poucos."
+  ],
+  "related": [
+    { "id": "botw_monster_silver_lizalfos", "relation": "Variante que ele supera; origem segundo a lenda" },
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_mechanic_master_mode", "relation": "Modo em que aparece" },
+    { "id": "botw_material_diamond", "relation": "Pedra preciosa que pode deixar" },
+    { "id": "botw_material_lizalfos_tail", "relation": "Parte de terceiro nível" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

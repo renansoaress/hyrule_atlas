@@ -1,0 +1,123 @@
+{
+  "id": "botw_creature_energetic_rhino_beetle",
+  "summary": "Besouro raro e valioso que vive até dez anos, encontrado em Akkala e Necluda Ocidental. Vira Elixir energizante, melhora o Conjunto do herói selvagem e é o escaravelho favorito de Beedle.",
+  "description": "O Escaravelho vibrante é um besouro raro do Altiplano de Akkala e de Necluda Ocidental; o Zelda Wiki destaca as árvores perto do Estábulo South Akkala e os pilares de Vila Kakariko. O jogo diz que ele pode viver até dez anos, e essa vitalidade se traduz, com partes de monstro, num elixir que restaura bastante vigor. Também é vendido pelo mercador ambulante Bugut, que percorre a estrada entre o Estábulo Dueling Peaks e Vila Kakariko, por 150 rupias.\n\nCozido com partes de monstro, produz o Elixir energizante (Recuperação de vigor), a mesma categoria do Gafanhoto agitado. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante amarelo. Nas Fontes da Grande Fada, o 3º nível de cada peça do Conjunto do herói selvagem exige 5 Escaravelhos vibrantes e 2 lascas de presa de dragão.\n\nÉ o escaravelho favorito de Beedle, que o considera raríssimo e um sinal de boa sorte: ele implora pelo besouro e oferece um prato ou elixir em troca. Se Link recusar, Beedle não entende o motivo, insiste que o besouro \"quer ficar com ele\" e, achando que Link não ouve, trama contratar alguém para trocá-lo às escondidas por um escaravelho comum.",
+  "locations": [
+    "Altiplano de Akkala e Necluda Ocidental.",
+    "Árvores perto do Estábulo South Akkala e pilares de Vila Kakariko."
+  ],
+  "obtaining": [
+    "Apanhar nas árvores e pilares indicados.",
+    "Comprar de Bugut, entre o Estábulo Dueling Peaks e Vila Kakariko, por 150 rupias (1 em estoque, renovável)."
+  ],
+  "uses": [
+    "Elixir energizante: cozinhar com pelo menos uma parte de monstro.",
+    "Melhoria de armadura: 5 por peça do Conjunto do herói selvagem (Gorro, Túnica e Calças selvagens) no 3º nível, com 2 lascas de presa de dragão (de Farosh para o gorro, de Naydra para a túnica e de Dinraal para as calças).",
+    "Troca com Beedle por um prato ou elixir.",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 30 rupias."
+  ],
+  "effects": [
+    "No elixir: Recuperação de vigor (o jogo diz que restaura \"muito\" vigor)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como o escaravelho reage à aproximação de Link; indicam apenas onde ele costuma ficar pousado."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica pousado em árvores (como as próximas ao Estábulo South Akkala) e nos pilares de Vila Kakariko.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um escaravelho vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir energizante (Recuperação de vigor), cujo efeito é instantâneo.",
+      "side_effects": ["A tabela do Zelda Wiki sugere 1/5 de medidor por escaravelho, mas marca esse valor como pendente de verificação."],
+      "applications": ["Somar Energimelo, Mel de abelha, Robalo enérgico ou Caranguejo esperto para que o elixir também cure."],
+      "produces": ["botw_elixir_energizing_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Elixir", "zw:Energizing Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 30 rupias, o maior valor entre os insetos; Bugut o vende por 150.",
+      "sources": ["zw", "zw:Materials in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "variant": "troca com Beedle",
+      "status": "confirmado",
+      "result": "Beedle implora pelo escaravelho e oferece um prato ou elixir em troca; numa das falas, propõe um Elixir veloz. Se Link aceitar, ele pede outro só no dia seguinte.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Beedle"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o escaravelho exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o escaravelho."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O plano secreto de Beedle",
+      "text": "Se Link se recusar a entregar o besouro, Beedle murmura que vai entrar na algibeira dele e trocá-lo por um escaravelho comum sem que ele perceba — e logo decide contratar outra pessoa para isso, para não sujar as mãos. Ao notar que Link ainda está ali, disfarça e pede que o avise se mudar de ideia.",
+      "sources": ["zw", "jogo", "zw:Beedle"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um bom presságio",
+      "text": "Para Beedle, encontrar um Escaravelho vibrante é um bom sinal: \"Este é um besouro muito difícil de achar! Com certeza é um bom presságio\".",
+      "sources": ["jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde pelo menos 15 para levar as três peças do Conjunto do herói selvagem ao 3º nível antes de trocá-los com Beedle ou usá-los em elixires."
+  ],
+  "limitations": [
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "Raro e caro: Bugut cobra 150 rupias por um."
+  ],
+  "related": [
+    { "id": "botw_elixir_energizing_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_restless_cricket", "relation": "O outro bicho energizante" },
+    { "id": "botw_armorset_hero_of_the_wild_set", "relation": "Usa 5 por peça no 3º nível de melhoria" },
+    { "id": "botw_creature_bladed_rhino_beetle", "relation": "Outro escaravelho que Beedle troca por elixir" },
+    { "id": "botw_creature_rugged_rhino_beetle", "relation": "Outro escaravelho que Beedle troca por elixir" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo" }
+  ],
+  "capabilities": ["vigor"],
+  "verification_status": "parcial"
+}

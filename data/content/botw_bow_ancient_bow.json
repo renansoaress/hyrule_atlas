@@ -1,0 +1,177 @@
+{
+  "id": "botw_bow_ancient_bow",
+  "summary": "Arco criado pela pesquisa de Robbie com tecnologia Sheikah (ataque 44, durabilidade 120, a maior entre os arcos): a flecha voa quase reta por longa distância e causa 1,5× de dano em Guardiões, mas tensiona devagar.",
+  "description": "O Arco ancestral é fruto da pesquisa de Robbie sobre a tecnologia antiga dos Sheikah e pertence ao equipamento ancestral. É comprado no Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala, depois que a fornalha do laboratório é reativada com a Chama azul. Como outras peças de tecnologia ancestral, dobra-se numa forma compacta nas costas de Link quando não está em uso.\n\nSegundo a descrição do jogo, as flechas disparadas por ele seguem em linha perfeitamente reta. Os parâmetros extraídos mostram como: 40 m de trajetória reta e, depois, gravidade de apenas 2,8 m/s², contra 9,8 m/s² dos arcos comuns. Ele e o Arco prateado são os únicos arcos de flechas comuns com a gravidade alterada, e a redução dele é muito maior. Em troca, o tensionamento tem só 70% da velocidade normal. Contra Guardiões e alguns outros alvos especiais, como as Iras de Ganon, o dano é multiplicado por 1,5.\n\nPor ser de tecnologia ancestral, não queima no fogo nem no clima escaldante, não atrai raios, flutua na água e, pelos dados, não é magnético nem condutor.",
+  "locations": [
+    "Laboratório de Tecnologia Ancestral de Akkala (Akkala Ancient Tech Lab), no Forno ancestral."
+  ],
+  "obtaining": [
+    "Comprar no Forno ancestral do laboratório de Akkala por 1.000 rupias, 15 Molas ancestrais, 10 Engrenagens ancestrais e 1 Núcleo ancestral gigante.",
+    "Só fica disponível depois que Link reativa a fornalha ancestral do laboratório com a Chama azul."
+  ],
+  "uses": [
+    "Tiros de longa distância com trajetória quase reta.",
+    "Combate contra Guardiões, Iras de Ganon e Ganon, com dano 1,5 vez maior."
+  ],
+  "effects": [
+    "Dano 1,5 vez maior contra Guardiões, Iras de Ganon, Ganon e alguns outros alvos especiais.",
+    "Trajetória da flecha quase reta."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros, ela percorre 40 m em linha reta (a tabela de arcos do Zelda Wiki indica 50) e depois cai sob gravidade de apenas 2,8 m/s². O tensionamento tem 70% da velocidade normal.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "applications": [
+        "Acertar alvos distantes quase sem compensar a queda da flecha."
+      ],
+      "side_effects": [
+        "O tensionamento lento pesa em situações que exigem disparos rápidos, como a mira em câmera lenta no ar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "comp",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Bows in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Multiplica o dano por 1,5 contra os alvos marcados como sensíveis a flechas ancestrais: todos os Guardiões (inclusive os Guardiões batedores e as Sentinelas), pernas e hélices de Guardiões, as Iras de Ganon, Ganon, a Calamidade e os pontos fracos de Ganon, Besta Sombria.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Guardian"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de tecnologia ancestral.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Os parâmetros o marcam como não condutor.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "applications": [
+        "Um arco forte que pode ficar equipado sob tempestades."
+      ],
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Os parâmetros o marcam como não magnético, então Magnétis não o pega.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sem bônus por ser de loja",
+      "text": "Os parâmetros do jogo definem faixas de bônus para o arco (ataque de +5 a +18, durabilidade de +12 a +60), mas o Zelda Wiki o lista entre as armas compradas em loja que nunca recebem bônus.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Dobra-se nas costas",
+      "text": "Como os demais itens de tecnologia ancestral, o arco assume uma forma compacta, dobrada, quando está guardado nas costas de Link.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para tiros longos, mire quase direto no alvo: a gravidade de 2,8 m/s² faz a flecha cair muito pouco mesmo depois dos 40 m retos."
+  ],
+  "limitations": [
+    "Tensionamento lento (70% do normal).",
+    "Caro: exige um Núcleo ancestral gigante e muitas peças ancestrais.",
+    "Nunca recebe bônus."
+  ],
+  "related": [
+    {
+      "id": "botw_arrow_ancient_arrow",
+      "relation": "Flecha do mesmo arquétipo, feita para Guardiões"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Mesmo arquétipo (espada)"
+    },
+    {
+      "id": "botw_shield_ancient_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_material_giant_ancient_core",
+      "relation": "Necessário para comprá-lo"
+    },
+    {
+      "id": "botw_material_ancient_spring",
+      "relation": "São necessárias 15 para comprá-lo"
+    },
+    {
+      "id": "botw_material_ancient_gear",
+      "relation": "São necessárias 10 para comprá-lo"
+    },
+    {
+      "id": "botw_bow_silver_bow",
+      "relation": "O outro arco com gravidade de flecha alterada"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Recebe dano 1,5 vez maior deste arco"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

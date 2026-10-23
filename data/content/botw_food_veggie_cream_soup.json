@@ -1,0 +1,108 @@
+{
+  "id": "botw_food_veggie_cream_soup",
+  "summary": "Sopa de Abóbora robusta ou cenoura com Leite fresco e Halita, que realça a doçura dos legumes. É o prato da missão \"Koko's Kitchen\", em Kakariko.",
+  "description": "A Sopa cremosa de legumes leva Leite fresco, Halita e Abóbora robusta ou uma cenoura; o inventário promete uma sopa cremosa que destaca a doçura dos legumes numa \"verdadeira explosão de sabor\". O legume define a variante: Cenoura tenaz restaura e ultrapassa o Medidor de vigor, Cenoura veloz dá Velocidade aumentada e Abóbora robusta, Defesa aumentada; legumes de efeitos diferentes misturados dão a versão comum. Outros legumes com leite e halita formam outro prato, o Creme de legumes, que justamente exclui cenouras e abóboras.\n\nNa Vila Kakariko, a pequena Koko quer fazer a versão veloz para a irmã Cottla, mas esquece as Cenouras velozes — o que inicia a Missão secundária \"Koko's Kitchen\". Basta levar uma cenoura (a High Spirits Produce, ali perto, vende); Koko prepara a sopa e dá uma porção a Link. Se anoitecer antes, ela vai para casa e volta à panela durante o dia. O registro da missão resume a receita: Halita e Leite fresco sobre uma tigela de Cenouras velozes, aquecidos e mexidos a gosto.",
+  "obtaining": [
+    "Cozinhar numa Panela Leite fresco, Halita e Abóbora robusta, Cenoura tenaz ou Cenoura veloz, com até dois ingredientes extras.",
+    "Recompensa da Missão secundária \"Koko's Kitchen\" (Koko, Vila Kakariko): uma porção na versão com Velocidade aumentada."
+  ],
+  "uses": [
+    "Prato de Vigor extra, Velocidade aumentada ou Defesa aumentada.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com Cenoura tenaz: restaura e ultrapassa o Medidor de vigor (Vigor extra).",
+    "Com Cenoura veloz: Velocidade aumentada.",
+    "Com Abóbora robusta: Defesa aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do legume usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "cogumelo ou outro legume",
+      "status": "confirmado",
+      "result": "Um cogumelo com legume, leite e halita forma Creme de cogumelos (testado antes); outros legumes sem cenoura ou abóbora formam Creme de legumes.",
+      "produces": [
+        "botw_food_cream_of_mushroom_soup",
+        "botw_food_cream_of_vegetable_soup"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Meal"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A primeira receita de Koko",
+      "text": "\"Koko's Kitchen\" é a primeira de uma série de missões de Koko, que tenta cozinhar como a mãe falecida; a seguinte, \"Cooking with Koko\", gira em torno da Maçã quente na manteiga. Koko diz que ouviu dizer que a sopa é nutritiva e fortificante, e consegue sentir o cheiro das cenouras na algibeira de Link.",
+      "sources": [
+        "zw:Koko's Kitchen",
+        "zw:Cooking with Koko",
+        "zw:Koko's Specialty",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita Abóbora robusta ou cenouras.",
+    "Cogumelo na panela muda a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_swift_carrot",
+      "relation": "Legume pedido por Koko (versão veloz)"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_cream_of_vegetable_soup",
+      "relation": "Sopa com os demais legumes, ervas e flores"
+    },
+    {
+      "id": "botw_food_cream_of_mushroom_soup",
+      "relation": "Receita que tem prioridade quando há cogumelo"
+    },
+    {
+      "id": "botw_food_hot_buttered_apple",
+      "relation": "Prato da missão seguinte de Koko"
+    },
+    {
+      "id": "botw_food_vegetable_risotto",
+      "relation": "Mesmo trio de legumes com arroz e manteiga"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "velocidade",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

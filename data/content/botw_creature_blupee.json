@@ -1,0 +1,172 @@
+{
+  "id": "botw_creature_blupee",
+  "summary": "Criatura azul e luminosa, parecida com um coelho, que coleciona rupias. Não pode ser morta: acertá-la com flecha, Bomba remota, bumerangue arremessado ou arma faz cair rupias, e ela foge até sumir num clarão.",
+  "description": "Os Rupelhos lembram coelhos à primeira vista, mas brilham com uma luz azul misteriosa, têm rosto parecido com o de uma coruja-das-torres e coroas douradas no lugar das orelhas. São tidos como espíritos, não animais comuns, e compartilham várias características com o Senhor da Montanha, cujo rosto lembra dois Rupelhos. A única coisa que se sabe sobre eles, diz o compendium, é que adoram juntar rupias.\n\nNa prática, isso os torna uma pequena fonte de dinheiro: sempre que um Rupelho é atingido por uma flecha, uma Bomba remota, um bumerangue arremessado ou um golpe de arma corpo a corpo, deixa cair rupias — e não morre. Ao perceber Link, foge e acaba desaparecendo num clarão. Vivem em florestas de toda Hyrule, como a mata ao redor da Fonte da Grande Fada Cotera, perto da Vila Kakariko, e se reúnem em grande número no Monte Satori nas noites em que o Senhor da Montanha aparece.",
+  "locations": [
+    "Florestas de toda Hyrule, por exemplo a mata em volta da Fonte da Grande Fada Cotera, perto da Vila Kakariko.",
+    "Monte Satori, em grande número, nas noites em que a montanha brilha e o Senhor da Montanha aparece (o compendium lista o Monte Satori como local comum)."
+  ],
+  "obtaining": [
+    "Não pode ser capturado nem morto; pode apenas ser fotografado e \"atacado\" para render rupias."
+  ],
+  "uses": [
+    "Fonte de rupias: cada acerto com flecha, Bomba remota, bumerangue arremessado ou arma faz cair rupias.",
+    "Missão secundária \"Legendary Rabbit Trial\": mostrar a Peeks, na Floresta Korok, uma foto de Rupelho rende uma rupia prateada.",
+    "Registrar sua foto no compendium."
+  ],
+  "effects": [
+    "Deixa cair rupias quando atingido."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge ao notar Link e, depois de um tempo, desaparece num clarão de luz.",
+      "conditions": [
+        "Aproximar-se com furtividade ou atacar de longe antes que fuja."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha que acerta o Rupelho faz cair rupias; ele não morre.",
+      "applications": [
+        "Atirar de longe, antes que ele perceba Link e fuja."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Legendary Rabbit Trial"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Qualquer golpe de arma corpo a corpo também faz cair rupias, sem matá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Atingido por uma Bomba remota, deixa cair rupias e continua vivo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Um bumerangue arremessado que o acerta também faz cair rupias.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo sobre Rupelhos."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de eletricidade sobre Rupelhos."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis neles."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Criatura pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Imortal e generoso",
+      "text": "Os Rupelhos não podem ser mortos. Flechas, Bombas remotas, bumerangues arremessados e golpes de arma apenas fazem cair rupias, o que permite acertá-los mais de uma vez enquanto não desaparecem.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A dica do coelho luminoso",
+      "text": "Uma das dicas da tela de carregamento diz que no fundo da floresta vive um espírito azul brilhante com forma de coelho e que quem conseguir acertá-lo com uma flecha recebe uma bela recompensa.",
+      "sources": [
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O caçador que ficou rico",
+      "text": "O Rumor Mill: Volume 6, de Traysi, conta a história de um caçador que atirou uma flecha numa luz que se movia no escuro e encontrou rupias no lugar. Passou a atirar em toda luz parecida e enriqueceu. Traysi garante que a luz era um Rupelho e recomenda o método aos leitores.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Peeks e a dica do arco",
+      "text": "Depois de ver a foto, Peeks especula que os Rupelhos brilham por estarem cheios de rupias e se pergunta se são eles que fabricam as rupias de Hyrule. Ao entregar a recompensa, sugere que Link atire flechas neles se algum dia precisar de dinheiro.",
+      "sources": [
+        "zw",
+        "zw:Legendary Rabbit Trial"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Parentes do Senhor da Montanha",
+      "text": "Os Rupelhos se reúnem no Monte Satori nas noites em que o Senhor da Montanha aparece, e o rosto do espírito lembra um par de Rupelhos. Ambos são descritos como espíritos, e não como criaturas naturais.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "No Monte Satori, enquanto a montanha brilha, há muitos Rupelhos juntos: um bom momento para acertar vários com flechas, desde que o Senhor da Montanha não seja perturbado — se ele fugir, a luz se apaga e as criaturas somem."
+  ],
+  "limitations": [
+    "Foge e some num clarão pouco depois de perceber Link.",
+    "As fontes não informam quantas rupias caem por acerto."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_lord_of_the_mountain",
+      "relation": "Aparece cercado de Rupelhos no Monte Satori"
+    },
+    {
+      "id": "botw_arrow_arrow",
+      "relation": "Acertá-lo com flechas faz cair rupias"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Também faz cair rupias"
+    },
+    {
+      "id": "botw_weapon_boomerang",
+      "relation": "Arremessado, também faz cair rupias"
+    },
+    {
+      "id": "botw_rune_camera",
+      "relation": "A foto conclui \"Legendary Rabbit Trial\""
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

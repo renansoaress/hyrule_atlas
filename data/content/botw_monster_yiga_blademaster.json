@@ -1,0 +1,140 @@
+{
+  "id": "botw_monster_yiga_blademaster",
+  "summary": "Elite do Clã Yiga armada com o Corta-Vento, que lança rajadas de ar à distância e ergue pilares de pedra do chão. No Esconderijo do Clã Yiga, um golpe direto da lâmina mata Link na hora, mas Bananas valentes os distraem.",
+  "description": "Os Espadachins Yiga são os soldados de elite do Clã Yiga. O compendium os descreve como grandalhões surpreendentemente ágeis, fiéis ao Corta-Vento, e mestres de uma técnica que manipula a própria terra: batendo no chão, criam pilares de pedra e rajadas de ar. Na prática, o Corta-Vento dispara lâminas de ar a longa distância, e a técnica Earthwake abre fendas no solo que geram correntes ascendentes — que Link pode aproveitar para planar — antes de um pilar de pedra brotar. Uma flechada na cabeça os atordoa e abre espaço para golpes.\n\nNo Esconderijo do Clã Yiga, eles patrulham com tochas. Se um deles avista Link, assobia: todas as portas se fecham, os outros Espadachins da sala são alertados e dois Soldados Yiga com Arcos duplos aparecem. Ali dentro existe uma regra especial: ser atingido diretamente pelo Corta-Vento de um Espadachim mata Link instantaneamente, ignorando corações, defesa, Fadas e a Dádiva de Mipha, e ele volta ao início do esconderijo. Em compensação, eles abandonam a patrulha para comer Bananas valentes deixadas no chão, o que permite passar despercebido.\n\nDepois da derrota de Mestre Kohga, passam a aparecer aleatoriamente pelo mundo para atacar Link. Quando vencidos, fogem deixando o Corta-Vento, Bananas valentes e gemas. Um deles também é o alvo da missão de santuário \"The Stolen Heirloom\".",
+  "locations": [
+    "Esconderijo do Clã Yiga, no fim do Karusa Valley, na região Gerudo.",
+    "Pelo mundo, em ataques aleatórios, depois da derrota de Mestre Kohga.",
+    "Missão de santuário \"The Stolen Heirloom\", ligada ao Santuário Lakna Rokee."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende o Corta-Vento, Bananas valentes e gemas como Âmbar, Opala, Rubi, Safira ou Topázio.",
+    "Os do Esconderijo do Clã Yiga e o de \"The Stolen Heirloom\" não são revividos pela Lua de sangue."
+  ],
+  "uses": [
+    "Única fonte do Corta-Vento.",
+    "Missão de santuário \"The Stolen Heirloom\": derrotá-lo recupera a relíquia Sheikah que dá acesso ao Santuário Lakna Rokee."
+  ],
+  "effects": [
+    "Rajadas de ar do Corta-Vento a longa distância.",
+    "Técnica Earthwake: fendas no chão com correntes ascendentes, seguidas de pilares de pedra."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "No esconderijo, ao avistar Link, assobia: fecha portas e saídas, alerta os outros Espadachins e convoca dois Soldados Yiga com Arcos duplos.",
+      "side_effects": ["Ao serem alertados, largam as tochas que carregavam, que Link pode usar como arma de emergência."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Yiga Clan Hideout"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser ferido normalmente, de preferência após atordoá-lo; derrotado, foge em vez de morrer. Dentro do esconderijo, um golpe direto do Corta-Vento dele mata Link instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Yiga Clan Hideout"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha na cabeça o atordoa, deixando-o aberto a ataques.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre o Espadachim Yiga. No esconderijo, o fogo serve para queimar estandartes e plataformas de madeira que escondem passagens e bananas."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Espadachim Yiga."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos, não o soldado.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "As fendas da técnica Earthwake liberam correntes ascendentes antes de o pilar de pedra subir; Link pode usá-las para planar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Os do esconderijo desviam da patrulha para comer Bananas valentes deixadas no chão. Bananas em plataformas de madeira podem ser derrubadas com flechas ou fogo para atraí-los.",
+      "applications": ["Atrair o Espadachim com bananas e passar por trás dele sem ser visto."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Mighty Bananas", "zw:Yiga Clan Hideout"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Morte instantânea no esconderijo",
+      "text": "Dentro do Esconderijo do Clã Yiga, um acerto direto do Corta-Vento de um Espadachim mata Link imediatamente, não importa quantos corações, quanta defesa, quantas Fadas ou se ele tem a Dádiva de Mipha. O jogo exibe um aviso para não subestimar os Yiga e o devolve ao início do esconderijo. As rajadas de longe e as flechas dos Soldados funcionam normalmente.",
+      "sources": ["zw:Yiga Clan Hideout"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "A fraqueza que Barta denunciou",
+      "text": "A guerreira Gerudo Barta, presa no esconderijo, conta que só os viu patrulhar e comer bananas. Há uma mesa com 18 Bananas valentes num quarto do esconderijo, estoque de sobra para distrair os Espadachins.",
+      "sources": ["zw:Yiga Clan Hideout", "zw:Yiga Clan"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Não voltam no esconderijo",
+      "text": "Os Espadachins do Esconderijo do Clã Yiga e o da missão \"The Stolen Heirloom\" estão entre as exceções que a Lua de sangue não revive.",
+      "sources": ["zw:Blood Moon"]
+    }
+  ],
+  "advanced_uses": [
+    "Planar nas correntes ascendentes da técnica Earthwake para atirar na cabeça do alto.",
+    "No esconderijo, esconder-se sob barris ou usar bananas para guiar a patrulha."
+  ],
+  "limitations": [
+    "Dentro do esconderijo, o combate é extremamente arriscado por causa da morte instantânea.",
+    "Ao ser alertado, tranca as saídas da sala."
+  ],
+  "related": [
+    { "id": "botw_monster_yiga_footsoldier", "relation": "Soldados que ele convoca ao avistar Link" },
+    { "id": "botw_monster_master_kohga", "relation": "Líder do clã, no fim do esconderijo" },
+    { "id": "botw_weapon_windcleaver", "relation": "Arma que ele usa e deixa" },
+    { "id": "botw_material_mighty_bananas", "relation": "Isca que o distrai" },
+    { "id": "botw_ability_miphas_grace", "relation": "Não salva Link do golpe fatal no esconderijo" },
+    { "id": "botw_mechanic_updraft", "relation": "Gerada pelas fendas da técnica Earthwake" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

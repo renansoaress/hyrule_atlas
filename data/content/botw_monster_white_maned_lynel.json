@@ -1,0 +1,160 @@
+{
+  "id": "botw_monster_white_maned_lynel",
+  "summary": "Centaleão de juba branca (4.000 de vida): abre a luta com um rugido e uma explosão de fogo ao bater a arma no chão e porta a linha centaleônica Feroz. No Modo Mestre aparece até no Grande Planalto.",
+  "description": "O Centaleão de juba branca, branco e preto, é o terceiro nível da espécie. O compendium afirma que a capacidade de cuspir fogo o coloca entre os mais duros dos Centaleões e que há poucos relatos sobre ele porque raramente deixa alguém escapar com vida. Como os demais, costuma encarar Link antes de atacar; quando a luta começa, porém, ele ruge alto e bate a arma no chão, provocando uma explosão de fogo ao redor de si — vale manter distância nesse primeiro instante.\n\nPorta a linha centaleônica Feroz (Espada, Lança e Maça centaleônica Feroz, Defesa centaleônica Feroz e Arco centaleônico Feroz). No Modo Mestre, desce um nível e usa a linha forte, com uma exceção: o Centaleão de juba branca do Grande Planalto (Great Plateau), exclusivo desse modo, carrega Maça centaleônica Feroz e Arco centaleônico Feroz — e é ele que usa Flechas explosivas.\n\nAs regras da espécie continuam valendo: resistência a todos os elementos (salvo a Fúria de Urbosa), cabeça como ponto fraco para flechas, impossibilidade de derrubá-lo com golpes e montaria temporária com golpes que não gastam durabilidade.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e nas Cordilheiras de Hebra.",
+    "No Modo Mestre, um Centaleão de juba branca guarda o Grande Planalto (Great Plateau)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Chifre, Casco e Vísceras de Centaleão, as armas da linha Feroz (ou forte, no Modo Mestre) e um maço das flechas que usava.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte da linha centaleônica Feroz no modo normal.",
+    "No Modo Mestre, o exemplar do Grande Planalto é uma fonte precoce de Maça centaleônica Feroz e de Arco centaleônico Feroz.",
+    "Partes de Centaleão para elixires, melhorias de armadura e troca por Mon."
+  ],
+  "effects": [
+    "Rugido seguido de explosão de fogo ao iniciar a luta.",
+    "Sopro de fogo, golpes com armas Ferozes, investidas e pisoteio."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Costuma encarar Link por um curto período antes de atacar. Ao iniciar a luta, ruge e bate a arma no chão, criando uma explosão de fogo à sua volta.",
+      "side_effects": ["Estar colado nele no início do combate expõe Link à explosão de abertura."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Não é derrubado por golpes, como todo Centaleão, e só larga a arma ao morrer.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça atordoa e causa dano dobrado.",
+      "applications": ["Usar as correntes ascendentes do fogo dele para planar e mirar na cabeça."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Resistente ao fogo e aos efeitos dele.",
+      "side_effects": ["É ele quem produz fogo: sopro e explosão de abertura."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel", "comp"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resistente ao gelo e ao congelamento.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resistente à eletricidade; a Fúria de Urbosa é a exceção.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o comportamento dele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "O efeito de explosões sobre ele não é detalhado. O exemplar do Grande Planalto no Modo Mestre é que usa Flechas explosivas contra Link."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Usar uma runa à vista dele encerra a encarada e inicia a luta; o dano da bomba não é detalhado.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Centaleão de juba branca."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos, não o monstro.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado (após atordoá-lo, por trás, do Planador ou depois de uma investida) para até cinco golpes sem perda de durabilidade.",
+      "conditions": ["Vigor suficiente durante a montaria."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel", "zw:Durability"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "A maioria dos ataques pode ser aparada com Defesa perfeita ou evitada com Esquiva perfeita.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Teletransporta-se se ficar preso no terreno ou longe demais do território.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O Centaleão do Grande Planalto no Modo Mestre",
+      "text": "No Modo Mestre, um Centaleão de juba branca aparece no Grande Planalto (Great Plateau). Ele foge da regra de equipamento rebaixado do modo e carrega Maça centaleônica Feroz e Arco centaleônico Feroz, além de usar Flechas explosivas.",
+      "sources": ["zw", "zw:Bomb Arrow", "zw:Lynel"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Poucas testemunhas",
+      "text": "Segundo o compendium, existem poucos relatos sobre esta raça porque um Centaleão de juba branca não deixa nem simples viajantes escaparem com vida.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Presentes numa lembrança",
+      "text": "No início da oitava lembrança recuperada de Link (\"A Premonition\", no original em inglês), aparecem vários Centaleões de juba branca e Koboblins derrotados.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Afastar-se ao provocar o início da luta para não ser pego pela explosão de abertura e, em seguida, aproveitar as correntes ascendentes do fogo para atirar na cabeça."
+  ],
+  "limitations": [
+    "Resistente a fogo, gelo e eletricidade (exceto a Fúria de Urbosa).",
+    "No Modo Mestre (fora o exemplar do Grande Planalto) rende a linha forte em vez da Feroz."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_maned_lynel", "relation": "Variação anterior (juba azul)" },
+    { "id": "botw_monster_silver_lynel", "relation": "Variação seguinte (prateada)" },
+    { "id": "botw_monster_lynel", "relation": "Regras gerais da espécie" },
+    { "id": "botw_weapon_savage_lynel_crusher", "relation": "Arma da linha Feroz que ele porta" },
+    { "id": "botw_weapon_savage_lynel_sword", "relation": "Arma da linha Feroz" },
+    { "id": "botw_weapon_savage_lynel_spear", "relation": "Arma da linha Feroz" },
+    { "id": "botw_shield_savage_lynel_shield", "relation": "Escudo da linha Feroz" },
+    { "id": "botw_bow_savage_lynel_bow", "relation": "Arco da linha Feroz" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Usadas pelo exemplar do Grande Planalto no Modo Mestre" },
+    { "id": "botw_mechanic_master_mode", "relation": "Muda local e equipamento" }
+  ],
+  "capabilities": ["gera_fogo", "gera_explosao", "montavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

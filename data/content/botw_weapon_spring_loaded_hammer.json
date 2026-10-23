@@ -1,0 +1,162 @@
+{
+  "id": "botw_weapon_spring_loaded_hammer",
+  "summary": "Martelo de mola, especialidade de Kilton vendida por 199 Mon. Quase não causa dano (ataque 1), mas o quarto golpe de uma sequência arremessa monstros pequenos para longe. Durabilidade 80; único martelo de uma mão.",
+  "description": "A Marreta bóim é uma das invenções de Kilton para a loja Fang and Bone. Ele só a anuncia depois que Link liberta pelo menos uma Fera Divina e, a partir daí, ela pode ser comprada por 199 Mon. Ao contrário dos outros martelos do jogo, é segurada com uma mão. A descrição do jogo resume: apanhar dela não dói muito, mas o quarto golpe de uma sequência de ataques manda a vítima pelos ares. Com ataque 1, serve mais para diversão — ou, como Kilton sugere, para se livrar de monstros pequenos que Link não quer enfrentar.\n\nNão é magnética, então não pode ser recuperada com Magnétis, não atrai raios em tempestades e não conduz eletricidade; flutua na água. Sobre o fogo, as fontes divergem: o Zelda Wiki diz que ela pega fogo em contato com chamas ou em clima escaldante, mas os parâmetros extraídos do jogo a marcam como não inflamável.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton."
+  ],
+  "obtaining": [
+    "Comprar na Fang and Bone por 199 Mon, depois de libertar pelo menos uma Fera Divina e falar com Kilton.",
+    "A loja tem uma unidade em estoque, que é reposta.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arremessar monstros pequenos para longe com o quarto golpe da sequência, evitando lutas.",
+    "Diversão: o próprio Zelda Wiki a descreve como um item voltado ao entretenimento."
+  ],
+  "effects": [
+    "O quarto golpe de uma sequência de ataques normais lança certos inimigos pelos ares.",
+    "Dano quase nulo (ataque 1)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Martelo de uma mão: os golpes causam quase nenhum dano, mas o quarto ataque de uma sequência arremessa certos inimigos para longe. Pode ser usado junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Kilton"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado) — o que, com ataque 1, significa só 2 de dano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Fontes conflitantes: o artigo do Zelda Wiki diz que ela pega fogo perto de uma fogueira ou em clima escaldante, mas os parâmetros extraídos do jogo a marcam como não inflamável."
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: não é metálica.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na superfície da água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnética e não pode ser recuperada com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "O quarto golpe lança monstros pequenos para longe. Centaleões são imunes: não podem ser empurrados por golpes, nem mesmo com a Marreta bóim.",
+      "applications": [
+        "Afastar Koboblins e outros monstros pequenos de uma área sem precisar derrotá-los."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Kilton",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Marcador de brinquedo",
+      "text": "Nos parâmetros extraídos, a Marreta bóim é marcada com o atributo interno IsPikohan e não com IsHammer — um tipo de arma próprio, diferente dos martelos comuns. Também tem durabilidade 80, muito acima da maioria das armas de uma mão.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o bônus de ataque é de apenas +1 (nível comum) ou +2 (nível dourado), mas o de durabilidade vai de +9 a +17 (ou +18 a +41 no nível dourado), com lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Anúncio de Kilton",
+      "text": "Kilton apresenta a invenção com o costumeiro \"Da da...DAAAAAAAA!\" e promete que, com um golpe, o monstro pequeno será lançado longe com um \"BOING!\" — útil para se livrar de monstros chatos e, segundo ele, divertido de usar.",
+      "sources": [
+        "zw:Kilton",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usar a sequência de quatro golpes para tirar monstros pequenos do caminho sem gastar armas fortes."
+  ],
+  "limitations": [
+    "Ataque 1: não serve para derrotar inimigos.",
+    "Não tem efeito de empurrão em Centaleões.",
+    "Só pode ser comprada depois de libertar uma Fera Divina."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Imune ao empurrão da marreta"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Outra criação de Kilton vendida na Fang and Bone"
+    },
+    {
+      "id": "botw_weapon_iron_sledgehammer",
+      "relation": "Martelo comum, de duas mãos"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "a_verificar"
+}

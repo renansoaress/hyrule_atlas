@@ -1,0 +1,125 @@
+{
+  "id": "botw_weapon_iron_sledgehammer",
+  "summary": "Marreta de mineração de ferro (ataque 12, durabilidade 40). Quebra depósitos de minério num golpe e causa 4× de dano no ponto fraco dos Tálus — o maior multiplicador entre os martelos.",
+  "description": "A Marreta de ferro foi feita pelos Gorons para a mineração, mas, segundo o jogo, funciona razoavelmente bem como arma. Hoje os Gorons da Mina do Sul preferem picaretas, e a marreta acabou caindo no gosto dos hylianos — Bolson, Karson e Hudson usam uma. Por isso ela aparece em praticamente todos os grandes assentamentos de Hyrule; o compendium destaca o Cânion de Eldin e o Altiplano de Akkala.\n\nFiel à origem, tem propriedades ocultas de martelo: quebra depósitos de minério com um golpe, destrói Britas rochosas instantaneamente e multiplica o dano por 4 nos pontos fracos dos Tálus — o dobro do multiplicador das marretas Goron de combate. Tem cabeça de metal e cabo de madeira, mas o jogo a trata como arma de metal: não queima, conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Grandes assentamentos de Hyrule, onde os moradores a usam como ferramenta.",
+    "O compendium lista o Cânion de Eldin e o Altiplano de Akkala como locais comuns."
+  ],
+  "obtaining": [
+    "Recolher nos assentamentos onde ela aparece.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Mineração: quebra depósitos de minério com um golpe e solta faíscas ao bater neles.",
+    "Arma especializada contra Tálus (4× no ponto fraco) e Britas rochosas.",
+    "Durável (40) para uma arma de mineração."
+  ],
+  "effects": [
+    "Dano 4× nos pontos fracos dos Tálus (multiplicador oculto).",
+    "Quebra depósitos de minério com um golpe (propriedade de martelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de duas mãos: não permite usar escudo junto. Golpes lentos e o giro carregado que consome vigor e termina numa pancada para baixo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançada contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: apesar do cabo de madeira, é tratada como arma de metal.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada em tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Multiplica o dano por 4 nos pontos fracos dos Tálus e destrói Britas rochosas com um golpe. O Zelda Wiki a lista como fraqueza do Tálus rochoso.",
+      "applications": ["Subir no Tálus rochoso e martelar o depósito de minério em suas costas."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Stone Talus", "zw:Stone Pebblit"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra depósitos de minério com um golpe.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Template:BotW Weapon Parameters", "zw:Ore Deposit"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O martelo mais forte contra Tálus",
+      "text": "Nos parâmetros extraídos, os pontos fracos dos Tálus recebem 4× de dano da Marreta de ferro, enquanto o Esmaga-Fraga, o Quebra-Pedra e o Racha-Rocha aplicam 2×. Com ataque 12, ela causa 48 por golpe no ponto fraco — mais que o Esmaga-Fraga (30).",
+      "sources": ["dm", "zw", "zw:Stone Talus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +11, Durabilidade aumentada de +4 a +8 ou Acerto crítico; no nível dourado (amarelo): Ataque de +12 a +22, Durabilidade de +9 a +18 ou Lançamento longo (×1,5 a ×2). Com Ataque +22, o golpe no ponto fraco de um Tálus chega a 136.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Goron de origem, hyliana de coração",
+      "text": "Embora forjada por ferreiros Goron, a marreta é mais usada por hylianos como Bolson, Karson e Hudson; os Gorons da Mina do Sul trocaram-na por picaretas.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Leve uma Marreta de ferro para caçar Tálus e minerar, e guarde as armas de combate para os outros inimigos: no ponto fraco, ela supera armas de ataque muito maior."
+  ],
+  "limitations": [
+    "Ataque baixo (12) fora dos pontos fracos dos Tálus.",
+    "Metálica: atrai raios em tempestades."
+  ],
+  "related": [
+    { "id": "botw_monster_stone_talus", "relation": "Recebe 4× de dano no ponto fraco" },
+    { "id": "botw_monster_stone_pebblit", "relation": "Destruída com um golpe" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Quebrado com um golpe" },
+    { "id": "botw_weapon_cobble_crusher", "relation": "Marreta Goron de combate (2× nos Tálus)" },
+    { "id": "botw_weapon_stone_smasher", "relation": "Marreta Goron de combate (2× nos Tálus)" },
+    { "id": "botw_weapon_spring_loaded_hammer", "relation": "Mesmo arquétipo de martelo (Hammer)" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

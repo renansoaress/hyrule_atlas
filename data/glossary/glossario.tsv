@@ -1,0 +1,879 @@
+id	nome_ptbr	status	name_en	categoria/subcategoria
+botw_bow_ancient_bow	Arco ancestral	oficial_secundaria	Ancient Bow	arcos/arcos
+botw_bow_boko_bow	Arco Kobo	oficial_secundaria	Boko Bow	arcos/arcos
+botw_bow_bow_of_light	Arco da Luz	oficial_secundaria	Bow of Light	arcos/arcos
+botw_bow_dragonbone_boko_bow	Arco Kobo dracônico	oficial_secundaria	Dragonbone Boko Bow	arcos/arcos
+botw_bow_duplex_bow	Arco duplo	oficial_secundaria	Duplex Bow	arcos/arcos
+botw_bow_falcon_bow	Arco do falcão	oficial_secundaria	Falcon Bow	arcos/arcos
+botw_bow_forest_dwellers_bow	Arco da Floresta	oficial_secundaria	Forest Dweller's Bow	arcos/arcos
+botw_bow_golden_bow	Arco dourado	oficial_secundaria	Golden Bow	arcos/arcos
+botw_bow_great_eagle_bow	Arco da harpia	oficial_secundaria	Great Eagle Bow	arcos/arcos
+botw_bow_knights_bow	Arco do cavaleiro	oficial_secundaria	Knight's Bow	arcos/arcos
+botw_bow_lizal_bow	Arco Lagal	oficial_secundaria	Lizal Bow	arcos/arcos
+botw_bow_lynel_bow	Arco centaleônico	oficial_secundaria	Lynel Bow	arcos/arcos
+botw_bow_mighty_lynel_bow	Arco centaleônico forte	oficial_secundaria	Mighty Lynel Bow	arcos/arcos
+botw_bow_phrenic_bow	Arco de precisão	oficial_secundaria	Phrenic Bow	arcos/arcos
+botw_bow_royal_bow	Arco real	oficial_secundaria	Royal Bow	arcos/arcos
+botw_bow_royal_guards_bow	Arco da guarda real	oficial_secundaria	Royal Guard's Bow	arcos/arcos
+botw_bow_savage_lynel_bow	Arco centaleônico Feroz	oficial_secundaria	Savage Lynel Bow	arcos/arcos
+botw_bow_silver_bow	Arco prateado	oficial_secundaria	Silver Bow	arcos/arcos
+botw_bow_soldiers_bow	Arco do soldado	oficial_secundaria	Soldier's Bow	arcos/arcos
+botw_bow_spiked_boko_bow	Arco Kobo pontudo	oficial_secundaria	Spiked Boko Bow	arcos/arcos
+botw_bow_steel_lizal_bow	Arco Lagal de aço	oficial_secundaria	Steel Lizal Bow	arcos/arcos
+botw_bow_strengthened_lizal_bow	Arco Lagal reforçado	oficial_secundaria	Strengthened Lizal Bow	arcos/arcos
+botw_bow_swallow_bow	Arco da andorinha	oficial_secundaria	Swallow Bow	arcos/arcos
+botw_bow_travelers_bow	Arco do viajante	oficial_secundaria	Traveler's Bow	arcos/arcos
+botw_bow_twilight_bow	Arco do crepúsculo	oficial_secundaria	Twilight Bow	arcos/arcos
+botw_bow_wooden_bow	Arco de madeira	oficial_secundaria	Wooden Bow	arcos/arcos
+botw_armor_amber_earrings	Brincos de âmbar	nao_oficial	Amber Earrings	armaduras/cabeca
+botw_armor_ancient_cuirass	Couraça ancestral	nao_oficial	Ancient Cuirass	armaduras/torso
+botw_armor_ancient_greaves	Grevas ancestrais	nao_oficial	Ancient Greaves	armaduras/pernas
+botw_armor_ancient_helm	Elmo ancestral	nao_oficial	Ancient Helm	armaduras/cabeca
+botw_armor_barbarian_armor	Armadura bárbara	nao_oficial	Barbarian Armor	armaduras/torso
+botw_armor_barbarian_helm	Elmo bárbaro	nao_oficial	Barbarian Helm	armaduras/cabeca
+botw_armor_barbarian_leg_wraps	Faixas de perna bárbaras	nao_oficial	Barbarian Leg Wraps	armaduras/pernas
+botw_armor_bokoblin_mask	Máscara de Koboblin	nao_oficial	Bokoblin Mask	armaduras/cabeca
+botw_armor_cap_of_the_hero	Gorro do herói	nao_oficial	Cap of the Hero	armaduras/cabeca
+botw_armor_cap_of_the_sky	Gorro do céu	nao_oficial	Cap of the Sky	armaduras/cabeca
+botw_armor_cap_of_the_wild	Gorro selvagem	nao_oficial	Cap of the Wild	armaduras/cabeca
+botw_armor_cap_of_the_wind	Gorro do vento	nao_oficial	Cap of the Wind	armaduras/cabeca
+botw_armor_cap_of_time	Gorro do tempo	nao_oficial	Cap of Time	armaduras/cabeca
+botw_armor_cap_of_twilight	Gorro do crepúsculo	nao_oficial	Cap of Twilight	armaduras/cabeca
+botw_armor_champions_tunic	Túnica do campeão	nao_oficial	Champion's Tunic	armaduras/torso
+botw_armor_climbers_bandanna	Bandana de escalada	nao_oficial	Climber's Bandanna	armaduras/cabeca
+botw_armor_climbing_boots	Botas de escalada	nao_oficial	Climbing Boots	armaduras/pernas
+botw_armor_climbing_gear	Traje de escalada	nao_oficial	Climbing Gear	armaduras/torso
+botw_armor_dark_hood	Capuz sombrio	nao_oficial	Dark Hood	armaduras/cabeca
+botw_armor_dark_trousers	Calças sombrias	nao_oficial	Dark Trousers	armaduras/pernas
+botw_armor_dark_tunic	Túnica sombria	nao_oficial	Dark Tunic	armaduras/torso
+botw_armor_desert_voe_headband	Faixa voe do deserto	nao_oficial	Desert Voe Headband	armaduras/cabeca
+botw_armor_desert_voe_spaulder	Ombreira voe do deserto	nao_oficial	Desert Voe Spaulder	armaduras/torso
+botw_armor_desert_voe_trousers	Calças voe do deserto	nao_oficial	Desert Voe Trousers	armaduras/pernas
+botw_armor_diamond_circlet	Tiara de diamante	nao_oficial	Diamond Circlet	armaduras/cabeca
+botw_armor_fierce_deity_armor	Armadura da Deidade Feroz	nao_oficial	Fierce Deity Armor	armaduras/torso
+botw_armor_fierce_deity_boots	Botas da Deidade Feroz	nao_oficial	Fierce Deity Boots	armaduras/pernas
+botw_armor_fierce_deity_mask	Máscara da Deidade Feroz	nao_oficial	Fierce Deity Mask	armaduras/cabeca
+botw_armor_flamebreaker_armor	Armadura antichamas	nao_oficial	Flamebreaker Armor	armaduras/torso
+botw_armor_flamebreaker_boots	Botas antichamas	nao_oficial	Flamebreaker Boots	armaduras/pernas
+botw_armor_flamebreaker_helm	Elmo antichamas	nao_oficial	Flamebreaker Helm	armaduras/cabeca
+botw_armor_gerudo_sirwal	Sirwal Gerudo	nao_oficial	Gerudo Sirwal	armaduras/pernas
+botw_armor_gerudo_top	Blusa Gerudo	nao_oficial	Gerudo Top	armaduras/torso
+botw_armor_gerudo_veil	Véu Gerudo	nao_oficial	Gerudo Veil	armaduras/cabeca
+botw_armor_hylian_hood	Capuz hyliano	nao_oficial	Hylian Hood	armaduras/cabeca
+botw_armor_hylian_trousers	Calças hylianas	nao_oficial	Hylian Trousers	armaduras/pernas
+botw_armor_hylian_tunic	Túnica hyliana	nao_oficial	Hylian Tunic	armaduras/torso
+botw_armor_island_lobster_shirt	Camisa da lagosta insular	nao_oficial	Island Lobster Shirt	armaduras/torso
+botw_armor_korok_mask	Máscara Korok	nao_oficial	Korok Mask	armaduras/cabeca
+botw_armor_lizalfos_mask	Máscara de Lagalfos	nao_oficial	Lizalfos Mask	armaduras/cabeca
+botw_armor_lynel_mask	Máscara de Centaleão	nao_oficial	Lynel Mask	armaduras/cabeca
+botw_armor_majoras_mask	Máscara de Majora	nao_oficial	Majora's Mask	armaduras/cabeca
+botw_armor_midnas_helmet	Elmo de Midna	nao_oficial	Midna's Helmet	armaduras/cabeca
+botw_armor_moblin_mask	Máscara de Moblin	nao_oficial	Moblin Mask	armaduras/cabeca
+botw_armor_nintendo_switch_shirt	Camiseta Nintendo Switch	nao_oficial	Nintendo Switch Shirt	armaduras/torso
+botw_armor_old_shirt	Camisa velha	nao_oficial	Old Shirt	armaduras/torso
+botw_armor_opal_earrings	Brincos de opala	nao_oficial	Opal Earrings	armaduras/cabeca
+botw_armor_phantom_armor	Armadura fantasma	nao_oficial	Phantom Armor	armaduras/torso
+botw_armor_phantom_ganon_armor	Armadura de Ganon Fantasma	nao_oficial	Phantom Ganon Armor	armaduras/torso
+botw_armor_phantom_ganon_greaves	Grevas de Ganon Fantasma	nao_oficial	Phantom Ganon Greaves	armaduras/pernas
+botw_armor_phantom_ganon_skull	Crânio de Ganon Fantasma	nao_oficial	Phantom Ganon Skull	armaduras/cabeca
+botw_armor_phantom_greaves	Grevas fantasmas	nao_oficial	Phantom Greaves	armaduras/pernas
+botw_armor_phantom_helmet	Elmo fantasma	nao_oficial	Phantom Helmet	armaduras/cabeca
+botw_armor_radiant_mask	Máscara radiante	nao_oficial	Radiant Mask	armaduras/cabeca
+botw_armor_radiant_shirt	Camisa radiante	nao_oficial	Radiant Shirt	armaduras/torso
+botw_armor_radiant_tights	Meia-calça radiante	nao_oficial	Radiant Tights	armaduras/pernas
+botw_armor_ravios_hood	Capuz de Ravio	nao_oficial	Ravio's Hood	armaduras/cabeca
+botw_armor_royal_guard_boots	Botas da guarda real	nao_oficial	Royal Guard Boots	armaduras/pernas
+botw_armor_royal_guard_cap	Quepe da guarda real	nao_oficial	Royal Guard Cap	armaduras/cabeca
+botw_armor_royal_guard_uniform	Uniforme da guarda real	nao_oficial	Royal Guard Uniform	armaduras/torso
+botw_armor_rubber_armor	Armadura de borracha	nao_oficial	Rubber Armor	armaduras/torso
+botw_armor_rubber_helm	Elmo de borracha	nao_oficial	Rubber Helm	armaduras/cabeca
+botw_armor_rubber_tights	Meia-calça de borracha	nao_oficial	Rubber Tights	armaduras/pernas
+botw_armor_ruby_circlet	Tiara de rubi	nao_oficial	Ruby Circlet	armaduras/cabeca
+botw_armor_salvager_headwear	Capacete de mergulhador	nao_oficial	Salvager Headwear	armaduras/cabeca
+botw_armor_salvager_trousers	Calças de mergulhador	nao_oficial	Salvager Trousers	armaduras/pernas
+botw_armor_salvager_vest	Colete de mergulhador	nao_oficial	Salvager Vest	armaduras/torso
+botw_armor_sand_boots	Botas de areia	nao_oficial	Sand Boots	armaduras/pernas
+botw_armor_sapphire_circlet	Tiara de safira	nao_oficial	Sapphire Circlet	armaduras/cabeca
+botw_armor_sheiks_mask	Máscara de Sheik	nao_oficial	Sheik's Mask	armaduras/cabeca
+botw_armor_snow_boots	Botas de neve	nao_oficial	Snow Boots	armaduras/pernas
+botw_armor_snowquill_headdress	Cocar de pluma nevada	nao_oficial	Snowquill Headdress	armaduras/cabeca
+botw_armor_snowquill_trousers	Calças de pluma nevada	nao_oficial	Snowquill Trousers	armaduras/pernas
+botw_armor_snowquill_tunic	Túnica de pluma nevada	nao_oficial	Snowquill Tunic	armaduras/torso
+botw_armor_soldiers_armor	Armadura do soldado	nao_oficial	Soldier's Armor	armaduras/torso
+botw_armor_soldiers_greaves	Grevas do soldado	nao_oficial	Soldier's Greaves	armaduras/pernas
+botw_armor_soldiers_helm	Elmo do soldado	nao_oficial	Soldier's Helm	armaduras/cabeca
+botw_armor_stealth_chest_guard	Peitoral furtivo	nao_oficial	Stealth Chest Guard	armaduras/torso
+botw_armor_stealth_mask	Máscara furtiva	nao_oficial	Stealth Mask	armaduras/cabeca
+botw_armor_stealth_tights	Meia-calça furtiva	nao_oficial	Stealth Tights	armaduras/pernas
+botw_armor_thunder_helm	Elmo do trovão	nao_oficial	Thunder Helm	armaduras/cabeca
+botw_armor_tingles_hood	Capuz de Tingle	nao_oficial	Tingle's Hood	armaduras/cabeca
+botw_armor_tingles_shirt	Camisa de Tingle	nao_oficial	Tingle's Shirt	armaduras/torso
+botw_armor_tingles_tights	Meia-calça de Tingle	nao_oficial	Tingle's Tights	armaduras/pernas
+botw_armor_topaz_earrings	Brincos de topázio	nao_oficial	Topaz Earrings	armaduras/cabeca
+botw_armor_trousers_of_the_hero	Calças do herói	nao_oficial	Trousers of the Hero	armaduras/pernas
+botw_armor_trousers_of_the_sky	Calças do céu	nao_oficial	Trousers of the Sky	armaduras/pernas
+botw_armor_trousers_of_the_wild	Calças selvagens	nao_oficial	Trousers of the Wild	armaduras/pernas
+botw_armor_trousers_of_the_wind	Calças do vento	nao_oficial	Trousers of the Wind	armaduras/pernas
+botw_armor_trousers_of_time	Calças do tempo	nao_oficial	Trousers of Time	armaduras/pernas
+botw_armor_trousers_of_twilight	Calças do crepúsculo	nao_oficial	Trousers of Twilight	armaduras/pernas
+botw_armor_tunic_of_the_hero	Túnica do herói	nao_oficial	Tunic of the Hero	armaduras/torso
+botw_armor_tunic_of_the_sky	Túnica do céu	nao_oficial	Tunic of the Sky	armaduras/torso
+botw_armor_tunic_of_the_wild	Túnica selvagem	nao_oficial	Tunic of the Wild	armaduras/torso
+botw_armor_tunic_of_the_wind	Túnica do vento	nao_oficial	Tunic of the Wind	armaduras/torso
+botw_armor_tunic_of_time	Túnica do tempo	nao_oficial	Tunic of Time	armaduras/torso
+botw_armor_tunic_of_twilight	Túnica do crepúsculo	nao_oficial	Tunic of Twilight	armaduras/torso
+botw_armor_vah_medoh_divine_helm	Elmo divino de Vah Medoh	nao_oficial	Vah Medoh Divine Helm	armaduras/cabeca
+botw_armor_vah_naboris_divine_helm	Elmo divino de Vah Naboris	nao_oficial	Vah Naboris Divine Helm	armaduras/cabeca
+botw_armor_vah_rudania_divine_helm	Elmo divino de Vah Rudania	nao_oficial	Vah Rudania Divine Helm	armaduras/cabeca
+botw_armor_vah_ruta_divine_helm	Elmo divino de Vah Ruta	nao_oficial	Vah Ruta Divine Helm	armaduras/cabeca
+botw_armor_warm_doublet	Gibão aquecido	nao_oficial	Warm Doublet	armaduras/torso
+botw_armor_well_worn_trousers	Calças surradas	nao_oficial	Well-Worn Trousers	armaduras/pernas
+botw_armor_zants_helmet	Elmo de Zant	nao_oficial	Zant's Helmet	armaduras/cabeca
+botw_armor_zora_armor	Armadura Zora	nao_oficial	Zora Armor	armaduras/torso
+botw_armor_zora_greaves	Grevas Zora	nao_oficial	Zora Greaves	armaduras/pernas
+botw_armor_zora_helm	Elmo Zora	nao_oficial	Zora Helm	armaduras/cabeca
+botw_armorset_ancient_set	Conjunto ancestral	nao_oficial	Ancient Set	armaduras/conjuntos
+botw_armorset_barbarian_set	Conjunto bárbaro	nao_oficial	Barbarian Set	armaduras/conjuntos
+botw_armorset_climbing_set	Conjunto de escalada	nao_oficial	Climbing Set	armaduras/conjuntos
+botw_armorset_dark_series	Conjunto sombrio	nao_oficial	Dark Series	armaduras/conjuntos
+botw_armorset_desert_voe_set	Conjunto voe do deserto	nao_oficial	Desert Voe Set	armaduras/conjuntos
+botw_armorset_fierce_deity_set	Conjunto da Deidade Feroz	nao_oficial	Fierce Deity Set	armaduras/conjuntos
+botw_armorset_fireproof_armor	Conjunto antichamas	nao_oficial	Fireproof Armor	armaduras/conjuntos
+botw_armorset_gerudo_outfit	Traje Gerudo	nao_oficial	Gerudo Outfit	armaduras/conjuntos
+botw_armorset_hero_of_the_sky_set	Conjunto do herói do céu	nao_oficial	Hero of the Sky Set	armaduras/conjuntos
+botw_armorset_hero_of_the_wild_set	Conjunto do herói selvagem	nao_oficial	Hero of the Wild Set	armaduras/conjuntos
+botw_armorset_hero_of_time_set	Conjunto do herói do tempo	nao_oficial	Hero of Time Set	armaduras/conjuntos
+botw_armorset_hero_of_twilight_set	Conjunto do herói do crepúsculo	nao_oficial	Hero of Twilight Set	armaduras/conjuntos
+botw_armorset_hero_of_winds_set	Conjunto do herói dos ventos	nao_oficial	Hero of Winds Set	armaduras/conjuntos
+botw_armorset_hero_set	Conjunto do herói	nao_oficial	Hero Set	armaduras/conjuntos
+botw_armorset_hylian_armor_series	Conjunto hyliano	nao_oficial	Hylian Armor Series	armaduras/conjuntos
+botw_armorset_phantom_equipment	Conjunto fantasma	nao_oficial	Phantom Equipment	armaduras/conjuntos
+botw_armorset_phantom_ganon_set	Conjunto de Ganon Fantasma	nao_oficial	Phantom Ganon Set	armaduras/conjuntos
+botw_armorset_radiant_set	Conjunto radiante	nao_oficial	Radiant Set	armaduras/conjuntos
+botw_armorset_royal_guard_set	Conjunto da guarda real	nao_oficial	Royal Guard Set	armaduras/conjuntos
+botw_armorset_rubber_armor_set	Conjunto de borracha	nao_oficial	Rubber Armor (Set)	armaduras/conjuntos
+botw_armorset_salvager_armor_set	Conjunto de mergulhador	nao_oficial	Salvager Armor Set	armaduras/conjuntos
+botw_armorset_snowquill_set	Conjunto de pluma nevada	nao_oficial	Snowquill Set	armaduras/conjuntos
+botw_armorset_soldiers_set	Conjunto do soldado	nao_oficial	Soldier's Set	armaduras/conjuntos
+botw_armorset_stealth_set	Conjunto furtivo	nao_oficial	Stealth Set	armaduras/conjuntos
+botw_armorset_tingles_outfit	Traje de Tingle	nao_oficial	Tingle's Outfit	armaduras/conjuntos
+botw_armorset_well_worn_outfit	Traje surrado	nao_oficial	Well-Worn Outfit	armaduras/conjuntos
+botw_armorset_zora_set	Conjunto Zora	nao_oficial	Zora Set	armaduras/conjuntos
+botw_weapon_ancient_battle_axe	Acha ancestral	oficial_secundaria	Ancient Battle Axe	armas/duas_maos
+botw_weapon_ancient_battle_axe_plus	Acha ancestral 2.0	oficial_secundaria	Ancient Battle Axe+	armas/duas_maos
+botw_weapon_ancient_battle_axe_plus_plus	Acha ancestral 3.0	oficial_secundaria	Ancient Battle Axe++	armas/duas_maos
+botw_weapon_ancient_bladesaw	Espada serrada ancestral	oficial_secundaria	Ancient Bladesaw	armas/duas_maos
+botw_weapon_ancient_short_sword	Espada ancestral	oficial_secundaria	Ancient Short Sword	armas/uma_mao
+botw_weapon_ancient_spear	Lança ancestral	oficial_secundaria	Ancient Spear	armas/lancas
+botw_weapon_biggorons_sword	Espada do Biggoron	oficial_secundaria	Biggoron's Sword	armas/duas_maos
+botw_weapon_blizzard_rod	Cajado glacial	oficial_secundaria	Blizzard Rod	armas/uma_mao
+botw_weapon_boat_oar	Remo	oficial_secundaria	Boat Oar	armas/duas_maos
+botw_weapon_boko_bat	Taco Kobo	oficial_secundaria	Boko Bat	armas/duas_maos
+botw_weapon_boko_club	Clava Kobo	oficial_secundaria	Boko Club	armas/uma_mao
+botw_weapon_boko_spear	Lança Kobo	oficial_secundaria	Boko Spear	armas/lancas
+botw_weapon_bokoblin_arm	Braço de Koboblin	oficial_secundaria	Bokoblin Arm	armas/uma_mao
+botw_weapon_boomerang	Bumerangue	oficial_secundaria	Boomerang	armas/uma_mao
+botw_weapon_boulder_breaker	Racha-Rocha	oficial_secundaria	Boulder Breaker	armas/duas_maos
+botw_weapon_ceremonial_trident	Tridente cerimonial	oficial_secundaria	Ceremonial Trident	armas/lancas
+botw_weapon_cobble_crusher	Esmaga-Fraga	oficial_secundaria	Cobble Crusher	armas/duas_maos
+botw_weapon_demon_carver	Trinchador demoníaco	oficial_secundaria	Demon Carver	armas/uma_mao
+botw_weapon_double_axe	Lábris	oficial_secundaria	Double Axe	armas/duas_maos
+botw_weapon_dragonbone_boko_bat	Taco Kobo dracônico	oficial_secundaria	Dragonbone Boko Bat	armas/duas_maos
+botw_weapon_dragonbone_boko_club	Clava Kobo dracônica	oficial_secundaria	Dragonbone Boko Club	armas/uma_mao
+botw_weapon_dragonbone_boko_spear	Lança Kobo dracônica	oficial_secundaria	Dragonbone Boko Spear	armas/lancas
+botw_weapon_dragonbone_moblin_club	Clava Moblin dracônica	oficial_secundaria	Dragonbone Moblin Club	armas/duas_maos
+botw_weapon_dragonbone_moblin_spear	Lança Moblin dracônica	oficial_secundaria	Dragonbone Moblin Spear	armas/lancas
+botw_weapon_drillshaft	Perfuradeira	oficial_secundaria	Drillshaft	armas/lancas
+botw_weapon_edge_of_duality	Lâmina da dualidade	oficial_secundaria	Edge of Duality	armas/duas_maos
+botw_weapon_eightfold_blade	Katana Sheikah	oficial_secundaria	Eightfold Blade	armas/uma_mao
+botw_weapon_eightfold_longblade	Katana da desconfiança	oficial_secundaria	Eightfold Longblade	armas/duas_maos
+botw_weapon_enhanced_lizal_spear	Lança Lagal aprimorada	oficial_secundaria	Enhanced Lizal Spear	armas/lancas
+botw_weapon_farmers_pitchfork	Forcado	oficial_secundaria	Farmer's Pitchfork	armas/lancas
+botw_weapon_farming_hoe	Enxada	oficial_secundaria	Farming Hoe	armas/duas_maos
+botw_weapon_feathered_edge	Gume plumado	oficial_secundaria	Feathered Edge	armas/uma_mao
+botw_weapon_feathered_spear	Lança plumada	oficial_secundaria	Feathered Spear	armas/lancas
+botw_weapon_fierce_deity_sword	Espada da Deidade Feroz	oficial_secundaria	Fierce Deity Sword	armas/duas_maos
+botw_weapon_fire_rod	Varinha de fogo	oficial_secundaria	Fire Rod	armas/uma_mao
+botw_weapon_fishing_harpoon	Arpão	oficial_secundaria	Fishing Harpoon	armas/lancas
+botw_weapon_flameblade	Espada flamejante	oficial_secundaria	Flameblade	armas/uma_mao
+botw_weapon_flamespear	Lança carbonizante	oficial_secundaria	Flamespear	armas/lancas
+botw_weapon_forest_dwellers_spear	Lança da Floresta	oficial_secundaria	Forest Dweller's Spear	armas/lancas
+botw_weapon_forest_dwellers_sword	Espada da Floresta	oficial_secundaria	Forest Dweller's Sword	armas/uma_mao
+botw_weapon_forked_lizal_spear	Lança Lagal bifurcada	oficial_secundaria	Forked Lizal Spear	armas/lancas
+botw_weapon_frostblade	Espada álgida	oficial_secundaria	Frostblade	armas/uma_mao
+botw_weapon_frostspear	Lança congelante	oficial_secundaria	Frostspear	armas/lancas
+botw_weapon_gerudo_scimitar	Cimitarra Gerudo	oficial_secundaria	Gerudo Scimitar	armas/uma_mao
+botw_weapon_gerudo_spear	Lança Gerudo	oficial_secundaria	Gerudo Spear	armas/lancas
+botw_weapon_giant_boomerang	Bumerangue gigante	oficial_secundaria	Giant Boomerang	armas/duas_maos
+botw_weapon_goddess_sword	Espada da deusa	oficial_secundaria	Goddess Sword	armas/uma_mao
+botw_weapon_golden_claymore	Montante dourado	oficial_secundaria	Golden Claymore	armas/duas_maos
+botw_weapon_great_flameblade	Grã-Espada flamejante	oficial_secundaria	Great Flameblade	armas/duas_maos
+botw_weapon_great_frostblade	Grã-Espada álgida	oficial_secundaria	Great Frostblade	armas/duas_maos
+botw_weapon_great_thunderblade	Grã-Espada faiscante	oficial_secundaria	Great Thunderblade	armas/duas_maos
+botw_weapon_guardian_spear	Lança guardiã	oficial_secundaria	Guardian Spear	armas/lancas
+botw_weapon_guardian_spear_plus	Lança guardiã 2.0	oficial_secundaria	Guardian Spear+	armas/lancas
+botw_weapon_guardian_spear_plus_plus	Lança guardiã 3.0	oficial_secundaria	Guardian Spear++	armas/lancas
+botw_weapon_guardian_sword	Espada guardiã	oficial_secundaria	Guardian Sword	armas/uma_mao
+botw_weapon_guardian_sword_plus	Espada guardiã 2.0	oficial_secundaria	Guardian Sword+	armas/uma_mao
+botw_weapon_guardian_sword_plus_plus	Espada guardiã 3.0	oficial_secundaria	Guardian Sword++	armas/uma_mao
+botw_weapon_ice_rod	Varinha de gelo	oficial_secundaria	Ice Rod	armas/uma_mao
+botw_weapon_iron_sledgehammer	Marreta de ferro	oficial_secundaria	Iron Sledgehammer	armas/duas_maos
+botw_weapon_knights_broadsword	Espada do cavaleiro	oficial_secundaria	Knight's Broadsword	armas/uma_mao
+botw_weapon_knights_claymore	Montante do cavaleiro	oficial_secundaria	Knight's Claymore	armas/duas_maos
+botw_weapon_knights_halberd	Alabarda do cavaleiro	oficial_secundaria	Knight's Halberd	armas/lancas
+botw_weapon_korok_leaf	Folha Korok	oficial_secundaria	Korok Leaf	armas/duas_maos
+botw_weapon_lightning_rod	Varinha do raio	oficial_secundaria	Lightning Rod	armas/uma_mao
+botw_weapon_lightscale_trident	Tridente escamado	oficial_secundaria	Lightscale Trident	armas/lancas
+botw_weapon_lizal_boomerang	Bumerangue Lagal	oficial_secundaria	Lizal Boomerang	armas/uma_mao
+botw_weapon_lizal_forked_boomerang	Bimerangue Lagal	oficial_secundaria	Lizal Forked Boomerang	armas/uma_mao
+botw_weapon_lizal_spear	Lança Lagal	oficial_secundaria	Lizal Spear	armas/lancas
+botw_weapon_lizal_tri_boomerang	Trimerangue Lagal	oficial_secundaria	Lizal Tri-Boomerang	armas/uma_mao
+botw_weapon_lizalfos_arm	Braço de Lagalfos	oficial_secundaria	Lizalfos Arm	armas/uma_mao
+botw_weapon_lynel_crusher	Maça centaleônica	oficial_secundaria	Lynel Crusher	armas/duas_maos
+botw_weapon_lynel_spear	Lança centaleônica	oficial_secundaria	Lynel Spear	armas/lancas
+botw_weapon_lynel_sword	Espada centaleônica	oficial_secundaria	Lynel Sword	armas/uma_mao
+botw_weapon_master_sword	Espada Mestra	oficial_secundaria	Master Sword	armas/uma_mao
+botw_weapon_meteor_rod	Cajado meteórico	oficial_secundaria	Meteor Rod	armas/uma_mao
+botw_weapon_mighty_lynel_crusher	Maça centaleônica forte	oficial_secundaria	Mighty Lynel Crusher	armas/duas_maos
+botw_weapon_mighty_lynel_spear	Lança centaleônica forte	oficial_secundaria	Mighty Lynel Spear	armas/lancas
+botw_weapon_mighty_lynel_sword	Espada centaleônica forte	oficial_secundaria	Mighty Lynel Sword	armas/uma_mao
+botw_weapon_moblin_arm	Braço de Moblin	oficial_secundaria	Moblin Arm	armas/duas_maos
+botw_weapon_moblin_club	Clava Moblin	oficial_secundaria	Moblin Club	armas/duas_maos
+botw_weapon_moblin_spear	Lança Moblin	oficial_secundaria	Moblin Spear	armas/lancas
+botw_weapon_moonlight_scimitar	Cimitarra meia-lua	oficial_secundaria	Moonlight Scimitar	armas/uma_mao
+botw_weapon_one_hit_obliterator	Obliterador	oficial_secundaria	One-Hit Obliterator	armas/uma_mao
+botw_weapon_royal_broadsword	Espada real	oficial_secundaria	Royal Broadsword	armas/uma_mao
+botw_weapon_royal_claymore	Montante real	oficial_secundaria	Royal Claymore	armas/duas_maos
+botw_weapon_royal_guards_claymore	Montante da guarda real	oficial_secundaria	Royal Guard's Claymore	armas/duas_maos
+botw_weapon_royal_guards_spear	Lança da guarda real	oficial_secundaria	Royal Guard's Spear	armas/lancas
+botw_weapon_royal_guards_sword	Espada da guarda real	oficial_secundaria	Royal Guard's Sword	armas/uma_mao
+botw_weapon_royal_halberd	Alabarda real	oficial_secundaria	Royal Halberd	armas/lancas
+botw_weapon_rusty_broadsword	Espada enferrujada	oficial_secundaria	Rusty Broadsword	armas/uma_mao
+botw_weapon_rusty_claymore	Montante enferrujado	oficial_secundaria	Rusty Claymore	armas/duas_maos
+botw_weapon_rusty_halberd	Alabarda enferrujada	oficial_secundaria	Rusty Halberd	armas/lancas
+botw_weapon_savage_lynel_crusher	Maça centaleônica Feroz	oficial_secundaria	Savage Lynel Crusher	armas/duas_maos
+botw_weapon_savage_lynel_spear	Lança centaleônica Feroz	oficial_secundaria	Savage Lynel Spear	armas/lancas
+botw_weapon_savage_lynel_sword	Espada centaleônica Feroz	oficial_secundaria	Savage Lynel Sword	armas/uma_mao
+botw_weapon_scimitar_of_the_seven	Cimitarra das sete	oficial_secundaria	Scimitar of the Seven	armas/uma_mao
+botw_weapon_sea_breeze_boomerang	Bumerangue da brisa	oficial_secundaria	Sea-Breeze Boomerang	armas/uma_mao
+botw_weapon_serpentine_spear	Lança lunar	oficial_secundaria	Serpentine Spear	armas/lancas
+botw_weapon_silver_longsword	Espada longa prateada	oficial_secundaria	Silver Longsword	armas/duas_maos
+botw_weapon_silverscale_spear	Lança escamada	oficial_secundaria	Silverscale Spear	armas/lancas
+botw_weapon_soldiers_broadsword	Espada larga do soldado	oficial_secundaria	Soldier's Broadsword	armas/uma_mao
+botw_weapon_soldiers_claymore	Montante do soldado	oficial_secundaria	Soldier's Claymore	armas/duas_maos
+botw_weapon_soldiers_spear	Lança do soldado	oficial_secundaria	Soldier's Spear	armas/lancas
+botw_weapon_soup_ladle	Concha de madeira	oficial_secundaria	Soup Ladle	armas/uma_mao
+botw_weapon_spiked_boko_bat	Taco Kobo pontudo	oficial_secundaria	Spiked Boko Bat	armas/duas_maos
+botw_weapon_spiked_boko_club	Clava Kobo pontuda	oficial_secundaria	Spiked Boko Club	armas/uma_mao
+botw_weapon_spiked_boko_spear	Lança Kobo pontuda	oficial_secundaria	Spiked Boko Spear	armas/lancas
+botw_weapon_spiked_moblin_club	Clava Moblin pontuda	oficial_secundaria	Spiked Moblin Club	armas/duas_maos
+botw_weapon_spiked_moblin_spear	Lança Moblin espinhosa	oficial_secundaria	Spiked Moblin Spear	armas/lancas
+botw_weapon_spring_loaded_hammer	Marreta bóim	oficial_secundaria	Spring-Loaded Hammer	armas/uma_mao
+botw_weapon_stone_smasher	Quebra-Pedra	oficial_secundaria	Stone Smasher	armas/duas_maos
+botw_weapon_sword	Espada do herói	oficial_secundaria	Sword	armas/uma_mao
+botw_weapon_sword_of_the_six_sages	Montante do crepúsculo	oficial_secundaria	Sword of the Six Sages	armas/duas_maos
+botw_weapon_throwing_spear	Lança de arremesso	oficial_secundaria	Throwing Spear	armas/lancas
+botw_weapon_thunderblade	Espada faiscante	oficial_secundaria	Thunderblade	armas/uma_mao
+botw_weapon_thunderspear	Lança voltaica	oficial_secundaria	Thunderspear	armas/lancas
+botw_weapon_thunderstorm_rod	Cajado trovejante	oficial_secundaria	Thunderstorm Rod	armas/uma_mao
+botw_weapon_torch	Tocha	oficial_secundaria	Torch	armas/uma_mao
+botw_weapon_travelers_claymore	Montante do viajante	oficial_secundaria	Traveler's Claymore	armas/duas_maos
+botw_weapon_travelers_spear	Lança do viajante	oficial_secundaria	Traveler's Spear	armas/lancas
+botw_weapon_travelers_sword	Espada do viajante	oficial_secundaria	Traveler's Sword	armas/uma_mao
+botw_weapon_tree_branch	Galho	oficial_secundaria	Tree Branch	armas/uma_mao
+botw_weapon_vicious_sickle	Foice brutal	oficial_secundaria	Vicious Sickle	armas/uma_mao
+botw_weapon_windcleaver	Corta-Vento	oficial_secundaria	Windcleaver	armas/duas_maos
+botw_weapon_woodcutters_axe	Machado de lenhador	oficial_secundaria	Woodcutter's Axe	armas/duas_maos
+botw_weapon_wooden_mop	Esfregão de madeira	oficial_secundaria	Wooden Mop	armas/lancas
+botw_weapon_zora_spear	Lança Zora	oficial_secundaria	Zora Spear	armas/lancas
+botw_weapon_zora_sword	Espada Zora	oficial_secundaria	Zora Sword	armas/uma_mao
+botw_creature_armored_carp	Carpa blindada	oficial	Armored Carp	criaturas/peixes
+botw_creature_armored_porgy	Pargo blindado	oficial	Armored Porgy	criaturas/peixes
+botw_creature_bladed_rhino_beetle	Escaravelho brigão	oficial	Bladed Rhino Beetle	criaturas/insetos
+botw_creature_blue_sparrow	Pardal azul	oficial	Blue Sparrow	criaturas/aves
+botw_creature_blue_winged_heron	Garça azulada	oficial	Blue-Winged Heron	criaturas/aves
+botw_creature_blupee	Rupelho	oficial	Blupee	criaturas/especiais
+botw_creature_bright_chested_duck	Pato de peito verde	oficial	Bright-Chested Duck	criaturas/aves
+botw_creature_bright_eyed_crab	Caranguejo esperto	oficial	Bright-Eyed Crab	criaturas/frutos_do_mar
+botw_creature_bushy_tailed_squirrel	Esquilo caudafofa	oficial	Bushy-Tailed Squirrel	criaturas/animais
+botw_creature_chillfin_trout	Truta glacial	oficial	Chillfin Trout	criaturas/peixes
+botw_creature_cold_darner	Libélula gélida	oficial_secundaria	Cold Darner	criaturas/insetos
+botw_creature_cold_footed_wolf	Lobo pé-gelado	nao_oficial	Cold-Footed Wolf	criaturas/animais
+botw_creature_common_sparrow	Pardal comum	nao_oficial	Common Sparrow	criaturas/aves
+botw_creature_cucco	Cucco	nao_oficial	Cucco	criaturas/aves
+botw_creature_donkey	Burro	oficial	Donkey	criaturas/animais
+botw_creature_eldin_ostrich	Avestruz de Eldin	oficial	Eldin Ostrich	criaturas/aves
+botw_creature_electric_darner	Libélula do relâmpago	oficial	Electric Darner	criaturas/insetos
+botw_creature_energetic_rhino_beetle	Escaravelho vibrante	oficial	Energetic Rhino Beetle	criaturas/insetos
+botw_creature_epona	Epona	oficial	Epona	criaturas/montarias
+botw_creature_fairy	Fada	oficial	Fairy	criaturas/especiais
+botw_creature_fireproof_lizard	Lagarto corta-fogo	oficial	Fireproof Lizard	criaturas/anfibios_e_repteis
+botw_creature_giant_horse	Cavalo gigante	oficial	Giant Horse	criaturas/montarias
+botw_creature_golden_sparrow	Pardal dourado	oficial	Golden Sparrow	criaturas/aves
+botw_creature_grassland_fox	Raposa do prado	oficial	Grassland Fox	criaturas/animais
+botw_creature_great_horned_rhinoceros	Rinoceronte chifrelongo	oficial	Great-Horned Rhinoceros	criaturas/animais
+botw_creature_grizzlemaw_bear	Grão-urso	oficial	Grizzlemaw Bear	criaturas/animais
+botw_creature_hateno_cow	Vaca de Hateno	oficial	Hateno Cow	criaturas/animais
+botw_creature_hearty_bass	Robalo nutritivo	oficial	Hearty Bass	criaturas/peixes
+botw_creature_hearty_blueshell_snail	Caramujo nutritivo	oficial	Hearty Blueshell Snail	criaturas/frutos_do_mar
+botw_creature_hearty_lizard	Lagarto nutritivo	oficial	Hearty Lizard	criaturas/anfibios_e_repteis
+botw_creature_hearty_salmon	Salmão nutritivo	oficial	Hearty Salmon	criaturas/peixes
+botw_creature_highland_sheep	Ovelha do planalto	oficial	Highland Sheep	criaturas/animais
+botw_creature_hightail_lizard	Lagarto fujão	oficial	Hightail Lizard	criaturas/anfibios_e_repteis
+botw_creature_honeyvore_bear	Urso melívoro	oficial	Honeyvore Bear	criaturas/animais
+botw_creature_horse	Cavalo	oficial	Horse	criaturas/montarias
+botw_creature_hot_footed_frog	Sapo apressado	oficial	Hot-Footed Frog	criaturas/anfibios_e_repteis
+botw_creature_hotfeather_pigeon	Pombo rubro	oficial	Hotfeather Pigeon	criaturas/aves
+botw_creature_hylian_retriever	Pastor hyliano	oficial	Hylian Retriever	criaturas/animais
+botw_creature_hyrule_bass	Robalo hyruliano	oficial	Hyrule Bass	criaturas/peixes
+botw_creature_ironshell_crab	Caranguejo couraçado	oficial	Ironshell Crab	criaturas/frutos_do_mar
+botw_creature_islander_hawk	Gavião insular	oficial	Islander Hawk	criaturas/aves
+botw_creature_lord_of_the_mountain	Senhor da Montanha	oficial	Lord of the Mountain	criaturas/montarias
+botw_creature_maraudo_wolf	Lobo larápio	oficial	Maraudo Wolf	criaturas/animais
+botw_creature_mighty_carp	Carpa valente	oficial	Mighty Carp	criaturas/peixes
+botw_creature_mighty_porgy	Pargo valente	oficial	Mighty Porgy	criaturas/peixes
+botw_creature_mountain_buck	Cervo da montanha	oficial	Mountain Buck	criaturas/animais
+botw_creature_mountain_crow	Corvo da montanha	oficial	Mountain Crow	criaturas/aves
+botw_creature_mountain_doe	Corça da montanha	oficial	Mountain Doe	criaturas/animais
+botw_creature_mountain_goat	Bode da montanha	oficial	Mountain Goat	criaturas/animais
+botw_creature_patricia	Patrícia	oficial	Patricia	criaturas/especiais
+botw_creature_pink_heron	Garça rosada	oficial	Pink Heron	criaturas/aves
+botw_creature_rainbow_pigeon	Pombo colorido	oficial	Rainbow Pigeon	criaturas/aves
+botw_creature_rainbow_sparrow	Pardal colorido	oficial	Rainbow Sparrow	criaturas/aves
+botw_creature_razorclaw_crab	Caranguejo espadachim	oficial	Razorclaw Crab	criaturas/frutos_do_mar
+botw_creature_red_sparrow	Pardal vermelho	oficial	Red Sparrow	criaturas/aves
+botw_creature_red_tusked_boar	Javali de presa rubra	oficial	Red-Tusked Boar	criaturas/animais
+botw_creature_restless_cricket	Gafanhoto agitado	oficial	Restless Cricket	criaturas/insetos
+botw_creature_rugged_rhino_beetle	Escaravelho resguardado	oficial	Rugged Rhino Beetle	criaturas/insetos
+botw_creature_sand_seal	Morsareia	oficial	Sand Seal	criaturas/especiais
+botw_creature_sand_sparrow	Pardal do deserto	oficial	Sand Sparrow	criaturas/aves
+botw_creature_sanke_carp	Carpa tricolor	oficial	Sanke Carp	criaturas/peixes
+botw_creature_seagull	Gaivota	oficial	Seagull	criaturas/aves
+botw_creature_sizzlefin_trout	Truta rescaldada	oficial	Sizzlefin Trout	criaturas/peixes
+botw_creature_smotherwing_butterfly	Borboleta abrasadora	oficial	Smotherwing Butterfly	criaturas/insetos
+botw_creature_sneaky_river_snail	Caramujo discreto	oficial	Sneaky River Snail	criaturas/frutos_do_mar
+botw_creature_snowcoat_fox	Raposa da neve	oficial	Snowcoat Fox	criaturas/animais
+botw_creature_stalhorse	Stalcavalo	oficial	Stalhorse	criaturas/montarias
+botw_creature_staminoka_bass	Robalo enérgico	oficial	Staminoka Bass	criaturas/peixes
+botw_creature_stealthfin_trout	Truta discreta	oficial	Stealthfin Trout	criaturas/peixes
+botw_creature_summerwing_butterfly	Borboleta estival	oficial	Summerwing Butterfly	criaturas/insetos
+botw_creature_sunset_firefly	Vaga-lume do poente	oficial	Sunset Firefly	criaturas/insetos
+botw_creature_tabantha_moose	Alce de Tabantha	oficial	Tabantha Moose	criaturas/animais
+botw_creature_thunderwing_butterfly	Borboleta trovejante	oficial	Thunderwing Butterfly	criaturas/insetos
+botw_creature_tireless_frog	Sapo obstinado	oficial	Tireless Frog	criaturas/anfibios_e_repteis
+botw_creature_voltfin_trout	Truta voltaica	oficial	Voltfin Trout	criaturas/peixes
+botw_creature_warm_darner	Libélula cálida	oficial	Warm Darner	criaturas/insetos
+botw_creature_wasteland_coyote	Coiote do deserto	oficial	Wasteland Coyote	criaturas/animais
+botw_creature_water_buffalo	Búfalo-d'água	oficial	Water Buffalo	criaturas/animais
+botw_creature_white_goat	Bode branco	oficial	White Goat	criaturas/animais
+botw_creature_white_horse	Cavalo branco	oficial	White Horse	criaturas/montarias
+botw_creature_white_pigeon	Pombo branco	oficial	White Pigeon	criaturas/aves
+botw_creature_winterwing_butterfly	Borboleta invernal	oficial	Winterwing Butterfly	criaturas/insetos
+botw_creature_wood_pigeon	Pombo silvestre	oficial	Wood Pigeon	criaturas/aves
+botw_creature_woodland_boar	Javali da mata	oficial	Woodland Boar	criaturas/animais
+botw_elixir_chilly_elixir	Elixir refrescante	nao_oficial	Chilly Elixir	culinaria/elixires
+botw_elixir_electro_elixir	Elixir isolante	nao_oficial	Electro Elixir	culinaria/elixires
+botw_elixir_enduring_elixir	Elixir tenaz	nao_oficial	Enduring Elixir	culinaria/elixires
+botw_elixir_energizing_elixir	Elixir energizante	nao_oficial	Energizing Elixir	culinaria/elixires
+botw_elixir_fairy_tonic	Tônico de fada	nao_oficial	Fairy Tonic	culinaria/elixires
+botw_elixir_fireproof_elixir	Elixir corta-fogo	nao_oficial	Fireproof Elixir	culinaria/elixires
+botw_elixir_hasty_elixir	Elixir veloz	nao_oficial	Hasty Elixir	culinaria/elixires
+botw_elixir_hearty_elixir	Elixir nutritivo	nao_oficial	Hearty Elixir	culinaria/elixires
+botw_elixir_mighty_elixir	Elixir valente	nao_oficial	Mighty Elixir	culinaria/elixires
+botw_elixir_sneaky_elixir	Elixir discreto	nao_oficial	Sneaky Elixir	culinaria/elixires
+botw_elixir_spicy_elixir	Elixir picante	nao_oficial	Spicy Elixir	culinaria/elixires
+botw_elixir_tough_elixir	Elixir blindado	nao_oficial	Tough Elixir	culinaria/elixires
+botw_food_apple_pie	Torta de maçã	nao_oficial	Apple Pie	culinaria/pratos
+botw_food_baked_apple	Maçã assada	nao_oficial	Baked Apple	culinaria/assados_e_tostados
+botw_food_baked_fortified_pumpkin	Abóbora robusta assada	nao_oficial	Baked Fortified Pumpkin	culinaria/assados_e_tostados
+botw_food_baked_palm_fruit	Coco assado	nao_oficial	Baked Palm Fruit	culinaria/assados_e_tostados
+botw_food_blackened_crab	Caranguejo tostado	nao_oficial	Blackened Crab	culinaria/assados_e_tostados
+botw_food_blueshell_escargot	Escargô nutritivo	nao_oficial	Blueshell Escargot	culinaria/assados_e_tostados
+botw_food_campfire_egg	Ovo na fogueira	nao_oficial	Campfire Egg	culinaria/assados_e_tostados
+botw_food_carrot_cake	Bolo de cenoura	nao_oficial	Carrot Cake	culinaria/pratos
+botw_food_carrot_stew	Ensopado de cenoura	nao_oficial	Carrot Stew	culinaria/pratos
+botw_food_charred_pepper	Pimenta tostada	nao_oficial	Charred Pepper	culinaria/assados_e_tostados
+botw_food_clam_chowder	Creme de mariscos	nao_oficial	Clam Chowder	culinaria/pratos
+botw_food_copious_fried_wild_greens	Fritada farta de ervas	nao_oficial	Copious Fried Wild Greens	culinaria/pratos
+botw_food_copious_meat_skewers	Espetinhos fartos de carne	nao_oficial	Copious Meat Skewers	culinaria/pratos
+botw_food_copious_mushroom_skewers	Espetinhos fartos de cogumelo	nao_oficial	Copious Mushroom Skewers	culinaria/pratos
+botw_food_copious_seafood_skewers	Espetinhos fartos de frutos do mar	nao_oficial	Copious Seafood Skewers	culinaria/pratos
+botw_food_copious_simmered_fruit	Compota farta de frutas	nao_oficial	Copious Simmered Fruit	culinaria/pratos
+botw_food_crab_omelet_with_rice	Omelete de caranguejo com arroz	nao_oficial	Crab Omelet with Rice	culinaria/pratos
+botw_food_crab_risotto	Risoto de caranguejo	nao_oficial	Crab Risotto	culinaria/pratos
+botw_food_crab_stir_fry	Caranguejo salteado	nao_oficial	Crab Stir-Fry	culinaria/pratos
+botw_food_cream_of_mushroom_soup	Creme de cogumelos	nao_oficial	Cream of Mushroom Soup	culinaria/pratos
+botw_food_cream_of_vegetable_soup	Creme de legumes	nao_oficial	Cream of Vegetable Soup	culinaria/pratos
+botw_food_creamy_heart_soup	Sopa cremosa do coração	nao_oficial	Creamy Heart Soup	culinaria/pratos
+botw_food_creamy_meat_soup	Sopa cremosa de carne	nao_oficial	Creamy Meat Soup	culinaria/pratos
+botw_food_creamy_seafood_soup	Sopa cremosa de frutos do mar	nao_oficial	Creamy Seafood Soup	culinaria/pratos
+botw_food_curry_pilaf	Pilaf ao curry	nao_oficial	Curry Pilaf	culinaria/pratos
+botw_food_curry_rice	Arroz com curry	nao_oficial	Curry Rice	culinaria/pratos
+botw_food_dubious_food	Comida duvidosa	nao_oficial	Dubious Food	culinaria/pratos
+botw_food_egg_pudding	Pudim de ovos	nao_oficial	Egg Pudding	culinaria/pratos
+botw_food_egg_tart	Torta de ovos	nao_oficial	Egg Tart	culinaria/pratos
+botw_food_fish_and_mushroom_skewer	Espetinho de peixe e cogumelo	nao_oficial	Fish and Mushroom Skewer	culinaria/pratos
+botw_food_fish_pie	Torta de peixe	nao_oficial	Fish Pie	culinaria/pratos
+botw_food_fish_skewer	Espetinho de peixe	nao_oficial	Fish Skewer	culinaria/pratos
+botw_food_fragrant_mushroom_saute	Cogumelos salteados aromáticos	nao_oficial	Fragrant Mushroom Sauté	culinaria/pratos
+botw_food_fried_bananas	Bananas fritas	nao_oficial	Fried Bananas	culinaria/pratos
+botw_food_fried_egg_and_rice	Ovo frito com arroz	nao_oficial	Fried Egg and Rice	culinaria/pratos
+botw_food_fried_wild_greens	Fritada de ervas	nao_oficial	Fried Wild Greens	culinaria/pratos
+botw_food_frozen_bass	Robalo congelado	nao_oficial	Frozen Bass	culinaria/congelados
+botw_food_frozen_bird_drumstick	Coxa congelada	nao_oficial	Frozen Bird Drumstick	culinaria/congelados
+botw_food_frozen_bird_thigh	Sobrecoxa congelada	nao_oficial	Frozen Bird Thigh	culinaria/congelados
+botw_food_frozen_carp	Carpa congelada	nao_oficial	Frozen Carp	culinaria/congelados
+botw_food_frozen_crab	Caranguejo congelado	nao_oficial	Frozen Crab	culinaria/congelados
+botw_food_frozen_hearty_bass	Robalo nutritivo congelado	nao_oficial	Frozen Hearty Bass	culinaria/congelados
+botw_food_frozen_hearty_salmon	Salmão nutritivo congelado	nao_oficial	Frozen Hearty Salmon	culinaria/congelados
+botw_food_frozen_porgy	Pargo congelado	nao_oficial	Frozen Porgy	culinaria/congelados
+botw_food_frozen_river_snail	Caramujo discreto congelado	nao_oficial	Frozen River Snail	culinaria/congelados
+botw_food_frozen_trout	Truta congelada	nao_oficial	Frozen Trout	culinaria/congelados
+botw_food_frozen_whole_bird	Ave inteira congelada	nao_oficial	Frozen Whole Bird	culinaria/congelados
+botw_food_fruit_and_mushroom_mix	Mix de frutas e cogumelos	nao_oficial	Fruit and Mushroom Mix	culinaria/pratos
+botw_food_fruit_pie	Torta de frutas	nao_oficial	Fruit Pie	culinaria/pratos
+botw_food_fruitcake	Bolo de frutas	nao_oficial	Fruitcake	culinaria/pratos
+botw_food_glazed_meat	Carne glaceada	nao_oficial	Glazed Meat	culinaria/pratos
+botw_food_glazed_mushrooms	Cogumelos glaceados	nao_oficial	Glazed Mushrooms	culinaria/pratos
+botw_food_glazed_seafood	Frutos do mar glaceados	nao_oficial	Glazed Seafood	culinaria/pratos
+botw_food_glazed_veggies	Legumes glaceados	nao_oficial	Glazed Veggies	culinaria/pratos
+botw_food_gourmet_meat_and_rice_bowl	Tigela de arroz com carne de primeira	nao_oficial	Gourmet Meat and Rice Bowl	culinaria/pratos
+botw_food_gourmet_meat_and_seafood_fry	Fritada de carne de primeira e frutos do mar	nao_oficial	Gourmet Meat and Seafood Fry	culinaria/pratos
+botw_food_gourmet_meat_curry	Curry de carne de primeira	nao_oficial	Gourmet Meat Curry	culinaria/pratos
+botw_food_gourmet_meat_stew	Ensopado de carne de primeira	nao_oficial	Gourmet Meat Stew	culinaria/pratos
+botw_food_gourmet_poultry_curry	Curry de ave inteira	nao_oficial	Gourmet Poultry Curry	culinaria/pratos
+botw_food_gourmet_poultry_pilaf	Pilaf de ave inteira	nao_oficial	Gourmet Poultry Pilaf	culinaria/pratos
+botw_food_gourmet_spiced_meat_skewer	Espetinho temperado de carne de primeira	nao_oficial	Gourmet Spiced Meat Skewer	culinaria/pratos
+botw_food_herb_saute	Ervas salteadas	nao_oficial	Herb Sauté	culinaria/pratos
+botw_food_honey_candy	Bala de mel	nao_oficial	Honey Candy	culinaria/pratos
+botw_food_honey_crepe	Crepe de mel	nao_oficial	Honey Crepe	culinaria/pratos
+botw_food_honeyed_apple	Maçã com mel	nao_oficial	Honeyed Apple	culinaria/pratos
+botw_food_honeyed_fruits	Frutas com mel	nao_oficial	Honeyed Fruits	culinaria/pratos
+botw_food_hot_buttered_apple	Maçã quente na manteiga	nao_oficial	Hot Buttered Apple	culinaria/pratos
+botw_food_icy_gourmet_meat	Carne de primeira congelada	nao_oficial	Icy Gourmet Meat	culinaria/congelados
+botw_food_icy_hearty_blueshell_snail	Caramujo nutritivo congelado	nao_oficial	Icy Hearty Blueshell Snail	culinaria/congelados
+botw_food_icy_meat	Carne de terceira congelada	nao_oficial	Icy Meat	culinaria/congelados
+botw_food_icy_prime_meat	Carne de segunda congelada	nao_oficial	Icy Prime Meat	culinaria/congelados
+botw_food_meat_and_mushroom_skewer	Espetinho de carne e cogumelo	nao_oficial	Meat and Mushroom Skewer	culinaria/pratos
+botw_food_meat_and_rice_bowl	Tigela de arroz com carne	nao_oficial	Meat and Rice Bowl	culinaria/pratos
+botw_food_meat_and_seafood_fry	Fritada de carne e frutos do mar	nao_oficial	Meat and Seafood Fry	culinaria/pratos
+botw_food_meat_curry	Curry de carne	nao_oficial	Meat Curry	culinaria/pratos
+botw_food_meat_pie	Torta de carne	nao_oficial	Meat Pie	culinaria/pratos
+botw_food_meat_skewer	Espetinho de carne	nao_oficial	Meat Skewer	culinaria/pratos
+botw_food_meat_stew	Ensopado de carne	nao_oficial	Meat Stew	culinaria/pratos
+botw_food_meat_stuffed_pumpkin	Abóbora recheada com carne	nao_oficial	Meat-Stuffed Pumpkin	culinaria/pratos
+botw_food_meaty_rice_balls	Bolinhos de arroz com carne	nao_oficial	Meaty Rice Balls	culinaria/pratos
+botw_food_monster_cake	Bolo de monstro	nao_oficial	Monster Cake	culinaria/pratos
+botw_food_monster_curry	Curry de monstro	nao_oficial	Monster Curry	culinaria/pratos
+botw_food_monster_rice_balls	Bolinhos de arroz de monstro	nao_oficial	Monster Rice Balls	culinaria/pratos
+botw_food_monster_soup	Sopa de monstro	nao_oficial	Monster Soup	culinaria/pratos
+botw_food_monster_stew	Ensopado de monstro	nao_oficial	Monster Stew	culinaria/pratos
+botw_food_mushroom_omelet	Omelete de cogumelos	nao_oficial	Mushroom Omelet	culinaria/pratos
+botw_food_mushroom_rice_balls	Bolinhos de arroz com cogumelos	nao_oficial	Mushroom Rice Balls	culinaria/pratos
+botw_food_mushroom_risotto	Risoto de cogumelos	nao_oficial	Mushroom Risotto	culinaria/pratos
+botw_food_mushroom_skewer	Espetinho de cogumelos	nao_oficial	Mushroom Skewer	culinaria/pratos
+botw_food_nutcake	Bolo de nozes	nao_oficial	Nutcake	culinaria/pratos
+botw_food_omelet	Omelete	nao_oficial	Omelet	culinaria/pratos
+botw_food_pepper_seafood	Frutos do mar apimentados	nao_oficial	Pepper Seafood	culinaria/pratos
+botw_food_pepper_steak	Bife apimentado	nao_oficial	Pepper Steak	culinaria/pratos
+botw_food_plain_crepe	Crepe simples	nao_oficial	Plain Crepe	culinaria/pratos
+botw_food_porgy_meuniere	Pargo à meunière	nao_oficial	Porgy Meunière	culinaria/pratos
+botw_food_poultry_curry	Curry de coxa	nao_oficial	Poultry Curry	culinaria/pratos
+botw_food_poultry_pilaf	Pilaf de coxa	nao_oficial	Poultry Pilaf	culinaria/pratos
+botw_food_prime_meat_and_rice_bowl	Tigela de arroz com carne de segunda	nao_oficial	Prime Meat and Rice Bowl	culinaria/pratos
+botw_food_prime_meat_and_seafood_fry	Fritada de carne de segunda e frutos do mar	nao_oficial	Prime Meat and Seafood Fry	culinaria/pratos
+botw_food_prime_meat_curry	Curry de carne de segunda	nao_oficial	Prime Meat Curry	culinaria/pratos
+botw_food_prime_meat_stew	Ensopado de carne de segunda	nao_oficial	Prime Meat Stew	culinaria/pratos
+botw_food_prime_poultry_curry	Curry de sobrecoxa	nao_oficial	Prime Poultry Curry	culinaria/pratos
+botw_food_prime_poultry_pilaf	Pilaf de sobrecoxa	nao_oficial	Prime Poultry Pilaf	culinaria/pratos
+botw_food_prime_spiced_meat_skewer	Espetinho temperado de carne de segunda	nao_oficial	Prime Spiced Meat Skewer	culinaria/pratos
+botw_food_pumpkin_pie	Torta de abóbora	nao_oficial	Pumpkin Pie	culinaria/pratos
+botw_food_pumpkin_stew	Ensopado de abóbora	nao_oficial	Pumpkin Stew	culinaria/pratos
+botw_food_roasted_acorn	Bolota tostada	nao_oficial	Roasted Acorn	culinaria/assados_e_tostados
+botw_food_roasted_armoranth	Amaranto blindado tostado	nao_oficial	Roasted Armoranth	culinaria/assados_e_tostados
+botw_food_roasted_bass	Robalo assado	nao_oficial	Roasted Bass	culinaria/assados_e_tostados
+botw_food_roasted_big_radish	Rabanete nutritivo grande assado	nao_oficial	Roasted Big Radish	culinaria/assados_e_tostados
+botw_food_roasted_bird_drumstick	Coxa assada	nao_oficial	Roasted Bird Drumstick	culinaria/assados_e_tostados
+botw_food_roasted_bird_thigh	Sobrecoxa assada	nao_oficial	Roasted Bird Thigh	culinaria/assados_e_tostados
+botw_food_roasted_carp	Carpa assada	nao_oficial	Roasted Carp	culinaria/assados_e_tostados
+botw_food_roasted_endura_carrot	Cenoura tenaz assada	nao_oficial	Roasted Endura Carrot	culinaria/assados_e_tostados
+botw_food_roasted_hearty_bass	Robalo nutritivo assado	nao_oficial	Roasted Hearty Bass	culinaria/assados_e_tostados
+botw_food_roasted_hearty_durian	Durião nutritivo assado	nao_oficial	Roasted Hearty Durian	culinaria/assados_e_tostados
+botw_food_roasted_hearty_salmon	Salmão nutritivo assado	nao_oficial	Roasted Hearty Salmon	culinaria/assados_e_tostados
+botw_food_roasted_hydromelon	Melancia oásica assada	nao_oficial	Roasted Hydromelon	culinaria/assados_e_tostados
+botw_food_roasted_lotus_seeds	Grãos de lótus-fugaz tostados	nao_oficial	Roasted Lotus Seeds	culinaria/assados_e_tostados
+botw_food_roasted_mighty_bananas	Bananas valentes assadas	nao_oficial	Roasted Mighty Bananas	culinaria/assados_e_tostados
+botw_food_roasted_mighty_thistle	Protechofra tostada	nao_oficial	Roasted Mighty Thistle	culinaria/assados_e_tostados
+botw_food_roasted_porgy	Pargo assado	nao_oficial	Roasted Porgy	culinaria/assados_e_tostados
+botw_food_roasted_radish	Rabanete nutritivo assado	nao_oficial	Roasted Radish	culinaria/assados_e_tostados
+botw_food_roasted_swift_carrot	Cenoura veloz assada	nao_oficial	Roasted Swift Carrot	culinaria/assados_e_tostados
+botw_food_roasted_tree_nut	Noz tostada	nao_oficial	Roasted Tree Nut	culinaria/assados_e_tostados
+botw_food_roasted_trout	Truta assada	nao_oficial	Roasted Trout	culinaria/assados_e_tostados
+botw_food_roasted_voltfruit	Fruta isolante assada	nao_oficial	Roasted Voltfruit	culinaria/assados_e_tostados
+botw_food_roasted_whole_bird	Ave inteira assada	nao_oficial	Roasted Whole Bird	culinaria/assados_e_tostados
+botw_food_roasted_wildberry	Framboesa assada	nao_oficial	Roasted Wildberry	culinaria/assados_e_tostados
+botw_food_rock_hard_food	Comida dura como pedra	nao_oficial	Rock-Hard Food	culinaria/pratos
+botw_food_salmon_meuniere	Salmão à meunière	nao_oficial	Salmon Meunière	culinaria/pratos
+botw_food_salmon_risotto	Risoto de salmão	nao_oficial	Salmon Risotto	culinaria/pratos
+botw_food_salt_grilled_crab	Caranguejo grelhado no sal	nao_oficial	Salt-Grilled Crab	culinaria/pratos
+botw_food_salt_grilled_fish	Peixe grelhado no sal	nao_oficial	Salt-Grilled Fish	culinaria/pratos
+botw_food_salt_grilled_gourmet_meat	Carne de primeira grelhada no sal	nao_oficial	Salt-Grilled Gourmet Meat	culinaria/pratos
+botw_food_salt_grilled_greens	Ervas grelhadas no sal	nao_oficial	Salt-Grilled Greens	culinaria/pratos
+botw_food_salt_grilled_meat	Carne grelhada no sal	nao_oficial	Salt-Grilled Meat	culinaria/pratos
+botw_food_salt_grilled_mushrooms	Cogumelos grelhados no sal	nao_oficial	Salt-Grilled Mushrooms	culinaria/pratos
+botw_food_salt_grilled_prime_meat	Carne de segunda grelhada no sal	nao_oficial	Salt-Grilled Prime Meat	culinaria/pratos
+botw_food_sauteed_nuts	Nozes salteadas	nao_oficial	Sautéed Nuts	culinaria/pratos
+botw_food_sauteed_peppers	Pimentas salteadas	nao_oficial	Sautéed Peppers	culinaria/pratos
+botw_food_seafood_curry	Curry de frutos do mar	nao_oficial	Seafood Curry	culinaria/pratos
+botw_food_seafood_fried_rice	Arroz frito com frutos do mar	nao_oficial	Seafood Fried Rice	culinaria/pratos
+botw_food_seafood_meuniere	Frutos do mar à meunière	nao_oficial	Seafood Meunière	culinaria/pratos
+botw_food_seafood_paella	Paella de frutos do mar	nao_oficial	Seafood Paella	culinaria/pratos
+botw_food_seafood_rice_balls	Bolinhos de arroz com frutos do mar	nao_oficial	Seafood Rice Balls	culinaria/pratos
+botw_food_seafood_skewer	Espetinho de frutos do mar	nao_oficial	Seafood Skewer	culinaria/pratos
+botw_food_seared_gourmet_steak	Bife de carne de primeira selado	nao_oficial	Seared Gourmet Steak	culinaria/assados_e_tostados
+botw_food_seared_prime_steak	Bife de carne de segunda selado	nao_oficial	Seared Prime Steak	culinaria/assados_e_tostados
+botw_food_seared_steak	Bife selado	nao_oficial	Seared Steak	culinaria/assados_e_tostados
+botw_food_simmered_fruit	Compota de frutas	nao_oficial	Simmered Fruit	culinaria/pratos
+botw_food_sneaky_river_escargot	Escargô discreto	nao_oficial	Sneaky River Escargot	culinaria/assados_e_tostados
+botw_food_spiced_meat_skewer	Espetinho temperado de carne	nao_oficial	Spiced Meat Skewer	culinaria/pratos
+botw_food_steamed_fish	Peixe no vapor	nao_oficial	Steamed Fish	culinaria/pratos
+botw_food_steamed_fruit	Frutas no vapor	nao_oficial	Steamed Fruit	culinaria/pratos
+botw_food_steamed_meat	Carne no vapor	nao_oficial	Steamed Meat	culinaria/pratos
+botw_food_steamed_mushrooms	Cogumelos no vapor	nao_oficial	Steamed Mushrooms	culinaria/pratos
+botw_food_toasted_big_hearty_truffle	Trufona nutritiva tostada	nao_oficial	Toasted Big Hearty Truffle	culinaria/assados_e_tostados
+botw_food_toasted_hearty_truffle	Trufa nutritiva tostada	nao_oficial	Toasted Hearty Truffle	culinaria/assados_e_tostados
+botw_food_toasty_chillshroom	Glacimelo tostado	nao_oficial	Toasty Chillshroom	culinaria/assados_e_tostados
+botw_food_toasty_endura_shroom	Cogumelo tenaz tostado	nao_oficial	Toasty Endura Shroom	culinaria/assados_e_tostados
+botw_food_toasty_hylian_shroom	Cogumelo hyliano tostado	nao_oficial	Toasty Hylian Shroom	culinaria/assados_e_tostados
+botw_food_toasty_ironshroom	Blindamelo tostado	nao_oficial	Toasty Ironshroom	culinaria/assados_e_tostados
+botw_food_toasty_razorshroom	Ferromelo tostado	nao_oficial	Toasty Razorshroom	culinaria/assados_e_tostados
+botw_food_toasty_rushroom	Agilimelo tostado	nao_oficial	Toasty Rushroom	culinaria/assados_e_tostados
+botw_food_toasty_silent_shroom	Silencimelo tostado	nao_oficial	Toasty Silent Shroom	culinaria/assados_e_tostados
+botw_food_toasty_stamella_shroom	Energimelo tostado	nao_oficial	Toasty Stamella Shroom	culinaria/assados_e_tostados
+botw_food_toasty_sunshroom	Flamelo tostado	nao_oficial	Toasty Sunshroom	culinaria/assados_e_tostados
+botw_food_toasty_zapshroom	Aterramelo tostado	nao_oficial	Toasty Zapshroom	culinaria/assados_e_tostados
+botw_food_vegetable_curry	Curry de legumes	nao_oficial	Vegetable Curry	culinaria/pratos
+botw_food_vegetable_omelet	Omelete de legumes	nao_oficial	Vegetable Omelet	culinaria/pratos
+botw_food_vegetable_risotto	Risoto de legumes	nao_oficial	Vegetable Risotto	culinaria/pratos
+botw_food_veggie_cream_soup	Sopa cremosa de legumes	nao_oficial	Veggie Cream Soup	culinaria/pratos
+botw_food_veggie_rice_balls	Bolinhos de arroz com legumes	nao_oficial	Veggie Rice Balls	culinaria/pratos
+botw_food_warm_milk	Leite quente	nao_oficial	Warm Milk	culinaria/pratos
+botw_food_wheat_bread	Pão de trigo	nao_oficial	Wheat Bread	culinaria/pratos
+botw_food_wildberry_crepe	Crepe de framboesa	nao_oficial	Wildberry Crepe	culinaria/pratos
+botw_shield_ancient_shield	Escudo ancestral	oficial_secundaria	Ancient Shield	escudos/escudos
+botw_shield_boko_shield	Escudo Kobo	oficial_secundaria	Boko Shield	escudos/escudos
+botw_shield_daybreaker	Resplendor da aurora	oficial_secundaria	Daybreaker	escudos/escudos
+botw_shield_dragonbone_boko_shield	Escudo Kobo dracônico	oficial_secundaria	Dragonbone Boko Shield	escudos/escudos
+botw_shield_emblazoned_shield	Escudo timbrado	oficial_secundaria	Emblazoned Shield	escudos/escudos
+botw_shield_fishermans_shield	Escudo do pescador	oficial_secundaria	Fisherman's Shield	escudos/escudos
+botw_shield_forest_dwellers_shield	Escudo da Floresta	oficial_secundaria	Forest Dweller's Shield	escudos/escudos
+botw_shield_gerudo_shield	Escudo Gerudo	oficial_secundaria	Gerudo Shield	escudos/escudos
+botw_shield_guardian_shield	Escudo guardião	oficial_secundaria	Guardian Shield	escudos/escudos
+botw_shield_guardian_shield_plus	Escudo guardião 2.0	oficial_secundaria	Guardian Shield+	escudos/escudos
+botw_shield_guardian_shield_plus_plus	Escudo guardião 3.0	oficial_secundaria	Guardian Shield++	escudos/escudos
+botw_shield_heros_shield	Escudo do herói	nao_oficial	Hero's Shield	escudos/escudos
+botw_shield_hunters_shield	Escudo do caçador	oficial_secundaria	Hunter's Shield	escudos/escudos
+botw_shield_hylian_shield	Escudo hyliano	oficial_secundaria	Hylian Shield	escudos/escudos
+botw_shield_kite_shield	Escudo-pipa	oficial_secundaria	Kite Shield	escudos/escudos
+botw_shield_knights_shield	Escudo do cavaleiro	oficial_secundaria	Knight's Shield	escudos/escudos
+botw_shield_lizal_shield	Escudo Lagal	oficial_secundaria	Lizal Shield	escudos/escudos
+botw_shield_lynel_shield	Defesa centaleônica	oficial_secundaria	Lynel Shield	escudos/escudos
+botw_shield_mighty_lynel_shield	Defesa centaleônica forte	oficial_secundaria	Mighty Lynel Shield	escudos/escudos
+botw_shield_pot_lid	Tampa de panela	oficial_secundaria	Pot Lid	escudos/escudos
+botw_shield_radiant_shield	Escudo luminescente	oficial_secundaria	Radiant Shield	escudos/escudos
+botw_shield_reinforced_lizal_shield	Escudo Lagal reforçado	oficial_secundaria	Reinforced Lizal Shield	escudos/escudos
+botw_shield_royal_guards_shield	Escudo da guarda real	oficial_secundaria	Royal Guard's Shield	escudos/escudos
+botw_shield_royal_shield	Escudo real	oficial_secundaria	Royal Shield	escudos/escudos
+botw_shield_rusty_shield	Escudo enferrujado	oficial_secundaria	Rusty Shield	escudos/escudos
+botw_shield_savage_lynel_shield	Defesa centaleônica Feroz	oficial_secundaria	Savage Lynel Shield	escudos/escudos
+botw_shield_shield_of_the_minds_eye	Escudo da visão anímica	oficial_secundaria	Shield of the Mind's Eye	escudos/escudos
+botw_shield_silver_shield	Escudo prateado	oficial_secundaria	Silver Shield	escudos/escudos
+botw_shield_soldiers_shield	Escudo do soldado	oficial_secundaria	Soldier's Shield	escudos/escudos
+botw_shield_spiked_boko_shield	Escudo Kobo pontudo	oficial_secundaria	Spiked Boko Shield	escudos/escudos
+botw_shield_steel_lizal_shield	Escudo Lagal de aço	oficial_secundaria	Steel Lizal Shield	escudos/escudos
+botw_shield_travelers_shield	Escudo do viajante	oficial_secundaria	Traveler's Shield	escudos/escudos
+botw_shield_wooden_shield	Escudo de madeira	oficial_secundaria	Wooden Shield	escudos/escudos
+botw_arrow_ancient_arrow	Flecha ancestral	oficial_secundaria	Ancient Arrow	flechas/flechas
+botw_arrow_arrow	Flecha	oficial_secundaria	Arrow	flechas/flechas
+botw_arrow_bomb_arrow	Flecha explosiva	oficial_secundaria	Bomb Arrow	flechas/flechas
+botw_arrow_fire_arrow	Flecha incendiária	oficial_secundaria	Fire Arrow	flechas/flechas
+botw_arrow_ice_arrow	Flecha congelante	oficial_secundaria	Ice Arrow	flechas/flechas
+botw_arrow_light_arrow	Flecha de luz	nao_oficial	Light Arrow	flechas/flechas
+botw_arrow_shock_arrow	Flecha eletrizante	oficial_secundaria	Shock Arrow	flechas/flechas
+botw_keyitem_ancient_bridle	Rédea ancestral	nao_oficial	Ancient Bridle	itens_chave/equipamento_de_montaria
+botw_keyitem_ancient_saddle	Sela ancestral	nao_oficial	Ancient Saddle	itens_chave/equipamento_de_montaria
+botw_keyitem_classified_envelope	Envelope confidencial	nao_oficial	Classified Envelope	itens_chave/itens_chave
+botw_keyitem_extravagant_bridle	Rédea extravagante	nao_oficial	Extravagant Bridle	itens_chave/equipamento_de_montaria
+botw_keyitem_extravagant_saddle	Sela extravagante	nao_oficial	Extravagant Saddle	itens_chave/equipamento_de_montaria
+botw_keyitem_hestus_gift	Presente de Ruri	nao_oficial	Hestu's Gift	itens_chave/itens_chave
+botw_keyitem_hestus_maracas	Maracas de Ruri	nao_oficial	Hestu's Maracas	itens_chave/itens_chave
+botw_keyitem_knights_bridle	Rédea do cavaleiro	nao_oficial	Knight's Bridle	itens_chave/equipamento_de_montaria
+botw_keyitem_knights_saddle	Sela do cavaleiro	nao_oficial	Knight's Saddle	itens_chave/equipamento_de_montaria
+botw_keyitem_korok_seed	Semente Korok	nao_oficial	Korok Seed	itens_chave/itens_chave
+botw_keyitem_medal_of_honor_hinox	Medalha de honra: Rinox	nao_oficial	Medal of Honor: Hinox	itens_chave/itens_chave
+botw_keyitem_medal_of_honor_molduga	Medalha de honra: Molduga	nao_oficial	Medal of Honor: Molduga	itens_chave/itens_chave
+botw_keyitem_medal_of_honor_talus	Medalha de honra: Tálus	nao_oficial	Medal of Honor: Talus	itens_chave/itens_chave
+botw_keyitem_medohs_emblem	Emblema de Medoh	nao_oficial	Medoh's Emblem	itens_chave/itens_chave
+botw_keyitem_monster_bridle	Rédea de monstro	nao_oficial	Monster Bridle	itens_chave/equipamento_de_montaria
+botw_keyitem_monster_saddle	Sela de monstro	nao_oficial	Monster Saddle	itens_chave/equipamento_de_montaria
+botw_keyitem_naboriss_emblem	Emblema de Naboris	nao_oficial	Naboris's Emblem	itens_chave/itens_chave
+botw_keyitem_paraglider	Planador	oficial_secundaria	Paraglider	itens_chave/itens_chave
+botw_keyitem_picture_of_the_champions	Foto dos Campeões	nao_oficial	Picture of the Champions	itens_chave/itens_chave
+botw_keyitem_royal_bridle	Rédea real	nao_oficial	Royal Bridle	itens_chave/equipamento_de_montaria
+botw_keyitem_royal_saddle	Sela real	nao_oficial	Royal Saddle	itens_chave/equipamento_de_montaria
+botw_keyitem_rudanias_emblem	Emblema de Rudania	nao_oficial	Rudania's Emblem	itens_chave/itens_chave
+botw_keyitem_rutas_emblem	Emblema de Ruta	nao_oficial	Ruta's Emblem	itens_chave/itens_chave
+botw_keyitem_sheikah_slate	Tabuleta Sheikah	oficial_secundaria	Sheikah Slate	itens_chave/itens_chave
+botw_keyitem_spirit_orb	Orbe espiritual	nao_oficial	Spirit Orb	itens_chave/itens_chave
+botw_keyitem_travel_medallion	Teletransportador	oficial_secundaria	Travel Medallion	itens_chave/itens_chave
+botw_keyitem_travelers_bridle	Rédea do viajante	nao_oficial	Traveler's Bridle	itens_chave/equipamento_de_montaria
+botw_keyitem_travelers_saddle	Sela do viajante	nao_oficial	Traveler's Saddle	itens_chave/equipamento_de_montaria
+botw_material_acorn	Bolota	oficial_secundaria	Acorn	materiais/frutas
+botw_material_amber	Âmbar	oficial_secundaria	Amber	materiais/minerais
+botw_material_ancient_core	Núcleo ancestral	oficial_secundaria	Ancient Core	materiais/materiais_ancestrais
+botw_material_ancient_gear	Engrenagem ancestral	oficial_secundaria	Ancient Gear	materiais/materiais_ancestrais
+botw_material_ancient_screw	Parafuso ancestral	oficial_secundaria	Ancient Screw	materiais/materiais_ancestrais
+botw_material_ancient_shaft	Eixo ancestral	oficial_secundaria	Ancient Shaft	materiais/materiais_ancestrais
+botw_material_ancient_spring	Mola ancestral	oficial_secundaria	Ancient Spring	materiais/materiais_ancestrais
+botw_material_apple	Maçã	oficial_secundaria	Apple	materiais/frutas
+botw_material_armoranth	Amaranto blindado	nao_oficial	Armoranth	materiais/ervas_e_flores
+botw_material_big_hearty_radish	Rabanete nutritivo grande	oficial_secundaria	Big Hearty Radish	materiais/vegetais
+botw_material_big_hearty_truffle	Trufona nutritiva	oficial_secundaria	Big Hearty Truffle	materiais/cogumelos
+botw_material_bird_egg	Ovo	oficial_secundaria	Bird Egg	materiais/ingredientes
+botw_material_blue_nightshade	Beladona azul	oficial_secundaria	Blue Nightshade	materiais/ervas_e_flores
+botw_material_bokoblin_fang	Presa de Koboblin	oficial_secundaria	Bokoblin Fang	materiais/partes_de_monstros
+botw_material_bokoblin_guts	Vísceras de Koboblin	oficial_secundaria	Bokoblin Guts	materiais/partes_de_monstros
+botw_material_bokoblin_horn	Chifre de Koboblin	oficial_secundaria	Bokoblin Horn	materiais/partes_de_monstros
+botw_material_cane_sugar	Cana-de-açúcar	oficial_secundaria	Cane Sugar	materiais/ingredientes
+botw_material_chickaloo_tree_nut	Noz	oficial_secundaria	Chickaloo Tree Nut	materiais/frutas
+botw_material_chillshroom	Glacimelo	oficial_secundaria	Chillshroom	materiais/cogumelos
+botw_material_chuchu_jelly	Geleca de Chulchul	oficial_secundaria	Chuchu Jelly	materiais/partes_de_monstros
+botw_material_cool_safflina	Erva fogueira	oficial_secundaria	Cool Safflina	materiais/ervas_e_flores
+botw_material_courser_bee_honey	Mel de abelha	oficial_secundaria	Courser Bee Honey	materiais/ingredientes
+botw_material_diamond	Diamante	oficial_secundaria	Diamond	materiais/minerais
+botw_material_dinraals_claw	Garra de Dinraal	oficial_secundaria	Dinraal's Claw	materiais/partes_de_dragao
+botw_material_dinraals_scale	Escama de Dinraal	oficial_secundaria	Dinraal's Scale	materiais/partes_de_dragao
+botw_material_electric_keese_wing	Asa de Morci elétrico	oficial_secundaria	Electric Keese Wing	materiais/partes_de_monstros
+botw_material_electric_safflina	Erva relampagueira	oficial_secundaria	Electric Safflina	materiais/ervas_e_flores
+botw_material_endura_carrot	Cenoura tenaz	oficial_secundaria	Endura Carrot	materiais/vegetais
+botw_material_endura_shroom	Cogumelo tenaz	oficial_secundaria	Endura Shroom	materiais/cogumelos
+botw_material_faroshs_claw	Garra de Farosh	oficial_secundaria	Farosh's Claw	materiais/partes_de_dragao
+botw_material_faroshs_scale	Escama de Farosh	oficial_secundaria	Farosh's Scale	materiais/partes_de_dragao
+botw_material_fire_keese_wing	Asa de Morci ígneo	oficial_secundaria	Fire Keese Wing	materiais/partes_de_monstros
+botw_material_fleet_lotus_seeds	Grãos de lótus-fugaz	oficial_secundaria	Fleet-Lotus Seeds	materiais/frutas
+botw_material_flint	Sílex	oficial_secundaria	Flint	materiais/diversos
+botw_material_fortified_pumpkin	Abóbora robusta	oficial_secundaria	Fortified Pumpkin	materiais/vegetais
+botw_material_fresh_milk	Leite fresco	oficial_secundaria	Fresh Milk	materiais/ingredientes
+botw_material_giant_ancient_core	Núcleo ancestral gigante	oficial_secundaria	Giant Ancient Core	materiais/materiais_ancestrais
+botw_material_goat_butter	Manteiga de cabra	oficial_secundaria	Goat Butter	materiais/ingredientes
+botw_material_goron_spice	Tempero Goron	oficial_secundaria	Goron Spice	materiais/ingredientes
+botw_material_hearty_durian	Durião nutritivo	oficial_secundaria	Hearty Durian	materiais/frutas
+botw_material_hearty_radish	Rabanete nutritivo	oficial_secundaria	Hearty Radish	materiais/vegetais
+botw_material_hearty_truffle	Trufa nutritiva	oficial_secundaria	Hearty Truffle	materiais/cogumelos
+botw_material_hinox_guts	Vísceras de Rinox	oficial_secundaria	Hinox Guts	materiais/partes_de_monstros
+botw_material_hinox_toenail	Unha de Rinox	oficial_secundaria	Hinox Toenail	materiais/partes_de_monstros
+botw_material_hinox_tooth	Dente de Rinox	oficial_secundaria	Hinox Tooth	materiais/partes_de_monstros
+botw_material_hydromelon	Melancia oásica	oficial_secundaria	Hydromelon	materiais/frutas
+botw_material_hylian_rice	Arroz hyliano	oficial_secundaria	Hylian Rice	materiais/ingredientes
+botw_material_hylian_shroom	Cogumelo hyliano	oficial_secundaria	Hylian Shroom	materiais/cogumelos
+botw_material_hyrule_herb	Capim hyruliano	oficial_secundaria	Hyrule Herb	materiais/ervas_e_flores
+botw_material_ice_keese_wing	Asa de Morci glacial	oficial_secundaria	Ice Keese Wing	materiais/partes_de_monstros
+botw_material_icy_lizalfos_tail	Cauda de Lagalfos glacial	oficial_secundaria	Icy Lizalfos Tail	materiais/partes_de_monstros
+botw_material_ironshroom	Blindamelo	nao_oficial	Ironshroom	materiais/cogumelos
+botw_material_keese_eyeball	Olho de Morci	oficial_secundaria	Keese Eyeball	materiais/partes_de_monstros
+botw_material_keese_wing	Asa de Morci	oficial_secundaria	Keese Wing	materiais/partes_de_monstros
+botw_material_lizalfos_horn	Chifre de Lagalfos	oficial_secundaria	Lizalfos Horn	materiais/partes_de_monstros
+botw_material_lizalfos_tail	Cauda de Lagalfos	oficial_secundaria	Lizalfos Tail	materiais/partes_de_monstros
+botw_material_lizalfos_talon	Garra de Lagalfos	oficial_secundaria	Lizalfos Talon	materiais/partes_de_monstros
+botw_material_luminous_stone	Pedra luminosa	oficial_secundaria	Luminous Stone	materiais/minerais
+botw_material_lynel_guts	Vísceras de Centaleão	oficial_secundaria	Lynel Guts	materiais/partes_de_monstros
+botw_material_lynel_hoof	Casco de Centaleão	oficial_secundaria	Lynel Hoof	materiais/partes_de_monstros
+botw_material_lynel_horn	Chifre de Centaleão	oficial_secundaria	Lynel Horn	materiais/partes_de_monstros
+botw_material_mighty_bananas	Bananas valentes	oficial_secundaria	Mighty Bananas	materiais/frutas
+botw_material_mighty_thistle	Protechofra	oficial_secundaria	Mighty Thistle	materiais/ervas_e_flores
+botw_material_moblin_fang	Presa de Moblin	oficial_secundaria	Moblin Fang	materiais/partes_de_monstros
+botw_material_moblin_guts	Vísceras de Moblin	oficial_secundaria	Moblin Guts	materiais/partes_de_monstros
+botw_material_moblin_horn	Chifre de Moblin	oficial_secundaria	Moblin Horn	materiais/partes_de_monstros
+botw_material_molduga_fin	Barbatana de Molduga	oficial_secundaria	Molduga Fin	materiais/partes_de_monstros
+botw_material_molduga_guts	Vísceras de Molduga	oficial_secundaria	Molduga Guts	materiais/partes_de_monstros
+botw_material_monster_extract	Extrato de monstro	oficial_secundaria	Monster Extract	materiais/ingredientes
+botw_material_naydras_claw	Garra de Naydra	oficial_secundaria	Naydra's Claw	materiais/partes_de_dragao
+botw_material_naydras_scale	Escama de Naydra	oficial_secundaria	Naydra's Scale	materiais/partes_de_dragao
+botw_material_octo_balloon	Balão de Octoroc	oficial_secundaria	Octo Balloon	materiais/partes_de_monstros
+botw_material_octorok_eyeball	Olho de Octoroc	oficial_secundaria	Octorok Eyeball	materiais/partes_de_monstros
+botw_material_octorok_tentacle	Tentáculo de Octoroc	oficial_secundaria	Octorok Tentacle	materiais/partes_de_monstros
+botw_material_opal	Opala	oficial_secundaria	Opal	materiais/minerais
+botw_material_palm_fruit	Coco	oficial_secundaria	Palm Fruit	materiais/frutas
+botw_material_raw_bird_drumstick	Coxa	oficial_secundaria	Raw Bird Drumstick	materiais/carnes
+botw_material_raw_bird_thigh	Sobrecoxa	oficial_secundaria	Raw Bird Thigh	materiais/carnes
+botw_material_raw_gourmet_meat	Carne de primeira	oficial_secundaria	Raw Gourmet Meat	materiais/carnes
+botw_material_raw_meat	Carne de terceira	oficial_secundaria	Raw Meat	materiais/carnes
+botw_material_raw_prime_meat	Carne de segunda	oficial_secundaria	Raw Prime Meat	materiais/carnes
+botw_material_raw_whole_bird	Ave inteira	oficial_secundaria	Raw Whole Bird	materiais/carnes
+botw_material_razorshroom	Ferromelo	oficial_secundaria	Razorshroom	materiais/cogumelos
+botw_material_red_chuchu_jelly	Geleca ígnea	oficial_secundaria	Red Chuchu Jelly	materiais/partes_de_monstros
+botw_material_red_lizalfos_tail	Cauda de Lagalfos ígneo	oficial_secundaria	Red Lizalfos Tail	materiais/partes_de_monstros
+botw_material_rock_salt	Halita	oficial_secundaria	Rock Salt	materiais/ingredientes
+botw_material_ruby	Rubi	oficial_secundaria	Ruby	materiais/minerais
+botw_material_rushroom	Agilimelo	oficial_secundaria	Rushroom	materiais/cogumelos
+botw_material_sapphire	Safira	oficial_secundaria	Sapphire	materiais/minerais
+botw_material_shard_of_dinraals_fang	Lasca da presa de Dinraal	oficial_secundaria	Shard of Dinraal's Fang	materiais/partes_de_dragao
+botw_material_shard_of_dinraals_horn	Lasca do chifre de Dinraal	oficial_secundaria	Shard of Dinraal's Horn	materiais/partes_de_dragao
+botw_material_shard_of_faroshs_fang	Lasca da presa de Farosh	oficial_secundaria	Shard of Farosh's Fang	materiais/partes_de_dragao
+botw_material_shard_of_faroshs_horn	Lasca do chifre de Farosh	oficial_secundaria	Shard of Farosh's Horn	materiais/partes_de_dragao
+botw_material_shard_of_naydras_fang	Lasca da presa de Naydra	oficial_secundaria	Shard of Naydra's Fang	materiais/partes_de_dragao
+botw_material_shard_of_naydras_horn	Lasca do chifre de Naydra	oficial_secundaria	Shard of Naydra's Horn	materiais/partes_de_dragao
+botw_material_silent_princess	Princesa plácida	oficial	Silent Princess	materiais/ervas_e_flores
+botw_material_silent_shroom	Silencimelo	oficial_secundaria	Silent Shroom	materiais/cogumelos
+botw_material_spicy_pepper	Pimenta de fogo	oficial_secundaria	Spicy Pepper	materiais/frutas
+botw_material_stamella_shroom	Energimelo	oficial_secundaria	Stamella Shroom	materiais/cogumelos
+botw_material_star_fragment	Fragmento de estrela	oficial_secundaria	Star Fragment	materiais/minerais
+botw_material_sunshroom	Flamelo	oficial_secundaria	Sunshroom	materiais/cogumelos
+botw_material_swift_carrot	Cenoura veloz	oficial_secundaria	Swift Carrot	materiais/vegetais
+botw_material_swift_violet	Violeta veloz	oficial_secundaria	Swift Violet	materiais/ervas_e_flores
+botw_material_tabantha_wheat	Trigo de Tabantha	oficial_secundaria	Tabantha Wheat	materiais/ingredientes
+botw_material_topaz	Topázio	oficial_secundaria	Topaz	materiais/minerais
+botw_material_voltfruit	Fruta isolante	oficial_secundaria	Voltfruit	materiais/frutas
+botw_material_warm_safflina	Erva geleira	oficial_secundaria	Warm Safflina	materiais/ervas_e_flores
+botw_material_white_chuchu_jelly	Geleca gélida	oficial_secundaria	White Chuchu Jelly	materiais/partes_de_monstros
+botw_material_wildberry	Framboesa	oficial_secundaria	Wildberry	materiais/frutas
+botw_material_wood	Madeira	oficial_secundaria	Wood	materiais/diversos
+botw_material_yellow_chuchu_jelly	Geleca elétrica	oficial_secundaria	Yellow Chuchu Jelly	materiais/partes_de_monstros
+botw_material_yellow_lizalfos_tail	Cauda de Lagalfos elétrico	oficial_secundaria	Yellow Lizalfos Tail	materiais/partes_de_monstros
+botw_material_zapshroom	Aterramelo	oficial_secundaria	Zapshroom	materiais/cogumelos
+botw_mechanic_blood_moon	Lua de sangue	oficial	Blood Moon	mecanicas/progressao
+botw_mechanic_climbing	Escalar	nao_oficial	Climbing	mecanicas/exploracao
+botw_mechanic_cooking	Culinária	nao_oficial	Cooking	mecanicas/culinaria
+botw_mechanic_critical_hit	Acerto crítico	oficial	Critical Hit	mecanicas/combate
+botw_mechanic_durability	Durabilidade	nao_oficial	Durability	mecanicas/combate
+botw_mechanic_dye	Tingimento	nao_oficial	Dye	mecanicas/progressao
+botw_mechanic_electricity	Eletricidade	nao_oficial	Electricity	mecanicas/elementos_e_clima
+botw_mechanic_fire	Fogo	nao_oficial	Fire	mecanicas/elementos_e_clima
+botw_mechanic_flurry_rush	Frenesi	oficial	Flurry Rush	mecanicas/combate
+botw_mechanic_great_fairy_fountain	Fonte da Grande Fada	nao_oficial	Great Fairy Fountain	mecanicas/progressao
+botw_mechanic_heros_path_mode	Modo Trilha do Herói	nao_oficial	Hero's Path Mode	mecanicas/exploracao
+botw_mechanic_ice	Gelo e congelamento	nao_oficial	Ice	mecanicas/elementos_e_clima
+botw_mechanic_master_mode	Modo Mestre	nao_oficial	Master Mode	mecanicas/progressao
+botw_mechanic_perfect_dodge	Esquiva perfeita	oficial	Perfect Dodge	mecanicas/combate
+botw_mechanic_perfect_guard	Defesa perfeita	oficial	Perfect Guard	mecanicas/combate
+botw_mechanic_rain	Chuva	nao_oficial	Rain	mecanicas/elementos_e_clima
+botw_mechanic_shield_surfing	Surfar com escudo	oficial	Shield Surfing	mecanicas/exploracao
+botw_mechanic_sneakstrike	Ataque-surpresa	oficial	Sneakstrike	mecanicas/combate
+botw_mechanic_stable	Estábulo	nao_oficial	Stable	mecanicas/exploracao
+botw_mechanic_stamina	Vigor	oficial	Stamina	mecanicas/exploracao
+botw_mechanic_swimming	Nadar	oficial	Swimming	mecanicas/exploracao
+botw_mechanic_temperature	Temperatura	nao_oficial	Temperature	mecanicas/elementos_e_clima
+botw_mechanic_thunderstorm	Tempestade de raios	nao_oficial	Thunderstorm	mecanicas/elementos_e_clima
+botw_mechanic_trial_of_the_sword	Provação da Espada	nao_oficial	Trial of the Sword	mecanicas/progressao
+botw_mechanic_updraft	Corrente ascendente	nao_oficial	Updraft	mecanicas/exploracao
+botw_monster_black_bokoblin	Koboblin preto	nao_oficial	Black Bokoblin	monstros/inimigos_comuns
+botw_monster_black_hinox	Rinox preto	nao_oficial	Black Hinox	monstros/minichefes
+botw_monster_black_lizalfos	Lagalfos preto	nao_oficial	Black Lizalfos	monstros/inimigos_comuns
+botw_monster_black_moblin	Moblin preto	nao_oficial	Black Moblin	monstros/inimigos_comuns
+botw_monster_blizzrobe	Feitiçano da nevasca	nao_oficial	Blizzrobe	monstros/inimigos_comuns
+botw_monster_blue_bokoblin	Koboblin azul	nao_oficial	Blue Bokoblin	monstros/inimigos_comuns
+botw_monster_blue_hinox	Rinox azul	nao_oficial	Blue Hinox	monstros/minichefes
+botw_monster_blue_lizalfos	Lagalfos azul	nao_oficial	Blue Lizalfos	monstros/inimigos_comuns
+botw_monster_blue_maned_lynel	Centaleão de juba azul	nao_oficial	Blue-Maned Lynel	monstros/minichefes
+botw_monster_blue_moblin	Moblin azul	nao_oficial	Blue Moblin	monstros/inimigos_comuns
+botw_monster_bokoblin	Koboblin	oficial_secundaria	Bokoblin	monstros/inimigos_comuns
+botw_monster_calamity_ganon	Ganon, a Calamidade	oficial_secundaria	Calamity Ganon	monstros/chefes
+botw_monster_chuchu	Chulchul	oficial_secundaria	Chuchu	monstros/inimigos_comuns
+botw_monster_cursed_bokoblin	Koboblin amaldiçoado	nao_oficial	Cursed Bokoblin	monstros/inimigos_comuns
+botw_monster_cursed_lizalfos	Lagalfos amaldiçoado	nao_oficial	Cursed Lizalfos	monstros/inimigos_comuns
+botw_monster_cursed_moblin	Moblin amaldiçoado	nao_oficial	Cursed Moblin	monstros/inimigos_comuns
+botw_monster_dark_beast_ganon	Ganon, Besta Sombria	oficial_secundaria	Dark Beast Ganon	monstros/chefes
+botw_monster_decayed_guardian	Guardião deteriorado	oficial_secundaria	Decayed Guardian	monstros/guardioes
+botw_monster_dinraal	Dinraal	oficial	Dinraal	monstros/dragoes
+botw_monster_electric_chuchu	Chulchul elétrico	nao_oficial	Electric Chuchu	monstros/inimigos_comuns
+botw_monster_electric_keese	Morci elétrico	nao_oficial	Electric Keese	monstros/inimigos_comuns
+botw_monster_electric_lizalfos	Lagalfos elétrico	nao_oficial	Electric Lizalfos	monstros/inimigos_comuns
+botw_monster_electric_wizzrobe	Feitiçano elétrico	nao_oficial	Electric Wizzrobe	monstros/inimigos_comuns
+botw_monster_farosh	Farosh	oficial	Farosh	monstros/dragoes
+botw_monster_fire_breath_lizalfos	Lagalfos ígneo	nao_oficial	Fire-Breath Lizalfos	monstros/inimigos_comuns
+botw_monster_fire_chuchu	Chulchul ígneo	nao_oficial	Fire Chuchu	monstros/inimigos_comuns
+botw_monster_fire_keese	Morci ígneo	nao_oficial	Fire Keese	monstros/inimigos_comuns
+botw_monster_fire_wizzrobe	Feitiçano ígneo	nao_oficial	Fire Wizzrobe	monstros/inimigos_comuns
+botw_monster_fireblight_ganon	Ira ígnea de Ganon	oficial_secundaria	Fireblight Ganon	monstros/chefes
+botw_monster_forest_octorok	Octoroc da floresta	nao_oficial	Forest Octorok	monstros/inimigos_comuns
+botw_monster_frost_pebblit	Brita glacial	nao_oficial	Frost Pebblit	monstros/inimigos_comuns
+botw_monster_frost_talus	Tálus glacial	nao_oficial	Frost Talus	monstros/minichefes
+botw_monster_golden_bokoblin_mm	Koboblin dourado	nao_oficial	Golden Bokoblin	monstros/inimigos_comuns
+botw_monster_golden_lizalfos_mm	Lagalfos dourado	nao_oficial	Golden Lizalfos	monstros/inimigos_comuns
+botw_monster_golden_lynel_mm	Centaleão dourado	nao_oficial	Golden Lynel	monstros/minichefes
+botw_monster_golden_moblin_mm	Moblin dourado	nao_oficial	Golden Moblin	monstros/inimigos_comuns
+botw_monster_guardian_scout_i	Guardião batedor	oficial_secundaria	Guardian Scout I	monstros/guardioes
+botw_monster_guardian_scout_ii	Guardião batedor 2.0	oficial_secundaria	Guardian Scout II	monstros/guardioes
+botw_monster_guardian_scout_iii	Guardião batedor 3.0	oficial_secundaria	Guardian Scout III	monstros/guardioes
+botw_monster_guardian_scout_iv	Guardião batedor 4.0	oficial_secundaria	Guardian Scout IV	monstros/guardioes
+botw_monster_guardian_skywatcher	Guardião altívago	oficial_secundaria	Guardian Skywatcher	monstros/guardioes
+botw_monster_guardian_stalker	Guardião persecutório	oficial_secundaria	Guardian Stalker	monstros/guardioes
+botw_monster_guardian_turret	Guardião torreta	oficial_secundaria	Guardian Turret	monstros/guardioes
+botw_monster_hinox	Rinox	oficial_secundaria	Hinox	monstros/minichefes
+botw_monster_ice_breath_lizalfos	Lagalfos glacial	nao_oficial	Ice-Breath Lizalfos	monstros/inimigos_comuns
+botw_monster_ice_chuchu	Chulchul glacial	nao_oficial	Ice Chuchu	monstros/inimigos_comuns
+botw_monster_ice_keese	Morci glacial	nao_oficial	Ice Keese	monstros/inimigos_comuns
+botw_monster_ice_wizzrobe	Feitiçano glacial	nao_oficial	Ice Wizzrobe	monstros/inimigos_comuns
+botw_monster_igneo_pebblit	Brita ígnea	nao_oficial	Igneo Pebblit	monstros/inimigos_comuns
+botw_monster_igneo_talus	Tálus ígneo	nao_oficial	Igneo Talus	monstros/minichefes
+botw_monster_igneo_talus_titan	Tálus ígneo titã	nao_oficial	Igneo Talus Titan	monstros/minichefes
+botw_monster_keese	Morci	oficial_secundaria	Keese	monstros/inimigos_comuns
+botw_monster_lizalfos	Lagalfos	oficial_secundaria	Lizalfos	monstros/inimigos_comuns
+botw_monster_lynel	Centaleão	oficial_secundaria	Lynel	monstros/minichefes
+botw_monster_master_kohga	Mestre Kohga	nao_oficial	Master Kohga	monstros/chefes
+botw_monster_meteo_wizzrobe	Feitiçano meteórico	nao_oficial	Meteo Wizzrobe	monstros/inimigos_comuns
+botw_monster_moblin	Moblin	oficial_secundaria	Moblin	monstros/inimigos_comuns
+botw_monster_molduga	Molduga	nao_oficial	Molduga	monstros/minichefes
+botw_monster_molduking	Molduga-rei	nao_oficial	Molduking	monstros/minichefes
+botw_monster_monk_maz_koshia	Monge Maz Koshia	nao_oficial	Monk Maz Koshia	monstros/chefes
+botw_monster_naydra	Naydra	oficial	Naydra	monstros/dragoes
+botw_monster_rock_octorok	Octoroc rochoso	nao_oficial	Rock Octorok	monstros/inimigos_comuns
+botw_monster_sentry	Sentinela	oficial_secundaria	Sentry	monstros/guardioes
+botw_monster_silver_bokoblin	Koboblin prateado	nao_oficial	Silver Bokoblin	monstros/inimigos_comuns
+botw_monster_silver_lizalfos	Lagalfos prateado	nao_oficial	Silver Lizalfos	monstros/inimigos_comuns
+botw_monster_silver_lynel	Centaleão prateado	nao_oficial	Silver Lynel	monstros/minichefes
+botw_monster_silver_moblin	Moblin prateado	nao_oficial	Silver Moblin	monstros/inimigos_comuns
+botw_monster_sky_octorok_mm	Octoroc celeste	nao_oficial	Sky Octorok	monstros/inimigos_comuns
+botw_monster_snow_octorok	Octoroc da neve	nao_oficial	Snow Octorok	monstros/inimigos_comuns
+botw_monster_stalizalfos	Stallagalfos	oficial_secundaria	Stalizalfos	monstros/inimigos_comuns
+botw_monster_stalkoblin	Stalboblin	oficial_secundaria	Stalkoblin	monstros/inimigos_comuns
+botw_monster_stalmoblin	Stalmoblin	nao_oficial	Stalmoblin	monstros/inimigos_comuns
+botw_monster_stalnox	Stalnox	nao_oficial	Stalnox	monstros/minichefes
+botw_monster_stone_pebblit	Brita rochosa	nao_oficial	Stone Pebblit	monstros/inimigos_comuns
+botw_monster_stone_talus	Tálus rochoso	nao_oficial	Stone Talus	monstros/minichefes
+botw_monster_stone_talus_luminous	Tálus rochoso (luminoso)	nao_oficial	Stone Talus (Luminous)	monstros/minichefes
+botw_monster_stone_talus_rare	Tálus rochoso (raro)	nao_oficial	Stone Talus (Rare)	monstros/minichefes
+botw_monster_thunder_wizzrobe	Feitiçano do trovão	nao_oficial	Thunder Wizzrobe	monstros/inimigos_comuns
+botw_monster_thunderblight_ganon	Ira fulmínea de Ganon	oficial_secundaria	Thunderblight Ganon	monstros/chefes
+botw_monster_treasure_octorok	Octoroc do tesouro	nao_oficial	Treasure Octorok	monstros/inimigos_comuns
+botw_monster_water_octorok	Octoroc aquático	nao_oficial	Water Octorok	monstros/inimigos_comuns
+botw_monster_waterblight_ganon	Ira áquea de Ganon	oficial_secundaria	Waterblight Ganon	monstros/chefes
+botw_monster_white_maned_lynel	Centaleão de juba branca	nao_oficial	White-Maned Lynel	monstros/minichefes
+botw_monster_windblight_ganon	Ira eólica de Ganon	oficial_secundaria	Windblight Ganon	monstros/chefes
+botw_monster_yiga_blademaster	Espadachim Yiga	oficial_secundaria	Yiga Blademaster	monstros/cla_yiga
+botw_monster_yiga_footsoldier	Soldado Yiga	oficial_secundaria	Yiga Footsoldier	monstros/cla_yiga
+botw_object_barrel	Barril	nao_oficial	Barrel	objetos/objetos
+botw_object_boulder	Rocha	nao_oficial	Boulder	objetos/objetos
+botw_object_campfire	Fogueira	nao_oficial	Campfire	objetos/objetos
+botw_object_cooking_pot	Panela	nao_oficial	Cooking Pot	objetos/objetos
+botw_object_explosive_barrel	Barril explosivo	nao_oficial	Explosive Barrel	objetos/objetos
+botw_object_grass	Grama	nao_oficial	Grass	objetos/objetos
+botw_object_metal_box	Caixa de metal	nao_oficial	Metal Box	objetos/objetos
+botw_object_tree	Árvore	nao_oficial	Tree	objetos/objetos
+botw_object_wooden_box	Caixa de madeira	nao_oficial	Wooden Box	objetos/objetos
+botw_ability_daruks_protection	Proteção de Daruk	oficial_secundaria	Daruk's Protection	runas/habilidades_dos_campeoes
+botw_ability_miphas_grace	Dádiva de Mipha	oficial_secundaria	Mipha's Grace	runas/habilidades_dos_campeoes
+botw_ability_revalis_gale	Vendaval de Revali	oficial_secundaria	Revali's Gale	runas/habilidades_dos_campeoes
+botw_ability_urbosas_fury	Fúria de Urbosa	oficial_secundaria	Urbosa's Fury	runas/habilidades_dos_campeoes
+botw_rune_amiibo_rune	amiibo	oficial	amiibo (Rune)	runas/runas
+botw_rune_camera	Câmera	oficial	Camera	runas/runas
+botw_rune_cryonis	Gelítis	oficial	Cryonis	runas/runas
+botw_rune_magnesis	Magnétis	oficial	Magnesis	runas/runas
+botw_rune_master_cycle_zero	Corcel de Hyrule zero	oficial_secundaria	Master Cycle Zero	runas/runas
+botw_rune_remote_bomb	Bomba remota	oficial	Remote Bomb	runas/runas
+botw_rune_sheikah_sensor	Sensor Sheikah	nao_oficial	Sheikah Sensor	runas/runas
+botw_rune_stasis	Estátis	oficial	Stasis	runas/runas
+botw_treasure_luminous_ore_deposit	Depósito de pedra luminosa	nao_oficial	Luminous Ore Deposit	tesouros/depositos
+botw_treasure_ore_deposit	Depósito de minério	nao_oficial	Ore Deposit	tesouros/depositos
+botw_treasure_rare_ore_deposit	Depósito de minério raro	nao_oficial	Rare Ore Deposit	tesouros/depositos
+botw_treasure_treasure_chest	Baú do tesouro	nao_oficial	Treasure Chest	tesouros/baus

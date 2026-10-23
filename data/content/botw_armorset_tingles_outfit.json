@@ -1,0 +1,75 @@
+{
+  "id": "botw_armorset_tingles_outfit",
+  "summary": "As roupas verdes de Tingle, \"o homem que queria ser uma fada\", enterradas em três ruínas da Pradaria de Hyrule (DLC The Master Trials). O traje completo dá velocidade extra à noite e assusta as pessoas.",
+  "description": "O Traje de Tingle reúne o Capuz de Tingle, a Camisa de Tingle e a Meia-calça de Tingle. É exclusivo da DLC The Master Trials e é o objetivo da Missão secundária \"EX Treasure: Fairy Clothes\", ativada pelo Diário EX de Misko nas Ruínas do Posto Avançado. O diário fala das \"roupas verdes do homem que queria ser uma fada\", roubadas do Castelo de Hyrule por Misko.\n\nAs peças estão em baús enterrados que precisam ser arrancados com Magnétis: o capuz no meio das Ruínas do Entreposto (Exchange Ruins), a camisa perto das ruínas da Prisão da Cidadela (Castle Town Prison) e a meia-calça sob os restos de um Guardião persecutório no sudeste das Ruínas da Vila Mabe. As peças não têm efeito individual e a defesa é baixa (2 por peça).\n\nCom as três peças vestidas, Link ganha a Velocidade noturna (Night Speed Up): entre 21h e 4h, a corrida fica 20% mais rápida, como uma Velocidade aumentada de nível 2. Como as armaduras da DLC não podem ser melhoradas, o bônus vale de imediato. O traje assusta as pessoas que Link encontra, como o Conjunto sombrio, os conjuntos fantasma e o radiante, e não pode ser tingido.",
+  "locations": [
+    "Ruínas do Entreposto (Exchange Ruins), Pradaria de Hyrule: Capuz de Tingle.",
+    "Ruínas da Prisão da Cidadela (Castle Town Prison): Camisa de Tingle.",
+    "Ruínas da Vila Mabe (Mabe Village Ruins): Meia-calça de Tingle.",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Com a DLC The Master Trials, ler o Diário EX de Misko nas Ruínas do Posto Avançado (\"EX Treasure: Fairy Clothes\"; a missão também é ativada ao carregar o mundo depois de sair do Grande Platô).",
+    "Desenterrar os três baús com Magnétis.",
+    "Depois de obtidas, Granté vende cada peça por 50 rupias."
+  ],
+  "uses": [
+    "Correr mais rápido à noite sem gastar pratos de velocidade.",
+    "Fantasia que assusta temporariamente os personagens."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Traje completo (sem exigir melhorias): Velocidade noturna, +20% de corrida entre 21h e 4h."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças, Link corre 20% mais rápido entre 21h e 4h, e os personagens se assustam ao vê-lo.",
+      "conditions": ["Capuz, camisa e meia-calça de Tingle vestidos juntos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Armor Set"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Os três baús estão enterrados e precisam ser puxados do chão com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:EX Treasure: Fairy Clothes"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O homem que queria ser fada",
+      "text": "O diário de Misko descreve o traje como as \"roupas verdes do homem que queria ser uma fada\", uma referência ao próprio Tingle, e dá as pistas: ruínas onde o comércio florescia, ruínas onde pecadores eram presos e a vila ao lado das terras de cultivo.",
+      "sources": ["zw:EX Treasure: Fairy Clothes"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus imediato",
+      "text": "Assim como o Conjunto da guarda real, o Traje de Tingle concede seu bônus sem melhorias porque as armaduras da DLC não podem ser aprimoradas por Grandes Fadas.",
+      "sources": ["zw:Armor Set"]
+    }
+  ],
+  "advanced_uses": [
+    "Somar um prato de Velocidade aumentada de nível 1 ao traje para correr ainda mais rápido à noite."
+  ],
+  "limitations": [
+    "Defesa baixa e sem melhorias.",
+    "Só acelera entre 21h e 4h.",
+    "Exige a DLC The Master Trials."
+  ],
+  "related": [
+    { "id": "botw_armor_tingles_hood", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_tingles_shirt", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_tingles_tights", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_dark_series", "relation": "Mesmo bônus de Velocidade noturna, também assusta as pessoas" },
+    { "id": "botw_armorset_stealth_set", "relation": "Dá Velocidade noturna em ★★" },
+    { "id": "botw_armorset_phantom_equipment", "relation": "Outro conjunto do Diário EX de Misko" },
+    { "id": "botw_rune_magnesis", "relation": "Necessária para desenterrar os baús" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Os restos de um deles escondem a meia-calça" }
+  ],
+  "capabilities": ["velocidade", "habilidade_especial"],
+  "verification_status": "verificado"
+}

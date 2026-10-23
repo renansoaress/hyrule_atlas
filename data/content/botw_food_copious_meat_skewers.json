@@ -1,0 +1,109 @@
+{
+  "id": "botw_food_copious_meat_skewers",
+  "summary": "Espetinho farto com pelo menos quatro tipos diferentes de carne. Cura de 10 a 20 corações, conforme quantidade e qualidade das carnes, e aceita um quinto ingrediente para ganhar efeito.",
+  "description": "Os Espetinhos fartos de carne exigem pelo menos quatro tipos diferentes de carne, escolhidos entre Carne de terceira, Carne de segunda, Carne de primeira, Coxa, Sobrecoxa e Ave inteira. Com até três carnes, o prato é o Espetinho de carne comum; é a variedade que o transforma na versão farta. A descrição do jogo é direta: basta enfiar um monte de carne num espeto.\n\nCom quatro carnes, é um dos pratos que mais curam sem depender de efeito: de 10 a 20 corações, conforme a quantidade e a qualidade das carnes. O quinto ingrediente define a versão — um ingrediente refrescante dá Resistência ao calor, um valente dá Ataque aumentado, um nutritivo restaura tudo e concede Corações extras, e assim por diante. Todas as descrições de inventário citadas pelo Zelda Wiki falam em efeito de nível baixo, já que sobra espaço para um único ingrediente de efeito.",
+  "obtaining": [
+    "Cozinhar numa Panela pelo menos quatro tipos diferentes de carne, com um quinto ingrediente opcional."
+  ],
+  "uses": [
+    "Cura grande, de 10 a 20 corações.",
+    "Versões com efeito usando o quinto espaço da panela."
+  ],
+  "effects": [
+    "Versão comum: recupera de 10 a 20 corações, conforme as carnes usadas.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — nível baixo.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — nível baixo.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — nível baixo.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — nível baixo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — nível baixo.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — nível baixo.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — nível baixo."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera de 10 a 20 corações, dependendo da quantidade e da qualidade das carnes.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um quinto ingrediente de efeito, o espetinho ganha esse efeito; as versões temporárias são de nível baixo, segundo as descrições de inventário.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quatro tipos, não quatro unidades",
+      "text": "O que transforma o espetinho em farto é a variedade: quatro tipos diferentes de carne. O Espetinho de carne comum é feito com uma a três carnes.",
+      "sources": [
+        "zw",
+        "zw:Meat Skewer"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para chegar perto dos 20 corações, use as carnes de melhor qualidade, como Carne de primeira e Ave inteira."
+  ],
+  "limitations": [
+    "Com menos de quatro tipos de carne, o resultado é o Espetinho de carne.",
+    "Só há espaço para um ingrediente de efeito, o que limita o efeito ao nível baixo."
+  ],
+  "related": [
+    {
+      "id": "botw_food_meat_skewer",
+      "relation": "Versão simples, com até três carnes"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_bird_drumstick",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_bird_thigh",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne aceita"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

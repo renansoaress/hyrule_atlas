@@ -1,0 +1,169 @@
+{
+  "id": "botw_bow_knights_bow",
+  "summary": "Arco de metal dos antigos cavaleiros do Castelo de Hyrule (ataque 26, durabilidade 48), elogiado por não ter \"manias\" de disparo. Não queima, mas afunda, conduz eletricidade e atrai raios.",
+  "description": "O Arco do cavaleiro era o preferido dos cavaleiros hylianos que defendiam o Castelo de Hyrule. A descrição do jogo destaca a construção de metal resistente, que garante durabilidade superior, e a ausência de peculiaridades de disparo, o que o torna muito confiável. É usado por muitos inimigos no Deserto Gerudo e na Fronteira de Tabantha.\n\nOs parâmetros extraídos do jogo confirmam a \"falta de manias\": uma flecha por disparo, 20 m de trajetória reta, gravidade padrão e tensionamento e recarga normais. Faz parte do equipamento do cavaleiro.\n\nPor ser de metal, não queima no fogo nem no clima escaldante, mas afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios se estiver equipado ao ar livre numa tempestade.",
+  "locations": [
+    "Deserto Gerudo e Fronteira de Tabantha (locais comuns segundo o compendium), nas mãos de inimigos e em baús."
+  ],
+  "obtaining": [
+    "Derrotar inimigos arqueiros dessas regiões ou abrir baús.",
+    "Pode sair de baús gerados pela runa amiibo com os amiibo Princesa Zelda (série Super Smash Bros.) e Link arqueiro (série Breath of the Wild)."
+  ],
+  "uses": [
+    "Arco de uso geral para a região de Eldin, onde arcos de madeira queimam."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros do jogo, a flecha percorre 20 m em linha reta antes de começar a cair (gravidade padrão de 9,8 m/s²), e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco do cavaleiro pode surgir com bônus de ataque de +3 a +6 (nível branco) ou de +7 a +11 (nível amarelo), e com bônus de durabilidade de +3 a +6 (branco) ou de +7 a +11 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Vindo de amiibo, o bônus sai no valor máximo",
+      "text": "Pode aparecer em baús gerados pela runa amiibo (Princesa Zelda da série Super Smash Bros. e Link arqueiro da série Breath of the Wild). Equipamentos obtidos assim recebem o valor máximo do nível de bônus sorteado, embora o ícone mostre sempre a cor branca.",
+      "sources": [
+        "zw",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de uma tempestade, troque-o por um arco de madeira ou largue-o perto de inimigos: o metal atrai os raios para onde estiver."
+  ],
+  "limitations": [
+    "Atrai raios em tempestades e é derrubado das mãos de Link por choques elétricos.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_soldiers_bow",
+      "relation": "Arco do nível anterior, de madeira"
+    },
+    {
+      "id": "botw_bow_royal_bow",
+      "relation": "Arco de metal do nível seguinte"
+    },
+    {
+      "id": "botw_weapon_knights_broadsword",
+      "relation": "Mesmo arquétipo (espada)"
+    },
+    {
+      "id": "botw_shield_knights_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Arcos de metal atraem raios"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico"
+  ],
+  "verification_status": "verificado"
+}

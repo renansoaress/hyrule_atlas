@@ -1,0 +1,147 @@
+{
+  "id": "botw_food_roasted_hearty_bass",
+  "summary": "Robalo nutritivo de pele crocante e gordura na medida, uma porção farta. Cura 3 corações (cru, 2), mas cai de 18 para 12 rupias e perde os Corações extras.",
+  "description": "O Robalo nutritivo, peixe grande das águas de Necluda Ocidental e do Altiplano de Akkala, vira Robalo nutritivo assado no fogo ou no clima escaldante. O texto do jogo elogia a pele crocante e a quantidade certa de gordura, que rendem um prato excepcionalmente saboroso e de bom tamanho.\n\nA cura passa de 2 para 3 corações, mas o peixe se desvaloriza: cru vale 18 rupias, assado vale 12 (e congelado, 14). Os Corações extras que ele daria na Panela também se perdem.",
+  "locations": [
+    "Prepara-se a partir de Robalos nutritivos (Necluda Ocidental, Altiplano de Akkala, lagoas do Firly Plateau e do Monte Rhoam) numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um Robalo nutritivo ao fogo ou largá-lo no chão em clima escaldante.",
+    "Derrotar um Rinox azul: 5% de chance na tabela de comidas dele (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 3 corações.",
+    "Venda: 12 rupias."
+  ],
+  "effects": [
+    "Recupera 3 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Robalo nutritivo — queima por alguns instantes e se transforma em Robalo nutritivo assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Robalo nutritivo assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Robalo nutritivo no chão para que o ingrediente asse sozinho e vire Robalo nutritivo assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3 corações, contra 2 do Robalo nutritivo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 12 rupias; o Robalo nutritivo cru vale 18.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hearty Bass"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Robalo nutritivo assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Assar desvaloriza",
+      "text": "O Robalo nutritivo vale 18 rupias cru, 14 congelado e só 12 assado. Para vender, venda-o cru.",
+      "sources": [
+        "zw:Hearty Bass",
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Gordura na medida",
+      "text": "A descrição do jogo destaca a porção generosa e a quantidade certa de gordura, que tornam o prato excepcionalmente saboroso.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: o efeito do robalo só aparece em pratos de Panela.",
+    "Vale menos que o peixe cru."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_bass",
+      "relation": "Ingrediente cru (Corações extras na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_hearty_bass",
+      "relation": "Versão congelada do mesmo peixe"
+    },
+    {
+      "id": "botw_food_roasted_bass",
+      "relation": "Assado dos robalos comuns"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

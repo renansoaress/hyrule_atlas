@@ -1,0 +1,109 @@
+{
+  "id": "botw_food_meat_pie",
+  "summary": "Torta de carne moída com Trigo de Tabantha, Manteiga de cabra e Halita — \"vai precisar de um guardanapo extra\", diz o jogo. Aceita qualquer carne sem mudar de prato.",
+  "description": "A Torta de carne leva qualquer carne, Trigo de Tabantha, Manteiga de cabra e Halita. A descrição do jogo avisa que vai ser preciso um guardanapo extra para essa torta suculenta de carne moída bem assada. Cura alguns corações.\n\nAo contrário de curries, ensopados e tigelas, a torta não tem versões de segunda ou de primeira: qualquer carne serve, da Carne de terceira à Ave inteira. Como os quatro ingredientes obrigatórios não têm efeito, o quinto espaço define a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nÉ a irmã da Torta de peixe, que usa a mesma base de trigo, manteiga e halita com um fruto do mar. A diferença prática é que a carne é sempre neutra, enquanto o peixe costuma trazer efeito próprio.",
+  "locations": [
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer carne + Trigo de Tabantha + Manteiga de cabra + Halita."
+  ],
+  "uses": [
+    "Aproveitar qualquer carne num prato com um espaço livre para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O quinto ingrediente define o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Uma torta para todas as carnes",
+      "text": "Todas as seis carnes do jogo aparecem como aceitas pela Torta de carne nas páginas de ingredientes do Zelda Wiki, sem que o prato mude de nome.",
+      "sources": [
+        "zw",
+        "zw:Raw Whole Bird",
+        "zw:Raw Bird Drumstick"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_food_fish_pie",
+      "relation": "Mesma base com fruto do mar"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

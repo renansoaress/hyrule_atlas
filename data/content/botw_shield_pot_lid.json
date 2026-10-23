@@ -1,0 +1,124 @@
+{
+  "id": "botw_shield_pot_lid",
+  "summary": "A tampa de uma grande panela de sopa, que cheira levemente a caldo de frango. Tem a menor Defesa de todos os escudos (1), mas aguenta 10 golpes — e, no diário de Daruk, Link já derrotou um Guardião com uma.",
+  "description": "A Tampa de panela é exatamente o que o nome diz: a tampa de uma grande panela de sopa usada como escudo. O jogo brinca que ela cheira vagamente a caldo de frango e diz que aguenta uma boa surra antes de quebrar. Com Defesa 1, é o escudo de menor defesa de BOTW, mas sua durabilidade (10) é igual à de escudos decorados como o do caçador e o do pescador.\n\nÉ fácil de encontrar ao lado de panelas em estábulos e povoados como Hateno e Kakariko, e também nas mãos de Koboblins e, mais raramente, de Moblins em acampamentos. O Diário de treino de Daruk (Daruk's Training Journal) guarda uma história curiosa: durante um experimento, um Guardião começou a agir de forma errática e Link o derrotou rebatendo o laser com uma tampa de panela — algo que qualquer escudo pode fazer com uma Defesa perfeita.\n\nÉ de madeira: queima até se desintegrar, pega fogo no calor de Eldin, flutua e não reage a Magnétis nem a raios.",
+  "locations": [
+    "Ao lado de panelas em estábulos e em povoados como Vila Kakariko e Hateno.",
+    "Pradaria de Hyrule e Necluda Oriental, segundo o compendium.",
+    "Acampamentos de monstros, nas mãos de Koboblins e, raramente, de Moblins."
+  ],
+  "obtaining": [
+    "Recolher perto das panelas de estábulos e vilas.",
+    "Derrotar Koboblins ou Moblins que a empunham."
+  ],
+  "uses": [
+    "Escudo improvisado no começo do jogo.",
+    "Treinar a Defesa perfeita, inclusive contra lasers de Guardiões, sem arriscar um escudo valioso.",
+    "Prancha para Surfar com escudo em neve e areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial; o cheiro de caldo é só descrição."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia, mas com Defesa 1 praticamente não reduz o desgaste de cada golpe. A Defesa perfeita não gasta durabilidade e rebate projéteis, incluindo lasers de Guardiões.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e se desintegra aos poucos enquanto queima.",
+      "side_effects": ["Guardar a tampa ou molhá-la interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada nas áreas escaldantes de Eldin, pega fogo e acaba desintegrada.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantada com Magnétis.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins a usam como escudo em acampamentos; Moblins, mais raramente.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus: só os brancos",
+      "text": "Os parâmetros preveem Durabilidade aumentada de +2 a +3 e Defesa aumentada de +1 a +2 no nível branco, e faixas amarelas surpreendentemente largas (+4 a +20 de durabilidade e +3 a +20 de Defesa). Na prática, porém, a Tampa de panela só aparece com bônus brancos, nunca amarelos.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O Guardião derrotado com uma tampa",
+      "text": "Segundo o Diário de treino de Daruk, quando um Guardião passou a agir de modo errático durante um experimento, Link o derrotou rebatendo o laser com uma tampa de panela.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Menor Defesa do jogo",
+      "text": "Na tabela de escudos de BOTW, nenhum outro tem Defesa tão baixa: a Tampa de panela tem 1, abaixo até do Escudo de madeira (2).",
+      "sources": ["zw:Shields in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Repetir a façanha do diário de Daruk: rebater o laser de um Guardião com uma Defesa perfeita usando a tampa, já que a técnica não depende da Defesa do escudo."
+  ],
+  "limitations": [
+    "Defesa 1: bloquear golpes fortes consome a durabilidade quase sem atenuação.",
+    "Queima se equipada em Eldin."
+  ],
+  "related": [
+    { "id": "botw_object_cooking_pot", "relation": "Costuma estar ao lado das panelas de estábulos e vilas" },
+    { "id": "botw_weapon_soup_ladle", "relation": "Outro utensílio de cozinha usado em combate; também só recebe bônus brancos" },
+    { "id": "botw_monster_bokoblin", "relation": "Monstro que a empunha em acampamentos" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Guardião cujo laser a Defesa perfeita rebate, mesmo com uma tampa" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Técnica que permite rebater lasers até com a tampa" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

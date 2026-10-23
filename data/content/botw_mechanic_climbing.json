@@ -1,0 +1,112 @@
+{
+  "id": "botw_mechanic_climbing",
+  "summary": "Link escala quase qualquer superfície gastando vigor sem parar; escadas não gastam. Não dá para escalar tecnologia Sheikah (santuários, Feras Divinas), tetos e saliências, e a chuva faz Link escorregar.",
+  "description": "Em BOTW quase toda paisagem pode ser escalada. Enquanto sobe, Link consome vigor de forma contínua, e o custo aumenta com a inclinação da parede; apertar X dá um salto que sobe mais rápido, mas gasta muito vigor. Se a roda se esvaziar, Link perde o apoio e cai. Escadas são a exceção: subir por elas não gasta vigor (só os saltos gastam) e, mesmo com o vigor zerado, Link continua subindo devagar.\n\nHá superfícies impossíveis: paredes de tecnologia Sheikah, como as dos santuários e das Feras Divinas, são lisas demais; tetos e saliências que se curvam para fora também derrubam Link. A chuva deixa tudo escorregadio, e Link escorrega de tempos em tempos — nem o Conjunto de escalada evita isso. Para escalar melhor, existem o Conjunto de escalada (velocidade e salto mais barato), o Elixir veloz e o próprio aumento do Medidor de vigor.",
+  "locations": [
+    "Quase toda Hyrule; as peças do Conjunto de escalada ficam nos santuários Ree Dahee (Dueling Peaks), Chaas Qeta (Ilha Tenoko) e Tahno O'ah (Monte Lanayru)."
+  ],
+  "obtaining": [
+    "Disponível desde o início do jogo."
+  ],
+  "uses": [
+    "Chegar ao topo de Torres Sheikah, montanhas e construções para observar e planar."
+  ],
+  "effects": [
+    "Consumo contínuo de vigor enquanto Link está na parede."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Escalar consome vigor de forma linear, mais em paredes íngremes. O salto na parede (X) sobe mais rápido e gasta muito; sem vigor, Link cai.",
+      "side_effects": ["Escadas não gastam vigor (exceto saltando) e permitem subir devagar sem vigor."],
+      "applications": ["Preferir paredes menos inclinadas para ir mais longe com o mesmo vigor."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "sem_efeito",
+      "result": "Paredes de tecnologia Sheikah (santuários e Feras Divinas) não podem ser escaladas; tetos e saliências curvadas para fora fazem Link cair.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Na chuva as superfícies ficam escorregadias e Link escorrega periodicamente; penhascos íngremes podem ficar impossíveis.",
+      "side_effects": ["O Conjunto de escalada, apesar da descrição, não impede os escorregões."],
+      "kind": "mecanica",
+      "sources": ["zw:Rain", "zw:Tips and Tricks", "zw:Climbing Set"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Peças com Escalada mais rápida aumentam a velocidade em 20%, 30% e 40% (níveis 1 a 3), mas o gasto de vigor sobe junto, sem aumentar a distância total. O Conjunto de escalada melhorado duas vezes corta pela metade o vigor do salto na parede. O Capuz de Ravio acelera a escalada lateral e se multiplica com esse efeito.",
+      "kind": "mecanica",
+      "sources": ["zw:Wall-Climb Speed Up", "zw:Climbing Set", "zw:Set Bonus"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O Elixir veloz aumenta também a velocidade de escalada; elixires energizantes e tenazes repõem ou ampliam o vigor durante a subida.",
+      "kind": "mecanica",
+      "sources": ["zw:Hasty Elixir", "zw:Stamina", "zw:Energizing Elixir"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "A Torre Sheikah de Hateno é coberta por trepadeiras que precisam ser queimadas para liberar o caminho da escalada.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "O Tálus glacial congela quem o toca e só pode ser escalado com Imunidade a congelamento ou após derreter o gelo com fogo; o Tálus ígneo pode ser escalado depois de resfriado com gelo.",
+      "kind": "mecanica",
+      "sources": ["zw:Frost Talus", "zw:Igneo Talus"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Impulso e Planador",
+      "text": "Na parede, direcional para baixo + X faz Link se impulsionar para longe da superfície; abrir o Planador logo depois permite alcançar lugares novos, como sugerem as dicas do jogo.",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Guarda real com bônus escondido",
+      "text": "O Conjunto da guarda real tem um bônus oculto de salto na escalada mais barato (50%), que o inventário não mostra.",
+      "sources": ["zw:Set Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Onde está o Conjunto de escalada",
+      "text": "As três peças ficam em baús dos santuários Ree Dahee, Chaas Qeta e Tahno O'ah; depois de achar uma peça, Granté passa a vendê-la em Tarrey Town.",
+      "sources": ["zw:Climbing Set"]
+    }
+  ],
+  "advanced_uses": [
+    "Saltar na parede só no fim da subida, quando sobra pouco caminho: o salto gasta muito vigor por vez.",
+    "Usar escadas para descansar a roda: subir por elas não gasta vigor."
+  ],
+  "limitations": [
+    "Chuva torna a escalada imprevisível.",
+    "Santuários e Feras Divinas não podem ser escalados."
+  ],
+  "related": [
+    { "id": "botw_mechanic_stamina", "relation": "A escalada consome vigor" },
+    { "id": "botw_mechanic_rain", "relation": "Faz Link escorregar" },
+    { "id": "botw_armorset_climbing_set", "relation": "Escalada mais rápida e salto mais barato" },
+    { "id": "botw_armor_ravios_hood", "relation": "Acelera a escalada lateral" },
+    { "id": "botw_armorset_royal_guard_set", "relation": "Bônus oculto de salto na escalada" },
+    { "id": "botw_elixir_hasty_elixir", "relation": "Acelera a escalada" },
+    { "id": "botw_elixir_enduring_elixir", "relation": "Vigor extra para subidas longas" },
+    { "id": "botw_monster_frost_talus", "relation": "Só escalável com proteção ou após derreter" },
+    { "id": "botw_monster_igneo_talus", "relation": "Escalável depois de resfriado" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "botw_creature_honeyvore_bear",
+  "summary": "Urso pardo de focinho dourado, territorial e perigoso, comum no Altiplano de Akkala e na Fronteira de Tabantha. Com furtividade (e alguma coragem), pode ser montado como um cavalo, mas nenhum estábulo o registra.",
+  "description": "O Urso melívoro é descrito pelo compendium como \"rei entre os animais\": uma caça perigosa até para caçadores experientes, que ataca quem invade seu território, esteja armado ou não. Tem pelo predominantemente castanho, focinho dourado-amarronzado e, como o nome indica, adora mel de abelha. Aparece em várias partes de Hyrule, sobretudo no Altiplano de Akkala e na Fronteira de Tabantha, e alguns Koboblins o usam como montaria, como nas Montanhas Gerudo.\n\nApesar do perigo, é uma das nove criaturas montáveis do jogo: se Link chegar sem ser notado, pode subir nele e domá-lo como um cavalo. Levá-lo a um estábulo não adianta — o responsável se recusa a registrá-lo. Morto, deixa carne de boa qualidade; o compendium indica Carne de segunda e Carne de primeira, enquanto o artigo do urso no Zelda Wiki cita Carne de terceira e Carne de segunda.",
+  "locations": [
+    "Altiplano de Akkala, Fronteira de Tabantha e Pico Crenel, segundo o compendium; também ocorre em outras áreas de Hyrule.",
+    "Montanhas Gerudo, onde há Koboblins montados em ursos."
+  ],
+  "obtaining": [
+    "Aproximar-se furtivamente e montá-lo; a doma é como a de um cavalo. Não pode ser registrado."
+  ],
+  "uses": [
+    "Montaria improvisada: pode ser cavalgado enquanto Link estiver nele, mas não pode ser registrado.",
+    "Fonte de carne de qualidade ao ser abatido.",
+    "Registrar sua foto no compendium (entrada nº 26)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano dos ataques."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "É territorial e ataca quem entra no seu território, independentemente das armas que a pessoa carregue.",
+      "side_effects": ["O artigo geral sobre ursos diz que eles geralmente ignoram e evitam Link e só atacam se provocados — as fontes divergem sobre o grau de agressividade."],
+      "conditions": ["Para montá-lo, chegar sem ser notado, com furtividade."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Bear"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado e domado como um cavalo se Link chegar furtivamente. Os estábulos se recusam a registrá-lo.",
+      "conditions": ["Furtividade alta para não ser percebido antes de montar."],
+      "side_effects": ["Não pode ser guardado nem chamado depois com assobio."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Bear"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser morto e deixa carne. O compendium indica Carne de segunda e Carne de primeira; o artigo do urso no Zelda Wiki cita Carne de terceira e Carne de segunda.",
+      "side_effects": ["Revida e é perigoso mesmo para caçadores experientes."],
+      "produces": ["botw_material_raw_prime_meat", "botw_material_raw_gourmet_meat"],
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "zw:Raw Gourmet Meat"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins podem montar Ursos melívoros em alguns locais, como nas Montanhas Gerudo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que o urso pode ser morto, mas não detalham o uso de flechas contra ele."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Um pouquinho maluco\"",
+      "text": "O compendium recomenda extrema cautela, mas admite: se você for furtivo o bastante — e talvez um pouquinho maluco —, pode conseguir montar num urso.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis de BOTW, ao lado do Cavalo, Cavalo gigante, Cavalo branco, Senhor da Montanha, Cervo e Corça da montanha, Stalcavalo e Grão-urso.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Divergência sobre as carnes",
+      "text": "O compendium e os artigos de Carne de segunda e Carne de primeira apontam o Urso melívoro como fonte dessas duas carnes; apenas o artigo do próprio urso fala em Carne de terceira e Carne de segunda.",
+      "sources": ["comp", "zw", "zw:Raw Prime Meat", "zw:Raw Gourmet Meat"]
+    }
+  ],
+  "advanced_uses": [
+    "A Carne de primeira deixada por ele pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\")."
+  ],
+  "limitations": [
+    "Não pode ser registrado em estábulos.",
+    "Ataca quem invade seu território; montá-lo exige chegar sem ser notado."
+  ],
+  "related": [
+    { "id": "botw_creature_grizzlemaw_bear", "relation": "Variedade mais feroz, de pelo cinza" },
+    { "id": "botw_material_courser_bee_honey", "relation": "Alimento favorito do urso" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_monster_bokoblin", "relation": "Monta ursos em alguns locais" },
+    { "id": "botw_creature_horse", "relation": "A doma funciona como a de um cavalo" },
+    { "id": "botw_mechanic_stable", "relation": "Os estábulos recusam o registro" }
+  ],
+  "capabilities": ["montavel"],
+  "verification_status": "a_verificar"
+}

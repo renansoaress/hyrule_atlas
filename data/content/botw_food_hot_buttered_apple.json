@@ -1,0 +1,106 @@
+{
+  "id": "botw_food_hot_buttered_apple",
+  "summary": "Maçã assada na Manteiga de cabra, receita da mãe de Koko e recompensa de \"Cooking with Koko\", em Kakariko. Sem efeito por padrão; um terceiro ingrediente define a versão.",
+  "description": "A Maçã quente na manteiga é feita com Maçã e Manteiga de cabra; segundo a descrição do jogo, a doçura da maçã é realçada ao cobri-la de manteiga e assá-la. Cura vários corações. Como nenhum dos dois ingredientes tem efeito, a versão comum é a padrão, e qualquer ingrediente extra com efeito define a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nNa Vila Kakariko, depois de \"Koko's Kitchen\", Koko decide fazer a Maçã quente na manteiga como a mãe fazia — um prato de que ela e a irmã, Cottla, gostam —, mas descobre que está sem Manteiga de cabra. Na Missão secundária \"Cooking with Koko\", Link leva a manteiga (vendida ali mesmo, na High Spirits Produce) e ganha uma porção do prato. A anotação da missão ensina: cobrir as maçãs por igual com manteiga e aquecer até formar uma cobertura espessa.\n\nComparada à Maçã com mel, a versão com manteiga não tem efeito próprio e por isso aceita qualquer efeito; a de mel é sempre energizante.",
+  "locations": [
+    "Koko: cozinha na panela pública da Vila Kakariko a partir das 11h, quando oferece suas missões.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Maçã + Manteiga de cabra.",
+    "Recompensa da Missão secundária \"Cooking with Koko\", na Vila Kakariko."
+  ],
+  "uses": [
+    "Cura de vários corações; três espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera vários corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Um ingrediente extra de efeito define a versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Koko percebe a mentira",
+      "text": "Se Link disser que tem Manteiga de cabra sem ter, Koko percebe que ele está mentindo — o pai dela, Dorian, também é ruim nisso.",
+      "sources": [
+        "zw:Cooking with Koko"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita Maçã como fruta-base."
+  ],
+  "related": [
+    {
+      "id": "botw_material_apple",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório e item pedido por Koko"
+    },
+    {
+      "id": "botw_food_honeyed_apple",
+      "relation": "Maçã com mel, sempre energizante"
+    },
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Maçã com manteiga, trigo e açúcar"
+    },
+    {
+      "id": "botw_food_veggie_cream_soup",
+      "relation": "Prato da primeira missão de Koko"
+    },
+    {
+      "id": "botw_food_meat_stuffed_pumpkin",
+      "relation": "Prato da missão seguinte de Koko"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

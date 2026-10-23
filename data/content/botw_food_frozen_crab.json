@@ -1,0 +1,178 @@
+{
+  "id": "botw_food_frozen_crab",
+  "summary": "Caranguejo congelado: \"faz menos companhia que um vivo, mas não estraga na viagem\". Sai de qualquer caranguejo, dá Resistência ao calor por 1 minuto e vale 14 rupias; a cura diverge (1 ou 2 corações).",
+  "description": "Os três caranguejos do jogo — espadachim, couraçado e esperto — viram o mesmo Caranguejo congelado no clima congelante, na água gelada ou sob ataques de gelo. A descrição do jogo brinca que ele não faz tanta companhia quanto um caranguejo descongelado, mas tem a vantagem de não estragar durante a viagem; comê-lo dá Resistência ao calor de nível 1 por um minuto.\n\nA cura tem dados conflitantes: a página do item fala em 1 coração — o mesmo dos caranguejos crus, como manda a regra de que congelar não altera a cura —, mas a tabela de comidas congeladas do Zelda Wiki registra 2. Na venda vale 14 rupias, mais que os caranguejos crus (8 ou 10) e que o Caranguejo tostado (12). Os efeitos de Panela de cada caranguejo não passam para a versão congelada.",
+  "locations": [
+    "Prepara-se a partir de qualquer caranguejo em regiões de clima congelante — Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia — ou na água gelada de Hebra Falls, Hebra Headspring, Hebra Plunge e do River of the Dead."
+  ],
+  "obtaining": [
+    "Largar um caranguejo no chão de uma região de clima congelante, como as Cordilheiras de Hebra ou o Monte Lanayru.",
+    "Jogar um caranguejo na água gelada (Cold Water), como a de Hebra Plunge ou a do River of the Dead.",
+    "Acertar um caranguejo com uma Flecha congelante ou com Espada álgida, Grã-Espada álgida ou Lança congelante."
+  ],
+  "uses": [
+    "Refresco rápido para o calor diurno do Deserto Gerudo.",
+    "Venda: 14 rupias."
+  ],
+  "effects": [
+    "Recupera 1 coração segundo a página do item (2 segundo a tabela de comidas congeladas).",
+    "Resistência ao calor de nível 1 (baixo) por 1 minuto."
+  ],
+  "interactions": [
+    {
+      "action": "frio_extremo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: basta largar um caranguejo (Caranguejo espadachim, Caranguejo couraçado ou Caranguejo esperto) no chão de uma região de clima congelante para que o ingrediente endureça e vire Caranguejo congelado.",
+      "conditions": [
+        "Clima congelante: Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia (no pico nevado do Grande Platô) ou pontos altos como o topo do Castelo de Hyrule."
+      ],
+      "side_effects": [
+        "O mesmo frio fere Link aos poucos se ele não tiver Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Freezing Climate",
+        "zw:Mount Hylia"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Jogar um caranguejo (Caranguejo espadachim, Caranguejo couraçado ou Caranguejo esperto) na água gelada (Cold Water) das regiões frias também congela o ingrediente, que vira Caranguejo congelado.",
+      "conditions": [
+        "Água gelada, como a de Hebra Falls, Hebra Headspring e Hebra Plunge (Fronteira de Tabantha) e a do River of the Dead, no Grande Platô."
+      ],
+      "side_effects": [
+        "Não entre na água: nadar nela tira meio coração a cada 0,5 s, e nenhuma roupa ou comida protege."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cold Water",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingir um caranguejo (Caranguejo espadachim, Caranguejo couraçado ou Caranguejo esperto) com uma Flecha congelante ou com golpes de Espada álgida, Grã-Espada álgida ou Lança congelante também produz Caranguejo congelado.",
+      "applications": [
+        "Congelar a pesca ou a caça na hora, longe das regiões frias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Concede Resistência ao calor de nível 1 por 1 minuto e cura 1 coração segundo a página do item, ou 2 segundo a tabela de comidas congeladas.",
+      "side_effects": [
+        "Como todo efeito temporário de comida, a Resistência ao calor substitui qualquer outro efeito de comida ou elixir que estiver ativo — inclusive um efeito refrescante mais forte ou mais longo."
+      ],
+      "applications": [
+        "Proteção curta contra o calor diurno do Deserto Gerudo sem passar pela Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 14 rupias; crus, o Caranguejo espadachim e o couraçado valem 8, e o esperto, 10.",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Razorclaw Crab",
+        "zw:Ironshell Crab",
+        "zw:Bright-Eyed Crab"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Caranguejo congelado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece ao expor Caranguejo congelado ao fogo (se descongela ou se vira a versão assada)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "1 ou 2 corações?",
+      "text": "A página do Caranguejo congelado diz 1 coração, valor igual ao dos caranguejos crus; a tabela de comidas congeladas do Zelda Wiki registra 2. As fontes consultadas não resolvem a divergência."
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Companhia de viagem",
+      "text": "A descrição do jogo diz que o caranguejo congelado não faz tanta companhia quanto um vivo, mas não estraga durante a viagem.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível 1 e só contra o calor do deserto",
+      "text": "Toda comida congelada dá um nível de Resistência ao calor por um minuto. Esse efeito evita o dano do calor do Deserto Gerudo de dia, mas as zonas de calor extremo do sul e do oeste do deserto pedem dois níveis, e ele não ajuda contra o clima escaldante, o fogo ou a lava de Eldin.",
+      "sources": [
+        "zw:Food",
+        "zw:Frozen Food",
+        "zw:Added Effect",
+        "zw:Extremely Hot Zone",
+        "zw:Heat"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Dá só Resistência ao calor de nível 1: não basta para as zonas de calor extremo do sul e do oeste do Deserto Gerudo, que exigem nível 2.",
+    "Não serve para Eldin: Resistência ao calor não protege do clima escaldante, do fogo nem da lava — para isso é preciso Proteção contra chamas.",
+    "Comer durante outro efeito temporário (ataque, defesa, um Elixir refrescante etc.) troca esse efeito pela Resistência ao calor de 1 minuto."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_razorclaw_crab",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_ironshell_crab",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_bright_eyed_crab",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_blackened_crab",
+      "relation": "Versão assada dos mesmos caranguejos"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Congela o ingrediente cru à distância"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Resistência ao calor mais longa e mais forte"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_calor"
+  ],
+  "verification_status": "a_verificar"
+}

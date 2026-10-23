@@ -1,0 +1,221 @@
+{
+  "id": "botw_monster_black_moblin",
+  "summary": "Moblin de terceiro nível (360 pontos de vida) com as armas Moblin dracônicas. Um deles empunha uma Grã-Espada faiscante no Coliseu em ruínas; os de Vah Rudania revivem na Lua de sangue até durante a batalha.",
+  "description": "O compendium descreve os Moblins pretos como um dos tipos mais perigosos de Moblin: extremamente resistentes e frequentemente armados com algumas das armas mais fortes que um Moblin pode carregar. Têm 360 pontos de vida e usam o equipamento Moblin dracônico, reforçado com ossos fossilizados, ou outras armas poderosas — um Moblin preto das ruínas do Coliseu (Coliseum Ruins) empunha uma Grã-Espada faiscante.\n\nO comportamento segue o da espécie: golpes pesados, pedras atiradas a distância, Koboblins usados como projéteis e afogamento em água funda. O compendium cita a Pradaria de Hyrule e o Cânion de Eldin como locais comuns. Na região de Eldin, eles também participam da sequência da Fera Divina Vah Rudania: se uma Lua de sangue ocorrer durante a batalha ao lado de Yunobo, as Sentinelas não voltam, mas os Moblins pretos da área sim.",
+  "locations": [
+    "Pradaria de Hyrule e Cânion de Eldin, segundo o compendium.",
+    "Área da batalha contra a Fera Divina Vah Rudania, na Montanha da Morte.",
+    "Ruínas do Coliseu (Coliseum Ruins), onde um deles empunha uma Grã-Espada faiscante."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Moblin, Presa de Moblin e Vísceras de Moblin.",
+    "Costuma carregar armas Moblin dracônicas; o do Coliseu carrega uma Grã-Espada faiscante.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de armas Moblin dracônicas e de Vísceras de Moblin.",
+    "Registro no compendium (entrada nº 110)."
+  ],
+  "effects": [
+    "Golpes muito pesados; arremessa pedras e Koboblins."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Muito resistente (360 pontos de vida); combates diretos gastam muita durabilidade.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "As pedras atiradas pelos Moblins podem ser rebatidas com Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado; o equipamento Moblin dracônico tem base de madeira e queima.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Arrow",
+        "zw:Moblin Gear"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o forçam a largar a arma — inclusive uma arma elétrica como a Grã-Espada faiscante.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shock Arrow",
+        "zw:Great Thunderblade"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Se estiver com uma arma metálica (como a Grã-Espada faiscante) durante uma tempestade, ela solta faíscas e acaba atraindo um raio para a posição dele. O equipamento Moblin, de madeira, não atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lightning",
+        "zw:Great Thunderblade",
+        "zw:Moblin Gear"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Moblins não nadam e se afogam em água funda.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Barris explosivos e Flechas explosivas causam dano; a explosão da flecha também incendeia o alvo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Barrel",
+        "zw:Bomb Arrow"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar a bomba.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos lançados com Magnétis o atingem. Armas metálicas que ele largar, como a Grã-Espada faiscante, podem ser puxadas com a runa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis",
+        "zw:Great Thunderblade"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Atira pedras a distância e usa Koboblins como projéteis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Moblin",
+      "status": "confirmado",
+      "result": "As máscaras de Moblin e de Majora fazem os Moblins ignorarem Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue em Vah Rudania",
+      "text": "Diferente das batalhas de Vah Medoh, Vah Ruta e Vah Naboris, a batalha contra Vah Rudania com Yunobo pode ser interrompida por uma Lua de sangue. Nesse caso as Sentinelas não são revividas, mas os Moblins pretos da área são.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O Moblin da Grã-Espada faiscante",
+      "text": "Nas ruínas do Coliseu (Coliseum Ruins), um Moblin preto empunha uma Grã-Espada faiscante, uma das poucas fontes fixas dessa arma.",
+      "sources": [
+        "zw:Great Thunderblade"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Desarmar o Moblin preto do Coliseu com choque para pegar a Grã-Espada faiscante cedo."
+  ],
+  "limitations": [
+    "Flechas ancestrais o desintegram junto com a arma, sem materiais."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_blue_moblin",
+      "relation": "Variante anterior"
+    },
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Variante seguinte"
+    },
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Forma básica"
+    },
+    {
+      "id": "botw_weapon_dragonbone_moblin_club",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_weapon_dragonbone_moblin_spear",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_weapon_great_thunderblade",
+      "relation": "Empunhada por um Moblin preto no Coliseu"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Parte de terceiro nível"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Revive-os até durante a batalha de Vah Rudania"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

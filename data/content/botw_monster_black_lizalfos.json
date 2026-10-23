@@ -1,0 +1,141 @@
+{
+  "id": "botw_monster_black_lizalfos",
+  "summary": "Lagalfos de terceiro nível (288 pontos de vida) armado com o Trimerangue Lagal e a Lança Lagal bifurcada. Nada em lagos e mares e também guarda acampamentos de monstros.",
+  "description": "O compendium coloca o Lagalfos preto entre os mais perigosos da espécie por causa das armas fortes que costuma carregar. Ele usa o nível mais alto do equipamento Lagal, reforçado com metal — o Trimerangue Lagal é descrito como a arma dos Lagalfos pretos experientes em batalha — e tem 288 pontos de vida.\n\nComo a maioria dos Lagalfos, nada em lagos e mares, mas também é encontrado em acampamentos de monstros. O compendium cita a Pradaria de Hyrule e as Cordilheiras de Hebra como locais comuns. Pode deixar Chifre, Garra e Cauda de Lagalfos.",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra, segundo o compendium.",
+    "Lagos, mares e acampamentos de monstros."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos, Garra de Lagalfos e Cauda de Lagalfos.",
+    "Costuma carregar armas Lagal de terceiro nível (Trimerangue Lagal, Lança Lagal bifurcada, Arco Lagal de aço).",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de armas Lagal de alto nível e de Caudas de Lagalfos.",
+    "Registro no compendium (entrada nº 115)."
+  ],
+  "effects": [
+    "Golpes fortes, bumerangues de várias lâminas, jatos de água."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Resiste bastante (288 pontos de vida) e revida com armas Lagal de terceiro nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado; suas armas metálicas não queimam.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o forçam a largar a arma; na água, Flechas eletrizantes criam área de dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Armas Lagal de terceiro nível são metálicas (inclusive o Arco Lagal de aço) e atraem raios em tempestades.",
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Nada em lagos e mares; não se afoga.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas causam dano — úteis nos acampamentos que ele ocupa.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; suas armas metálicas largadas podem ser puxadas com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se e embosca, como os demais Lagalfos; também ocupa acampamentos de monstros.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizalfos"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "As máscaras de Lagalfos e de Majora fazem os Lagalfos ignorarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Veteranos com Trimerangue",
+      "text": "A descrição do Trimerangue Lagal diz que ele é carregado por Lagalfos pretos experientes em batalha e brinca que mais lâminas significam mais ataque — e um bumerangue mais perigoso de pegar de volta.",
+      "sources": ["zw:Lizalfos Gear"]
+    }
+  ],
+  "advanced_uses": [
+    "Desarmá-lo com choque para obter um Trimerangue Lagal."
+  ],
+  "limitations": [
+    "Não se afoga.",
+    "Flechas ancestrais o desintegram sem materiais."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_lizalfos", "relation": "Variante anterior" },
+    { "id": "botw_monster_silver_lizalfos", "relation": "Variante seguinte" },
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_weapon_lizal_tri_boomerang", "relation": "Arma típica" },
+    { "id": "botw_weapon_forked_lizal_spear", "relation": "Arma típica" },
+    { "id": "botw_bow_steel_lizal_bow", "relation": "Arco típico" },
+    { "id": "botw_material_lizalfos_tail", "relation": "Parte de terceiro nível" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

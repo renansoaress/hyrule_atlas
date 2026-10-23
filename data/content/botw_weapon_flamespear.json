@@ -1,0 +1,259 @@
+{
+  "id": "botw_weapon_flamespear",
+  "summary": "Lança mágica forjada no magma da Montanha da Morte (ataque 24, durabilidade 50). Com a lâmina brilhando, expele chamas; equipada no frio, dá um nível de resistência ao frio.",
+  "description": "A Lança carbonizante foi forjada no magma da Montanha da Morte e faz parte do equipamento mágico, a série de armas elementais — a linha de fogo, segundo o Zelda Wiki, foi criada por antigos ferreiros Goron com a lava do vulcão. Quando a lâmina brilha, os ataques expelem chamas poderosas que incendeiam inimigos e objetos, e inimigos de gelo caem com um único golpe. Equipada num clima gelado, dá a Link um nível de resistência ao frio.\n\nOs parâmetros mostram como funciona a carga: a reserva de energia elemental é de 5000 e cada ataque flamejante consome 1000, o que dá cinco ataques elementais com a carga cheia; depois, a energia se recupera aos poucos. Fora o elemento, é uma lança de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis — e, naturalmente, não queima.",
+  "locations": [
+    "Cordilheiras de Hebra.",
+    "Interior do Castelo de Hyrule, na Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Encontrada nas Cordilheiras de Hebra e dentro do Castelo de Hyrule.",
+    "A Lua de sangue repõe as armas largadas pelo mundo e as que estão nas mãos dos inimigos."
+  ],
+  "uses": [
+    "Incendiar inimigos, grama e objetos inflamáveis sem gastar Flechas incendiárias.",
+    "Acender fogueiras: as chamas incendeiam objetos, como feixes de Madeira.",
+    "Derrotar inimigos de gelo com um único golpe.",
+    "Reduzir o frio em regiões geladas: equipada, vale um nível de resistência ao frio."
+  ],
+  "effects": [
+    "Com a lâmina brilhando, cada ataque expele chamas que incendeiam o alvo.",
+    "Um nível de resistência ao frio enquanto equipada em clima gelado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "ataque elemental",
+      "status": "confirmado",
+      "result": "Com a lâmina brilhando, as estocadas expelem chamas poderosas que incendeiam inimigos e objetos. Com a reserva cheia (5000), a lança faz cinco ataques flamejantes (1000 cada) antes de precisar recuperar energia.",
+      "conditions": [
+        "A lâmina precisa estar brilhando."
+      ],
+      "side_effects": [
+        "O fogo se espalha pela grama seca ao redor."
+      ],
+      "applications": [
+        "Incendiar a grama sob os inimigos e aproveitar a corrente ascendente para subir com o Planador."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magic Gear",
+        "dm",
+        "jogo",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo: é de metal, imune às chamas que ela mesma produz e ao calor de Eldin.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Equipada num clima gelado, dá um nível de resistência ao frio. O Zelda Wiki distingue dois níveis de frio — abaixo de 0 °C e abaixo de −10 °C —, e a lança fornece apenas um nível de proteção.",
+      "applications": [
+        "Atravessar áreas frias sem gastar elixires nem trocar de roupa."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Um golpe elemental elimina inimigos de gelo, como o Lagalfos glacial, que é vulnerável ao fogo. Centaleões, por outro lado, resistem a todos os ataques elementais e aos efeitos deles.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lizalfos",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cinco cargas, uma a mais que a espada",
+      "text": "Pelos parâmetros, a Lança carbonizante tem energia elemental máxima de 5000 e gasta 1000 por ataque, ou seja, cinco ataques flamejantes com a carga cheia, e recupera energia a uma taxa de 50. A Espada flamejante tem 4000 de energia com o mesmo gasto (quatro ataques) e taxa de recuperação 40.",
+      "sources": [
+        "dm",
+        "zw:Flameblade"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança carbonizante pode surgir com um bônus branco (comum) — ataque +5 a +10, durabilidade +5 a +9 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +11 a +19, durabilidade +10 a +23 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Forjada por ferreiros Goron",
+      "text": "O Zelda Wiki explica que as armas de fogo do equipamento mágico foram feitas por antigos ferreiros Goron com lava da Montanha da Morte, enquanto as de gelo vêm de gelo e minério de Hebra e as de raio foram forjadas pela família real de Hyrule.",
+      "sources": [
+        "zw:Magic Gear"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde as cargas para os inimigos de gelo: um golpe elemental basta para derrubá-los.",
+    "Em Hebra, deixe-a equipada para reduzir o frio sem gastar comida ou elixir."
+  ],
+  "limitations": [
+    "Só expele chamas quando a lâmina está brilhando.",
+    "Centaleões resistem ao fogo da lança.",
+    "Atrai raios e afunda, como toda lança de metal."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_flameblade",
+      "relation": "Espada de fogo do mesmo arquétipo (4 cargas)"
+    },
+    {
+      "id": "botw_weapon_great_flameblade",
+      "relation": "Espada de duas mãos de fogo do mesmo arquétipo"
+    },
+    {
+      "id": "botw_weapon_frostspear",
+      "relation": "Lança elemental de gelo"
+    },
+    {
+      "id": "botw_weapon_thunderspear",
+      "relation": "Lança elemental de raio"
+    },
+    {
+      "id": "botw_monster_ice_breath_lizalfos",
+      "relation": "Derrotado com um golpe de fogo"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Resiste ao fogo da lança"
+    },
+    {
+      "id": "botw_mechanic_temperature",
+      "relation": "Concede um nível de resistência ao frio"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "gera_fogo",
+    "queima_inimigos",
+    "protege_frio",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "botw_monster_blue_hinox",
+  "summary": "Rinox azul (800 de vida): usa grevas de madeira nos tornozelos que queimam com fogo, expondo os pés. Guarda orbes em várias missões de santuário e deixa peixes e frutos do mar assados ao morrer.",
+  "description": "O Rinox azul é a variação intermediária do Rinox. Passa a maior parte do tempo dormindo e só ataca quando perturbado; quando acorda, luta como os demais: tapas, socos, árvores arrancadas e rochas contra quem foge para o alto. A diferença está nas grevas de madeira presas aos tornozelos, que protegem os pés dos golpes. O compendium e o Zelda Wiki explicam que elas podem ser queimadas com ataques de fogo, deixando os pés expostos.\n\nComo todo Rinox, tem o olho como ponto fraco: uma flecha ali o atordoa, e com menos da metade da vida ele passa a cobrir o olho. O colar de armas pode ser saqueado enquanto ele dorme. Ao morrer, deixa Unha, Dente e Vísceras de Rinox e uma variedade de peixes e frutos do mar assados.\n\nVários Rinox azuis estão ligados a missões: o irmão do meio dos \"três gigantes\" do Monte Taran, o que guarda o orbe nas Ruínas Thyphlo, o da Ilha Eventide e o da Lagoa Ralis, alvo da missão secundária \"The Giant of Ralis Pond\".",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e na Grande Nascente de Lanayru.",
+    "Pontos citados pelo Zelda Wiki: Ja'Abu Ridge, Trotter's Downfall, Monte Taran (irmão do meio), Lago Herin, Talus Plateau, Lagoa Ralis, Aldor Foothills, Ruínas Thyphlo, sul das planícies de Akkala, norte do Castelo de Hyrule, oeste das planícies de Hyrule, Ermos de Seres, Floresta Applean, Ponte suspensa Digdogg, Ruínas do rancho leste e Ilha Eventide.",
+    "Também aparece no 12º andar das Provações iniciais da Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Unha, Dente e Vísceras de Rinox, as armas restantes do colar e frutos do mar assados (como Robalo assado, Robalo nutritivo assado, Salmão nutritivo assado, Truta assada, Carpa assada e Pargo assado, entre outros).",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Missão de santuário \"The Three Giant Brothers\": o irmão do meio guarda um dos orbes do Santuário Tawa Jinn.",
+    "Missão de santuário \"Shrouded Shrine\": o orbe carregado pelo Rinox azul das Ruínas Thyphlo abre o Santuário Ketoh Wawai.",
+    "Missão de santuário \"Stranded on Eventide\": um orbe ancestral fica com o Rinox azul da Ilha Eventide (Santuário Korgu Chideh).",
+    "Missão secundária \"The Giant of Ralis Pond\", dada por Torfeau depois de acalmar a Fera Divina Vah Ruta: derrotar o Rinox azul da Lagoa Ralis.",
+    "Conta para a Medalha de honra: Rinox."
+  ],
+  "effects": [
+    "Mesmo repertório do Rinox: tapas, socos, árvores arrancadas e rochas arremessadas."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Dormindo, deixa Link chegar perto e roubar as armas do colar sem acordar, se ele for furtivo.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Hinox"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "As grevas de madeira protegem os pés dos golpes enquanto estão inteiras.",
+      "applications": ["Queimar as grevas primeiro para golpear os pés."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hinox"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha no olho atordoa. Com metade da vida ou menos, ele cobre o olho.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hinox"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "As grevas de madeira pegam fogo e são destruídas, expondo os pés do Rinox.",
+      "conditions": ["Atingir as grevas com uma fonte de fogo (Flecha incendiária, arma de fogo etc.)."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Hinox"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre o Rinox azul."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes só citam atordoamento elétrico para o Rinox preto (grevas de metal); para o azul não há informação."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Como todo Rinox, nada por pouco tempo atrás de Link quando empurrado para água funda e depois se afoga.",
+      "kind": "mecanica",
+      "sources": ["zw:Hinox"]
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes de BOTW não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Rinox azul."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; as grevas dele são de madeira.",
+      "sources": ["zw:Magnesis", "zw:Hinox"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Arranca árvores para usar como arma e atira rochas em quem está fora de alcance.",
+      "kind": "mecanica",
+      "sources": ["zw:Hinox", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Grevas que viram fraqueza",
+      "text": "O compendium descreve que as grevas do Rinox azul podem ser queimadas para expor os pés. É a armadura dele que se volta contra ele quando se usa o elemento certo — no caso, o fogo.",
+      "sources": ["comp", "zw:Hinox"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O gigante da Lagoa Ralis",
+      "text": "Depois que Link acalma a Fera Divina Vah Ruta, o Zora Torfeau duvida que ele também consiga exterminar o Rinox da Lagoa Ralis, originando a missão secundária \"The Giant of Ralis Pond\".",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Medalha de honra: Rinox",
+      "text": "A contagem de Kilton para a Medalha de honra: Rinox inclui todos os Rinox azuis.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Abrir a luta com Flechas incendiárias nas grevas e depois alternar flecha no olho com golpes."
+  ],
+  "limitations": [
+    "Enquanto as grevas estiverem inteiras, os pés ficam protegidos.",
+    "Cobre o olho quando chega à metade da vida."
+  ],
+  "related": [
+    { "id": "botw_monster_hinox", "relation": "Variação vermelha, mais fraca" },
+    { "id": "botw_monster_black_hinox", "relation": "Variação com grevas de metal" },
+    { "id": "botw_monster_stalnox", "relation": "Versão esquelética" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Queima as grevas de madeira" },
+    { "id": "botw_material_hinox_toenail", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_hinox_tooth", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_hinox_guts", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_food_roasted_bass", "relation": "Um dos assados que ele deixa" },
+    { "id": "botw_keyitem_medal_of_honor_hinox", "relation": "Prêmio de Kilton" },
+    { "id": "botw_mechanic_trial_of_the_sword", "relation": "Aparece nas Provações iniciais" }
+  ],
+  "capabilities": ["reage_fogo", "habilidade_especial"],
+  "verification_status": "verificado"
+}

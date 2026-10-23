@@ -1,0 +1,206 @@
+{
+  "id": "botw_material_hylian_rice",
+  "summary": "Grão favorito de Kakariko, colhido ao cortar grama em Necluda Oriental. Cru cura 1 coração. Base de 30 receitas (curries, risotos, pilafs, bolinhos), mas sozinho ou com nozes vira Comida duvidosa.",
+  "description": "O Arroz hyliano é, segundo o jogo, o grão favorito dos moradores da Vila Kakariko, cultivado em regiões com muita água e usado em risotos e bolinhos de arroz. Na natureza, cai ao cortar a grama em Necluda Oriental; também é vendido no Coral Reef (Domínio Zora), na East Wind (Vila Hateno), na General Shoppe da Floresta Korok, na banca de Spera (Cidade Gerudo) e pelo mercador Yammo. Depois de \"Curry for What Ails You\", Lester, no Estábulo dos Arás, troca Tempero Goron por arroz.\n\nCru, recupera 1 coração; na panela, é um ingrediente neutro (1 coração, dobrado ao cozinhar, e 1:00 de duração). É obrigatório em 30 receitas: Arroz com curry e todos os curries com carne, frutos do mar, legumes e Extrato de monstro; os risotos; os pilafs; as tigelas de arroz com carne; os cinco tipos de bolinhos de arroz; o Ovo frito com arroz; o Arroz frito com frutos do mar; a Omelete de caranguejo com arroz; e a Paella de frutos do mar. Sozinho, porém, não forma receita: arroz puro, ou arroz só com nozes, resulta em Comida duvidosa. Na Tinturaria Kochi, entra no corante branco.",
+  "locations": [
+    "Grama de Necluda Oriental (cortar a vegetação faz o arroz cair).",
+    "Coral Reef (Domínio Zora), East Wind (Vila Hateno), General Shoppe (Floresta Korok), banca de Spera (Cidade Gerudo) e o mercador Yammo."
+  ],
+  "obtaining": [
+    "Cortar grama em Necluda Oriental.",
+    "Comprar nas lojas citadas (12 rupias).",
+    "Trocar Tempero Goron com Lester, no Estábulo dos Arás, depois de \"Curry for What Ails You\"."
+  ],
+  "uses": [
+    "Cura imediata: 1 coração cru.",
+    "Receitas obrigatórias (30): Arroz com curry, Pilaf ao curry, os curries de carne, de carne de segunda, de carne de primeira, de coxa, de sobrecoxa, de ave inteira, de frutos do mar, de legumes e de monstro; Risoto de caranguejo, de cogumelos, de legumes e de salmão; Pilaf de coxa, de sobrecoxa e de ave inteira; as três Tigelas de arroz com carne; Bolinhos de arroz com carne, de monstro, com cogumelos, com frutos do mar e com legumes; Ovo frito com arroz; Arroz frito com frutos do mar; Omelete de caranguejo com arroz; Paella de frutos do mar.",
+    "Ingrediente do corante branco na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 1:00 à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro (1 coração, dobrado na panela; 1:00 de duração) que precisa de um parceiro: com carne, peixe, cogumelos ou legumes forma bolinhos de arroz; com Tempero Goron, Arroz com curry; com ovo, Ovo frito com arroz. Sozinho, ou só com Bolota ou Noz, vira Comida duvidosa.",
+      "produces": [
+        "botw_food_curry_rice",
+        "botw_food_meaty_rice_balls",
+        "botw_food_veggie_rice_balls",
+        "botw_food_mushroom_rice_balls",
+        "botw_food_fried_egg_and_rice",
+        "botw_food_meat_and_rice_bowl",
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "grama",
+      "status": "confirmado",
+      "result": "Cortar a grama de Necluda Oriental com uma arma faz cair Arroz hyliano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear o arroz largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada do arroz na lista de Comidas assadas. A regra geral diz que materiais comestíveis crus assam e os demais viram cinzas, mas as fontes não descrevem o que acontece com o arroz no fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com o arroz largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada do arroz na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; não há uso conhecido para o arroz largado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do arroz à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com o arroz largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o arroz não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao arroz largado."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Arroz com nozes não funciona",
+      "text": "Entre as combinações que o Zelda Wiki lista como Comida duvidosa está, especificamente, Arroz hyliano com nozes (Bolota ou Noz). O arroz também não forma prato sozinho, ao contrário do Ovo, do Leite fresco e do Mel de abelha.",
+      "sources": [
+        "zw:Dubious Food",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Arroz por tempero",
+      "text": "Lester, no Estábulo dos Arás, tem arroz mas não tem Tempero Goron para fazer Arroz com curry. Depois de vender o primeiro tempero a ele por 50 rupias, Link pode trocar cada Tempero Goron por Arroz hyliano sempre que quiser.",
+      "sources": [
+        "zw",
+        "zw:Goron Spice"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Cortar grama em Necluda Oriental rende arroz de graça para estocar antes de cozinhar curries e bolinhos de arroz."
+  ],
+  "limitations": [
+    "Sozinho ou só com nozes, resulta em Comida duvidosa.",
+    "A página do arroz cita a Slippery Falcon (Vila Rito) entre os vendedores, mas a tabela de lojas do Zelda Wiki não inclui arroz no estoque dela."
+  ],
+  "related": [
+    {
+      "id": "botw_food_curry_rice",
+      "relation": "Arroz com Tempero Goron"
+    },
+    {
+      "id": "botw_food_meaty_rice_balls",
+      "relation": "Arroz com qualquer carne"
+    },
+    {
+      "id": "botw_food_fried_egg_and_rice",
+      "relation": "Arroz com Ovo"
+    },
+    {
+      "id": "botw_food_seafood_paella",
+      "relation": "Receita mais complexa com arroz"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Trocado com Lester por arroz"
+    },
+    {
+      "id": "botw_material_acorn",
+      "relation": "Com arroz, resulta em Comida duvidosa"
+    },
+    {
+      "id": "botw_object_grass",
+      "relation": "Cortar grama em Necluda Oriental rende arroz"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sozinho"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante branco"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

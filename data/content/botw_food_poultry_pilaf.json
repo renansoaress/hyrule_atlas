@@ -1,0 +1,106 @@
+{
+  "id": "botw_food_poultry_pilaf",
+  "summary": "Arroz hyliano refogado em caldo de Coxa, com Ovo e Manteiga de cabra. A receita está no diário de Ivee, em Hateno; sobra só um espaço para efeito.",
+  "description": "O Pilaf de coxa é feito com Coxa, Arroz hyliano, Ovo e Manteiga de cabra. O inventário descreve arroz hyliano refogado e cozido no caldo da ave, com o segredo de manter o fogo baixo até o arroz ficar soltinho. São quatro ingredientes obrigatórios, então cabe só um quinto, que define a variante (um \"refrescante\" para Resistência ao calor, um \"tenaz\" para Vigor extra etc.).\n\nIvee registra a receita no diário dela, na Vila Hateno: algumas Coxas, um pouco de Manteiga de cabra, uma quantidade \"adequada\" de Arroz hyliano e alguns Ovos — e garante que medidas exatas não importam, porque só acrescentam sabor. Assim como nos curries, a carne de ave define o nome: com Sobrecoxa o prato é Pilaf de sobrecoxa, com Ave inteira, Pilaf de ave inteira, e o jogo testa essas versões antes da de coxa.",
+  "locations": [
+    "A receita está no diário de Ivee, na casa dela na Vila Hateno."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela uma Coxa, Arroz hyliano, Ovo e Manteiga de cabra; um quinto ingrediente é opcional."
+  ],
+  "uses": [
+    "Recuperar corações; com um ingrediente extra, obter um efeito.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com um quinto ingrediente de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na variante, aplica o efeito do quinto ingrediente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Sobrecoxa ou Ave inteira",
+      "status": "confirmado",
+      "result": "Uma Sobrecoxa ou uma Ave inteira na panela muda o prato para Pilaf de sobrecoxa ou Pilaf de ave inteira, testados antes.",
+      "produces": [
+        "botw_food_prime_poultry_pilaf",
+        "botw_food_gourmet_poultry_pilaf"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A receita relaxada de Ivee",
+      "text": "No diário, Ivee não dá quantidades exatas — só \"algumas\" coxas e ovos e \"um pouco\" de manteiga — e defende que a imprecisão só melhora o sabor.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ovo e manteiga",
+      "text": "Ovo e Manteiga de cabra estão entre os ingredientes que elevam para 10% a chance extra de bônus crítico; como só o maior bônus conta, ter os dois não soma.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito.",
+    "Só a Coxa forma este pilaf."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_bird_drumstick",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_prime_poultry_pilaf",
+      "relation": "Versão com Sobrecoxa"
+    },
+    {
+      "id": "botw_food_gourmet_poultry_pilaf",
+      "relation": "Versão com Ave inteira"
+    },
+    {
+      "id": "botw_food_curry_pilaf",
+      "relation": "Pilaf com Tempero Goron, sem carne"
+    },
+    {
+      "id": "botw_food_poultry_curry",
+      "relation": "Outro prato de Coxa com arroz"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,136 @@
+{
+  "id": "botw_food_campfire_egg",
+  "summary": "Ovo assado inteiro na casca, que segura a água e o deixa mais borrachudo. Cura 1,5 coração (cru, 1) e vale 5 rupias — os mesmos números do ovo cozido nas fontes termais.",
+  "description": "Quando um Ovo encosta no fogo ou fica no chão do clima escaldante de Eldin, vira Ovo na fogueira. O texto do jogo explica que assar o ovo inteiro, ainda na casca, ajuda a reter a água, deixando-o um pouco mais borrachudo que o normal.\n\nA cura passa de 1 para 1,5 coração e o valor de venda, de 3 para 5 rupias. O Ovo tem ainda um segundo destino fora da Panela: largado na água de uma fonte termal, vira o Ovo cozido (Hard-Boiled Egg), que cura exatamente o mesmo 1,5 coração e vale as mesmas 5 rupias.",
+  "locations": [
+    "Prepara-se a partir de Ovos, tirados de ninhos no alto das árvores, numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Ovo ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Ovo — queima por alguns instantes e se transforma em Ovo na fogueira.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Ovo na fogueira.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Ovo no chão para que o ingrediente asse sozinho e vire Ovo na fogueira.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração do Ovo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 5 rupias; o Ovo cru vale 3.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Bird Egg"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Ovo na fogueira como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Fogueira ou fonte termal: dá no mesmo",
+      "text": "Largado numa fonte termal, o Ovo vira Ovo cozido (Hard-Boiled Egg) em vez de Ovo na fogueira. Os dois curam 1,5 coração e valem 5 rupias; a diferença é só o caminho — o termal dispensa fogo.",
+      "sources": [
+        "zw:Hard-Boiled Egg",
+        "zw:Bird Egg",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Por que fica borrachudo",
+      "text": "A descrição do jogo atribui a textura mais firme à água retida dentro da casca durante o cozimento.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Assa o ovo ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

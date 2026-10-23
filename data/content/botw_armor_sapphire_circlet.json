@@ -1,0 +1,149 @@
+{
+  "id": "botw_armor_sapphire_circlet",
+  "summary": "Tiara Gerudo com safira, que usa o poder do gelo contra climas quentes: Resistência ao calor nível 1 e o efeito oculto Poder ancestral aumentado. Vendida na Starlight Memories ou ganha de Isha.",
+  "description": "A Tiara de safira é uma peça intrincada feita com técnicas de ourivesaria Gerudo; a safira, diz a descrição, “aproveita o poder do gelo” para tornar os climas quentes mais toleráveis. Custa 800 rupias e 3 Safiras na Starlight Memories, a joalheria da Cidade Gerudo, e é uma das três joias que Isha oferece como recompensa da missão “Tools of the Trade”.\n\nDá Resistência ao calor nível 1, suficiente para o calor diurno do Deserto Gerudo acima de 40 °C; zonas acima de 50 °C pedem o nível 2. A resistência não vale para o clima escaldante da Montanha da Morte, que exige Proteção contra chamas. Tem ainda o efeito oculto Poder ancestral aumentado (+20% com armas ancestrais). A defesa vai de 3 a 20; as melhorias pedem 22 Safiras, 6 Sílex e 2 Fragmentos de estrela. Não pode ser tingida.",
+  "locations": [
+    "Starlight Memories, joalheria da Cidade Gerudo, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Comprar por 800 rupias e 3 Safiras na Starlight Memories, depois de “Tools of the Trade”.",
+    "Recompensa alternativa: ao concluir “Tools of the Trade” (entregar 10 Sílex a Isha), Link escolhe entre a Tiara de rubi, a Tiara de safira e os Brincos de topázio."
+  ],
+  "uses": [
+    "Atravessar o Deserto Gerudo de dia.",
+    "Aumentar o ataque das armas ancestrais."
+  ],
+  "effects": [
+    "Resistência ao calor nível 1.",
+    "Poder ancestral aumentado (oculto): +20% com armas ancestrais."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo), Resistência ao calor nível 1 e o efeito oculto Poder ancestral aumentado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "calor do deserto",
+      "status": "confirmado",
+      "result": "Evita o dano do calor diurno do deserto acima de 40 °C; acima de 50 °C são necessários dois níveis de Resistência ao calor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Heat",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima escaldante (Eldin)",
+      "status": "sem_efeito",
+      "result": "Não protege do clima escaldante da Montanha da Morte e do Cânion de Eldin, que exige Proteção contra chamas.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus de ataque oculto",
+      "text": "Além do efeito visível, a peça tem o efeito oculto Poder ancestral aumentado: +20% no ataque das armas ancestrais e guardiãs, multiplicado com Ataque aumentado. Ele não aparece no inventário.",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Desconto prometido",
+      "text": "Ao terminar “Tools of the Trade”, Isha convida Link a voltar à Starlight Memories prometendo um desconto especial e pede que ele não conte aos outros clientes.",
+      "sources": [
+        "zw:Tools of the Trade"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com Ombreira e Calças voe do deserto, a tiara forma uma alternativa à Faixa voe do deserto: o calor fica coberto e ganha-se o Poder ancestral aumentado, mas perde-se o bônus elétrico do conjunto."
+  ],
+  "limitations": [
+    "Não protege da Montanha da Morte.",
+    "Não pode ser tingida.",
+    "Sem conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_armor_desert_voe_headband",
+      "relation": "Outra peça de cabeça com Resistência ao calor"
+    },
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Tiara da mesma loja, contra o frio"
+    },
+    {
+      "id": "botw_armor_topaz_earrings",
+      "relation": "Outra opção da recompensa de Isha"
+    },
+    {
+      "id": "botw_armor_gerudo_veil",
+      "relation": "Peça do traje que também protege do calor (completo)"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,131 @@
+{
+  "id": "botw_material_ancient_gear",
+  "summary": "Engrenagem de máquinas Sheikah de qualidade superior a qualquer tecnologia atual. É o material mais pedido pelo Forno ancestral: 20 por peça do Conjunto ancestral, além do Arco, do Escudo e da Lança ancestrais.",
+  "description": "A Engrenagem ancestral é uma peça de máquinas antigas cuja qualidade de construção, apesar da idade, supera em muito qualquer coisa feita com a tecnologia atual. Cai de quase todos os Guardiões (só o Guardião batedor mais fraco não a deixa), aparece em baús e é vendida por Teli e pela filial da loja Slippery Falcon na Vila Tarrey.\n\nÉ a base do equipamento ancestral de Robbie. No Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala, cada peça do Conjunto ancestral (Elmo, Couraça e Grevas) pede 20 engrenagens, a Lança ancestral pede 15 e o Arco e o Escudo ancestrais pedem 10 cada — 85 só para comprar tudo. Na Fonte da Grande Fada, o 2º nível de cada peça do Conjunto ancestral e dos Elmos divinos pede mais 10. Como parte de monstro de grau médio, acrescenta 1:50 aos elixires e eleva em 10% a chance de bônus crítico; Kilton paga 10 Mon por unidade.",
+  "locations": [
+    "Guardiões de Toda Hyrule (exceto o Guardião batedor de nível I) e baús do tesouro.",
+    "Teli, entre o Forte Hateno e a Vila Hateno; loja Slippery Falcon da Vila Tarrey."
+  ],
+  "obtaining": [
+    "Derrotar Guardiões batedores II, III e IV, Guardiões deteriorados, persecutórios, altívagos, torretas e Sentinelas.",
+    "Abrir baús do tesouro.",
+    "Comprar de Teli ou na Slippery Falcon (filial da Vila Tarrey)."
+  ],
+  "uses": [
+    "Forno ancestral (Akkala): 20 engrenagens por peça do Conjunto ancestral (com 5 Eixos, Parafusos ou Molas, 3 Núcleos e 2.000 rupias); 15 na Lança ancestral (com 5 Eixos, 2 Núcleos e 1.000 rupias); 10 no Arco ancestral e no Escudo ancestral (com 15 Molas, 1 Núcleo gigante e 1.000 rupias).",
+    "Melhorias na Fonte da Grande Fada: 10 por peça no 2º nível do Conjunto ancestral e dos quatro Elmos divinos (70 no total).",
+    "Elixires: cozida com um bicho, acrescenta 1:50 de duração e +10% de chance de crítico.",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 30 rupias, ou 10 Mon na Fang and Bone."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; nos elixires, prolonga a duração (1:50)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "Forno ancestral",
+      "status": "confirmado",
+      "result": "Faz parte do preço de todo o Conjunto ancestral, da Lança ancestral, do Arco ancestral e do Escudo ancestral no Forno ancestral de Robbie.",
+      "conditions": ["Fornalha do laboratório de Akkala reacesa com a Chama azul (missão \"Robbie's Research\")."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Oven", "zw:Akkala Ancient Tech Lab"]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; as fontes não descrevem uso especial da engrenagem solta.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma engrenagem largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Engrenagem ancestral ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com uma engrenagem largada numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da engrenagem ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve se a engrenagem conduz ou reage à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Engrenagem ancestral afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As fontes não dizem de que material a engrenagem é feita nem se Magnétis a atrai."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma engrenagem largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Parte de monstro de grau médio: com pelo menos um bicho, forma um elixir, acrescenta 1:50 de duração e dá 10% de chance de bônus crítico; não soma corações nem força ao efeito. Sem bicho, ou com comida comum, vira Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Monster Part", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 30 rupias ou trocada por 10 Mon na Fang and Bone, de Kilton.",
+      "sources": ["zw", "zw:Monster Part"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Mesmo grau, mesmo efeito",
+      "text": "Para a culinária, a engrenagem vale exatamente o mesmo que um Eixo ancestral, uma Presa de Koboblin ou um Casco de Centaleão: todas são partes de grau médio (1:50 e +10% de crítico). A diferença entre partes do mesmo grau é só o preço de venda — por isso vale mais vender engrenagens do que gastá-las em elixires.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Teli e as peças de Guardião",
+      "text": "Teli, que vende engrenagens perto do Forte Hateno, recolhe as peças de Guardiões quebrados ao redor do forte e já vendeu material a Robbie — sem saber que ele o usa para fazer equipamento contra os próprios Guardiões.",
+      "sources": ["zw:Teli"]
+    }
+  ],
+  "advanced_uses": [
+    "Para elixires, use partes baratas do mesmo grau (como Presas de Koboblin) e guarde as engrenagens para o Forno ancestral e para as melhorias."
+  ],
+  "limitations": [
+    "Não pode ser comida nem cozida com comida comum.",
+    "Os Guardiões batedores de nível I não a deixam."
+  ],
+  "related": [
+    { "id": "botw_armorset_ancient_set", "relation": "Cada peça pede 20 engrenagens no Forno e 10 no 2º nível" },
+    { "id": "botw_armor_ancient_helm", "relation": "Pede 20 engrenagens no Forno ancestral" },
+    { "id": "botw_weapon_ancient_spear", "relation": "Pede 15 engrenagens no Forno ancestral" },
+    { "id": "botw_bow_ancient_bow", "relation": "Pede 10 engrenagens no Forno ancestral" },
+    { "id": "botw_shield_ancient_shield", "relation": "Pede 10 engrenagens no Forno ancestral" },
+    { "id": "botw_material_ancient_shaft", "relation": "Outra peça ancestral de grau médio" },
+    { "id": "botw_material_bokoblin_fang", "relation": "Parte de grau médio equivalente na culinária" },
+    { "id": "botw_monster_guardian_scout_ii", "relation": "O batedor mais fraco que já a deixa" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem bichos" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante cinza" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

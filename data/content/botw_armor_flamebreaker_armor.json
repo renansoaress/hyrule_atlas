@@ -1,0 +1,188 @@
+{
+  "id": "botw_armor_flamebreaker_armor",
+  "summary": "Armadura Goron de pedras resistentes ao fogo que impede Link de pegar fogo no clima escaldante da Montanha da Morte. Vendida na Cidade Goron ou ganha de Kima por 10 Lagartos corta-fogo.",
+  "description": "A Armadura antichamas faz parte do Conjunto antichamas, com o Elmo antichamas e as Botas antichamas. Os Gorons normalmente não usam roupa, mas começaram a vendê-la aos turistas na loja Ripped and Shredded, na Cidade Goron, depois que Vah Rudania agravou as erupções; ela custa 600 rupias. Também é a recompensa da Missão secundária \"Fireproof Lizard Roundup\": na Mina do Sul (Southern Mine), Kima troca a própria armadura por 10 Lagartos corta-fogo.\n\nA peça dá um nível de Proteção contra chamas, que basta perto da Cidade Goron; mais acima, a partir da Mina Norte Abandonada e da Ponte de Eldin, são necessários dois níveis. Atenção: a Proteção contra chamas evita queimar no clima, mas não reduz dano de fogo direto. Isso só acontece com o bônus À prova de fogo, ativado com as três peças em ★★.\n\nA defesa vai de 3 a 20. As melhorias pedem Lagartos corta-fogo e partes de Moblin nos dois primeiros níveis e Borboletas abrasadoras com vísceras de Moblin e de Rinox nos dois últimos. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Loja Ripped and Shredded, na Cidade Goron.",
+    "Mina do Sul (Southern Mine), com Kima, na Missão secundária \"Fireproof Lizard Roundup\"."
+  ],
+  "obtaining": [
+    "Comprar por 600 rupias na Ripped and Shredded.",
+    "Entregar 10 Lagartos corta-fogo a Kima, na Mina do Sul."
+  ],
+  "uses": [
+    "Subir a Montanha da Morte e entrar na Cidade Goron sem pegar fogo.",
+    "Completar o Conjunto antichamas para ficar imune a dano de fogo."
+  ],
+  "effects": [
+    "Proteção contra chamas, nível 1.",
+    "Bônus de conjunto (três peças em ★★): À prova de fogo, sem dano de fogo ou de ataques de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Proteção contra chamas, que impede Link de pegar fogo no clima escaldante. Com o Elmo antichamas, a Armadura antichamas e as Botas antichamas vestidos, todos em ★★, ativa o bônus À prova de fogo (Fireproof).",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "peça isolada",
+      "status": "sem_efeito",
+      "result": "A Proteção contra chamas só vale para o clima escaldante: não reduz o dano de fogo direto, de ataques de fogo nem de lava.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "O bônus À prova de fogo impede qualquer dano de fogo ou de ataques de fogo — Link deixa de ser incendiado.",
+      "conditions": [
+        "Três peças antichamas equipadas, todas em pelo menos ★★."
+      ],
+      "side_effects": [
+        "Continua sem proteger de lava, de zonas de calor extremo e do próprio clima escaldante (este fica a cargo da Proteção contra chamas das peças)."
+      ],
+      "applications": [
+        "Lutar contra Chulchuls ígneos, Morcis ígneos e outros inimigos de fogo sem se queimar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Flame-Resistant Equipment"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima escaldante",
+      "status": "confirmado",
+      "result": "Um nível de Proteção contra chamas basta para o início do clima escaldante, perto da Lagoa Medingo (Medingo Pool) e da Cidade Goron (calor ★). A partir da Mina Norte Abandonada (Abandoned North Mine) e da Ponte de Eldin, o calor passa a ★★ e exige dois níveis — por exemplo, duas peças antichamas.",
+      "side_effects": [
+        "Armas, arcos e escudos de madeira equipados continuam pegando fogo no clima escaldante; prefira equipamento de metal."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Scorching Climate",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "calor do deserto",
+      "status": "sem_efeito",
+      "result": "Proteção contra chamas não protege do calor diurno do Deserto Gerudo; para isso é preciso Resistência ao calor.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Uma peça de graça",
+      "text": "Capturar 10 Lagartos corta-fogo para Kima, na Mina do Sul, economiza as 600 rupias da armadura. Depois disso, ele ainda paga 20 rupias a cada três lagartos entregues, porque quer preparar Elixires corta-fogo. O elmo ele não empresta: diz que é caro demais e manda Link comprar o seu na Cidade Goron.",
+      "sources": [
+        "zw:Fireproof Lizard Roundup"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Nomes que confundem",
+      "text": "O efeito das peças, que protege do clima vulcânico, chama-se Proteção contra chamas (Flame Guard), enquanto o bônus de conjunto que impede Link de ser incendiado chama-se À prova de fogo (Fireproof).",
+      "sources": [
+        "zw:Flame-Resistant Equipment"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Flechas que se acendem sozinhas",
+      "text": "Protegido pela armadura, Link pode lutar no clima escaldante, onde flechas sacadas pegam fogo e causam dano de fogo ao atingir alvos inflamáveis. Cuidado: uma Flecha explosiva sacada nesse clima explode imediatamente.",
+      "sources": [
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para chegar aos dois níveis exigidos no alto da Montanha da Morte gastando pouco, junte a armadura ganha de Kima com as botas (700 rupias) ou o elmo da Ripped and Shredded."
+  ],
+  "limitations": [
+    "Não protege de fogo direto, de lava nem do calor do Deserto Gerudo.",
+    "Não protege o equipamento de madeira, que continua queimando no clima escaldante."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_flamebreaker_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_flamebreaker_boots",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_creature_fireproof_lizard",
+      "relation": "Pedido por Kima e nas primeiras melhorias"
+    },
+    {
+      "id": "botw_creature_smotherwing_butterfly",
+      "relation": "Material das duas últimas melhorias"
+    },
+    {
+      "id": "botw_elixir_fireproof_elixir",
+      "relation": "Alternativa consumível com o mesmo efeito"
+    },
+    {
+      "id": "botw_armor_vah_rudania_divine_helm",
+      "relation": "Outra peça com Proteção contra chamas"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_fogo",
+    "protege_calor"
+  ],
+  "verification_status": "verificado"
+}

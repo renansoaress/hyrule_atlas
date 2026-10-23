@@ -1,0 +1,107 @@
+{
+  "id": "botw_food_prime_spiced_meat_skewer",
+  "summary": "Carne de segunda com Tempero Goron: preparo simples, sabor complexo. Só a Carne de segunda serve, e Arroz hyliano na panela transforma o espetinho em curry.",
+  "description": "O Espetinho temperado de carne de segunda pede apenas Carne de segunda e Tempero Goron. O inventário observa que o preparo simples esconde um sabor complexo. Com dois ingredientes obrigatórios, sobram três espaços para ingredientes de efeito, o que o torna uma base flexível para somar vários ingredientes do mesmo efeito.\n\nA receita aceita só a Carne de segunda; a Sobrecoxa, que serve em vários pratos \"de segunda\", não está entre os ingredientes desta. A ordem de prioridade decide o resto: com Carne de primeira na panela o prato vira Espetinho temperado de carne de primeira, e com Arroz hyliano ele deixa de ser espetinho e vira Curry de carne de segunda, porque os curries são testados bem antes.",
+  "obtaining": [
+    "Cozinhar numa Panela Carne de segunda e Tempero Goron, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Base com três espaços livres para empilhar ingredientes de efeito.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Arroz hyliano",
+      "status": "confirmado",
+      "result": "Arroz hyliano junto da carne e do tempero transforma o prato em Curry de carne de segunda.",
+      "produces": [
+        "botw_food_prime_meat_curry"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Carne de primeira",
+      "status": "confirmado",
+      "result": "Com Carne de primeira na panela, o resultado é o Espetinho temperado de carne de primeira, testado antes.",
+      "produces": [
+        "botw_food_gourmet_spiced_meat_skewer"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tempero que rende",
+      "text": "O Tempero Goron acrescenta 1:30 à duração do efeito e eleva para 10% a chance extra de bônus crítico — num prato com três espaços livres para ingredientes de efeito, isso ajuda a fazer pratos longos.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não aceita Sobrecoxa.",
+    "Arroz na panela muda a receita para curry."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_spiced_meat_skewer",
+      "relation": "Versão com Carne de terceira"
+    },
+    {
+      "id": "botw_food_gourmet_spiced_meat_skewer",
+      "relation": "Versão com Carne de primeira"
+    },
+    {
+      "id": "botw_food_prime_meat_curry",
+      "relation": "O que se obtém ao acrescentar arroz"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

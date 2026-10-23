@@ -1,0 +1,109 @@
+{
+  "id": "botw_food_creamy_seafood_soup",
+  "summary": "Sopa de fruto do mar, uma planta, Leite fresco e Halita. O efeito costuma vir do próprio peixe ou caranguejo; a versão comum pede Robalo hyruliano ou Carpa tricolor.",
+  "description": "A Sopa cremosa de frutos do mar combina qualquer fruto do mar, qualquer legume, erva ou flor, Leite fresco e Halita. Cenoura tenaz, Cenoura veloz e Abóbora robusta não podem entrar, senão o prato vira Sopa cremosa de legumes. A descrição do jogo destaca os pedaços grossos de fruto do mar e o caldo saboroso.\n\nDiferente da Sopa cremosa de carne, aqui o principal ingrediente quase sempre tem efeito, então é ele que define a versão. Para a versão comum (5 corações, 40 rupias), use Robalo hyruliano ou Carpa tricolor, os peixes sem efeito, com ingredientes também sem efeito. Com outros frutos do mar saem as versões nutritiva (Salmão nutritivo, Robalo nutritivo ou Caramujo nutritivo; 50 rupias), energizante (Robalo enérgico ou Caranguejo esperto; 8 corações, 70 rupias), picante (Truta rescaldada), isolante (Truta voltaica; 8 corações), valente (Carpa valente, Pargo valente ou Caranguejo espadachim), blindada (Carpa blindada, Pargo blindado ou Caranguejo couraçado; 8 corações), discreta (Truta discreta ou Caramujo discreto) e refrescante (Truta glacial). A versão veloz exige um ingrediente de velocidade à parte e cura só 3 corações.",
+  "locations": [
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer fruto do mar + legume, erva ou flor (exceto cenouras e Abóbora robusta) + Leite fresco + Halita."
+  ],
+  "uses": [
+    "Transformar peixes e caranguejos de efeito numa sopa com esse efeito.",
+    "Venda: de 40 a 70 rupias."
+  ],
+  "effects": [
+    "Versão comum (Robalo hyruliano ou Carpa tricolor): recupera 5 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Salmão nutritivo, Robalo nutritivo ou Caramujo nutritivo; 50 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Robalo enérgico ou Caranguejo esperto; 8 corações, 70 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — ingrediente de velocidade à parte; 3 corações, 50 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Truta rescaldada; 5 corações, 40 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Truta voltaica; 8 corações, 40 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Carpa valente, Pargo valente ou Caranguejo espadachim; 5 corações, 50 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Carpa blindada, Pargo blindado ou Caranguejo couraçado; 8 corações, 50 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Truta discreta ou Caramujo discreto; 5 corações, 50 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Truta glacial; 5 corações, 40 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 5 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O fruto do mar (ou a planta) com efeito define a versão; as versões energizante, isolante e blindada são as que mais curam (8 corações).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 40 rupias na versão comum; as versões com efeito vão de 40 a 70 rupias, sendo a energizante a mais cara.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Escolha a planta pelo peixe",
+      "text": "Como o fruto do mar já traz o efeito, a planta deve ser sem efeito ou do mesmo efeito. Uma planta de efeito diferente anula o do peixe e devolve a sopa à versão comum.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não aceita Cenoura veloz, Cenoura tenaz nem Abóbora robusta.",
+    "A versão comum exige um dos dois peixes sem efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_creature_sanke_carp",
+      "relation": "Peixe sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_food_creamy_meat_soup",
+      "relation": "Mesma base com carne"
+    },
+    {
+      "id": "botw_food_cream_of_vegetable_soup",
+      "relation": "Mesma base sem carne nem peixe"
+    },
+    {
+      "id": "botw_food_veggie_cream_soup",
+      "relation": "Prato que surge ao usar cenoura ou abóbora"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

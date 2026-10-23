@@ -1,0 +1,154 @@
+{
+  "id": "botw_weapon_sword",
+  "summary": "Espada exclusiva de amiibo, empunhada por um herói de uma era antiga e desenhada como nas artes do primeiro The Legend of Zelda. Sua descrição evoca o clássico \"É perigoso ir sozinho\". Ataque 22, metálica.",
+  "description": "A Espada do herói é obtida aleatoriamente no baú gerado ao escanear o amiibo de Link de The Legend of Zelda (o Link de 8 bits da linha de 30 anos) com a runa amiibo. A descrição do jogo diz que ela foi empunhada por um herói de uma era antiga, que segurá-la traz uma estranha sensação de nostalgia e que vale levá-la quando ir sozinho seria perigoso — referência à famosa fala do Velho no primeiro jogo da série, \"IT'S DANGEROUS TO GO ALONE! TAKE THIS.\". A aparência segue o desenho da espada nas artes de The Legend of Zelda.\n\nCom ataque 22 e durabilidade 27, é uma espada de uma mão sólida. Por ser de metal, conduz eletricidade, atrai raios quando equipada em tempestades, afunda na água e pode ser recuperada com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Não aparece no mundo do jogo: só sai de baús gerados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link de The Legend of Zelda (30 anos, 8 bits) com a runa amiibo; a espada pode vir no baú que surge.",
+    "Armas obtidas por amiibo sempre vêm com bônus, no valor máximo do nível sorteado.",
+    "O amiibo só pode ser lido uma vez por dia real; para tentar de novo, é preciso esperar."
+  ],
+  "uses": [
+    "Espada de uma mão de nível intermediário para quem tem o amiibo.",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "side_effects": [
+        "Só pode ser reposta com novas leituras do amiibo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e manipulada com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não citam monstros que empunhem a Espada do herói; ela só vem de baús de amiibo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus garantido e no máximo",
+      "text": "Como arma de amiibo, sempre vem com bônus no valor máximo do nível sorteado (o texto aparece em branco mesmo quando o bônus é do nível dourado). Pelos parâmetros, as faixas são de +5 a +8 de ataque (nível comum) ou +9 a +14 (dourado), de +3 a +6 de durabilidade (ou +7 a +14 no dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — nas armas comuns, esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite; as fontes não dizem se o limite vale para baús de amiibo.",
+      "sources": [
+        "zw:Amiibo (Ability)",
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"É perigoso ir sozinho\"",
+      "text": "No primeiro The Legend of Zelda, o Velho da caverna entrega a espada a Link dizendo \"IT'S DANGEROUS TO GO ALONE! TAKE THIS.\". A descrição da espada em Breath of the Wild faz referência a essa fala.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o bônus dourado de ataque no máximo, chega a 36 de ataque (22 + 14)."
+  ],
+  "limitations": [
+    "Depende do amiibo de Link de The Legend of Zelda.",
+    "Metálica: perigosa em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Única forma de obtê-la"
+    },
+    {
+      "id": "botw_weapon_goddess_sword",
+      "relation": "Outra espada exclusiva de amiibo"
+    },
+    {
+      "id": "botw_armorset_hero_set",
+      "relation": "Conjunto obtido com o mesmo amiibo de Link de 8 bits"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

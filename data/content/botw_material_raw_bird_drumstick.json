@@ -1,0 +1,166 @@
+{
+  "id": "botw_material_raw_bird_drumstick",
+  "summary": "Carne de ave comum (pombos silvestres, corvos, patos, garças e gaivotas), mais dura que um bife. Crua cura 1 coração; assada vira Coxa assada (1,5) e congelada vira Coxa congelada. Exigida no Pilaf de coxa e no Curry de coxa.",
+  "description": "A Coxa (Raw Bird Drumstick) é a carne das aves mais comuns: Pombos silvestres, Corvos da montanha, Patos de peito verde, Garças azuladas e rosadas e Gaivotas a deixam ao serem abatidos, e o mercador Mezer a vende perto do Dueling Peaks Stable. O jogo a descreve como mais dura e mastigável que um bife comum, e melhor cozida. Equivale, em cura, à Carne de terceira: 1 coração crua.\n\nNo fogo vira Coxa assada (1,5 coração); no frio extremo, na água gelada ou com ataques de gelo, vira Coxa congelada, que mantém 1 coração e dá 1 minuto de Resistência ao calor. Na panela, é a carne obrigatória do Pilaf de coxa e do Curry de coxa e substitui a Carne de terceira no Ensopado de carne, na Carne grelhada no sal e na Fritada de carne e frutos do mar, além das receitas de \"qualquer carne\".",
+  "locations": [
+    "Pombos silvestres, Corvos da montanha, Patos de peito verde, Garças azuladas, Garças rosadas e Gaivotas.",
+    "Mercador Mezer, perto do Dueling Peaks Stable."
+  ],
+  "obtaining": [
+    "Abater as aves citadas.",
+    "Comprar de Mezer."
+  ],
+  "uses": [
+    "Cura imediata: 1 coração crua, 1,5 como Coxa assada.",
+    "Receitas exclusivas: Pilaf de coxa (com Arroz hyliano, Ovo e Manteiga de cabra) e Curry de coxa (com Arroz hyliano e Tempero Goron).",
+    "Alternativa à Carne de terceira: Ensopado de carne, Carne grelhada no sal e Fritada de carne e frutos do mar.",
+    "Receitas de \"qualquer carne\", como Espetinho de carne, Carne glaceada, Torta de carne e Bife apimentado.",
+    "Venda: 8 rupias (assada, 12; congelada, 15)."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Coxa assada, que recupera 1,5 coração, sem efeito especial.",
+      "conditions": ["Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "produces": ["botw_food_roasted_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Coxa assada.",
+      "produces": ["botw_food_roasted_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no clima escaldante de Eldin, assa sozinha.",
+      "produces": ["botw_food_roasted_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingida por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, vira Coxa congelada.",
+      "produces": ["botw_food_frozen_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gelado ou em água gelada, vira Coxa congelada — \"dura como pedra, mas supostamente comestível\" —, com 1 coração de cura e 1:00 de Resistência ao calor nível 1.",
+      "produces": ["botw_food_frozen_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma elemental",
+      "status": "confirmado",
+      "result": "Golpeada com arma de fogo (Espada flamejante, Grã-Espada flamejante, Lança carbonizante), assa; com arma de gelo (Espada álgida, Grã-Espada álgida, Lança congelante), congela.",
+      "produces": ["botw_food_roasted_bird_drumstick", "botw_food_frozen_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Frozen Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a carne com uma arma comum."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada para assar perto do fogo ou congelar no frio; Pastores hylianos comem carne largada perto deles.",
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Hylian Retriever"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da carne à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Em água gelada, congela; as fontes não dizem o que acontece em água comum.",
+      "produces": ["botw_food_frozen_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a carne não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a carne largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, a cura dobra. É obrigatória no Pilaf de coxa e no Curry de coxa e pode substituir a Carne de terceira no Ensopado de carne, na Carne grelhada no sal e na Fritada de carne e frutos do mar.",
+      "produces": ["botw_food_poultry_pilaf", "botw_food_poultry_curry", "botw_food_meat_stew", "botw_food_salt_grilled_meat", "botw_food_meat_and_seafood_fry"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Crua vale 8 rupias; assada, 12; congelada, 15.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Frozen Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congele antes de vender",
+      "text": "A Coxa congelada tem preço fixo de 15 rupias, quase o dobro da crua (8) e acima da assada (12).",
+      "sources": ["zw:Frozen Food", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Dura como pedra",
+      "text": "O texto da Coxa congelada diz que ela é dura como pedra, \"mas supostamente comestível\", e que tem efeito refrescante.",
+      "sources": ["zw:Frozen Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Para o Pilaf de coxa, junte Coxa, Arroz hyliano, Ovo e Manteiga de cabra; Yammo e Agus vendem os três últimos."
+  ],
+  "limitations": [
+    "Assada ou congelada, não ganha efeitos especiais além da resistência ao calor da versão congelada.",
+    "Mezer é o único comerciante que a vende."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_bird_drumstick", "relation": "Resultado de assar no fogo" },
+    { "id": "botw_food_frozen_bird_drumstick", "relation": "Resultado de congelar" },
+    { "id": "botw_material_raw_meat", "relation": "Equivalente de mamífero nas receitas simples" },
+    { "id": "botw_material_raw_bird_thigh", "relation": "Carne de ave de qualidade superior" },
+    { "id": "botw_creature_wood_pigeon", "relation": "Ave que a deixa" },
+    { "id": "botw_creature_seagull", "relation": "Ave que a deixa" },
+    { "id": "botw_food_poultry_pilaf", "relation": "Prato que exige Coxa" },
+    { "id": "botw_food_poultry_curry", "relation": "Prato que exige Coxa" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de culinária" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

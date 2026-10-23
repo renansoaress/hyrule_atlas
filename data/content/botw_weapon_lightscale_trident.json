@@ -1,0 +1,233 @@
+{
+  "id": "botw_weapon_lightscale_trident",
+  "summary": "Tridente da campeã Mipha, de graça incomparável (ataque 22, durabilidade 70, a maior entre as lanças). Presente do rei Dorephan após Vah Ruta; se quebrar, Vegari (Dento) o refaz.",
+  "description": "O Tridente escamado foi presenteado à princesa Zora Mipha no dia de seu nascimento pelo ferreiro Vegari (Dento), segundo a \"História dos Zora, parte quatro\", um dos monumentos de pedra da Grande Nascente de Lanayru. Embora Mipha se dedicasse sobretudo aos poderes de cura, sua habilidade com a lança era incomparável; quem a treinou foi o sargento Sende (Seggin), da guarda real Zora.\n\nDepois da Grande Calamidade, os Zora tentaram mandar o tridente rio abaixo para dar paz à alma da princesa, mas ele brilhou e a voz de Mipha pediu que deixassem a tristeza de lado e apenas se lembrassem dela — origem do festival em sua homenagem, que usa uma réplica, o Tridente cerimonial. Link recebe o tridente verdadeiro do rei Dorephan depois de acalmar a Fera Divina Vah Ruta: ele fica num baú de pedra na sala do trono.\n\nÉ uma lança de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis. Nunca recebe bônus aleatórios, mas tem a maior durabilidade entre todas as lanças (70).",
+  "locations": [
+    "Sala do trono do Território Zora (Grande Nascente de Lanayru), num baú de pedra, depois que Vah Ruta é acalmada."
+  ],
+  "obtaining": [
+    "Recompensa do rei Dorephan por acalmar Vah Ruta e salvar o Território Zora da inundação; o tridente fica no baú de pedra da sala do trono.",
+    "Se quebrar, Vegari (Dento), na oficina Hammerhead, refaz o tridente em troca de 1 Lança Zora, 1 Diamante e 5 Sílex.",
+    "Se o tridente ainda existir em algum lugar fora da algibeira de Link, Vegari não o refaz: diz sentir que ele continua no mundo e recomenda encontrá-lo."
+  ],
+  "uses": [
+    "Lança principal de metal, a mais durável do jogo.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "O tridente é perdido no impacto; só Vegari (Dento) pode refazê-lo, com Lança Zora, Diamante e Sílex."
+      ],
+      "applications": [
+        "Evite arremessá-lo, a não ser como último golpe antes de ele quebrar de qualquer jeito."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Se cair num rio ou lago, resgate-o com Magnétis: enquanto ele existir no mundo, Vegari não faz outro."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não citam monstros que empunhem o Tridente escamado."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Vegari refaz o tridente",
+      "text": "Depois que Vah Ruta é acalmada, Vegari (Dento) se oferece para refazer o Tridente escamado se ele quebrar. Ele diz sentir que o tridente \"desapareceu deste mundo\" e pede 1 Lança Zora, 1 Diamante e 5 Sílex.",
+      "sources": [
+        "zw",
+        "zw:Dento",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ele sente onde o tridente está",
+      "text": "Se o tridente não estiver com Link mas ainda existir em algum lugar, Vegari percebe e se recusa a refazê-lo: alerta que seria perigoso se um monstro o pegasse e insiste para que Link o encontre, a menos que o tenha confiado a alguém.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus aleatórios",
+      "text": "Os parâmetros extraídos do jogo ainda listam faixas de bônus (ataque +5 a +9 ou +10 a +18, durabilidade +7 a +13 ou +14 a +32, arremesso longo de 1,5× a 2×), mas o Zelda Wiki registra que o Tridente escamado é um equipamento único e nunca recebe bônus: todo exemplar vem com os valores-base.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Reparo sem gastar Diamante",
+      "text": "Antes que o tridente quebre, deixe um Octoroc rochoso aspirá-lo: o monstro devolve armas com a durabilidade restaurada, o que evita gastar a Lança Zora, o Diamante e os Sílex da receita de Vegari. A Lua de sangue reinicia a capacidade de cada Octoroc de repor armas.",
+      "sources": [
+        "zw:Durability",
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"O Tridente escamado e eu somos um\"",
+      "text": "Pelo relato do rei Dorephan no monumento, quando o tridente foi posto para descer o Rio Zora, ele brilhou e a voz de Mipha disse que ela e o tridente eram um só, pedindo que os Zora não chorassem e apenas se lembrassem dela. Desde então, no dia da Grande Calamidade, os Zora veneram o tridente.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A lança mais durável",
+      "text": "Com durabilidade 70, o Tridente escamado supera todas as outras lanças do jogo; a segunda maior marca entre elas é 50.",
+      "sources": [
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mantenha uma Lança Zora, um Diamante e 5 Sílex guardados para refazer o tridente assim que ele quebrar."
+  ],
+  "limitations": [
+    "Nunca recebe bônus aleatórios.",
+    "Arremessado contra um inimigo, quebra no impacto.",
+    "Afunda na água e atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_ceremonial_trident",
+      "relation": "Réplica usada no festival, mais fraca"
+    },
+    {
+      "id": "botw_weapon_zora_spear",
+      "relation": "Material para Vegari (Dento) refazê-lo"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Material para refazê-lo"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Material para refazê-lo (5 unidades)"
+    },
+    {
+      "id": "botw_ability_miphas_grace",
+      "relation": "Poder de cura de Mipha, sua antiga dona"
+    },
+    {
+      "id": "botw_monster_waterblight_ganon",
+      "relation": "Chefe de Vah Ruta; vencê-lo leva ao presente do rei"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

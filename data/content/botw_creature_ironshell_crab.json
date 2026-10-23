@@ -1,0 +1,149 @@
+{
+  "id": "botw_creature_ironshell_crab",
+  "summary": "Caranguejo de casca especialmente dura das praias de Necluda. Foge quando Link chega perto, mas é lento e fácil de pegar. Cozido, dá Defesa aumentada.",
+  "description": "O Caranguejo couraçado vive perto da água, geralmente nas praias de Necluda — o compendium cita o Mar de Necluda e Necluda Oriental. Costuma andar pela areia ou em águas rasas, e também se esconde debaixo de pedras. Quando Link se aproxima, sai correndo de lado, mas em geral não é rápido e pode ser apanhado com facilidade. Também é vendido no mercado de Vila Lurelin.\n\nSegundo o jogo, a casca dele é particularmente dura, e a gordura e a carne, cozidas, reforçam o corpo e aumentam a defesa: pratos com ele dão Defesa aumentada temporária. Cru, recupera 1 coração. Serve para todas as receitas de caranguejo (Omelete de caranguejo com arroz, Risoto de caranguejo, Caranguejo salteado, Caranguejo grelhado no sal e Espetinho de frutos do mar) e para as receitas gerais de fruto do mar. No fogo vira Caranguejo tostado; no gelo, Caranguejo congelado.",
+  "locations": [
+    "Praias de Necluda: o compendium cita o Mar de Necluda e Necluda Oriental.",
+    "Areia e águas rasas perto do mar; às vezes escondido sob pedras."
+  ],
+  "obtaining": [
+    "Pegar à mão: ele foge, mas é lento.",
+    "Procurar debaixo de pedras na praia, onde alguns ficam escondidos.",
+    "Comprar no mercado de Vila Lurelin por 20 rupias (3 em estoque, renovável)."
+  ],
+  "uses": [
+    "Receitas de caranguejo: Omelete de caranguejo com arroz, Risoto de caranguejo, Caranguejo salteado, Caranguejo grelhado no sal e Espetinho de frutos do mar.",
+    "Receitas gerais de fruto do mar, como Peixe no vapor, Torta de peixe e Frutos do mar à meunière, com Defesa aumentada.",
+    "Venda: 8 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: Defesa aumentada temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas costuma ser lento e pode ser apanhado facilmente.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pode estar escondido debaixo de pedras, além de andar pela areia e por águas rasas.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um caranguejo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Caranguejo couraçado dão Defesa aumentada temporária.",
+      "produces": ["botw_food_crab_omelet_with_rice", "botw_food_crab_risotto", "botw_food_crab_stir_fry", "botw_food_salt_grilled_crab", "botw_food_seafood_skewer", "botw_food_steamed_fish"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Crab"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "só com partes de monstro",
+      "status": "confirmado",
+      "result": "Alimentos cozidos com partes de monstro, sem nenhum bicho, resultam em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Food", "zw:Dubious Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "sources": ["zw", "zw:Crab"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 8 rupias; custa 20 em Vila Lurelin.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Tostado pelo fogo, vira Caranguejo tostado, sem o efeito de defesa.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, vira Caranguejo tostado.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Caranguejo tostado.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriado com gelo, vira Caranguejo congelado.",
+      "produces": ["botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Caranguejo congelado.",
+      "produces": ["botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este caranguejo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Companhia que não estraga",
+      "text": "A descrição do Caranguejo congelado brinca que ele não faz tanta companhia quanto um caranguejo vivo, mas que não estraga durante a viagem — e dá Resistência ao calor temporária ao ser comido.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Também cai de Octorocs aquáticos",
+      "text": "Octorocs aquáticos podem derrubar combinações variadas de caranguejos, peixes e caramujos ao serem derrotados; a fonte não especifica quais espécies.",
+      "sources": ["zw:Water Octorok"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar com outros ingredientes de defesa (Blindamelo, Amaranto blindado, Abóbora robusta) prolonga e pode elevar o nível da Defesa aumentada."
+  ],
+  "limitations": [
+    "Assado ou congelado, perde a Defesa aumentada.",
+    "Não é um bicho: cozido só com partes de monstro, vira Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_food_blackened_crab", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_crab", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_food_salt_grilled_crab", "relation": "Receita com qualquer caranguejo" },
+    { "id": "botw_creature_razorclaw_crab", "relation": "Caranguejo das mesmas praias, de efeito ofensivo" },
+    { "id": "botw_creature_armored_carp", "relation": "Peixe com o mesmo efeito" },
+    { "id": "botw_monster_water_octorok", "relation": "Pode derrubar caranguejos" }
+  ],
+  "capabilities": ["cura", "defesa", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

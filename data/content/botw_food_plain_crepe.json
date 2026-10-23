@@ -1,0 +1,102 @@
+{
+  "id": "botw_food_plain_crepe",
+  "summary": "Crepe de Leite fresco, Cana-de-açúcar, Trigo de Tabantha e Ovo, cuja simplicidade deixa brilhar o sabor dos ingredientes. As fontes divergem sobre a Manteiga de cabra ser obrigatória.",
+  "description": "O Crepe simples é a base dos crepes de Hyrule: leite, açúcar, trigo e ovo, sem fruta nem mel. O inventário diz que a simplicidade do prato deixa o sabor dos ingredientes aparecer. Ele só recupera corações e não tem efeito — todos os ingredientes da receita são neutros.\n\nAs fontes não concordam sobre a receita exata. A página do prato e a lista de refeições do Zelda Wiki citam cinco ingredientes, incluindo Manteiga de cabra, e concluem que não existem variações porque a panela fica cheia. Já a tabela de lógica de receitas do mesmo wiki lista só quatro (Leite fresco, Ovo, Trigo de Tabantha e Cana-de-açúcar), sem a manteiga. Em qualquer das leituras, a combinação de cinco com manteiga resulta em Crepe simples, porque a receita é testada antes da Torta de ovos; o que não está confirmado é se ela também sai sem a manteiga e se aceitaria um quinto ingrediente de efeito.",
+  "obtaining": [
+    "Cozinhar numa Panela Leite fresco, Cana-de-açúcar, Trigo de Tabantha, Ovo e Manteiga de cabra (a necessidade da manteiga é divergente entre as fontes)."
+  ],
+  "uses": [
+    "Recuperar corações.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações; não tem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações, sem efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Framboesa ou mel",
+      "status": "confirmado",
+      "result": "Com Framboesa ou Mel de abelha no lugar da manteiga, a mesma base forma Crepe de framboesa ou Crepe de mel, receitas testadas antes do Crepe simples.",
+      "produces": [
+        "botw_food_wildberry_crepe",
+        "botw_food_honey_crepe"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ],
+      "side_effects": [
+        "Com os cinco ingredientes listados na página do prato (incluindo a Manteiga de cabra), o fator de venda é o máximo, 2,8×."
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Crítico só em corações",
+      "text": "A Cana-de-açúcar dá 30% de chance extra de bônus crítico. Como o crepe não tem efeito nem duração, o bônus, quando ocorre, é sempre de 3 corações a mais de cura.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ingredientes em disputa",
+      "text": "A página do prato e a tabela de lógica de receitas do Zelda Wiki discordam sobre a Manteiga de cabra: a primeira a lista como obrigatória, a segunda não.",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não tem efeito.",
+    "Receita exata em conflito entre as fontes (Manteiga de cabra)."
+  ],
+  "related": [
+    {
+      "id": "botw_food_wildberry_crepe",
+      "relation": "Crepe com Framboesa, que ganha bônus de cura"
+    },
+    {
+      "id": "botw_food_honey_crepe",
+      "relation": "Crepe com Mel de abelha"
+    },
+    {
+      "id": "botw_food_egg_tart",
+      "relation": "Receita com ovo, trigo, açúcar e manteiga, sem leite"
+    },
+    {
+      "id": "botw_food_egg_pudding",
+      "relation": "Receita de leite, ovo e açúcar"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "a_verificar"
+}

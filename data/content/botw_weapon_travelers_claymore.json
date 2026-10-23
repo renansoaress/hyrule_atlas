@@ -1,0 +1,115 @@
+{
+  "id": "botw_weapon_travelers_claymore",
+  "summary": "Montante básico de aventureiros iniciantes (ataque 10, durabilidade 20). O peso arranca escudos das mãos dos inimigos; metálico, conduz, atrai raios e afunda. Metade das limpezas de Montante enferrujado vira este.",
+  "description": "O Montante do viajante é a espada de duas mãos mais simples do Equipamento do viajante, o conjunto usado pelos viajantes de Hyrule para se defender — junto da Espada do viajante, da Lança do viajante, do Arco do viajante e do Escudo do viajante. O jogo o descreve como a espada que aspirantes a aventureiro costumam carregar e destaca que o peso imenso consegue arrancar o escudo das mãos dos inimigos.\n\nÉ encontrado abandonado na Pradaria de Hyrule e em Necluda Ocidental, e as estátuas de espadachins do Deserto Gerudo também empunham montantes deste tipo. Um Octoroc rochoso que limpe um Montante enferrujado devolve um Montante do viajante em 50% das vezes. Feito de metal, conduz eletricidade, atrai raios em tempestades, afunda e pode ser puxado com Magnétis; não queima nem no clima escaldante.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Ocidental, abandonado.",
+    "Nas mãos das estátuas de espadachins (Swordswomen Statues) do Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Recolher onde estiver abandonado nessas regiões.",
+    "Oferecer um Montante enferrujado a um Octoroc rochoso: 50% de chance de sair um Montante do viajante.",
+    "Chance de surgir em baús dos amiibo de Link jovem e Ganondorf (Super Smash Bros.), de Link (Link's Awakening), Link (Ocarina of Time) e Link jovem (Majora's Mask), e de Daruk (série Breath of the Wild).",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Primeiro montante do jogo para aprender o giro carregado e a quebra de guarda.",
+    "Como espada, corta árvores; por ser metálico, acende sílex.",
+    "Arremesso de emergência quando estiver quase quebrado."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo. Segurar o ataque faz Link girar com o montante (gasta vigor e atinge quem estiver em volta) e soltar termina numa pancada para baixo. Golpear o escudo de um inimigo pode arrancá-lo da mão dele.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw", "jogo"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link levar um choque, o montante voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, faísca e atrai raios.",
+      "applications": ["Largá-lo perto de inimigos durante a tempestade: objetos metálicos atraem as descargas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "confirmado",
+      "result": "É o resultado mais comum (50%) quando um Octoroc rochoso limpa um Montante enferrujado.",
+      "kind": "mecanica",
+      "sources": ["zw:Rock Octorok"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +3 a +5, Durabilidade aumentada de +2 a +3 ou Acerto crítico; no nível dourado (amarelo): Ataque de +6 a +9, Durabilidade de +4 ou Lançamento longo (×1,5 a ×2). O montante pode receber o bônus de Acerto crítico (o último golpe de uma sequência causa dano dobrado).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Octorocs restauram a durabilidade",
+      "text": "Octorocs rochosos aspiram armas e as cospem de volta com a durabilidade restaurada — útil para recuperar um montante gasto. A capacidade de cada Octoroc de repor armas se renova com a Lua de sangue.",
+      "sources": ["zw:Durability", "zw:Blood Moon"]
+    }
+  ],
+  "advanced_uses": [
+    "Equipá-lo durante uma tempestade e depois largá-lo junto a um acampamento faz os raios caírem perto dos inimigos, não sobre Link."
+  ],
+  "limitations": [
+    "Dano baixo (10) para uma arma de duas mãos.",
+    "Metálico: perigoso em tempestades."
+  ],
+  "related": [
+    { "id": "botw_weapon_travelers_sword", "relation": "Mesmo arquétipo (uma mão)" },
+    { "id": "botw_weapon_travelers_spear", "relation": "Mesmo arquétipo (lança)" },
+    { "id": "botw_bow_travelers_bow", "relation": "Mesmo arquétipo (arco)" },
+    { "id": "botw_shield_travelers_shield", "relation": "Mesmo arquétipo (escudo)" },
+    { "id": "botw_weapon_soldiers_claymore", "relation": "Montante hyliano acima na linha" },
+    { "id": "botw_weapon_rusty_claymore", "relation": "Pode virar Montante do viajante num Octoroc rochoso" },
+    { "id": "botw_monster_rock_octorok", "relation": "Limpa Montantes enferrujados" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel"],
+  "verification_status": "verificado"
+}

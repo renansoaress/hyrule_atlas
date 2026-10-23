@@ -1,0 +1,206 @@
+{
+  "id": "botw_monster_blue_moblin",
+  "summary": "Moblin de segundo nível, com 144 pontos de vida e armas Moblin pontudas, reforçadas com ossos. É o Moblin mais fraco que já pode deixar Vísceras de Moblin.",
+  "description": "O Moblin azul é a versão reforçada do Moblin comum. O compendium resume: é bem mais resistente que o vermelho e costuma carregar armas muito mais fortes. Na prática, tem 144 pontos de vida e usa sobretudo o equipamento Moblin pontudo — Clava Moblin pontuda e Lança Moblin espinhosa —, reforçado com ossos de animais, além de outras armas.\n\nO comportamento é o da espécie: golpes pesados, pedras atiradas quando Link está longe, Koboblins agarrados e arremessados quando está desarmado, e a mesma incapacidade de nadar. O compendium cita a Pradaria de Hyrule e o Coração de Akkala como locais comuns, mas, com a progressão oculta de inimigos, os azuis se espalham por toda Hyrule. É a primeira variante de Moblin a deixar Vísceras de Moblin.",
+  "locations": [
+    "Pradaria de Hyrule e Coração de Akkala, segundo o compendium; em acampamentos de toda Hyrule conforme a progressão de inimigos avança."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Moblin, Presa de Moblin e Vísceras de Moblin.",
+    "Costuma carregar armas Moblin pontudas.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Vísceras de Moblin e de armas Moblin pontudas.",
+    "Registro no compendium (entrada nº 109)."
+  ],
+  "effects": [
+    "Golpes pesados de clava ou lança; arremessa pedras e Koboblins."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Exige mais golpes que o vermelho (144 pontos de vida); sem arma, agarra e arremessa Koboblins.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "As pedras que os Moblins atiram de longe podem ser rebatidas com Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado; o equipamento Moblin, mesmo pontudo, tem base de madeira e queima.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Arrow",
+        "zw:Moblin Gear"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o fazem largar a arma.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shock Arrow",
+        "zw:Great Thunderblade"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Moblins não nadam e se afogam em água funda.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Barris explosivos e Flechas explosivas causam dano; a explosão da flecha também incendeia o alvo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Barrel",
+        "zw:Bomb Arrow"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar a bomba ou arremessá-la de volta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; armas Moblin não são magnéticas; objetos metálicos lançados com Magnétis o atingem.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis",
+        "zw:Moblin Gear"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Atira pedras pequenas a distância e usa Koboblins próximos como projéteis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Moblin",
+      "status": "confirmado",
+      "result": "As máscaras de Moblin e de Majora fazem os Moblins ignorarem Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Primeiras Vísceras de Moblin",
+      "text": "Partes de terceiro nível só caem de monstros de nível mais alto. Entre os Moblins, o azul é o primeiro com Vísceras de Moblin na lista de espólios.",
+      "sources": [
+        "zw:Monster Part",
+        "comp"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Equipamento pontudo",
+      "text": "O equipamento Moblin pontudo, típico dos Moblins azuis, é reforçado com ossos de animais, o que aumenta durabilidade e dano em relação ao equipamento básico de madeira entalhada.",
+      "sources": [
+        "zw:Moblin Gear"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Derrubar os Koboblins do acampamento antes de enfrentar o Moblin azul desarmado.",
+    "Desarmá-lo com choque e usar a arma pontuda dele."
+  ],
+  "limitations": [
+    "Flechas ancestrais o desintegram sem deixar materiais."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Forma básica"
+    },
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Variante seguinte"
+    },
+    {
+      "id": "botw_weapon_spiked_moblin_club",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_weapon_spiked_moblin_spear",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Parte de terceiro nível"
+    },
+    {
+      "id": "botw_material_moblin_horn",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_material_moblin_fang",
+      "relation": "Parte deixada ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

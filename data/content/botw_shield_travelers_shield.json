@@ -1,0 +1,119 @@
+{
+  "id": "botw_shield_travelers_shield",
+  "summary": "Escudo de couro e madeira querido pelos aventureiros, feito para monstros fracos e animais (Defesa 4, durabilidade 12). É o resultado mais comum quando um Octoroc rochoso limpa um Escudo enferrujado.",
+  "description": "O Escudo do viajante é um escudo resistente, segundo o jogo, feito de couro de animal e madeira firme, ideal para se defender de monstros fracos ou de animais. Com Defesa 4 e durabilidade 12, é um dos primeiros escudos de verdade do jogo e pertence ao arquétipo do equipamento do viajante, ao lado da Espada, do Montante, da Lança e do Arco do viajante. Em material promocional, Link aparece com ele junto de uma Espada larga do soldado e de um Arco do viajante.\n\nÉ encontrado com facilidade em acampamentos inimigos nas praias em torno da Pradaria de Hyrule e de Necluda Ocidental. Também é o resultado mais provável (50%) quando um Octoroc rochoso aspira e limpa um Escudo enferrujado. Por ser de madeira, começa a queimar quando exposto ao fogo, flutua na água e não é afetado por Magnétis nem por raios.",
+  "locations": [
+    "Acampamentos inimigos nas praias ao redor da Pradaria de Hyrule e de Necluda Ocidental.",
+    "Pradaria de Hyrule e Necluda Ocidental, segundo o compendium."
+  ],
+  "obtaining": [
+    "Recolher em acampamentos ou derrotar inimigos que o carregam.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos entre 2:30 e 2:45.",
+    "Fazer um Octoroc rochoso aspirar um Escudo enferrujado: 50% de chance de sair um Escudo do viajante.",
+    "Baús de amiibo: Link (Super Smash Bros.), Link (The Legend of Zelda), Toon Zelda (The Wind Waker), Link (Twilight Princess), Link (Skyward Sword), Zelda e Urbosa (Breath of the Wild) têm chance de contê-lo."
+  ],
+  "uses": [
+    "Escudo básico do começo do jogo contra monstros fracos e animais.",
+    "Prancha para Surfar com escudo em neve e areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial além de bloquear ataques fracos."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia ataques de monstros fracos e animais; contra golpes fortes, a Defesa 4 reduz pouco o desgaste. A Defesa perfeita não gasta durabilidade.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["jogo", "zw:Shield", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Começa a queimar quando exposto ao fogo, perdendo durabilidade aos poucos.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Como escudo de madeira, pega fogo se estiver equipado nas áreas escaldantes de Eldin.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, por não ser de metal.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser manipulado com Magnétis.",
+      "sources": ["zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +1 a +2 (nível branco) ou +3 (nível amarelo) e com Defesa do escudo aumentada de +3 a +6 (branco) ou +7 a +11 (amarelo). Exemplares de baús de amiibo vêm com o valor máximo da faixa.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Amiibo Rune"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fruto da limpeza do Octoroc",
+      "text": "Metade dos Escudos enferrujados limpos por Octorocs rochosos volta como Escudo do viajante; os demais viram Escudo do soldado (35%), do cavaleiro (10%) ou real (5%).",
+      "sources": ["zw:Rock Octorok", "zw:Rusty Shield"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O kit das propagandas",
+      "text": "O Escudo do viajante faz parte do equipamento sem nome que Link usa em material promocional, com a Espada larga do soldado e o Arco do viajante.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Levar Escudos enferrujados aos Octorocs rochosos como forma barata de conseguir Escudos do viajante (e, com sorte, escudos melhores)."
+  ],
+  "limitations": [
+    "Pouca proteção contra monstros fortes, como a própria descrição admite.",
+    "Queima se equipado em Eldin."
+  ],
+  "related": [
+    { "id": "botw_weapon_travelers_sword", "relation": "Mesmo arquétipo (equipamento do viajante)" },
+    { "id": "botw_weapon_travelers_claymore", "relation": "Mesmo arquétipo (equipamento do viajante)" },
+    { "id": "botw_weapon_travelers_spear", "relation": "Mesmo arquétipo (equipamento do viajante)" },
+    { "id": "botw_bow_travelers_bow", "relation": "Mesmo arquétipo; também aparece no kit promocional" },
+    { "id": "botw_weapon_soldiers_broadsword", "relation": "Compõe com ele o kit de Link no material promocional" },
+    { "id": "botw_shield_rusty_shield", "relation": "Vira Escudo do viajante em 50% das limpezas por Octoroc rochoso" },
+    { "id": "botw_monster_rock_octorok", "relation": "Limpa Escudos enferrujados" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "botw_armorset_hylian_armor_series",
+  "summary": "Roupa hyliana básica vendida em Kakariko e Hateno por 270 rupias no total. Não tem bônus de conjunto nem efeitos, mas é barata, aceita tingimento e melhora com partes de Koboblin.",
+  "description": "O Conjunto hyliano reúne o Capuz hyliano, a Túnica hyliana e as Calças hylianas. As três peças são vendidas tanto na loja Enchanted, em Vila Kakariko, quanto na Ventest Clothing Boutique, em Hateno, por 60, 120 e 90 rupias, respectivamente.\n\nO conjunto não tem efeitos individuais nem bônus de conjunto: serve apenas para defesa. Em compensação, as melhorias das Grandes Fadas usam materiais muito comuns — Chifres, Presas e Vísceras de Koboblin —, e só o último nível pede também Âmbar, o que torna fácil chegar a 20 de defesa por peça. As peças podem ser tingidas na Tinturaria Kochi.\n\nO visual hyliano aparece muito no material promocional: as Calças hylianas costumam acompanhar a Túnica do campeão, e o Capuz hyliano completa o trio quando Link aparece a cavalo.",
+  "locations": [
+    "Loja Enchanted, em Vila Kakariko.",
+    "Ventest Clothing Boutique, em Hateno."
+  ],
+  "obtaining": [
+    "Comprar: Capuz hyliano por 60, Túnica hyliana por 120 e Calças hylianas por 90 rupias (270 no total), em qualquer uma das duas lojas."
+  ],
+  "uses": [
+    "Defesa barata no início do jogo.",
+    "Base para tingimento, já que todas as peças aceitam corantes.",
+    "Melhorar a defesa usando partes de Koboblin, que sobram em qualquer jornada."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas defesa."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "sem_efeito",
+      "result": "Vestir as três peças não ativa nenhum bônus de conjunto; o ganho é só a soma das defesas.",
+      "sources": ["zw", "zw:Armor Set"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O visual dos materiais promocionais",
+      "text": "A Túnica do campeão não pertence a nenhum conjunto, mas aparece quase sempre com as Calças hylianas nas imagens promocionais, nas memórias recuperadas e no final do jogo; quando Link está a cavalo na arte promocional, o Capuz hyliano completa o visual.",
+      "sources": ["zw:Champion's Tunic"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Melhorias com partes de Koboblin",
+      "text": "Os três primeiros níveis de melhoria pedem apenas partes de Koboblin (chifre, presa e vísceras); o quarto nível pede 15 Vísceras de Koboblin e 15 Âmbares por peça.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para quem gosta do visual, trocar a Túnica hyliana pela Túnica do campeão mantém a aparência dos materiais promocionais e ainda exibe a vida dos inimigos."
+  ],
+  "limitations": [
+    "Sem bônus de conjunto e sem efeitos especiais."
+  ],
+  "related": [
+    { "id": "botw_armor_hylian_hood", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_hylian_tunic", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_hylian_trousers", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armor_champions_tunic", "relation": "Costuma ser combinada com as Calças hylianas" },
+    { "id": "botw_material_bokoblin_horn", "relation": "Material das primeiras melhorias" },
+    { "id": "botw_material_amber", "relation": "Material da última melhoria" },
+    { "id": "botw_armorset_soldiers_set", "relation": "Outro conjunto sem bônus, com defesa maior" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

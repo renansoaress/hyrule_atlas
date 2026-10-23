@@ -1,0 +1,69 @@
+{
+  "id": "botw_keyitem_rutas_emblem",
+  "summary": "Símbolo de uma provação da água concluída (DLC The Champions' Ballad). Os três emblemas vêm dos santuários das provações de Mipha e abrem a revanche contra a Ira áquea de Ganon, que rende a Dádiva de Mipha +.",
+  "description": "Os Emblemas de Ruta só podem ser obtidos na missão principal \"EX Champion Mipha's Song\", da DLC The Champions' Ballad. Os monges dos santuários Kee Dafunia, Sato Koda e Mah Eliya os entregam ao fim de cada provação; a descrição do item os chama de símbolo de uma provação da água concluída por quem deseja controlar uma Fera Divina.\n\nO monumento da missão aparece na Crista Ja'Abu (Ja'Abu Ridge), sobre a margem sul do Reservatório Leste, depois das provações do Grande Platô. As provações podem ser feitas em qualquer ordem. Na primeira, Muzu, num penhasco do Altiplano de Akkala diante das ilhas Knuckel e Ankel, revela que as anotações de Mipha mandam seguir o \"caminho de luz\" ao nascer do sol: o reflexo do sol na água leva a um anel luminoso no Mar de Lanayru, que faz Kee Dafunia emergir. Na segunda, Link derrota os Guardiões de olhos azuis em Upland Zorana (três Guardiões altívagos e um Guardião torreta) para revelar Sato Koda. Na terceira, segue anéis luminosos a partir do Lago Mikau, subindo cachoeiras até o Lago Lulu e o Monte Ploymus, onde surge Mah Eliya.\n\nCom os três emblemas, Link vai até Vah Ruta; um monge toma os emblemas e o envia ao Reino Ilusório para enfrentar outra vez a Ira áquea de Ganon, com equipamento pré-definido que inclui o Conjunto Zora melhorado duas vezes. Depois, Kass canta \"Champion Mipha's Song\", que desbloqueia uma memória, e Mipha melhora sua habilidade: a Dádiva de Mipha + recarrega em oito minutos.",
+  "locations": [
+    "Santuários Kee Dafunia (Mar de Lanayru), Sato Koda (Upland Zorana) e Mah Eliya (Monte Ploymus), revelados pelas provações de Mipha."
+  ],
+  "obtaining": [
+    "Concluir as provações do Grande Platô em \"EX The Champions' Ballad\" (DLC) para revelar o monumento da Crista Ja'Abu.",
+    "Completar cada provação e o santuário correspondente; o monge de cada um entrega um emblema."
+  ],
+  "uses": [
+    "Trocar os três emblemas, em Vah Ruta, pela revanche contra a Ira áquea de Ganon no Reino Ilusório.",
+    "Concluir \"EX Champion Mipha's Song\" e receber a Dádiva de Mipha +."
+  ],
+  "effects": [
+    "Sem efeito direto; os três emblemas são consumidos para iniciar a provação."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao se aproximar de Vah Ruta com os três emblemas, a voz de um monge os toma em troca da provação no Reino Ilusório.",
+      "conditions": ["Ter os três Emblemas de Ruta.", "Estar na missão \"EX Champion Mipha's Song\"."],
+      "side_effects": ["Os emblemas saem da algibeira."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:EX Champion Mipha's Song", "zw:Illusory Realm"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Equipamento do Reino Ilusório",
+      "text": "Na luta, o inventário vira: Tridente escamado, dois Tridentes cerimoniais, Arco prateado, 10 flechas, Conjunto Zora melhorado duas vezes, Robalo hyruliano, Cogumelo hyliano e Grãos de lótus-fugaz. Depois de três derrotas, Link recebe uma fada; depois de seis, comida ou elixires extras.",
+      "sources": ["zw:EX Champion Mipha's Song", "zw:Illusory Realm"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "O caminho de luz só aparece ao amanhecer",
+      "text": "A provação de Kee Dafunia depende da hora: o reflexo do sol na água, que aponta o anel luminoso no Mar de Lanayru, só se forma durante o nascer do sol.",
+      "sources": ["zw:EX Champion Mipha's Song"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Revanche liberada",
+      "text": "Depois da missão, a luta contra a Ira áquea de Ganon pode ser repetida em Vah Ruta a qualquer momento, sem emblemas; as revanches não contam para o nível de mundo.",
+      "sources": ["zw", "zw:Illusory Realm"]
+    }
+  ],
+  "advanced_uses": [
+    "Use a Armadura Zora para a provação de Mah Eliya, que exige subir cachoeiras seguindo os anéis luminosos."
+  ],
+  "limitations": [
+    "Exige a DLC The Champions' Ballad e as provações do Grande Platô.",
+    "Os emblemas não têm outro uso além da troca em Vah Ruta."
+  ],
+  "related": [
+    { "id": "botw_monster_waterblight_ganon", "relation": "Chefe enfrentado no Reino Ilusório" },
+    { "id": "botw_ability_miphas_grace", "relation": "Habilidade melhorada ao fim da missão" },
+    { "id": "botw_monster_guardian_skywatcher", "relation": "Derrotado na provação de Sato Koda" },
+    { "id": "botw_monster_guardian_turret", "relation": "Derrotado na provação de Sato Koda" },
+    { "id": "botw_armorset_zora_set", "relation": "Fornecido em ★★ no Reino Ilusório; a armadura sobe cachoeiras" },
+    { "id": "botw_weapon_lightscale_trident", "relation": "Arma fornecida no Reino Ilusório" },
+    { "id": "botw_keyitem_rudanias_emblem", "relation": "Emblema equivalente de Daruk" },
+    { "id": "botw_keyitem_picture_of_the_champions", "relation": "Recompensa final da balada dos Campeões" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

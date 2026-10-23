@@ -1,0 +1,124 @@
+{
+  "id": "botw_creature_sand_seal",
+  "summary": "Foca do Deserto Gerudo que \"nada\" na areia. Com um escudo equipado, Link é puxado por ela surfando: é o jeito mais rápido de cruzar o deserto. Selvagens fogem ao desmontar; as alugadas na Cidade Gerudo esperam.",
+  "description": "As Morsareias têm cor bege-amarelada e presas longas, como as de uma morsa, e usam as nadadeiras para se mover dentro da areia como se fosse água. Guiam-se pela audição excelente, o que as torna muito sensíveis a barulho: para pegar uma selvagem, é preciso chegar muito devagar — ou atordoá-la antes com uma Bomba remota ou uma Flecha explosiva. Apesar das presas intimidadoras, a comida favorita delas é fruta.\n\nAs Morsareias não são montadas como cavalos: Link segura nelas com um escudo equipado e é rebocado, surfando com o escudo pela areia. As selvagens o abandonam assim que ele para de surfar. As treinadas pelas Gerudo, de cor vermelha, são mais rápidas e esperam o retorno do cavaleiro; podem ser alugadas por 20 rupias (ou 50 com escudo incluso) nas lojas de aluguel da Cidade Gerudo. São indispensáveis na missão principal de Vah Naboris e nas corridas tradicionais Gerudo.",
+  "locations": [
+    "Deserto Gerudo; nativas da entrada do deserto (Gerudo Desert Gateway), segundo Frelly.",
+    "Lojas de aluguel noroeste e sudeste da Cidade Gerudo, marcadas por estátuas de Morsareia (exemplares treinados)."
+  ],
+  "obtaining": [
+    "Selvagem: aproximar-se muito devagar, com escudo equipado, e agarrá-la para surfar.",
+    "Alugada: 20 rupias, ou 50 rupias se Link não tiver escudo, nas lojas de aluguel da Cidade Gerudo."
+  ],
+  "uses": [
+    "Transporte mais rápido pelo Deserto Gerudo.",
+    "Missão principal de Vah Naboris: Link e Riju surfam com Morsareias até os pés da Fera Divina para atingi-los com Flechas explosivas.",
+    "Corrida de Morsareias e a Missão de santuário \"The Undefeated Champ\": bater o recorde de 1:30 de Tali."
+  ],
+  "effects": [
+    "Reboca Link em alta velocidade sobre a areia enquanto ele surfa com o escudo."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Muito sensível a sons: foge se Link se aproximar sem cuidado. É preciso chegar bem devagar.",
+      "conditions": ["Movimento lento e silencioso."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Link é puxado surfando com o escudo; a selvagem o abandona assim que ele para de surfar, enquanto a alugada espera por ele.",
+      "conditions": ["Ter um escudo equipado."],
+      "side_effects": ["As dicas do jogo alertam para não bater em rochas durante o passeio."],
+      "applications": ["Coiotes do deserto não atacam Link enquanto ele está sendo puxado por uma Morsareia."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sand-Seal Surfing", "zw:Tips and Tricks", "zw:Wasteland Coyote"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "O som de uma explosão deixa a Morsareia atordoada, permitindo que Link se aproxime.",
+      "applications": ["Usar Bomba remota ou Flecha explosiva perto de uma Morsareia selvagem arisca."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Patricia"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Detonar uma Bomba remota perto dela a atordoa temporariamente.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se uma Morsareia for atacada com armas."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "Além das Flechas explosivas (que a atordoam pela explosão), não há informação sobre flechas comuns."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Atordoar com explosões",
+      "text": "Morsareias são nocauteadas pelo som de explosões — uma das profecias de Patrícia diz exatamente isso. Uma Bomba remota ou Flecha explosiva perto de uma selvagem a deixa atordoada, e Link pode agarrá-la sem precisar se esgueirar.",
+      "sources": ["zw", "zw:Patricia"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Selvagens x treinadas",
+      "text": "As Morsareias treinadas por Frelly na Cidade Gerudo são vermelhas, mais rápidas e esperam Link voltar. As selvagens, de cor bege, fogem no momento em que ele desmonta.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Escudo obrigatório",
+      "text": "Sem escudo equipado não é possível ser puxado por uma Morsareia. Por isso o aluguel custa 50 rupias com escudo incluso, contra 20 rupias sem ele.",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Presas ferozes, dieta de frutas",
+      "text": "O compendium observa que, apesar das presas enormes, a comida favorita das Morsareias é fruta. Elas eram selvagens e foram domesticadas pelas Gerudo.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Alugar uma Morsareia treinada para explorar o deserto com paradas: ela espera Link enquanto ele desce para pegar itens ou lutar."
+  ],
+  "limitations": [
+    "Exige escudo equipado.",
+    "Desloca-se pela areia; as fontes só a descrevem no Deserto Gerudo.",
+    "As selvagens fogem assim que Link para de surfar."
+  ],
+  "related": [
+    { "id": "botw_creature_patricia", "relation": "Morsareia de Riju, que entrega profecias em troca de frutas" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Base da técnica de ser puxado pela Morsareia" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Atordoa Morsareias; usada contra Vah Naboris" },
+    { "id": "botw_rune_remote_bomb", "relation": "Atordoa Morsareias selvagens" },
+    { "id": "botw_creature_wasteland_coyote", "relation": "Não ataca quem está surfando com uma Morsareia" }
+  ],
+  "capabilities": ["montavel", "velocidade", "item_de_missao"],
+  "verification_status": "verificado"
+}

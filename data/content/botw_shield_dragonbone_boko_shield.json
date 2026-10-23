@@ -1,0 +1,120 @@
+{
+  "id": "botw_shield_dragonbone_boko_shield",
+  "summary": "O Escudo Kobo mais forte, reforçado com osso fossilizado: Defesa 25, a maior da linha Kobo, mas só 8 de durabilidade. Queima e flutua.",
+  "description": "O Escudo Kobo dracônico é a versão final do escudo de casca dos Koboblins, reforçada com osso fossilizado. O jogo resume bem o seu perfil: a defesa é respeitável, mas o acabamento previsivelmente desleixado garante pouca durabilidade. Com Defesa 25 e apenas 8 de durabilidade, protege bastante por golpe, porém se esgota rápido.\n\nÉ usado pelos Koboblins pretos, prateados e dourados (estes só no Modo Mestre) e também por Moblins de nível alto. O compendium o associa aos Cerros de Hyrule e ao Mar de Necluda. Continua sendo madeira: queima no fogo e no calor de Eldin, flutua, não é movido por Magnétis e não atrai raios.",
+  "locations": [
+    "Cerros de Hyrule e Mar de Necluda, segundo o compendium.",
+    "Nas mãos de Koboblins pretos, prateados e dourados e de Moblins mais fortes, em toda Hyrule conforme os inimigos sobem de nível."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins pretos ou prateados (ou dourados, no Modo Mestre) e Moblins de nível alto que o carregam.",
+    "Baú invocado pelo amiibo de Koboblin (série Breath of the Wild), com chance de conter este escudo."
+  ],
+  "uses": [
+    "Escudo de defesa razoável para enfrentar acampamentos mais fortes no meio do jogo.",
+    "Prancha descartável para Surfar com escudo em neve ou areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial além de bloquear ataques."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 25, o que reduz o desgaste de cada golpe, mas os 8 pontos de durabilidade acabam logo. A Defesa perfeita não gasta durabilidade.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Template:BotW Shield Parameters", "zw:Shield"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1); em pedra a durabilidade baixa acaba rapidamente.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e perde durabilidade aos poucos enquanto queima.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo e acaba virando cinzas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, por ser de madeira.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante, porém, diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movido com Magnétis.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Empunhado por Koboblins pretos, prateados e dourados e por Moblins de nível alto.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +4 a +5 (nível amarelo) e com Defesa do escudo aumentada de +6 a +12 (branco) ou +13 a +23 (amarelo). Com o bônus amarelo máximo, a Defesa chega a 48.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Defesa de escudo metálico, fragilidade de casca",
+      "text": "Sua Defesa (25) supera a de vários escudos de metal, como o Escudo Gerudo (20) e o Escudo Lagal reforçado (22), mas a durabilidade (8) está entre as três menores do jogo, empatada com o Escudo Lagal.",
+      "sources": ["zw:Shields in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Procurar exemplares com bônus amarelo de Defesa: quanto maior a Defesa, menor o desgaste por golpe bloqueado, o que compensa em parte a durabilidade baixa."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 8.",
+    "Queima no calor de Eldin se estiver equipado."
+  ],
+  "related": [
+    { "id": "botw_shield_boko_shield", "relation": "Versão básica" },
+    { "id": "botw_shield_spiked_boko_shield", "relation": "Versão intermediária" },
+    { "id": "botw_weapon_dragonbone_boko_club", "relation": "Mesmo arquétipo e reforço de osso fossilizado" },
+    { "id": "botw_weapon_dragonbone_boko_spear", "relation": "Mesmo arquétipo e reforço de osso fossilizado" },
+    { "id": "botw_bow_dragonbone_boko_bow", "relation": "Mesmo arquétipo e reforço de osso fossilizado" },
+    { "id": "botw_monster_black_bokoblin", "relation": "Monstro que o empunha" },
+    { "id": "botw_monster_silver_bokoblin", "relation": "Monstro que o empunha" },
+    { "id": "botw_monster_golden_bokoblin_mm", "relation": "Monstro que o empunha (Modo Mestre)" },
+    { "id": "botw_rune_amiibo_rune", "relation": "O amiibo de Koboblin pode invocá-lo num baú" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

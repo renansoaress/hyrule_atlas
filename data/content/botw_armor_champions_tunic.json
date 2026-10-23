@@ -1,0 +1,167 @@
+{
+  "id": "botw_armor_champions_tunic",
+  "summary": "Túnica azul dos Campeões, presente de Impa em Kakariko. Mostra a vida dos inimigos em números e tem a maior defesa possível entre as armaduras (32). Não pode ser tingida nem vendida.",
+  "description": "Impa entrega a Túnica do campeão na Vila Kakariko depois que Link visita ao menos um dos lugares das fotos guardadas na Tabuleta Sheikah e recupera uma memória. O tecido azul repete o dos outros Campeões, cada um marcado com o símbolo da arma que empunharia contra Ganon, a Calamidade; a de Link traz a silhueta da Espada Mestra. A descrição do jogo diz que, na Hyrule antiga, só quem conquistava o respeito da família real podia usá-la.\n\nO efeito é Exibe a vida dos inimigos, um dos efeitos ocultos do inventário: o medidor de vida dos inimigos aparece sozinho quando Link se aproxima, com o número exato de pontos restantes. A túnica não pertence a nenhum conjunto, mas compensa com a defesa: 5 no início e 32 no quarto nível, o maior valor de qualquer armadura. Todas as melhorias pedem Princesas plácidas (19 no total, 10 só no último nível) e, a partir do segundo nível, duas lascas de chifre de dragão — Farosh, Naydra e Dinraal, nessa ordem.\n\nNão pode ser tingida na Tinturaria Kochi nem vendida. Nas memórias recuperadas, no material promocional e no final do jogo com todas as memórias, Link aparece com ela combinada às Calças hylianas.",
+  "locations": [
+    "Vila Kakariko, entregue por Impa."
+  ],
+  "obtaining": [
+    "Falar com Impa depois de recuperar ao menos uma memória visitando os lugares das fotos da Tabuleta Sheikah."
+  ],
+  "uses": [
+    "Ver a vida exata dos inimigos durante o combate.",
+    "Peça de torso com a maior defesa possível depois das quatro melhorias."
+  ],
+  "effects": [
+    "Exibe a vida dos inimigos (efeito oculto): mostra o valor numérico acima do medidor de vida e exibe o medidor assim que Link se aproxima."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ativa o efeito Exibe a vida dos inimigos. Por não fazer parte de nenhum conjunto, não gera bônus de conjunto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:See Enemy HP"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "O medidor de vida de cada inimigo aparece automaticamente quando Link chega perto (sem precisar causar dano antes) e mostra o número de pontos de vida restantes.",
+      "applications": [
+        "Saber quantos golpes faltam para derrotar um Centaleão ou um Rinox e decidir quando gastar flechas especiais ou um arremesso crítico."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:See Enemy HP",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Efeito oculto",
+      "text": "Exibe a vida dos inimigos está na lista de efeitos ocultos do jogo: ele funciona, mas não aparece entre os efeitos ativos do inventário. Os quatro elmos divinos dos amiibo dos Campeões têm o mesmo efeito.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:See Enemy HP"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O par oficial com as Calças hylianas",
+      "text": "Embora não forme conjunto com nada, a túnica aparece sempre combinada às Calças hylianas nas memórias recuperadas, na arte promocional e no final do jogo; nas artes promocionais de Link a cavalo, o trio se completa com o Capuz hyliano.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O presente de Impa",
+      "text": "Impa reconhece a câmera usada por Zelda cem anos antes e pede que Link volte depois de visitar algum dos lugares das fotos; ao retornar, entrega a túnica \"antes que eu me esqueça\".",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Leve a túnica ao quarto nível cedo se tiver acesso às lascas de chifre dos dragões: com 32 de defesa, sozinha supera peças de torso que já estejam no máximo."
+  ],
+  "limitations": [
+    "Sem bônus de conjunto.",
+    "Não pode ser vendida nem tingida.",
+    "Melhorar até o fim exige 19 Princesas plácidas e lascas de chifre dos três dragões."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_hylian_trousers",
+      "relation": "Par com que aparece nas memórias e no final"
+    },
+    {
+      "id": "botw_armor_hylian_hood",
+      "relation": "Completa o visual promocional de Link a cavalo"
+    },
+    {
+      "id": "botw_material_silent_princess",
+      "relation": "Material de todos os níveis de melhoria"
+    },
+    {
+      "id": "botw_material_shard_of_faroshs_horn",
+      "relation": "Material do 2º nível"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Material do 3º nível"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_horn",
+      "relation": "Material do 4º nível"
+    },
+    {
+      "id": "botw_armor_vah_ruta_divine_helm",
+      "relation": "Também exibe a vida dos inimigos"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Símbolo estampado na túnica"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "botw_monster_ice_breath_lizalfos",
+  "summary": "Lagalfos das montanhas nevadas que cospe bolas de gelo. Fogo o mata instantaneamente: basta uma Flecha incendiária, um golpe de Cajado meteórico ou a explosão de uma Flecha explosiva.",
+  "description": "O Lagalfos glacial é a variante de gelo da espécie. O compendium diz que as bolas de gelo que ele cospe o tornam especialmente incômodo, mas que a exposição ao fogo o mata instantaneamente; seus lares ficam sobretudo em montanhas nevadas, e os locais comuns citados são as Montanhas Gerudo e as Cordilheiras de Hebra. Tem 288 pontos de vida.\n\nA fraqueza é o atalho óbvio: o Zelda Wiki confirma que uma única Flecha incendiária o derrota, que qualquer ataque do Cajado meteórico elimina inimigos de gelo e que as explosões das Flechas explosivas também matam instantaneamente inimigos ligados ao gelo. Pode deixar Chifre de Lagalfos, Garra de Lagalfos e a Cauda de Lagalfos glacial, exclusiva dele.",
+  "locations": [
+    "Montanhas Gerudo e Cordilheiras de Hebra, segundo o compendium; em geral, áreas frias e nevadas."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos, Garra de Lagalfos e Cauda de Lagalfos glacial.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Única fonte de Cauda de Lagalfos glacial, parte de terceiro nível para elixires.",
+    "Registro no compendium (entrada nº 118)."
+  ],
+  "effects": [
+    "Cospe bolas de gelo em Link a distância, além dos golpes de arma típicos dos Lagalfos."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Ataques de fogo o matam na hora: uma Flecha incendiária, qualquer golpe do Cajado meteórico ou uma arma de fogo.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Fire Arrow", "zw:Meteor Rod", "zw:Enemy", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de uma Flecha explosiva derrota instantaneamente inimigos ligados ao gelo, como ele.",
+      "conditions": ["Flechas explosivas não explodem na chuva."],
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Arrow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "No combate comum, tem 288 pontos de vida e a agilidade típica dos Lagalfos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizalfos"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado; a Flecha incendiária o mata com um acerto.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit", "zw:Fire Arrow"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a ataques de gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques atordoam inimigos e os forçam a largar a arma.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem a variante glacial na água."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "As fontes atribuem a morte instantânea às explosões de Flechas explosivas; não dizem se a Bomba remota tem o mesmo efeito."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, e durante o efeito ele fica imune a fogo — é preciso esperar a paralisia acabar para usar a fraqueza.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos lançados com Magnétis o atingem.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes da variante glacial não descrevem interações específicas com o cenário."
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "A Máscara de Lagalfos e a de Majora fazem os Lagalfos ignorarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Três formas de morte instantânea",
+      "text": "Fontes diferentes confirmam três atalhos: uma única Flecha incendiária, qualquer ataque do Cajado meteórico e a explosão de uma Flecha explosiva, que derrota instantaneamente inimigos ligados ao gelo.",
+      "sources": ["zw:Fire Arrow", "zw:Meteor Rod", "zw:Bomb Arrow"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Regra dos opostos",
+      "text": "Fogo e gelo são opostos em BOTW: um monstro de gelo atingido por ataque de fogo morre na hora, e o mesmo vale ao contrário para os de fogo.",
+      "sources": ["zw:Enemy"]
+    }
+  ],
+  "advanced_uses": [
+    "Atravessar Hebra com uma Varinha de fogo ou Cajado meteórico equipado: a arma elimina Lagalfos glaciais e ainda dá resistência ao frio."
+  ],
+  "limitations": [
+    "Flechas incendiárias não funcionam como fogo na chuva, e Flechas explosivas não explodem na chuva."
+  ],
+  "related": [
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_monster_fire_breath_lizalfos", "relation": "Variante oposta, morta por gelo" },
+    { "id": "botw_material_icy_lizalfos_tail", "relation": "Parte exclusiva" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Mata-o com um acerto" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "A explosão o mata instantaneamente" },
+    { "id": "botw_weapon_meteor_rod", "relation": "Qualquer ataque o mata" },
+    { "id": "botw_weapon_fire_rod", "relation": "Arma de fogo que também aquece Link" }
+  ],
+  "capabilities": ["gera_gelo", "reage_fogo", "vence_rapido"],
+  "verification_status": "parcial"
+}

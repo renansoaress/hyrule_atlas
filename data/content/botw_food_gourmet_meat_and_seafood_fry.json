@@ -1,0 +1,108 @@
+{
+  "id": "botw_food_gourmet_meat_and_seafood_fry",
+  "summary": "Fritada de Carne de primeira (ou Ave inteira) com qualquer fruto do mar, \"tão deliciosa quanto farta\". O fruto do mar costuma dar o efeito; a versão comum usa Robalo hyruliano ou Carpa tricolor.",
+  "description": "A Fritada de carne de primeira e frutos do mar é feita com Carne de primeira ou Ave inteira e qualquer fruto do mar. A descrição do jogo fala de um casamento dos melhores cortes de carne e de frutos do mar, tão delicioso quanto farto. Cura vários corações.\n\nComo a carne não tem efeito, quem decide a versão é o fruto do mar: a comum sai com Robalo hyruliano ou Carpa tricolor, ou com frutos do mar de efeitos diferentes. As demais versões citadas são refrescante (Truta glacial), isolante (Truta voltaica), energizante (Robalo enérgico ou Caranguejo esperto), nutritiva (Robalo nutritivo, Salmão nutritivo ou Caramujo nutritivo), valente (Carpa valente, Pargo valente ou Caranguejo espadachim), discreta (Truta discreta), picante (Truta rescaldada) e blindada (Carpa blindada ou Caranguejo couraçado); tenaz e veloz dependem de um ingrediente extra.\n\nÉ o topo de uma família de três fritadas: com carnes comuns o prato é a Fritada de carne e frutos do mar, e com Carne de segunda ou Sobrecoxa, a Fritada de carne de segunda e frutos do mar.",
+  "locations": [
+    "Carne de primeira: deixada por Búfalo-d'água, Raposa da neve, Lobo larápio, Coiote do deserto, Lobo pé-gelado, Alce de Tabantha, Rinoceronte chifrelongo, Urso melívoro e Grão-urso.",
+    "Ave inteira: deixada por Pombos brancos e Avestruzes de Eldin."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Carne de primeira ou Ave inteira + qualquer fruto do mar."
+  ],
+  "uses": [
+    "Cura de vários corações com o efeito do fruto do mar escolhido.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Robalo hyruliano, Carpa tricolor ou efeitos que se anulam): recupera vários corações.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Truta glacial.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Truta voltaica.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — ingrediente tenaz extra.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Robalo enérgico ou Caranguejo esperto.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — ingrediente veloz extra.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Robalo nutritivo, Salmão nutritivo ou Caramujo nutritivo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Carpa valente, Pargo valente ou Caranguejo espadachim.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Truta discreta.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Truta rescaldada.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Carpa blindada ou Caranguejo couraçado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O fruto do mar (ou um ingrediente extra) define o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Duas carnes de primeira aceitas",
+      "text": "Diferente do Curry de carne de primeira, que pede só Carne de primeira, esta fritada também aceita a Ave inteira, confirmado tanto pela página do prato quanto pela da ave.",
+      "sources": [
+        "zw",
+        "zw:Raw Whole Bird"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de cozinhar, compare: Trott, no Outskirt Stable, paga 100 rupias por cada Carne de primeira depois da Missão secundária \"A Rare Find\"."
+  ],
+  "limitations": [
+    "Com carnes de qualidade inferior, o prato muda para as fritadas comum ou de segunda."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_meat_and_seafood_fry",
+      "relation": "Versão com carnes comuns"
+    },
+    {
+      "id": "botw_food_prime_meat_and_seafood_fry",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_creature_sanke_carp",
+      "relation": "Peixe sem efeito para a versão comum"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

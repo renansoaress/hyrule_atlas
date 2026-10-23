@@ -1,0 +1,181 @@
+{
+  "id": "botw_weapon_woodcutters_axe",
+  "summary": "Machado de lenhador do Planalto (ataque 3, durabilidade 47): péssimo em combate, mas multiplica por 7 o dano em árvores e as derruba com um golpe. O Velho sugere que Link leve o dele.",
+  "description": "O Machado de lenhador é a ferramenta preferida dos lenhadores para derrubar árvores. O jogo avisa que o peso imenso e o equilíbrio irregular o tornam uma arma lenta e ineficiente — o ataque base é de apenas 3. Em compensação, ele tem uma propriedade oculta que multiplica o dano por 7 contra árvores, o suficiente para derrubá-las com um golpe e depois transformar o tronco em feixes de Madeira.\n\nÉ muito comum no Grande Planalto (Great Plateau) e em bosques por Hyrule; o próprio Velho tem um e sugere que Link o pegue para se defender. Pelos parâmetros, o multiplicador também vale para andaimes (Scaffold) e placas (Signboard). É de metal: conduz eletricidade, atrai raios em tempestades, afunda e pode ser puxado com Magnétis.",
+  "locations": [
+    "Grande Planalto, incluindo o machado do Velho.",
+    "Bosques por Hyrule; o compendium lista Necluda Ocidental e a Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Recolher no Grande Planalto ou em bosques.",
+    "Pode vir com bônus aleatórios, mas apenas do nível comum (branco)."
+  ],
+  "uses": [
+    "Derrubar árvores com um golpe e coletar Madeira golpeando o tronco caído.",
+    "Arma de emergência no início do jogo — fraca, mas muito durável."
+  ],
+  "effects": [
+    "Dano 7× contra árvores, andaimes e placas (multiplicador oculto)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de duas mãos lenta e de dano muito baixo, sem escudo; o golpe carregado é o giro que consome vigor e termina numa pancada para baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico — mas o dobro de 3 ainda é pouco.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo: os dados o classificam como não inflamável.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Contra árvores o dano é multiplicado por 7, derrubando-as com um golpe; golpear o tronco caído rende feixes de Madeira.",
+      "produces": [
+        "botw_material_wood"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não indicam monstros que usem o machado."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Só bônus comuns",
+      "text": "O Machado de lenhador está entre os itens que só recebem bônus brancos. Pelos parâmetros extraídos, esses bônus são Ataque aumentado de +2 a +3, Durabilidade aumentada de +4 a +8 ou Acerto crítico; as faixas douradas que constam nos parâmetros (Ataque +4 a +6, Durabilidade +9 a +18) não aparecem no jogo normal.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O machado do Velho",
+      "text": "No Grande Planalto, o Velho possui um Machado de lenhador e sugere que Link o leve para se defender — uma das primeiras armas que o jogador encontra.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Andaimes e placas também",
+      "text": "A lista de alvos do multiplicador 7× nos parâmetros inclui, além de árvores (Tree), andaimes (Scaffold) e placas (Signboard) — a mesma do Lábris.",
+      "sources": [
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para coletar muita Madeira (por exemplo, para as missões de construção de Tarrey Town ou da casa de Link), um machado derruba cada árvore com um só golpe e dura 47 usos."
+  ],
+  "limitations": [
+    "Ataque de apenas 3: quase inútil em combate.",
+    "Metálico: atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_double_axe",
+      "relation": "Mesmo multiplicador 7× contra árvores, com ataque bem maior"
+    },
+    {
+      "id": "botw_object_tree",
+      "relation": "Derrubada com um golpe"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Obtida ao golpear o tronco derrubado"
+    },
+    {
+      "id": "botw_weapon_boat_oar",
+      "relation": "Outro item que só recebe bônus brancos"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Golpear sílex com arma metálica produz faíscas"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

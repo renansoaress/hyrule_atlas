@@ -1,0 +1,972 @@
+{
+  "source": "https://zeldawiki.wiki/w/api.php?action=cargoquery&tables=Armor",
+  "where": "game='BotW'",
+  "fetched_at": "2026-10-23T21:27:57.295Z",
+  "license": "Zelda Wiki — texto sob GNU Free Documentation License 1.3",
+  "count": 107,
+  "rows": [
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Amber Earrings",
+      "effects": "",
+      "hasArmorSet": "0",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Chest",
+      "armor": "Ancient Cuirass",
+      "effects": "Guardian Resist Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Legs",
+      "armor": "Ancient Greaves",
+      "effects": "Guardian Resist Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Head",
+      "armor": "Ancient Helm",
+      "effects": "Guardian Resist Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Barbarian Set",
+      "bodyPart": "Chest",
+      "armor": "Barbarian Armor",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Barbarian Set",
+      "bodyPart": "Head",
+      "armor": "Barbarian Helm",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Barbarian Set",
+      "bodyPart": "Legs",
+      "armor": "Barbarian Leg Wraps",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Bokoblin Mask",
+      "effects": "Bokoblin Disguise",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Time Set",
+      "bodyPart": "Head",
+      "armor": "Cap of Time",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Twilight Set",
+      "bodyPart": "Head",
+      "armor": "Cap of Twilight",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero Set",
+      "bodyPart": "Head",
+      "armor": "Cap of the Hero",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of the Sky Set",
+      "bodyPart": "Head",
+      "armor": "Cap of the Sky",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of the Wild Set",
+      "bodyPart": "Head",
+      "armor": "Cap of the Wild",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Winds Set",
+      "bodyPart": "Head",
+      "armor": "Cap of the Wind",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Chest",
+      "armor": "Champion's Tunic",
+      "effects": "See Enemy HP",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Climbing Set",
+      "bodyPart": "Head",
+      "armor": "Climber's Bandanna",
+      "effects": "Climb Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Climbing Set",
+      "bodyPart": "Legs",
+      "armor": "Climbing Boots",
+      "effects": "Climb Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Climbing Set",
+      "bodyPart": "Chest",
+      "armor": "Climbing Gear",
+      "effects": "Climb Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Dark Series",
+      "bodyPart": "Head",
+      "armor": "Dark Hood",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Dark Series",
+      "bodyPart": "Legs",
+      "armor": "Dark Trousers",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Dark Series",
+      "bodyPart": "Chest",
+      "armor": "Dark Tunic",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Desert Voe Set",
+      "bodyPart": "Head",
+      "armor": "Desert Voe Headband",
+      "effects": "Heat Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Desert Voe Set",
+      "bodyPart": "Chest",
+      "armor": "Desert Voe Spaulder",
+      "effects": "Heat Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Desert Voe Set",
+      "bodyPart": "Legs",
+      "armor": "Desert Voe Trousers",
+      "effects": "Heat Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Diamond Circlet",
+      "effects": "Guardian Resist Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Fierce Deity Set",
+      "bodyPart": "Chest",
+      "armor": "Fierce Deity Armor",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Fierce Deity Set",
+      "bodyPart": "Legs",
+      "armor": "Fierce Deity Boots",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Fierce Deity Set",
+      "bodyPart": "Head",
+      "armor": "Fierce Deity Mask",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Fireproof Armor",
+      "bodyPart": "Chest",
+      "armor": "Flamebreaker Armor",
+      "effects": "Flame Guard",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Fireproof Armor",
+      "bodyPart": "Legs",
+      "armor": "Flamebreaker Boots",
+      "effects": "Flame Guard",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Fireproof Armor",
+      "bodyPart": "Head",
+      "armor": "Flamebreaker Helm",
+      "effects": "Flame Guard",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Gerudo Outfit",
+      "bodyPart": "Legs",
+      "armor": "Gerudo Sirwal",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Gerudo Outfit",
+      "bodyPart": "Chest",
+      "armor": "Gerudo Top",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Gerudo Outfit",
+      "bodyPart": "Head",
+      "armor": "Gerudo Veil",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hylian Armor Series",
+      "bodyPart": "Head",
+      "armor": "Hylian Hood",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hylian Armor Series",
+      "bodyPart": "Legs",
+      "armor": "Hylian Trousers",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hylian Armor Series",
+      "bodyPart": "Chest",
+      "armor": "Hylian Tunic",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Chest",
+      "armor": "Island Lobster Shirt",
+      "effects": "Heat Resistance",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Korok Mask",
+      "effects": "",
+      "hasArmorSet": "0",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Lizalfos Mask",
+      "effects": "Lizalfos Disguise",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Lynel Mask",
+      "effects": "Lynel Disguise",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Majora's Mask (Item)",
+      "effects": "Bokoblin Disguise, Moblin Disguise, Lizalfos Disguise, Lynel Disguise",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Midna's Helmet",
+      "effects": "Guardian Resist Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Moblin Mask",
+      "effects": "Moblin Disguise",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Chest",
+      "armor": "Nintendo Switch Shirt",
+      "effects": "",
+      "hasArmorSet": "0",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Well-Worn Outfit",
+      "bodyPart": "Chest",
+      "armor": "Old Shirt",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Opal Earrings",
+      "effects": "Swim Speed Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Phantom Equipment",
+      "bodyPart": "Chest",
+      "armor": "Phantom Armor",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Phantom Ganon Set",
+      "bodyPart": "Chest",
+      "armor": "Phantom Ganon Armor",
+      "effects": "Stealth Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Phantom Ganon Set",
+      "bodyPart": "Legs",
+      "armor": "Phantom Ganon Greaves",
+      "effects": "Stealth Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Phantom Ganon Set",
+      "bodyPart": "Head",
+      "armor": "Phantom Ganon Skull",
+      "effects": "Stealth Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Phantom Equipment",
+      "bodyPart": "Legs",
+      "armor": "Phantom Greaves",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Phantom Equipment",
+      "bodyPart": "Head",
+      "armor": "Phantom Helmet",
+      "effects": "Attack Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Radiant Set",
+      "bodyPart": "Head",
+      "armor": "Radiant Mask",
+      "effects": "Stal Lure",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Radiant Set",
+      "bodyPart": "Chest",
+      "armor": "Radiant Shirt",
+      "effects": "Stal Lure",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Radiant Set",
+      "bodyPart": "Legs",
+      "armor": "Radiant Tights",
+      "effects": "Stal Lure",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Ravio's Hood",
+      "effects": "Climb Speed Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Royal Guard Set",
+      "bodyPart": "Legs",
+      "armor": "Royal Guard Boots",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Royal Guard Set",
+      "bodyPart": "Head",
+      "armor": "Royal Guard Cap",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Royal Guard Set",
+      "bodyPart": "Chest",
+      "armor": "Royal Guard Uniform",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Rubber Armor (Set)",
+      "bodyPart": "Chest",
+      "armor": "Rubber Armor",
+      "effects": "Shock Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Rubber Armor (Set)",
+      "bodyPart": "Head",
+      "armor": "Rubber Helm",
+      "effects": "Shock Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Rubber Armor (Set)",
+      "bodyPart": "Legs",
+      "armor": "Rubber Tights",
+      "effects": "Shock Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Ruby Circlet",
+      "effects": "Cold Resistance",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Salvager Armor Set",
+      "bodyPart": "Head",
+      "armor": "Salvager Headwear",
+      "effects": "Swim Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Salvager Armor Set",
+      "bodyPart": "Legs",
+      "armor": "Salvager Trousers",
+      "effects": "Swim Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Salvager Armor Set",
+      "bodyPart": "Chest",
+      "armor": "Salvager Vest",
+      "effects": "Swim Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Legs",
+      "armor": "Sand Boots",
+      "effects": "Sand Speed Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Sapphire Circlet",
+      "effects": "Heat Resistance",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Sheik's Mask",
+      "effects": "Stealth Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Legs",
+      "armor": "Snow Boots",
+      "effects": "Snow Speed Up",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Snowquill Set",
+      "bodyPart": "Head",
+      "armor": "Snowquill Headdress",
+      "effects": "Cold Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Snowquill Set",
+      "bodyPart": "Legs",
+      "armor": "Snowquill Trousers",
+      "effects": "Cold Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Snowquill Set",
+      "bodyPart": "Chest",
+      "armor": "Snowquill Tunic",
+      "effects": "Cold Resistance",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Soldier's Set",
+      "bodyPart": "Chest",
+      "armor": "Soldier's Armor",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Soldier's Set",
+      "bodyPart": "Legs",
+      "armor": "Soldier's Greaves",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Soldier's Set",
+      "bodyPart": "Head",
+      "armor": "Soldier's Helm",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Stealth Set",
+      "bodyPart": "Chest",
+      "armor": "Stealth Chest Guard",
+      "effects": "Stealth Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Stealth Set",
+      "bodyPart": "Head",
+      "armor": "Stealth Mask",
+      "effects": "Stealth Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Stealth Set",
+      "bodyPart": "Legs",
+      "armor": "Stealth Tights",
+      "effects": "Stealth Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Thunder Helm",
+      "effects": "Lightning Proof",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Tingle's Outfit",
+      "bodyPart": "Head",
+      "armor": "Tingle's Hood",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Tingle's Outfit",
+      "bodyPart": "Chest",
+      "armor": "Tingle's Shirt",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Tingle's Outfit",
+      "bodyPart": "Legs",
+      "armor": "Tingle's Tights",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Topaz Earrings",
+      "effects": "Shock Resistance",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Time Set",
+      "bodyPart": "Legs",
+      "armor": "Trousers of Time",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Twilight Set",
+      "bodyPart": "Legs",
+      "armor": "Trousers of Twilight",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero Set",
+      "bodyPart": "Legs",
+      "armor": "Trousers of the Hero",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of the Sky Set",
+      "bodyPart": "Legs",
+      "armor": "Trousers of the Sky",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of the Wild Set",
+      "bodyPart": "Legs",
+      "armor": "Trousers of the Wild",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Winds Set",
+      "bodyPart": "Legs",
+      "armor": "Trousers of the Wind",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Time Set",
+      "bodyPart": "Chest",
+      "armor": "Tunic of Time",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Twilight Set",
+      "bodyPart": "Chest",
+      "armor": "Tunic of Twilight",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero Set",
+      "bodyPart": "Chest",
+      "armor": "Tunic of the Hero",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of the Sky Set",
+      "bodyPart": "Chest",
+      "armor": "Tunic of the Sky",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of the Wild Set",
+      "bodyPart": "Chest",
+      "armor": "Tunic of the Wild",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Hero of Winds Set",
+      "bodyPart": "Chest",
+      "armor": "Tunic of the Wind",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Head",
+      "armor": "Vah Medoh Divine Helm",
+      "effects": "Cold Resistance, See Enemy HP",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Head",
+      "armor": "Vah Naboris Divine Helm",
+      "effects": "Shock Resistance, See Enemy HP",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Head",
+      "armor": "Vah Rudania Divine Helm",
+      "effects": "Flame Guard, See Enemy HP",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Ancient Set",
+      "bodyPart": "Head",
+      "armor": "Vah Ruta Divine Helm",
+      "effects": "Swim Speed Up, See Enemy HP",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Chest",
+      "armor": "Warm Doublet",
+      "effects": "Cold Resistance",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Well-Worn Outfit",
+      "bodyPart": "Legs",
+      "armor": "Well-Worn Trousers",
+      "effects": "",
+      "hasArmorSet": "1",
+      "hasEffects": "0"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "",
+      "bodyPart": "Head",
+      "armor": "Zant's Helmet",
+      "effects": "Unfreezable",
+      "hasArmorSet": "0",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Zora Set",
+      "bodyPart": "Chest",
+      "armor": "Zora Armor",
+      "effects": "Swim Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Zora Set",
+      "bodyPart": "Legs",
+      "armor": "Zora Greaves",
+      "effects": "Swim Speed Up",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armorSet": "Zora Set",
+      "bodyPart": "Head",
+      "armor": "Zora Helm",
+      "effects": "Swim Speed Up, Spin Attack (Added Effect)",
+      "hasArmorSet": "1",
+      "hasEffects": "1"
+    }
+  ]
+}

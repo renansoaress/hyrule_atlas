@@ -1,0 +1,169 @@
+{
+  "id": "botw_armor_ruby_circlet",
+  "summary": "Tiara Gerudo com rubi, que usa o poder do fogo para tornar o frio suportável: Resistência ao frio nível 1 e o efeito oculto Poder ancestral aumentado. Vendida na Starlight Memories ou ganha de Isha.",
+  "description": "Feita pelas artesãs Gerudo, a Tiara de rubi leva um rubi que, segundo a descrição, “aproveita o poder do fogo” para tornar climas frios mais toleráveis. Custa 500 rupias e 3 Rubis na Starlight Memories, a joalheria da Cidade Gerudo, e também pode ser a recompensa da missão “Tools of the Trade”, quando Isha oferece uma joia a Link em troca de 10 Sílex.\n\nDá Resistência ao frio nível 1, que evita o dano das temperaturas abaixo de zero; alguns lugares mais gelados exigem o nível 2, o teto do efeito. A resistência não protege de ataques de gelo nem da água gelada. Tem ainda o efeito oculto Poder ancestral aumentado (+20% com armas ancestrais). A defesa vai de 3 a 20; as melhorias pedem Rubis em todos os níveis (22 ao todo), Sílex nos dois primeiros e um Fragmento de estrela nos dois últimos. Não pode ser tingida.",
+  "locations": [
+    "Starlight Memories, joalheria da Cidade Gerudo, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Comprar por 500 rupias e 3 Rubis na Starlight Memories, depois de “Tools of the Trade”.",
+    "Recompensa alternativa: ao concluir “Tools of the Trade” (entregar 10 Sílex a Isha), Link escolhe entre a Tiara de rubi, a Tiara de safira e os Brincos de topázio."
+  ],
+  "uses": [
+    "Explorar regiões geladas sem perder vida com o frio.",
+    "Aumentar o ataque das armas ancestrais."
+  ],
+  "effects": [
+    "Resistência ao frio nível 1.",
+    "Poder ancestral aumentado (oculto): +20% com armas ancestrais."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo), Resistência ao frio nível 1 e o efeito oculto Poder ancestral aumentado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Evita o dano do frio abaixo de 0 °C. Ambientes mais gelados (abaixo de −10 °C) podem exigir o nível 2 de Resistência ao frio.",
+      "conditions": [
+        "O efeito tem teto no nível 2."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "variant": "água gelada",
+      "status": "sem_efeito",
+      "result": "Não protege da água gelada dos climas frios, que fere Link rapidamente; nenhuma armadura, elixir ou prato protege contra ela.",
+      "sources": [
+        "zw:Temperature",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "A Resistência ao frio não reduz o dano de ataques de gelo nem impede Link de congelar.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus de ataque oculto",
+      "text": "Além do efeito visível, a peça tem o efeito oculto Poder ancestral aumentado: +20% no ataque das armas ancestrais e guardiãs, multiplicado com Ataque aumentado. Ele não aparece no inventário.",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A joia como pagamento",
+      "text": "Isha explica que as gemas transferem seus poderes a quem as usa e que, sem Sílex, não consegue trabalhar — por isso a joalheria fica fechada até Link trazer 10 unidades.",
+      "sources": [
+        "zw:Tools of the Trade",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Nos lugares mais gelados, completar o nível 2 de Resistência ao frio com um prato ou elixir quente, já que a tiara só dá um nível."
+  ],
+  "limitations": [
+    "Não protege de ataques de gelo nem da água gelada.",
+    "Não pode ser tingida.",
+    "Sem conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_material_ruby",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Material dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_armor_snowquill_headdress",
+      "relation": "Outra peça de cabeça com Resistência ao frio"
+    },
+    {
+      "id": "botw_armor_vah_medoh_divine_helm",
+      "relation": "Outra peça de cabeça com Resistência ao frio"
+    },
+    {
+      "id": "botw_armor_sapphire_circlet",
+      "relation": "Tiara da mesma loja, contra o calor"
+    },
+    {
+      "id": "botw_armor_topaz_earrings",
+      "relation": "Outra opção da recompensa de Isha"
+    },
+    {
+      "id": "botw_mechanic_temperature",
+      "relation": "Mecânica de frio extremo"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_frio",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

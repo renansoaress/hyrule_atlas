@@ -1,0 +1,149 @@
+{
+  "id": "botw_material_spicy_pepper",
+  "summary": "Pimenta \"explodindo de ardor\" que, cozida, aquece o corpo e dá Resistência ao frio. Crua cura meio coração; no fogo vira Pimenta tostada, bem menos picante. Cresce no Grande Platô e na Fronteira de Tabantha.",
+  "description": "A Pimenta de fogo é o ingrediente clássico contra o frio. Comida crua, recupera meio coração e não protege de nada; cozida na panela, o prato resultante aumenta a temperatura corporal de Link e concede Resistência ao frio. Ela é obrigatória em três receitas: Frutos do mar apimentados, Bife apimentado e Pimentas salteadas. Exposta ao fogo, vira Pimenta tostada — segundo a descrição do jogo, \"bem menos picante\" —, que recupera 3/4 de coração e não tem efeito.\n\nCresce em arbustos no Grande Platô (Great Plateau), perto do Gerudo Canyon Stable e na Fronteira de Tabantha; o compendium também lista o Deserto Gerudo. Na Tinturaria Kochi, entra no corante vermelho. Vale lembrar que a Resistência ao frio tem no máximo dois níveis e não protege contra ataques de gelo nem contra água gelada.",
+  "locations": [
+    "Arbustos no Grande Platô, perto do Gerudo Canyon Stable e na Fronteira de Tabantha.",
+    "O compendium cita o Deserto Gerudo e a Fronteira de Tabantha como locais comuns."
+  ],
+  "obtaining": [
+    "Colher nos arbustos. Os dados estruturados não listam lojas que vendam a pimenta crua."
+  ],
+  "uses": [
+    "Pratos de Resistência ao frio para regiões geladas.",
+    "Obrigatória em Frutos do mar apimentados (pimenta + qualquer fruto do mar), Bife apimentado (pimenta + qualquer carne) e Pimentas salteadas (só pimenta).",
+    "Como fruta, entra nas receitas genéricas de fruta (Compota de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Ingrediente do corante vermelho na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Cozida: Resistência ao frio (efeito de nível máximo 2)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; junto a uma fogueira ou no clima escaldante de Eldin, tosta sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma pimenta largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Pimenta tostada, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Resistência ao frio: a descrição da Pimenta tostada diz que ela ficou bem menos picante."],
+      "produces": ["botw_food_charred_pepper"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food", "zw:Charred Pepper"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Pimenta tostada.",
+      "produces": ["botw_food_charred_pepper"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, tosta ao ser largada no chão.",
+      "produces": ["botw_food_charred_pepper"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela no frio extremo; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da pimenta na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a pimenta não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência ao frio ao prato. Mais pimentas prolongam o efeito; misturar com outros ingredientes de Resistência ao frio prolonga e pode subir o nível.",
+      "conditions": ["Panela acesa; evite ingredientes de efeitos diferentes, que se anulam ou prevalecem sobre o frio."],
+      "side_effects": ["A Resistência ao frio tem nível máximo 2 e não protege contra ataques de gelo nem contra água gelada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Cold Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera meio coração e não protege do frio.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias; tostada, vale 5.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Limites da Resistência ao frio",
+      "text": "O efeito impede o dano causado por climas gelados, mas tem nível máximo 2 e não reduz o dano de ataques de gelo nem o de mergulhar em água gelada — nesses casos a pimenta não ajuda.",
+      "sources": ["zw:Cold Resistance", "zw:Temperature"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fruta, para a cozinha",
+      "text": "Embora seja uma pimenta, o jogo a classifica como fruta: ela pode entrar em qualquer receita que peça \"qualquer fruta\", como a Compota de frutas.",
+      "sources": ["zw", "zw:Fruit"]
+    }
+  ],
+  "advanced_uses": [
+    "Como a pimenta cresce no próprio Grande Platô, já dá para cozinhar pratos de Resistência ao frio logo no início do jogo."
+  ],
+  "limitations": [
+    "Crua ou tostada não protege do frio; só cozida.",
+    "Não protege contra ataques de gelo nem água gelada."
+  ],
+  "related": [
+    { "id": "botw_food_charred_pepper", "relation": "Resultado de expor a pimenta ao fogo" },
+    { "id": "botw_food_pepper_seafood", "relation": "Prato que exige pimenta" },
+    { "id": "botw_food_pepper_steak", "relation": "Prato que exige pimenta" },
+    { "id": "botw_food_sauteed_peppers", "relation": "Prato feito só de pimenta" },
+    { "id": "botw_material_sunshroom", "relation": "Outro ingrediente de Resistência ao frio" },
+    { "id": "botw_material_warm_safflina", "relation": "Outro ingrediente de Resistência ao frio" },
+    { "id": "botw_elixir_spicy_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante vermelho" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "protege_frio"],
+  "verification_status": "verificado"
+}

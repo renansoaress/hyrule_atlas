@@ -1,0 +1,81 @@
+{
+  "id": "botw_creature_blue_sparrow",
+  "summary": "Pardal azul de bochechas amarelas que vive à beira d'água em Lanayru, comendo folhas de plantas aquáticas e tomando banho em poças rasas. Voa quando perturbado e deixa uma Noz.",
+  "description": "O Pardal azul é azul com a barriga mais clara, queixo branco e bochechas amarelas. Vive principalmente em pântanos e margens de rios da região de Lanayru — como a Palude de Lanayru, o rio Zora e o Domínio Zora — e também na Grande Floresta de Hyrule e arredores; o compendium cita a Grande Nascente de Lanayru e a Grande Floresta de Hyrule.\n\nAlimenta-se das folhas e plantas que crescem perto da água e, quando se sente seguro, banha-se em poças ou rios rasos. Anda em grupos, mas voa ao ser perturbado. Abatido, deixa uma única Noz.",
+  "locations": [
+    "Grande Nascente de Lanayru e Grande Floresta de Hyrule (compendium).",
+    "Palude de Lanayru, rio Zora e Domínio Zora."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Noz."
+  ],
+  "uses": [
+    "Fonte de Noz, ingrediente de Bolo de nozes e Nozes salteadas.",
+    "Registrar sua foto no compendium (entrada nº 32)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Anda em grupos e voa quando perturbado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Noz.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_chickaloo_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra pardais, que voam ao serem perturbados."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Quando está seguro, toma banho em poças ou rios rasos.",
+      "kind": "curiosidade",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não possui mecânica especial conhecida além de deixar uma Noz; o banho em águas rasas é apenas comportamento visual.",
+  "limitations": [
+    "Rende apenas uma Noz."
+  ],
+  "related": [
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Item deixado ao ser abatido" },
+    { "id": "botw_creature_common_sparrow", "relation": "Pardal mais comum de Hyrule" },
+    { "id": "botw_creature_red_sparrow", "relation": "Outro pardal do compendium" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

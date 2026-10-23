@@ -1,0 +1,226 @@
+{
+  "id": "botw_weapon_flameblade",
+  "summary": "Espada mágica forjada na lava da Montanha da Morte: com a lâmina brilhando em vermelho, cada golpe solta chamas que incendeiam inimigos e objetos. Dá resistência ao frio e derrota inimigos de gelo com um golpe.",
+  "description": "A Espada flamejante pertence ao equipamento mágico (Magic Gear), armas forjadas em lugares de grande poder elemental; as de fogo foram feitas por antigos ferreiros gorons com lava da Montanha da Morte. Enquanto a lâmina está brilhando em vermelho, os golpes deixam um rastro de chamas incandescentes que põem fogo em inimigos e objetos. Equipada, ela também concede um nível de resistência ao frio.\n\nContra inimigos ligados ao gelo, como Lagalfos glaciais e Morcis glaciais, um único golpe basta; um Feitiçano glacial ou um Feitiçano da nevasca atingido por ela evapora na hora. Apesar do poder de fogo, a lâmina é de metal: atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser erguida com Magnétis, mas não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Oriental, frequentemente nas mãos de inimigos (segundo o compendium e o Zelda Wiki).",
+    "Com o Centaleão das Ruínas do Coliseu (Coliseum Ruins) quando ele está na forma de Centaleão prateado."
+  ],
+  "obtaining": [
+    "Derrotar os inimigos que a empunham nas regiões citadas.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Atacar com fogo inimigos de gelo e de regiões frias.",
+    "Iniciar fogo (grama, lenha) com os golpes flamejantes.",
+    "Resistência ao frio de um nível enquanto equipada."
+  ],
+  "effects": [
+    "Golpes com a lâmina brilhando em vermelho soltam chamas e incendeiam o alvo.",
+    "Um nível de resistência ao frio enquanto equipada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão com ataque giratório carregado e uso junto do escudo. Quando a lâmina brilha em vermelho, cada golpe solta chamas.",
+      "conditions": [
+        "A lâmina precisa estar brilhando; depois de alguns golpes flamejantes, o brilho some até recarregar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magic Gear",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "a própria espada",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "chamas da lâmina",
+      "status": "confirmado",
+      "result": "As chamas dos golpes incendeiam inimigos e objetos atingidos.",
+      "applications": [
+        "Acender fogueiras e incendiar grama para criar correntes ascendentes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magic Gear",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos de gelo, como Lagalfos glaciais e Morcis glaciais, caem com um só golpe; Feitiçanos glaciais e Feitiçanos da nevasca evaporam imediatamente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ice Wizzrobe",
+        "zw:Blizzrobe"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Centaleões",
+      "status": "confirmado",
+      "result": "O Centaleão das Ruínas do Coliseu carrega uma Espada flamejante quando está na forma prateada — exceção à regra de que Centaleões só usam armas centaleônicas. Centaleões, porém, resistem a todos os ataques elementais e seus efeitos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Carga do brilho",
+      "text": "Nos parâmetros extraídos, a energia elemental máxima da espada é 4000 e cada golpe flamejante consome 1000: são quatro golpes com chamas antes de o brilho apagar. A energia se recupera com o tempo (taxa 40 a cada intervalo de 60, em unidades internas do jogo).",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +6 a +9 (nível comum) ou +10 a +19 (nível dourado), bônus de durabilidade de +4 a +8 (ou +9 a +18 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Forja goron",
+      "text": "As armas de fogo do equipamento mágico foram feitas por ferreiros gorons de uma era antiga com a lava da Montanha da Morte; as de gelo vêm de Hebra e as elétricas foram forjadas pela família real com raios dos Cerros de Hyrule.",
+      "sources": [
+        "zw:Magic Gear"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra Feitiçanos glaciais e da nevasca, um golpe com a lâmina acesa os evapora, encerrando a nevasca que eles criam.",
+    "Alternar golpes comuns e flamejantes para dar tempo à recarga do brilho."
+  ],
+  "limitations": [
+    "Metálica: perigosa em tempestades e contra inimigos elétricos.",
+    "Centaleões resistem ao fogo da lâmina.",
+    "O efeito de fogo depende do brilho da lâmina, que se esgota após alguns golpes."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Mesmo arquétipo (gelo)"
+    },
+    {
+      "id": "botw_weapon_thunderblade",
+      "relation": "Mesmo arquétipo (eletricidade)"
+    },
+    {
+      "id": "botw_weapon_great_flameblade",
+      "relation": "Versão de duas mãos"
+    },
+    {
+      "id": "botw_weapon_flamespear",
+      "relation": "Versão lança"
+    },
+    {
+      "id": "botw_monster_ice_breath_lizalfos",
+      "relation": "Cai com um golpe"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Evapora com um golpe"
+    },
+    {
+      "id": "botw_monster_silver_lynel",
+      "relation": "O Centaleão prateado do Coliseu a empunha"
+    },
+    {
+      "id": "botw_weapon_fire_rod",
+      "relation": "Arma de fogo de uma mão à distância"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "queima_inimigos",
+    "protege_frio",
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

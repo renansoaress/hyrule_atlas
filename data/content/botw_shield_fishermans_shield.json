@@ -1,0 +1,112 @@
+{
+  "id": "botw_shield_fishermans_shield",
+  "summary": "Escudo leve de madeira com desenho de peixe, símbolo de boa pescaria, feito para levar no barco. Semirraro: são só cinco no mundo, dois deles em Lurelin, além do prêmio de Selmie.",
+  "description": "O Escudo do pescador é carregado pelos pescadores por causa do peixe pintado na frente, que representa a esperança de uma grande pescaria. A estrutura leve de madeira, segundo o jogo, facilita levá-lo num barco. Em combate é modesto: Defesa 3 e durabilidade 10, os mesmos valores do Escudo do caçador.\n\nÉ um escudo semirraro, com apenas cinco pontos fixos no mapa, dois deles na vila de Lurelin. Sendo de madeira, pega fogo até virar cinzas, queima no calor de Eldin, flutua e não é afetado por Magnétis nem por raios.",
+  "locations": [
+    "Dois exemplares na vila de Lurelin (Lurelin Village).",
+    "Perto do Santuário Tawa Jinn, nas Rabella Wetlands.",
+    "Baú num acampamento de inimigos ao norte das Parache Plains.",
+    "Baú num penhasco perto da Brynna Plain, na margem da Lanayru Bay.",
+    "O compendium cita Necluda Oriental e as Cordilheiras de Hebra como locais comuns."
+  ],
+  "obtaining": [
+    "Recolher um dos cinco exemplares fixos.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos entre 2:45 e 3:00."
+  ],
+  "uses": [
+    "Escudo leve de reserva no começo do jogo.",
+    "Prancha para Surfar com escudo em neve e areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial conhecido além de bloquear ataques."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia golpes leves; com Defesa 3 e durabilidade 10, aguenta pouco contra monstros fortes. A Defesa perfeita não desgasta o escudo.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Em pedra perde durabilidade rapidamente; em neve e areia não perde."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e queima até virar cinzas, perdendo durabilidade aos poucos.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água — coerente com a fama de escudo para levar no barco.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "jogo"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantado com Magnétis.",
+      "sources": ["dm", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +4 a +5 (nível amarelo) e com Defesa do escudo aumentada de +2 a +6 (branco) ou +7 a +12 (amarelo).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Gêmeo do Escudo do caçador",
+      "text": "O Escudo do pescador e o Escudo do caçador têm exatamente os mesmos atributos e as mesmas faixas de bônus; mudam apenas o desenho (peixe ou coelho) e os locais onde aparecem.",
+      "sources": ["dm", "zw:Hunter's Shield"]
+    }
+  ],
+  "advanced_uses": [
+    "Se cair num lago ou no mar, não precisa de Magnétis: ele boia e pode ser recolhido nadando."
+  ],
+  "limitations": [
+    "Pouca proteção e durabilidade baixa (10).",
+    "Existem poucos exemplares fixos; depois deles, só o prêmio de Selmie."
+  ],
+  "related": [
+    { "id": "botw_shield_hunters_shield", "relation": "Mesmos atributos, desenho de coelho" },
+    { "id": "botw_shield_emblazoned_shield", "relation": "Outro escudo de madeira decorado" },
+    { "id": "botw_weapon_fishing_harpoon", "relation": "Outro item com temática de pesca" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Prêmio do minijogo de surfe de Selmie" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

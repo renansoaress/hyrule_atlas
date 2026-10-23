@@ -1,0 +1,154 @@
+{
+  "id": "botw_monster_golden_bokoblin_mm",
+  "summary": "Exclusivo do Modo Mestre (DLC 1): o Koboblin mais forte, com 1080 pontos de vida. Diz a lenda que são Koboblins prateados atingidos por raios — por isso resistem a ataques elétricos.",
+  "description": "O Koboblin dourado só existe no Modo Mestre, parte do Pacote de Conteúdo Adicional 1 (The Master Trials). Surge quando a progressão de inimigos chega ao último nível e supera o Koboblin prateado em força bruta e resistência, com 1080 pontos de vida. O compendium registra a crença de que seriam Koboblins prateados que se transformaram misteriosamente depois de serem atingidos por um raio; talvez por isso tenham alta tolerância a eletricidade, o que inclui Flechas eletrizantes e a Espada faiscante.\n\nCarrega armas fortes, geralmente equipamento Kobo com bônus aleatórios, e pode deixar as mesmas pedras preciosas do prateado (Âmbar, Opala, Topázio, Rubi, Safira e Diamante) além das partes de Koboblin. Como todos os inimigos do Modo Mestre, regenera vida com o tempo (até um limite) e percebe a aproximação de Link com mais facilidade, o que torna o combate prolongado especialmente desgastante.",
+  "locations": [
+    "Apenas no Modo Mestre, em acampamentos de toda Hyrule, quando a progressão de inimigos atinge o nível máximo."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre, Presa e Vísceras de Koboblin e pedras preciosas (Âmbar, Opala, Topázio, Rubi, Safira e Diamante).",
+    "Suas armas Kobo costumam ter bônus (modificadores) aleatórios.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de armas Kobo com bônus e de pedras preciosas no Modo Mestre.",
+    "Registro no compendium do Modo Mestre."
+  ],
+  "effects": [
+    "Golpes muito fortes; no Modo Mestre não existe a proteção que deixa Link com um quarto de coração ao receber um golpe fatal com a vida cheia."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Exige muito dano: 1080 pontos de vida, e regeneração gradual (com limite) típica do Modo Mestre.",
+      "side_effects": ["Pausas longas na luta dão tempo para ele recuperar vida."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Master Mode"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "Koboblins dormem à noite e o Ataque-surpresa causa 8 vezes o dano da arma; no Modo Mestre, porém, os inimigos detectam Link com mais facilidade, então a aproximação precisa ser mais cuidadosa.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Bokoblin", "zw:Sneakstrike", "zw:Master Mode"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça continuam causando dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado como outros inimigos; suas armas Kobo, de madeira, queimam.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Bokoblin Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Pode ser congelado com Flecha congelante; o golpe que quebra o gelo causa dano acima do normal.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resiste a ataques elétricos, como os de Flechas eletrizantes e da Espada faiscante — o compendium associa isso à lenda do raio que o transformou.",
+      "applications": ["Preferir fogo, gelo ou explosões a eletricidade."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Koboblins não nadam e se afogam em água funda.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Flechas explosivas e Barris explosivos causam dano; a explosão da Flecha explosiva também incendeia o alvo.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Arrow", "zw:Bomb Barrel"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Koboblin dourado chuta Bombas remotas como o azul e o prateado; inimigos em geral podem chutá-las ou arremessá-las."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, e por pouco tempo; durante o efeito, fica imune a gelo, fogo e choque.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos movidos com Magnétis podem ser usados para atingi-lo.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pega rochas, Barris e Barris explosivos para arremessar, como os demais Koboblins.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Koboblin",
+      "status": "confirmado",
+      "result": "As máscaras de Koboblin e de Majora fazem os Koboblins ignorarem Link; outros monstros da área continuam hostis.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Koboblins prateados atingidos por raios",
+      "text": "O compendium afirma que, segundo se diz, os Koboblins dourados seriam prateados que se transformaram misteriosamente depois de serem atingidos por um raio — e sugere que esse seria o motivo da alta tolerância a eletricidade.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Só no último nível de progressão",
+      "text": "No Modo Mestre, o Koboblin dourado aparece apenas quando a progressão de inimigos atinge o nível final, ocupando o topo acima do prateado.",
+      "sources": ["zw", "zw:Enemy"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem margem para golpe fatal",
+      "text": "Normalmente o jogo impede que Link morra de um só golpe forte, deixando-o com um quarto de coração. Essa proteção não existe no Modo Mestre, o que torna perigosos os golpes pesados do Koboblin dourado.",
+      "sources": ["zw:Master Mode"]
+    }
+  ],
+  "advanced_uses": [
+    "Atacar sem pausas longas para não dar tempo de regeneração, e priorizar fogo, gelo e explosões em vez de eletricidade."
+  ],
+  "limitations": [
+    "Não existe no modo normal.",
+    "Resistente a eletricidade.",
+    "Regenera vida aos poucos (até um limite)."
+  ],
+  "related": [
+    { "id": "botw_monster_silver_bokoblin", "relation": "Variante que ele supera; segundo a lenda, sua origem" },
+    { "id": "botw_monster_bokoblin", "relation": "Forma básica da espécie" },
+    { "id": "botw_mechanic_master_mode", "relation": "Modo em que aparece" },
+    { "id": "botw_weapon_thunderblade", "relation": "Arma elétrica contra a qual é resistente" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Flecha elétrica contra a qual é resistente" },
+    { "id": "botw_material_diamond", "relation": "Pedra preciosa que pode deixar" },
+    { "id": "botw_material_bokoblin_guts", "relation": "Parte de terceiro nível" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "parcial"
+}

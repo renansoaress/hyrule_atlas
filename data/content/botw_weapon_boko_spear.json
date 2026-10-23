@@ -1,0 +1,250 @@
+{
+  "id": "botw_weapon_boko_spear",
+  "summary": "Lança tosca entalhada pelos Koboblins num galho (ataque 2, durabilidade 12) — a de menor ataque entre as lanças. É de madeira: pega fogo, flutua e não atrai raios.",
+  "description": "A Lança Kobo é a arma mais básica do arsenal dos Koboblins: um galho de árvore entalhado às pressas. O compendium sugere que ela foi feita para espetar carne e assá-la, mas que tem algum valor em combate; a descrição de inventário reforça o uso culinário e aconselha arremessá-la quando estiver perto de quebrar. É comum na Necluda Ocidental e na Pradaria de Hyrule, sobretudo nas mãos de Koboblins comuns.\n\nPor ser de madeira, pega fogo, flutua, não conduz eletricidade e não pode ser movida com Magnétis. Os Koboblins aproveitam essa inflamabilidade: perto de uma fogueira, acendem suas armas de madeira para queimar Link.",
+  "locations": [
+    "Necluda Ocidental e Pradaria de Hyrule, nas mãos de Koboblins e nos acampamentos deles."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins comuns ou recolher a lança largada nos acampamentos.",
+    "O amiibo de Koboblin (série Breath of the Wild) pode gerar um baú com uma Lança Kobo.",
+    "A Lua de sangue repõe as armas largadas pelo mundo e as que estão nas mãos dos inimigos."
+  ],
+  "uses": [
+    "Arma descartável do começo do jogo, com bom alcance para manter Koboblins à distância.",
+    "Tocha improvisada: acesa numa fogueira, espalha fogo pela grama e acende outra fogueira.",
+    "Arremesso final quando estiver quase quebrada, como o próprio jogo recomenda."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico; acesa, causa dano de fogo enquanto queima."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "A descrição da lança no inventário recomenda arremessá-la quando estiver perto de quebrar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo quando exposta a chamas; acesa, pode ser empunhada para espalhar o fogo.",
+      "conditions": [
+        "Encostar a lança numa fogueira, numa tocha acesa ou em outra fonte de fogo."
+      ],
+      "side_effects": [
+        "Cuidado com grama seca e com o próprio Link: o fogo se espalha de objeto em objeto.",
+        "As fontes não dizem por quanto tempo uma lança acesa dura fora das regiões escaldantes, onde a madeira queima até sumir."
+      ],
+      "applications": [
+        "Incendiar grama: o fogo espalhado gera correntes de ar quente que levantam Link com o Planador.",
+        "Golpear inimigos com a lança em chamas para queimá-los — a mesma tática que os Koboblins usam contra Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon",
+        "zw:Fire",
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Encostada numa fogueira, pega fogo; acesa, também serve para acender um feixe de Madeira e criar uma nova fogueira.",
+      "applications": [
+        "Acender fogueiras para cozinhar sem precisar de Sílex."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Wood",
+        "zw:Fire",
+        "dm"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada nas áreas escaldantes de Eldin (Cânion de Eldin e Montanha da Morte), pega fogo sozinha e acaba virando cinzas.",
+      "side_effects": [
+        "A lança é perdida."
+      ],
+      "applications": [
+        "Trocar por uma arma de metal antes de entrar nas zonas de calor de Eldin."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, por ser de madeira.",
+      "side_effects": [
+        "Ainda assim, se Link for eletrocutado com ela na mão, a lança voa para o chão — isso vale para quase todas as armas."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: pode ficar equipada durante tempestades.",
+      "side_effects": [
+        "Escudos e arcos de metal equipados continuam atraindo raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, por ser de madeira.",
+      "applications": [
+        "Pode ser recolhida na superfície, o que compensa o fato de Magnétis não alcançá-la."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos, e esta lança é de madeira.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É a lança dos Koboblins comuns da Necluda Ocidental e da Pradaria de Hyrule. Perto de uma fonte de fogo, os Koboblins acendem armas de madeira como esta para queimar Link.",
+      "side_effects": [
+        "Um Koboblin com a lança acesa pode incendiar Link e a grama ao redor."
+      ],
+      "applications": [
+        "Ataque de longe ou de surpresa antes que o Koboblin alcance a fogueira do acampamento."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bokoblin"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança Kobo pode surgir com um bônus branco (comum) — ataque +1 a +2, durabilidade +2 a +3 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +3, durabilidade +4 a +6 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer. Exemplares tirados de baús de amiibo vêm com o valor máximo da faixa sorteada, embora o bônus apareça sempre em branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Espeto antes de arma",
+      "text": "O compendium diz que a intenção original da Lança Kobo parece ter sido espetar carne para assar; a descrição de inventário fala em espetar peixe e carne para cozinhar no fogo. Isso é apenas a descrição: no jogo, a lança funciona como arma comum.",
+      "sources": [
+        "comp",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A lança mais fraca",
+      "text": "Com ataque 2, é a lança de menor poder do jogo, abaixo até da Lança do viajante (3) e do Esfregão de madeira (5).",
+      "sources": [
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Acenda a lança numa fogueira de acampamento e use-a para incendiar a grama sob os inimigos antes de atacar."
+  ],
+  "limitations": [
+    "Dano mínimo (2) e só 12 golpes de durabilidade.",
+    "Queima e vira cinzas se equipada nas áreas escaldantes de Eldin.",
+    "Não pode ser resgatada com Magnétis."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Monstro que a empunha"
+    },
+    {
+      "id": "botw_weapon_spiked_boko_spear",
+      "relation": "Versão reforçada com ossos"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_spear",
+      "relation": "Versão mais forte, com ossos fossilizados"
+    },
+    {
+      "id": "botw_weapon_boko_club",
+      "relation": "Mesmo arquétipo (Koboblin), uma mão"
+    },
+    {
+      "id": "botw_shield_boko_shield",
+      "relation": "Escudo do mesmo arquétipo"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Fonte de fogo para acendê-la"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Acesa, acende feixes de madeira"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

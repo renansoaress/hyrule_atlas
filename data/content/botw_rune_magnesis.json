@@ -1,0 +1,113 @@
+{
+  "id": "botw_rune_magnesis",
+  "summary": "Runa que ergue e move qualquer objeto metálico, por mais pesado que seja: caixas de ferro, baús de metal, armas caídas na água. Não age sobre madeira, pedra nem sobre o equipamento ancestral Sheikah.",
+  "description": "Magnétis é a runa obtida no Santuário Oman Au, no Planalto (Great Plateau). Ao ativá-la, uma grade vermelha cobre os arredores de Link: os objetos que podem ser agarrados ficam com um filtro vermelho e passam a amarelo quando o cursor da runa está sobre eles. Uma vez presos no campo magnético, podem ser levantados, empurrados, puxados, girados no ar ou largados em outro ponto, independentemente do peso.\n\nA runa só reconhece metal. Isso inclui caixas de ferro, esferas de ferro de quebra-cabeças Korok, baús metálicos (inclusive os enterrados ou submersos) e armas, escudos e arcos de metal. Equipamentos de madeira, osso ou de tecnologia ancestral não respondem, assim como os baús falsos do Octoroc do tesouro. Magnétis não está entre as runas que Purah pode aprimorar no Laboratório de Hateno.",
+  "locations": [
+    "Santuário Oman Au, no Planalto."
+  ],
+  "obtaining": [
+    "Extrair a runa no terminal (Guidance Stone) do Santuário Oman Au, um dos quatro santuários iniciais do Planalto."
+  ],
+  "uses": [
+    "Mover objetos metálicos para resolver quebra-cabeças de santuários e de Koroks (por exemplo, levar uma esfera de ferro até um buraco).",
+    "Recuperar armas, escudos e baús metálicos caídos na água ou fora de alcance.",
+    "Arrancar do chão os baús metálicos enterrados das missões \"EX\" da DLC.",
+    "Atacar monstros sem gastar durabilidade, balançando ou soltando objetos pesados de metal sobre eles."
+  ],
+  "effects": [
+    "Levanta e move objetos metálicos livremente; a dica do jogo diz que isso vale independentemente do peso."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Agarra um objeto metálico destacado em amarelo; depois Link pode movê-lo no ar, empurrá-lo, puxá-lo ou soltá-lo.",
+      "conditions": ["O objeto precisa ser metálico e estar dentro da área coberta pela grade vermelha."],
+      "applications": ["Quebra-cabeças de santuário, resgate de itens, armadilhas para monstros."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Funciona sobre objetos metálicos submersos, trazendo-os à superfície.",
+      "applications": [
+        "Recuperar uma arma metálica que afundou.",
+        "No Campo de Voo dos Arás (Flight Range), puxar à superfície os dois baús de metal submersos no fundo, que guardam uma Espada do cavaleiro e uma rupia dourada."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks", "zw:Flight Range"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Objetos de metal pesados podem ser balançados contra monstros ou largados sobre eles, causando dano.",
+      "applications": ["Jogar uma caixa de ferro sobre um acampamento de monstros para poupar as armas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Baús metálicos podem ser erguidos e movidos; os baús \"EX\" enterrados ou submersos da DLC só podem ser retirados com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Iron Treasure Chest", "zw:Hidden Chest"]
+    },
+    {
+      "action": "magnetis",
+      "variant": "objetos não metálicos",
+      "status": "sem_efeito",
+      "result": "Objetos que não são de metal não respondem: o equipamento Koboblin, por exemplo, tem base de madeira e não pode ser manipulado. Os baús enterrados do Octoroc do tesouro também não são metálicos e não podem ser puxados.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Treasure Octorok", "zw:Bokoblin Gear"]
+    },
+    {
+      "action": "magnetis",
+      "variant": "equipamento ancestral",
+      "status": "sem_efeito",
+      "result": "O equipamento de soldado ancestral é feito de tecnologia ancestral não metálica e não pode ser erguido com Magnétis.",
+      "kind": "curiosidade",
+      "sources": ["zw:Ancient Soldier Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Devolver a rocha do Mestre Kohga",
+      "text": "Na fase final da luta contra o Mestre Kohga, ele conjura uma rocha reforçada para esmagar Link. Com Magnétis, Link toma o controle dela e a empurra de volta contra o líder do Clã Yiga.",
+      "sources": ["zw:Master Kohga"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Variação do quebra-cabeça da rocha",
+      "text": "Alguns Koroks pedem que uma rocha seja levada até um buraco; numa variação desse desafio, o objeto é uma esfera de ferro, que deve ser carregada com Magnétis.",
+      "sources": ["zw:Boulder"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem melhoria",
+      "text": "Purah só aprimora três runas (Sensor Sheikah, Bomba remota e Estátis). Depois delas, diz que já levou as runas ao limite; Magnétis não tem versão +.",
+      "sources": ["zw:Slated for Upgrades", "zw:Rune"]
+    }
+  ],
+  "advanced_uses": [
+    "Arremessar caixas de ferro ou outros objetos metálicos contra grupos de inimigos, preservando a durabilidade das armas.",
+    "Combinar com Gelítis para alcançar baús submersos: criar pilares de gelo para se aproximar e então puxar o baú (como na missão \"EX Treasure: Garb of Winds\")."
+  ],
+  "limitations": [
+    "Só age sobre metal: rochas, troncos e objetos de madeira não respondem.",
+    "O equipamento ancestral Sheikah não é magnético.",
+    "Não pode ser aprimorada no Laboratório de Hateno."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa da Tabuleta Sheikah" },
+    { "id": "botw_object_metal_box", "relation": "Objeto metálico típico movido pela runa" },
+    { "id": "botw_treasure_treasure_chest", "relation": "Baús metálicos podem ser erguidos" },
+    { "id": "botw_monster_treasure_octorok", "relation": "Seu baú falso não é magnético" },
+    { "id": "botw_monster_master_kohga", "relation": "A rocha do chefe é devolvida com Magnétis" },
+    { "id": "botw_rune_cryonis", "relation": "Combinação para alcançar objetos na água" },
+    { "id": "botw_weapon_travelers_sword", "relation": "Exemplo de arma metálica que pode ser puxada" }
+  ],
+  "capabilities": ["habilidade_especial", "revela_recursos"],
+  "verification_status": "verificado"
+}

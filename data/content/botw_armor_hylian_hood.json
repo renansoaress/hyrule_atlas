@@ -1,0 +1,132 @@
+{
+  "id": "botw_armor_hylian_hood",
+  "summary": "Capuz tecido com métodos tradicionais hyruleanos, vendido por 60 rupias em Kakariko e na Vila Hateno. Sem efeito especial nem bônus de conjunto; defesa de 3 a 20, com melhorias à base de partes de Koboblin.",
+  "description": "A descrição diz que o Capuz hyliano é tecido “com métodos tradicionais hyruleanos”, num material resistente que protege viajantes do sol forte e do mau tempo — mas isso é só ambientação: a peça não dá resistência ao calor, ao frio nem qualquer outro efeito. Custa 60 rupias na Enchanted, na Vila Kakariko, e na Ventest Clothing Boutique, na Vila Hateno.\n\nCom a Túnica hyliana e as Calças hylianas forma o Conjunto hyliano, que não tem bônus de conjunto. As três primeiras melhorias usam apenas partes de Koboblin (chifres, presas e vísceras); a última pede 15 Vísceras de Koboblin e 15 Âmbar. A defesa vai de 3 a 20. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Enchanted, loja de armaduras da Vila Kakariko.",
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Comprar por 60 rupias na Enchanted ou na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Defesa de cabeça acessível no início do jogo.",
+    "Visual tingível para combinar com o resto do traje."
+  ],
+  "effects": [
+    "Nenhum efeito adicional."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 3 de defesa (20 no nível máximo), sem efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas). Apesar de a descrição falar em proteger do sol, o capuz não tem efeito de temperatura.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Conjunto sem bônus",
+      "text": "O Conjunto hyliano é um dos poucos sem nenhum bônus de conjunto, mesmo com as três peças melhoradas a ★★; o mesmo vale para o Conjunto do soldado.",
+      "sources": [
+        "zw:Hylian Armor Series",
+        "zw:Armor Set"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como as melhorias até o nível 3 só pedem partes de Koboblin, é uma forma de ganhar defesa cedo sem gastar joias nem partes raras."
+  ],
+  "limitations": [
+    "Sem efeito adicional e sem bônus de conjunto.",
+    "Defesa máxima (20) inferior à do Elmo do soldado (28)."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_hylian_tunic",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_hylian_trousers",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Material dos dois primeiros níveis"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Material dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_armor_soldiers_helm",
+      "relation": "Outra peça da Ventest Clothing Boutique, com defesa maior"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Pode ser tingido"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "botw_creature_tabantha_moose",
+  "summary": "O maior cervo de Hyrule, de galhada imensa que cai e cresce todo ano. Vive nas montanhas nevadas, foge ao menor ruído e é o único cervo que não pode ser montado; deixa carne de segunda ou de primeira.",
+  "description": "O Alce de Tabantha é a maior espécie de cervo de Hyrule, com origem rastreada até a região de Tabantha. Vive apenas nas áreas montanhosas e nevadas: o compendium cita as Cordilheiras de Hebra e as Montanhas Gerudo, e ele também aparece na Tabantha Tundra e no Monte Lanayru. A galhada enorme, que é trocada todos os anos, é a sua marca registrada.\n\nApesar do tamanho, é extremamente arisco e foge ao menor sinal de som. É valorizado pela carne macia e de alta qualidade, que o compendium recomenda para ensopados: ao morrer, deixa Carne de segunda ou Carne de primeira. Ao contrário do Cervo e da Corça da montanha, não pode ser montado.",
+  "locations": [
+    "Cordilheiras de Hebra e Montanhas Gerudo (compendium); também Tabantha Tundra e Monte Lanayru."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Fonte de Carne de segunda e Carne de primeira.",
+    "A Carne de primeira pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\").",
+    "Registrar sua foto no compendium (entrada nº 24)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge à menor detecção de som.",
+      "conditions": [
+        "Furtividade máxima para chegar perto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: é o único cervo de BOTW que Link não consegue montar.",
+      "sources": [
+        "zw",
+        "zw:Deer"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser morto; deixa Carne de segunda ou Carne de primeira.",
+      "produces": [
+        "botw_material_raw_prime_meat",
+        "botw_material_raw_gourmet_meat"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que o alce pode ser morto, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Só machos",
+      "text": "Todos os Alces de Tabantha do jogo têm aparência de macho; não há nenhum com aspecto de fêmea.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Carne para ensopado",
+      "text": "O compendium elogia a carne macia e de alta qualidade do alce e diz que ela funciona bem num ensopado.",
+      "sources": [
+        "comp"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não pode ser montado.",
+    "Vive apenas em áreas montanhosas e nevadas, longe das planícies onde ficam os outros cervos."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_mountain_buck",
+      "relation": "Cervo que, ao contrário do alce, pode ser montado"
+    },
+    {
+      "id": "botw_creature_mountain_doe",
+      "relation": "Corça que, ao contrário do alce, pode ser montada"
+    },
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne deixada ao ser abatido"
+    },
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne deixada ao ser abatido"
+    },
+    {
+      "id": "botw_food_prime_meat_stew",
+      "relation": "Ensopado que usa Carne de segunda, uma das carnes deixadas pelo alce"
+    },
+    {
+      "id": "botw_food_gourmet_meat_stew",
+      "relation": "Ensopado que usa Carne de primeira, a outra carne deixada pelo alce"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

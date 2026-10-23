@@ -1,0 +1,182 @@
+{
+  "id": "botw_bow_royal_guards_bow",
+  "summary": "Protótipo Sheikah feito com tecnologia ancestral para enfrentar a Grande Calamidade: ataque altíssimo (50), tensionamento 1,5 vez mais rápido e 30 m de trajetória reta, mas só 20 de durabilidade.",
+  "description": "O Arco da guarda real é um protótipo criado pelos Sheikah com tecnologia ancestral para combater a Grande Calamidade. A descrição do jogo resume a troca: alta cadência de tiro e muito poder de fogo, mas pouca durabilidade. Pertence ao equipamento da guarda real, associado aos guardas do Castelo de Hyrule, cuja marca é justamente o ataque alto à custa da durabilidade.\n\nOs parâmetros extraídos do jogo explicam a cadência: o tensionamento é 1,5 vez mais rápido que o padrão, o intervalo após cada disparo é multiplicado por 0,8 e a flecha percorre 30 m em linha reta. Com 50 de ataque, é o arco de flecha única mais forte fora o Arco da Luz.\n\nSó aparece no Castelo de Hyrule. Por ser de metal, não queima, afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios em tempestades.",
+  "locations": [
+    "Castelo de Hyrule: sobre a lareira do quarto da princesa Zelda.",
+    "Castelo de Hyrule: dentro da escadaria em espiral quadrada (Square Spiral Staircase)."
+  ],
+  "obtaining": [
+    "Recolher os exemplares dos dois pontos do Castelo de Hyrule."
+  ],
+  "uses": [
+    "Dano altíssimo por flecha para enfrentar inimigos fortes do castelo.",
+    "Levar a Parcy, no Riverside Stable, na missão secundária \"The Royal Guard's Gear\"."
+  ],
+  "effects": [
+    "Tensionamento 1,5 vez mais rápido e intervalo entre disparos reduzido."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. O tensionamento é 1,5 vez mais rápido que o padrão, o intervalo após cada disparo é multiplicado por 0,8 e a flecha percorre 30 m em linha reta antes de cair.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "side_effects": [
+        "Com durabilidade 20, quebra depressa."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "jogo",
+        "zw:Template:BotW Bow Parameters"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Moeda de troca com Parcy",
+      "text": "Ao falar com Parcy no Riverside Stable, Link inicia a missão secundária \"The Royal Guard's Gear\": ela lamenta nunca ter encontrado as armas da guarda real. Se Link mostrar um Arco da guarda real, ela o reconhece, agradece com uma rupia dourada e, a partir daí, aceita trocar Arcos da guarda real por um Topázio, um Rubi ou uma Safira.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco da guarda real pode surgir com bônus de ataque de +5 a +11 (nível branco) ou de +12 a +20 (nível amarelo), e com bônus de durabilidade de +2 a +4 (branco) ou de +5 a +30 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use-o em alvos que valem o dano (como Centaleões ou Guardiões no castelo) e troque de arco para inimigos fracos, poupando a durabilidade curta."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 20.",
+    "Atrai raios em tempestades e afunda se cair na água.",
+    "Só aparece no Castelo de Hyrule."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_royal_guards_sword",
+      "relation": "Mesmo arquétipo (espada)"
+    },
+    {
+      "id": "botw_weapon_royal_guards_claymore",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_royal_guards_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_shield_royal_guards_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Uma das gemas que Parcy dá em troca"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Uma das gemas que Parcy dá em troca"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Uma das gemas que Parcy dá em troca"
+    },
+    {
+      "id": "botw_bow_royal_bow",
+      "relation": "Outro arco ligado à realeza, mais durável"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

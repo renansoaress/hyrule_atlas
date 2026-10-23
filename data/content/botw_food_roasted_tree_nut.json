@@ -1,0 +1,138 @@
+{
+  "id": "botw_food_roasted_tree_nut",
+  "summary": "Noz tostada para realçar o perfume. Cura mais que a crua (1/4 de coração), mas as fontes divergem entre meio e 1 coração; e, curiosamente, vale menos: 2 rupias, contra 3.",
+  "description": "A Noz (Chickaloo Tree Nut), deixada por qualquer pardal e encontrada em árvores, no chão das florestas e nos canais do Domínio Zora, vira Noz tostada em contato com o fogo ou com o clima escaldante. O texto do jogo diz que foi tostada para amplificar a fragrância e que rende mais corações que a crua.\n\nQuanto ela cura, as fontes não concordam: a tabela de comidas assadas do Zelda Wiki dá meio coração (o dobro do 1/4 da noz crua), mas a página do item fala em 1 coração. Em compensação, é um dos poucos casos em que assar desvaloriza: a Noz tostada vale 2 rupias, contra 3 da crua.",
+  "locations": [
+    "Prepara-se a partir de Nozes numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Noz ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura mínima: meio coração pela tabela de comidas assadas (1 coração pela página do item).",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "Recupera meio coração segundo a tabela de comidas assadas (1 coração segundo a página do item).",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Noz — queima por alguns instantes e se transforma em Noz tostada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Noz tostada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Noz no chão para que o ingrediente asse sozinho e vire Noz tostada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cura mais que a Noz crua (1/4 de coração): meio coração pela tabela de comidas assadas ou 1 coração pela página do item. Não concede efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Chickaloo Tree Nut"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 2 rupias, menos que as 3 da Noz crua.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Chickaloo Tree Nut"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Noz tostada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Assar faz perder uma rupia",
+      "text": "Pelos valores do Zelda Wiki, a Noz crua vale 3 rupias e a tostada, 2. Se a intenção for vender, venda-a crua.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Chickaloo Tree Nut"
+      ]
+    },
+    {
+      "kind": "nao_verificado",
+      "title": "Meio ou 1 coração?",
+      "text": "A tabela de comidas assadas do Zelda Wiki registra meio coração, mas a página da Noz tostada fala em 1 coração. O texto do jogo só diz que ela cura mais que a crua."
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Vale menos que a noz crua.",
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_chickaloo_tree_nut",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_roasted_acorn",
+      "relation": "A outra noz tostada do jogo"
+    },
+    {
+      "id": "botw_creature_common_sparrow",
+      "relation": "Pardais deixam nozes cruas"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "a_verificar"
+}

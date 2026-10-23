@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-10-23T23:06:03.570Z",
+  "strict": false,
+  "entities": 878,
+  "images_checked": 3626,
+  "errors": [],
+  "warnings": [
+    "frase repetida em 9 descrições: \"com as tres pecas em ★★, o conjunto ativa o raio da espada mestra aumentado (+50%).…\" (ex.: botw_armor_trousers_of_the_sky, botw_armor_trousers_of_the_wild, botw_armor_trousers_of_the_wind)",
+    "frase repetida em 7 descrições: \"por ser de metal, nao queima, afunda na agua, pode ser movido com magnetis, conduz eletricidade e atrai raios …\" (ex.: botw_bow_golden_bow, botw_bow_lynel_bow, botw_bow_mighty_lynel_bow)"
+  ],
+  "repeated_sentences": 2
+}

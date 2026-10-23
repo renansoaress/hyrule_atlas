@@ -1,0 +1,116 @@
+{
+  "id": "botw_armor_well_worn_trousers",
+  "summary": "Calças velhas e puídas, mas confortáveis, achadas num baú do Santuário da Ressurreição no início do jogo. Pernas curtas demais, 1 de defesa, sem melhorias; podem ser tingidas.",
+  "description": "As Calças surradas estão num baú de pedra dentro do Santuário da Ressurreição (Shrine of Resurrection), onde Link desperta, e formam o Traje surrado com a Camisa velha. A descrição diz que estão gastas em alguns pontos, mas são surpreendentemente confortáveis — só que as pernas são um pouco curtas. O Zelda Wiki nota que, pelo estado e pelo comprimento, não parecem ter sido feitas para Link na idade atual.\n\nNão têm efeito além de 1 de defesa, e o traje não tem bônus de conjunto. Não podem ser melhoradas por Grandes Fadas, mas podem ser tingidas na Tinturaria Kochi. Depois da Missão secundária \"From the Ground Up\", Granté passa a vendê-las por 50 rupias na Vila de Nício (Tarrey Town).",
+  "locations": [
+    "Santuário da Ressurreição (Shrine of Resurrection), no Grande Planalto."
+  ],
+  "obtaining": [
+    "Abrir o baú de pedra do Santuário da Ressurreição, no início do jogo.",
+    "Comprar de Granté por 50 rupias depois de \"From the Ground Up\"."
+  ],
+  "uses": [
+    "Primeira proteção de pernas do jogo.",
+    "Peça cosmética que pode ser tingida."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só soma 1 de defesa. O Traje surrado (com a Camisa velha) não tem bônus de conjunto.",
+      "sources": [
+        "zw",
+        "zw:Well-Worn Outfit",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupas de antes do Sono da Restauração",
+      "text": "As calças foram feitas muito antes de Link despertar do Sono da Restauração; o desgaste e as pernas curtas indicam que não eram do tamanho dele hoje.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para jogadores que fazem desafios com o visual inicial, as calças podem ser tingidas e recompradas com Granté se forem vendidas."
+  ],
+  "limitations": [
+    "Não podem ser melhoradas: a defesa fica em 1.",
+    "Sem efeito e sem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_well_worn_outfit",
+      "relation": "Traje do qual faz parte"
+    },
+    {
+      "id": "botw_armor_old_shirt",
+      "relation": "Camisa do mesmo traje, no mesmo santuário"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Podem ser tingidas"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

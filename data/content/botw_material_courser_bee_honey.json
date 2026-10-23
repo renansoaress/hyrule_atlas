@@ -1,0 +1,216 @@
+{
+  "id": "botw_material_courser_bee_honey",
+  "summary": "Favo preso nas árvores e guardado por abelhas que picam Link. Cru cura 2 corações; cozido, dá Recuperação de vigor. Sozinho vira Bala de mel; Koko e o Conjunto do herói selvagem o pedem.",
+  "description": "O Mel de abelha tem a aparência de uma colmeia e fica preso em várias árvores de Hyrule — é mais comum em Necluda, e o compendium cita a Pradaria de Hyrule e a Fronteira de Tabantha como locais habituais. Cada favo é guardado por um enxame de abelhas (Courser Bees) que ataca quando Link se aproxima, causando 1/4 de coração de dano por ataque; o enxame foge depois de levar dois golpes. Os Ursos melívoros, como o nome indica, adoram mel.\n\nCru, o mel recupera 2 corações. Cozido, \"libera o potencial dos nutrientes\" e dá ao prato o efeito Recuperação de vigor, que repõe o Medidor de vigor na hora. É um dos poucos ingredientes que forma uma receita válida sozinho (Bala de mel) e é obrigatório em oito pratos, como Carne glaceada, Maçã com mel e Crepe de mel. Na Missão secundária \"Koko's Specialty\", Koko precisa de mel para fazer a Maçã com mel favorita da mãe e dá uma Maçã com mel energizante a Link. Também é pedido no 2º nível de melhoria das peças do Conjunto do herói selvagem e entra no corante laranja da Tinturaria Kochi.",
+  "locations": [
+    "Árvores de Toda Hyrule, com mais frequência em Necluda; o compendium cita a Pradaria de Hyrule e a Fronteira de Tabantha."
+  ],
+  "obtaining": [
+    "Recolher o favo nas árvores, enfrentando ou afugentando o enxame (dois golpes espantam as abelhas). As fontes não detalham se o favo precisa ser derrubado da árvore."
+  ],
+  "uses": [
+    "Cura imediata: 2 corações cru.",
+    "Culinária: efeito Recuperação de vigor; obrigatório em Bala de mel (sozinho), Carne glaceada, Cogumelos glaceados, Frutos do mar glaceados, Legumes glaceados, Crepe de mel, Maçã com mel e Frutas com mel.",
+    "Missão secundária \"Koko's Specialty\": entregar a Koko para a Maçã com mel.",
+    "Melhorias na Fonte da Grande Fada: 5 por peça no 2º nível do Gorro, da Túnica e das Calças selvagens (15 no total).",
+    "Ingrediente do corante laranja na Tinturaria Kochi.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Cozido: Recuperação de vigor (repõe parte do Medidor de vigor instantaneamente)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao se aproximar do favo, o enxame de abelhas ataca Link, causando 1/4 de coração de dano. As abelhas podem ser alvejadas e fogem depois de dois golpes.",
+      "side_effects": [
+        "Na DLC The Champions' Ballad, durante o trecho com o Obliterador (One-Hit Obliterator), Link fica preso a 1/4 de coração e as abelhas do Grande Platô se tornam uma ameaça séria."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Courser Bee"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 2 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Dá ao prato o efeito Recuperação de vigor. Sozinho, forma a Bala de mel; com carne, cogumelos, frutos do mar, legumes ou frutas, forma os pratos glaceados e com mel.",
+      "produces": [
+        "botw_food_honey_candy",
+        "botw_food_glazed_meat",
+        "botw_food_glazed_mushrooms",
+        "botw_food_glazed_seafood",
+        "botw_food_glazed_veggies",
+        "botw_food_honeyed_apple",
+        "botw_food_honeyed_fruits",
+        "botw_food_honey_crepe"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada do mel na lista de Comidas assadas. A regra geral diz que materiais comestíveis crus assam e os demais viram cinzas, mas as fontes não descrevem o que acontece com o mel no fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com o mel largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada do mel na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem uso especial do favo solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear o favo de mel."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do mel à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com o mel largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o mel não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao favo."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 10 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A sobremesa favorita da mãe de Koko",
+      "text": "Em \"Koko's Specialty\", Koko quer fazer a Maçã com mel que a mãe adorava, mas está sem mel. Entregue o favo e ela prepara o doce e dá a Link uma Maçã com mel energizante.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Abelhas fora do compendium",
+      "text": "As abelhas que guardam o mel podem ser alvejadas, mas não têm entrada no Hyrule Compendium. Já o Urso melívoro é descrito pelo compendium como um animal com \"amor natural pelo mel\".",
+      "sources": [
+        "zw:Courser Bee",
+        "zw:Honeyvore Bear"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mel combinado com outros ingredientes de Recuperação de vigor (como o Energimelo) num mesmo prato reforça o efeito para escaladas e voos longos; ingredientes de efeitos diferentes fazem o prato ficar só com o efeito predominante.",
+    "Quem pretende levar o Conjunto do herói selvagem ao nível máximo precisa de 15 favos para o 2º nível."
+  ],
+  "limitations": [
+    "Nenhum comerciante o vende: é preciso colher nas árvores.",
+    "Cru, não dá Recuperação de vigor; o efeito só aparece quando o mel é cozido."
+  ],
+  "related": [
+    {
+      "id": "botw_food_honey_candy",
+      "relation": "Prato feito só com mel"
+    },
+    {
+      "id": "botw_food_honeyed_apple",
+      "relation": "Doce pedido em \"Koko's Specialty\""
+    },
+    {
+      "id": "botw_food_glazed_meat",
+      "relation": "Mel com qualquer carne"
+    },
+    {
+      "id": "botw_food_honey_crepe",
+      "relation": "Crepe que exige mel"
+    },
+    {
+      "id": "botw_creature_honeyvore_bear",
+      "relation": "Animal que adora mel"
+    },
+    {
+      "id": "botw_armor_cap_of_the_wild",
+      "relation": "Pede 5 favos no 2º nível de melhoria"
+    },
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Conjunto cujas peças usam mel no 2º nível"
+    },
+    {
+      "id": "botw_material_stamella_shroom",
+      "relation": "Outro ingrediente de Recuperação de vigor"
+    },
+    {
+      "id": "botw_object_tree",
+      "relation": "Onde os favos ficam presos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante laranja"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

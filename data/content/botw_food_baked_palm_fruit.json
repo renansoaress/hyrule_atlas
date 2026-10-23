@@ -1,0 +1,139 @@
+{
+  "id": "botw_food_baked_palm_fruit",
+  "summary": "Coco grelhado no calor direto, com a polpa cozida no vapor dentro da casca. Cura 1,5 coração — o dobro da Maçã assada — e vale 6 rupias, contra 4 do coco cru.",
+  "description": "O Coco assado sai do contato do Coco com o fogo ou com o clima escaldante de Eldin. O texto do jogo diz que o calor direto cozinha a polpa no vapor dentro da casca e recomenda comê-lo no momento em que o suco começa a escorrer.\n\nComo o Coco cru já é a fruta sem efeito que mais cura (1 coração), a versão assada chega a 1,5 coração, o dobro de uma Maçã assada ou de uma Framboesa assada. Na venda passa de 4 para 6 rupias. Não tem efeito especial, assim como o coco cru.",
+  "locations": [
+    "Prepara-se a partir de Cocos — colhidos nas palmeiras do Deserto Gerudo e do litoral de Necluda Oriental — numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Coco ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura de 1,5 coração por unidade, o dobro da Maçã assada e da Framboesa assada.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Coco — queima por alguns instantes e se transforma em Coco assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Coco assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Coco no chão para que o ingrediente asse sozinho e vire Coco assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração do Coco cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 6 rupias; o Coco cru vale 4.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Palm Fruit"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Coco assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Melhor servido quente",
+      "text": "A descrição do jogo recomenda comer o Coco assado no instante em que o suco começa a escorrer durante o cozimento.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O dobro de uma maçã assada",
+      "text": "Pela tabela de comidas assadas do Zelda Wiki, o Coco assado cura 1,5 coração, enquanto a Maçã assada e a Framboesa assada curam 3/4 — reflexo do coco cru curar 1 coração, o dobro dessas frutas.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Palm Fruit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_palm_fruit",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_baked_apple",
+      "relation": "Fruta assada que cura metade"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Assa o coco ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "botw_food_apple_pie",
+  "summary": "Torta de Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e Maçã, ensinada no livro de receitas de Misa, na Vila Rito. O único espaço livre da panela decide o efeito.",
+  "description": "A Torta de maçã tem quatro ingredientes fixos — Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e uma Maçã — e a Maçã é o que a distingue: com outra fruta no lugar, o prato passa a ser Torta de frutas, receita que não aceita maçãs. Como a panela comporta no máximo cinco ingredientes, sobra apenas um espaço livre, e é ele que define a versão.\n\nNa receita básica a torta recupera 3 corações e vale 30 rupias. Uma Maçã extra no espaço livre eleva a cura para 4 corações; um Trigo de Tabantha extra, para 5. Se o quinto ingrediente tiver efeito, a torta herda esse efeito: um ingrediente valente gera a versão de Ataque aumentado (5 corações), um nutritivo restaura todos os corações e dá Corações extras, e um veloz rende a versão mais valiosa citada, de 70 rupias.\n\nA receita está no livro de receitas de Misa, dona da The Slippery Falcon, na Vila Rito: ela manda comprar ali o trigo, a manteiga e o açúcar, cozinhar tudo com uma maçã até a massa ficar dourada e, \"para um toque extra\", trocar a maçã por outro ingrediente.",
+  "locations": [
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Livro de receitas de Misa (Misa's Recipe Book): dentro da The Slippery Falcon, na Vila Rito."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Trigo de Tabantha + Cana-de-açúcar + Manteiga de cabra + Maçã, com um quinto ingrediente opcional."
+  ],
+  "uses": [
+    "Cura de 3 a 5 corações na versão sem efeito, conforme o quinto ingrediente.",
+    "Base para versões com efeito, usando o único espaço livre da panela.",
+    "Venda: de 30 a 70 rupias, conforme a versão."
+  ],
+  "effects": [
+    "Versão comum: recupera 3 corações (4 com uma Maçã extra, 5 com um Trigo de Tabantha extra).",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — 60 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — 7 corações, 50 rupias.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — 8 corações, 50 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — 4 corações, 70 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — 3 corações, 50 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — 4 corações, 50 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — 4 corações, 50 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — 5 corações, 50 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — 4 corações, 50 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — 4 corações, 50 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3 corações na receita básica. Uma Maçã ou um Trigo de Tabantha a mais no quinto espaço aumenta a cura para 4 ou 5 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "conditions": [
+        "Torta feita só com os quatro ingredientes obrigatórios, ou com um quinto ingrediente sem efeito."
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O efeito vem do quinto ingrediente: a torta pode sair nutritiva, energizante, tenaz, veloz, picante, refrescante, isolante, valente, blindada ou discreta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito",
+      "conditions": [
+        "Um ingrediente com efeito no quinto espaço da panela."
+      ],
+      "side_effects": [
+        "Por haver só um espaço livre, o efeito vem de um único ingrediente."
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 30 rupias na receita básica; as versões com efeito valem 50 rupias, a nutritiva 60 e a veloz 70, a mais cara citada pelo Zelda Wiki.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Um só espaço para o efeito",
+      "text": "Com quatro ingredientes obrigatórios e limite de cinco por panela, a torta só admite um ingrediente extra. Não dá, portanto, para reforçar o efeito somando vários ingredientes do mesmo tipo, como acontece em pratos de poucos ingredientes.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A dica de Misa muda o prato",
+      "text": "O livro de Misa sugere trocar a maçã por outro ingrediente \"para um toque extra\". Se a substituta for outra fruta, porém, o resultado deixa de ser Torta de maçã e vira Torta de frutas, receita que não aceita maçãs.",
+      "sources": [
+        "zw:Misa's Recipe Book",
+        "zw:Fruit Pie"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para curar mais sem efeito, ponha um segundo Trigo de Tabantha no espaço livre (5 corações).",
+    "Para vender, a versão veloz é a mais valiosa citada (70 rupias)."
+  ],
+  "limitations": [
+    "Só aceita Maçã como fruta: outras frutas transformam o prato em Torta de frutas.",
+    "Trocar a Manteiga de cabra por uma segunda fruta leva à receita do Bolo de frutas (Maçã ou Framboesa + outra fruta + Trigo de Tabantha + Cana-de-açúcar)."
+  ],
+  "related": [
+    {
+      "id": "botw_material_apple",
+      "relation": "Fruta obrigatória"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_fruit_pie",
+      "relation": "Mesma receita com outra fruta no lugar da Maçã"
+    },
+    {
+      "id": "botw_food_fruitcake",
+      "relation": "Bolo com duas frutas, trigo e açúcar, sem manteiga"
+    },
+    {
+      "id": "botw_food_hot_buttered_apple",
+      "relation": "Outro prato de Maçã com Manteiga de cabra"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

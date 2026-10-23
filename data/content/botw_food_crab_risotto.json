@@ -1,0 +1,115 @@
+{
+  "id": "botw_food_crab_risotto",
+  "summary": "Risoto de Arroz hyliano, Manteiga de cabra, Halita e um caranguejo, \"prato do dia a dia das vilas litorâneas\". O caranguejo define o efeito; a versão comum vale 70 rupias.",
+  "description": "O Risoto de caranguejo leva Arroz hyliano, Manteiga de cabra, Halita e qualquer caranguejo. Segundo a descrição do jogo, é um prato cotidiano das vilas à beira-mar, e o segredo do sabor está na gordura do caranguejo. Cada caranguejo impõe o seu efeito: o Caranguejo esperto gera o risoto energizante (4 corações, 50 rupias), o Caranguejo espadachim o valente, de Ataque aumentado (7 corações, 40 rupias), e o Caranguejo couraçado o blindado, de Defesa aumentada (4 corações, 40 rupias).\n\nA versão comum exige dois caranguejos de tipos diferentes ou um quinto ingrediente de efeito contrário; ela cura 6 corações e vale 70 rupias. Comparado à Omelete de caranguejo com arroz, que troca a manteiga pelo Ovo, o risoto cura menos em todas as versões citadas (6 contra 8 corações na comum, 7 contra 9 na valente) e a versão blindada vale menos (40 contra 60 rupias).",
+  "locations": [
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Arroz hyliano + Manteiga de cabra + Halita + Caranguejo esperto, espadachim ou couraçado."
+  ],
+  "uses": [
+    "Recuperação de vigor, Ataque aumentado ou Defesa aumentada, conforme o caranguejo.",
+    "Venda: de 40 a 70 rupias."
+  ],
+  "effects": [
+    "Versão comum (dois caranguejos diferentes ou ingrediente de efeito oposto): recupera 6 corações.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Caranguejo esperto; 4 corações, 50 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Caranguejo espadachim; nível baixo; 7 corações, 40 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com Caranguejo couraçado; nível baixo; 4 corações, 40 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 6 corações quando o efeito do caranguejo foi anulado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O caranguejo define o efeito: Recuperação de vigor (esperto), Ataque aumentado (espadachim) ou Defesa aumentada (couraçado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 70 rupias na versão comum, 50 na energizante e 40 nas versões valente e blindada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Risoto ou omelete?",
+      "text": "Com o mesmo caranguejo, a Omelete de caranguejo com arroz cura mais do que o risoto em todas as versões listadas pelo Zelda Wiki. O risoto só se justifica quando sobra Manteiga de cabra e falta Ovo.",
+      "sources": [
+        "zw",
+        "zw:Crab Omelet with Rice"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só há as três versões ligadas aos caranguejos, além da comum.",
+    "Ocupa quatro espaços da panela, deixando só um livre."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_bright_eyed_crab",
+      "relation": "Gera a versão energizante"
+    },
+    {
+      "id": "botw_creature_razorclaw_crab",
+      "relation": "Gera a versão valente"
+    },
+    {
+      "id": "botw_creature_ironshell_crab",
+      "relation": "Gera a versão blindada"
+    },
+    {
+      "id": "botw_food_crab_omelet_with_rice",
+      "relation": "Mesma base, com Ovo no lugar da manteiga; cura mais"
+    },
+    {
+      "id": "botw_food_crab_stir_fry",
+      "relation": "Prato de caranguejo com só dois ingredientes"
+    },
+    {
+      "id": "botw_food_mushroom_risotto",
+      "relation": "Mesmo risoto (arroz, manteiga e halita) com cogumelo"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "ataque",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

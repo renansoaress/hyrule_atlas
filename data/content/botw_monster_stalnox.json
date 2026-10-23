@@ -1,0 +1,226 @@
+{
+  "id": "botw_monster_stalnox",
+  "summary": "Esqueleto de Rinox ativo só entre 21h e 5h. O ponto fraco é o olho: após metade da vida, a flecha o arranca e o corpo desmonta; destruir o olho ou afastá-lo do corpo vence a luta. Deixa armas raras.",
+  "description": "O Stalnox é o que resta de um Rinox. Durante o dia fica com o rosto enterrado no chão para proteger o olho da luz e só se levanta entre 21h e 5h — e não desperta se Link estiver perto demais quando a noite cai. Se o dia nascer no meio da luta, ele se enterra e foge até a noite seguinte, quando o combate pode recomeçar. O compendium avisa que, mesmo parecendo derrotado, ele volta enquanto o olho estiver intacto.\n\nComo o Rinox vivo, tenta esmagar Link, prendê-lo entre as mãos e arremessa árvores arrancadas. De forma única, também arranca as próprias costelas, a clavícula e até um braço para atirá-los, e desenterra Barris explosivos que estouram ao contato. Uma flecha no olho o atordoa; depois que ele perde metade da vida, a flecha arranca o olho da órbita e o corpo desaba numa pilha de ossos por alguns instantes. Nesse intervalo, Link pode atacar o olho diretamente ou pegá-lo e jogá-lo para longe, até que ele volte quicando para o corpo. Uma Flecha explosiva no olho o arranca em qualquer momento da luta.\n\nO Stalnox é derrotado quando o olho perde toda a vida, quando o olho e o corpo não se reencontram antes das 5h ou quando Link leva o olho longe o bastante do ponto inicial do monstro. Ele deixa Dentes de Rinox e as armas raras que estavam cravadas no corpo.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e em Necluda Ocidental.",
+    "Pontos citados pelo Zelda Wiki: Icefall Foothills, Monte Satori, Rowan Plain, leste das planícies de Akkala, Hickaly Woods, norte de Aris Beach, Harfin Valley, leste do pico Daval, Hyrule Forest Park e Castelo de Hyrule (na prisão, Lockup).",
+    "Também é o chefe do 5º andar das Provações finais da Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Dente de Rinox e armas raras que estavam presas no corpo dele.",
+    "O Stalnox da prisão do Castelo de Hyrule, ao ser derrotado, faz surgir um baú com o Escudo hyliano."
+  ],
+  "uses": [
+    "Fonte de Dentes de Rinox e de armas raras.",
+    "Obter o Escudo hyliano no Castelo de Hyrule.",
+    "Conta para a Medalha de honra: Rinox, de Kilton."
+  ],
+  "effects": [
+    "Golpes de mão, tentativa de prender Link entre as mãos, árvores arremessadas, ossos do próprio corpo arremessados e Barris explosivos desenterrados."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "De dia fica enterrado de rosto no chão. À noite (21h–5h) se levanta, mas não desperta se Link já estiver muito perto ao anoitecer.",
+      "side_effects": [
+        "Se amanhecer durante a luta, ele se enterra e o combate fica para a noite seguinte."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes causam dano, principalmente após atordoá-lo. Quando o olho se solta, Link pode golpear o próprio olho.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha no olho atordoa. Depois da metade da vida, a flecha arranca o olho e o esqueleto desaba temporariamente numa pilha de ossos.",
+      "applications": [
+        "Arrancar o olho para atacá-lo diretamente ou levá-lo para longe."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito do fogo sobre o Stalnox."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre o Stalnox na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Uma Flecha explosiva acertada no olho arranca o olho independentemente da vida restante. Os Barris explosivos que ele desenterra estouram ao contato.",
+      "applications": [
+        "Começar a luta já separando olho e corpo com uma Flecha explosiva."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "As fontes só citam Flechas explosivas no olho; o efeito de Bombas remotas não é descrito."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Stalnox ou sobre o olho solto."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; ossos e olho não são metálicos. O olho solto, porém, pode ser pego e arremessado com as mãos.",
+      "sources": [
+        "zw:Magnesis",
+        "zw"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Com o olho solto, Link pode pegá-lo e arremessá-lo para longe do corpo.",
+      "applications": [
+        "Levar o olho longe o bastante do ponto de origem do Stalnox o derrota."
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Arranca árvores para arremessar e desenterra Barris explosivos. O amanhecer (5h) o faz fugir para debaixo da terra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Três jeitos de vencer",
+      "text": "O Stalnox cai quando o olho perde toda a vida, quando olho e corpo não se reúnem antes das 5h ou quando Link leva o olho suficientemente longe do ponto inicial do monstro.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O teste da guarda real",
+      "text": "Antes da segunda Grande Calamidade, a guarda real usava o Stalnox mantido na prisão do Castelo de Hyrule para testar seus membros; uma placa diz que quem derruba o \"gigante\" é reconhecido como cavaleiro do reino. Ao vencê-lo, surge o baú com o Escudo hyliano.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Não é enganado pelo Conjunto de Ganon Fantasma",
+      "text": "O Conjunto de Ganon Fantasma disfarça Link diante dos monstros Stal, mas não engana o Stalnox nem os inimigos amaldiçoados.",
+      "sources": [
+        "zw:Phantom Ganon"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ausente quando o Monte Satori brilha",
+      "text": "Enquanto o Monte Satori brilha com a presença do Senhor da Montanha, os monstros da região, incluindo o Stalnox do monte, não aparecem.",
+      "sources": [
+        "zw:Lord of the Mountain"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Medalha de honra: Rinox",
+      "text": "A contagem de Kilton para a Medalha de honra: Rinox inclui todos os Stalnox.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Arrancar o olho com Flecha explosiva logo no início e levá-lo para longe para encerrar a luta rapidamente.",
+    "Atrasar a luta até perto das 5h: se olho e corpo estiverem separados ao amanhecer, ele é derrotado."
+  ],
+  "limitations": [
+    "Só pode ser enfrentado à noite (21h–5h).",
+    "Antes da metade da vida, flechas comuns no olho apenas atordoam; o olho só se solta depois.",
+    "O olho solto volta quicando para o corpo após alguns instantes."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_hinox",
+      "relation": "Monstro do qual ele é o esqueleto"
+    },
+    {
+      "id": "botw_material_hinox_tooth",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_shield_hylian_shield",
+      "relation": "Prêmio pelo Stalnox da prisão do Castelo de Hyrule"
+    },
+    {
+      "id": "botw_arrow_bomb_arrow",
+      "relation": "Arranca o olho a qualquer momento"
+    },
+    {
+      "id": "botw_object_explosive_barrel",
+      "relation": "Desenterrado e usado por ele"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_hinox",
+      "relation": "Prêmio de Kilton (inclui os Stalnox)"
+    },
+    {
+      "id": "botw_armorset_phantom_ganon_set",
+      "relation": "Disfarce que não funciona contra ele"
+    },
+    {
+      "id": "botw_creature_lord_of_the_mountain",
+      "relation": "Quando o Senhor da Montanha aparece, o Stalnox do Monte Satori some"
+    },
+    {
+      "id": "botw_mechanic_trial_of_the_sword",
+      "relation": "Aparece nas Provações finais"
+    }
+  ],
+  "capabilities": [
+    "gera_explosao",
+    "habilidade_especial",
+    "vence_rapido"
+  ],
+  "verification_status": "verificado"
+}

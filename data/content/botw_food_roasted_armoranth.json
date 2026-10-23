@@ -1,0 +1,130 @@
+{
+  "id": "botw_food_roasted_armoranth",
+  "summary": "Amaranto blindado tostado: o calor afrouxa a fibra dura o bastante para que seja fácil de comer. Cura meio coração, ganha valor (8 rupias, contra 5) e perde a Defesa aumentada.",
+  "description": "O Amaranto blindado tostado sai do contato do Amaranto blindado com o fogo ou com o clima escaldante. Segundo o texto do jogo, o calor desfiou a fibra dura e borrachuda da planta só o suficiente para torná-la fácil de comer.\n\nO Hyrule Compendium não atribui recuperação de corações ao amaranto cru (0); tostado, ele cura meio coração. Na venda sobe de 5 para 8 rupias. Em compensação, perde o efeito Defesa aumentada que daria na Panela — a planta, que cresce nos Cerros de Hyrule e no Altiplano de Akkala, vale mais cozida crua para quem quer defesa.",
+  "locations": [
+    "Prepara-se a partir de Amarantos blindados (Cerros de Hyrule e Altiplano de Akkala, com muitos perto da Fonte da Grande Fada de Mija) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Amaranto blindado ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura mínima: meio coração.",
+    "Venda: 8 rupias, mais que as 5 do amaranto cru."
+  ],
+  "effects": [
+    "Recupera meio coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Amaranto blindado — queima por alguns instantes e se transforma em Amaranto blindado tostado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Amaranto blindado tostado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Amaranto blindado no chão para que o ingrediente asse sozinho e vire Amaranto blindado tostado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera meio coração, sem nenhum efeito. O compendium registra 0 coração para o Amaranto blindado cru.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 8 rupias; o Amaranto blindado cru vale 5.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Armoranth"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Amaranto blindado tostado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Fibra domada pelo fogo",
+      "text": "A descrição do jogo explica que o calor desfiou a fibra dura e borrachuda do amaranto apenas o suficiente para facilitar a mastigação.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Defesa aumentada: o efeito do amaranto só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_armoranth",
+      "relation": "Ingrediente cru (Defesa aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_mighty_thistle",
+      "relation": "Outra erva tostada de meio coração"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Tosta o amaranto ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

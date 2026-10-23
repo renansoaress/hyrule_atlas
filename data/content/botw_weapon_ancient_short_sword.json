@@ -1,0 +1,204 @@
+{
+  "id": "botw_weapon_ancient_short_sword",
+  "summary": "Espada de uma mão de tecnologia ancestral, fabricada no forno do laboratório de Robbie, em Akkala. A lâmina só aparece quando sacada e causa 1,5× de dano em Guardiões, em Ganon e nas Iras de Ganon.",
+  "description": "A Espada ancestral pertence ao arquétipo de equipamento do soldado ancestral (Ancient Soldier Gear), que reúne as armas criadas por Robbie com tecnologia ancestral. Segundo a descrição do jogo, sua lâmina é feita com um poder antigo perdido na era atual, aparece apenas quando a espada é sacada e corta mais do que qualquer espada de metal.\n\nO grande diferencial está no combate contra as máquinas da Calamidade: os parâmetros extraídos do jogo aplicam um multiplicador de 1,5× ao dano contra todos os Guardiões e Guardiões batedores (inclusive pernas e hélices), contra Ganon, a Calamidade, Ganon, Besta Sombria e todas as Iras de Ganon. Por não ser de metal, tem o comportamento oposto ao de uma espada comum: não conduz eletricidade, não atrai raios, flutua na água, não queima no fogo nem em clima escaldante e não pode ser movida com Magnétis.",
+  "locations": [
+    "Não aparece espalhada pelo mundo nas fontes consultadas: é fabricada no Laboratório de Tecnologia Ancestral de Akkala (Akkala Ancient Tech Lab)."
+  ],
+  "obtaining": [
+    "Forjada pelo forno ancestral do laboratório de Robbie em Akkala (Cherry) em troca de 1.000 rupias, 15 Molas ancestrais, 5 Eixos ancestrais e 2 Núcleos ancestrais.",
+    "O forno só funciona depois que o laboratório é reativado com a chama azul trazida de uma fornalha ancestral próxima.",
+    "Pode ser encomendada de novo sempre que Link tiver os materiais e as rupias (o item consta como reabastecível na loja do forno)."
+  ],
+  "uses": [
+    "Arma principal contra Guardiões persecutórios, Guardiões batedores dos santuários e chefes das Feras Divinas.",
+    "Última arma pedida por Nebb, em Hateno, na Missão secundária \"The Weapon Connoisseur\"; mostrá-la rende um Diamante.",
+    "Arma segura em tempestades e contra inimigos elétricos, já que não é metálica."
+  ],
+  "effects": [
+    "Dano multiplicado por 1,5 contra Guardiões, Ganon, a Calamidade, Ganon, Besta Sombria e as Iras de Ganon."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão: golpes de velocidade média, ataque giratório carregado (gasta vigor) e uso simultâneo com escudo. A lâmina de energia só se materializa quando a espada é sacada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Pode ser arremessada; ao atingir um inimigo, quebra na hora e o golpe é crítico (dano dobrado).",
+      "side_effects": [
+        "Perde-se uma arma cara de fabricar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Weapon",
+        "zw:Durability"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, ao contrário das espadas metálicas.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "applications": [
+        "Manter-se armado em tempestades sem virar alvo de raios."
+      ],
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movida com Magnétis: não é metálica.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Causa 1,5× de dano contra Guardiões (persecutórios, batedores, torretas, altívagos e suas pernas/hélices), Ganon, a Calamidade, Ganon, Besta Sombria e as quatro Iras de Ganon.",
+      "applications": [
+        "Cortar as pernas de um Guardião persecutório para atordoá-lo com menos golpes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Guardian"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +7 a +14 (nível comum) ou +15 a +27 (nível dourado), bônus de durabilidade de +6 a +11 (ou +12 a +27 no nível dourado) e lançamento longo de 1,5× a 2×. Também pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quem recebe o dano extra",
+      "text": "O multiplicador de 1,5× não se limita aos Guardiões: os parâmetros incluem também Ganon, a Calamidade, Ganon, Besta Sombria, todas as Iras de Ganon e até as pernas e hélices dos Guardiões, tratadas como alvos separados.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Recompensa máxima de Nebb",
+      "text": "Nebb comenta que espadas ancestrais não são comuns perto de Hateno. Ela é a oitava e última arma da lista dele, e a recompensa é um Diamante, o único prêmio da missão que não é pago em rupias.",
+      "sources": [
+        "zw",
+        "zw:The Weapon Connoisseur"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra um Guardião persecutório, mirar nas pernas: elas também recebem o dano 1,5×, e cortá-las atordoa a máquina temporariamente."
+  ],
+  "limitations": [
+    "Só é obtida pelo forno do laboratório de Akkala, com custo alto em rupias e peças ancestrais.",
+    "O dano extra vale apenas para Guardiões e para as formas de Ganon; contra outros monstros, ela é apenas uma espada forte."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_ancient_spear",
+      "relation": "Mesmo arquétipo (lança ancestral)"
+    },
+    {
+      "id": "botw_weapon_ancient_bladesaw",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_bow_ancient_bow",
+      "relation": "Mesmo arquétipo (arco)"
+    },
+    {
+      "id": "botw_shield_ancient_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Armadura de Robbie feita no mesmo forno"
+    },
+    {
+      "id": "botw_material_ancient_spring",
+      "relation": "Material de fabricação (15)"
+    },
+    {
+      "id": "botw_material_ancient_shaft",
+      "relation": "Material de fabricação (5)"
+    },
+    {
+      "id": "botw_material_ancient_core",
+      "relation": "Material de fabricação (2)"
+    },
+    {
+      "id": "botw_weapon_guardian_sword",
+      "relation": "Espada de Guardião, também eficaz contra Guardiões"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Alvo do dano 1,5×"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "Alvo do dano 1,5×"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

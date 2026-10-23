@@ -1,0 +1,96 @@
+{
+  "id": "botw_mechanic_great_fairy_fountain",
+  "summary": "Quatro botões de flor gigantes, ao ar livre, onde moram as Grandes Fadas Cotera, Kaysa, Mija e Tera. Abri-los custa 100, 500, 1.000 e 10.000 rupias, nessa ordem; cada fada aberta libera mais um nível de melhoria de armadura.",
+  "description": "Em BOTW as Fontes da Grande Fada não ficam escondidas em cavernas: são enormes botões de flor fechados, cercados por cogumelos laranja luminosos e muitas vezes por Princesas plácidas ou Amarantos blindados. Dentro de cada um vive uma Grande Fada enfraquecida pela falta de viajantes e oferendas. Ela pede rupias para recuperar o poder, e o preço depende de quantas fontes Link já abriu: 100 na primeira, 500 na segunda, 1.000 na terceira e 10.000 na quarta, qualquer que seja a fada.\n\nRestaurada, a Grande Fada melhora as armaduras de Link em troca de materiais. O nível máximo de melhoria acompanha o número de fadas recuperadas: com todas as quatro, as peças chegam a ★★★★. Cada melhoria aumenta a defesa segundo uma tabela fixa (por exemplo, uma peça de defesa 3 passa a 5, 8, 12 e 20), e conjuntos melhorados pelo menos duas vezes podem ativar bônus de conjunto.",
+  "locations": [
+    "Cotera: na colina a leste da Vila Kakariko, em Necluda Ocidental.",
+    "Kaysa: no Piper Ridge, ao sul da Torre Sheikah de Tabantha, na Fronteira de Tabantha.",
+    "Mija: no bosque ao sul de Tarrey Town, na região de Akkala.",
+    "Tera: entre os ossos do Leviatã em Dragon's Exile, no Deserto Gerudo.",
+    "Fonte de Malanya (Faron): parece uma fonte de fada, mas abriga o Deus dos Cavalos."
+  ],
+  "obtaining": [
+    "Falar com o botão fechado, ouvir a fada e oferecer as rupias pedidas (100, 500, 1.000 ou 10.000, conforme a ordem de abertura)."
+  ],
+  "uses": [
+    "Melhorar armaduras até ★★★★ e ativar bônus de conjunto em ★★.",
+    "Encontrar Fadas, que aparecem nas Fontes da Grande Fada."
+  ],
+  "effects": [
+    "Cada fada restaurada aumenta em um o nível máximo de melhoria de armadura."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Oferecer rupias ao botão fechado faz a fonte florescer e a Grande Fada surgir da água. O preço cresce com cada fonte aberta: 100, 500, 1.000 e 10.000 rupias.",
+      "applications": ["Abrir primeiro a fonte mais fácil de alcançar: o preço depende só da ordem, não da fada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Enhancing", "zw:Great Fairy Kaysa"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "A fada melhora a peça de armadura escolhida se Link tiver os materiais exigidos; o nível máximo depende de quantas fadas foram restauradas. A defesa sobe por uma tabela fixa: inicial 2 → 4, 6, 9, 16; inicial 3 → 5, 8, 12, 20; inicial 4 → 7, 12, 18, 28; inicial 5 → 8, 14, 22, 32.",
+      "side_effects": [
+        "Conjuntos melhorados ao menos duas vezes podem ganhar bônus de conjunto.",
+        "Algumas peças não podem ser melhoradas, como o Elmo do trovão e o Conjunto de mergulhador."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw:Great Fairy", "zw:Enhancing", "zw:Armor", "zw:Thunder Helm", "zw:Salvager Armor Set"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Melhorias aumentam o preço de venda das armaduras, com uma exceção: peças do Conjunto bárbaro em ★★ valem 60 rupias a menos, e em ★★★ valem o mesmo que em ★.",
+      "kind": "curiosidade",
+      "sources": ["zw:Enhancing"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Fadas aparecem nas Fontes da Grande Fada e podem ser pegas com furtividade.",
+      "kind": "mecanica",
+      "sources": ["zw:Fairy"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "500 rupias de presente",
+      "text": "No Estábulo Tabantha Bridge, Toren quer encontrar a Grande Fada Kaysa e conta que a sombra da Torre Sheikah de Tabantha aponta para a fonte à tarde. Como não consegue subir a torre, entrega 500 rupias para Link oferecer em seu nome (missão \"A Gift for the Great Fairy\").",
+      "sources": ["zw:Great Fairy Kaysa"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Quatro irmãs",
+      "text": "As Grandes Fadas são irmãs: Tera é a mais velha, seguida de Kaysa, Mija e Cotera. Cotera tem pelo menos 10.000 anos, viveu a primeira Grande Calamidade e acompanhou a construção da Vila Kakariko, da qual é o espírito guardião.",
+      "sources": ["zw:Great Fairy Cotera", "zw:Great Fairy Tera"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A fonte do Deus dos Cavalos",
+      "text": "A Fonte de Malanya, em Faron, imita um botão de Grande Fada, mas abriga Malanya, o Deus dos Cavalos. Ele cobra 1.000 rupias para se libertar e então revive cavalos registrados mortos (de graça na primeira vez; depois, por uma Cenoura tenaz).",
+      "sources": ["zw", "zw:Malanya"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar as 10.000 rupias para a quarta fonte, que é a que libera o nível ★★★★.",
+    "Melhorar conjuntos até ★★ primeiro para ativar os bônus de conjunto (imunidade ao fogo, anticongelamento, anti-choque etc.)."
+  ],
+  "limitations": [
+    "Melhorias exigem materiais específicos por peça e nível.",
+    "Sem as quatro fadas, as armaduras não passam do nível correspondente ao número de fontes abertas."
+  ],
+  "related": [
+    { "id": "botw_creature_fairy", "relation": "Aparece nas fontes" },
+    { "id": "botw_material_silent_princess", "relation": "Planta comum ao redor das fontes" },
+    { "id": "botw_material_armoranth", "relation": "Planta comum ao redor das fontes" },
+    { "id": "botw_armorset_barbarian_set", "relation": "Exceção no preço após melhorias" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Bônus de conjunto liberado em ★★" },
+    { "id": "botw_armor_thunder_helm", "relation": "Não pode ser melhorado" },
+    { "id": "botw_mechanic_stable", "relation": "Malanya revive cavalos registrados" }
+  ],
+  "capabilities": ["defesa"],
+  "verification_status": "verificado"
+}

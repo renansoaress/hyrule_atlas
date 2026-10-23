@@ -1,0 +1,152 @@
+{
+  "id": "botw_food_roasted_carp",
+  "summary": "Carpa de água doce assada, com parte do cheiro forte suprimido e carne grossa. Sai de qualquer das três carpas, cura 1,5 coração (crua, 1) e vale 15 rupias.",
+  "description": "Carpa valente, Carpa blindada e Carpa tricolor viram a mesma Carpa assada no fogo ou no clima escaldante de Eldin. Segundo o texto do jogo, assar essa carpa de água doce ajuda a suprimir parte do mau cheiro, tornando-a mais fácil de engolir, e a carne é grossa e farta.\n\nA cura sobe de 1 para 1,5 coração. Para a Carpa valente e a blindada, que valem 10 rupias cruas, assar é lucro (15 rupias); para a Carpa tricolor, que vale 20 e só vive na base da cachoeira Lantern Falls, em Vila Kakariko, é prejuízo. Os efeitos de Panela (Ataque aumentado e Defesa aumentada) também se perdem.",
+  "locations": [
+    "Prepara-se a partir de qualquer carpa numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor uma carpa ao fogo ou largá-la no chão em clima escaldante.",
+    "Derrotar um Rinox azul: 9% de chance na tabela de comidas dele (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — qualquer carpa (Carpa valente, Carpa blindada ou Carpa tricolor) — queima por alguns instantes e se transforma em Carpa assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Carpa assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar qualquer carpa (Carpa valente, Carpa blindada ou Carpa tricolor) no chão para que o ingrediente asse sozinho e vire Carpa assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração de qualquer carpa crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 15 rupias; cruas, a Carpa valente e a blindada valem 10, e a tricolor, 20.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Mighty Carp",
+        "zw:Armored Carp",
+        "zw:Sanke Carp"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Carpa assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A Carpa tricolor vale mais crua",
+      "text": "A Carpa tricolor, subespécie da Carpa blindada sem efeito culinário, vale 20 rupias crua e cai para 15 assada; congelada (Carpa congelada) vale 18.",
+      "sources": [
+        "zw:Sanke Carp",
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Menos fedor",
+      "text": "A descrição do jogo diz que o fogo suprimiu parte do cheiro da carpa crua, deixando-a mais fácil de comer.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Perde o Ataque aumentado da Carpa valente e a Defesa aumentada da Carpa blindada."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_mighty_carp",
+      "relation": "Ingrediente cru (Ataque aumentado na Panela)"
+    },
+    {
+      "id": "botw_creature_armored_carp",
+      "relation": "Ingrediente cru (Defesa aumentada na Panela)"
+    },
+    {
+      "id": "botw_creature_sanke_carp",
+      "relation": "Ingrediente cru (vale mais cru)"
+    },
+    {
+      "id": "botw_food_frozen_carp",
+      "relation": "Versão congelada das mesmas carpas"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-la cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

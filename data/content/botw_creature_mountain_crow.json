@@ -1,0 +1,88 @@
+{
+  "id": "botw_creature_mountain_crow",
+  "summary": "Corvo negro e esperto, de garras marcantes, visto como mau agouro e malvisto por roubar plantações. Em BOTW é uma criatura passiva, que apenas voa quando Link chega perto; abatido, deixa uma Coxa.",
+  "description": "O Corvo da montanha vive nos Cerros de Hyrule e na Grande Floresta de Hyrule, segundo o compendium, mas, apesar do nome, também aparece em florestas e vilarejos. É conhecido pela inteligência e pelas garras características. As penas pretas são vistas como mau presságio, e ele rouba plantações das mãos dos agricultores se tiver chance — por isso costuma ser recebido com hostilidade.\n\nAo contrário dos corvos de outros jogos da série, que são inimigos, em BOTW ele é uma criatura passiva: quando Link se aproxima, simplesmente voa, sem incomodá-lo nem atacá-lo. Abatido, deixa uma Coxa.",
+  "locations": [
+    "Cerros de Hyrule e Grande Floresta de Hyrule (compendium); também florestas e vilarejos."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Coxa."
+  ],
+  "uses": [
+    "Fonte de Coxa.",
+    "Registrar sua foto no compendium (entrada nº 40)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Voa quando Link se aproxima; não o incomoda nem ataca.",
+      "kind": "mecanica",
+      "sources": ["zw:Crow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Coxa.",
+      "conditions": ["Como voa quando Link chega perto, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_raw_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Crow", "zw:Raw Bird Drumstick", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra o corvo, que voa quando Link se aproxima."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "De inimigo a criatura",
+      "text": "Em vários jogos da série os corvos são inimigos; em BOTW, o Corvo da montanha é apenas uma criatura passiva que foge de Link.",
+      "sources": ["zw:Crow"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ladrão de plantações",
+      "text": "O compendium diz que as penas negras do corvo são vistas como mau agouro e que ele rouba colheitas das mãos dos agricultores, o que lhe rende inimizade.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "A Coxa vira Coxa assada se exposta ao fogo e Coxa congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Rende só Coxa, a carne de ave que menos recupera corações crua (um coração)."
+  ],
+  "related": [
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_food_roasted_bird_drumstick", "relation": "Coxa exposta ao fogo" },
+    { "id": "botw_creature_wood_pigeon", "relation": "Outra ave comum que deixa Coxa" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

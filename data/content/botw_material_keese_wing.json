@@ -1,0 +1,179 @@
+{
+  "id": "botw_material_keese_wing",
+  "summary": "A parte de monstro de menor valor do jogo (2 rupias): asa coberta de pelos curtos e afiados dos Morcis comuns. Abre a sequência de melhorias do Conjunto de escalada.",
+  "description": "A Asa de Morci cai dos Morcis comuns, os monstros parecidos com morcegos que atacam em bando à noite ou ficam pendurados no teto das cavernas. O texto do jogo a descreve como coberta de pelos muito curtos e afiados e admite que, sozinha, ela não serve para muita coisa — é a parte de monstro de menor valor de venda do jogo, 2 rupias, e acrescenta apenas 1:10 aos elixires.\n\nSua função mais útil é iniciar o Conjunto de escalada: cada peça pede 3 asas (com 3 Agilimelos) no 1º nível. Os níveis seguintes do mesmo conjunto usam, em ordem, as asas de Morci elétrico, glacial e ígneo. Na Tinturaria Kochi, a asa comum entra no corante cinza.",
+  "locations": [
+    "Onde houver Morcis: em bandos ao ar livre durante a noite e no teto de cavernas."
+  ],
+  "obtaining": [
+    "Derrotar Morcis comuns. As variantes ígnea, glacial e elétrica deixam as asas correspondentes, não esta.",
+    "Os Morcis têm apenas 1 de vida, e uma Defesa perfeita contra a investida deles os derrota na hora."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:10 à duração.",
+    "Melhoria de armadura: 3 por peça no 1º nível do Conjunto de escalada — 9 no total.",
+    "Corante cinza na Tinturaria Kochi.",
+    "Venda: 2 rupias, ou 2 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Asa de Morci no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Asa de Morci largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Asa de Morci queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Asa de Morci numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Asa de Morci a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Asa de Morci à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Asa de Morci flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Asa de Morci não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Asa de Morci largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 2 rupias em lojas e comerciantes, ou 2 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Defesa perfeita derruba Morcis",
+      "text": "Aparar com uma Defesa perfeita um Morci que investe contra Link o mata instantaneamente — útil para colher asas de um bando sem gastar flechas. Uma rajada da Folha Korok também os derruba no chão por alguns instantes.",
+      "sources": [
+        "zw:Keese"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quatro asas, quatro níveis",
+      "text": "O Conjunto de escalada usa uma asa de Morci diferente em cada nível: comum no 1º, elétrica no 2º, glacial no 3º e ígnea no 4º.",
+      "sources": [
+        "zw",
+        "zw:Electric Keese Wing",
+        "zw:Ice Keese Wing",
+        "zw:Fire Keese Wing"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A parte mais barata do jogo",
+      "text": "Com 2 rupias, a Asa de Morci é a parte de monstro de menor valor de venda da tabela de BOTW.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Nove asas bastam para o 1º nível das três peças do Conjunto de escalada; como valem pouco, o excedente costuma servir só para elixires."
+  ],
+  "limitations": [
+    "Valor de venda mínimo (2 rupias) e menor acréscimo de duração (1:10).",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_keese",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_material_keese_eyeball",
+      "relation": "Outra parte deixada por todos os Morcis"
+    },
+    {
+      "id": "botw_material_electric_keese_wing",
+      "relation": "Asa usada no 2º nível do Conjunto de escalada"
+    },
+    {
+      "id": "botw_material_ice_keese_wing",
+      "relation": "Asa usada no 3º nível do Conjunto de escalada"
+    },
+    {
+      "id": "botw_material_fire_keese_wing",
+      "relation": "Asa usada no 4º nível do Conjunto de escalada"
+    },
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Usa 3 asas por peça no 1º nível"
+    },
+    {
+      "id": "botw_mechanic_perfect_guard",
+      "relation": "Derrota Morcis instantaneamente"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

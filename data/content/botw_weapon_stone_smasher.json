@@ -1,0 +1,127 @@
+{
+  "id": "botw_weapon_stone_smasher",
+  "summary": "Marreta Goron de metal raro com o peso concentrado na ponta (ataque 42). Quebra depósitos de minério num golpe, dobra o dano nos Tálus e tem dois exemplares escondidos no Castelo de Hyrule.",
+  "description": "O Quebra-Pedra é a marreta intermediária do Equipamento Goron, forjada com um metal raro extraído na Cidade Goron. O jogo explica que o centro de gravidade fica na ponta, de modo que a arma usa a força centrífuga e o próprio peso para achatar os oponentes. Os Gorons, muito maiores e mais fortes que os hylianos, conseguem usá-la com uma mão; Link precisa das duas.\n\nO nome diz tudo: foi feito para minerar, e, como os outros martelos, quebra depósitos de minério com um golpe. Também tem dano dobrado nos pontos fracos dos Tálus e destrói Britas rochosas instantaneamente. É comum em volta da Cidade Goron, no Cânion de Eldin, mas há dois exemplares no Castelo de Hyrule: um com o Moblin preto do refeitório (Dining Hall) e outro numa câmara secreta ligada à biblioteca. É de metal: conduz eletricidade, atrai raios, afunda e pode ser puxado com Magnétis.",
+  "locations": [
+    "Arredores da Cidade Goron, no Cânion de Eldin.",
+    "Castelo de Hyrule: com o Moblin preto do refeitório e numa câmara escondida ligada à biblioteca.",
+    "O compendium também lista a Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Recolher na região da Cidade Goron ou no Castelo de Hyrule.",
+    "Chance de surgir em baús gerados pelo amiibo de Daruk (série Breath of the Wild).",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Mineração: quebra depósitos de minério com um golpe.",
+    "Combate contra Tálus e Britas rochosas.",
+    "Marreta de bom dano (42) para o combate em geral."
+  ],
+  "effects": [
+    "Dano 2× nos pontos fracos dos Tálus (multiplicador oculto).",
+    "Quebra depósitos de minério com um golpe (propriedade de martelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e esmagadores de duas mãos, sem escudo; o giro carregado consome vigor e termina numa pancada para baixo. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ser usado em toda a região de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-lo.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado em tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Dano 2× nos pontos fracos dos Tálus e destruição instantânea de Britas rochosas. Um Moblin preto o empunha no refeitório do Castelo de Hyrule.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Stone Pebblit"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra depósitos de minério com um único golpe.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Ore Deposit"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +9, Durabilidade aumentada de +4 a +8 ou Acerto crítico; no nível dourado (amarelo): Ataque de +10 a +17, Durabilidade de +9 a +18 ou Lançamento longo (×1,5 a ×2). Com Ataque +17 chega a 59, quase o do Racha-Rocha.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma mão para os Gorons",
+      "text": "Por serem muito maiores e mais fortes que os hylianos, os Gorons conseguem manejar o Quebra-Pedra com uma só mão. Para Link, é uma arma de duas mãos.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "No Castelo de Hyrule, o Quebra-Pedra escondido perto da biblioteca é uma reposição de martelo longe de Eldin."
+  ],
+  "limitations": [
+    "Não corta árvores (arma contundente).",
+    "Metálico: perigoso em tempestades."
+  ],
+  "related": [
+    { "id": "botw_weapon_cobble_crusher", "relation": "Marreta Goron mais fraca" },
+    { "id": "botw_weapon_boulder_breaker", "relation": "Marreta Goron mais forte, de Daruk" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Marreta de mineração (4× nos Tálus)" },
+    { "id": "botw_monster_black_moblin", "relation": "Um deles o empunha no Castelo de Hyrule" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Quebrado com um golpe" },
+    { "id": "botw_monster_stone_talus", "relation": "Recebe dano dobrado no ponto fraco" },
+    { "id": "botw_monster_stone_pebblit", "relation": "Destruída com um golpe" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

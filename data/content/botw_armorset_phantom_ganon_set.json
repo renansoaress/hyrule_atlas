@@ -1,0 +1,147 @@
+{
+  "id": "botw_armorset_phantom_ganon_set",
+  "summary": "Armadura de Ganon Fantasma (Ocarina of Time) escondida em Faron pela DLC. Cada peça dá Furtividade aumentada; o traje completo engana monstros Stal e dá +80% de ataque com armas de osso, sem melhorias.",
+  "description": "O Conjunto de Ganon Fantasma é composto pelo Crânio de Ganon Fantasma, pela Armadura de Ganon Fantasma e pelas Grevas de Ganon Fantasma, e imita o Ganon Fantasma de Ocarina of Time. É obtido na Missão secundária \"EX Treasure: Dark Armor\", da DLC The Champions' Ballad, que pede a leitura do Diário EX de Misko 2 nas Ruínas da Vila Deya (Deya Village Ruins). O diário diz que a armadura do \"espírito maligno\" está escondida no \"mar de árvores\" de Faron.\n\nAs peças estão em baús que precisam ser puxados com Magnétis: o crânio, submerso sob a mais alta das três cachoeiras que descem do Lago Corta para o Lago Floria; a armadura, submersa no Rio Floria sob a Ponte Sarjon; as grevas, enterradas ao lado de uma estátua quebrada de pássaro de pedra na Floresta Ebara. Cada peça dá um nível de Furtividade aumentada, e o conjunto completo chega ao nível 3, que reduz em 70% o barulho de Link.\n\nComo o conjunto não pode ser melhorado, os dois bônus valem assim que as três peças são vestidas: o Disfarce Stal (Stal Disguise), que faz Stalboblins, Stalmoblins e Stallagalfos ignorarem Link e engana temporariamente os Stalnox, e o Ataque com ossos aumentado (Bone Atk. Up), +80% de ataque para armas e arcos de osso. O traje também assusta as pessoas e não pode ser tingido.",
+  "locations": [
+    "Cachoeira mais alta entre o Lago Corta e o Lago Floria, em Faron: Crânio de Ganon Fantasma (submerso).",
+    "Rio Floria, sob a Ponte Sarjon: Armadura de Ganon Fantasma (submersa).",
+    "Floresta Ebara, junto à estátua de pássaro de pedra quebrada: Grevas de Ganon Fantasma (enterradas).",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Com a DLC The Champions' Ballad, ler o Diário EX de Misko 2 nas Ruínas da Vila Deya (\"EX Treasure: Dark Armor\").",
+    "Puxar os três baús com Magnétis, da água ou do chão.",
+    "Depois de obtidas, Granté vende cada peça por 50 rupias."
+  ],
+  "uses": [
+    "Andar entre monstros Stal à noite sem ser atacado.",
+    "Aumentar muito o dano de armas e arcos de osso, como o Taco Kobo dracônico e o Arco Lagal.",
+    "Furtividade de nível 3 para Ataques-surpresa."
+  ],
+  "effects": [
+    "Cada peça: Furtividade aumentada (um nível por peça; o conjunto chega ao nível 3, -70% de barulho).",
+    "Traje completo, sem exigir melhorias: Disfarce Stal e Ataque com ossos aumentado (+80%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças, Link ganha Furtividade aumentada de nível 3, Disfarce Stal e +80% de ataque com armas e arcos de osso. Personagens se assustam ao vê-lo.",
+      "conditions": [
+        "Crânio, armadura e grevas de Ganon Fantasma vestidos juntos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "monstros Stal",
+      "status": "confirmado",
+      "result": "Stalboblins, Stalmoblins e Stallagalfos não atacam Link a menos que ele ataque primeiro; em vez disso, o seguem e o observam. Stalnox são enganados só por um tempo.",
+      "side_effects": [
+        "O disfarce termina antes se um inimigo que não é afetado por ele começar a atacar Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Os baús das peças estão submersos ou enterrados e só podem ser recuperados com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:EX Treasure: Dark Armor"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus sem ★★",
+      "text": "O Conjunto radiante tem os mesmos bônus (Disfarce Stal e Ataque com ossos aumentado), mas só em ★★. O Conjunto de Ganon Fantasma entrega os dois de imediato, porque não pode ser melhorado.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quais armas são de osso",
+      "text": "Contam como armas de osso: Braço de Koboblin, Braço de Lagalfos, Braço de Moblin, as armas Kobo e Moblin dracônicas e pontudas (clavas, lanças e o Taco Kobo dracônico) e os arcos Arco Kobo dracônico, Arco Kobo pontudo e Arco Lagal. O aumento de 80% multiplica com o Ataque aumentado.",
+      "sources": [
+        "zw:Bone Weapon Proficiency"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ganon Fantasma de Ocarina of Time",
+      "text": "O conjunto foi modelado a partir do Ganon Fantasma de Ocarina of Time, e o diário de Misko o chama de armadura do \"espírito maligno\".",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, use o disfarce para atravessar áreas cheias de Stalboblins sem lutar, ou para chegar perto deles e golpear primeiro com uma arma de osso reforçada.",
+    "Para Ataques-surpresa, o nível 3 de Furtividade aumentada reduz em 70% o barulho, mas não impede que inimigos vejam Link."
+  ],
+  "limitations": [
+    "O disfarce não afeta monstros que não sejam Stal e se desfaz se um deles atacar.",
+    "Furtividade aumentada reduz o som, não a detecção visual.",
+    "Não pode ser melhorado nem tingido; exige a DLC The Champions' Ballad."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_phantom_ganon_skull",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Tem os mesmos bônus, mas em ★★"
+    },
+    {
+      "id": "botw_armorset_phantom_equipment",
+      "relation": "Outro conjunto da DLC achado por diário de Misko"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Enganado pelo Disfarce Stal"
+    },
+    {
+      "id": "botw_monster_stalnox",
+      "relation": "Enganado apenas temporariamente"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_club",
+      "relation": "Arma de osso beneficiada pelo bônus"
+    },
+    {
+      "id": "botw_bow_lizal_bow",
+      "relation": "Arco de osso beneficiado pelo bônus"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para recuperar os baús"
+    }
+  ],
+  "capabilities": [
+    "furtividade",
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

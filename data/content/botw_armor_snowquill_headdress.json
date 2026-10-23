@@ -1,0 +1,167 @@
+{
+  "id": "botw_armor_snowquill_headdress",
+  "summary": "Cocar Rito feito de penas de aves da neve e adornado com rubi, vendido na Brazen Beak, na Vila Rito. Dá Resistência ao frio nível 1; com o conjunto ★★, Link não pode ser congelado.",
+  "description": "O Cocar de pluma nevada é um acessório Rito feito com penas de pássaros da neve e decorado com um rubi, a gema que, segundo a descrição, aproveita o poder do fogo para tornar o frio tolerável. É vendido por 1.000 rupias na Brazen Beak, a loja de armaduras da Vila Rito, junto da Túnica e das Calças de pluma nevada (2.150 rupias pelo conjunto).\n\nDá Resistência ao frio nível 1, que evita o dano das temperaturas abaixo de zero. Com as três peças a ★★, o Conjunto de pluma nevada ativa a Imunidade a congelamento (Unfreezable): Link não sofre dano de ataques de gelo nem congela — mas a proteção não vale para o frio do ambiente nem para a água gelada. A defesa vai de 3 a 20; as melhorias usam Gelecas ígneas, Erva geleira, Asas de Morci ígneo, Flamelos e, no último nível, 10 Caudas de Lagalfos ígneo e 5 Rubis. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Brazen Beak, loja de armaduras da Vila Rito."
+  ],
+  "obtaining": [
+    "Comprar por 1.000 rupias na Brazen Beak."
+  ],
+  "uses": [
+    "Explorar regiões geladas.",
+    "Completar o Conjunto de pluma nevada para ficar imune a congelamento."
+  ],
+  "effects": [
+    "Resistência ao frio nível 1.",
+    "Bônus de conjunto Imunidade a congelamento com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo) e dá Resistência ao frio nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Evita o dano do frio abaixo de 0 °C; ambientes mais gelados podem exigir o nível 2, alcançado com outra peça do conjunto.",
+      "conditions": [
+        "O efeito tem teto no nível 2."
+      ],
+      "side_effects": [
+        "Não protege da água gelada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Sozinho, o cocar não reduz o dano de ataques de gelo nem impede o congelamento.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "gelo",
+      "variant": "Conjunto de pluma nevada ★★",
+      "status": "confirmado",
+      "result": "Com as três peças a ★★, Link não sofre dano de ataques de gelo e não pode ser congelado.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "side_effects": [
+        "Não protege do frio ambiente nem da água gelada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Imune ao gelo, não ao frio",
+      "text": "A Imunidade a congelamento do conjunto protege de ataques de gelo (como os de Feitiçanos glaciais e Chulchuls glaciais), mas não substitui a Resistência ao frio: o frio ambiente e a água gelada continuam ferindo Link.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O conjunto ★★ junta Resistência ao frio (pelas peças) e Imunidade a congelamento (pelo bônus), cobrindo as duas ameaças das montanhas nevadas."
+  ],
+  "limitations": [
+    "A imunidade a congelamento exige as três peças a ★★.",
+    "Não protege da água gelada."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_snowquill_tunic",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_snowquill_trousers",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_zants_helmet",
+      "relation": "Única peça que dá Imunidade a congelamento sozinha"
+    },
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Outra peça de cabeça com Resistência ao frio"
+    },
+    {
+      "id": "botw_material_red_lizalfos_tail",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Inimigo de gelo neutralizado pelo bônus"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

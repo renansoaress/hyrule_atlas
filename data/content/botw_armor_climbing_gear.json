@@ -1,0 +1,149 @@
+{
+  "id": "botw_armor_climbing_gear",
+  "summary": "Traje com luvas antiderrapantes de tecnologia ancestral: Link escala 20% mais rápido. Fica no Santuário Chaas Qeta, na Ilha Tenoko; completa o Conjunto de escalada.",
+  "description": "O Traje de escalada está no Santuário Chaas Qeta, na Ilha Tenoko, e é a peça de torso do Conjunto de escalada, com a Bandana de escalada e as Botas de escalada. Depois de obtido, Granté passa a vendê-lo por 4.000 rupias na Vila de Nício (Tarrey Town).\n\nA descrição diz que as luvas antiderrapantes ajudam a usar a energia com mais eficiência, mas o efeito real é só de velocidade: um nível de Escalada mais rápida (+20%), com o vigor gasto aumentando na mesma proporção. Com as três peças em ★★, o conjunto ativa o Salto escalando econômico, que reduz pela metade o vigor dos saltos na parede. As luvas também não impedem escorregões em paredes molhadas pela chuva.\n\nA defesa vai de 3 a 20, com as mesmas melhorias das botas: asas de Morci de quatro tipos, Agilimelos, Lagartos fujões, Sapos apressados e, no último nível, 15 Violetas velozes. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Chaas Qeta, na Ilha Tenoko.",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Abrir o baú do Santuário Chaas Qeta, na Ilha Tenoko.",
+    "Recomprar de Granté por 4.000 rupias depois de já tê-lo obtido."
+  ],
+  "uses": [
+    "Escalar mais depressa.",
+    "Completar o Conjunto de escalada."
+  ],
+  "effects": [
+    "Escalada mais rápida, nível 1 (+20%).",
+    "Bônus de conjunto (três peças em ★★): saltos durante a escalada custam 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Escalada mais rápida: Link escala 20% mais rápido (30% com dois níveis e 40% com três, o máximo). Com a Bandana de escalada, o Traje de escalada e as Botas de escalada, todos em ★★, ativa o bônus Salto escalando econômico (Climb Jump Stamina Up): saltar durante a escalada custa 50% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "side_effects": [
+        "O gasto de vigor por segundo sobe na mesma proporção da velocidade, então a distância total que Link consegue escalar não aumenta."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Wall-Climb Speed Up",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "chuva",
+      "status": "sem_efeito",
+      "result": "Apesar da descrição falar em equipamento antiderrapante, a peça não impede que Link escorregue ao escalar paredes molhadas pela chuva.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A \"eficiência\" da descrição",
+      "text": "O texto do inventário fala em usar a energia com mais eficiência, mas a Escalada mais rápida aumenta o consumo de vigor junto com a velocidade. Só o bônus de conjunto em ★★ economiza vigor de fato, e apenas nos saltos.",
+      "sources": [
+        "jogo",
+        "zw:Wall-Climb Speed Up",
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine o traje com pratos ou elixires de Velocidade aumentada: esse efeito imita a Escalada mais rápida e se soma a ela até o teto do nível 3."
+  ],
+  "limitations": [
+    "Não evita escorregões na chuva.",
+    "Sozinho, não aumenta a distância que Link consegue escalar."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_climbers_bandanna",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_climbing_boots",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_material_fire_keese_wing",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_mechanic_climbing",
+      "relation": "Mecânica acelerada pela peça"
+    },
+    {
+      "id": "botw_mechanic_stamina",
+      "relation": "O vigor gasto acompanha a velocidade"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

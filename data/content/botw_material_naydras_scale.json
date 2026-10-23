@@ -1,0 +1,287 @@
+{
+  "id": "botw_material_naydras_scale",
+  "summary": "Escama de Naydra, o dragão de gelo do Monte Lanayru. A primeira vem ao libertá-la da Malícia e abre o santuário da Fonte da Sabedoria; depois, melhora a Túnica selvagem, a Armadura da Deidade Feroz e as Botas de neve.",
+  "description": "A Escama de Naydra é uma parte do espírito azul Naydra, o dragão de gelo que, segundo o compendium, não tem má vontade com as pessoas. Ela se solta quando Link acerta uma flecha em qualquer ponto do corpo principal que não seja os chifres, os dentes ou as garras do dragão e cai no chão envolta em luz. Naydra vive no Monte Lanayru. Depois de purificada, percorre as regiões de Lanayru e de Necluda Oriental, descendo para a Lanayru Promenade e a Lanayru Bay, e aparece circulando sobre a Fonte da Sabedoria às 5h e às 17h — a não ser que Link já esteja lá nesse momento. O inventário diz que ela guarda um frio cortante e que, embora sirva para cozinhar, comê-la \"parece um desperdício\".\n\nNa panela, funciona como parte de monstro: com bichos forma um elixir e acrescenta 1:30 à duração na primeira unidade (0:30 em cada unidade extra da mesma parte); sem bichos, vira Comida duvidosa. Vale 150 rupias ou 60 Mon com Kilton. Nas Grandes Fadas, é o material do 1º nível da Túnica selvagem e da Armadura da Deidade Feroz, além do 4º nível das Botas de neve. Na Tinturaria Kochi, entra no corante azul-claro.",
+  "locations": [
+    "Monte Lanayru e arredores (Lanayru Road, Lanayru Promenade e Lanayru Bay), depois de Naydra ser libertada da Malícia.",
+    "Fonte da Sabedoria, no topo do Monte Lanayru, onde a escama é oferecida.",
+    "Castelo de Hyrule (um baú com uma escama)."
+  ],
+  "obtaining": [
+    "Acertar uma flecha em qualquer ponto do corpo principal que não seja os chifres, os dentes ou as garras de Naydra enquanto o dragão voa; a peça cai no chão envolta em luz.",
+    "O primeiro acerto em cada dragão sempre rende uma escama, não importa onde a flecha pegue.",
+    "Cada tipo de parte só cai uma vez por encontro com o dragão; os dragões voltam a aparecer a cada dia no jogo, em horários aproximadamente fixos.",
+    "Naydra só passa a voar regularmente depois de ser libertada da Malícia na missão \"The Spring of Wisdom\".",
+    "Há também uma num baú do Castelo de Hyrule, sob uma laje de pedra acima da entrada norte da biblioteca."
+  ],
+  "uses": [
+    "Missão de santuário \"The Spring of Wisdom\": oferecida na água da Fonte da Sabedoria, abre o Santuário Jitan Sa'mi.",
+    "Melhoria de armadura: 2 no 1º nível da peça Túnica selvagem do Conjunto do herói selvagem (com 10 Bolotas); 1 no 1º nível da Armadura da Deidade Feroz (com 5 Unhas de Rinox); 2 no 4º nível das Botas de neve (com 15 Violetas velozes) — 5 no total.",
+    "Elixires: cozida com um bicho, acrescenta 1:30 na primeira unidade e 0:30 em cada unidade extra.",
+    "Corante azul-claro na Tinturaria Kochi.",
+    "Venda: 150 rupias, ou 60 Mon na loja de Kilton, que a aceita como parte de monstro."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurada e largada; na Fonte da Sabedoria, largá-la na água da fonte é a oferenda que abre o Santuário Jitan Sa'mi. Fora da fonte, as fontes não descrevem efeito.",
+      "conditions": [
+        "Segurar a escama a partir da algibeira e soltá-la na água da Fonte da Sabedoria."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:The Spring of Wisdom",
+        "zw:Spring of Wisdom"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Escama de Naydra largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Escama de Naydra queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Escama de Naydra numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Escama de Naydra a gelo ou congelamento, apesar do frio descrito no inventário."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Escama de Naydra à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Escama de Naydra flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Escama de Naydra não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Escama de Naydra largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho forma um elixir e acrescenta 1:30 à duração na primeira unidade; cada unidade extra da mesma parte soma só 0:30. Sem bichos (sozinha ou só com alimentos comuns), o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "side_effects": [
+        "Repetir a mesma parte rende pouco: só a primeira unidade dá o acréscimo cheio."
+      ],
+      "applications": [
+        "Combinar com outras partes de monstro diferentes para somar duração, em vez de repetir a escama."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 150 rupias em lojas e comerciantes, ou 60 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "fonte sagrada",
+      "status": "confirmado",
+      "result": "Largada na água da Fonte da Sabedoria, no topo do Monte Lanayru, faz abrir a passagem atrás da estátua da deusa, revelando o Santuário Jitan Sa'mi.",
+      "conditions": [
+        "Ter falado com a estátua da Fonte da Sabedoria, que pede justamente a Escama de Naydra."
+      ],
+      "applications": [
+        "Concluir a missão de santuário \"The Spring of Wisdom\"."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:The Spring of Wisdom",
+        "zw:Spring of Wisdom"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Onde mirar no dragão",
+      "text": "Naydra solta uma peça diferente conforme a parte atingida por uma flecha: chifre (Lasca do chifre), dentes na parte de baixo da boca (Lasca da presa), mãos (Garra) ou o restante do corpo (Escama). A escama sai quando a flecha acerta qualquer ponto do corpo principal que não seja os chifres, os dentes ou as garras; a peça se solta e cai no chão envolta em luz. O primeiro acerto em cada dragão sempre rende uma escama, onde quer que a flecha pegue.",
+      "sources": [
+        "zw:Naydra",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Planar na corrente do dragão",
+      "text": "Os dragões geram correntes de ar ascendentes ao voar, e abrir o Planador dentro delas recupera todo o vigor de Link. Isso permite acompanhar Naydra no ar e mirar com calma — lembrando que chegar perto demais congela Link com a aura gelada do dragão; o Conjunto de pluma nevada completo, melhorado duas vezes, ou o Elmo de Zant evitam isso.",
+      "sources": [
+        "zw:Updraft",
+        "zw:Naydra"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Oferenda à Fonte da Sabedoria",
+      "text": "Na missão de santuário \"The Spring of Wisdom\", Medda, na Vila Hateno, comenta que a família real poderia ter deixado um tesouro na fonte. Na Fonte da Sabedoria, a estátua da deusa pede a Escama de Naydra; largada na água, ela abre a porta para o Santuário Jitan Sa'mi.",
+      "sources": [
+        "zw:The Spring of Wisdom",
+        "zw:Spring of Wisdom"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A primeira escama vem da purificação",
+      "text": "No início, Naydra está tomada pela Malícia (Malice Naydra), enrolada na estátua da Fonte da Sabedoria e coberta de olhos brilhantes. Depois de Link destruir os olhos a flechadas, Hylia pede um último tiro no dragão já purificado: Naydra foge e deixa cair uma escama bem diante de Link, pronta para ser oferecida à fonte. Só depois disso ela passa a voar regularmente.",
+      "sources": [
+        "zw:The Spring of Wisdom",
+        "zw:Malice Naydra",
+        "zw:Naydra"
+      ]
+    },
+    {
+      "kind": "nao_verificado",
+      "title": "Prato crítico garantido?",
+      "text": "A página da Escama de Naydra no Zelda Wiki afirma que cozinhar com ela soma 90 segundos e garante um prato crítico. O acréscimo de 1:30 bate com a tabela de partes de monstro, mas a garantia de sucesso crítico não aparece nas páginas das outras partes de dragão nem nas páginas gerais de culinária e elixir consultadas.",
+      "sources": [
+        "zw",
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma escama sem dragão",
+      "text": "Há uma Escama de Naydra num baú do Castelo de Hyrule, sob uma laje de pedra acima da entrada norte da biblioteca.",
+      "sources": [
+        "zw",
+        "zw:Farosh's Scale"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Frio só na descrição",
+      "text": "O inventário diz que a Escama de Naydra guarda um frio cortante e que, embora sirva para cozinhar, comê-la \"parece um desperdício\". Esse tema elemental não vira mecânica: como parte de monstro, ela não define o efeito do elixir (que vem do bicho usado), e as fontes não atribuem a ela dano ou proteção de gelo.",
+      "sources": [
+        "zw:Monster Part",
+        "zw:Elixir"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para todas as melhorias, junte 5 escamas de Naydra (2 para a Túnica selvagem, 1 para a Armadura da Deidade Feroz e 2 para as Botas de neve), mais uma para a oferenda da Fonte da Sabedoria.",
+    "Cuidado ao se aproximar: chegar perto demais congela Link com a aura gelada do dragão; o Conjunto de pluma nevada completo, melhorado duas vezes, ou o Elmo de Zant evitam isso."
+  ],
+  "limitations": [
+    "Só uma unidade de cada tipo de parte por encontro com o dragão.",
+    "O frio citado no inventário é descritivo: as fontes não atribuem ao item efeito elemental nem proteção.",
+    "As fontes consultadas não ligam o reaparecimento dos dragões à Lua de sangue; o ciclo descrito é diário.",
+    "Só a primeira unidade da mesma parte dá o acréscimo cheio de duração.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_naydra",
+      "relation": "Dragão que a solta ao ser atingido por uma flecha"
+    },
+    {
+      "id": "botw_material_naydras_claw",
+      "relation": "Outra parte de Naydra (garra)"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_fang",
+      "relation": "Outra parte de Naydra (lasca de presa)"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Outra parte de Naydra (lasca de chifre)"
+    },
+    {
+      "id": "botw_material_dinraals_scale",
+      "relation": "Equivalente de Dinraal"
+    },
+    {
+      "id": "botw_material_faroshs_scale",
+      "relation": "Equivalente de Farosh"
+    },
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Usa 2 na Túnica selvagem (1º nível)"
+    },
+    {
+      "id": "botw_armor_tunic_of_the_wild",
+      "relation": "Peça melhorada com ela no 1º nível"
+    },
+    {
+      "id": "botw_armor_fierce_deity_armor",
+      "relation": "Peça melhorada com ela no 1º nível"
+    },
+    {
+      "id": "botw_material_hinox_toenail",
+      "relation": "Acompanha a escama na melhoria da Armadura da Deidade Feroz"
+    },
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Usa 2 no 4º nível"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Completo e melhorado duas vezes, protege da aura de Naydra"
+    },
+    {
+      "id": "botw_armor_zants_helmet",
+      "relation": "Protege da aura congelante de Naydra"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "O voo do dragão gera correntes ascendentes que recuperam o vigor"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul-claro"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

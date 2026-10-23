@@ -1,0 +1,132 @@
+{
+  "id": "botw_object_campfire",
+  "summary": "Fogo de lenha onde Link pode sentar para passar o tempo, se aquecer, assar ingredientes e acender armas de madeira. Pode ser criada largando Madeira e Sílex; a chuva apaga a fogueira exposta.",
+  "description": "As fogueiras são pontos de fogo fixos espalhados por Hyrule. Nelas, Link pode sentar para avançar o relógio até a manhã, o meio-dia ou a noite, aquecer-se em regiões frias e acender armas de madeira para queimar inimigos — tática que os Koboblins também usam, além de assarem bifes em espetos sobre o fogo. Algumas fogueiras estão apagadas quando Link as encontra, e é preciso acender a lenha antes de usá-las.\n\nNão é preciso encontrar uma pronta: largar Madeira no chão e incendiá-la (com uma Tocha, uma arma de madeira em chamas ou batendo com uma arma de metal num Sílex largado ao lado) cria uma fogueira improvisada. Um golpe da Grã-Espada flamejante transforma Madeira em fogueira diretamente.\n\nPara cozinhar, a fogueira é limitada. Ingredientes crus comestíveis que tocam o fogo viram comida assada, que recupera mais corações, mas nenhum efeito especial do ingrediente é ativado; materiais que não se comem crus simplesmente viram cinza. Receitas de verdade exigem uma Panela, que é uma fogueira com um recipiente de pedra por cima.",
+  "locations": [
+    "Por toda Hyrule, em acampamentos, estábulos e pontos de descanso.",
+    "No Planalto: na cavidade perto do Santuário da Ressurreição onde Link encontra o Velho, na Floresta dos Espíritos (junto a uma Panela) e no forte dos Koboblins onde o rio cai do Planalto."
+  ],
+  "obtaining": [
+    "Criar uma fogueira largando Madeira e ateando fogo: com Tocha, arma de madeira em chamas ou faísca de Sílex golpeado com arma de metal.",
+    "Um golpe da Grã-Espada flamejante transforma Madeira largada em fogueira."
+  ],
+  "uses": [
+    "Passar o tempo até a manhã, o meio-dia ou a noite sentando-se junto ao fogo.",
+    "Aquecer-se em regiões frias.",
+    "Assar ingredientes crus para aumentar a recuperação de corações.",
+    "Acender armas de madeira e flechas para levar fogo a inimigos, grama ou objetos inflamáveis.",
+    "Transformar Geleca de Chulchul em Geleca ígnea."
+  ],
+  "effects": [
+    "Ingredientes crus comestíveis viram comida assada com +50% de recuperação de corações (arredondado para o quarto de coração seguinte), sem efeitos especiais.",
+    "Materiais não comestíveis queimam até virar cinza.",
+    "Encostar no fogo incendeia Link e causa dano."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Uma fogueira apagada ou a Madeira largada no chão se acende com qualquer fonte de fogo, como uma Tocha ou a faísca de um Sílex.",
+      "applications": ["Reacender fogueiras apagadas, inclusive as que ficam sob Panelas, com Sílex."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Flint", "zw:Wood"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingredientes crus comestíveis jogados no fogo viram comida assada; os não comestíveis viram cinza. Nenhum efeito especial é ativado.",
+      "conditions": ["Largar o ingrediente sobre a fogueira acesa."],
+      "produces": ["botw_food_baked_apple", "botw_food_campfire_egg", "botw_food_seared_steak"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva apaga imediatamente qualquer fogo exposto; fogueiras protegidas por um abrigo não são afetadas.",
+      "applications": ["Procurar abrigos à beira das estradas para acender fogo em dia de chuva."],
+      "kind": "mecanica",
+      "sources": ["zw:Rain"]
+    },
+    {
+      "action": "usar",
+      "variant": "acender arma de madeira",
+      "status": "confirmado",
+      "result": "Encostar uma arma de madeira no fogo a incendeia; ela passa a servir como tocha e a queimar inimigos.",
+      "side_effects": ["Para apagar a arma em chamas, basta guardá-la."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ficar perto do fogo aquece Link em climas gelados; pisar nele incendeia Link e causa dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks", "zw:Fire"]
+    },
+    {
+      "action": "usar",
+      "variant": "sentar",
+      "status": "confirmado",
+      "result": "Sentar junto à fogueira permite avançar o tempo até a manhã, o meio-dia ou a noite.",
+      "applications": ["Esperar o amanhecer quando os corações estão baixos à noite, quando os monstros ficam mais ativos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks", "zw:Old Man"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins com armas de madeira as acendem em fogueiras próximas para atacar com fogo, e cozinham Bifes selados em espetos sobre o fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Bokoblin"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "A fogueira é feita de lenha, sem metal; Magnétis só atua sobre objetos metálicos.",
+      "sources": ["zw:Magnesis", "zw:Wood"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A fogueira do Velho",
+      "text": "No Planalto, o Velho espera Link sentado junto a uma fogueira cercada por uma Tocha e Maçãs assadas. Ele explica que se sentou ali porque sentia frio e ensina que é possível sentar junto ao fogo para passar o tempo.",
+      "sources": ["zw:Old Man"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Geleca ígnea sem Chulchul ígneo",
+      "text": "Colocar uma Geleca de Chulchul comum sobre a fogueira a transforma em Geleca ígnea.",
+      "sources": ["zw:Chuchu Jelly"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fogueira instantânea",
+      "text": "Largar Madeira e Sílex juntos e golpear o Sílex com uma arma de metal produz a faísca que acende a lenha, criando uma fogueira em qualquer lugar seco.",
+      "sources": ["zw", "zw:Flint"]
+    }
+  ],
+  "advanced_uses": [
+    "Carregar Madeira e Sílex para montar uma fogueira onde precisar passar a noite ou se aquecer.",
+    "Usar a fogueira como fonte para incendiar uma arma de madeira e espalhar fogo pela grama até um acampamento."
+  ],
+  "limitations": [
+    "Não ativa efeitos especiais dos ingredientes; para isso é preciso uma Panela.",
+    "A chuva apaga fogueiras sem abrigo.",
+    "Materiais não comestíveis queimam até virar cinza."
+  ],
+  "related": [
+    { "id": "botw_object_cooking_pot", "relation": "Fogueira com panela, para receitas completas" },
+    { "id": "botw_material_wood", "relation": "Combustível para criar uma fogueira" },
+    { "id": "botw_material_flint", "relation": "Gera a faísca que acende a lenha" },
+    { "id": "botw_weapon_torch", "relation": "Acende fogueiras e leva o fogo adiante" },
+    { "id": "botw_weapon_great_flameblade", "relation": "Transforma Madeira em fogueira com um golpe" },
+    { "id": "botw_material_chuchu_jelly", "relation": "Vira Geleca ígnea no fogo" },
+    { "id": "botw_food_baked_apple", "relation": "Exemplo de comida assada" },
+    { "id": "botw_mechanic_fire", "relation": "Regras gerais do fogo" },
+    { "id": "botw_mechanic_rain", "relation": "Apaga fogueiras expostas" }
+  ],
+  "capabilities": ["gera_fogo", "protege_frio"],
+  "verification_status": "verificado"
+}

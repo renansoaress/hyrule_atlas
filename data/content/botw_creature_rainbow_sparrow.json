@@ -1,0 +1,79 @@
+{
+  "id": "botw_creature_rainbow_sparrow",
+  "summary": "O pardal mais colorido de Hyrule — roxo, rosa, vermelho e verde —, favorito dos observadores de aves. Vive nas florestas tropicais de Faron e em Necluda Ocidental, voa quando perturbado e deixa uma Noz.",
+  "description": "O Pardal colorido tem cores bem mais vivas que os parentes: asas, dorso e cauda roxos, pescoço e ponta da cauda rosados, cabeça vermelha, garganta creme e barriga verde. Por isso, diz o compendium, é o favorito dos diletantes. Vive principalmente nas florestas tropicais de Faron, como os Prados de Faron, e também em áreas de Necluda Ocidental; o compendium cita ainda a Ponte Floria.\n\nÉ onívoro e come pequenos insetos da floresta tropical, além de nozes. Anda em pequenos grupos e voa quando perturbado. Abatido, deixa uma Noz.",
+  "locations": [
+    "Prados de Faron, Necluda Ocidental e Ponte Floria (compendium)."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Noz."
+  ],
+  "uses": [
+    "Fonte de Noz, ingrediente de Bolo de nozes e Nozes salteadas.",
+    "Registrar sua foto no compendium (entrada nº 33)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Anda em pequenos grupos e voa quando perturbado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Noz.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_chickaloo_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra pardais, que voam ao serem perturbados."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O favorito dos diletantes",
+      "text": "Segundo o compendium, as penas mais coloridas que as dos outros pardais fizeram do Pardal colorido o favorito dos diletantes.",
+      "sources": ["comp", "zw:Sparrow"]
+    }
+  ],
+  "limitations": [
+    "Rende apenas uma Noz."
+  ],
+  "related": [
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Item deixado ao ser abatido" },
+    { "id": "botw_creature_common_sparrow", "relation": "Pardal mais comum de Hyrule" },
+    { "id": "botw_creature_rainbow_pigeon", "relation": "Outra ave de plumagem colorida" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

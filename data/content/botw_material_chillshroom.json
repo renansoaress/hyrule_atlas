@@ -1,0 +1,215 @@
+{
+  "id": "botw_material_chillshroom",
+  "summary": "Cogumelo frio ao toque que cresce ao pé dos pinheiros de Hebra e do Monte Lanayru. Cozido, dá Resistência ao calor para regiões áridas; cru cura meio coração. Vendido na barraca de Ardin, na Cidade Gerudo.",
+  "description": "O Glacimelo cresce ao pé das árvores — a descrição do jogo fala em pinheiros — nas regiões frias, especialmente nas Cordilheiras de Hebra e no Monte Lanayru. É frio ao toque, e os pratos de panela feitos com ele concedem Resistência ao calor, permitindo que Link se mantenha fresco mesmo em regiões áridas como o Deserto Gerudo. Cru, recupera meio coração; exposto ao fogo, vira Glacimelo tostado, que cura 3/4 de coração e vale um pouco mais na venda, mas perde o efeito.\n\nCuriosamente, quem o vende é a barraca de Ardin, na Cidade Gerudo, bem longe das montanhas onde cresce; o mercador ambulante Kanny também o oferece. Na Tinturaria Kochi, entra no corante azul.",
+  "locations": [
+    "Pé das árvores (pinheiros) nas Cordilheiras de Hebra e no Monte Lanayru (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Lojas: barraca de Ardin (Ardin's Stall), na Cidade Gerudo, e o mercador Kanny (entre o Serenne Stable e o Snowfield Stable) — 16 rupias."
+  ],
+  "obtaining": [
+    "Colher ao pé dos pinheiros nas regiões frias.",
+    "Comprar com Ardin ou Kanny."
+  ],
+  "uses": [
+    "Pratos de Resistência ao calor para o Deserto Gerudo.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante azul na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Cozido: Resistência ao calor (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Scorching Climate",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Glacimelo tostado, que recupera 3/4 de coração.",
+      "side_effects": [
+        "Perde a Resistência ao calor."
+      ],
+      "applications": [
+        "Vender: tostado vale 6 rupias, contra 4 do cru."
+      ],
+      "produces": [
+        "botw_food_toasty_chillshroom"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Glacimelo tostado.",
+      "produces": [
+        "botw_food_toasty_chillshroom"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": [
+        "botw_food_toasty_chillshroom"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Cresce no frio e não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência ao calor. Mais unidades prolongam o efeito; combinado com Melancia oásica ou Erva fogueira (mesmo efeito), prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Food",
+        "zw:Heat Resistance"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não refresca.",
+      "kind": "mecanica",
+      "sources": [
+        "comp",
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias; tostado, vale 6.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Frio de montanha para o deserto",
+      "text": "O calor diurno do Deserto Gerudo fere Link aos poucos; pratos refrescantes, como os de Glacimelo, evitam esse dano. Como a barraca de Ardin, na Cidade Gerudo, vende o cogumelo, dá para preparar esses pratos sem viajar até as montanhas geladas onde ele cresce.",
+      "sources": [
+        "zw:Heat",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Glacimelo ou Flamelo?",
+      "text": "Na barraca de Ardin, a cliente Jules pondera o valor do Glacimelo contra o do Flamelo: o Deserto Gerudo tem calor durante o dia e clima congelante à noite, então os dois cogumelos têm utilidade na mesma região.",
+      "sources": [
+        "zw:Stall"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Compre Glacimelos na Cidade Gerudo e combine com Melancias oásicas do Bazar Kara Kara para uma travessia longa do deserto.",
+    "Para atravessar o Deserto Gerudo dia e noite, leve pratos de Glacimelo (calor diurno) e de Flamelo (frio noturno)."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Resistência ao calor; só cozido.",
+    "Resistência ao calor não protege das chamas da região de Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_food_toasty_chillshroom",
+      "relation": "Resultado de expor o cogumelo ao fogo"
+    },
+    {
+      "id": "botw_material_hydromelon",
+      "relation": "Outro ingrediente de Resistência ao calor"
+    },
+    {
+      "id": "botw_material_cool_safflina",
+      "relation": "Outro ingrediente de Resistência ao calor"
+    },
+    {
+      "id": "botw_material_sunshroom",
+      "relation": "Cogumelo de efeito oposto (frio)"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Elixir com o mesmo efeito"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Receita de cogumelo"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "reage_fogo",
+    "protege_calor"
+  ],
+  "verification_status": "verificado"
+}

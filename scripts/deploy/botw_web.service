@@ -1,0 +1,14 @@
+[Unit]
+Description=Hyrule Atlas web (botw.renans.dev)
+After=network.target
+
+[Service]
+# O scripts/deploy/deploy.mjs publica a pasta e o servidor (botw_serve_web.py) a cada
+# versão e reinicia este serviço. Escuta só em localhost: o nginx faz o HTTPS na frente.
+ExecStart=/usr/bin/python3 /root/projects/botw_serve_web.py /root/projects/botw_web --port 5510 --bind 127.0.0.1
+WorkingDirectory=/root/projects
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target

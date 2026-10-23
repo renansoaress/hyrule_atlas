@@ -1,0 +1,146 @@
+{
+  "id": "botw_armor_royal_guard_boots",
+  "summary": "Botas da guarda real de Hyrule (DLC 2), escondidas no Castelo de Hyrule. Completam um conjunto que, sem melhorias, economiza vigor em ataques carregados, saltos de escalada e nado.",
+  "description": "As Botas da guarda real fazem parte do Conjunto da guarda real, do pacote The Champions' Ballad (DLC 2), com o Quepe e o Uniforme da guarda real. A busca começa na Missão secundária \"EX Royal Guard Rumors\": o Super Rumor Mill V4, no Estábulo Riverside, cita uma ex-criada que falava de tesouros perto do Refeitório (Dining Hall), na Câmara dos Guardas (Guards' Chamber) e no segundo andar do Castelo de Hyrule. Segundo a página da missão, as botas estão num baú sobre uma plataforma de madeira na Câmara dos Guardas, entre duas plataformas com barris explosivos; a página das próprias botas, porém, situa o baú no Refeitório.\n\nSozinhas, só dão defesa. Com as três peças, o conjunto ativa o Ataque carregado econômico e, de forma oculta, o Salto escalando econômico e o Impulso aquático econômico — sem melhorias, porque as peças não podem ser melhoradas nem tingidas. Depois de obtidas, Granté as vende por 50 rupias.",
+  "locations": [
+    "Castelo de Hyrule: Câmara dos Guardas (segundo a página da missão) ou Refeitório (segundo a página das botas)."
+  ],
+  "obtaining": [
+    "Missão secundária \"EX Royal Guard Rumors\" (DLC 2), iniciada pela leitura do Super Rumor Mill V4 no Estábulo Riverside.",
+    "Recomprar de Granté por 50 rupias depois de obtê-las."
+  ],
+  "uses": [
+    "Completar o Conjunto da guarda real, que barateia três tipos de gasto de vigor."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Conjunto completo: ataques carregados −50% de vigor; saltos de escalada −50% e impulsos nadando −75% (ocultos)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só dá defesa. Com o Quepe da guarda real, o Uniforme da guarda real e as Botas da guarda real vestidos, ativa o Ataque carregado econômico (ataques carregados custam 50% menos vigor) e, de forma oculta, também o Salto escalando econômico (−50% de vigor nos saltos de escalada) e o Impulso aquático econômico (−75% de vigor nos impulsos e giros nadando).",
+      "conditions": [
+        "As três peças equipadas; como não podem ser melhoradas, os bônus valem sem melhorias."
+      ],
+      "side_effects": [
+        "O inventário mostra só o bônus de ataque carregado; os outros dois ficam ocultos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Royal Guard Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Três bônus, só um visível",
+      "text": "O inventário exibe apenas o Ataque carregado econômico, mas o conjunto também reduz em 50% o vigor dos saltos durante a escalada e em 75% o dos impulsos nadando — os bônus ocultos dos conjuntos de escalada e Zora.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Royal Guard Set"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fontes divergentes sobre o baú",
+      "text": "A página da missão \"EX Royal Guard Rumors\" põe as botas na Câmara dos Guardas e o uniforme perto do Refeitório; a página das botas diz que elas estão no Refeitório. Também diverge a defesa: 4 nos dados estruturados, 3 na ficha do artigo.",
+      "sources": [
+        "zw",
+        "zw:EX Royal Guard Rumors"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para um conjunto \"faz-tudo\" de vigor, vista a guarda real completa: economiza nos ataques carregados, nos saltos de escalada e nos impulsos nadando ao mesmo tempo, sem gastar nada em Grandes Fadas."
+  ],
+  "limitations": [
+    "Não podem ser melhoradas nem tingidas; defesa baixa para o fim do jogo.",
+    "Localização exata do baú diverge entre as fontes.",
+    "Exigem o pacote The Champions' Ballad."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_royal_guard_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_royal_guard_cap",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_royal_guard_uniform",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_object_explosive_barrel",
+      "relation": "Ladeiam a plataforma do baú"
+    },
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Dá em ★★ o mesmo bônus oculto de escalada"
+    },
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Dá em ★★ o mesmo bônus oculto de nado"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "vigor"
+  ],
+  "verification_status": "a_verificar"
+}

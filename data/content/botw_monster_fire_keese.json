@@ -1,0 +1,152 @@
+{
+  "id": "botw_monster_fire_keese",
+  "summary": "Morci coberto de fogo que incendeia o que toca, inclusive a grama. Vive em Eldin e partes de Akkala; quando começa a chover, as chamas se apagam e ele morre em poucos segundos.",
+  "description": "O Morci ígneo é uma variante de Morci totalmente envolta em fogo. O compendium diz que isso o torna mais perigoso que o comum, pois ele pode incendiar qualquer coisa que toque — superfícies inflamáveis como a grama pegam fogo quando ele passa. Costuma viver em climas escaldantes, como a região de Eldin (o compendium cita o Cânion de Eldin e a Cordilheira de Eldin), mas também aparece em Akkala; Feitiçanos ígneos e meteóricos podem invocá-lo durante o combate.\n\nDe dia, fica pendurado no teto de cavernas; à noite, voa em campo aberto, circulando no alto até avistar Link e então mergulhando para atacar. Como todos os Morcis, tem 1 ponto de vida. A fraqueza mais curiosa é a chuva: quando começa a chover, suas chamas se apagam e ele morre poucos segundos depois. Pode deixar Asa de Morci ígneo e Olho de Morci.",
+  "locations": [
+    "Cânion de Eldin e Cordilheira de Eldin, segundo o compendium; também Akkala.",
+    "Teto de cavernas durante o dia; em campo aberto à noite.",
+    "Invocado em combate por Feitiçanos ígneos e meteóricos."
+  ],
+  "obtaining": [
+    "Pode deixar Asa de Morci ígneo e Olho de Morci.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Asas de Morci ígneo.",
+    "Registro no compendium (entrada nº 89)."
+  ],
+  "effects": [
+    "Incendeia Link e o que tocar."
+  ],
+  "interactions": [
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Quando começa a chover, as chamas se apagam e ele morre poucos segundos depois.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Com 1 ponto de vida, cai com um golpe — mas o contato com ele incendeia.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Aparar a investida de um Morci com Defesa perfeita o mata instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw:Keese"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha o derruba de longe, evitando o contato com o fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune a fogo."
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Ataques de gelo contra inimigos de fogo podem derrotá-los com um golpe; com 1 ponto de vida, qualquer acerto basta.",
+      "kind": "mecanica",
+      "sources": ["zw:Enemy", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Qualquer ataque que o acerte o derruba, incluindo Flechas eletrizantes.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "A água da chuva apaga suas chamas e o mata em poucos segundos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões ferem inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Incendeia superfícies inflamáveis que toca, como grama.",
+      "side_effects": ["Pode iniciar incêndios de grama perto de Link ou de armas de madeira."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A rajada da Folha Korok derruba Morcis no chão por um momento.",
+      "side_effects": ["A Folha Korok é inflamável; cuidado com o contato com o Morci ígneo."],
+      "kind": "mecanica",
+      "sources": ["zw:Keese", "zw:Korok Leaf"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Apagado pela chuva",
+      "text": "O fogo que envolve o Morci ígneo não resiste à chuva: assim que começa a chover, as chamas se apagam e ele morre alguns segundos depois.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Patrulha no alto",
+      "text": "Costuma circular em altitude até avistar Link e só então mergulha para atacar.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Em dias de chuva, ignorar os Morcis ígneos: eles se apagam sozinhos."
+  ],
+  "limitations": [
+    "Lutar perto de grama seca pode iniciar um incêndio."
+  ],
+  "related": [
+    { "id": "botw_monster_keese", "relation": "Forma comum" },
+    { "id": "botw_monster_ice_keese", "relation": "Variante de gelo" },
+    { "id": "botw_monster_electric_keese", "relation": "Variante elétrica" },
+    { "id": "botw_material_fire_keese_wing", "relation": "Parte exclusiva" },
+    { "id": "botw_material_keese_eyeball", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_monster_fire_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_monster_meteo_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_mechanic_rain", "relation": "A chuva o mata" }
+  ],
+  "capabilities": ["gera_fogo", "vence_rapido"],
+  "verification_status": "verificado"
+}

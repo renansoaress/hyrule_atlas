@@ -1,0 +1,101 @@
+{
+  "id": "botw_food_fried_wild_greens",
+  "summary": "Refogado simples de qualquer legume, erva ou flor. Aceita cenouras e Abóbora robusta, e a planta define o efeito; com quatro tipos diferentes vira a versão farta, que não tem efeito.",
+  "description": "A Fritada de ervas é feita com pelo menos um legume, erva ou flor; a descrição do jogo a define como um prato básico de plantas selvagens frescas salteadas. A versão comum sai com Capim hyruliano, a erva sem efeito.\n\nA planta escolhida dá o efeito: Rabanete nutritivo ou Rabanete nutritivo grande (nutritiva), Cenoura tenaz (tenaz), Cenoura veloz ou Violeta veloz (veloz), Erva geleira — Warm Safflina (picante), Erva relampagueira (isolante), Protechofra (valente), Amaranto blindado ou Abóbora robusta (blindada), Beladona azul ou Princesa plácida (discreta) e Erva fogueira — Cool Safflina (refrescante). Diferente das sopas cremosas, aqui cenouras e abóboras são bem-vindas.\n\nCuidado com a variedade: quatro tipos diferentes de planta transformam o prato em Fritada farta de ervas, que nunca tem efeito. Para reforçar um efeito, prefira repetir a mesma planta ou usar até três plantas diferentes do mesmo efeito. Com Tempero Goron, o resultado é Ervas salteadas; com Halita, Ervas grelhadas no sal.",
+  "obtaining": [
+    "Cozinhar numa Panela um ou mais legumes, ervas ou flores."
+  ],
+  "uses": [
+    "Prato de efeito com plantas colhidas no caminho.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Capim hyruliano): recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Rabanete nutritivo ou Rabanete nutritivo grande.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — Cenoura tenaz.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — Cenoura veloz ou Violeta veloz.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Erva geleira.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Erva relampagueira.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Protechofra.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Amaranto blindado ou Abóbora robusta.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Beladona azul ou Princesa plácida.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Erva fogueira."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "A planta usada define o efeito; as descrições citadas são de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quatro plantas diferentes apagam o efeito",
+      "text": "Ao juntar quatro tipos diferentes de legumes, ervas ou flores, o prato vira Fritada farta de ervas, que não pode ter efeito. Quem quer efeito forte deve limitar a variedade.",
+      "sources": [
+        "zw",
+        "zw:Copious Fried Wild Greens"
+      ]
+    }
+  ],
+  "limitations": [
+    "O Zelda Wiki não cita versão energizante.",
+    "Com quatro tipos diferentes de planta, perde o efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_food_copious_fried_wild_greens",
+      "relation": "Versão farta, sem efeito"
+    },
+    {
+      "id": "botw_food_herb_saute",
+      "relation": "Plantas com Tempero Goron"
+    },
+    {
+      "id": "botw_food_salt_grilled_greens",
+      "relation": "Plantas com Halita"
+    },
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Erva sem efeito, para a versão comum"
+    },
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Gera a versão blindada"
+    },
+    {
+      "id": "botw_material_swift_violet",
+      "relation": "Gera a versão veloz"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

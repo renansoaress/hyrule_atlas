@@ -1,0 +1,110 @@
+{
+  "id": "botw_food_gourmet_meat_curry",
+  "summary": "Curry de Carne de primeira com Tempero Goron e Arroz hyliano, \"prato premiado\" para fãs de carne e de curry. Só aceita Carne de primeira; com Ave inteira, vira Curry de ave inteira.",
+  "description": "O Curry de carne de primeira exige Carne de primeira, Tempero Goron e Arroz hyliano. Segundo a descrição do jogo, a carne de alta qualidade deste prato premiado satisfaz tanto quem ama carne quanto quem ama curry. Cura vários corações.\n\nNenhum dos três ingredientes tem efeito, então os dois espaços livres definem a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva (que dá Corações extras), valente, discreta, picante ou blindada.\n\nO prato faz parte de uma escada de curries que muda conforme a carne: Carne de terceira gera Curry de carne, Carne de segunda gera Curry de carne de segunda, e Carne de primeira gera este. As aves têm sua própria linha — Coxa, Sobrecoxa e Ave inteira dão Curry de coxa, Curry de sobrecoxa e Curry de ave inteira.",
+  "locations": [
+    "Carne de primeira: deixada por Búfalo-d'água, Raposa da neve, Lobo larápio, Coiote do deserto, Lobo pé-gelado, Alce de Tabantha, Rinoceronte chifrelongo, Urso melívoro e Grão-urso.",
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge.",
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Carne de primeira + Tempero Goron + Arroz hyliano."
+  ],
+  "uses": [
+    "Cura de vários corações com dois espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera vários corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ingredientes extras de efeito definem a versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Carne e ave em linhas separadas",
+      "text": "Nos curries, a Ave inteira não substitui a Carne de primeira: ela gera o Curry de ave inteira, prato diferente. Já em outras receitas de primeira, como o ensopado, as duas carnes são intercambiáveis.",
+      "sources": [
+        "zw",
+        "zw:Raw Whole Bird"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de cozinhar, compare: Trott, no Outskirt Stable, paga 100 rupias por cada Carne de primeira depois da Missão secundária \"A Rare Find\"."
+  ],
+  "limitations": [
+    "Só aceita Carne de primeira como carne.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_gourmet_poultry_curry",
+      "relation": "Curry equivalente com Ave inteira"
+    },
+    {
+      "id": "botw_food_meat_curry",
+      "relation": "Curry com Carne de terceira"
+    },
+    {
+      "id": "botw_food_prime_meat_curry",
+      "relation": "Curry com Carne de segunda"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

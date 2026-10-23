@@ -1,0 +1,211 @@
+{
+  "id": "botw_monster_chuchu",
+  "summary": "Gelatina que embosca do chão ou de árvores, em três tamanhos (3, 20 e 48 de vida). A geleca muda conforme a morte: fogo dá Geleca ígnea, gelo dá Geleca gélida e eletricidade dá Geleca elétrica.",
+  "description": "O Chulchul comum, azul, é um dos monstros mais fracos do jogo e aparece em quase toda Hyrule. O compendium explica que ele costuma atacar presas desatentas saltando do chão ou de cima das árvores, onde fica escondido. Existe em três tamanhos: pequeno (3 pontos de vida), médio (20) e grande (48); os maiores são mais fortes, mas também deixam mais gelecas.\n\nA característica mais útil é o espólio variável. Morto por golpes comuns, deixa Geleca de Chulchul; morto por um ataque elemental — Flechas elementais, armas mágicas ou fatores do ambiente —, deixa a geleca do elemento usado: Geleca ígnea com fogo, Geleca gélida com gelo e Geleca elétrica com eletricidade. Como diz o compendium, o tipo de geleca depende de o Chulchul ter sido aquecido, resfriado ou eletrocutado. As variantes ígnea, glacial e elétrica (Chulchul ígneo, glacial e elétrico) são monstros à parte, que vivem em certas regiões ou são invocados por Feitiçanos.",
+  "locations": [
+    "Quase toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Ocidental como locais comuns.",
+    "Escondido no chão ou em árvores, à espera de uma emboscada."
+  ],
+  "obtaining": [
+    "Deixa Geleca de Chulchul; Chulchuls maiores deixam mais gelecas.",
+    "Morto com fogo, gelo ou eletricidade, deixa respectivamente Geleca ígnea, Geleca gélida ou Geleca elétrica.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Geleca de Chulchul e, escolhendo o elemento do golpe final, das três gelecas elementais.",
+    "Registro no compendium (entrada nº 84)."
+  ],
+  "effects": [
+    "Ataques de contato fracos; o perigo vem das emboscadas."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Morre com poucos golpes — o pequeno tem 3 pontos de vida, o grande 48 — e deixa Geleca de Chulchul.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas comuns o matam normalmente; Flechas elementais fazem cair a geleca do elemento correspondente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Morto por fogo (Flecha incendiária, arma de fogo ou fogo do ambiente), deixa Geleca ígnea em vez da comum.",
+      "produces": [
+        "botw_material_red_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Red Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Morto por gelo (Flecha congelante, arma de gelo), deixa Geleca gélida.",
+      "produces": [
+        "botw_material_white_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:White Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Morto por eletricidade (Flecha eletrizante, arma elétrica), deixa Geleca elétrica.",
+      "produces": [
+        "botw_material_yellow_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Yellow Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um Chulchul na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não dizem que tipo de geleca cai quando um Chulchul comum morre por explosão."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota causa dano a inimigos, incluindo Chulchuls; a fonte não indica geleca especial para esse tipo de morte.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Um corpo gelatinoso não é metálico; Magnétis não o agarra.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Esconde-se no chão ou em árvores e salta sobre quem passa por baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "comp",
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "As versões elementais podem ser invocadas por Feitiçanos do mesmo elemento; o Chulchul comum não é citado entre as invocações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Escolher a geleca pela forma de matar",
+      "text": "Em vez de converter Gelecas de Chulchul depois, Link pode decidir o espólio no golpe final: fogo, gelo ou eletricidade fazem o Chulchul comum deixar diretamente a geleca elemental correspondente.",
+      "sources": [
+        "comp",
+        "zw",
+        "zw:Red Chuchu Jelly",
+        "zw:White Chuchu Jelly",
+        "zw:Yellow Chuchu Jelly"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Tamanho importa",
+      "text": "Os três tamanhos têm 3, 20 e 48 pontos de vida; o grande é mais perigoso, mas recompensa com mais gelecas.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue",
+      "text": "Como os outros monstros, Chulchuls derrotados voltam à vida na Lua de sangue.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Derrotar Chulchuls grandes com a Flecha elemental desejada para estocar Gelecas ígneas, gélidas ou elétricas sem conversão posterior."
+  ],
+  "limitations": [
+    "A Geleca de Chulchul comum, sozinha, não tem efeito ao ser golpeada; só as variantes elementais explodem com efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Espólio padrão"
+    },
+    {
+      "id": "botw_material_red_chuchu_jelly",
+      "relation": "Espólio se morrer por fogo"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Espólio se morrer por gelo"
+    },
+    {
+      "id": "botw_material_yellow_chuchu_jelly",
+      "relation": "Espólio se morrer por eletricidade"
+    },
+    {
+      "id": "botw_monster_fire_chuchu",
+      "relation": "Variante de fogo"
+    },
+    {
+      "id": "botw_monster_ice_chuchu",
+      "relation": "Variante de gelo"
+    },
+    {
+      "id": "botw_monster_electric_chuchu",
+      "relation": "Variante elétrica"
+    }
+  ],
+  "capabilities": [
+    "reage_fogo",
+    "reage_gelo",
+    "reage_eletricidade"
+  ],
+  "verification_status": "verificado"
+}

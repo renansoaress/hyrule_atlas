@@ -1,0 +1,131 @@
+{
+  "id": "botw_food_toasty_razorshroom",
+  "summary": "Ferromelo exposto ao calor direto, com a casca afiada bem amolecida. Cura 3/4 de coração (cru, meio), vale as mesmas 5 rupias e perde o Ataque aumentado do cogumelo cru.",
+  "description": "O Ferromelo, cogumelo que cresce ao pé de árvores da Grande Floresta de Hyrule e da Fronteira de Tabantha, vira Ferromelo tostado ao encostar no fogo ou ficar no chão escaldante de Eldin. O texto do jogo diz que o calor direto amoleceu consideravelmente o exterior afiado e que ele restaura um pouco de vida.\n\nA cura sobe de meio coração para 3/4; o preço de venda continua em 5 rupias. Perde-se o Ataque aumentado que o Ferromelo daria cozido na Panela.",
+  "locations": [
+    "Prepara-se a partir de Ferromelos (Grande Floresta de Hyrule e Fronteira de Tabantha; à venda na Spore Store e na barraca de Ardin, na Cidade Gerudo) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Ferromelo ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Ferromelo — queima por alguns instantes e se transforma em Ferromelo tostado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Ferromelo tostado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Ferromelo no chão para que o ingrediente asse sozinho e vire Ferromelo tostado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração do Ferromelo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 5 rupias, o mesmo que o Ferromelo cru.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Razorshroom"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Ferromelo tostado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Lâminas amolecidas",
+      "text": "A descrição do jogo explica que o calor direto amoleceu bastante a casca afiada do cogumelo.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Ataque aumentado.",
+    "Não se valoriza na venda."
+  ],
+  "related": [
+    {
+      "id": "botw_material_razorshroom",
+      "relation": "Ingrediente cru (Ataque aumentado na Panela)"
+    },
+    {
+      "id": "botw_food_toasty_ironshroom",
+      "relation": "Cogumelo de defesa que também perde o efeito tostado"
+    },
+    {
+      "id": "botw_food_roasted_mighty_bananas",
+      "relation": "Outro ingrediente de ataque que perde o efeito no fogo"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

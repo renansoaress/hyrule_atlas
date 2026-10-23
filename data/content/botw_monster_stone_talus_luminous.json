@@ -1,0 +1,129 @@
+{
+  "id": "botw_monster_stone_talus_luminous",
+  "summary": "Tálus rochoso cujo ponto fraco é um Depósito de pedra luminosa (600 de vida). Deixa Pedras luminosas além de gemas, e é especialmente vulnerável à Marreta de ferro, a ferramentas de mineração e a Flechas explosivas.",
+  "description": "Esta variação do Tálus rochoso se distingue pelo minério: em vez de um Depósito de minério comum, carrega no corpo um Depósito de pedra luminosa, como explica o compendium. Fora isso, comporta-se como os demais Tálus: passa por formação rochosa natural até Link chegar perto, ataca com os braços, despenca para a frente e arremessa pedaços do corpo.\n\nComo em todo Tálus, a única forma de causar dano é atingir o depósito — subindo no monstro, derrubando-o com uma flecha no minério ou acertando o ponto fraco de longe. O Zelda Wiki destaca que ele é particularmente vulnerável à Marreta de ferro e a outras ferramentas de mineração, além de Flechas explosivas.\n\nA recompensa mistura o material luminoso com gemas: Sílex, Âmbar, Opala, Pedra luminosa, Topázio e Diamante. Por ter o dobro da vida do Tálus rochoso comum, a luta é mais longa, mas a estratégia é idêntica.",
+  "locations": [
+    "Segundo o compendium, é comum nas Montanhas Gerudo e na Pradaria de Hyrule.",
+    "Pontos citados pelo Zelda Wiki: norte do Champion's Gate, Crenel Hills, leste do Monte Granajh, norte do Lago Hylia, Lago Kolomo, Mapla Point, Monte Nabooru, Rutimala Hill, sul do Platô Koukot, sul de Taafei Hill, sul do pico Tal Tal e Upland Lindor."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Sílex, Âmbar, Opala, Pedra luminosa, Topázio e Diamante, em quantidades variadas.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Pedras luminosas e de gemas, incluindo Diamante.",
+    "Conta para a Medalha de honra: Tálus, de Kilton."
+  ],
+  "effects": [
+    "Socos e varridas, queda de corpo inteiro e fragmentos de rocha arremessados, como o Tálus rochoso."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Esconde o tamanho fingindo ser uma formação rochosa e só desperta quando Link se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só o Depósito de pedra luminosa recebe dano. É particularmente vulnerável à Marreta de ferro e a outras ferramentas de mineração.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas no corpo de pedra não ferem; o dano vem de acertar o depósito de pedra luminosa, e uma flecha nele derruba o Tálus de cara no chão, como nos demais Tálus rochosos.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Stone Talus"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem efeito do fogo nesta variação."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Flechas explosivas estão entre as fraquezas destacadas para esta variação.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Como nos demais Tálus rochosos, uma Bomba remota pode arrancar os braços temporariamente e facilitar o acesso ao minério.",
+      "side_effects": ["As partes perdidas se regeneram pouco depois."],
+      "kind": "mecanica",
+      "sources": ["zw:Stone Talus"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Feito de pedra, não é afetado por Magnétis, que só move objetos metálicos.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na forma inativa se confunde com formações rochosas naturais.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Conta para a Medalha de honra: Tálus",
+      "text": "Os Tálus rochosos (luminosos) entram na contagem de Kilton: é preciso derrotar todos os Tálus de Hyrule, incluindo estes, para receber a Medalha de honra: Tálus depois da primeira vitória contra Ganon, a Calamidade.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Recompensa diferente do Tálus comum",
+      "text": "Enquanto o Tálus rochoso comum deixa Sílex, Âmbar, Opala e Rubi, este acrescenta Pedra luminosa, Topázio e Diamante à lista e não inclui o Rubi.",
+      "sources": ["zw", "zw:Stone Talus"]
+    }
+  ],
+  "advanced_uses": [
+    "Levar uma Marreta de ferro ou outra ferramenta de mineração para encurtar a luta."
+  ],
+  "limitations": [
+    "Golpes e flechas fora do depósito não causam dano."
+  ],
+  "related": [
+    { "id": "botw_monster_stone_talus", "relation": "Forma comum da espécie" },
+    { "id": "botw_monster_stone_talus_rare", "relation": "Outra variação de minério" },
+    { "id": "botw_treasure_luminous_ore_deposit", "relation": "Ponto fraco que ele carrega" },
+    { "id": "botw_material_luminous_stone", "relation": "Recompensa característica" },
+    { "id": "botw_material_diamond", "relation": "Possível recompensa" },
+    { "id": "botw_material_topaz", "relation": "Possível recompensa" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Ferramenta de mineração eficaz contra ele" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Fraqueza destacada" },
+    { "id": "botw_keyitem_medal_of_honor_talus", "relation": "Prêmio de Kilton" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

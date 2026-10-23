@@ -1,0 +1,159 @@
+{
+  "id": "botw_armor_tunic_of_time",
+  "summary": "Túnica do herói que viajou no tempo (Ocarina of Time), feita para servir em crianças e adultos. Sai do amiibo de Link (Ocarina of Time); é o modelo da Túnica sombria de Kilton.",
+  "description": "A Túnica do tempo forma o Conjunto do herói do tempo com o Gorro e as Calças do tempo, que imitam a roupa de Link em Ocarina of Time. Só sai dos baús invocados ao ler com a runa amiibo o amiibo de Link no estilo Ocarina of Time, da série do 30º aniversário, com pequena chance a cada leitura. A descrição diz que o herói que viajou no tempo a usava e que, curiosamente, o design especial serve tanto para crianças quanto para adultos.\n\nNão tem efeito individual. Com as três peças em ★★, o conjunto ativa o Raio da Espada Mestra aumentado (+50%). A defesa vai de 3 a 20; cada melhoria pede um Fragmento de estrela e Âmbares (1, 3, 5 e 10). Pode ser melhorada, mas não tingida. A Túnica sombria, vendida por Kilton, é uma troca direta de cor deste modelo.",
+  "locations": [
+    "Não fica no mapa: surge de um baú invocado pela runa amiibo."
+  ],
+  "obtaining": [
+    "Ler o amiibo de Link (The Legend of Zelda, 30º aniversário, estilo Ocarina of Time) com a runa amiibo; o baú tem pequena chance de trazer a túnica."
+  ],
+  "uses": [
+    "Completar o Conjunto do herói do tempo para fortalecer o raio da Espada Mestra.",
+    "Visual de Link em Ocarina of Time."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto (três peças em ★★): Raio da Espada Mestra aumentado (+50%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só aumenta a defesa. Com o Gorro do tempo, a Túnica do tempo e as Calças do tempo vestidos, todos em ★★, ativa o bônus Raio da Espada Mestra aumentado (Master Sword Beam Up): o raio disparado pela Espada Mestra causa 50% a mais de dano, somando-se ao aumento de poder da espada desperta.",
+      "conditions": [
+        "As três peças do conjunto em pelo menos ★★.",
+        "O raio só sai da Espada Mestra quando Link está com a vida cheia."
+      ],
+      "applications": [
+        "Atacar à distância com a Espada Mestra enquanto a vida estiver cheia."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Master Sword",
+        "zw:Of Time Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sorte e paciência com o amiibo",
+      "text": "Cada leitura do amiibo de Link (Ocarina of Time) pela runa amiibo faz surgir um baú com pequena chance de trazer uma peça do conjunto. Cada figura só pode ser lida uma vez por dia real, então juntar o conjunto leva no mínimo três dias; peças que Link já tem não voltam a sair até o conjunto estar completo.",
+      "sources": [
+        "zw:Of Time Set",
+        "zw:Amiibo (Ability)"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Serve em criança e em adulto",
+      "text": "A descrição observa que, estranhamente, o design especial da túnica serve tanto para crianças quanto para adultos.",
+      "sources": [
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Versão sombria",
+      "text": "O design da Túnica sombria de Kilton é uma troca de cor da Túnica do tempo.",
+      "sources": [
+        "zw:Dark Tunic"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Âmbar é a gema mais fácil de juntar entre as dos conjuntos de amiibo; o gargalo real das melhorias são os 4 Fragmentos de estrela por peça."
+  ],
+  "limitations": [
+    "Não pode ser tingida na Tinturaria Kochi.",
+    "Cada nível de melhoria pede um Fragmento de estrela (4 por peça), além de Âmbares.",
+    "O bônus só afeta o raio da Espada Mestra, que exige vida cheia."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hero_of_time_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_cap_of_time",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_trousers_of_time",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armor_dark_tunic",
+      "relation": "Troca de cor desta túnica feita por Kilton"
+    },
+    {
+      "id": "botw_material_amber",
+      "relation": "Gema usada em todas as melhorias"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Um por nível de melhoria"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Runa usada para obtê-la"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

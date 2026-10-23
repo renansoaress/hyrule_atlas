@@ -1,0 +1,86 @@
+{
+  "id": "botw_food_salt_grilled_prime_meat",
+  "summary": "Carne de segunda ou Sobrecoxa grelhadas sobre Halita, prato \"simples, mas requintado\". Fica no meio dos três grelhados de carne, em cura e em prioridade.",
+  "description": "A Carne de segunda grelhada no sal leva Carne de segunda ou Sobrecoxa e Halita; o inventário a descreve como um prato simples, mas requintado, de carne de qualidade grelhada sobre sal-gema. Sem extras, só recupera corações; os três espaços livres aceitam ingredientes de efeito.\n\nÉ o grelhado do meio: na tabela de ingredientes neutros do Zelda Wiki, Carne de segunda e Sobrecoxa valem 1,5 coração cada, entre a Carne de terceira (1) e a Carne de primeira (3). Na ordem do jogo, este grelhado é testado depois do de carne de primeira e antes do de carne de terceira; por isso, com Carne de segunda e Carne de terceira juntas, o resultado é este prato. Com Arroz hyliano, a Carne de segunda vira Tigela de arroz com carne de segunda, mas a Sobrecoxa não forma essa tigela.",
+  "obtaining": [
+    "Cozinhar numa Panela Carne de segunda ou Sobrecoxa e Halita, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Recuperar corações com carne de qualidade média.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Carne de primeira ou arroz",
+      "status": "confirmado",
+      "result": "Carne de primeira ou Ave inteira na panela mudam o prato para Carne de primeira grelhada no sal; Arroz hyliano com Carne de segunda forma Tigela de arroz com carne de segunda.",
+      "produces": [
+        "botw_food_salt_grilled_gourmet_meat",
+        "botw_food_prime_meat_and_rice_bowl"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "As fontes não descrevem particularidades além da ordem entre os grelhados de carne e dos valores de cura das carnes.",
+  "limitations": [
+    "Carne de primeira ou Ave inteira na panela mudam o nome do prato."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_bird_thigh",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_salt_grilled_gourmet_meat",
+      "relation": "Versão com Carne de primeira ou Ave inteira (prioridade maior)"
+    },
+    {
+      "id": "botw_food_salt_grilled_meat",
+      "relation": "Versão com Carne de terceira ou Coxa"
+    },
+    {
+      "id": "botw_food_seared_prime_steak",
+      "relation": "Carne de segunda assada na fogueira, sem panela"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

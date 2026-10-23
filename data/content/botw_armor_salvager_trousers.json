@@ -1,0 +1,132 @@
+{
+  "id": "botw_armor_salvager_trousers",
+  "summary": "Calças da colaboração com Xenoblade Chronicles 2, caídas com uma estrela cadente vermelha no Pico Leste de Hebra. Natação 30% mais rápida; com o conjunto, impulsos nadando gastam 75% menos vigor.",
+  "description": "As Calças de mergulhador pertencem ao Conjunto de mergulhador, incluído gratuitamente na atualização 1.3.3 como colaboração com Xenoblade Chronicles 2. A descrição, marcada \"[Collaboration: Xenoblade Chronicles 2]\", diz que é o equipamento de um garoto que procura tesouros afundados no Mar de Nuvens. As peças caem do céu com estrelas cadentes vermelhas durante a Missão secundária \"Xenoblade Chronicles 2\": o baú das calças cai num platô no lado sul do Pico Leste de Hebra (Hebra East Summit) depois que Link olha para o céu a sudeste a partir do Pico de Hebra (Hebra Peak), à noite.\n\nDão um nível de Natação mais rápida (+30%). Com o Capacete de mergulhador e o Colete de mergulhador, o efeito chega a +100% e ativa, sem melhorias, o Impulso aquático econômico (−75% de vigor nos impulsos e giros nadando). Não podem ser melhoradas nem tingidas, mas a defesa fixa de 5 é boa para uma peça sem melhorias. Depois de obtidas, Granté as vende por 50 rupias.",
+  "locations": [
+    "Pico Leste de Hebra (Hebra East Summit), nas Cordilheiras de Hebra: platô no lado sul, onde o baú cai."
+  ],
+  "obtaining": [
+    "Missão secundária \"Xenoblade Chronicles 2\" (atualização 1.3.3): à noite, olhar o céu a sudeste do Pico de Hebra e buscar o baú que cai com a estrela cadente vermelha.",
+    "Recomprar de Granté por 50 rupias depois de obtê-las."
+  ],
+  "uses": [
+    "Nadar mais rápido.",
+    "Completar o Conjunto de mergulhador para gastar menos vigor nos impulsos aquáticos."
+  ],
+  "effects": [
+    "Natação mais rápida, nível 1 (+30%).",
+    "Conjunto completo (sem melhorias): Impulso aquático econômico (−75% de vigor)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Natação mais rápida: Link nada 30% mais rápido (60% com dois níveis e 100% com três). Com o Capacete, o Colete e as Calças de mergulhador vestidos, ativa sem melhorias o Impulso aquático econômico (Swim Dash Stamina Up): impulsos e giros nadando custam 75% menos vigor.",
+      "conditions": [
+        "Para o bônus: as três peças de mergulhador equipadas; elas não podem ser melhoradas, então o bônus vale assim que o conjunto é reunido."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Swim Speed Up",
+        "zw:Set Bonus",
+        "zw:Salvager Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Equipamento de outro mundo",
+      "text": "O conjunto veio da colaboração com Xenoblade Chronicles 2 e reproduz o traje de mergulho de um garoto que busca tesouros no Mar de Nuvens daquele jogo. Por isso as peças chegam a Hyrule caindo do céu com estrelas cadentes vermelhas.",
+      "sources": [
+        "jogo",
+        "zw:Salvager Armor Set"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O Conjunto de mergulhador dá o mesmo bônus de nado do Conjunto Zora em ★★, mas sem gastar nada em Grandes Fadas — útil cedo no jogo."
+  ],
+  "limitations": [
+    "Não podem ser melhoradas nem tingidas.",
+    "Não permitem subir cachoeiras (isso é exclusivo da Armadura Zora)."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_salvager_armor_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_salvager_headwear",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_salvager_vest",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Conjunto com o mesmo bônus de nado, mas que exige ★★"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "Mecânica acelerada pela peça"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

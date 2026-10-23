@@ -1,0 +1,123 @@
+{
+  "id": "botw_armorset_phantom_equipment",
+  "summary": "Armadura inspirada em Phantom Zelda, de Spirit Tracks, enterrada em três ruínas da Pradaria de Hyrule (DLC The Master Trials). Cada peça dá Ataque aumentado e 8 de defesa; não há bônus de conjunto.",
+  "description": "O Conjunto fantasma (Phantom Equipment) é formado pelo Elmo fantasma, pela Armadura fantasma e pelas Grevas fantasmas, e foi acrescentado pela DLC The Master Trials. As peças são o objetivo da Missão secundária \"EX Treasure: Phantasma\", que começa ao ler o Diário EX de Misko nas Ruínas do Posto Avançado (Outpost Ruins). O diário fala de uma armadura \"usada por ferozes fantasmas, temida até por heróis\" escondida nas ruínas da Pradaria de Hyrule.\n\nCada peça está num baú enterrado, que precisa ser arrancado do chão com Magnétis: o elmo no noroeste das Ruínas do Coliseu, a armadura no sudeste das Ruínas do Solo Sagrado (Sacred Ground Ruins) e as grevas perto de um Guardião persecutório destruído no sudeste das Ruínas da Guarnição de Hyrule. Cada peça concede um nível de Ataque aumentado, e o conjunto completo chega ao nível 3 (+50% de ataque), com 8 de defesa por peça desde o início.\n\nO conjunto não tem bônus de conjunto e não pode ser melhorado por Grandes Fadas nem tingido, mas vestir as três peças assusta as pessoas que Link encontra. O desenho é inspirado em Phantom Zelda, de Spirit Tracks.",
+  "locations": [
+    "Ruínas do Coliseu (Coliseum Ruins), Pradaria de Hyrule: Elmo fantasma.",
+    "Ruínas do Solo Sagrado (Sacred Ground Ruins), Pradaria de Hyrule: Armadura fantasma.",
+    "Ruínas da Guarnição de Hyrule (Hyrule Garrison Ruins), Pradaria de Hyrule: Grevas fantasmas.",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Com a DLC The Master Trials, ler o Diário EX de Misko nas Ruínas do Posto Avançado para ativar \"EX Treasure: Phantasma\" (a missão também é ativada ao carregar o mundo depois de sair do Grande Platô).",
+    "Arrancar com Magnétis os três baús enterrados nas ruínas indicadas.",
+    "Depois de obtidas, Granté vende cada peça por 50 rupias em Tarrey Town."
+  ],
+  "uses": [
+    "Ataque aumentado de nível 3 com defesa razoável e sem precisar de melhorias.",
+    "Fantasia que assusta os personagens."
+  ],
+  "effects": [
+    "Cada peça: Ataque aumentado (um nível por peça; as três chegam ao nível 3, +50%).",
+    "Traje completo: assusta as pessoas; não há bônus de conjunto."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Ataque aumentado de nível 3. Não há bônus de conjunto, mas o traje completo faz as pessoas se assustarem com Link.",
+      "conditions": [
+        "Elmo, armadura e grevas fantasmas vestidos juntos."
+      ],
+      "side_effects": [
+        "Personagens ficam assustados ao ver Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Os baús com as peças estão enterrados e precisam ser puxados do chão com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:EX Treasure: Phantasma"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Inspiração em Spirit Tracks",
+      "text": "O visual do conjunto se baseia em Phantom Zelda, de The Legend of Zelda: Spirit Tracks. O diário de Misko o descreve como a armadura de \"ferozes fantasmas, temidos até por heróis\".",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Defesa fixa",
+      "text": "Cada peça já começa com 8 de defesa e o conjunto completo dá Ataque aumentado de nível 3, mas, como as peças não podem ser melhoradas, a defesa nunca passa disso, enquanto conjuntos melhoráveis chegam a 20 ou 28 por peça.",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Granté e a versão 1.3.3",
+      "text": "Antes da atualização 1.3.3, Granté não vendia armaduras exclusivas da DLC, então uma peça vendida ou perdida não podia ser recuperada. A partir dessa versão, ele passa a revendê-las.",
+      "sources": [
+        "zw:Royal Guard Cap",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Logo depois de sair do Grande Platô, com a DLC instalada, buscar o conjunto garante +50% de ataque sem gastar materiais nem rupias."
+  ],
+  "limitations": [
+    "Não pode ser melhorado nem tingido: a defesa fica fixa.",
+    "Exige a DLC The Master Trials.",
+    "Não tem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_phantom_helmet",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para desenterrar os baús"
+    },
+    {
+      "id": "botw_armorset_phantom_ganon_set",
+      "relation": "Outro conjunto da DLC achado pelo diário de Misko"
+    },
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Também chega a Ataque aumentado de nível 3"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Um exemplar destruído marca o local das grevas"
+    }
+  ],
+  "capabilities": [
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

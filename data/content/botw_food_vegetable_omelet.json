@@ -1,0 +1,95 @@
+{
+  "id": "botw_food_vegetable_omelet",
+  "summary": "Omelete caseira de Ovo, Manteiga de cabra e Halita com qualquer legume, erva ou flor picados. A planta define o efeito; o Capim hyruliano dá a versão comum.",
+  "description": "A Omelete de legumes leva Ovo, Manteiga de cabra, Halita e qualquer legume, erva ou flor; o inventário a apresenta como um prato caseiro que mistura ovos fofos e verduras picadas para equilibrar a nutrição. Com o Capim hyruliano, sem efeito, sai a versão comum. As outras plantas dão suas variantes: Rabanete nutritivo e Rabanete nutritivo grande (cura total com Corações extras), Cenoura tenaz (Vigor extra), Cenoura veloz e Violeta veloz (Velocidade aumentada), Erva geleira (Resistência ao frio), Erva relampagueira (Resistência a choques), Protechofra (Ataque aumentado), Abóbora robusta e Amaranto blindado (Defesa aumentada), Beladona azul e Princesa plácida (Furtividade aumentada) e Erva fogueira (Resistência ao calor).\n\nA diferença para a Omelete de cogumelos é só o ingrediente principal, mas a ordem de prioridade favorece os cogumelos: se houver cogumelo e planta juntos com ovo, manteiga e halita, o jogo produz Omelete de cogumelos. Como a receita já ocupa quatro espaços, cabe apenas um ingrediente extra — uma segunda planta do mesmo efeito, por exemplo.",
+  "obtaining": [
+    "Cozinhar numa Panela Ovo, Manteiga de cabra, Halita e um legume, erva ou flor; um quinto ingrediente é opcional."
+  ],
+  "uses": [
+    "Dar efeito a uma omelete com plantas colhidas.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pela planta: Corações extras, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor; a fonte também lista uma versão com Recuperação de vigor, com ingredientes energizantes."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da planta usada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "cogumelo junto",
+      "status": "confirmado",
+      "result": "Um cogumelo na panela muda o prato para Omelete de cogumelos, testada antes.",
+      "produces": [
+        "botw_food_mushroom_omelet"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Adjetivo trocado no wiki",
+      "text": "A página do prato diz que a versão com Resistência ao calor é feita com Erva fogueira \"ou outros ingredientes picantes\"; o certo, pelo efeito descrito no jogo, são ingredientes refrescantes.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre.",
+    "Cogumelo na panela muda a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_food_mushroom_omelet",
+      "relation": "Mesma receita com cogumelo (prioridade maior)"
+    },
+    {
+      "id": "botw_food_omelet",
+      "relation": "Versão simples, só com Ovo"
+    },
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

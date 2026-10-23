@@ -1,0 +1,139 @@
+{
+  "id": "botw_food_roasted_hearty_salmon",
+  "summary": "Salmão nutritivo assado na chama, sem tempero, de pele comestível e aroma agradável. Cura 4,5 corações — só meio a mais que o cru (4) — e vale 15 rupias, contra 10 cru.",
+  "description": "O Salmão nutritivo, que acumula gordura para viver nas águas frias das Cordilheiras de Hebra e da Fronteira de Tabantha, vira Salmão nutritivo assado no fogo ou no clima escaldante. O texto do jogo fala de um salmão fresco assado simplesmente na chama, sem tempero, de pele comestível e aroma agradável.\n\nOs números fogem da regra geral: as fontes dão 4 corações ao salmão cru e 4,5 ao assado, um ganho de apenas meio coração, longe dos 50% que o Zelda Wiki atribui às comidas assadas. Na venda sobe de 10 para 15 rupias; congelado, vale 18. Assado, perde os Corações extras que daria na Panela.",
+  "locations": [
+    "Prepara-se a partir de Salmões nutritivos (águas frias das Cordilheiras de Hebra e da Fronteira de Tabantha) numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um Salmão nutritivo ao fogo ou largá-lo no chão em clima escaldante.",
+    "Derrotar um Rinox azul: 5% de chance na tabela de comidas dele (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 4,5 corações.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Recupera 4,5 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Salmão nutritivo — queima por alguns instantes e se transforma em Salmão nutritivo assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Salmão nutritivo assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Salmão nutritivo no chão para que o ingrediente asse sozinho e vire Salmão nutritivo assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4,5 corações, contra 4 do Salmão nutritivo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hearty Salmon"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 15 rupias; o Salmão nutritivo cru vale 10.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hearty Salmon"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Salmão nutritivo assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "Exceção à regra dos 50%?",
+      "text": "O Zelda Wiki diz que comidas assadas curam 50% a mais que o ingrediente cru, o que daria 6 corações; mas a página do salmão cru (4 corações) e a do assado (4,5) contradizem a regra. As fontes consultadas não explicam a diferença."
+    },
+    {
+      "kind": "mecanica",
+      "title": "Congelado vale mais",
+      "text": "O mesmo peixe congelado vira Salmão nutritivo congelado: mantém os 4 corações do cru, dá Resistência ao calor e vale 18 rupias, três a mais que o assado.",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: o efeito do salmão só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_salmon",
+      "relation": "Ingrediente cru (Corações extras na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_hearty_salmon",
+      "relation": "Versão congelada do mesmo peixe"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "a_verificar"
+}

@@ -1,0 +1,139 @@
+{
+  "id": "botw_material_sapphire",
+  "summary": "Gema azul que \"contém a essência do gelo\" — essência que não congela nada sozinha, mas dá resistência ao calor na Tiara de safira e nas armaduras do deserto. Vale 260 rupias e melhora o Conjunto do herói do céu.",
+  "description": "A Safira é uma gema azul extraída de formações rochosas naturais que, segundo o jogo, contém a própria essência do gelo. O Zelda Wiki observa que esse poder é útil para fazer armaduras resistentes ao calor — e é só nesse contexto que ele aparece. Nenhuma fonte descreve a Safira solta congelando inimigos, apagando fogo ou reagindo a elementos; a ligação com o gelo é temática. Ela se materializa na Tiara de safira da Starlight Memories, na Cidade Gerudo (800 rupias e 3 Safiras), que dá Resistência ao calor nível 1 e o bônus oculto Poder ancestral aumentado, e no último nível do Conjunto voe do deserto, também focado no calor. A tiara pode ser escolhida de graça ao final de \"Tools of the Trade\".\n\nÉ a gema mais valiosa depois do Diamante (260 rupias). Sai com mais frequência de Depósitos de minério raro, e também de Tálus rochosos raros, Tálus e Britas glaciais, inimigos prateados e Espadachins Yiga. Kairo e a Ore and More a vendem. As melhorias somam 94 Safiras: a tiara, as três peças do Conjunto do herói do céu e o 4º nível das três peças do Conjunto voe do deserto.",
+  "locations": [
+    "Depósitos de minério e, com mais frequência, Depósitos de minério raro.",
+    "Regiões geladas: Tálus glaciais e Britas glaciais também deixam Safiras."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de minério e de minério raro (voltam após uma Lua de sangue).",
+    "Derrotar Tálus rochosos raros, Tálus glaciais, Britas glaciais, Koboblins, Moblins e Lagalfos prateados, Centaleões prateados e Espadachins Yiga.",
+    "Comprar de Kairo, perto do Foothill Stable, ou na Ore and More, na Vila Tarrey (o dobro do preço)."
+  ],
+  "uses": [
+    "Comprar a Tiara de safira na Starlight Memories: 3 Safiras e 800 rupias.",
+    "Melhorias na Fonte da Grande Fada: Tiara de safira (2, 4, 6 e 10 por nível), Gorro, Túnica e Calças do céu (1, 3, 5 e 10 por nível) e o 4º nível da Faixa, da Ombreira e das Calças voe do deserto (5 cada) — 94 no total.",
+    "Ingrediente do corante azul na Tinturaria Kochi.",
+    "Venda: 260 rupias; Ramella paga 2.900 rupias por 10 quando as pede (numa loja, 2.600)."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregada; a Resistência ao calor vem das armaduras feitas com ela."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "joalheria",
+      "status": "confirmado",
+      "result": "Paga a Tiara de safira na Starlight Memories (3 Safiras e 800 rupias). A tiara aproveita \"o poder do gelo\" da gema para dar Resistência ao calor nível 1 e o efeito oculto Poder ancestral aumentado (+20% de dano com armas ancestrais e guardiãs).",
+      "conditions": ["Starlight Memories reaberta pela missão \"Tools of the Trade\"."],
+      "kind": "mecanica",
+      "sources": ["zw:Sapphire Circlet", "zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve a Safira congelando algo, liberando gelo ou reagindo ao gelo. \"Contém a essência do gelo\" é uma associação temática; o efeito prático é a resistência ao calor das armaduras que a usam."
+    },
+    {
+      "action": "calor_extremo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem que carregar Safiras protege do calor; a proteção descrita vem das armaduras, como a Tiara de safira."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; as fontes não descrevem reação ou uso especial da Safira solta.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma Safira largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Safira ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com uma Safira largada numa fogueira."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Safira à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Safira afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a Safira é uma gema.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma Safira largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita com Safira vira Comida dura como pedra (1/4 de coração, sem efeito).",
+      "produces": ["botw_food_rock_hard_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Rock-Hard Food"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 260 rupias. Quando Ramella pede Safiras, paga 2.900 rupias pelo lote de 10, contra 2.600 numa loja.",
+      "conditions": ["Missão \"The Jewel Trade\" concluída; a gema pedida por Ramella muda de tempos em tempos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:The Jewel Trade"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tiara de safira de presente",
+      "text": "Ao reabrir a Starlight Memories com 10 Sílex, Link pode escolher a Tiara de safira como recompensa. Isha justifica: \"safiras têm o poder de conceder resistência ao calor\" — útil logo na chegada ao Deserto Gerudo.",
+      "sources": ["zw:Tools of the Trade", "zw:Sapphire Circlet"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Gelo para enfrentar o calor",
+      "text": "A gema \"de gelo\" é usada justamente nas peças contra o calor: a Tiara de safira e o último nível do Conjunto voe do deserto. Nenhuma das duas congela inimigos; a ligação é apenas de resistência térmica.",
+      "sources": ["zw", "zw:Sapphire Circlet"]
+    }
+  ],
+  "advanced_uses": [
+    "Escolher a Tiara de safira em \"Tools of the Trade\" garante Resistência ao calor sem gastar Safiras nem rupias.",
+    "Guarde Safiras para os pedidos de Ramella: o lote de 10 rende 300 rupias a mais que numa loja."
+  ],
+  "limitations": [
+    "Não congela nada nem protege do calor por si só.",
+    "Comprar na Ore and More custa o dobro do preço de Kairo.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    { "id": "botw_armor_sapphire_circlet", "relation": "Joia comprada e melhorada com Safiras" },
+    { "id": "botw_armor_cap_of_the_sky", "relation": "Usa Safiras em todos os níveis de melhoria" },
+    { "id": "botw_armor_desert_voe_headband", "relation": "Pede 5 Safiras no 4º nível" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Conjunto contra o calor que usa Safiras no último nível" },
+    { "id": "botw_treasure_rare_ore_deposit", "relation": "Fonte mais provável de Safiras" },
+    { "id": "botw_monster_frost_talus", "relation": "Pode deixar Safiras ao ser derrotado" },
+    { "id": "botw_material_ruby", "relation": "Gema oposta, associada ao fogo" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado de cozinhar com Safira" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul" }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

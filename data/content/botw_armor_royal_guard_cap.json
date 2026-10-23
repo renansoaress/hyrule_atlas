@@ -1,0 +1,156 @@
+{
+  "id": "botw_armor_royal_guard_cap",
+  "summary": "Quepe do uniforme da guarda real, do DLC The Champions' Ballad, escondido no Salão dos Campeões do Castelo de Hyrule. Sozinho não tem efeito; o conjunto completo economiza vigor em três ações, sem precisar de melhorias.",
+  "description": "O Quepe da guarda real faz parte do uniforme da elite de soldados que protegia a família real; a descrição diz que ele é “mais leve do que parece”. Exclusivo do pacote de DLC The Champions' Ballad, é obtido na missão secundária “EX Royal Guard Rumors”: o Super Rumor Mill do Riverside Stable conta que uma ex-criada falou de tesouros perto do Refeitório, na Câmara dos Guardas e no segundo andar do castelo. O quepe está num baú escondido no Salão dos Campeões (Champions' Hall), no segundo andar do Sanctum, a parte central do Castelo de Hyrule.\n\nSozinho, dá só 4 de defesa. Com o Uniforme e as Botas da guarda real, o Conjunto da guarda real concede três bônus sem nenhuma melhoria: o inventário mostra apenas a Economia de vigor no ataque carregado (−50%), mas o conjunto também reduz em 50% o vigor dos saltos durante a escalada e em 75% o da arrancada a nado. Não pode ser melhorado nem tingido. Depois de achado, Granté passa a vendê-lo em Tarrey Town.",
+  "locations": [
+    "Castelo de Hyrule: baú escondido no Salão dos Campeões (Champions' Hall), no segundo andar do Sanctum."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Royal Guard Rumors” (DLC The Champions' Ballad), iniciada pelo Super Rumor Mill do Riverside Stable.",
+    "Reposição: Granté o vende depois da primeira obtenção."
+  ],
+  "uses": [
+    "Completar o Conjunto da guarda real para economizar vigor em ataques carregados, saltos na escalada e arrancadas a nado."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Conjunto completo: −50% de vigor em ataques carregados (visível), −50% nos saltos em escalada e −75% na arrancada a nado (ocultos)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 4 de defesa fixa; sozinho, não tem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Royal Guard Set"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto da guarda real completo",
+      "status": "confirmado",
+      "result": "Com o Uniforme e as Botas da guarda real, ataques carregados e saltos na escalada gastam 50% menos vigor e a arrancada a nado gasta 75% menos. Só o primeiro bônus aparece no inventário.",
+      "conditions": [
+        "As três peças vestidas; não há melhoria a fazer."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Royal Guard Set",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dois bônus que o inventário esconde",
+      "text": "A Economia de vigor no salto em escalada e a Economia de vigor na arrancada a nado são os dois únicos bônus de conjunto ocultos do jogo, e ambos pertencem ao Conjunto da guarda real.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Pistas de uma ex-criada",
+      "text": "O Super Rumor Mill V4 atribui as pistas a uma antiga criada do castelo, que falou de tesouros perto do Refeitório, na Câmara dos Guardas e no segundo andar.",
+      "sources": [
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O conjunto reúne, sem gastar materiais, três economias de vigor que em outros conjuntos aparecem separadas (bárbaro e Deidade Feroz, de escalada, Zora e de mergulhador)."
+  ],
+  "limitations": [
+    "Defesa baixa e fixa (4); não pode ser melhorado nem tingido.",
+    "Sem efeito individual.",
+    "Exige o DLC The Champions' Ballad e uma visita ao Castelo de Hyrule."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_royal_guard_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_royal_guard_uniform",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_royal_guard_boots",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_barbarian_helm",
+      "relation": "Conjunto com o mesmo bônus de ataque carregado (★★)"
+    },
+    {
+      "id": "botw_armor_climbers_bandanna",
+      "relation": "Conjunto com o mesmo bônus de salto em escalada (★★)"
+    },
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Conjunto com o mesmo bônus de arrancada a nado (★★)"
+    },
+    {
+      "id": "botw_mechanic_stamina",
+      "relation": "Recurso economizado pelos bônus"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

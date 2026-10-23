@@ -1,0 +1,230 @@
+{
+  "id": "botw_weapon_fire_rod",
+  "summary": "Varinha mágica que lança bolas de fogo saltitantes, carregada pelos Feitiçanos ígneos. O ataque giratório dispara cinco, ela dá um nível de resistência ao frio e quebra fácil se bater em algo.",
+  "description": "A Varinha de fogo é a versão mais fraca do Cajado meteórico. Cada movimento gera uma bola de fogo que quica pelo chão; com o ataque giratório, Link solta cinco disparos de uma vez em direções diferentes. Os Feitiçanos ígneos a usam para lançar bolas de fogo e invocar Chulchuls ígneos e Morcis ígneos, e a deixam cair quando são derrotados.\n\nComo o próprio jogo avisa, a varinha quebra se atingir algo diretamente: é frágil no contato com objetos e inimigos e também se desgasta só pelo uso prolongado. Usada em excesso, perde a magia por um tempo e precisa de uma breve recarga. Enquanto equipada, concede um nível de resistência ao frio. Não é feita de material inflamável nem metálico: não queima perto do fogo ou em clima escaldante, não conduz eletricidade, não atrai raios, flutua em água funda e não responde a Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra (locais comuns segundo o compendium).",
+    "Nas mãos dos Feitiçanos ígneos, comuns nas ruínas de antigos povoados hylianos."
+  ],
+  "obtaining": [
+    "Derrotar um Feitiçano ígneo: ele deixa cair a varinha.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Ataque de fogo à distância sem gastar Flechas de fogo.",
+    "Resistência ao frio de um nível enquanto equipada.",
+    "Missão secundária \"The Weapon Connoisseur\": é a segunda arma que Nebb, em Hateno, pede para ver."
+  ],
+  "effects": [
+    "Uma bola de fogo saltitante por golpe; cinco no ataque giratório.",
+    "Um nível de resistência ao frio enquanto equipada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe lança uma bola de fogo que quica pelo chão; o ataque giratório carregado solta cinco bolas em direções diferentes.",
+      "conditions": [
+        "A varinha precisa ter energia mágica; depois de uso excessivo, fica sem magia até recarregar."
+      ],
+      "side_effects": [
+        "Bater diretamente em objetos ou inimigos quebra a varinha com facilidade."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "O botão de arremesso não solta a varinha: Link a mantém na mão e lança uma bola de fogo que quica na direção do movimento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "a própria varinha",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: pode ser usada perto de chamas e em clima escaldante sem queimar.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "bolas de fogo",
+      "status": "confirmado",
+      "result": "As bolas de fogo são fogo de verdade e interagem com o ambiente como qualquer chama: incendeiam grama e objetos inflamáveis.",
+      "applications": [
+        "Incendiar grama para criar uma corrente ascendente e planar.",
+        "Queimar cipós e folhagens inflamáveis que escondem passagens."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnética e não pode ser manipulada com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos ígneos usam a varinha para lançar bolas de fogo, invocar Chulchuls e Morcis ígneos e esquentar a região; ao serem derrotados, deixam a varinha.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Wizzrobe",
+        "zw:Wizzrobe"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "inimigos de gelo",
+      "status": "confirmado",
+      "result": "Ataques de fogo fazem um Feitiçano glacial ou um Feitiçano da nevasca evaporar na hora; Lagalfos glaciais também são fracos contra fogo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Wizzrobe",
+        "zw:Blizzrobe",
+        "zw:Lizalfos"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Energia mágica e recarga",
+      "text": "Nos parâmetros extraídos, a energia máxima da varinha é 400 e cada uso consome 100: são quatro disparos seguidos antes de esgotar. A energia volta aos poucos (taxa de recuperação 10 a cada intervalo de 90, em unidades internas do jogo).",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bolas de fogo com gravidade",
+      "text": "A bola de fogo tem gravidade nos parâmetros (MagicGravity 1) e viaja mais rápido quando lançada pelo botão de arremesso (velocidade 45, contra 30 no golpe normal) — por isso ela quica pelo chão.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a varinha pode surgir com bônus de ataque de +3 (nível comum) ou +4 a +8 (nível dourado) e bônus de durabilidade de +2 a +3 (ou +4 a +7 no nível dourado). O multiplicador de lançamento fica em 1×, então o bônus de lançamento longo não muda nada. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Recompensa de Nebb divergente",
+      "text": "Na Missão secundária \"The Weapon Connoisseur\", a página da missão diz que Nebb paga uma rupia vermelha pela Varinha de fogo, enquanto a página da varinha fala em rupia roxa. O ataque também diverge: o compendium registra 10 (mesmo valor do parâmetro de poder da magia), e a tabela de armas e os parâmetros dão 5.",
+      "sources": [
+        "zw",
+        "zw:The Weapon Connoisseur",
+        "comp",
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra Feitiçanos glaciais e da nevasca, um único disparo de fogo basta para evaporá-los.",
+    "Equipá-la em regiões frias aproveita a resistência ao frio de um nível sem gastar comida."
+  ],
+  "limitations": [
+    "Frágil: golpes diretos gastam a durabilidade muito rápido.",
+    "Quatro disparos seguidos esgotam a energia mágica até a recarga.",
+    "Quebra quando a durabilidade acaba, mesmo só pelo uso da magia."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_meteor_rod",
+      "relation": "Versão mais forte"
+    },
+    {
+      "id": "botw_monster_fire_wizzrobe",
+      "relation": "Monstro que a empunha e derruba"
+    },
+    {
+      "id": "botw_weapon_ice_rod",
+      "relation": "Equivalente de gelo"
+    },
+    {
+      "id": "botw_weapon_lightning_rod",
+      "relation": "Equivalente elétrico"
+    },
+    {
+      "id": "botw_weapon_flameblade",
+      "relation": "Outra arma de fogo de uma mão"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Evapora com ataques de fogo"
+    },
+    {
+      "id": "botw_monster_blizzrobe",
+      "relation": "Evapora com ataques de fogo"
+    },
+    {
+      "id": "botw_mechanic_fire",
+      "relation": "Regras de propagação do fogo"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "queima_inimigos",
+    "protege_frio",
+    "flutua",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "a_verificar"
+}

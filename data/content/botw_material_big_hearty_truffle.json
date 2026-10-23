@@ -1,0 +1,149 @@
+{
+  "id": "botw_material_big_hearty_truffle",
+  "summary": "Trufa nutritiva que passou anos sem ser colhida e cresceu. Cura 3 corações crua e 4,5 tostada; cozida, dá Corações extras com mais potência que a trufa comum. Vende-se por 60 rupias.",
+  "description": "A Trufona nutritiva é a versão mais rara e mais forte da Trufa nutritiva: segundo o jogo, são trufas que ficaram anos sem ser colhidas e cresceram, acumulando nutrientes. Ela cresce ao pé das árvores nas Cordilheiras de Hebra e na Grande Floresta de Hyrule. Crua, recupera 3 corações; cozida na panela, concede Corações extras com potência maior que a da trufa comum. Exposta ao fogo, vira Trufona nutritiva tostada, que cura 4,5 corações sem efeito.\n\nOs mercadores ambulantes Cambo, Giro e Kanny a vendem por 60 rupias, uma unidade de cada vez. Na Tinturaria Kochi, entra no corante preto, como a trufa comum.",
+  "locations": [
+    "Pé das árvores nas Cordilheiras de Hebra e na Grande Floresta de Hyrule (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Lojas: Cambo (entre o Wetland Stable e Kakariko), Giro (entre a Proxim Bridge e o Dueling Peaks Stable) e Kanny (entre o Serenne Stable e o Snowfield Stable) — 60 rupias, estoque de 1."
+  ],
+  "obtaining": [
+    "Colher ao pé das árvores.",
+    "Comprar com Cambo, Giro ou Kanny."
+  ],
+  "uses": [
+    "Pratos de Corações extras mais fortes.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Cura grande sem panela: 3 corações crua, 4,5 tostada.",
+    "Ingrediente do corante preto na Tinturaria Kochi.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Cozida: Corações extras, com potência maior que a da Trufa nutritiva."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma trufa largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Trufona nutritiva tostada, que recupera 4,5 corações sem efeito.",
+      "side_effects": ["Perde os Corações extras."],
+      "applications": ["Vender: tostada vale 24 rupias, contra 15 da crua."],
+      "produces": ["botw_food_toasted_big_hearty_truffle"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Trufona nutritiva tostada.",
+      "produces": ["botw_food_toasted_big_hearty_truffle"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largada no chão.",
+      "produces": ["botw_food_toasted_big_hearty_truffle"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Apesar de crescer nas montanhas geladas de Hebra, não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da trufa na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a trufa não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Corações extras com potência maior que a da Trufa nutritiva. Mais unidades ou outros ingredientes do mesmo efeito aumentam ainda mais os corações extras.",
+      "side_effects": ["Corações extras de pratos diferentes não se somam: vale o mais forte.", "O total de corações de Link não passa de 30."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Extra Hearts"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 3 corações, sem efeito.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 15 rupias; tostada, vale 24.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Uma trufa esquecida",
+      "text": "A descrição do jogo explica que a Trufona nutritiva é uma Trufa nutritiva que ficou anos sem ser colhida — por isso é maior e \"cheia de nutrientes\".",
+      "sources": ["comp", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assada vale mais",
+      "text": "Tostada, a trufa sobe de 15 para 24 rupias na venda e de 3 para 4,5 corações de cura. Quando o efeito Corações extras não importa, tostar é um bom negócio.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Para pratos de muitos Corações extras, combine Trufonas com Rabanetes nutritivos grandes e Duriões nutritivos."
+  ],
+  "limitations": [
+    "Crua ou tostada não dá Corações extras.",
+    "Nas lojas, cada mercador tem só uma unidade em estoque."
+  ],
+  "related": [
+    { "id": "botw_food_toasted_big_hearty_truffle", "relation": "Resultado de expor a trufa ao fogo" },
+    { "id": "botw_material_hearty_truffle", "relation": "Versão menor, que dá origem a esta" },
+    { "id": "botw_material_big_hearty_radish", "relation": "Outro ingrediente forte de Corações extras" },
+    { "id": "botw_material_hearty_durian", "relation": "Outro ingrediente de Corações extras" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_food_copious_mushroom_skewers", "relation": "Receita de cogumelo" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante preto" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "verificado"
+}

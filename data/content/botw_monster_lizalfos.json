@@ -1,0 +1,180 @@
+{
+  "id": "botw_monster_lizalfos",
+  "summary": "Monstro-lagarto ágil que se camufla no ambiente ou espera debaixo d'água para emboscar, cospe jatos de água a distância e, segundo o compendium, nunca dorme. Nada bem, ao contrário de Koboblins e Moblins.",
+  "description": "O Lagalfos comum (verde) é descrito pelo compendium como um monstro esperto e sorrateiro, parecido com um camaleão: fica à espreita debaixo d'água ou se camufla no ambiente e só ataca quando Link chega perto. Também nunca dorme — o que tira dele a fraqueza noturna dos Koboblins. É carnívoro, mas gosta de um inseto de vez em quando. Nada com facilidade e cospe bolhas de água para acertar Link de longe.\n\nUsa principalmente o equipamento Lagal: bumerangues curvos que voltam ao dono quando arremessados, lanças com farpas também usadas para pescar e arcos de madeira reforçada; às vezes carrega armas hylianas. Quase todo esse equipamento é de metal, o que importa em tempestades e contra Magnétis. Tem 50 pontos de vida e pode deixar Chifre de Lagalfos e Garra de Lagalfos.\n\nÉ a base de uma família grande: Lagalfos azul, preto, prateado e dourado (Modo Mestre), as variantes elementais (Lagalfos ígneo, glacial e elétrico), o Stallagalfos noturno e o Lagalfos amaldiçoado das Feras Divinas.",
+  "locations": [
+    "Perto de rios, lagos e mares de toda Hyrule; o compendium cita a Grande Nascente de Lanayru e o Deserto Gerudo.",
+    "Escondido debaixo d'água ou camuflado no terreno, à espera de uma emboscada."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos e Garra de Lagalfos; a Cauda de Lagalfos só cai dos azuis e pretos (e variantes superiores).",
+    "As armas Lagal que empunhava podem ser recolhidas.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Chifres e Garras de Lagalfos.",
+    "Fonte de Bumerangues Lagal e Lanças Lagal, armas metálicas.",
+    "Registro no compendium (entrada nº 113)."
+  ],
+  "effects": [
+    "Golpes rápidos, jatos de água cuspidos a distância e ataques de emboscada."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Tem 50 pontos de vida e é ágil; costuma surgir de repente ao lado de Link após uma emboscada.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "O Ataque-surpresa (8 vezes o dano) exige um inimigo desatento; como os Lagalfos nunca dormem, a oportunidade não vem de madrugada, e sim de chegar agachado sem ser percebido.",
+      "kind": "tecnica_avancada",
+      "sources": ["comp", "zw:Sneakstrike"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado e sofre dano. O Arco Lagal, de madeira, pega fogo; as demais armas Lagal, de metal, não queimam.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o forçam a largar a arma. Uma Flecha eletrizante disparada na água cria uma área de dano ao redor do ponto de impacto, útil contra Lagalfos nadando.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Armas metálicas empunhadas por inimigos soltam faíscas em tempestades e acabam atraindo raios; quase todo o equipamento Lagal é de metal.",
+      "conditions": ["Tempestade de raios; o Lagalfos precisa estar com uma arma Lagal metálica (o Arco Lagal e o Arco Lagal reforçado são de madeira)."],
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Nada muito bem, se esconde submerso para emboscar e cospe bolhas de água em Link a distância. Empurrá-lo para a água não o elimina.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas causam dano normalmente.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo; durante o efeito fica imune a gelo, fogo e choque.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "O Lagalfos em si não é agarrado, mas as armas Lagal metálicas que ele largar podem ser puxadas com Magnétis, inclusive do fundo da água, onde afundam.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se no terreno e só se revela quando Link se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "A Máscara de Lagalfos (Kilton, 299 Mon, à venda após libertar duas Feras Divinas) ou a Máscara de Majora fazem os Lagalfos não atacarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Nunca dormem\" — ou fingem?",
+      "text": "O compendium afirma que os Lagalfos nunca dormem. Ao apresentar a Máscara de Lagalfos, Kilton reclama justamente disso: \"quando você acha que estão dormindo, eles atacam sem aviso\", e alguns ainda se camuflam no ambiente.",
+      "sources": ["comp", "zw:Kilton"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Lança de pesca",
+      "text": "As Lanças Lagal têm pontas farpadas como arpões: segundo a descrição da Lança Lagal aprimorada, os Lagalfos as usam tanto para lutar quanto para pescar.",
+      "sources": ["jogo", "zw:Lizalfos Gear"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bumerangues que voltam",
+      "text": "As armas de uma mão do equipamento Lagal têm lâminas curvas em forma de bumerangue e voltam a quem as arremessou.",
+      "sources": ["zw:Lizalfos Gear"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue e Modo Mestre",
+      "text": "Revive em toda Lua de sangue. No Modo Mestre, sobe um nível, detecta Link com mais facilidade e regenera vida até um limite.",
+      "sources": ["zw:Blood Moon", "zw:Master Mode"]
+    }
+  ],
+  "advanced_uses": [
+    "Atirar Flechas eletrizantes na água onde Lagalfos estão nadando.",
+    "Em tempestades, deixar o Lagalfos com sua arma de metal e manter distância até que um raio o atinja.",
+    "Recuperar com Magnétis as armas Lagal que afundarem."
+  ],
+  "limitations": [
+    "Não se afoga: a tática de empurrar para a água não funciona com Lagalfos.",
+    "Não dorme, então não há a janela noturna de Ataque-surpresa dos Koboblins.",
+    "Flechas ancestrais o desintegram sem deixar materiais."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_lizalfos", "relation": "Variante mais forte (azul)" },
+    { "id": "botw_monster_black_lizalfos", "relation": "Variante mais forte (preta)" },
+    { "id": "botw_monster_silver_lizalfos", "relation": "Variante mais forte (prateada)" },
+    { "id": "botw_monster_golden_lizalfos_mm", "relation": "Variante do Modo Mestre" },
+    { "id": "botw_monster_fire_breath_lizalfos", "relation": "Variante elemental de fogo" },
+    { "id": "botw_monster_ice_breath_lizalfos", "relation": "Variante elemental de gelo" },
+    { "id": "botw_monster_electric_lizalfos", "relation": "Variante elemental elétrica" },
+    { "id": "botw_monster_stalizalfos", "relation": "Versão esquelética noturna" },
+    { "id": "botw_monster_cursed_lizalfos", "relation": "Crânio amaldiçoado" },
+    { "id": "botw_material_lizalfos_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lizalfos_talon", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_weapon_lizal_boomerang", "relation": "Arma típica" },
+    { "id": "botw_weapon_lizal_spear", "relation": "Arma típica" },
+    { "id": "botw_bow_lizal_bow", "relation": "Arco típico (de madeira)" },
+    { "id": "botw_armor_lizalfos_mask", "relation": "Disfarce que impede seus ataques" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

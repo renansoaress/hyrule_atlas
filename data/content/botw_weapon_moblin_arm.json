@@ -1,0 +1,102 @@
+{
+  "id": "botw_weapon_moblin_arm",
+  "summary": "Osso do braço de um Stalmoblin que continua se mexendo depois de solto (ataque 15). Grosso o bastante para bater, mas quebra em 5 golpes; flutua, não queima e nunca tem bônus.",
+  "description": "O Braço de Moblin é um osso de Moblin que, segundo o jogo, continua se movendo mesmo depois de separado do corpo. Ele cai dos Stalmoblins derrotados e pode ser usado como arma de duas mãos: é grosso o suficiente para isso, mas extremamente quebradiço, com apenas 5 de durabilidade.\n\nPor ser de osso, não pega fogo, não conduz eletricidade, não atrai raios, não responde a Magnétis e flutua na água. Junto com o Braço de Koboblin e o Braço de Lagalfos, faz parte dos \"braços de esqueleto\", que nunca recebem bônus aleatórios.",
+  "locations": [
+    "Cai de Stalmoblins derrotados; o compendium o registra como encontrado em toda Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar Stalmoblins e recolher o braço que eles deixam cair."
+  ],
+  "uses": [
+    "Arma improvisada de dano razoável quando não há outra à mão.",
+    "Arma segura para tempestades e para o calor de Eldin, por ser de osso.",
+    "Por não ser inflamável, acende sílex ao golpeá-lo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo, com o giro carregado que consome vigor. Com 5 de durabilidade, quebra quase de imediato.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "applications": ["Como dura pouquíssimo, arremessá-lo logo aproveita o golpe crítico garantido."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade (osso).",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, como as demais armas de osso.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movido com Magnétis.",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É deixado pelos Stalmoblins ao serem derrotados.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sem bônus, apesar dos parâmetros",
+      "text": "Os parâmetros extraídos listam faixas de bônus para o braço (Ataque de +4 a +6 no nível comum, por exemplo), mas os braços de esqueleto — de Koboblin, de Moblin e de Lagalfos — estão entre os itens que nunca recebem bônus.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um osso que ainda se mexe",
+      "text": "A descrição do jogo destaca que o osso continua se movendo mesmo depois de separado do corpo do Moblin.",
+      "sources": ["jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Recolha o braço ao derrotar um Stalmoblin e arremesse-o no próximo inimigo: o golpe crítico de 30 compensa a durabilidade mínima."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 5, a menor entre as armas de duas mãos.",
+    "Nunca vem com bônus."
+  ],
+  "related": [
+    { "id": "botw_monster_stalmoblin", "relation": "Deixa o braço ao ser derrotado" },
+    { "id": "botw_weapon_bokoblin_arm", "relation": "Outro braço de esqueleto" },
+    { "id": "botw_weapon_lizalfos_arm", "relation": "Outro braço de esqueleto" },
+    { "id": "botw_mechanic_critical_hit", "relation": "Arremesso garante golpe crítico" }
+  ],
+  "capabilities": ["flutua", "arremessavel"],
+  "verification_status": "verificado"
+}

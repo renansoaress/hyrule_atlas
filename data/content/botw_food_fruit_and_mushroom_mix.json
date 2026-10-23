@@ -1,0 +1,105 @@
+{
+  "id": "botw_food_fruit_and_mushroom_mix",
+  "summary": "Mistura de qualquer fruta com qualquer cogumelo, contrastando doce e salgado. O efeito pode vir da fruta ou do cogumelo; Maçã, Coco, Framboesa e Cogumelo hyliano são os neutros.",
+  "description": "O Mix de frutas e cogumelos junta qualquer fruta e qualquer cogumelo; a descrição do jogo diz que o prato contrasta a doçura da fruta com o sabor salgado dos cogumelos. A versão comum sai com ingredientes sem efeito — Maçã, Coco, Framboesa e Cogumelo hyliano — ou com ingredientes de efeitos diferentes, que se anulam.\n\nO efeito pode vir de qualquer um dos lados: nutritiva (Durião nutritivo, Trufa nutritiva ou Trufona nutritiva), energizante (Energimelo), tenaz (Cogumelo tenaz), veloz (Grãos de lótus-fugaz ou Agilimelo), picante (Pimenta de fogo ou Flamelo), isolante (Fruta isolante ou Aterramelo), valente (Bananas valentes ou Ferromelo), blindada (Blindamelo), discreta (Silencimelo) e refrescante (Melancia oásica ou Glacimelo). As versões energizante, tenaz, blindada e discreta dependem do cogumelo, pois o Zelda Wiki não cita frutas com esses efeitos para o prato.\n\nPor aceitar fruta e cogumelo do mesmo efeito, o prato permite combinar ingredientes diferentes para fortalecer o efeito, como Bananas valentes com Ferromelo.",
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer fruta + qualquer cogumelo."
+  ],
+  "uses": [
+    "Prato de efeito com ingredientes de floresta e de árvore frutífera.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Maçã, Coco, Framboesa, Cogumelo hyliano ou efeitos que se anulam): recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Durião nutritivo, Trufa nutritiva ou Trufona nutritiva.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Energimelo.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — Cogumelo tenaz.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — Grãos de lótus-fugaz ou Agilimelo.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Pimenta de fogo ou Flamelo.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Fruta isolante ou Aterramelo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Bananas valentes ou Ferromelo.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Blindamelo.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Silencimelo.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Melancia oásica ou Glacimelo."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "A fruta ou o cogumelo com efeito definem a versão; as descrições citadas são de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fruta e cogumelo do mesmo efeito",
+      "text": "Pares como Bananas valentes + Ferromelo, Melancia oásica + Glacimelo ou Pimenta de fogo + Flamelo juntam dois ingredientes diferentes com o mesmo efeito, o que fortalece o prato mais do que repetir um só.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "Frutas e cogumelos de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito"
+    },
+    {
+      "id": "botw_material_apple",
+      "relation": "Fruta sem efeito"
+    },
+    {
+      "id": "botw_material_palm_fruit",
+      "relation": "Fruta sem efeito"
+    },
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Fruta sem efeito"
+    },
+    {
+      "id": "botw_food_simmered_fruit",
+      "relation": "Prato só de frutas"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Prato só de cogumelos"
+    },
+    {
+      "id": "botw_food_fish_and_mushroom_skewer",
+      "relation": "Cogumelo com peixe"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "botw_keyitem_monster_bridle",
+  "summary": "Rédea artesanal de Kilton com uma máscara que esconde a cabeça do cavalo, vendida por 399 Mon na Fang and Bone. Pensada para um \"cavalo monstruoso\", é puramente cosmética.",
+  "description": "A Rédea de monstro faz parte do equipamento de montaria de monstro, ao lado da Sela de monstro. Segundo a descrição do jogo, foi feita à mão por Kilton, que parecia ter em mente algum cavalo monstruoso, e inclui uma máscara que cobre a cabeça do cavalo.\n\nÉ vendida por 399 Mon na Fang and Bone, a loja de Kilton que só abre à noite (das 21h às 5h) perto dos principais povoados de Hyrule; a moeda Mon é obtida trocando partes de monstros com o próprio Kilton. Há uma unidade à venda.\n\nA rédea não altera os atributos do cavalo. É colocada por funcionários dos estábulos Highland, Outskirt, South Akkala e Woodland, apenas em cavalos com vínculo máximo, e não serve em Epona nem no Cavalo gigante.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton (aberta das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 399 Mon."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo com visual de monstro."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Colocada no cavalo por um funcionário de estábulo, cobre a cabeça dele com uma máscara de monstro; não muda os atributos.",
+      "conditions": [
+        "Falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse Gear", "jogo"]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": ["zw:Horse Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Kilton e seus equipamentos de monstro",
+      "text": "Kilton converte partes de monstros em Mon, a moeda que só a Fang and Bone aceita, e diz que está sempre desenvolvendo novos equipamentos de monstro com base em suas pesquisas.",
+      "sources": ["zw:Kilton"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com a Sela de monstro (299 Mon) para completar o visual de montaria monstruosa."
+  ],
+  "limitations": [
+    "Apenas cosmética.",
+    "Só pode ser comprada com Mon, à noite."
+  ],
+  "related": [
+    { "id": "botw_keyitem_monster_saddle", "relation": "Outra peça do equipamento de monstro" },
+    { "id": "botw_armorset_dark_series", "relation": "Outro produto de Kilton pago em Mon" },
+    { "id": "botw_creature_horse", "relation": "Montaria que recebe a rédea" },
+    { "id": "botw_mechanic_stable", "relation": "Onde a rédea é colocada" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

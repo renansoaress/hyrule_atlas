@@ -1,0 +1,131 @@
+{
+  "id": "botw_shield_lynel_shield",
+  "summary": "Escudo dos Centaleões com bordas cortantes: ao aparar com A, causa 7 de dano. Em troca, perde durabilidade até na Defesa perfeita. O Centaleão do Monte Ploymus é uma fonte permanente.",
+  "description": "A Defesa centaleônica é o escudo preferido dos Centaleões, valorizado tanto pela defesa quanto pelo ataque. Antes de tudo é um escudo — Defesa 30, durabilidade 12 —, mas as bordas reforçadas com faixas cortam: o movimento de aparar (A enquanto segura ZL) acerta o inimigo como um golpe de lâmina, causando 7 de dano. Pertence ao equipamento centaleônico (Lynel Gear), junto da Espada, da Lança, da Maça e do Arco centaleônicos.\n\nO preço dessa vantagem é a durabilidade: diferente dos outros escudos, a linha centaleônica perde durabilidade ao aparar, inclusive na Defesa perfeita. É usada pelos Centaleões comuns (e pelos Centaleões de juba azul no Modo Mestre) e fica escassa conforme os inimigos sobem de nível — exceto no Monte Ploymus, cujo Centaleão nunca evolui e continua sendo fonte do escudo.\n\nÉ de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis; não queima.",
+  "locations": [
+    "Grande Nascente de Lanayru e Pradaria de Hyrule, segundo o compendium.",
+    "Monte Ploymus: o Centaleão local permanece comum e sempre carrega esta versão."
+  ],
+  "obtaining": [
+    "Derrotar Centaleões comuns (no Modo Mestre, os Centaleões de juba azul também a usam).",
+    "Depois que os Centaleões evoluem, voltar ao Monte Ploymus, cujo Centaleão não sobe de nível."
+  ],
+  "uses": [
+    "Aparar causando dano: cada aparada com A corta o inimigo (7 de dano).",
+    "Escudo de metal de defesa média."
+  ],
+  "effects": [
+    "As bordas causam 7 de dano cortante ao aparar."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 30. O movimento de aparar golpeia o inimigo com as bordas, causando 7 de dano como um ataque de lâmina.",
+      "conditions": ["Segurar ZL e apertar A."],
+      "applications": ["Somar dano às Defesas perfeitas contra monstros que atacam muito de perto."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "jogo"]
+    },
+    {
+      "action": "defender",
+      "variant": "Defesa perfeita",
+      "status": "confirmado",
+      "result": "A Defesa perfeita funciona e desequilibra o inimigo, mas, ao contrário dos escudos comuns, a Defesa centaleônica perde durabilidade ao aparar.",
+      "side_effects": ["Com só 12 de durabilidade, aparar repetidamente esgota o escudo depressa."],
+      "kind": "mecanica",
+      "sources": ["zw:Durability", "zw:Perfect Guard"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo — útil contra as bolas de fogo dos Centaleões.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Usada por Centaleões comuns e, no Modo Mestre, por Centaleões de juba azul.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +1 a +2 (nível branco) ou +3 (nível amarelo) e com Defesa do escudo aumentada de +4 a +7 (branco) ou +8 a +13 (amarelo). Como aparar gasta durabilidade, um bônus de durabilidade pesa mais aqui do que em outros escudos.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Durability"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fonte que não acaba",
+      "text": "Os Centaleões do Monte Ploymus e das duas guaritas do Castelo de Hyrule não evoluem com o nível do mundo. Como o do Monte Ploymus é um Centaleão comum, ele continua deixando a Defesa centaleônica mesmo no fim do jogo.",
+      "sources": ["zw", "zw:Lynel"]
+    }
+  ],
+  "advanced_uses": [
+    "Em lutas contra o próprio Centaleão, que permite Defesa perfeita na maioria dos ataques, cada aparada com este escudo também causa dano — mas conte com o desgaste a cada uso."
+  ],
+  "limitations": [
+    "Perde durabilidade ao aparar, inclusive na Defesa perfeita.",
+    "Durabilidade baixa (12)."
+  ],
+  "related": [
+    { "id": "botw_shield_mighty_lynel_shield", "relation": "Versão mais forte (13 de dano ao aparar)" },
+    { "id": "botw_shield_savage_lynel_shield", "relation": "Versão máxima (21 de dano ao aparar)" },
+    { "id": "botw_weapon_lynel_sword", "relation": "Mesmo arquétipo (equipamento centaleônico)" },
+    { "id": "botw_weapon_lynel_spear", "relation": "Mesmo arquétipo (equipamento centaleônico)" },
+    { "id": "botw_weapon_lynel_crusher", "relation": "Mesmo arquétipo (equipamento centaleônico)" },
+    { "id": "botw_bow_lynel_bow", "relation": "Mesmo arquétipo (equipamento centaleônico)" },
+    { "id": "botw_monster_lynel", "relation": "Monstro que a empunha" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Gasta durabilidade deste escudo, ao contrário dos demais" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "habilidade_especial"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "botw_weapon_farmers_pitchfork",
+  "summary": "Ferramenta de quatro dentes para juntar feno, leve o bastante para qualquer um (ataque 7, durabilidade 12). Dentes de metal e uma exceção: nunca vem com bônus aleatórios.",
+  "description": "O Forcado é uma ferramenta agrícola para juntar feno com eficiência, leve o bastante para qualquer pessoa usar; os quatro dentes são muito afiados, o que permite a Link usá-lo como lança. É mais comum ao redor de vilarejos, como Hateno, e de estábulos na Necluda Oriental e na Necluda Ocidental.\n\nPor causa dos dentes de metal, conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser movido com Magnétis; não pega fogo. Uma particularidade registrada pelo Zelda Wiki: embora os parâmetros do jogo prevejam faixas de bônus, o Forcado é um caso especial que, na prática, nunca aparece com bônus aleatórios.",
+  "locations": [
+    "Vilarejos como Hateno e estábulos da Necluda Oriental e da Necluda Ocidental."
+  ],
+  "obtaining": [
+    "Recolher nos vilarejos e estábulos onde costuma aparecer.",
+    "A Lua de sangue repõe as armas largadas pelo mundo."
+  ],
+  "uses": [
+    "Lança improvisada do começo do jogo, achada em áreas habitadas.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem o Forcado."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus aleatórios",
+      "text": "Os parâmetros extraídos do jogo ainda listam faixas de bônus (ataque +3 a +4 ou +5 a +6, durabilidade +2 a +3 ou +4 a +6, arremesso longo de 1,5× a 2×), mas o Zelda Wiki registra que o Forcado é um caso especial que, na prática, nunca recebe bônus: todo exemplar vem com os valores-base.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "limitations": [
+    "Durabilidade muito baixa (12).",
+    "Nunca vem com bônus aleatórios."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_farming_hoe",
+      "relation": "Outra ferramenta agrícola usada como arma"
+    },
+    {
+      "id": "botw_weapon_wooden_mop",
+      "relation": "Outro utensílio doméstico usado como lança"
+    },
+    {
+      "id": "botw_mechanic_stable",
+      "relation": "Costuma ser encontrado em estábulos"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "botw_food_monster_curry",
+  "summary": "Curry de Arroz hyliano, Tempero Goron e Extrato de monstro. Deixa dois espaços livres para ingredientes de efeito, mas a cura e a força do efeito são sorteadas pelo extrato.",
+  "description": "O Curry de monstro troca a carne ou os legumes dos curries comuns pelo Extrato de monstro: bastam Arroz hyliano, Tempero Goron e o extrato. A descrição do jogo o chama de uma versão incomum de curry que \"não depende de especiarias\" — curiosamente, o Tempero Goron continua obrigatório. Como em todos os pratos de monstro, a quantidade de corações recuperada e a força e a duração do efeito são aleatórias a cada cozimento.\n\nCom apenas três ingredientes obrigatórios, sobram dois espaços na panela, o suficiente para somar dois ingredientes do mesmo efeito (por exemplo, dois \"valentes\" para Ataque aumentado). Ingredientes de efeitos diferentes se anulam e devolvem a versão comum. Na ordem de prioridade das receitas, os pratos de monstro vêm antes dos curries normais, então colocar carne junto com o extrato não produz um Curry de carne: o resultado continua sendo Curry de monstro.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano, Tempero Goron e Extrato de monstro, com até dois ingredientes extras.",
+    "O Extrato de monstro é vendido por Kilton à noite (9 Mon); o Tempero Goron, na loja Goron Gusto Shop da Cidade Goron e pelo mercador Yammo, perto da Grande Ponte de Tabantha."
+  ],
+  "uses": [
+    "Recuperar corações e obter efeitos, com resultado sorteado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera uma quantidade aleatória de corações.",
+    "Os ingredientes extras definem a variante: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\").",
+    "A duração base de efeitos temporizados é sorteada entre 1:00, 10:00 e 30:00."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da variante, com valores sorteados pelo Extrato de monstro.",
+      "side_effects": [
+        "Pode sair com cura mínima (1/4 de coração) ou efeito na força mínima."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne ou legume junto",
+      "status": "confirmado",
+      "result": "Adicionar carne, Abóbora robusta ou cenouras não transforma o prato em outro curry: a receita de monstro é verificada antes de todos os curries.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tempero Goron sem bônus crítico",
+      "text": "Normalmente o Tempero Goron eleva para 10% a chance de bônus crítico no cozimento. No Curry de monstro essa vantagem se perde: qualquer prato com Extrato de monstro fica impedido de receber o bônus crítico e passa a ter uma mudança aleatória, para melhor ou para pior.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Curry que \"dispensa\" especiarias",
+      "text": "O texto do inventário diz que o prato usa extrato de monstro e não depende de especiarias, embora a receita exija Tempero Goron.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use os dois espaços livres com ingredientes do mesmo efeito para aproveitar uma eventual melhora sorteada pelo extrato."
+  ],
+  "limitations": [
+    "Cura e efeito imprevisíveis.",
+    "Nunca recebe bônus crítico.",
+    "Ingredientes de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Ingrediente que torna o resultado aleatório"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_curry_rice",
+      "relation": "Curry básico de arroz e Tempero Goron, sem extrato"
+    },
+    {
+      "id": "botw_food_monster_rice_balls",
+      "relation": "Prato de monstro com arroz que troca o tempero pela Halita"
+    },
+    {
+      "id": "botw_food_prime_meat_curry",
+      "relation": "Curry comum com carne, sem sorteio"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

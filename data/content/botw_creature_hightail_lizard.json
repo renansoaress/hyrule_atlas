@@ -1,0 +1,134 @@
+{
+  "id": "botw_creature_hightail_lizard",
+  "summary": "Lagarto comum das áreas quentes e temperadas, lento para reagir mas veloz na fuga. Cozido com partes de monstro, vira Elixir veloz; também melhora o Conjunto de escalada e as Botas de areia e de neve.",
+  "description": "O Lagarto fujão é o lagarto mais comum de Hyrule, presente em áreas quentes e temperadas e especialmente frequente no Planalto (Great Plateau) e em Necluda Oriental e Ocidental. Costuma tomar sol em árvores e pedras, e também pode saltar de esconderijos ao se cortar grama ou levantar pedras. O texto do jogo resume o comportamento: às vezes demora a reagir, mas, se tiver chance de escapar, dispara. Para pegá-lo, Link pode correr atrás dele, aproximar-se agachado sem ser notado ou atordoá-lo com uma flecha ou uma Bomba remota; se fugir, acaba desaparecendo.\n\nComo todo bicho, não é um alimento comum: cozido com partes de monstro produz um Elixir veloz, que aumenta a velocidade de corrida, nado e escalada (cada lagarto acrescenta 1:00 de duração). Cozido só com alimentos, ou sozinho, resulta em Comida duvidosa. Na Tinturaria Kochi, entra no corante marrom.\n\nTambém é um material de melhoria importante: 5 por peça levam o Conjunto de escalada ao 2º nível, e 10 são exigidos no 1º nível das Botas de areia e das Botas de neve.",
+  "locations": [
+    "Áreas quentes e temperadas de toda Hyrule, sobretudo o Planalto (Great Plateau), Necluda Oriental e Necluda Ocidental.",
+    "Em troncos de árvores e pedras; também escondido na grama e sob pedras."
+  ],
+  "obtaining": [
+    "Pegar à mão: aproximar-se agachado, correr atrás dele ou atordoá-lo com uma flecha ou uma Bomba remota.",
+    "Comprar de Beedle por 10 rupias em alguns estábulos."
+  ],
+  "uses": [
+    "Elixir veloz: cozinhar com pelo menos uma parte de monstro.",
+    "Melhoria de armadura: 5 por peça do Conjunto de escalada (Bandana, Traje e Botas de escalada) no 2º nível, com 5 Asas de Morci elétrico.",
+    "Melhoria de armadura: 10 no 1º nível das Botas de areia (com 5 Barbatanas de Molduga) e das Botas de neve (com 5 Tentáculos de Octoroc).",
+    "Ingrediente do corante marrom na Tinturaria Kochi, em Vila Hateno.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Velocidade aumentada ao correr, nadar e escalar; +1:00 de duração por lagarto."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Costuma demorar um pouco a notar Link, mas foge depressa quando nota e acaba desaparecendo. Pode ser apanhado com furtividade ou alcançado na corrida.",
+      "conditions": ["Andar agachado; chuva e grama alta ajudam a não ser notado."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizard", "jogo", "zw:Stealth"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha atordoa o lagarto, permitindo pegá-lo antes que fuja.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Lizard"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota atordoa o lagarto, que pode então ser apanhado.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Lizard"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pode estar em árvores ou pedras, ou sair assustado ao se cortar grama ou levantar pedras.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizard"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um lagarto vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir veloz (Velocidade aumentada). Cada lagarto acrescenta 1:00 de duração, e a parte de monstro também soma tempo.",
+      "conditions": ["Pelo menos um bicho e uma parte de monstro na panela; não misturar bichos de efeitos diferentes."],
+      "applications": ["Somar ingredientes velozes (Grãos de lótus-fugaz, Agilimelo, Violeta veloz, Cenoura veloz) para que o elixir também cure."],
+      "produces": ["botw_elixir_hasty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Hasty Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dubious Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, sem recuperação de corações, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 2 rupias; Beedle cobra 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o lagarto exposto ao fogo; ele não consta da lista de alimentos assados."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o lagarto."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Corrida, nado e escalada",
+      "text": "O Elixir veloz acelera Link ao correr, nadar e escalar, segundo o próprio texto do item. O nível do efeito (baixo, médio ou alto) depende da potência dos ingredientes usados.",
+      "sources": ["jogo", "zw:Hasty Elixir"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mesma categoria do Sapo apressado",
+      "text": "Lagarto fujão e Sapo apressado são bichos \"velozes\" e acrescentam a mesma duração (1:00) cada. Podem ser combinados no mesmo Elixir veloz; já misturar bichos de categorias diferentes produz Comida duvidosa.",
+      "sources": ["zw:Elixir", "zw:Dubious Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Para um Elixir veloz mais longo, use vários lagartos com uma parte de monstro de maior duração (as vísceras acrescentam 3:10).",
+    "Uma Bomba remota detonada perto do lagarto o atordoa sem que seja preciso persegui-lo."
+  ],
+  "limitations": [
+    "Não forma elixir sem parte de monstro; cozido com alimentos comuns vira Comida duvidosa.",
+    "Se fugir, desaparece: é preciso pegá-lo antes."
+  ],
+  "related": [
+    { "id": "botw_elixir_hasty_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_hot_footed_frog", "relation": "Outro bicho veloz" },
+    { "id": "botw_armorset_climbing_set", "relation": "Usa 5 por peça no 2º nível de melhoria" },
+    { "id": "botw_armor_sand_boots", "relation": "Usa 10 no 1º nível de melhoria" },
+    { "id": "botw_armor_snow_boots", "relation": "Usa 10 no 1º nível de melhoria" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante marrom" },
+    { "id": "botw_rune_remote_bomb", "relation": "Atordoa o lagarto" }
+  ],
+  "capabilities": ["velocidade"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,259 @@
+{
+  "id": "botw_material_yellow_chuchu_jelly",
+  "summary": "Geleca percorrida por eletricidade que, golpeada, libera uma descarga elétrica esférica. Vem de Chulchuls elétricos ou de eletrizar a Geleca de Chulchul comum.",
+  "description": "A Geleca elétrica é a forma elétrica da geleca de Chulchul. O inventário diz que eletricidade pulsa pela massa gelatinosa e que, se golpeada, ela explode numa descarga de corrente elétrica. O Zelda Wiki descreve um pulso elétrico esférico liberado quando ela recebe um ataque físico — uma armadilha para eletrocutar inimigos agrupados. Como os choques fazem Link largar armas de metal, vale golpeá-la mantendo distância.\n\nEla cai dos Chulchuls elétricos, comuns no Deserto Gerudo e em Necluda Oriental, e de Chulchuls comuns derrotados com armas elétricas; também surge quando uma Geleca de Chulchul comum é exposta à eletricidade. Fogo a converte em Geleca ígnea e gelo, em Geleca gélida. Na panela, acrescenta 1:50 à duração do elixir; nas Grandes Fadas, é o material dos dois primeiros níveis do Conjunto de borracha; na Tinturaria Kochi, faz o corante amarelo.",
+  "locations": [
+    "Deserto Gerudo e Necluda Oriental, onde os Chulchuls elétricos são mais comuns."
+  ],
+  "obtaining": [
+    "Derrotar Chulchuls elétricos (Feitiçanos elétricos e do trovão também os invocam).",
+    "Derrotar Chulchuls comuns com armas ou flechas elétricas.",
+    "Expor uma Geleca de Chulchul comum à eletricidade."
+  ],
+  "uses": [
+    "Combate: largada e golpeada, libera um pulso elétrico que atinge o que estiver ao redor.",
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 3 por peça no 1º nível e 5 por peça no 2º nível do Conjunto de borracha — 24 no total.",
+    "Corante amarelo na Tinturaria Kochi.",
+    "Venda: 10 rupias, ou 5 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Golpeada, libera uma descarga elétrica esférica.",
+    "Na culinária, não tem efeito próprio; só prolonga a duração de elixires."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurada e largada no mundo a partir da algibeira; é assim que a Geleca elétrica fica exposta a golpes e a outros elementos.",
+      "conditions": [
+        "Selecionar a geleca na algibeira, segurá-la e soltá-la no chão."
+      ],
+      "applications": [
+        "Preparar uma armadilha elétrica diante de inimigos antes de golpeá-la."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly",
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Libera um pulso elétrico esférico — uma descarga de corrente elétrica ao redor da geleca.",
+      "conditions": [
+        "Geleca largada no mundo e atingida por um golpe de arma (ataque físico)."
+      ],
+      "side_effects": [
+        "Mantenha distância: choques elétricos fazem Link largar armas de metal e sofrer dano dobrado (regra descrita para os choques do Chulchul elétrico). As fontes não dizem se golpear a geleca com arma de metal expõe Link à descarga."
+      ],
+      "applications": [
+        "Eletrocutar um grupo de inimigos de uma vez."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Chuchu Jelly",
+        "zw:Electric Chuchu"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes falam em golpe de arma ou ataque físico, mas não especificam se uma flecha comum também detona a geleca. Disparar de longe seria a forma mais segura de detoná-la, mas isso não está confirmado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca ígnea.",
+      "conditions": [
+        "Exposição direta ao fogo."
+      ],
+      "produces": [
+        "botw_material_red_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Colocada numa fogueira acesa, também vira Geleca ígnea, pela mesma regra de exposição ao fogo.",
+      "conditions": [
+        "A geleca precisa ficar em contato com as chamas. A fonte cita a fogueira como exemplo para a geleca comum e estende a conversão pelo fogo às outras formas."
+      ],
+      "produces": [
+        "botw_material_red_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca gélida.",
+      "conditions": [
+        "Exposição a um ataque ou efeito de gelo."
+      ],
+      "produces": [
+        "botw_material_white_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "A Geleca elétrica já é a forma elétrica; as fontes não descrevem efeito adicional ao expô-la a mais eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com a Geleca elétrica largada na água, nem se a descarga se propaga por ela."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Geleca elétrica não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Geleca elétrica largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "applications": [
+        "Prolongar elixires em 1:50 por unidade, mais que a Geleca de Chulchul comum (1:10)."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 10 rupias em lojas e comerciantes, ou 5 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Explosivo de bolso",
+      "text": "Largar a geleca perto de um grupo de inimigos e golpeá-la libera o efeito elemental sobre todos ao redor. Como as fontes descrevem a explosão atingindo o que está próximo, convém golpear com uma arma de alcance maior, como uma lança — a mesma recomendação que o compendium faz para lutar contra os Chulchuls elementais, que explodem quando derrotados de perto.",
+      "sources": [
+        "zw:Chuchu Jelly",
+        "zw:Fire Chuchu",
+        "zw:Ice Chuchu",
+        "zw:Electric Chuchu"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Da geleca à imunidade a raios",
+      "text": "As 24 Gelecas elétricas (com 15 Frutas isolantes) levam as três peças do Conjunto de borracha ao 2º nível. Completo e melhorado duas vezes, o conjunto concede imunidade a raios, que o Zelda Wiki aponta como forma de chegar perto de Farosh sem levar choques.",
+      "sources": [
+        "zw",
+        "zw:Farosh"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Chulchul elétrico \"descarregado\"",
+      "text": "Depois de soltar um choque, o Chulchul elétrico fica alguns segundos numa forma amarelo-escura, sem eletricidade, e pode ser atingido sem eletrocutar Link. Derrotado enquanto está carregado, explode numa descarga que eletrocuta o que estiver ao alcance.",
+      "sources": [
+        "zw:Electric Chuchu",
+        "zw:Chuchu"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Lute contra Chulchuls elétricos sem armas de metal equipadas, ou espere a fase descarregada para atacá-los de perto."
+  ],
+  "limitations": [
+    "Choques fazem Link largar armas de metal; não golpeie a geleca colado nela.",
+    "As fontes não indicam que carregá-la proteja de choques.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Geleca comum que vira elétrica com eletricidade"
+    },
+    {
+      "id": "botw_material_red_chuchu_jelly",
+      "relation": "Forma obtida expondo-a ao fogo"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Forma obtida expondo-a ao gelo"
+    },
+    {
+      "id": "botw_monster_electric_chuchu",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_chuchu",
+      "relation": "Deixa Geleca elétrica se derrotado com eletricidade"
+    },
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Usa 3 e 5 por peça nos dois primeiros níveis"
+    },
+    {
+      "id": "botw_monster_farosh",
+      "relation": "O Conjunto de borracha melhorado duas vezes protege dos seus choques"
+    },
+    {
+      "id": "botw_material_yellow_lizalfos_tail",
+      "relation": "Material dos dois últimos níveis do Conjunto de borracha"
+    },
+    {
+      "id": "botw_mechanic_electricity",
+      "relation": "Mecânica de eletricidade gerada pela descarga"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "eletrocuta_inimigos",
+    "reage_fogo",
+    "reage_gelo"
+  ],
+  "verification_status": "verificado"
+}

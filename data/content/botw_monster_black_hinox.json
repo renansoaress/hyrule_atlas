@@ -1,0 +1,140 @@
+{
+  "id": "botw_monster_black_hinox",
+  "summary": "Rinox preto, o mais forte dos três (1.000 de vida): as grevas de metal conduzem eletricidade e o deixam atordoado com ataques elétricos. Contra quem foge para o alto, arremessa Barris explosivos.",
+  "description": "O Rinox preto é a variação mais forte do Rinox vivo. Como o azul, protege os tornozelos com grevas, mas as dele são de metal. O compendium observa que elas conduzem muito bem a eletricidade, e o Zelda Wiki completa: ataques elétricos atordoam o Rinox preto justamente por causa dessa armadura. Flechas eletrizantes e armas elétricas se tornam, assim, a resposta natural a ele.\n\nNo resto, luta como qualquer Rinox: dorme até ser perturbado, ataca com tapas, socos e árvores arrancadas e tem o olho como ponto fraco (até cobri-lo, depois de perder metade da vida). A diferença mais perigosa aparece quando Link sobe para fora do alcance: em vez de pedras, o Rinox preto atira Barris explosivos. O colar de armas, como sempre, pode ser roubado enquanto ele dorme.\n\nAo morrer, deixa Unha, Dente e Vísceras de Rinox e carnes preparadas (bifes selados e aves assadas). O irmão mais velho dos \"três gigantes\" do Monte Taran, nas terras úmidas de Rabella, é um Rinox preto.",
+  "locations": [
+    "Segundo o compendium, é comum em Necluda Oriental e na Pradaria de Hyrule.",
+    "Pontos citados pelo Zelda Wiki: Tabahl Woods, Floresta dos Gigantes (Giant's Forest), sul do Lago Totori, cume oeste de Hebra (Hebra West Summit), leste de Gut Check Rock, Tempest Gulch e Monte Taran (irmão mais velho, nas terras úmidas de Rabella)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Unha, Dente e Vísceras de Rinox, as armas restantes do colar e carnes assadas (Bife selado, Bife de carne de segunda selado, Bife de carne de primeira selado, Coxa assada, Sobrecoxa assada ou Ave inteira assada).",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Missão de santuário \"The Three Giant Brothers\": o irmão mais velho guarda um dos orbes do Santuário Tawa Jinn.",
+    "Fonte de partes de Rinox e de carnes já assadas.",
+    "Conta para a Medalha de honra: Rinox."
+  ],
+  "effects": [
+    "Tapas, socos, árvores arrancadas e Barris explosivos arremessados contra quem está fora de alcance."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Dormindo, permite que Link roube as armas do colar se chegar sem acordá-lo.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Hinox"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "As grevas de metal protegem os tornozelos dos golpes; o melhor momento para atacar é depois de atordoá-lo.",
+      "kind": "mecanica",
+      "sources": ["zw:Hinox", "zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha no olho atordoa. Com metade da vida ou menos, ele protege o olho com a mão.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hinox"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "O fogo destrói grevas de madeira (Rinox azul), mas as do Rinox preto são de metal; as fontes não descrevem o efeito do fogo nele."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre o Rinox preto."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "As grevas de metal conduzem eletricidade, e ataques elétricos deixam o Rinox preto atordoado.",
+      "applications": ["Usar Flechas eletrizantes ou armas elétricas para paralisá-lo e então golpear."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Hinox"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Como todo Rinox, nada por pouco tempo em água funda e depois se afoga.",
+      "kind": "mecanica",
+      "sources": ["zw:Hinox"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Ele é quem usa explosões: quando Link escala para fora do alcance, arremessa Barris explosivos. O efeito de explosões sobre o próprio Rinox não é detalhado.",
+      "side_effects": ["Escalar não é refúgio seguro contra este Rinox."],
+      "kind": "mecanica",
+      "sources": ["zw:Hinox"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Rinox preto."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Magnétis move objetos metálicos, mas as fontes não dizem se as grevas de metal presas ao Rinox preto podem ser agarradas."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Arranca árvores para usar como arma e, contra quem está no alto, arremessa Barris explosivos.",
+      "kind": "mecanica",
+      "sources": ["zw:Hinox", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Metal contra o dono",
+      "text": "O compendium destaca que as grevas de metal do Rinox preto \"conduzem eletricidade muito bem\". Na prática, uma descarga elétrica o atordoa, transformando a proteção dele em ponto fraco.",
+      "sources": ["comp", "zw:Hinox"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O mais velho dos três irmãos",
+      "text": "Na missão de santuário \"The Three Giant Brothers\", o Rinox mais velho, guardião de um dos orbes ancestrais, é um Rinox preto nas terras úmidas de Rabella, no Monte Taran.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Medalha de honra: Rinox",
+      "text": "A contagem de Kilton para a Medalha de honra: Rinox inclui todos os Rinox pretos, junto com os demais tipos.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Abrir a luta com uma Flecha eletrizante para atordoá-lo e emendar golpes fortes; manter distância dos barris quando ele estiver fora de alcance."
+  ],
+  "limitations": [
+    "Não se esconda no alto: ele responde com Barris explosivos.",
+    "Cobre o olho quando chega à metade da vida."
+  ],
+  "related": [
+    { "id": "botw_monster_hinox", "relation": "Variação vermelha" },
+    { "id": "botw_monster_blue_hinox", "relation": "Variação com grevas de madeira" },
+    { "id": "botw_monster_stalnox", "relation": "Versão esquelética" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Atordoa o Rinox preto pelas grevas de metal" },
+    { "id": "botw_object_explosive_barrel", "relation": "Arremessado por ele contra quem está no alto" },
+    { "id": "botw_material_hinox_toenail", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_hinox_tooth", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_hinox_guts", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_food_roasted_whole_bird", "relation": "Um dos assados que ele deixa" },
+    { "id": "botw_keyitem_medal_of_honor_hinox", "relation": "Prêmio de Kilton" }
+  ],
+  "capabilities": ["reage_eletricidade", "gera_explosao", "habilidade_especial"],
+  "verification_status": "verificado"
+}

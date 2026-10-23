@@ -1,0 +1,136 @@
+{
+  "id": "botw_material_swift_violet",
+  "summary": "Flor rica em vitalidade que brota em penhascos das Montanhas Gerudo e de Hebra. Cozida, dá Velocidade aumentada; 15 por peça levam o Conjunto de escalada e as Botas de areia e de neve ao nível máximo.",
+  "description": "A Violeta veloz floresce principalmente em encostas e penhascos — o compendium cita as Montanhas Gerudo e as Cordilheiras de Hebra —, o que costuma exigir escalada para colhê-la. Segundo o jogo, seus compostos nutritivos aumentam a velocidade de movimento quando cozida: os pratos de panela feitos com ela concedem Velocidade aumentada. Crua, não recupera corações.\n\nÉ também uma das flores mais pedidas pelas Grandes Fadas: o quarto e último nível de cada peça do Conjunto de escalada exige 15 Violetas velozes (mais 5 Asas de Morci ígneo), e o mesmo nível das Botas de areia e das Botas de neve pede outras 15 cada. Pode ser comprada por 40 rupias na loja Coral Reef, no Domínio Zora, e com o mercador ambulante Giro. Na Tinturaria Kochi, entra no corante roxo.",
+  "locations": [
+    "Penhascos e encostas das Montanhas Gerudo e das Cordilheiras de Hebra.",
+    "Lojas: Coral Reef, no Domínio Zora, e o mercador ambulante Giro (entre a Proxim Bridge e o Dueling Peaks Stable) — 40 rupias."
+  ],
+  "obtaining": [
+    "Escalar os penhascos onde ela floresce.",
+    "Comprar na Coral Reef ou com Giro."
+  ],
+  "uses": [
+    "Melhoria de armadura: 15 por peça (+5 Asas de Morci ígneo) no 4º nível de Bandana de escalada, Traje de escalada e Botas de escalada.",
+    "Melhoria de armadura: 15 no 4º nível das Botas de areia (+4 Vísceras de Molduga) e das Botas de neve (+2 Escamas de Naydra).",
+    "Pratos de Velocidade aumentada.",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante roxo na Tinturaria Kochi.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Cozida: Velocidade aumentada (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a flor no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a flor largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe uma versão assada da Violeta veloz na lista de comidas assadas, e as fontes não dizem o que acontece se ela for exposta ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-la numa fogueira; ela não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela, mesmo crescendo nas montanhas geladas de Hebra; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da flor na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a flor não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Velocidade aumentada. Mais unidades prolongam o efeito; combinada com Cenoura veloz, Agilimelo ou Grãos de lótus-fugaz, prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Crua, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": ["comp", "zw:Flower"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 10 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Setenta e cinco violetas no total",
+      "text": "O nível máximo do Conjunto de escalada consome 45 Violetas velozes (15 por peça), e as Botas de areia e as Botas de neve pedem mais 15 cada no último nível: 75 flores para completar todas essas melhorias.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Flor de penhasco para roupa de escalada",
+      "text": "A descrição do jogo diz que a flor nasce sobretudo em penhascos — e é justamente ela que fecha as melhorias do Conjunto de escalada, que acelera a escalada de Link.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Compre na Coral Reef ou com Giro para completar as 75 flores sem precisar escalar cada penhasco.",
+    "Combine com Cenouras velozes e Agilimelos para Velocidade aumentada de nível mais alto."
+  ],
+  "limitations": [
+    "Crua não cura nada.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ela não está documentado.",
+    "Cara para comprar (40 rupias cada)."
+  ],
+  "related": [
+    { "id": "botw_armorset_climbing_set", "relation": "4º nível: 15 flores + 5 Asas de Morci ígneo por peça" },
+    { "id": "botw_armor_climbers_bandanna", "relation": "4º nível de melhoria" },
+    { "id": "botw_armor_climbing_gear", "relation": "4º nível de melhoria" },
+    { "id": "botw_armor_climbing_boots", "relation": "4º nível de melhoria" },
+    { "id": "botw_armor_sand_boots", "relation": "4º nível: 4 Vísceras de Molduga + 15 flores" },
+    { "id": "botw_armor_snow_boots", "relation": "4º nível: 2 Escamas de Naydra + 15 flores" },
+    { "id": "botw_material_fire_keese_wing", "relation": "Acompanha a flor no 4º nível do Conjunto de escalada" },
+    { "id": "botw_material_swift_carrot", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_material_rushroom", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_elixir_hasty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante roxo" }
+  ],
+  "capabilities": ["velocidade"],
+  "verification_status": "parcial"
+}

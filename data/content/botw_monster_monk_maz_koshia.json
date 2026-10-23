@@ -1,0 +1,236 @@
+{
+  "id": "botw_monster_monk_maz_koshia",
+  "summary": "Monge Sheikah que conduz as provações do DLC 2 e é o chefe da Provação Final (4.000 de vida). Luta com técnicas de outros inimigos, se divide em nove cópias, cresce e dispara lasers; vencê-lo dá o Corcel de Hyrule zero.",
+  "description": "O Monge Maz Koshia, exclusivo do DLC 2 (The Champions' Ballad), é quem julga se o herói é digno de controlar uma Fera Divina, seguindo uma revelação da deusa Hylia, segundo o compendium. Ele aparece primeiro no Santuário da Ressurreição, entregando o Obliterador e mandando Link derrotar os grupos de monstros do Grande Planalto; depois das quatro canções dos Campeões, convoca Link de volta para a Provação Final. No fim do labirinto, levanta-se do pedestal, transporta os dois para uma plataforma no céu e luta como última etapa da provação.\n\nO combate tem quatro momentos. No início, usa versões próprias da Espada guardiã e do Arco de precisão: teleporta-se e ataca do alto como um Soldado Yiga, atira do ar com Flechas incendiárias, congelantes e eletrizantes, avança em disparadas como a Ira fulmínea de Ganon e usa a técnica Earthwake para criar gêiseres que seguem Link — eles ferem, mas também geram correntes ascendentes. Com 75% da vida, divide-se em nove cópias que atacam em conjunto; as oito falsas somem com um golpe, e a Câmera identifica a verdadeira. Com metade da vida, cresce e flutua: dispara lasers como os Guardiões (devolvê-los o atordoa), lança oito bolas de ferro com espinhos, pode inclinar a plataforma e depois chama uma tempestade de raios que atinge as bolas — basta levar uma delas para perto dele com Magnétis para que o próprio raio o atinja. Com um quarto da vida, volta ao chão, pisoteia quem chega perto dos pés e invoca duas cópias menores.\n\nDurante a luta, Bananas valentes largadas no chão o distraem uma vez, deixando-o vulnerável (com as cópias ativas, só a verdadeira se distrai). Ao ser vencido, encolhe, elogia Link e ativa a estrutura onde estão, revelando o Corcel de Hyrule zero, \"uma obra-prima de inovação\" destinada ao único herói verdadeiro. Depois disso, pode ser desafiado de novo quantas vezes Link quiser.",
+  "locations": [
+    "Provação Final, sob o Santuário da Ressurreição; a luta acontece numa plataforma flutuante acima do Grande Planalto (DLC 2).",
+    "Também conduz Link no Santuário da Ressurreição e nos Reinos ilusórios das Feras Divinas durante \"EX The Champions' Ballad\"."
+  ],
+  "obtaining": [
+    "Vencê-lo pela primeira vez concede a runa Corcel de Hyrule zero.",
+    "As revanches, iniciadas ao falar com ele no pedestal, não dão nova recompensa material."
+  ],
+  "uses": [
+    "Último desafio da missão principal \"EX The Champions' Ballad\".",
+    "Revanche ilimitada para quem quer treinar contra um chefe variado."
+  ],
+  "effects": [
+    "Ataques com espada e arco (flechas de fogo, gelo e eletricidade), teletransporte, gêiseres, cópias, lasers, bolas de ferro com espinhos, raios e pisões."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Depois da primeira vitória, falar com ele no pedestal inicia uma nova luta. Na fase final, chegar perto dos pés dele provoca um pisão que causa dano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Recebe golpes normalmente; na fase das cópias, cada uma das oito falsas desaparece com um único golpe.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Devolver um dos lasers que ele dispara na fase gigante o deixa atordoado temporariamente. A infobox também lista a Esquiva perfeita entre as fraquezas dele.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes descrevem as flechas que ele usa (incendiárias, congelantes e eletrizantes), mas não o efeito das flechas de Link sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "É vulnerável ao próprio raio: se uma bola de ferro com espinhos estiver perto dele quando a tempestade cair, o raio o atinge e o atordoa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Magnétis move as bolas de ferro com espinhos que ele invoca; levar uma até perto dele antes dos raios o atordoa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Pode ser colocado sob efeito de Estátis, ao contrário de Mestre Kohga.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Master Kohga"
+      ]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "Os gêiseres da técnica Earthwake criam correntes ascendentes utilizáveis com o Planador.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cenario",
+      "variant": "Bananas valentes",
+      "status": "confirmado",
+      "result": "Se Link largar Bananas valentes durante a luta, ele para de lutar para comê-las e fica vulnerável. Só funciona uma vez; na fase das cópias, só o verdadeiro se distrai.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "zw:Mighty Bananas"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na fase gigante, pode inclinar a plataforma antes de lançar as bolas de ferro, que rolam ladeira abaixo e caem da arena.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Ele usa Flechas incendiárias, mas as fontes não descrevem o efeito do fogo sobre ele."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Ele usa Flechas congelantes, mas o efeito de gelo sobre ele não é descrito."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "A luta acontece numa plataforma no céu, sem água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "A Câmera revela o verdadeiro",
+      "text": "Quando ele se divide em nove, apenas o Maz Koshia verdadeiro é identificado pela runa Câmera, o que evita desperdiçar golpes nas cópias.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Modo Mestre sem regeneração",
+      "text": "No Modo Mestre, Maz Koshia não regenera vida durante a fase das cópias.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "As letras do teletransporte",
+      "text": "Antes de se teletransportar, ele cria um anel de glifos na escrita Sheikah que diz \"RPTSKJRZZ\", as iniciais dos nove selos kuji-in (Rin, Pyō, Tō, Sha, Kai, Jin, Retsu, Zai, Zen). Os Soldados Yiga usam o mesmo texto, mas em letras hylianas.",
+      "sources": [
+        "zw",
+        "zw:Yiga Footsoldier"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ele lembra das derrotas",
+      "text": "Se Link perde e tenta de novo, Maz Koshia diz falas diferentes reconhecendo a nova tentativa, e a cena em que ele se levanta é pulada.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um repertório de inimigos",
+      "text": "Os ataques de Maz Koshia imitam outros adversários: o golpe descendente dos Soldados Yiga, as disparadas da Ira fulmínea de Ganon, a técnica Earthwake dos Espadachins Yiga e o laser dos Guardiões.",
+      "sources": [
+        "zw",
+        "zw:Yiga Blademaster"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar Bananas valentes para a fase mais perigosa, já que a distração só funciona uma vez.",
+    "Usar a Câmera na fase das cópias e Magnétis nas bolas de ferro antes dos raios."
+  ],
+  "limitations": [
+    "Exclusivo do DLC 2, depois de concluir as quatro canções dos Campeões.",
+    "A distração com bananas só funciona uma vez por luta."
+  ],
+  "related": [
+    {
+      "id": "botw_rune_master_cycle_zero",
+      "relation": "Recompensa por vencê-lo"
+    },
+    {
+      "id": "botw_weapon_one_hit_obliterator",
+      "relation": "Arma que ele entrega no começo das provações"
+    },
+    {
+      "id": "botw_material_mighty_bananas",
+      "relation": "Distrai o monge uma vez"
+    },
+    {
+      "id": "botw_rune_camera",
+      "relation": "Identifica a cópia verdadeira"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Leva as bolas de ferro até ele"
+    },
+    {
+      "id": "botw_monster_yiga_footsoldier",
+      "relation": "Compartilha o golpe descendente e as letras do teletransporte"
+    },
+    {
+      "id": "botw_monster_thunderblight_ganon",
+      "relation": "Disparadas e truque do metal com raios semelhantes"
+    },
+    {
+      "id": "botw_monster_master_kohga",
+      "relation": "Outro Sheikah chefe; ao contrário dele, Maz Koshia pode ser parado por Estátis"
+    },
+    {
+      "id": "botw_weapon_guardian_sword",
+      "relation": "Ele usa uma versão própria"
+    },
+    {
+      "id": "botw_bow_phrenic_bow",
+      "relation": "Ele usa uma versão própria"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "gera_gelo",
+    "gera_eletricidade",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

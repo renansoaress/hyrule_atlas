@@ -1,0 +1,49 @@
+{
+  "name": "hyrule-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Hyrule Atlas — enciclopédia offline de The Legend of Zelda: Breath of the Wild em português brasileiro",
+  "type": "module",
+  "scripts": {
+    "predev": "npm run dados",
+    "dev": "vite",
+    "build": "node scripts/build-all.mjs",
+    "build:strict": "node scripts/build-all.mjs --strict",
+    "import:fontes": "node scripts/import/compendium.mjs && node scripts/import/zeldawiki-cargo.mjs && node scripts/import/ptbr-names.mjs",
+    "inventario": "node scripts/build/inventory.mjs && node scripts/import/zeldawiki-pages.mjs && node scripts/build/source-bundles.mjs",
+    "imagens": "node scripts/images/fetch-images.mjs && node scripts/images/optimize-images.mjs",
+    "dados": "node scripts/build/names.mjs && node scripts/build/build-data.mjs",
+    "validar:fichas": "node scripts/validate/content.mjs",
+    "validar": "node scripts/validate/validate.mjs",
+    "relatorios": "node scripts/report/coverage.mjs && node scripts/report/credits.mjs",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "typecheck": "tsc -p tsconfig.json",
+    "pretest": "npm run dados",
+    "deploy": "node scripts/deploy/deploy.mjs",
+    "deploy:build": "node scripts/deploy/deploy.mjs --build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "fflate": "^0.8.2",
+    "jsdom": "^25.0.1",
+    "sharp": "^0.33.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renansoaress/hyrule_atlas.git"
+  },
+  "homepage": "https://botw.renans.dev"
+}

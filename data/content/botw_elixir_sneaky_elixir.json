@@ -1,0 +1,93 @@
+{
+  "id": "botw_elixir_sneaky_elixir",
+  "summary": "Elixir de Furtividade aumentada feito com Vaga-lume do poente: abafa os passos para Link se aproximar de monstros e animais sem ser notado. Tem três níveis, mas correr continua fazendo barulho.",
+  "description": "O Elixir discreto acalma os nervos e silencia os passos de Link, nas palavras do jogo, permitindo circular sem ser detectado por monstros e animais. O efeito tem três níveis — o máximo de furtividade possível no jogo —, alcançados com seis estrelas (nível médio) ou nove (nível alto). O Vaga-lume do poente, único bicho que o produz, vale uma estrela e soma 2:00 de duração; ele brilha à noite em Necluda Ocidental e na Grande Floresta de Hyrule.\n\nPara passar de nível é preciso ingredientes discretos de refeição: Princesa plácida (três estrelas), Silencimelo e Truta discreta (duas), Beladona azul e Caramujo discreto (uma). A furtividade facilita Ataques-surpresa, a captura de cavalos e criaturas e trechos de infiltração como o Esconderijo do Clã Yiga; ainda assim, correr produz ruído em qualquer nível de furtividade.",
+  "locations": [
+    "Vaga-lumes do poente: voam à noite, principalmente em Necluda Ocidental e na Grande Floresta de Hyrule."
+  ],
+  "obtaining": [
+    "Cozinhar um Vaga-lume do poente com pelo menos uma parte de monstro.",
+    "Beedle vende Vaga-lumes do poente por 10 rupias."
+  ],
+  "uses": [
+    "Chegar por trás de inimigos para um Ataque-surpresa (dano de 8 vezes o da arma).",
+    "Aproximar-se de cavalos selvagens, Fadas, sapos e outras criaturas ariscas.",
+    "Infiltração no Esconderijo do Clã Yiga."
+  ],
+  "effects": [
+    "Furtividade aumentada em até três níveis, por tempo limitado (máximo de 30:00)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Reduz o ruído dos passos de Link durante o efeito, dificultando que monstros e animais o detectem.",
+      "side_effects": ["Comer outro prato com efeito diferente cancela a furtividade."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Com o efeito ativo, fica mais fácil chegar perto de monstros, cavalos e criaturas sem ser notado; correr anula a vantagem, pois sempre faz barulho.",
+      "conditions": ["Andar ou agachar; nunca correr."],
+      "side_effects": ["O Centaleão do Monte Ploymus consegue ouvir Link mesmo com três níveis de furtividade."],
+      "applications": ["Ataque-surpresa em acampamentos; montar cavalos selvagens sem que fujam."],
+      "kind": "mecanica",
+      "sources": ["zw:Stealth", "zw:Sprinting", "zw:Lynel"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Vaga-lume do poente (★, +2:00) + parte de monstro; seis estrelas dão o nível médio e nove, o alto.",
+      "conditions": [
+        "Ingredientes discretos: Princesa plácida (★★★), Silencimelo (★★), Truta discreta (★★), Beladona azul (★) e Caramujo discreto (★), cada um com +2:00."
+      ],
+      "side_effects": ["Ingredientes de outro efeito geram Comida duvidosa."],
+      "applications": ["Vaga-lume + parte de monstro + três Princesas plácidas somam 10 estrelas, acima das nove do nível alto."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço pela regra geral dos elixires (soma dos ingredientes × 1,5 a 2,8, arredondada para a dezena acima).",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Chuva e grama alta ajudam",
+      "text": "Independentemente do elixir, a chuva abafa os passos e a grama alta esconde Link; somados ao efeito, tornam a aproximação ainda mais segura.",
+      "sources": ["zw:Stealth", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Vaga-lumes para Lasli",
+      "text": "Na Vila Hateno, Lasli lamenta não poder caçar vaga-lumes à noite por causa do perigo nas estradas. Na missão \"By Firefly's Light\", soltar cinco Vaga-lumes do poente diante dela rende 50 rupias.",
+      "sources": ["zw:Sunset Firefly"]
+    }
+  ],
+  "advanced_uses": [
+    "Com o Conjunto furtivo, a furtividade já chega ao nível máximo; o elixir serve para quem não tem o conjunto ou quer usar outra armadura."
+  ],
+  "limitations": [
+    "Correr sempre faz barulho, qualquer que seja o nível.",
+    "Ingredientes discretos de nível alto, como a Princesa plácida, são raros."
+  ],
+  "related": [
+    { "id": "botw_creature_sunset_firefly", "relation": "Único bicho que produz o elixir (★, +2:00)" },
+    { "id": "botw_material_silent_princess", "relation": "Ingrediente discreto mais forte (★★★)" },
+    { "id": "botw_material_silent_shroom", "relation": "Ingrediente discreto (★★)" },
+    { "id": "botw_creature_stealthfin_trout", "relation": "Ingrediente discreto (★★)" },
+    { "id": "botw_material_blue_nightshade", "relation": "Ingrediente discreto (★)" },
+    { "id": "botw_creature_sneaky_river_snail", "relation": "Ingrediente discreto (★)" },
+    { "id": "botw_armorset_stealth_set", "relation": "Conjunto com Furtividade aumentada" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "Ataque que a furtividade facilita" },
+    { "id": "botw_mechanic_rain", "relation": "A chuva também abafa os passos" }
+  ],
+  "capabilities": ["furtividade"],
+  "verification_status": "verificado"
+}

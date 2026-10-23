@@ -1,0 +1,58 @@
+{
+  "id": "botw_food_copious_fried_wild_greens",
+  "summary": "Versão farta da Fritada de ervas: exige quatro tipos diferentes de legumes, ervas ou flores. Pela variedade obrigatória, nunca tem efeito — só recupera vários corações.",
+  "description": "A Fritada farta de ervas surge quando quatro tipos diferentes de legumes, ervas ou flores vão juntos para a panela. A descrição do jogo fala de um prato saudável de verduras mistas cozidas em fogo alto. É a versão farta (Copious) da Fritada de ervas, que aceita uma ou várias plantas do mesmo grupo.\n\nSegundo o Zelda Wiki, a variedade e a quantidade de ingredientes exigidas tornam impossível dar efeito a este prato: só existe a versão comum, que recupera vários corações. Essa é a diferença em relação à Fritada de ervas simples, que sai nutritiva, veloz, blindada e assim por diante conforme a planta usada.",
+  "obtaining": [
+    "Cozinhar numa Panela quatro tipos diferentes de legumes, ervas ou flores."
+  ],
+  "uses": [
+    "Cura de vários corações sem efeito adicional, aproveitando plantas variadas."
+  ],
+  "effects": [
+    "Somente a versão comum: recupera vários corações; não há versão com efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações, sem nenhum efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não há segredo conhecido além da regra dos quatro tipos diferentes de planta; as fontes não informam a quantidade exata de corações nem o preço de venda.",
+  "limitations": [
+    "Não aceita efeitos, mesmo usando plantas com efeito.",
+    "Com menos de quatro tipos diferentes de planta, o resultado é a Fritada de ervas."
+  ],
+  "related": [
+    {
+      "id": "botw_food_fried_wild_greens",
+      "relation": "Versão simples, que pode ter efeito"
+    },
+    {
+      "id": "botw_food_copious_mushroom_skewers",
+      "relation": "Outro prato farto sem efeito possível"
+    },
+    {
+      "id": "botw_food_copious_meat_skewers",
+      "relation": "Prato farto que aceita efeito"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "parcial"
+}

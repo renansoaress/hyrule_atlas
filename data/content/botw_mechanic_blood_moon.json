@@ -1,0 +1,123 @@
+{
+  "id": "botw_mechanic_blood_moon",
+  "summary": "À meia-noite de certas noites o céu fica vermelho e a Malícia revive quase todos os inimigos e repõe as armas do mapa — mas não materiais, minérios nem caixas. Entre 23h30 e 0h15 o cozimento ganha bônus crítico.",
+  "description": "A Lua de sangue marca o pico do poder de Ganon, a Calamidade. Às 23h30 a Malícia começa a subir do chão; às 23h50 o céu fica vermelho e as nuvens correm; à meia-noite uma cena mostra a lua vermelha e os monstros renascendo, e Zelda avisa Link telepaticamente. A lua aparece sempre cheia, qualquer que seja a fase real. O mecanismo é um cronômetro de tempo real de jogo: 168 minutos (cerca de 7 dias no jogo), contados desde a saída do Santuário da Ressurreição e verificados à meia-noite; estourado o limite, a Lua de sangue fica marcada para a noite seguinte.\n\nO que ela repõe: quase todos os inimigos derrotados (inclusive Guardiões batedores dos santuários), as armas largadas no mundo ou empunhadas por inimigos, as Poças de Malícia, os falsos viajantes do Clã Yiga, os bifes nas fogueiras dos acampamentos e a capacidade de cada Octoroc rochoso de restaurar armas. O que ela não repõe: materiais, depósitos de minério, caixas, barris, árvores, animais, chefes de história como Mestre Kohga e obstáculos. Durante o período de 23h30 a 0h15, cozinhar dá bônus crítico; o detalhe exato diverge entre as páginas do Zelda Wiki (ver limitações).",
+  "locations": [
+    "Todo o mundo aberto de Hyrule. Não acontece dentro de santuários, Feras Divinas, Castelo de Hyrule, Esconderijo do Clã Yiga, nem no Santuário dos Monges da Espada."
+  ],
+  "obtaining": [
+    "Ocorre sozinha a cada 168 minutos de tempo real de jogo (fora de menus e telas de carregamento), na meia-noite seguinte à verificação.",
+    "Hino, no Estábulo Dueling Peaks, prevê a Lua de sangue: perguntado sobre a lua da noite, diz que sente que algo vai acontecer."
+  ],
+  "uses": [
+    "Repor armas e monstros para coletar partes de monstro e equipamentos.",
+    "Cozinhar com bônus crítico entre 23h30 e 0h15.",
+    "Fazer surgir o santuário Mijah Rokee na missão \"Under a Red Moon\"."
+  ],
+  "effects": [
+    "Reaparecimento de inimigos e armas; período de 45 minutos com efeitos especiais (23h30–0h15)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Às 23h30 a Malícia sobe do chão, às 23h50 o céu avermelha e à meia-noite a cena da Lua de sangue revive os monstros. O cronômetro recomeça em seguida.",
+      "conditions": [
+        "Link precisa ter deixado o Grande Planalto e estar no mundo aberto.",
+        "Ficam bloqueadas: dentro de santuários e Feras Divinas, no Castelo de Hyrule, no Esconderijo do Clã Yiga, durante as batalhas de história de Vah Medoh, Vah Ruta e Vah Naboris, contra Ganon, Besta Sombria, no trecho do Obliterador da DLC e sempre que salvar e teletransportar estiverem desabilitados (cenas, minijogos)."
+      ],
+      "side_effects": ["Dormir ou esperar na fogueira numa noite marcada não impede a Lua de sangue; fazer isso todas as noites não a adianta e até a atrasa, pois o cronômetro para nas cenas."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Quase todo inimigo derrotado renasce onde estava, inclusive os Guardiões não corrompidos dos santuários. Não renascem inimigos gerados dinamicamente (certos Stal, enxames de Morci, membros do Clã Yiga), chefes de história e alguns casos específicos, como os Espadachins Yiga do esconderijo e as Sentinelas de Vah Rudania.",
+      "side_effects": ["A Lua de sangue comum não recupera a vida de inimigos feridos."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "variant": "armas",
+      "status": "confirmado",
+      "result": "Armas largadas no mundo ou empunhadas por inimigos reaparecem, desde que não estejam na algibeira nem nos suportes da casa de Link. Os bifes selados das fogueiras dos acampamentos também voltam.",
+      "produces": ["botw_food_seared_steak"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "variant": "materiais e objetos",
+      "status": "sem_efeito",
+      "result": "Materiais, depósitos de minério, caixas de madeira, barris, árvores, rochas, animais e obstáculos não dependem da Lua de sangue: cada material tem 1% de chance por minuto real de reaparecer quando Link não está na mesma área do mapa.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Cozinhar entre 23h30 e 0h15 da noite de Lua de sangue dá bônus crítico ao prato. A página da Lua de sangue diz que a chance aumenta perto da meia-noite; a página de culinária de BOTW afirma que o bônus é garantido.",
+      "side_effects": ["Divergência entre fontes sobre o bônus ser garantido ou apenas mais provável."],
+      "applications": ["Preparar elixires e pratos importantes perto da meia-noite de uma Lua de sangue."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild", "jogo"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "confirmado",
+      "result": "A Lua de sangue renova a capacidade de cada Octoroc rochoso de restaurar e limpar armas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Rock Octorok"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue forçada (\"panic\")",
+      "text": "Quando a memória do jogo enfrenta problemas para carregar recursos, pode ocorrer uma Lua de sangue forçada, a qualquer hora. Ela recarrega toda a cena como uma tela de carregamento: revive inimigos e armas e devolve a vida perdida pelos inimigos — já aconteceu até durante a luta contra Ganon, a Calamidade. Não altera o cronômetro normal e não traz o bônus de cozimento, o comportamento de Hino nem o santuário Mijah Rokee.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Hino, o estudioso da lua",
+      "text": "Hino, do Estábulo Dueling Peaks, é a principal fonte sobre o fenômeno. Entre 23h30 e 0h15 de uma Lua de sangue ele parece enlouquecer e corre em círculos gritando.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Exceção de Vah Rudania",
+      "text": "Ao contrário das outras três Feras Divinas, a Lua de sangue pode acontecer durante a batalha de Vah Rudania com Yunobo; nesse caso, as Sentinelas não renascem, mas os Moblins pretos da área sim.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rumor do livro de receitas",
+      "text": "O livro \"Chef Aurie Taamu, Vol. 2\" comenta que usar mais ingredientes que o normal reforça os efeitos e que \"a luz da lua vermelha\" teria efeito positivo na culinária.",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar perto de uma Panela na noite de Lua de sangue e cozinhar entre 23h30 e 0h15 para conseguir o bônus crítico em elixires caros.",
+    "Usar a Lua de sangue para voltar a acampamentos com armas boas (como as de Centaleão) depois de derrotá-los.",
+    "Na missão \"Under a Red Moon\", ficar no pedestal de Washa's Bluff nesse período faz surgir o santuário Mijah Rokee."
+  ],
+  "limitations": [
+    "Divergência entre fontes: a página da Lua de sangue fala em chance crescente de bônus de cozimento; a de culinária, em bônus garantido.",
+    "Não repõe materiais nem minérios.",
+    "Lua de sangue comum não cura inimigos feridos."
+  ],
+  "related": [
+    { "id": "botw_monster_calamity_ganon", "relation": "Origem da Malícia da Lua de sangue" },
+    { "id": "botw_mechanic_cooking", "relation": "Bônus crítico entre 23h30 e 0h15" },
+    { "id": "botw_monster_rock_octorok", "relation": "Capacidade de restaurar armas renovada" },
+    { "id": "botw_food_seared_steak", "relation": "Bifes dos acampamentos reaparecem" },
+    { "id": "botw_monster_guardian_scout_i", "relation": "Guardiões de santuário também renascem" },
+    { "id": "botw_monster_bokoblin", "relation": "Exemplo de inimigo que renasce" },
+    { "id": "botw_monster_master_kohga", "relation": "Chefe que não renasce" }
+  ],
+  "capabilities": [],
+  "verification_status": "a_verificar"
+}

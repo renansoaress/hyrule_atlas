@@ -1,0 +1,151 @@
+{
+  "id": "botw_mechanic_temperature",
+  "summary": "Termômetro no canto inferior direito: abaixo de 0 °C e acima de 40 °C Link perde corações devagar; abaixo de -10 °C e acima de 50 °C, depressa. Perto de lava, a Tabuleta marca ERROR e Link e a madeira pegam fogo.",
+  "description": "A temperatura vale em toda Hyrule e é mostrada por um medidor no canto inferior direito da tela; o mapa da Tabuleta Sheikah exibe o valor exato. Os limites são fixos: abaixo de 0 °C há o frio básico, que fere Link lentamente, e abaixo de -10 °C o frio avançado, que fere mais rápido. Acima de 40 °C começa o calor básico e, acima de 50 °C (nas Zonas extremamente quentes do Deserto Gerudo), o calor avançado. Perto de lava, o calor passa tanto do normal que a Tabuleta dá \"ERROR\", e Link e qualquer equipamento de madeira começam a pegar fogo — o clima escaldante de Eldin, que exige Proteção contra chamas, não Resistência ao calor.\n\nPara evitar o dano, Link pode ir para uma área amena, entrar na água nos lugares quentes, equipar uma arma elemental, vestir certas armaduras ou comer pratos com efeito. A temperatura muda com o local e a hora do dia, e o ambiente também transforma ingredientes: no clima escaldante, comida largada no chão assa sozinha; no clima gelado e na água gelada, carnes e peixes congelam; ovos jogados em fontes termais viram ovos cozidos.",
+  "locations": [
+    "Calor: Deserto Gerudo de dia (o sul e o oeste exigem dois níveis de Resistência ao calor).",
+    "Frio: Monte Hylia, Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo e o topo de lugares altos, como as Torres Sheikah de Akkala e do deserto e o Castelo de Hyrule.",
+    "Clima escaldante: Cânion de Eldin e Montanha da Morte, a partir do Lago Medingo (um nível de Proteção contra chamas) e, com dois níveis, na Mina Norte Abandonada e além da Ponte de Eldin.",
+    "A Cidade Gerudo e o Bazar Kara Kara protegem do calor o tempo todo."
+  ],
+  "obtaining": [
+    "Mecânica sempre ativa fora de santuários com clima próprio."
+  ],
+  "uses": [
+    "Planejar viagens: escolher roupas, armas e pratos antes de entrar no deserto, nas montanhas ou em Eldin.",
+    "Assar e congelar ingredientes sem Panela."
+  ],
+  "effects": [
+    "Dano lento no nível básico e rápido no nível avançado de calor ou frio.",
+    "Combustão de Link e da madeira perto de lava e no clima escaldante sem proteção."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "O medidor no canto inferior direito mostra a temperatura; abrir o mapa da Tabuleta Sheikah dá o valor exato. Ela varia com o local e a hora do dia.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Acima de 40 °C Link perde corações devagar; acima de 50 °C, mais rápido. Sombra, água e roupas próprias para calor evitam o dano; nas Zonas extremamente quentes são necessários dois níveis de Resistência ao calor.",
+      "applications": ["Atravessar o deserto de dia com o Conjunto voe do deserto ou o Elixir refrescante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Heat", "zw:Extremely Hot Zone", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "lava e clima escaldante",
+      "status": "confirmado",
+      "result": "Perto de lava a Tabuleta marca ERROR; Link pega fogo sem Proteção contra chamas, e armas, arcos e escudos de madeira equipados queimam até virar cinzas. Qualquer flecha retesada ali pega fogo, e Flechas explosivas explodem na hora.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Abaixo de 0 °C Link treme e perde corações devagar; abaixo de -10 °C, mais rápido. Roupas quentes, pratos picantes, uma fogueira ou uma Tocha acesa evitam o dano.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Freezing Climate", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Nos lugares quentes, entrar na água protege do calor. Já a água gelada dos climas frios tira meio coração a cada 0,5 s, sem nenhuma proteção possível; fontes termais curam meio coração a cada 2 s com Link imerso até a cintura.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Heat", "zw:Cold Water", "zw:Hot Spring"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Armaduras e armas mudam a tolerância: Conjunto voe do deserto (calor), Gibão aquecido e Conjunto de pluma nevada (frio), Conjunto antichamas (clima escaldante). Espada álgida e Varinha de gelo equivalem a um nível de Resistência ao calor (sem efeito em Eldin); Espada flamejante e Varinha de fogo dão um nível de Resistência ao frio. O Traje Gerudo imita um nível de Resistência ao calor e soma com outro.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Desert Voe Set", "zw:Warm Doublet", "zw:Snowquill Set", "zw:Frostblade", "zw:Ice Rod", "zw:Flameblade", "zw:Fire Rod", "zw:Set Bonus"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Pratos e elixires picantes dão Resistência ao frio; refrescantes, Resistência ao calor; corta-fogo, Proteção contra chamas. Comida congelada dá 1:00 de Resistência ao calor de nível 1.",
+      "kind": "mecanica",
+      "sources": ["zw:Heat", "zw:Freezing Climate", "zw:Scorching Climate", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "No clima escaldante, ingredientes largados no chão assam sozinhos; no clima gelado ou na água gelada, carnes e peixes congelam; Ovos jogados em fontes termais viram ovos cozidos.",
+      "produces": ["botw_food_seared_steak", "botw_food_baked_apple", "botw_food_icy_meat", "botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Frozen Food", "zw:Hot Spring", "zw:Hard-Boiled Egg"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "O calor de uma fogueira mantém Link aquecido no frio; estar perto de uma Panela acesa eleva levemente a temperatura dele.",
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks", "zw:Cooking Pot"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Fogo protege do frio, e Flechas incendiárias emitem calor que ajuda a ficar aquecido.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire", "zw:Fire Arrow"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos glaciais criam nevascas que esfriam a área a ponto de ferir Link sem proteção; Feitiçanos meteóricos aquecem a área além do suportável sem roupas ou elixires refrescantes.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Wizzrobe", "zw:Meteo Wizzrobe"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Resistência ao frio tem só dois níveis",
+      "text": "A Resistência ao frio protege apenas do clima gelado, não de gelo nem da água gelada, e tem potência máxima de nível 2. O campo de treino de voo dos Arás, num clima gelado, exige justamente dois níveis.",
+      "sources": ["zw:Chill-Proof", "zw:Flight Range"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Marcos da Montanha da Morte",
+      "text": "Placas na Estrada da montanha medem o perigo em estrelas: o Marco nº 2 (rumo à Cidade Goron) indica uma estrela; os da Mina Norte Abandonada e da Ponte de Eldin indicam duas, com avisos como \"Não-Gorons, voltem ou queimem!\".",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ovo cozido na fonte termal",
+      "text": "Um Ovo jogado numa fonte termal vira ovo cozido (Hard-Boiled Egg), que recupera um coração e meio. No Castelo de Hyrule, um Korok aparece ao se deixar um Ovo no altar vazio cercado de ovos cozidos.",
+      "sources": ["zw:Hard-Boiled Egg", "zw:Hot Spring"]
+    }
+  ],
+  "advanced_uses": [
+    "Vestir o Traje Gerudo e beber um Elixir refrescante simples soma os dois níveis exigidos nas Zonas extremamente quentes.",
+    "Largar carnes no chão de Eldin para assá-las ou nas montanhas para congelá-las, obtendo comida com efeito de calor sem gastar Panela."
+  ],
+  "limitations": [
+    "Nada protege da água gelada.",
+    "Resistência ao calor não substitui a Proteção contra chamas em Eldin.",
+    "Armas de gelo não refrescam no clima escaldante."
+  ],
+  "related": [
+    { "id": "botw_elixir_chilly_elixir", "relation": "Resistência ao calor" },
+    { "id": "botw_elixir_spicy_elixir", "relation": "Resistência ao frio" },
+    { "id": "botw_elixir_fireproof_elixir", "relation": "Proteção contra chamas" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Roupas para o calor" },
+    { "id": "botw_armorset_gerudo_outfit", "relation": "Bônus equivalente a um nível de calor" },
+    { "id": "botw_armorset_snowquill_set", "relation": "Roupas para o frio" },
+    { "id": "botw_armor_warm_doublet", "relation": "Um nível de Resistência ao frio" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Proteção no clima escaldante" },
+    { "id": "botw_weapon_frostblade", "relation": "Refresca no calor ao ser equipada" },
+    { "id": "botw_weapon_flameblade", "relation": "Aquece no frio ao ser equipada" },
+    { "id": "botw_material_bird_egg", "relation": "Cozinha em fontes termais" },
+    { "id": "botw_food_icy_meat", "relation": "Carne congelada pelo frio" },
+    { "id": "botw_mechanic_fire", "relation": "Fogo aquece e o clima escaldante queima" },
+    { "id": "botw_mechanic_ice", "relation": "Congelamento, distinto do frio ambiente" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

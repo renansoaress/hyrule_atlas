@@ -1,0 +1,146 @@
+{
+  "id": "botw_material_fleet_lotus_seeds",
+  "summary": "Sementes de uma planta aquática das áreas alagadas, como a Palude de Lanayru. Cozidas, dão Velocidade aumentada; cruas curam meio coração. No fogo viram Grãos de lótus-fugaz tostados.",
+  "description": "Os Grãos de lótus-fugaz vêm de uma planta que cresce perto de águas profundas. Segundo o jogo, as raízes tiram nutrientes da água, e é isso que faz os pratos preparados com as sementes aumentarem a velocidade de movimento de Link (efeito Velocidade aumentada). Crus, recuperam meio coração; expostos ao fogo, viram Grãos de lótus-fugaz tostados, que curam 3/4 de coração e valem o dobro na venda, mas perdem o efeito.\n\nSão encontrados em áreas alagadas de Hyrule, como os arredores do santuário Ne'ez Yohma e toda a Palude de Lanayru, e vendidos pelo mercador ambulante Stamm. Para a cozinha, contam como fruta, e na Tinturaria Kochi entram no corante verde.",
+  "locations": [
+    "Áreas alagadas: arredores do santuário Ne'ez Yohma e Palude de Lanayru; o compendium cita também a Grande Nascente de Lanayru.",
+    "Loja: o mercador ambulante Stamm, que circula entre o South Akkala Stable e a Vila Tarrey (Tarrey Town), por 20 rupias."
+  ],
+  "obtaining": [
+    "Colher nas plantas que crescem junto à água.",
+    "Comprar com Stamm."
+  ],
+  "uses": [
+    "Pratos de Velocidade aumentada.",
+    "Receitas de fruta genéricas (Compota de frutas, Compota farta de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozidos: Velocidade aumentada (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Podem ser largados no chão; junto a uma fogueira ou no clima escaldante de Eldin, tostam sozinhos.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear as sementes largadas."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimados pelo fogo, viram Grãos de lótus-fugaz tostados, que recuperam 3/4 de coração.",
+      "side_effects": ["Perdem a Velocidade aumentada."],
+      "applications": ["Vender: tostados valem 8 rupias, contra 5 dos crus."],
+      "produces": ["botw_food_roasted_lotus_seeds"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largados junto a uma fogueira acesa, viram Grãos de lótus-fugaz tostados.",
+      "produces": ["botw_food_roasted_lotus_seeds"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, tostam ao serem largados no chão.",
+      "produces": ["botw_food_roasted_lotus_seeds"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não têm versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congelam; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Embora a planta cresça junto à água, as fontes não dizem se as sementes largadas flutuam."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; as sementes não são metálicas.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a elas."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concedem Velocidade aumentada. Mais unidades prolongam o efeito; combinadas com outros ingredientes de velocidade (Cenoura veloz, Agilimelo, Violeta veloz), prolongam e podem elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crus, recuperam meio coração e não dão velocidade.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendidos por 5 rupias; tostados, valem 8.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Velocidade tirada da água",
+      "text": "A descrição do jogo atribui o efeito às raízes da planta, que absorvem nutrientes da água profunda onde ela cresce.",
+      "sources": ["comp", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Tostados por dentro",
+      "text": "Segundo a descrição dos Grãos de lótus-fugaz tostados, basta descascar a pele para chegar ao centro macio e farelento.",
+      "sources": ["zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Misture com Cenouras velozes, Agilimelos ou Violetas velozes para obter Velocidade aumentada de nível mais alto do que usando só sementes."
+  ],
+  "limitations": [
+    "Crus ou tostados não dão Velocidade aumentada; só cozidos."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_lotus_seeds", "relation": "Resultado de expor as sementes ao fogo" },
+    { "id": "botw_material_swift_carrot", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_material_rushroom", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_material_swift_violet", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_elixir_hasty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_food_simmered_fruit", "relation": "Prato de fruta genérico" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante verde" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "velocidade"],
+  "verification_status": "verificado"
+}

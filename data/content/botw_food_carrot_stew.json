@@ -1,0 +1,109 @@
+{
+  "id": "botw_food_carrot_stew",
+  "summary": "Ensopado de cenoura com Leite fresco, Manteiga de cabra e Trigo de Tabantha. Com as duas cenouras sai a versão comum (11 corações, 120 rupias); com uma só, ganha o efeito dela.",
+  "description": "O Ensopado de cenoura leva uma cenoura (Cenoura veloz ou Cenoura tenaz), Leite fresco, Manteiga de cabra e Trigo de Tabantha. A descrição do jogo conta que o ensopado ficou muito tempo no fogo para realçar a doçura das cenouras. Como no Bolo de cenoura, a cenoura escolhida dá o efeito: a Cenoura tenaz rende a versão tenaz, que restaura e ultrapassa o Medidor de vigor (7 corações, 100 rupias), e a Cenoura veloz rende a versão veloz, com Velocidade aumentada de nível baixo (4 corações, 40 rupias).\n\nCom as duas cenouras juntas, os efeitos se anulam e sai o ensopado comum, que cura 11 corações e vale 120 rupias — mais do que qualquer versão com efeito. Comparado ao bolo, o ensopado troca a Cana-de-açúcar pelo Leite fresco e cura bem mais na versão comum (11 contra 7 corações).",
+  "locations": [
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cenoura veloz: cultivada por Steen na Vila Kakariko e vendida na loja da esposa dele, Trissa; também aparece no sopé do Monte Satori, atrás dos cavalos do Highland Stable e com Beedle no East Akkala Stable.",
+    "Cenoura tenaz: cresce na Malanya Spring, perto do pico do Monte Satori e na beira das Fontes da Grande Fada."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Cenoura veloz ou Cenoura tenaz + Leite fresco + Manteiga de cabra + Trigo de Tabantha."
+  ],
+  "uses": [
+    "Cura grande (11 corações) na versão comum, com as duas cenouras.",
+    "Vigor extra (Cenoura tenaz) ou Velocidade aumentada (Cenoura veloz).",
+    "Venda: de 40 a 120 rupias, conforme a versão."
+  ],
+  "effects": [
+    "Versão comum (as duas cenouras): recupera 11 corações, sem efeito.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — com Cenoura tenaz; 7 corações, 100 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Cenoura veloz; nível baixo, segundo a descrição do jogo; 4 corações, 40 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com as duas cenouras, recupera 11 corações, sem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com Cenoura tenaz, restaura e ultrapassa o Medidor de vigor (7 corações); com Cenoura veloz, dá Velocidade aumentada de nível baixo (4 corações).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões tenaz e veloz"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 120 rupias na versão comum feita com as duas cenouras e 70 rupias quando leva uma cenoura e outro ingrediente adicional; a versão tenaz vale 100 e a veloz, 40.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O ensopado comum é o melhor",
+      "text": "Ao contrário do habitual, a versão sem efeito é a que mais cura e a mais cara do prato: 11 corações e 120 rupias, contra 7 corações e 100 rupias da versão tenaz.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Juntar uma Cenoura veloz e uma Cenoura tenaz no ensopado transforma duas cenouras de efeito em uma das maiores curas sem efeito dos pratos com cenoura."
+  ],
+  "limitations": [
+    "O Zelda Wiki só cita as versões comum, tenaz e veloz."
+  ],
+  "related": [
+    {
+      "id": "botw_material_swift_carrot",
+      "relation": "Cenoura que gera a versão veloz"
+    },
+    {
+      "id": "botw_material_endura_carrot",
+      "relation": "Cenoura que gera a versão tenaz"
+    },
+    {
+      "id": "botw_food_carrot_cake",
+      "relation": "Mesma base de cenoura, com Cana-de-açúcar no lugar do leite"
+    },
+    {
+      "id": "botw_food_veggie_cream_soup",
+      "relation": "Outra receita de cenoura com Leite fresco (leva Halita, sem trigo e manteiga)"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

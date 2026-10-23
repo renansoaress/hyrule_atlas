@@ -1,0 +1,182 @@
+{
+  "id": "botw_material_giant_ancient_core",
+  "summary": "O material ancestral mais raro (200 rupias, 100 Mon); no chão, anel e núcleo giram sozinhos. O Arco e o Escudo ancestrais pedem um cada, e o último nível do Conjunto ancestral pede dois por peça.",
+  "description": "O Núcleo ancestral gigante é um enorme cristal de energia feito com tecnologia ancestral perdida; o jogo avisa que núcleos desse tamanho são achados raríssimos e que \"um pesquisador provavelmente saberia usá-lo\". Só os Guardiões persecutórios, altívagos e torretas podem deixá-lo, e mesmo assim raramente; a outra fonte são baús dentro de santuários. Nenhum comerciante o vende. Um detalhe visual distingue o item: quando é colocado no chão, o anel interno gira na horizontal e o núcleo gira na diagonal.\n\nRobbie é quem lhe dá uso. No Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala, o Arco ancestral e o Escudo ancestral pedem 1 núcleo gigante cada (com 10 Engrenagens, 15 Molas e 1.000 rupias). Na Fonte da Grande Fada, o 4º e último nível de cada peça do Conjunto ancestral e dos Elmos divinos pede 2 núcleos gigantes e um Fragmento de estrela. Na culinária, rende o mesmo que um Núcleo ancestral comum (3:10 de duração e +30% de crítico num elixir), apesar de valer mais que o dobro.",
+  "locations": [
+    "Guardiões persecutórios, altívagos e torretas (queda rara).",
+    "Baús do tesouro em santuários."
+  ],
+  "obtaining": [
+    "Derrotar Guardiões persecutórios, altívagos ou torretas.",
+    "Abrir baús em santuários."
+  ],
+  "uses": [
+    "Forno ancestral (Akkala): 1 núcleo gigante + 10 Engrenagens + 15 Molas + 1.000 rupias = Arco ancestral ou Escudo ancestral.",
+    "Melhorias na Fonte da Grande Fada: 2 por peça no 4º nível do Conjunto ancestral e dos quatro Elmos divinos (14 no total).",
+    "Elixires: cozido com um bicho, acrescenta 3:10 de duração e +30% de chance de crítico.",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 200 rupias, ou 100 Mon na Fang and Bone."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; nos elixires, prolonga a duração (3:10)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Colocado no chão, o anel interno passa a girar na horizontal e o núcleo gira na diagonal.",
+      "kind": "curiosidade",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "Forno ancestral",
+      "status": "confirmado",
+      "result": "É o componente raro do Arco ancestral e do Escudo ancestral no Forno ancestral de Robbie.",
+      "conditions": [
+        "Fornalha do laboratório de Akkala reacesa com a Chama azul (missão \"Robbie's Research\")."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ancient Oven",
+        "zw:Akkala Ancient Tech Lab"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um núcleo gigante largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Núcleo ancestral gigante ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um núcleo gigante largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do núcleo gigante ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do núcleo gigante à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o núcleo gigante afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "O núcleo é descrito como um cristal de energia; as fontes não informam se Magnétis o atrai."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um núcleo gigante largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Parte de monstro de grau alto: com pelo menos um bicho, forma um elixir, acrescenta 3:10 de duração e dá 30% de chance de bônus crítico. Cozido com qualquer outra coisa, resulta em Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 200 rupias ou trocado por 100 Mon na Fang and Bone, de Kilton.",
+      "sources": [
+        "zw",
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Desperdício na panela",
+      "text": "Para os elixires, o núcleo gigante é idêntico ao Núcleo ancestral comum e a qualquer outra parte de grau alto: 3:10 de duração e +30% de crítico. Como as partes do mesmo grau só diferem no preço, usá-lo num elixir joga fora 200 rupias.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O último nível do Conjunto ancestral",
+      "text": "O nível 4 de cada peça do Conjunto ancestral pede 2 núcleos gigantes e 1 Fragmento de estrela. Somando os quatro Elmos divinos, que seguem a mesma tabela, são 14 núcleos gigantes.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Priorize Guardiões persecutórios, altívagos e torretas quando estiver atrás de núcleos gigantes: os batedores e as Sentinelas não os deixam."
+  ],
+  "limitations": [
+    "Não é vendido por nenhum comerciante.",
+    "Não pode ser comido nem cozido com comida comum."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_ancient_bow",
+      "relation": "Pede 1 núcleo gigante no Forno ancestral"
+    },
+    {
+      "id": "botw_shield_ancient_shield",
+      "relation": "Pede 1 núcleo gigante no Forno ancestral"
+    },
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Pede 2 núcleos gigantes por peça no 4º nível"
+    },
+    {
+      "id": "botw_material_ancient_core",
+      "relation": "Versão menor, com o mesmo efeito em elixires"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Também exigido no 4º nível do Conjunto ancestral"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Pode deixá-lo ao ser destruído"
+    },
+    {
+      "id": "botw_monster_guardian_skywatcher",
+      "relation": "Pode deixá-lo ao ser destruído"
+    },
+    {
+      "id": "botw_monster_guardian_turret",
+      "relation": "Pode deixá-lo ao ser destruído"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,204 @@
+{
+  "id": "botw_monster_golden_moblin_mm",
+  "summary": "Exclusivo do Modo Mestre: o Moblin mais forte, com 1620 pontos de vida e resistência a eletricidade. Arremessa objetos e Koboblins durante a luta e pode deixar pedras preciosas.",
+  "description": "O Moblin dourado aparece só no Modo Mestre, incluído no Pacote de Conteúdo Adicional 1 (The Master Trials), como a variante mais forte da espécie. Tem 1620 pontos de vida e, segundo o compendium, seria um Moblin prateado que se transformou misteriosamente após ser atingido por um raio — daí a alta tolerância a ataques elétricos.\n\nUsa armas fortes, com bônus variados, e costuma arremessar objetos ou Koboblins em Link durante o combate. Pode deixar Chifre, Presa e Vísceras de Moblin e as pedras preciosas dos monstros prateados (Âmbar, Opala, Topázio, Rubi, Safira e Diamante). Como todo inimigo do Modo Mestre, regenera vida com o tempo, até um limite, e detecta Link com mais facilidade.",
+  "locations": [
+    "Apenas no Modo Mestre, em acampamentos de toda Hyrule, como topo da progressão de inimigos."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre, Presa e Vísceras de Moblin e pedras preciosas (Âmbar, Opala, Topázio, Rubi, Safira e Diamante).",
+    "Suas armas costumam ter bônus.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de armas com bônus e de pedras preciosas no Modo Mestre."
+  ],
+  "effects": [
+    "Golpes pesadíssimos; no Modo Mestre não há a proteção contra morte em um só golpe."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Exige muito dano: 1620 pontos de vida, com regeneração gradual (limitada) do Modo Mestre.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Master Mode"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Pedras atiradas por Moblins podem ser rebatidas com Defesa perfeita; o dourado também arremessa objetos e Koboblins.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin",
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado como outros inimigos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Arrow"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Pode ser congelado com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "É resistente a ataques elétricos, ligados pelo compendium à lenda do raio que o transformou.",
+      "applications": [
+        "Priorizar fogo, gelo ou explosões."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Moblins não nadam e se afogam em água funda.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Barris explosivos e Flechas explosivas causam dano; a explosão da flecha também incendeia o alvo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Barrel",
+        "zw:Bomb Arrow"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar a bomba.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos lançados com Magnétis o atingem.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Arremessa objetos do ambiente e Koboblins contra Link durante a luta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Moblin",
+      "status": "confirmado",
+      "result": "As máscaras de Moblin e de Majora fazem os Moblins ignorarem Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Moblins prateados atingidos por raios",
+      "text": "O compendium registra a crença de que os Moblins dourados seriam prateados transformados ao serem atingidos por um raio, o que explicaria a alta tolerância a eletricidade.",
+      "sources": [
+        "comp"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Regeneração do Modo Mestre",
+      "text": "No Modo Mestre os inimigos recuperam vida com o tempo, mas há um limite para essa recuperação. Contra os 1620 pontos de vida do Moblin dourado, pausas longas custam caro.",
+      "sources": [
+        "zw:Master Mode",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Atraí-lo para perto de água funda: o afogamento ignora a vida alta e a regeneração."
+  ],
+  "limitations": [
+    "Não existe no modo normal.",
+    "Resistente a eletricidade.",
+    "Regenera vida aos poucos."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Variante que ele supera; origem segundo a lenda"
+    },
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Forma básica"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Arremessado por ele"
+    },
+    {
+      "id": "botw_mechanic_master_mode",
+      "relation": "Modo em que aparece"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Parte de terceiro nível"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

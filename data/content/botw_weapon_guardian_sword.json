@@ -1,0 +1,184 @@
+{
+  "id": "botw_weapon_guardian_sword",
+  "summary": "Espada de lâmina de energia azul usada pelos Guardiões batedores 2.0 dos santuários de teste de força menor. Causa 1,3× de dano em Guardiões e Ganon, flutua e não conduz eletricidade, mas dura pouco.",
+  "description": "A Espada guardiã pertence ao equipamento de Guardião (Guardian Gear), as armas usadas pelos Guardiões batedores dos santuários. Sua lâmina de energia azul é produto de tecnologia ancestral, e o próprio jogo avisa que ela não é muito durável. Os Guardiões batedores 2.0 a empunham — principalmente nos santuários de \"A Minor Test of Strength\", mas também em vários outros santuários e nas Feras Divinas — e a deixam cair ao serem destruídos; no Modo Mestre, Guardiões batedores 3.0 também podem usá-la.\n\nPor ser tecnologia ancestral, causa dano extra em Guardiões: os parâmetros aplicam 1,3× contra todos os Guardiões e Guardiões batedores (inclusive pernas e hélices), contra Ganon, a Calamidade, Ganon, Besta Sombria e as Iras de Ganon. Não é metálica: flutua, não queima, não conduz eletricidade, não atrai raios e não pode ser erguida com Magnétis.",
+  "locations": [
+    "Santuários de \"A Minor Test of Strength\" (teste de força menor) e outros santuários e Feras Divinas onde há Guardiões batedores 2.0 armados.",
+    "Cânion de Eldin e Fronteira de Tabantha são as regiões citadas pelo compendium."
+  ],
+  "obtaining": [
+    "Destruir um Guardião batedor 2.0 armado com a espada: ele a deixa cair.",
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Guardião (série Breath of the Wild) com a runa amiibo.",
+    "Os Guardiões batedores dos santuários voltam a cada Lua de sangue, junto com suas armas, permitindo obter a espada de novo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma contra Guardiões e contra as Iras de Ganon nas Feras Divinas.",
+    "Arma segura em tempestades e contra inimigos elétricos, por não ser metálica."
+  ],
+  "effects": [
+    "Dano multiplicado por 1,3 contra Guardiões, Ganon, a Calamidade, Ganon, Besta Sombria e as Iras de Ganon."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "applications": [
+        "Com durabilidade baixa (17), o arremesso final é uma boa forma de aproveitar a espada antes que ela quebre."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis não consegue erguê-la.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Causa 1,3× de dano contra todos os Guardiões e Guardiões batedores (e suas pernas e hélices), Ganon, a Calamidade, Ganon, Besta Sombria e as Iras de Ganon. Guardiões batedores 2.0 a empunham e a derrubam.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Guardian Scout II"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Multiplicador menor que o da espada de Robbie",
+      "text": "As armas de Guardião usam um multiplicador de 1,3× contra os alvos ligados aos Guardiões e a Ganon, enquanto a Espada ancestral, fabricada por Robbie, usa 1,5× contra a mesma lista de alvos.",
+      "sources": [
+        "dm",
+        "zw:Ancient Short Sword"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Reposição na Lua de sangue",
+      "text": "A Lua de sangue revive quase todos os inimigos derrotados, inclusive os Guardiões batedores não corrompidos dos santuários, e devolve as armas que estavam com inimigos. Um santuário de teste de força pode ser revisitado para obter outra espada.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +3 a +5 (nível comum) ou +6 a +9 (nível dourado), bônus de durabilidade de +2 a +4 (ou +5 a +9 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usar a própria espada contra os Guardiões batedores do santuário: o dano extra encurta a luta contra eles."
+  ],
+  "limitations": [
+    "Pouco durável (17), como o próprio jogo avisa.",
+    "O dano extra só vale para Guardiões e as formas de Ganon."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_guardian_sword_plus",
+      "relation": "Versão melhorada (2.0)"
+    },
+    {
+      "id": "botw_weapon_guardian_sword_plus_plus",
+      "relation": "Versão máxima (3.0)"
+    },
+    {
+      "id": "botw_weapon_guardian_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_shield_guardian_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_weapon_ancient_battle_axe",
+      "relation": "Outra arma dos Guardiões batedores 2.0"
+    },
+    {
+      "id": "botw_monster_guardian_scout_ii",
+      "relation": "Empunha e derruba a espada"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Arma ancestral de Robbie, com multiplicador maior"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Revive os Guardiões batedores dos santuários"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

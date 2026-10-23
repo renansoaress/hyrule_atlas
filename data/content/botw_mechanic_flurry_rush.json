@@ -1,0 +1,76 @@
+{
+  "id": "botw_mechanic_flurry_rush",
+  "summary": "Sequência de golpes em câmera lenta liberada por uma Esquiva perfeita: 7 golpes com armas de uma mão, 4 com duas mãos e 9 com lanças. Se Link não acertar o inimigo a tempo, o Frenesi é cancelado.",
+  "description": "O Frenesi (Flurry Rush) é a recompensa da Esquiva perfeita. Depois de saltar no último instante, o tempo desacelera e Link pode atacar repetidamente em pouquíssimo tempo, enquanto o inimigo continua lento. Segundo o \"Diário de treinamento de Daruk\", a sensação vem do foco intenso de Link, para quem o tempo parece passar mais devagar.\n\nA quantidade de golpes é definida pela arma equipada no início da sequência: sete para armas de uma mão, quatro para armas de duas mãos e nove para lanças. Se Link não acertar o inimigo dentro de um certo intervalo depois de iniciar o Frenesi, ele é cancelado e o tempo volta ao normal. Com arma de duas mãos, parar antes do quarto golpe deixa Link alguns instantes se recuperando.",
+  "locations": [
+    "Qualquer combate em que Link consiga uma Esquiva perfeita."
+  ],
+  "obtaining": [
+    "Executar uma Esquiva perfeita (salto lateral ou para trás no último instante) e atacar durante a câmera lenta."
+  ],
+  "uses": [
+    "Causar muito dano de uma vez a inimigos fortes.",
+    "Acabar rapidamente com Centaleões e Guardiões batedores nos santuários de combate."
+  ],
+  "effects": [
+    "Vários golpes em sequência com o inimigo desacelerado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Após a Esquiva perfeita, atacar durante a desaceleração do tempo dispara a sequência de golpes rápidos.",
+      "conditions": ["Acertar o inimigo dentro do intervalo após a esquiva; caso contrário, o Frenesi é cancelado."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Perfect Dodging", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Uma mão: 7 golpes; duas mãos: 4 golpes; lança: 9 golpes. Com duas mãos, sem o quarto golpe, Link precisa de um instante de recuperação.",
+      "kind": "mecanica",
+      "sources": ["zw:Perfect Dodging"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "durabilidade",
+      "status": "confirmado",
+      "result": "A arma pode quebrar no meio do Frenesi: o próprio Santuário Ta'loh Naeg prevê o caso de Link quebrar a última arma durante a sequência.",
+      "side_effects": ["Se a arma quebrar ao acertar, o golpe final é crítico, como toda quebra de arma."],
+      "kind": "mecanica",
+      "sources": ["zw:Ta'loh Naeg Shrine", "zw:Durability"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Funciona contra Centaleões, cuja maioria dos ataques pode ser esquivada com perfeição, e contra o Guardião batedor 2.0 do treino de Ta'loh Naeg.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel", "zw:Ta'loh Naeg Shrine"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Daruk explica o Frenesi",
+      "text": "No \"Diário de treinamento de Daruk\", o Campeão Goron conta que Link lhe disse que, às vezes, quando se concentra, sente o tempo desacelerar — a justificativa no enredo para o Frenesi.",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Entrar em combates difíceis com uma lança equipada para garantir nove golpes por Frenesi."
+  ],
+  "limitations": [
+    "Depende de uma Esquiva perfeita; não pode ser ativado de outra forma.",
+    "Armas de duas mãos rendem poucos golpes e exigem recuperação se a sequência for interrompida."
+  ],
+  "related": [
+    { "id": "botw_mechanic_perfect_dodge", "relation": "Requisito para iniciar o Frenesi" },
+    { "id": "botw_mechanic_critical_hit", "relation": "Quebrar a arma no Frenesi causa golpe crítico" },
+    { "id": "botw_weapon_travelers_sword", "relation": "Exemplo de arma de uma mão: 7 golpes" },
+    { "id": "botw_weapon_travelers_claymore", "relation": "Exemplo de arma de duas mãos: 4 golpes" },
+    { "id": "botw_weapon_travelers_spear", "relation": "Exemplo de lança: 9 golpes" },
+    { "id": "botw_monster_lynel", "relation": "Alvo clássico do Frenesi" }
+  ],
+  "capabilities": ["ataque", "habilidade_especial"],
+  "verification_status": "verificado"
+}

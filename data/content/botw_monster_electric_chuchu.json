@@ -1,0 +1,127 @@
+{
+  "id": "botw_monster_electric_chuchu",
+  "summary": "Chulchul com aura elétrica: o choque faz Link largar armas de metal e, se ele estiver com uma equipada, causa o dobro de dano. Depois de descarregar fica amarelo-escuro e pode ser golpeado sem risco por alguns segundos.",
+  "description": "O Chulchul elétrico é mais comum no Deserto Gerudo e em Necluda Oriental (o compendium cita as Montanhas Gerudo e Necluda Oriental) e pode ser invocado por Feitiçanos elétricos e do trovão. Tem uma aura de eletricidade: tocar nele ou ser atingido por ele dá choque em Link. Ao saltar sobre Link, solta uma descarga elétrica ao redor; se Link estiver com armas metálicas equipadas, ele as larga e recebe o dobro do dano.\n\nDepois de soltar o choque, o Chulchul entra num estado \"descarregado\", marcado por um amarelo mais escuro: nesse período não consegue dar novos choques e pode ser golpeado sem eletrocutar Link. Alguns segundos depois, recarrega. Se for derrotado carregado, explode numa descarga que eletrocuta tudo o que estiver vulnerável no raio — por isso o compendium recomenda lanças, flechas e outras armas de alcance, e uma dica do jogo sugere usar essa explosão para dar choque em monstros próximos. Deixa Geleca elétrica.",
+  "locations": [
+    "Montanhas Gerudo e Necluda Oriental, segundo o compendium; o Zelda Wiki o descreve como mais comum no Deserto Gerudo e em Necluda Oriental.",
+    "Invocado em combate por Feitiçanos elétricos e Feitiçanos do trovão."
+  ],
+  "obtaining": [
+    "Deixa Geleca elétrica.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte direta de Geleca elétrica.",
+    "Arma improvisada: a explosão elétrica ao morrer eletrocuta monstros próximos.",
+    "Registro no compendium (entrada nº 87)."
+  ],
+  "effects": [
+    "Choque elétrico; com arma metálica equipada, Link a larga e sofre dano dobrado."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpeá-lo carregado dá choque; com arma de metal, Link a larga e leva dano dobrado. No estado descarregado (amarelo-escuro), pode ser atacado sem risco.",
+      "applications": ["Esperar a descarga, então atacar durante os segundos em que ele está apagado."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas o derrotam a distância, longe da explosão elétrica — a abordagem que o compendium recomenda.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a ataques elétricos."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo nem a geleca resultante ao matá-lo com fogo."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo sobre o Chulchul elétrico."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de água sobre o Chulchul elétrico."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Ao morrer carregado, ele próprio explode numa descarga elétrica que eletrocuta tudo o que estiver vulnerável no raio.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota causa dano a inimigos, permitindo derrotá-lo sem contato.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interações específicas do Chulchul elétrico com o cenário."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "A explosão ao morrer eletrocuta monstros próximos; Feitiçanos elétricos e do trovão o invocam em combate.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Estado descarregado",
+      "text": "Depois de soltar o choque, o Chulchul elétrico fica amarelo-escuro, não consegue dar novos choques e pode ser golpeado sem eletrocutar Link. Alguns segundos depois ele se recarrega.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Bomba de faíscas",
+      "text": "Uma dica do jogo sugere atacar o Chulchul elétrico perto de outros monstros: ele explode em faíscas e dá choque nos vizinhos.",
+      "sources": ["zw:Tips and Tricks"]
+    }
+  ],
+  "advanced_uses": [
+    "Equipar armas de madeira ou de osso antes de enfrentá-lo de perto para não perder a arma de metal com o choque."
+  ],
+  "limitations": [
+    "Com armas metálicas equipadas, o choque causa o dobro de dano e derruba a arma."
+  ],
+  "related": [
+    { "id": "botw_monster_chuchu", "relation": "Forma comum" },
+    { "id": "botw_monster_fire_chuchu", "relation": "Variante de fogo" },
+    { "id": "botw_monster_ice_chuchu", "relation": "Variante de gelo" },
+    { "id": "botw_material_yellow_chuchu_jelly", "relation": "Espólio" },
+    { "id": "botw_monster_electric_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_monster_thunder_wizzrobe", "relation": "Pode invocá-lo" }
+  ],
+  "capabilities": ["gera_eletricidade", "eletrocuta_inimigos", "vence_rapido"],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "botw_food_fragrant_mushroom_saute",
+  "summary": "Cogumelos salteados com Tempero Goron, prato que Nellie, da Cidade Gerudo, faz quando está cansada. Cada cogumelo dá seu efeito; a versão comum usa Cogumelo hyliano.",
+  "description": "Os Cogumelos salteados aromáticos são feitos com Tempero Goron e qualquer cogumelo; segundo a descrição do jogo, o aroma do salteado de tempero e cogumelos dá água na boca. A versão comum sai com Cogumelo hyliano, o cogumelo sem efeito, ou com cogumelos de efeitos diferentes, que se anulam.\n\nAqui cada cogumelo corresponde a uma versão: Trufa nutritiva ou Trufona nutritiva (nutritiva), Energimelo (energizante), Cogumelo tenaz (tenaz), Agilimelo (veloz), Flamelo (picante), Aterramelo (isolante), Ferromelo (valente), Blindamelo (blindada), Silencimelo (discreta) e Glacimelo (refrescante).\n\nNa Cidade Gerudo, a idosa Nellie conta que a mãe dela dizia que pratos de cogumelo aliviam dores de cabeça fortes; por isso ela sempre prepara Cogumelos salteados aromáticos quando está cansada, e ensina a receita: Tempero Goron com qualquer cogumelo. Ela costuma ficar observando a loja de Ardin, que vende cogumelos.",
+  "locations": [
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge.",
+    "Nellie, que ensina a receita: na Cidade Gerudo, perto da loja de Ardin (General Store) em parte do dia."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Tempero Goron + qualquer cogumelo."
+  ],
+  "uses": [
+    "Prato de efeito com um único tipo de ingrediente principal; sobram três espaços para mais cogumelos.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Cogumelo hyliano ou cogumelos de efeitos diferentes): recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Trufa nutritiva ou Trufona nutritiva.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Energimelo.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — Cogumelo tenaz.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — Agilimelo.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Flamelo.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Aterramelo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Ferromelo.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Blindamelo.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Silencimelo.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Glacimelo."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O cogumelo usado define o efeito, numa correspondência direta cogumelo → versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O remédio de Nellie",
+      "text": "Nellie aprendeu com a mãe que pratos de cogumelo ajudam com dores de cabeça fortes e, sempre que se sente cansada, faz este salteado para si mesma.",
+      "sources": [
+        "zw",
+        "zw:Nellie"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o tempero ocupando um só espaço, cabem até quatro cogumelos do mesmo efeito, o que prolonga ou reforça o efeito do prato."
+  ],
+  "limitations": [
+    "Misturar cogumelos de efeitos diferentes anula o efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito, para a versão comum"
+    },
+    {
+      "id": "botw_food_herb_saute",
+      "relation": "Salteado com Tempero Goron e plantas"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Prato de cogumelos sem tempero"
+    },
+    {
+      "id": "botw_food_meat_and_mushroom_skewer",
+      "relation": "Cogumelos com carne"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

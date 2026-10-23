@@ -1,0 +1,98 @@
+{
+  "id": "botw_food_seafood_meuniere",
+  "summary": "Fruto do mar na manteiga com Trigo de Tabantha — vale qualquer um, menos Salmão nutritivo e pargos, que têm meunières próprias. O \"ingrediente secreto\" é muito amor.",
+  "description": "A Frutos do mar à meunière junta Trigo de Tabantha, Manteiga de cabra e um fruto do mar; o inventário descreve a manteiga envolvendo o fruto do mar fresco e diz que o ingrediente secreto é \"muito, muito amor\". Vale qualquer peixe, caranguejo ou caramujo, com três exceções: Salmão nutritivo, Pargo valente e Pargo blindado formam Salmão à meunière e Pargo à meunière, receitas testadas antes. Robalo hyliano ou Carpa tricolor (ou frutos do mar de efeitos diferentes) dão a versão comum.\n\nO efeito vem do fruto do mar: Robalo nutritivo ou Caramujo nutritivo (cura total com Corações extras), Robalo enérgico ou Caranguejo esperto (Recuperação de vigor), Truta rescaldada (Resistência ao frio), Truta voltaica (Resistência a choques), Carpa valente ou Caranguejo espadachim (Ataque aumentado), Carpa blindada ou Caranguejo couraçado (Defesa aumentada), Truta discreta ou Caramujo discreto (Furtividade aumentada) e Truta glacial (Resistência ao calor). Com Halita na panela, o prato vira Torta de peixe; com Leite fresco e um Caramujo nutritivo, Creme de mariscos.",
+  "obtaining": [
+    "Cozinhar numa Panela Trigo de Tabantha, Manteiga de cabra e um fruto do mar que não seja Salmão nutritivo nem pargo, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Meunière \"genérica\" para aproveitar o peixe ou caranguejo de efeito que estiver à mão.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pelo fruto do mar (ou por outro ingrediente de efeito): Corações extras, Recuperação de vigor, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do fruto do mar usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "salmão, pargo ou Halita",
+      "status": "confirmado",
+      "result": "Salmão nutritivo ou um pargo na panela mudam o prato para Salmão à meunière ou Pargo à meunière; Halita o transforma em Torta de peixe.",
+      "produces": [
+        "botw_food_salmon_meuniere",
+        "botw_food_porgy_meuniere",
+        "botw_food_fish_pie"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Deslizes na página do wiki",
+      "text": "A página do prato no Zelda Wiki troca os adjetivos de duas variantes (descreve a versão isolante como feita com \"outros ingredientes picantes\"); as descrições do jogo confirmam que a versão com Truta voltaica dá resistência a eletricidade e a com Truta rescaldada, resistência ao frio.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não aceita Salmão nutritivo nem pargos.",
+    "Halita na panela muda a receita para Torta de peixe."
+  ],
+  "related": [
+    {
+      "id": "botw_food_salmon_meuniere",
+      "relation": "Meunière exclusiva do Salmão nutritivo"
+    },
+    {
+      "id": "botw_food_porgy_meuniere",
+      "relation": "Meunière exclusiva dos pargos"
+    },
+    {
+      "id": "botw_food_fish_pie",
+      "relation": "Resultado ao acrescentar Halita"
+    },
+    {
+      "id": "botw_food_clam_chowder",
+      "relation": "Resultado com Leite fresco e Caramujo nutritivo"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito para a versão comum"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

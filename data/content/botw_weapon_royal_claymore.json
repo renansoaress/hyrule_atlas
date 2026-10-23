@@ -1,0 +1,209 @@
+{
+  "id": "botw_weapon_royal_claymore",
+  "summary": "Montante da guarda próxima da família real (ataque 52, durabilidade 40). Pendurado no colar de Rinox, deixado por Stalnox e usado por Moblins prateados; 5% de chance num Octoroc rochoso.",
+  "description": "O Montante real faz parte do Equipamento real, o conjunto de armas destinado à família real de Hyrule e à sua guarda pessoal. Segundo o jogo, seus golpes poderosos esmagam ao mesmo tempo o corpo e a determinação do adversário. Com 52 de ataque e 40 de durabilidade, é o topo da linha de montantes hylianos (do viajante, do soldado, do cavaleiro e real).\n\nAparece espalhado por Hyrule: pendurado nos colares dos Rinox, entre as armas deixadas por Stalnox (em especial o da prisão do Castelo de Hyrule, Lockup) e nas mãos de inimigos fortes, como Moblins prateados. Também há exemplares fixos na Torre de Woodland, na Colina Nero, no Castelo de Hyrule, em alguns santuários e nas Ruínas do Coliseu. Um Octoroc rochoso que limpe um Montante enferrujado tem 5% de chance de devolver um Montante real. Por ser de metal, conduz eletricidade, atrai raios, afunda e pode ser puxado com Magnétis.",
+  "locations": [
+    "Torre de Woodland (Woodland Tower) e Colina Nero (Nero Hill).",
+    "Castelo de Hyrule e alguns santuários.",
+    "Ruínas do Coliseu (Coliseum Ruins), apenas se três Feras Divinas tiverem sido concluídas.",
+    "O compendium lista a Fronteira de Tabantha e o Deserto Gerudo como locais comuns."
+  ],
+  "obtaining": [
+    "Roubar do colar de um Rinox (aproximando-se sem ser notado) ou recolhê-lo depois de derrotá-lo.",
+    "Derrotar Stalnox, especialmente o de Lockup, no Castelo de Hyrule, ou inimigos fortes como Moblins prateados.",
+    "Oferecer um Montante enferrujado a um Octoroc rochoso: 5% de chance de sair um Montante real.",
+    "Chance de surgir em baús dos amiibo de Link jovem (Super Smash Bros.) e de Link (Link's Awakening)."
+  ],
+  "uses": [
+    "Arma de duas mãos principal no meio e no fim do jogo.",
+    "Como espada, corta árvores; por ser metálico, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e fortes de duas mãos, sem escudo. O ataque carregado é o giro contínuo que gasta vigor e termina numa pancada para baixo; o peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Rinox e Stalnox",
+      "status": "confirmado",
+      "result": "Rinox o exibem nos colares — dá para roubá-lo sem acordá-los — e Stalnox o deixam ao serem derrotados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Hinox",
+        "zw:Stalnox"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "confirmado",
+      "result": "Um Montante enferrujado aspirado por um Octoroc rochoso volta como Montante real em 5% dos casos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "quem o empunha",
+      "status": "confirmado",
+      "result": "Inimigos de nível alto, como Moblins prateados, usam o montante.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +10, Durabilidade aumentada de +5 a +9 ou Acerto crítico; no nível dourado (amarelo): Ataque de +11 a +20, Durabilidade de +10 a +18 ou Lançamento longo (×1,5 a ×2). Com Ataque +20, chega a 72 — o mesmo do Montante da guarda real, com quase o triplo da durabilidade.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Furto no colar do Rinox",
+      "text": "Aproximando-se de um Rinox adormecido com furtividade, Link pode pegar as armas do colar sem ser detectado; se ele for derrotado, as armas que restarem no colar também ficam disponíveis.",
+      "sources": [
+        "zw:Hinox"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Recompensa variável no Coliseu",
+      "text": "O exemplar das Ruínas do Coliseu depende do progresso: ele aparece se apenas três Feras Divinas tiverem sido concluídas; com as quatro, o Zelda Wiki registra uma Grã-Espada flamejante nas mesmas ruínas.",
+      "sources": [
+        "zw",
+        "zw:Great Flameblade"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Leve Montantes enferrujados aos Octorocs rochosos de Eldin e repita até sair um Montante real; a capacidade de cada Octoroc se renova com a Lua de sangue."
+  ],
+  "limitations": [
+    "Metálico: perigoso em tempestades.",
+    "Sem escudo enquanto estiver empunhado."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_knights_claymore",
+      "relation": "Montante hyliano abaixo na linha"
+    },
+    {
+      "id": "botw_weapon_rusty_claymore",
+      "relation": "Pode virar Montante real num Octoroc rochoso"
+    },
+    {
+      "id": "botw_weapon_royal_guards_claymore",
+      "relation": "Montante da guarda real, mais forte e mais frágil"
+    },
+    {
+      "id": "botw_weapon_royal_broadsword",
+      "relation": "Arma de uma mão do Equipamento real"
+    },
+    {
+      "id": "botw_monster_hinox",
+      "relation": "Exibe o montante no colar"
+    },
+    {
+      "id": "botw_monster_stalnox",
+      "relation": "Deixa o montante ao ser derrotado"
+    },
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Empunha o montante"
+    },
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Pode convertê-lo a partir do enferrujado"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

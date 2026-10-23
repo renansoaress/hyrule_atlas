@@ -1,0 +1,254 @@
+{
+  "id": "botw_material_bird_egg",
+  "summary": "Ovo colhido nos ninhos das árvores ou derrubado por Cuccos assustados. Cru cura 1 coração; no fogo vira Ovo na fogueira e, numa fonte termal, vira ovo cozido — método exclusivo dos ovos.",
+  "description": "O Ovo é um ingrediente básico de omeletes e crepes que, segundo o jogo, pode ser pego nos ninhos das aves \"se você for furtivo\". Os ninhos ficam na copa das árvores grossas demais para serem derrubadas; também é possível comprá-lo nas lojas East Wind (Vila Hateno) e High Spirits Produce (Vila Kakariko) e com os mercadores Agus e Yammo, e os Cuccos às vezes deixam cair ovos quando são golpeados. Cru, recupera 1 coração.\n\nO ovo tem duas formas de preparo sem panela. Exposto ao fogo ou ao clima escaldante, vira Ovo na fogueira (1,5 coração), que fica \"um pouco mais borrachudo\" porque a casca retém a água. Largado numa fonte termal, vira ovo cozido (Hard-Boiled Egg), com a mesma cura — um método exclusivo dos ovos, segundo o Zelda Wiki. Na panela, é um ingrediente neutro de 1 coração e 1:30 de duração, que dá 10% de chance extra de bônus crítico, combina com qualquer outro ingrediente suplementar e, sozinho, já forma uma receita válida. Na Tinturaria Kochi, entra no corante amarelo.",
+  "locations": [
+    "Ninhos de aves na copa das árvores grossas de Toda Hyrule.",
+    "Lojas East Wind (Vila Hateno) e High Spirits Produce (Vila Kakariko); mercadores Agus (Vila Hateno–Dueling Peaks Stable) e Yammo (Tabantha Bridge Stable–Serenne Stable)."
+  ],
+  "obtaining": [
+    "Subir nas árvores e recolher os ovos dos ninhos.",
+    "Golpear um Cucco com arma ou flecha: ele foge e às vezes deixa cair um Ovo.",
+    "Comprar nas lojas e mercadores citados."
+  ],
+  "uses": [
+    "Cura imediata: 1 coração cru, 1,5 como Ovo na fogueira ou ovo cozido.",
+    "Receitas: Omelete (sozinho), Ovo frito com arroz, Omelete de cogumelos, Omelete de legumes, Omelete de caranguejo com arroz, Pudim de ovos, Torta de ovos, Crepe simples, Crepe de mel, Crepe de framboesa, Pilaf de coxa, Pilaf de sobrecoxa e Pilaf de ave inteira.",
+    "Abrir um Korok na Passagem Oeste do Castelo de Hyrule, largando um Ovo no altar vazio ladeado por ovos cozidos.",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 1:30 à duração e +10% de chance de crítico."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Ovo na fogueira, que recupera 1,5 coração; a casca retém a água e deixa o ovo um pouco mais borrachudo.",
+      "conditions": [
+        "Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "produces": [
+        "botw_food_campfire_egg"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Campfire Egg",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado ao lado de uma fogueira acesa, vira Ovo na fogueira.",
+      "produces": [
+        "botw_food_campfire_egg"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire Egg",
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no clima escaldante de Eldin, vira Ovo na fogueira.",
+      "produces": [
+        "botw_food_campfire_egg"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire Egg",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "fonte termal",
+      "status": "confirmado",
+      "result": "Em contato com a água de uma fonte termal, vira ovo cozido (Hard-Boiled Egg), que recupera 1,5 coração. É uma forma de \"assar\" exclusiva dos ovos.",
+      "applications": [
+        "Preparar ovos sem fogueira perto de fontes termais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Hard-Boiled Egg",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com o ovo em água comum (fria)."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela no frio extremo; a lista de Comidas congeladas não inclui ovos.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão — é assim que se assa o ovo, que se cozinha numa fonte termal ou que se resolve o enigma do Korok da Passagem Oeste do Castelo de Hyrule.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Hard-Boiled Egg",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um Ovo largado."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do ovo à eletricidade."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o ovo não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um ovo largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro (1 coração, dobrado na panela; 1:30 de duração; +10% de chance de crítico). Sozinho, dá Omelete; combina com qualquer outro ingrediente suplementar sem gerar Comida duvidosa.",
+      "produces": [
+        "botw_food_omelet",
+        "botw_food_fried_egg_and_rice",
+        "botw_food_egg_pudding",
+        "botw_food_egg_tart",
+        "botw_food_plain_crepe",
+        "botw_food_honey_crepe",
+        "botw_food_poultry_pilaf"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias; Ovo na fogueira e ovo cozido valem 5.",
+      "sources": [
+        "zw",
+        "zw:Campfire Egg",
+        "zw:Hard-Boiled Egg"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O Korok dos ovos cozidos",
+      "text": "Na Passagem Oeste (West Passage) do Castelo de Hyrule há um altar de oferendas vazio entre altares com ovos cozidos. Largar um Ovo no espaço vazio revela um Korok.",
+      "sources": [
+        "zw:Hard-Boiled Egg"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cuccos: ovos e vingança",
+      "text": "Golpeado com arma ou flecha, um Cucco foge e às vezes solta um Ovo. Mas na quarta agressão ele convoca um bando vingativo de Cuccos; sentar numa fogueira ou Panela, ou entrar numa construção, encerra o ataque.",
+      "sources": [
+        "zw:Cucco"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ovo cozido de criança",
+      "text": "A descrição do ovo cozido diz que ele é feito com a água das fontes termais naturais, é fácil de preparar e é popular entre as crianças.",
+      "sources": [
+        "zw:Hard-Boiled Egg"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Por combinar com qualquer ingrediente suplementar e ainda dar 10% de crítico, o Ovo é um bom \"preenchedor\" para alongar a duração de pratos com efeito (1:30 por unidade única)."
+  ],
+  "limitations": [
+    "Assado ou cozido, só recupera corações; não ganha efeitos.",
+    "A página do Ovo lista o Pilaf ao curry como receita com ovo, mas a tabela de lógica de receitas do Zelda Wiki pede apenas Arroz hyliano, Tempero Goron e Manteiga de cabra."
+  ],
+  "related": [
+    {
+      "id": "botw_food_campfire_egg",
+      "relation": "Resultado de assar no fogo"
+    },
+    {
+      "id": "botw_food_omelet",
+      "relation": "Prato feito só com ovo"
+    },
+    {
+      "id": "botw_food_fried_egg_and_rice",
+      "relation": "Ovo com Arroz hyliano"
+    },
+    {
+      "id": "botw_food_egg_pudding",
+      "relation": "Ovo, Leite fresco e Cana-de-açúcar"
+    },
+    {
+      "id": "botw_creature_cucco",
+      "relation": "Pode deixar cair ovos quando golpeado"
+    },
+    {
+      "id": "botw_object_tree",
+      "relation": "Árvores grossas têm ninhos com ovos"
+    },
+    {
+      "id": "botw_keyitem_korok_seed",
+      "relation": "Um Korok do Castelo de Hyrule pede um Ovo"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Parceiro frequente nos doces"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "reage_fogo"
+  ],
+  "verification_status": "verificado"
+}

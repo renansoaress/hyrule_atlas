@@ -1,0 +1,207 @@
+{
+  "id": "botw_material_monster_extract",
+  "summary": "Condimento de monstros criado por Kilton (9 Mon). Não pode ser comido puro; na panela, anula o bônus crítico e sorteia duração (1, 10 ou 30 min) e uma melhora ou piora na cura ou no efeito.",
+  "description": "O Extrato de monstro é fruto da pesquisa de Kilton sobre monstros: um \"tempero suspeito\" que dá mais sabor aos pratos e permite fazer uma série de \"refeições monstruosas\". Só é obtido na loja Fang and Bone, que Kilton abre à noite, por 9 Mon, ou como recompensa ao salvar a viajante Chabi, que está sempre procurando a loja e dá um extrato a cada resgate. Não pode ser comido puro.\n\nNa panela, ele muda as regras. O prato nunca recebe bônus crítico; em compensação, a duração do efeito é sorteada entre 1:00, 10:00 e 30:00 (só ingredientes neutros acrescentam tempo depois disso, com 30 segundos a menos cada), e a cura ou a força do efeito recebe uma mudança aleatória — positiva (+3 corações, ou +1 nível do efeito) ou negativa (cura reduzida a 1/4 de coração, ou efeito reduzido ao mínimo). É obrigatório nos cinco pratos de monstro: Bolo de monstro, Curry de monstro, Bolinhos de arroz de monstro, Sopa de monstro e Ensopado de monstro. Na Tinturaria Kochi, entra no corante roxo.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton, que aparece à noite perto de vilas como Kakariko, Hateno, Rito, Domínio Zora, Lurelin e Tarrey.",
+    "Acampamentos de Chabi: bifurcação perto do Ludfo's Bog, ruínas ao sul do Serenne Stable, estrada a leste das ruínas do Akkala Parade Ground e floresta do Shadow Pass."
+  ],
+  "obtaining": [
+    "Comprar na Fang and Bone por 9 Mon.",
+    "Salvar Chabi dos Koboblins que atacam seu acampamento; ela sempre dá um Extrato de monstro."
+  ],
+  "uses": [
+    "Pratos de monstro: Bolo de monstro (com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra), Curry de monstro (com Arroz hyliano e Tempero Goron), Bolinhos de arroz de monstro (com Arroz hyliano e Halita), Sopa de monstro (com Leite fresco, Trigo e Manteiga) e Ensopado de monstro (com carne e frutos do mar).",
+    "Apostar num prato: a duração pode ir direto a 30 minutos e a cura ou o efeito podem subir.",
+    "Ingrediente do corante roxo na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Na panela: anula o bônus crítico, sorteia a duração (1:00, 10:00 ou 30:00) e aplica uma mudança aleatória, positiva ou negativa, à cura ou à força do efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "nao_aplicavel",
+      "result": "Não pode ser comido puro; só funciona como ingrediente na panela.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Anula qualquer chance de bônus crítico. A duração vira 1:00, 10:00 ou 30:00; entre cura e força do efeito, uma propriedade é sorteada para mudar. Mudança positiva: +3 corações, ou +1 nível no efeito temporário (+1 coração extra, ou +2/5 de roda de vigor). Mudança negativa: cura reduzida a 1/4 de coração, ou efeito reduzido a uma estrela.",
+      "conditions": [
+        "Se o prato não tiver efeito, a mudança cai obrigatoriamente na cura; com Corações extras, sempre muda a força do efeito, nunca a cura."
+      ],
+      "side_effects": [
+        "Bônus de cura de receitas e materiais continuam sendo aplicados mesmo se a cura for reduzida."
+      ],
+      "produces": [
+        "botw_food_monster_cake",
+        "botw_food_monster_curry",
+        "botw_food_monster_rice_balls",
+        "botw_food_monster_soup",
+        "botw_food_monster_stew"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Jogado perto do fogo, queima até virar cinzas: só materiais que recuperam vida crus viram comida assada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado numa fogueira, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada do extrato na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; não há uso conhecido para o extrato largado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear o extrato largado."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do extrato à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com o extrato largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o frasco de extrato não é descrito como metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao extrato largado."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias; comprado na Fang and Bone por 9 Mon.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Atalho para 30 minutos",
+      "text": "Como o extrato sorteia a duração entre 1:00, 10:00 e 30:00, um prato de efeito temporário pode chegar direto ao teto de 30 minutos sem acumular ingredientes. O risco é sair com 1 minuto ou com o efeito rebaixado ao mínimo.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A fã que nunca encontra Kilton",
+      "text": "Chabi carrega um Escudo do caçador e uma Espada do viajante, é atacada por Koboblins nos seus acampamentos e sempre agradece com um Extrato de monstro. Ela procura a Fang and Bone e, depois que Link a visita, comenta que a loja surge do nada ao anoitecer — e começa a duvidar se quer mesmo conhecer Kilton.",
+      "sources": [
+        "zw:Chabi"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem crítico, nem na Lua de sangue",
+      "text": "Cozinhar durante a janela da Lua de sangue (23h30 às 0h15) normalmente garante o bônus crítico, mas a regra do Extrato de monstro é absoluta: se ele estiver no prato, não há bônus crítico.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use o extrato em pratos de efeito barato, onde perder a força ou a cura dói pouco, para tentar a duração de 30 minutos."
+  ],
+  "limitations": [
+    "Resultado aleatório: pode reduzir a cura a 1/4 de coração ou o efeito ao nível mínimo.",
+    "Elimina a chance de bônus crítico, inclusive a garantida por Fragmento de estrela ou partes de dragão.",
+    "Só é vendido à noite, por Mon."
+  ],
+  "related": [
+    {
+      "id": "botw_food_monster_curry",
+      "relation": "Prato de monstro"
+    },
+    {
+      "id": "botw_food_monster_cake",
+      "relation": "Prato de monstro"
+    },
+    {
+      "id": "botw_food_monster_rice_balls",
+      "relation": "Prato de monstro"
+    },
+    {
+      "id": "botw_food_monster_soup",
+      "relation": "Prato de monstro"
+    },
+    {
+      "id": "botw_food_monster_stew",
+      "relation": "Prato de monstro"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Perde o crítico garantido se cozido com extrato"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Nem a janela da Lua de sangue garante crítico com extrato"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante roxo"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

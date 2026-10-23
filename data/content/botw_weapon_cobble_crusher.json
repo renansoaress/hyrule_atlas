@@ -1,0 +1,126 @@
+{
+  "id": "botw_weapon_cobble_crusher",
+  "summary": "Marreta Goron de metal maciço e sem gume (ataque 15, durabilidade 30). Minera depósitos num golpe, dobra o dano nos Tálus e é o ingrediente para Rohan refazer o Racha-Rocha.",
+  "description": "O Esmaga-Fraga é a marreta de entrada do Equipamento Goron. A descrição do jogo explica que ele é feito de metal grosso e duro e não tem fio: depende só do peso para esmagar os oponentes. É comum nos arredores da Cidade Goron, no Cânion de Eldin, e na Cordilheira de Eldin.\n\nComo martelo, quebra depósitos de minério com um golpe, tem dano dobrado nos pontos fracos dos Tálus (o depósito de minério sobre o corpo) e destrói Britas rochosas instantaneamente. Também é peça-chave de uma recuperação: se Link perder ou quebrar o Racha-Rocha de Daruk, Rohan forja um novo em troca de um Esmaga-Fraga, cinco Sílex e um Diamante. Sendo de metal, conduz eletricidade, atrai raios, afunda e pode ser puxado com Magnétis.",
+  "locations": [
+    "Cânion de Eldin, especialmente em torno da Cidade Goron, e Cordilheira de Eldin."
+  ],
+  "obtaining": [
+    "Recolher na região de Eldin, onde é comum.",
+    "Chance de surgir em baús gerados pelo amiibo de Daruk (série Breath of the Wild) com a runa amiibo.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Mineração: quebra depósitos de minério com um golpe e, por ser de metal, solta faíscas ao bater neles.",
+    "Arma contra Tálus e Britas rochosas.",
+    "Material para refazer o Racha-Rocha com Rohan, junto de cinco Sílex e um Diamante."
+  ],
+  "effects": [
+    "Dano 2× nos pontos fracos dos Tálus (multiplicador oculto).",
+    "Quebra depósitos de minério com um golpe (propriedade de martelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o golpe carregado é o giro contínuo que gasta vigor e termina numa pancada para baixo. Sem gume, não corta árvores.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "jogo"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra no impacto com o inimigo e causa acerto crítico (dano dobrado).",
+      "side_effects": ["Se for o único Esmaga-Fraga reservado para Rohan, não o arremesse."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Seguro de usar nas áreas escaldantes de Eldin, onde ele é mais encontrado.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque em Link faz a marreta voar para o chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado em tempestade, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperar com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Dano dobrado nos pontos fracos dos Tálus e destruição instantânea de Britas rochosas.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Stone Pebblit"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra depósitos de minério com um único golpe.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Weapon Parameters", "zw:Ore Deposit"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +7 a +14, Durabilidade aumentada de +3 a +6 ou Acerto crítico; no nível dourado (amarelo): Ataque de +15 a +26, Durabilidade de +7 a +14 ou Lançamento longo (×1,5 a ×2). Um Esmaga-Fraga dourado com +26 chega a 41 de ataque, perto do Quebra-Pedra.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Seguro de reposição do Racha-Rocha",
+      "text": "Rohan, ferreiro da Cidade Goron, pede um Esmaga-Fraga, cinco Sílex e um Diamante para forjar um novo Racha-Rocha. Ter um Esmaga-Fraga guardado evita a viagem atrás de outro quando a arma de Daruk quebra.",
+      "sources": ["zw", "jogo", "zw:Boulder Breaker"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o Esmaga-Fraga para minerar e guardar o Racha-Rocha para o combate: as duas marretas quebram depósitos com um golpe."
+  ],
+  "limitations": [
+    "Não corta árvores: é uma arma sem gume, que depende só do peso.",
+    "Metálico: perigoso em tempestades."
+  ],
+  "related": [
+    { "id": "botw_weapon_boulder_breaker", "relation": "Versão mais forte; o Esmaga-Fraga é usado para refazê-la" },
+    { "id": "botw_weapon_stone_smasher", "relation": "Marreta Goron intermediária" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Outra marreta de mineração" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Quebrado com um golpe" },
+    { "id": "botw_monster_stone_talus", "relation": "Recebe dano dobrado no ponto fraco" },
+    { "id": "botw_monster_stone_pebblit", "relation": "Destruída com um golpe" },
+    { "id": "botw_material_flint", "relation": "Junto com o Esmaga-Fraga, refaz o Racha-Rocha" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

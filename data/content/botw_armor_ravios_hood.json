@@ -1,0 +1,151 @@
+{
+  "id": "botw_armor_ravios_hood",
+  "summary": "Capuz de coelho do mercador Ravio, do DLC The Champions' Ballad, enterrado sob a mão direita do dragão da Spring of Courage. Acelera a escalada lateral em até 70% e, de forma oculta, fortalece o feixe da Espada Mestra.",
+  "description": "O Capuz de Ravio pertencia a um mercador viajante que tinha um bracelete capaz de transformar quem o usava numa pintura — o Ravio de A Link Between Worlds. Exclusivo do pacote de DLC The Champions' Ballad, é o objetivo da missão secundária “EX Treasure: Merchant Hood”: o diário de Misko nas Deya Village Ruins diz que ele está “na mão direita do dragão que consome a fonte” no Dracozu Lake. O baú fica enterrado sob a mão direita da estátua de dragão da Spring of Courage e precisa ser puxado com Magnétis.\n\nDá o efeito Escalada lateral mais rápida: a velocidade de escalada para os lados aumenta em até 70%, conforme o ângulo, e o efeito se multiplica com a Escalada mais rápida. Tem ainda um efeito oculto, Feixe da Espada Mestra aumentado, que deixa o feixe 50% mais forte — o mesmo bônus que os conjuntos dos heróis só dão completos e a ★★. A defesa é 2 e não pode ser melhorada nem tingida. Depois de achado, Granté o vende por 50 rupias.",
+  "locations": [
+    "Spring of Courage, no Dracozu Lake: baú enterrado sob a mão direita da estátua de dragão."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Merchant Hood” (DLC The Champions' Ballad), iniciada pelo diário de Misko nas Deya Village Ruins; o baú é retirado do chão com Magnétis.",
+    "Reposição: Granté o vende por 50 rupias depois da primeira obtenção."
+  ],
+  "uses": [
+    "Escalar para os lados muito mais rápido.",
+    "Fortalecer o feixe da Espada Mestra sem precisar de um conjunto completo."
+  ],
+  "effects": [
+    "Escalada lateral mais rápida (até +70%, conforme o ângulo).",
+    "Feixe da Espada Mestra aumentado (oculto): +50% no feixe."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 2 de defesa fixa, acelera a escalada lateral em até 70% e, de forma oculta, aumenta em 50% o feixe da Espada Mestra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Feixe fortalecido numa peça só",
+      "text": "O Capuz de Ravio é a única peça com Feixe da Espada Mestra aumentado como efeito individual oculto. Os conjuntos dos heróis só dão o mesmo bônus com as três peças a ★★.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Homenagem ao bracelete de Ravio",
+      "text": "O efeito de escalada lateral é uma referência ao Bracelete de Ravio de A Link Between Worlds, em que Link se fundia às paredes e só podia se mover na horizontal.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Não é a mesma Escalada mais rápida",
+      "text": "O efeito do capuz atua só no movimento lateral e se multiplica com a Escalada mais rápida — a de outras peças ou a imitada pelos pratos de Velocidade aumentada —, em vez de substituí-la.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar o capuz com o Traje e as Botas de escalada: a Escalada mais rápida das duas peças se multiplica com o bônus lateral do capuz.",
+    "Com a Espada Mestra e a vida cheia, o feixe fica 50% mais forte mesmo sem nenhum conjunto de herói."
+  ],
+  "limitations": [
+    "Defesa de apenas 2, sem melhorias nem tingimento.",
+    "O ganho de escalada vale só para os lados.",
+    "Exige o DLC The Champions' Ballad."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_climbers_bandanna",
+      "relation": "Peça de cabeça com Escalada mais rápida"
+    },
+    {
+      "id": "botw_armor_climbing_gear",
+      "relation": "Combina com o capuz (efeitos se multiplicam)"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "O feixe é fortalecido pelo efeito oculto"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para desenterrar o baú"
+    },
+    {
+      "id": "botw_mechanic_climbing",
+      "relation": "Mecânica acelerada pelo efeito"
+    },
+    {
+      "id": "botw_armor_zants_helmet",
+      "relation": "Outra relíquia de Misko no mesmo diário"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

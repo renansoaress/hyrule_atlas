@@ -1,0 +1,120 @@
+{
+  "id": "botw_creature_lord_of_the_mountain",
+  "summary": "Espírito com forma de cavalo que surge no Monte Satori quando a montanha brilha em verde-azulado. Pode ser montado, tem vigor ilimitado (esporas sem fim), mas nenhum estábulo aceita registrá-lo.",
+  "description": "O Senhor da Montanha — também chamado de Satori, como registra o próprio compendium — é um espírito protetor dos animais da floresta. Segundo a lenda, seria a reencarnação de um sábio que morreu nas terras que hoje protege. Ele só aparece no Monte Satori sob condições específicas: nessas noites a montanha fica coberta por um brilho verde-azulado, Rupelhos e muitos outros animais se reúnem ao redor e os monstros da área (incluindo o Stalnox local) deixam de aparecer. É extremamente arisco e foge ao notar Link, mas pode ser abordado com furtividade e montado. Como montaria, combina velocidade muito alta com vigor ilimitado, ou seja, pode usar esporas continuamente. É, porém, uma montaria temporária: os funcionários dos estábulos se recusam a registrá-lo por medo de uma maldição, e ele desaparece pouco depois de Link desmontar.",
+  "locations": [
+    "Monte Satori, na região central de Hyrule, apenas enquanto a montanha estiver brilhando (ver condições abaixo).",
+    "A área ao redor do monte e do Lago Rutile fica cheia de Rupelhos e de fauna que só aparece nesse período."
+  ],
+  "obtaining": [
+    "Não pode ser capturado permanentemente. Para montá-lo, aproxime-se agachado (furtividade) e suba nas costas dele antes que fuja.",
+    "Condições de aparição descritas pela fonte: a montanha só pode \"acender\" na sexta fase da lua (crescente), e Link precisa estar longe do Monte Satori quando o jogo sorteia o evento, numa hora aleatória entre meia-noite e 22h."
+  ],
+  "uses": [
+    "Montaria de altíssima velocidade com vigor ilimitado, ideal para atravessar grandes distâncias usando esporas sem parar.",
+    "Registrar sua foto no compendium (entrada nº 4)."
+  ],
+  "effects": [
+    "Vigor ilimitado: as esporas não se esgotam enquanto Link estiver montado.",
+    "Velocidade muito alta, segundo o artigo sobre cavalos do Zelda Wiki."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao perceber Link, foge. É preciso se aproximar com furtividade para conseguir montá-lo.",
+      "conditions": ["Andar agachado; equipamentos e refeições de furtividade ajudam."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado, como um cavalo selvagem. Ao desmontar, desaparece pouco depois.",
+      "conditions": ["Estar no Monte Satori enquanto ele brilha.", "Chegar perto sem ser notado."],
+      "side_effects": [
+        "Se Link tentar levá-lo a um estábulo, o responsável se recusa a registrá-lo, acreditando que seria amaldiçoado.",
+        "Desmontar encerra a cavalgada: ele some logo em seguida."
+      ],
+      "applications": ["Viagens longas a galope contínuo, usando esporas sem limite."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o que acontece se o Senhor da Montanha for atacado."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de flechas sobre ele."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Esporas infinitas",
+      "text": "Os cavalos comuns têm um número de esporas definido pelo atributo de vigor (de 0 a 5). O Senhor da Montanha foge a essa regra: tem vigor ilimitado e pode acelerar continuamente.",
+      "sources": ["zw:Horse"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quando a montanha \"acende\"",
+      "text": "O brilho só ocorre na sexta fase da lua (crescente) e com Link longe do Monte Satori. Começa numa hora aleatória entre meia-noite e 22h e dura até passarem 24 horas no jogo ou até virar o dia duas vezes. Entrar num santuário ou numa Fera Divina, ou recarregar o jogo salvo, desfaz o evento; apenas se teletransportar pelo mapa não desfaz.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Besouros raros e monstros ausentes",
+      "text": "Enquanto o monte brilha, a árvore grossa cercada de cogumelos ao sul (a leste do Lago Rutile) fica coberta de besouros raros à noite, e os monstros da região — inclusive o Stalnox do monte — não aparecem.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O caçador e o cão Satty",
+      "text": "O viajante hyliano Quince foi ao monte caçar os animais reunidos ali. O Senhor da Montanha tentou pisoteá-lo, mas um Pastor hyliano chamado Satty o defendeu, assustando o espírito; Quince fugiu com o cão.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis do jogo, ao lado do Cavalo, Cavalo gigante, Cavalo branco, Cervo e Corça da montanha, Stalcavalo, Urso melívoro e Grão-urso.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Monte-o logo que o evento começar e use esporas sem parar para cruzar a região central muito mais rápido do que com cavalos registrados."
+  ],
+  "limitations": [
+    "Não pode ser registrado em estábulos nem chamado com assobio depois.",
+    "Desaparece pouco depois que Link desmonta.",
+    "Só existe durante o evento do brilho no Monte Satori."
+  ],
+  "related": [
+    { "id": "botw_creature_horse", "relation": "Cavalos comuns, que podem ser registrados" },
+    { "id": "botw_creature_blupee", "relation": "Aparecem em grande número enquanto o monte brilha" },
+    { "id": "botw_creature_stalhorse", "relation": "Outra montaria que não pode ser registrada" },
+    { "id": "botw_creature_white_horse", "relation": "Cavalo especial com vigor 5, o máximo para cavalos registráveis" },
+    { "id": "botw_creature_giant_horse", "relation": "Cavalo especial de força máxima e nenhum vigor" },
+    { "id": "botw_mechanic_stable", "relation": "Os estábulos recusam o registro" },
+    { "id": "botw_monster_stalnox", "relation": "Não aparece no monte enquanto o Senhor da Montanha está presente" }
+  ],
+  "capabilities": ["montavel", "habilidade_especial", "velocidade"],
+  "verification_status": "verificado"
+}

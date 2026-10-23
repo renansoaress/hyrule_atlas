@@ -1,0 +1,110 @@
+{
+  "id": "botw_food_fried_bananas",
+  "summary": "Bananas valentes fritas com Trigo de Tabantha e Cana-de-açúcar, receita do livro de Misa, na Vila Rito. Sai valente (Ataque aumentado) por padrão; a versão comum exige anular o efeito.",
+  "description": "As Bananas fritas são feitas com Bananas valentes, Trigo de Tabantha e Cana-de-açúcar. Como a banana carrega o efeito valente, a receita padrão já sai na versão valente, que concede Ataque aumentado. A versão comum, sem efeito, só aparece quando se acrescenta um quarto ingrediente — fruta ou legume — com efeito diferente do valente, para anular o efeito da banana. A descrição do jogo diz que as crianças adoram bananas valentes fritas e que o truque é fritá-las em fogo bem alto.\n\nA receita está no livro de receitas de Misa, na The Slippery Falcon, na Vila Rito: comprar ali o trigo e o açúcar e fritá-los com bananas valentes — que, segundo o próprio livro, são raras naquela região, \"mas o prato vale a pena\". As bananas crescem nas florestas tropicais de Necluda Ocidental e na Eventide Island, são vendidas por Emri no Kara Kara Bazaar e caem de Rinoxes comuns e de membros do Clã Yiga.",
+  "locations": [
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo.",
+    "Bananas valentes: florestas tropicais de Necluda Ocidental e Eventide Island; vendidas por Emri no Kara Kara Bazaar; deixadas por Rinoxes comuns e por soldados do Clã Yiga.",
+    "Livro de receitas de Misa (Misa's Recipe Book): na The Slippery Falcon, na Vila Rito."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Bananas valentes + Trigo de Tabantha + Cana-de-açúcar."
+  ],
+  "uses": [
+    "Ataque aumentado com ingredientes de loja e uma banana.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — receita padrão, só com os três ingredientes.",
+    "Versão comum: só com um quarto ingrediente (fruta ou legume) de efeito diferente; recupera alguns corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Na receita padrão, concede Ataque aumentado e recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão valente"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um quarto ingrediente de efeito diferente, perde o efeito e só recupera corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Bananas raras na terra dos Arás",
+      "text": "O livro de Misa admite que bananas valentes são raras perto da Vila Rito, mas insiste que o prato compensa a busca.",
+      "sources": [
+        "zw:Misa's Recipe Book"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Aproveitar a Lua de sangue",
+      "text": "Entre 23h30 e 0h15 de uma noite de Lua de sangue, o cozimento recebe bônus críticos, com chance maior quanto mais perto da meia-noite. Segundo o livro Chef Aurie Taamu, um sucesso crítico aumenta bem além do normal a força e a duração do efeito — útil num prato de efeito garantido como este.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Uma ou duas Bananas valentes extras nos espaços livres prolongam ou fortalecem o Ataque aumentado."
+  ],
+  "limitations": [
+    "O Zelda Wiki só cita as versões valente e comum.",
+    "As fontes não informam corações nem preço de venda."
+  ],
+  "related": [
+    {
+      "id": "botw_material_mighty_bananas",
+      "relation": "Ingrediente obrigatório, fonte do efeito valente"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_roasted_mighty_bananas",
+      "relation": "Banana assada no fogo, sem efeito"
+    },
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Outra receita do livro de Misa"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Período de bônus crítico na culinária"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

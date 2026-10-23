@@ -1,0 +1,98 @@
+{
+  "id": "botw_food_wheat_bread",
+  "summary": "Pão macio de Trigo de Tabantha e Halita, de aroma \"divino\". É uma combinação especial: dois ingredientes de apoio que sozinhos dariam Comida duvidosa formam uma receita válida.",
+  "description": "O Pão de trigo leva apenas Trigo de Tabantha e Halita; o inventário descreve um pão macio e elástico, de cheiro \"simplesmente divino\", feito com o trigo da região de Tabantha. A receita é uma exceção às regras da culinária: temperos e ingredientes de apoio cozidos sem comida normalmente resultam em Comida duvidosa, mas trigo com halita é uma das combinações predefinidas que formam um prato válido. Sem extras, só recupera corações; com três espaços livres, aceita ingredientes de efeito.\n\nNa ordem do jogo, o pão fica entre os grelhados no sal: é testado depois dos grelhados de carne, de caranguejo e de peixe, e antes das Ervas grelhadas no sal e dos Cogumelos grelhados no sal. Na prática, plantas, cogumelos e frutas acrescentados mantêm o Pão de trigo (dando o efeito deles), enquanto carne, caranguejo ou peixe com a Halita viram grelhados no sal. Com Manteiga de cabra e carne ou peixe, o trio forma Torta de carne ou Torta de peixe.",
+  "obtaining": [
+    "Cozinhar numa Panela Trigo de Tabantha e Halita, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Pão simples com dois ingredientes comprados; base para efeitos de plantas, cogumelos ou frutas.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne, caranguejo ou peixe",
+      "status": "confirmado",
+      "result": "Carne, caranguejo ou peixe junto da Halita levam aos grelhados no sal (testados antes do pão); com Manteiga de cabra também, a Torta de carne ou a Torta de peixe.",
+      "produces": [
+        "botw_food_salt_grilled_meat",
+        "botw_food_salt_grilled_crab",
+        "botw_food_salt_grilled_fish",
+        "botw_food_meat_pie",
+        "botw_food_fish_pie"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dois temperos que viram comida",
+      "text": "Trigo de Tabantha e Halita estão na lista de ingredientes de apoio que, cozidos sem comida, dão Comida duvidosa. A combinação dos dois é uma das exceções predefinidas que o jogo aceita como receita válida.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Dubious Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "Carne, caranguejo ou peixe na panela mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "O que ingredientes de apoio sem comida normalmente produzem"
+    },
+    {
+      "id": "botw_food_salt_grilled_greens",
+      "relation": "Grelhado no sal testado depois do pão"
+    },
+    {
+      "id": "botw_food_fish_pie",
+      "relation": "Resultado com Manteiga de cabra e peixe"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

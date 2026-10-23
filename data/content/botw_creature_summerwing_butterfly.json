@@ -1,0 +1,173 @@
+{
+  "id": "botw_creature_summerwing_butterfly",
+  "summary": "Borboleta de bosques e planícies quentes, cujas asas absorvem o calor do sol. Vive na Grande Floresta de Hyrule e nas partes menos escaldantes de Eldin; com partes de monstro, vira Elixir picante.",
+  "description": "A Borboleta estival é encontrada na Grande Floresta de Hyrule e nas áreas menos escaldantes da Cordilheira de Eldin. O texto do jogo a descreve como uma borboleta dos bosques e planícies de regiões quentes, cujas asas absorvem o calor do sol — e o elixir feito com ela \"deixa você quentinho\". Para pegá-la, é preciso se aproximar sorrateiramente; também pode ser comprada de Beedle no Bazar Kara Kara e nos Estábulos Snowfield e Tabantha Bridge.\n\nCozida com partes de monstro, produz o Elixir picante, que dá um nível de Resistência ao frio. Cada borboleta acrescenta 2:30 de duração. Ingredientes picantes como Pimenta de fogo, Flamelo, Erva geleira e Truta rescaldada podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, em Vila Hateno, entra no corante vermelho.",
+  "locations": [
+    "Grande Floresta de Hyrule e áreas menos escaldantes da Cordilheira de Eldin."
+  ],
+  "obtaining": [
+    "Apanhar aproximando-se sorrateiramente.",
+    "Comprar de Beedle no Bazar Kara Kara e nos Estábulos Snowfield e Tabantha Bridge por 10 rupias."
+  ],
+  "uses": [
+    "Elixir picante: cozinhar com pelo menos uma parte de monstro.",
+    "Ingrediente do corante vermelho na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Resistência ao frio de um nível; +2:30 de duração por borboleta."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Pode ser apanhada quando Link se aproxima sorrateiramente.",
+      "conditions": [
+        "Andar agachado aumenta a furtividade."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Stealth"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma borboleta viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir picante (Resistência ao frio). Cada borboleta acrescenta 2:30 de duração.",
+      "conditions": [
+        "Pode ser combinada com a Libélula cálida, da mesma categoria."
+      ],
+      "applications": [
+        "Somar Pimenta de fogo, Flamelo, Erva geleira ou Truta rescaldada para que o elixir também cure."
+      ],
+      "produces": [
+        "botw_elixir_spicy_elixir"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Elixir",
+        "zw:Spicy Elixir"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com bichos de efeito oposto",
+      "status": "confirmado",
+      "result": "Misturada a um bicho refrescante (como a Borboleta invernal) e a uma parte de monstro, os efeitos se anulam e o resultado é Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Dubious Food",
+        "zw:Elixir"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Dubious Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Beedle cobra 10.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a borboleta exposta ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre a borboleta."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Proteção de um único nível",
+      "text": "O Elixir picante dá só um nível de Resistência ao frio, que evita o dano básico abaixo de 0 °C; certas águas gélidas causam dano rápido que nenhum elixir, comida ou armadura impede.",
+      "sources": [
+        "zw:Spicy Elixir",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quatro borboletas, quatro proteções",
+      "text": "Cada borboleta de BOTW corresponde a uma proteção: estival (Resistência ao frio), invernal (Resistência ao calor), trovejante (Resistência a choques) e abrasadora (Proteção contra chamas). Todas acrescentam 2:30 por unidade ao elixir.",
+      "sources": [
+        "zw:Butterfly",
+        "zw:Elixir"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Libélulas cálidas e ingredientes picantes diferentes para prolongar o Elixir picante antes de subir montanhas nevadas."
+  ],
+  "limitations": [
+    "Não misture com bichos refrescantes: os efeitos se anulam.",
+    "Cozida sem parte de monstro, vira Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_elixir_spicy_elixir",
+      "relation": "Elixir produzido com partes de monstro"
+    },
+    {
+      "id": "botw_creature_warm_darner",
+      "relation": "Outro bicho picante"
+    },
+    {
+      "id": "botw_creature_winterwing_butterfly",
+      "relation": "Borboleta de efeito oposto"
+    },
+    {
+      "id": "botw_creature_smotherwing_butterfly",
+      "relation": "Outra borboleta, de Proteção contra chamas"
+    },
+    {
+      "id": "botw_creature_sizzlefin_trout",
+      "relation": "Ingrediente picante que faz o elixir curar"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem partes de monstro"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante vermelho"
+    }
+  ],
+  "capabilities": [
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

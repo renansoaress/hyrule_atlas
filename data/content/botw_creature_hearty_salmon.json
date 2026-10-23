@@ -1,0 +1,146 @@
+{
+  "id": "botw_creature_hearty_salmon",
+  "summary": "Salmão das águas geladas de Hebra e Tabantha, com camadas extras de gordura. Cru recupera 4 corações, o maior valor entre os peixes; cozido dá Corações extras. É a base do Salmão à meunière.",
+  "description": "O Salmão nutritivo vive nas águas frias das Cordilheiras de Hebra e da Fronteira de Tabantha. Segundo o jogo e o Zelda Wiki, o frio faz o corpo dele acumular camadas de gordura que o isolam do ambiente — e é essa gordura que o torna tão nutritivo. Como os outros peixes, foge de Link, mas pode ser apanhado à mão nadando.\n\nCru, recupera 4 corações. Na panela, dá aos pratos o efeito Corações extras. É ingrediente obrigatório de duas receitas exclusivas, o Salmão à meunière (com Trigo de Tabantha e Manteiga de cabra) e o Risoto de salmão (com Arroz hyliano, Manteiga de cabra e Halita), além de servir nas receitas gerais de peixe. Também pode reforçar um Elixir nutritivo. Exposto ao fogo vira Salmão nutritivo assado; congelado, Salmão nutritivo congelado.\n\nNa Missão de santuário \"Recital at Warbler's Nest\", na Vila dos Arás, Kotts está pescando Salmões nutritivos na lagoa da entrada da vila e entrega um a Link para que ele prepare o Salmão à meunière exigido por Genli.",
+  "locations": [
+    "Águas frias das Cordilheiras de Hebra e da Fronteira de Tabantha.",
+    "Lagoa perto da entrada da Vila dos Arás, onde Kotts pesca durante a missão \"Recital at Warbler's Nest\"."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ele, vivo ou morto.",
+    "Recebido de Kotts durante a Missão de santuário \"Recital at Warbler's Nest\"."
+  ],
+  "uses": [
+    "Salmão à meunière: Salmão nutritivo + Trigo de Tabantha + Manteiga de cabra.",
+    "Risoto de salmão: Salmão nutritivo + Arroz hyliano + Manteiga de cabra + Halita.",
+    "Receitas gerais de peixe, como Peixe grelhado no sal (com Halita).",
+    "Ingrediente nutritivo de um Elixir nutritivo.",
+    "Missão de santuário \"Recital at Warbler's Nest\": base do prato pedido por Genli.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 4 corações.",
+    "Na panela: Corações extras temporários."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhado à mão enquanto Link nada, vivo ou morto.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um salmão vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Salmão nutritivo dão Corações extras. Com Trigo de Tabantha e Manteiga de cabra vira Salmão à meunière; com Arroz hyliano, Manteiga de cabra e Halita, Risoto de salmão.",
+      "side_effects": ["A receita genérica Frutos do mar à meunière exclui salmões: com trigo e manteiga, o resultado é o Salmão à meunière."],
+      "produces": ["botw_food_salmon_meuniere", "botw_food_salmon_risotto", "botw_food_salt_grilled_fish", "botw_food_fish_skewer"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somado a um Elixir nutritivo (Lagarto nutritivo + parte de monstro), aumenta os corações temporários do elixir.",
+      "produces": ["botw_elixir_hearty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Hearty Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 4 corações.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 10 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Salmão nutritivo assado, que recupera 4,5 corações mas não tem efeitos.",
+      "produces": ["botw_food_roasted_hearty_salmon"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, assa e vira Salmão nutritivo assado.",
+      "produces": ["botw_food_roasted_hearty_salmon"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Salmão nutritivo assado.",
+      "produces": ["botw_food_roasted_hearty_salmon"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Exposto ao gelo, vira Salmão nutritivo congelado, que dá Resistência ao calor temporária ao ser comido.",
+      "produces": ["botw_food_frozen_hearty_salmon"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Salmão nutritivo congelado.",
+      "produces": ["botw_food_frozen_hearty_salmon"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este peixe."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A pescadora distraída",
+      "text": "Na missão \"Recital at Warbler's Nest\", Kotts esquece o ensaio das irmãs por estar concentrada pescando Salmões nutritivos (\"I'm fishing for hearty salmon!\"). Ao ser lembrada, entrega o peixe a Link para o Salmão à meunière de Genli.",
+      "sources": ["zw", "jogo", "zw:Recital at Warbler's Nest"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Menos gordura depois de congelado",
+      "text": "A descrição do Salmão nutritivo congelado diz que ele fica com sabor menos forte de peixe porque o excesso de gordura foi removido — justamente a gordura que, cru, faz dele o peixe mais nutritivo.",
+      "sources": ["zw:Frozen Food", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Por recuperar 4 corações cru, é um dos melhores lanches de emergência entre os peixes, sem precisar de panela."
+  ],
+  "limitations": [
+    "Não entra em Frutos do mar à meunière: com trigo e manteiga, a receita vira Salmão à meunière.",
+    "Assado ou congelado perde o efeito de Corações extras."
+  ],
+  "related": [
+    { "id": "botw_food_salmon_meuniere", "relation": "Receita exclusiva com trigo e manteiga" },
+    { "id": "botw_food_salmon_risotto", "relation": "Receita exclusiva com arroz, manteiga e sal" },
+    { "id": "botw_food_roasted_hearty_salmon", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_hearty_salmon", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Pode ser somado como ingrediente nutritivo" },
+    { "id": "botw_creature_hearty_bass", "relation": "Outro peixe de Corações extras" },
+    { "id": "botw_material_tabantha_wheat", "relation": "Ingrediente do Salmão à meunière" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo", "item_de_missao"],
+  "verification_status": "verificado"
+}

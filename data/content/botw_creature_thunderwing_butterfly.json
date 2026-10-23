@@ -1,0 +1,115 @@
+{
+  "id": "botw_creature_thunderwing_butterfly",
+  "summary": "Borboleta rara que só aparece na chuva, nos Cerros de Hyrule e nas Montanhas Gerudo; os órgãos dela produzem um composto isolante. Com partes de monstro, vira Elixir isolante.",
+  "description": "A Borboleta trovejante voa pelos Cerros de Hyrule e pelas Montanhas Gerudo e, segundo o jogo, é uma borboleta rara que só se mostra quando chove. Para apanhá-la, Link precisa se aproximar sorrateiramente. Beedle também a vende nos Estábulos Lakeside, Riverside e Tabantha Bridge, por 10 rupias.\n\nO texto do jogo explica que os órgãos dela produzem um composto isolante: cozida com partes de monstro, rende o Elixir isolante, que dá um nível de Resistência a choques. Cada borboleta acrescenta 2:30 de duração. Ingredientes elétricos como Fruta isolante, Aterramelo, Erva relampagueira e Truta voltaica podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante amarelo.",
+  "locations": [
+    "Cerros de Hyrule e Montanhas Gerudo, apenas durante a chuva."
+  ],
+  "obtaining": [
+    "Apanhar em dia de chuva, aproximando-se sorrateiramente.",
+    "Comprar de Beedle nos Estábulos Lakeside, Riverside e Tabantha Bridge por 10 rupias."
+  ],
+  "uses": [
+    "Elixir isolante: cozinhar com pelo menos uma parte de monstro.",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Resistência a choques de um nível; +2:30 de duração por borboleta."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Pode ser apanhada quando Link se aproxima sorrateiramente.",
+      "conditions": ["Andar agachado; a chuva, necessária para ela aparecer, também abafa os passos de Link."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Só aparece quando chove.",
+      "kind": "mecanica",
+      "sources": ["comp", "jogo"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma borboleta viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir isolante (Resistência a choques). Cada borboleta acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinada com a Libélula do relâmpago, da mesma categoria."],
+      "applications": ["Somar Fruta isolante, Aterramelo, Erva relampagueira ou Truta voltaica para que o elixir também cure."],
+      "produces": ["botw_elixir_electro_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Electro Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Beedle cobra 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a borboleta exposta ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Apesar do composto isolante descrito pelo jogo, as fontes não dizem o que acontece se a borboleta for atingida por eletricidade."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dupla da chuva",
+      "text": "Os dois bichos isolantes de BOTW, a Borboleta trovejante e a Libélula do relâmpago, só aparecem quando chove. Em dias chuvosos nos Cerros de Hyrule, onde as duas ocorrem, dá para juntar ingredientes para vários Elixires isolantes.",
+      "sources": ["comp", "zw:Electric Darner", "zw:Elixir"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Elixir isolante e os Zoras",
+      "text": "Sidon dá a Link um Elixir isolante na Ponte Inogo e comenta que esse tipo de elixir não faz efeito nos Zoras, talvez por ser feito para hylianos.",
+      "sources": ["zw:Electro Elixir"]
+    }
+  ],
+  "advanced_uses": [
+    "Misturar borboletas trovejantes, libélulas do relâmpago e ingredientes elétricos diferentes prolonga o Elixir isolante e pode elevar o nível do efeito."
+  ],
+  "limitations": [
+    "Só aparece na chuva; em tempo seco, é preciso comprá-la de Beedle.",
+    "Cozida sem parte de monstro, vira Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_elixir_electro_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_electric_darner", "relation": "Outro bicho isolante, também ligado à chuva" },
+    { "id": "botw_creature_voltfin_trout", "relation": "Ingrediente elétrico que faz o elixir curar" },
+    { "id": "botw_material_voltfruit", "relation": "Ingrediente elétrico que faz o elixir curar" },
+    { "id": "botw_mechanic_rain", "relation": "Só aparece durante a chuva" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo" }
+  ],
+  "capabilities": ["protege_choque"],
+  "verification_status": "verificado"
+}

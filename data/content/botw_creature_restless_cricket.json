@@ -1,0 +1,114 @@
+{
+  "id": "botw_creature_restless_cricket",
+  "summary": "Grilo agitadíssimo que salta da grama cortada ou de debaixo de pedras em quase toda Hyrule. Vira Elixir energizante com partes de monstro e é o presente que Manny quer dar a Prima, em Vila Hateno.",
+  "description": "O Gafanhoto agitado aparece em quase qualquer lugar de Hyrule: basta cortar grama com uma espada ou olhar debaixo de pedras. Faz jus ao nome — a menos que Link já esteja se aproximando agachado quando ele surge, o gafanhoto dá dois ou três saltos e depois sai voando até desaparecer. Também é vendido pelo mercador ambulante Gartan e por Beedle nos Estábulos Dueling Peaks e Outskirt.\n\nCozido com partes de monstro, produz um Elixir energizante, que restaura parte do Medidor de vigor na hora (cerca de 1/5 de medidor por gafanhoto, segundo a tabela do Zelda Wiki). Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante verde.\n\nNa Missão secundária \"A Gift for My Beloved\", em Vila Hateno, Manny quer presentear Prima, dona da pousada local. Ela, sem vontade de dizer a verdade, inventa que sonha em ter 100 Gafanhotos agitados. Manny pede a Link os 10 primeiros e paga com uma Rupia prateada — e confessa que pretende juntar os outros 90 para convidá-la para um encontro.",
+  "locations": [
+    "Quase toda Hyrule, escondido na grama e sob pedras; o compendium cita a Pradaria de Hyrule e Necluda Oriental."
+  ],
+  "obtaining": [
+    "Cortar grama com uma espada ou levantar pedras e apanhá-lo antes que fuja; aproximar-se agachado impede os saltos de fuga.",
+    "Comprar por 10 rupias do mercador ambulante Gartan ou de Beedle (Estábulos Dueling Peaks e Outskirt)."
+  ],
+  "uses": [
+    "Elixir energizante: cozinhar com pelo menos uma parte de monstro.",
+    "Missão secundária \"A Gift for My Beloved\": Manny pede 10 e paga uma Rupia prateada.",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Recuperação de vigor (cerca de 1/5 do medidor por gafanhoto)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Se Link não estiver se aproximando agachado quando ele aparece, o gafanhoto dá dois ou três saltos e depois voa para longe, desaparecendo.",
+      "conditions": ["Agachar-se aumenta a furtividade."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Surge ao se cortar grama com qualquer espada ou ao olhar debaixo de pedras.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um gafanhoto vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir energizante (Recuperação de vigor). Cada gafanhoto restaura cerca de 1/5 do medidor; o efeito é instantâneo, sem duração.",
+      "applications": ["Somar Energimelo, Mel de abelha, Robalo enérgico ou Caranguejo esperto para que o elixir também cure."],
+      "produces": ["botw_elixir_energizing_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Energizing Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 2 rupias; Gartan e Beedle cobram 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o gafanhoto exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o gafanhoto."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O amor de Manny por gafanhotos",
+      "text": "Prima responde \"gafanhotos\" só para se livrar da pergunta, mas Manny fica radiante com o \"interesse em comum\", declarando-se um conhecedor de Gafanhotos agitados. Ao fim da missão, revela que era ele mesmo o interessado em chamar a atenção de Prima.",
+      "sources": ["zw:A Gift for My Beloved", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mesma categoria do Escaravelho vibrante",
+      "text": "Gafanhoto agitado e Escaravelho vibrante são os dois bichos energizantes e podem dividir o mesmo Elixir energizante. O gafanhoto, porém, vale 2 rupias, contra 30 do escaravelho.",
+      "sources": ["zw:Energizing Elixir", "zw:Materials in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Cortar grama alta com uma espada enquanto se anda agachado ajuda a pegar o gafanhoto antes que ele comece a saltar."
+  ],
+  "limitations": [
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "Se não for pego logo, salta e voa até sumir."
+  ],
+  "related": [
+    { "id": "botw_elixir_energizing_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_energetic_rhino_beetle", "relation": "O outro bicho energizante" },
+    { "id": "botw_creature_staminoka_bass", "relation": "Ingrediente energizante que faz o elixir curar" },
+    { "id": "botw_object_grass", "relation": "Cortar grama o revela" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante verde" }
+  ],
+  "capabilities": ["vigor", "item_de_missao"],
+  "verification_status": "verificado"
+}

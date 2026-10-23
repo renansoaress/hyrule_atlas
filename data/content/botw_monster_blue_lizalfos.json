@@ -1,0 +1,148 @@
+{
+  "id": "botw_monster_blue_lizalfos",
+  "summary": "Lagalfos de segundo nível (120 pontos de vida), fã do Bimerangue Lagal. Vive perto da água, mas também ocupa boa parte do Deserto Gerudo; é o primeiro Lagalfos que pode deixar Cauda de Lagalfos.",
+  "description": "O Lagalfos azul é a versão reforçada do Lagalfos verde: segundo o compendium, muitos carregam armas bem mais fortes e são, de modo geral, mais resistentes. Tem 120 pontos de vida e usa o segundo nível do equipamento Lagal, com metal extra que aumenta durabilidade e dano — a descrição do Bimerangue Lagal diz que os Lagalfos azuis gostam especialmente dessa arma.\n\nComo os outros Lagalfos, costuma ficar dentro ou perto de rios e lagos, nada bem, se camufla e cospe água a distância; mas também habita grande parte do Deserto Gerudo. O compendium cita a Fronteira de Tabantha e o Deserto Gerudo como locais comuns. É o primeiro da linhagem a ter a Cauda de Lagalfos, parte de terceiro nível valorizada em elixires, na lista de espólios.",
+  "locations": [
+    "Fronteira de Tabantha e Deserto Gerudo, segundo o compendium.",
+    "Rios, lagos e áreas do Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos, Garra de Lagalfos e Cauda de Lagalfos.",
+    "Costuma carregar armas Lagal de segundo nível, como o Bimerangue Lagal e a Lança Lagal aprimorada.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Primeira fonte de Caudas de Lagalfos.",
+    "Fonte de Bimerangues Lagal.",
+    "Registro no compendium (entrada nº 114)."
+  ],
+  "effects": [
+    "Golpes rápidos, jatos de água e emboscadas."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Aguenta mais que o verde (120 pontos de vida) e usa armas Lagal mais fortes.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado; as armas Lagal metálicas não queimam.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o fazem largar a arma; Flechas eletrizantes na água criam área de dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Com armas Lagal metálicas, atrai raios durante tempestades.",
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Nada bem e costuma ficar na água ou perto dela; não se afoga.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizalfos"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas causam dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; as armas Lagal metálicas que ele largar podem ser puxadas com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se no ambiente para emboscar.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "As máscaras de Lagalfos e de Majora fazem os Lagalfos ignorarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A arma favorita",
+      "text": "A descrição do Bimerangue Lagal diz que os Lagalfos azuis gostam particularmente dessa arma, que tem uma lâmina a mais que o Bumerangue Lagal e continua voltando quando arremessada.",
+      "sources": ["zw:Lizalfos Gear"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Caudas a partir do azul",
+      "text": "A Cauda de Lagalfos comum só cai de Lagalfos azuis e pretos (e das variantes acima deles), não do Lagalfos verde.",
+      "sources": ["zw:Lizalfos Tail", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Desarmá-lo com choque para pegar o Bimerangue Lagal, que volta às mãos de Link quando arremessado."
+  ],
+  "limitations": [
+    "Não se afoga.",
+    "Flechas ancestrais o desintegram sem materiais."
+  ],
+  "related": [
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_monster_black_lizalfos", "relation": "Variante seguinte" },
+    { "id": "botw_weapon_lizal_forked_boomerang", "relation": "Arma favorita" },
+    { "id": "botw_weapon_enhanced_lizal_spear", "relation": "Arma típica" },
+    { "id": "botw_material_lizalfos_tail", "relation": "Parte de terceiro nível" },
+    { "id": "botw_material_lizalfos_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lizalfos_talon", "relation": "Parte deixada ao ser derrotado" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

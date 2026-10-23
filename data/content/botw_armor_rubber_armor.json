@@ -1,0 +1,192 @@
+{
+  "id": "botw_armor_rubber_armor",
+  "summary": "Armadura feita de \"borracha\", tecnologia antiga que não existe mais, guardada no Santuário Toh Yahsa do Platô Thundra, sob tempestade constante. Reduz choques; no conjunto em ★★, anula até raios.",
+  "description": "A Armadura de borracha está num baú do Santuário Toh Yahsa, no Platô Thundra (Thundra Plateau), que só aparece depois da Missão de santuário \"Trial of Thunder\" — o platô fica sob tempestade de raios permanente até ela ser resolvida. Depois de obtida, Granté passa a vendê-la por 4.000 rupias na Vila de Nício (Tarrey Town). A descrição diz que a resistência a eletricidade vem do material, uma maravilha antiga chamada \"borracha\", tecnologia que já não existe.\n\nA peça dá um nível de Resistência a choques (−33% de dano elétrico). Com o Elmo de borracha e a Meia-calça de borracha, chega ao nível 3: dano elétrico zerado e Link não solta mais a arma ao levar choque. Com as três peças em ★★, o bônus Imunidade a choques protege também dos raios, que a Resistência a choques comum não reduz.\n\nA defesa vai de 3 a 20. As melhorias pedem Gelecas elétricas, Frutas isolantes, Aterramelos e Caudas de Lagalfos elétrico; o último nível exige 10 caudas e 10 Topázios. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Toh Yahsa, no Platô Thundra (Thundra Plateau).",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Resolver a Missão de santuário \"Trial of Thunder\" (recolocar as quatro esferas nos pilares do platô) e abrir o baú do Santuário Toh Yahsa.",
+    "Recomprar de Granté por 4.000 rupias depois de obtê-la."
+  ],
+  "uses": [
+    "Reduzir o dano elétrico e não perder a arma em choques.",
+    "Completar o Conjunto de borracha para ficar imune a eletricidade e raios."
+  ],
+  "effects": [
+    "Resistência a choques, nível 1 (−33%).",
+    "Bônus de conjunto (três peças em ★★): Imunidade a choques, sem dano de eletricidade ou de raios."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência a choques. Com o Elmo de borracha, a Armadura de borracha e a Meia-calça de borracha vestidos, todos em ★★, ativa o bônus Imunidade a choques (Unshockable).",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "sem melhorias",
+      "status": "confirmado",
+      "result": "Cada nível de Resistência a choques reduz o dano elétrico: −33% com uma peça, −66% com duas e −100% com as três. No nível 3, Link também deixa de soltar o equipamento que está segurando ao levar choque.",
+      "applications": [
+        "Lutar contra Lagalfos elétricos, Feitiçanos elétricos e Morcis elétricos sem perder a arma."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "O bônus Imunidade a choques impede qualquer dano de eletricidade e anula os efeitos negativos do choque, como ser arremessado ou desarmado.",
+      "conditions": [
+        "As três peças de borracha equipadas, todas em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "raio",
+      "variant": "sem o bônus de conjunto",
+      "status": "sem_efeito",
+      "result": "A peça não atrai raios (só armas, arcos e escudos metálicos fazem isso), mas a Resistência a choques também não reduz o dano da explosão de um raio que atinja Link.",
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "Com a Imunidade a choques, raios não causam dano a Link nem o derrubam ou desarmam.",
+      "conditions": [
+        "As três peças de borracha em pelo menos ★★."
+      ],
+      "applications": [
+        "Lutar com armas metálicas durante tempestades sem medo do raio que elas atraem."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Peças guardadas em lugares de tempestade",
+      "text": "As três peças de borracha estão ligadas a tempestades: o elmo é recompensa da Missão secundária \"Thunder Magnet\", a armadura fica no santuário do Platô Thundra e a meia-calça no do Lago Calora — duas áreas sob tempestade constante até seus santuários serem revelados.",
+      "sources": [
+        "zw:Rubber Set",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Chegar perto de Farosh",
+      "text": "O dragão Farosh fere quem se aproxima com a eletricidade que envolve seu corpo. O Conjunto de borracha completo em ★★ (ou o Elmo do trovão) evita esse dano, o que facilita colher as partes que ele solta ao ser atingido por flechas.",
+      "sources": [
+        "zw:Farosh"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Nome do bônus",
+      "text": "A página do conjunto no Zelda Wiki chama o bônus de \"Lightning Proof\", nome que o mesmo wiki dá ao efeito do Elmo do trovão; a tabela de bônus de conjunto o registra como \"Unshockable\". O efeito descrito é o mesmo: imunidade a eletricidade e raios.",
+      "sources": [
+        "zw:Rubber Set",
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mesmo sem melhorias, as três peças de borracha zeram o dano elétrico (nível 3 de Resistência a choques); as melhorias até ★★ servem para acrescentar a proteção contra raios."
+  ],
+  "limitations": [
+    "Sem o bônus de conjunto, não protege da explosão de raios.",
+    "O último nível pede 10 Topázios."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_rubber_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_rubber_tights",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Outra forma de anular raios"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_material_yellow_lizalfos_tail",
+      "relation": "Material das duas últimas melhorias"
+    },
+    {
+      "id": "botw_elixir_electro_elixir",
+      "relation": "Alternativa consumível de Resistência a choques"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Tempestades e raios"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_choque"
+  ],
+  "verification_status": "verificado"
+}

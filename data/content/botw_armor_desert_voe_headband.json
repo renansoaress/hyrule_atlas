@@ -1,0 +1,177 @@
+{
+  "id": "botw_armor_desert_voe_headband",
+  "summary": "Faixa masculina feita pelas Gerudo, com safira que alivia o calor: Resistência ao calor nível 1. Vendida no clube secreto da Cidade Gerudo e em Tarrey Town; o conjunto ★★ reduz em 66% o dano elétrico.",
+  "description": "A descrição define a Faixa voe do deserto como armadura masculina feita pelas Gerudo e vendida “raramente” por seus comerciantes; ela contém safira, que “aproveita o poder do gelo” para tornar o calor suportável. Custa 450 rupias no Gerudo Secret Club, dentro da Cidade Gerudo (depois da missão “The Secret Club's Secret”), ou na Rhondson Armor Boutique de Tarrey Town (depois de “From the Ground Up”).\n\nDá Resistência ao calor nível 1, que evita o dano do calor diurno do Deserto Gerudo acima de 40 °C; acima de 50 °C são necessários dois níveis, que as três peças do conjunto alcançam (o efeito não passa do nível 2). Com a Ombreira e as Calças voe do deserto a ★★, o Conjunto voe do deserto ativa a Resistência a dano elétrico (Shock Damage Resist), equivalente a Resistência a choques nível 2: −66% de dano de eletricidade, sem efeito sobre a explosão de um raio. As melhorias pedem Gelecas gélidas, Asas de Morci glacial, Caudas de Lagalfos glacial (13 ao todo) e 5 Safiras no último nível. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Gerudo Secret Club, na Cidade Gerudo (Deserto Gerudo).",
+    "Rhondson Armor Boutique, em Tarrey Town."
+  ],
+  "obtaining": [
+    "Comprar por 450 rupias no Gerudo Secret Club, após a missão secundária “The Secret Club's Secret”.",
+    "Comprar por 450 rupias na Rhondson Armor Boutique, após a missão secundária “From the Ground Up”."
+  ],
+  "uses": [
+    "Atravessar o Deserto Gerudo de dia sem perder vida.",
+    "Completar o Conjunto voe do deserto para resistir a ataques elétricos."
+  ],
+  "effects": [
+    "Resistência ao calor nível 1.",
+    "Bônus de conjunto Resistência a dano elétrico (−66%) com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 3 de defesa (20 no nível máximo) e dá Resistência ao calor nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "calor do deserto",
+      "status": "confirmado",
+      "result": "Evita o dano do calor diurno do Deserto Gerudo no nível 1 (acima de 40 °C). Zonas acima de 50 °C exigem dois níveis de Resistência ao calor.",
+      "conditions": [
+        "Para o nível 2, somar outras peças do conjunto (o efeito tem teto no nível 2)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Heat",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima escaldante (Eldin)",
+      "status": "sem_efeito",
+      "result": "A Resistência ao calor não protege do clima escaldante da Montanha da Morte e do Cânion de Eldin, que exige Proteção contra chamas.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "Conjunto voe do deserto ★★",
+      "status": "confirmado",
+      "result": "Com as três peças a ★★, o dano elétrico cai 66% (equivale a Resistência a choques nível 2, que ainda soma com um nível 1 desse efeito).",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★. O bônus de conjunto contra eletricidade também não reduz a explosão causada por um raio.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa de homem vendida onde homens não entram",
+      "text": "A faixa é descrita como armadura masculina, mas uma das lojas que a vende, o Gerudo Secret Club, fica dentro da Cidade Gerudo — aonde Link só entra disfarçado com o Traje Gerudo — e exige a senha “GSC♦”.",
+      "sources": [
+        "jogo",
+        "zw:The Secret Club's Secret",
+        "zw:Gerudo Outfit"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Dois níveis de calor",
+      "text": "O calor do deserto tem dois níveis: acima de 40 °C, Link perde vida devagar; acima de 50 °C, mais rápido. Uma peça cobre o primeiro nível; para o segundo é preciso outra fonte de Resistência ao calor.",
+      "sources": [
+        "zw:Heat",
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O conjunto ★★ protege contra eletricidade em lutas contra inimigos elétricos, mas mantenha armas metálicas longe das mãos em tempestades: o bônus não cobre o raio."
+  ],
+  "limitations": [
+    "Não protege da Montanha da Morte.",
+    "A Resistência ao calor não passa do nível 2.",
+    "O bônus elétrico exige as três peças a ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_desert_voe_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_desert_voe_spaulder",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_desert_voe_trousers",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_sapphire_circlet",
+      "relation": "Outra peça de cabeça com Resistência ao calor"
+    },
+    {
+      "id": "botw_material_icy_lizalfos_tail",
+      "relation": "Material dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Material dos dois primeiros níveis"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "protege_choque"
+  ],
+  "verification_status": "verificado"
+}

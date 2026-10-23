@@ -1,0 +1,173 @@
+{
+  "id": "botw_weapon_one_hit_obliterator",
+  "summary": "Arma do DLC The Champions' Ballad que derrota qualquer inimigo com um golpe — mas deixa Link com um quarto de coração, morrendo com um golpe também. Tem duas cargas que recarregam em segundos e nunca quebra.",
+  "description": "O Obliterador é a arma central da Prova do Domador de Feras Divinas (Divine Beast Tamer's Trial), parte da missão principal \"EX The Champions' Ballad\", disponível com o DLC depois que as quatro Feras Divinas são acalmadas. Ao devolver a Tabuleta Sheikah ao pedestal do Santuário da Ressurreição, um pedestal com o Obliterador surge na câmara; quando Link o pega, seus corações caem para um quarto de coração, e o Monge Maz Koshia o avisa de que a arma derrota inimigos com um golpe, mas também faz quem a empunha cair com um golpe.\n\nA arma não quebra, porém só pode ser usada duas vezes seguidas: depois disso, para de brilhar e fica com ataque 1 por alguns segundos, recarregando apenas enquanto não é brandida. Enquanto estiver na algibeira, Link não pode trocar para outra arma corpo a corpo nem recuperar vida — corações recuperados com comida somem logo ao fechar o menu. A prova consiste em limpar quatro acampamentos de monstros marcados no Planalto, cada um revelando um santuário (Etsu Korima, Rohta Chigah, Ruvo Korbah e Yowaka Ita). Concluídos os quatro, o Obliterador se divide em quatro orbes que se espalham por Hyrule e volta ao seu pedestal, de onde não pode mais ser retirado.",
+  "locations": [
+    "Santuário da Ressurreição, no Planalto, durante a missão \"EX The Champions' Ballad\" (DLC)."
+  ],
+  "obtaining": [
+    "Acalmar as quatro Feras Divinas com o DLC The Champions' Ballad instalado, ouvir o chamado de Zelda e devolver a Tabuleta Sheikah ao pedestal do Santuário da Ressurreição; o Obliterador surge na câmara.",
+    "Sair do Planalto antes de concluir a prova faz a arma voltar ao pedestal do Santuário da Ressurreição.",
+    "Após os quatro santuários, a arma fica presa no pedestal e não pode mais ser obtida."
+  ],
+  "uses": [
+    "Arma obrigatória da Prova do Domador de Feras Divinas, no Planalto.",
+    "Derrubar árvores com um golpe quando carregado."
+  ],
+  "effects": [
+    "Carregado, derrota qualquer inimigo com um golpe.",
+    "Enquanto estiver com Link, a vida fica reduzida a um quarto de coração e não pode ser recuperada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Com brilho, cada golpe derrota o inimigo na hora; após dois usos seguidos, perde o brilho e o ataque cai para 1 até recarregar, o que só acontece enquanto a arma não é brandida.",
+      "conditions": [
+        "Esperar alguns segundos sem atacar para recarregar as duas cargas."
+      ],
+      "side_effects": [
+        "Link fica com um quarto de coração e morre com qualquer golpe.",
+        "Não é possível trocar para outra arma corpo a corpo enquanto ele estiver na algibeira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:EX The Champions' Ballad",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o que acontece ao arremessar o Obliterador."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se a arma reage ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "É uma das duas únicas armas (com a Espada Mestra) que não voam das mãos de Link quando ele é eletrocutado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a arma atrai raios em tempestades."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a arma flutua ou afunda."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a arma é magnética."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Golpear o escudo de um inimigo não gasta a carga. Durante a prova, Link deve eliminar com ele os monstros de quatro acampamentos marcados no mapa do Planalto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:EX The Champions' Ballad"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Carregado, derruba uma árvore com um golpe; descarregado, precisa de 40 golpes para derrubá-la e 12 para transformar o tronco em lenha.",
+      "kind": "curiosidade",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Vida que não volta",
+      "text": "Com o Obliterador na algibeira, qualquer coração recuperado com materiais ou comida desaparece pouco depois de Link sair da tela do inventário. Os corações só são restaurados quando os quatro santuários da prova são concluídos.",
+      "sources": [
+        "zw",
+        "zw:EX The Champions' Ballad"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem Lua de sangue durante a prova",
+      "text": "Uma Lua de sangue agendada não acontece enquanto a parte do Obliterador da missão \"EX The Champions' Ballad\" está ativa.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "glitch",
+      "title": "Obliterador fora do Planalto",
+      "text": "Se Link mantiver o Obliterador por meio de glitches e o levar para fora do Planalto, a arma desaparece da algibeira caso o jogo seja recarregado com ela equipada.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Decoração xintoísta",
+      "text": "A arma é decorada com shide, tiras de papel dobrado usadas em rituais xintoístas.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ataque \"infinito\"",
+      "text": "O Zelda Wiki registra o ataque carregado como infinito, e os dados do compendium usados pelo atlas guardam o valor 1.000.000.000. Descarregado, o ataque é 1.",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contar os golpes: depois de dois ataques, recuar e esperar o brilho voltar antes de atacar de novo."
+  ],
+  "limitations": [
+    "Link morre com um golpe enquanto o carrega.",
+    "Só pode ser mantido no Planalto e durante a prova; sair do Planalto devolve a arma ao pedestal.",
+    "Após a prova, não pode mais ser retirado do pedestal."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_monk_maz_koshia",
+      "relation": "Monge que conduz a prova"
+    },
+    {
+      "id": "botw_keyitem_sheikah_slate",
+      "relation": "Devolvê-la ao pedestal inicia a prova"
+    },
+    {
+      "id": "botw_rune_master_cycle_zero",
+      "relation": "Recompensa final da missão \"EX The Champions' Ballad\""
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "A outra arma que não voa das mãos ao ser eletrocutado"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Não ocorre durante a prova"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "parcial"
+}

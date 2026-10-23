@@ -1,0 +1,194 @@
+{
+  "id": "botw_weapon_ancient_battle_axe_plus",
+  "summary": "Acha ancestral aprimorada (ataque 45) dos Guardiões batedores 3.0. Dano 1,3× contra Guardiões e Ganon, flutua, não atrai raios e é uma das armas pedidas por Nebb em Hateno.",
+  "description": "A Acha ancestral 2.0 é a versão reforçada da Acha ancestral, usada pelos Guardiões batedores 3.0 nos santuários de prova de força moderada (\"A Moderate Test of Strength\"). A descrição do jogo diz que seu poder de dano foi elevado ao máximo e que ela é afiada o bastante para cortar quase tudo — talvez tenha sido usada para abrir novos caminhos.\n\nMantém o multiplicador oculto do Equipamento guardião: 1,3× de dano contra Guardiões de todos os tipos, Iras de Ganon, Ganon, a Calamidade e Ganon, Besta Sombria. O material ancestral faz com que não queime, não conduza eletricidade, não atraia raios e não responda a Magnétis, mas flutue na água. É também o sexto item da missão secundária de Nebb, em Hateno, que paga uma rupia prateada para vê-la.",
+  "locations": [
+    "Santuários com a prova \"A Moderate Test of Strength\", nas mãos do Guardião batedor 3.0.",
+    "O compendium lista o Altiplano de Akkala e a Pradaria de Hyrule como locais comuns."
+  ],
+  "obtaining": [
+    "Derrotar o Guardião batedor 3.0 dos santuários de prova de força moderada.",
+    "A Lua de sangue revive os Guardiões batedores dos santuários, então a prova pode ser repetida para obter outra acha.",
+    "Chance de aparecer num baú ao escanear o amiibo do Guardião (série Breath of the Wild) com a runa amiibo.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Missão secundária \"The Weapon Connoisseur\": mostrar uma a Nebb, na Vila Hateno, rende uma rupia prateada (ele comenta que essa arma é rara por lá).",
+    "Combate contra Guardiões e Iras de Ganon, graças ao multiplicador de 1,3×.",
+    "Arma segura para tempestades e para o calor de Eldin."
+  ],
+  "effects": [
+    "Dano 1,3× maior contra Guardiões, Ganon e suas Iras (multiplicador oculto)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de duas mãos: golpes lentos e fortes, sem escudo. O ataque carregado é um giro contínuo que consome vigor e acaba numa pancada para baixo; o peso derruba a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao acertar o inimigo e causa acerto crítico (dano dobrado).",
+      "side_effects": [
+        "A arma é perdida — cuidado se ainda precisar dela para Nebb."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Segura de usar nas áreas escaldantes de Eldin.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis não a captura.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões e Ganon",
+      "status": "confirmado",
+      "result": "Golpes valem 1,3× contra Guardiões e Guardiões batedores (pernas e hélices incluídas), Iras de Ganon, Ganon, a Calamidade e Ganon, Besta Sombria.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Guardian"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "quem a empunha",
+      "status": "confirmado",
+      "result": "Arma do Guardião batedor 3.0 nos santuários de prova de força moderada.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco) pode surgir com Ataque aumentado de +4 a +8, Durabilidade aumentada de +2 a +4 ou Acerto crítico; no nível dourado (amarelo), Ataque de +9 a +14, Durabilidade de +5 a +9 ou Lançamento longo (×1,5 a ×2). Os bônus da arma vinda de amiibo recebem sempre o valor máximo do nível sorteado.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma arma \"rara\" para o colecionador",
+      "text": "Nebb pede oito armas na ordem: Espada do viajante, Varinha de fogo, Clava Moblin, Arco duplo, Corta-Vento, Acha ancestral 2.0, Lança congelante e Espada ancestral. A acha é a sexta e vale uma rupia prateada.",
+      "sources": [
+        "zw:The Weapon Connoisseur"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Reposição pela Lua de sangue",
+      "text": "Os Guardiões batedores dos santuários não são permanentes: a Lua de sangue os revive junto com os monstros de Hyrule, o que torna a Acha ancestral 2.0 uma arma renovável.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde uma unidade para a missão de Nebb antes de gastá-la em combate. Se perder, a Lua de sangue revive os Guardiões batedores dos santuários, e basta repetir a prova para conseguir outra."
+  ],
+  "limitations": [
+    "Durabilidade 20: rende poucos combates longos.",
+    "Não pode ser recuperada com Magnétis.",
+    "Sem escudo enquanto estiver empunhada."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_ancient_battle_axe",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_ancient_battle_axe_plus_plus",
+      "relation": "Versão máxima"
+    },
+    {
+      "id": "botw_monster_guardian_scout_iii",
+      "relation": "Inimigo que a empunha"
+    },
+    {
+      "id": "botw_weapon_windcleaver",
+      "relation": "Outra arma pedida por Nebb"
+    },
+    {
+      "id": "botw_weapon_moblin_club",
+      "relation": "Outra arma pedida por Nebb"
+    },
+    {
+      "id": "botw_mechanic_critical_hit",
+      "relation": "Arremesso e golpe de quebra são críticos"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

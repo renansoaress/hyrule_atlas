@@ -1,0 +1,118 @@
+{
+  "id": "botw_weapon_knights_claymore",
+  "summary": "Montante dos cavaleiros mais confiantes do Castelo de Hyrule (ataque 38), de gume finamente afiado. Comum em baús; 10% de chance de sair de um Montante enferrujado limpo por um Octoroc rochoso.",
+  "description": "O Montante do cavaleiro pertence ao Equipamento do cavaleiro. O jogo diz que só os cavaleiros mais confiantes do Castelo de Hyrule o carregavam e que seu gume é finamente afiado. Na linha dos montantes hylianos, fica entre o Montante do soldado e o Montante real.\n\nÉ encontrado com frequência em baús e também nas mãos de inimigos do Deserto Gerudo e da Fronteira de Tabantha. Outra fonte curiosa é o Octoroc rochoso: ao aspirar um Montante enferrujado, ele devolve uma versão limpa, com 10% de chance de ser um Montante do cavaleiro. Sendo de metal, conduz eletricidade, atrai raios, afunda e pode ser recuperado com Magnétis; não queima.",
+  "locations": [
+    "Baús por toda Hyrule.",
+    "Deserto Gerudo e Fronteira de Tabantha, com inimigos."
+  ],
+  "obtaining": [
+    "Abrir baús ou pegar a arma derrubada por inimigos dessas regiões.",
+    "Oferecer um Montante enferrujado a um Octoroc rochoso: 10% de chance de ele devolver um Montante do cavaleiro.",
+    "Chance de sair de baús dos amiibo de Link jovem e Ganondorf (Super Smash Bros.) e de Link (Link's Awakening) e Link (Ocarina of Time) (série The Legend of Zelda)."
+  ],
+  "uses": [
+    "Montante de dano bom para o meio do jogo.",
+    "Como espada, corta árvores; por ser de metal, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e fortes de duas mãos, sem escudo. O ataque carregado gira enquanto houver vigor e termina numa pancada para baixo; o peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link levar um choque, o montante voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "confirmado",
+      "result": "Um Octoroc rochoso que aspire um Montante enferrujado o devolve limpo: 50% Montante do viajante, 35% Montante do soldado, 10% Montante do cavaleiro e 5% Montante real.",
+      "kind": "mecanica",
+      "sources": ["zw:Rock Octorok"]
+    },
+    {
+      "action": "monstros",
+      "variant": "quem o empunha",
+      "status": "confirmado",
+      "result": "Inimigos do Deserto Gerudo e da Fronteira de Tabantha podem carregá-lo; a fonte não especifica quais.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +4 a +7, Durabilidade aumentada de +3 a +5 ou Acerto crítico; no nível dourado (amarelo): Ataque de +8 a +13, Durabilidade de +6 a +8 ou Lançamento longo (×1,5 a ×2).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Octorocs também restauram a durabilidade",
+      "text": "Além de limpar armas enferrujadas, o Octoroc rochoso restaura a durabilidade de armas e escudos que aspira e cospe de volta. A capacidade de cada Octoroc de repor armas é reiniciada a cada Lua de sangue.",
+      "sources": ["zw:Durability", "zw:Blood Moon"]
+    }
+  ],
+  "advanced_uses": [
+    "Junte Montantes enferrujados (comuns e frágeis) e leve-os aos Octorocs rochosos de Eldin para tentar transformá-los em Montantes do cavaleiro ou reais."
+  ],
+  "limitations": [
+    "Metálico: perigoso em tempestades.",
+    "Sem escudo enquanto estiver empunhado."
+  ],
+  "related": [
+    { "id": "botw_weapon_rusty_claymore", "relation": "Pode virar Montante do cavaleiro num Octoroc rochoso" },
+    { "id": "botw_weapon_soldiers_claymore", "relation": "Montante hyliano abaixo na linha" },
+    { "id": "botw_weapon_royal_claymore", "relation": "Montante hyliano acima na linha" },
+    { "id": "botw_weapon_knights_broadsword", "relation": "Arma de uma mão do mesmo equipamento" },
+    { "id": "botw_weapon_knights_halberd", "relation": "Lança do mesmo equipamento" },
+    { "id": "botw_monster_rock_octorok", "relation": "Limpa Montantes enferrujados" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "botw_shield_savage_lynel_shield",
+  "summary": "O escudo centaleônico definitivo, dos Centaleões de juba branca, prateados e dourados: Defesa 62 e 21 de dano a cada aparada com A. Como os outros da linha, gasta durabilidade ao aparar.",
+  "description": "A Defesa centaleônica Feroz é a versão máxima do escudo dos Centaleões. Segundo o jogo, é usada apenas pelos Centaleões de pelagem branca e se destaca tanto para aguentar os ataques mais brutais quanto para derrubar inimigos poderosos ao aparar. Tem Defesa 62 e durabilidade 20, e o movimento de aparar (A enquanto segura ZL) causa 21 de dano cortante. Pertence ao equipamento centaleônico (Lynel Gear).\n\nAlém dos Centaleões de juba branca, os Centaleões prateados e os dourados (estes só no Modo Mestre) também a carregam. Como toda a linha, perde durabilidade a cada aparada, inclusive na Defesa perfeita. É de metal: atrai raios em tempestades, conduz eletricidade, afunda e pode ser movida com Magnétis; não queima.",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra, segundo o compendium.",
+    "Com Centaleões de juba branca e prateados em toda Hyrule conforme o nível do mundo sobe."
+  ],
+  "obtaining": [
+    "Derrotar Centaleões de juba branca ou prateados (ou dourados, no Modo Mestre)."
+  ],
+  "uses": [
+    "Aparar causando 21 de dano cortante, o maior da linha centaleônica.",
+    "Escudo de metal de defesa muito alta para o fim do jogo."
+  ],
+  "effects": [
+    "As lâminas causam 21 de dano ao aparar."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 62. Aparar com A golpeia o inimigo com as lâminas, causando 21 de dano.",
+      "conditions": ["Segurar ZL e apertar A."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "jogo"]
+    },
+    {
+      "action": "defender",
+      "variant": "Defesa perfeita",
+      "status": "confirmado",
+      "result": "A Defesa perfeita funciona normalmente, mas este escudo perde durabilidade a cada aparada, ao contrário dos escudos comuns.",
+      "side_effects": ["Com 20 de durabilidade, aparadas em sequência o esgotam depressa."],
+      "kind": "mecanica",
+      "sources": ["zw:Durability", "zw:Perfect Guard"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Usada por Centaleões de juba branca, Centaleões prateados e, no Modo Mestre, Centaleões dourados.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +3 a +6 (nível branco) ou +7 a +12 (nível amarelo) e com Defesa do escudo aumentada de +6 a +11 (branco) ou +12 a +22 (amarelo). Como aparar gasta durabilidade, um exemplar com +12 de durabilidade (32 no total) rende bem mais aparadas.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Durability"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Só os de pelagem branca\"",
+      "text": "A descrição do jogo diz que o escudo é usado apenas pelos Centaleões de pelagem branca, mas os Centaleões prateados — e os dourados do Modo Mestre — também o empunham.",
+      "sources": ["jogo", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Contra Centaleões, que permitem Defesa perfeita na maioria dos ataques, cada aparada certa também tira 21 de vida — mas troque de escudo antes que a durabilidade acabe."
+  ],
+  "limitations": [
+    "Perde durabilidade ao aparar, inclusive na Defesa perfeita.",
+    "Durabilidade de 20 para um escudo de fim de jogo."
+  ],
+  "related": [
+    { "id": "botw_shield_lynel_shield", "relation": "Versão básica (7 de dano ao aparar)" },
+    { "id": "botw_shield_mighty_lynel_shield", "relation": "Versão intermediária (13 de dano ao aparar)" },
+    { "id": "botw_weapon_savage_lynel_sword", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_weapon_savage_lynel_spear", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_weapon_savage_lynel_crusher", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_bow_savage_lynel_bow", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_monster_white_maned_lynel", "relation": "Monstro que a empunha" },
+    { "id": "botw_monster_silver_lynel", "relation": "Monstro que a empunha" },
+    { "id": "botw_monster_golden_lynel_mm", "relation": "Monstro que a empunha (Modo Mestre)" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "habilidade_especial"],
+  "verification_status": "verificado"
+}

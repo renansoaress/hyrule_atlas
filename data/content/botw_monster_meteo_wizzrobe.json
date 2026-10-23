@@ -1,0 +1,127 @@
+{
+  "id": "botw_monster_meteo_wizzrobe",
+  "summary": "Versão mais forte do Feitiçano ígneo (300 pontos de vida): conjura três bolas de fogo por vez com o Cajado meteórico, invoca monstros flamejantes e aquece a área. Morre na hora com Flecha congelante ou Espada álgida.",
+  "description": "O Feitiçano meteórico é a variante superior do Feitiçano ígneo. Com o Cajado meteórico, conjura três bolas de fogo de uma vez e invoca monstros flamejantes como Chulchuls ígneos e Morcis ígneos; também eleva a temperatura da área a ponto de ferir Link sem armadura ou elixir de resistência ao calor. O compendium cita a Pradaria de Hyrule e o Cânion de Eldin como locais comuns e lembra que o clima volta ao normal quando ele é derrotado.\n\nComo todo Feitiçano, fica invisível depois de atacar, deixando ondulações no ar a cada passo, e uma flecha na cabeça o atordoa. A fraqueza é a mesma do Feitiçano ígneo: um ataque de gelo — Flecha congelante, Espada álgida — o evapora instantaneamente. Tem 300 pontos de vida e deixa o Cajado meteórico, a versão mais forte da Varinha de fogo.",
+  "locations": [
+    "Pradaria de Hyrule e Cânion de Eldin, segundo o compendium."
+  ],
+  "obtaining": [
+    "Deixa o Cajado meteórico ao ser derrotado.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte do Cajado meteórico: três bolas de fogo por golpe, oito no ataque giratório, um nível de resistência ao frio e morte instantânea de inimigos de gelo.",
+    "Registro no compendium (entrada nº 100)."
+  ],
+  "effects": [
+    "Três bolas de fogo por ataque; calor intenso na área."
+  ],
+  "interactions": [
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Um ataque de gelo, como uma única Flecha congelante ou um golpe da Espada álgida, o evapora imediatamente.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ice Arrow", "zw:Enemy"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha na cabeça o atordoa, dando tempo para atacar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Tem 300 pontos de vida e fica invisível após atacar; as ondulações no ar a cada passo revelam onde está.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques no Feitiçano meteórico."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Feitiçano meteórico com água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem um efeito específico de explosões nele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo; nesse estado ficam imunes a congelamento.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Nem o Feitiçano nem o Cajado meteórico são metálicos.",
+      "sources": ["zw:Magnesis", "zw:Meteor Rod"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Eleva a temperatura da área; o clima se normaliza quando ele é derrotado.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Invoca Chulchuls ígneos e Morcis ígneos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Chuchu", "zw:Fire Keese"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cajado que mata inimigos de gelo",
+      "text": "O Cajado meteórico que ele deixa derrota instantaneamente inimigos de gelo, como Lagalfos glaciais e Feitiçanos glaciais, com qualquer ataque — além de dar resistência ao frio.",
+      "sources": ["zw:Meteor Rod"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Não é exclusivo dele",
+      "text": "Embora seja a arma típica do Feitiçano meteórico, o Cajado meteórico também pode ser empunhado por Feitiçanos ígneos e até por Koboblins azuis.",
+      "sources": ["zw:Meteor Rod"]
+    }
+  ],
+  "advanced_uses": [
+    "Derrotá-lo com uma Flecha congelante e usar o Cajado meteórico obtido para atravessar regiões geladas eliminando inimigos de gelo."
+  ],
+  "limitations": [
+    "O calor que ele provoca persiste até que seja derrotado."
+  ],
+  "related": [
+    { "id": "botw_weapon_meteor_rod", "relation": "Arma que deixa" },
+    { "id": "botw_monster_fire_wizzrobe", "relation": "Versão mais fraca" },
+    { "id": "botw_monster_blizzrobe", "relation": "Feitiçano forte do elemento oposto" },
+    { "id": "botw_monster_fire_chuchu", "relation": "Monstro que invoca" },
+    { "id": "botw_monster_fire_keese", "relation": "Monstro que invoca" },
+    { "id": "botw_arrow_ice_arrow", "relation": "Mata-o com um acerto" },
+    { "id": "botw_weapon_frostblade", "relation": "Arma de gelo que o evapora" }
+  ],
+  "capabilities": ["gera_fogo", "reage_gelo", "vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

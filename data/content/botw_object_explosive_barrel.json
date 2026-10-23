@@ -1,0 +1,125 @@
+{
+  "id": "botw_object_explosive_barrel",
+  "summary": "Barril de pólvora comum em acampamentos de monstros. Explode ao contato com chama aberta ou com impacto forte, incendeia o que for inflamável ao redor e detona outros barris em cadeia — mas não uma Bomba remota.",
+  "description": "O Barril explosivo (Bomb Barrel) aparece principalmente em acampamentos de monstros. Basta uma chama aberta para detoná-lo: a dica do jogo sugere acertar uma Flecha incendiária nele ou arremessar uma arma em chamas. Dano de impacto suficiente também faz o barril se romper e explodir. A explosão fere quem estiver por perto, incendeia tudo o que for inflamável no raio e pode detonar outros barris explosivos próximos, numa reação em cadeia; já uma Bomba remota próxima não é detonada por ela.\n\nCom Estátis, o barril vira projétil: congelado no tempo e golpeado com uma arma, ele voa na direção da seta e explode onde cair. O perigo também vem do outro lado: Koboblins pegam barris explosivos para arremessá-los em Link, Rinox pretos os atiram quando Link sobe fora do alcance e o Stalnox desenterra barris que explodem ao contato.",
+  "locations": [
+    "Acampamentos e fortalezas de monstros por toda Hyrule.",
+    "Santuário Kah Okeo, onde aparecem presos a balões."
+  ],
+  "obtaining": [
+    "Não é coletável: é um objeto do cenário que Link pode erguer e carregar."
+  ],
+  "uses": [
+    "Explodir acampamentos de monstros à distância com uma Flecha incendiária.",
+    "Lançar o barril com Estátis para que exploda num ponto distante.",
+    "Iniciar incêndios na grama ao redor dos inimigos com a explosão."
+  ],
+  "effects": [
+    "Explosão que fere quem estiver no raio e incendeia o que for inflamável."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Explode ao contato com uma chama aberta: Flecha incendiária, arma em chamas arremessada ou outra fonte de fogo.",
+      "applications": ["Atirar uma Flecha incendiária num barril cercado de monstros."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Fire"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Dano de impacto suficiente rompe o barril e o faz explodir.",
+      "side_effects": ["Golpeá-lo de perto coloca Link no raio da explosão."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de outro barril explosivo o detona, permitindo reações em cadeia.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "A fonte só diz que dano de impacto suficiente faz o barril explodir; não descreve especificamente a explosão de uma Bomba remota contra ele. O contrário está confirmado: a explosão do barril não detona Bombas remotas."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Congelado com Estátis e golpeado, o barril é lançado e explode no ponto de impacto.",
+      "applications": ["Bombardear inimigos que estão longe ou em posição elevada."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "No Santuário Kah Okeo, os barris presos a balões podem ser guiados com o vento de uma Folha Korok.",
+      "side_effects": ["Se Link tentar pegar um barril preso a balões, as cordas se rompem."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins pegam e arremessam barris explosivos em Link; Rinox pretos os atiram quando Link escala fora do alcance; o Stalnox desenterra barris que explodem ao contato.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin", "zw:Hinox", "zw:Stalnox"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Tudo o que for inflamável no raio pega fogo, e árvores finas e médias apanhadas pela explosão são derrubadas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tree"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não dizem se eletricidade (Flecha eletrizante, armas elétricas) detona o barril."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As fontes não informam o material do barril nem se Magnétis o afeta (a runa só atua sobre metal)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Não detona a Bomba remota",
+      "text": "Mesmo podendo detonar outros barris em cadeia, a explosão de um barril explosivo não faz uma Bomba remota explodir.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Barris voadores no Kah Okeo",
+      "text": "No Santuário Kah Okeo, barris explosivos presos a balões flutuam e podem ser empurrados com a Folha Korok até o alvo.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Arremessar uma arma de madeira acesa no barril quando não houver Flechas incendiárias.",
+    "Detonar o barril mais próximo de outros para provocar uma explosão em cadeia que atinja o acampamento inteiro."
+  ],
+  "limitations": [
+    "A explosão também fere Link se ele estiver no raio.",
+    "Monstros podem usar o barril contra Link."
+  ],
+  "related": [
+    { "id": "botw_object_barrel", "relation": "Barril comum, sem explosivo" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Forma recomendada pelo jogo para detoná-lo" },
+    { "id": "botw_rune_stasis", "relation": "Permite lançar o barril" },
+    { "id": "botw_rune_remote_bomb", "relation": "Não é detonada pela explosão do barril" },
+    { "id": "botw_weapon_korok_leaf", "relation": "Guia barris presos a balões" },
+    { "id": "botw_monster_bokoblin", "relation": "Arremessa barris em Link" },
+    { "id": "botw_monster_black_hinox", "relation": "Atira barris quando Link escala" },
+    { "id": "botw_monster_stalnox", "relation": "Desenterra barris explosivos" },
+    { "id": "botw_mechanic_fire", "relation": "Detona o barril e é espalhado pela explosão" }
+  ],
+  "capabilities": ["gera_explosao", "gera_fogo", "reage_fogo"],
+  "verification_status": "parcial"
+}

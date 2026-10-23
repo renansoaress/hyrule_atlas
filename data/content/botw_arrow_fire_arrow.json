@@ -1,0 +1,215 @@
+{
+  "id": "botw_arrow_fire_arrow",
+  "summary": "Flecha imbuída de fogo que se desfaz numa explosão de chamas ao acertar (+10 de dano), incendiando o que for inflamável. Derrota inimigos de gelo com um tiro, mas não acende nada enquanto chove.",
+  "description": "A Flecha incendiária carrega o poder do fogo. Segundo a descrição do jogo, ela se parte ao impactar e incendeia os objetos ao redor, sendo incrivelmente eficaz contra coisas frias. Funciona com qualquer arco que use flechas comuns e soma 10 ao ataque do arco. Quem é atingido — inimigo ou o próprio Link — pega fogo por alguns instantes.\n\nÉ a ferramenta de fogo à distância do jogo: acende tochas, derrete gelo, ilumina lugares escuros e aquece Link em climas frios. Um tiro na grama inicia um incêndio que cria correntes ascendentes para o Planador, e um tiro num Barril explosivo o detona. Contra inimigos de gelo, como o Feitiçano glacial, o Feitiçano da nevasca e o Lagalfos glacial, basta uma flecha para derrotá-los.\n\nA grande limitação é a chuva: enquanto chove, a chama morre rápido e a flecha não consegue incendiar nada.",
+  "locations": [
+    "Pradaria de Hyrule e Cânion de Eldin (locais comuns segundo o compendium).",
+    "Em baús e com inimigos arqueiros, às vezes em feixes."
+  ],
+  "obtaining": [
+    "Recolher em baús ou como drop de inimigos arqueiros (Koboblins, Moblins, Lagalfos e Centaleões às vezes as usam).",
+    "Comprar na loja de flechas da Cidade Gerudo (Arrow Specialty Shop), na Goron Gusto Shop da Cidade Goron, na filial de Tarrey Town do Slippery Falcon, na loja de Shaillu no Bazar Kara Kara, na The Curious Quiver de Vila Kakariko e com Botrick, no Outskirt Stable."
+  ],
+  "uses": [
+    "Derrotar com um só tiro Feitiçanos glaciais, Feitiçanos da nevasca e Lagalfos glaciais.",
+    "Acender tochas, fogueiras e grama à distância; detonar Barris explosivos.",
+    "Derreter gelo e iluminar áreas escuras."
+  ],
+  "effects": [
+    "+10 de dano sobre o ataque do arco.",
+    "Incendeia o alvo e o que for inflamável ao redor do impacto."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Disparada por qualquer arco que use flechas comuns, soma 10 ao ataque do arco e, no impacto, se desfaz numa explosão de fogo que queima tudo o que for inflamável por perto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "É uma fonte de fogo à distância: as chamas do impacto acendem tochas e incendeiam qualquer objeto inflamável atingido.",
+      "applications": [
+        "Acender tochas de quebra-cabeças fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Derrete gelo e, segundo a descrição do jogo, é incrivelmente eficaz contra coisas frias.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "A flecha emite calor e luz, o que ajuda Link a se manter aquecido em climas frios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha incendiária com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece quando a Flecha incendiária atinge a água; só confirmam que, na chuva, ela não consegue incendiar nada."
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Enquanto chove, a chama da flecha morre rápido e ela não consegue incendiar nada.",
+      "side_effects": [
+        "A chuva também apaga imediatamente os fogos expostos, com exceção da Chama azul."
+      ],
+      "applications": [
+        "Espere a chuva passar antes de tentar incendiar grama ou acampamentos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Rain"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Incendeia o inimigo atingido por alguns instantes. Feitiçanos glaciais, Feitiçanos da nevasca e Lagalfos glaciais são derrotados com uma única flecha — o Feitiçano glacial chega a evaporar.",
+      "side_effects": [
+        "Koboblins, Moblins, Lagalfos e Centaleões às vezes usam Flechas incendiárias contra Link, que também pega fogo se for atingido.",
+        "Todos os Centaleões resistem a ataques elementais e aos efeitos deles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ice Wizzrobe",
+        "zw:Lynel",
+        "jogo"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Incendeia grama, madeira e outros objetos inflamáveis. O fogo que se espalha pela grama cria correntes ascendentes; um tiro num Barril explosivo o faz explodir; um feixe de Madeira incendiado vira fogueira.",
+      "applications": [
+        "Incendiar a grama e subir com o Planador na corrente ascendente para atirar do alto.",
+        "Explodir Barris explosivos de acampamentos com um tiro, ferindo os inimigos próximos.",
+        "Queimar cipós e folhagens inflamáveis, que às vezes escondem Koroks e santuários."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire",
+        "zw:Updraft",
+        "zw:Bomb Barrel",
+        "zw:Campfire",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Incêndio a favor do vento",
+      "text": "Fogo iniciado na grama se espalha mais depressa com o vento: atirar uma Flecha incendiária na grama a favor do vento pode levar as chamas até um acampamento inimigo antes que elas se apaguem.",
+      "sources": [
+        "zw:Fire"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Corrente ascendente sob demanda",
+      "text": "A dica do próprio jogo explica que o fogo que se espalha cria uma corrente ascendente. Uma Flecha incendiária num campo de grama gera essa corrente, e Link pode abrir o Planador nela para ganhar altura e disparar do ar em câmera lenta.",
+      "sources": [
+        "zw:Updraft",
+        "zw:Fire",
+        "jogo",
+        "zw:Bow"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fraqueza elemental",
+      "text": "A dica \"fraquezas elementais\" do jogo afirma que um ataque de fogo contra um inimigo de gelo pode derrotá-lo com um golpe. Com a Flecha incendiária, isso vale para o Feitiçano glacial, o Feitiçano da nevasca e o Lagalfos glacial.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use-a para acender tochas e fogueiras distantes antes de cozinhar ou resolver quebra-cabeças."
+  ],
+  "limitations": [
+    "Não incendeia nada durante a chuva.",
+    "Centaleões resistem ao efeito de queimadura.",
+    "Cuidado com grama seca e equipamento de madeira por perto: o fogo se espalha."
+  ],
+  "related": [
+    {
+      "id": "botw_arrow_arrow",
+      "relation": "Versão comum; pode ser acesa atravessando o fogo"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Elemento oposto"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Derrotado com uma única Flecha incendiária"
+    },
+    {
+      "id": "botw_monster_blizzrobe",
+      "relation": "Derrotado com uma única Flecha incendiária"
+    },
+    {
+      "id": "botw_monster_ice_breath_lizalfos",
+      "relation": "Derrotado com uma única Flecha incendiária"
+    },
+    {
+      "id": "botw_object_explosive_barrel",
+      "relation": "Explode ao ser atingido por ela"
+    },
+    {
+      "id": "botw_object_grass",
+      "relation": "Pega fogo e gera correntes ascendentes"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "Criada pelo fogo que se espalha na grama"
+    },
+    {
+      "id": "botw_mechanic_rain",
+      "relation": "Impede a flecha de incendiar"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Pode ser acesa com a flecha"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "queima_inimigos",
+    "ilumina",
+    "protege_frio",
+    "vence_rapido"
+  ],
+  "verification_status": "parcial"
+}

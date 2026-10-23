@@ -1,0 +1,81 @@
+{
+  "id": "botw_creature_donkey",
+  "summary": "Animal de carga dos mercadores ambulantes. Não existe na natureza: é criado como gado e anda sempre atrás do seu mercador pelas estradas, ou descansa nos estábulos.",
+  "description": "O Burro é menor que o cavalo, mas mais forte do que parece e especializado em carregar bagagem, o que o tornou popular entre os mercadores viajantes. Por ser criado como gado no interior, não existe em estado selvagem: só aparece acompanhando mercadores nas estradas ou parado nos estábulos, e segue sempre o mercador com quem viaja. Não é uma montaria — não está entre as criaturas montáveis do jogo — e as fontes não descrevem nenhuma interação direta de Link com ele além de registrá-lo no compendium.",
+  "locations": [
+    "Estradas de Toda Hyrule, junto de mercadores ambulantes.",
+    "Estábulos, onde os mercadores param para descansar."
+  ],
+  "obtaining": [
+    "Não pode ser obtido. Pode apenas ser fotografado para o compendium (entrada nº 6)."
+  ],
+  "uses": [
+    "Registrar a foto no compendium.",
+    "Seguir um burro é seguir o mercador dono dele: os dois viajam sempre juntos."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não dizem como o burro reage à aproximação de Link; só informam que ele acompanha o mercador o tempo todo."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: o burro não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se o burro for atacado."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre flechas acertando o burro."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Equus donkus",
+      "text": "Segundo o mercador ambulante Cambo, o nome científico do burro é \"equus donkus\".",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Sem burros selvagens",
+      "text": "O compendium explica que os burros são criados como gado no campo e por isso não existem na natureza — todos os que Link encontra pertencem a alguém.",
+      "sources": ["comp"]
+    }
+  ],
+  "limitations": [
+    "Não pode ser montado nem registrado.",
+    "Não deixa itens conhecidos."
+  ],
+  "related": [
+    { "id": "botw_creature_horse", "relation": "Parente maior, usado como montaria" },
+    { "id": "botw_mechanic_stable", "relation": "Local onde os burros dos mercadores descansam" }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

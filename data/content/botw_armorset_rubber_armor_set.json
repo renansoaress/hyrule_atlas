@@ -1,0 +1,87 @@
+{
+  "id": "botw_armorset_rubber_armor_set",
+  "summary": "Conjunto de borracha ligado a tempestades: elmo de uma missão no Estábulo Lakeside e peças em dois santuários. Cada peça dá Resistência a choques; em ★★ Link fica imune a eletricidade e raios.",
+  "description": "O Conjunto de borracha reúne o Elmo de borracha, a Armadura de borracha e a Meia-calça de borracha, todas obtidas em lugares ligados a tempestades. O elmo é a recompensa da Missão secundária \"Thunder Magnet\": Cima, do Estábulo Lakeside, reclama que raios caem demais no estábulo, e Link descobre que a culpa é de um Machado de lenhador de metal deixado no telhado. A armadura está num baú do Santuário Toh Yahsa, no Planalto Thundra, aberto pela missão de santuário \"Trial of Thunder\"; a meia-calça está no Santuário Qukah Nata, no Lago Calora, aberto pela missão \"A Song of Storms\".\n\nCada peça dá um nível de Resistência a choques, que reduz o dano elétrico em 33%, 66% e 100% nos níveis 1 a 3; no nível 3, alcançado com as três peças, Link também deixa de derrubar o equipamento ao levar choque. Com as três melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ganha a imunidade a choques (Unshockable): nenhum dano de eletricidade nem de raios e nenhum efeito negativo, como ser arremessado ou desarmado. A resistência das peças sozinha não protege da explosão causada por um raio; o bônus em ★★ sim.\n\nGranté revende as peças em Tarrey Town depois de obtidas. As melhorias pedem Geleca elétrica, Fruta isolante, Aterramelo, Cauda de Lagalfos elétrico e Topázio. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Estábulo Lakeside, onde Cima dá o Elmo de borracha.",
+    "Santuário Toh Yahsa, no Planalto Thundra: Armadura de borracha.",
+    "Santuário Qukah Nata, no Lago Calora: Meia-calça de borracha.",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Elmo de borracha: tirar o Machado de lenhador do telhado do Estábulo Lakeside e contar a Cima (\"Thunder Magnet\").",
+    "Armadura de borracha: baú do Santuário Toh Yahsa, depois da missão de santuário \"Trial of Thunder\".",
+    "Meia-calça de borracha: baú do Santuário Qukah Nata, depois da missão de santuário \"A Song of Storms\".",
+    "Recompra com Granté por 4.000 rupias cada."
+  ],
+  "uses": [
+    "Enfrentar inimigos e ataques elétricos com pouco ou nenhum dano.",
+    "Usar armas e escudos de metal durante tempestades sem medo dos raios, quando o conjunto está em ★★."
+  ],
+  "effects": [
+    "Cada peça: Resistência a choques (um nível por peça; nível 3 com as três, -100% de dano elétrico e sem derrubar o equipamento).",
+    "Bônus de conjunto (três peças em ★★): imunidade a choques, sem dano nem efeitos de eletricidade e de raios."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Resistência a choques de nível 3; em ★★ o conjunto completo torna Link imune a eletricidade e raios.",
+      "conditions": ["Elmo, armadura e meia-calça de borracha vestidos juntos; para o bônus, todos com ★★."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Reduz o dano elétrico conforme o nível acumulado (33%, 66% ou 100%); no nível 3, Link não derruba a arma ao levar choque. Em ★★, nenhum efeito elétrico o atinge.",
+      "kind": "mecanica",
+      "sources": ["zw:Added Effect", "zw:Set Bonus"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Com o conjunto completo em ★★, os raios de tempestade não causam dano nem derrubam Link. Sem o bônus, a Resistência a choques das peças não reduz a explosão de um raio.",
+      "conditions": ["Três peças com ★★ para a imunidade aos raios."],
+      "applications": ["Manter equipamentos de metal durante uma tempestade."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus", "zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O ímã de raios do estábulo",
+      "text": "A missão que dá o elmo ilustra a mecânica de metal e raios: o Machado de lenhador esquecido no telhado do Estábulo Lakeside atrai os raios. Cima ainda se pergunta se alguém o colocou lá de propósito.",
+      "sources": ["zw:Thunder Magnet"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nomes diferentes para o mesmo bônus",
+      "text": "A página do conjunto chama o bônus de Lightning Proof e diz que ele impede o atordoamento por choque; a lista de bônus de conjunto o chama de Unshockable e o descreve como imunidade total a eletricidade e raios, igual ao efeito do Elmo do trovão.",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    }
+  ],
+  "advanced_uses": [
+    "Em ★★, use o conjunto em tempestades para combater com armas de metal sem risco de atrair raios para si.",
+    "Mesmo sem melhorias, as três peças já anulam o dano elétrico dos inimigos (nível 3), embora não protejam da explosão do raio."
+  ],
+  "limitations": [
+    "Sem ★★, o conjunto não protege da explosão causada pela queda de um raio.",
+    "O elmo depende de uma missão secundária, e as outras duas peças exigem concluir duas missões de santuário antes de abrir os santuários."
+  ],
+  "related": [
+    { "id": "botw_armor_rubber_helm", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_rubber_armor", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_rubber_tights", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armor_thunder_helm", "relation": "Dá a mesma imunidade como efeito de uma única peça" },
+    { "id": "botw_weapon_woodcutters_axe", "relation": "Atrai os raios na missão \"Thunder Magnet\"" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "O bônus anula os raios das tempestades" },
+    { "id": "botw_mechanic_electricity", "relation": "As peças reduzem o dano elétrico" },
+    { "id": "botw_material_topaz", "relation": "Material da última melhoria" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["protege_choque"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "botw_armor_sand_boots",
+  "summary": "Botas Gerudo cujas solas distribuem o peso para Link andar na areia sem perder velocidade. Bozai as entrega na missão \"The Eighth Heroine\"; podem ser usadas dentro da Cidade Gerudo.",
+  "description": "As Botas de areia anulam a penalidade de 20% de velocidade que Link sofre ao andar na areia, seja no Deserto Gerudo, seja em praias. Para consegui-las, Link precisa falar com Bozai, que corre em frente à Cidade Gerudo, vestido com o Traje Gerudo: ele pensa que Link é mulher, inicia a Missão secundária \"The Eighth Heroine\" e empresta as Botas de neve para a viagem às Montanhas Gerudo. Ao mostrar a foto da estátua da oitava heroína, Link devolve as Botas de neve e recebe as Botas de areia. Depois, Granté passa a vendê-las por 800 rupias.\n\nAs botas são toleradas dentro da Cidade Gerudo junto com a Blusa e o Véu Gerudo. Não são exigidas em nenhuma missão, mas tê-las libera a continuação \"The Forgotten Sword\". A defesa vai de 3 a 20; as melhorias pedem Barbatanas e Vísceras de Molduga (o gargalo, já que só os Moldugas as soltam) mais Lagartos fujões, Cenouras velozes, Agilimelos e 15 Violetas velozes. A página do item traz opções de tingimento na Tinturaria Kochi.",
+  "locations": [
+    "Arredores da Cidade Gerudo, com Bozai.",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Missão secundária \"The Eighth Heroine\": vestir o Traje Gerudo, falar com Bozai e mostrar a ele a foto da estátua da oitava heroína, nas Montanhas Gerudo.",
+    "Recomprar de Granté por 800 rupias depois de obtê-las."
+  ],
+  "uses": [
+    "Andar e correr na areia na velocidade normal.",
+    "Manter o disfarce na Cidade Gerudo com a Blusa e o Véu Gerudo."
+  ],
+  "effects": [
+    "Velocidade na areia: remove a penalidade de 20% de movimento na areia."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede Velocidade na areia: Link deixa de perder 20% de velocidade ao se mover na areia. Não faz parte de nenhum conjunto.",
+      "side_effects": [
+        "Dentro da Cidade Gerudo, pode substituir o Sirwal Gerudo sem que os guardas expulsem Link, mas o bônus de calor do Traje Gerudo completo se perde."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Gerudo Town"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Em terreno de areia — Deserto Gerudo e praias — Link anda e corre na velocidade normal.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Galanteio de Bozai",
+      "text": "Bozai se apresenta como solteiro e apaixonado por correr na areia; reluta em entregar botas tão raras, mas topa ao perceber que poderia usá-las para conquistar \"a moça\". Sua proposta: \"Mostre-me a oitava heroína e eu lhe dou estas botas de areia.\"",
+      "sources": [
+        "zw:The Eighth Heroine",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Porta para \"The Forgotten Sword\"",
+      "text": "Receber as Botas de areia libera a missão seguinte de Bozai, \"The Forgotten Sword\", que é o único jeito de ficar com as Botas de neve permanentemente.",
+      "sources": [
+        "zw",
+        "zw:The Forgotten Sword"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao combater Moldugas ou atravessar o deserto a pé, as botas eliminam a lentidão na areia; com o Véu e a Blusa Gerudo, servem também para circular na Cidade Gerudo."
+  ],
+  "limitations": [
+    "Sem efeito fora da areia.",
+    "As melhorias dependem de partes de Molduga."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Botas emprestadas na mesma missão"
+    },
+    {
+      "id": "botw_armor_gerudo_sirwal",
+      "relation": "Peça que as botas podem substituir na Cidade Gerudo"
+    },
+    {
+      "id": "botw_armorset_gerudo_outfit",
+      "relation": "Traje necessário para falar com Bozai"
+    },
+    {
+      "id": "botw_material_molduga_fin",
+      "relation": "Material das duas primeiras melhorias"
+    },
+    {
+      "id": "botw_material_molduga_guts",
+      "relation": "Material das duas últimas melhorias"
+    },
+    {
+      "id": "botw_monster_molduga",
+      "relation": "Fonte dos materiais de melhoria"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

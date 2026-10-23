@@ -1,0 +1,221 @@
+{
+  "id": "botw_material_shard_of_faroshs_fang",
+  "summary": "Lasca dos dentes de Farosh, tão dura que \"martelos ricocheteiam\", obtida com uma flecha na parte de baixo da boca. Soma 10:30 a um elixir e é o 3º nível do Gorro selvagem e das Botas da Deidade Feroz.",
+  "description": "A Lasca da presa de Farosh é uma parte do espírito dourado Farosh, o dragão elétrico que, segundo o compendium, não tem má vontade com as pessoas. Ela se solta quando Link acerta uma flecha nos dentes, na parte de baixo da boca do dragão e cai no chão envolta em luz. Farosh frequenta o Lago Hylia, o Lago Floria e as Montanhas Gerudo: pelo horário do Zelda Wiki, sai da água na Riola Spring por volta das 5h, cruza o Lago Floria pela manhã — passando por baixo da Ponte Floria — e sobrevoa o Vatorsa Snowfield, nas Montanhas Gerudo, no começo da noite. O inventário diz que ela é tão dura que martelos ricocheteiam nela, impossível de processar, mas que, segundo boatos, ainda serve de material.\n\nNa panela, funciona como parte de monstro: com bichos forma um elixir e acrescenta 10:30 à duração na primeira unidade (0:30 em cada unidade extra da mesma parte); sem bichos, vira Comida duvidosa. Vale 250 rupias ou 110 Mon com Kilton. Nas Grandes Fadas, é o material do 3º nível do Gorro selvagem e das Botas da Deidade Feroz. Na Tinturaria Kochi, entra no corante amarelo-claro.",
+  "locations": [
+    "Lago Hylia, Lago Floria (passando sob a Ponte Floria) e Montanhas Gerudo."
+  ],
+  "obtaining": [
+    "Acertar uma flecha nos dentes, na parte de baixo da boca de Farosh enquanto o dragão voa; a peça cai no chão envolta em luz.",
+    "Cada tipo de parte só cai uma vez por encontro com o dragão; os dragões voltam a aparecer a cada dia no jogo, em horários aproximadamente fixos."
+  ],
+  "uses": [
+    "Melhoria de armadura: 2 no 3º nível da peça Gorro selvagem do Conjunto do herói selvagem (com 5 Escaravelhos vibrantes); 1 no 3º nível das Botas da Deidade Feroz (com 2 Vísceras de Rinox) — 3 no total.",
+    "Elixires: cozida com um bicho, acrescenta 10:30 na primeira unidade e 0:30 em cada unidade extra.",
+    "Corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 250 rupias, ou 110 Mon na loja de Kilton, que a aceita como parte de monstro."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Lasca da presa de Farosh no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Lasca da presa de Farosh largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Lasca da presa de Farosh queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Lasca da presa de Farosh numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Lasca da presa de Farosh a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Lasca da presa de Farosh à eletricidade, apesar do tema elétrico descrito no inventário."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Lasca da presa de Farosh flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Lasca da presa de Farosh não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Lasca da presa de Farosh largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho forma um elixir e acrescenta 10:30 à duração na primeira unidade; cada unidade extra da mesma parte soma só 0:30. Sem bichos (sozinha ou só com alimentos comuns), o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "side_effects": [
+        "Repetir a mesma parte rende pouco: só a primeira unidade dá o acréscimo cheio."
+      ],
+      "applications": [
+        "Combinar com outras partes de monstro diferentes para somar duração, em vez de repetir a lasca de presa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 250 rupias em lojas e comerciantes, ou 110 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Onde mirar no dragão",
+      "text": "Farosh solta uma peça diferente conforme a parte atingida por uma flecha: chifre (Lasca do chifre), dentes na parte de baixo da boca (Lasca da presa), mãos (Garra) ou o restante do corpo (Escama). A lasca de presa sai quando a flecha acerta os dentes, na parte de baixo da boca; a peça se solta e cai no chão envolta em luz. O primeiro acerto em cada dragão sempre rende uma escama, onde quer que a flecha pegue.",
+      "sources": [
+        "zw:Farosh",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Planar na corrente do dragão",
+      "text": "Os dragões geram correntes de ar ascendentes ao voar, e abrir o Planador dentro delas recupera todo o vigor de Link. Isso permite acompanhar Farosh no ar e mirar com calma — lembrando que chegar perto demais dá choque em Link por causa da eletricidade que envolve o dragão; o Elmo do trovão ou o Conjunto de borracha completo, melhorado duas vezes — ambos com imunidade a raios —, evitam isso.",
+      "sources": [
+        "zw:Updraft",
+        "zw:Farosh"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Drops de um dragão que não morre",
+      "text": "Farosh é invencível, mas os arquivos internos de BOTW guardam uma tabela não usada do que ele deixaria se fosse derrotado — com todos os materiais que os três dragões podem soltar.",
+      "sources": [
+        "zw:Farosh"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Eletricidade só na descrição",
+      "text": "O inventário diz que a Lasca da presa de Farosh é tão dura que martelos ricocheteiam nela, impossível de processar, mas que, segundo boatos, ainda serve de material. Esse tema elemental não vira mecânica: como parte de monstro, ela não define o efeito do elixir (que vem do bicho usado), e as fontes não atribuem a ela dano ou proteção de eletricidade.",
+      "sources": [
+        "zw:Monster Part",
+        "zw:Elixir"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para todas as melhorias, junte 3 unidades: 2 para o Gorro selvagem e 1 para as Botas da Deidade Feroz.",
+    "Cuidado ao se aproximar: chegar perto demais dá choque em Link por causa da eletricidade que envolve o dragão; o Elmo do trovão ou o Conjunto de borracha completo, melhorado duas vezes — ambos com imunidade a raios —, evitam isso."
+  ],
+  "limitations": [
+    "Só uma unidade de cada tipo de parte por encontro com o dragão.",
+    "O tema elétrico citado no inventário é descritivo: as fontes não atribuem ao item efeito elemental nem proteção.",
+    "As fontes consultadas não ligam o reaparecimento dos dragões à Lua de sangue; o ciclo descrito é diário.",
+    "Só a primeira unidade da mesma parte dá o acréscimo cheio de duração.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_farosh",
+      "relation": "Dragão que a solta ao ser atingido por uma flecha"
+    },
+    {
+      "id": "botw_material_faroshs_scale",
+      "relation": "Outra parte de Farosh (escama)"
+    },
+    {
+      "id": "botw_material_faroshs_claw",
+      "relation": "Outra parte de Farosh (garra)"
+    },
+    {
+      "id": "botw_material_shard_of_faroshs_horn",
+      "relation": "Outra parte de Farosh (lasca de chifre)"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_fang",
+      "relation": "Equivalente de Dinraal"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_fang",
+      "relation": "Equivalente de Naydra"
+    },
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Usa 2 no Gorro selvagem (3º nível)"
+    },
+    {
+      "id": "botw_armor_cap_of_the_wild",
+      "relation": "Peça melhorada com ela no 3º nível"
+    },
+    {
+      "id": "botw_armor_fierce_deity_boots",
+      "relation": "Peça melhorada com ela no 3º nível"
+    },
+    {
+      "id": "botw_material_hinox_guts",
+      "relation": "Acompanha a lasca de presa na melhoria das Botas da Deidade Feroz"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Imunidade a raios: protege da eletricidade de Farosh"
+    },
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Completo e melhorado duas vezes, protege da eletricidade de Farosh"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "O voo do dragão gera correntes ascendentes que recuperam o vigor"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo-claro"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

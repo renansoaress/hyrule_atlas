@@ -1,0 +1,129 @@
+{
+  "id": "botw_bow_twilight_bow",
+  "summary": "Arco da princesa Zelda de Twilight Princess, obtido raramente com o amiibo Zelda (Super Smash Bros.): dispara Flechas de luz infinitas em linha reta, com o maior alcance entre os arcos. Ataque 30, durabilidade 100.",
+  "description": "O Arco do crepúsculo é o arco usado pela princesa que lutou contra as feras do crepúsculo ao lado do herói — a Zelda de Twilight Princess. Segundo a descrição do jogo, ele contém o poder dos Espíritos da Luz e dispara flechas retas e certeiras, como feixes de luz. É obtido raramente num baú gerado ao escanear o amiibo Zelda da série Super Smash Bros. com a runa amiibo, e só depois que Link conclui pelo menos uma Fera Divina.\n\nComo o Arco da Luz, dispara somente Flechas de luz, criadas pelo próprio arco e por isso infinitas, e não aceita outros tipos de flecha. Os parâmetros extraídos do jogo lhe dão 8.000 m de trajetória reta — o maior valor entre todos os arcos — e uma variante própria de flecha, a \"flecha do crepúsculo\". Diferentemente do Arco da Luz, tem ataque base de 30 e durabilidade de 100.\n\nÉ também uma das armas capazes de ferir Ganon, Besta Sombria, ao lado do Arco da Luz e das Flechas ancestrais.",
+  "locations": [
+    "Não aparece no mundo: só sai de baús gerados pelo amiibo Zelda da série Super Smash Bros."
+  ],
+  "obtaining": [
+    "Escanear o amiibo Zelda (série Super Smash Bros.) com a runa amiibo depois de concluir ao menos uma Fera Divina; o arco aparece raramente no baú gerado."
+  ],
+  "uses": [
+    "Disparos de longuíssima distância sem gastar flechas.",
+    "Ferir Ganon, Besta Sombria, na batalha final."
+  ],
+  "effects": [
+    "Dispara Flechas de luz infinitas, em linha reta."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara apenas Flechas de luz geradas pelo próprio arco, sem consumir flechas da algibeira; não aceita outros tipos de flecha. Pelos parâmetros, a flecha percorre 8.000 m em linha reta antes de sofrer gravidade (5 m/s²).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "jogo",
+        "zw:Bow of Light",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Pode ferir Ganon, Besta Sombria, uma das poucas armas que o Zelda Wiki aponta para isso além do Arco da Luz.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Dark Beast Ganon",
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam como o arco reage a isso; nos dados, só a propriedade de magnetismo está definida."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não informam como o arco reage a isso; nos dados, só a propriedade de magnetismo está definida."
+    },
+    {
+      "action": "raio",
+      "status": "desconhecido",
+      "result": "As fontes não informam como o arco reage a isso; nos dados, só a propriedade de magnetismo está definida."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam como o arco reage a isso; nos dados, só a propriedade de magnetismo está definida."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Os parâmetros o marcam como não magnético, então Magnétis não o pega.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Uma flecha de luz só dele",
+      "text": "Os parâmetros do jogo indicam que o Arco da Luz dispara a flecha interna \"BrightArrow\", enquanto o Arco do crepúsculo usa \"BrightArrowTP\", identificada como flecha do crepúsculo. A galeria do Zelda Wiki mostra até um ícone próprio para a Flecha de luz usada com este arco.",
+      "sources": [
+        "dm",
+        "zw:Light Arrow"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fora do compendium",
+      "text": "Na tabela de arcos do Zelda Wiki, o Arco do crepúsculo é o único sem número no Hyrule Compendium.",
+      "sources": [
+        "zw:Bows in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Faixas de bônus nos dados",
+      "text": "Os parâmetros definem faixas de bônus (ataque de +4 a +7 no nível branco e +8 a +13 no amarelo; durabilidade de +9 a +18 e +19 a +45), e o Zelda Wiki não o inclui entre os itens que nunca recebem bônus. As fontes, porém, não confirmam com que bônus ele sai do baú de amiibo.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Sem consumo de munição e com trajetória reta, serve para acertar alvos distantes ou interruptores sem calcular a queda da flecha."
+  ],
+  "limitations": [
+    "Só dispara Flechas de luz: não serve para flechas elementais, explosivas ou ancestrais.",
+    "Depende do amiibo Zelda (Super Smash Bros.) e sai raramente do baú."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_bow_of_light",
+      "relation": "O outro arco que dispara Flechas de luz"
+    },
+    {
+      "id": "botw_arrow_light_arrow",
+      "relation": "Única flecha que este arco dispara"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Forma de obter o arco"
+    },
+    {
+      "id": "botw_monster_dark_beast_ganon",
+      "relation": "Pode ser ferido com este arco"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "parcial"
+}

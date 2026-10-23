@@ -1,0 +1,167 @@
+{
+  "id": "botw_armor_gerudo_veil",
+  "summary": "Véu do traje feminino Gerudo, parte do disfarce que permite a Link entrar na Cidade Gerudo. Sozinho só dá 1 de defesa; o traje completo concede Resistência ao calor nível 1. Não pode ser melhorado.",
+  "description": "Usado pelas mulheres Gerudo para proteger a pele do sol forte — “mas não espere que proteja muito em combate”, avisa a descrição. Link o obtém com o Traje Gerudo completo, vendido por Vilia no alto da estalagem do Bazar Kara Kara por 600 rupias durante a missão principal “Forbidden City Entry”; depois, o véu também é vendido sozinho por Saula na Fashion Passion, na Cidade Gerudo, por 180 rupias.\n\nO véu, a Blusa Gerudo e o Sirwal Gerudo formam o disfarce que deixa Link entrar na Cidade Gerudo sem ser expulso. Com as três peças, o traje dá como bônus de conjunto o equivalente a Resistência ao calor nível 1, que soma com outro nível 1 do efeito; sozinho, o véu não tem efeito. A defesa é de apenas 1 e não muda, pois as peças do traje não podem ser melhoradas por Grandes Fadas. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Bazar Kara Kara, no Deserto Gerudo (Vilia, no alto da estalagem).",
+    "Fashion Passion, loja de armaduras da Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Comprar o Traje Gerudo completo de Vilia por 600 rupias durante “Forbidden City Entry”.",
+    "Depois, comprar o véu avulso de Saula na Fashion Passion por 180 rupias."
+  ],
+  "uses": [
+    "Entrar na Cidade Gerudo disfarçado, com a Blusa e o Sirwal Gerudo.",
+    "Atravessar o deserto com o traje completo (Resistência ao calor nível 1)."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Traje Gerudo completo: disfarce para a Cidade Gerudo e Resistência ao calor nível 1 (bônus de conjunto)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma só 1 de defesa; sozinho, não tem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Gerudo Outfit",
+        "jogo"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Traje Gerudo completo",
+      "status": "confirmado",
+      "result": "Com a Blusa e o Sirwal Gerudo, Link fica disfarçado de mulher e pode entrar na Cidade Gerudo; o traje também dá Resistência ao calor nível 1.",
+      "conditions": [
+        "As três peças vestidas; não há melhoria a fazer."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Gerudo Outfit",
+        "zw:Disguise (Mechanic)",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Usado sozinho, o véu não protege do calor do deserto; a proteção só existe com o traje completo. Em nenhum caso protege do clima escaldante de Eldin.",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "Traje Gerudo completo",
+      "status": "confirmado",
+      "result": "O traje completo equivale a Resistência ao calor nível 1 e soma com outro nível 1 do efeito, chegando a dois níveis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Gerudo Outfit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O Elmo do trovão substitui o véu",
+      "text": "Depois de obter o Elmo do trovão, Link pode usá-lo no lugar do Véu Gerudo sem desfazer o disfarce na Cidade Gerudo. As Botas de areia e as Botas de neve fazem o mesmo pelo Sirwal Gerudo.",
+      "sources": [
+        "zw:Disguise (Mechanic)",
+        "zw:Thunder Helm"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Mais barato avulso",
+      "text": "Vilia cobra 600 rupias pelo traje completo; depois, as três peças custam 540 rupias somadas nas lojas da Cidade Gerudo.",
+      "sources": [
+        "zw:Gerudo Outfit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para o calor do deserto, completar o segundo nível de Resistência ao calor com um prato ou elixir refrescante, já que o bônus do traje soma com um nível 1 do efeito."
+  ],
+  "limitations": [
+    "Defesa de apenas 1; não pode ser melhorado.",
+    "Sozinho, não dá disfarce nem resistência ao calor."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_gerudo_outfit",
+      "relation": "Traje do qual faz parte"
+    },
+    {
+      "id": "botw_armor_gerudo_top",
+      "relation": "Peça do mesmo traje"
+    },
+    {
+      "id": "botw_armor_gerudo_sirwal",
+      "relation": "Peça do mesmo traje"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Pode substituir o véu sem quebrar o disfarce"
+    },
+    {
+      "id": "botw_armor_sand_boots",
+      "relation": "Pode substituir o Sirwal Gerudo no disfarce"
+    },
+    {
+      "id": "botw_armor_sapphire_circlet",
+      "relation": "Peça de cabeça com Resistência ao calor individual"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

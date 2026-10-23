@@ -1,0 +1,216 @@
+{
+  "id": "botw_weapon_meteor_rod",
+  "summary": "Versão superior da Varinha de fogo: cada golpe lança três bolas de fogo saltitantes e o ataque giratório dispara oito. Qualquer ataque dela derrota na hora inimigos de gelo. Usado pelos Feitiçanos meteóricos.",
+  "description": "O Cajado meteórico, criado segundo o jogo por um mago antigo, é a versão mais forte da Varinha de fogo. Cada movimento gera três bolas de fogo que quicam pelo chão, e o ataque giratório solta oito disparos de uma vez em direções diferentes. Qualquer ataque do cajado derrota instantaneamente inimigos de gelo, como Lagalfos glaciais e Feitiçanos glaciais, e, equipado, ele concede um nível de resistência ao frio. É usado principalmente pelos Feitiçanos meteóricos, que o soltam ao serem derrotados, mas Feitiçanos ígneos e até Koboblins azuis podem empunhá-lo.\n\nComo as outras varinhas, é frágil: quebra fácil se atingir diretamente objetos ou inimigos e também se gasta com o uso prolongado; usado em excesso, perde a magia por um tempo e precisa recarregar. Não é inflamável nem metálico: não queima perto do fogo ou em clima escaldante, não conduz eletricidade, não atrai raios, flutua em água funda e não responde a Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra (locais comuns segundo o compendium).",
+    "Nas mãos dos Feitiçanos meteóricos e, às vezes, de Feitiçanos ígneos ou Koboblins azuis."
+  ],
+  "obtaining": [
+    "Derrotar um Feitiçano meteórico: ele deixa cair o cajado.",
+    "Derrotar outro inimigo que o esteja empunhando, como um Koboblin azul.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Ataque de fogo à distância em leque, sem gastar Flechas de fogo.",
+    "Eliminar inimigos de gelo com um disparo.",
+    "Resistência ao frio de um nível enquanto equipado.",
+    "Iniciar fogo em grama e lenha."
+  ],
+  "effects": [
+    "Três bolas de fogo saltitantes por golpe; oito no ataque giratório.",
+    "Um nível de resistência ao frio enquanto equipado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe lança três bolas de fogo que quicam pelo chão; o ataque giratório solta oito disparos ao redor de Link.",
+      "conditions": [
+        "O cajado precisa ter energia mágica; após uso excessivo, fica sem magia até recarregar."
+      ],
+      "side_effects": [
+        "Bater diretamente em objetos ou inimigos quebra o cajado com facilidade."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "O botão de arremesso não solta o cajado: Link o mantém na mão e lança três bolas de fogo que quicam na direção do movimento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "o próprio cajado",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: pode ser usado perto de fogo e em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "bolas de fogo",
+      "status": "confirmado",
+      "result": "As bolas de fogo incendeiam grama e objetos inflamáveis como qualquer chama.",
+      "applications": [
+        "Incendiar grama para criar uma corrente ascendente.",
+        "Queimar cipós e folhagens que escondem passagens."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnético e não pode ser manipulado com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos meteóricos o usam para conjurar três bolas de fogo, invocar Chulchuls e Morcis ígneos e esquentar a região; ao serem derrotados, deixam o cajado. Feitiçanos ígneos e Koboblins azuis também podem empunhá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Meteo Wizzrobe"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "inimigos de gelo",
+      "status": "confirmado",
+      "result": "Qualquer ataque do cajado derrota instantaneamente inimigos de gelo, como Lagalfos glaciais e Feitiçanos glaciais; o Feitiçano da nevasca também evapora com ataques de fogo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Blizzrobe"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Energia mágica e recarga",
+      "text": "Nos parâmetros extraídos, a energia máxima do cajado é 400 e cada uso consome 100: quatro disparos seguidos antes de esgotar. A energia volta aos poucos (taxa de recuperação 10 a cada intervalo de 90, em unidades internas do jogo).",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O dobro da força da Varinha de fogo",
+      "text": "O parâmetro de poder da magia (MagicPower) do Cajado meteórico é 20, contra 10 da Varinha de fogo, e o ataque giratório dispara oito bolas (ChargeMagicNum 8) em vez de cinco.",
+      "sources": [
+        "dm",
+        "zw:Fire Rod"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o cajado pode surgir com bônus de ataque de +6 (nível comum) ou +7 a +16 (nível dourado) e bônus de durabilidade de +4 a +7 (ou +8 a +16 no nível dourado). O multiplicador de lançamento fica em 1×, então o bônus de lançamento longo não muda nada. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra Feitiçanos glaciais e da nevasca, um único disparo encerra a luta e a nevasca que eles provocam.",
+    "Abrir combate contra um acampamento disparando três bolas de fogo sobre a grama ao redor."
+  ],
+  "limitations": [
+    "Muito frágil no corpo a corpo.",
+    "Quatro disparos seguidos esgotam a magia até a recarga.",
+    "Quebra quando a durabilidade acaba, mesmo só pelo uso da magia."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_fire_rod",
+      "relation": "Versão mais fraca"
+    },
+    {
+      "id": "botw_monster_meteo_wizzrobe",
+      "relation": "Principal portador"
+    },
+    {
+      "id": "botw_monster_blue_bokoblin",
+      "relation": "Também pode empunhá-lo"
+    },
+    {
+      "id": "botw_weapon_blizzard_rod",
+      "relation": "Equivalente de gelo"
+    },
+    {
+      "id": "botw_weapon_thunderstorm_rod",
+      "relation": "Equivalente elétrico"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Derrotado com um ataque"
+    },
+    {
+      "id": "botw_monster_ice_breath_lizalfos",
+      "relation": "Derrotado com um ataque"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "queima_inimigos",
+    "protege_frio",
+    "flutua",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

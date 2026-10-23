@@ -1,0 +1,139 @@
+{
+  "id": "botw_monster_master_kohga",
+  "summary": "Líder do Clã Yiga, enfrentado na saída do esconderijo. Luta em três fases com pedras levitadas e um pedregulho que Link deve devolver com Magnétis; ignora Estátis e a Fúria de Urbosa e toma só 10% do dano.",
+  "description": "Mestre Kohga comanda o Clã Yiga, grupo formado, nas palavras do compendium, com um único objetivo: eliminar Link. Respeitado pelo domínio das artes esotéricas, passa a maior parte do tempo cochilando e à toa, adora Bananas valentes e guarda muitos segredos sobre os Sheikah. Link o encontra durante a missão principal \"Divine Beast Vah Naboris\", na saída do Esconderijo do Clã Yiga, junto ao abismo do esconderijo: Kohga reclama da invasão ao seu lugar de cochilo, reconhece a Tabuleta Sheikah e percebe que o herói caiu no seu colo enquanto os batedores o procuravam lá fora.\n\nA luta usa o controle de magnetismo e levitação de Kohga e tem três fases. Na primeira, ele ergue uma pedra acima de si; acertá-lo de longe enquanto levita — com flecha, Bomba remota ou uma arma arremessada — quebra a concentração, e a pedra cai na cabeça dele, deixando-o atordoado e meio enterrado. Na segunda, flutua sobre o buraco com duas pedras girando ao redor; é preciso acertá-lo quando uma delas estiver bem acima da cabeça. Na terceira, ele conjura um pedregulho reforçado para esmagar Link, que deve agarrá-lo com Magnétis e empurrá-lo de volta contra Kohga. Um escudo azul o protege em todas as fases: some quando ele ataca nas duas primeiras e fica permanente na terceira.\n\nDerrotado, Kohga tenta uma última \"técnica secreta\" — uma enorme bola espinhosa com o símbolo Yiga —, que rola para trás e o derruba no abismo enquanto ele grita que o clã perseguirá Link até os confins de Hyrule. Surge então o baú com o Elmo do trovão, a relíquia roubada das Gerudo. A partir daí, os Yiga ficam mais frequentes e mais fortes.",
+  "locations": [
+    "Esconderijo do Clã Yiga: na área aberta com um grande buraco, depois da saída secreta, durante a missão principal \"Divine Beast Vah Naboris\"."
+  ],
+  "obtaining": [
+    "Derrotá-lo faz surgir um baú com o Elmo do trovão.",
+    "Não volta com a Lua de sangue: é um chefe de história."
+  ],
+  "uses": [
+    "Etapa obrigatória para recuperar o Elmo do trovão e entregá-lo a Riju antes de entrar na Fera Divina Vah Naboris."
+  ],
+  "effects": [
+    "Pedras levitadas arremessadas, pedras orbitando o corpo e um pedregulho reforçado lançado contra Link."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Acertá-lo com uma flecha enquanto levita na primeira fase faz a pedra cair na cabeça dele. Flechas ancestrais agem como flechas comuns contra Kohga.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessar uma arma nele durante a primeira fase também quebra a concentração e derruba a pedra sobre a cabeça dele.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota que o atinja enquanto levita na primeira fase derruba a pedra sobre a cabeça dele.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Na terceira fase, Link usa Magnétis para tomar o controle do pedregulho reforçado e empurrá-lo de volta contra Kohga, atordoando-o.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "estatis",
+      "status": "sem_efeito",
+      "result": "Nem Kohga nem os pedregulhos dele podem ser parados com Estátis em momento algum.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "É o único inimigo imune à Fúria de Urbosa.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Recebe apenas 10% do dano normal de qualquer ataque; os golpes rendem mais enquanto ele está atordoado pela própria pedra.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre Kohga."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "A arena, ao redor de um abismo, não tem água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "Além da Bomba remota na primeira fase, as fontes não detalham o efeito de explosões."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na segunda fase flutua sobre o buraco da arena com duas pedras orbitando; é preciso acertá-lo quando uma pedra estiver diretamente acima da cabeça para derrubá-la nele.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Resistências únicas",
+      "text": "Kohga é o único Sheikah notável que não pode ser parado por Estátis (até o Monge Maz Koshia pode), o único inimigo imune à Fúria de Urbosa e sofre só 10% do dano de qualquer ataque. Flechas ancestrais funcionam como flechas comuns nele.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O vilão que fala",
+      "text": "Mestre Kohga é o único antagonista de Breath of the Wild com falas.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Depois da queda",
+      "text": "Com Kohga fora de cena, os encontros com o Clã Yiga pelo mundo ficam mais comuns, os Soldados Yiga ficam mais resistentes e passam a usar Trinchadores demoníacos, e os Espadachins Yiga começam a aparecer aleatoriamente.",
+      "sources": ["zw:Yiga Clan Hideout", "zw:Yiga Clan", "zw:Yiga Footsoldier", "zw:Yiga Blademaster"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A lealdade continua",
+      "text": "O compendium avisa que, mesmo que ele morresse, seus seguidores nunca desistiriam da única missão do clã.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Na primeira fase, uma arma arremessada é tão eficaz quanto uma flecha para derrubar a pedra."
+  ],
+  "limitations": [
+    "Não pode ser enfrentado de novo depois de derrotado.",
+    "Estátis e a Fúria de Urbosa não funcionam; o dano direto é reduzido a 10%."
+  ],
+  "related": [
+    { "id": "botw_armor_thunder_helm", "relation": "Relíquia recuperada ao derrotá-lo" },
+    { "id": "botw_monster_yiga_blademaster", "relation": "Elite do clã que guarda o esconderijo" },
+    { "id": "botw_monster_yiga_footsoldier", "relation": "Soldados do clã" },
+    { "id": "botw_rune_magnesis", "relation": "Devolve o pedregulho da terceira fase" },
+    { "id": "botw_rune_stasis", "relation": "Não funciona contra ele" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Único inimigo imune a ela" },
+    { "id": "botw_material_mighty_bananas", "relation": "Fruta favorita de Kohga" },
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Chefe da Fera Divina Vah Naboris, que o Elmo do trovão permite alcançar" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

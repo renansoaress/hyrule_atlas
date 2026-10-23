@@ -1,0 +1,141 @@
+{
+  "id": "botw_monster_farosh",
+  "summary": "Dragão do raio que serve à Fonte da Coragem e sai da água ao amanhecer no Lago Floria. Não ataca, mas eletrocuta quem chega perto; flechas soltam partes, e depois de atingido ele some até o dia seguinte.",
+  "description": "Farosh é um espírito do raio que tomou a forma de um dragão dourado gigante. O compendium diz que vive na região de Faron e serve à Fonte da Coragem desde tempos antigos; reza a lenda que \"o dragão sobe aos céus quando o sol começa a se pôr\", mas não há relatos modernos disso. A eletricidade que cobre o corpo torna perigoso se aproximar, embora Farosh não queira mal a ninguém. Como os outros dois dragões, é invencível e não tenta ferir Link; apenas a eletricidade do corpo e os orbes que ele solta causam dano. O Elmo do trovão ou o Conjunto de borracha completo, melhorado duas vezes, dão Imunidade a raios e evitam esse dano.\n\nAtirar em partes diferentes de Farosh solta materiais diferentes: chifres → Lasca do chifre de Farosh, parte de baixo da boca → Lasca da presa, mãos → Garra, corpo → Escama. O primeiro acerto sempre rende uma Escama. Depois de ser atingido, o dragão desaparece até o dia seguinte no jogo. A Escama de Farosh é a única escama de dragão que não existe em baús — os outros dois dragões têm uma escama guardada no Castelo de Hyrule —, então é preciso acertá-lo para conseguir uma.\n\nNa missão de santuário \"The Serpent's Jaws\", iniciada por uma canção de Kass, Hylia pede que Link ofereça uma Escama de Farosh à Fonte da Coragem, o que abre o Santuário Shae Katha. As partes fazem o corante amarelo-claro na Tinturaria Kochi, servem para melhorar armaduras e, no caso do chifre, rendem pratos com efeito de 30 minutos.",
+  "locations": [
+    "Segundo o compendium, é visto no Lago Hylia e no Lago Floria; o Zelda Wiki também cita as Montanhas Gerudo.",
+    "Rota de exemplo do Zelda Wiki: entre meia-noite e 1h nas Montanhas Gerudo; às 5h sai da água na Riola Spring; às 6h no Lago Floria; às 7h mergulha no Lago Rassia; às 8h passa sob a Ponte Floria; às 19h–20h voa sobre o Vatorsa Snowfield, nas Montanhas Gerudo."
+  ],
+  "obtaining": [
+    "Não pode ser derrotado; as partes são obtidas atirando nele: Escama de Farosh (corpo), Garra de Farosh (mãos), Lasca da presa de Farosh (parte de baixo da boca) e Lasca do chifre de Farosh (chifres).",
+    "Depois de atingido, some até o dia seguinte do jogo."
+  ],
+  "uses": [
+    "Missão de santuário \"The Serpent's Jaws\": oferecer uma Escama de Farosh na Fonte da Coragem abre o Santuário Shae Katha.",
+    "Fonte das quatro partes de Farosh para melhorias de armadura, corante amarelo-claro e culinária."
+  ],
+  "effects": [
+    "Eletricidade no corpo que fere Link de perto; o corpo solta orbes elétricos."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Não ataca, mas a eletricidade ao redor do corpo fere Link se ele chegar perto demais.",
+      "conditions": ["Elmo do trovão ou Conjunto de borracha completo melhorado duas vezes (Imunidade a raios) evitam o dano."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dragon", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Cada acerto solta uma parte que cai brilhando: chifres → Lasca do chifre, parte de baixo da boca → Lasca da presa, mãos → Garra, corpo → Escama. O primeiro acerto sempre dá uma Escama. Depois de atingido, Farosh some até o dia seguinte.",
+      "produces": ["botw_material_faroshs_scale", "botw_material_faroshs_claw", "botw_material_shard_of_faroshs_fang", "botw_material_shard_of_faroshs_horn"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Farosh's Scale", "zw:Farosh's Claw", "zw:Shard of Farosh's Fang", "zw:Shard of Farosh's Horn"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "É ele a fonte de eletricidade: o corpo eletrificado fere quem se aproxima. As Garras, porém, perdem a eletricidade antes de cair e podem ser manuseadas com segurança.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Farosh's Claw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Os dragões são invencíveis; as fontes não descrevem golpes corpo a corpo em Farosh."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Faz parte da rota dele: sai da água da Riola Spring de manhã e mergulha no Lago Rassia. O efeito da água sobre ele não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito do fogo sobre Farosh."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas nele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Estátis em Farosh."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre o dragão.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Ao passar sob a Ponte Floria, partes do corpo atravessam a estrutura; se um personagem estiver cruzando a ponte, o escudo dele pode ser atingido pelo dragão, sem nenhuma reação.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A única escama sem baú",
+      "text": "Dinraal e Naydra têm cada um uma escama guardada em baús do Castelo de Hyrule; a Escama de Farosh só pode ser obtida atingindo o próprio dragão.",
+      "sources": ["zw:Farosh's Scale"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Um tiro por dia",
+      "text": "Depois de levar uma flechada, Farosh desaparece até o dia seguinte no jogo, então cada passagem deve ser aproveitada para mirar na parte desejada.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um dragão de ouro",
+      "text": "A descrição da Escama de Farosh na algibeira o chama de \"espírito dourado\" e diz que a escama guarda eletricidade poderosa; a da Garra diz que a eletricidade foi expelida antes de ela ser arrancada.",
+      "sources": ["zw:Farosh's Scale", "zw:Farosh's Claw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Drops de um dragão morto",
+      "text": "Os arquivos do jogo guardam dados não usados com o que Farosh deixaria se fosse morto.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar o amanhecer no Lago Floria e mirar no chifre, a parte mais valiosa, já que ele some depois do primeiro acerto do dia."
+  ],
+  "limitations": [
+    "Some até o dia seguinte depois de ser atingido.",
+    "Sem Imunidade a raios, o contato com o corpo causa dano elétrico."
+  ],
+  "related": [
+    { "id": "botw_material_faroshs_scale", "relation": "Parte obtida ao acertar o corpo" },
+    { "id": "botw_material_faroshs_claw", "relation": "Parte obtida ao acertar as mãos" },
+    { "id": "botw_material_shard_of_faroshs_fang", "relation": "Parte obtida ao acertar a boca" },
+    { "id": "botw_material_shard_of_faroshs_horn", "relation": "Parte obtida ao acertar os chifres" },
+    { "id": "botw_monster_dinraal", "relation": "Dragão do fogo" },
+    { "id": "botw_monster_naydra", "relation": "Dragão do gelo" },
+    { "id": "botw_armor_thunder_helm", "relation": "Dá Imunidade a raios contra o corpo dele" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Melhorado duas vezes, dá Imunidade a raios" },
+    { "id": "botw_mechanic_dye", "relation": "As partes fazem o corante amarelo-claro" }
+  ],
+  "capabilities": ["gera_eletricidade", "habilidade_especial"],
+  "verification_status": "verificado"
+}

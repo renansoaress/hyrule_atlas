@@ -1,0 +1,143 @@
+{
+  "id": "botw_armor_dark_trousers",
+  "summary": "Calças da Série sombria de Kilton, vendidas por 999 Mon depois de libertar as quatro Feras Divinas. Sozinhas dão só 3 de defesa; com o conjunto, Link corre mais rápido à noite.",
+  "description": "As Calças sombrias são fruto da pesquisa de Kilton sobre monstros: parecem calças comuns, mas foram criadas a partir da imagem de um monstro nascido das trevas. Elas aparecem na loja Fang and Bone, de Kilton, depois que as quatro Feras Divinas são libertadas, ao preço de 999 Mon. Com o Capuz sombrio e a Túnica sombria, formam a Série sombria, modelada no traje do herói do tempo (as calças copiam as Calças do tempo).\n\nSozinhas, não têm efeito além de 3 de defesa. Com as três peças vestidas, ativam a Velocidade noturna: entre 21h e 4h, Link corre 20% mais rápido. O próprio Kilton diz não saber por que a roupa ficou assim. Como as peças não podem ser melhoradas por Grandes Fadas, o bônus vale desde a compra — e a defesa nunca passa de 3. Também não podem ser tingidas na Tinturaria Kochi.\n\nCom a série completa, os moradores se assustam ao ver Link, como acontece com outros trajes de aparência monstruosa.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton, que aparece à noite perto dos principais povoados e fica no \"olho direito\" do Lago Caveira (Skull Lake), no Coração de Akkala."
+  ],
+  "obtaining": [
+    "Comprar na Fang and Bone por 999 Mon, depois de libertar as quatro Feras Divinas."
+  ],
+  "uses": [
+    "Completar a Série sombria para correr mais rápido à noite."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto (Série sombria completa): Velocidade noturna, +20% de velocidade de corrida entre 21h e 4h."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, só soma 3 de defesa, sem efeito adicional. Com o Capuz sombrio, a Túnica sombria e as Calças sombrias vestidos ao mesmo tempo, ativa a Velocidade noturna (Night Speed Up): entre 21h e 4h do relógio do jogo, Link corre 20% mais rápido, como no nível 2 de Velocidade aumentada.",
+      "conditions": [
+        "As três peças da Série sombria equipadas; não há melhorias nessa série, então o bônus vale desde a compra."
+      ],
+      "side_effects": [
+        "Moradores se assustam ao ver Link com o conjunto."
+      ],
+      "applications": [
+        "Pode ser somada a um efeito de Velocidade aumentada de nível 1 (de pratos ou elixires)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Kilton não sabe explicar a velocidade",
+      "text": "Ao apresentar a Série sombria, Kilton diz que ela transforma Link \"em um monstro\" e acrescenta que, quando a noite cai, ele talvez fique um pouco mais rápido — sem saber direito por que deu certo assim.",
+      "sources": [
+        "zw:Fang and Bone",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cópia das Calças do tempo",
+      "text": "As peças da Série sombria são trocas de cor do Conjunto do herói do tempo: a túnica copia a Túnica do tempo, o capuz, o Gorro do tempo e as calças, as Calças do tempo.",
+      "sources": [
+        "zw:Dark Tunic"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, a série completa soma a Velocidade noturna (equivalente ao nível 2) a um prato de Velocidade aumentada nível 1 para viagens a pé mais rápidas."
+  ],
+  "limitations": [
+    "Não pode ser melhorada nem tingida: a defesa fica em 3 para sempre.",
+    "Vendida a comerciantes, rende só 9 rupias, apesar de custar 999 Mon.",
+    "A velocidade extra só existe à noite (21h às 4h)."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_dark_series",
+      "relation": "Série da qual faz parte"
+    },
+    {
+      "id": "botw_armor_dark_hood",
+      "relation": "Peça de cabeça da série"
+    },
+    {
+      "id": "botw_armor_dark_tunic",
+      "relation": "Peça de torso da série"
+    },
+    {
+      "id": "botw_armor_trousers_of_time",
+      "relation": "Modelo em que as calças foram baseadas"
+    },
+    {
+      "id": "botw_armorset_stealth_set",
+      "relation": "Outro conjunto com Velocidade noturna"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

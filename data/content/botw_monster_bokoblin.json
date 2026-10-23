@@ -1,0 +1,378 @@
+{
+  "id": "botw_monster_bokoblin",
+  "summary": "O monstro mais comum de Hyrule: vive em acampamentos, caça javalis de dia e dorme de barriga para cima à noite. Tem só 13 pontos de vida, não sabe nadar e se afoga em água funda.",
+  "description": "O Koboblin vermelho é o inimigo básico de BOTW. Segundo o compendium, alguns se uniram em bandos de saqueadores depois da Grande Calamidade; não são espertos, mas sabem caçar animais e assar a carne, e, apesar de carnívoros ferozes, gostam de frutas. Vivem em acampamentos de monstros (plataformas de madeira em volta de árvores ou rochas em forma de caveira), frequentemente vigiados por um Koboblin numa torre que toca uma corneta para alertar o grupo quando vê Link. De dia saem para caçar javalis; à noite dormem no chão, de barriga para cima, com bolhas saindo do nariz. Alguns andam a cavalo — nas Montanhas Gerudo, montados em Ursos melívoros e Grão-ursos — e tentam subir de volta se forem derrubados.\n\nEm combate usam o equipamento Kobo (Clava Kobo, Taco Kobo, Lança Kobo, Arco Kobo), todo feito de madeira. Sem arma, dão tapas em Link, desenterram pedras para atirar ou pegam rochas grandes, Barris e Barris explosivos para arremessar; com uma arma de madeira perto do fogo, acendem-na para queimar Link. A fraqueza é grande: apenas 13 pontos de vida, nenhum jeito de nadar (afogam-se em água funda) e o hábito de dormir, que os deixa expostos ao Ataque-surpresa.\n\nO Koboblin vermelho é a base de uma família: Koboblin azul, preto, prateado e, no Modo Mestre, dourado. O jogo mantém uma contagem oculta de monstros derrotados e, ao atingir certos marcos, troca os Koboblins comuns por variantes mais fortes. À noite, restos de Koboblins se erguem como Stalboblins, e dentro das Feras Divinas e do Castelo de Hyrule surgem crânios amaldiçoados (Koboblin amaldiçoado).",
+  "locations": [
+    "Quase toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Ocidental como locais comuns.",
+    "Acampamentos de monstros, muitas vezes com torres de vigia, Barris, Barris explosivos e baús.",
+    "Estradas, onde às vezes ataca viajantes; montado em cavalos e, nas Montanhas Gerudo, em Ursos melívoros e Grão-ursos."
+  ],
+  "obtaining": [
+    "Ao ser derrotado pode deixar Chifre de Koboblin e Presa de Koboblin; Vísceras de Koboblin só caem de variantes a partir do Koboblin azul.",
+    "A arma que empunhava (normalmente equipamento Kobo) pode ser recolhida.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte das partes de monstro mais básicas, úteis para elixires e para trocar por Mon com Kilton.",
+    "Fonte de equipamento Kobo de madeira no começo do jogo.",
+    "Registro no compendium (entrada nº 103) com a Câmera.",
+    "Viajantes atacados por Koboblins podem dar uma recompensa se Link ajudar a derrotá-los."
+  ],
+  "effects": [
+    "Golpes físicos com armas ou com as mãos; arremessa pedras, barris e Barris explosivos.",
+    "Com uma arma de madeira acesa, pode incendiar Link."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Com apenas 13 pontos de vida, cai com poucos golpes mesmo de armas fracas. Sem arma, dá tapas em Link quando está perto ou desenterra pedras para atirar, a menos que haja rochas, Barris ou Barris explosivos à mão.",
+      "applications": [
+        "Arrancar a arma dele com choque o obriga a lutar com as mãos ou com o que encontrar no chão."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "Dorme no chão à noite; aproximar-se agachado e golpear um Koboblin desatento executa um Ataque-surpresa, que causa 8 vezes o dano da arma corpo a corpo.",
+      "conditions": [
+        "O Koboblin não pode ter notado Link.",
+        "Andar agachado; chuva e grama alta ajudam a não ser ouvido ou visto."
+      ],
+      "applications": [
+        "Limpar um acampamento inteiro à noite, um Koboblin adormecido por vez, como sugere a dica do jogo."
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "zw:Sneakstrike",
+        "zw:Tips and Tricks",
+        "zw:Stealth"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça é acerto crítico (dano dobrado). Um Koboblin de vigia numa torre de observação morre com uma única flecha na cabeça.",
+      "applications": [
+        "Abater o vigia antes que ele toque a corneta e alerte o acampamento."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e sofre dano ao ser atingido por fogo (Flecha incendiária, armas de fogo, grama em chamas). O equipamento Kobo é de madeira e queima.",
+      "side_effects": [
+        "Perto de uma fonte de fogo, o próprio Koboblin acende sua arma de madeira para queimar Link."
+      ],
+      "applications": [
+        "Incendiar a grama seca em volta do grupo com uma Flecha incendiária para atingir vários inimigos de uma vez; a corrente ascendente do incêndio permite planar e atirar de cima."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire",
+        "zw:Fire Arrow",
+        "zw:Bokoblin Gear",
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Uma Flecha congelante o congela por alguns instantes; golpeá-lo congelado quebra o gelo e causa mais dano que o normal.",
+      "applications": [
+        "Congelar parte do grupo quando Link estiver cercado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow",
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques de Flecha eletrizante ou de armas elétricas o eletrocutam, atordoam por um instante e o forçam a largar a arma.",
+      "applications": [
+        "Desarmá-lo e pegar a arma do chão; Flechas eletrizantes atiradas na água ou em objetos metálicos eletrificam quem estiver em contato."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shock Arrow",
+        "zw:Great Thunderblade",
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Não sabe nadar: se for forçado para dentro de água funda, se afoga.",
+      "applications": [
+        "Empurrá-lo de pontes e margens (por exemplo, com a rajada da Folha Korok) para eliminá-lo sem combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Korok Leaf"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos explodem com fogo ou impacto e ferem os monstros no raio; um barril pode detonar outros em cadeia e incendeia o que for inflamável. O Koboblin, por sua vez, pega Barris explosivos para arremessar em Link.",
+      "conditions": [
+        "Acertar o barril com uma Flecha incendiária ou arremessar uma arma em chamas nele."
+      ],
+      "side_effects": [
+        "Se o Koboblin pegar o barril antes, a explosão pode vir na direção de Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bomb Barrel"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota o fere normalmente (12 de dano; 24 com a Bomba remota+). Inimigos podem chutar ou pegar e arremessar as bombas, mas o compendium apresenta o chute como esperteza do Koboblin azul.",
+      "applications": [
+        "Bombas esféricas rolam ladeira abaixo até grupos em terreno inclinado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb",
+        "zw:Blue Bokoblin"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "A Estátis básica não afeta inimigos; com a melhoria Estátis+ (Purah, três Núcleos ancestrais), o Koboblin fica paralisado por pouco tempo e, nesse estado, imune a congelamento, fogo e choque.",
+      "side_effects": [
+        "Em inimigos o efeito acaba bem mais rápido que em objetos, mas a recarga continua de 10 segundos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "O Koboblin não é metálico e não pode ser agarrado, mas objetos metálicos erguidos com Magnétis — como Caixas de metal — podem ser largados ou balançados contra ele. O equipamento Kobo, de madeira, não responde à runa.",
+      "applications": [
+        "Jogar objetos de metal num acampamento para causar dano sem gastar armas (dica do jogo)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis",
+        "zw:Tips and Tricks",
+        "zw:Bokoblin Gear"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Usa o ambiente a seu favor: arremessa rochas, Barris e Barris explosivos, e o vigia toca corneta da torre. Nos acampamentos em forma de caveira, o baú do posto só abre quando todos os monstros são derrotados.",
+      "applications": [
+        "Explorar os mesmos Barris explosivos contra o acampamento antes que os Koboblins os peguem."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Stronghold"
+      ]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A rajada da Folha Korok empurra inimigos leves como os Koboblins.",
+      "applications": [
+        "Afastá-los ou jogá-los na água funda."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Korok Leaf"
+      ]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Na chuva os passos de Link ficam mais difíceis de ouvir, Flechas eletrizantes causam dano extra, mas Flechas incendiárias não ateiam fogo e Flechas explosivas não explodem.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Tips and Tricks",
+        "zw:Shock Arrow",
+        "zw:Fire Arrow",
+        "zw:Bomb Arrow"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Koboblin",
+      "status": "confirmado",
+      "result": "Com a Máscara de Koboblin (Kilton, 99 Mon) ou a Máscara de Majora, Link se disfarça e os Koboblins não o atacam. A máscara de Koboblin não impede que outros monstros da área ataquem.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Moblins desarmados podem agarrar Koboblins próximos e arremessá-los contra Link como projéteis.",
+      "kind": "curiosidade",
+      "sources": [
+        "zw:Moblin"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Progressão oculta de inimigos",
+      "text": "O jogo conta, em segredo, quantos monstros Link derrotou. Ao atingir certos marcos, os Koboblins vermelhos dão lugar a variantes mais fortes. No começo aparecem sobretudo vermelhos, com um ou outro azul; quando Link liberta uma Fera Divina, os azuis já são mais frequentes e os pretos começam a surgir.",
+      "sources": [
+        "zw:Enemy"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue e Modo Mestre",
+      "text": "A Lua de sangue revive todos os monstros derrotados nos lugares onde estavam. No Modo Mestre, os inimigos sobem um nível (o primeiro Koboblin encontrado já é azul), percebem Link com mais facilidade e regeneram vida aos poucos, até um limite.",
+      "sources": [
+        "zw:Blood Moon",
+        "zw:Master Mode",
+        "zw:Blue Bokoblin"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Carnívoro que gosta de frutas e foge de abelhas",
+      "text": "O compendium diz que, embora sejam carnívoros ferozes, os Koboblins gostam de frutas. Uma dica do jogo acrescenta que, por quase não usarem roupas, eles costumam fugir quando são atacados por abelhas.",
+      "sources": [
+        "comp",
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Viajantes em apuros",
+      "text": "Às vezes um grupo de Koboblins ataca viajantes na estrada, e alguns chegam a ser nocauteados. Ajudar a derrotar os monstros pode render uma recompensa, mas alguns \"viajantes\" nocauteados são, na verdade, membros do Clã Yiga.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cavaleiros insistentes",
+      "text": "Koboblins montados em cavalos, quando derrubados por um ataque, tentam subir de novo na montaria. À noite, os Stalboblins usam Stalcavalos no lugar dos cavalos vivos.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Percorrer um acampamento à noite agachado e aplicar Ataque-surpresa em cada Koboblin adormecido.",
+    "Abater primeiro o vigia da torre com uma flecha na cabeça para que ele não toque a corneta.",
+    "Roubar as armas que os monstros deixam largadas no acampamento antes de iniciar a luta.",
+    "Usar a Folha Korok para empurrar Koboblins de pontes e margens para a água funda, onde se afogam."
+  ],
+  "limitations": [
+    "Não deixa Vísceras de Koboblin; essa parte só cai das variantes a partir do Koboblin azul.",
+    "Abatido com uma Flecha ancestral, desintegra junto com a arma e não deixa materiais.",
+    "A derrota não é permanente: a Lua de sangue traz o monstro de volta."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_blue_bokoblin",
+      "relation": "Variante mais forte (azul)"
+    },
+    {
+      "id": "botw_monster_black_bokoblin",
+      "relation": "Variante mais forte (preta)"
+    },
+    {
+      "id": "botw_monster_silver_bokoblin",
+      "relation": "Variante mais forte (prateada)"
+    },
+    {
+      "id": "botw_monster_golden_bokoblin_mm",
+      "relation": "Variante do Modo Mestre (dourada)"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Versão esquelética que surge à noite"
+    },
+    {
+      "id": "botw_monster_cursed_bokoblin",
+      "relation": "Crânio amaldiçoado das Feras Divinas"
+    },
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Pode agarrar e arremessar Koboblins"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_material_bokoblin_fang",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_weapon_boko_club",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_weapon_boko_bat",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_weapon_boko_spear",
+      "relation": "Arma típica"
+    },
+    {
+      "id": "botw_bow_boko_bow",
+      "relation": "Arco típico"
+    },
+    {
+      "id": "botw_armor_bokoblin_mask",
+      "relation": "Disfarce que impede seus ataques"
+    },
+    {
+      "id": "botw_object_explosive_barrel",
+      "relation": "Arremessado por ele; explode contra o acampamento"
+    },
+    {
+      "id": "botw_weapon_korok_leaf",
+      "relation": "A rajada empurra Koboblins"
+    },
+    {
+      "id": "botw_mechanic_sneakstrike",
+      "relation": "Ataque ideal contra Koboblins adormecidos"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Revive os Koboblins derrotados"
+    }
+  ],
+  "capabilities": [
+    "vence_rapido",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

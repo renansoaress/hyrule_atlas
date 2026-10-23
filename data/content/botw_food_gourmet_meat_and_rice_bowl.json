@@ -1,0 +1,106 @@
+{
+  "id": "botw_food_gourmet_meat_and_rice_bowl",
+  "summary": "Tigela de Carne de primeira com Arroz hyliano e Halita, \"só com os cortes mais selecionados\", diz o jogo. É o topo da linha de tigelas de arroz com carne; aceita ingredientes de efeito.",
+  "description": "A Tigela de arroz com carne de primeira leva Carne de primeira, Arroz hyliano e Halita. A descrição do jogo diz que só os cortes de carne mais cuidadosamente selecionados entram neste prato. Ela cura vários corações e, como nenhum dos três ingredientes tem efeito, os dois espaços livres da panela podem receber ingredientes de efeito: refrescante, isolante, tenaz, energizante, veloz, nutritivo, valente, discreto, picante ou blindado (as descrições citadas falam em nível baixo).\n\nÉ a versão de luxo de uma família de três tigelas: com Carne de terceira o prato é a Tigela de arroz com carne, e com Carne de segunda (ou Sobrecoxa), a Tigela de arroz com carne de segunda.\n\nHá um conflito nas fontes: a página do prato no Zelda Wiki pede especificamente Carne de primeira, mas a página da Ave inteira afirma que a ave também serve para fazer esta tigela.",
+  "locations": [
+    "Carne de primeira: deixada por Búfalo-d'água, Raposa da neve, Lobo larápio, Coiote do deserto, Lobo pé-gelado, Alce de Tabantha, Rinoceronte chifrelongo, Urso melívoro e Grão-urso.",
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Carne de primeira + Arroz hyliano + Halita."
+  ],
+  "uses": [
+    "Cura de vários corações com dois espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera vários corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ingredientes extras de efeito definem a versão; as descrições citadas são de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "Ave inteira serve?",
+      "text": "A página da Ave inteira no Zelda Wiki diz que ela pode substituir a Carne de primeira nesta tigela, mas a página do próprio prato e a tabela de receitas pedem só Carne de primeira. A informação não foi confirmada."
+    }
+  ],
+  "advanced_uses": [
+    "Antes de cozinhar, compare: Trott, no Outskirt Stable, paga 100 rupias por cada Carne de primeira depois da Missão secundária \"A Rare Find\"."
+  ],
+  "limitations": [
+    "Com carne de qualidade inferior, o prato muda para as tigelas de carne comum ou de segunda.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Possível substituta, segundo uma das fontes"
+    },
+    {
+      "id": "botw_food_meat_and_rice_bowl",
+      "relation": "Versão com Carne de terceira"
+    },
+    {
+      "id": "botw_food_prime_meat_and_rice_bowl",
+      "relation": "Versão com Carne de segunda"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "a_verificar"
+}

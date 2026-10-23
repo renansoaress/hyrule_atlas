@@ -1,0 +1,108 @@
+{
+  "id": "botw_food_seafood_skewer",
+  "summary": "Espetinho que precisa de pelo menos um caranguejo ou caramujo; a água natural dos frutos do mar vira um caldo saboroso. Sem caranguejo ou caramujo, vira Espetinho de peixe.",
+  "description": "O Espetinho de frutos do mar é a versão \"do litoral\" do espetinho de peixe: exige pelo menos um caranguejo ou caramujo (Caramujo nutritivo, Caramujo discreto, Caranguejo espadachim, Caranguejo couraçado ou Caranguejo esperto), sozinho ou com outros frutos do mar. Segundo o inventário, a água natural dessa mistura de criaturas marinhas forma um caldo delicioso. Só com peixes, o resultado é Espetinho de peixe; com quatro frutos do mar diferentes, Espetinhos fartos de frutos do mar.\n\nA página do prato descreve as versões com efeito como combinações de um peixe e um caranguejo ou caramujo do mesmo efeito: Robalo nutritivo ou Salmão nutritivo com Caramujo nutritivo (Corações extras), Robalo enérgico com Caranguejo esperto (Recuperação de vigor), Carpa blindada ou Pargo blindado com Caranguejo couraçado (Defesa aumentada), Truta discreta com Caramujo discreto (Furtividade aumentada) e carpa ou pargo valente com caranguejo (Ataque aumentado). A versão comum sai com frutos do mar de efeitos contraditórios.",
+  "obtaining": [
+    "Cozinhar numa Panela pelo menos um caranguejo ou caramujo, com ou sem outros frutos do mar (até três tipos diferentes)."
+  ],
+  "uses": [
+    "Aproveitar caranguejos e caramujos coletados no litoral.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Versões com Corações extras, Recuperação de vigor, Ataque aumentado, Defesa aumentada ou Furtividade aumentada, conforme os frutos do mar combinados."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito comum aos frutos do mar usados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "só peixes ou quatro tipos",
+      "status": "confirmado",
+      "result": "Sem caranguejo nem caramujo, os peixes formam Espetinho de peixe; com quatro frutos do mar diferentes, o resultado é Espetinhos fartos de frutos do mar.",
+      "produces": [
+        "botw_food_fish_skewer",
+        "botw_food_copious_seafood_skewers"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Meal"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Caranguejo trocado no wiki",
+      "text": "A página do prato no Zelda Wiki diz que a versão com Ataque aumentado usa Caranguejo couraçado, mas esse caranguejo é \"blindado\" (Defesa aumentada) — o caranguejo de ataque é o Caranguejo espadachim, como mostram as outras receitas de caranguejo.",
+      "sources": [
+        "zw",
+        "zw:Salt-Grilled Crab"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pimenta e sal têm prioridade",
+      "text": "Caranguejo ou caramujo com Pimenta de fogo formam Frutos do mar apimentados, e caranguejo com Halita forma Caranguejo grelhado no sal: as duas receitas são testadas antes do espetinho.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Precisa de pelo menos um caranguejo ou caramujo.",
+    "Quatro tipos de frutos do mar mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_food_fish_skewer",
+      "relation": "Espetinho só com peixes"
+    },
+    {
+      "id": "botw_food_copious_seafood_skewers",
+      "relation": "Resultado com quatro frutos do mar diferentes"
+    },
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Caramujo aceito"
+    },
+    {
+      "id": "botw_creature_razorclaw_crab",
+      "relation": "Caranguejo da versão com Ataque aumentado"
+    },
+    {
+      "id": "botw_food_salt_grilled_crab",
+      "relation": "Caranguejo com Halita"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "ataque",
+    "defesa",
+    "furtividade"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "botw_monster_cursed_lizalfos",
+  "summary": "Crânio de Lagalfos reanimado pela Malícia: o mais rápido dos crânios amaldiçoados, herança da astúcia da espécie. Surge de Poças de Malícia com boca nas Feras Divinas e no Castelo de Hyrule e cai com um golpe.",
+  "description": "O Lagalfos amaldiçoado é o crânio de um Lagalfos revivido pela Malícia. O compendium diz que só a astúcia do antigo dono sobreviveu, o que o torna mais rápido que os crânios de Koboblin; de resto, ataca sem pensar qualquer um que se aproxime.\n\nComo os Koboblins e Moblins amaldiçoados, aparece apenas nas quatro Feras Divinas e no Castelo de Hyrule, saindo de Poças de Malícia que têm boca: quando o Olho brilhante ligado à poça vê Link, ela começa a cuspir Lagalfos amaldiçoados. Com pouquíssima vida, cada um cai com um único golpe, mas a fila só termina quando o Olho brilhante é destruído. Não deixa espólio.",
+  "locations": [
+    "Fera Divina Vah Ruta, Fera Divina Vah Rudania, Fera Divina Vah Medoh, Fera Divina Vah Naboris e Castelo de Hyrule.",
+    "Sempre saindo de Poças de Malícia com boca."
+  ],
+  "obtaining": [
+    "Não deixa materiais; a tabela de espólio não utilizada nos arquivos do jogo está vazia."
+  ],
+  "uses": [
+    "Registro no compendium (entrada nº 158)."
+  ],
+  "effects": [
+    "Investidas rápidas contra Link."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Um único golpe o destrói, mas ele é o mais rápido dos crânios amaldiçoados.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no Olho brilhante interrompe o surgimento de crânios e faz a Poça de Malícia desaparecer.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Glowing Eyeball"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo nos crânios amaldiçoados."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo nos crânios amaldiçoados."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de eletricidade nos crânios amaldiçoados."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não tratam de água em relação a esse monstro."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões no crânio em si."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota explodida perto do Olho brilhante o destrói, cortando a fonte de crânios.",
+      "kind": "mecanica",
+      "sources": ["zw:Glowing Eyeball"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos; o crânio não é um deles.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Depende de Poças de Malícia com boca: quando o Olho brilhante vê Link, a boca cospe crânios continuamente.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Glowing Eyeball"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Hierarquia dos crânios",
+      "text": "Pelas descrições do compendium, o crânio de Lagalfos é o mais rápido e o de Moblin o mais resistente; o de Koboblin não tem nenhuma das duas qualidades.",
+      "sources": ["comp", "zw:Cursed Moblin", "zw:Cursed Bokoblin"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Espólio vazio",
+      "text": "Os arquivos internos guardam uma tabela de espólio sem uso para o Lagalfos amaldiçoado, sem nenhum material.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Como ele é rápido, vale mais a pena destruir o Olho brilhante de longe do que enfrentar a fila de crânios corpo a corpo."
+  ],
+  "limitations": [
+    "Não deixa materiais nem armas."
+  ],
+  "related": [
+    { "id": "botw_monster_cursed_bokoblin", "relation": "Crânio amaldiçoado das mesmas poças" },
+    { "id": "botw_monster_cursed_moblin", "relation": "Crânio amaldiçoado das mesmas poças" },
+    { "id": "botw_monster_lizalfos", "relation": "Espécie de origem" },
+    { "id": "botw_monster_stalizalfos", "relation": "Outra forma de Lagalfos morto-vivo" },
+    { "id": "botw_rune_remote_bomb", "relation": "Destrói o Olho brilhante" }
+  ],
+  "capabilities": ["vence_rapido"],
+  "verification_status": "parcial"
+}

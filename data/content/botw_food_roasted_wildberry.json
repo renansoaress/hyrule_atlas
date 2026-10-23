@@ -1,0 +1,128 @@
+{
+  "id": "botw_food_roasted_wildberry",
+  "summary": "Framboesa passada na chama, que perde a doçura original. Cura mais que a crua (meio coração), mas as fontes divergem: 3/4 ou 1 coração; e o preço aparece como 3 ou 5 rupias.",
+  "description": "A Framboesa, das moitas das Montanhas Gerudo e das Cordilheiras de Hebra, vira Framboesa assada quando encosta numa fogueira ou é largada num lugar quente como a Montanha da Morte. O texto do jogo diz que a chama aberta alterou seu sabor doce e que ela recupera mais vida do que crua.\n\nOs números variam conforme a fonte. A página do item e a tabela de comidas assadas dão 3/4 de coração, 50% a mais que o meio coração da fruta crua, mas a página da Framboesa diz que assar dobra a cura, para 1 coração. No preço, a tabela registra 3 rupias — o mesmo da fruta crua — e a página do item, 5.",
+  "locations": [
+    "Prepara-se a partir de Framboesas (Montanhas Gerudo e Cordilheiras de Hebra) numa fogueira ou no chão escaldante da Montanha da Morte."
+  ],
+  "obtaining": [
+    "Expor uma Framboesa ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração pela tabela de comidas assadas.",
+    "Venda: 3 rupias pela tabela (5 pela página do item)."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração segundo a página do item e a tabela (1 coração segundo a página da Framboesa).",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Framboesa — queima por alguns instantes e se transforma em Framboesa assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Framboesa assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Framboesa no chão para que o ingrediente asse sozinho e vire Framboesa assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cura mais que a Framboesa crua (meio coração): 3/4 de coração pela página do item e pela tabela de comidas assadas, ou 1 coração pela página da Framboesa. Não concede efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Wildberry"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 3 rupias pela tabela de comidas assadas (o mesmo que a Framboesa crua) ou 5 pela página do item.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Wildberry"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Framboesa assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "Números em conflito",
+      "text": "Cura: 3/4 de coração na página do item e na tabela de comidas assadas, 1 coração na página da Framboesa. Preço: 3 rupias na tabela, 5 na página do item. As fontes consultadas não resolvem a divergência."
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_baked_apple",
+      "relation": "A outra fruta assada de 3/4 de coração"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Assa a framboesa ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "a_verificar"
+}

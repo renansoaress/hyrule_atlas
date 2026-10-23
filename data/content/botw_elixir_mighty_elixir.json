@@ -1,0 +1,89 @@
+{
+  "id": "botw_elixir_mighty_elixir",
+  "summary": "Elixir de Ataque aumentado feito com Escaravelho brigão e parte de monstro; vale para todas as armas, em três níveis. O besouro rende só 0:50 de duração, e Beedle troca um deles por um Elixir valente pronto.",
+  "description": "O Elixir valente fortalece corpo e mente para aumentar o ataque de Link com todas as armas, segundo a descrição do jogo. Tem três níveis: o médio exige cinco estrelas de potência e o alto, sete. O único bicho que o produz é o Escaravelho brigão, que vive nas árvores da região de Necluda e vale apenas uma estrela.\n\nO ponto fraco é a duração: cada ingrediente de ataque soma só 0:50, o menor valor entre os efeitos. Por isso as partes de monstro (1:10, 1:50 ou 3:10) costumam responder pela maior parte do tempo do elixir. Para subir o nível, os ingredientes valentes de refeição ajudam muito: Pargo valente (três estrelas), Bananas valentes, Ferromelo, Carpa valente e Caranguejo espadachim (duas) e Protechofra (uma).",
+  "locations": [
+    "Escaravelhos brigões: árvores de Necluda Ocidental e Necluda Oriental."
+  ],
+  "obtaining": [
+    "Cozinhar um Escaravelho brigão com pelo menos uma parte de monstro.",
+    "Trocar um Escaravelho brigão com Beedle, que oferece um Elixir valente pelo inseto."
+  ],
+  "uses": [
+    "Aumentar o dano antes de lutas contra Centaleões, Rinox ou chefes.",
+    "Compensar armas fracas no começo do jogo."
+  ],
+  "effects": [
+    "Ataque aumentado em até três níveis, para todas as armas, por tempo limitado (máximo de 30:00)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Aumenta o poder de ataque de Link com todas as armas enquanto o efeito durar.",
+      "side_effects": ["Comer outro prato com efeito diferente cancela o bônus."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "O bônus se aplica a qualquer arma empunhada; o bônus \"Ancient Proficiency\" dos conjuntos ancestrais se multiplica com ele nas armas ancestrais.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Escaravelho brigão (★, +0:50) + parte de monstro; cinco estrelas dão o nível médio e sete, o alto.",
+      "conditions": [
+        "Ingredientes valentes: Pargo valente (★★★), Bananas valentes, Ferromelo, Carpa valente e Caranguejo espadachim (★★ cada) e Protechofra (★), cada um com +0:50."
+      ],
+      "side_effects": ["Ingredientes de outro efeito anulam tudo e geram Comida duvidosa."],
+      "applications": ["Escaravelho + parte de monstro + dois Pargos valentes chegam às sete estrelas do nível alto."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço pela regra geral dos elixires (soma dos ingredientes × 1,5 a 2,8, arredondada para a dezena acima).",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Beedle ama escaravelhos brigões",
+      "text": "Com um Escaravelho brigão na algibeira, Beedle pede o inseto e oferece um Elixir valente; aceitando, ele promete guardá-lo para sempre na coleção. Recusando, conclui que julgou mal o caráter de Link.",
+      "sources": ["zw:Bladed Rhino Beetle", "zw:Beedle"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Crítico sobe o nível",
+      "text": "Num elixir de ataque, o bônus crítico pode somar 5:00 ou subir um nível; se o efeito já estiver no nível alto, só a duração extra pode ser sorteada.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Trocar o escaravelho com Beedle quando faltarem partes de monstro: o elixir vem pronto, sem gastar ingredientes."
+  ],
+  "limitations": [
+    "Duração base muito curta (0:50 por ingrediente de ataque).",
+    "Só um efeito fica ativo por vez."
+  ],
+  "related": [
+    { "id": "botw_creature_bladed_rhino_beetle", "relation": "Único bicho que produz o elixir (★, +0:50)" },
+    { "id": "botw_creature_mighty_porgy", "relation": "Ingrediente valente mais forte (★★★)" },
+    { "id": "botw_material_mighty_bananas", "relation": "Ingrediente valente (★★)" },
+    { "id": "botw_material_razorshroom", "relation": "Ingrediente valente (★★)" },
+    { "id": "botw_creature_mighty_carp", "relation": "Ingrediente valente (★★)" },
+    { "id": "botw_creature_razorclaw_crab", "relation": "Ingrediente valente (★★)" },
+    { "id": "botw_material_mighty_thistle", "relation": "Ingrediente valente (★)" },
+    { "id": "botw_armorset_ancient_set", "relation": "Bônus de armas ancestrais que se multiplica com o efeito" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de cozimento" }
+  ],
+  "capabilities": ["ataque"],
+  "verification_status": "verificado"
+}

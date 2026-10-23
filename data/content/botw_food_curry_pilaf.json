@@ -1,0 +1,111 @@
+{
+  "id": "botw_food_curry_pilaf",
+  "summary": "Pilaf de Arroz hyliano, Ovo, Manteiga de cabra e Tempero Goron, de aroma rico e picante. Sem efeito cura 4 corações; o quinto ingrediente decide a versão, e a tenaz chega a 9.",
+  "description": "O Pilaf ao curry exige Arroz hyliano, Ovo, Manteiga de cabra e Tempero Goron — segundo a descrição do jogo, é o tempero que dá ao pilaf seu aroma rico e picante. A receita básica cura 4 corações e vale 40 rupias.\n\nComo os quatro ingredientes obrigatórios não têm efeito, o quinto espaço da panela define a versão. As que mais curam, segundo o Zelda Wiki, são a tenaz (Cenoura tenaz ou Cogumelo tenaz; 9 corações, 60 rupias), a picante e a isolante (8 corações cada); a nutritiva vale 60 rupias, e as demais curam de 4 a 5 corações e valem 50 rupias.\n\nNa prática, o pilaf é um Arroz com curry enriquecido: acrescenta Ovo e Manteiga de cabra à base de arroz e tempero. Já o Pilaf de coxa troca o Tempero Goron por uma Coxa.",
+  "locations": [
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Ovo: achado em ninhos no alto das árvores ou comprado na East Wind, na High Spirits Produce e com Agus.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Arroz hyliano + Ovo + Manteiga de cabra + Tempero Goron, com um quinto ingrediente opcional."
+  ],
+  "uses": [
+    "Base neutra para um prato de efeito com um único ingrediente extra.",
+    "Venda: de 40 a 60 rupias."
+  ],
+  "effects": [
+    "Versão comum: recupera 4 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — 60 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — 4 corações, 50 rupias.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — com Cenoura tenaz ou Cogumelo tenaz; 9 corações, 60 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — 5 corações, 50 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — 8 corações, 50 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — 5 corações, 50 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — 8 corações, 50 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — 5 corações, 50 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — 5 corações, 50 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — 5 corações, 50 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4 corações na receita básica.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O quinto ingrediente dá o efeito; a versão tenaz é a que mais cura (9 corações).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 40 rupias na versão comum, 50 na maioria das versões com efeito e 60 nas versões nutritiva e tenaz.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tenaz é a melhor cura",
+      "text": "Com uma Cenoura tenaz ou um Cogumelo tenaz no quinto espaço, o pilaf passa de 4 para 9 corações e ainda restaura e ultrapassa o Medidor de vigor.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só há um espaço para ingrediente de efeito.",
+    "Depende de Tempero Goron, vendido em poucos lugares."
+  ],
+  "related": [
+    {
+      "id": "botw_food_curry_rice",
+      "relation": "Versão simples, só arroz e tempero"
+    },
+    {
+      "id": "botw_food_poultry_pilaf",
+      "relation": "Pilaf com Coxa no lugar do tempero"
+    },
+    {
+      "id": "botw_food_gourmet_poultry_pilaf",
+      "relation": "Pilaf com Ave inteira"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

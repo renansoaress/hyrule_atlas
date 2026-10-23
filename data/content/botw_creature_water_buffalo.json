@@ -1,0 +1,88 @@
+{
+  "id": "botw_creature_water_buffalo",
+  "summary": "Boi selvagem de chifres fortes que pasta perto da água, ancestral da Vaca de Hateno. Investe contra Link se abordado de frente; abatido, deixa carne de alta qualidade.",
+  "description": "O Búfalo-d'água é um boi selvagem equipado com chifres grandes e fortes, que vive comendo o capim que cresce perto de rios e lagos — o compendium cita a Palude de Lanayru e o Altiplano de Akkala. Sua carne é considerada de alta qualidade, o que o torna alvo frequente de caçadores. Se Link se aproximar pela frente, o búfalo investe contra ele.\n\nCuriosidade do compendium: a dócil Vaca de Hateno, criada nos vilarejos, foi obtida por cruzamento seletivo a partir desses búfalos. As fontes divergem sobre as carnes que ele deixa: o compendium e o artigo de Carne de segunda indicam Carne de segunda e Carne de primeira, enquanto o artigo do próprio búfalo fala em Carne de terceira ou Carne de primeira.",
+  "locations": [
+    "Margens de rios e lagos; o compendium cita a Palude de Lanayru e o Altiplano de Akkala."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Fonte de carne de alta qualidade, incluindo Carne de primeira.",
+    "A Carne de primeira pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\").",
+    "Registrar sua foto no compendium (entrada nº 16)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano da investida."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Abordado de frente, investe contra Link.",
+      "conditions": ["A fonte descreve a investida quando Link chega pela frente do animal."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser morto e deixa carne de alta qualidade. Pelo compendium, Carne de segunda e Carne de primeira; o artigo do búfalo cita Carne de terceira ou Carne de primeira.",
+      "produces": ["botw_material_raw_prime_meat", "botw_material_raw_gourmet_meat"],
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "zw:Raw Prime Meat", "zw:Raw Gourmet Meat"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que o búfalo pode ser morto, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O ancestral da Vaca de Hateno",
+      "text": "O compendium conta que a Vaca de Hateno, criada nos vilarejos, foi desenvolvida por cruzamento seletivo a partir do Búfalo-d'água; ela tem chifres menores e temperamento muito mais dócil.",
+      "sources": ["comp", "zw:Hateno Cow"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Divergência sobre as carnes",
+      "text": "O compendium e os artigos de Carne de segunda e de Carne de primeira apontam o búfalo como fonte dessas duas carnes; o artigo de Carne de terceira não o inclui. Apenas o artigo do próprio búfalo fala em Carne de terceira ou Carne de primeira.",
+      "sources": ["comp", "zw", "zw:Raw Prime Meat", "zw:Raw Gourmet Meat", "zw:Raw Meat"]
+    }
+  ],
+  "limitations": [
+    "Investe se abordado de frente."
+  ],
+  "related": [
+    { "id": "botw_creature_hateno_cow", "relation": "Versão domesticada, obtida por cruzamento seletivo" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatido (segundo o compendium)" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_material_raw_meat", "relation": "Citada como drop apenas no artigo do búfalo" }
+  ],
+  "capabilities": [],
+  "verification_status": "a_verificar"
+}

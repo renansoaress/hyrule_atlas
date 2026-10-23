@@ -1,0 +1,134 @@
+{
+  "id": "botw_material_warm_safflina",
+  "summary": "Erva medicinal das regiões quentes, morna ao toque, que cozida dá Resistência ao frio — apesar do nome PT-BR. Crua não cura. 3 por peça (com Gelecas ígneas) melhoram o Conjunto de pluma nevada.",
+  "description": "A Erva geleira (Warm Safflina, no original em inglês) cresce em regiões quentes como o Deserto Gerudo e também nos Cerros de Hyrule; há muitas ao redor da Fonte da Grande Fada Tera, sob o Grande Esqueleto Gerudo. O jogo a descreve como morna ao toque, e seu efeito é aquecer: cozida na panela, concede Resistência ao frio. Crua, não recupera corações.\n\nNas Grandes Fadas, é um dos materiais do Conjunto de pluma nevada, a roupa dos Arás contra o frio: cada peça pede 3 Ervas geleiras e 5 Gelecas ígneas na melhoria de nível ★★, segundo os dados estruturados. Na Tinturaria Kochi, entra no corante laranja. Não tem versão assada na lista de comidas assadas.",
+  "locations": [
+    "Deserto Gerudo e Cerros de Hyrule (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Muitas ao redor da Fonte da Grande Fada Tera, sob o Grande Esqueleto Gerudo (Gerudo Great Skeleton)."
+  ],
+  "obtaining": [
+    "Colher nos locais citados. Os dados estruturados não listam lojas que vendam a erva."
+  ],
+  "uses": [
+    "Pratos de Resistência ao frio.",
+    "Melhoria de armadura: 3 por peça (+5 Gelecas ígneas) no nível ★★ de Cocar, Túnica e Calças de pluma nevada.",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante laranja na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Cozida: Resistência ao frio (nível máximo 2)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a erva no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a erva largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada desta erva na lista de comidas assadas, e as fontes não dizem o que acontece se ela for exposta ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-la numa fogueira; ela não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da erva na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a erva não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência ao frio. Mais unidades prolongam o efeito; combinada com Pimenta de fogo ou Flamelo (mesmo efeito), prolonga e pode chegar ao nível 2, o máximo desse efeito.",
+      "side_effects": ["A Resistência ao frio não protege contra ataques de gelo nem contra água gelada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Cold Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Crua, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": ["comp", "zw:Flower"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Nome frio, efeito quente",
+      "text": "O nome em português pode confundir: apesar de \"geleira\", esta é a erva das regiões quentes (Warm Safflina, no original), morna ao toque, que aumenta a resistência ao frio. A erva de efeito oposto, das montanhas nevadas, é a Erva fogueira.",
+      "sources": ["comp", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Flor do deserto para roupa da neve",
+      "text": "Embora cresça no calor do deserto, a erva é pedida na melhoria do Conjunto de pluma nevada, que dá Resistência ao frio. O texto do Zelda Wiki fala em primeiro nível, mas os dados de melhoria do mesmo wiki a colocam no nível ★★ (o ★ pede só 3 Gelecas ígneas por peça).",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Colha as 9 ervas necessárias para o Conjunto de pluma nevada na fonte de Tera, onde a própria Grande Fada pode fazer a melhoria se esse nível já estiver liberado."
+  ],
+  "limitations": [
+    "Crua não cura nada.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ela não está documentado.",
+    "A Resistência ao frio não vale contra ataques de gelo nem água gelada."
+  ],
+  "related": [
+    { "id": "botw_armorset_snowquill_set", "relation": "Usa 3 ervas por peça na melhoria ★★" },
+    { "id": "botw_armor_snowquill_headdress", "relation": "Nível ★★: 5 Gelecas ígneas + 3 ervas" },
+    { "id": "botw_armor_snowquill_tunic", "relation": "Nível ★★: 5 Gelecas ígneas + 3 ervas" },
+    { "id": "botw_armor_snowquill_trousers", "relation": "Nível ★★: 5 Gelecas ígneas + 3 ervas" },
+    { "id": "botw_material_red_chuchu_jelly", "relation": "Acompanha a erva na melhoria do Conjunto de pluma nevada" },
+    { "id": "botw_material_cool_safflina", "relation": "Erva da mesma família, de efeito oposto (calor)" },
+    { "id": "botw_material_spicy_pepper", "relation": "Outro ingrediente de Resistência ao frio" },
+    { "id": "botw_material_sunshroom", "relation": "Outro ingrediente de Resistência ao frio" },
+    { "id": "botw_elixir_spicy_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Cresce perto da fonte de Tera" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante laranja" }
+  ],
+  "capabilities": ["protege_frio"],
+  "verification_status": "parcial"
+}

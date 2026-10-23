@@ -1,0 +1,150 @@
+{
+  "id": "botw_bow_lizal_bow",
+  "summary": "Arco de madeira dos Lagalfos reforçado com ossos de um peixe grande (ataque 14, durabilidade 25) — bem melhor que um arco de madeira comum. Comum na região de Lanayru; queima e flutua.",
+  "description": "O Arco Lagal é o arco que os Lagalfos fabricam: madeira reforçada com os ossos de um peixe grande, o que, segundo a descrição do jogo, o torna uma melhoria notável em relação a qualquer arco de madeira comum. É empunhado por Lagalfos comuns na Grande Nascente de Lanayru e na Palude de Lanayru e, às vezes, também pelos Lagalfos ígneos, glaciais e elétricos. Pertence ao equipamento dos Lagalfos, junto da Lança Lagal e do Escudo Lagal.\n\nNos parâmetros extraídos do jogo, dispara uma flecha por vez com trajetória reta de 20 m e velocidades padrão. Sendo de madeira, queima e acaba se desintegrando no fogo ou no clima escaldante, flutua, não conduz eletricidade e não pode ser pego com Magnétis.",
+  "locations": [
+    "Grande Nascente de Lanayru e Palude de Lanayru (locais comuns segundo o compendium), com Lagalfos."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos arqueiros — inclusive os elementais, que às vezes o usam — e recolher o arco."
+  ],
+  "uses": [
+    "Arco intermediário fácil de repor na região de Lanayru."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros do jogo, a flecha percorre 20 m em linha reta antes de começar a cair (gravidade padrão de 9,8 m/s²), e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Por ser de madeira, pega fogo ao tocar chamas e, se continuar exposto, queima até se desfazer.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco Lagal pode surgir com bônus de ataque de +3 a +6 (nível branco) ou de +7 a +10 (nível amarelo), e com bônus de durabilidade de +3 a +5 (branco) ou de +6 a +13 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Sendo de madeira, não atrai raios nas tempestades que caem em regiões como Lanayru e Necluda."
+  ],
+  "limitations": [
+    "Queima se ficar equipado no clima escaldante de Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_strengthened_lizal_bow",
+      "relation": "Versão com empunhadura de metal"
+    },
+    {
+      "id": "botw_bow_steel_lizal_bow",
+      "relation": "Versão de aço"
+    },
+    {
+      "id": "botw_weapon_lizal_spear",
+      "relation": "Mesmo arquétipo (equipamento dos Lagalfos)"
+    },
+    {
+      "id": "botw_shield_lizal_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Monstro que o fabrica e empunha"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua"
+  ],
+  "verification_status": "verificado"
+}

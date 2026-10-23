@@ -1,0 +1,172 @@
+{
+  "id": "botw_bow_duplex_bow",
+  "summary": "Arco dos arqueiros de elite do Clã Yiga, construído para disparar duas flechas de uma vez (14 cada) gastando só uma. Tem 40 m de trajetória reta, mas durabilidade baixa (18); de madeira.",
+  "description": "O Arco duplo é o arco preferido dos arqueiros habilidosos do Clã Yiga e faz parte do equipamento Yiga. Segundo a descrição do jogo, foi projetado para disparar duas flechas ao mesmo tempo, garantindo que o alvo seja parado de forma rápida e nada agradável. É o único arco de disparo duplo: os demais arcos de disparo múltiplo lançam três flechas.\n\nNos parâmetros extraídos do jogo, as duas flechas usam o modo IsRapidFire, que dispara mais de uma flecha no mesmo ponto, em vez do leque horizontal dos arcos de três flechas; a trajetória reta é de 40 m. Como todo arco de disparo múltiplo, gasta apenas uma flecha por disparo. A contrapartida é a durabilidade: 18, a segunda menor entre os arcos.\n\nSó há duas formas de obtê-lo: no Esconderijo do Clã Yiga ou derrotando os Soldados Yiga que emboscam Link pelo mapa. Sendo de madeira, queima, flutua, não conduz eletricidade e não atrai raios.",
+  "locations": [
+    "Esconderijo do Clã Yiga, nas Montanhas Gerudo: há arcos largados e outros nas mãos de Soldados Yiga.",
+    "Com Soldados Yiga que surgem pelo mapa para emboscar Link."
+  ],
+  "obtaining": [
+    "Recolher os arcos do Esconderijo do Clã Yiga ou derrotar Soldados Yiga arqueiros e pegar o arco deles."
+  ],
+  "uses": [
+    "Dano concentrado: duas flechas no mesmo ponto pelo custo de uma.",
+    "Mostrar um Arco duplo a Nebb, em Vila Hateno, na missão secundária \"The Weapon Connoisseur\", rende uma rupia roxa."
+  ],
+  "effects": [
+    "Disparo duplo: duas flechas por puxada, ao custo de uma."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada disparo lança duas flechas em direção ao mesmo ponto, consumindo apenas uma flecha. A trajetória reta é de 40 m, com tensionamento e recarga em velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "applications": [
+        "Concentrar dois acertos num único alvo pelo custo de uma flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Bow",
+        "zw:Template:BotW Bow Parameters"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Por ser de madeira, pega fogo ao tocar chamas e, se continuar exposto, queima até se desfazer.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Duas flechas no mesmo ponto, não em leque",
+      "text": "Os parâmetros do jogo distinguem dois tipos de disparo múltiplo: o leque horizontal (IsLeadShot), usado pelos arcos de três flechas, e o disparo de várias flechas no mesmo ponto (IsRapidFire). O Arco duplo é o único arco jogável com IsRapidFire ativo, com duas flechas por disparo.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Peça de colecionador para Nebb",
+      "text": "Na missão secundária \"The Weapon Connoisseur\", Nebb pede para ver um Arco duplo. Ao levar um até Vila Hateno, ele fica animado e agradece com uma rupia roxa.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco duplo pode surgir com bônus de ataque de +2 a +4 (nível branco) ou de +5 a +6 (nível amarelo), e com bônus de durabilidade de +2 a +4 (branco) ou de +5 a +10 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mire na cabeça: as duas flechas seguem para o mesmo ponto, e acertos na cabeça causam dano dobrado."
+  ],
+  "limitations": [
+    "Durabilidade baixa (18), a segunda menor entre os arcos.",
+    "Queima no clima escaldante de Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_yiga_footsoldier",
+      "relation": "Inimigo que o empunha"
+    },
+    {
+      "id": "botw_weapon_vicious_sickle",
+      "relation": "Mesmo arquétipo (equipamento Yiga)"
+    },
+    {
+      "id": "botw_bow_lynel_bow",
+      "relation": "Arco de disparo múltiplo em leque, para comparação"
+    },
+    {
+      "id": "botw_bow_boko_bow",
+      "relation": "O único arco com durabilidade menor"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

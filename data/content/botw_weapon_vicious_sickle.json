@@ -1,0 +1,178 @@
+{
+  "id": "botw_weapon_vicious_sickle",
+  "summary": "Foice em meia-lua preferida pelo Clã Yiga, feita para causar ferimentos fatais rapidamente e símbolo do terror que o clã espalha. Arma principal dos Soldados Yiga; ataque 16, mas pouco durável. Metálica.",
+  "description": "A Foice brutal pertence ao equipamento do Clã Yiga (Yiga Clan Gear), armas usadas exclusivamente pelos Yiga, que são a única fonte delas. Segundo o jogo, o formato de meia-lua permite desferir ferimentos fatais rapidamente e serve de símbolo do terror do clã, mas a durabilidade é baixa. É a arma principal dos Soldados Yiga, que atacam Link de surpresa pelo caminho ou se disfarçam de viajantes para atraí-lo. Com a foice, o soldado se teletransporta acima de Link e desce cravando a arma no chão, golpe anunciado por um anel vermelho com nove letras hylianas; ao ser derrotado, ele foge por teletransporte e deixa a foice.\n\nPor ser de metal, conduz eletricidade e atrai raios quando equipada em tempestades; não queima no fogo nem em clima escaldante, afunda na água e pode ser recuperada com Magnétis.",
+  "locations": [
+    "Montanhas Gerudo e Deserto Gerudo (locais comuns segundo o compendium), onde o clã tem seu esconderijo.",
+    "Com Soldados Yiga que emboscam Link ou se disfarçam de viajantes por toda Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar Soldados Yiga armados com a foice: eles fogem e deixam a arma.",
+    "Os viajantes Yiga disfarçados voltam a aparecer depois de cada Lua de sangue.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada curva de uma mão de dano razoável para o início do jogo.",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo; gasta-se rápido.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a arma voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Soldados Yiga com a foice se teletransportam acima de Link e descem cravando a arma no chão; o anel vermelho com nove letras hylianas avisa onde o golpe vai cair.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Yiga Footsoldier",
+        "zw:Yiga Clan"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a foice pode surgir com bônus de ataque de +4 a +6 (nível comum) ou +7 a +13 (nível dourado), bônus de durabilidade de +2 a +3 (ou +4 a +7 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "De foice a trinchador",
+      "text": "Antes da derrota do Mestre Kohga, os Soldados Yiga de combate corpo a corpo usam a Foice brutal; depois dela, ficam mais fortes, surgem do nada e passam também a carregar o Trinchador demoníaco.",
+      "sources": [
+        "zw:Yiga Clan",
+        "zw:Yiga Footsoldier"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Disfarce de viajante",
+      "text": "Muitos Soldados Yiga aparecem disfarçados de viajantes e só revelam a foice depois que Link fala com eles. Alguns até oferecem Bananas valentes antes de atacar.",
+      "sources": [
+        "zw:Yiga Footsoldier",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao ver o anel vermelho do Soldado Yiga, sair da área marcada: ele indica onde a foice vai cair."
+  ],
+  "limitations": [
+    "Durabilidade baixa (14), como o próprio jogo avisa.",
+    "Metálica: perigosa em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_yiga_footsoldier",
+      "relation": "Principal portador e fonte da arma"
+    },
+    {
+      "id": "botw_weapon_demon_carver",
+      "relation": "Mesmo arquétipo; passa a aparecer após a derrota de Kohga"
+    },
+    {
+      "id": "botw_bow_duplex_bow",
+      "relation": "Mesmo arquétipo (arco dos Soldados Yiga)"
+    },
+    {
+      "id": "botw_weapon_windcleaver",
+      "relation": "Arma de duas mãos dos Espadachins Yiga"
+    },
+    {
+      "id": "botw_monster_master_kohga",
+      "relation": "Líder do Clã Yiga"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

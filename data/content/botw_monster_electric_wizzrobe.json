@@ -1,0 +1,182 @@
+{
+  "id": "botw_monster_electric_wizzrobe",
+  "summary": "Feiticeiro de manto branco e capuz amarelo que acena para Link antes de lutar. Lança bolas elétricas, invoca Chulchuls e Morcis elétricos e chama tempestades; seu choque faz Link largar armas de metal.",
+  "description": "O Feitiçano elétrico costuma pular entre casas em ruínas espalhadas por Hyrule; é mais comum nos Cerros de Hyrule e em Necluda Ocidental, os locais citados pelo compendium. Tem olhos amarelos e veste um manto branco com capuz amarelo. Quando vê Link, acena para ele antes de começar a luta — um detalhe único entre os Feitiçanos.\n\nUsa a Varinha do raio para disparar bolas de eletricidade ou invocar Chulchuls elétricos e Morcis elétricos, e, segundo o compendium, costuma provocar tempestades na área, que se dissipam quando ele é derrotado. Some e reaparece antes de atacar, e o rastro deixado a cada passo permite segui-lo enquanto está invisível. Se a eletricidade da varinha atingir Link, ele larga qualquer arma de metal equipada; armas de madeira ou de tecnologia ancestral evitam o problema. Tem 150 pontos de vida e deixa a Varinha do raio.",
+  "locations": [
+    "Casas em ruínas de toda Hyrule; mais comum nos Cerros de Hyrule e em Necluda Ocidental."
+  ],
+  "obtaining": [
+    "Deixa a Varinha do raio ao ser derrotado.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte da Varinha do raio, que lança bolas de eletricidade; não conduz eletricidade nem atrai raios.",
+    "Registro no compendium (entrada nº 99)."
+  ],
+  "effects": [
+    "Choque elétrico que faz Link largar armas de metal equipadas."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça é acerto crítico (dano dobrado). O atordoamento por flechada na cabeça é documentado para os outros Feitiçanos, mas a página do Feitiçano elétrico não o menciona.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Fica invisível e reaparece antes de atacar; o rastro a cada passo revela a posição. Lutar com armas de madeira ou de tecnologia ancestral evita perdê-las com os choques.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a eletricidade."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo no Feitiçano elétrico."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo no Feitiçano elétrico."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Feitiçano elétrico com água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem um efeito específico de explosões no Feitiçano elétrico."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio da explosão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Nem o Feitiçano nem a Varinha do raio são metálicos.",
+      "sources": [
+        "zw:Magnesis",
+        "zw:Lightning Rod"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Provoca tempestades na área; durante elas, armas, escudos e arcos metálicos equipados por Link atraem raios.",
+      "applications": [
+        "Trocar para equipamento não metálico enquanto a tempestade dura."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "comp",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pula entre casas em ruínas e causa tempestades, que se dissipam quando ele é derrotado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Invoca Chulchuls elétricos e Morcis elétricos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O aceno antes da luta",
+      "text": "Ao avistar Link, o Feitiçano elétrico acena para ele antes de iniciar o combate.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Armas que não caem",
+      "text": "O choque da Varinha do raio derruba armas de metal; armas de madeira ou de tecnologia ancestral não são derrubadas, segundo o Zelda Wiki.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Raios dos Cerros de Hyrule",
+      "text": "A descrição da Varinha do raio diz que sua gema contém raios dos Cerros de Hyrule — justamente uma das regiões onde o Feitiçano elétrico é mais comum.",
+      "sources": [
+        "zw:Lightning Rod"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Encarar o Feitiçano elétrico com uma arma de madeira e um arco para os tiros na cabeça, guardando o equipamento metálico."
+  ],
+  "limitations": [
+    "A tempestade que ele provoca torna perigoso usar equipamento metálico até derrotá-lo."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lightning_rod",
+      "relation": "Arma que deixa"
+    },
+    {
+      "id": "botw_monster_thunder_wizzrobe",
+      "relation": "Versão mais forte"
+    },
+    {
+      "id": "botw_monster_electric_chuchu",
+      "relation": "Monstro que invoca"
+    },
+    {
+      "id": "botw_monster_electric_keese",
+      "relation": "Monstro que invoca"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Clima que ele provoca"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "habilidade_especial"
+  ],
+  "verification_status": "parcial"
+}

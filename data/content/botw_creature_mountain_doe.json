@@ -1,0 +1,92 @@
+{
+  "id": "botw_creature_mountain_doe",
+  "summary": "Corça sem galhada que anda em grupo com o Cervo da montanha. Tímida, foge ao ver Link, mas baixa a guarda enquanto come maçãs; com furtividade pode ser montada, sem esporas e sem registro.",
+  "description": "A Corça da montanha é a fêmea do cervo-da-montanha: mesmo pelo castanho desgrenhado com pintas claras, mas sem galhada e com o peito de tom mais apagado. Vive nas matas de folhas caducas de Hyrule, quase sempre na companhia de um Cervo da montanha. O compendium cita a Pradaria de Hyrule e a Grande Nascente de Lanayru, mas ela é nativa da maioria das regiões, incluindo Necluda, Faron e Akkala. É arisca e tímida, foge quando percebe Link e, tranquila, pasta ou se deita para descansar.\n\nGosta especialmente de maçãs e tende a baixar a guarda quando está comendo uma — o momento ideal para chegar perto. Com furtividade, Link pode montá-la como a um cavalo; ela é rápida, mas tem pouca utilidade: não aceita esporas, foge assim que Link desmonta e os estábulos recusam o registro, por ser um serviço só para cavalos. Morta, deixa Carne de segunda.",
+  "locations": [
+    "Matas de folhas caducas de Hyrule, geralmente junto de um Cervo da montanha; o compendium cita a Pradaria de Hyrule e a Grande Nascente de Lanayru."
+  ],
+  "obtaining": [
+    "Montar com furtividade e acalmá-la; não pode ser registrada."
+  ],
+  "uses": [
+    "Fonte de Carne de segunda.",
+    "Montaria improvisada e rápida, sem esporas."
+  ],
+  "effects": [
+    "Corre rápido quando montada, mas sem esporas."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge ao perceber Link. Enquanto come maçãs, tende a baixar a guarda.",
+      "conditions": ["Furtividade; aproveitar o momento em que ela estiver comendo maçãs."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montada e acalmada como um cavalo. Não tem esporas, foge quando Link desmonta e não pode ser registrada.",
+      "side_effects": ["O estábulo responde que o registro é só para cavalos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Deer"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser caçada com armas; ao morrer deixa Carne de segunda.",
+      "produces": ["botw_material_raw_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Deer"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "O minijogo de caça de Dantz, feito com arco, é descrito com Cervos da montanha (machos); as fontes não detalham flechas contra a corça especificamente."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Distraída pelas maçãs",
+      "text": "A Corça da montanha tem preferência por maçãs e costuma baixar a guarda enquanto come uma, o que facilita a aproximação furtiva para montá-la ou caçá-la.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis de BOTW, ao lado do Cavalo, Cavalo gigante, Cavalo branco, Senhor da Montanha, Cervo da montanha, Stalcavalo, Urso melívoro e Grão-urso.",
+      "sources": ["zw"]
+    }
+  ],
+  "limitations": [
+    "Sem esporas; foge quando Link desmonta.",
+    "Não pode ser registrada em estábulos.",
+    "A missão \"The Crowned Beast\" pede uma fera com \"coroa de osso\" e é resolvida com o Cervo da montanha (macho, com galhada), não com a corça."
+  ],
+  "related": [
+    { "id": "botw_creature_mountain_buck", "relation": "O macho, com galhada" },
+    { "id": "botw_material_apple", "relation": "Fruta preferida; distrai a corça" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatida" },
+    { "id": "botw_creature_tabantha_moose", "relation": "O único cervo que não pode ser montado" },
+    { "id": "botw_mechanic_stable", "relation": "Os estábulos recusam o registro" }
+  ],
+  "capabilities": ["montavel"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,147 @@
+{
+  "id": "botw_material_zapshroom",
+  "summary": "Cogumelo de chapéu naturalmente isolante, das Montanhas Gerudo e dos bosques do Coração de Akkala. Cozido, dá Resistência a choques; 5 por peça entram no 3º nível do Conjunto de borracha.",
+  "description": "O Aterramelo cresce sob as árvores nas Montanhas Gerudo e nos bosques do Coração de Akkala. Segundo o jogo, o chapéu do cogumelo é naturalmente isolante, e por isso os pratos de panela feitos com ele protegem contra a eletricidade (efeito Resistência a choques). Cru, recupera meio coração; exposto ao fogo, vira Aterramelo tostado (3/4 de coração), sem efeito.\n\nNas Grandes Fadas, é material do Conjunto de borracha, a armadura que protege de choques: cada peça pede 5 Aterramelos e 5 Caudas de Lagalfos elétrico no nível ★★★. Pode ser comprado na barraca de Ardin, na Cidade Gerudo, e com o mercador ambulante Kanny, por 16 rupias. Na Tinturaria Kochi, entra no corante amarelo.",
+  "locations": [
+    "Sob as árvores nas Montanhas Gerudo e nos bosques do Coração de Akkala (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Lojas: barraca de Ardin (Cidade Gerudo) e Kanny (entre o Serenne Stable e o Snowfield Stable) — 16 rupias."
+  ],
+  "obtaining": [
+    "Colher sob as árvores.",
+    "Comprar com Ardin ou Kanny."
+  ],
+  "uses": [
+    "Pratos de Resistência a choques.",
+    "Melhoria de armadura: 5 por peça (+5 Caudas de Lagalfos elétrico) no nível ★★★ de Elmo, Armadura e Meia-calça de borracha.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Cozido: Resistência a choques (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimado pelo fogo, vira Aterramelo tostado, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Resistência a choques."],
+      "applications": ["Vender: tostado vale 6 rupias, contra 4 do cru."],
+      "produces": ["botw_food_toasty_zapshroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Aterramelo tostado.",
+      "produces": ["botw_food_toasty_zapshroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_zapshroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Apesar de o jogo descrever o chapéu como isolante, as fontes não dizem o que acontece com o cogumelo largado atingido por eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência a choques. Mais unidades prolongam o efeito; combinado com Fruta isolante ou Erva relampagueira, prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Shock Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não dá resistência.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias; tostado, vale 6.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quinze cogumelos para a borracha",
+      "text": "O nível ★★★ do Conjunto de borracha pede 5 Aterramelos e 5 Caudas de Lagalfos elétrico por peça: 15 cogumelos para as três peças. O nível anterior usa Frutas isolantes, outro ingrediente de Resistência a choques.",
+      "sources": ["zw", "zw:Voltfruit"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Do deserto, mas também de Akkala",
+      "text": "A descrição do jogo diz que o cogumelo cresce na região Gerudo, mas o compendium e o Zelda Wiki também o apontam nos bosques do Coração de Akkala, no extremo oposto do mapa.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine Aterramelos com Frutas isolantes e Ervas relampagueiras, todos da região Gerudo, para Resistência a choques de nível mais alto."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Resistência a choques; só cozido."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_zapshroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Nível ★★★: 5 Aterramelos por peça" },
+    { "id": "botw_material_yellow_lizalfos_tail", "relation": "Acompanha o cogumelo na melhoria do Conjunto de borracha" },
+    { "id": "botw_material_voltfruit", "relation": "Outro ingrediente de Resistência a choques" },
+    { "id": "botw_material_electric_safflina", "relation": "Outro ingrediente de Resistência a choques" },
+    { "id": "botw_elixir_electro_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "protege_choque"],
+  "verification_status": "verificado"
+}

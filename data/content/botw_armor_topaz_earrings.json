@@ -1,0 +1,148 @@
+{
+  "id": "botw_armor_topaz_earrings",
+  "summary": "Brincos Gerudo com topázio, que usa o poder do raio: Resistência a choques nível 1 (−33% de dano elétrico) e o efeito oculto Poder ancestral aumentado. Vendidos na Starlight Memories ou ganhos de Isha.",
+  "description": "Feitos pelas artesãs Gerudo, os Brincos de topázio levam uma gema que, segundo a descrição, “aproveita o poder do raio” para aumentar a resistência à eletricidade. Custam 500 rupias e 5 Topázios na Starlight Memories, a joalheria da Cidade Gerudo, e são uma das três joias que Isha oferece como recompensa de “Tools of the Trade”.\n\nDão Resistência a choques nível 1: o dano elétrico cai 33% (66% no nível 2 e 100% no nível 3; só o nível 3 impede Link de largar o equipamento). A resistência não reduz a explosão de um raio. Têm ainda o efeito oculto Poder ancestral aumentado (+20% com armas ancestrais). A defesa vai de 3 a 20; as melhorias pedem 22 Topázios, 6 Sílex e 2 Fragmentos de estrela. Não podem ser tingidos.",
+  "locations": [
+    "Starlight Memories, joalheria da Cidade Gerudo, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Comprar por 500 rupias e 5 Topázios na Starlight Memories, depois de “Tools of the Trade”.",
+    "Recompensa alternativa: ao concluir “Tools of the Trade” (entregar 10 Sílex a Isha), Link escolhe entre a Tiara de rubi, a Tiara de safira e os Brincos de topázio."
+  ],
+  "uses": [
+    "Reduzir o dano de inimigos e armadilhas elétricas.",
+    "Aumentar o ataque das armas ancestrais."
+  ],
+  "effects": [
+    "Resistência a choques nível 1 (−33% de dano elétrico).",
+    "Poder ancestral aumentado (oculto): +20% com armas ancestrais."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo), Resistência a choques nível 1 e o efeito oculto Poder ancestral aumentado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "O dano de eletricidade cai 33%.",
+      "side_effects": [
+        "No nível 1, Link ainda pode largar a arma ao ser eletrocutado; só o nível 3 impede isso."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★. A Resistência a choques dos brincos também não reduz a explosão causada pelo raio.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus de ataque oculto",
+      "text": "Além do efeito visível, a peça tem o efeito oculto Poder ancestral aumentado: +20% no ataque das armas ancestrais e guardiãs, multiplicado com Ataque aumentado. Ele não aparece no inventário.",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Choque nível 3 sem o Elmo de borracha",
+      "text": "Os níveis de Resistência a choques das peças se somam: os brincos com a Armadura e a Meia-calça de borracha chegam ao nível 3 (−100% e sem largar o equipamento). Sem o Elmo de borracha, porém, o bônus de conjunto Imunidade a choques, que também cobre raios, não é ativado.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Rubber Armor (Set)",
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com Armadura e Meia-calça de borracha, os brincos fecham o nível 3 de Resistência a choques e ainda somam o Poder ancestral aumentado."
+  ],
+  "limitations": [
+    "Não reduz a explosão de raios.",
+    "Não podem ser tingidos.",
+    "Sem conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_material_topaz",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_armor_rubber_helm",
+      "relation": "Outra peça de cabeça com Resistência a choques"
+    },
+    {
+      "id": "botw_armor_vah_naboris_divine_helm",
+      "relation": "Outra peça de cabeça com Resistência a choques"
+    },
+    {
+      "id": "botw_armor_rubber_armor",
+      "relation": "Combina para chegar ao nível 3"
+    },
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Outra opção da recompensa de Isha"
+    },
+    {
+      "id": "botw_mechanic_electricity",
+      "relation": "Dano reduzido pelo efeito"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_choque",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

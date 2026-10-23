@@ -1,0 +1,101 @@
+{
+  "id": "botw_food_warm_milk",
+  "summary": "Leite fresco aquecido na panela, bom \"antes de dormir\". Sozinho ganha meio coração de bônus; com outros ingredientes de efeito vira as versões com efeito do leite.",
+  "description": "O Leite quente é feito simplesmente aquecendo Leite fresco na Panela; o inventário recomenda bebê-lo antes de dormir para ter uma boa noite de sono. O Leite fresco é um dos poucos ingredientes de apoio que podem ser cozidos sozinhos, e a receita tem um bônus curioso: quando o leite é o único ingrediente, o prato ganha meio coração extra de cura. Com ingredientes de efeito, o resultado são as variantes do leite (no inventário, sem a palavra \"quente\"): Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\").\n\nComo a receita fica no fim da ordem de prioridade, quase tudo que se junta ao leite pode formar outro prato. Ovo com leite já vira Omelete, e carne ou peixe levam aos espetinhos, testados antes. As variantes saem quando o ingrediente de efeito não completa outra receita — um único tipo de cogumelo, legume ou fruta, por exemplo.",
+  "obtaining": [
+    "Cozinhar Leite fresco numa Panela, sozinho ou com ingredientes que não formem outra receita."
+  ],
+  "uses": [
+    "Cura rápida com um único ingrediente comprado.",
+    "Base para versões com efeito do leite.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (com meio coração de bônus quando o Leite fresco é o único ingrediente).",
+    "Com ingredientes de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Bebido, recupera corações; as variantes também aplicam o efeito do ingrediente adicionado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "ovo, carne ou peixe",
+      "status": "confirmado",
+      "result": "Ovo com leite forma Omelete; carne ou peixe formam espetinhos — receitas testadas antes do Leite quente.",
+      "produces": [
+        "botw_food_omelet",
+        "botw_food_meat_skewer",
+        "botw_food_fish_skewer"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus só para o leite puro",
+      "text": "A tabela de bônus de receitas do Zelda Wiki dá ao Leite quente meio coração extra, mas só quando o Leite fresco é o único ingrediente da panela.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Erro de efeito no wiki",
+      "text": "A página do prato diz que a versão refrescante dá Resistência ao frio, mas a descrição do jogo para essa variante (\"Chilly Milk\") fala em resistência ao calor, como em todos os pratos refrescantes.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Ovo, carne ou peixe mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Único ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_omelet",
+      "relation": "Resultado ao juntar Ovo"
+    },
+    {
+      "id": "botw_food_egg_pudding",
+      "relation": "Leite com Ovo e Cana-de-açúcar"
+    },
+    {
+      "id": "botw_food_veggie_cream_soup",
+      "relation": "Leite com cenoura ou abóbora e Halita"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

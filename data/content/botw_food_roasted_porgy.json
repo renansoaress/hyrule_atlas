@@ -1,0 +1,138 @@
+{
+  "id": "botw_food_roasted_porgy",
+  "summary": "Pargo de água salgada assado na fogueira, de textura macia e fofa e pele crocante. Sai de qualquer pargo, cura 1,5 coração (cru, 1) e vale 15 rupias; congelado, vale 18.",
+  "description": "O Pargo blindado e o Pargo valente, peixes de água salgada do Mar de Necluda e do Mar de Lanayru, viram Pargo assado no fogo ou no clima escaldante de Eldin. O texto do jogo diz que a textura macia e fofa do peixe foi realçada pelo fogo aberto e que a pele, crocante e aromática, é a parte mais deliciosa.\n\nA cura sobe de 1 para 1,5 coração e o valor de venda, de 10 para 15 rupias. Perdem-se os efeitos de Panela dos dois pargos (Defesa aumentada e Ataque aumentado); a versão congelada dos mesmos peixes vale um pouco mais, 18 rupias.",
+  "locations": [
+    "Prepara-se a partir de qualquer pargo (Mar de Necluda e Mar de Lanayru; vendidos por Mubs na peixaria da Vila Lurelin e por Chumin) numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um pargo ao fogo ou largá-lo no chão em clima escaldante.",
+    "Derrotar um Rinox azul: 5% de chance na tabela de comidas dele (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Pargo blindado ou o Pargo valente — queima por alguns instantes e se transforma em Pargo assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Pargo assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Pargo blindado ou o Pargo valente no chão para que o ingrediente asse sozinho e vire Pargo assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração de qualquer pargo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 15 rupias; os dois pargos crus valem 10.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Armored Porgy",
+        "zw:Mighty Porgy"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Pargo assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Assado ou congelado",
+      "text": "Os mesmos pargos podem virar Pargo congelado: cura de 1 coração, Resistência ao calor por um minuto e 18 rupias na venda. O assado cura meio coração a mais, mas vale 3 rupias a menos.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Perde a Defesa aumentada do Pargo blindado e o Ataque aumentado do Pargo valente."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_armored_porgy",
+      "relation": "Ingrediente cru (Defesa aumentada na Panela)"
+    },
+    {
+      "id": "botw_creature_mighty_porgy",
+      "relation": "Ingrediente cru (Ataque aumentado na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_porgy",
+      "relation": "Versão congelada dos mesmos pargos"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

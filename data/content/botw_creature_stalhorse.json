@@ -1,0 +1,136 @@
+{
+  "id": "botw_creature_stalhorse",
+  "summary": "Esqueleto de cavalo reanimado pelo poder de Ganon, que só existe à noite e se desfaz ao nascer do sol (5h). Pode ser montado e come maçãs e cenouras, mas nenhum estábulo aceita registrá-lo.",
+  "description": "O Stalcavalo era um cavalo comum até ser trazido de volta da morte pelo poder de Ganon. Não consegue manter a estrutura de ossos durante o dia: aparece apenas à noite e, se ainda estiver por perto quando o sol nasce, desmonta em pedaços e desaparece. Normalmente é visto com um Stalboblin ou um Koboblin montado nas costas, sobretudo nas Cordilheiras de Hebra e no Altiplano de Akkala.\n\nApesar da aparência, comporta-se exatamente como um cavalo vivo e não representa ameaça: Link pode montá-lo e até alimentá-lo com maçãs e cenouras, mesmo sem estômago. Os donos de estábulo, porém, recusam o registro, chamando-o de monstro que poderia devorar os outros cavalos — superstição, já que ele não faz mal aos cavalos de Link e nem os cavalos selvagens fogem dele. Já o gado doméstico (vacas, ovelhas, cabras e cães) foge assustado.",
+  "locations": [
+    "Cordilheiras de Hebra e Altiplano de Akkala, segundo o compendium; somente à noite.",
+    "N. Tabantha Snowfield e arredores do North Lomei Labyrinth, com um Stalboblin montado (local indicado na missão de Juannelle)."
+  ],
+  "obtaining": [
+    "Montar um Stalcavalo à noite, como se faz com cavalos selvagens. A posse é temporária: ele desaparece ao amanhecer e não pode ser registrado."
+  ],
+  "uses": [
+    "Montaria noturna temporária.",
+    "Missão secundária \"Stalhorse: Pictured!\": fotografá-lo com a Câmera e mostrar a foto a Juannelle, no Snowfield Stable, rende uma rupia prateada.",
+    "Registrar sua foto no compendium."
+  ],
+  "effects": [
+    "Comporta-se como um cavalo comum enquanto existir.",
+    "Com o Conjunto radiante ou o Conjunto de Ganon Fantasma vestido, corre em alta velocidade quando montado."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Não ataca Link. Costuma ter um Stalboblin ou Koboblin como cavaleiro; os cavalos selvagens não fogem dele, mas Vacas de Hateno, Ovelhas do planalto, Bodes brancos e Pastores hylianos fogem.",
+      "conditions": ["Só aparece entre o anoitecer e o nascer do sol."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado como um cavalo vivo, mas os estábulos se recusam a registrá-lo e ele se desfaz quando o sol nasce, às 5h.",
+      "conditions": ["Encontrá-lo à noite."],
+      "side_effects": [
+        "O dono do estábulo o chama de monstro e teme que coma os outros cavalos.",
+        "Se ainda estiver presente quando o sol nascer, desmonta em pedaços e some."
+      ],
+      "applications": ["Com o Conjunto radiante ou o Conjunto de Ganon Fantasma vestido, corre em alta velocidade."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar",
+      "status": "confirmado",
+      "result": "Come maçãs e cenouras como um cavalo vivo, apesar de não ter estômago.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Serve de montaria para Stalboblins e Koboblins à noite.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se o Stalcavalo for atacado."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de flechas sobre ele."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Turbo com equipamento de Ganon",
+      "text": "Vestir o Conjunto radiante ou o Conjunto de Ganon Fantasma faz o Stalcavalo correr em alta velocidade quando montado.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assusta o gado, não os cavalos",
+      "text": "Os cavalos de Link não são atacados por ele e os cavalos selvagens não fogem ao percebê-lo, mas o gado doméstico — Vaca de Hateno, Ovelha do planalto, Bode branco e Pastor hyliano — foge da sua aparência monstruosa.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma montaria surpreendentemente confortável",
+      "text": "Baddek conta ter montado um cavalo de ossos na Tabantha Tundra e achado a viagem surpreendentemente confortável. Assim como Konba, ele considera o Stalcavalo um tipo de cavalo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Recusado por Zyle",
+      "text": "Na missão \"Good-Sized Horse\", Zyle se recusa a comprar um Stalcavalo porque acha o animal assustador.",
+      "sources": ["zw:Good-Sized Horse"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis de BOTW, ao lado do Cavalo, Cavalo gigante, Cavalo branco, Senhor da Montanha, Cervo e Corça da montanha, Urso melívoro e Grão-urso.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para a missão de Juannelle, basta a foto de qualquer Stalcavalo, em qualquer lugar; não é preciso ir até a N. Tabantha Snowfield."
+  ],
+  "limitations": [
+    "Não pode ser registrado nem chamado depois com assobio.",
+    "Desaparece ao nascer do sol (5h).",
+    "Só existe à noite."
+  ],
+  "related": [
+    { "id": "botw_creature_horse", "relation": "Cavalos vivos, que podem ser registrados" },
+    { "id": "botw_monster_stalkoblin", "relation": "Cavaleiro habitual do Stalcavalo" },
+    { "id": "botw_monster_bokoblin", "relation": "Também pode montá-lo" },
+    { "id": "botw_armorset_radiant_set", "relation": "Faz o Stalcavalo correr em alta velocidade" },
+    { "id": "botw_armorset_phantom_ganon_set", "relation": "Faz o Stalcavalo correr em alta velocidade" },
+    { "id": "botw_creature_lord_of_the_mountain", "relation": "Outra montaria que não pode ser registrada" },
+    { "id": "botw_mechanic_stable", "relation": "Os estábulos recusam o registro" },
+    { "id": "botw_rune_camera", "relation": "Fotografá-lo conclui a missão de Juannelle" }
+  ],
+  "capabilities": ["montavel", "habilidade_especial", "item_de_missao"],
+  "verification_status": "verificado"
+}

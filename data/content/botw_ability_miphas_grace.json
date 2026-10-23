@@ -1,0 +1,82 @@
+{
+  "id": "botw_ability_miphas_grace",
+  "summary": "Bênção de Mipha que revive Link automaticamente quando os corações acabam, com vida cheia e 5 corações extras temporários. Recarga de 24 min reais (8 min na versão +), e tem prioridade sobre as Fadas.",
+  "description": "A Dádiva de Mipha é o poder de cura deixado pelo espírito da Campeã zora. Link a recebe depois de derrotar a Ira áquea de Ganon e acalmar a Fera Divina Vah Ruta. Ela age sozinha: quando os corações de Link chegam a zero, a bênção o ressuscita com a vida totalmente restaurada e ainda concede cinco corações extras temporários. Se Link também tiver Fadas na algibeira, a Dádiva de Mipha é usada primeiro.\n\nDepois de ativada, só volta a funcionar após 24 minutos em tempo real; dentro do Castelo de Hyrule, a recarga cai para 8 minutos. Como todas as bênçãos dos Campeões, pode ser desativada no menu de itens-chave.\n\nA versão Dádiva de Mipha +, da DLC The Champions' Ballad, é a recompensa da missão \"EX Champion Mipha's Song\". Ela reduz a recarga normal para 8 minutos e a recarga no Castelo de Hyrule para 2 minutos e 40 segundos; o efeito de ressurreição é o mesmo.",
+  "locations": [
+    "Fera Divina Vah Ruta (versão normal).",
+    "Monumento em Ja'Abu Ridge, sobre o lago East Reservoir, onde começa a missão da versão + (DLC)."
+  ],
+  "obtaining": [
+    "Derrotar a Ira áquea de Ganon e acalmar a Fera Divina Vah Ruta; o espírito de Mipha entrega a bênção.",
+    "Dádiva de Mipha + (DLC The Champions' Ballad): concluir \"EX Champion Mipha's Song\" — completar os santuários Kee Dafunia, Sato Koda e Mah Eliya (cada um dá um Emblema de Ruta) e vencer de novo a Ira áquea de Ganon no Reino Ilusório, com equipamento fixo."
+  ],
+  "uses": [
+    "Seguro automático contra a morte em lutas difíceis.",
+    "Explorar áreas perigosas sem gastar Fadas.",
+    "Os 5 corações extras dão margem para continuar lutando logo após a ressurreição."
+  ],
+  "effects": [
+    "Ao zerar os corações: ressuscita Link com vida cheia + 5 corações extras temporários.",
+    "Recarga: 24 min reais (8 min no Castelo de Hyrule). Versão +: 8 min (2 min 40 s no castelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ativa-se sozinha quando Link perde todos os corações, restaurando a vida e somando 5 corações extras; depois entra em recarga.",
+      "conditions": ["Bênção ativada no menu de itens-chave e carregada."],
+      "side_effects": ["É consumida antes das Fadas que estiverem na algibeira."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fairy"]
+    },
+    {
+      "action": "monstros",
+      "variant": "golpe do Espadachim Yiga no esconderijo",
+      "status": "sem_efeito",
+      "result": "No Esconderijo do Clã Yiga, um golpe direto do ataque de vento (Windcleaver) de um Espadachim Yiga mata Link instantaneamente, mesmo com a Dádiva de Mipha.",
+      "kind": "mecanica",
+      "sources": ["zw:Yiga Clan Hideout"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Recarga mais rápida no castelo",
+      "text": "Todas as bênçãos dos Campeões recarregam três vezes mais rápido dentro do Castelo de Hyrule. No caso da Dádiva de Mipha, são 8 minutos em vez de 24 (e 2 min 40 s na versão +).",
+      "sources": ["zw", "zw:Revali's Gale", "zw:Daruk's Protection", "zw:Urbosa's Fury"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Como a versão + é liberada",
+      "text": "Na DLC, depois das provações com o Obliterador no Planalto, um monumento surge em Ja'Abu Ridge. Os três santuários indicados nele (Kee Dafunia, Sato Koda e Mah Eliya) concedem Emblemas de Ruta; com os três, Link enfrenta o fantasma da Ira áquea no Reino Ilusório usando um equipamento fixo (Tridente escamado, dois Tridentes cerimoniais, Arco prateado, 10 flechas e Conjunto Zora melhorado duas vezes). Depois, Kass canta a canção de Mipha e ela aprimora a bênção.",
+      "sources": ["zw:EX Champion Mipha's Song", "zw:EX The Champions' Ballad"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A cura mostrada nas memórias",
+      "text": "Na décima memória recuperada, \"Mipha's Touch\", Mipha usa esse poder para tratar um ferimento no braço de Link.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Desativar a bênção no menu de itens-chave quando se quer usar Fadas primeiro ou fazer um desafio sem ressurreição.",
+    "Ao explorar o Castelo de Hyrule, contar com a recarga de 8 minutos (2 min 40 s na versão +) para usar a bênção mais de uma vez."
+  ],
+  "limitations": [
+    "Só uma ativação por recarga.",
+    "Os corações extras são temporários.",
+    "Não protege contra a morte instantânea causada pelo golpe direto do Espadachim Yiga no esconderijo do clã."
+  ],
+  "related": [
+    { "id": "botw_monster_waterblight_ganon", "relation": "Derrotá-la libera a bênção" },
+    { "id": "botw_keyitem_rutas_emblem", "relation": "Três emblemas abrem o desafio da versão +" },
+    { "id": "botw_creature_fairy", "relation": "Efeito parecido; a bênção tem prioridade" },
+    { "id": "botw_monster_yiga_blademaster", "relation": "Golpe direto no esconderijo ignora a bênção" },
+    { "id": "botw_weapon_lightscale_trident", "relation": "Arma de Mipha, usada no desafio da versão +" },
+    { "id": "botw_ability_revalis_gale", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_daruks_protection", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Outra bênção dos Campeões" }
+  ],
+  "capabilities": ["cura", "habilidade_especial"],
+  "verification_status": "verificado"
+}

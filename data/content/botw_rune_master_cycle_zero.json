@@ -1,0 +1,135 @@
+{
+  "id": "botw_rune_master_cycle_zero",
+  "summary": "Moto-Fera Divina da DLC The Champions' Ballad, invocada como runa depois de vencer o Monge Maz Koshia. Anda com combustível feito de materiais: tanque cheio dá 6 minutos de aceleração no chão.",
+  "description": "O Corcel de Hyrule zero é a recompensa final da missão principal \"EX The Champions' Ballad\", da DLC The Champions' Ballad. Depois que Link vence o Monge Maz Koshia na Provação Final, o monge faz surgir o terminal que guarda a moto; a Tabuleta Sheikah a \"destila\" numa runa, e o monge explica que ela foi feita para o \"verdadeiro herói\". É tratado como a Fera Divina do Campeão hyliano: menor que as outras, com forma de motocicleta inspirada num cavalo.\n\nPode ser invocado quase em qualquer lugar, exceto na maior parte do Deserto Gerudo e nas áreas em chamas de Eldin. Tem farol para a noite, permite combate montado como num cavalo, fere inimigos atropelados e executa saltos (Zero Jumps). Com ele, Link não sofre dano de queda, mas é desmontado automaticamente se cair de muito alto. Cair na água ou bater num obstáculo sólido faz a moto desaparecer; no choque, Link ainda leva dano conforme a armadura.\n\nO combustível é reposto colocando materiais no tanque, sob o banco: o tanque se abre sozinho quando Link está de frente para a moto segurando materiais. O tanque cheio tem 1.000 unidades, que só são gastas enquanto Link acelera com a moto no chão, o suficiente para 360 segundos (6 minutos).",
+  "locations": [
+    "Recebido no Planalto, após a luta final contra o Monge Maz Koshia na Provação Final (Santuário da Ressurreição).",
+    "Invocável em quase toda Hyrule, exceto a maior parte do Deserto Gerudo e as áreas em chamas de Eldin."
+  ],
+  "obtaining": [
+    "DLC The Champions' Ballad: acalmar as quatro Feras Divinas, concluir a missão \"EX The Champions' Ballad\" com o Obliterador no Planalto, as quatro missões \"EX Champion ... Song\" e a Provação Final, e então derrotar o Monge Maz Koshia."
+  ],
+  "uses": [
+    "Viajar rapidamente por Hyrule sem depender de cavalos.",
+    "Combate montado e atropelamento de inimigos.",
+    "Descer grandes alturas sem sofrer dano de queda (até o limite em que Link é desmontado)."
+  ],
+  "effects": [
+    "Tanque de 1.000 unidades de combustível, consumidas a cerca de 2,78 unidades por segundo de aceleração no chão (6 minutos no total).",
+    "Farol que ilumina o caminho à noite e em lugares escuros.",
+    "Imunidade a dano de queda enquanto Link está montado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Invoca a moto a partir do menu de runas; o combustível só é gasto enquanto Link segura o acelerador com a moto em contato com o chão.",
+      "conditions": ["Não funciona na maior parte do Deserto Gerudo nem nas áreas em chamas de Eldin."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fuel"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Link monta e pilota como num cavalo, podendo lutar montado e executar saltos.",
+      "side_effects": [
+        "Não pode ser registrada em estábulos: a moto desaparece no momento em que Link fala com o responsável.",
+        "Em corridas a pé, montar nela desclassifica Link por usar um \"cavalo\"."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Divine Beast"]
+    },
+    {
+      "action": "usar",
+      "variant": "abastecer o tanque",
+      "status": "confirmado",
+      "result": "Materiais largados no tanque viram combustível. Cada material rende 10, 25, 50, 75 ou 100 unidades; os de 10 (Extrato de monstro, Fragmento de estrela, Fada, Núcleo ancestral e Núcleo ancestral gigante) dobram o total da carga, e o efeito se multiplica a cada um deles.",
+      "conditions": ["Segurar até cinco materiais de frente para a moto; o tanque abre sozinho."],
+      "side_effects": ["O que passar de 1.000 unidades é desperdiçado."],
+      "applications": [
+        "Três Maçãs e duas Fadas (ou equivalentes) enchem o tanque com folga: (3 × 100 + 2 × 10) × 2² = 1.280 unidades.",
+        "Materiais comuns de 100 unidades incluem Maçã, Cogumelo hyliano, Halita, Sílex, Âmbar, Madeira, partes de Koboblin e Geleca de Chulchul."
+      ],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Fuel"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Se a moto cair num corpo de água, desaparece e precisa ser invocada de novo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos atropelados sofrem dano; Link também pode atacar montado, como no combate a cavalo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Bater num obstáculo sólido faz a moto desaparecer e causa a Link um dano que depende da armadura vestida.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A ideia que a equipe rejeitou",
+      "text": "O produtor Eiji Aonuma queria uma moto em BOTW porque cavalgar pelo mundo o lembrava da primeira vez que andou de motocicleta. A equipe recusou a princípio, achando que quebraria o jogo; ao escolher a recompensa da DLC, Aonuma insistiu e conseguiu aprovar a ideia, e os programadores chegaram a comprar uma moto de motocross para estudar o funcionamento.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Quase um lobo",
+      "text": "O desenho original da moto era inspirado num lobo; foi trocado por um cavalo porque Link passa o jogo montado em cavalos.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Fera Divina que nunca foi corrompida",
+      "text": "Segundo o Zelda Wiki, é a única Fera Divina que não foi usada na primeira Grande Calamidade, não foi corrompida por Ganon na segunda e só foi entregue ao seu piloto um século depois do ataque.",
+      "sources": ["zw", "zw:Champion"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem balões e sem música",
+      "text": "Não é possível prender Balões de Octoroc à moto, e nenhuma música toca enquanto Link a pilota.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Combinação máxima de combustível",
+      "text": "Cinco Fadas no tanque somam 5 × 10 × 2⁵ = 1.600 unidades, o máximo teórico, mas tudo acima de 1.000 é perdido. A menor carga possível num tanque vazio é de 20 unidades (7,2 segundos).",
+      "sources": ["zw:Fuel"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar materiais baratos de 100 unidades (Madeira, Halita, Sílex, partes de Koboblin) junto com um Núcleo ancestral ou Extrato de monstro para multiplicar o abastecimento.",
+    "Usar o salto da moto e a imunidade a quedas para descer encostas sem planar."
+  ],
+  "limitations": [
+    "Exige a DLC The Champions' Ballad e a conclusão de toda a sua missão principal.",
+    "Some ao cair na água, ao bater num obstáculo ou ao falar com o dono de um estábulo.",
+    "Não pode ser invocada na maior parte do Deserto Gerudo nem nas zonas em chamas de Eldin.",
+    "Quedas muito longas desmontam Link automaticamente."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Fica entre as runas da Tabuleta" },
+    { "id": "botw_monster_monk_maz_koshia", "relation": "Entrega a moto ao ser derrotado" },
+    { "id": "botw_weapon_one_hit_obliterator", "relation": "Arma usada no início da missão da DLC" },
+    { "id": "botw_creature_horse", "relation": "Modelo de pilotagem e combate montado" },
+    { "id": "botw_mechanic_stable", "relation": "Não pode ser registrada" },
+    { "id": "botw_material_monster_extract", "relation": "Multiplica o combustível (×2)" },
+    { "id": "botw_material_ancient_core", "relation": "Multiplica o combustível (×2)" },
+    { "id": "botw_creature_fairy", "relation": "Multiplica o combustível (×2)" },
+    { "id": "botw_material_apple", "relation": "Rende 100 unidades de combustível" },
+    { "id": "botw_material_wood", "relation": "Rende 100 unidades de combustível" },
+    { "id": "botw_keyitem_picture_of_the_champions", "relation": "Outra recompensa da missão \"EX The Champions' Ballad\"" }
+  ],
+  "capabilities": ["montavel", "velocidade", "ilumina", "habilidade_especial"],
+  "verification_status": "verificado"
+}

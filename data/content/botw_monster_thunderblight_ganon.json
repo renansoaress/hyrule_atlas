@@ -1,0 +1,196 @@
+{
+  "id": "botw_monster_thunderblight_ganon",
+  "summary": "Ira de Ganon que tomou Vah Naboris e matou Urbosa: rapidíssima e com dano elétrico alto. Na fase aérea, Magnétis num pilar de metal faz o raio dela atingi-la. Deixa Contêiner de coração e a Fúria de Urbosa.",
+  "description": "A Ira fulmínea de Ganon é a Ira de Ganon (Blight Ganon) que atacou a Fera Divina Vah Naboris e levou a Campeã Urbosa à morte. O compendium a define como especialista em ataques rápidos baseados em raios. Ela surge dentro de Vah Naboris quando Link tenta ativar o terminal principal; se a Fera não for libertada, aparece no centro do Castelo de Hyrule antes de Ganon, a Calamidade.\n\nAo contrário das outras Iras, é extremamente veloz e causa muito dano elétrico, por isso comidas e elixires com Resistência a choques de nível alto ajudam bastante. A luta tem três fases. Na primeira, ela dispara em direção a Link e ataca; basta bloquear as investidas e revidar. Com metade da vida, passa a levitar fora do alcance, espalha pilares de metal pela sala e os eletrifica. É aqui que entra Magnétis: Link agarra um dos pilares e o posiciona para que a própria eletricidade dela a atinja. Na terceira fase, volta ao comportamento da primeira, porém muito mais agressiva.\n\nDerrotada, explode e deixa um Contêiner de coração. Urbosa agradece por libertar Vah Naboris e concede a Fúria de Urbosa.",
+  "locations": [
+    "Interior da Fera Divina Vah Naboris, ao tentar ativar o terminal principal.",
+    "Centro do Castelo de Hyrule (Sanctum), apenas se Vah Naboris não tiver sido libertada.",
+    "Reino ilusório de Vah Naboris, na missão \"EX Champion Urbosa's Song\" (DLC 2)."
+  ],
+  "obtaining": [
+    "Derrotá-la rende um Contêiner de coração; Urbosa então concede a Fúria de Urbosa.",
+    "Não volta com a Lua de sangue; só pode ser reenfrentada no Reino ilusório do DLC 2."
+  ],
+  "uses": [
+    "Libertar a Fera Divina Vah Naboris, que depois ajuda a enfraquecer Ganon, a Calamidade.",
+    "Obter um Contêiner de coração e a Fúria de Urbosa."
+  ],
+  "effects": [
+    "Investidas muito rápidas com golpes de lâmina e dano elétrico elevado.",
+    "Pilares de metal eletrificados espalhados pela sala na segunda fase."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Na primeira fase, as investidas podem ser bloqueadas com o escudo, abrindo espaço para revidar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Recebe golpes após bloquear as investidas nas fases 1 e 3. Dentro da Fera Divina, a Espada Mestra tem o poder dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Master Sword"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Na segunda fase, Magnétis permite agarrar um dos pilares de metal e usá-lo para que a eletricidade dela a atinja.",
+      "applications": [
+        "Posicionar o pilar perto dela antes da descarga."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Ela causa muito dano elétrico, mas também é atingida pela própria eletricidade conduzida por um pilar de metal.",
+      "conditions": [
+        "Resistência a choques de nível alto (comida ou elixir) reduz o dano que Link sofre."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "A página não detalha o efeito de flechas sobre a Ira fulmínea."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito do fogo sobre ela."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ela."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre água nesta luta."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ela."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ela."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ela."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na segunda fase, levita fora do alcance e espalha pilares de metal pela sala para eletrificá-los.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A vida depende da ordem",
+      "text": "A primeira Ira enfrentada numa Fera Divina tem 800 de vida, a segunda 1.200, a terceira 1.600 e a quarta 2.000. No Reino ilusório do DLC 2 todas têm 1.500, e no Sanctum do castelo sempre 2.000.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A despedida de Urbosa",
+      "text": "Urbosa adverte Link de que este adversário foi feito por Ganon e a levou à morte há 100 anos, e pede que ele lute pela própria vida — e pela morte da criatura.",
+      "sources": [
+        "zw:Phantom Ganon",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ecos na Provação Final",
+      "text": "O Monge Maz Koshia, no DLC 2, usa disparadas como as da Ira fulmínea e um truque parecido com o dos pilares: bolas de ferro que Link leva até ele com Magnétis para que o raio o atinja.",
+      "sources": [
+        "zw:Monk Maz Koshia"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Contêiner esquecido",
+      "text": "Se Link não pegar o Contêiner de coração e ativar o terminal principal, o contêiner aparece ao lado dele depois que ele é transportado para fora da Fera Divina.",
+      "sources": [
+        "zw:Divine Beast"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Entrar com comida de Resistência a choques de nível alto (o Elixir isolante dá só um nível) e deixar Magnétis pronta para a segunda fase."
+  ],
+  "limitations": [
+    "Muito rápida: exige reflexos para bloquear as investidas.",
+    "Sem proteção elétrica, o dano recebido é alto."
+  ],
+  "related": [
+    {
+      "id": "botw_ability_urbosas_fury",
+      "relation": "Dom recebido após a vitória"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Usa os pilares de metal contra ela"
+    },
+    {
+      "id": "botw_elixir_electro_elixir",
+      "relation": "Dá um nível de Resistência a choques"
+    },
+    {
+      "id": "botw_monster_windblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_fireblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_waterblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "Criador das Iras"
+    },
+    {
+      "id": "botw_monster_monk_maz_koshia",
+      "relation": "Reaproveita as disparadas e o truque do metal"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Relíquia que permite a Riju e Link se aproximarem de Vah Naboris"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

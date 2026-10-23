@@ -1,0 +1,51 @@
+{
+  "id": "botw_mechanic_heros_path_mode",
+  "summary": "Recurso do mapa trazido pela DLC The Master Trials: desenha em verde o caminho percorrido por Link nas últimas 200 horas de jogo, com reprodução que pode ser acelerada, pausada e pulada.",
+  "description": "O Modo Trilha do Herói registra cada passo de Link durante as últimas 200 horas de jogo e o exibe no mapa da Tabuleta Sheikah como uma linha verde. A trilha pode ser reproduzida como uma animação, que o jogador consegue acelerar, pausar ou pular. O recurso é desbloqueado com o pacote de DLC The Master Trials: ao abrir o mapa depois de obtê-lo, um aviso informa que o modo foi liberado e indica o botão X para ver o trajeto feito até ali.\n\nAs fontes não descrevem outras funções além da visualização do caminho; é uma ferramenta de consulta, sem efeito sobre o mundo do jogo.",
+  "locations": [
+    "Mapa da Tabuleta Sheikah."
+  ],
+  "obtaining": [
+    "Instalar a DLC The Master Trials e abrir o mapa da Tabuleta Sheikah."
+  ],
+  "uses": [
+    "Descobrir regiões que Link nunca visitou, olhando onde a linha verde não passa.",
+    "Rever o trajeto de uma sessão de exploração."
+  ],
+  "effects": [
+    "Linha verde no mapa com o percurso das últimas 200 horas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "No mapa, apertar X mostra a trilha do herói: o percurso de Link nas últimas 200 horas, em verde, com reprodução que pode ser acelerada, pausada ou pulada.",
+      "conditions": ["DLC The Master Trials instalada."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Versão de desenvolvimento",
+      "text": "O Zelda Wiki guarda uma imagem de uma versão de desenvolvimento do recurso, com moldura iluminada em azul.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de caçar Sementes Korok ou santuários restantes, ativar a trilha para identificar áreas do mapa sem nenhuma passagem."
+  ],
+  "limitations": [
+    "Guarda apenas as últimas 200 horas de percurso.",
+    "As fontes consultadas não detalham outras opções do modo."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "O mapa da Tabuleta exibe a trilha" },
+    { "id": "botw_mechanic_master_mode", "relation": "Outro conteúdo da mesma DLC" },
+    { "id": "botw_mechanic_trial_of_the_sword", "relation": "Outro conteúdo da mesma DLC" },
+    { "id": "botw_keyitem_korok_seed", "relation": "Coleta que se beneficia de ver áreas não visitadas" }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

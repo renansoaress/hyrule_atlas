@@ -1,0 +1,127 @@
+{
+  "id": "botw_creature_hylian_retriever",
+  "summary": "Cão dos estábulos e vilarejos de Hyrule. Alimentado três vezes enquanto está feliz, leva Link até um baú enterrado ali perto — cada cão tem o seu tesouro, de rupias prateadas a uma Opala.",
+  "description": "O Pastor hyliano é a raça de cão de Hyrule, conhecida desde a antiguidade como \"o melhor amigo do homem\". Inteligente e obediente, também é usado para vigiar o gado no pasto, e diz-se que todos descendem do cão de um antigo rei de Hyrule. É encontrado em estábulos e povoados, onde se mexe muito mais que os outros animais domésticos: corre atrás do rabo, rola de barriga para cima, se agacha e, depois da chuva, se sacode para secar. É onívoro e come carnes, frutas e legumes deixados por perto.\n\nO grande segredo do Pastor hyliano é a caça ao tesouro. Se Link ficar perto dele ou lhe der comida, o cão fica feliz — um rubor rosado aparece em volta da cabeça — e passa a segui-lo por uma curta distância. Alimentado três vezes enquanto está feliz, ele conduz Link até um baú enterrado nas redondezas. O conteúdo varia conforme o local: rupias prateadas e dourada, pacotes de flechas elementais, armas, Fragmentos de estrela e uma Opala, guardada pelo cão Satty.",
+  "locations": [
+    "Estábulos e povoados de toda Hyrule; o compendium cita o Altiplano de Akkala e as Cordilheiras de Hebra.",
+    "Há cães com tesouro em: Dueling Peaks, East Akkala, Gerudo Canyon, Highland, Lakeside, Outskirt, Serenne, Snowfield, South Akkala, Wetland e Woodland Stable; no pasto de Hateno (Hateno Pasture); no Kara Kara Bazaar; na vila de Lurelin; e em Tarrey Town."
+  ],
+  "obtaining": [
+    "Não pode ser obtido; pode ser fotografado para o compendium (entrada nº 28)."
+  ],
+  "uses": [
+    "Encontrar baús enterrados: alimentá-lo três vezes enquanto está feliz faz com que guie Link até o tesouro.",
+    "Tesouros por local: rupia prateada (Dueling Peaks Stable, pasto de Hateno, Highland Stable, Outskirt Stable); 10 Flechas eletrizantes (East Akkala Stable); 10 Flechas congelantes (Gerudo Canyon Stable e Woodland Stable); Arco do cavaleiro (Kara Kara Bazaar); Lança da Floresta (Lakeside Stable); Fragmento de estrela (vila de Lurelin); rupia dourada (Serenne Stable); Fragmento de estrela e Lança plumada (Snowfield Stable); Montante do cavaleiro (South Akkala Stable); 5 Flechas explosivas (Tarrey Town); Opala (Wetland Stable)."
+  ],
+  "effects": [
+    "Feliz, segue Link por uma curta distância."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ficar perto do cão o deixa feliz (rubor rosado ao redor da cabeça), e ele passa a seguir Link por um pequeno trecho.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar",
+      "status": "confirmado",
+      "result": "O cão come carnes, frutas e legumes deixados por perto. Alimentado três vezes enquanto está feliz, leva Link até um baú enterrado nas proximidades.",
+      "conditions": ["Largar o alimento perto dele; repetir três vezes enquanto o rubor rosado estiver visível."],
+      "applications": ["Conseguir rupias, flechas e armas de graça em estábulos e vilarejos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Depois de tomar chuva, o cão se sacode para secar o pelo.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Foge assustado de Stalcavalos, por causa da aparência monstruosa.",
+      "kind": "mecanica",
+      "sources": ["zw:Stalhorse"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se o cão for atacado."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre flechas acertando o cão."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Três refeições, um tesouro",
+      "text": "O cão precisa estar feliz (rubor rosado) e ser alimentado três vezes seguidas nesse estado. Então ele caminha até o local de um baú enterrado próximo, que Link pode desenterrar. O jogo dá a dica: \"se você fizer amizade com um cão, ele pode levá-lo a algo interessante\".",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Satty, o cão que enfrentou um espírito",
+      "text": "Satty vive no Wetland Stable com o dono, Quince, que o encontrou filhote no Monte Satori. Certa noite, o Senhor da Montanha investiu contra Quince, e Satty se pôs no caminho latindo até o espírito recuar. Como os outros pastores, Satty leva Link a um baú — o dele guarda uma Opala.",
+      "sources": ["zw:Satty"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Descendentes do cão do rei",
+      "text": "Segundo o compendium, a raça nativa varia por região, mas acredita-se que todos os pastores hylianos descendam do cão que pertenceu ao rei de Hyrule.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Carregar carne ou frutas baratas ao visitar estábulos: três porções por cão bastam para desbloquear o baú de cada local.",
+    "O baú do Snowfield Stable é o único da lista com dois itens: um Fragmento de estrela e uma Lança plumada."
+  ],
+  "limitations": [
+    "Cada local listado tem um baú específico; as fontes não indicam tesouros em outros cães além dos da lista.",
+    "Ele só segue Link por uma curta distância."
+  ],
+  "related": [
+    { "id": "botw_creature_lord_of_the_mountain", "relation": "Satty, um Pastor hyliano, afugentou o espírito" },
+    { "id": "botw_creature_stalhorse", "relation": "O cão foge de Stalcavalos" },
+    { "id": "botw_material_opal", "relation": "Tesouro do cão do Wetland Stable" },
+    { "id": "botw_material_star_fragment", "relation": "Tesouro dos cães de Lurelin e do Snowfield Stable" },
+    { "id": "botw_arrow_shock_arrow", "relation": "10 unidades no baú do East Akkala Stable" },
+    { "id": "botw_arrow_ice_arrow", "relation": "10 unidades nos baús do Gerudo Canyon e Woodland Stable" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "5 unidades no baú de Tarrey Town" },
+    { "id": "botw_bow_knights_bow", "relation": "Tesouro do cão do Kara Kara Bazaar" },
+    { "id": "botw_weapon_forest_dwellers_spear", "relation": "Tesouro do cão do Lakeside Stable" },
+    { "id": "botw_weapon_feathered_spear", "relation": "Tesouro do cão do Snowfield Stable" },
+    { "id": "botw_weapon_knights_claymore", "relation": "Tesouro do cão do South Akkala Stable" },
+    { "id": "botw_treasure_treasure_chest", "relation": "O cão leva a um baú enterrado" }
+  ],
+  "capabilities": ["revela_recursos", "habilidade_especial"],
+  "verification_status": "verificado"
+}

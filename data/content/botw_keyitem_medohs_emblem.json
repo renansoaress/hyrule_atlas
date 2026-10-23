@@ -1,0 +1,116 @@
+{
+  "id": "botw_keyitem_medohs_emblem",
+  "summary": "Símbolo de uma provação do vento concluída (DLC The Champions' Ballad). Os três emblemas vêm dos santuários das provações de Revali e abrem a revanche contra a Ira eólica de Ganon, que rende o Vendaval de Revali +.",
+  "description": "Os Emblemas de Medoh são entregues pelos monges dos santuários Shira Gomar, Kiah Toza e Noe Rajee durante a missão principal \"EX Champion Revali's Song\", da DLC The Champions' Ballad. A descrição do item os chama de símbolo comemorativo de uma provação do vento concluída por quem deseja controlar uma Fera Divina, e avisa que reunir três emblemas leva a um novo desafio.\n\nA missão começa depois das provações do Grande Platô em \"EX The Champions' Ballad\", num monumento perto do Lago Strock, no Monte Cuho, onde Kass canta os versos com as pistas. Cada provação revela um santuário: acertar o chifre de Dinraal quando ele sobrevoa o Cânion Tanagar (Shira Gomar, em Upland Lindor), surfar com escudo pelos anéis luminosos desde perto do Pico Hebra até Pikida Stonegrove (Kiah Toza) e acertar quatro alvos em sequência rápida no Campo de Voo (Noe Rajee). As provações podem ser feitas em qualquer ordem.\n\nCom os três emblemas, Link vai até Vah Medoh, onde a voz de um monge — Maz Koshia — fica com os emblemas e o leva ao Reino Ilusório, um mundo feito das memórias e medos de Link, para enfrentar de novo a Ira eólica de Ganon com equipamento pré-definido. Depois da luta, Kass canta \"Champion Revali's Song\", que desbloqueia uma memória, e Revali melhora sua habilidade: o Vendaval de Revali + recarrega em dois minutos.",
+  "locations": [
+    "Santuário Shira Gomar (Upland Lindor), Santuário Kiah Toza e Santuário Noe Rajee (Campo de Voo), revelados pelas provações de Revali."
+  ],
+  "obtaining": [
+    "Concluir as provações do Grande Platô em \"EX The Champions' Ballad\" (DLC) para revelar o monumento do Monte Cuho.",
+    "Completar cada uma das três provações e o santuário correspondente; o monge de cada santuário entrega um emblema."
+  ],
+  "uses": [
+    "Trocar os três emblemas, em Vah Medoh, pela revanche contra a Ira eólica de Ganon no Reino Ilusório.",
+    "Concluir \"EX Champion Revali's Song\" e receber o Vendaval de Revali +."
+  ],
+  "effects": [
+    "Sem efeito direto; os três emblemas são consumidos para iniciar a provação no Reino Ilusório."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao se aproximar de Vah Medoh com os três emblemas, a voz de um monge os toma em troca da provação no Reino Ilusório.",
+      "conditions": [
+        "Ter os três Emblemas de Medoh.",
+        "Estar na missão \"EX Champion Revali's Song\"."
+      ],
+      "side_effects": [
+        "Os emblemas saem da algibeira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:EX Champion Revali's Song",
+        "zw:Illusory Realm"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Equipamento fixo no Reino Ilusório",
+      "text": "Na luta, o inventário de Link é trocado por: Conjunto de pluma nevada melhorado duas vezes, Gume plumado, Arco do falcão, Arco duplo, Arco de precisão, 100 flechas, cinco Flechas explosivas, Framboesa, Cogumelo tenaz e Coxa. Depois de três tentativas, Link também recebe uma fada; depois de seis, refeições ou elixires extras.",
+      "sources": [
+        "zw:EX Champion Revali's Song",
+        "zw:Illusory Realm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Revanche liberada",
+      "text": "Depois de concluir a missão, Link pode voltar a Vah Medoh e repetir a luta contra a Ira eólica de Ganon sem precisar de novos emblemas. Vencer de novo rende falas novas de Revali, mas não conta para o nível de mundo.",
+      "sources": [
+        "zw",
+        "zw:Illusory Realm"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Kass e as histórias de Teba",
+      "text": "Kass conta que Teba e Kaneli o ajudaram a conhecer Revali. Ao fim da missão, Revali se surpreende por Link ter completado as provações e chega a admitir que ele poderia, em teoria, derrotar Ganon, a Calamidade.",
+      "sources": [
+        "zw:EX Champion Revali's Song"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Faça as provações de Revali com flechas de sobra: duas delas são de tiro (o chifre de Dinraal e os quatro alvos do Campo de Voo)."
+  ],
+  "limitations": [
+    "Exige a DLC The Champions' Ballad e as provações do Grande Platô.",
+    "Os emblemas não têm outro uso: são entregues na entrada de Vah Medoh."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_windblight_ganon",
+      "relation": "Chefe enfrentado no Reino Ilusório"
+    },
+    {
+      "id": "botw_ability_revalis_gale",
+      "relation": "Habilidade melhorada ao fim da missão"
+    },
+    {
+      "id": "botw_monster_dinraal",
+      "relation": "Alvo da provação de Shira Gomar"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Fornecido em ★★ no Reino Ilusório"
+    },
+    {
+      "id": "botw_weapon_feathered_edge",
+      "relation": "Arma fornecida no Reino Ilusório"
+    },
+    {
+      "id": "botw_bow_falcon_bow",
+      "relation": "Arco fornecido no Reino Ilusório"
+    },
+    {
+      "id": "botw_mechanic_shield_surfing",
+      "relation": "Exigido na provação de Kiah Toza"
+    },
+    {
+      "id": "botw_keyitem_naboriss_emblem",
+      "relation": "Emblema equivalente de Urbosa"
+    },
+    {
+      "id": "botw_keyitem_picture_of_the_champions",
+      "relation": "Recompensa final da balada dos Campeões"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

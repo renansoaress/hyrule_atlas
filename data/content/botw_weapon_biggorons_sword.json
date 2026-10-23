@@ -1,0 +1,179 @@
+{
+  "id": "botw_weapon_biggorons_sword",
+  "summary": "Espada lendária de Ocarina of Time, exclusiva do amiibo de Link (Ocarina of Time). Ataque 50 e durabilidade 60, mas aqui ela quebra. Metálica: conduz, atrai raios e afunda.",
+  "description": "A Espada do Biggoron é uma arma de duas mãos que só aparece pelo amiibo: escaneando o amiibo de Link (Ocarina of Time) com a runa amiibo, há uma chance rara de surgir um baú com ela, mas apenas depois de Link libertar pelo menos uma Fera Divina. A descrição do jogo a apresenta como a grande espada forjada por um artesão Goron para um herói que viajou no tempo, com um gume excepcionalmente afiado.\n\nAo contrário da versão de Ocarina of Time, em Breath of the Wild ela tem durabilidade e quebra como as demais armas — o modelo até mostra a lâmina lascada, como se tivesse perdido a resistência com o tempo. Em compensação, pode ser obtida de novo usando o mesmo amiibo. Feita de metal, conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Não existe no mapa: só sai de baús gerados pelo amiibo de Link (Ocarina of Time)."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Ocarina of Time) com a runa amiibo depois de libertar ao menos uma Fera Divina; a espada é um dos prêmios raros do baú.",
+    "Se quebrar ou for perdida, basta repetir o escaneamento do mesmo amiibo para tentar outra.",
+    "Armas vindas de amiibo recebem sempre o valor máximo do nível de bônus sorteado."
+  ],
+  "uses": [
+    "Arma de duas mãos de ataque alto e durabilidade acima da média.",
+    "Por ser uma espada (lâmina), corta árvores; por ser metálica, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes pesados de duas mãos, sem escudo; o ataque carregado é um giro que gasta vigor e termina numa pancada para baixo. Desequilibra e desarma inimigos que se defendem com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "side_effects": [
+        "Só pode ser reposta pelo amiibo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link levar um choque com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, solta faíscas e acaba atraindo um raio sobre Link.",
+      "conditions": [
+        "Tempestade com raios e a espada equipada."
+      ],
+      "applications": [
+        "Desequipá-la ao ver faíscas, ou usar o Elmo do trovão para neutralizar a descarga."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes só descrevem a obtenção por amiibo; não há registro de monstros que a empunhem."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +10, Durabilidade aumentada de +9 a +30 ou Acerto crítico; no nível dourado (amarelo): Ataque de +11 a +19, Durabilidade de +31 a +51 ou Lançamento longo (×1,5 a ×2). Como armas de amiibo recebem o valor máximo do nível, uma cópia com Durabilidade aumentada dourada chega a 111 de durabilidade — embora o ícone sempre mostre o bônus como branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A espada \"inquebrável\" que quebra",
+      "text": "Em Ocarina of Time a Espada do Biggoron era inquebrável. Em Breath of the Wild ela se desgasta normalmente, e o modelo exibe entalhes na lâmina, sugerindo que perdeu essa propriedade com a idade.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Uma tentativa por dia",
+      "text": "Cada amiibo só pode ser escaneado uma vez por dia real. O mesmo amiibo de Link (Ocarina of Time) também sorteia as peças do Conjunto do herói do tempo, então a espada disputa o baú diário com a armadura.",
+      "sources": [
+        "zw:Hero of Time Set",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Escaneie o amiibo depois de libertar uma Fera Divina e repita diariamente até sair a espada com bônus de durabilidade: o valor máximo garantido rende uma das armas de duas mãos mais duráveis do jogo."
+  ],
+  "limitations": [
+    "Exclusiva do amiibo de Link (Ocarina of Time), e só depois de uma Fera Divina libertada.",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Runa usada para obtê-la"
+    },
+    {
+      "id": "botw_weapon_fierce_deity_sword",
+      "relation": "Outra arma de duas mãos exclusiva de amiibo"
+    },
+    {
+      "id": "botw_weapon_sword_of_the_six_sages",
+      "relation": "Outra arma de duas mãos exclusiva de amiibo"
+    },
+    {
+      "id": "botw_armorset_hero_of_time_set",
+      "relation": "Conjunto do mesmo amiibo"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Neutraliza os raios atraídos pela espada"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Atrai raios quando equipada"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

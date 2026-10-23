@@ -1,0 +1,212 @@
+{
+  "id": "botw_mechanic_fire",
+  "summary": "Fogo se espalha por madeira, grama e plantas, cria correntes ascendentes, assa ingredientes, acende fogueiras e detona barris explosivos. Queima Link e inimigos, mata inimigos de gelo e é apagado pela chuva (exceto a chama azul).",
+  "description": "O fogo é um dos sistemas mais importantes de BOTW. Tudo o que é de madeira ou vegetal é inflamável e passa as chamas adiante: grama seca pega fogo com facilidade e espalha o incêndio depressa, e o vento ou uma Folha Korok aceleram a propagação. Grandes áreas de grama em chamas geram correntes ascendentes que o Planador aproveita. Link pode produzir fogo de várias formas: disparar flechas através das chamas, usar Flechas incendiárias, acender uma arma de madeira numa fonte de fogo, usar armas de fogo (Varinha de fogo, Cajado meteórico, Lança carbonizante, Espada flamejante, Grã-Espada flamejante) ou golpear Sílex com arma de metal perto de Madeira para fazer uma Fogueira.\n\nO fogo fere Link e os inimigos — pisar numa fogueira já basta para incendiar Link. Ataques de fogo eliminam de um golpe inimigos de gelo, derretem gelo e aquecem nos climas frios. No cenário, queimar trepadeiras e folhagens revela Koroks e santuários; os estandartes do Esconderijo do Clã Yiga escondem passagens. A chuva apaga imediatamente qualquer fogo exposto, com exceção da chama azul; fogo abrigado sob um telhado não é afetado.",
+  "locations": [
+    "Em toda Hyrule. Regiões de clima escaldante (Cânion de Eldin e Montanha da Morte) incendeiam equipamentos de madeira e o próprio Link sem proteção.",
+    "Chama azul: fornalhas ancestrais perto dos Laboratórios Ancestrais de Hateno e Akkala."
+  ],
+  "obtaining": [
+    "Fogueiras e Panelas acesas; Madeira + Sílex golpeado com arma de metal; armas e varinhas de fogo; Flechas incendiárias; flechas atiradas através de chamas; Tocha acesa.",
+    "Inimigos de fogo também produzem chamas: Chulchuls ígneos, Feitiçanos ígneos e meteóricos, Lagalfos ígneos, Morcis ígneos, Tálus ígneos, Britas ígneas, Octorocs rochosos e Centaleões; lasers de Guardião incendeiam o ponto de impacto."
+  ],
+  "uses": [
+    "Incendiar grama para atingir vários inimigos e para subir com o Planador.",
+    "Assar ingredientes e acender fogueiras para cozinhar e passar o tempo.",
+    "Derreter gelo, aquecer-se no frio e iluminar lugares escuros.",
+    "Revelar Koroks, santuários e passagens escondidas sob trepadeiras, folhas e estandartes."
+  ],
+  "effects": [
+    "Dano por queimadura em Link e nos inimigos atingidos.",
+    "Consome madeira e plantas, transformando ingredientes em comida assada ou cinzas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Madeira e vegetação são inflamáveis e passam o fogo de objeto em objeto; Link e inimigos podem pegar fogo e sofrer dano.",
+      "conditions": ["Contato com uma fonte de chamas (fogueira, flecha incendiária, arma em chamas, arma de fogo, explosão)."],
+      "side_effects": ["Pisar numa fogueira incendeia Link."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Uma fogueira nasce ao incendiar Madeira: larga-se Madeira e Sílex, e golpear o Sílex com arma de metal gera a faísca. Também serve uma Tocha ou arma de madeira acesa.",
+      "conditions": ["Sílex só acende golpeado com arma não inflamável (metálica); ele se desfaz após um uso."],
+      "applications": ["Reacender fogueiras apagadas, inclusive sob Panelas.", "Sentar junto ao fogo para avançar o tempo até manhã, meio-dia ou noite."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Campfire", "zw:Flint", "zw:Wood", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingredientes comestíveis crus jogados perto do fogo assam e recuperam 50% mais corações; materiais que não são comestíveis crus apenas viram cinzas. A comida assada perde o efeito especial do ingrediente.",
+      "produces": ["botw_food_baked_apple", "botw_food_charred_pepper", "botw_food_seared_steak", "botw_food_toasty_hylian_shroom"],
+      "applications": ["Assar sem Panela; Flechas incendiárias e armas de fogo também assam ingredientes no chão."],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Roasted Food", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma de madeira acesa",
+      "status": "confirmado",
+      "result": "Arma de madeira encostada numa fonte de fogo pega fogo e passa a funcionar como tocha, incendiando o que golpeia. Desequipar o item apaga as chamas; deixá-lo queimando muito tempo o desintegra.",
+      "side_effects": ["Koboblins fazem o mesmo: perto de uma fogueira, acendem a arma de madeira para queimar Link."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks", "zw:Bokoblin", "zw:Korok Leaf"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "armas de fogo",
+      "status": "confirmado",
+      "result": "Espada flamejante (brilhando em vermelho) lança chamas ao golpear; Varinha de fogo e Cajado meteórico disparam bolas de fogo. A Espada flamejante e a Varinha de fogo não queimam e dão um nível de Resistência ao frio quando equipadas.",
+      "side_effects": ["A Espada flamejante continua sendo de metal: conduz eletricidade e atrai raios."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Flameblade", "zw:Fire Rod"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas incendiárias explodem em chamas no impacto e queimam o que for inflamável por perto; flechas comuns atiradas através do fogo saem acesas. Na região escaldante de Eldin, qualquer flecha retesada pega fogo.",
+      "side_effects": ["Na chuva, a Flecha incendiária não acende nada."],
+      "applications": ["Queimar grama seca para atingir vários inimigos de uma vez."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Arrow", "zw:Scorching Climate", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos detonam em contato com chama aberta (Flecha incendiária ou arma em chamas arremessada) e incendeiam tudo o que for inflamável no raio; a explosão de uma Flecha explosiva também põe fogo em inimigos e objetos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Bomb Arrow", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "O vento espalha o fogo da grama rapidamente; uma rajada da Folha Korok aviva as chamas. Grama em chamas produz correntes ascendentes que levam Link para o alto com o Planador.",
+      "applications": ["Incendiar a grama a favor do vento na direção de um acampamento."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Korok Leaf", "zw:Updraft"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva apaga imediatamente todo fogo exposto, exceto a chama azul. Fogo sob abrigo não é afetado; Tochas apagam e Panelas expostas ficam inutilizáveis até parar de chover.",
+      "kind": "mecanica",
+      "sources": ["zw:Rain", "zw:Brazier", "zw:Cooking Pot", "zw:Fire Arrow"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Ataques de fogo eliminam de um golpe inimigos de gelo: uma Flecha incendiária derrota Feitiçanos glaciais, Feitiçanos da nevasca e Lagalfos glaciais; a Espada flamejante derrota Lagalfos glaciais e Morcis glaciais. Derrotar um Chulchul comum com fogo faz cair Geleca ígnea.",
+      "side_effects": ["Centaleões resistem a elementos; monstros dourados do Modo Mestre sofrem menos com as chamas."],
+      "produces": ["botw_material_red_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Flameblade", "zw:Chuchu", "zw:Lynel", "zw:Gold Enemy"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Fogo derrete gelo e aquece Link no frio. Derretendo o gelo de um Tálus glacial com fogo, Link consegue escalá-lo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frost Talus", "zw:Fire Arrow"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "O calor de uma fogueira mantém Link aquecido mesmo em climas gélidos, e segurar uma Tocha acesa também afasta o frio.",
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, Link pega fogo sem Proteção contra chamas, e armas, arcos e escudos de madeira equipados queimam até virar cinzas. Ingredientes largados no chão assam sozinhos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Queimar trepadeiras e folhagens pode revelar Koroks e santuários; a Torre Sheikah de Hateno fica coberta de trepadeiras que precisam ser queimadas para a escalada; estandartes do Esconderijo do Clã Yiga escondem alcovas e passagens.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "variant": "chama azul",
+      "status": "confirmado",
+      "result": "A chama azul detona Bombas remotas e quebra blocos de Gelítis ao contato.",
+      "kind": "mecanica",
+      "sources": ["zw:Blue Flame"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "O Conjunto antichamas e o Elixir corta-fogo dão Proteção contra chamas; com o conjunto completo melhorado duas vezes, Link fica imune a dano de fogo (bônus que não protege da lava nem do clima escaldante).",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire-Proof", "zw:Flame Guard"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Chama azul que não se apaga",
+      "text": "A chama azul nunca se apaga numa Tocha e resiste à chuva. Para levar a chama das fornalhas ancestrais aos laboratórios de Hateno e Akkala, é preciso uma arma de madeira, como Tocha ou Galho; usada em objetos inflamáveis, ela se comporta como fogo comum.",
+      "sources": ["zw:Blue Flame", "zw:Rain"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Incêndio + Planador + arco",
+      "text": "A corrente ascendente de um incêndio na grama leva Link para o alto; dali, mirar o arco no ar desacelera o tempo e permite atirar nos inimigos lá embaixo. O fogo dos ataques de Centaleão também gera correntes para pairar e acertar-lhe a cabeça.",
+      "sources": ["zw", "zw:Paraglider", "zw:Lynel"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pimenta que voa",
+      "text": "Além da grama, Pimentas de fogo em chamas também geram correntes ascendentes, segundo o Zelda Wiki. Expostas ao fogo, elas viram Pimenta tostada.",
+      "sources": ["zw:Updraft", "zw:Spicy Pepper"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cuidado com a grama seca",
+      "text": "Quando Link pega a tocha do Velho no Grande Planalto e diz que vai acender fogo, o Velho pede cautela perto de grama seca que pode pegar fogo.",
+      "sources": ["zw", "zw:Brazier"]
+    }
+  ],
+  "advanced_uses": [
+    "Deixar cair a Tocha acesa ou disparar uma Flecha incendiária na grama a favor do vento para dizimar um acampamento e depois subir na corrente ascendente.",
+    "Atirar uma Flecha incendiária num barril explosivo do acampamento para causar explosão e incêndio ao mesmo tempo.",
+    "Carregar uma Tocha acesa nas montanhas geladas para não perder corações para o frio."
+  ],
+  "limitations": [
+    "Chuva apaga fogo exposto e impede Flechas incendiárias de acender algo.",
+    "Equipamento de madeira em chamas acaba destruído.",
+    "Flechas explosivas explodem assim que retesadas no clima escaldante."
+  ],
+  "related": [
+    { "id": "botw_material_flint", "relation": "Gera a faísca com arma de metal" },
+    { "id": "botw_material_wood", "relation": "Combustível da fogueira" },
+    { "id": "botw_object_campfire", "relation": "Fonte de fogo para assar e acender armas" },
+    { "id": "botw_object_grass", "relation": "Espalha o fogo e cria correntes ascendentes" },
+    { "id": "botw_object_explosive_barrel", "relation": "Detona em contato com chamas" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Fonte de fogo à distância" },
+    { "id": "botw_weapon_torch", "relation": "Leva o fogo consigo" },
+    { "id": "botw_weapon_flameblade", "relation": "Espada que lança chamas" },
+    { "id": "botw_weapon_fire_rod", "relation": "Varinha de bolas de fogo" },
+    { "id": "botw_weapon_korok_leaf", "relation": "Aviva e espalha as chamas" },
+    { "id": "botw_material_spicy_pepper", "relation": "Vira Pimenta tostada e gera corrente ascendente" },
+    { "id": "botw_material_chuchu_jelly", "relation": "Vira Geleca ígnea no fogo" },
+    { "id": "botw_monster_ice_wizzrobe", "relation": "Evapora com um ataque de fogo" },
+    { "id": "botw_monster_frost_talus", "relation": "Fogo derrete seu gelo" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Proteção contra chamas e imunidade ao fogo" },
+    { "id": "botw_elixir_fireproof_elixir", "relation": "Proteção contra chamas temporária" },
+    { "id": "botw_mechanic_updraft", "relation": "Correntes ascendentes do incêndio" },
+    { "id": "botw_mechanic_rain", "relation": "Apaga o fogo exposto" },
+    { "id": "botw_mechanic_temperature", "relation": "Clima escaldante e frio" }
+  ],
+  "capabilities": ["gera_fogo", "queima_inimigos", "inflamavel", "ilumina"],
+  "verification_status": "verificado"
+}

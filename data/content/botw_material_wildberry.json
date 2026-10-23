@@ -1,0 +1,147 @@
+{
+  "id": "botw_material_wildberry",
+  "summary": "Fruta azedinha das regiões frias e nevadas (Montanhas Gerudo, Hebra). Crua cura meio coração, não tem efeito culinário e é a peça central da missão em que Calyban pede 10 framboesas na Cidade Gerudo.",
+  "description": "A Framboesa cresce em arbustos nas regiões frias, principalmente nas Montanhas Gerudo e nas Cordilheiras de Hebra. A descrição do jogo diz que ela não oferece efeitos especiais, mas é um ingrediente popular: é obrigatória no Crepe de framboesa e serve, ao lado da maçã, como a fruta exigida pelo Bolo de frutas. Crua, recupera meio coração; exposta ao fogo ou largada num lugar muito quente, como a Montanha da Morte, vira Framboesa assada.\n\nO uso mais marcante fica na Cidade Gerudo: na Missão secundária \"The Mystery Polluter\", a Gerudo Calyban só para de sujar o bebedouro do jardim de Dalia depois de receber 10 framboesas. Satisfeita, ela ajuda Dalia a começar uma horta de framboesas na cidade.",
+  "locations": [
+    "Arbustos nas Montanhas Gerudo e nas Cordilheiras de Hebra (os dois locais citados pelo compendium)."
+  ],
+  "obtaining": [
+    "Colher nos arbustos das regiões frias.",
+    "Rinoxes comuns podem deixar framboesas ao serem derrotados.",
+    "Não há loja listada nos dados estruturados que venda a framboesa crua."
+  ],
+  "uses": [
+    "Ingrediente obrigatório do Crepe de framboesa; vale como a fruta \"maçã ou framboesa\" do Bolo de frutas.",
+    "Receitas de fruta genéricas: Compota de frutas, Compota farta de frutas, Torta de frutas, Frutas com mel, Frutas no vapor, Mix de frutas e cogumelos.",
+    "Missão secundária \"The Mystery Polluter\": entregar 10 framboesas a Calyban, na Cidade Gerudo.",
+    "Ingrediente do corante pêssego (um tom de rosa) na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário; numa receita com efeito, apenas soma duração, como os demais ingredientes sem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; largada num lugar muito quente, como a Montanha da Morte, assa sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma framboesa largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Framboesa assada.",
+      "conditions": ["Chamas diretas: fogueira, Flecha incendiária ou armas de fogo como a Espada flamejante."],
+      "side_effects": ["As fontes divergem sobre a cura da versão assada: a página da Framboesa fala em 1 coração, enquanto a página da Framboesa assada e a tabela de comidas assadas indicam 3/4 de coração."],
+      "produces": ["botw_food_roasted_wildberry"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Wildberry", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Assada sobre uma fogueira, vira Framboesa assada.",
+      "produces": ["botw_food_roasted_wildberry"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada num local escaldante como a Montanha da Morte, vira Framboesa assada.",
+      "produces": ["botw_food_roasted_wildberry"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: segundo a fonte, só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Apesar de nascer em regiões geladas, não congela: a lista de Comidas congeladas não inclui frutas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da framboesa na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a framboesa não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Obrigatória no Crepe de framboesa (com Leite fresco, Cana-de-açúcar, Trigo de Tabantha e Ovo) e aceita no Bolo de frutas no lugar da maçã. Nas demais receitas de fruta, não acrescenta efeito.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fruit"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera meio coração.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dez framboesas pela paz no jardim",
+      "text": "Calyban, que vive comendo melões na Cidade Gerudo, diz que só largaria o hábito se provasse uma framboesa — e logo aumenta o pedido para pelo menos 10. Ao recebê-las, arrepende-se da sujeira que causou no bebedouro do jardim de Dalia e passa a ajudá-la, inclusive a iniciar uma horta de framboesas.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fruta de clima frio",
+      "text": "O jogo a descreve como uma fruta das regiões frias e nevadas. Ainda assim, não oferece nenhuma proteção contra o frio: a mesma descrição a apresenta como ingrediente popular sem efeitos especiais.",
+      "sources": ["comp", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Junte as 10 framboesas da missão de Calyban antes de viajar para o deserto: os arbustos ficam nas regiões frias, longe da Cidade Gerudo."
+  ],
+  "limitations": [
+    "Não tem efeito culinário; não protege do frio apesar da região onde cresce.",
+    "Não é usada em nenhuma melhoria de armadura nas Grandes Fadas."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_wildberry", "relation": "Resultado de expor a framboesa ao fogo" },
+    { "id": "botw_food_wildberry_crepe", "relation": "Prato que exige framboesa" },
+    { "id": "botw_food_fruitcake", "relation": "Exige maçã ou framboesa" },
+    { "id": "botw_food_fruit_pie", "relation": "Aceita a framboesa como fruta" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixar framboesas" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante pêssego" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "item_de_missao"],
+  "verification_status": "a_verificar"
+}

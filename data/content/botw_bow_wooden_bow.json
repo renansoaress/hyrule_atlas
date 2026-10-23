@@ -1,0 +1,144 @@
+{
+  "id": "botw_bow_wooden_bow",
+  "summary": "O arco mais fraco do jogo (ataque 4), usado por monstros fracos; segundo a descrição, é pouco confiável em combate mas ótimo para caçar animais pequenos. Queima, flutua e só recebe bônus brancos.",
+  "description": "O Arco de madeira é um arco simples empunhado por inimigos fracos da Pradaria de Hyrule e de Necluda Ocidental, o que faz dele um dos primeiros arcos que Link encontra. A descrição do jogo admite que ele não é dos mais confiáveis contra monstros, mas o recomenda para caçar animais pequenos.\n\nNos parâmetros extraídos do jogo é um arco sem peculiaridades: uma flecha por disparo, 20 m de trajetória reta antes de a flecha começar a cair e velocidades de tensionamento e recarga padrão. Divide com o Arco Kobo o menor ataque entre os arcos (4).\n\nPor ser de madeira, pega fogo — e se desintegra se não for guardado ou apagado —, flutua na água, não conduz eletricidade, não atrai raios e não pode ser pego com Magnétis. É também um dos poucos itens que, na prática, só aparecem com bônus do nível branco.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Ocidental, locais comuns segundo o compendium, nas mãos de monstros de nível baixo."
+  ],
+  "obtaining": [
+    "Recolher o arco derrubado por monstros fracos dessas regiões ao derrotá-los."
+  ],
+  "uses": [
+    "Caçar animais pequenos, uso destacado pela própria descrição do jogo.",
+    "Arco de reserva no início do jogo, enquanto não surgem arcos mais fortes."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros do jogo, a flecha percorre 20 m em linha reta antes de começar a cair (gravidade padrão de 9,8 m/s²), e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo ao tocar chamas; se não for guardado ou apagado, acaba se desintegrando.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Só bônus brancos",
+      "text": "Os parâmetros do jogo definem bônus de ataque de +3 a +4 e de durabilidade de +2 a +4 no nível branco, e há até faixas amarelas nos dados (+5 a +7 de ataque, +5 a +10 de durabilidade). Na prática, porém, o Zelda Wiki registra que o Arco de madeira só aparece com bônus brancos (50% de chance para ataque, 50% para durabilidade). Por isso ele nunca vem com o disparo rápido, que é um bônus amarelo.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Por não conduzir eletricidade nem atrair raios, serve de arco de emergência para atravessar tempestades com todo o equipamento de metal guardado."
+  ],
+  "limitations": [
+    "Ataque mínimo (4) e durabilidade baixa (20).",
+    "Queima no clima escaldante de Eldin se estiver equipado."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_travelers_bow",
+      "relation": "Arco básico um pouco mais forte, comum nas mesmas regiões"
+    },
+    {
+      "id": "botw_bow_boko_bow",
+      "relation": "Divide o menor ataque entre os arcos"
+    },
+    {
+      "id": "botw_mechanic_durability",
+      "relation": "Regras de desgaste dos arcos"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua"
+  ],
+  "verification_status": "verificado"
+}

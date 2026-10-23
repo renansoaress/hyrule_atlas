@@ -1,0 +1,105 @@
+{
+  "id": "botw_food_meat_stuffed_pumpkin",
+  "summary": "Abóbora robusta recheada com carne, especialidade da Vila Kakariko e prato favorito do pai de Koko. Sai blindada (Defesa aumentada) por padrão, graças à abóbora.",
+  "description": "A Abóbora recheada com carne é feita com uma Abóbora robusta e qualquer carne. A descrição do jogo diz que a abóbora oca recheada de carne é uma especialidade local da Vila Kakariko. Como a Abóbora robusta tem efeito blindado, a receita padrão sai na versão blindada, que concede Defesa aumentada; a versão comum só aparece com um terceiro ingrediente de efeito diferente, que anule o da abóbora.\n\nNa Missão secundária \"Koko Cuisine\", terceira da série de Koko, ela quer preparar o prato favorito do pai, Dorian — que tem trabalhado demais —, mas falta Carne de terceira. Koko admite que poderia usar outra carne, mas a receita da mãe pede exatamente Carne de terceira. Quando Link a entrega, Koko cozinha e dá a Link uma porção de Abóbora recheada com carne blindada; se a algibeira de comida estiver cheia, ela pede que Link abra espaço. A anotação da missão ensina: esvaziar uma abóbora robusta, rechear com qualquer carne e assar até firmar.\n\nAs abóboras vêm da horta de Olkin, na própria Vila Kakariko, que vende as que cultiva; Cambo também as vende, e Rinoxes podem deixá-las.",
+  "locations": [
+    "Abóbora robusta: cultivada e vendida por Olkin na Vila Kakariko; também vendida por Cambo e deixada por Rinoxes.",
+    "Koko, que dá o prato na missão \"Koko Cuisine\": na panela pública da Vila Kakariko.",
+    "Carne de terceira: deixada por Javalis da mata, Bodes da montanha e Raposas do prado; vendida pelos mercadores Cambo e Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Abóbora robusta + qualquer carne.",
+    "Recompensa da Missão secundária \"Koko Cuisine\", na Vila Kakariko (versão blindada)."
+  ],
+  "uses": [
+    "Defesa aumentada com apenas dois ingredientes.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — receita padrão, Abóbora robusta + carne.",
+    "Versão comum: só com um terceiro ingrediente de efeito diferente; recupera alguns corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Na receita padrão, concede Defesa aumentada e recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão blindada"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um terceiro ingrediente de efeito diferente, perde o efeito e apenas cura.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A receita da mãe de Koko",
+      "text": "Koko sabe que qualquer carne funcionaria, mas insiste em Carne de terceira porque é o que pede a receita da mãe. Dorian costumava caçar essa carne, mas está ocupado guardando a casa de Impa.",
+      "sources": [
+        "zw:Koko Cuisine",
+        "zw:Koko"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Defesa reforçada",
+      "text": "Como só dois espaços são obrigatórios, sobram três para mais Abóboras robustas; repetir o ingrediente de efeito prolonga ou fortalece a Defesa aumentada.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "O Zelda Wiki só cita a versão blindada, além da comum.",
+    "Ingredientes de outros efeitos anulam a defesa."
+  ],
+  "related": [
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Ingrediente obrigatório, fonte do efeito blindado"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne pedida por Koko"
+    },
+    {
+      "id": "botw_food_pumpkin_stew",
+      "relation": "Outro prato de abóbora típico de Kakariko"
+    },
+    {
+      "id": "botw_food_hot_buttered_apple",
+      "relation": "Prato da missão anterior de Koko"
+    },
+    {
+      "id": "botw_food_honeyed_apple",
+      "relation": "Prato da missão seguinte de Koko"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

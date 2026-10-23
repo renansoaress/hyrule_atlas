@@ -1,0 +1,166 @@
+{
+  "id": "botw_material_raw_prime_meat",
+  "summary": "Carne de alta qualidade de animais maiores (cervos, javalis de presa rubra, lobos, ursos). Crua cura 1,5 coração; no fogo vira Bife de carne de segunda selado (2,25) e congelada passa a valer 28 rupias, quase o dobro.",
+  "description": "A Carne de segunda (Raw Prime Meat) é, segundo o jogo, um corte fresco e de alta qualidade que \"não é fácil de conseguir\". Cai de uma lista longa de animais de porte médio e grande — Javalis de presa rubra, Cervos e Corças da montanha, Búfalos-d'água, Raposas da neve, Lobos larápios e pé-gelados, Coiotes do deserto, Alces de Tabantha, Rinocerontes chifrelongos, Ursos melívoros e Grão-ursos — e é vendida por Cambo, Mezer e Stamm. Crua, recupera 1,5 coração.\n\nComo toda carne, tem três preparos sem panela. No fogo (ou no calor da Montanha da Morte, ou atingida por armas e flechas de fogo), vira Bife de carne de segunda selado, com 2,25 corações. No frio extremo, na água gelada ou com ataques de gelo, vira Carne de segunda congelada, que mantém a cura e dá 1 minuto de Resistência ao calor. Na panela, é exigida na Tigela de arroz com carne de segunda, no Curry de carne de segunda e no Espetinho temperado de carne de segunda, e pode ser trocada pela Sobrecoxa no Ensopado de carne de segunda, na Carne de segunda grelhada no sal e na Fritada de carne de segunda e frutos do mar.",
+  "locations": [
+    "Javalis de presa rubra, Cervos e Corças da montanha, Búfalos-d'água, Raposas da neve, Lobos larápios, Coiotes do deserto, Lobos pé-gelados, Alces de Tabantha, Rinocerontes chifrelongos, Ursos melívoros e Grão-ursos.",
+    "Mercadores Cambo (Wetland Stable–Vila Kakariko), Mezer (Dueling Peaks Stable) e Stamm (South Akkala Stable–Vila Tarrey)."
+  ],
+  "obtaining": [
+    "Caçar os animais listados (vários deles também deixam Carne de primeira).",
+    "Comprar de Cambo, Mezer ou Stamm."
+  ],
+  "uses": [
+    "Cura imediata: 1,5 coração crua, 2,25 como Bife de carne de segunda selado.",
+    "Receitas exclusivas: Tigela de arroz com carne de segunda, Curry de carne de segunda e Espetinho temperado de carne de segunda.",
+    "Com a Sobrecoxa como alternativa: Ensopado de carne de segunda, Carne de segunda grelhada no sal e Fritada de carne de segunda e frutos do mar.",
+    "Receitas de \"qualquer carne\", como Espetinho de carne, Carne glaceada, Torta de carne, Bife apimentado e Carne no vapor.",
+    "Venda: 15 rupias (selada, 24; congelada, 28)."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1,5 coração.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Bife de carne de segunda selado, que recupera 2,25 corações e não tem efeito especial.",
+      "conditions": ["Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "produces": ["botw_food_seared_prime_steak"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Bife de carne de segunda selado.",
+      "produces": ["botw_food_seared_prime_steak"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no clima escaldante de Eldin, assa sozinha.",
+      "produces": ["botw_food_seared_prime_steak"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingida por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, vira Carne de segunda congelada.",
+      "produces": ["botw_food_icy_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gelado ou em água gelada, vira Carne de segunda congelada: mesma cura e 1:00 de Resistência ao calor nível 1.",
+      "produces": ["botw_food_icy_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma elemental",
+      "status": "confirmado",
+      "result": "Golpeada com arma de fogo (Espada flamejante, Grã-Espada flamejante, Lança carbonizante), assa; com arma de gelo (Espada álgida, Grã-Espada álgida, Lança congelante), congela.",
+      "produces": ["botw_food_seared_prime_steak", "botw_food_icy_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Frozen Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a carne com uma arma comum."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada para assar perto do fogo ou congelar no frio; Pastores hylianos comem carne largada perto deles.",
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Hylian Retriever"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da carne à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Em água gelada, congela; as fontes não dizem o que acontece em água comum.",
+      "produces": ["botw_food_icy_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a carne não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a carne largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, a cura dobra (3 corações por unidade). É obrigatória em três pratos \"de segunda\" e pode ser substituída pela Sobrecoxa em outros três.",
+      "produces": ["botw_food_prime_meat_and_rice_bowl", "botw_food_prime_meat_curry", "botw_food_prime_spiced_meat_skewer", "botw_food_prime_meat_stew", "botw_food_salt_grilled_prime_meat", "botw_food_prime_meat_and_seafood_fry"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Crua vale 15 rupias; selada, 24; congelada, 28.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Frozen Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congelada vale quase o dobro",
+      "text": "Comidas congeladas têm preço fixo. A Carne de segunda congelada vale 28 rupias, contra 15 da crua e 24 do bife selado — congelar antes de vender é o melhor negócio.",
+      "sources": ["zw:Frozen Food", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sobrecoxa como substituta",
+      "text": "Pela lógica de receitas do Zelda Wiki, o Ensopado de carne de segunda, a Carne de segunda grelhada no sal e a Fritada de carne de segunda e frutos do mar aceitam Carne de segunda ou Sobrecoxa. Já a Tigela de arroz com carne de segunda, o Curry de carne de segunda e o Espetinho temperado de carne de segunda só aceitam a Carne de segunda.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Vários animais grandes (búfalos, lobos, alces, rinocerontes e ursos) deixam tanto Carne de segunda quanto Carne de primeira; o Urso melívoro, porém, ataca quem invade seu território, então convém abordá-lo com cuidado."
+  ],
+  "limitations": [
+    "Assada ou congelada, não ganha efeitos especiais além da resistência ao calor de 1 minuto da versão congelada."
+  ],
+  "related": [
+    { "id": "botw_food_seared_prime_steak", "relation": "Resultado de assar no fogo" },
+    { "id": "botw_food_icy_prime_meat", "relation": "Resultado de congelar" },
+    { "id": "botw_material_raw_bird_thigh", "relation": "Substituta em três receitas \"de segunda\"" },
+    { "id": "botw_material_raw_meat", "relation": "Carne de mamífero mais simples" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Carne de mamífero mais nobre" },
+    { "id": "botw_creature_red_tusked_boar", "relation": "Animal que a deixa" },
+    { "id": "botw_creature_mountain_buck", "relation": "Animal que a deixa" },
+    { "id": "botw_creature_honeyvore_bear", "relation": "Animal que a deixa" },
+    { "id": "botw_food_prime_meat_curry", "relation": "Prato que exige Carne de segunda" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de culinária" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

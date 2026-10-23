@@ -1,0 +1,140 @@
+{
+  "id": "botw_monster_calamity_ganon",
+  "summary": "O mal primordial que arruinou Hyrule há 100 anos, enfrentado no Sanctum do Castelo de Hyrule numa forma incompleta. Tem 8.000 de vida, mas perde 1/8 por Fera Divina libertada, que o ataca no início da luta.",
+  "description": "Ganon, a Calamidade é a fonte das trevas que aparece repetidamente na história de Hyrule, chamado de \"Grande Rei do Mal\" e de \"Calamidade\". Há 10.000 anos, foi selado sob o Castelo de Hyrule graças ao herói, à princesa e ao exército de Guardiões e Feras Divinas dos Sheikah. Há 100 anos, minutos depois de Zelda rezar na Fonte da Sabedoria, ele rompeu o selo, corrompeu os Guardiões com sua Malícia e enviou as quatro Iras de Ganon para tomar as Feras Divinas e matar os Campeões. Zelda conseguiu contê-lo de novo no castelo, ao custo de ficar presa junto com ele. Ao longo do jogo, Ganon é visto girando ao redor do Castelo de Hyrule, e as Luas de sangue marcam os momentos em que o poder dele atinge o auge e revive os monstros.\n\nNo Sanctum, ele hiberna num casulo tentando regenerar um corpo. Ao entrar na Sala do Trono, Link o desperta antes da hora e o enfrenta numa forma incompleta, mistura grotesca de Ganondorf, Malícia e peças de Guardião, que luta com uma combinação dos ataques das quatro Iras e também usa fogo. A vida base é de 8.000, mas cada Fera Divina libertada dispara contra ele no início do combate e tira 1/8 da vida — com as quatro, ele fica com 4.000. Qualquer Ira que não tenha sido derrotada nas Feras Divinas precisa ser enfrentada antes, no próprio Sanctum, com 2.000 de vida.\n\nO Arco da Luz e a Espada Mestra são citados como fraquezas, e a Malícia do castelo mantém a Espada Mestra sempre com o poder despertado. Derrotado, Ganon foge para a Pradaria de Hyrule, abandona a tentativa de reencarnar e assume a forma de Ganon, Besta Sombria.",
+  "locations": [
+    "Sanctum do Castelo de Hyrule: a luta começa ao entrar na Sala do Trono e continua no Observatório Astral, abaixo dela."
+  ],
+  "obtaining": [
+    "Não deixa itens: vencê-lo leva diretamente à luta final contra Ganon, Besta Sombria.",
+    "A primeira vitória libera as conversas com Kilton que dão as Medalhas de honra."
+  ],
+  "uses": [
+    "Chefe final da história (seguido pela forma Besta Sombria).",
+    "Derrotá-lo pela primeira vez permite pedir a Kilton as missões das Medalhas de honra: Tálus, Rinox e Molduga."
+  ],
+  "effects": [
+    "Ataques combinados das quatro Iras de Ganon e ataques de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "A Espada Mestra é uma das fraquezas citadas e, no Castelo de Hyrule, fica permanentemente com o poder despertado por causa da Malícia.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hyrule Castle (Dungeon)", "zw:Master Sword"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Usa fogo durante a batalha final no castelo. O efeito do fogo sobre ele não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Cada Fera Divina libertada dispara contra ele no início da luta, tirando 1/8 da vida (até metade com as quatro). A queda pelo piso da Sala do Trono leva a luta ao Observatório Astral.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Champion", "zw:Ancient Technology"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes desta ficha não detalham pontos fracos para flechas nesta fase; o Arco da Luz só é entregue na luta seguinte."
+    },
+    {
+      "action": "defender",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem quais ataques dele podem ser aparados com Defesa perfeita."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre água nesta luta."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nesta luta."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Libertar as Feras compensa",
+      "text": "Ganon, a Calamidade perde 1/8 dos 8.000 de vida para cada Fera Divina libertada, chegando a 4.000 com as quatro. Iras não derrotadas precisam ser enfrentadas no Sanctum, sempre com 2.000 de vida.",
+      "sources": ["zw", "zw:Phantom Ganon", "zw:Champion"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Dons dos Campeões recarregam mais rápido no castelo",
+      "text": "Dentro do Castelo de Hyrule, os dons dos Campeões recarregam bem mais depressa: a Fúria de Urbosa em 4 minutos em vez de 12, o Vendaval de Revali em 2 em vez de 6, a Proteção de Daruk em 6 em vez de 18 e a Dádiva de Mipha em 8 em vez de 24.",
+      "sources": ["zw:Urbosa's Fury", "zw:Revali's Gale", "zw:Daruk's Protection", "zw:Mipha's Grace"]
+    },
+    {
+      "kind": "glitch",
+      "title": "Lua de sangue forçada no meio da luta",
+      "text": "Raramente, uma Lua de sangue \"forçada\" (disparada por questões de memória do jogo, fora do ciclo normal) pode acontecer durante a luta contra Ganon, a Calamidade, devolvendo toda a vida ao chefe.",
+      "sources": ["zw:Blood Moon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Inspiração histórica",
+      "text": "A concepção de Ganon, a Calamidade se inspira na história do espírito vingativo de Taira no Masakado.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Os Campeões aparecem de qualquer jeito",
+      "text": "Mesmo que as Feras Divinas não tenham sido libertadas antes da luta final, a cena de encerramento mostra os quatro Campeões e o rei Rhoam diante do Castelo de Hyrule antes de partirem.",
+      "sources": ["zw:Champion"]
+    }
+  ],
+  "advanced_uses": [
+    "Libertar as quatro Feras Divinas antes de ir ao castelo reduz a vida dele à metade e evita as lutas extras contra as Iras no Sanctum."
+  ],
+  "limitations": [
+    "Não é revivido pela Lua de sangue; a luta só ocorre no fim da história.",
+    "As fontes disponíveis não detalham as fases nem os padrões de ataque desta luta."
+  ],
+  "related": [
+    { "id": "botw_monster_dark_beast_ganon", "relation": "Forma assumida após a derrota" },
+    { "id": "botw_monster_windblight_ganon", "relation": "Ira de Ganon criada por ele" },
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Ira de Ganon criada por ele" },
+    { "id": "botw_monster_fireblight_ganon", "relation": "Ira de Ganon criada por ele" },
+    { "id": "botw_monster_waterblight_ganon", "relation": "Ira de Ganon criada por ele" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Guardiões corrompidos pela Malícia dele" },
+    { "id": "botw_weapon_master_sword", "relation": "Fraqueza citada; sempre despertada no castelo" },
+    { "id": "botw_bow_bow_of_light", "relation": "Fraqueza citada" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Ocorre quando o poder de Ganon atinge o auge" },
+    { "id": "botw_keyitem_medal_of_honor_talus", "relation": "Missão de Kilton liberada após a primeira vitória" }
+  ],
+  "capabilities": ["gera_fogo", "habilidade_especial"],
+  "verification_status": "parcial"
+}

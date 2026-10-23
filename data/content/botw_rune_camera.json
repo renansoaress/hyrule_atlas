@@ -1,0 +1,97 @@
+{
+  "id": "botw_rune_camera",
+  "summary": "Runa restaurada por Purah no Laboratório de Hateno. Tira fotos e registra no compêndio criaturas, monstros, materiais, equipamentos, baús e depósitos de minério, que passam a ser rastreáveis pelo Sensor Sheikah +.",
+  "description": "A Câmera é uma das runas básicas que a Tabuleta Sheikah já tinha há 100 anos, mas que estava danificada quando Link despertou. Durante a missão principal \"Locked Mementos\", Purah pede que Link leve a Chama azul do Forno ancestral até a fornalha do Laboratório de Hateno (Hateno Ancient Tech Lab); com o terminal (Guidance Stone) religado, a Tabuleta é reparada e recebe a Câmera, o Álbum e o Compêndio de Hyrule. Logo em seguida, Purah pede para ser fotografada.\n\nA foto é tirada com o botão A e salva no Álbum. Dá para mirar com o analógico direito ou com o giroscópio, ajustar o zoom no direcional, abrir o Álbum com o botão menos e tirar selfies com X, escolhendo entre onze poses conforme a direção do analógico, o ZL e o tipo de arma empunhada. Fotografar criaturas, monstros, materiais, equipamentos, baús ou depósitos de minério cria a entrada correspondente no compêndio, que pode então ser rastreada com o Sensor Sheikah +.\n\nO Álbum já vem com doze fotos antigas tiradas pela Princesa Zelda. Impa orienta Link a visitar cada local retratado, onde ele recupera uma memória.",
+  "locations": [
+    "Laboratório de Hateno, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Na missão principal \"Locked Mementos\": levar a Chama azul do Forno ancestral até a fornalha do laboratório e colocar a Tabuleta Sheikah no terminal para restaurar os arquivos."
+  ],
+  "uses": [
+    "Registrar entradas no Compêndio de Hyrule fotografando-as.",
+    "Permitir que o Sensor Sheikah + rastreie o que já foi fotografado.",
+    "Tirar fotos e selfies, que ficam no Álbum.",
+    "Comparar os locais com as fotos antigas do Álbum para recuperar memórias."
+  ],
+  "effects": [
+    "Fotos são salvas no Álbum; fotos de alvos válidos criam ou atualizam entradas do compêndio."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Tira uma foto com A; mira por analógico ou giroscópio, zoom no direcional, selfie com X e acesso rápido ao Álbum com o botão menos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Baús do tesouro e depósitos de minério podem ser fotografados e entram no compêndio; baús de metal e baús \"EX\" são registrados como baús do tesouro comuns.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Iron Treasure Chest", "zw:Hidden Chest"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Monstros fotografados entram no compêndio. Na luta contra o Monge Maz Koshia, só a cópia verdadeira é identificada pela Câmera.",
+      "applications": ["Achar o Maz Koshia verdadeiro entre as nove cópias apontando a Câmera para elas."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Monk Maz Koshia"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Comprar as fotos que faltam",
+      "text": "Depois da Missão secundária \"Sunshroom Sensing\", Symin vende no laboratório as fotos que faltam no compêndio por 100 rupias cada (fauna, inimigos, materiais, armas e outros). Após a derrota final de Ganon, passam a ser vendidas também as fotos de inimigos de elite, por 500 rupias.",
+      "sources": ["zw:Hateno Ancient Tech Lab", "zw:Hyrule Compendium"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A única entrada que não se compra",
+      "text": "O Flamelo é registrado automaticamente na missão \"Sunshroom Sensing\", que é pré-requisito para comprar fotos; por isso é a única entrada que não pode ser comprada de Symin.",
+      "sources": ["zw:Hyrule Compendium"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fotos do Modo Mestre sobrescrevem as do Modo Normal",
+      "text": "As imagens tiradas com a Câmera ocupam o mesmo espaço de dados no Modo Normal e no Modo Mestre; fotografar a mesma entrada num modo apaga a foto do outro. Fotos compradas de Symin ficam guardadas em outro lugar e não são sobrescritas.",
+      "sources": ["zw:Hyrule Compendium"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Arcos que não contam",
+      "text": "O Arco de precisão que Cado, o guarda-costas Sheikah de Impa em Vila Kakariko, carrega pode ser fotografado para o compêndio, mas os dois exemplares pendurados dentro da casa dele fazem parte do cenário e a Câmera não os registra.",
+      "sources": ["zw:Phrenic Bow"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Recompensa do compêndio completo",
+      "text": "Completar o Compêndio de Hyrule permite receber o Envelope confidencial de Symin. Criaturas e equipamentos exclusivos de amiibo não fazem parte do compêndio.",
+      "sources": ["zw:Hyrule Compendium"]
+    }
+  ],
+  "advanced_uses": [
+    "Fotografar um material raro assim que encontrá-lo para poder rastreá-lo depois com o Sensor Sheikah +.",
+    "Usar a Câmera como \"detector\" de cópias falsas na luta contra o Monge Maz Koshia."
+  ],
+  "limitations": [
+    "Só fica disponível depois de reparar a Tabuleta no Laboratório de Hateno.",
+    "Objetos que fazem parte do cenário, mesmo parecidos com itens, podem não ser reconhecidos."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa básica da Tabuleta Sheikah" },
+    { "id": "botw_rune_sheikah_sensor", "relation": "A versão + rastreia o que foi fotografado" },
+    { "id": "botw_material_sunshroom", "relation": "Fotografado na missão \"Sunshroom Sensing\"" },
+    { "id": "botw_keyitem_classified_envelope", "relation": "Recompensa por completar o compêndio" },
+    { "id": "botw_monster_monk_maz_koshia", "relation": "A Câmera identifica a cópia verdadeira" },
+    { "id": "botw_bow_phrenic_bow", "relation": "Exemplares decorativos não são registrados" },
+    { "id": "botw_treasure_treasure_chest", "relation": "Pode ser registrado no compêndio" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Pode ser registrado no compêndio" },
+    { "id": "botw_mechanic_master_mode", "relation": "Fotos compartilham espaço com o Modo Normal" }
+  ],
+  "capabilities": ["revela_recursos", "habilidade_especial"],
+  "verification_status": "verificado"
+}

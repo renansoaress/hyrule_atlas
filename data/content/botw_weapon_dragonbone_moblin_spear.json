@@ -1,0 +1,228 @@
+{
+  "id": "botw_weapon_dragonbone_moblin_spear",
+  "summary": "Lança favorita dos Moblins, com ponta de osso fossilizado e espinhos (ataque 15, durabilidade 25). É a lança de madeira mais forte do jogo — flutua, pega fogo e não atrai raios.",
+  "description": "A Lança Moblin dracônica é descrita como a preferida dos Moblins: a ponta é feita de ossos fossilizados enfeitados com espinhos, o que aumenta muito o poder de estocada. É usada por Moblins pretos, prateados e dourados e aparece sobretudo em fortalezas de monstros das Cordilheiras de Hebra e da Cordilheira de Eldin.\n\nApesar da ponta de osso, a haste é de madeira, e a lança se comporta como arma de madeira: flutua, pega fogo, não conduz eletricidade, não atrai raios e não pode ser movida com Magnétis. Com ataque 15, é a lança de madeira mais forte do jogo — mas, como aparece justamente em Eldin, convém lembrar que pega fogo sozinha nas áreas escaldantes da região.",
+  "locations": [
+    "Fortalezas de monstros das Cordilheiras de Hebra e da Cordilheira de Eldin."
+  ],
+  "obtaining": [
+    "Derrotar Moblins pretos, prateados ou dourados que a empunhem.",
+    "A Lua de sangue revive os monstros e repõe as armas que eles empunham."
+  ],
+  "uses": [
+    "A lança mais forte para quem precisa de uma arma que não atraia raios em tempestades.",
+    "Pode ser acesa para espalhar fogo ou acender fogueiras."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo quando exposta a chamas; acesa, pode ser empunhada para espalhar o fogo.",
+      "conditions": [
+        "Encostar a lança numa fogueira, numa tocha acesa ou em outra fonte de fogo."
+      ],
+      "side_effects": [
+        "Cuidado com grama seca e com o próprio Link: o fogo se espalha de objeto em objeto.",
+        "As fontes não dizem por quanto tempo uma lança acesa dura fora das regiões escaldantes, onde a madeira queima até sumir."
+      ],
+      "applications": [
+        "Incendiar grama: o fogo espalhado gera correntes de ar quente que levantam Link com o Planador.",
+        "Golpear inimigos com a lança em chamas para queimá-los — a mesma tática que os Koboblins usam contra Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon",
+        "zw:Fire",
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Encostada numa fogueira, pega fogo; acesa, também serve para acender um feixe de Madeira e criar uma nova fogueira.",
+      "applications": [
+        "Acender fogueiras para cozinhar sem precisar de Sílex."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Wood",
+        "zw:Fire",
+        "dm"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada nas áreas escaldantes de Eldin (Cânion de Eldin e Montanha da Morte), pega fogo sozinha e acaba virando cinzas.",
+      "side_effects": [
+        "A lança é perdida."
+      ],
+      "applications": [
+        "Trocar por uma arma de metal antes de entrar nas zonas de calor de Eldin."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, por ser de madeira.",
+      "side_effects": [
+        "Ainda assim, se Link for eletrocutado com ela na mão, a lança voa para o chão — isso vale para quase todas as armas."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: pode ficar equipada durante tempestades.",
+      "side_effects": [
+        "Escudos e arcos de metal equipados continuam atraindo raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, por ser de madeira.",
+      "applications": [
+        "Pode ser recolhida na superfície, o que compensa o fato de Magnétis não alcançá-la."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos, e esta lança é de madeira.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É a lança preferida dos Moblins pretos, prateados e dourados, comum nas fortalezas de Hebra e de Eldin.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança Moblin dracônica pode surgir com um bônus branco (comum) — ataque +2 a +4, durabilidade +3 a +5 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +5 a +7, durabilidade +6 a +12 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Madeira em terra de lava",
+      "text": "Uma das regiões em que a lança mais aparece é a Cordilheira de Eldin — justamente onde o calor extremo faz equipamentos de madeira pegarem fogo. Ao tomá-la de um Moblin nas áreas escaldantes, não a deixe equipada.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Acesa numa fogueira, serve de tocha improvisada para acender outras fogueiras pelo caminho."
+  ],
+  "limitations": [
+    "Queima e vira cinzas se equipada nas áreas escaldantes de Eldin.",
+    "Não pode ser resgatada com Magnétis."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_moblin_spear",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_spiked_moblin_spear",
+      "relation": "Versão intermediária"
+    },
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Monstro que a empunha"
+    },
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Monstro que a empunha"
+    },
+    {
+      "id": "botw_weapon_dragonbone_moblin_club",
+      "relation": "Mesmo arquétipo (Moblin dracônico), duas mãos"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_spear",
+      "relation": "Lança dracônica dos Koboblins"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

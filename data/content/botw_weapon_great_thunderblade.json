@@ -1,0 +1,129 @@
+{
+  "id": "botw_weapon_great_thunderblade",
+  "summary": "Grã-espada elétrica forjada pela família real com raios dos Cerros de Hyrule (ataque 32). Brilhando em dourado, eletrocuta e desarma inimigos e pode energizar certos mecanismos.",
+  "description": "A Grã-Espada faiscante é a grã-espada elétrica do Equipamento mágico. Segundo o jogo, a família real de Hyrule a forjou usando raios das colinas de Hyrule, e basta atacar quando a lâmina brilha em dourado para descarregar eletricidade. O choque faz os inimigos largarem as armas que estiverem usando, deixando-os mais fáceis de derrotar.\n\nCada golpe drena temporariamente a carga da lâmina; quando ela se esgota, é preciso esperar a regeneração para voltar a causar dano elétrico, e golpear nesse estado não gera eletricidade e ainda pausa a recarga por um segundo. Largar a espada pela tela da algibeira e pegá-la de volta a recarrega na hora. Além de chocar inimigos, a lâmina pode enviar pulsos elétricos a certos mecanismos. É metálica: conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Fronteira de Tabantha.",
+    "Cravada entre as rochas do cume do Monte Cuho (Cuho Mountain).",
+    "Nas mãos de um Moblin preto nas Ruínas do Coliseu (Coliseum Ruins).",
+    "Pode estar cravada no corpo de Stalnox, que precisam ser derrotados para liberá-la."
+  ],
+  "obtaining": [
+    "Recolher nos locais fixos, derrotar o Moblin preto das Ruínas do Coliseu ou derrotar um Stalnox que a traga.",
+    "Armas no mundo ou com inimigos voltam a aparecer após a Lua de sangue.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Desarmar inimigos com o choque elétrico.",
+    "Energizar certos mecanismos com pulsos elétricos.",
+    "Arma de duas mãos de boa durabilidade (50)."
+  ],
+  "effects": [
+    "Golpes com a lâmina brilhando eletrocutam o alvo e o fazem largar a arma."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos, sem escudo. Com a lâmina dourada, cada golpe descarrega eletricidade e drena a carga; esgotada, a espada só causa dano físico até se regenerar, e golpear nesse estado pausa a recarga por um segundo. O ataque carregado é o giro que gasta vigor.",
+      "conditions": ["Lâmina brilhando (com carga)."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao acertar o inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Além de gerar descargas, a lâmina de metal conduz eletricidade; se Link for eletrocutado por outra fonte, a espada voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Apesar de ser uma arma elétrica, atrai raios se estiver equipada durante uma tempestade.",
+      "applications": ["Desequipar ao ver faíscas ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "O choque faz os inimigos largarem as armas; um Moblin preto das Ruínas do Coliseu a empunha e Stalnox podem trazê-la cravada no corpo.",
+      "applications": ["Desarmar Moblins e Koboblins e pegar as armas caídas deles."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pode disparar pulsos elétricos temporários em certos mecanismos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Recarga instantânea pela algibeira",
+      "text": "Largar a Grã-Espada faiscante pela tela da algibeira e pegá-la de volta enche a carga imediatamente. Os parâmetros também indicam que simplesmente trocar de arma recarrega as armas elementais.",
+      "sources": ["zw", "zw:Template:BotW Weapon Parameters"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quantas descargas por carga",
+      "text": "Pelos parâmetros extraídos, a lâmina tem 2.000 unidades de energia, cada descarga custa 500 (quatro com a carga cheia) e a recuperação começa 60 quadros depois do último ataque, a 20 unidades por quadro.",
+      "sources": ["dm", "zw:Template:BotW Weapon Parameters"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +7 a +12, Durabilidade aumentada de +5 a +15 ou Acerto crítico; no nível dourado (amarelo): Ataque de +13 a +20, Durabilidade de +16 a +30 ou Lançamento longo (×1,5 a ×2).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    }
+  ],
+  "advanced_uses": [
+    "Contra grupos armados, eletrocute primeiro o inimigo mais perigoso para que ele largue a arma, e recarregue a lâmina pela algibeira entre as investidas."
+  ],
+  "limitations": [
+    "Sem carga, não eletrocuta, e golpear assim atrasa a recarga.",
+    "Metálica: atrai raios em tempestades."
+  ],
+  "related": [
+    { "id": "botw_weapon_thunderblade", "relation": "Versão de uma mão" },
+    { "id": "botw_weapon_great_flameblade", "relation": "Grã-espada de fogo" },
+    { "id": "botw_weapon_great_frostblade", "relation": "Grã-espada de gelo" },
+    { "id": "botw_monster_stalnox", "relation": "Pode trazê-la cravada no corpo" },
+    { "id": "botw_monster_black_moblin", "relation": "Um deles a empunha nas Ruínas do Coliseu" },
+    { "id": "botw_mechanic_electricity", "relation": "Gera descargas elétricas" }
+  ],
+  "capabilities": ["gera_eletricidade", "eletrocuta_inimigos", "conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

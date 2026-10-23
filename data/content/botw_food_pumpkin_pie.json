@@ -1,0 +1,93 @@
+{
+  "id": "botw_food_pumpkin_pie",
+  "summary": "Torta de Abóbora robusta com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra, sobremesa querida pelas crianças. A receita básica já dá Defesa aumentada.",
+  "description": "A Torta de abóbora é feita com Abóbora robusta, Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra; o inventário diz que a doçura intensa da abóbora faz da sobremesa um sucesso entre as crianças. Como a Abóbora robusta é um ingrediente \"blindado\", a receita original já sai na única variante existente, com Defesa aumentada. A versão sem efeito só aparece quando o quinto ingrediente é uma fruta ou um legume de efeito diferente, que anula o da abóbora.\n\nA torta é testada antes de outras sobremesas com a mesma base (Bolo de cenoura, Torta de maçã, Bolo de nozes, Torta de frutas), então ela \"ganha\" se a abóbora estiver na panela. A Cana-de-açúcar dá 30% de chance extra de bônus crítico, que pode render um nível a mais de defesa, mais duração ou 3 corações a mais. As abóboras são cultivadas por Olkin na Vila Kakariko.",
+  "obtaining": [
+    "Cozinhar numa Panela Abóbora robusta, Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra.",
+    "A Abóbora robusta é vendida por Olkin na plantação da Vila Kakariko (8 unidades) e pelo mercador Cambo, e pode ser derrubada por Rinox."
+  ],
+  "uses": [
+    "Prato de Defesa aumentada com ingredientes comprados.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Na receita original: Defesa aumentada.",
+    "Com fruta ou legume de efeito diferente: sem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na versão com abóbora pura, concede Defesa aumentada de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "fruta ou legume de outro efeito",
+      "status": "confirmado",
+      "result": "Uma fruta ou um legume com efeito diferente anula a defesa da abóbora e dá a versão comum da torta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Prioridade sobre as outras tortas",
+      "text": "Com abóbora, trigo, açúcar e manteiga na panela, acrescentar uma Maçã não produz Torta de maçã: a Torta de abóbora é verificada antes da Torta de maçã, do Bolo de nozes e da Torta de frutas.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre.",
+    "Só existe a variante de Defesa aumentada."
+  ],
+  "related": [
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Ingrediente obrigatório que dá a defesa"
+    },
+    {
+      "id": "botw_food_pumpkin_stew",
+      "relation": "Outro prato de abóbora, com leite em vez de açúcar"
+    },
+    {
+      "id": "botw_food_carrot_cake",
+      "relation": "Sobremesa com a mesma base e cenoura"
+    },
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Torta com a mesma base e Maçã"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório; aumenta a chance de crítico"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

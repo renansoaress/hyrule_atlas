@@ -1,0 +1,211 @@
+{
+  "id": "botw_shield_rusty_shield",
+  "summary": "Escudo velho e enferrujado, provavelmente de um antigo cavaleiro (Defesa 3, durabilidade 16). O valor está no Octoroc rochoso: aspirado, volta limpo como escudo do viajante, do soldado, do cavaleiro ou real.",
+  "description": "O Escudo enferrujado provavelmente pertenceu a um cavaleiro de Hyrule. O jogo diz que ele ainda oferece alguma defesa, mas que o tempo desgastou sua utilidade — Defesa 3, quase nada, embora a durabilidade (16) seja maior que a de muitos escudos básicos. Pertence ao equipamento enferrujado (Rusty Gear), um conjunto de armas deterioradas, e aparece com frequência abandonado na Pradaria de Hyrule e em Necluda Oriental.\n\nO grande segredo está nos Octorocs rochosos: se um deles aspirar o Escudo enferrujado, mastiga o escudo e o cospe limpo, transformado num escudo novo — 50% de chance de Escudo do viajante, 35% de Escudo do soldado, 10% de Escudo do cavaleiro e 5% de Escudo real. Mesmo enferrujado, ele é de metal: conduz eletricidade, atrai raios, afunda e pode ser movido com Magnétis; não queima.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Oriental, abandonado com frequência."
+  ],
+  "obtaining": [
+    "Recolher exemplares abandonados ou derrubados por inimigos nessas regiões."
+  ],
+  "uses": [
+    "Matéria-prima para os Octorocs rochosos: aspirado, vira Escudo do viajante, do soldado, do cavaleiro ou real.",
+    "Escudo de metal provisório que não queima em Eldin."
+  ],
+  "effects": [
+    "Nenhum efeito especial; a Defesa 3 é muito baixa para um escudo de metal."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia, mas com Defesa 3 reduz pouco o desgaste de cada golpe. A Defesa perfeita não gasta durabilidade.",
+      "conditions": [
+        "Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shield",
+        "zw:Template:BotW Shield Parameters",
+        "jogo"
+      ]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": [
+        "Pular e apertar A enquanto segura ZL no ar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Shield Surfing"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Um Octoroc rochoso que o aspira durante a inspiração mastiga o escudo e o cospe como versão limpa: Escudo do viajante (50%), do soldado (35%), do cavaleiro (10%) ou real (5%).",
+      "conditions": [
+        "Deixar o escudo no caminho do sopro de um Octoroc rochoso enquanto ele aspira o ar (Cânion de Eldin, Cordilheira de Eldin ou Montanhas Gerudo)."
+      ],
+      "side_effects": [
+        "Se Link tentar aparar o escudo limpo que o Octoroc cospe, ele atravessa Link."
+      ],
+      "applications": [
+        "Trocar escudos inúteis por escudos de metal melhores, com chance de um Escudo real."
+      ],
+      "produces": [
+        "botw_shield_travelers_shield",
+        "botw_shield_soldiers_shield",
+        "botw_shield_knights_shield",
+        "botw_shield_royal_shield"
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin — conveniente, já que os Octorocs rochosos vivem lá.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "zw:Rock Octorok"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Shields in Breath of the Wild",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link.",
+      "conditions": [
+        "Tempestade de raios; escudo equipado."
+      ],
+      "applications": [
+        "Desequipar antes do raio cair ou usar o Elmo do trovão."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "applications": [
+        "Recuperar o escudo do fundo da água, onde afunda."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +7 (nível amarelo) e com Defesa do escudo aumentada de +3 a +5 (branco) ou +6 a +9 (amarelo).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Loteria do Octoroc rochoso",
+      "text": "Cada Escudo enferrujado entregue a um Octoroc rochoso tem 5% de chance de virar um Escudo real e 10% de virar um Escudo do cavaleiro. Levar vários de uma vez para as áreas de Octorocs rochosos em Eldin aumenta as chances de conseguir um escudo raro.",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Juntar Escudos enferrujados na Pradaria de Hyrule e em Necluda Oriental e levá-los aos Octorocs rochosos de Eldin para trocá-los por escudos melhores."
+  ],
+  "limitations": [
+    "Defesa 3, muito baixa para uso em combate.",
+    "Metálico: atrai raios e cai das mãos com choques."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Limpa o escudo e o transforma em outro"
+    },
+    {
+      "id": "botw_shield_travelers_shield",
+      "relation": "Resultado mais comum da limpeza (50%)"
+    },
+    {
+      "id": "botw_shield_soldiers_shield",
+      "relation": "Resultado da limpeza (35%)"
+    },
+    {
+      "id": "botw_shield_knights_shield",
+      "relation": "Resultado da limpeza (10%)"
+    },
+    {
+      "id": "botw_shield_royal_shield",
+      "relation": "Resultado mais raro da limpeza (5%)"
+    },
+    {
+      "id": "botw_weapon_rusty_broadsword",
+      "relation": "Mesmo arquétipo (equipamento enferrujado)"
+    },
+    {
+      "id": "botw_weapon_rusty_claymore",
+      "relation": "Mesmo arquétipo (equipamento enferrujado)"
+    },
+    {
+      "id": "botw_weapon_rusty_halberd",
+      "relation": "Mesmo arquétipo (equipamento enferrujado)"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico"
+  ],
+  "verification_status": "verificado"
+}

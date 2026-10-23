@@ -1,0 +1,130 @@
+{
+  "id": "botw_food_roasted_mighty_thistle",
+  "summary": "Protechofra levemente tostada: \"não tem efeitos especiais\", admite o jogo, mas as pontas espinhosas descem macias. Cura meio coração e vale 8 rupias, contra 5 da flor crua.",
+  "description": "A Protechofra, flor dos Prados de Faron e de Necluda Ocidental, vira Protechofra tostada quando encosta no fogo ou fica no clima escaldante de Eldin. O texto do jogo é direto: a flor levemente grelhada não tem efeitos especiais, mas agora as pontas espinhosas descem sem problema.\n\nO Hyrule Compendium não atribui recuperação de corações à Protechofra crua (0); tostada, ela cura meio coração. Na venda passa de 5 para 8 rupias. Em troca, perde-se o Ataque aumentado que a flor daria cozida na Panela.",
+  "locations": [
+    "Prepara-se a partir de Protechofras (Prados de Faron, Necluda Ocidental e arredores da Fonte da Grande Fada de Kaysa, perto da Torre de Tabantha) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Protechofra ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura mínima: meio coração.",
+    "Venda: 8 rupias."
+  ],
+  "effects": [
+    "Recupera meio coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Protechofra — queima por alguns instantes e se transforma em Protechofra tostada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Protechofra tostada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Protechofra no chão para que o ingrediente asse sozinho e vire Protechofra tostada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera meio coração, sem nenhum efeito. O compendium registra 0 coração para a Protechofra crua.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 8 rupias; a Protechofra crua vale 5.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Mighty Thistle"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Protechofra tostada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Espinhos domados",
+      "text": "A descrição do jogo reconhece que a flor tostada não tem efeito especial, mas observa que, grelhada, as pontas espinhosas descem suaves.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Ataque aumentado: o efeito da flor só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_mighty_thistle",
+      "relation": "Ingrediente cru (Ataque aumentado na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_armoranth",
+      "relation": "Outra erva tostada de meio coração"
+    },
+    {
+      "id": "botw_food_roasted_mighty_bananas",
+      "relation": "Outro ingrediente de ataque que perde o efeito no fogo"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

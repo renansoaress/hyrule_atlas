@@ -1,0 +1,108 @@
+{
+  "id": "botw_weapon_mighty_lynel_crusher",
+  "summary": "Maça centaleônica reforçada (ataque 54) dos Centaleões de juba azul. O peso esmaga o inimigo \"com escudo e tudo\"; some do jogo quando esses Centaleões evoluem.",
+  "description": "A Maça centaleônica forte é a versão reforçada da Maça centaleônica, com mais durabilidade e mais força de impacto. A descrição do jogo diz que o peso esmagador da arma destrói o oponente \"com escudo e tudo\" — a mesma vantagem das armas pesadas de duas mãos contra inimigos que se defendem com escudo.\n\nÉ empunhada pelos Centaleões de juba azul das Montanhas Gerudo e das Cordilheiras de Hebra; no Modo Mestre, passa para os Centaleões de juba branca. Como o Equipamento centaleônico acompanha a evolução dos Centaleões, depois que os de juba azul deixam de existir a arma também desaparece: é um item que pode ser perdido para sempre. Feita de metal, conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Montanhas Gerudo e Cordilheiras de Hebra, com Centaleões de juba azul (de juba branca no Modo Mestre)."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão de juba azul (ou de juba branca, no Modo Mestre) que a empunhe.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma de duas mãos de dano alto para o fim do jogo.",
+    "Quebrar a guarda de inimigos com escudo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e esmagadores de duas mãos, sem escudo. O ataque carregado é o giro que gasta vigor e termina numa pancada para baixo; o peso derruba escudos inimigos.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "jogo"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link levar um choque, a maça voa para o chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada em tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Arma dos Centaleões de juba azul; no Modo Mestre, dos Centaleões de juba branca.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Item que pode ser perdido",
+      "text": "As armas dos Centaleões sobem de nível com eles. Quando não houver mais Centaleões de juba azul no mundo, a Maça centaleônica forte deixa de aparecer.",
+      "sources": ["zw", "zw:Lynel"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +12, Durabilidade aumentada de +3 a +5 ou Acerto crítico; no nível dourado (amarelo): Ataque de +13 a +23, Durabilidade de +6 a +12 ou Lançamento longo (×1,5 a ×2). Com +23 de ataque chega a 77, quase o valor base da Maça centaleônica Feroz.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    }
+  ],
+  "advanced_uses": [
+    "Montado num Centaleão, Link pode golpeá-lo até cinco vezes sem gastar durabilidade — ideal para usar esta maça contra o próprio dono."
+  ],
+  "limitations": [
+    "Durabilidade 25, modesta para uma arma de fim de jogo.",
+    "Pode ficar indisponível para sempre.",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    { "id": "botw_weapon_lynel_crusher", "relation": "Versão básica" },
+    { "id": "botw_weapon_savage_lynel_crusher", "relation": "Versão máxima" },
+    { "id": "botw_monster_blue_maned_lynel", "relation": "Inimigo que a empunha" },
+    { "id": "botw_monster_white_maned_lynel", "relation": "Empunha-a no Modo Mestre" },
+    { "id": "botw_mechanic_master_mode", "relation": "Muda qual Centaleão a carrega" },
+    { "id": "botw_weapon_mighty_lynel_sword", "relation": "Arma de uma mão do mesmo nível" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel"],
+  "verification_status": "verificado"
+}

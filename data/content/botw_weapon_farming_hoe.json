@@ -1,0 +1,107 @@
+{
+  "id": "botw_weapon_farming_hoe",
+  "summary": "Enxada de lavoura com partes de metal: ataque 16, mas só 6 de durabilidade. Encontrada perto de vilas e ruínas; atrai raios, conduz eletricidade e afunda.",
+  "description": "A Enxada é uma ferramenta de lavrar a terra que faz parte dos Utensílios do dia a dia. O jogo elogia a fabricação caprichada, resistente ao trabalho pesado do campo, mas avisa que sua eficiência em batalha \"não foi testada\". Por isso é encontrada perto de assentamentos hylianos e de ruínas em Necluda Oriental e na Pradaria de Hyrule, e Koboblins comuns também a usam como arma.\n\nPara Link, é uma arma de duas mãos com ataque razoável para o início (16) e durabilidade de apenas 6 usos. Por causa das partes metálicas, os dados do jogo a tratam como metal: atrai raios em tempestades, conduz eletricidade, pode ser puxada com Magnétis, afunda e não queima.",
+  "locations": [
+    "Perto de assentamentos hylianos e ruínas em Necluda Oriental e na Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Recolher perto de assentamentos hylianos e ruínas dessas regiões.",
+    "Pegar a enxada derrubada por Koboblins comuns que a empunhem.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma descartável de dano razoável no começo do jogo.",
+    "Por ser metálica e não inflamável, acende sílex ao golpeá-lo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o ataque carregado gira enquanto houver vigor e termina numa pancada para baixo.",
+      "side_effects": ["Com 6 de durabilidade, quebra muito rápido."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançada contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "applications": ["Arremessá-la logo, já que dura poucos golpes de qualquer forma."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade por causa das partes de metal; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada numa tempestade, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "É magnética: pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins comuns podem empunhá-la como arma.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +8 a +14, Durabilidade aumentada de +1 a +2 ou Acerto crítico; no nível dourado (amarelo): Ataque de +15 a +20, Durabilidade de +3 ou Lançamento longo (×1,5 a ×2). Uma enxada com Ataque +20 bate 36, mais que o dobro do valor base — mas continua com poucos usos.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Metal por causa de um detalhe",
+      "text": "A enxada é classificada como metálica por causa de seus componentes de metal, o que basta para que atraia raios e responda a Magnétis como uma espada.",
+      "sources": ["zw", "dm"]
+    }
+  ],
+  "advanced_uses": [
+    "Uma enxada com bônus de ataque dourado é ótima para arremessar: o golpe crítico dobra o dano já inflado pelo bônus."
+  ],
+  "limitations": [
+    "Durabilidade de 6, uma das menores entre as armas de duas mãos.",
+    "Metálica: atrai raios em tempestades."
+  ],
+  "related": [
+    { "id": "botw_weapon_boat_oar", "relation": "Outro utensílio do dia a dia de duas mãos" },
+    { "id": "botw_weapon_farmers_pitchfork", "relation": "Outra ferramenta agrícola usada como arma" },
+    { "id": "botw_monster_bokoblin", "relation": "Pode empunhá-la" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Atrai raios quando equipada" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel"],
+  "verification_status": "verificado"
+}

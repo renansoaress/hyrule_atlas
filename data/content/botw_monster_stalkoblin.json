@@ -1,0 +1,164 @@
+{
+  "id": "botw_monster_stalkoblin",
+  "summary": "Esqueleto de Koboblin que sai da terra à noite. Desmonta com um golpe, mas se remonta enquanto o crânio estiver inteiro: destrua a cabeça, acerte-a com uma flecha ou chute-a para dentro d'água.",
+  "description": "Stalboblins são os restos de Koboblins que emergem do chão durante a noite em quase toda Hyrule. Como diz o compendium, são tão frágeis que desmoronam com um único golpe, mas, enquanto o crânio estiver intacto, o corpo se reergue e volta a lutar. Depois de desmontado, o esqueleto se refaz e corre atrás da própria cabeça para recolocá-la; às vezes pega o crânio errado, o que não parece incomodá-lo. Usam todo tipo de arma; sem nenhuma, dão tapas ou desenterram pedras para atirar, e também arremessam contra Link os crânios soltos de outros Stalboblins. Alguns andam montados em Stalcavalos.\n\nA chave para vencê-los é o crânio. Flechas no corpo têm pouco efeito, mas uma flecha que acerte o crânio mata na hora; destruir a cabeça antes que o corpo se recomponha encerra a luta; e, se Link pegar o crânio solto e chutá-lo para uma água funda o bastante para submergi-lo, o Stalboblin morre. Em contato com chamas, o esqueleto inteiro pega fogo, assim como qualquer arma de madeira que carregue.\n\nAo cair, o braço do Stalboblin vira uma arma utilizável, o Braço de Koboblin, que continua se mexendo sozinho. Como os demais monstros esqueléticos, só deixa partes de primeiro e segundo nível (Chifre e Presa de Koboblin) — e, curiosamente, a presa cai do corpo, não do crânio.",
+  "locations": [
+    "Surge do chão à noite; o compendium cita a Pradaria de Hyrule e a Grande Floresta de Hyrule como locais comuns.",
+    "No planalto inicial (Great Plateau), aparece só em pontos fixos até Link obter a primeira Clava Kobo ou deixar o planalto."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Koboblin e Presa de Koboblin (a presa sai do corpo, não do crânio).",
+    "Deixa o Braço de Koboblin, além da arma que estivesse empunhando."
+  ],
+  "uses": [
+    "Fonte noturna de Chifres e Presas de Koboblin e de Braços de Koboblin.",
+    "Registro no compendium (entrada nº 106)."
+  ],
+  "effects": [
+    "Golpes fracos; arremessa pedras e crânios de outros Stalboblins."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Qualquer golpe desmonta o corpo e deixa o crânio rolando; o esqueleto se refaz e vai buscar a cabeça. Destruir o crânio antes da remontagem o derrota de vez.",
+      "applications": ["Depois de desmontá-lo, golpear imediatamente o crânio no chão."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Costuma resistir a flechas no corpo, mas uma flecha que acerte o crânio o mata instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Em contato com chamas, o corpo inteiro pega fogo, junto com qualquer arma de madeira que esteja carregando.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de gelo especificamente sobre Stalboblins."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de choques especificamente sobre Stalboblins."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Se o crânio cair numa água funda o bastante para ficar totalmente submerso, o Stalboblin morre.",
+      "conditions": ["Pegar o crânio solto e chutá-lo para longe do corpo, em direção à água."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não tratam do efeito de explosões sobre o esqueleto ou o crânio do Stalboblin."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito da Bomba remota sobre Stalboblins."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "A Estátis+ paralisa inimigos por pouco tempo; a Estátis básica não tem efeito sobre eles.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Ossos não são metálicos e não respondem a Magnétis; objetos metálicos movidos com a runa podem ser usados para atingi-lo.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Sem arma, desenterra pedras para atirar; também apanha crânios soltos de outros Stalboblins e os arremessa em Link.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Corpos sem cabeça de outros Stalboblins ficam pulando e acenando para os que ainda têm crânio, esperando a cabeça deles se soltar para tomá-la para si.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com disfarce",
+      "status": "confirmado",
+      "result": "Com a Máscara de Koboblin, a Máscara de Majora ou o bônus de disfarce do Conjunto radiante (melhorado duas vezes) ou do Conjunto de Ganon Fantasma, os Stalboblins só atacam se Link atacar primeiro.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Radiant Set", "zw:Phantom Ganon Set"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O crânio errado",
+      "text": "O compendium observa que às vezes o corpo pega o crânio de outro Stalboblin, \"mas isso não parece ser um problema\". O Zelda Wiki descreve corpos decapitados que esperam a cabeça de outro se soltar para roubá-la.",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Braço de Koboblin vivo",
+      "text": "O braço solto rola em direção aos outros ossos para remontar o esqueleto; se Link o pegar, ele continua animado mesmo depois que o resto do Stalboblin for destruído, e pode ser usado como arma frágil. Por ser de osso, flutua, não conduz eletricidade, não atrai raios e não queima.",
+      "sources": ["zw", "zw:Bokoblin Arm"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Espólio limitado dos monstros Stal",
+      "text": "Monstros esqueléticos só deixam partes de primeiro e segundo nível — nada de Vísceras de Koboblin — e soltam um braço além da arma empunhada. No Stalboblin, as Presas de Koboblin caem do corpo, não do crânio.",
+      "sources": ["zw:Enemy", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Planalto inicial",
+      "text": "No planalto inicial (Great Plateau), os Stalboblins só aparecem em pontos predefinidos até Link pegar uma Clava Kobo pela primeira vez ou sair do planalto.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cavaleiros esqueléticos",
+      "text": "Alguns Stalboblins montam Stalcavalos. Esses cavalos esqueléticos se comportam como cavalos comuns, não são hostis e se desfazem ao nascer do sol; os estábulos se recusam a registrá-los.",
+      "sources": ["zw", "zw:Stalhorse"]
+    }
+  ],
+  "advanced_uses": [
+    "Derrubar o Stalboblin, pegar o crânio e chutá-lo para dentro de um lago ou rio fundo.",
+    "Atirar diretamente no crânio para matá-lo com uma flecha, sem gastar armas.",
+    "Desmontar um Stalboblin perto de outro para que eles disputem os crânios soltos — e destruir as cabeças no chão."
+  ],
+  "limitations": [
+    "Não deixa Vísceras de Koboblin.",
+    "Flechas no corpo têm pouco efeito.",
+    "O Braço de Koboblin quebra rápido."
+  ],
+  "related": [
+    { "id": "botw_monster_bokoblin", "relation": "Monstro vivo do qual é o esqueleto" },
+    { "id": "botw_monster_stalmoblin", "relation": "Equivalente esquelético dos Moblins" },
+    { "id": "botw_monster_stalizalfos", "relation": "Equivalente esquelético dos Lagalfos" },
+    { "id": "botw_weapon_bokoblin_arm", "relation": "Braço que deixa ao ser derrotado" },
+    { "id": "botw_creature_stalhorse", "relation": "Montaria esquelética" },
+    { "id": "botw_armor_bokoblin_mask", "relation": "Disfarce que impede seus ataques" },
+    { "id": "botw_armorset_radiant_set", "relation": "Bônus de disfarce contra monstros Stal" },
+    { "id": "botw_armorset_phantom_ganon_set", "relation": "Bônus de disfarce contra monstros Stal" },
+    { "id": "botw_material_bokoblin_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_bokoblin_fang", "relation": "Parte deixada pelo corpo" }
+  ],
+  "capabilities": ["vence_rapido", "habilidade_especial", "inflamavel"],
+  "verification_status": "parcial"
+}

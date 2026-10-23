@@ -1,0 +1,97 @@
+{
+  "id": "botw_food_salt_grilled_gourmet_meat",
+  "summary": "Carne de primeira ou Ave inteira grelhadas com Halita: o grelhado \"luxuoso\" e o primeiro grelhado no sal que o jogo testa. As carnes nobres têm o maior valor de cura entre as carnes.",
+  "description": "A Carne de primeira grelhada no sal leva Carne de primeira ou Ave inteira e Halita; o inventário o chama de prato grelhado luxuoso, que usa à vontade cortes de alta qualidade. Sem extras, só recupera corações; os três espaços livres aceitam ingredientes de efeito.\n\nAs duas carnes aceitas são as mais nutritivas do jogo: na tabela de ingredientes neutros do Zelda Wiki, Carne de primeira e Ave inteira valem 3 corações cada, contra 1,5 da Carne de segunda e da Sobrecoxa e 1 da Carne de terceira — e a panela dobra esses valores. É também o primeiro grelhado no sal da ordem de prioridade: se houver carnes de qualidades diferentes na panela, prevalece este nome. Com Arroz hyliano, porém, a Carne de primeira vira Tigela de arroz com carne de primeira (a Ave inteira não forma essa tigela).",
+  "obtaining": [
+    "Cozinhar numa Panela Carne de primeira ou Ave inteira e Halita, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Cura alta com apenas dois ingredientes.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (bastante, por causa da carne nobre).",
+    "Com ingredientes extras de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos ingredientes extras.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Arroz hyliano",
+      "status": "confirmado",
+      "result": "Carne de primeira com Halita e Arroz hyliano forma Tigela de arroz com carne de primeira, testada antes dos grelhados.",
+      "produces": [
+        "botw_food_gourmet_meat_and_rice_bowl"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cura dobrada na panela",
+      "text": "Cozinhar um ingrediente que pode ser comido cru dobra a cura dele. Como as carnes nobres têm o maior valor base entre as carnes, este grelhado concentra muita cura com só dois espaços ocupados.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Carnes nobres são mais difíceis de obter que a Carne de terceira."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_salt_grilled_prime_meat",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_food_salt_grilled_meat",
+      "relation": "Versão com Carne de terceira ou Coxa"
+    },
+    {
+      "id": "botw_food_gourmet_meat_and_rice_bowl",
+      "relation": "Resultado ao acrescentar arroz"
+    },
+    {
+      "id": "botw_food_seared_gourmet_steak",
+      "relation": "Carne de primeira assada na fogueira, sem panela"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

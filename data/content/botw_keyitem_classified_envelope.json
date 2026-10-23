@@ -1,0 +1,81 @@
+{
+  "id": "botw_keyitem_classified_envelope",
+  "summary": "Envelope que Symin entrega no Laboratório de Tecnologia Ancestral de Hateno a quem completa o Compêndio de Hyrule. Dentro há a foto de uma bela jovem do povo Sheikah; não tem outra função.",
+  "description": "O Envelope confidencial é a recompensa por completar o Compêndio de Hyrule. Depois que todas as entradas estão registradas, Symin, assistente de Purah no Laboratório de Tecnologia Ancestral de Hateno, entrega o envelope a Link. Segundo a descrição do item, dentro dele há a foto de uma bela jovem da tribo Sheikah; as fontes consultadas não identificam quem ela é.\n\nO compêndio reúne fotos de criaturas, monstros, materiais, armas, escudos, arcos e tesouros, registradas com a Câmera. Quem não quiser fotografar tudo pode comprar de Symin as imagens que faltam, a 100 rupias cada, depois da Missão secundária \"Sunshroom Sensing\"; as fotos de inimigos de elite custam 500 rupias e só são vendidas depois de derrotar Ganon, a Calamidade.\n\nO envelope não tem efeito de jogo: é apenas um troféu pela coleção completa.",
+  "locations": [
+    "Laboratório de Tecnologia Ancestral de Hateno, com Symin."
+  ],
+  "obtaining": [
+    "Completar o Compêndio de Hyrule e falar com Symin."
+  ],
+  "uses": [
+    "Nenhum uso prático; troféu pela conclusão do Compêndio de Hyrule."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "sem_efeito",
+      "result": "O envelope só contém a foto; não tem função de jogo.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Comprar as fotos que faltam",
+      "text": "Depois de \"Sunshroom Sensing\", Symin vende fotos de fauna, inimigos, materiais, armas e outras categorias por 100 rupias cada; após derrotar Ganon, a Calamidade, também vende fotos de inimigos de elite por 500. A única entrada que não pode ser comprada é a do Flamelo, registrada automaticamente na própria missão.",
+      "sources": [
+        "zw:Hyrule Compendium"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "amiibo não contam, DLC conta",
+      "text": "Criaturas e equipamentos exclusivos de amiibo não fazem parte do compêndio. Já itens e inimigos da DLC entram nele, alguns disponíveis apenas no Modo Mestre.",
+      "sources": [
+        "zw:Hyrule Compendium"
+      ]
+    },
+    {
+      "kind": "glitch",
+      "title": "Fotos sobrescritas entre modos",
+      "text": "O jogo guarda as fotos do compêndio tiradas com a Câmera no mesmo lugar para o modo normal e o Modo Mestre, então fotografar uma entrada num modo sobrescreve a foto do outro. Imagens compradas de Symin ficam em outro lugar e não são afetadas.",
+      "sources": [
+        "zw:Hyrule Compendium"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para completar o compêndio mais rápido, compre de Symin as fotos que faltam; as de inimigos de elite só ficam à venda depois de derrotar Ganon, a Calamidade, então deixe-as para o fim."
+  ],
+  "limitations": [
+    "Exige completar todo o Compêndio de Hyrule.",
+    "Não tem efeito de jogo; a identidade da mulher na foto não é explicada pelas fontes."
+  ],
+  "related": [
+    {
+      "id": "botw_rune_camera",
+      "relation": "Registra as entradas do compêndio"
+    },
+    {
+      "id": "botw_rune_sheikah_sensor",
+      "relation": "O Sensor + rastreia entradas do compêndio"
+    },
+    {
+      "id": "botw_material_sunshroom",
+      "relation": "Única entrada que não pode ser comprada de Symin"
+    },
+    {
+      "id": "botw_keyitem_sheikah_slate",
+      "relation": "Guarda o Compêndio de Hyrule"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

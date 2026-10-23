@@ -1,0 +1,182 @@
+{
+  "id": "botw_creature_hot_footed_frog",
+  "summary": "Sapo veloz que nada e pula nas margens, sobretudo nos Cerros de Hyrule e na Grande Nascente de Lanayru. Vira Elixir veloz com partes de monstro — e é o sapo que Zelda tenta fazer Link provar numa lembrança.",
+  "description": "O Sapo apressado é um sapo rápido encontrado perto de corpos d'água, nadando ou pulando pela margem; segundo o Zelda Wiki, os sapos são mais comuns nos Cerros de Hyrule e na Grande Nascente de Lanayru. Ele foge quando avista Link e some se tiver tempo. Há duas formas de apanhá-lo: agachar-se e chegar sorrateiramente, ou correr em disparada para pegá-lo antes que ele se assuste. Também é possível atordoá-lo com uma flecha ou uma Bomba remota.\n\nCozido com partes de monstro, produz o Elixir veloz (Velocidade aumentada), na mesma categoria do Lagarto fujão; cada sapo acrescenta 1:00 de duração. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante verde, e nas Fontes da Grande Fada é exigido no 3º nível do Conjunto de escalada (10 por peça).\n\nNa nona lembrança recuperada, \"Silent Princess\", Zelda captura um Sapo apressado, explica que é uma iguaria de efeitos potentes e que pesquisas do castelo mostram que comê-lo pode aprimorar certas habilidades — e insiste para que Link o prove, para desgosto dele.",
+  "locations": [
+    "Perto de corpos d'água, nadando ou pulando nas margens; mais comum nos Cerros de Hyrule e na Grande Nascente de Lanayru."
+  ],
+  "obtaining": [
+    "Pegar à mão: aproximar-se agachado, ou correr para alcançá-lo antes que se assuste.",
+    "Atordoá-lo com uma flecha ou uma Bomba remota.",
+    "Comprar de Beedle por 10 rupias."
+  ],
+  "uses": [
+    "Elixir veloz: cozinhar com pelo menos uma parte de monstro.",
+    "Melhoria de armadura: 10 por peça do Conjunto de escalada (Bandana, Traje e Botas de escalada) no 3º nível, com 5 Asas de Morci glacial.",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Velocidade aumentada ao correr, nadar e escalar; +1:00 de duração por sapo."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge e desaparece ao avistar Link. Pode ser pego agachando-se para chegar sorrateiramente ou correndo para alcançá-lo antes que se assuste.",
+      "side_effects": [
+        "Correr em disparada sempre faz barulho, então a opção da corrida depende de chegar antes da reação do sapo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frog",
+        "zw:Stealth"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha atordoa o sapo, permitindo pegá-lo.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw:Frog"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota atordoa o sapo.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw:Frog"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica perto de corpos d'água, nadando ou pulando pela margem.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um sapo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir veloz (Velocidade aumentada). Cada sapo acrescenta 1:00 de duração.",
+      "conditions": [
+        "Pode ser combinado com o Lagarto fujão, da mesma categoria."
+      ],
+      "produces": [
+        "botw_elixir_hasty_elixir"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Elixir",
+        "zw:Hasty Elixir"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Dubious Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que Link possa comê-lo cru no jogo: a tabela de materiais do Zelda Wiki só lista o uso em elixires e o compendium registra 0 corações. Na lembrança \"Silent Princess\", Zelda insiste para que ele prove o sapo, mas isso é só a cena."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 2 rupias; Beedle cobra 10.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o sapo exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o sapo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Vamos! Prove!\"",
+      "text": "Na lembrança \"Silent Princess\", Zelda fica eufórica ao capturar um Sapo apressado: diz que a iguaria tem efeitos \"muito, muito potentes\" e que Link, pelo seu condicionamento físico, seria o candidato perfeito para o estudo. Ela insiste — \"Go on! Taste it!\" — e Link reage mal.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A receita de Beedle",
+      "text": "Ao oferecer um Elixir veloz em troca de um Escaravelho vibrante, Beedle ensina a receita: basta pegar um Sapo apressado e misturá-lo com partes de monstro.",
+      "sources": [
+        "zw:Energetic Rhino Beetle"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Junte Sapos apressados e Lagartos fujões no mesmo Elixir veloz para alongar o efeito sem misturar categorias."
+  ],
+  "limitations": [
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "Se tiver tempo de reagir, foge e desaparece."
+  ],
+  "related": [
+    {
+      "id": "botw_elixir_hasty_elixir",
+      "relation": "Elixir produzido com partes de monstro"
+    },
+    {
+      "id": "botw_creature_hightail_lizard",
+      "relation": "Outro bicho veloz"
+    },
+    {
+      "id": "botw_creature_tireless_frog",
+      "relation": "O outro sapo de BOTW"
+    },
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Usa 10 por peça no 3º nível de melhoria"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem partes de monstro"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante verde"
+    }
+  ],
+  "capabilities": [
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

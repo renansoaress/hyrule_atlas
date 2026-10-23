@@ -1,0 +1,160 @@
+{
+  "id": "botw_creature_fairy",
+  "summary": "Pequena fada que voa da algibeira e reanima Link no instante em que o último coração acaba, restaurando 5 corações. Pega-se à mão com furtividade, sem garrafa; na panela, vira Tônico de fada.",
+  "description": "As fadas de BOTW aparecem ao cortar grama, perto das Fontes da Grande Fada e voando rente ao chão em certas áreas de Toda Hyrule. Ao contrário dos jogos anteriores, Link não precisa de garrafa para guardá-las: basta se aproximar com furtividade e apanhá-las diretamente. O compendium observa que é fácil confundi-las com vaga-lumes, mas, ao contrário deles, elas brilham de dia e de noite. Se Link já tiver três ou mais fadas na algibeira, novas fadas deixam de aparecer até que ele fique abaixo desse número.\n\nA fada funciona como um seguro de vida: quando os corações de Link acabam, ela sai voando da algibeira e o reanima, restaurando 5 corações. Também pode ser usada manualmente pela algibeira, com a mesma cura de 5 corações. Se a Dádiva de Mipha estiver ativa e carregada no momento da morte, ela tem prioridade e a fada é poupada.\n\nNa panela, uma ou mais fadas produzem o Tônico de fada, um elixir de cura de aroma doce que fica mais forte quanto mais fadas forem usadas. Somada a uma receita comum, a fada usa sua magia para ajudar no preparo e aumenta bastante os corações recuperados; na animação de cozimento, ela gira sobre a panela e depois vai embora. As Grandes Fadas — Cotera, Kaysa, Mija e Tera —, que vivem nas Fontes da Grande Fada, são as responsáveis pelas melhorias de armadura.",
+  "locations": [
+    "Toda Hyrule: escondidas na grama, voando rente ao chão em certas áreas e ao redor das Fontes da Grande Fada."
+  ],
+  "obtaining": [
+    "Cortar grama pode revelar fadas.",
+    "Aproximar-se agachado (furtividade) e apanhá-las à mão; não é preciso garrafa.",
+    "Novas fadas deixam de surgir enquanto Link carregar três ou mais."
+  ],
+  "uses": [
+    "Reanimação automática: ao perder o último coração, a fada reanima Link com 5 corações.",
+    "Cura manual de 5 corações, usada pela algibeira.",
+    "Tônico de fada: cozinhar uma ou mais fadas na panela.",
+    "Reforço de pratos: somada a uma receita comum, aumenta bastante os corações recuperados.",
+    "Venda: 2 rupias, segundo a tabela de materiais do Zelda Wiki."
+  ],
+  "effects": [
+    "Restaura 5 corações, seja ao ser usada, seja ao reanimar Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Com furtividade, Link consegue se aproximar e apanhar a fada diretamente, sem garrafa.",
+      "conditions": ["Andar agachado aumenta a furtividade."],
+      "side_effects": ["Com três ou mais fadas na algibeira, novas fadas param de aparecer."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Cortar grama pode revelar fadas; elas também voam perto das Fontes da Grande Fada e rente ao chão em certas áreas.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "reanimação automática",
+      "status": "confirmado",
+      "result": "Quando o último coração de Link acaba, a fada voa da algibeira e o reanima com 5 corações.",
+      "side_effects": ["Se a Dádiva de Mipha estiver ativa e carregada, ela é usada primeiro e a fada fica guardada."],
+      "applications": ["Carregar algumas fadas antes de lutas difíceis, como seguro contra derrotas."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Usada manualmente pela algibeira, restaura 5 corações.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Materials in Breath of the Wild"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Uma ou mais fadas na panela produzem Tônico de fada, elixir de cura cuja força cresce com o número de fadas.",
+      "produces": ["botw_elixir_fairy_tonic"],
+      "kind": "mecanica",
+      "sources": ["zw:Fairy Tonic", "zw"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em pratos",
+      "status": "confirmado",
+      "result": "Somada a uma receita comum, a fada ajuda no preparo com sua magia e aumenta bastante os corações recuperados pelo prato. Na animação, ela gira sobre a panela e depois vai embora.",
+      "side_effects": ["A fada é consumida: ela deixa a algibeira ao ser usada no preparo."],
+      "kind": "mecanica",
+      "sources": ["zw:Food", "zw"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se uma fada for largada da algibeira."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "A tabela de materiais do Zelda Wiki registra valor de venda de 2 rupias.",
+      "sources": ["zw:Materials in Breath of the Wild"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se uma fada for atingida por uma arma."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de flechas sobre fadas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre a reação de fadas ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre a reação de fadas à eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma fada."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Fadas não podem ser montadas."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Limite de três fadas",
+      "text": "Enquanto Link carregar três ou mais fadas, novas fadas não aparecem no mundo. Usar ou cozinhar uma delas libera o surgimento de outras.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Dádiva de Mipha vem primeiro",
+      "text": "Se Link morrer com a Dádiva de Mipha ativa e carregada, a habilidade da Campeã tem prioridade sobre a fada, que continua na algibeira para a próxima vez.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fada ou vaga-lume?",
+      "text": "O compendium avisa que é fácil confundir uma fada com um vaga-lume à primeira vista; a diferença é que a fada brilha tanto de dia quanto de noite, enquanto o Vaga-lume do poente só se destaca no escuro.",
+      "sources": ["comp", "zw:Sunset Firefly"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "As Grandes Fadas de BOTW",
+      "text": "Só quatro Grandes Fadas aparecem em BOTW: Cotera, Kaysa, Mija e Tera. As fontes começam fechadas como grandes botões de flor e abrem com oferendas de 100, 500, 1.000 ou 10.000 rupias, conforme quantas já foram restauradas; o nível máximo das melhorias de armadura depende de quantas foram restauradas. Uma quinta fonte abriga o Deus dos Cavalos, Malanya.",
+      "sources": ["zw:Great Fairy", "zw:Great Fairy Fountain"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de lutas arriscadas, encha a algibeira com até três fadas; se precisar de mais, use ou cozinhe uma para que outras voltem a aparecer.",
+    "Cozinhar várias fadas juntas gera um Tônico de fada mais forte, mas consome todas elas e elimina as reanimações automáticas que dariam."
+  ],
+  "limitations": [
+    "Novas fadas não surgem enquanto Link tiver três ou mais.",
+    "O Zelda Wiki indica que a reanimação restaura 5 corações, embora o texto do jogo diga que a fada \"cura todos os ferimentos\"."
+  ],
+  "related": [
+    { "id": "botw_elixir_fairy_tonic", "relation": "Resultado de cozinhá-la" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Fontes onde vivem as Grandes Fadas e ao redor das quais as fadas voam" },
+    { "id": "botw_ability_miphas_grace", "relation": "Tem prioridade sobre a fada na reanimação" },
+    { "id": "botw_creature_sunset_firefly", "relation": "Inseto com que é confundida" },
+    { "id": "botw_object_cooking_pot", "relation": "Onde vira Tônico de fada ou reforça pratos" },
+    { "id": "botw_object_grass", "relation": "Cortar grama pode revelar fadas" }
+  ],
+  "capabilities": ["cura", "habilidade_especial", "ilumina"],
+  "verification_status": "verificado"
+}

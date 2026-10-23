@@ -1,0 +1,185 @@
+{
+  "id": "botw_material_lynel_guts",
+  "summary": "A parte de monstro comum mais valiosa (200 rupias, 100 Mon), drop garantido dos Centaleões. Pulsa de vitalidade, mas nos elixires rende os mesmos 3:10 das Vísceras de Koboblin.",
+  "description": "As Vísceras de Centaleão são o ingrediente \"muito cobiçado\" que só se obtém de Centaleões — e todo Centaleão derrotado deixa uma. O inventário diz que elas pulsam com a vitalidade do monstro, uma força que as torna inestimáveis para elixires. Na prática, essa vitalidade é só descrição: cozidas com bichos, acrescentam 3:10 à duração, exatamente o mesmo que as Vísceras de Koboblin, que valem dez vezes menos, e não dão corações nem vigor extras.\n\nO valor real é outro: com 200 rupias ou 100 Mon, são a parte de monstro comum mais valiosa da tabela, e aparecem no último nível de quatro conjuntos de armadura — bárbaro, da Deidade Feroz, radiante e do soldado —, além do 3º nível do bárbaro, somando 24 unidades. Na Tinturaria Kochi, entram no corante carmesim.",
+  "locations": [
+    "Territórios dos Centaleões espalhados por Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Centaleão; as vísceras caem sempre.",
+    "Os Centaleões voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Melhoria de armadura: Conjunto bárbaro (1 por peça no 3º nível e 2 no 4º), Conjunto da Deidade Feroz (2 por peça no 4º), Conjunto radiante (1 por peça no 4º) e Conjunto do soldado (2 por peça no 4º) — 24 no total.",
+    "Venda: 200 rupias, ou 100 Mon na loja de Kilton.",
+    "Elixires: cozidas com um bicho, acrescentam 3:10 à duração.",
+    "Corante carmesim na Tinturaria Kochi."
+  ],
+  "effects": [
+    "Não têm efeito culinário próprio; nos elixires, só prolongam a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar as Vísceras de Centaleão no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear as Vísceras de Centaleão largadas no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se as Vísceras de Centaleão queimam, somem ou se transformam em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar as Vísceras de Centaleão numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação das Vísceras de Centaleão a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor as Vísceras de Centaleão à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se as Vísceras de Centaleão flutuam ou afundam quando largadas na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e as Vísceras de Centaleão não são de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada às Vísceras de Centaleão largadas no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinhas ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 200 rupias em lojas e comerciantes, ou 100 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Vitalidade temática, duração comum",
+      "text": "Apesar da descrição, as Vísceras de Centaleão não acrescentam mais duração que outras vísceras: a tabela de partes de monstro dá 3:10 tanto para elas quanto para as de Koboblin (20 rupias), Moblin (25) e Rinox (80), e até para o Olho de Morci. Gastá-las em elixires é desperdiçar 200 rupias.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Material de nível máximo",
+      "text": "Elas fecham o 4º nível dos conjuntos bárbaro, da Deidade Feroz, radiante e do soldado — nenhuma outra parte de monstro comum aparece no nível final de tantos conjuntos.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Drop garantido, com riscos",
+      "text": "Todo Centaleão derrotado deixa casco, chifre e vísceras, além das armas e de um maço de flechas. Para vencê-los, o Zelda Wiki lembra que flechas na cabeça os atordoam e causam dano dobrado (dá para planar nas correntes de ar quente dos ataques de fogo deles para mirar do alto), que montar neles permite até cinco golpes sem gastar durabilidade e que Esquivas perfeitas e Defesas perfeitas abrem espaço para contra-ataques. Eles resistem a todos os elementos, então flechas elementais não dão vantagem extra.",
+      "sources": [
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para Mon, cada uma vale 100 — o suficiente para comprar a Máscara de Centaleão (999 Mon) com dez vísceras, quando Kilton a oferece após três Feras Divinas libertadas."
+  ],
+  "limitations": [
+    "Mesma duração de vísceras muito mais baratas.",
+    "Exigem derrotar um Centaleão.",
+    "Cozidas sem bichos, só produzem Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Monstro que as deixa sempre"
+    },
+    {
+      "id": "botw_material_lynel_horn",
+      "relation": "Outro drop garantido dos Centaleões"
+    },
+    {
+      "id": "botw_material_lynel_hoof",
+      "relation": "Outro drop garantido dos Centaleões"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Mesmo acréscimo de 3:10 por 20 rupias"
+    },
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Usa vísceras no 3º e 4º níveis"
+    },
+    {
+      "id": "botw_armorset_fierce_deity_set",
+      "relation": "Usa 2 por peça no 4º nível"
+    },
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Usa 1 por peça no 4º nível"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 2 por peça no 4º nível"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Custa 999 Mon na loja de Kilton"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante carmesim"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-las sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

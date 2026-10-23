@@ -1,0 +1,71 @@
+{
+  "id": "botw_armorset_dark_series",
+  "summary": "Fantasia de monstro criada por Kilton e vendida por Mon depois de libertar as quatro Feras Divinas. O traje completo dá velocidade extra à noite e assusta as pessoas; não pode ser melhorado nem tingido.",
+  "description": "O Conjunto sombrio (Dark Series) é formado pelo Capuz sombrio, pela Túnica sombria e pelas Calças sombrias. É a última criação de Kilton para a loja Fang and Bone e só aparece à venda depois que as quatro Feras Divinas são libertadas; o capuz custa 1.999 Mon e cada uma das outras peças, 999 Mon. Kilton o apresenta como \"o máximo em camuflagem de monstro\" e brinca que quem o vestir vai virar um monstro.\n\nAs peças não têm efeito individual. Com o traje completo, Link ganha a Velocidade noturna (Night Speed Up): entre 21h e 4h no relógio do jogo, a corrida fica 20% mais rápida, como um efeito de Velocidade aumentada de nível 2, que ainda pode ser somado a um efeito de nível 1. Como o conjunto não pode ser melhorado por uma Grande Fada, o bônus vale desde a compra.\n\nO visual tem efeito colateral: os personagens se assustam ao ver Link vestido assim. O conjunto também não pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton, que abre à noite (21h às 5h) perto dos principais povoados de Hyrule."
+  ],
+  "obtaining": [
+    "Comprar de Kilton com Mon depois de libertar as quatro Feras Divinas: Capuz sombrio por 1.999 Mon, Túnica sombria e Calças sombrias por 999 Mon cada.",
+    "Mon se obtém trocando partes de monstros com Kilton."
+  ],
+  "uses": [
+    "Correr mais rápido à noite sem depender de pratos de velocidade.",
+    "Fantasia: assusta temporariamente os personagens que veem Link com ela."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Bônus do traje completo: Velocidade noturna, +20% na velocidade de corrida entre 21h e 4h (equivale a Velocidade aumentada de nível 2)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças vestidas, Link corre 20% mais rápido entre 21h e 4h. Personagens se assustam ao vê-lo.",
+      "conditions": [
+        "Capuz, túnica e calças sombrias equipados juntos.",
+        "Horário do jogo entre 21h e 4h para o bônus de velocidade."
+      ],
+      "side_effects": [
+        "Os personagens com quem Link cruza ficam temporariamente assustados."
+      ],
+      "applications": [
+        "Somar um prato de Velocidade aumentada de nível 1 para correr ainda mais rápido à noite."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Até Kilton se assusta",
+      "text": "Ao vender o conjunto, Kilton diz estar \"um pouco aterrorizado\" consigo mesmo e que nem sabe por que o traje ficou mais rápido à noite. Se Link se aproximar dele usando o Conjunto sombrio, ele comenta que a roupa é assustadora a ponto de fazer até o comerciante mais corajoso chorar chamando a mãe.",
+      "sources": ["zw", "zw:Kilton"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem melhorias, bônus imediato",
+      "text": "Assim como o Traje de Tingle, o Conjunto sombrio não pode ser melhorado, por isso o bônus de Velocidade noturna não exige ★★, ao contrário do Conjunto furtivo, que tem o mesmo bônus.",
+      "sources": ["zw:Set Bonus", "zw:Night Speed Up"]
+    }
+  ],
+  "advanced_uses": [
+    "Para viagens noturnas a pé, o traje dispensa elixires de velocidade de nível 2."
+  ],
+  "limitations": [
+    "Só funciona entre 21h e 4h e com as três peças.",
+    "Não pode ser melhorado por Grandes Fadas nem tingido na Tinturaria Kochi.",
+    "Só fica disponível depois de libertar as quatro Feras Divinas e custa caro em Mon."
+  ],
+  "related": [
+    { "id": "botw_armor_dark_hood", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_dark_tunic", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_dark_trousers", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_stealth_set", "relation": "Também dá Velocidade noturna (em ★★)" },
+    { "id": "botw_armorset_tingles_outfit", "relation": "Também dá Velocidade noturna e assusta as pessoas" },
+    { "id": "botw_keyitem_monster_saddle", "relation": "Outro item vendido por Kilton" }
+  ],
+  "capabilities": ["velocidade", "habilidade_especial"],
+  "verification_status": "verificado"
+}

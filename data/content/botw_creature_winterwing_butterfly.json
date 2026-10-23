@@ -1,0 +1,117 @@
+{
+  "id": "botw_creature_winterwing_butterfly",
+  "summary": "Borboleta das regiões frias dos Cerros de Hyrule e da Fronteira de Tabantha, cujas escamas resfriam o ar. Só pode ser pega com furtividade; com partes de monstro, vira Elixir refrescante.",
+  "description": "A Borboleta invernal voa pelos Cerros de Hyrule e pela Fronteira de Tabantha. Segundo o jogo, as escamas em pó das asas resfriam o ar ao redor, e vê-la voar entre flocos de neve \"é uma beleza\". Para apanhá-la, Link precisa estar agachado e furtivo — caso contrário, ela voa para longe. Também pode ser comprada de Beedle nos Estábulos Gerudo Canyon e Tabantha Bridge, por 10 rupias.\n\nCozida com partes de monstro, produz o Elixir refrescante, que dá um nível de Resistência ao calor e é importante para o Deserto Gerudo. Cada borboleta acrescenta 2:30 de duração. Ingredientes refrescantes como Melancia oásica, Glacimelo, Erva fogueira e Truta glacial podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante azul.\n\nNa Missão secundária \"An Ice Guy\", no Bazar Kara Kara, a Borboleta invernal é uma das duas opções (com a Libélula gélida) para preparar o Elixir refrescante que o Ará Guy precisa para cruzar o deserto de dia.",
+  "locations": [
+    "Cerros de Hyrule e Fronteira de Tabantha."
+  ],
+  "obtaining": [
+    "Apanhar aproximando-se agachado (furtividade); se notar Link, ela foge voando.",
+    "Comprar de Beedle nos Estábulos Gerudo Canyon e Tabantha Bridge por 10 rupias."
+  ],
+  "uses": [
+    "Elixir refrescante: cozinhar com pelo menos uma parte de monstro.",
+    "Missão secundária \"An Ice Guy\": base do Elixir refrescante entregue a Guy (recompensa: Rupia roxa).",
+    "Ingrediente do corante azul na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Resistência ao calor de um nível; +2:30 de duração por borboleta."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Só pode ser apanhada se Link estiver se esgueirando; caso contrário, voa para longe.",
+      "conditions": ["Andar agachado; chuva e grama alta ajudam a não ser notado."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma borboleta viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir refrescante (Resistência ao calor). Cada borboleta acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinada com a Libélula gélida, da mesma categoria."],
+      "applications": ["Somar Melancia oásica, Glacimelo, Erva fogueira ou Truta glacial para que o elixir também cure."],
+      "produces": ["botw_elixir_chilly_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Chilly Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com bichos de efeito oposto",
+      "status": "confirmado",
+      "result": "Misturada a um bicho picante (como a Borboleta estival) e a uma parte de monstro, os efeitos se anulam e o resultado é Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Beedle cobra 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a borboleta exposta ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre a borboleta."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quatro borboletas, quatro proteções",
+      "text": "Cada borboleta de BOTW corresponde a uma proteção: invernal (Resistência ao calor), estival (Resistência ao frio), trovejante (Resistência a choques) e abrasadora (Proteção contra chamas). Todas acrescentam 2:30 por unidade ao elixir.",
+      "sources": ["zw:Butterfly", "zw:Elixir"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Do frio, contra o calor",
+      "text": "Embora viva em regiões frias e seja vista voando entre flocos de neve, ela serve para o calor: as asas resfriam o ar, e o Elixir refrescante feito com ela é indicado para longas jornadas pelo deserto.",
+      "sources": ["comp", "zw:Chilly Elixir"]
+    }
+  ],
+  "advanced_uses": [
+    "Para a missão de Guy, compre a Libélula gélida de Beedle no próprio Bazar Kara Kara se não tiver Borboletas invernais; qualquer uma das duas serve."
+  ],
+  "limitations": [
+    "Foge se Link não estiver furtivo.",
+    "Não misture com bichos de Resistência ao frio: os efeitos se anulam."
+  ],
+  "related": [
+    { "id": "botw_elixir_chilly_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_cold_darner", "relation": "Outro bicho refrescante" },
+    { "id": "botw_creature_summerwing_butterfly", "relation": "Borboleta de efeito oposto" },
+    { "id": "botw_creature_chillfin_trout", "relation": "Ingrediente refrescante que faz o elixir curar" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul" }
+  ],
+  "capabilities": ["protege_calor", "item_de_missao"],
+  "verification_status": "verificado"
+}

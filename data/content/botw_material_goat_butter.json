@@ -1,0 +1,198 @@
+{
+  "id": "botw_material_goat_butter",
+  "summary": "Manteiga do leite das cabras brancas, que não pode ser comida pura. Um dos ingredientes mais versáteis: obrigatória em 32 receitas, segundo o Zelda Wiki, e pedida por Kiana e por Koko.",
+  "description": "A Manteiga de cabra é feita com o leite das cabras brancas domesticadas e, segundo o jogo, é usada em ensopados, pratos à meunière, bolos e doces. Não pode ser comida pura, e só se consegue comprando: a High Spirits Produce (Vila Kakariko), a Slippery Falcon (Vila Rito) e os mercadores Agus e Yammo a vendem.\n\nA página do Zelda Wiki a lista como obrigatória em 32 receitas, incluindo todas as tortas (de maçã, de frutas, de abóbora, de carne, de peixe), os risotos, os pilafs, as omeletes de cogumelos e de legumes, os ensopados com leite e os pratos à meunière. Na tabela de culinária, não recupera corações, soma 1:20 à duração e dá 10% de chance extra de bônus crítico. Duas missões secundárias dependem dela: em \"What's for Dinner?\", Kiana pede Manteiga de cabra e um Caramujo nutritivo para fazer a Paella de frutos do mar; em \"Cooking with Koko\", Koko precisa dela para a Maçã quente na manteiga. Na Tinturaria Kochi, entra no corante amarelo-claro.",
+  "locations": [
+    "High Spirits Produce (Vila Kakariko) e The Slippery Falcon (Vila Rito).",
+    "Mercadores Agus (Vila Hateno–Dueling Peaks Stable) e Yammo (Tabantha Bridge Stable–Serenne Stable)."
+  ],
+  "obtaining": [
+    "Comprar nas lojas e com os mercadores citados (12 a 14 rupias)."
+  ],
+  "uses": [
+    "Receitas obrigatórias (32, segundo a página da manteiga): tortas de maçã, frutas, abóbora, carne e peixe; Bolo de cenoura, Bolo de nozes, Bolo de monstro e Torta de ovos; Ensopado de cenoura, de abóbora, de carne, de carne de segunda e de carne de primeira; Creme de mariscos e Sopa de monstro; Risoto de caranguejo, de cogumelos, de legumes e de salmão; Pilaf ao curry, de coxa, de sobrecoxa e de ave inteira; Omelete de cogumelos e de legumes; Crepe simples; Maçã quente na manteiga; Pargo, Salmão e Frutos do mar à meunière; Paella de frutos do mar.",
+    "Missões secundárias \"What's for Dinner?\" (Kiana) e \"Cooking with Koko\" (Koko).",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; acrescenta 1:20 à duração e +10% de chance de crítico."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "nao_aplicavel",
+      "result": "Não pode ser comida pura; só serve como ingrediente na panela.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro que não recupera corações, soma 1:20 à duração e +10% de chance de bônus crítico. Com os ingredientes certos forma as tortas, risotos, pilafs, ensopados e meunières; sozinha ou com suplementos incompatíveis, vira Comida duvidosa.",
+      "produces": [
+        "botw_food_hot_buttered_apple",
+        "botw_food_seafood_paella",
+        "botw_food_apple_pie",
+        "botw_food_meat_pie",
+        "botw_food_mushroom_risotto",
+        "botw_food_salmon_meuniere",
+        "botw_food_curry_pilaf",
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Jogada perto do fogo, queima até virar cinzas: só materiais que recuperam vida crus viram comida assada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada numa fogueira, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada da manteiga na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; não há uso conhecido para a manteiga largada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a manteiga largada."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da manteiga à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com a manteiga largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a manteiga não é metálica.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à manteiga largada."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Paella em família",
+      "text": "Em \"What's for Dinner?\", Kiana está ocupada demais com a casa para fazer compras e pede Manteiga de cabra e um Caramujo nutritivo. Ao recebê-los, dá uma rupia roxa e convida Link a comer a Paella de frutos do mar com a família, entregando uma porção.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O doce que Cottla adora",
+      "text": "Em \"Cooking with Koko\", Koko quer fazer a Maçã quente na manteiga que a mãe preparava e que a irmã, Cottla, adora. Com a Manteiga de cabra, ela prepara o prato e dá uma porção a Link.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Por somar 10% de crítico sem mexer no efeito, a manteiga é uma boa adição a pratos com efeito que já a exijam, como o Risoto de salmão."
+  ],
+  "limitations": [
+    "Não pode ser comida pura e queima no fogo.",
+    "A página da Manteiga de cabra diz \"corante amarelo\", mas a tabela de corantes do Zelda Wiki e a própria infobox da manteiga a colocam no corante amarelo-claro.",
+    "A página da manteiga inclui o Crepe simples entre as receitas que a exigem, mas a tabela de lógica de receitas do Zelda Wiki monta o Crepe simples só com Leite fresco, Ovo, Trigo de Tabantha e Cana-de-açúcar."
+  ],
+  "related": [
+    {
+      "id": "botw_food_hot_buttered_apple",
+      "relation": "Prato pedido em \"Cooking with Koko\""
+    },
+    {
+      "id": "botw_food_seafood_paella",
+      "relation": "Prato pedido em \"What's for Dinner?\""
+    },
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "O outro ingrediente pedido por Kiana"
+    },
+    {
+      "id": "botw_creature_white_goat",
+      "relation": "Animal de cujo leite a manteiga é feita"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Parceiro nos ensopados e crepes"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Parceiro nas tortas e meunières"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem combinação válida"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo-claro"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

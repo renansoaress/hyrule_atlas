@@ -1,0 +1,166 @@
+{
+  "id": "botw_weapon_dragonbone_moblin_club",
+  "summary": "Clava Moblin com osso de uma fera antiga preso à madeira (ataque 45). Arma dos Moblins mais perigosos e dos Stalmoblins; inflamável, flutua e não atrai raios.",
+  "description": "A Clava Moblin dracônica é o topo da linha de clavas dos Moblins. A descrição do jogo diz que o osso de uma fera antiga foi fixado à clava para aumentar ainda mais o dano, e que Moblins que a carregam são especialmente perigosos. Com 45 de ataque, é a mais forte das três clavas Moblin (9, 27 e 45).\n\nÉ empunhada por Moblins pretos, prateados e dourados e por Stalmoblins, e é comum nas Cordilheiras de Hebra e na Cordilheira de Eldin. Por ser de madeira, pega fogo — inclusive se for equipada no clima escaldante da Montanha da Morte —, flutua e não conduz eletricidade, não atrai raios e não responde a Magnétis.",
+  "locations": [
+    "Cordilheiras de Hebra e Cordilheira de Eldin, com Moblins de nível alto e Stalmoblins."
+  ],
+  "obtaining": [
+    "Derrotar Moblins pretos, prateados ou dourados, ou Stalmoblins, que a empunhem.",
+    "Armas carregadas por inimigos reaparecem após a Lua de sangue.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma de duas mãos de dano alto que pode ser usada em tempestades sem atrair raios.",
+    "Acesa, serve para levar fogo a grama, tochas ou Madeira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e fortes de duas mãos, sem escudo; o golpe carregado gira enquanto houver vigor e termina numa pancada para baixo. O peso desequilibra inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançada contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas.",
+      "applications": [
+        "Usá-la acesa para incendiar a grama em volta de um acampamento."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada no clima escaldante da Montanha da Morte, incendeia e acaba se desfazendo em cinzas.",
+      "side_effects": [
+        "Embora seja comum na Cordilheira de Eldin, não deve ser equipada nas zonas escaldantes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis não consegue erguê-la.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Empunhada por Moblins pretos, prateados e dourados e por Stalmoblins.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +10, Durabilidade aumentada de +3 a +5 ou Acerto crítico; no nível dourado (amarelo): Ataque de +11 a +20, Durabilidade de +6 a +11 ou Lançamento longo (×1,5 a ×2). Com o bônus máximo de ataque, chega a 65.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mantê-la como arma de tempestade: com 45 de ataque e sem atrair raios, substitui as armas metálicas quando o equipamento começa a faiscar."
+  ],
+  "limitations": [
+    "Durabilidade 24.",
+    "Queima em contato com fogo e no calor da Montanha da Morte."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_moblin_club",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_spiked_moblin_club",
+      "relation": "Versão intermediária"
+    },
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Costuma empunhá-la"
+    },
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Costuma empunhá-la"
+    },
+    {
+      "id": "botw_monster_stalmoblin",
+      "relation": "Também a empunha"
+    },
+    {
+      "id": "botw_weapon_dragonbone_moblin_spear",
+      "relation": "Lança do mesmo nível"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

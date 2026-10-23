@@ -1,0 +1,3919 @@
+{
+  "source": "https://zeldawiki.wiki/w/api.php?action=cargoquery&tables=ArmorLevels",
+  "where": "game='BotW'",
+  "fetched_at": "2026-10-23T21:27:57.511Z",
+  "license": "Zelda Wiki — texto sob GNU Free Documentation License 1.3",
+  "count": 391,
+  "rows": [
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Amber Earrings",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "25",
+      "sellable": "1",
+      "materials": "",
+      "description": "One of the items sold by the Gerudo jeweler. These earrings are made with amber, a gem that harnesses the power of the land to increase defense when equipped."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Amber Earrings",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "65",
+      "sellable": "1",
+      "materials": "5 Amber, 3 Flint",
+      "description": "Earrings made with amber, a gem that harnesses the power of the land to increase your defense. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Amber Earrings",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "145",
+      "sellable": "1",
+      "materials": "10 Amber, 3 Flint",
+      "description": "Earrings made with amber, a gem that harnesses the power of the land to increase your defense. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Amber Earrings",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "295",
+      "sellable": "1",
+      "materials": "20 Amber, 3 Flint",
+      "description": "Earrings made with amber, a gem that harnesses the power of the land to increase your defense. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Amber Earrings",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "525",
+      "sellable": "1",
+      "materials": "30 Amber, 3 Flint",
+      "description": "Earrings made with amber, a gem that harnesses the power of the land to increase your defense. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Cuirass",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "This armor was created by ancient Sheikah technology using Guardian parts. Equipping it will reduce the damage you take from ancient weaponry."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Cuirass",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "Armor made from ancient Sheikah technology and Guardian parts. Reduces damage from ancient weapons. A Great Fairy increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Cuirass",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "Armor made from ancient Sheikah technology and Guardian parts. Reduces damage from ancient weapons. A Great Fairy increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Cuirass",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "Armor made from ancient Sheikah technology and Guardian parts. Reduces damage from ancient weapons. A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Cuirass",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "Armor made from ancient Sheikah technology and Guardian parts. Reduces damage from ancient weapons. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Greaves",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Robbie engineered these greaves at the research institute using the same technology found in Guardian automata. They reduce damage from ancient weaponry."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Greaves",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "These greaves use the same technology found in Guardian automata, which reduces damage from ancient weaponry. A Great Fairy increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Greaves",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "These greaves use the same technology found in Guardian automata, which reduces damage from ancient weaponry. A Great Fairy increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Greaves",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "These greaves use the same technology found in Guardian automata, which reduces damage from ancient weaponry. A Great Fairy increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Greaves",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "These greaves use the same technology as Guardians to reduce damage from ancient weaponry. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Helm",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "This headgear is the result of Robbie's research. It uses Guardian parts to decrease damage from ancient energy attacks."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Helm",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "Headgear that uses Guardian parts to decrease the damage from ancient energy attacks. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Helm",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "Headgear that uses Guardian parts to decrease the damage from ancient energy attacks. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Helm",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "Headgear that uses Guardian parts to decrease the damage from ancient energy attacks. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ancient Helm",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "Headgear that uses Guardian parts to decrease the damage from ancient energy attacks. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Armor",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "Armor once favored by an ancient warlike tribe from the Faron region. The war paint bolsters your fighting spirit and raises your attack power."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Armor",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "700",
+      "sellable": "1",
+      "materials": "1 Lynel Horn",
+      "description": "Armor once favored by an ancient warlike tribe from the Faron region. Equipping it boosts your attack power. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Armor",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "640",
+      "sellable": "1",
+      "materials": "3 Lynel Horn, 2 Lynel Hoof",
+      "description": "Armor once favored by an ancient warlike tribe from the Faron region. Equipping it boosts your attack power. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Armor",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "700",
+      "sellable": "1",
+      "materials": "4 Lynel Hoof, 1 Lynel Guts",
+      "description": "Armor once favored by an ancient warlike tribe from the Faron region. Equipping it boosts your attack power. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Armor",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "805",
+      "sellable": "1",
+      "materials": "2 Lynel Guts, 1 Shard of Farosh's Horn",
+      "description": "Armor once favored by an ancient warlike tribe from the Faron region. Equipping it boosts your attack power. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Helm",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "A helmet once worn by the warriors of an ancient warlike tribe from the Faron region. Wearing it draws out your inner animal, increasing your strength and battle prowess."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Helm",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "700",
+      "sellable": "1",
+      "materials": "1 Lynel Horn",
+      "description": "A helmet once worn by the warriors of an ancient warlike tribe from the Faron region. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Helm",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "640",
+      "sellable": "1",
+      "materials": "3 Lynel Horn, 2 Lynel Hoof",
+      "description": "A helmet once worn by the warriors of an ancient warlike tribe from the Faron region. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Helm",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "700",
+      "sellable": "1",
+      "materials": "4 Lynel Hoof, 1 Lynel Guts",
+      "description": "A helmet once worn by the warriors of an ancient warlike tribe from the Faron region. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Helm",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "805",
+      "sellable": "1",
+      "materials": "2 Lynel Guts, 1 Shard of Dinraal's Horn",
+      "description": "A helmet once worn by the warriors of an ancient warlike tribe from the Faron region. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Leg Wraps",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "These leg wraps were favored by a warlike tribe from the Faron region long ago. They're adorned with traditional markings that bolster your fighting spirit to raise your attack power."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Leg Wraps",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "700",
+      "sellable": "1",
+      "materials": "1 Lynel Horn",
+      "description": "Leg wraps once favored by a warlike tribe. The traditional design bolsters your fighting spirit and raises your strength. A Great Fairy increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Leg Wraps",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "640",
+      "sellable": "1",
+      "materials": "3 Lynel Horn, 2 Lynel Hoof",
+      "description": "Leg wraps once favored by a warlike tribe. The traditional design bolsters your fighting spirit and raises your strength. A Great Fairy increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Leg Wraps",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "700",
+      "sellable": "1",
+      "materials": "4 Lynel Hoof, 1 Lynel Guts",
+      "description": "Leg wraps once favored by a warlike tribe. The traditional design bolsters your fighting spirit and raises your strength. A Great Fairy increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Barbarian Leg Wraps",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "805",
+      "sellable": "1",
+      "materials": "2 Lynel Guts, 1 Shard of Naydra's Horn",
+      "description": "Leg wraps once favored by a warlike tribe. The traditional design bolsters your fighting spirit to raise your strength. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Bokoblin Mask",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "9",
+      "sellable": "1",
+      "materials": "",
+      "description": "Kilton's handmade Bokoblin headgear. It's almost charming in a cute, monstrous kind of way... Equip it to blend in with Bokoblins."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Time",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "According to legend, this cap was once worn by a hero who traveled through time. A truly timeless item perfect for kids and adults alike!"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Time",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "1 Amber, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who traveled through time. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Time",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "335",
+      "sellable": "1",
+      "materials": "3 Amber, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who traveled through time. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Time",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "525",
+      "sellable": "1",
+      "materials": "5 Amber, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who traveled through time. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Time",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "825",
+      "sellable": "1",
+      "materials": "10 Amber, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who traveled through time. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Twilight",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "According to legend, this cap was once worn by a hero who battled the monsters of twilight. For one reason or another, it seems to smell of some beast..."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Twilight",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "1 Topaz, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who battled the monsters of twilight. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Twilight",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "445",
+      "sellable": "1",
+      "materials": "3 Topaz, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who battled the monsters of twilight. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Twilight",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "755",
+      "sellable": "1",
+      "materials": "5 Topaz, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who battled the monsters of twilight. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of Twilight",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1280",
+      "sellable": "1",
+      "materials": "10 Topaz, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who battled the monsters of twilight. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Hero",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "According to legend, this cap was once treasured by an ancient hero. It's quite the simple cap, yet there's something about it that's just so appealing..."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Hero",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "1 Ruby, 1 Star Fragment",
+      "description": "According to legend, this cap was once treasured by an ancient hero. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Hero",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "485",
+      "sellable": "1",
+      "materials": "3 Ruby, 1 Star Fragment",
+      "description": "According to legend, this cap was once treasured by an ancient hero. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Hero",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "825",
+      "sellable": "1",
+      "materials": "5 Ruby, 1 Star Fragment",
+      "description": "According to legend, this cap was once treasured by an ancient hero. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Hero",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1425",
+      "sellable": "1",
+      "materials": "10 Ruby, 1 Star Fragment",
+      "description": "According to legend, this cap was once treasured by an ancient hero. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Sky",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "According to legend, this cap was once worn by a hero who appeared from the sky riding a mighty bird. Perfect for those who long to take to the skies."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Sky",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "265",
+      "sellable": "1",
+      "materials": "1 Sapphire, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Sky",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "535",
+      "sellable": "1",
+      "materials": "3 Sapphire, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Sky",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "935",
+      "sellable": "1",
+      "materials": "5 Sapphire, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Sky",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1660",
+      "sellable": "1",
+      "materials": "10 Sapphire, 1 Star Fragment",
+      "description": "According to legend, this cap was once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wild",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "According to legend, this cap was crafted for a hero who travels the wild lands. Wearing it just feels so right."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wild",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Acorn, 2 Farosh's Scale",
+      "description": "According to legend, this cap was crafted for a hero who travels the wild lands. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wild",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Courser Bee Honey, 2 Farosh's Claw",
+      "description": "According to legend, this cap was crafted for a hero who travels the wild lands. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wild",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Energetic Rhino Beetle, 2 Shard of Farosh's Fang",
+      "description": "According to legend, this cap was crafted for a hero who travels the wild lands. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wild",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "2 Shard of Farosh's Horn, 1 Star Fragment",
+      "description": "According to legend, this cap was crafted for a hero who travels the wild lands. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wind",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "According to legend, this cap was treasured by a hero who traveled the Great Sea. It flaps quite serenely in a soft sea breeze."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wind",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "1 Opal, 1 Star Fragment",
+      "description": "According to legend, this cap was treasured by a hero who traveled the Great Sea. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wind",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "395",
+      "sellable": "1",
+      "materials": "3 Opal, 1 Star Fragment",
+      "description": "According to legend, this cap was treasured by a hero who traveled the Great Sea. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wind",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "620",
+      "sellable": "1",
+      "materials": "5 Opal, 1 Star Fragment",
+      "description": "According to legend, this cap was treasured by a hero who traveled the Great Sea. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Cap of the Wind",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "995",
+      "sellable": "1",
+      "materials": "10 Opal, 1 Star Fragment",
+      "description": "According to legend, this cap was treasured by a hero who traveled the Great Sea. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Champion's Tunic",
+      "level": "",
+      "defense": "5",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "In ancient Hyrule, this garment could only be worn by one who had earned the respect of the royal family. Equipping it will reveal an enemy's life gauge."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Champion's Tunic",
+      "level": "★",
+      "defense": "8",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "3 Silent Princess",
+      "description": "In ancient Hyrule, only those respected by the royal family could wear this garment. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Champion's Tunic",
+      "level": "★★",
+      "defense": "14",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "3 Silent Princess, 2 Shard of Farosh's Horn",
+      "description": "In ancient Hyrule, only those respected by the royal family could wear this garment. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Champion's Tunic",
+      "level": "★★★",
+      "defense": "22",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "3 Silent Princess, 2 Shard of Naydra's Horn",
+      "description": "In ancient Hyrule, only those respected by the royal family could wear this garment. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Champion's Tunic",
+      "level": "★★★★",
+      "defense": "32",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Silent Princess, 2 Shard of Dinraal's Horn",
+      "description": "In ancient Hyrule, only those respected by the royal family could wear this garment. A Great Fairy has increased its defense to the maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climber's Bandanna",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "It may look like a regular bandanna, but it's actually infused with ancient technology that enhances core strength to improve your climbing ability."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climber's Bandanna",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "605",
+      "sellable": "1",
+      "materials": "3 Keese Wing, 3 Rushroom",
+      "description": "This bandanna uses ancient technology that enhances core strength to improve your climbing ability. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climber's Bandanna",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "610",
+      "sellable": "1",
+      "materials": "5 Electric Keese Wing, 5 Hightail Lizard",
+      "description": "This bandanna uses ancient technology that enhances core strength to improve your climbing ability. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climber's Bandanna",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "620",
+      "sellable": "1",
+      "materials": "5 Ice Keese Wing, 10 Hot-Footed Frog",
+      "description": "This bandanna uses ancient technology that enhances core strength to improve your climbing ability. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climber's Bandanna",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "645",
+      "sellable": "1",
+      "materials": "5 Fire Keese Wing, 15 Swift Violet",
+      "description": "This bandanna uses ancient technology that enhances core strength to improve your climbing ability. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Boots",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "These rock-climbing boots have special no-slip toes that help you cling to walls. This ancient technology facilitates more nimble climbing."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Boots",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "605",
+      "sellable": "1",
+      "materials": "3 Keese Wing, 3 Rushroom",
+      "description": "The special no-slip toes of these boots make you a more efficient climber. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Boots",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "610",
+      "sellable": "1",
+      "materials": "5 Electric Keese Wing, 5 Hightail Lizard",
+      "description": "The special no-slip toes of these boots make you a more efficient climber. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Boots",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "620",
+      "sellable": "1",
+      "materials": "5 Ice Keese Wing, 10 Hot-Footed Frog",
+      "description": "The special no-slip toes of these boots make you a more efficient climber. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Boots",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "645",
+      "sellable": "1",
+      "materials": "5 Fire Keese Wing, 15 Swift Violet",
+      "description": "The special no-slip toes of these boots make you a more efficient climber. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Gear",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "The ancient technology in this gear will make you a better climber. The special no-slip gloves help you use your energy more efficiently to facilitate nimble climbing."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Gear",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "605",
+      "sellable": "1",
+      "materials": "3 Keese Wing, 3 Rushroom",
+      "description": "The ancient technology used in making this gear and its no-slip gloves will make you a better climber. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Gear",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "610",
+      "sellable": "1",
+      "materials": "5 Electric Keese Wing, 5 Hightail Lizard",
+      "description": "The ancient technology used in making this gear and its no-slip gloves will make you a better climber. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Gear",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "620",
+      "sellable": "1",
+      "materials": "5 Ice Keese Wing, 10 Hot-Footed Frog",
+      "description": "The ancient technology used in making this gear and its no-slip gloves will make you a better climber. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Climbing Gear",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "645",
+      "sellable": "1",
+      "materials": "5 Fire Keese Wing, 15 Swift Violet",
+      "description": "The ancient technology used in making this gear and its no-slip gloves will make you a better climber. A Great Fairy has increased its defense to the maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Dark Hood",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "9",
+      "sellable": "1",
+      "materials": "",
+      "description": "This headgear is the product of Kilton's monster research. He crafted it with a monster born from the shadows in mind. The eyes glow an eerie red in the dark."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Dark Trousers",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "9",
+      "sellable": "1",
+      "materials": "",
+      "description": "The result of Kilton's research into monsters. Looks like your average leg wear at first, but these were created based on the image of a monster born of darkness."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Dark Tunic",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "9",
+      "sellable": "1",
+      "materials": "",
+      "description": "Kilton developed this jet-black armor as a result of his monster research. A spurious replica of the green outfit once worn by a legendary hero."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Headband",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "115",
+      "sellable": "1",
+      "materials": "",
+      "description": "Gerudo-made armor for males sold rarely by Gerudo retailers. It contains sapphire, a gem that harnesses the power of ice to make the heat more bearable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Headband",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "120",
+      "sellable": "1",
+      "materials": "3 White Chuchu Jelly",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Headband",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "5 White Chuchu Jelly, 3 Ice Keese Wing",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Headband",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "165",
+      "sellable": "1",
+      "materials": "8 Ice Keese Wing, 3 Icy Lizalfos Tail",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Headband",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "580",
+      "sellable": "1",
+      "materials": "10 Icy Lizalfos Tail, 5 Sapphire",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Spaulder",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "325",
+      "sellable": "1",
+      "materials": "",
+      "description": "Armor for males sold rarely by Gerudo retailers. It contains sapphire, which harnesses the power of ice to make hot climates more tolerable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Spaulder",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "330",
+      "sellable": "1",
+      "materials": "3 White Chuchu Jelly",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Spaulder",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "340",
+      "sellable": "1",
+      "materials": "5 White Chuchu Jelly, 3 Ice Keese Wing",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Spaulder",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "380",
+      "sellable": "1",
+      "materials": "8 Ice Keese Wing, 3 Icy Lizalfos Tail",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Spaulder",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "800",
+      "sellable": "1",
+      "materials": "10 Icy Lizalfos Tail, 5 Sapphire",
+      "description": "Gerudo armor for males. Contains sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Trousers",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "165",
+      "sellable": "1",
+      "materials": "",
+      "description": "Gerudo-made trousers for men sold rarely by Gerudo retailers. Sapphire is used in their creation, which harnesses the power of ice to make the heat more tolerable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Trousers",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "170",
+      "sellable": "1",
+      "materials": "3 White Chuchu Jelly",
+      "description": "Gerudo trousers for men sold in the Gerudo Secret Club. Sapphire used in their creation offers protection from the heat. A Great Fairy increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Trousers",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "175",
+      "sellable": "1",
+      "materials": "5 White Chuchu Jelly, 3 Ice Keese Wing",
+      "description": "Gerudo trousers for men sold in the Gerudo Secret Club. Sapphire used in their creation offers protection from the heat. A Great Fairy increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Trousers",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "215",
+      "sellable": "1",
+      "materials": "8 Ice Keese Wing, 3 Icy Lizalfos Tail",
+      "description": "Gerudo trousers for men sold in the Gerudo Secret Club. Sapphire used in their creation offers protection from the heat. A Great Fairy increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Desert Voe Trousers",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "630",
+      "sellable": "1",
+      "materials": "10 Icy Lizalfos Tail, 5 Sapphire",
+      "description": "Gerudo trousers for men sold in the Gerudo Secret Club. Contain sapphire, which offers protection from the heat. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Diamond Circlet",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "375",
+      "sellable": "1",
+      "materials": "",
+      "description": "A luxurious headpiece sold at Gerudo jewelry shops. It's decorated with a diamond, which harnesses the power of light to reduce damage received from ancient enemies."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Diamond Circlet",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "630",
+      "sellable": "1",
+      "materials": "2 Diamond, 3 Flint",
+      "description": "A headpiece set with a diamond, which uses the power of light to reduce damage from ancient enemies. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Diamond Circlet",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "1135",
+      "sellable": "1",
+      "materials": "4 Diamond, 3 Flint",
+      "description": "A headpiece set with a diamond, which uses the power of light to reduce damage from ancient enemies. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Diamond Circlet",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "1960",
+      "sellable": "1",
+      "materials": "6 Diamond, 1 Star Fragment",
+      "description": "A headpiece set with a diamond, which uses the power of light to reduce damage from ancient enemies. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Diamond Circlet",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "3285",
+      "sellable": "1",
+      "materials": "10 Diamond, 1 Star Fragment",
+      "description": "A headpiece set with a diamond, which uses the power of light to reduce damage from ancient enemies. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Armor",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legend has it this armor once belonged to the hero of a world in which the moon threatened to fall. When you wear it, you feel a fierce, godlike power flow through you."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Armor",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "190",
+      "sellable": "1",
+      "materials": "5 Hinox Toenail, 1 Naydra's Scale",
+      "description": "Armor worn by the hero from a world in which the moon threatened to fall. Wearing it provides godlike power. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Armor",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "5 Hinox Tooth, 1 Naydra's Claw",
+      "description": "Armor worn by the hero from a world in which the moon threatened to fall. Wearing it provides godlike power. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Armor",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "380",
+      "sellable": "1",
+      "materials": "2 Hinox Guts, 1 Shard of Naydra's Fang",
+      "description": "Armor worn by the hero from a world in which the moon threatened to fall. Wearing it provides godlike power. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Armor",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "555",
+      "sellable": "1",
+      "materials": "2 Lynel Guts, 1 Shard of Naydra's Horn",
+      "description": "Armor worn by the hero from a world in which the moon threatened to fall. Wearing it provides godlike power. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Boots",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "According to legend, these boots were once worn by a hero from a world in which the moon threatened to fall. Wearing them provides godlike power."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Boots",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "190",
+      "sellable": "1",
+      "materials": "5 Hinox Toenail, 1 Farosh's Scale",
+      "description": "Boots worn by a hero from a world in which the moon threatened to fall. Wearing them provides godlike power. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Boots",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "5 Hinox Tooth, 1 Farosh's Claw",
+      "description": "Boots worn by a hero from a world in which the moon threatened to fall. Wearing them provides godlike power. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Boots",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "380",
+      "sellable": "1",
+      "materials": "2 Hinox Guts, 1 Shard of Farosh's Fang",
+      "description": "Boots worn by a hero from a world in which the moon threatened to fall. Wearing them provides godlike power. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Boots",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "555",
+      "sellable": "1",
+      "materials": "2 Lynel Guts, 1 Shard of Farosh's Horn",
+      "description": "Boots worn by a hero from a world in which the moon threatened to fall. Wearing them provides godlike power. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Mask",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legends say this mask was once worn by a hero from a world in which the moon threatened to fall. It looks scary, but wearing it offers fierce, godlike power."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Mask",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "190",
+      "sellable": "1",
+      "materials": "5 Hinox Toenail, 1 Dinraal's Scale",
+      "description": "A mask worn by a hero from a world in which the moon was falling, legends say. Wearing it provides godlike power. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Mask",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "5 Hinox Tooth, 1 Dinraal's Claw",
+      "description": "A mask worn by a hero from a world in which the moon was falling, legends say. Wearing it provides godlike power. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Mask",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "380",
+      "sellable": "1",
+      "materials": "2 Hinox Guts, 1 Shard of Dinraal's Fang",
+      "description": "A mask worn by a hero from a world in which the moon was falling, legends say. Wearing it provides godlike power. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Fierce Deity Mask",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "555",
+      "sellable": "1",
+      "materials": "2 Lynel Guts, 1 Shard of Dinraal's Horn",
+      "description": "A mask worn by a hero from a world in which the moon was falling, legends say. Wearing it provides godlike power. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Armor",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "",
+      "description": "Armor crafted by Gorons for Hylians curious enough to visit Goron City. It's made from fire-resistant rocks to protect the wearer."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Armor",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "155",
+      "sellable": "1",
+      "materials": "1 Fireproof Lizard, 2 Moblin Horn",
+      "description": "Fire-resistant armor crafted by Gorons for Hylians curious enough to visit Goron City. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Armor",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "170",
+      "sellable": "1",
+      "materials": "3 Fireproof Lizard, 4 Moblin Fang",
+      "description": "Fire-resistant armor crafted by Gorons for Hylians curious enough to visit Goron City. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Armor",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "195",
+      "sellable": "1",
+      "materials": "3 Smotherwing Butterfly, 3 Moblin Guts",
+      "description": "Fire-resistant armor crafted by Gorons for Hylians curious enough to visit Goron City. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Armor",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "250",
+      "sellable": "1",
+      "materials": "5 Smotherwing Butterfly, 2 Hinox Guts",
+      "description": "Fire-resistant armor crafted by Gorons for Hylians curious enough to visit Goron City. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Boots",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "175",
+      "sellable": "1",
+      "materials": "",
+      "description": "Goron artisans used flame-resistant rocks to craft these fireproof boots for curious Hylians visiting Goron City."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Boots",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "180",
+      "sellable": "1",
+      "materials": "1 Fireproof Lizard, 2 Moblin Horn",
+      "description": "Goron artisans used flame-resistant rocks to craft these fireproof boots for curious Hylians visiting Goron City. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Boots",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "195",
+      "sellable": "1",
+      "materials": "3 Fireproof Lizard, 4 Moblin Fang",
+      "description": "Goron artisans used flame-resistant rocks to craft these fireproof boots for curious Hylians visiting Goron City. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Boots",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "220",
+      "sellable": "1",
+      "materials": "3 Smotherwing Butterfly, 3 Moblin Guts",
+      "description": "Goron artisans used flame-resistant rocks to craft these fireproof boots for curious Hylians visiting Goron City. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Boots",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "5 Smotherwing Butterfly, 2 Hinox Guts",
+      "description": "Goron artisans used flame-resistant rocks to craft these fireproof boots for curious Hylians visiting Goron City. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Helm",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "500",
+      "sellable": "1",
+      "materials": "",
+      "description": "Stone headgear made by Goron craftsmen to protect tourists visiting Goron City. As if its flame resistance isn't enough of a selling point, it also covers your entire head!"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Helm",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "505",
+      "sellable": "1",
+      "materials": "1 Fireproof Lizard, 2 Moblin Horn",
+      "description": "Stone headgear made for tourists by Goron crafters. Not only is it flame resistant, but it also covers your entire head. A Great Fairy has increased its level by one."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Helm",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "520",
+      "sellable": "1",
+      "materials": "3 Fireproof Lizard, 4 Moblin Fang",
+      "description": "Stone headgear made for tourists by Goron crafters. Not only is it flame resistant, but it also covers your entire head. A Great Fairy has increased its level by two."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Helm",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "545",
+      "sellable": "1",
+      "materials": "3 Smotherwing Butterfly, 3 Moblin Guts",
+      "description": "Stone headgear made for tourists by Goron crafters. Not only is it flame resistant, but it also covers your entire head. A Great Fairy has increased its level by three."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Flamebreaker Helm",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "5 Smotherwing Butterfly, 2 Hinox Guts",
+      "description": "Stone headgear made for tourists by Goron crafters. Not only is it flame resistant, but it also covers your entire head. A Great Fairy has increased its level to maximum."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Gerudo Sirwal",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "45",
+      "sellable": "1",
+      "materials": "",
+      "description": "Gerudo favor this traditional sirwal. Its short length allows for ease of movement, and its subtle design is quite fashionable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Gerudo Top",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "45",
+      "sellable": "1",
+      "materials": "",
+      "description": "Standard Gerudo garb popular for its open, breathable design and for the traditional Gerudo markings that adorn it."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Gerudo Veil",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "45",
+      "sellable": "1",
+      "materials": "",
+      "description": "A mask worn by Gerudo women. It protects the skin from the harsh sun, but don't expect it to protect much in combat..."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Hood",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "A hood woven using traditional Hyrulean methods. It's made from a sturdy material to protect travelers from the harsh sun and weather."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Hood",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "20",
+      "sellable": "1",
+      "materials": "5 Bokoblin Horn",
+      "description": "A hood woven using traditional Hyrulean methods, made from sturdy material. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Hood",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "35",
+      "sellable": "1",
+      "materials": "8 Bokoblin Horn, 5 Bokoblin Fang",
+      "description": "A hood woven using traditional Hyrulean methods, made from sturdy material. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Hood",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "80",
+      "sellable": "1",
+      "materials": "10 Bokoblin Fang, 5 Bokoblin Guts",
+      "description": "A hood woven using traditional Hyrulean methods, made from sturdy material. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Hood",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "265",
+      "sellable": "1",
+      "materials": "15 Bokoblin Guts, 15 Amber",
+      "description": "A hood woven using traditional Hyrulean methods, made from sturdy material. A Great Fairy has increased its defense to the maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Trousers",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "25",
+      "sellable": "1",
+      "materials": "",
+      "description": "Traditional dress trousers of Hyrule. The plush fabric makes these trousers quite comfortable, and their high durability makes them ideal for travelers."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Trousers",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "30",
+      "sellable": "1",
+      "materials": "5 Bokoblin Horn",
+      "description": "These trousers are common throughout the Hyrule region. The soft fabric makes them quite comfortable. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Trousers",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "40",
+      "sellable": "1",
+      "materials": "8 Bokoblin Horn, 5 Bokoblin Fang",
+      "description": "These trousers are common throughout the Hyrule region. The soft fabric makes them quite comfortable. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Trousers",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "85",
+      "sellable": "1",
+      "materials": "10 Bokoblin Fang, 5 Bokoblin Guts",
+      "description": "These trousers are common throughout the Hyrule region. The soft fabric makes them quite comfortable. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Trousers",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "15 Bokoblin Guts, 15 Amber",
+      "description": "These trousers are common throughout the Hyrule region. The soft fabric makes them quite comfortable. A Great Fairy increased their defense to the maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Tunic",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "30",
+      "sellable": "1",
+      "materials": "",
+      "description": "A common garb that achieved widespread popularity in Hyrule, particularly among travelers. Its light-yet-sturdy fabric doesn't limit movement."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Tunic",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "35",
+      "sellable": "1",
+      "materials": "5 Bokoblin Horn",
+      "description": "A common garb popular in Hyrule, especially among travelers. Its light-yet-sturdy fabric doesn't limit movement. A Great Fairy increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Tunic",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "50",
+      "sellable": "1",
+      "materials": "8 Bokoblin Horn, 5 Bokoblin Fang",
+      "description": "A common garb popular in Hyrule, especially among travelers. Its light-yet-sturdy fabric doesn't limit movement. A Great Fairy increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Tunic",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "95",
+      "sellable": "1",
+      "materials": "10 Bokoblin Fang, 5 Bokoblin Guts",
+      "description": "A common garb popular in Hyrule, especially among travelers. Its light-yet-sturdy fabric doesn't limit movement. A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Hylian Tunic",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "280",
+      "sellable": "1",
+      "materials": "15 Bokoblin Guts, 15 Amber",
+      "description": "A common garb popular in Hyrule, especially among travelers. Its light-yet-sturdy fabric doesn't limit movement. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Island Lobster Shirt",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "The Hero of Winds once wore this shirt on the quaint island he called home. They say he wielded the wind to travel the ocean wide. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Korok Mask",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "A mask inspired by those fun-loving Koroks. It shakes when one is hiding nearby. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Lizalfos Mask",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "29",
+      "sellable": "1",
+      "materials": "",
+      "description": "Kilton's handmade Lizalfos headgear. It's designed to replicate the unique tongue and horn of the Lizalfos. Equip it to blend in with Lizalfos."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Lynel Mask",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "39",
+      "sellable": "1",
+      "materials": "",
+      "description": "Kilton's handmade Lynel headgear. It's so well crafted, it can deceive a real Lynel. Equip it to blend in with Lynels, but don't linger too long. Those beasts are smart."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Majora's Mask (Item)",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "An eerie mask passed down from ancient times. Wearing it makes it harder for certain enemies to spot you. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Midna's Helmet",
+      "level": "",
+      "defense": "7",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "A helmet much like the one Midna wore when she fought alongside the Hero of Twilight. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Moblin Mask",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "19",
+      "sellable": "1",
+      "materials": "",
+      "description": "Kilton's handmade Moblin headgear. It's designed to replicate the Moblin's distinct long nose and large horn. Equip it to blend in with Moblins."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Nintendo Switch Shirt",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Expansion Pass Bonus<br/>A shirt with the Nintendo Switch logo on it. It's a rather rare find, so wear it with pride!"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Old Shirt",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "A thin shirt made long ago. It's coming apart at the seams, but it's better than nothing. The sleeves are a bit on the short side."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Opal Earrings",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "40",
+      "sellable": "1",
+      "materials": "",
+      "description": "Earrings sold at Gerudo jewelry shops. They contain opal, a gem that harnesses the power of water to increase your swimming speed."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Opal Earrings",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "115",
+      "sellable": "1",
+      "materials": "5 Opal, 3 Flint",
+      "description": "Earrings containing opal, a gem that harnesses the power of water to increase your swimming speed. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Opal Earrings",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "249",
+      "sellable": "1",
+      "materials": "8 Opal, 3 Flint",
+      "description": "Earrings containing opal, a gem that harnesses the power of water to increase your swimming speed. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Opal Earrings",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "385",
+      "sellable": "1",
+      "materials": "16 Opal, 3 Flint",
+      "description": "Earrings containing opal, a gem that harnesses the power of water to increase your swimming speed. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Opal Earrings",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "790",
+      "sellable": "1",
+      "materials": "20 Opal, 3 Flint",
+      "description": "Earrings containing opal, a gem that harnesses the power of water to increase your swimming speed. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Phantom Armor",
+      "level": "",
+      "defense": "8",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Myths abound about armored phantoms that terrorized brave heroes. This piece looks just like the armor they supposedly wore. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Phantom Ganon Armor",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Some believe this armor is inspirited by a dark entity resembling the Great King of Evil himself. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Phantom Ganon Greaves",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Some believe these greaves are inspirited by a dark entity resembling the Great King of Evil himself. They're a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Phantom Ganon Skull",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Some believe this eerie headgear is inspirited by a dark entity resembling the Great King of Evil himself. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Phantom Greaves",
+      "level": "",
+      "defense": "8",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Myths abound about armored phantoms that terrorized brave heroes. These greaves look just like the ones they supposedly wore. They're a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Phantom Helmet",
+      "level": "",
+      "defense": "8",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "Myths abound about armored phantoms that terrorized brave heroes. This helmet looks just like the ones they supposedly wore. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Mask",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "200",
+      "sellable": "1",
+      "materials": "",
+      "description": "A special mask for members of the Gerudo Secret Club. Painted with dye made from crushed luminous stones, it gives off a lurid, mysterious glow in the dark."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Mask",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "305",
+      "sellable": "1",
+      "materials": "5 Luminous Stone, 3 Bokoblin Guts",
+      "description": "A special mask for members of the Gerudo Secret Club that gives off a lurid, mysterious glow in the dark. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Mask",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "460",
+      "sellable": "1",
+      "materials": "8 Luminous Stone, 3 Moblin Guts",
+      "description": "A special mask for members of the Gerudo Secret Club that gives off a lurid, mysterious glow in the dark. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Mask",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "690",
+      "sellable": "1",
+      "materials": "10 Luminous Stone, 2 Molduga Guts",
+      "description": "A special mask for members of the Gerudo Secret Club that gives off a lurid, mysterious glow in the dark. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Mask",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1090",
+      "sellable": "1",
+      "materials": "20 Luminous Stone, 1 Lynel Guts",
+      "description": "A special mask for members of the Gerudo Secret Club that gives off a lurid, mysterious glow in the dark. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Shirt",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "200",
+      "sellable": "1",
+      "materials": "",
+      "description": "This shirt is sold at the Gerudo Secret Club. It glows with a strange pattern in the dark due to a dye made from crushed luminous stones."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Shirt",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "305",
+      "sellable": "1",
+      "materials": "5 Luminous Stone, 3 Bokoblin Guts",
+      "description": "A shirt sold at the Gerudo Secret Club. It glows in the dark due to a dye made from luminous stones. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Shirt",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "460",
+      "sellable": "1",
+      "materials": "8 Luminous Stone, 3 Moblin Guts",
+      "description": "A shirt sold at the Gerudo Secret Club. It glows in the dark due to a dye made from luminous stones. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Shirt",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "690",
+      "sellable": "1",
+      "materials": "10 Luminous Stone, 2 Molduga Guts",
+      "description": "A shirt sold at the Gerudo Secret Club. It glows in the dark due to a dye made from luminous stones. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Shirt",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1090",
+      "sellable": "1",
+      "materials": "20 Luminous Stone, 1 Lynel Guts",
+      "description": "A shirt sold at the Gerudo Secret Club. It glows in the dark due to a dye made from luminous stones. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Tights",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "200",
+      "sellable": "1",
+      "materials": "",
+      "description": "These tights are sold in the Gerudo Secret Club. They're painted with dye from crushed luminous stones, which gives them an eerie glow in the dark."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Tights",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "305",
+      "sellable": "1",
+      "materials": "5 Luminous Stone, 3 Bokoblin Guts",
+      "description": "Tights sold by the Gerudo Secret Club. Paint made from crushed luminous stones causes them to glow in the dark. A Great Fairy increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Tights",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "460",
+      "sellable": "1",
+      "materials": "8 Luminous Stone, 3 Moblin Guts",
+      "description": "Tights sold by the Gerudo Secret Club. Paint made from crushed luminous stones causes them to glow in the dark. A Great Fairy increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Tights",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "690",
+      "sellable": "1",
+      "materials": "10 Luminous Stone, 2 Molduga Guts",
+      "description": "Tights sold by the Gerudo Secret Club. Paint made from crushed luminous stones causes them to glow in the dark. A Great Fairy increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Radiant Tights",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1090",
+      "sellable": "1",
+      "materials": "20 Luminous Stone, 1 Lynel Guts",
+      "description": "Tights sold by the Gerudo Secret Club. Paint made from crushed luminous stones causes them to glow in the dark. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ravio's Hood",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "The hood of a traveling merchant who had a bracelet that could turn the wearer into a painting. Wearing it increases your sideways climbing speed. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Royal Guard Boots",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "This spiffy cap is part of the uniform for Hyrule's Royal Guard. It's lighter than it looks and easy to move around in. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Royal Guard Cap",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "These boots are part of the uniform for Hyrule's Royal Guard. They're a fine blend of style and function and a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Royal Guard Uniform",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "The dignified uniform for Hyrule's Royal Guard. It's made of lightweight materials and is both stylish and practical. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Armor",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "This armor has built-in electricity resistance thanks to its source material—an ancient marvel called \"rubber.\" Such technology does not exist in this modern age."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Armor",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "605",
+      "sellable": "1",
+      "materials": "3 Yellow Chuchu Jelly",
+      "description": "This armor owes its electricity resistance to an ancient material called \"rubber,\" which is nearly impossible to find. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Armor",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "610",
+      "sellable": "1",
+      "materials": "5 Yellow Chuchu Jelly, 5 Voltfruit",
+      "description": "This armor owes its electricity resistance to an ancient material called \"rubber,\" which is nearly impossible to find. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Armor",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "640",
+      "sellable": "1",
+      "materials": "5 Zapshroom, 5 Yellow Lizalfos Tail",
+      "description": "This armor owes its electricity resistance to an ancient material called \"rubber,\" which is nearly impossible to find. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Armor",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "960",
+      "sellable": "1",
+      "materials": "10 Yellow Lizalfos Tail, 10 Topaz",
+      "description": "This armor owes its electricity resistance to an ancient material called \"rubber,\" which is nearly impossible to find. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Helm",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "A helmet made from ancient techniques and electricity-resistant material. It's made from something called \"rubber,\" a material that can no longer be found."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Helm",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "605",
+      "sellable": "1",
+      "materials": "3 Yellow Chuchu Jelly",
+      "description": "An electricity-resistant helmet made from an ancient material called \"rubber.\" A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Helm",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "610",
+      "sellable": "1",
+      "materials": "5 Yellow Chuchu Jelly, 5 Voltfruit",
+      "description": "An electricity-resistant helmet made from an ancient material called \"rubber.\" A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Helm",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "640",
+      "sellable": "1",
+      "materials": "5 Zapshroom, 5 Yellow Lizalfos Tail",
+      "description": "An electricity-resistant helmet made from an ancient material called \"rubber.\" A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Helm",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "960",
+      "sellable": "1",
+      "materials": "10 Yellow Lizalfos Tail, 10 Topaz",
+      "description": "An electricity-resistant helmet made from an ancient material called \"rubber.\" A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Tights",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "600",
+      "sellable": "1",
+      "materials": "",
+      "description": "These invaluable tights are resistant to electricity. They're made with something called \"rubber,\" an ancient technology that no longer exists in this modern age."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Tights",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "605",
+      "sellable": "1",
+      "materials": "3 Yellow Chuchu Jelly",
+      "description": "These invaluable tights are resistant to electricity. They're made with an ancient technology called \"rubber.\" A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Tights",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "610",
+      "sellable": "1",
+      "materials": "5 Yellow Chuchu Jelly, 5 Voltfruit",
+      "description": "These invaluable tights are resistant to electricity. They're made with an ancient technology called \"rubber.\" A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Tights",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "640",
+      "sellable": "1",
+      "materials": "5 Zapshroom, 5 Yellow Lizalfos Tail",
+      "description": "These invaluable tights are resistant to electricity. They're made with an ancient technology called \"rubber.\" A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Rubber Tights",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "960",
+      "sellable": "1",
+      "materials": "10 Yellow Lizalfos Tail, 10 Topaz",
+      "description": "These invaluable tights are resistant to electricity. They're made with an ancient technology called \"rubber.\" A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ruby Circlet",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "A headpiece made by Gerudo craft workers. It's set with a ruby, a gem that harnesses the power of fire to make cold climates more bearable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ruby Circlet",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "235",
+      "sellable": "1",
+      "materials": "2 Ruby, 3 Flint",
+      "description": "A traditional Gerudo headpiece. It's set with a ruby, which harnesses the power of fire to make the cold more bearable. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ruby Circlet",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "450",
+      "sellable": "1",
+      "materials": "4 Ruby, 3 Flint",
+      "description": "A traditional Gerudo headpiece. It's set with a ruby, which harnesses the power of fire to make the cold more bearable. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ruby Circlet",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "840",
+      "sellable": "1",
+      "materials": "6 Ruby, 1 Star Fragment",
+      "description": "A traditional Gerudo headpiece. It's set with a ruby, which harnesses the power of fire to make the cold more bearable. A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Ruby Circlet",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1440",
+      "sellable": "1",
+      "materials": "10 Ruby, 1 Star Fragment",
+      "description": "A traditional Gerudo headpiece. It's set with a ruby, which uses the power of fire to make the cold more bearable. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Salvager Headwear",
+      "level": "",
+      "defense": "5",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "[Collaboration: Xenoblade Chronicles 2] Essential gear used by a boy who seeks sunken treasure in the Cloud Sea. It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Salvager Trousers",
+      "level": "",
+      "defense": "5",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "[Collaboration: Xenoblade Chronicles 2]<br/>Essential gear used by a boy who seeks sunken treasure in the Cloud Sea.<br/>They're a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Salvager Vest",
+      "level": "",
+      "defense": "5",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "[Collaboration: Xenoblade Chronicles 2]<br/>Essential gear used by a boy who seeks sunken treasure in the Cloud Sea.<br/>It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sand Boots",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "200",
+      "sellable": "1",
+      "materials": "",
+      "description": "Gerudo artisans modified these boots for life in the desert. The special soles distribute your body weight evenly so you can maintain your normal movement speed on sand."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sand Boots",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "5 Molduga Fin, 10 Hightail Lizard",
+      "description": "These Gerudo-made boots evenly distribute your weight so you can maintain your normal movement speed on sand. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sand Boots",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "330",
+      "sellable": "1",
+      "materials": "10 Molduga Fin, 10 Swift Carrot",
+      "description": "These Gerudo-made boots evenly distribute your weight so you can maintain your normal movement speed on sand. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sand Boots",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "395",
+      "sellable": "1",
+      "materials": "2 Molduga Guts, 15 Rushroom",
+      "description": "These Gerudo-made boots evenly distribute your weight so you can maintain your normal movement speed on sand. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sand Boots",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "545",
+      "sellable": "1",
+      "materials": "4 Molduga Guts, 15 Swift Violet",
+      "description": "These Gerudo-made boots evenly distribute your weight so you can maintain your normal movement speed on sand. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sapphire Circlet",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "",
+      "description": "An intricate headpiece crafted with Gerudo goldsmith techniques. It's set with a sapphire, a gem that harnesses the power of ice to make hot climates more tolerable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sapphire Circlet",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "285",
+      "sellable": "1",
+      "materials": "2 Sapphire, 3 Flint",
+      "description": "A Gerudo headpiece set with a sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sapphire Circlet",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "550",
+      "sellable": "1",
+      "materials": "4 Sapphire, 3 Flint",
+      "description": "A Gerudo headpiece set with a sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sapphire Circlet",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "1015",
+      "sellable": "1",
+      "materials": "6 Sapphire, 1 Star Fragment",
+      "description": "A Gerudo headpiece set with a sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sapphire Circlet",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1740",
+      "sellable": "1",
+      "materials": "10 Sapphire, 1 Star Fragment",
+      "description": "A Gerudo headpiece set with a sapphire, which harnesses the power of ice to make the heat more bearable. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sheik's Mask",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "A mask said to have been worn by a Sheikah who saved a time-traveling hero. Made from the finest of Sheikah stealth fabrics, it is the final word in undercover gear."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sheik's Mask",
+      "level": "★",
+      "defense": "4",
+      "sellPrice": "210",
+      "sellable": "1",
+      "materials": "1 Silent Princess, 1 Star Fragment",
+      "description": "A mask said to have been worn by a Sheikah who saved a time-traveling hero. Ideal for undercover work. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sheik's Mask",
+      "level": "★★",
+      "defense": "6",
+      "sellPrice": "305",
+      "sellable": "1",
+      "materials": "2 Silent Princess, 2 Star Fragment",
+      "description": "A mask said to have been worn by a Sheikah who saved a time-traveling hero. Ideal for undercover work. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sheik's Mask",
+      "level": "★★★",
+      "defense": "9",
+      "sellPrice": "410",
+      "sellable": "1",
+      "materials": "3 Silent Princess, 3 Star Fragment",
+      "description": "A mask said to have been worn by a Sheikah who saved a time-traveling hero. Ideal for undercover work. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Sheik's Mask",
+      "level": "★★★★",
+      "defense": "16",
+      "sellPrice": "525",
+      "sellable": "1",
+      "materials": "4 Silent Princess, 4 Star Fragment",
+      "description": "A mask said to have been worn by a Sheikah who saved a time-traveling hero. Ideal for undercover work. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snow Boots",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "200",
+      "sellable": "1",
+      "materials": "",
+      "description": "Boots designed for hiking up snowy mountains. They evenly distribute your body weight so you can maintain your normal movement speed on deep snow."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snow Boots",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "220",
+      "sellable": "1",
+      "materials": "5 Octorok Tentacle, 10 Hightail Lizard",
+      "description": "These boots evenly distribute your body weight so you can maintain your normal movement speed on deep snow. A Great Fairy increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snow Boots",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "235",
+      "sellable": "1",
+      "materials": "5 Octo Balloon, 10 Swift Carrot",
+      "description": "These boots evenly distribute your body weight so you can maintain your normal movement speed on deep snow. A Great Fairy increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snow Boots",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "270",
+      "sellable": "1",
+      "materials": "5 Octorok Eyeball, 15 Rushroom",
+      "description": "These boots evenly distribute your body weight so you can maintain your normal movement speed on deep snow. A Great Fairy increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snow Boots",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "385",
+      "sellable": "1",
+      "materials": "2 Naydra's Scale, 15 Swift Violet",
+      "description": "These boots distribute your body weight so you can maintain your normal movement speed on deep snow. A Great Fairy raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Headdress",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "250",
+      "sellable": "1",
+      "materials": "",
+      "description": "A Rito accessory made from snow-bird feathers. It's adorned with a ruby, a gem that harnesses the power of fire to make cold climates more tolerable."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Headdress",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "255",
+      "sellable": "1",
+      "materials": "3 Red Chuchu Jelly",
+      "description": "A Rito accessory made from snow-bird feathers. Adorned with a ruby, a gem that harnesses the power of fire. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Headdress",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "260",
+      "sellable": "1",
+      "materials": "5 Red Chuchu Jelly, 3 Warm Safflina",
+      "description": "A Rito accessory made from snow-bird feathers. Adorned with a ruby, a gem that harnesses the power of fire. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Headdress",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "280",
+      "sellable": "1",
+      "materials": "8 Fire Keese Wing, 5 Sunshroom",
+      "description": "A Rito accessory made from snow-bird feathers. Adorned with a ruby, a gem that harnesses the power of fire. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Headdress",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "630",
+      "sellable": "1",
+      "materials": "10 Red Lizalfos Tail, 5 Ruby",
+      "description": "A Rito accessory made from snow-bird feathers. Adorned with a ruby, a gem that harnesses the power of fire. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Trousers",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "140",
+      "sellable": "1",
+      "materials": "",
+      "description": "The Rito sell these trousers to Hylians in Rito Village. The inside is lined with Rito feathers, so they excel at retaining body heat."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Trousers",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "145",
+      "sellable": "1",
+      "materials": "3 Red Chuchu Jelly",
+      "description": "The Rito feathers that line these trousers make them excellent at retaining body heat. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Trousers",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "5 Red Chuchu Jelly, 3 Warm Safflina",
+      "description": "The Rito feathers that line these trousers make them excellent at retaining body heat. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Trousers",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "165",
+      "sellable": "1",
+      "materials": "8 Fire Keese Wing, 5 Sunshroom",
+      "description": "The Rito feathers that line these trousers make them excellent at retaining body heat. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Trousers",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "515",
+      "sellable": "1",
+      "materials": "10 Red Lizalfos Tail, 5 Ruby",
+      "description": "The Rito feathers that line these trousers make them excellent at retaining body heat. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Tunic",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "",
+      "description": "Lined with molted Rito feathers, this tunic was made by Rito artisans for Hylians visiting cold climates. The feathers are stacked in each layer to retain body heat."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Tunic",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "155",
+      "sellable": "1",
+      "materials": "3 Red Chuchu Jelly",
+      "description": "Made by Rito artisans, this tunic stacks molted Rito feathers in each layer to help retain body heat. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Tunic",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Red Chuchu Jelly, 3 Warm Safflina",
+      "description": "Made by Rito artisans, this tunic stacks molted Rito feathers in each layer to help retain body heat. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Tunic",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "185",
+      "sellable": "1",
+      "materials": "8 Fire Keese Wing, 5 Sunshroom",
+      "description": "Made by Rito artisans, this tunic stacks molted Rito feathers in each layer to help retain body heat. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Snowquill Tunic",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "530",
+      "sellable": "1",
+      "materials": "10 Red Lizalfos Tail, 5 Ruby",
+      "description": "Made by Rito artisans, this tunic stacks molted Rito feathers in each layer to help retain body heat. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Armor",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "65",
+      "sellable": "1",
+      "materials": "",
+      "description": "Hyrulean guards praised this armor for its superior defense. Made from sturdy plates of metal, the high level of craftsmanship that went into it is obvious with just a glance."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Armor",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "80",
+      "sellable": "1",
+      "materials": "5 Chuchu Jelly, 3 Bokoblin Guts",
+      "description": "Hyrulean guards praised this sturdy armor for its superior defense. The high level of craftsmanship is obvious. A Great Fairy increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Armor",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "115",
+      "sellable": "1",
+      "materials": "3 Keese Eyeball, 3 Moblin Guts",
+      "description": "Hyrulean guards praised this sturdy armor for its superior defense. The high level of craftsmanship is obvious. A Great Fairy increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Armor",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "155",
+      "sellable": "1",
+      "materials": "2 Lizalfos Tail, 2 Hinox Guts",
+      "description": "Hyrulean guards praised this sturdy armor for its superior defense. The high level of craftsmanship is obvious. A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Armor",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "2 Lynel Hoof, 2 Lynel Guts",
+      "description": "Hyrulean guards praised this sturdy armor for its superior defense. The high level of craftsmanship is obvious. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Greaves",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "50",
+      "sellable": "1",
+      "materials": "",
+      "description": "Hyrulean guards favored these greaves. They owe their distinctly high defense to the metal plates they're made from, but the added weight takes some getting used to."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Greaves",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "70",
+      "sellable": "1",
+      "materials": "5 Chuchu Jelly, 3 Bokoblin Guts",
+      "description": "Greaves favored by Hyrulean guards. They owe their distinctly high defense to the metal plates they're made from. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Greaves",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "100",
+      "sellable": "1",
+      "materials": "3 Keese Eyeball, 3 Moblin Guts",
+      "description": "Greaves favored by Hyrulean guards. They owe their distinctly high defense to the metal plates they're made from. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Greaves",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "140",
+      "sellable": "1",
+      "materials": "2 Lizalfos Tail, 2 Hinox Guts",
+      "description": "Greaves favored by Hyrulean guards. They owe their distinctly high defense to the metal plates they're made from. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Greaves",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "265",
+      "sellable": "1",
+      "materials": "2 Lynel Hoof, 2 Lynel Guts",
+      "description": "Greaves favored by Hyrulean guards. They owe their distinctly high defense to the metal plates they're made from. A Great Fairy raised their defense to the maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Helm",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "45",
+      "sellable": "1",
+      "materials": "",
+      "description": "Headgear made from sturdy metals for frontline soldiers. Praised for their defensive capabilities, the only helms that remain are those that survived the Calamity."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Helm",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "65",
+      "sellable": "1",
+      "materials": "5 Chuchu Jelly, 3 Bokoblin Guts",
+      "description": "Sturdy headgear for protecting frontline soldiers from vicious monsters. Praised for its superior defense. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Helm",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "95",
+      "sellable": "1",
+      "materials": "3 Keese Eyeball, 3 Moblin Guts",
+      "description": "Sturdy headgear for protecting frontline soldiers from vicious monsters. Praised for its superior defense. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Helm",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "2 Lizalfos Tail, 2 Hinox Guts",
+      "description": "Sturdy headgear for protecting frontline soldiers from vicious monsters. Praised for its superior defense. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Soldier's Helm",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "2 Lynel Hoof, 2 Lynel Guts",
+      "description": "Sturdy headgear for protecting frontline soldiers from vicious monsters. Praised for its superior defense. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Chest Guard",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "175",
+      "sellable": "1",
+      "materials": "",
+      "description": "Armor designed for stealth, passed down through the Sheikah tribe. The special fabrics suppress the rustling of clothes even when moving quickly."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Chest Guard",
+      "level": "★",
+      "defense": "4",
+      "sellPrice": "180",
+      "sellable": "1",
+      "materials": "3 Blue Nightshade",
+      "description": "Armor designed for stealth, passed down through the Sheikah tribe. Its special fabric suppresses sound. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Chest Guard",
+      "level": "★★",
+      "defense": "6",
+      "sellPrice": "185",
+      "sellable": "1",
+      "materials": "5 Blue Nightshade, 5 Sunset Firefly",
+      "description": "Armor designed for stealth, passed down through the Sheikah tribe. Its special fabric suppresses sound. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Chest Guard",
+      "level": "★★★",
+      "defense": "9",
+      "sellPrice": "200",
+      "sellable": "1",
+      "materials": "8 Silent Shroom, 5 Sneaky River Snail",
+      "description": "Armor designed for stealth, passed down through the Sheikah tribe. Its special fabric suppresses sound. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Chest Guard",
+      "level": "★★★★",
+      "defense": "16",
+      "sellPrice": "275",
+      "sellable": "1",
+      "materials": "10 Stealthfin Trout, 5 Silent Princess",
+      "description": "Armor designed for stealth, passed down through the Sheikah tribe. Its special fabric suppresses sound. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Mask",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "It may look like a regular cloth mask, but it was made using Sheikah crafting techniques to suppress the noisy rustling of clothes. Perfect for sneaking about."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Mask",
+      "level": "★",
+      "defense": "4",
+      "sellPrice": "130",
+      "sellable": "1",
+      "materials": "3 Blue Nightshade",
+      "description": "A Sheikah-made mask that suppresses the noisy rustling of clothes. Perfect for sneaking about. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Mask",
+      "level": "★★",
+      "defense": "6",
+      "sellPrice": "135",
+      "sellable": "1",
+      "materials": "5 Blue Nightshade, 5 Sunset Firefly",
+      "description": "A Sheikah-made mask that suppresses the noisy rustling of clothes. Perfect for sneaking about. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Mask",
+      "level": "★★★",
+      "defense": "9",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "8 Silent Shroom, 5 Sneaky River Snail",
+      "description": "A Sheikah-made mask that suppresses the noisy rustling of clothes. Perfect for sneaking about. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Mask",
+      "level": "★★★★",
+      "defense": "16",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "10 Stealthfin Trout, 5 Silent Princess",
+      "description": "A Sheikah-made mask that suppresses the noisy rustling of clothes. Perfect for sneaking about. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Tights",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "150",
+      "sellable": "1",
+      "materials": "",
+      "description": "Members of the Sheikah tribe wear these tights when they need to move stealthily. They're made from noise-suppressing cloth, a hallmark of ancient Sheikah technology."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Tights",
+      "level": "★",
+      "defense": "4",
+      "sellPrice": "155",
+      "sellable": "1",
+      "materials": "3 Blue Nightshade",
+      "description": "Tights crafted by the Sheikah, laced with ancient technology that suppresses the noisy rustling of clothes. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Tights",
+      "level": "★★",
+      "defense": "6",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Blue Nightshade, 5 Sunset Firefly",
+      "description": "Tights crafted by the Sheikah, laced with ancient technology that suppresses the noisy rustling of clothes. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Tights",
+      "level": "★★★",
+      "defense": "9",
+      "sellPrice": "175",
+      "sellable": "1",
+      "materials": "8 Silent Shroom, 5 Sneaky River Snail",
+      "description": "Tights crafted by the Sheikah, laced with ancient technology that suppresses the noisy rustling of clothes. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Stealth Tights",
+      "level": "★★★★",
+      "defense": "16",
+      "sellPrice": "250",
+      "sellable": "1",
+      "materials": "10 Stealthfin Trout, 5 Silent Princess",
+      "description": "Tights crafted by the Sheikah, laced with ancient technology that suppresses the noisy rustling of clothes. A Great Fairy has raised their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Thunder Helm",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "A precious heirloom passed down among the Gerudo. It deflects lightning strikes and is traditionally worn only by the Gerudo chief."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tingle's Hood",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "There was once a man who claimed to be the very reincarnation of a fairy. He treasured this hood, and so will you. After all, it's a rather rare find. Kooloo-Limpah!"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tingle's Shirt",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "There was once a man who claimed to be the very reincarnation of a fairy. He treasured this shirt, and so will you. After all, it's a rather rare find. Kooloo-Limpah!"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tingle's Tights",
+      "level": "",
+      "defense": "2",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "There was once a man who claimed to be the very reincarnation of a fairy. He treasured these tights, and so will you. After all, they're a rather rare find. Kooloo-Limpah!"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Topaz Earrings",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "100",
+      "sellable": "1",
+      "materials": "",
+      "description": "Earrings made by Gerudo craft workers. They're made with topaz, a gem that harnesses the power of lightning to increase electricity resistance."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Topaz Earrings",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "195",
+      "sellable": "1",
+      "materials": "2 Topaz, 3 Flint",
+      "description": "Earrings made with topaz, which harnesses the power of lightning to increase electricity resistance. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Topaz Earrings",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "380",
+      "sellable": "1",
+      "materials": "4 Topaz, 3 Flint",
+      "description": "Earrings made with topaz, which harnesses the power of lightning to increase electricity resistance. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Topaz Earrings",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "725",
+      "sellable": "1",
+      "materials": "6 Topaz, 1 Star Fragment",
+      "description": "Earrings made with topaz, which harnesses the power of lightning to increase electricity resistance. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Topaz Earrings",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1250",
+      "sellable": "1",
+      "materials": "10 Topaz, 1 Star Fragment",
+      "description": "Earrings made with topaz, which harnesses the power of lightning to increase electricity resistance. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Time",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legends say these trousers were once worn by a hero who traveled through time. They were originally made by a people who made their home in the forest."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Time",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "1 Amber, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who traveled through time. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Time",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "335",
+      "sellable": "1",
+      "materials": "3 Amber, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who traveled through time. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Time",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "525",
+      "sellable": "1",
+      "materials": "5 Amber, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who traveled through time. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Time",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "825",
+      "sellable": "1",
+      "materials": "10 Amber, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who traveled through time. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Twilight",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legends say these trousers were once worn by a hero who battled the beasts of twilight. The insides are lined with cozy wolf fur."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Twilight",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "1 Topaz, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who battled the beasts of twilight. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Twilight",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "445",
+      "sellable": "1",
+      "materials": "3 Topaz, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who battled the beasts of twilight. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Twilight",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "755",
+      "sellable": "1",
+      "materials": "5 Topaz, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who battled the beasts of twilight. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of Twilight",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1280",
+      "sellable": "1",
+      "materials": "10 Topaz, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who battled the beasts of twilight. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Hero",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legends say these trousers were favored by a hero from an ancient age. Their simple design is a rare aesthetic these days, but there's something classic about them."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Hero",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "1 Ruby, 1 Star Fragment",
+      "description": "Legends say these trousers were favored by a hero from an ancient age. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Hero",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "485",
+      "sellable": "1",
+      "materials": "3 Ruby, 1 Star Fragment",
+      "description": "Legends say these trousers were favored by a hero from an ancient age. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Hero",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "825",
+      "sellable": "1",
+      "materials": "5 Ruby, 1 Star Fragment",
+      "description": "Legends say these trousers were favored by a hero from an ancient age. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Hero",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1425",
+      "sellable": "1",
+      "materials": "10 Ruby, 1 Star Fragment",
+      "description": "Legends say these trousers were favored by a hero from an ancient age. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Sky",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legends say these trousers were once worn by a hero who appeared from the sky riding a mighty bird. It was the official garb of a certain order of knights."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Sky",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "265",
+      "sellable": "1",
+      "materials": "1 Sapphire, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Sky",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "535",
+      "sellable": "1",
+      "materials": "3 Sapphire, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Sky",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "935",
+      "sellable": "1",
+      "materials": "5 Sapphire, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Sky",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1660",
+      "sellable": "1",
+      "materials": "10 Sapphire, 1 Star Fragment",
+      "description": "Legends say these trousers were once worn by a hero who appeared from the sky riding a mighty bird. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wild",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "Legends say these pants were tailored for a hero who travels the wilderness. Strangely enough, they're the most comfortable pair of pants you've ever worn."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wild",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Acorn, 2 Dinraal's Scale",
+      "description": "Legends say these trousers were tailored for a hero who travels the wilderness. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wild",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Courser Bee Honey, 2 Dinraal's Claw",
+      "description": "Legends say these trousers were tailored for a hero who travels the wilderness. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wild",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Energetic Rhino Beetle, 2 Shard of Dinraal's Fang",
+      "description": "Legends say these trousers were tailored for a hero who travels the wilderness. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wild",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "2 Shard of Dinraal's Horn, 1 Star Fragment",
+      "description": "Legends say these trousers were tailored for a hero who travels the wilderness. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wind",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legends say these trousers were cherished by a hero who sailed the Great Sea. They're water-resistant, naturally."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wind",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "1 Opal, 1 Star Fragment",
+      "description": "Legends say these trousers were once cherished by a hero who sailed the Great Sea. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wind",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "395",
+      "sellable": "1",
+      "materials": "3 Opal, 1 Star Fragment",
+      "description": "Legends say these trousers were once cherished by a hero who sailed the Great Sea. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wind",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "620",
+      "sellable": "1",
+      "materials": "5 Opal, 1 Star Fragment",
+      "description": "Legends say these trousers were once cherished by a hero who sailed the Great Sea. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Trousers of the Wind",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "995",
+      "sellable": "1",
+      "materials": "10 Opal, 1 Star Fragment",
+      "description": "Legends say these trousers were once cherished by a hero who sailed the Great Sea. A Great Fairy has increased their defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Time",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legend has it this armor was once worn by a hero who traveled through time. Strangely, its special design is fitted for children and adults alike."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Time",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "1 Amber, 1 Star Fragment",
+      "description": "Legend has it this armor was once worn by a hero who traveled through time. It can be worn by a child or an adult. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Time",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "335",
+      "sellable": "1",
+      "materials": "3 Amber, 1 Star Fragment",
+      "description": "Legend has it this armor was once worn by a hero who traveled through time. It can be worn by a child or an adult. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Time",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "525",
+      "sellable": "1",
+      "materials": "5 Amber, 1 Star Fragment",
+      "description": "Legend has it this armor was once worn by a hero who traveled through time. It can be worn by a child or an adult. A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Time",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "825",
+      "sellable": "1",
+      "materials": "10 Amber, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who traveled through time. It can be worn by a child or an adult. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Twilight",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legend has it this armor was once worn by a hero who battled the monsters of twilight. There still seems to be some hair clinging to it... Looks like it may be from a wolf?"
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Twilight",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "1 Topaz, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who battled monsters of twilight. It looks like some wolf hair is still stuck to it... A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Twilight",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "445",
+      "sellable": "1",
+      "materials": "3 Topaz, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who battled monsters of twilight. It looks like some wolf hair is still stuck to it... A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Twilight",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "755",
+      "sellable": "1",
+      "materials": "5 Topaz, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who battled monsters of twilight. It looks like some wolf hair is still stuck to it... A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of Twilight",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1280",
+      "sellable": "1",
+      "materials": "10 Topaz, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who battled monsters of twilight. It looks like some wolf hair is still stuck to it... A Great Fairy raised its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Hero",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legend has it this armor was once cherished by a hero from ancient times. Its design is rather simple, but it's such a traditional look."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Hero",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "225",
+      "sellable": "1",
+      "materials": "1 Ruby, 1 Star Fragment",
+      "description": "Legend has it this armor was once cherished by a hero from ancient times. Its design is simple yet traditional. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Hero",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "485",
+      "sellable": "1",
+      "materials": "3 Ruby, 1 Star Fragment",
+      "description": "Legend has it this armor was once cherished by a hero from ancient times. Its design is simple yet traditional. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Hero",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "825",
+      "sellable": "1",
+      "materials": "5 Ruby, 1 Star Fragment",
+      "description": "Legend has it this armor was once cherished by a hero from ancient times. Its design is simple yet traditional. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Hero",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1425",
+      "sellable": "1",
+      "materials": "10 Ruby, 1 Star Fragment",
+      "description": "Legend has it this armor was once cherished by a hero from ancient times. Its design is simple yet traditional. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Sky",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legend has it this armor was once worn by a hero who appeared from the sky riding atop a mighty bird. Apparently it was presented to celebrate the completion of a ceremony."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Sky",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "265",
+      "sellable": "1",
+      "materials": "1 Sapphire, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who rode a mighty bird. It was apparently presented after a ceremony. A Great Fairy increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Sky",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "535",
+      "sellable": "1",
+      "materials": "3 Sapphire, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who rode a mighty bird. It was apparently presented after a ceremony. A Great Fairy increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Sky",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "935",
+      "sellable": "1",
+      "materials": "5 Sapphire, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who rode a mighty bird. It was apparently presented after a ceremony. A Great Fairy increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Sky",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "1660",
+      "sellable": "1",
+      "materials": "10 Sapphire, 1 Star Fragment",
+      "description": "Legend has it this armor was worn by a hero who rode a mighty bird. It was apparently presented after a ceremony. A Great Fairy increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wild",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "This armor was apparently crafted for a hero who travels the wilds. Strangely enough, it's just your size."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wild",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Acorn, 2 Naydra's Scale",
+      "description": "This armor was apparently crafted for a hero who travels the wilds. Strangely enough, it's just your size. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wild",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Courser Bee Honey, 2 Naydra's Claw",
+      "description": "This armor was apparently crafted for a hero who travels the wilds. Strangely enough, it's just your size. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wild",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Energetic Rhino Beetle, 2 Shard of Naydra's Fang",
+      "description": "This armor was apparently crafted for a hero who travels the wilds. Strangely enough, it's just your size. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wild",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "2 Shard of Naydra's Horn, 1 Star Fragment",
+      "description": "This armor was apparently crafted for a hero who travels the wilds. Strangely enough, it's just your size. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wind",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "Legend has it this armor was once cherished by a hero who sailed the Great Sea. It's said to have been a gift from his grandmother."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wind",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "245",
+      "sellable": "1",
+      "materials": "1 Opal, 1 Star Fragment",
+      "description": "Legend has it this armor was cherished by a hero who sailed the Great Sea. It was woven with love by his grandmother. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wind",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "395",
+      "sellable": "1",
+      "materials": "3 Opal, 1 Star Fragment",
+      "description": "Legend has it this armor was cherished by a hero who sailed the Great Sea. It was woven with love by his grandmother. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wind",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "620",
+      "sellable": "1",
+      "materials": "5 Opal, 1 Star Fragment",
+      "description": "Legend has it this armor was cherished by a hero who sailed the Great Sea. It was woven with love by his grandmother. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Tunic of the Wind",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "995",
+      "sellable": "1",
+      "materials": "10 Opal, 1 Star Fragment",
+      "description": "Legend has it this armor was cherished by a hero who sailed the Great Sea. It was woven with love by his grandmother. A Great Fairy raised its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Medoh Divine Helm",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Medoh. It endows its user with enhanced abilities."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Medoh Divine Helm",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Medoh. It endows its user with enhanced abilities. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Medoh Divine Helm",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Medoh. It endows its user with enhanced abilities. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Medoh Divine Helm",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Medoh. It endows its user with enhanced abilities. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Medoh Divine Helm",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Medoh. It endows its user with enhanced abilities. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Naboris Divine Helm",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Naboris. It endows its user with enhanced abilities. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Naboris Divine Helm",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Naboris. It endows its user with enhanced abilities. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Naboris Divine Helm",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Naboris. It endows its user with enhanced abilities."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Naboris Divine Helm",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Naboris. It endows its user with enhanced abilities. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Naboris Divine Helm",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Naboris. It endows its user with enhanced abilities. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Rudania Divine Helm",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Rudania. It endows its user with enhanced abilities."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Rudania Divine Helm",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Rudania. It endows its user with enhanced abilities. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Rudania Divine Helm",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Rudania. It endows its user with enhanced abilities. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Rudania Divine Helm",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Rudania. It endows its user with enhanced abilities. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Rudania Divine Helm",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Rudania. It endows its user with enhanced abilities. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Ruta Divine Helm",
+      "level": "",
+      "defense": "4",
+      "sellPrice": "125",
+      "sellable": "1",
+      "materials": "",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Ruta. It endows its user with enhanced abilities."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Ruta Divine Helm",
+      "level": "★",
+      "defense": "7",
+      "sellPrice": "160",
+      "sellable": "1",
+      "materials": "5 Ancient Screw, 5 Ancient Spring",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Ruta. It endows its user with enhanced abilities. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Ruta Divine Helm",
+      "level": "★★",
+      "defense": "12",
+      "sellPrice": "290",
+      "sellable": "1",
+      "materials": "15 Ancient Spring, 10 Ancient Gear",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Ruta. It endows its user with enhanced abilities. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Ruta Divine Helm",
+      "level": "★★★",
+      "defense": "18",
+      "sellPrice": "560",
+      "sellable": "1",
+      "materials": "15 Ancient Shaft, 5 Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Ruta. It endows its user with enhanced abilities. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Vah Ruta Divine Helm",
+      "level": "★★★★",
+      "defense": "28",
+      "sellPrice": "735",
+      "sellable": "1",
+      "materials": "1 Star Fragment, 2 Giant Ancient Core",
+      "description": "A treasure gifted to the one who controls Divine Beast Vah Ruta. It endows its user with enhanced abilities. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Warm Doublet",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "20",
+      "sellable": "1",
+      "materials": "",
+      "description": "A warm pullover typically worn by mountain folk. Its sturdy fabric and thick gloves are great at retaining body heat."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Well-Worn Trousers",
+      "level": "",
+      "defense": "1",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "These old trousers are threadbare in spots, but they're surprisingly comfortable. The legs are a bit too short, though."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zant's Helmet",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "15",
+      "sellable": "1",
+      "materials": "",
+      "description": "The ruthless Usurper King of the Twilight Realm wore a helmet much like this one... It's a rather rare find."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Armor",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "Custom armor painstakingly crafted by each generation's Zora princess for her future husband. Wearing it will give you the ability to swim up waterfalls."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Armor",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "3 Lizalfos Horn",
+      "description": "Armor crafted by each generation's Zora princess for her future husband. Equip it to swim up waterfalls. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Armor",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Lizalfos Talon, 5 Hyrule Bass",
+      "description": "Armor crafted by each generation's Zora princess for her future husband. Equip it to swim up waterfalls. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Armor",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Lizalfos Tail, 5 Hearty Bass",
+      "description": "Armor crafted by each generation's Zora princess for her future husband. Equip it to swim up waterfalls. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Armor",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Lizalfos Tail, 15 Opal",
+      "description": "Armor crafted by each generation's Zora princess for her future husband. Equip it to swim up waterfalls. A Great Fairy has increased its defense to its maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Greaves",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "These greaves have been passed down among the Zora for generations. It's been said they're crafted using dragon scales. Equip them to swim faster."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Greaves",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "3 Lizalfos Horn",
+      "description": "These greaves have been passed down among the Zora for generations. Equip them to swim faster. A Great Fairy has increased their defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Greaves",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Lizalfos Talon, 5 Hyrule Bass",
+      "description": "These greaves have been passed down among the Zora for generations. Equip them to swim faster. A Great Fairy has increased their defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Greaves",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Lizalfos Tail, 5 Hearty Bass",
+      "description": "These greaves have been passed down among the Zora for generations. Equip them to swim faster. A Great Fairy has increased their defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Greaves",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Lizalfos Tail, 15 Opal",
+      "description": "These greaves have been passed down among the Zora for generations. Equip them to swim faster. A Great Fairy has increased their defense to the maximum level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Helm",
+      "level": "",
+      "defense": "3",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "",
+      "description": "Zora headgear made from dragon scales. Increases swimming speed and allows you to <span class=\"zw-color\" style=\"color:#20f0d8; \">spin</span> to attack underwater."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Helm",
+      "level": "★",
+      "defense": "5",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "3 Lizalfos Horn",
+      "description": "Zora headgear made from dragon scales. Increases swimming speed and allows you to <span class=\"zw-color\" style=\"color:#20f0d8; \">spin</span> to attack underwater. A Great Fairy has increased its defense by one level."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Helm",
+      "level": "★★",
+      "defense": "8",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Lizalfos Talon, 5 Hyrule Bass",
+      "description": "Zora headgear made from dragon scales. Increases swimming speed and allows you to <span class=\"zw-color\" style=\"color:#20f0d8; \">spin</span> to attack underwater. A Great Fairy has increased its defense by two levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Helm",
+      "level": "★★★",
+      "defense": "12",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "5 Lizalfos Tail, 5 Hearty Bass",
+      "description": "Zora headgear made from dragon scales. Increases swimming speed and allows you to <span class=\"zw-color\" style=\"color:#20f0d8; \">spin</span> to attack underwater. A Great Fairy has increased its defense by three levels."
+    },
+    {
+      "page": "Data:Armor/BotW",
+      "armor": "Zora Helm",
+      "level": "★★★★",
+      "defense": "20",
+      "sellPrice": "",
+      "sellable": "0",
+      "materials": "10 Lizalfos Tail, 15 Opal",
+      "description": "Zora headgear made from dragon scales. Increases swimming speed and allows you to <span class=\"zw-color\" style=\"color:#20f0d8; \">spin</span> to attack underwater.  A Great Fairy has increased its defense to its maximum level."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "botw_mechanic_ice",
+  "summary": "Ataques de gelo congelam Link e inimigos; golpear um inimigo congelado quebra o gelo com dano extra. Gelo mata inimigos de fogo de um golpe, congela carnes e peixes e é derretido pelo fogo. Resistência ao frio não protege do congelamento.",
+  "description": "Gelo, em BOTW, é sobretudo o estado de congelamento. Uma Flecha congelante, um golpe da Espada álgida ou da Lança congelante brilhando em azul, o toque de um Morci glacial ou de um Tálus glacial e a explosão de um Chulchul glacial deixam o alvo — Link inclusive — congelado por alguns instantes. Golpear um inimigo congelado com uma arma estilhaça o gelo e causa mais dano que o normal. Ataques de gelo também eliminam de uma vez inimigos de fogo, como Feitiçanos ígneos e meteóricos e Lagalfos ígneos.\n\nO frio do ambiente é outra coisa (ver Temperatura). A Resistência ao frio evita o dano dos climas gelados, mas não reduz o dano de gelo, de ataques gélidos nem da água gelada; quem impede o congelamento é a Imunidade a congelamento do Elmo de Zant e do Conjunto de pluma nevada melhorado duas vezes. Carnes e peixes congelam sozinhos em clima gelado ou água gelada — ou ao serem atingidos por gelo — e viram comida congelada com um nível de Resistência ao calor. O fogo derrete o gelo, e a runa Gelítis cria pilares de gelo sobre a água.",
+  "locations": [
+    "Inimigos de gelo: Chulchuls glaciais (Monte Hylia, Cordilheiras de Hebra), Morcis glaciais (Monte Lanayru), Feitiçanos glaciais (Montanhas Gerudo e Pradaria de Hyrule) e Tálus glaciais (Cordilheiras de Hebra e Montanhas Gerudo).",
+    "Naydra, o dragão de gelo, no Monte Lanayru e na Estrada de Lanayru."
+  ],
+  "obtaining": [
+    "Flechas congelantes, Espada álgida, Lança congelante, Grã-Espada álgida, Varinha de gelo e Cajado glacial; Gelecas gélidas golpeadas; a runa Gelítis."
+  ],
+  "uses": [
+    "Imobilizar grupos de inimigos e aproveitar o golpe que quebra o gelo.",
+    "Derrotar inimigos de fogo instantaneamente.",
+    "Congelar carnes e peixes para obter comida que refresca no deserto."
+  ],
+  "effects": [
+    "Congelamento temporário do alvo; o golpe seguinte estilhaça o gelo com dano aumentado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Um efeito de gelo congela o alvo por pouco tempo; acertar um inimigo congelado com uma arma quebra o gelo e causa mais dano que o normal.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "A Flecha congelante (+10 de dano) explode em gelo no impacto e congela o alvo e objetos próximos; é recomendada para quando Link está cercado.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Espada álgida e Lança congelante congelam quem atingem quando a lâmina brilha em azul; a Varinha de gelo lança uma rajada gélida e dispara cinco rajadas num ataque giratório.",
+      "side_effects": ["A Espada álgida e a Lança congelante são de metal: conduzem eletricidade e atraem raios."],
+      "kind": "mecanica",
+      "sources": ["zw:Frostblade", "zw:Frostspear", "zw:Ice Rod"]
+    },
+    {
+      "action": "monstros",
+      "variant": "inimigos de fogo",
+      "status": "confirmado",
+      "result": "Uma Flecha congelante elimina de uma vez Feitiçanos ígneos, Feitiçanos meteóricos e Lagalfos ígneos; Espada álgida, Lança congelante e Varinha de gelo também derrotam inimigos de fogo com um golpe. Golpes de gelo esfriam temporariamente um Tálus ígneo, permitindo escalá-lo.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow", "zw:Frostblade", "zw:Ice Rod", "zw:Igneo Talus", "zw:Enemy"]
+    },
+    {
+      "action": "monstros",
+      "variant": "inimigos de gelo",
+      "status": "confirmado",
+      "result": "Chulchuls glaciais congelam Link ao tocá-lo e, mortos com a camada de gelo, explodem numa nuvem que congela tudo ao redor; Morcis glaciais congelam no contato; Tálus glaciais congelam quem os toca e não podem ser escalados sem derreter o gelo.",
+      "applications": ["Matar um Chulchul glacial perto de outros monstros para congelá-los também."],
+      "kind": "mecanica",
+      "sources": ["zw:Ice Chuchu", "zw:Ice Keese", "zw:Frost Talus", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Fogo derrete gelo; ataques de fogo eliminam de um golpe inimigos de gelo e derretem a camada de um Tálus glacial.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire", "zw:Frost Talus", "zw:Fire Arrow"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de uma Flecha explosiva derrota instantaneamente inimigos de gelo.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Arrow"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Carnes e peixes largados em clima gelado ou mergulhados em água gelada congelam; o mesmo acontece se forem atingidos por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante. A comida congelada mantém a cura e dá 1:00 de Resistência ao calor de nível 1.",
+      "produces": ["botw_food_icy_meat", "botw_food_frozen_bass", "botw_food_frozen_crab", "botw_food_frozen_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Freezing Climate", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Nadar em água gelada tira meio coração a cada 0,5 s, e nenhuma armadura, comida ou elixir protege contra isso.",
+      "kind": "mecanica",
+      "sources": ["zw:Cold Water", "zw:Temperature"]
+    },
+    {
+      "action": "gelitis",
+      "status": "confirmado",
+      "result": "A runa Gelítis cria até três pilares de gelo na superfície da água (inclusive cachoeiras); um quarto quebra o primeiro. Os pilares resistem a armas e flechas comuns, mas se quebram com Bomba remota, Flecha ancestral ou chama azul.",
+      "kind": "mecanica",
+      "sources": ["zw:Cryonis", "zw:Blue Flame"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só a Imunidade a congelamento (Elmo de Zant; Conjunto de pluma nevada melhorado duas vezes) impede o congelamento e anula o dano de gelo. A Resistência ao frio não faz isso.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice-Proof", "zw:Chill-Proof", "zw:Snowquill Set"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Opostos elementais",
+      "text": "Fogo e gelo são opostos: acertar um monstro de fogo com uma arma de gelo, ou o contrário, mata-o na hora. As dicas do jogo repetem a regra nos dois sentidos.",
+      "sources": ["zw:Enemy", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Monstros dourados descongelam mais rápido",
+      "text": "No Modo Mestre, os monstros dourados resistem mais aos estados elementais e saem do gelo mais depressa.",
+      "sources": ["zw:Gold Enemy"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Geleca gélida pela forma de matar",
+      "text": "Derrotar um Chulchul comum com um ataque de gelo faz cair Geleca gélida em vez da comum.",
+      "sources": ["zw:Chuchu"]
+    }
+  ],
+  "advanced_uses": [
+    "Congelar um inimigo com Flecha congelante e golpeá-lo com a arma mais forte para aproveitar o dano extra da quebra do gelo.",
+    "Equipar Espada álgida ou Varinha de gelo no calor do deserto: elas equivalem a um nível de Resistência ao calor (mas não funcionam no clima escaldante de Eldin)."
+  ],
+  "limitations": [
+    "Resistência ao frio não impede congelamento nem dano de gelo.",
+    "Centaleões resistem a elementos.",
+    "Água gelada fere sem nenhuma proteção possível."
+  ],
+  "related": [
+    { "id": "botw_arrow_ice_arrow", "relation": "Principal fonte de congelamento à distância" },
+    { "id": "botw_weapon_frostblade", "relation": "Congela ao brilhar em azul" },
+    { "id": "botw_weapon_frostspear", "relation": "Congela ao brilhar em azul" },
+    { "id": "botw_weapon_ice_rod", "relation": "Varinha de rajadas de gelo" },
+    { "id": "botw_monster_ice_chuchu", "relation": "Explode numa nuvem congelante" },
+    { "id": "botw_monster_frost_talus", "relation": "Congela ao toque; fogo derrete" },
+    { "id": "botw_monster_fire_wizzrobe", "relation": "Morre com um ataque de gelo" },
+    { "id": "botw_monster_fire_breath_lizalfos", "relation": "Morre com um ataque de gelo" },
+    { "id": "botw_material_white_chuchu_jelly", "relation": "Geleca obtida com gelo" },
+    { "id": "botw_food_icy_meat", "relation": "Carne congelada pelo frio" },
+    { "id": "botw_rune_cryonis", "relation": "Cria pilares de gelo na água" },
+    { "id": "botw_armorset_snowquill_set", "relation": "Bônus de Imunidade a congelamento" },
+    { "id": "botw_armor_zants_helmet", "relation": "Imunidade a congelamento" },
+    { "id": "botw_mechanic_temperature", "relation": "Frio do ambiente, diferente do congelamento" }
+  ],
+  "capabilities": ["gera_gelo", "congela_inimigos"],
+  "verification_status": "verificado"
+}

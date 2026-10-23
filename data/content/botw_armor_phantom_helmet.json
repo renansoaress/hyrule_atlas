@@ -1,0 +1,147 @@
+{
+  "id": "botw_armor_phantom_helmet",
+  "summary": "Elmo dos Fantasmas que atormentavam heróis, do DLC The Master Trials, enterrado nas Coliseum Ruins. Tem 8 de defesa — a maior entre as peças de cabeça sem melhoria — e Ataque aumentado nível 1.",
+  "description": "Segundo a descrição, os mitos falam de fantasmas de armadura que aterrorizavam heróis corajosos, e este elmo é igual ao que eles supostamente usavam. Exclusivo do pacote de DLC The Master Trials, faz parte da missão secundária “EX Treasure: Phantasma”: o diário de Misko nas Outpost Ruins aponta “um campo de batalha onde almas corajosas testavam sua habilidade”, e o baú está enterrado junto a uma parede no primeiro andar das Coliseum Ruins.\n\nDá Ataque aumentado nível 1 (+20%) e 8 de defesa fixa, o valor-base mais alto entre todas as peças de cabeça. O Conjunto fantasma (com a Armadura e as Grevas fantasmas) não tem bônus de conjunto, mas cada peça soma um nível de ataque, e vestir as três faz as pessoas se assustarem com Link. Não pode ser melhorado nem tingido. Depois de achado, Granté o vende por 50 rupias.",
+  "locations": [
+    "Coliseum Ruins: baú enterrado junto a uma parede do primeiro andar."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Phantasma” (DLC The Master Trials), iniciada pelo diário de Misko nas Outpost Ruins.",
+    "Reposição: Granté o vende por 50 rupias depois da primeira obtenção."
+  ],
+  "uses": [
+    "Defesa alta e Ataque aumentado logo no começo do jogo, sem gastar materiais."
+  ],
+  "effects": [
+    "Ataque aumentado nível 1 (+20%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 8 de defesa fixa e dá Ataque aumentado nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto fantasma completo",
+      "status": "confirmado",
+      "result": "Não há bônus de conjunto, mas as três peças somam Ataque aumentado nível 3 (+50%), e as pessoas se assustam ao ver Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Phantom Equipment",
+        "zw:Added Effect",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Defesa de início de jogo",
+      "text": "Como o DLC permite buscar o Conjunto fantasma logo depois de sair do Grande Planalto, as três peças dão 24 de defesa e Ataque aumentado nível 3 muito antes de outras armaduras melhoradas estarem ao alcance.",
+      "sources": [
+        "zw:EX Treasure: Phantasma",
+        "zw:Phantom Equipment"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Aviso de raridade removido",
+      "text": "Antes da versão 1.3.3, Granté não vendia armaduras dos DLCs e a descrição alertava que o elmo não poderia ser recuperado se fosse vendido; o texto mudou com a atualização.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o Conjunto fantasma completo como armadura de ataque do início ao meio do jogo, trocando depois por conjuntos melhoráveis."
+  ],
+  "limitations": [
+    "Não pode ser melhorado nem tingido: a defesa nunca passa de 8.",
+    "O conjunto não tem bônus de conjunto.",
+    "Exige o DLC The Master Trials."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_phantom_equipment",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_phantom_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_greaves",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_barbarian_helm",
+      "relation": "Elmo melhorável com o mesmo efeito"
+    },
+    {
+      "id": "botw_armor_midnas_helmet",
+      "relation": "Outro elmo do DLC com defesa fixa alta (7)"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

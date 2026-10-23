@@ -1,0 +1,86 @@
+{
+  "id": "botw_creature_sand_sparrow",
+  "summary": "Pardal do Deserto Gerudo, adaptado ao calor, que se enterra parcialmente na areia e fica imóvel para escapar de predadores. Anda em pequenos bandos no chão, voa quando perturbado e deixa uma Noz.",
+  "description": "O Pardal do deserto é nativo do Deserto Gerudo e se adaptou ao calor intenso e à aridez da região. É cinza-escuro, de barriga branca, cabeça vermelha e bochechas laranja. Sua defesa contra predadores é curiosa: enterra-se na areia e permanece imóvel, às vezes com o corpo meio coberto.\n\nReúne-se em pequenos bandos no chão e voa quando perturbado. Abatido, deixa uma Noz.",
+  "locations": [
+    "Deserto Gerudo (compendium)."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Noz."
+  ],
+  "uses": [
+    "Fonte de Noz no deserto, ingrediente de Bolo de nozes e Nozes salteadas.",
+    "Registrar sua foto no compendium (entrada nº 34)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Fica em pequenos bandos no chão e voa quando perturbado. Às vezes está meio enterrado na areia, imóvel, o que o torna difícil de notar.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Noz.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_chickaloo_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra pardais, que voam ao serem perturbados."
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Adaptado ao calor e à aridez do deserto; vive normalmente sob o sol do Deserto Gerudo.",
+      "kind": "curiosidade",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Camuflagem na areia",
+      "text": "Para fugir de predadores, o Pardal do deserto se enterra parcialmente na areia e fica totalmente parado.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "limitations": [
+    "Rende apenas uma Noz."
+  ],
+  "related": [
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Item deixado ao ser abatido" },
+    { "id": "botw_creature_common_sparrow", "relation": "Pardal mais comum de Hyrule" },
+    { "id": "botw_creature_golden_sparrow", "relation": "Outro pardal adaptado ao calor, de Eldin" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "botw_food_monster_soup",
+  "summary": "Sopa de Extrato de monstro com Trigo de Tabantha, Leite fresco e Manteiga de cabra, de sabor de caça marcante. Aceita só um ingrediente de efeito; cura e efeito são sorteados.",
+  "description": "A Sopa de monstro usa a base cremosa dos ensopados — Trigo de Tabantha, Leite fresco e Manteiga de cabra — com o Extrato de monstro no lugar da carne, da abóbora ou das cenouras. O inventário diz que o sabor de caça bem marcado divide opiniões: ou se ama, ou se odeia. Como todo prato de monstro, recupera uma quantidade aleatória de corações, e a força e a duração do efeito também são sorteadas.\n\nSão quatro ingredientes obrigatórios, então só cabe um quinto, que define a variante (um \"isolante\" dá Resistência a choques, um \"picante\" dá Resistência ao frio etc.). A receita de monstro é verificada antes dos ensopados: com o extrato na panela, acrescentar Carne de segunda ou Abóbora robusta à base de leite, trigo e manteiga continua resultando em Sopa de monstro, e não em Ensopado de carne de segunda ou Ensopado de abóbora.",
+  "obtaining": [
+    "Cozinhar numa Panela Extrato de monstro, Trigo de Tabantha, Leite fresco e Manteiga de cabra; um quinto ingrediente de efeito é opcional.",
+    "O Extrato de monstro é vendido por Kilton, à noite, na loja Fang and Bone."
+  ],
+  "uses": [
+    "Recuperar corações, com resultado sorteado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera uma quantidade aleatória de corações.",
+    "Com um quinto ingrediente de efeito, ganha a versão correspondente: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da variante, com cura e força ou duração sorteadas pelo extrato.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne ou abóbora",
+      "status": "confirmado",
+      "result": "Juntar carne ou Abóbora robusta não gera ensopado: a Sopa de monstro tem prioridade sobre o Ensopado de abóbora e os ensopados de carne.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Duração sorteada",
+      "text": "Com Extrato de monstro, a duração do efeito é fixada em 1:00, 10:00 ou 30:00; apenas ingredientes neutros (como o trigo, o leite e a manteiga desta receita) podem acrescentar algo, e mesmo assim com 0:30 a menos cada um.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cura e efeito imprevisíveis.",
+    "Só um espaço livre para ingrediente de efeito.",
+    "Nunca recebe bônus crítico."
+  ],
+  "related": [
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Ingrediente que torna o resultado aleatório"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_pumpkin_stew",
+      "relation": "Mesma base cremosa, com Abóbora robusta no lugar do extrato"
+    },
+    {
+      "id": "botw_food_prime_meat_stew",
+      "relation": "Mesma base cremosa, com carne no lugar do extrato"
+    },
+    {
+      "id": "botw_food_monster_cake",
+      "relation": "Prato de monstro com trigo e manteiga, mas com açúcar em vez de leite"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

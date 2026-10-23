@@ -1,0 +1,188 @@
+{
+  "id": "botw_material_topaz",
+  "summary": "Gema amarela que \"contém o poder da eletricidade\" — poder que só atua nos Brincos de topázio (resistência a choques); não há reação elétrica descrita. Vale 180 rupias e melhora o Conjunto de borracha.",
+  "description": "O Topázio é uma gema amarela preciosa que, de acordo com a descrição do jogo, contém o poder da eletricidade. É importante separar essa associação temática de qualquer reação mecânica: nenhuma fonte diz que o Topázio solto conduz, emite ou reage a eletricidade. O poder se manifesta quando a gema está engastada nos Brincos de topázio da Starlight Memories, na Cidade Gerudo (500 rupias e 5 Topázios), que dão Resistência a choques e, de forma oculta, aumentam em 20% o dano das armas ancestrais e guardiãs. Os brincos também podem ser escolhidos de graça como recompensa de \"Tools of the Trade\".\n\nÉ uma gema de valor intermediário (180 rupias) que sai com mais frequência de Depósitos de minério raro do que dos comuns, além de Tálus rochosos raros e luminosos, inimigos prateados (inclusive o Centaleão prateado) e Espadachins Yiga. Kairo e a joalheria Ore and More, na Vila Tarrey, a vendem. As melhorias que a pedem somam 109 unidades: Brincos de topázio, as três peças do Conjunto do herói do crepúsculo e o último nível das três peças do Conjunto de borracha.",
+  "locations": [
+    "Depósitos de minério e, com mais frequência, Depósitos de minério raro em Toda Hyrule."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de minério e Depósitos de minério raro (voltam após uma Lua de sangue).",
+    "Derrotar Tálus rochosos raros e luminosos, Koboblins, Moblins e Lagalfos prateados, Centaleões prateados e Espadachins Yiga.",
+    "Comprar de Kairo (estrada entre o Foothill Stable e a Montanha da Morte) ou na Ore and More, na Vila Tarrey, que cobra o dobro."
+  ],
+  "uses": [
+    "Comprar os Brincos de topázio na Starlight Memories: 5 Topázios e 500 rupias.",
+    "Melhorias na Fonte da Grande Fada: Brincos de topázio (2, 4, 6 e 10 por nível), Gorro, Túnica e Calças do crepúsculo (1, 3, 5 e 10 por nível) e o 4º nível do Elmo, da Armadura e da Meia-calça de borracha (10 cada) — 109 no total.",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 180 rupias; Ramella paga 2.000 rupias por 10 quando os pede (numa loja, 1.800)."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregado; a Resistência a choques vem dos Brincos de topázio."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "joalheria",
+      "status": "confirmado",
+      "result": "Paga os Brincos de topázio na Starlight Memories (5 Topázios e 500 rupias). A joia aproveita \"o poder do relâmpago\" da gema para dar Resistência a choques nível 1 e o efeito oculto Poder ancestral aumentado (+20% de dano com armas ancestrais e guardiãs).",
+      "conditions": [
+        "Starlight Memories reaberta pela missão \"Tools of the Trade\"."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Topaz Earrings",
+        "zw:Starlight Memories"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Topázio solto à eletricidade. A frase \"contém o poder da eletricidade\" é uma associação temática, que só tem efeito prático nos Brincos de topázio."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem reação ou uso especial do Topázio solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um Topázio largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Topázio ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um Topázio largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Topázio ao gelo."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Topázio afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Topázio é uma gema.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um Topázio largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita com Topázio vira Comida dura como pedra (1/4 de coração, sem efeito).",
+      "produces": [
+        "botw_food_rock_hard_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Rock-Hard Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 180 rupias. Quando Ramella pede Topázios, paga 2.000 rupias pelo lote de 10, contra 1.800 numa loja.",
+      "conditions": [
+        "Missão \"The Jewel Trade\" concluída; a gema pedida por Ramella muda de tempos em tempos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:The Jewel Trade"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus escondido para armas ancestrais",
+      "text": "Os Brincos de topázio têm um efeito que o inventário não mostra: Poder ancestral aumentado, que eleva em 20% o dano das armas ancestrais e guardiãs. As Tiaras de rubi e de safira compartilham esse bônus.",
+      "sources": [
+        "zw:Topaz Earrings"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Gema elétrica, pedra inerte",
+      "text": "Ao contrário da Geleca elétrica, que libera uma descarga quando golpeada, o Topázio não tem nenhuma reação elétrica descrita nas fontes. Isha resume a lógica das joias: usar uma gema transfere o poder dela para quem a veste.",
+      "sources": [
+        "jogo",
+        "zw:Tools of the Trade",
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Escolher os Brincos de topázio como recompensa de \"Tools of the Trade\" economiza 5 Topázios e 500 rupias logo no início da exploração do deserto.",
+    "Guarde os Topázios para os pedidos de Ramella: cada lote de 10 rende 200 rupias a mais que numa loja."
+  ],
+  "limitations": [
+    "Comprar na Ore and More custa o dobro do preço de Kairo.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_topaz_earrings",
+      "relation": "Joia comprada e melhorada com Topázios"
+    },
+    {
+      "id": "botw_armor_cap_of_twilight",
+      "relation": "Usa Topázios em todos os níveis de melhoria"
+    },
+    {
+      "id": "botw_armor_rubber_helm",
+      "relation": "Pede 10 Topázios no 4º nível"
+    },
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Conjunto cujas peças usam Topázio no último nível"
+    },
+    {
+      "id": "botw_treasure_rare_ore_deposit",
+      "relation": "Fonte mais provável de Topázios"
+    },
+    {
+      "id": "botw_monster_silver_lynel",
+      "relation": "Pode deixar Topázio ao ser derrotado"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Gema associada ao fogo, de lógica semelhante"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Gema associada ao gelo, de lógica semelhante"
+    },
+    {
+      "id": "botw_food_rock_hard_food",
+      "relation": "Resultado de cozinhar com Topázio"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

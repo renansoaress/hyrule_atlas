@@ -1,0 +1,177 @@
+{
+  "id": "botw_weapon_lynel_crusher",
+  "summary": "Maça dos Centaleões de juba vermelha (ataque 36), mais um bloco de metal do que uma arma. Só vem de Centaleões e some quando eles evoluem: é um item que pode ser perdido para sempre.",
+  "description": "A Maça centaleônica é a arma de duas mãos favorita dos Centaleões. A descrição do jogo brinca que talvez seja mais correto chamá-la de bloco de metal do que de arma, mas que, nas mãos de um Centaleão, ela pode reduzir o adversário a pó — os Centaleões, aliás, a manejam com uma só mão. Faz parte do Equipamento centaleônico, cujas armas só podem ser obtidas dos próprios Centaleões.\n\nÉ usada pelos Centaleões comuns, sobretudo nas Montanhas Gerudo e na Fronteira de Tabantha; no Modo Mestre, passa para os Centaleões de juba azul. Como as armas dos Centaleões acompanham a evolução deles ao longo do jogo, quem não pegar uma Maça centaleônica antes que esses inimigos sejam substituídos por versões mais fortes pode ficar sem ela para sempre. Feita de metal, conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Montanhas Gerudo e Fronteira de Tabantha, com Centaleões (de juba azul no Modo Mestre)."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão que a empunhe; os Centaleões derrubam a arma, cascos, chifres, vísceras e flechas.",
+    "Os Centaleões só largam a arma quando são derrotados, mesmo atordoados por um acerto crítico.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma de duas mãos de ataque bom no meio do jogo.",
+    "Por ser de metal e não inflamável, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e pesados de duas mãos, sem escudo. O ataque carregado gira enquanto houver vigor e termina numa pancada para baixo; o peso desequilibra inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Empunhada por Centaleões de juba vermelha (por Centaleões de juba azul no Modo Mestre), que a usam com uma mão e golpeiam o chão com ela no ataque em disparada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Item que pode ser perdido",
+      "text": "A maioria dos Centaleões evolui conforme o nível do mundo aumenta, e as armas evoluem junto. Se Link não obtiver uma Maça centaleônica enquanto houver Centaleões de juba vermelha que a usem, a oportunidade se perde. As exceções são os Centaleões do Monte Ploymus e da Primeira e da Segunda Guarita (First e Second Gatehouse), que não evoluem.",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes de graça montado no Centaleão",
+      "text": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes seguidas com qualquer arma sem gastar durabilidade. É uma forma segura de usar maças de ataque alto contra o próprio Centaleão.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +9, Durabilidade aumentada de +2 a +4 ou Acerto crítico; no nível dourado (amarelo): Ataque de +10 a +17, Durabilidade de +5 a +9 ou Lançamento longo (×1,5 a ×2).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para garantir a maça, enfrente um Centaleão de juba vermelha cedo, antes que o progresso no jogo faça os Centaleões evoluírem."
+  ],
+  "limitations": [
+    "Durabilidade baixa (20).",
+    "Pode ficar indisponível para sempre depois que os Centaleões evoluem.",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_mighty_lynel_crusher",
+      "relation": "Versão reforçada (Centaleões de juba azul)"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_crusher",
+      "relation": "Versão máxima (Centaleões de juba branca e prateados)"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Inimigo que a empunha"
+    },
+    {
+      "id": "botw_monster_blue_maned_lynel",
+      "relation": "Empunha-a no Modo Mestre"
+    },
+    {
+      "id": "botw_mechanic_master_mode",
+      "relation": "Muda qual Centaleão a carrega"
+    },
+    {
+      "id": "botw_weapon_lynel_sword",
+      "relation": "Arma de uma mão do Equipamento centaleônico"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

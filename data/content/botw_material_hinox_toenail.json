@@ -1,0 +1,173 @@
+{
+  "id": "botw_material_hinox_toenail",
+  "summary": "Unha do pé de um Rinox, grossa como uma placa de armadura. Rende 15 Mon (uma das melhores proporções Mon/rupia) e é a base do 1º nível do Conjunto da Deidade Feroz.",
+  "description": "A Unha de Rinox é deixada pelos três tipos de Rinox — comum, azul e preto —, os maiores monstros de Hyrule, que costumam dormir em clareiras de floresta. O inventário a compara a uma placa de armadura de tão grossa. Cozida com bichos, acrescenta apenas 1:10 à duração do elixir, o patamar mais baixo.\n\nSeu uso principal é o 1º nível do Conjunto da Deidade Feroz: cada peça pede 5 unhas e uma escama de dragão (Dinraal para a máscara, Naydra para a armadura e Farosh para as botas), num total de 15 unhas. Os níveis seguintes do conjunto continuam com Dentes e Vísceras de Rinox. Na Tinturaria Kochi, a unha entra no corante marrom.",
+  "locations": [
+    "Clareiras e florestas onde os Rinox dormem, como as listadas pelo Zelda Wiki (por exemplo, Giant's Forest e Kamah Plateau)."
+  ],
+  "obtaining": [
+    "Derrotar um Rinox comum, azul ou preto. Os Stalnox, versões esqueléticas, não a deixam.",
+    "Os Rinox voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Melhoria de armadura: 5 por peça no 1º nível do Conjunto da Deidade Feroz — 15 no total.",
+    "Elixires: cozida com um bicho, acrescenta 1:10 à duração.",
+    "Corante marrom na Tinturaria Kochi.",
+    "Venda: 20 rupias, ou 15 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Unha de Rinox no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Unha de Rinox largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Unha de Rinox queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Unha de Rinox numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Unha de Rinox a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Unha de Rinox à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Unha de Rinox flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Unha de Rinox não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Unha de Rinox largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 20 rupias em lojas e comerciantes, ou 15 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Boa troca com Kilton",
+      "text": "Kilton paga 15 Mon por uma unha que vale 20 rupias — proporcionalmente, bem mais do que paga pela maioria das partes, que costumam render cerca de metade do valor em rupias.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Como derrubar um Rinox",
+      "text": "Uma flecha no olho atordoa o Rinox e abre espaço para ataques; depois da metade da vida, ele passa a cobrir o olho. As grevas de madeira dos Rinox azuis queimam com fogo, e as de metal dos Rinox pretos conduzem eletricidade, atordoando-os. Enquanto ele dorme, dá para roubar com furtividade as armas do colar.",
+      "sources": [
+        "zw:Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para o 1º nível do Conjunto da Deidade Feroz, junte 15 unhas e três escamas de dragão — uma de Dinraal, uma de Naydra e uma de Farosh."
+  ],
+  "limitations": [
+    "Menor acréscimo de duração em elixires (1:10).",
+    "Os Stalnox não a deixam.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_hinox",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Também a deixa"
+    },
+    {
+      "id": "botw_monster_black_hinox",
+      "relation": "Também a deixa"
+    },
+    {
+      "id": "botw_armorset_fierce_deity_set",
+      "relation": "Usa 5 unhas por peça no 1º nível"
+    },
+    {
+      "id": "botw_material_dinraals_scale",
+      "relation": "Acompanha a unha na Máscara da Deidade Feroz"
+    },
+    {
+      "id": "botw_material_naydras_scale",
+      "relation": "Acompanha a unha na Armadura da Deidade Feroz"
+    },
+    {
+      "id": "botw_material_faroshs_scale",
+      "relation": "Acompanha a unha nas Botas da Deidade Feroz"
+    },
+    {
+      "id": "botw_material_hinox_tooth",
+      "relation": "Parte do nível seguinte do mesmo conjunto"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante marrom"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

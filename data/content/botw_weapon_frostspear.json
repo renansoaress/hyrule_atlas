@@ -1,0 +1,271 @@
+{
+  "id": "botw_weapon_frostspear",
+  "summary": "Lança mágica forjada com gelo ancestral de Hebra (ataque 20, durabilidade 40). Com a lâmina azul, congela inimigos e derruba os de fogo num golpe; equipada, dá resistência ao calor.",
+  "description": "A Lança congelante foi forjada com gelo ancestral das Cordilheiras de Hebra e faz parte do equipamento mágico. Quando a lâmina brilha em azul, os ataques resfriam o ar e congelam o oponente; inimigos ligados ao fogo, como o Lagalfos ígneo, caem com um único golpe. Equipada sob calor forte, dá a Link um nível de resistência ao calor.\n\nÉ uma das armas que Trice (Nebb), de Hateno, pede para ver na missão secundária \"O aficionado por armas\": a sétima da lista, que o avô dele procurava quando jovem, e mostrá-la rende uma rupia dourada. Como a Lança carbonizante, tem reserva de energia elemental de 5000 com gasto de 1000 por ataque. Sendo de metal, conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Cordilheiras de Hebra.",
+    "Pradaria de Hyrule, principalmente no Castelo de Hyrule e arredores."
+  ],
+  "obtaining": [
+    "Encontrada nas Cordilheiras de Hebra e, na Pradaria de Hyrule, sobretudo em torno do Castelo de Hyrule.",
+    "A Lua de sangue repõe as armas largadas pelo mundo e as que estão nas mãos dos inimigos."
+  ],
+  "uses": [
+    "Congelar inimigos para deixá-los indefesos.",
+    "Derrotar inimigos de fogo com um único golpe.",
+    "Missão \"O aficionado por armas\": mostrá-la a Trice (Nebb), em Hateno, rende uma rupia dourada.",
+    "Reduzir o calor do dia no Deserto Gerudo com um nível de resistência ao calor."
+  ],
+  "effects": [
+    "Com a lâmina brilhando em azul, os ataques congelam o alvo.",
+    "Um nível de resistência ao calor enquanto equipada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "ataque elemental",
+      "status": "confirmado",
+      "result": "Com a lâmina brilhando em azul, as estocadas resfriam o ar e congelam o inimigo atingido. Com a reserva cheia (5000), a lança faz cinco ataques congelantes (1000 cada) antes de precisar recuperar energia.",
+      "conditions": [
+        "A lâmina precisa estar brilhando em azul."
+      ],
+      "side_effects": [
+        "O congelamento dura pouco: o inimigo volta a se mexer em instantes."
+      ],
+      "applications": [
+        "Congelar um inimigo e golpeá-lo de novo: quebrar o gelo causa dano acima do normal."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magic Gear",
+        "dm",
+        "jogo",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada sob calor forte, dá um nível de resistência ao calor. No Deserto Gerudo, durante o dia, o calor de nível 1 começa acima de 40 °C e o de nível 2, acima de 50 °C. A resistência ao calor não substitui a proteção contra chamas exigida nas áreas escaldantes de Eldin.",
+      "applications": [
+        "Cruzar o deserto de dia com menos dependência de roupas ou elixires refrescantes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Congela os inimigos atingidos com a lâmina brilhando e elimina com um golpe inimigos de fogo, como o Lagalfos ígneo, que é vulnerável ao gelo. Centaleões resistem a todos os ataques elementais.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lizalfos",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cinco cargas de gelo",
+      "text": "Pelos parâmetros, a lança tem energia elemental máxima de 5000 e gasta 1000 por ataque congelante — cinco ataques com a carga cheia —, com taxa de recuperação 50. A Espada álgida, de uma mão, tem 4000 de energia (quatro ataques) e taxa 40.",
+      "sources": [
+        "dm",
+        "zw:Frostblade"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congelar e quebrar",
+      "text": "Segundo o Zelda Wiki, golpear com uma arma um inimigo congelado quebra o gelo e causa mais dano que o normal. Com a Lança congelante, o próprio ataque elemental deixa o alvo pronto para esse golpe reforçado.",
+      "sources": [
+        "zw",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A lança que o avô de Trice procurava",
+      "text": "Na missão \"O aficionado por armas\", Trice (Nebb) quer ver as armas que o falecido avô não chegou a conhecer. A Lança congelante é a sétima: ele conta que o avô a procurou quando jovem e paga uma rupia dourada para vê-la. A última da lista, a Espada ancestral, rende um Diamante.",
+      "sources": [
+        "zw",
+        "zw:The Weapon Connoisseur"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança congelante pode surgir com um bônus branco (comum) — ataque +4 a +8, durabilidade +5 a +9 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +9 a +16, durabilidade +10 a +23 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Congele e, em seguida, golpeie de novo: o golpe que estilhaça o gelo causa dano acima do normal.",
+    "Contra Lagalfos ígneos e outros inimigos de fogo, um único ataque elemental resolve a luta."
+  ],
+  "limitations": [
+    "Só congela quando a lâmina está brilhando.",
+    "A resistência ao calor não protege das chamas de Eldin.",
+    "Centaleões resistem ao gelo."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Espada de gelo do mesmo arquétipo (4 cargas)"
+    },
+    {
+      "id": "botw_weapon_great_frostblade",
+      "relation": "Espada de duas mãos de gelo do mesmo arquétipo"
+    },
+    {
+      "id": "botw_weapon_flamespear",
+      "relation": "Lança elemental de fogo"
+    },
+    {
+      "id": "botw_weapon_thunderspear",
+      "relation": "Lança elemental de raio"
+    },
+    {
+      "id": "botw_monster_fire_breath_lizalfos",
+      "relation": "Derrotado com um golpe de gelo"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Resiste ao gelo da lança"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Última arma pedida por Trice na mesma missão"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "gera_gelo",
+    "congela_inimigos",
+    "protege_calor",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

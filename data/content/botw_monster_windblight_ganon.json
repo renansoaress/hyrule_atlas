@@ -1,0 +1,193 @@
+{
+  "id": "botw_monster_windblight_ganon",
+  "summary": "Ira de Ganon que tomou a Fera Divina Vah Medoh e matou Revali. Voa disparando rajadas de energia muito precisas e tornados, e é ferida sobretudo com flechas no ar. Deixa um Contêiner de coração e o Vendaval de Revali.",
+  "description": "A Ira eólica de Ganon é uma das quatro Iras de Ganon (Blight Ganons), fantasmas criados por Ganon, a Calamidade para tomar as Feras Divinas. Ela atacou Vah Medoh e foi responsável pela morte do Campeão Revali; o compendium diz que é especialista em ataques de vento de longo alcance. Surge sobre o dorso de Vah Medoh quando Link tenta ativar o terminal principal. Se a Fera não for libertada, a Ira eólica aparece no centro do Castelo de Hyrule antes de Ganon, a Calamidade. É a única Ira de Ganon que não usa lâmina.\n\nA luta acontece no alto, em clima congelante: Link precisa de dois níveis de Resistência ao frio para não sofrer dano. Na primeira fase, ela voa e se teletransporta pela arena, disparando rajadas de energia azul — Revali avisa que são incrivelmente precisas — e grandes tornados. Para feri-la, é preciso acertá-la com flechas enquanto está no ar, planando pelas várias saídas de ar da arena para atirar do alto; às vezes ela pousa, e aí armas corpo a corpo funcionam.\n\nCom metade da vida, lança quatro pequenos objetos no ar que se carregam uns aos outros com eletricidade azul e atiram em Link. Atirar nesses objetos a desativa por um tempo, e uma sequência rápida de flechas a derruba no chão, vulnerável. Ao ser derrotada, explode e deixa um Contêiner de coração; o espírito de Revali entrega então o Vendaval de Revali.",
+  "locations": [
+    "Topo da Fera Divina Vah Medoh, ao tentar ativar o terminal principal.",
+    "Centro do Castelo de Hyrule (Sanctum), apenas se Vah Medoh não tiver sido libertada.",
+    "Reino ilusório de Vah Medoh, na missão \"EX Champion Revali's Song\" (DLC 2)."
+  ],
+  "obtaining": [
+    "Derrotá-la rende um Contêiner de coração; em seguida, Revali concede o Vendaval de Revali.",
+    "Não volta com a Lua de sangue; só pode ser reenfrentada no Reino ilusório do DLC 2."
+  ],
+  "uses": [
+    "Libertar a Fera Divina Vah Medoh, que depois ajuda a enfraquecer Ganon, a Calamidade.",
+    "Obter um Contêiner de coração e o Vendaval de Revali."
+  ],
+  "effects": [
+    "Rajadas de energia azul de grande precisão, tornados e, na segunda fase, quatro objetos que disparam eletricidade azul."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas são o principal meio de feri-la enquanto voa. Na segunda fase, atirar nos quatro objetos flutuantes a desativa por um tempo, e várias flechas em sequência rápida a derrubam no chão.",
+      "applications": [
+        "Planar pelas saídas de ar da arena para mirar do alto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só é atingível corpo a corpo quando pousa ou quando cai derrubada pelas flechas. Dentro da Fera Divina, a Espada Mestra fica com o poder dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Master Sword"
+      ]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A arena tem várias saídas de ar que permitem planar para o alto e atirar nela. Ela própria dispara grandes tornados contra Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "A luta acontece em clima congelante: sem dois níveis de Resistência ao frio, Link sofre dano contínuo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Na segunda fase, os quatro objetos que ela lança se carregam com eletricidade azul e disparam contra Link. O efeito de ataques elétricos sobre a própria Ira não é descrito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito do fogo sobre a Ira eólica."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ela."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "A luta é no dorso de Vah Medoh, em pleno voo, sem água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ela."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ela."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ela."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nesta luta."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Voa e se teletransporta pela arena no alto de Vah Medoh, pousando de vez em quando.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A vida depende da ordem",
+      "text": "Todas as Iras de Ganon têm vida variável: a primeira enfrentada numa Fera Divina tem 800, a segunda 1.200, a terceira 1.600 e a quarta 2.000. No Reino ilusório do DLC 2 têm 1.500, e as enfrentadas no Sanctum do castelo têm sempre 2.000.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A única sem lâmina",
+      "text": "Entre as quatro Iras de Ganon, a Ira eólica é a única que não empunha nenhuma lâmina.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O orgulho de Revali",
+      "text": "Antes da luta, Revali avisa que a criatura \"joga sujo\" e admite que o derrotou há 100 anos — \"só porque estava improvisando\" —, e pede, contrariado, que Link o vingue.",
+      "sources": [
+        "zw:Phantom Ganon",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Contêiner esquecido",
+      "text": "Se Link não pegar o Contêiner de coração e ativar o terminal principal, o contêiner aparece ao lado dele depois que ele é transportado para fora da Fera Divina.",
+      "sources": [
+        "zw:Divine Beast"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Na segunda fase, derrubar os objetos flutuantes primeiro para abrir espaço e então descarregar flechas em sequência para derrubá-la."
+  ],
+  "limitations": [
+    "Exige boa reserva de flechas e proteção contra o frio.",
+    "Fica quase sempre fora do alcance de armas corpo a corpo."
+  ],
+  "related": [
+    {
+      "id": "botw_ability_revalis_gale",
+      "relation": "Dom recebido após a vitória"
+    },
+    {
+      "id": "botw_monster_thunderblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_fireblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_waterblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "Criador das Iras; enfrentado depois"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "Saídas de ar usadas para atirar do alto"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Fica com poder dobrado dentro das Feras Divinas"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

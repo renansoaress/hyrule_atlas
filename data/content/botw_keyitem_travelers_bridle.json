@@ -1,0 +1,81 @@
+{
+  "id": "botw_keyitem_travelers_bridle",
+  "summary": "Rédea comum e discreta, preferida por mercadores e viajantes, que só sai do amiibo de Link (Rider). É a rédea que o cavalo de Link usa nas memórias recuperadas. Puramente cosmética.",
+  "description": "A Rédea do viajante é uma rédea padrão: a descrição do jogo diz que o desenho não chama atenção, por isso combina com qualquer cavalo, e que é a favorita de mercadores e viajantes. Ela forma o equipamento do viajante com a Sela do viajante.\n\nA única forma de obtê-la é a runa amiibo com o amiibo de Link (Rider), o Link a cavalo: a leitura pode fazer surgir um par de baús, um com a rédea e outro com a sela, mas isso é uma chance, não uma garantia. Depois de obtida, ela fica entre os itens-chave da algibeira.\n\nNas memórias recuperadas, o cavalo de Link aparece com a Rédea do viajante e a Sela do viajante antes da Grande Calamidade. A rédea não altera atributos e é colocada por funcionários dos estábulos Highland, Outskirt, South Akkala e Woodland, apenas em cavalos com vínculo máximo, exceto Epona e o Cavalo gigante.",
+  "locations": [
+    "Não aparece no mapa: surge em baú criado pela runa amiibo com o amiibo de Link (Rider)."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Rider) com a runa amiibo; há chance de surgirem dois baús, um com a rédea e outro com a sela."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo com o visual das memórias de Link."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Colocada no cavalo por um funcionário de estábulo, muda apenas a aparência.",
+      "conditions": [
+        "Falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": [
+        "Não pode ser colocada em Epona nem no Cavalo gigante."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Horse Gear"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": [
+        "zw:Horse Gear"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O cavalo de Link de cem anos atrás",
+      "text": "Nas memórias recuperadas, o cavalo de Link usa a Rédea e a Sela do viajante, ou seja, era esse o equipamento da montaria de Link antes da Grande Calamidade.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para recriar o visual das memórias, combine a rédea com a Sela do viajante no mesmo cavalo."
+  ],
+  "limitations": [
+    "Depende do amiibo de Link (Rider) e de sorte na leitura.",
+    "Apenas cosmética."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_travelers_saddle",
+      "relation": "Outra peça do equipamento do viajante"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Runa usada para obter a rédea"
+    },
+    {
+      "id": "botw_creature_horse",
+      "relation": "Montaria que recebe a rédea"
+    },
+    {
+      "id": "botw_mechanic_stable",
+      "relation": "Onde a rédea é colocada"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

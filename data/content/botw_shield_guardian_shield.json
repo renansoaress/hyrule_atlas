@@ -1,0 +1,204 @@
+{
+  "id": "botw_shield_guardian_shield",
+  "summary": "Escudo de tecnologia Sheikah dos Guardiões batedores 2.0: desvia sozinho os lasers de Guardiões batedores. Flutua, não queima, não conduz eletricidade e ignora Magnétis.",
+  "description": "O Escudo guardião é feito com tecnologia ancestral Sheikah e é a arma defensiva dos Guardiões batedores 2.0 que Link enfrenta nos santuários \"A Minor Test of Strength\". A descrição do jogo destaca sua habilidade especial: ele consegue desviar o feixe de um Guardião batedor. Nos parâmetros, isso corresponde ao MirrorLevel 1, o nível que desvia apenas os lasers dos Guardiões batedores — para os demais Guardiões, só a Defesa perfeita funciona.\n\nCom Defesa 18 e durabilidade 10, é a versão mais fraca da linha, superada pelo Escudo guardião 2.0 e pelo 3.0. Pertence ao equipamento guardião (Guardian Gear), junto da Espada guardiã e da Lança guardiã. Por ser de tecnologia ancestral, flutua, não queima nem no calor de Eldin, não conduz eletricidade, não atrai raios e não é movido por Magnétis.",
+  "locations": [
+    "Santuários \"A Minor Test of Strength\", nas mãos de Guardiões batedores 2.0.",
+    "O compendium cita Necluda Ocidental e a Grande Nascente de Lanayru como locais comuns."
+  ],
+  "obtaining": [
+    "Derrotar o Guardião batedor 2.0 que o empunha; ele deixa cair a arma ao ser destruído.",
+    "Baú invocado pelo amiibo de Guardião (série Breath of the Wild), com chance de conter um Escudo guardião."
+  ],
+  "uses": [
+    "Enfrentar Guardiões batedores nos santuários, desviando os lasers deles sem precisar de Defesa perfeita.",
+    "Escudo leve que pode ser usado em Eldin e em tempestades sem riscos."
+  ],
+  "effects": [
+    "Desvia automaticamente os lasers de Guardiões batedores."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia golpes com Defesa 18; cada impacto consome durabilidade, exceto na Defesa perfeita, que também rebate projéteis.",
+      "conditions": [
+        "Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shield",
+        "zw:Perfect Guard"
+      ]
+    },
+    {
+      "action": "defender",
+      "variant": "laser de Guardião",
+      "status": "confirmado",
+      "result": "Desvia os lasers de Guardiões batedores apenas por estar erguido (MirrorLevel 1). Lasers de Guardiões persecutórios, torretas ou altívagos exigem Defesa perfeita, como em qualquer escudo.",
+      "conditions": [
+        "Escudo erguido diante do laser de um Guardião batedor."
+      ],
+      "applications": [
+        "Lutar contra Guardiões batedores nos santuários de prova de força com menos risco."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "dm",
+        "zw:Template:BotW Shield Parameters",
+        "zw:Perfect Guard",
+        "zw:Guardian Scout IV"
+      ]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": [
+        "Pular e apertar A enquanto segura ZL no ar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Shield Surfing"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ser equipado nas áreas escaldantes de Eldin sem pegar fogo.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser manipulado com Magnétis.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Usado pelos Guardiões batedores 2.0, que também podem empunhar Espada guardiã, Lança guardiã ou Acha ancestral.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Guardian Scout II"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +1 a +2 (nível branco) ou +3 (nível amarelo) e com Defesa do escudo aumentada de +3 a +6 (branco) ou +7 a +11 (amarelo).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mais resistente contra Guardiões",
+      "text": "Escudos de composição ancestral perdem menos durabilidade ao defender ataques de Guardiões, o que favorece o Escudo guardião justamente contra os inimigos de onde ele vem.",
+      "sources": [
+        "zw:Shields in Breath of the Wild",
+        "dm"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Desconhecido para Selmie",
+      "text": "Selmie, que comenta a maioria dos escudos, parece não conhecer os escudos guardiões nem os ancestrais.",
+      "sources": [
+        "zw:Selmie"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Levá-lo também aos santuários de prova de força maiores: os Guardiões batedores 3.0 e 4.0 continuam disparando lasers de Guardião batedor, que ele desvia sozinho."
+  ],
+  "limitations": [
+    "Durabilidade baixa (10).",
+    "O desvio automático vale só para Guardiões batedores; contra outros Guardiões, é preciso acertar a Defesa perfeita."
+  ],
+  "related": [
+    {
+      "id": "botw_shield_guardian_shield_plus",
+      "relation": "Versão melhorada (2.0)"
+    },
+    {
+      "id": "botw_shield_guardian_shield_plus_plus",
+      "relation": "Versão máxima (3.0)"
+    },
+    {
+      "id": "botw_shield_ancient_shield",
+      "relation": "Escudo ancestral que desvia lasers de todos os Guardiões"
+    },
+    {
+      "id": "botw_weapon_guardian_sword",
+      "relation": "Mesmo arquétipo (equipamento guardião)"
+    },
+    {
+      "id": "botw_weapon_guardian_spear",
+      "relation": "Mesmo arquétipo (equipamento guardião)"
+    },
+    {
+      "id": "botw_monster_guardian_scout_ii",
+      "relation": "Guardião que o empunha"
+    },
+    {
+      "id": "botw_mechanic_perfect_guard",
+      "relation": "Necessária para rebater lasers de outros Guardiões"
+    }
+  ],
+  "capabilities": [
+    "reflete_laser",
+    "flutua"
+  ],
+  "verification_status": "verificado"
+}

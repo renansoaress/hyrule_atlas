@@ -1,0 +1,94 @@
+{
+  "id": "botw_armorset_desert_voe_set",
+  "summary": "Roupa contra o calor do Deserto Gerudo, vendida no clube secreto da Cidade Gerudo e em Tarrey Town. Cada peça dá Resistência ao calor; em ★★ o conjunto reduz em 66% o dano elétrico.",
+  "description": "O Conjunto voe do deserto reúne a Faixa voe do deserto, a Ombreira voe do deserto e as Calças voe do deserto. O conjunto completo custa 2.400 rupias e é vendido no clube secreto Gerudo (Gerudo Secret Club), na Cidade Gerudo, e na Rhondson Armor Boutique, em Tarrey Town.\n\nCada peça dá um nível baixo de Resistência ao calor, e os níveis se somam até o nível médio (nível 2), que é o teto desse efeito. Essa resistência protege das zonas de calor extremo, como o deserto durante o dia, mas não do clima escaldante da Montanha da Morte, do fogo nem da lava. Com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ganha a Redução de dano elétrico (Shock Damage Resist), que imita uma Resistência a choques de nível 2: o dano de eletricidade cai 66%, sem afetar a explosão causada pela queda de um raio. O bônus ainda se soma a uma Resistência a choques de nível 1.\n\nÉ uma alternativa ao Traje Gerudo para o calor do deserto, com a vantagem de ser melhorável e de proteger contra os ataques elétricos comuns na região. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Clube secreto Gerudo (Gerudo Secret Club), na Cidade Gerudo.",
+    "Rhondson Armor Boutique, em Tarrey Town."
+  ],
+  "obtaining": [
+    "Comprar as peças: faixa por 450, ombreira por 1.300 e calças por 650 rupias (2.400 no total), em qualquer uma das duas lojas.",
+    "No clube secreto Gerudo, é preciso descobrir a senha da porta (Missão secundária \"The Secret Club's Secret\")."
+  ],
+  "uses": [
+    "Atravessar o Deserto Gerudo de dia sem perder corações pelo calor.",
+    "Reduzir o dano de ataques elétricos quando o conjunto está em ★★."
+  ],
+  "effects": [
+    "Cada peça: Resistência ao calor (os níveis se somam até o máximo de 2).",
+    "Bônus de conjunto (três peças em ★★): Redução de dano elétrico, equivalente a Resistência a choques de nível 2 (-66% de dano elétrico)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As peças somam Resistência ao calor até o nível 2; em ★★ o conjunto completo reduz o dano elétrico em 66%.",
+      "conditions": [
+        "Para o bônus elétrico: faixa, ombreira e calças vestidas juntas, todas com ★★."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Protege das zonas de calor extremo, como o deserto durante o dia.",
+      "side_effects": [
+        "Não protege do clima escaldante da Montanha da Morte, que exige Proteção contra chamas, nem do fogo e da lava."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Added Effect"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Com o conjunto completo em ★★, o dano de eletricidade cai 66%.",
+      "conditions": ["As três peças com ★★."],
+      "side_effects": ["Não reduz o dano da explosão de um raio caindo."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "O bônus não reduz o dano da explosão causada pela queda de um raio.",
+      "sources": ["zw:Set Bonus"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fechando a resistência a choques",
+      "text": "A Redução de dano elétrico conta como Resistência a choques de nível 2 e se acumula com um efeito de nível 1, chegando ao nível 3, que anula todo o dano elétrico e impede que Link derrube o equipamento ao levar choque.",
+      "sources": ["zw:Set Bonus", "zw:Added Effect"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Calor do deserto não é calor do vulcão",
+      "text": "O jogo separa dois tipos de calor: a Resistência ao calor deste conjunto cobre as zonas de calor extremo (deserto de dia), enquanto o clima escaldante da Montanha da Morte exige Proteção contra chamas, como a do Conjunto antichamas.",
+      "sources": ["zw:Added Effect"]
+    }
+  ],
+  "advanced_uses": [
+    "Em ★★, some um efeito de Resistência a choques de nível 1 (de um Elixir isolante, por exemplo) para chegar ao nível 3 e anular o dano elétrico."
+  ],
+  "limitations": [
+    "Não serve para a Montanha da Morte.",
+    "O bônus elétrico não protege contra a explosão dos raios.",
+    "Melhorias pedem Geleca gélida, Asa de Morci glacial, Cauda de Lagalfos glacial e Safira."
+  ],
+  "related": [
+    { "id": "botw_armor_desert_voe_headband", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_desert_voe_spaulder", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_desert_voe_trousers", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_gerudo_outfit", "relation": "Outra roupa contra o calor do deserto" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Protege do clima da Montanha da Morte, que este conjunto não cobre" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Conjunto especializado em eletricidade" },
+    { "id": "botw_material_sapphire", "relation": "Material da última melhoria" },
+    { "id": "botw_mechanic_temperature", "relation": "Calor extremo e clima escaldante" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["protege_calor", "protege_choque"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,177 @@
+{
+  "id": "botw_armor_snowquill_tunic",
+  "summary": "Túnica Ará feita com camadas de penas trocadas na muda, à venda por 600 rupias na Vila dos Arás. Resistência ao frio; o conjunto em ★★ dá imunidade a congelamento.",
+  "description": "A Túnica de pluma nevada é a peça de torso do Conjunto de pluma nevada e custa 600 rupias na Brazen Beak, a loja de roupas da Vila dos Arás. Segundo a descrição, artesãos Arás a fizeram para os hylianos que visitam climas frios, empilhando penas em cada camada para reter o calor do corpo.\n\nDá um nível de Resistência ao frio; com outra peça de pluma nevada, chega ao teto de nível 2. Com as três peças em ★★, o conjunto ativa a Imunidade a congelamento, que anula dano de ataques de gelo e impede o congelamento. Nada disso protege da água gelada dos climas congelantes. A defesa vai de 3 a 20, com as mesmas melhorias das calças (Gelecas ígneas, Ervas geleiras, Asas de Morci ígneo, Flamelos, Caudas de Lagalfos ígneo e 5 Rubis). Pode ser tingida na Tinturaria Kochi — o próprio vendedor, Nekk, sugere comprar um segundo conjunto para tingir.",
+  "locations": [
+    "Loja Brazen Beak, na Vila dos Arás."
+  ],
+  "obtaining": [
+    "Comprar por 600 rupias na Brazen Beak."
+  ],
+  "uses": [
+    "Proteção contra o frio das Cordilheiras de Hebra e de outras regiões geladas.",
+    "Completar o Conjunto de pluma nevada."
+  ],
+  "effects": [
+    "Resistência ao frio, nível 1.",
+    "Bônus de conjunto (três peças em ★★): Imunidade a congelamento."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência ao frio. Com o Cocar de pluma nevada, a Túnica de pluma nevada e as Calças de pluma nevada vestidos, todos em ★★, ativa o bônus Imunidade a congelamento (Unfreezable).",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Um nível de Resistência ao frio impede o dano do frio. O jogo distingue frio básico (abaixo de 0 °C) e intenso (abaixo de −10 °C), e alguns lugares exigem o nível 2, alcançado com duas peças de pluma nevada; o efeito tem teto no nível 2.",
+      "side_effects": [
+        "Não protege da água gelada de climas congelantes, que fere Link rapidamente com qualquer roupa."
+      ],
+      "applications": [
+        "Explorar as Cordilheiras de Hebra e outras regiões geladas sem pratos picantes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Chill-Proof",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "gelo",
+      "variant": "peça isolada",
+      "status": "sem_efeito",
+      "result": "Resistência ao frio não reduz o dano de ataques de gelo nem impede o congelamento.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Chill-Proof"
+      ]
+    },
+    {
+      "action": "gelo",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "A Imunidade a congelamento impede qualquer dano de ataques de gelo e impede que Link seja congelado.",
+      "conditions": [
+        "As três peças de pluma nevada em pelo menos ★★."
+      ],
+      "side_effects": [
+        "Não protege do frio ambiente nem da água gelada — isso continua a cargo da Resistência ao frio das peças."
+      ],
+      "applications": [
+        "Enfrentar Morcis glaciais, Chulchuls glaciais e Feitiçanos glaciais sem ficar congelado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Moda que muda de cor",
+      "text": "Se Link já comprou o conjunto inteiro, Nekk diz não ter mais o que oferecer, mas lembra que existe uma vila que tinge roupas — e sugere comprar outro conjunto para tingir de outra cor.",
+      "sources": [
+        "zw:Brazen Beak"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Teto de dois níveis",
+      "text": "A Resistência ao frio para no nível 2: vestir as três peças de pluma nevada não protege mais do frio do que vestir duas; a terceira peça só faz diferença para o bônus de conjunto em ★★, que é contra gelo.",
+      "sources": [
+        "zw:Chill-Proof",
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com a túnica e as Botas de neve, Link anda depressa na neve e já tem um nível de Resistência ao frio; acrescente o Cocar de pluma nevada para o nível 2."
+  ],
+  "limitations": [
+    "Não protege da água gelada.",
+    "Ataques de gelo só ficam inofensivos com o conjunto completo em ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_snowquill_headdress",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_snowquill_trousers",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Botas para andar na neve"
+    },
+    {
+      "id": "botw_material_red_lizalfos_tail",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_material_sunshroom",
+      "relation": "Material do 3º nível"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

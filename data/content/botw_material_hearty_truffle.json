@@ -1,0 +1,149 @@
+{
+  "id": "botw_material_hearty_truffle",
+  "summary": "Cogumelo raro de aroma intenso, ao pé das árvores da Grande Floresta de Hyrule e da Pradaria. Cru cura 2 corações; cozido, dá Corações extras. É a recompensa (3 unidades) da missão do Flamelo de Symin.",
+  "description": "A Trufa nutritiva é um cogumelo raro de cheiro marcante, encontrado ao pé das árvores na Grande Floresta de Hyrule e na Pradaria de Hyrule. O jogo recomenda cozinhá-la antes de comer: na panela, ela concede Corações extras, que aumentam temporariamente o máximo de corações. Crua, já recupera 2 corações; exposta ao fogo, vira Trufa nutritiva tostada, crocante por fora e macia por dentro, que cura 3 corações sem efeito.\n\nÉ fácil de comprar: Spore Store (Floresta Korok), East Wind (Vila Hateno) e os mercadores ambulantes Cambo, Giro e Kanny a vendem por 24 rupias. Também é a recompensa da Missão secundária \"Sunshroom Sensing\": Symin dá 3 Trufas nutritivas a quem lhe trouxer 3 Flamelos. Na Tinturaria Kochi, entra no corante preto.",
+  "locations": [
+    "Pé das árvores na Grande Floresta de Hyrule e na Pradaria de Hyrule (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Lojas: Spore Store, East Wind, Cambo, Giro e Kanny — 24 rupias."
+  ],
+  "obtaining": [
+    "Colher ao pé das árvores.",
+    "Comprar nas lojas citadas.",
+    "Recompensa de \"Sunshroom Sensing\" (3 unidades), no Laboratório de Tecnologia Ancestral de Hateno."
+  ],
+  "uses": [
+    "Pratos de Corações extras.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante preto na Tinturaria Kochi.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Cozida: Corações extras — aumento temporário do máximo de corações."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma trufa largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Trufa nutritiva tostada, que recupera 3 corações sem efeito.",
+      "side_effects": ["Perde os Corações extras."],
+      "applications": ["Vender: tostada vale 8 rupias, contra 6 da crua."],
+      "produces": ["botw_food_toasted_hearty_truffle"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Trufa nutritiva tostada.",
+      "produces": ["botw_food_toasted_hearty_truffle"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largada no chão.",
+      "produces": ["botw_food_toasted_hearty_truffle"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da trufa na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a trufa não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Corações extras. Mais trufas, ou outros ingredientes do mesmo efeito, aumentam a quantidade de corações extras.",
+      "side_effects": ["Corações extras de pratos diferentes não se somam: vale o mais forte.", "O total de corações de Link não passa de 30."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Extra Hearts"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 2 corações, sem efeito.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 6 rupias; tostada, vale 8.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Recompensa do sensor",
+      "text": "Na missão \"Sunshroom Sensing\", Symin ensina a usar o Sensor Sheikah melhorado para localizar itens fotografados no compendium. Ao entregar 3 Flamelos encontrados com o sensor, Link recebe 3 Trufas nutritivas.",
+      "sources": ["zw:Sunshroom"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A irmã maior",
+      "text": "Segundo o jogo, a Trufona nutritiva é uma Trufa nutritiva que ficou anos sem ser colhida e cresceu: mais rara, cura mais e dá Corações extras com mais potência.",
+      "sources": ["zw:Big Hearty Truffle"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine trufas com Rabanetes nutritivos e Duriões nutritivos: ingredientes diferentes de Corações extras tendem a render bônus maiores que repetir o mesmo item."
+  ],
+  "limitations": [
+    "Crua ou tostada não dá Corações extras."
+  ],
+  "related": [
+    { "id": "botw_food_toasted_hearty_truffle", "relation": "Resultado de expor a trufa ao fogo" },
+    { "id": "botw_material_big_hearty_truffle", "relation": "Versão maior e mais forte" },
+    { "id": "botw_material_sunshroom", "relation": "Entregá-lo a Symin rende trufas" },
+    { "id": "botw_material_hearty_radish", "relation": "Outro ingrediente de Corações extras" },
+    { "id": "botw_material_hearty_durian", "relation": "Outro ingrediente de Corações extras" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_rune_sheikah_sensor", "relation": "Usado na missão que dá trufas como recompensa" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante preto" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "verificado"
+}

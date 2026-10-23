@@ -1,0 +1,116 @@
+{
+  "id": "botw_food_carrot_cake",
+  "summary": "Bolo de Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e uma cenoura. A cenoura decide a versão: Cenoura veloz dá Velocidade aumentada; Cenoura tenaz, Vigor extra.",
+  "description": "O Bolo de cenoura tem quatro ingredientes obrigatórios: Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e uma cenoura, que pode ser a Cenoura veloz ou a Cenoura tenaz — o Zelda Wiki observa que as duas são intercambiáveis na culinária. Como ambas têm efeito, o tipo de cenoura define o bolo: a Cenoura veloz gera a versão veloz, cuja descrição promete Velocidade aumentada de nível médio, e a Cenoura tenaz gera a versão tenaz, que restaura e ultrapassa o Medidor de vigor. A descrição do jogo diz que até quem não gosta de cenoura costuma apreciar a doçura suave do bolo.\n\nPara obter o bolo comum, sem efeito, é preciso usar uma cenoura de cada tipo, de modo que os efeitos se anulem; essa versão é a que mais cura (7 corações). Entre as versões com efeito, a tenaz é a mais valiosa (5 corações, 100 rupias), e a veloz cura 3 corações e vale 40 rupias. Em relação ao Ensopado de cenoura, o bolo troca o Leite fresco pela Cana-de-açúcar.",
+  "locations": [
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Cenoura veloz: cultivada por Steen na Vila Kakariko e vendida na loja da esposa dele, Trissa; também aparece no sopé do Monte Satori, atrás dos cavalos do Highland Stable e com Beedle no East Akkala Stable.",
+    "Cenoura tenaz: cresce na Malanya Spring, perto do pico do Monte Satori e na beira das Fontes da Grande Fada."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Trigo de Tabantha + Cana-de-açúcar + Manteiga de cabra + Cenoura veloz ou Cenoura tenaz."
+  ],
+  "uses": [
+    "Velocidade aumentada portátil (com Cenoura veloz) ou recuperação com Vigor extra (com Cenoura tenaz).",
+    "Cura de 7 corações na versão comum, com as duas cenouras.",
+    "Venda: de 40 a 120 rupias, segundo o Zelda Wiki."
+  ],
+  "effects": [
+    "Versão comum (uma cenoura de cada tipo): recupera 7 corações, sem efeito.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Cenoura veloz; a descrição do jogo fala em velocidade de nível médio; 3 corações, 40 rupias.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — com Cenoura tenaz; 5 corações, 100 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com uma cenoura de cada tipo, os efeitos se anulam e o bolo recupera 7 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com Cenoura veloz, concede Velocidade aumentada (nível médio, segundo a descrição) e recupera 3 corações; com Cenoura tenaz, restaura e ultrapassa o Medidor de vigor e recupera 5 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões veloz e tenaz"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale de 40 a 120 rupias conforme a versão: a tenaz sai por 100 rupias e a veloz por 40.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Duas cenouras para anular o efeito",
+      "text": "Usar Cenoura veloz e Cenoura tenaz no mesmo bolo cancela os dois efeitos e produz o bolo comum, que cura mais (7 corações) do que as versões com efeito.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Mais veloz que o ensopado",
+      "text": "A descrição de inventário do bolo veloz promete velocidade de nível médio, enquanto a do Ensopado de cenoura veloz fala em nível baixo, embora os dois usem a mesma Cenoura veloz.",
+      "sources": [
+        "jogo",
+        "zw:Carrot Stew"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Sobra um espaço na panela: uma segunda cenoura do mesmo tipo reforça o efeito escolhido (mais duração na veloz, mais Vigor extra na tenaz), como acontece com ingredientes iguais."
+  ],
+  "limitations": [
+    "O Zelda Wiki só lista as versões veloz, tenaz e comum.",
+    "A versão comum exige gastar uma cenoura de cada tipo."
+  ],
+  "related": [
+    {
+      "id": "botw_material_swift_carrot",
+      "relation": "Cenoura que gera a versão veloz"
+    },
+    {
+      "id": "botw_material_endura_carrot",
+      "relation": "Cenoura que gera a versão tenaz"
+    },
+    {
+      "id": "botw_food_carrot_stew",
+      "relation": "Mesma base de cenoura, com Leite fresco no lugar do açúcar"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

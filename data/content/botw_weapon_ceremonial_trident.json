@@ -1,0 +1,216 @@
+{
+  "id": "botw_weapon_ceremonial_trident",
+  "summary": "Réplica do Tridente escamado de Mipha usada no festival Zora (ataque 14, durabilidade 40). Chave da missão \"A canção do festival\"; se quebrar, Vegari (Dento) faz outro.",
+  "description": "O Tridente cerimonial é uma cópia do Tridente escamado que pertenceu à campeã Mipha. Visualmente idêntico ao original, é mais fraco e menos durável (ataque 14 e durabilidade 40, contra 22 e 70). Os Zora o usam no festival em honra a Mipha, no aniversário da Grande Calamidade, no lugar do tridente verdadeiro.\n\nA réplica é o centro da missão de santuário \"A canção do festival\": depois que a Fera Divina Vah Ruta é acalmada, Medi (Laruta) canta a canção do festival diante da estátua de Mipha, e Cavi (Trello), responsável pela festa, confessa ter deixado o tridente cair da ponte oeste do Território Zora. Por ser de metal, ele afundou e só pode ser resgatado com Magnétis. Como todo equipamento de metal, conduz eletricidade e atrai raios.",
+  "locations": [
+    "Fundo do rio sob a ponte oeste do Território Zora, na Grande Nascente de Lanayru, durante a missão \"A canção do festival\"."
+  ],
+  "obtaining": [
+    "Na missão \"A canção do festival\": falar com Cavi (Trello) na ponte oeste, caminhar sobre a água com Gelítis e erguer o tridente do fundo com Magnétis. Cavi deixa que Link fique com ele.",
+    "Se quebrar, Vegari (Dento), na oficina Hammerhead do Território Zora, faz um novo em troca de 1 Lança Zora e 5 Sílex (após Vah Ruta ser acalmada)."
+  ],
+  "uses": [
+    "Golpear o pedestal na base da Veiled Falls, saltando do alto da cachoeira, para fazer surgir o Santuário Dagah Keek e concluir a missão.",
+    "Lança de metal de nível médio para combate."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "O tridente é perdido no impacto; só Vegari (Dento) faz outro."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal — é assim que ele vai parar no fundo do rio na missão do festival.",
+      "applications": [
+        "Recuperá-lo com Magnétis, como a própria missão exige."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Erguer o tridente do fundo do rio sob a ponte oeste do Território Zora."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Saltando do topo da Veiled Falls e golpeando o pedestal submerso na base da cachoeira, Link faz surgir o Santuário Dagah Keek.",
+      "conditions": [
+        "Missão \"A canção do festival\" ativa e o Tridente cerimonial em mãos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:The Ceremonial Song"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem o Tridente cerimonial."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O tridente do festival é falso",
+      "text": "Cavi (Trello) admite que o tridente usado no festival dos campeões \"é uma falsificação\" — a réplica substitui o Tridente escamado verdadeiro, guardado pelo rei Dorephan e entregue a Link depois que Vah Ruta é acalmada.",
+      "sources": [
+        "jogo",
+        "zw:Lightscale Trident"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Refeito por Vegari",
+      "text": "Depois que Vah Ruta é acalmada, Vegari (Dento) se oferece para refazer os dois tridentes. Se o Tridente cerimonial quebrar, basta levar 1 Lança Zora e 5 Sílex à oficina Hammerhead.",
+      "sources": [
+        "zw",
+        "zw:Dento",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus aleatórios",
+      "text": "Os parâmetros extraídos do jogo ainda listam faixas de bônus (ataque +5 a +8 ou +9 a +13, durabilidade +3 a +6 ou +7 a +14, arremesso longo de 1,5× a 2×), mas o Zelda Wiki registra que o Tridente cerimonial é um equipamento único e nunca recebe bônus: todo exemplar vem com os valores-base.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde uma Lança Zora e 5 Sílex de reserva: o tridente pode ser refeito quantas vezes for necessário."
+  ],
+  "limitations": [
+    "Mais fraco e menos durável que o Tridente escamado, apesar da aparência idêntica.",
+    "Nunca recebe bônus aleatórios.",
+    "Afunda na água; sem Magnétis, não há como recuperá-lo."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lightscale_trident",
+      "relation": "Original de Mipha, do qual é réplica"
+    },
+    {
+      "id": "botw_weapon_zora_spear",
+      "relation": "Material para Vegari (Dento) refazê-lo"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Material para refazê-lo (5 unidades)"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para resgatá-lo do rio"
+    },
+    {
+      "id": "botw_rune_cryonis",
+      "relation": "Permite caminhar sobre a água até o tridente"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

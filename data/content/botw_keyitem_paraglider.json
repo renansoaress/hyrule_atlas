@@ -1,0 +1,149 @@
+{
+  "id": "botw_keyitem_paraglider",
+  "summary": "Planador que o Velho do Grande Platô entrega em troca dos tesouros dos quatro santuários do platô. Necessário para sair do platô, gasta vigor durante o voo e sobe com correntes ascendentes.",
+  "description": "O Planador é o item que permite a Link deixar o Grande Platô, cercado de penhascos por todos os lados. Depois que Link ativa a Torre do Grande Platô, o Velho explica que ninguém sai dali com segurança sem um planador como o dele e aceita trocá-lo pelo \"tesouro\" do Santuário Oman Au. Quando Link volta com o Orbe espiritual, o Velho aumenta o preço: ele só entrega o Planador depois que Link reunir os tesouros dos outros três santuários do platô. A descrição do inventário diz que ele foi recebido \"do rei\", no Grande Platô, e que é aberto com um botão enquanto Link está no ar.\n\nPlanar consome vigor; quando o Medidor de vigor se esgota, Link guarda o Planador e cai. Mesmo sem vigor, dá para abrir o Planador por um segundo, uma única vez, para amortecer a queda. Correntes ascendentes erguem Link quando ele plana sobre elas: surgem de grama ou Pimentas de fogo em chamas, de respiros naturais, dos dragões em voo e do Vendaval de Revali. As correntes geradas pelos dragões recarregam todo o vigor ao abrir o Planador, e as do Campo de Voo dos Arás também, exceto durante a missão \"EX Champion Revali's Song\".\n\nNo ar, Link pode usar a Bomba remota contra inimigos abaixo e, ao mirar com o arco, entra em câmera lenta enquanto o vigor durar; abrir o Planador interrompe a mira. Ao subir uma cachoeira com a Armadura Zora, o Planador abre sozinho no topo.",
+  "locations": [
+    "Grande Platô: entregue pelo Velho no Templo do Tempo, depois dos quatro santuários do platô."
+  ],
+  "obtaining": [
+    "Ativar a Torre do Grande Platô, falar com o Velho e concluir os santuários Oman Au, Ja Baij, Owa Daim e Keh Namut; ele entrega o Planador ao fim da missão do platô."
+  ],
+  "uses": [
+    "Sair do Grande Platô e atravessar vales e penhascos planando.",
+    "Ganhar altura com correntes ascendentes de fogo, respiros, dragões e do Vendaval de Revali.",
+    "Atacar de cima com Bomba remota ou com o arco em câmera lenta."
+  ],
+  "effects": [
+    "Permite planar consumindo vigor.",
+    "Sobe ao passar sobre correntes ascendentes."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Aberto no ar, faz Link planar enquanto houver vigor. Sem vigor, pode ser aberto por um segundo, uma única vez, para amortecer a queda.",
+      "conditions": [
+        "Estar no ar (depois de um salto ou queda)."
+      ],
+      "side_effects": [
+        "Esgotar o vigor no meio do voo fecha o Planador e Link cai."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Stamina"
+      ]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "Correntes ascendentes erguem Link quando ele plana sobre elas. As dos dragões, e as do Campo de Voo (exceto durante \"EX Champion Revali's Song\"), também recarregam o vigor por completo.",
+      "conditions": [
+        "Corrente ascendente ativa sob Link."
+      ],
+      "applications": [
+        "Ganhar altura sem escalar; recarregar o vigor perto de um dragão."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Updraft",
+        "zw:Revali's Gale"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Fogo se espalhando pela grama (ou queimando Pimentas de fogo) cria uma corrente ascendente que o Planador aproveita para subir.",
+      "conditions": [
+        "Grama em chamas abaixo de Link."
+      ],
+      "applications": [
+        "Subir para atacar acampamentos com flechas do alto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Updraft",
+        "zw:Fire"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um presente do rei",
+      "text": "A descrição do inventário diz que o Planador foi recebido \"do rei\", no Grande Platô — embora quem o entregue seja o Velho.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Câmera lenta no ar",
+      "text": "Mirar com o arco no ar desacelera o tempo, mas drena o vigor rapidamente. Abrir o Planador encerra a mira, o que permite alternar entre tiros e planeio no mesmo salto.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Planador automático na cachoeira",
+      "text": "Com a Armadura Zora, ao chegar ao topo de uma cachoeira, Link é lançado acima dela e o Planador se abre automaticamente.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use o Vendaval de Revali para subir e abra o Planador na corrente que ele deixa; ela pode ser reaproveitada até sumir.",
+    "Durante voos longos, planar perto de um dragão recarrega todo o vigor."
+  ],
+  "limitations": [
+    "Depende do vigor: sem Medidor de vigor, o voo dura pouco.",
+    "Só pode ser aberto no ar."
+  ],
+  "related": [
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "Correntes que erguem o Planador"
+    },
+    {
+      "id": "botw_mechanic_stamina",
+      "relation": "Consumido durante o voo"
+    },
+    {
+      "id": "botw_ability_revalis_gale",
+      "relation": "Cria uma corrente ascendente para planar"
+    },
+    {
+      "id": "botw_keyitem_spirit_orb",
+      "relation": "Os tesouros dos santuários pedidos pelo Velho"
+    },
+    {
+      "id": "botw_keyitem_sheikah_slate",
+      "relation": "Também essencial para sair do Grande Platô"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Pode ser usada enquanto se plana"
+    },
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Queimada, gera corrente ascendente"
+    },
+    {
+      "id": "botw_monster_naydra",
+      "relation": "Dragão cujas correntes recarregam o vigor"
+    },
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "A armadura abre o Planador no topo das cachoeiras"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

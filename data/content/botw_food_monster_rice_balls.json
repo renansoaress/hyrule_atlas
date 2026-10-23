@@ -1,0 +1,96 @@
+{
+  "id": "botw_food_monster_rice_balls",
+  "summary": "Bolinhos de Arroz hyliano, Halita e Extrato de monstro, de aroma \"que não agrada a todos\". Têm dois espaços livres para efeitos e cura sorteada pelo extrato.",
+  "description": "Os Bolinhos de arroz de monstro são feitos com Arroz hyliano, Halita e Extrato de monstro. Diferem dos outros bolinhos de arroz — que pedem só arroz e um ingrediente de uma categoria (carne, frutos do mar, cogumelo ou legume) — porque exigem a Halita e o extrato, e por isso a cura e a força e a duração de qualquer efeito são sorteadas. O inventário avisa que o aroma peculiar \"não é para todos\".\n\nSão três ingredientes obrigatórios, então dois espaços ficam livres para ingredientes de efeito: um ou dois \"nutritivos\" dão a versão com cura total e Corações extras, \"veloz\" dá Velocidade aumentada, e assim por diante; efeitos diferentes se anulam. Na prioridade das receitas, os Bolinhos de arroz de monstro vêm logo depois do Curry de monstro e antes dos outros pratos de monstro e de todos os bolinhos comuns: colocar carne e frutos do mar na mesma panela, por exemplo, não gera Ensopado de monstro.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano, Halita e Extrato de monstro, com até dois ingredientes extras.",
+    "O Extrato de monstro só é vendido por Kilton, à noite, na loja Fang and Bone."
+  ],
+  "uses": [
+    "Recuperar corações e obter efeitos, com resultado sorteado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera uma quantidade aleatória de corações.",
+    "Os ingredientes extras definem a variante: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da variante; os valores foram sorteados pelo Extrato de monstro no cozimento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne e frutos do mar",
+      "status": "confirmado",
+      "result": "Com arroz, Halita e extrato presentes, acrescentar carne e frutos do mar continua resultando nos bolinhos, porque esta receita é verificada antes do Ensopado de monstro.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Corações extras sempre sorteados na força",
+      "text": "Quando o efeito é o de Corações extras, o Extrato de monstro sempre altera a quantidade de corações extras (para mais ou para o mínimo), nunca a cura comum.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cura e efeito imprevisíveis.",
+    "Nunca recebe bônus crítico."
+  ],
+  "related": [
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Ingrediente que torna o resultado aleatório"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_monster_curry",
+      "relation": "Prato de monstro com arroz que usa Tempero Goron no lugar da Halita"
+    },
+    {
+      "id": "botw_food_mushroom_rice_balls",
+      "relation": "Bolinhos de arroz comuns, sem extrato nem sal"
+    },
+    {
+      "id": "botw_food_seafood_rice_balls",
+      "relation": "Bolinhos de arroz comuns com frutos do mar"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

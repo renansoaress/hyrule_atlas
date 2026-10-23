@@ -1,0 +1,164 @@
+{
+  "id": "botw_material_raw_whole_bird",
+  "summary": "A carne de ave mais nobre, deixada só por Pombos brancos e Avestruzes de Eldin. Crua cura 3 corações; assada, 4,5. Exigida no Curry e no Pilaf de ave inteira; nenhum comerciante a vende.",
+  "description": "A Ave inteira (Raw Whole Bird) é a carne premiada que só algumas aves deixam — no caso, Pombos brancos e Avestruzes de Eldin — e que, segundo o jogo, \"ganha nota máxima em sabor, nutrição e volume\". Diferente das outras carnes, não é vendida por nenhum mercador, então é preciso caçá-la. Crua, recupera 3 corações, o mesmo que a Carne de primeira.\n\nNo fogo vira Ave inteira assada (4,5 corações); no frio extremo, na água gelada ou com ataques de gelo, vira Ave inteira congelada (3 corações e Resistência ao calor temporária), que é também a forma mais valiosa para vender. Na panela, é obrigatória no Curry de ave inteira e no Pilaf de ave inteira e pode substituir a Carne de primeira no Ensopado de carne de primeira, na Carne de primeira grelhada no sal e na Fritada de carne de primeira e frutos do mar.",
+  "locations": [
+    "Pombos brancos e Avestruzes de Eldin."
+  ],
+  "obtaining": [
+    "Abater Pombos brancos ou Avestruzes de Eldin; ambos também podem deixar Sobrecoxa."
+  ],
+  "uses": [
+    "Cura imediata: 3 corações crua, 4,5 como Ave inteira assada.",
+    "Receitas exclusivas: Curry de ave inteira (com Arroz hyliano e Tempero Goron) e Pilaf de ave inteira (com Arroz hyliano, Ovo e Manteiga de cabra).",
+    "Alternativa à Carne de primeira: Ensopado de carne de primeira, Carne de primeira grelhada no sal e Fritada de carne de primeira e frutos do mar.",
+    "Receitas de \"qualquer carne\", como Espetinho de carne, Carne glaceada e Bife apimentado.",
+    "Venda: 35 rupias (assada, 35; congelada, 40)."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 3 corações.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Ave inteira assada, que recupera 4,5 corações, sem efeito especial.",
+      "conditions": ["Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "produces": ["botw_food_roasted_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Ave inteira assada.",
+      "produces": ["botw_food_roasted_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no clima escaldante de Eldin, assa sozinha.",
+      "produces": ["botw_food_roasted_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingida por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, vira Ave inteira congelada.",
+      "produces": ["botw_food_frozen_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gelado ou em água gelada, vira Ave inteira congelada: 3 corações e 1:00 de Resistência ao calor nível 1, com o sabor preservado.",
+      "produces": ["botw_food_frozen_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma elemental",
+      "status": "confirmado",
+      "result": "Golpeada com arma de fogo (Espada flamejante, Grã-Espada flamejante, Lança carbonizante), assa; com arma de gelo (Espada álgida, Grã-Espada álgida, Lança congelante), congela.",
+      "produces": ["botw_food_roasted_whole_bird", "botw_food_frozen_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Frozen Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a carne com uma arma comum."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada para assar perto do fogo ou congelar no frio; Pastores hylianos comem carne largada perto deles.",
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Hylian Retriever"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da carne à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Em água gelada, congela; as fontes não dizem o que acontece em água comum.",
+      "produces": ["botw_food_frozen_whole_bird"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a carne não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a carne largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, a cura dobra (6 corações por unidade). É obrigatória no Curry e no Pilaf de ave inteira e substitui a Carne de primeira em três pratos \"de primeira\".",
+      "produces": ["botw_food_gourmet_poultry_curry", "botw_food_gourmet_poultry_pilaf", "botw_food_gourmet_meat_stew", "botw_food_salt_grilled_gourmet_meat", "botw_food_gourmet_meat_and_seafood_fry"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Crua vale 35 rupias; assada, 35; congelada, 40.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Frozen Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congelada é a mais valiosa",
+      "text": "Assar a Ave inteira não aumenta o preço (35 rupias, igual à crua), mas congelá-la sobe para 40, já que Comidas congeladas têm preço fixo.",
+      "sources": ["zw:Frozen Food", "zw:Roasted Food", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Refeição\" premiada",
+      "text": "Na descrição exibida no inventário, o Zelda Wiki registra a Ave inteira como \"prized meal\" (refeição premiada), enquanto a tabela de materiais usa \"prized meat\" (carne premiada).",
+      "sources": ["jogo", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Como nenhum comerciante a vende, reserve as Aves inteiras para o Curry e o Pilaf de ave inteira, os únicos pratos que a exigem; nas demais receitas \"de primeira\", a Carne de primeira (vendida por Mezer e Stamm) serve no lugar."
+  ],
+  "limitations": [
+    "Nenhum comerciante a vende.",
+    "A página da Ave inteira diz que ela substitui a Carne de primeira também na Tigela de arroz com carne de primeira, mas a tabela de lógica de receitas do Zelda Wiki lista apenas a Carne de primeira para esse prato.",
+    "Assada ou congelada, não ganha efeitos especiais além da resistência ao calor da versão congelada."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_whole_bird", "relation": "Resultado de assar no fogo" },
+    { "id": "botw_food_frozen_whole_bird", "relation": "Resultado de congelar" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Equivalente de mamífero, substituível em três receitas" },
+    { "id": "botw_material_raw_bird_thigh", "relation": "Carne de ave de nível abaixo" },
+    { "id": "botw_creature_white_pigeon", "relation": "Ave que a deixa" },
+    { "id": "botw_creature_eldin_ostrich", "relation": "Ave que a deixa" },
+    { "id": "botw_food_gourmet_poultry_curry", "relation": "Prato que exige Ave inteira" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de culinária" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

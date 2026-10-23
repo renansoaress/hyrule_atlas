@@ -1,0 +1,74 @@
+{
+  "id": "botw_armorset_royal_guard_set",
+  "summary": "Uniforme da guarda real escondido no Castelo de Hyrule (DLC The Champions' Ballad). Sem melhorias, já reduz o vigor de ataques carregados e, de forma oculta, de saltos em escalada e impulsos a nado.",
+  "description": "O Conjunto da guarda real é formado pelo Quepe da guarda real, pelo Uniforme da guarda real e pelas Botas da guarda real, usados no passado pelos membros da guarda real. Faz parte da DLC The Champions' Ballad e é o objetivo da Missão secundária \"EX Royal Guard Rumors\": a Super Rumor Mill V4, no Estábulo Riverside, conta que uma ex-criada do castelo viu o equipamento no salão de jantar, no quarto dos guardas e no segundo andar.\n\nAs três peças estão em baús do Castelo de Hyrule. O quepe fica no segundo andar do Sanctum, a parte central do castelo, no salão logo acima do lugar onde Zelda contém Ganon, a Calamidade, diante da estátua de um cavaleiro. O uniforme está num baú atrás de uma Espada da guarda real, numa pequena câmara escondida atrás de um piso rachado a oeste do salão de jantar. As botas ficam no quarto dos guardas, numa plataforma de madeira entre outras duas plataformas com barris explosivos.\n\nComo as peças não podem ser melhoradas, o bônus vale assim que o conjunto é vestido. O inventário só mostra a economia de vigor no ataque carregado (-50%), mas o conjunto também reduz em 50% o vigor do salto durante a escalada e em 75% o vigor do impulso e do golpe giratório a nado. O conjunto não tem nenhum outro efeito e não pode ser tingido.",
+  "locations": [
+    "Castelo de Hyrule: segundo andar do Sanctum (quepe), câmara escondida a oeste do salão de jantar (uniforme) e quarto dos guardas (botas).",
+    "Estábulo Riverside, onde está a Super Rumor Mill V4 com as pistas.",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Com a DLC The Champions' Ballad, ler a Super Rumor Mill V4 no Estábulo Riverside (\"EX Royal Guard Rumors\"; a missão também é ativada ao carregar o mundo depois de sair do Grande Platô).",
+    "Abrir os três baús no Castelo de Hyrule nos pontos indicados.",
+    "Depois de obtidas, Granté vende cada peça por 50 rupias."
+  ],
+  "uses": [
+    "Economizar vigor em três situações ao mesmo tempo sem gastar materiais com melhorias: ataques carregados, saltos em escalada e impulsos a nado."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Conjunto completo (sem exigir melhorias): ataques carregados com 50% menos vigor (visível no inventário).",
+    "Ocultos: salto em escalada com 50% menos vigor e impulso/golpe giratório a nado com 75% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças juntas reduzem o vigor de ataques carregados e de saltos em escalada em 50% e o de impulsos e golpes giratórios a nado em 75%. Só o primeiro efeito aparece no inventário.",
+      "conditions": ["Quepe, uniforme e botas da guarda real vestidos juntos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dois bônus escondidos",
+      "text": "O Conjunto da guarda real é o único com bônus ocultos: além da economia em ataques carregados mostrada no inventário, ele copia o bônus do Conjunto de escalada (salto em escalada -50%) e o do Conjunto Zora (impulso a nado -75%), sem precisar de ★★.",
+      "sources": ["zw:Set Bonus", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus sem melhorias",
+      "text": "As armaduras introduzidas pela DLC não podem ser melhoradas, por isso o Conjunto da guarda real e o Traje de Tingle concedem os bônus assim que vestidos.",
+      "sources": ["zw:Armor Set"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Pistas de uma ex-criada",
+      "text": "Na Super Rumor Mill V4, Traysi atribui a informação a uma ex-criada do castelo, que citou o salão de jantar, o quarto dos guardas e o segundo andar.",
+      "sources": ["zw:EX Royal Guard Rumors"]
+    }
+  ],
+  "advanced_uses": [
+    "Um único conjunto substitui o bárbaro (★★), o de escalada (★★) e o Zora (★★) na economia de vigor, sem consumir materiais — útil para exploração geral."
+  ],
+  "limitations": [
+    "Não pode ser melhorado nem tingido; a defesa fica fixa.",
+    "Não dá Ataque aumentado, Escalada mais rápida ou Natação mais rápida, apenas as economias de vigor.",
+    "Exige a DLC The Champions' Ballad e uma incursão ao Castelo de Hyrule."
+  ],
+  "related": [
+    { "id": "botw_armor_royal_guard_cap", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_royal_guard_uniform", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_royal_guard_boots", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_weapon_royal_guards_sword", "relation": "Marca o esconderijo do uniforme" },
+    { "id": "botw_armorset_barbarian_set", "relation": "Mesmo bônus de ataque carregado (em ★★)" },
+    { "id": "botw_armorset_climbing_set", "relation": "Mesmo bônus de salto em escalada (em ★★)" },
+    { "id": "botw_armorset_zora_set", "relation": "Mesmo bônus de impulso a nado (em ★★)" },
+    { "id": "botw_mechanic_stamina", "relation": "Os bônus reduzem o gasto de vigor" },
+    { "id": "botw_object_explosive_barrel", "relation": "Cercam a plataforma das botas" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

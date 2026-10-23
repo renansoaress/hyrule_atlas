@@ -1,0 +1,151 @@
+{
+  "id": "botw_arrow_ice_arrow",
+  "summary": "Flecha imbuída de gelo que se desfaz numa explosão gélida ao acertar (+10 de dano), congelando o alvo por instantes. Derrota inimigos de fogo com um tiro e prepara golpes de dano extra no alvo congelado.",
+  "description": "A Flecha congelante carrega o poder do gelo. Segundo a descrição do jogo, ela se parte ao impactar e congela os objetos ao redor, sendo incrivelmente eficaz contra coisas quentes. Funciona com qualquer arco que use flechas comuns e soma 10 ao ataque do arco; aparece avulsa ou em feixes de 5 e 10.\n\nInimigos — ou o próprio Link — atingidos ficam congelados por um curto período. Se Link acertar um inimigo congelado com uma arma, o gelo se quebra e o golpe causa mais dano que o normal. Contra criaturas de fogo é devastadora: um único disparo derrota o Feitiçano ígneo, o Feitiçano meteórico e o Lagalfos ígneo.\n\nBotrick, no Outskirt Stable, só a vende enquanto está chovendo.",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra (locais comuns segundo o compendium).",
+    "Em baús e com inimigos arqueiros."
+  ],
+  "obtaining": [
+    "Recolher em baús ou como drop de inimigos arqueiros.",
+    "Comprar na loja de flechas da Cidade Gerudo (Arrow Specialty Shop), na Goron Gusto Shop da Cidade Goron, na filial de Tarrey Town do Slippery Falcon, na loja de Shaillu no Bazar Kara Kara e com Botrick, no Outskirt Stable, apenas enquanto chove. A tabela de produtos do Zelda Wiki também registra a venda no Coral Reef, no Domínio Zora."
+  ],
+  "uses": [
+    "Derrotar com um só tiro Feitiçanos ígneos, Feitiçanos meteóricos e Lagalfos ígneos.",
+    "Congelar inimigos para encaixar um golpe de arma com dano extra."
+  ],
+  "effects": [
+    "+10 de dano sobre o ataque do arco.",
+    "Congela o alvo por um curto período."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Disparada por qualquer arco que use flechas comuns, soma 10 ao ataque do arco e se desfaz numa explosão de gelo no impacto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "É uma fonte de gelo à distância: a explosão do impacto congela o alvo e, segundo a descrição do jogo, os objetos na área imediata.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "variant": "inimigos de fogo",
+      "result": "Contra criaturas de fogo é devastadora: um único disparo derrota o Feitiçano ígneo, o Feitiçano meteórico e o Lagalfos ígneo; o Feitiçano ígneo chega a evaporar.",
+      "side_effects": [
+        "As fontes não dizem se a flecha apaga fogo no cenário, como grama em chamas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire Wizzrobe",
+        "comp"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha congelante com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Flecha congelante cria gelo ao atingir a água em BOTW."
+    },
+    {
+      "action": "chuva",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem mudança no efeito da flecha durante a chuva; o único vínculo documentado é comercial: Botrick só a vende enquanto chove."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Congela o inimigo atingido por um curto período. Um golpe de arma no inimigo congelado quebra o gelo e causa mais dano que o normal.",
+      "side_effects": [
+        "Inimigos arqueiros também podem usar Flechas congelantes: Link atingido fica congelado.",
+        "Todos os Centaleões resistem a ataques elementais e aos efeitos deles."
+      ],
+      "applications": [
+        "Congelar um inimigo forte e finalizá-lo com uma arma de ataque alto para aproveitar o dano extra."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "Além de congelar o que estiver junto ao impacto, as fontes não descrevem interações específicas com o cenário, como criar gelo sobre a água ou apagar fogo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Fraqueza elemental",
+      "text": "A descrição do jogo diz que a flecha é incrivelmente eficaz contra coisas quentes, e o Zelda Wiki confirma: Feitiçano ígneo, Feitiçano meteórico e Lagalfos ígneo caem com uma única Flecha congelante.",
+      "sources": [
+        "comp",
+        "zw",
+        "zw:Fire Wizzrobe"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Só à venda na chuva com Botrick",
+      "text": "Botrick, o vendedor do Outskirt Stable, só oferece Flechas congelantes enquanto está chovendo.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Congele o inimigo e golpeie com a arma mais forte disponível: quebrar o gelo rende dano acima do normal."
+  ],
+  "limitations": [
+    "Centaleões resistem ao congelamento.",
+    "O congelamento dura pouco."
+  ],
+  "related": [
+    {
+      "id": "botw_arrow_fire_arrow",
+      "relation": "Elemento oposto"
+    },
+    {
+      "id": "botw_monster_fire_wizzrobe",
+      "relation": "Derrotado com uma única Flecha congelante"
+    },
+    {
+      "id": "botw_monster_meteo_wizzrobe",
+      "relation": "Derrotado com uma única Flecha congelante"
+    },
+    {
+      "id": "botw_monster_fire_breath_lizalfos",
+      "relation": "Derrotado com uma única Flecha congelante"
+    },
+    {
+      "id": "botw_mechanic_ice",
+      "relation": "Regras gerais de gelo e congelamento"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "congela_inimigos",
+    "vence_rapido"
+  ],
+  "verification_status": "parcial"
+}

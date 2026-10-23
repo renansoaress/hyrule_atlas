@@ -1,0 +1,188 @@
+{
+  "id": "botw_weapon_throwing_spear",
+  "summary": "Lança especializada, balanceada para ser arremessada mais longe que as outras (ataque 6, durabilidade 20). Nos parâmetros, sua velocidade de arremesso é 2,5, contra 1,5 das demais; é de metal.",
+  "description": "A Lança de arremesso tem o peso distribuído para se destacar como arma de arremesso: segundo o jogo, é perfeitamente balanceada para ir mais longe que uma lança comum e atingir alvos a grande distância. Os parâmetros extraídos mostram a diferença — a velocidade de arremesso dela é 2,5, enquanto as outras lanças têm 1,5. É encontrada principalmente em baús na Necluda Ocidental e na Pradaria de Hyrule.\n\nComo qualquer arma arremessada, ela quebra ao acertar um inimigo diretamente, num golpe crítico de dano dobrado. Por ser de metal, conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser recuperada com Magnétis — útil para buscar um arremesso que errou o alvo.",
+  "locations": [
+    "Baús na Necluda Ocidental e na Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Abrir os baús dessas regiões."
+  ],
+  "uses": [
+    "Atingir inimigos distantes com um golpe crítico (dano dobrado) sem gastar flechas.",
+    "Lança comum de reserva para combate corpo a corpo."
+  ],
+  "effects": [
+    "Arremesso mais rápido e mais longo que o das outras lanças."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, voa mais rápido e mais longe que as outras lanças (velocidade de arremesso 2,5, contra 1,5) e quebra ao acertar um inimigo, num golpe sempre crítico.",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Acertar arqueiros e vigias distantes com um arremesso crítico."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "jogo",
+        "dm",
+        "zw",
+        "zw:Weapon",
+        "zw:Durability"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Trazer de volta uma lança que caiu longe ou na água depois de um arremesso errado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem a Lança de arremesso."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O que muda nos parâmetros",
+      "text": "Entre todas as lanças, a Lança de arremesso é a única com velocidade de arremesso (ThrowSpeed) 2,5; as demais têm 1,5. O alcance nominal de arremesso (ThrowRange), porém, é o mesmo 5 das outras, e ela continua quebrando ao acertar um inimigo.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança de arremesso pode surgir com um bônus branco (comum) — ataque +5 a +6, durabilidade +2 a +4 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +7 a +12, durabilidade +5 a +9 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o bônus amarelo de arremesso longo, que multiplica a distância por 1,5 a 2, a lança alcança alvos ainda mais distantes."
+  ],
+  "limitations": [
+    "Ataque baixo (6): sem bônus, o arremesso crítico causa só 12 de dano.",
+    "Quebra ao acertar o inimigo, como qualquer arma arremessada."
+  ],
+  "related": [
+    {
+      "id": "botw_mechanic_critical_hit",
+      "relation": "Arremessos que acertam são sempre críticos"
+    },
+    {
+      "id": "botw_mechanic_durability",
+      "relation": "A arma arremessada quebra no impacto"
+    },
+    {
+      "id": "botw_weapon_boomerang",
+      "relation": "Arma de arremesso que volta para Link"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Recupera lanças que caíram longe"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

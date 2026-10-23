@@ -1,0 +1,128 @@
+{
+  "id": "botw_shield_daybreaker",
+  "summary": "Escudo dourado da Campeã Urbosa, entregue por Riju após Vah Naboris. Durabilidade 60, nunca tem bônus e, se quebrar, Buliara o refaz com Diamante, 5 Sílex e um Escudo Gerudo.",
+  "description": "O Resplendor da aurora pertencia a Urbosa, a Campeã Gerudo. Assim como a Cimitarra das sete — com a qual forma as armas da Campeã —, foi feito por uma joalheira Gerudo, com ouro escolhido a dedo para ser leve e muito durável. Depois da morte de Urbosa, as duas peças viraram tesouros do povo Gerudo. É a versão mais protetora e durável da linha do Escudo Gerudo e pertence ao equipamento Gerudo (Gerudo Gear).\n\nCom Defesa 48 e durabilidade 60, é um dos escudos mais duráveis do jogo, abaixo apenas do Escudo hyliano e do Escudo do herói. Como peça única, nunca recebe bônus. Seus parâmetros de surfe também ajudam: o desgaste ao Surfar com escudo é multiplicado por 0,5, metade do normal.\n\nApesar do ouro, conta como metal: conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser recuperado com Magnétis. Não queima no fogo nem no calor de Eldin.",
+  "locations": [
+    "Cidade Gerudo, no Palácio Real: em Baús de pedra atrás do trono de Riju, junto com a Cimitarra das sete."
+  ],
+  "obtaining": [
+    "Derrotar a Ira fulmínea de Ganon e acalmar a Fera Divina Vah Naboris; depois disso Riju oferece o escudo e a cimitarra como agradecimento, por Link ter sido amigo de Urbosa.",
+    "Se quebrar, Buliara, capitã da guarda que acompanha Riju no Palácio Real, o refaz em troca de 1 Diamante, 5 Sílex e 1 Escudo Gerudo."
+  ],
+  "uses": [
+    "Escudo de alta durabilidade para o meio e o fim do jogo, sem custo de reposição em rupias.",
+    "Prancha de surfe durável, graças ao desgaste reduzido pela metade."
+  ],
+  "effects": [
+    "Nenhum efeito especial além da defesa alta e da durabilidade."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia ataques com Defesa 48; cada golpe bloqueado consome durabilidade, mas a Defesa perfeita não. Na memória EX \"Champion Urbosa's Song\" (DLC The Champions' Ballad), a própria Urbosa aparece aparando um ataque com ele.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Perfect Guard"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao Surfar com escudo, perde durabilidade pela metade do normal (multiplicador de desgaste 0,5); o atrito é o padrão.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima quando equipado nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "side_effects": ["Contra Lagalfos elétricos ou Flechas eletrizantes, Link pode ficar sem escudo no meio da luta."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante uma tempestade, começa a soltar faíscas e atrai um raio para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair, ou usar o Elmo do trovão para neutralizá-lo."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Resgatar do fundo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sem bônus, apesar das faixas nos dados",
+      "text": "Os parâmetros trazem faixas de bônus (durabilidade +6 a +12 ou +13 a +30; Defesa +4 a +8 ou +9 a +16), mas o Resplendor da aurora está na lista de equipamentos únicos que nunca recebem Weapon Bonus.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Reposição com Buliara",
+      "text": "Buliara pede \"um diamante, cinco pedaços de sílex e um escudo Gerudo\" para refazer o Resplendor da aurora. O Escudo Gerudo usado na receita é consumido, então vale ter um sobrando quando o original estiver perto de quebrar.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Polvo restaurador",
+      "text": "Octorocs rochosos aspiram armas e escudos e os cospem de volta com a durabilidade restaurada, uma forma de renovar o Resplendor da aurora sem gastar o Diamante da reposição.",
+      "sources": ["zw:Durability"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O sonho de Selmie",
+      "text": "Se Link falar com Selmie usando o escudo, ela pergunta se está sonhando: queria tanto um Resplendor da aurora que já o viu em sonhos.",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo como escudo principal em lutas longas e deixar a reposição com Buliara como reserva, já que os ingredientes (Diamante, Sílex e Escudo Gerudo) são encontráveis."
+  ],
+  "limitations": [
+    "Por ser metálico, é um perigo em tempestades e contra ataques elétricos.",
+    "Nunca vem com bônus de Defesa ou durabilidade.",
+    "Para refazê-lo é preciso ter um Escudo Gerudo, que é consumido."
+  ],
+  "related": [
+    { "id": "botw_weapon_scimitar_of_the_seven", "relation": "Arma de Urbosa entregue junto; formam as armas da Campeã" },
+    { "id": "botw_shield_gerudo_shield", "relation": "Escudo de que é a versão mais forte; ingrediente da reposição" },
+    { "id": "botw_shield_radiant_shield", "relation": "Outro escudo Gerudo de metal" },
+    { "id": "botw_material_diamond", "relation": "Ingrediente da reposição com Buliara" },
+    { "id": "botw_material_flint", "relation": "Ingrediente da reposição (5 unidades)" },
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Derrotá-la libera a entrega do escudo" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Poder da mesma Campeã" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" },
+    { "id": "botw_monster_rock_octorok", "relation": "Restaura a durabilidade de escudos aspirados" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "item_de_missao"],
+  "verification_status": "verificado"
+}

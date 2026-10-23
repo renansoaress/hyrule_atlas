@@ -1,0 +1,86 @@
+{
+  "id": "botw_elixir_tough_elixir",
+  "summary": "Elixir de Defesa aumentada feito com Escaravelho resguardado: o jogo recomenda bebê-lo antes de enfrentar inimigos que batem forte. Tem três níveis e cada ingrediente defensivo soma só 0:50.",
+  "description": "O Elixir blindado \"fortalece os ossos\" para aumentar a defesa de Link, segundo a descrição do jogo, que sugere usá-lo antes de lutas contra inimigos de golpes pesados. Funciona em três níveis: o médio exige cinco estrelas de potência e o alto, sete. O Escaravelho resguardado, único bicho que o produz, vale uma estrela e repousa em árvores da Pradaria de Hyrule e dos Prados de Faron.\n\nComo no Elixir valente, a duração por ingrediente defensivo é curta (0:50), então as partes de monstro definem boa parte do tempo. Para subir de nível, os ingredientes defensivos de refeição são decisivos: Pargo blindado (três estrelas), Abóbora robusta, Blindamelo, Carpa blindada e Caranguejo couraçado (duas) e Amaranto blindado (uma). A página do elixir no Zelda Wiki não tem texto próprio sobre BOTW; os números vêm das tabelas de elixires e de culinária.",
+  "locations": [
+    "Escaravelhos resguardados: árvores da Pradaria de Hyrule e dos Prados de Faron."
+  ],
+  "obtaining": [
+    "Cozinhar um Escaravelho resguardado com pelo menos uma parte de monstro.",
+    "Trocar um Escaravelho resguardado com Beedle, que oferece um Elixir blindado pelo inseto."
+  ],
+  "uses": [
+    "Reduzir o dano recebido antes de lutas contra Centaleões, Rinox, Moblins e chefes."
+  ],
+  "effects": [
+    "Defesa aumentada em até três níveis, por tempo limitado (máximo de 30:00)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Aumenta a defesa de Link durante o efeito; o jogo o indica para antes de enfrentar inimigos que batem forte.",
+      "side_effects": ["Comer outro prato com efeito diferente cancela o bônus."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Escaravelho resguardado (★, +0:50) + parte de monstro; cinco estrelas dão o nível médio e sete, o alto.",
+      "conditions": [
+        "Ingredientes defensivos: Pargo blindado (★★★), Abóbora robusta, Blindamelo, Carpa blindada e Caranguejo couraçado (★★ cada) e Amaranto blindado (★), cada um com +0:50."
+      ],
+      "side_effects": ["Ingredientes de outro efeito geram Comida duvidosa."],
+      "applications": ["Escaravelho + parte de monstro + dois Pargos blindados atingem as sete estrelas do nível alto."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Elixir", "zw:Cooking in Breath of the Wild", "zw:Rugged Rhino Beetle"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço pela regra geral dos elixires (soma dos ingredientes × 1,5 a 2,8, arredondada para a dezena acima).",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "defender",
+      "status": "desconhecido",
+      "result": "As fontes não detalham quanto cada nível acrescenta ao valor de defesa nem como isso entra no cálculo de dano das armaduras."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Outro besouro para Beedle",
+      "text": "Beedle também pede Escaravelhos resguardados e oferece um Elixir blindado em troca; aceitando, ele diz que vai pô-lo na coleção, e no dia seguinte aceita outro.",
+      "sources": ["zw:Rugged Rhino Beetle"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Defesa e dano mínimo",
+      "text": "No cálculo de dano de BOTW, a defesa total é subtraída da força do ataque, mas Link sempre sofre ao menos um quarto de coração por golpe — nenhuma defesa zera o dano.",
+      "sources": ["zw:Armor"]
+    }
+  ],
+  "advanced_uses": [
+    "Como o bicho vale uma só estrela, os níveis médio e alto dependem de peixes e cogumelos blindados; guardar Pargos blindados facilita o nível alto."
+  ],
+  "limitations": [
+    "Duração curta por ingrediente (0:50).",
+    "A página própria do elixir no Zelda Wiki não tem descrição de BOTW além da frase do inventário."
+  ],
+  "related": [
+    { "id": "botw_creature_rugged_rhino_beetle", "relation": "Único bicho que produz o elixir (★, +0:50)" },
+    { "id": "botw_creature_armored_porgy", "relation": "Ingrediente defensivo mais forte (★★★)" },
+    { "id": "botw_material_fortified_pumpkin", "relation": "Ingrediente defensivo (★★)" },
+    { "id": "botw_material_ironshroom", "relation": "Ingrediente defensivo (★★)" },
+    { "id": "botw_creature_armored_carp", "relation": "Ingrediente defensivo (★★)" },
+    { "id": "botw_creature_ironshell_crab", "relation": "Ingrediente defensivo (★★)" },
+    { "id": "botw_material_armoranth", "relation": "Ingrediente defensivo (★)" },
+    { "id": "botw_elixir_mighty_elixir", "relation": "Elixir de ataque com a mesma estrutura de níveis" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de cozimento" }
+  ],
+  "capabilities": ["defesa"],
+  "verification_status": "verificado"
+}

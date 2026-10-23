@@ -1,0 +1,152 @@
+{
+  "id": "botw_armor_tunic_of_the_wild",
+  "summary": "Túnica feita para um herói que viaja pela natureza — \"estranhamente, do seu tamanho\". Presente dos monges por completar os 120 santuários; chega a 28 de defesa e pode ser tingida.",
+  "description": "A Túnica selvagem é a peça central do presente da Missão secundária \"A Gift from the Monks\". Depois de concluir os 120 santuários originais (os 16 do pacote The Champions' Ballad não contam), o último monge manda Link ao Templo Esquecido (Forgotten Temple), onde três baús de pedra aparecem diante da estátua da deusa; a túnica está no da esquerda. Com o Gorro selvagem e as Calças selvagens, forma o Conjunto do herói selvagem. A descrição diz que foi feita para um herói que viaja pelas terras selvagens e que, estranhamente, tem exatamente o tamanho de Link.\n\nNão tem efeito individual. Com as três peças em ★★, o conjunto ativa o Raio da Espada Mestra aumentado (+50%). A defesa vai de 4 a 28; as melhorias pedem 10 Bolotas e Escamas de Naydra, depois Mel de abelha e Garras de Naydra, Escaravelhos vibrantes e Lascas da presa de Naydra e, no último nível, 2 Lascas do chifre de Naydra e um Fragmento de estrela. Pode ser tingida na Tinturaria Kochi; a tabela de dados do Zelda Wiki a marca como não vendável.",
+  "locations": [
+    "Templo Esquecido (Forgotten Temple): baú de pedra da esquerda, diante da estátua da deusa."
+  ],
+  "obtaining": [
+    "Missão secundária \"A Gift from the Monks\": completar os 120 santuários originais e abrir o baú no Templo Esquecido."
+  ],
+  "uses": [
+    "Defesa alta no fim do jogo.",
+    "Completar o Conjunto do herói selvagem."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto (três peças em ★★): Raio da Espada Mestra aumentado (+50%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só aumenta a defesa. Com o Gorro selvagem, a Túnica selvagem e as Calças selvagens vestidos, todos em ★★, ativa o Raio da Espada Mestra aumentado: o raio da Espada Mestra causa 50% a mais de dano.",
+      "conditions": [
+        "As três peças em pelo menos ★★.",
+        "O raio só sai da Espada Mestra com a vida cheia."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Master Sword",
+        "zw:Of the Wild Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O presente dos monges",
+      "text": "Ao completar o 120º santuário, o último monge entrega \"o mandado do verdadeiro herói\" e manda Link ao Templo Esquecido. Como todos os santuários já estão concluídos, dá para se teletransportar direto ao Santuário Rona Kachta, dentro do templo, onde três baús de pedra aparecem diante da estátua da deusa. Os 16 santuários do pacote The Champions' Ballad não entram na conta.",
+      "sources": [
+        "zw:A Gift from the Monks",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Do tamanho certo",
+      "text": "Enquanto a Camisa velha e as Calças surradas do começo do jogo ficam pequenas em Link, a descrição da Túnica selvagem observa que, estranhamente, ela tem exatamente o tamanho dele.",
+      "sources": [
+        "jogo",
+        "zw:Old Shirt"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para quem não precisa de efeitos no torso, a túnica em ★★★★ (28 de defesa) só perde para a Túnica do campeão (32) entre as peças de torso."
+  ],
+  "limitations": [
+    "Disponível só depois dos 120 santuários.",
+    "As melhorias exigem partes de Naydra e um Fragmento de estrela."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_cap_of_the_wild",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_trousers_of_the_wild",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Arma cujo raio o bônus fortalece"
+    },
+    {
+      "id": "botw_material_naydras_scale",
+      "relation": "Material do 1º nível de melhoria"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_creature_energetic_rhino_beetle",
+      "relation": "Material do 3º nível"
+    },
+    {
+      "id": "botw_armor_champions_tunic",
+      "relation": "Única peça de torso com defesa máxima maior"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

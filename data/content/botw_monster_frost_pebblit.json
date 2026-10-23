@@ -1,0 +1,128 @@
+{
+  "id": "botw_monster_frost_pebblit",
+  "summary": "Filhote de Tálus glacial camuflado na neve, que congela Link ao toque. Leve e frágil, é arremessado longe por bombas; derreter a camada de gelo com fogo permite pegá-lo e jogá-lo para que exploda.",
+  "description": "A Brita glacial é um Tálus glacial juvenil. O compendium diz que o corpo endurece e se cobre de geada com a idade, até ficar inteiramente feito de gelo; na infância, porém, é frágil e leve o bastante para ser arremessada pela explosão de uma bomba. Vive em áreas nevadas, como as Cordilheiras de Hebra e as Montanhas Gerudo, e sua coloração a confunde com o ambiente até ela se mexer.\n\nAtaca indo até Link e tentando acertá-lo com um braço; encostar nela congela Link por um instante. Para evitar o congelamento, Link pode atirar Bombas remotas de longe ou derreter a camada de gelo com uma arma de calor, como Flechas incendiárias ou a Espada flamejante. Com o Conjunto de pluma nevada completo e melhorado duas vezes, o bônus de imunidade a congelamento permite pegá-la e arremessá-la. Como as outras Britas, explode ao ser arremessada ou se for segurada por tempo demais. Pode deixar Sílex, Âmbar ou Safira.",
+  "locations": [
+    "Áreas nevadas, como as Cordilheiras de Hebra e as Montanhas Gerudo."
+  ],
+  "obtaining": [
+    "Pode deixar Sílex, Âmbar ou Safira.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Safira, Âmbar e Sílex em regiões frias.",
+    "Registro no compendium (entrada nº 145)."
+  ],
+  "effects": [
+    "Congela Link ao contato."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Uma arma de calor, como Flecha incendiária ou Espada flamejante, derrete a camada de gelo e evita o congelamento ao tocá-la.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Bombas remotas atiradas de longe a derrotam sem contato; o compendium diz que ela é leve o bastante para ser arremessada pela explosão.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de uma bomba é forte o bastante para arremessá-la, segundo o compendium. Flechas explosivas também derrotam instantaneamente inimigos ligados ao gelo.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Pode ser erguida e arremessada, explodindo em seguida — desde que Link não congele ao tocá-la (imunidade do Conjunto de pluma nevada melhorado duas vezes, ou camada de gelo derretida). Segurada por tempo demais, explode nas mãos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes da Brita glacial não descrevem o efeito de armas comuns; para a Brita rochosa, armas comuns não funcionam."
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas incendiárias derretem a camada de gelo; o efeito de flechas comuns não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo na Brita glacial."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques na Brita glacial."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a água a elimina, como acontece com a Brita rochosa."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálica; Magnétis não a agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "A coloração a camufla na neve até ela começar a se mover.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Imunidade a congelamento para lutar na mão",
+      "text": "Com o Conjunto de pluma nevada completo e melhorado duas vezes por uma Grande Fada, Link ganha o bônus de imunidade a congelamento e pode pegar a Brita glacial e arremessá-la sem ser congelado.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Futuro Tálus de gelo",
+      "text": "Segundo o compendium, a Brita glacial endurece e se cobre de geada com a idade, até virar um Tálus glacial feito inteiramente de gelo.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Derreter a camada de gelo com uma Flecha incendiária, pegá-la e arremessá-la logo em seguida."
+  ],
+  "limitations": [
+    "Encostar nela sem proteção congela Link.",
+    "Explode se for segurada por tempo demais."
+  ],
+  "related": [
+    { "id": "botw_monster_frost_talus", "relation": "Forma adulta" },
+    { "id": "botw_monster_stone_pebblit", "relation": "Brita de pedra" },
+    { "id": "botw_monster_igneo_pebblit", "relation": "Brita de fogo" },
+    { "id": "botw_armorset_snowquill_set", "relation": "Bônus que permite segurá-la sem congelar" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Derrete sua camada de gelo" },
+    { "id": "botw_material_sapphire", "relation": "Pode ser deixada" },
+    { "id": "botw_material_flint", "relation": "Pode ser deixado" }
+  ],
+  "capabilities": ["arremessavel", "gera_gelo", "reage_fogo", "vence_rapido"],
+  "verification_status": "parcial"
+}

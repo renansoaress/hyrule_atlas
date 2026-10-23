@@ -1,0 +1,216 @@
+{
+  "id": "botw_weapon_korok_leaf",
+  "summary": "Folha gigante que gera rajadas de vento a cada golpe (ataque 1). Empurra jangadas e moinhos, afasta inimigos leves, aviva incêndios e é a chave da missão do Ninho do Cantor.",
+  "description": "A Folha Korok é uma folha enorme e resistente que conta como arma de duas mãos, embora funcione mais como as varinhas elementais: cada golpe solta uma rajada de vento capaz de empurrar objetos leves. O jogo diz que ela às vezes cai das árvores quando são derrubadas, e ela também pode ser encontrada no chão perto de jangadas. Apesar de ocorrer na natureza, pertence ao Equipamento Korok.\n\nNo combate, causa dano mínimo, mas a rajada derruba inimigos leves, como Koboblins e Soldados Yiga. O vento move moinhos e jangadas — permitindo navegar sem depender do vento natural — e aviva chamas, espalhando o fogo rapidamente. A folha é inflamável, pode transportar fogo e se desfaz se ficar acesa por muito tempo. Não pode ser arremessada: segurar e soltar o botão de arremesso só produz outra rajada. Brandir a folha sem atingir nada sólido não gasta durabilidade.",
+  "locations": [
+    "No chão perto de jangadas, em várias partes de Hyrule.",
+    "Ao derrubar árvores, a folha às vezes cai junto.",
+    "O compendium lista a Pradaria de Hyrule e Necluda Ocidental como locais comuns."
+  ],
+  "obtaining": [
+    "Recolher perto de jangadas ou cortar árvores até uma folha cair.",
+    "Missão de santuário \"Recital at Warbler's Nest\": Kheel dá uma Folha Korok a Link se ele ainda não tiver uma."
+  ],
+  "uses": [
+    "Impulsionar jangadas abanando a vela, sem depender do vento natural.",
+    "Girar moinhos e ativar objetos sensíveis ao vento.",
+    "Afastar inimigos leves, como Koboblins e Soldados Yiga.",
+    "Espalhar fogo rapidamente abanando as chamas.",
+    "Resolver a missão de santuário do Ninho do Cantor (Warbler's Nest)."
+  ],
+  "effects": [
+    "Cada golpe produz uma rajada de vento; o golpe carregado gera uma rajada mais duradoura."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe solta uma rajada de vento à frente de Link. O golpe carregado é um empurrão vigoroso por cima da cabeça que gera uma rajada mais longa. O dano direto é mínimo.",
+      "applications": [
+        "Empurrar jangadas, girar moinhos e afastar inimigos leves."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "nao_aplicavel",
+      "result": "Não pode ser arremessada: segurar e soltar o botão de arremesso apenas produz uma rajada de vento."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "É inflamável: pega fogo e pode transportar a chama, mas se desfaz se ficar acesa por muito tempo. A rajada também aviva o fogo, espalhando-o depressa.",
+      "side_effects": [
+        "A folha é destruída se queimar por tempo demais."
+      ],
+      "applications": [
+        "Abanar um foco de fogo na grama para espalhá-lo depressa; o fogo alastrado pela grama gera correntes ascendentes para o Planador."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada em clima escaldante, queima.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Fontes em conflito: o texto do Zelda Wiki diz que ela não conduz eletricidade, mas a tabela de propriedades extraídas do jogo no mesmo artigo a marca como condutora."
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades: não é metálica.",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movida com Magnétis.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "A rajada derruba inimigos leves, como Koboblins e Soldados Yiga.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Move moinhos e jangadas e faz as rochas do Ninho do Cantor \"cantarem\" ao serem abanadas.",
+      "applications": [
+        "Navegar de jangada abanando a vela com a folha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A chave do Ninho do Cantor",
+      "text": "Na missão \"Recital at Warbler's Nest\", Kheel sugere abanar a folha em direção às formações de pedra do Ninho do Cantor, porque elas fazem um som divertido. A letra da canção fala de um monge que abre as portas quando o vento faz as pedras cantarem: abanando as estruturas na ordem certa, de cima do pedestal próximo, Link faz emergir o santuário Voo Lota.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cuccos não gostam de vento",
+      "text": "As rajadas da Folha Korok irritam os Cuccos; se forem provocados demais, eles atacam Link.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, a folha não pode receber bônus de ataque (as faixas são 0). No nível comum (branco) pode vir com Durabilidade aumentada de +2 ou Acerto crítico; no nível dourado (amarelo), com Durabilidade de +6 a +12. O multiplicador de Lançamento longo está fixado em 1,0 — e a folha nem pode ser arremessada.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus",
+        "zw:Template:BotW Weapon Parameters"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O único \"IsWeakBreaker\"",
+      "text": "Entre as armas de duas mãos, a Folha Korok é a única com o parâmetro interno IsWeakBreaker ativado. A função desse parâmetro é desconhecida; a documentação do Zelda Wiki especula que tenha servido, durante o desenvolvimento, para derrotar inimigos fracos com um golpe.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Weapon Parameters"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma \"varinha\" de duas mãos",
+      "text": "O Zelda Wiki observa que a Folha Korok se comporta de forma muito parecida com as varinhas elementais (de fogo, gelo e raio), só que com vento, mas é estranhamente classificada como arma de duas mãos.",
+      "sources": [
+        "zw:Weapon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para viagens longas de jangada, mantenha a folha equipada e abane a vela continuamente: a direção do barco passa a depender só de Link.",
+    "Ao incendiar grama para pegar uma corrente ascendente, abanar as chamas com a folha faz o fogo se espalhar mais depressa."
+  ],
+  "limitations": [
+    "Dano direto mínimo (1).",
+    "Não pode ser arremessada.",
+    "Queima e se desfaz se ficar acesa ou em clima escaldante.",
+    "Comportamento com eletricidade não confirmado (fontes divergentes)."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_cucco",
+      "relation": "Fica irritado com as rajadas"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Inimigo leve que a rajada derruba"
+    },
+    {
+      "id": "botw_monster_yiga_footsoldier",
+      "relation": "Inimigo leve que a rajada derruba"
+    },
+    {
+      "id": "botw_object_tree",
+      "relation": "A folha pode cair de árvores derrubadas"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "O fogo que a folha espalha pela grama gera correntes ascendentes"
+    },
+    {
+      "id": "botw_weapon_fire_rod",
+      "relation": "Varinha elemental de comportamento parecido"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial",
+    "inflamavel",
+    "flutua",
+    "item_de_missao"
+  ],
+  "verification_status": "a_verificar"
+}

@@ -1,0 +1,166 @@
+{
+  "id": "botw_armor_island_lobster_shirt",
+  "summary": "Camisa azul do Herói dos Ventos (The Wind Waker), escondida por Misko no fundo do Lago Cora (DLC 2). Dá Resistência ao calor e, de forma oculta, acelera jangadas empurradas pela Folha Korok.",
+  "description": "A Camisa da lagosta insular é a camisa que Link usava no início de The Wind Waker, em sua ilha natal. Em Breath of the Wild, ela faz parte do pacote The Champions' Ballad (DLC 2): Misko a roubou do Castelo de Hyrule, e a pista está no Diário EX 2 de Misko, nas ruínas da Vila Deya, que fala em \"onde nasce o rio Menoat\". O baú está debaixo d'água, numa abertura sob a reentrância do Lago Cora; é preciso usar Gelítis para chegar perto e Magnétis para puxá-lo (Missão secundária \"EX Treasure: Garb of Winds\").\n\nVestida, dá um nível de Resistência ao calor e o efeito oculto Vento de popa (Wake Wind), que aumenta a aceleração das jangadas empurradas com a Folha Korok. A defesa é só 1 e não há níveis de melhoria registrados para a peça; as fontes consultadas também não dizem se ela pode ser tingida na Tinturaria Kochi. Se for vendida, Granté passa a vendê-la por 50 rupias na Vila de Nício.",
+  "locations": [
+    "Lago Cora, debaixo d'água, na nascente do rio Menoat."
+  ],
+  "obtaining": [
+    "Missão secundária \"EX Treasure: Garb of Winds\" (DLC 2): ler o Diário EX 2 de Misko nas ruínas da Vila Deya e puxar o baú do Lago Cora com Magnétis.",
+    "Recomprar de Granté por 50 rupias depois de vendê-la."
+  ],
+  "uses": [
+    "Resistência ao calor leve, sem ocupar a cabeça nem as pernas.",
+    "Atravessar lagos de jangada mais depressa com a Folha Korok."
+  ],
+  "effects": [
+    "Resistência ao calor, nível 1.",
+    "Vento de popa (Wake Wind, efeito oculto): jangadas empurradas pela Folha Korok aceleram mais rápido."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência ao calor e o efeito oculto Wake Wind. Não faz parte de nenhum conjunto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Wake Wind"
+      ]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "Com a camisa vestida, a jangada empurrada pelo vento da Folha Korok acelera mais rápido.",
+      "conditions": [
+        "Estar sobre uma jangada e abanar a vela com a Folha Korok."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Wake Wind",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "calor do deserto",
+      "status": "confirmado",
+      "result": "Um nível de Resistência ao calor impede o dano do calor diurno comum do Deserto Gerudo (acima de 40 °C); acima de 50 °C é preciso somar outra fonte do efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Heat",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima escaldante",
+      "status": "sem_efeito",
+      "result": "Resistência ao calor não protege do clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A roupa do Herói dos Ventos",
+      "text": "A descrição diz que o Herói dos Ventos usava a camisa na pequena ilha que chamava de lar e que ele \"manejava o vento para cruzar o oceano\" — daí o efeito oculto que favorece jangadas a vela.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Seis relíquias no segundo diário",
+      "text": "O Diário EX 2 de Misko aponta seis relíquias roubadas do Castelo de Hyrule; além da camisa, estão nele as três peças do Conjunto de Ganon Fantasma.",
+      "sources": [
+        "zw",
+        "zw:EX Treasure: Dark Armor"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "No Deserto Gerudo de dia, a camisa somada a uma Tiara de safira dá dois níveis de Resistência ao calor, o máximo, para as áreas mais quentes."
+  ],
+  "limitations": [
+    "Defesa 1 e nenhum nível de melhoria registrado.",
+    "Exige o pacote DLC The Champions' Ballad.",
+    "Não protege do clima escaldante."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_tunic_of_the_wind",
+      "relation": "Traje do mesmo herói (The Wind Waker), obtido por amiibo"
+    },
+    {
+      "id": "botw_weapon_korok_leaf",
+      "relation": "Seu vento move jangadas mais rápido com a camisa"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para puxar o baú do lago"
+    },
+    {
+      "id": "botw_rune_cryonis",
+      "relation": "Ajuda a chegar ao baú submerso"
+    },
+    {
+      "id": "botw_armor_desert_voe_spaulder",
+      "relation": "Outra peça de torso com Resistência ao calor"
+    },
+    {
+      "id": "botw_armor_sapphire_circlet",
+      "relation": "Soma com a camisa para chegar ao nível 2"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "habilidade_especial",
+    "velocidade"
+  ],
+  "verification_status": "parcial"
+}

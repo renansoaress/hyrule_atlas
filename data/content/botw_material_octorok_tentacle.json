@@ -1,0 +1,187 @@
+{
+  "id": "botw_material_octorok_tentacle",
+  "summary": "Tentáculo ácido demais para a culinária, mas \"muito valorizado\" em elixires — onde rende só 1:10. Primeiro material das Botas de neve (5 no 1º nível).",
+  "description": "O Tentáculo de Octoroc só pode ser obtido de inimigos do tipo Octoroc. O texto do jogo diz que ele é ácido demais para cozinhar, mas muito valorizado como ingrediente de elixires — curiosamente, o acréscimo real é o menor possível, 1:10, o mesmo dos chifres de Koboblin e Moblin.\n\nO uso de destaque é nas Botas de neve: a Grande Fada pede 5 tentáculos (com 10 Lagartos fujões) para o 1º nível. Os níveis seguintes das botas continuam com outras partes de Octoroc — Balão no 2º e Olho no 3º. Na Tinturaria Kochi, o tentáculo entra no corante azul-claro.",
+  "locations": [
+    "Lagos, rios, florestas, montanhas, neve e areia onde vivem as variedades de Octoroc."
+  ],
+  "obtaining": [
+    "Derrotar Octorocs aquáticos, da floresta, rochosos, da neve ou do tesouro.",
+    "Os Octorocs celestes do Modo Mestre não deixam materiais."
+  ],
+  "uses": [
+    "Elixires: cozido com um bicho, acrescenta 1:10 à duração.",
+    "Melhoria de armadura: 5 no 1º nível das Botas de neve.",
+    "Corante azul-claro na Tinturaria Kochi.",
+    "Venda: 10 rupias, ou 5 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Tentáculo de Octoroc no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Tentáculo de Octoroc largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Tentáculo de Octoroc queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Tentáculo de Octoroc numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Tentáculo de Octoroc a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Tentáculo de Octoroc à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Tentáculo de Octoroc flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Tentáculo de Octoroc não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Tentáculo de Octoroc largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 10 rupias em lojas e comerciantes, ou 5 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Muito valorizado\", mas o mínimo de duração",
+      "text": "Apesar de o inventário chamá-lo de ingrediente muito valorizado para elixires, o tentáculo está no menor patamar de duração da tabela de partes de monstro (1:10).",
+      "sources": [
+        "jogo",
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Octorocs aquáticos voltam sem Lua de sangue",
+      "text": "Segundo o Zelda Wiki, os Octorocs aquáticos podem reaparecer sem que ocorra uma Lua de sangue, o que facilita juntar partes de Octoroc repetindo a mesma lagoa.",
+      "sources": [
+        "zw:Water Octorok"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Trilogia das Botas de neve",
+      "text": "As Botas de neve usam três partes de Octoroc em sequência: Tentáculo no 1º nível, Balão no 2º e Olho no 3º (5 unidades em cada). Só o 4º nível troca para Escamas de Naydra.",
+      "sources": [
+        "zw",
+        "zw:Octo Balloon",
+        "zw:Octorok Eyeball"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Uma única caçada a Octorocs pode render os três materiais das Botas de neve (tentáculo, balão e olho)."
+  ],
+  "limitations": [
+    "Menor acréscimo de duração em elixires (1:10).",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_water_octorok",
+      "relation": "Deixa o tentáculo e reaparece sem Lua de sangue"
+    },
+    {
+      "id": "botw_monster_forest_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_snow_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_treasure_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_sky_octorok_mm",
+      "relation": "Não deixa materiais"
+    },
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Usa 5 tentáculos no 1º nível"
+    },
+    {
+      "id": "botw_material_octo_balloon",
+      "relation": "Outra parte de Octoroc usada nas Botas de neve"
+    },
+    {
+      "id": "botw_material_octorok_eyeball",
+      "relation": "Outra parte de Octoroc usada nas Botas de neve"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul-claro"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

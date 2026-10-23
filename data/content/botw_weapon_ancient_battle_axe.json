@@ -1,0 +1,215 @@
+{
+  "id": "botw_weapon_ancient_battle_axe",
+  "summary": "Acha de tecnologia ancestral dos Guardiões batedores 2.0: dano alto (30), mas quebra fácil (15). Causa 1,3× de dano em Guardiões e Ganon, flutua e não conduz eletricidade.",
+  "description": "A Acha ancestral é a arma de duas mãos empunhada pelos Guardiões batedores 2.0 nos santuários de prova de força menor (\"A Minor Test of Strength\"). Segundo o jogo, a lâmina foi forjada com tecnologia ancestral e, embora poderosa, tem um formato incomum que a faz quebrar com facilidade — daí a combinação de ataque 30 com apenas 15 de durabilidade.\n\nComo todo o Equipamento guardião, ela tem um multiplicador de dano oculto contra alvos ligados à Calamidade: nos parâmetros extraídos do jogo, o golpe vale 1,3× contra Guardiões e Guardiões batedores, pernas e hélices de Guardiões, as quatro Iras de Ganon, Ganon, a Calamidade e Ganon, Besta Sombria. O material ancestral também muda as interações: ela não é magnética nem condutora, então não atrai raios, não conduz eletricidade e não pode ser movida com Magnétis, mas flutua se cair na água e não queima.",
+  "locations": [
+    "Santuários com a prova \"A Minor Test of Strength\", nas mãos do Guardião batedor 2.0.",
+    "O compendium lista o Deserto Gerudo e a Pradaria de Hyrule como locais comuns."
+  ],
+  "obtaining": [
+    "Derrotar o Guardião batedor 2.0 dos santuários de prova de força menor; a acha cai quando ele é destruído.",
+    "Depois de uma Lua de sangue o Guardião batedor do santuário volta, e a acha pode ser obtida de novo.",
+    "Chance de surgir em um baú ao escanear o amiibo do Guardião (série Breath of the Wild) com a runa amiibo.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma de explosão de dano contra Guardiões, Guardiões batedores e Iras de Ganon, aproveitando o multiplicador de 1,3×.",
+    "Arma de reserva para tempestades: por não atrair raios, pode ficar equipada quando chove forte.",
+    "Como arma de lâmina, corta árvores; por não ser inflamável, acende sílex ao golpeá-lo."
+  ],
+  "effects": [
+    "Dano 1,3× maior contra Guardiões, Ganon e suas Iras (multiplicador oculto)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e pesados, sem escudo. Segurar o ataque faz Link girar com a acha (gasta vigor e atinge quem estiver em volta) e soltar termina com uma pancada para baixo. O peso desequilibra inimigos com escudo e pode arrancá-lo das mãos deles.",
+      "side_effects": [
+        "Durabilidade baixa: o giro carregado acerta vários alvos e desgasta a arma rapidamente."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançada contra um inimigo, quebra no impacto e o golpe é sempre crítico (dano dobrado).",
+      "applications": [
+        "Arremessá-la quase quebrada num Guardião para somar o acerto crítico ao multiplicador ancestral."
+      ],
+      "side_effects": [
+        "A arma é perdida no impacto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo e não queima em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ser usada no Cânion de Eldin e na Montanha da Morte sem queimar.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, mesmo equipada.",
+      "applications": [
+        "Trocar para ela quando o equipamento metálico começar a soltar faíscas."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, como as demais armas de tecnologia ancestral.",
+      "applications": [
+        "Se cair num lago ou rio, pode ser recolhida na superfície."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser erguida com Magnétis: não é magnética.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões e Ganon",
+      "status": "confirmado",
+      "result": "Causa 1,3× de dano contra todos os Guardiões e Guardiões batedores (inclusive pernas e hélices), as Iras de Ganon, Ganon, a Calamidade e Ganon, Besta Sombria.",
+      "applications": [
+        "Arrancar as pernas de um Guardião persecutório ou derrubar Guardiões altívagos com menos golpes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Guardian"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "quem a empunha",
+      "status": "confirmado",
+      "result": "É a arma do Guardião batedor 2.0 nos santuários de prova de força menor.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (ícone branco) a acha pode vir com Ataque aumentado de +4 a +8, Durabilidade aumentada de +2 a +3 ou Acerto crítico (o último golpe de uma sequência causa dano dobrado). No nível dourado (amarelo), Ataque de +9 a +14, Durabilidade de +4 a +7 ou Lançamento longo (distância ×1,5 a ×2). Na maior parte dos casos, o nível do bônus acompanha o nível do mundo: primeiro sem bônus, depois branco e, por fim, amarelo.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Primeira de uma linha de três",
+      "text": "A Acha ancestral 2.0 (Guardião batedor 3.0) e a Acha ancestral 3.0 (Guardião batedor 4.0) são versões aprimoradas com o mesmo multiplicador de 1,3× contra Guardiões; todas fazem parte do Equipamento guardião, o grupo de armas usadas pelos Guardiões batedores.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Arma renovável",
+      "text": "A Lua de sangue revive também os Guardiões batedores dos santuários, que não são corrompidos pela Calamidade. Repetir a prova de força menor depois de uma Lua de sangue rende outra Acha ancestral.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar uma acha quase quebrada para o último golpe num Guardião: o golpe de quebra é crítico e ainda recebe o multiplicador de 1,3×."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 15 — o formato incomum da lâmina a faz quebrar cedo.",
+    "Não pode ser recuperada com Magnétis se cair em local de difícil acesso.",
+    "Ocupa as duas mãos: sem escudo enquanto estiver empunhada."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_ancient_battle_axe_plus",
+      "relation": "Versão aprimorada (Guardião batedor 3.0)"
+    },
+    {
+      "id": "botw_weapon_ancient_battle_axe_plus_plus",
+      "relation": "Versão máxima (Guardião batedor 4.0)"
+    },
+    {
+      "id": "botw_monster_guardian_scout_ii",
+      "relation": "Inimigo que a empunha nos santuários"
+    },
+    {
+      "id": "botw_weapon_ancient_bladesaw",
+      "relation": "Arma ancestral de duas mãos fabricada por Robbie"
+    },
+    {
+      "id": "botw_weapon_guardian_sword",
+      "relation": "Outra arma do Equipamento guardião"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Alvo que recebe dano extra"
+    },
+    {
+      "id": "botw_mechanic_critical_hit",
+      "relation": "O golpe de quebra e o arremesso são críticos"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

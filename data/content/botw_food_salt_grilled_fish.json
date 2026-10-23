@@ -1,0 +1,110 @@
+{
+  "id": "botw_food_salt_grilled_fish",
+  "summary": "Peixe inteiro (ou caramujo) rolado na Halita e grelhado. O peixe define o efeito; Robalo hyliano ou Carpa tricolor dão a versão comum, e caranguejos formam outro prato.",
+  "description": "O Peixe grelhado no sal é feito com Halita e um peixe; o inventário explica que o peixe inteiro é rolado em sal-gema natural antes de ir à grelha. A variante vem do peixe: Truta glacial dá Resistência ao calor, Truta rescaldada Resistência ao frio, Truta voltaica Resistência a choques, Robalo enérgico Recuperação de vigor, Salmão nutritivo ou Robalo nutritivo cura total com Corações extras, Carpa valente ou Pargo valente Ataque aumentado, Carpa blindada ou Pargo blindado Defesa aumentada e Truta discreta Furtividade aumentada. Robalo hyliano e Carpa tricolor, sem efeito, dão a versão comum — assim como dois peixes de efeitos contraditórios.\n\nCaramujos também servem: a página do Caramujo nutritivo inclui o Caramujo discreto e o Caramujo nutritivo entre os ingredientes aceitos, e a tabela de receitas aceita qualquer fruto do mar com Halita. Os caranguejos são a exceção, porque o Caranguejo grelhado no sal é testado antes. Outra pegadinha: com Trigo de Tabantha e Manteiga de cabra junto, o peixe salgado vira Torta de peixe, e com carne, um dos grelhados de carne no sal.",
+  "obtaining": [
+    "Cozinhar numa Panela Halita e um peixe ou caramujo, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Transformar qualquer peixe pescado num prato de efeito usando só sal.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pelo peixe ou caramujo (ou por outros ingredientes de efeito): Resistência ao calor, Resistência ao frio, Resistência a choques, Recuperação de vigor, Vigor extra, Velocidade aumentada, Corações extras, Ataque aumentado, Defesa aumentada ou Furtividade aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do peixe ou caramujo usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "caranguejo, carne ou trigo com manteiga",
+      "status": "confirmado",
+      "result": "Caranguejo com Halita forma Caranguejo grelhado no sal; carne com Halita, os grelhados de carne; trigo e manteiga com o peixe e a Halita, Torta de peixe.",
+      "produces": [
+        "botw_food_salt_grilled_crab",
+        "botw_food_salt_grilled_meat",
+        "botw_food_fish_pie"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Erro de efeito no wiki",
+      "text": "O texto da página do prato atribui à versão picante (Truta rescaldada) Resistência ao calor, mas a descrição do jogo para essa variante diz \"resistência ao frio de nível baixo\", o que coincide com o efeito picante dos outros pratos.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Peixes diferentes, mesmo efeito",
+      "text": "Com três espaços livres, combinar peixes diferentes do mesmo efeito (por exemplo, Carpa valente e Pargo valente) prolonga o efeito e pode elevar o nível, em vez de apenas repetir o mesmo peixe.",
+      "sources": [
+        "zw:Food",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Caranguejos formam outro prato.",
+    "Peixes de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_salt_grilled_crab",
+      "relation": "Grelhado no sal com caranguejo (prioridade maior)"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Caramujo também aceito"
+    },
+    {
+      "id": "botw_food_fish_skewer",
+      "relation": "Peixe na panela sem sal"
+    },
+    {
+      "id": "botw_food_fish_pie",
+      "relation": "Resultado com trigo e manteiga"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

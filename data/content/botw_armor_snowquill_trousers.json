@@ -1,0 +1,181 @@
+{
+  "id": "botw_armor_snowquill_trousers",
+  "summary": "Calças forradas com penas de Ará, vendidas por 550 rupias na Vila dos Arás. Dão Resistência ao frio; com o conjunto em ★★, Link fica imune a ataques de gelo e a congelamento.",
+  "description": "As Calças de pluma nevada são vendidas por 550 rupias na loja Brazen Beak, na Vila dos Arás, e formam o Conjunto de pluma nevada com o Cocar e a Túnica de pluma nevada. Segundo a descrição, os Arás as vendem aos hylianos que visitam a vila; o forro de penas de Ará retém muito bem o calor do corpo. A loja usa apenas as penas mais macias, trocadas naturalmente na mudança de estação.\n\nCada peça dá um nível de Resistência ao frio; duas peças atingem o teto (nível 2), exigido nos lugares mais gelados. Com as três em ★★, o conjunto ativa a Imunidade a congelamento: ataques de gelo deixam de causar dano e Link não é mais congelado. Nenhum desses efeitos protege da água gelada.\n\nA defesa vai de 3 a 20. As melhorias pedem Gelecas ígneas, Ervas geleiras, Asas de Morci ígneo, Flamelos e, no último nível, 10 Caudas de Lagalfos ígneo e 5 Rubis. Podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Loja Brazen Beak, na Vila dos Arás."
+  ],
+  "obtaining": [
+    "Comprar por 550 rupias na Brazen Beak."
+  ],
+  "uses": [
+    "Explorar regiões geladas sem pratos picantes.",
+    "Completar o Conjunto de pluma nevada para ficar imune a congelamento."
+  ],
+  "effects": [
+    "Resistência ao frio, nível 1.",
+    "Bônus de conjunto (três peças em ★★): Imunidade a congelamento."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência ao frio. Com o Cocar de pluma nevada, a Túnica de pluma nevada e as Calças de pluma nevada vestidos, todos em ★★, ativa o bônus Imunidade a congelamento (Unfreezable).",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Um nível de Resistência ao frio impede o dano do frio. O jogo distingue frio básico (abaixo de 0 °C) e intenso (abaixo de −10 °C), e alguns lugares exigem o nível 2, alcançado com duas peças de pluma nevada; o efeito tem teto no nível 2.",
+      "side_effects": [
+        "Não protege da água gelada de climas congelantes, que fere Link rapidamente com qualquer roupa."
+      ],
+      "applications": [
+        "Explorar as Cordilheiras de Hebra e outras regiões geladas sem pratos picantes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Chill-Proof",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "gelo",
+      "variant": "peça isolada",
+      "status": "sem_efeito",
+      "result": "Resistência ao frio não reduz o dano de ataques de gelo nem impede o congelamento.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Chill-Proof"
+      ]
+    },
+    {
+      "action": "gelo",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "A Imunidade a congelamento impede qualquer dano de ataques de gelo e impede que Link seja congelado.",
+      "conditions": [
+        "As três peças de pluma nevada em pelo menos ★★."
+      ],
+      "side_effects": [
+        "Não protege do frio ambiente nem da água gelada — isso continua a cargo da Resistência ao frio das peças."
+      ],
+      "applications": [
+        "Enfrentar Morcis glaciais, Chulchuls glaciais e Feitiçanos glaciais sem ficar congelado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Conselho do vendedor",
+      "text": "Huck, na porta da Brazen Beak, avisa que nas Cordilheiras de Hebra até escaladores experientes morrem de frio, mas que, agasalhado com as roupas da loja, até um amador chega ao topo.",
+      "sources": [
+        "zw:Brazen Beak"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Frio e gelo são coisas diferentes",
+      "text": "A Resistência ao frio das peças protege do clima gelado, mas não de ataques de gelo; a Imunidade a congelamento do conjunto protege de ataques de gelo, mas não do clima. Só o conjunto completo em ★★ cobre as duas coisas.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Calças e túnica de pluma nevada já garantem o nível 2 de Resistência ao frio, liberando a cabeça para outra peça enquanto o conjunto não chega a ★★."
+  ],
+  "limitations": [
+    "Não protegem da água gelada.",
+    "A imunidade a gelo exige as três peças em ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_snowquill_headdress",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_snowquill_tunic",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_warm_doublet",
+      "relation": "Peça barata de Resistência ao frio"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_material_red_chuchu_jelly",
+      "relation": "Material das duas primeiras melhorias"
+    },
+    {
+      "id": "botw_mechanic_temperature",
+      "relation": "Mecânica de temperatura"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

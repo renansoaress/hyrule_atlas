@@ -1,0 +1,139 @@
+{
+  "id": "botw_food_roasted_big_radish",
+  "summary": "Rabanete nutritivo grande assado no fogo — \"decadente\", diz o jogo, para um vegetal tão precioso. Cura 6 corações (cru, 4), a maior cura entre as comidas assadas, e vale 24 rupias.",
+  "description": "O Rabanete nutritivo grande vira Rabanete nutritivo grande assado ao encostar numa fogueira ou ficar no chão do clima escaldante de Eldin. A descrição do jogo brinca que levar ao fogo um vegetal tão precioso é, de certa forma, uma extravagância — e a página do Zelda Wiki registra que há quem considere isso um desperdício, pois existem formas melhores de cozinhá-lo.\n\nO motivo é o efeito: na Panela, o rabanete grande dá Corações extras, que somem quando ele é assado. Ainda assim, como comida de cura pura, é a melhor da categoria: 6 corações, o maior valor da tabela de comidas assadas, contra 4 do rabanete cru. Na venda sobe de 15 para 24 rupias.",
+  "locations": [
+    "Prepara-se a partir de Rabanetes nutritivos grandes — raízes colhidas em áreas gramadas de Hyrule, reconhecíveis pelo talo florido e bifurcado — numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Rabanete nutritivo grande ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura forte sem Panela: 6 corações por unidade.",
+    "Venda: 24 rupias."
+  ],
+  "effects": [
+    "Recupera 6 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Rabanete nutritivo grande — queima por alguns instantes e se transforma em Rabanete nutritivo grande assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Rabanete nutritivo grande assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Rabanete nutritivo grande no chão para que o ingrediente asse sozinho e vire Rabanete nutritivo grande assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 6 corações, contra 4 do Rabanete nutritivo grande cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 24 rupias; o Rabanete nutritivo grande cru vale 15.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Big Hearty Radish"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Rabanete nutritivo grande assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Campeão de cura entre os assados",
+      "text": "Na tabela de comidas assadas do Zelda Wiki, nenhum outro item passa de 4,5 corações; o Rabanete nutritivo grande assado chega a 6.",
+      "sources": [
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um \"desperdício\" de luxo",
+      "text": "O texto do jogo diz que pôr no fogo um vegetal tão precioso é decadente, e o Zelda Wiki observa que há maneiras melhores de cozinhá-lo — referência aos Corações extras que ele daria numa receita de Panela.",
+      "sources": [
+        "zw",
+        "zw:Big Hearty Radish"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: o efeito do rabanete só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_big_hearty_radish",
+      "relation": "Ingrediente cru (Corações extras na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_radish",
+      "relation": "Versão assada do rabanete menor"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Assa o rabanete ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

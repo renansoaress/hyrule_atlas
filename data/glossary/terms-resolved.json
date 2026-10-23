@@ -1,0 +1,444 @@
+{
+  "Hyrule Field": {
+    "name_ptbr": "Pradaria de Hyrule",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "West Necluda": {
+    "name_ptbr": "Necluda Ocidental",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas",
+    "note": "A Coelho News lista \"West Necluda → Necluda Oriental\", o mesmo nome de \"East Necluda\" — erro evidente na transcrição. Usado \"Necluda Ocidental\" até confirmação."
+  },
+  "Hyrule Ridge": {
+    "name_ptbr": "Cerros de Hyrule",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Gerudo Highlands": {
+    "name_ptbr": "Montanhas Gerudo",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Tabantha Frontier": {
+    "name_ptbr": "Fronteira de Tabantha",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Hebra Mountains": {
+    "name_ptbr": "Cordilheiras de Hebra",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Gerudo Desert": {
+    "name_ptbr": "Deserto Gerudo",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Lanayru Great Spring": {
+    "name_ptbr": "Grande Nascente de Lanayru",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Lanayru Wetlands": {
+    "name_ptbr": "Palude de Lanayru",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Deep Akkala": {
+    "name_ptbr": "Coração de Akkala",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Lake Hylia": {
+    "name_ptbr": "Lago Hylia",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Akkala Highlands": {
+    "name_ptbr": "Altiplano de Akkala",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Referência: Altiplano de Akkala — Map (Breath of the Wild, Brazilian Portuguese version)"
+  },
+  "Faron Grasslands": {
+    "name_ptbr": "Prados de Faron",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "East Necluda": {
+    "name_ptbr": "Necluda Oriental",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Necluda Sea": {
+    "name_ptbr": "Mar de Necluda",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Greater Hyrule": {
+    "name_ptbr": "Toda Hyrule",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Eldin Canyon": {
+    "name_ptbr": "Cânion de Eldin",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Eldin Mountains": {
+    "name_ptbr": "Cordilheira de Eldin",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Great Hyrule Forest": {
+    "name_ptbr": "Grande Floresta de Hyrule",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Gerudo Town": {
+    "name_ptbr": "Cidade Gerudo",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Lanayru Sea": {
+    "name_ptbr": "Mar de Lanayru",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Satori Mountain": {
+    "name_ptbr": "Monte Satori",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Death Mountain": {
+    "name_ptbr": "Montanha da Morte",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Crenel Peak": {
+    "name_ptbr": "Pico Crenel",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Seres Scablands": {
+    "name_ptbr": "Ermos de Seres",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Floria Bridge": {
+    "name_ptbr": "Ponte Floria",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Rito Stable": {
+    "name_ptbr": "Estábulo dos Arás",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Akkala Sea": {
+    "name_ptbr": "Mar de Akkala",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Referência: Mar de Akkala — Map (Breath of the Wild, Brazilian Portuguese version)"
+  },
+  "Mount Lanayru": {
+    "name_ptbr": "Monte Lanayru",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Kakariko Village": {
+    "name_ptbr": "Vila Kakariko",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": null
+  },
+  "Faron": {
+    "name_ptbr": "Faron",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Hyrule Castle": {
+    "name_ptbr": "Castelo de Hyrule",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Lake Floria": {
+    "name_ptbr": "Lago Floria",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Divine Beast Vah Rudania": {
+    "name_ptbr": "Fera Divina Vah Rudania",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Referência: Fera Divina Vah Rudania — Adventure Log (Breath of the Wild, Brazilian Portuguese version)"
+  },
+  "Yiga Clan Hideout": {
+    "name_ptbr": "Esconderijo do Clã Yiga",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Divine Beast Vah Naboris": {
+    "name_ptbr": "Fera Divina Vah Naboris",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Referência: Fera Divina Vah Naboris — Adventure Log (Breath of the Wild, Brazilian Portuguese version)"
+  },
+  "Divine Beast Vah Ruta": {
+    "name_ptbr": "Fera Divina Vah Ruta",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Referência: Fera Divina Vah Ruta — Adventure Log (Breath of the Wild, Brazilian Portuguese version)"
+  },
+  "Divine Beast Vah Medoh": {
+    "name_ptbr": "Fera Divina Vah Medoh",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Referência: Fera Divina Vah Medoh — Adventure Log (Breath of the Wild, Brazilian Portuguese version)"
+  },
+  "_doc": {
+    "name_ptbr": "Traduções NÃO OFICIAIS do Hyrule Atlas para nomes sem fonte oficial localizada. Regras: (1) reaproveitar nomes oficiais dos componentes (ex.: Koboblin, Carne de segunda, Coxa, Sobrecoxa, Gelítis); (2) minúsculas exceto nomes próprios, como na localização oficial; (3) um único nome por entidade em todo o atlas.",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas",
+    "note": null
+  },
+  "defense up": {
+    "name_ptbr": "Defesa aumentada",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "attack up": {
+    "name_ptbr": "Ataque aumentado",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "stamina recovery": {
+    "name_ptbr": "Recuperação de vigor",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "heat resistance": {
+    "name_ptbr": "Resistência ao calor",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "shock resistance": {
+    "name_ptbr": "Resistência a choques",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "flame guard": {
+    "name_ptbr": "Proteção contra chamas",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "extra hearts": {
+    "name_ptbr": "Corações extras",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "speed up": {
+    "name_ptbr": "Velocidade aumentada",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "cold resistance": {
+    "name_ptbr": "Resistência ao frio",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "stealth up": {
+    "name_ptbr": "Furtividade aumentada",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "extra stamina": {
+    "name_ptbr": "Vigor extra",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Guardian Resist Up": {
+    "name_ptbr": "Resistência a Guardiões",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Attack Up": {
+    "name_ptbr": "Ataque aumentado",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Bokoblin Disguise": {
+    "name_ptbr": "Disfarce de Koboblin",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "See Enemy HP": {
+    "name_ptbr": "Exibe a vida dos inimigos",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Climb Speed Up": {
+    "name_ptbr": "Escalada mais rápida",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Heat Resistance": {
+    "name_ptbr": "Resistência ao calor",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Flame Guard": {
+    "name_ptbr": "Proteção contra chamas",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Lizalfos Disguise": {
+    "name_ptbr": "Disfarce de Lagalfos",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Lynel Disguise": {
+    "name_ptbr": "Disfarce de Centaleão",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Moblin Disguise": {
+    "name_ptbr": "Disfarce de Moblin",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Swim Speed Up": {
+    "name_ptbr": "Natação mais rápida",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Stealth Up": {
+    "name_ptbr": "Furtividade aumentada",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Stal Lure": {
+    "name_ptbr": "Atrai monstros Stal",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Shock Resistance": {
+    "name_ptbr": "Resistência a choques",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Cold Resistance": {
+    "name_ptbr": "Resistência ao frio",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Sand Speed Up": {
+    "name_ptbr": "Velocidade na areia",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Snow Speed Up": {
+    "name_ptbr": "Velocidade na neve",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Lightning Proof": {
+    "name_ptbr": "Imunidade a raios",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Unfreezable": {
+    "name_ptbr": "Imunidade a congelamento",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Spin Attack (Added Effect)": {
+    "name_ptbr": "Ataque giratório na água (efeito adicional)",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "treasures": {
+    "name_ptbr": "tesouros",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "green rupee": {
+    "name_ptbr": "rupia verde",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "blue rupee": {
+    "name_ptbr": "rupia azul",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "red rupee": {
+    "name_ptbr": "rupia vermelha",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "purple rupee": {
+    "name_ptbr": "rupia roxa",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "silver rupee": {
+    "name_ptbr": "rupia prateada",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "luminous": {
+    "name_ptbr": "Pedra luminosa",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Head": {
+    "name_ptbr": "Cabeça",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Chest": {
+    "name_ptbr": "Torso",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Legs": {
+    "name_ptbr": "Pernas",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Grantéson": {
+    "name_ptbr": "Granté (Vila de Nício)",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "_doc_lojas": {
+    "name_ptbr": "Páginas de personagens que o Zelda Wiki intitula com o nome de TOTK; em BOTW o vendedor tem outro nome.",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  },
+  "Stall": {
+    "name_ptbr": "Banca de mercado",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas"
+  }
+}

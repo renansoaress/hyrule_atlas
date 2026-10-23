@@ -1,0 +1,94 @@
+{
+  "id": "botw_food_salt_grilled_greens",
+  "summary": "Legume, erva ou flor grelhados com Halita, prato que o jogo chama de saudável. O Capim hyruliano dá a versão comum; as outras plantas definem o efeito.",
+  "description": "As Ervas grelhadas no sal levam Halita e qualquer legume, erva ou flor; o inventário fala de um prato que faz bem à saúde, de folhas verdes com um toque de sal. A versão comum é feita com Capim hyruliano, que não tem efeito. As outras plantas dão suas variantes: Rabanete nutritivo e Rabanete nutritivo grande (cura total com Corações extras), Cenoura tenaz (Vigor extra), Cenoura veloz e Violeta veloz (Velocidade aumentada), Erva geleira (Resistência ao frio), Erva relampagueira (Resistência a choques), Erva fogueira (Resistência ao calor), Protechofra (Ataque aumentado), Amaranto blindado (Defesa aumentada) e Beladona azul ou Princesa plácida (Furtividade aumentada).\n\nNa ordem do jogo, as Ervas grelhadas no sal vêm depois do Pão de trigo e antes dos Cogumelos grelhados no sal. Isso tem duas consequências: com Trigo de Tabantha na panela, o resultado é Pão de trigo; e uma planta junto de um cogumelo e da Halita resulta neste prato, e não em cogumelos grelhados.",
+  "obtaining": [
+    "Cozinhar numa Panela Halita e um legume, erva ou flor, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Prato de efeito com plantas colhidas e sal.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pela planta: Corações extras, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Resistência ao calor, Ataque aumentado, Defesa aumentada ou Furtividade aumentada; a fonte também lista uma versão com Recuperação de vigor, feita com ingredientes energizantes."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da planta usada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Trigo de Tabantha",
+      "status": "confirmado",
+      "result": "Com Trigo de Tabantha junto da Halita, a panela produz Pão de trigo (com o efeito da planta), receita testada antes.",
+      "produces": [
+        "botw_food_wheat_bread"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Planta vence cogumelo",
+      "text": "Halita com uma planta e um cogumelo forma Ervas grelhadas no sal, porque esta receita é verificada antes dos Cogumelos grelhados no sal.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Plantas de efeitos diferentes se anulam.",
+    "Trigo, carne ou peixe com a Halita levam a outras receitas."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_fried_wild_greens",
+      "relation": "Plantas na panela sem sal"
+    },
+    {
+      "id": "botw_food_salt_grilled_mushrooms",
+      "relation": "Grelhado no sal com cogumelos (prioridade menor)"
+    },
+    {
+      "id": "botw_food_wheat_bread",
+      "relation": "Resultado ao acrescentar trigo"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

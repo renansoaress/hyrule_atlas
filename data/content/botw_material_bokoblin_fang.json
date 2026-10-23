@@ -1,0 +1,159 @@
+{
+  "id": "botw_material_bokoblin_fang",
+  "summary": "Dente gasto, mas duro, deixado por Koboblins e Stalboblins. Acrescenta 1:50 aos elixires e é a peça central do 2º e 3º níveis do Conjunto hyliano.",
+  "description": "A Presa de Koboblin é um dente que o jogo descreve como desgastado e pouco afiado, mas ainda bem duro. Cai de Koboblins e de Stalboblins — e, curiosamente, no caso dos esqueletos ela sai do corpo e não do crânio. Como as demais partes de monstro, só tem uso culinário em elixires: cozida com um bicho, soma 1:50 à duração do efeito, um degrau acima dos chifres.\n\nSeu destino principal é a Fonte da Grande Fada: o Conjunto hyliano pede 5 presas por peça no 2º nível e 10 por peça no 3º, num total de 45. Na Tinturaria Kochi ela entra na receita do corante amarelo-claro, e Kilton a troca por 5 Mon.",
+  "locations": [
+    "Acampamentos de Koboblins em toda Hyrule e áreas onde Stalboblins surgem à noite."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins ou Stalboblins. Nos Stalboblins, a presa cai do esqueleto, não da cabeça.",
+    "Os monstros reaparecem após cada Lua de sangue."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 5 por peça no 2º nível e 10 por peça no 3º nível do Conjunto hyliano — 45 no total.",
+    "Corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 8 rupias, ou 5 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Presa de Koboblin no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Presa de Koboblin largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Presa de Koboblin queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Presa de Koboblin numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Presa de Koboblin a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Presa de Koboblin à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Presa de Koboblin flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Presa de Koboblin não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Presa de Koboblin largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 8 rupias em lojas e comerciantes, ou 5 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A presa sai do corpo, não do crânio",
+      "text": "Ao derrotar um Stalboblin, a Presa de Koboblin não cai do crânio, como se esperaria de um dente, e sim do restante do esqueleto.",
+      "sources": [
+        "zw:Stalkoblin"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Maior demanda do Conjunto hyliano",
+      "text": "Somando o 2º e o 3º níveis das três peças, o Conjunto hyliano consome 45 presas — mais do que os 39 chifres exigidos nos níveis anteriores.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde ao menos 45 presas se pretende levar o Conjunto hyliano ao 3º nível; só o excedente deve ir para elixires ou para Kilton."
+  ],
+  "limitations": [
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Deixa a presa pelo corpo, não pelo crânio"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Chifre usado nos níveis anteriores do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Substitui a presa no 4º nível do Conjunto hyliano"
+    },
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Usa 5 e 10 presas por peça no 2º e 3º níveis"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo-claro"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "botw_monster_sentry",
+  "summary": "Guardião voador lançado pela Fera Divina Vah Rudania na subida da Montanha da Morte. Se o holofote vermelho flagra Link ou Yunobo, a Fera dispara bombas de magma. Tem 1.000 de vida, mas cai com uma só Bomba remota.",
+  "description": "A Sentinela é um tipo de Guardião voador, parecido com o Guardião altívago, que só existe durante a missão principal \"Divine Beast Vah Rudania\". A Fera Divina guarda Sentinelas em compartimentos perto das patas e as despacha enquanto Link e Yunobo sobem a Montanha da Morte para detê-la. O compendium as descreve como sentinelas equipadas com holofotes capazes de detectar intrusos.\n\nA Sentinela não é uma ameaça direta: ela varre o caminho com um holofote vermelho, e é a Fera Divina que reage. Se Link ou Yunobo forem flagrados, Vah Rudania lança furiosamente bombas de magma sobre eles. Apesar dos 1.000 de vida, as Sentinelas são extremamente frágeis a Bombas remotas e a dano físico de impacto, a ponto de uma única Bomba remota derrubá-las.\n\nDerrotada, deixa um material ancestral aleatório (Parafuso, Mola, Engrenagem, Eixo ou Núcleo ancestral). Embora estejam sob controle de Ganon, a Espada Mestra não desperta o poder total perto delas, e elas não são revividas pela Lua de sangue.",
+  "locations": [
+    "Montanha da Morte, no caminho até a Fera Divina Vah Rudania, apenas durante a missão principal \"Divine Beast Vah Rudania\"."
+  ],
+  "obtaining": [
+    "Derrotá-la rende um material ancestral aleatório: Parafuso, Mola, Engrenagem, Eixo ou Núcleo ancestral."
+  ],
+  "uses": [
+    "Eliminar as Sentinelas evita que Vah Rudania bombardeie Link e Yunobo com magma durante a subida."
+  ],
+  "effects": [
+    "Holofote vermelho que, ao encontrar Link ou Yunobo, provoca uma chuva de bombas de magma da Fera Divina."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Varre o caminho com um holofote vermelho. Se Link ou Yunobo forem vistos, Vah Rudania dispara bombas de magma contra eles.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Guardian"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Extremamente vulnerável: uma única Bomba remota basta para derrubá-la, apesar dos 1.000 de vida.",
+      "applications": ["Abater as Sentinelas rapidamente durante a escolta de Yunobo."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "É muito frágil a explosões e a dano físico de impacto, segundo o Zelda Wiki.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "A Espada Mestra não ativa o poder total perto de Sentinelas, embora elas estejam sob controle de Ganon.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de flechas sobre a Sentinela."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre ela."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ela."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ela."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "Só aparece na Montanha da Morte, sem água por perto."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre a Sentinela."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nela."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Sai dos compartimentos junto às patas de Vah Rudania e patrulha o caminho de subida da Montanha da Morte.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Divine Beast"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Não voltam com a Lua de sangue",
+      "text": "As Sentinelas de Vah Rudania estão entre as exceções da Lua de sangue: não são revividas. Se uma Lua de sangue ocorrer durante a subida com Yunobo, só os Moblins pretos da área voltam.",
+      "sources": ["zw:Blood Moon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Espada Mestra fica indiferente",
+      "text": "Mesmo sob controle de Ganon, as Sentinelas não fazem a Espada Mestra despertar o poder total.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Guardadas na própria Fera",
+      "text": "Vah Rudania tem quatro compartimentos perto das patas onde armazena as Sentinelas.",
+      "sources": ["zw:Divine Beast"]
+    }
+  ],
+  "advanced_uses": [
+    "Ter a Bomba remota pronta durante a subida para eliminar cada Sentinela com um único disparo antes que o holofote encontre Yunobo."
+  ],
+  "limitations": [
+    "Só existe durante a missão principal da Fera Divina Vah Rudania."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_skywatcher", "relation": "Guardião voador semelhante" },
+    { "id": "botw_rune_remote_bomb", "relation": "Derruba a Sentinela com um disparo" },
+    { "id": "botw_weapon_master_sword", "relation": "Não desperta o poder total perto dela" },
+    { "id": "botw_monster_fireblight_ganon", "relation": "Chefe dentro de Vah Rudania" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Não revive as Sentinelas" },
+    { "id": "botw_material_ancient_core", "relation": "Possível recompensa" },
+    { "id": "botw_material_ancient_screw", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["habilidade_especial", "vence_rapido"],
+  "verification_status": "parcial"
+}

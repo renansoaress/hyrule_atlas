@@ -1,0 +1,176 @@
+{
+  "id": "botw_weapon_giant_boomerang",
+  "summary": "Bumerangue de metal tão grande que exige as duas mãos (ataque 25, durabilidade 40). Arremessado, faz a curva e volta para Link sem quebrar; usado por Lagalfos em Hebra.",
+  "description": "O Bumerangue gigante é um bumerangue metálico enorme, originalmente usado para caçar e depois adaptado para o combate. O jogo avisa que as lâminas nas curvas internas o tornam um pouco traiçoeiro de manejar. Serve tanto para golpes corpo a corpo à frente de Link quanto para atingir alvos distantes: arremessado, ele voa um trecho, faz a curva e retorna, podendo ser apanhado no ar. Se bater em algo no caminho ou Link não o pegar a tempo, ele quica e cai no chão para ser recolhido.\n\nÉ a única arma de duas mãos com comportamento de bumerangue, e os parâmetros confirmam que ela não se despedaça ao atingir um inimigo quando lançada, ao contrário das demais armas de duas mãos. É comum com alguns Lagalfos nas Cordilheiras de Hebra, sobretudo perto da fonte termal secreta de Goflam (Goflam's Secret Hot Spring), e também aparece em Necluda Ocidental. Feito de metal, conduz eletricidade, atrai raios, afunda e pode ser controlado com Magnétis.",
+  "locations": [
+    "Cordilheiras de Hebra, sobretudo nos arredores da fonte termal secreta de Goflam, com Lagalfos.",
+    "Necluda Ocidental."
+  ],
+  "obtaining": [
+    "Derrotar os Lagalfos de Hebra que o usam ou recolhê-lo em Necluda Ocidental.",
+    "Armas carregadas por inimigos voltam com a Lua de sangue.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Ataque à distância reutilizável: arremessar e apanhar de volta.",
+    "Golpes corpo a corpo de duas mãos quando os inimigos se aproximam."
+  ],
+  "effects": [
+    "Retorna a Link depois de arremessado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Funciona como arma corpo a corpo de duas mãos (sem escudo) e como arma de arremesso que volta. As fontes não descrevem como é o seu ataque carregado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Voa uma curta distância, faz a curva e volta para Link, que pode pegá-lo no ar. Não quebra ao acertar um inimigo quando lançado.",
+      "conditions": [
+        "Estar atento ao retorno para apanhá-lo; se não for pego ou bater em algum obstáculo, ele quica e cai."
+      ],
+      "applications": [
+        "Acertar inimigos em plataformas ou do outro lado de um rio sem perder a arma."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link levar um choque, o bumerangue voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado por muito tempo durante uma tempestade, atrai um raio sobre Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água — cuidado ao arremessá-lo sobre lagos.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Alguns Lagalfos das Cordilheiras de Hebra o usam, especialmente perto da fonte termal secreta de Goflam.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "glitch",
+      "title": "Bumerangue girando na Magnétis",
+      "text": "Se Link arremessar o bumerangue e o capturar com Magnétis ainda no ar, ele continua \"girando\" enquanto é controlado pela runa (o som e o efeito do giro continuam, embora o modelo não gire). Nesse estado, corta grama e outros objetos não sólidos e pode atingir um inimigo uma vez, lançando-o a uma curta distância. O giro para assim que ele colide com algo sólido.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis (sem Lançamento longo útil)",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +11, Durabilidade aumentada de +4 a +8 ou Acerto crítico; no nível dourado (amarelo): Ataque de +12 a +22, Durabilidade de +9 a +18. O multiplicador de Lançamento longo está fixado em 1,0, ou seja, esse bônus não aumentaria a distância do arremesso.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus",
+        "zw:Template:BotW Weapon Parameters"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rotação 30 vezes mais rápida",
+      "text": "O parâmetro de rotação no arremesso (ThrowRotSpeed) do Bumerangue gigante é 1.500, contra 50 das armas de duas mãos comuns — o valor que faz a arma girar como bumerangue no ar.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Weapon Parameters"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine o arremesso com o glitch da Magnétis para guiar o bumerangue girando até um inimigo distante."
+  ],
+  "limitations": [
+    "Precisa ser apanhado no retorno; obstáculos interrompem o voo.",
+    "Metálico: atrai raios e afunda.",
+    "Sem escudo enquanto estiver empunhado."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_boomerang",
+      "relation": "Bumerangue de uma mão"
+    },
+    {
+      "id": "botw_weapon_lizal_boomerang",
+      "relation": "Bumerangue dos Lagalfos"
+    },
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Alguns Lagalfos de Hebra o empunham"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Controla o bumerangue (inclusive no glitch do giro)"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

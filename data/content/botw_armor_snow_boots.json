@@ -1,0 +1,154 @@
+{
+  "id": "botw_armor_snow_boots",
+  "summary": "Botas que deixam Link andar na neve funda sem perder velocidade. Bozai as empresta em \"The Eighth Heroine\" e só as entrega de vez em \"The Forgotten Sword\".",
+  "description": "As Botas de neve anulam a penalidade de 20% de velocidade ao se mover na neve. Elas aparecem primeiro como empréstimo: na Missão secundária \"The Eighth Heroine\", Bozai as entrega para facilitar a subida às Montanhas Gerudo e, ao fim, Link as devolve em troca das Botas de areia. Para ficar com elas de vez, é preciso cumprir a missão seguinte, \"The Forgotten Sword\": fotografar a espada esquecida no Cume Gerudo (Gerudo Summit), a sudoeste da estátua da oitava heroína. Depois disso, Granté passa a vendê-las por 800 rupias.\n\nComo as Botas de areia, podem ser usadas dentro da Cidade Gerudo com a Blusa e o Véu Gerudo. A defesa vai de 3 a 20; as melhorias pedem partes de Octoroc (tentáculo, balão e olho) com ingredientes de velocidade e, no último nível, 2 Escamas de Naydra e 15 Violetas velozes. Podem ser melhoradas e tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Arredores da Cidade Gerudo, com Bozai.",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da obtenção definitiva."
+  ],
+  "obtaining": [
+    "Empréstimo temporário na Missão secundária \"The Eighth Heroine\".",
+    "Posse definitiva ao concluir \"The Forgotten Sword\", mostrando a Bozai a foto da espada esquecida.",
+    "Recomprar de Granté por 800 rupias depois disso."
+  ],
+  "uses": [
+    "Andar e correr na neve na velocidade normal (Cordilheiras de Hebra, Montanhas Gerudo).",
+    "Circular na Cidade Gerudo com a Blusa e o Véu Gerudo."
+  ],
+  "effects": [
+    "Velocidade na neve: remove a penalidade de 20% de movimento na neve."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede Velocidade na neve: Link deixa de perder 20% de velocidade na neve. Não faz parte de nenhum conjunto.",
+      "side_effects": [
+        "Não protege do frio; combine com peças de Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na neve funda, Link mantém a velocidade normal de caminhada e corrida.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Sede de botas\"",
+      "text": "Quando Link pede as Botas de neve em \"The Forgotten Sword\", Bozai zomba da \"sede de botas que não se sacia\" — e, ao emprestá-las na primeira missão, já tinha comentado que Link parecia \"gostar muito de botas\".",
+      "sources": [
+        "zw:The Forgotten Sword",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Descrição de empréstimo",
+      "text": "A descrição do inventário diz que Bozai teve a gentileza de emprestar as botas, refletindo a primeira vez que Link as recebe.",
+      "sources": [
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Nas Cordilheiras de Hebra, as botas mais duas peças de Resistência ao frio na cabeça e no torso (por exemplo, Cocar e Túnica de pluma nevada) dão velocidade na neve e o nível 2 de Resistência ao frio ao mesmo tempo."
+  ],
+  "limitations": [
+    "Sem efeito fora da neve.",
+    "Não dão Resistência ao frio."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_sand_boots",
+      "relation": "Botas recebidas em troca na mesma missão"
+    },
+    {
+      "id": "botw_armor_snowquill_tunic",
+      "relation": "Combina com as botas para proteger do frio"
+    },
+    {
+      "id": "botw_armor_gerudo_sirwal",
+      "relation": "Peça que as botas podem substituir na Cidade Gerudo"
+    },
+    {
+      "id": "botw_material_octorok_eyeball",
+      "relation": "Material do 3º nível"
+    },
+    {
+      "id": "botw_material_naydras_scale",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_material_swift_violet",
+      "relation": "Material do último nível (15 unidades)"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,183 @@
+{
+  "id": "botw_material_endura_carrot",
+  "summary": "Cenoura medicinal rara (venda: 30 rupias). Cozida, dá Vigor extra; crua cura 2 corações. Dada a um cavalo, rende 3 esporas extras, e é o pagamento que Malanya pede para ressuscitar cavalos.",
+  "description": "A Cenoura tenaz é uma planta medicinal muito valorizada, cheia de energia nutritiva. Cozida na panela, concede Vigor extra, que amplia o Medidor de vigor além do limite normal; crua, recupera 2 corações. Exposta ao fogo, vira Cenoura tenaz assada, um prato descrito como extravagante. Cresce em poucos lugares: na Fonte de Malanya (Malanya Spring), perto do topo do Monte Satori e nas bordas das Fontes das Grandes Fadas. O mercador ambulante Bugut a vende por 120 rupias.\n\nSeus usos vão muito além da cozinha. Assim como maçãs e cenouras velozes, ela aumenta a afeição dos cavalos, mas também dá ao animal três esporas extras (amarelas, com ícone de cenoura), usadas depois das normais e perdidas depois de gastas. E é a moeda do deus dos cavalos: depois da primeira ressurreição gratuita, Malanya só revive outro cavalo registrado em troca de uma Cenoura tenaz.",
+  "locations": [
+    "Fonte de Malanya, em Faron; perto do topo do Monte Satori; bordas das Fontes das Grandes Fadas.",
+    "O compendium cita os Cerros de Hyrule e os Prados de Faron.",
+    "Loja: o mercador ambulante Bugut (entre a Vila Kakariko e o Dueling Peaks Stable), por 120 rupias."
+  ],
+  "obtaining": [
+    "Colher nos locais citados.",
+    "Comprar com Bugut (estoque de 1)."
+  ],
+  "uses": [
+    "Pratos de Vigor extra.",
+    "Alimentar cavalos: aumenta a afeição e dá 3 esporas extras temporárias.",
+    "Pagamento de Malanya para ressuscitar um cavalo morto (a partir da segunda vez).",
+    "Obrigatória (como \"qualquer cenoura\") no Bolo de cenoura e no Ensopado de cenoura; aceita no Curry de legumes, Risoto de legumes e Sopa cremosa de legumes (que aceitam cenoura ou abóbora).",
+    "Receitas genéricas de vegetal (Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, Frutas/Peixe/Carne/Cogumelos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, Creme de cogumelos).",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 30 rupias."
+  ],
+  "effects": [
+    "Cozida: Vigor extra — o limite do Medidor de vigor aumenta temporariamente."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão. Cavalos comem a Cenoura tenaz assada largada no chão e recebem o mesmo bônus da crua.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar cavalo",
+      "status": "confirmado",
+      "result": "Aumenta a afeição do cavalo e concede três esporas extras amarelas, com ícone de cenoura, que ficam guardadas até serem usadas.",
+      "conditions": ["As esporas extras só são gastas depois das normais e das concedidas pela Rédea ancestral."],
+      "side_effects": ["Depois de usadas, as esporas extras se perdem.", "No Cavalo gigante, que não tem esporas, só a afeição aumenta."],
+      "applications": ["Ganhar arrancadas a mais numa viagem longa ou numa corrida."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "action": "usar",
+      "variant": "Malanya",
+      "status": "confirmado",
+      "result": "Entregue a Malanya, o deus dos cavalos, permite ressuscitar um cavalo registrado que morreu.",
+      "conditions": ["A primeira ressurreição é de graça, como recompensa por libertá-lo; as seguintes custam uma Cenoura tenaz cada.", "Só funciona com cavalos registrados num Estábulo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Malanya", "jogo"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma cenoura largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Cenoura tenaz assada.",
+      "side_effects": ["Perde o Vigor extra para Link (mas ainda dá as esporas extras se um cavalo a comer do chão).", "As fontes divergem sobre a cura da versão assada: a página da Cenoura tenaz assada fala em 4 corações; a tabela de comidas assadas, em 3."],
+      "applications": ["Vender: assada vale 38 rupias, contra 30 da crua."],
+      "produces": ["botw_food_roasted_endura_carrot"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Endura Carrot", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Cenoura tenaz assada.",
+      "produces": ["botw_food_roasted_endura_carrot"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, assa ao ser largada no chão.",
+      "produces": ["botw_food_roasted_endura_carrot"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Endura Carrot", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; vegetais não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da cenoura na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a cenoura não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Vigor extra. Mais unidades ou outros ingredientes do mesmo efeito (como o Cogumelo tenaz) tornam o efeito mais forte. Intercambiável com a Cenoura veloz nas receitas de cenoura.",
+      "side_effects": ["Vigor extra não se acumula entre pratos: comer outro prato do mesmo efeito mantém só o mais forte."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 2 corações, sem efeito.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 30 rupias; assada, vale 38.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Esporas de cenoura",
+      "text": "Um cavalo que come uma Cenoura tenaz ganha três esporas amarelas extras, marcadas com um ícone de cenoura. Elas só são usadas depois das esporas normais e das da Rédea ancestral, e somem depois de gastas. A versão assada tem o mesmo efeito se o cavalo a comer do chão.",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O petisco do deus dos cavalos",
+      "text": "Malanya conta que só comeu Cenoura tenaz uma vez em toda a sua longa vida — e por isso a exige como pagamento para continuar ressuscitando os cavalos de Link.",
+      "sources": ["jogo", "zw:Malanya"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cavalo gigante não aproveita",
+      "text": "Como o Cavalo gigante não tem esporas, dar-lhe uma Cenoura tenaz só aumenta a afeição dele.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde algumas cenouras antes de uma viagem longa a cavalo: as esporas extras permitem arrancadas além do limite do atributo de vigor do animal.",
+    "Mantenha ao menos uma Cenoura tenaz em reserva para o caso de perder um cavalo de estimação."
+  ],
+  "limitations": [
+    "Rara na natureza e cara na loja (120 rupias).",
+    "Malanya só ressuscita cavalos registrados."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_endura_carrot", "relation": "Resultado de expor a cenoura ao fogo" },
+    { "id": "botw_creature_horse", "relation": "Ganha afeição e esporas extras ao comê-la" },
+    { "id": "botw_creature_giant_horse", "relation": "Só ganha afeição, por não ter esporas" },
+    { "id": "botw_keyitem_ancient_bridle", "relation": "Suas esporas são gastas antes das esporas de cenoura" },
+    { "id": "botw_material_swift_carrot", "relation": "Intercambiável nas receitas de cenoura" },
+    { "id": "botw_material_endura_shroom", "relation": "Outro ingrediente de Vigor extra" },
+    { "id": "botw_food_carrot_cake", "relation": "Exige qualquer cenoura" },
+    { "id": "botw_food_carrot_stew", "relation": "Exige qualquer cenoura" },
+    { "id": "botw_elixir_enduring_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_stable", "relation": "Só cavalos registrados podem ser ressuscitados" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo-claro" }
+  ],
+  "capabilities": ["cura", "vigor", "reage_fogo", "habilidade_especial"],
+  "verification_status": "a_verificar"
+}

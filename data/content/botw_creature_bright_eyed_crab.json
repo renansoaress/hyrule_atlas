@@ -1,0 +1,159 @@
+{
+  "id": "botw_creature_bright_eyed_crab",
+  "summary": "Caranguejo de margens de água doce que aparece em grande número na chuva. Cozido, dá Recuperação de vigor. Beedle diz que ele vira elixir com partes de monstro, mas isso está errado: o resultado é Comida duvidosa.",
+  "description": "O Caranguejo esperto vive nas margens de água doce da Grande Nascente de Lanayru e do Cânion de Eldin; o Zelda Wiki destaca muitos deles ao redor do Santuário Ne'ez Yohma, no Domínio Zora. Segundo o jogo, ele surge em grande número quando chove, e uma mordida da carne dele \"faz esquecer todo o cansaço\". Também é vendido pelos mercadores ambulantes Chumin e Bugut.\n\nCru, recupera 1 coração. Na panela, dá Recuperação de vigor. Serve para todas as receitas de caranguejo — Omelete de caranguejo com arroz, Risoto de caranguejo, Caranguejo salteado, Caranguejo grelhado no sal e Espetinho de frutos do mar — e para as receitas gerais de fruto do mar. Exposto ao fogo vira Caranguejo tostado; congelado, Caranguejo congelado.\n\nApesar do que Beedle afirma, caranguejos não são \"bichos\": cozinhá-lo só com partes de monstro dá Comida duvidosa. Ele pode, porém, ser somado a um Elixir energizante já formado por um bicho energizante e uma parte de monstro, para que o elixir também cure.",
+  "locations": [
+    "Margens de água doce da Grande Nascente de Lanayru e do Cânion de Eldin.",
+    "Grande concentração em volta do Santuário Ne'ez Yohma, no Domínio Zora.",
+    "Aparece em grande número durante a chuva."
+  ],
+  "obtaining": [
+    "Pegar à mão nas margens.",
+    "Comprar dos mercadores ambulantes Chumin ou Bugut, por 40 rupias (3 em estoque em cada, renovável)."
+  ],
+  "uses": [
+    "Receitas de caranguejo: Omelete de caranguejo com arroz (Arroz hyliano, Ovo, Halita), Risoto de caranguejo (Arroz hyliano, Manteiga de cabra, Halita), Caranguejo salteado (Tempero Goron), Caranguejo grelhado no sal (Halita) e Espetinho de frutos do mar.",
+    "Receitas gerais de fruto do mar, como Peixe no vapor, Torta de peixe e Frutos do mar à meunière.",
+    "Ingrediente energizante de um Elixir energizante, para que ele também cure.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: Recuperação de vigor."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes desta espécie não descrevem como ela reage à aproximação de Link. Em geral, agachar-se aumenta a furtividade ao se aproximar de animais."
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Aparece em grande número quando chove.",
+      "applications": ["Visitar as margens de Lanayru ou de Eldin em dia chuvoso para juntar vários de uma vez."],
+      "kind": "mecanica",
+      "sources": ["comp", "jogo"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um caranguejo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Caranguejo esperto dão Recuperação de vigor.",
+      "produces": ["botw_food_crab_omelet_with_rice", "botw_food_crab_risotto", "botw_food_crab_stir_fry", "botw_food_salt_grilled_crab", "botw_food_seafood_skewer", "botw_food_steamed_fish"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Crab"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "só com partes de monstro",
+      "status": "confirmado",
+      "result": "Resulta em Comida duvidosa: caranguejos não contam como bichos, ao contrário do que Beedle afirma.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dubious Food"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somado a um Elixir energizante (Gafanhoto agitado ou Escaravelho vibrante + parte de monstro), faz o elixir também recuperar corações.",
+      "produces": ["botw_elixir_energizing_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Energizing Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "sources": ["zw", "zw:Crab"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 10 rupias; Chumin e Bugut cobram 40.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Tostado pelo fogo, vira Caranguejo tostado, assado inteiro na própria casca e sem o efeito de vigor.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, vira Caranguejo tostado.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Caranguejo tostado.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriado com gelo, vira Caranguejo congelado, que dá Resistência ao calor temporária.",
+      "produces": ["botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Caranguejo congelado.",
+      "produces": ["botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este caranguejo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O conselho errado de Beedle",
+      "text": "Beedle garante que basta misturar um Caranguejo esperto com partes de monstro para obter \"um belo elixir\". O Zelda Wiki aponta que isso é falso: caranguejos não são bichos, e a combinação produz Comida duvidosa.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Caranguejos quase viraram ingredientes de elixir",
+      "text": "Durante o desenvolvimento de BOTW, os caranguejos eram usados para criar elixires. Nate Bihldorff, diretor sênior de localização da Nintendo of America, convenceu o diretor Hidemaro Fujibayashi a transformá-los em ingredientes de receitas comuns.",
+      "sources": ["zw:Material"]
+    }
+  ],
+  "advanced_uses": [
+    "Num Elixir energizante, adicionar Caranguejos espertos no lugar de partes de monstro extras faz o elixir também curar."
+  ],
+  "limitations": [
+    "Não forma elixir sem um bicho: só com partes de monstro, vira Comida duvidosa.",
+    "Assado ou congelado, perde a Recuperação de vigor."
+  ],
+  "related": [
+    { "id": "botw_food_blackened_crab", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_crab", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_food_crab_stir_fry", "relation": "Receita com qualquer caranguejo" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo só com partes de monstro" },
+    { "id": "botw_elixir_energizing_elixir", "relation": "Pode ser somado como ingrediente energizante" },
+    { "id": "botw_creature_staminoka_bass", "relation": "Outro fruto do mar de Recuperação de vigor" },
+    { "id": "botw_mechanic_rain", "relation": "Aparece em grande número na chuva" }
+  ],
+  "capabilities": ["cura", "vigor", "reage_fogo", "reage_gelo"],
+  "verification_status": "parcial"
+}

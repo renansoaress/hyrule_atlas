@@ -1,0 +1,112 @@
+{
+  "id": "botw_weapon_soldiers_claymore",
+  "summary": "Montante de combate dos soldados de Hyrule (ataque 20, durabilidade 25): pesado e difícil de usar, mas bem construído. Resultado de 35% das limpezas de Montantes enferrujados por Octorocs.",
+  "description": "O Montante do soldado pertence ao Equipamento do soldado, criado para os soldados do reino de Hyrule. O jogo o descreve como uma espada de duas mãos feita para o combate: pesada e difícil de manejar, mas com boa qualidade de construção e durabilidade razoável. Na linha de montantes hylianos, fica entre o Montante do viajante e o Montante do cavaleiro.\n\nÉ usado por inimigos da Pradaria de Hyrule e dos Prados de Faron e também pode ser encontrado abandonado. Um Octoroc rochoso que limpe um Montante enferrujado devolve um Montante do soldado em 35% das vezes. Por ser de metal, conduz eletricidade, atrai raios, afunda e pode ser puxado com Magnétis; não queima como as armas de madeira.",
+  "locations": [
+    "Pradaria de Hyrule e Prados de Faron, com inimigos ou abandonado."
+  ],
+  "obtaining": [
+    "Pegar a arma de inimigos dessas regiões ou recolhê-la onde estiver abandonada.",
+    "Oferecer um Montante enferrujado a um Octoroc rochoso: 35% de chance de sair um Montante do soldado.",
+    "Chance de surgir em baús dos amiibo de Link jovem e Ganondorf (Super Smash Bros.), de Link (Link's Awakening), Link (Ocarina of Time) e Link jovem (Majora's Mask), e de Daruk (série Breath of the Wild)."
+  ],
+  "uses": [
+    "Montante confiável no início e no meio do jogo.",
+    "Como espada, corta árvores; por ser metálico, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo. O giro carregado gasta vigor e termina numa pancada para baixo; o peso desequilibra inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link levar um choque, o montante voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado em tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "confirmado",
+      "result": "Em 35% das vezes, um Montante enferrujado aspirado por um Octoroc rochoso volta como Montante do soldado.",
+      "kind": "mecanica",
+      "sources": ["zw:Rock Octorok"]
+    },
+    {
+      "action": "monstros",
+      "variant": "quem o empunha",
+      "status": "confirmado",
+      "result": "Inimigos da Pradaria de Hyrule e dos Prados de Faron costumam usá-lo; a fonte não detalha quais.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +9, Durabilidade aumentada de +1 a +2 ou Acerto crítico; no nível dourado (amarelo): Ataque de +10 a +17, Durabilidade de +3 ou Lançamento longo (×1,5 a ×2). Com +17, o montante chega a 37, quase o mesmo do Montante do cavaleiro.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    }
+  ],
+  "no_secrets_note": "Fora os bônus aleatórios e a conversão pelo Octoroc rochoso, as fontes não registram segredos próprios deste montante.",
+  "advanced_uses": [
+    "Um Montante do soldado com Ataque aumentado dourado rende quase tanto quanto um do cavaleiro — vale manter um assim no lugar de montantes melhores sem bônus."
+  ],
+  "limitations": [
+    "Metálico: perigoso em tempestades.",
+    "Sem escudo enquanto estiver empunhado."
+  ],
+  "related": [
+    { "id": "botw_weapon_travelers_claymore", "relation": "Montante hyliano abaixo na linha" },
+    { "id": "botw_weapon_knights_claymore", "relation": "Montante hyliano acima na linha" },
+    { "id": "botw_weapon_rusty_claymore", "relation": "Pode virar Montante do soldado num Octoroc rochoso" },
+    { "id": "botw_weapon_soldiers_broadsword", "relation": "Arma de uma mão do Equipamento do soldado" },
+    { "id": "botw_weapon_soldiers_spear", "relation": "Lança do Equipamento do soldado" },
+    { "id": "botw_monster_rock_octorok", "relation": "Converte Montantes enferrujados" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel"],
+  "verification_status": "verificado"
+}

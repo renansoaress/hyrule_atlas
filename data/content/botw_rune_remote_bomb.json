@@ -1,0 +1,183 @@
+{
+  "id": "botw_rune_remote_bomb",
+  "summary": "Runa que cria bombas redondas ou cúbicas detonadas à distância, sem gastar munição. Redondas rolam com declive e vento; cúbicas ficam paradas. Na versão +, o dano dobra (12 → 24) e a recarga cai de 6 para 3 s.",
+  "description": "A Bomba remota é a runa da Tabuleta Sheikah obtida no Santuário Ja Baij, no Planalto (Great Plateau). Ela gera dois tipos de bomba: a esférica, que rola ladeira abaixo e é empurrada pelo vento, e a cúbica, que quase não se move. Cada tipo tem a sua própria recarga e os dois podem estar no mundo ao mesmo tempo. A detonação é manual (botão L) ou provocada por um projétil, como uma flecha disparada por Link ou por um inimigo.\n\nComo as bombas saem da Tabuleta, não há estoque a administrar: depois de cada explosão basta esperar a recarga. A explosão fere monstros, abre rochas rachadas e paredes frágeis, derruba árvores finas e médias e quebra depósitos de minério. As bombas também flutuam na água e podem ser presas a Balões de Octoroc para subir no ar.\n\nDurante a Missão secundária \"Slated for Upgrades\", Purah transforma a runa em Bomba remota + em troca de 3 Eixos ancestrais, no Laboratório de Hateno (Hateno Ancient Tech Lab). A melhoria dobra o dano (de 12 para 24) e reduz a recarga de 6 para 3 segundos, mas o raio da explosão continua o mesmo.",
+  "locations": [
+    "Santuário Ja Baij, no Planalto: a runa é extraída do terminal (Guidance Stone) do santuário.",
+    "Laboratório de Hateno (Vila Hateno): local da melhoria para Bomba remota +."
+  ],
+  "obtaining": [
+    "Concluir a extração no Santuário Ja Baij, um dos quatro santuários iniciais do Planalto.",
+    "Bomba remota +: entregar 3 Eixos ancestrais a Purah durante a Missão secundária \"Slated for Upgrades\", iniciada na missão principal \"Locked Mementos\"."
+  ],
+  "uses": [
+    "Causar dano a monstros sem gastar a durabilidade das armas.",
+    "Destruir rochas rachadas, paredes frágeis, depósitos de minério e pilares de Gelítis.",
+    "Derrubar árvores finas e médias e depois explodir o tronco caído para obter Madeira.",
+    "Atacar inimigos de cima, soltando a bomba enquanto Link plana com o Planador."
+  ],
+  "effects": [
+    "Bomba remota: 12 de dano por explosão, recarga de 6 segundos por tipo de bomba.",
+    "Bomba remota +: 24 de dano, recarga de 3 segundos; o raio da explosão não muda."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cria uma bomba esférica ou cúbica, que Link carrega, larga ou arremessa e detona com o botão L.",
+      "conditions": ["Ter a runa equipada na Tabuleta Sheikah e a recarga do tipo escolhido completa."],
+      "side_effects": [
+        "A explosão fere o próprio Link se ele estiver no raio, a menos que algo sólido (como uma parede) fique entre ele e a bomba.",
+        "Link não sofre dano se a bomba estiver dentro da câmara de um carrinho de mina ou de um canhão."
+      ],
+      "applications": ["Usar a esférica em ladeiras e a cúbica em terreno inclinado onde a bomba precisa ficar parada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha (de Link ou de um inimigo) que atinja a bomba a detona. Flechas ancestrais a explodem instantaneamente.",
+      "applications": ["Detonar uma bomba deixada no caminho de inimigos sem precisar estar perto."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Os dois tipos de bomba flutuam na superfície da água. Detonada ali, a bomba atinge até Octorocs aquáticos escondidos sob a água.",
+      "applications": ["Eliminar Octorocs aquáticos que mergulham para evitar flechas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Water Octorok"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "As bombas esféricas são leves e rolam ou são levadas pelo vento; as cúbicas resistem bem mais ao movimento.",
+      "applications": ["Aproveitar o vento para levar uma bomba redonda mais longe do que Link conseguiria arremessá-la."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogo",
+      "variant": "Chama azul",
+      "status": "confirmado",
+      "result": "A Chama azul (Blue Flame) faz a Bomba remota explodir ao tocá-la.",
+      "side_effects": ["Cuidado ao usar bombas no percurso das lanternas de Chama azul até os laboratórios."],
+      "kind": "mecanica",
+      "sources": ["zw:Blue Flame"]
+    },
+    {
+      "action": "explosao",
+      "status": "sem_efeito",
+      "result": "A explosão de um Barril explosivo não detona Bombas remotas próximas, embora detone outros barris explosivos.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel"]
+    },
+    {
+      "action": "gelitis",
+      "status": "confirmado",
+      "result": "A explosão da Bomba remota destrói pilares de gelo criados com Gelítis, que resistem a Flechas explosivas e a quase todo o resto.",
+      "kind": "mecanica",
+      "sources": ["zw:Cryonis"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Explodir uma bomba junto a um objeto em Estátis acumula energia cinética nele, que é liberada quando o tempo volta a correr.",
+      "applications": ["Na Missão de santuário \"Trial of Thunder\", no Planalto Thundra, lançar as esferas de volta ao platô combinando Estátis com armas ou Bombas remotas."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Trial of Thunder", "zw:Stasis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Monstros podem chutar a bomba ou pegá-la e arremessá-la de volta; Koboblins azuis e prateados sabem chutá-la para longe.",
+      "side_effects": ["Não detone com o inimigo segurando a bomba perto de Link."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Blue Bokoblin", "zw:Silver Bokoblin"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra rochas rachadas e paredes frágeis, derruba árvores finas e médias e quebra depósitos de minério; o tronco de uma árvore derrubada pode ser explodido para virar Madeira.",
+      "produces": ["botw_material_wood"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tree", "zw:Wood", "zw:Ore Deposit"]
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não dizem se a bomba criada pela runa pode ser erguida com Magnétis."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Bomba no estômago do Octoroc rochoso",
+      "text": "O Octoroc rochoso aspira o que está à sua frente. Deixar uma Bomba remota no caminho enquanto ele inspira e detoná-la depois que ele a engole o derrota.",
+      "sources": ["zw:Rock Octorok"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A única coisa que fura o escudo da Ira ígnea",
+      "text": "Na segunda fase, a Ira ígnea de Ganon se envolve numa bola de fogo, como a Proteção de Daruk, que bloqueia todos os ataques, exceto a Bomba remota.",
+      "sources": ["zw:Fireblight Ganon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sentinelas caem com uma só bomba",
+      "text": "Apesar de terem 1000 pontos de vida, as Sentinelas — Guardiões voadores que Vah Rudania envia contra Link e Yunobo na subida da Montanha da Morte — são muito vulneráveis a Bombas remotas e a dano físico, e estão entre os poucos inimigos derrotados por uma única bomba.",
+      "sources": ["zw:Sentry"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Barulho que atordoa monstros da areia",
+      "text": "Molduga e Molduga-rei são sensíveis a ruído: explodir Bombas remotas (ou Flechas explosivas) na areia por perto os faz saltar para fora e ficar atordoados.",
+      "sources": ["zw:Molduga", "zw:Molduking"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Desmontar o Tálus",
+      "text": "Uma Bomba remota pode arrancar temporariamente os braços de um Tálus rochoso, facilitando a escalada até o depósito de minério; num Tálus ígneo, a explosão o derruba e deixa o ponto fraco mais acessível.",
+      "sources": ["zw:Stone Talus", "zw:Igneo Talus"]
+    },
+    {
+      "kind": "glitch",
+      "title": "Bomb-Impact Launch (BIL)",
+      "text": "Forçando uma bomba a ser lançada contra as costas de Link, ele é catapultado em altíssima velocidade. A técnica, também chamada de Wind-Bomb, é usada por speedrunners para viajar rápido. O Zelda Wiki não informa a versão do jogo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Substituta das bombas clássicas",
+      "text": "Em BOTW, Link não compra nem carrega bombas como nos jogos anteriores: a runa Bomba remota cumpre esse papel e ainda permite escolher o momento da detonação.",
+      "sources": ["zw:Bomb"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar as duas bombas ao mesmo tempo: como cada tipo tem sua recarga, é possível alternar esférica e cúbica para manter a pressão sobre um grupo de inimigos.",
+    "Prender Balões de Octoroc a uma bomba para fazê-la subir e detoná-la no ar.",
+    "Planar sobre um acampamento e soltar bombas sobre os monstros antes de pousar."
+  ],
+  "limitations": [
+    "A explosão também fere Link; mantenha distância ou um obstáculo sólido entre ele e a bomba.",
+    "A melhoria + não aumenta o raio da explosão, só o dano e a velocidade de recarga.",
+    "Monstros mais espertos chutam ou devolvem a bomba.",
+    "Explosões de barris não detonam a Bomba remota."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa da Tabuleta Sheikah" },
+    { "id": "botw_material_ancient_shaft", "relation": "3 unidades para a melhoria Bomba remota +" },
+    { "id": "botw_material_octo_balloon", "relation": "Faz a bomba flutuar no ar" },
+    { "id": "botw_object_explosive_barrel", "relation": "Outra fonte de explosão; não detona a bomba" },
+    { "id": "botw_rune_cryonis", "relation": "A bomba destrói pilares de gelo" },
+    { "id": "botw_rune_stasis", "relation": "Combinação para lançar objetos" },
+    { "id": "botw_monster_rock_octorok", "relation": "Pode ser derrotado engolindo uma bomba" },
+    { "id": "botw_monster_sentry", "relation": "Cai com uma única bomba" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Alternativa explosiva com munição" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Pode ser quebrado com a explosão" }
+  ],
+  "capabilities": ["gera_explosao", "flutua", "habilidade_especial"],
+  "verification_status": "verificado"
+}

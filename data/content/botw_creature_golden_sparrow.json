@@ -1,0 +1,88 @@
+{
+  "id": "botw_creature_golden_sparrow",
+  "summary": "Pardal de cabeça dourada das encostas da Montanha da Morte, com penugem resistente a queimaduras. Come insetos escondidos nas rochas, voa quando perturbado e deixa uma Noz.",
+  "description": "O Pardal dourado vive nas montanhas da região de Eldin, principalmente nas encostas da própria Montanha da Morte; o compendium cita também a Grande Floresta de Hyrule e o Cânion de Eldin. Sobrevive ao clima escaldante graças à penugem resistente ao fogo, um traço evolutivo produzido pelo ambiente vulcânico. É cinza, de barriga branca e cabeça dourada, que lhe dá o nome.\n\nÉ insetívoro: procura pequenos insetos escondidos entre as rochas. Anda em bandos e voa ao ser perturbado. Abatido, deixa uma única Noz.",
+  "locations": [
+    "Encostas da Montanha da Morte e Cânion de Eldin; o compendium também cita a Grande Floresta de Hyrule."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Noz."
+  ],
+  "uses": [
+    "Fonte de Noz em Eldin, ingrediente de Bolo de nozes e Nozes salteadas.",
+    "Registrar sua foto no compendium (entrada nº 35)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Anda em bandos e voa quando perturbado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Noz.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "side_effects": ["No clima escaldante de Eldin, arcos de madeira equipados pegam fogo; prefira arcos de metal ali."],
+      "produces": ["botw_material_chickaloo_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow", "zw:Wooden Bow", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra pardais, que voam ao serem perturbados."
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "A penugem resistente a queimaduras permite que viva no clima escaldante da Montanha da Morte.",
+      "kind": "curiosidade",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "A fonte fala em penas resistentes a queimaduras, mas não descreve o que acontece se a ave for atingida por fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Penugem à prova de fogo",
+      "text": "O compendium explica que a penugem do Pardal dourado resiste a queimaduras, adaptação ao ambiente vulcânico de Eldin.",
+      "sources": ["comp"]
+    }
+  ],
+  "limitations": [
+    "Vive em área de clima escaldante: Link precisa de proteção contra chamas para caçá-lo nas partes mais quentes."
+  ],
+  "related": [
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Item deixado ao ser abatido" },
+    { "id": "botw_creature_hotfeather_pigeon", "relation": "Outra ave de penas resistentes ao fogo, de Eldin" },
+    { "id": "botw_creature_sand_sparrow", "relation": "Outro pardal adaptado ao calor" },
+    { "id": "botw_creature_common_sparrow", "relation": "Pardal mais comum de Hyrule" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

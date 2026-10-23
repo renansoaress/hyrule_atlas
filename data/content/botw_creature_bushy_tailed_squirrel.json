@@ -1,0 +1,109 @@
+{
+  "id": "botw_creature_bushy_tailed_squirrel",
+  "summary": "Esquilo marrom de cauda enorme que vive nas florestas e come nozes. Leva a comida na boca e a deixa cair quando assustado ou atacado; abatido (por exemplo, com o arco), deixa uma Bolota.",
+  "description": "O Esquilo caudafofa é uma espécie marrom de barriga bege, conhecida pela cauda grande que lhe dá o nome. Vive em florestas — o compendium cita a Pradaria de Hyrule e os Cerros de Hyrule —, mas aparece na maior parte das regiões de Hyrule. Alimenta-se basicamente de bolotas e outras nozes, que carrega na boca.\n\nQuando é incomodado, foge; quando é surpreendido ou atacado, pode deixar cair a comida que levava, numa cena que o compendium chama de adorável demonstração de susto. Pode ser caçado com o arco e, morto, deixa uma única Bolota.",
+  "locations": [
+    "Florestas da Pradaria de Hyrule e dos Cerros de Hyrule (compendium); também na maioria das regiões de Hyrule."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Bolota."
+  ],
+  "uses": [
+    "Fonte de Bolota.",
+    "Registrar sua foto no compendium (entrada nº 9)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando é incomodado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser caçado com o arco; morto, deixa uma Bolota.",
+      "produces": [
+        "botw_material_acorn"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Squirrel",
+        "zw",
+        "zw:Acorn"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Ao ser atacado, deixa cair as nozes que carregava na boca; morto, deixa uma Bolota.",
+      "produces": [
+        "botw_material_acorn"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Animal pequeno; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O susto que derruba a comida",
+      "text": "O esquilo carrega a comida na boca e às vezes a deixa cair quando é surpreendido — \"uma adorável demonstração de susto\", nas palavras do compendium. O Zelda Wiki acrescenta que isso também acontece quando ele é atacado.",
+      "sources": [
+        "comp",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "A Bolota é inflamável: exposta ao fogo ou ao clima escaldante, vira Bolota tostada."
+  ],
+  "limitations": [
+    "Deixa só uma Bolota, item que também pode ser recolhido aos pés das árvores."
+  ],
+  "related": [
+    {
+      "id": "botw_material_acorn",
+      "relation": "Item deixado ao ser abatido"
+    },
+    {
+      "id": "botw_material_chickaloo_tree_nut",
+      "relation": "Noz deixada pelos pardais, outra fonte de nozes"
+    },
+    {
+      "id": "botw_food_roasted_acorn",
+      "relation": "Bolota exposta ao fogo"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

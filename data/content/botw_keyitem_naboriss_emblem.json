@@ -1,0 +1,103 @@
+{
+  "id": "botw_keyitem_naboriss_emblem",
+  "summary": "Símbolo de uma provação do raio concluída (DLC The Champions' Ballad). Os três emblemas vêm dos santuários das provações de Urbosa na região Gerudo e abrem a revanche contra a Ira fulmínea de Ganon.",
+  "description": "Os Emblemas de Naboris são exclusivos da missão principal \"EX Champion Urbosa's Song\", da DLC The Champions' Ballad, e são entregues pelos monges dos santuários Keive Tala, Takama Shiri e Kihiro Moh. A descrição do inventário os chama de símbolo comemorativo de uma provação do raio concluída por quem deseja controlar uma Fera Divina; reunir três leva a um novo desafio.\n\nA missão começa num monumento na Mesa Gerudo Oriental (East Gerudo Mesa), depois das provações do Grande Platô, onde Kass canta os versos sobre as provações de Urbosa. Elas podem ser feitas em qualquer ordem: derrotar o Molduga-rei nos ermos do leste (East Barrens) revela Keive Tala; surfar numa Morsareia pelos anéis luminosos dos ermos do oeste (West Barrens) revela Takama Shiri; e roubar um Orbe sagrado do Esconderijo do Clã Yiga e atirá-lo no abismo do lado de fora revela Kihiro Moh.\n\nCom os três emblemas, Link vai até Vah Naboris. Ao chegar à Spectacle Rock, a voz de um monge troca os emblemas por uma provação no Reino Ilusório, onde Link enfrenta outra vez a Ira fulmínea de Ganon, nascida de seus medos, com equipamento pré-definido. Depois, Kass canta \"Champion Urbosa's Song\", que desbloqueia uma memória, e Urbosa melhora sua habilidade: a Fúria de Urbosa + recarrega em quatro minutos.",
+  "locations": [
+    "Santuários Keive Tala, Takama Shiri e Kihiro Moh, revelados pelas provações de Urbosa na região Gerudo."
+  ],
+  "obtaining": [
+    "Concluir as provações do Grande Platô em \"EX The Champions' Ballad\" (DLC) para revelar o monumento da Mesa Gerudo Oriental.",
+    "Completar cada provação e o santuário correspondente; o monge de cada um entrega um emblema."
+  ],
+  "uses": [
+    "Trocar os três emblemas, em Vah Naboris, pela revanche contra a Ira fulmínea de Ganon no Reino Ilusório.",
+    "Concluir \"EX Champion Urbosa's Song\" e receber a Fúria de Urbosa +."
+  ],
+  "effects": [
+    "Sem efeito direto; os três emblemas são consumidos para iniciar a provação."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao chegar perto de Vah Naboris com os três emblemas, a voz de um monge os toma em troca da provação no Reino Ilusório.",
+      "conditions": [
+        "Ter os três Emblemas de Naboris.",
+        "Estar na missão \"EX Champion Urbosa's Song\"."
+      ],
+      "side_effects": [
+        "Os emblemas saem da algibeira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:EX Champion Urbosa's Song",
+        "zw:Illusory Realm"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Revanche sem custo",
+      "text": "Depois de vencer a provação uma vez, Link pode desafiar a Ira fulmínea de Ganon de novo a qualquer momento, sem precisar de emblemas. As revanches não contam para o nível de mundo.",
+      "sources": [
+        "zw",
+        "zw:Illusory Realm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ajuda depois de derrotas",
+      "text": "No Reino Ilusório, o equipamento é fixo. Depois de três tentativas, Link recebe uma fada; depois de seis, refeições ou elixires extras.",
+      "sources": [
+        "zw:Illusory Realm"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Uma voe impressionante\"",
+      "text": "Ao final, Urbosa chama Link de voe impressionante e deixa com ele a tarefa de proteger Zelda. Kass conta que ouviu histórias de Urbosa com Riju e Buliara.",
+      "sources": [
+        "zw:EX Champion Urbosa's Song"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Depois da missão, a revanche no Reino Ilusório pode ser repetida à vontade, o que serve de treino contra a Ira fulmínea de Ganon com equipamento fixo."
+  ],
+  "limitations": [
+    "Exige a DLC The Champions' Ballad e as provações do Grande Platô.",
+    "Os emblemas não têm outro uso além da troca em Vah Naboris."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_thunderblight_ganon",
+      "relation": "Chefe enfrentado no Reino Ilusório"
+    },
+    {
+      "id": "botw_ability_urbosas_fury",
+      "relation": "Habilidade melhorada ao fim da missão"
+    },
+    {
+      "id": "botw_monster_molduking",
+      "relation": "Derrotá-lo revela Keive Tala"
+    },
+    {
+      "id": "botw_creature_sand_seal",
+      "relation": "Usada na provação de Takama Shiri"
+    },
+    {
+      "id": "botw_keyitem_medohs_emblem",
+      "relation": "Emblema equivalente de Revali"
+    },
+    {
+      "id": "botw_keyitem_picture_of_the_champions",
+      "relation": "Recompensa final da balada dos Campeões"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

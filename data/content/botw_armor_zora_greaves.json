@@ -1,0 +1,147 @@
+{
+  "id": "botw_armor_zora_greaves",
+  "summary": "Grevas Zora que, diz a lenda, usam escamas de dragão. Laflat as dá em troca da foto de um Centaleão de juba vermelha; aceleram o nado e completam o Conjunto Zora.",
+  "description": "As Grevas Zora são a recompensa da Missão secundária \"Lynel Safari\": Laflat, no Território Zora, quer a foto de um Centaleão de juba vermelha para assustar quem pensa em saltar do Mirante Shatterback (Shatterback Point), e indica o do Monte Ploymus, o mais próximo. Em troca, ela entrega o último par que sobrou no depósito da loja de armaduras do pai. Segundo Laflat, as grevas foram feitas a mando de um antigo rei Zora; depois que a represa do Lago Reservatório Leste ficou pronta, os Zora passaram a produzi-las como sinal de amizade para os hylianos visitantes. A descrição diz ainda que são feitas com escamas de dragão.\n\nDão um nível de Natação mais rápida (+30%). Com o Elmo Zora e a Armadura Zora em ★★, o conjunto ativa o Impulso aquático econômico (−75% de vigor nos impulsos e giros nadando). A defesa vai de 3 a 20, com as mesmas melhorias da armadura: partes de Lagalfos, Robalos hylianos e nutritivos e, no último nível, 15 Opalas. Podem ser tingidas na Tinturaria Kochi; a tabela de dados do Zelda Wiki as marca como não vendáveis.",
+  "locations": [
+    "Território Zora, com Laflat."
+  ],
+  "obtaining": [
+    "Missão secundária \"Lynel Safari\": mostrar a Laflat a foto de um Centaleão de juba vermelha (o mais próximo fica no Monte Ploymus)."
+  ],
+  "uses": [
+    "Nadar mais rápido.",
+    "Completar o Conjunto Zora."
+  ],
+  "effects": [
+    "Natação mais rápida, nível 1 (+30%).",
+    "Bônus de conjunto (três peças em ★★): Impulso aquático econômico."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Natação mais rápida: Link nada 30% mais rápido (60% com dois níveis e 100% com três). Com o Elmo Zora, a Armadura Zora e as Grevas Zora vestidos, todos em ★★, ativa o Impulso aquático econômico (Swim Dash Stamina Up): impulsos e giros nadando custam 75% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Swim Speed Up",
+        "zw:Set Bonus",
+        "zw:Zora Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um símbolo de amizade",
+      "text": "Laflat conta que as grevas foram encomendadas por um antigo rei Zora e que, depois da construção do Lago Reservatório Leste, os Zora passaram a fazê-las para os hylianos como sinal de amizade — por isso hoje são \"bem comuns\".",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A foto certa",
+      "text": "Laflat só aceita a foto de um Centaleão de juba vermelha e indica o do Monte Ploymus por ser o mais próximo do Território Zora. Ao ver a foto, ela grita de susto, pede licença e só então entrega as grevas.",
+      "sources": [
+        "zw:Lynel Safari"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mesmo antes de o Conjunto Zora chegar a ★★, as grevas com o Elmo e a Armadura Zora já somam Natação mais rápida nível 3 (+100%), o teto do efeito."
+  ],
+  "limitations": [
+    "Não permitem subir cachoeiras (exclusivo da Armadura Zora).",
+    "O bônus de conjunto exige as três peças em ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_zora_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Precisa ser fotografado para a missão"
+    },
+    {
+      "id": "botw_rune_camera",
+      "relation": "Usada para tirar a foto pedida por Laflat"
+    },
+    {
+      "id": "botw_creature_hearty_bass",
+      "relation": "Material do 3º nível de melhoria"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Material da última melhoria"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

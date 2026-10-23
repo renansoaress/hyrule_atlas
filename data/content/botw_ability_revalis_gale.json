@@ -1,0 +1,88 @@
+{
+  "id": "botw_ability_revalis_gale",
+  "summary": "Bênção de Revali que lança Link ao céu com uma corrente ascendente, ativada segurando o pulo (X). São 3 usos por recarga de 6 min reais (2 min na versão +); não funciona dentro de Santuários.",
+  "description": "O Vendaval de Revali é o poder deixado pelo espírito do Campeão ará. Link o recebe depois de derrotar a Ira eólica de Ganon e acalmar a Fera Divina Vah Medoh. Para ativá-lo, basta segurar o botão de pulo (X) até carregar: Link é arremessado para o alto e, no lugar, surge uma corrente ascendente que pode ser reaproveitada com o Planador até se dissipar.\n\nA bênção tem três usos antes de precisar recarregar, e a recarga leva 6 minutos em tempo real (2 minutos dentro do Castelo de Hyrule). Pode ser desativada no menu de itens-chave e não funciona dentro de Santuários.\n\nA versão Vendaval de Revali +, da DLC The Champions' Ballad, é a recompensa da missão \"EX Champion Revali's Song\": a recarga normal cai para 2 minutos e a recarga no castelo para 40 segundos.",
+  "locations": [
+    "Fera Divina Vah Medoh (versão normal).",
+    "Monumento no Monte Cuho, ao sul de Vah Medoh, perto do lago Strock, onde começa a missão da versão + (DLC)."
+  ],
+  "obtaining": [
+    "Derrotar a Ira eólica de Ganon e acalmar a Fera Divina Vah Medoh; o espírito de Revali entrega a bênção.",
+    "Vendaval de Revali + (DLC The Champions' Ballad): concluir \"EX Champion Revali's Song\" — completar os santuários Shira Gomar, Kiah Toza e Noe Rajee (cada um dá um Emblema de Medoh) e vencer o fantasma da Ira eólica de Ganon no Reino Ilusório."
+  ],
+  "uses": [
+    "Ganhar altura instantaneamente para planar até locais distantes ou altos.",
+    "Escapar de combates e alcançar o topo de penhascos sem escalar.",
+    "Ficar acima de inimigos para atirar flechas enquanto plana."
+  ],
+  "effects": [
+    "Lança Link verticalmente e cria uma corrente ascendente reutilizável por alguns instantes.",
+    "3 usos por recarga. Recarga: 6 min reais (2 min no Castelo de Hyrule). Versão +: 2 min (40 s no castelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Segurar o pulo carrega a bênção; ao soltar, Link é lançado ao céu e uma corrente ascendente fica no local até desaparecer.",
+      "conditions": ["Fora de Santuários; bênção ativada no menu de itens-chave e com usos disponíveis."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A corrente ascendente criada pode ser usada de novo com o Planador enquanto não se dissipa.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Updraft"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Na luta contra Ganon, Besta Sombria, o Vendaval de Revali é uma das formas de subir até a altura do ponto fraco, além das correntes criadas pelos raios de energia sombria do próprio chefe.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Dark Beast Ganon"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Como a versão + é liberada",
+      "text": "Na DLC, um monumento surge no Monte Cuho. As três provações indicadas são acertar o chifre de Dinraal quando ele sobrevoa o cânion Tanagar (santuário Shira Gomar), surfar com escudo pelos anéis luminosos desde o Pico Hebra (Kiah Toza) e acertar quatro alvos em sequência no Campo de Voo (Noe Rajee). Com os três Emblemas de Medoh, Link enfrenta o fantasma da Ira eólica com equipamento fixo, que inclui o Conjunto de pluma nevada melhorado duas vezes, o Gume plumado e os arcos do falcão, duplo e de precisão.",
+      "sources": ["zw:EX Champion Revali's Song"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O treino que deu errado",
+      "text": "Na primeira memória da DLC, Revali, exausto, tenta criar a corrente de ar, é apanhado pelo próprio redemoinho e cai do céu. Depois de aceitar o convite de Zelda para ser Campeão, ele domina a técnica e acerta todos os alvos durante a descida.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O sonho de Teba",
+      "text": "O guerreiro ará Teba ainda não consegue usar o vendaval, mas sonha em aprender sozinho e dominar a técnica de Revali.",
+      "sources": ["zw:Teba"]
+    }
+  ],
+  "advanced_uses": [
+    "Depois de um uso, voltar a abrir o Planador sobre a corrente ascendente que ficou no local para subir de novo sem gastar outra carga.",
+    "Usar a bênção no meio de um campo aberto para planar sobre um acampamento e atacar com flechas de cima."
+  ],
+  "limitations": [
+    "Não funciona dentro de Santuários.",
+    "Só três usos por recarga.",
+    "Precisa do Planador para aproveitar a altura ganha."
+  ],
+  "related": [
+    { "id": "botw_monster_windblight_ganon", "relation": "Derrotá-la libera a bênção" },
+    { "id": "botw_keyitem_medohs_emblem", "relation": "Três emblemas abrem o desafio da versão +" },
+    { "id": "botw_keyitem_paraglider", "relation": "Necessário para aproveitar a corrente ascendente" },
+    { "id": "botw_mechanic_updraft", "relation": "A bênção cria uma corrente ascendente" },
+    { "id": "botw_monster_dark_beast_ganon", "relation": "Ajuda a alcançar o ponto fraco" },
+    { "id": "botw_bow_great_eagle_bow", "relation": "Arco de Revali" },
+    { "id": "botw_ability_miphas_grace", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_daruks_protection", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Outra bênção dos Campeões" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

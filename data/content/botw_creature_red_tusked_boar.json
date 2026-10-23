@@ -1,0 +1,93 @@
+{
+  "id": "botw_creature_red_tusked_boar",
+  "summary": "Javali de pelo preto e presas vermelhas, típico de Akkala e bem mais forte que o Javali da mata. Costuma fugir, às vezes investe; abatido, deixa de duas a três Carnes de segunda.",
+  "description": "O Javali de presa rubra é a variedade de Akkala, reconhecível pelo pelo preto e pelas presas vermelhas que lhe dão o nome. O compendium o descreve como parecido com o javali comum, mas consideravelmente mais forte, e recomenda cautela redobrada na caça. É mais comum no Altiplano de Akkala e no Coração de Akkala.\n\nO comportamento lembra o do Javali da mata: na maior parte das vezes foge quando assustado, mas de vez em quando investe contra Link ao vê-lo por perto — nunca se ele estiver a cavalo. A recompensa é melhor: cada javali deixa de duas a três Carnes de segunda.",
+  "locations": [
+    "Altiplano de Akkala e Coração de Akkala (compendium)."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Boa fonte de Carne de segunda: 2 a 3 por javali.",
+    "Registrar sua foto no compendium (entrada nº 11)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano da investida."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Geralmente foge; às vezes investe contra Link quando o vê por perto.",
+      "conditions": ["Não investe se Link estiver montado a cavalo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Boar"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser abatido; deixa de duas a três Carnes de segunda. É mais resistente que o Javali da mata.",
+      "produces": ["botw_material_raw_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Boar"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que o javali pode ser abatido, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins às vezes perseguem javalis que passam perto deles, chegando a matá-los e comê-los.",
+      "kind": "mecanica",
+      "sources": ["zw:Boar"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Mais carne que o primo da mata",
+      "text": "Enquanto o Javali da mata deixa uma ou duas Carnes de terceira, o Javali de presa rubra deixa de duas a três Carnes de segunda.",
+      "sources": ["zw", "zw:Woodland Boar"]
+    }
+  ],
+  "advanced_uses": [
+    "A Carne de segunda vira Bife de carne de segunda selado se exposta ao fogo e Carne de segunda congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Mais forte que o Javali da mata; o compendium pede cautela extra.",
+    "Concentrado em Akkala: fora dessa região, as fontes não o descrevem como comum."
+  ],
+  "related": [
+    { "id": "botw_creature_woodland_boar", "relation": "Javali comum, mais fraco" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_food_seared_prime_steak", "relation": "Carne de segunda exposta ao fogo" },
+    { "id": "botw_food_icy_prime_meat", "relation": "Carne de segunda exposta ao gelo" },
+    { "id": "botw_monster_bokoblin", "relation": "Caça javalis" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

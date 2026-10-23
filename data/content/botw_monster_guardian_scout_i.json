@@ -1,0 +1,126 @@
+{
+  "id": "botw_monster_guardian_scout_i",
+  "summary": "O Guardião mais fraco do jogo (13 de vida): miniatura sem armas, feita só para as provações dos Santuários. Nos Santuários não é corrompido; versões corrompidas aparecem dentro das Feras Divinas.",
+  "description": "O Guardião batedor é a primeira das quatro versões de batedor. O compendium explica que os Guardiões foram projetados para combater Ganon, mas estes modelos reduzidos foram colocados nos Santuários como parte das provações, mantendo, em escala menor, as várias patas e o feixe de laser. É o mais fraco de todos os batedores e não carrega nenhuma arma ancestral.\n\nNos Santuários de combate ele permanece livre da Malícia e brilha nas cores laranja e azul, como os outros Guardiões não corrompidos, mas ainda assim ataca Link, porque os Monges o incumbiram de testá-lo. Versões corrompidas aparecem dentro das Feras Divinas Vah Rudania e Vah Ruta. Com o DLC, também surge na Provação da Espada e na Provação Final.\n\nO compendium lista Parafuso e Mola ancestrais entre os materiais associados a ele. Por ser o primeiro contato com Guardiões em muitos Santuários, é um bom alvo para praticar a mira no olho e a Defesa perfeita contra lasers.",
+  "locations": [
+    "Santuários de combate, como Dako Tah, Hawa Koth, Jee Noh, Ka'o Makagh, Kaya Wan, Keh Namut, Maka Rah, Oman Au, Sha Warvo, Shae Mo'sah, Shora Hah e, no DLC 2, Etsu Korima, Ruvo Korbah e Sharo Lun.",
+    "Versões corrompidas dentro das Feras Divinas Vah Rudania e Vah Ruta.",
+    "Provação da Espada (DLC 1) e Provação Final (DLC 2)."
+  ],
+  "obtaining": [
+    "O compendium lista Parafuso ancestral e Mola ancestral como materiais associados.",
+    "Os batedores dos Santuários voltam após cada Lua de sangue, apesar de não serem corrompidos."
+  ],
+  "uses": [
+    "Treino seguro de combate contra Guardiões no início do jogo."
+  ],
+  "effects": [
+    "Laser de Guardião em escala reduzida."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ataca Link dentro dos Santuários mesmo sem estar corrompido, porque cumpre a tarefa de testá-lo dada pelos Monges.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Lasers de Guardiões podem ser devolvidos com Defesa perfeita; escudos da linha guardiã também desviam os feixes dos batedores.",
+      "kind": "mecanica",
+      "sources": ["zw:Perfect Guard", "zw:Guardian Gear"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "O olho é o ponto fraco dos Guardiões: uma flecha nele causa dano extra e atordoa; uma Flecha ancestral no olho destrói o Guardião na hora.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes da ficha não detalham a reação do batedor a golpes, além de lembrar que equipamentos ancestrais causam mais dano a Guardiões."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre o Guardião batedor."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o batedor."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nele."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica nas salas de combate dos Santuários e em algumas Feras Divinas; os dos Santuários brilham em laranja e azul, os corrompidos em rosa.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Guardian", "zw:Ancient Technology"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Volta mesmo sem Malícia",
+      "text": "A Lua de sangue revive inclusive os Guardiões batedores não corrompidos dos Santuários.",
+      "sources": ["zw:Blood Moon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Feito para a provação",
+      "text": "Ao contrário dos Guardiões criados para a guerra contra Ganon, os batedores foram feitos especificamente para as provações dos Santuários, e o batedor básico nem sequer recebe arma.",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o batedor básico para praticar a Defesa perfeita contra lasers antes de enfrentar Guardiões persecutórios."
+  ],
+  "limitations": [
+    "Recompensa pequena: apenas materiais ancestrais simples."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_scout_ii", "relation": "Versão seguinte, com uma arma" },
+    { "id": "botw_monster_guardian_scout_iii", "relation": "Versão com duas armas" },
+    { "id": "botw_monster_guardian_scout_iv", "relation": "Versão mais forte, com três armas" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Guardião de guerra em tamanho real" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Devolve lasers de Guardiões" },
+    { "id": "botw_material_ancient_screw", "relation": "Material associado" },
+    { "id": "botw_material_ancient_spring", "relation": "Material associado" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "parcial"
+}

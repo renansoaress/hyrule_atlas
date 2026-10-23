@@ -1,0 +1,156 @@
+{
+  "id": "botw_mechanic_cooking",
+  "summary": "Até cinco ingredientes numa Panela acesa viram refeições, elixires ou fracassos. A cura dobra, efeitos de mesmo tipo somam estrelas e duração, efeitos diferentes se anulam. Fogo assa e o frio congela, mas sem efeitos.",
+  "description": "Em BOTW a cura vem da comida, e a Culinária é o que libera o potencial dos ingredientes. Há dois caminhos. O ambiente cozinha sozinho: ingredientes comestíveis crus jogados perto do fogo ou largados no clima escaldante de Eldin viram comida assada, com 50% mais cura (ingredientes não comestíveis crus só viram cinzas); carnes e peixes no frio intenso viram comida congelada, com a mesma cura e 1:00 de Resistência ao calor; ovos em fontes termais viram ovos cozidos. Nada disso ativa os efeitos especiais dos ingredientes.\n\nPara isso é preciso uma Panela acesa: Link segura até cinco materiais nas mãos e os joga dentro. Cozidos, os ingredientes que podem ser comidos crus dobram a cura. Só refeições (frutas, cogumelos, legumes, carnes, frutos do mar e complementos) viram pratos; pelo menos um bicho com uma parte de monstro vira elixir; Fadas formam Tônico de fada; combinações inválidas dão Comida duvidosa, e gemas, Sílex ou Madeira dão comida dura como pedra. Ingredientes com o mesmo efeito somam estrelas de potência e tempo de duração (máximo de 30:00); dois efeitos diferentes se anulam. Todo cozimento tem chance de sucesso crítico, anunciado por uma melodia curta.",
+  "locations": [
+    "Panelas sobre fogueiras em vilas, estábulos e acampamentos; Panelas apagadas precisam ter a Madeira acesa antes do uso."
+  ],
+  "obtaining": [
+    "Disponível desde o Grande Planalto, onde já há fogueiras e Panelas."
+  ],
+  "uses": [
+    "Recuperar corações, ganhar resistências, ataque, defesa, velocidade, furtividade, vigor e corações extras.",
+    "Vender pratos e elixires; Comida duvidosa, comida dura como pedra e Tônico de fada valem só 2 rupias."
+  ],
+  "effects": [
+    "Cura dobrada em relação aos ingredientes crus que podem ser comidos.",
+    "Efeitos com níveis e duração definidos pelos ingredientes."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Com a Panela acesa, Link segura até cinco materiais e os joga dentro. O resultado depende da combinação: refeição, elixir, Tônico de fada, Comida duvidosa ou comida dura como pedra.",
+      "conditions": ["Panela acesa; não é possível cozinhar numa Panela apagada nem numa exposta à chuva."],
+      "side_effects": ["Perto de uma Panela acesa, a temperatura de Link sobe um pouco."],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Cooking Pot", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "misturar",
+      "variant": "efeitos",
+      "status": "confirmado",
+      "result": "Cada ingrediente de efeito vale estrelas para o seu efeito; somadas, elas definem o nível. Ingredientes de efeitos diferentes removem todos os efeitos do prato (num elixir, resultam em Comida duvidosa).",
+      "conditions": ["Exemplos de limiares: Ataque e Defesa aumentados sobem ao nível 2 com 5★ e ao 3 com 7★; Furtividade com 6★ e 9★; Resistência a choques com 4★ e 6★; resistências ao frio e ao calor com 6★ (máximo nível 2); Proteção contra chamas com 7★."],
+      "side_effects": ["Só um efeito fica ativo por vez: comer um prato de outro efeito substitui o atual."],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "misturar",
+      "variant": "duração",
+      "status": "confirmado",
+      "result": "Cada ingrediente soma tempo: 0:50 (ataque e defesa), 1:00 (velocidade), 2:00 (furtividade), 2:30 (resistências e Proteção contra chamas). Partes de monstro somam 1:10, 1:50 ou 3:10 conforme o grau. Ingredientes neutros dão seu tempo integral só uma vez; repetidos, valem 0:30 cada. O teto é 30:00.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "elixir",
+      "status": "confirmado",
+      "result": "Pelo menos um bicho (inseto, lagarto ou sapo) mais uma parte de monstro formam um elixir; outros ingredientes de refeição podem entrar se tiverem o mesmo efeito (ou nenhum). Bicho sem parte de monstro, ou o contrário, dá Comida duvidosa.",
+      "side_effects": ["Partes de monstro não aumentam cura nem potência; a raridade não importa, só o grau (Vísceras de Centaleão rendem o mesmo que as de Koboblin)."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "receitas que falham",
+      "status": "confirmado",
+      "result": "Âmbar, Diamante, Sílex, Pedra luminosa, Opala, Rubi, Safira, Topázio ou Madeira na receita dão comida dura como pedra (1/4 de coração), com prioridade sobre a Comida duvidosa. Combinações inválidas de complementos (sal, açúcar, especiarias, partes de dragão etc.) dão Comida duvidosa, que cura pelo menos 1 coração.",
+      "produces": ["botw_food_rock_hard_food", "botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Ingredientes comestíveis crus que tocam uma fogueira (ou são atingidos por fogo) assam: recuperam 50% mais corações, mas perdem o efeito especial. Materiais não comestíveis crus apenas viram cinzas. Comida assada e congelada se empilha na algibeira, ao contrário dos pratos da Panela.",
+      "produces": ["botw_food_baked_apple", "botw_food_seared_steak", "botw_food_charred_pepper", "botw_food_campfire_egg"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Roasted Food", "zw:Campfire"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Carnes e frutos do mar expostos ao frio das montanhas, à água gelada ou a ataques de gelo congelam: a cura não muda e ganham 1:00 de Resistência ao calor de nível 1.",
+      "produces": ["botw_food_icy_meat", "botw_food_frozen_bass", "botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Frozen Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, ingredientes largados no chão assam sozinhos.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço de pratos e elixires: soma dos preços dos ingredientes × 1,5 (um), 1,8 (dois), 2,1 (três), 2,4 (quatro) ou 2,8 (cinco ingredientes), arredondado para baixo e depois para a dezena acima. Partes de dragão e Fragmentos de estrela contam como 1 rupia. Tônico de fada, Comida duvidosa e comida dura como pedra valem 2 rupias.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sucesso crítico",
+      "text": "Cada cozimento na Panela tem 5% de chance de crítico por ingrediente diferente. Alguns materiais elevam a chance (só o maior conta): partes de dragão e Fragmento de estrela 100%, Cana-de-açúcar e partes de monstro de grau alto 30%, Ovo, Manteiga de cabra, Tempero Goron e partes de grau médio 10%. O crítico dá +3 corações de cura, +5:00 de duração ou +1 nível de efeito; o jogo não sorteia cura extra com a vida no máximo nem nível extra num efeito já no topo, mas pode sortear os 5:00 mesmo com a duração em 30:00. Extrato de monstro, Comida duvidosa e comida dura como pedra não têm crítico.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue e crítico",
+      "text": "A página de culinária de BOTW afirma que cozinhar entre 23h30 e 0h15 da noite de Lua de sangue garante o bônus crítico; a página da Lua de sangue diz apenas que a chance cresce perto da meia-noite.",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Blood Moon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Extrato de monstro, a roleta",
+      "text": "O Extrato de monstro anula o crítico e sorteia mudanças: a duração vira 1:00, 10:00 ou 30:00; e cura ou potência recebe uma alteração positiva (+3 corações ou +1 nível) ou negativa (1/4 de coração ou uma estrela). Em Corações extras, sempre altera a potência.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ideia antiga de Aonuma",
+      "text": "Eiji Aonuma quis incluir culinária desde o desenvolvimento de Twilight Princess, mas desistiu por não achar um jeito de torná-la divertida; a ideia só se concretizou em BOTW.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fada na receita",
+      "text": "Uma Fada soma 10 corações a uma refeição; mas, se a receita seria um elixir, Comida duvidosa ou comida dura como pedra, a Fada a transforma em Tônico de fada, sem efeitos.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Somar uma parte de monstro de grau alto aos elixires: +3:10 de duração e chance de crítico de 30%.",
+    "Usar mais unidades do mesmo ingrediente de efeito para subir o nível, como sugerem as dicas do jogo.",
+    "Cozinhar no período da Lua de sangue para obter o bônus crítico em pratos caros."
+  ],
+  "limitations": [
+    "Máximo de cinco ingredientes por receita.",
+    "Efeitos diferentes se anulam; só um efeito ativo por vez.",
+    "Panelas na chuva ficam inutilizáveis; fogueiras simples não ativam efeitos."
+  ],
+  "related": [
+    { "id": "botw_object_cooking_pot", "relation": "Onde se cozinha com efeitos" },
+    { "id": "botw_object_campfire", "relation": "Assa ingredientes sem efeitos" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de combinações inválidas" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado com gemas, Sílex ou Madeira" },
+    { "id": "botw_elixir_fairy_tonic", "relation": "Resultado de cozinhar Fadas" },
+    { "id": "botw_material_monster_extract", "relation": "Altera aleatoriamente o prato" },
+    { "id": "botw_material_star_fragment", "relation": "Garante o crítico (100%)" },
+    { "id": "botw_material_cane_sugar", "relation": "Chance de crítico de 30%" },
+    { "id": "botw_material_bokoblin_guts", "relation": "Parte de grau alto: +3:10 e 30% de crítico" },
+    { "id": "botw_material_bokoblin_horn", "relation": "Parte de grau baixo: +1:10" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Bônus crítico entre 23h30 e 0h15" },
+    { "id": "botw_mechanic_temperature", "relation": "Ingredientes assam ou congelam pelo clima" },
+    { "id": "botw_mechanic_rain", "relation": "Inutiliza Panelas expostas" }
+  ],
+  "capabilities": ["cura"],
+  "verification_status": "verificado"
+}

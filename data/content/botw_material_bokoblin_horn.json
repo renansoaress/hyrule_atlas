@@ -1,0 +1,166 @@
+{
+  "id": "botw_material_bokoblin_horn",
+  "summary": "A parte de monstro mais barata e comum: cai de todo tipo de Koboblin e Stalboblin. Rende só 1:10 nos elixires, mas é o primeiro material para melhorar o Conjunto hyliano.",
+  "description": "O Chifre de Koboblin é o chifre cortado da cabeça de um Koboblin, o monstro que o próprio texto do jogo descreve como frequente nas planícies de Hyrule. Todas as variedades de Koboblin, além dos Stalboblins, podem deixá-lo, o que faz dele uma das partes de monstro que mais se acumulam na algibeira no começo da aventura.\n\nNão é comestível: o jogo sugere jogá-lo \"num ensopado com alguns bichos\" para obter um elixir, ao qual acrescenta apenas 1:10 de duração, o menor valor entre as partes de monstro. O uso mais relevante é na Fonte da Grande Fada, onde 5 chifres por peça levam o Conjunto hyliano ao primeiro nível e mais 8 por peça (junto com Presas de Koboblin) ao segundo. Também serve de ingrediente para o corante cinza da Tinturaria Kochi.",
+  "locations": [
+    "Acampamentos e fortes de Koboblins por toda Hyrule; à noite, também os Stalboblins que surgem do chão."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Koboblin (vermelho, azul, preto, prateado ou, no Modo Mestre, dourado) ou um Stalboblin.",
+    "Os Koboblins derrotados voltam a aparecer com a Lua de sangue, renovando a fonte de chifres."
+  ],
+  "uses": [
+    "Elixires: cozido com um bicho, acrescenta 1:10 à duração.",
+    "Melhoria de armadura: 5 por peça no 1º nível e 8 por peça no 2º nível do Conjunto hyliano (Capuz, Túnica e Calças hylianas) — 39 no total.",
+    "Corante cinza na Tinturaria Kochi, em Hateno.",
+    "Venda: 3 rupias, ou 3 Mon na loja de Kilton (Fang and Bone)."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Chifre de Koboblin no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Chifre de Koboblin largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Chifre de Koboblin queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Chifre de Koboblin numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Chifre de Koboblin a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Chifre de Koboblin à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Chifre de Koboblin flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Chifre de Koboblin não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Chifre de Koboblin largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 3 rupias em lojas e comerciantes, ou 3 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Primeiro degrau do Conjunto hyliano",
+      "text": "O Conjunto hyliano é melhorado só com partes de Koboblin até o 3º nível: chifres no 1º (5 por peça), chifres e presas no 2º (8 chifres e 5 presas por peça) e presas e vísceras no 3º. Só o 4º nível troca o chifre por Vísceras de Koboblin e Âmbar.",
+      "sources": [
+        "zw",
+        "zw:Bokoblin Fang",
+        "zw:Bokoblin Guts"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rende o mesmo em rupias e em Mon",
+      "text": "O chifre vale 3 rupias e também 3 Mon com Kilton. Já o Chifre de Moblin, mais caro nas lojas (5 rupias), rende menos Mon (2).",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao planejar o Conjunto hyliano completo, reserve 39 chifres (15 para o 1º nível e 24 para o 2º) antes de vendê-los."
+  ],
+  "limitations": [
+    "Menor acréscimo de duração possível em elixires (1:10).",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Monstro que o deixa ao ser derrotado"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Versão esquelética que também o deixa"
+    },
+    {
+      "id": "botw_material_bokoblin_fang",
+      "relation": "Outra parte de Koboblin usada no Conjunto hyliano"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Parte rara de Koboblins mais fortes"
+    },
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Usa 5 e 8 chifres por peça nos dois primeiros níveis"
+    },
+    {
+      "id": "botw_material_moblin_horn",
+      "relation": "Chifre equivalente dos Moblins"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

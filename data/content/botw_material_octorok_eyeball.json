@@ -1,0 +1,172 @@
+{
+  "id": "botw_material_octorok_eyeball",
+  "summary": "A parte de Octoroc mais valiosa (25 rupias, 13 Mon). Acrescenta 1:50 aos elixires e é exigida no 3º nível das Botas de neve.",
+  "description": "O Olho de Octoroc, como diz o jogo, só pode ser obtido de inimigos do tipo Octoroc — aquáticos, da floresta, rochosos, da neve e do tesouro. O próprio inventário sugere três destinos: vender, fazer elixires ou \"outros usos\". Vendido, é a parte de Octoroc mais valiosa, com 25 rupias ou 13 Mon; na panela, acrescenta 1:50 à duração de um elixir.\n\nO \"outro uso\" é a melhoria das Botas de neve, que pedem 5 olhos (com 15 Agilimelos) no 3º nível. Na Tinturaria Kochi, o olho entra no corante amarelo. Como no caso do Olho de Morci, não há nenhum efeito de visão associado ao item: é só um material.",
+  "locations": [
+    "Onde vivem Octorocs aquáticos, da floresta, rochosos, da neve e do tesouro."
+  ],
+  "obtaining": [
+    "Derrotar Octorocs aquáticos, da floresta, rochosos, da neve ou do tesouro.",
+    "Os Octorocs do tesouro, enterrados na areia ou na neve como falsos baús, deixam rupias junto com as partes."
+  ],
+  "uses": [
+    "Elixires: cozido com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 5 no 3º nível das Botas de neve.",
+    "Corante amarelo na Tinturaria Kochi.",
+    "Venda: 25 rupias, ou 13 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Olho de Octoroc no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Olho de Octoroc largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Olho de Octoroc queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Olho de Octoroc numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Olho de Octoroc a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Olho de Octoroc à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Olho de Octoroc flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Olho de Octoroc não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Olho de Octoroc largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 25 rupias em lojas e comerciantes, ou 13 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Octorocs aquáticos voltam sem Lua de sangue",
+      "text": "Os Octorocs aquáticos podem reaparecer sem esperar uma Lua de sangue, o que permite repetir a mesma lagoa para juntar olhos.",
+      "sources": [
+        "zw:Water Octorok"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Octoroc do tesouro: baú falso e rupias",
+      "text": "Os Octorocs do tesouro se disfarçam de baú enterrado na areia ou na neve. O falso baú não é magnético, então Magnétis não o puxa; uma Bomba remota os faz pular para fora, e eles deixam rupias junto com as partes ao serem derrotados.",
+      "sources": [
+        "zw:Treasure Octorok"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como o olho vale mais que o tentáculo e o balão, venda o excedente depois de separar os 5 das Botas de neve."
+  ],
+  "limitations": [
+    "Não confere efeito de visão ou detecção; é apenas ingrediente.",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_water_octorok",
+      "relation": "Deixa o olho e reaparece sem Lua de sangue"
+    },
+    {
+      "id": "botw_monster_forest_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_snow_octorok",
+      "relation": "Também o deixa"
+    },
+    {
+      "id": "botw_monster_treasure_octorok",
+      "relation": "Também o deixa, junto com rupias"
+    },
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Usa 5 olhos no 3º nível"
+    },
+    {
+      "id": "botw_material_octorok_tentacle",
+      "relation": "Outra parte de Octoroc usada nas Botas de neve"
+    },
+    {
+      "id": "botw_material_octo_balloon",
+      "relation": "Outra parte de Octoroc usada nas Botas de neve"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

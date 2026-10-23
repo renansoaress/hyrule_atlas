@@ -1,0 +1,89 @@
+{
+  "id": "botw_food_steamed_meat",
+  "summary": "Carne embrulhada em folhas aromáticas e cozida no vapor para manter a umidade: qualquer carne com um legume, erva ou flor — menos Abóbora robusta. A planta define o efeito.",
+  "description": "A Carne no vapor combina qualquer carne com um legume, erva ou flor; o inventário diz que a carne é embrulhada em folhas perfumadas e cozida no vapor para preservar a umidade. Como nenhuma carne tem efeito, a variante depende da planta: Rabanete nutritivo e Rabanete nutritivo grande (Corações extras), Cenoura tenaz (Vigor extra), Cenoura veloz e Violeta veloz (Velocidade aumentada), Erva geleira (Resistência ao frio), Erva relampagueira (Resistência a choques), Protechofra (Ataque aumentado), Amaranto blindado (Defesa aumentada), Beladona azul e Princesa plácida (Furtividade aumentada) e Erva fogueira (Resistência ao calor). Com Capim hyruliano, sai a versão comum.\n\nA Abóbora robusta é a exceção: carne com abóbora forma Abóbora recheada com carne, receita testada antes. Outras armadilhas da ordem de prioridade: Pimenta de fogo com carne forma Bife apimentado, frutos do mar formam uma fritada, e, pela tabela do Zelda Wiki, dois tipos de carne formam Espetinho de carne e dois tipos de planta, Fritada de ervas.",
+  "obtaining": [
+    "Cozinhar numa Panela uma carne e um legume, erva ou flor (exceto Abóbora robusta), com até três ingredientes extras."
+  ],
+  "uses": [
+    "Dar efeito a qualquer carne de caça usando plantas colhidas.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pela planta: Corações extras, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor; a fonte também lista uma versão com Recuperação de vigor, com ingredientes energizantes."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito da planta usada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Abóbora robusta, pimenta ou frutos do mar",
+      "status": "confirmado",
+      "result": "Com Abóbora robusta o prato vira Abóbora recheada com carne; com Pimenta de fogo, Bife apimentado; com frutos do mar, uma fritada de carne e frutos do mar.",
+      "produces": [
+        "botw_food_meat_stuffed_pumpkin",
+        "botw_food_pepper_steak",
+        "botw_food_meat_and_seafood_fry"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da exclusão da Abóbora robusta e da ordem de prioridade, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Não aceita Abóbora robusta.",
+    "Um tipo de carne e um tipo de planta; mais tipos mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_food_meat_stuffed_pumpkin",
+      "relation": "Resultado de carne com Abóbora robusta"
+    },
+    {
+      "id": "botw_food_pepper_steak",
+      "relation": "Resultado de carne com Pimenta de fogo"
+    },
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_food_steamed_fish",
+      "relation": "Mesmo preparo com peixe"
+    },
+    {
+      "id": "botw_food_steamed_mushrooms",
+      "relation": "Mesmo preparo com cogumelo"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

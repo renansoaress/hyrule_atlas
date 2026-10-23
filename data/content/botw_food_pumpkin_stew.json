@@ -1,0 +1,99 @@
+{
+  "id": "botw_food_pumpkin_stew",
+  "summary": "Abóbora robusta cozida com Trigo de Tabantha, Manteiga de cabra e Leite fresco, prato favorito da Vila Kakariko. Já sai com Defesa aumentada; a receita está num caderno em Hateno.",
+  "description": "O Ensopado de abóbora leva Abóbora robusta, Trigo de Tabantha, Manteiga de cabra e Leite fresco. O inventário o define como um prato simples, de abóbora cozida, favorito da Vila Kakariko. Como a Abóbora robusta é \"blindada\", a receita original já sai na única variante existente, com Defesa aumentada; para a versão comum é preciso acrescentar um ingrediente de efeito contrário.\n\nO Caderno da menina (Girl's Notebook), na Vila Hateno, registra a receita como um segredo capaz de surpreender \"o mais sabido dos pais\": começar com Abóboras robustas, juntar Trigo de Tabantha para dar sabor de trigo e deixar o Leite fresco e a Manteiga de cabra apurarem. Na ordem do jogo, o Ensopado de abóbora vem antes dos ensopados de carne: com carne junto, o prato continua sendo de abóbora. Já um Caramujo nutritivo leva ao Creme de mariscos, testado antes.",
+  "locations": [
+    "A receita está no Caderno da menina (Girl's Notebook), na Vila Hateno."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela Abóbora robusta, Trigo de Tabantha, Manteiga de cabra e Leite fresco.",
+    "As abóboras são vendidas por Olkin, na Vila Kakariko."
+  ],
+  "uses": [
+    "Prato de Defesa aumentada.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Na receita original: Defesa aumentada.",
+    "Com ingrediente de efeito diferente: sem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na versão com abóbora pura, concede Defesa aumentada de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne ou Caramujo nutritivo",
+      "status": "confirmado",
+      "result": "Uma carne como quinto ingrediente mantém o Ensopado de abóbora (ele é testado antes dos ensopados de carne); um Caramujo nutritivo transforma o prato em Creme de mariscos.",
+      "produces": [
+        "botw_food_clam_chowder"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Receita para impressionar o pai",
+      "text": "Quem escreveu o caderno em Hateno apresenta o ensopado como uma receita secreta para surpreender até o pai mais entendido, e insiste no Trigo de Tabantha para dar um \"sabor de trigo\".",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre.",
+    "Só existe a variante de Defesa aumentada."
+  ],
+  "related": [
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Ingrediente obrigatório que dá a defesa"
+    },
+    {
+      "id": "botw_food_pumpkin_pie",
+      "relation": "Outro prato de abóbora, com açúcar em vez de leite"
+    },
+    {
+      "id": "botw_food_meat_stuffed_pumpkin",
+      "relation": "Outro prato de abóbora típico de Kakariko"
+    },
+    {
+      "id": "botw_food_prime_meat_stew",
+      "relation": "Ensopado com a mesma base, testado depois"
+    },
+    {
+      "id": "botw_food_clam_chowder",
+      "relation": "Receita com a mesma base que tem prioridade quando há Caramujo nutritivo"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

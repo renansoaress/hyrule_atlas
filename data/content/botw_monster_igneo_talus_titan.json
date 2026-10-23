@@ -1,0 +1,140 @@
+{
+  "id": "botw_monster_igneo_talus_titan",
+  "summary": "Tálus ígneo gigantesco que vive na lava do Lago Darman (DLC 2). Gera correntes ascendentes de ar quente, usadas para planar até o minério no topo da cabeça; derrotá-lo faz surgir o Santuário Kamia Omuna.",
+  "description": "O Tálus ígneo titã, chamado de \"monstro enorme\" pelo Goron Krane, é uma subespécie do Tálus ígneo que passou muitos anos escondida na lava até atingir tamanho descomunal. O compendium diz que ele é extremamente poderoso e emite tanto calor que cria uma corrente ascendente constante ao redor — daí o título de Titã. Há 100 anos, Daruk o enfrentou na sua Provação do domador da Fera Divina (Divine Beast Tamer's Trial), e na missão principal \"EX Champion Daruk's Song\" Link precisa repetir o feito.\n\nEle fica deitado na lava junto à margem norte do Lago Darman e se ergue quando Link se aproxima. Ataca como um Tálus ígneo comum, lançando os braços (que logo se regeneram), e também bate os braços na lava, provocando um respingo de fogo. O ponto fraco é o Depósito de minério no alto da cabeça; como o Titã nunca sai do lago, a forma de chegar lá é planar, aproveitando as correntes de ar quente que o próprio corpo gera.\n\nEncostar no corpo derretido incendeia Link. Para evitar isso, ele pode atacar com armas de gelo, que resfriam e atordoam o Titã por um tempo, ou usar o Conjunto antichamas melhorado duas vezes. Ao ser derrotado, o Santuário Kamia Omuna emerge ali perto, concluindo a provação.",
+  "locations": [
+    "Margem norte do Lago Darman, no Cânion de Eldin, mergulhado na lava (somente com o DLC 2, The Champions' Ballad)."
+  ],
+  "obtaining": [
+    "Derrotá-lo durante \"EX Champion Daruk's Song\" faz surgir o Santuário Kamia Omuna.",
+    "As fontes não listam recompensas materiais próprias para ele."
+  ],
+  "uses": [
+    "Etapa obrigatória da missão principal \"EX Champion Daruk's Song\" (DLC 2)."
+  ],
+  "effects": [
+    "Corrente ascendente constante de ar quente ao redor do corpo.",
+    "Braços arremessados, respingos de lava ao bater os braços e incêndio de quem o toca."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Emerge da lava quando Link se aproxima. Tocar o corpo derretido faz Link pegar fogo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só o Depósito de minério no topo da cabeça é vulnerável; para golpeá-lo é preciso chegar lá planando.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "A página do Titã não detalha o efeito de flechas no minério dele, ao contrário da do Tálus ígneo comum."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Incendeia quem o toca e espalha fogo ao bater os braços na lava. O Conjunto antichamas melhorado duas vezes protege Link.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Armas de gelo o resfriam e o atordoam temporariamente.",
+      "applications": ["Resfriá-lo antes de pousar sobre ele para golpear o minério."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "O calor do corpo cria correntes ascendentes de ar quente ao redor dele, que Link pode usar com o Planador para alcançar o minério.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre o Titã."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "Ele vive num lago de lava e não sai dali; não há água na arena."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre o Titã."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Feito de rocha derretida, não é afetado por Magnétis, que só move metal.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Nunca deixa o Lago Darman; os braços arremessados se regeneram e os golpes na lava criam respingos de fogo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O monstro que Daruk venceu",
+      "text": "O Goron Krane comenta que ouviu falar que Daruk derrotou um \"monstro enorme\" no Lago Darman e se pergunta como ele seria. É o Titã, que Daruk enfrentou há 100 anos na sua Provação do domador da Fera Divina.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fora da Medalha de honra",
+      "text": "Assim como o Molduga-rei, a derrota do Tálus ígneo titã não conta para a Medalha de honra: Tálus de Kilton.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Chegar planando",
+      "text": "Como o Titã não sai da lava, a estratégia descrita é planar sobre o lago aproveitando as correntes de ar quente geradas pelo corpo dele até o minério no topo da cabeça.",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Resfriar o Titã com uma arma de gelo e então planar nas correntes quentes até a cabeça para golpear o minério."
+  ],
+  "limitations": [
+    "Exclusivo do DLC 2 (The Champions' Ballad).",
+    "Sem proteção contra fogo, qualquer contato incendeia Link.",
+    "Não conta para a Medalha de honra: Tálus."
+  ],
+  "related": [
+    { "id": "botw_monster_igneo_talus", "relation": "Espécie da qual é uma subespécie gigante" },
+    { "id": "botw_monster_molduking", "relation": "Outro chefe da Provação do domador que não conta para medalha" },
+    { "id": "botw_mechanic_updraft", "relation": "Correntes ascendentes geradas pelo corpo dele" },
+    { "id": "botw_keyitem_paraglider", "relation": "Necessário para chegar ao minério" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Melhorado duas vezes, protege do fogo" },
+    { "id": "botw_weapon_frostblade", "relation": "Arma de gelo que pode resfriá-lo" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Ponto fraco no topo da cabeça" },
+    { "id": "botw_keyitem_medal_of_honor_talus", "relation": "Medalha para a qual ele não conta" }
+  ],
+  "capabilities": ["gera_fogo", "reage_gelo", "habilidade_especial"],
+  "verification_status": "verificado"
+}

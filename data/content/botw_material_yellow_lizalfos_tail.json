@@ -1,0 +1,176 @@
+{
+  "id": "botw_material_yellow_lizalfos_tail",
+  "summary": "Cauda de cheiro forte do Lagalfos elétrico. Acrescenta 3:10 aos elixires e é o material de monstro mais pedido do Conjunto de borracha (45 no total).",
+  "description": "A Cauda de Lagalfos elétrico vem dos Lagalfos que emitem correntes elétricas, comuns no Deserto Gerudo e nos Cerros de Hyrule. O inventário reclama do \"fedor poderoso\" que a torna imprópria para cozinhar, mas a valoriza para elixires, aos quais acrescenta 3:10 de duração. A eletricidade é do monstro vivo — que faz Link largar armas, arcos e escudos de metal —, não do item coletado.\n\nNas Grandes Fadas, o Conjunto de borracha pede 5 caudas por peça no 3º nível (com Aterramelos) e 10 por peça no 4º (com Topázios), totalizando 45. Na Tinturaria Kochi, entra no corante amarelo.",
+  "locations": [
+    "Deserto Gerudo, Cerros de Hyrule e ruínas Zonai, onde vivem os Lagalfos elétricos."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos elétricos."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 3:10 à duração.",
+    "Melhoria de armadura: 5 por peça no 3º nível e 10 por peça no 4º nível do Conjunto de borracha — 45 no total.",
+    "Corante amarelo na Tinturaria Kochi.",
+    "Venda: 35 rupias, ou 16 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Cauda de Lagalfos elétrico no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Cauda de Lagalfos elétrico largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Cauda de Lagalfos elétrico queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Cauda de Lagalfos elétrico numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Cauda de Lagalfos elétrico a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Cauda de Lagalfos elétrico à eletricidade; a eletricidade é do Lagalfos vivo, não da cauda coletada."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Cauda de Lagalfos elétrico flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Cauda de Lagalfos elétrico não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Cauda de Lagalfos elétrico largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 35 rupias em lojas e comerciantes, ou 16 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Flecha no chifre",
+      "text": "Acertar uma flecha no chifre do Lagalfos elétrico provoca uma descarga involuntária, que pode eletrocutar os inimigos ao redor — útil para enfrentar grupos no deserto antes de colher as caudas.",
+      "sources": [
+        "zw:Lizalfos",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O tema elemental não define o elixir",
+      "text": "Apesar de vir de um monstro elétrico, a Cauda de Lagalfos elétrico não dá efeito próprio ao elixir: em BOTW, o efeito vem da categoria dos bichos (e de alguns outros materiais), e a parte de monstro entra com a duração. Cozida com um Lagarto fujão, por exemplo, resulta num Elixir veloz, sem relação nenhuma com eletricidade.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part",
+        "zw:Lizard"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Metade final do Conjunto de borracha",
+      "text": "O Conjunto de borracha usa Gelecas elétricas nos dois primeiros níveis e Caudas de Lagalfos elétrico nos dois últimos. O conjunto melhorado duas vezes já concede a imunidade a raios que permite chegar perto de Farosh.",
+      "sources": [
+        "zw",
+        "zw:Yellow Chuchu Jelly",
+        "zw:Farosh"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Lute contra Lagalfos elétricos sem armas, arcos ou escudos de metal equipados: os arcos elétricos deles fazem Link largá-los."
+  ],
+  "limitations": [
+    "Não protege de choques nem gera eletricidade, segundo as fontes.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_electric_lizalfos",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Usa 5 e 10 caudas por peça no 3º e 4º níveis"
+    },
+    {
+      "id": "botw_material_yellow_chuchu_jelly",
+      "relation": "Material dos dois primeiros níveis do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_zapshroom",
+      "relation": "Acompanha a cauda no 3º nível do conjunto"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Acompanha a cauda no 4º nível do conjunto"
+    },
+    {
+      "id": "botw_material_lizalfos_tail",
+      "relation": "Cauda dos Lagalfos não elementais"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

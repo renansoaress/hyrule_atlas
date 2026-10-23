@@ -1,0 +1,139 @@
+{
+  "id": "botw_monster_molduga",
+  "summary": "Peixe gigante de quatro patas que nada sob a areia do Deserto Gerudo (1.500 de vida). É atraído por barulho: Bombas remotas ou Flechas explosivas o fazem saltar e cair atordoado. Só existem quatro.",
+  "description": "O Molduga, a \"grande fera da areia\" de Kilton, parece um peixe de quatro patas e passa quase todo o tempo submerso nas areias do Deserto Gerudo, patrulhando seu território. O compendium explica que ele é sensível ao som: ao perceber barulho, emerge para devorar o que estiver por perto, por isso correr descuidadamente na área é perigoso. Quando nota Link, dispara em direção a ele para atropelá-lo.\n\nA sensibilidade ao som é também a fraqueza. Kilton dá a dica de que um grande barulho à distância pode atordoá-lo; na prática, Bombas remotas ou Flechas explosivas atiradas perto dele o fazem saltar para fora da areia e cair atordoado, momento ideal para golpeá-lo. A luta também pode ser travada sobre um escudo puxado por uma Morsareia, surfando pela areia.\n\nAo morrer, o Molduga deixa um ou dois baús com armas, além de Barbatana de Molduga e Vísceras de Molduga. Segundo Kilton, há apenas quatro Moldugas em Hyrule, e derrotar todos rende a Medalha de honra: Molduga.",
+  "locations": [
+    "Deserto Gerudo, segundo o compendium.",
+    "Os quatro Moldugas ficam em Arbiter's Grounds, norte do Dragon's Exile, Southern Oasis e Toruma Dunes."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Barbatana de Molduga, Vísceras de Molduga e um ou dois baús do tesouro com armas.",
+    "Revive após cada Lua de sangue, como os demais inimigos."
+  ],
+  "uses": [
+    "Missão secundária \"Medicinal Molduga\": Malena precisa de Vísceras de Molduga para curar o marido doente e paga com uma rupia dourada.",
+    "Fonte de Barbatanas e Vísceras de Molduga e de armas dos baús.",
+    "Os quatro contam para a Medalha de honra: Molduga, de Kilton."
+  ],
+  "effects": [
+    "Investida sob a areia e salto para engolir a presa que fez barulho."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Submerso, percebe barulho e emerge para devorar a fonte. Quando nota Link, dispara para atropelá-lo.",
+      "side_effects": ["Correr descuidado pela areia do território dele é perigoso."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "O momento de golpear é quando ele cai atordoado na areia depois de ser atingido por uma explosão no salto.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas explosivas o atingem e atordoam quando ele salta da areia. O efeito de flechas comuns não é detalhado.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito do fogo sobre o Molduga."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "Vive sob a areia do deserto; não há água no seu território."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Por ser sensível a barulhos altos, ao ser atingido por explosões depois de saltar da areia fica atordoado.",
+      "applications": ["Atordoá-lo e golpeá-lo enquanto está exposto."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota funciona como isca sonora e, detonada quando ele sai da areia, o deixa atordoado.",
+      "applications": ["Largar a bomba à distância, esperar o Molduga avançar e detoná-la."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Molduga."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre o monstro.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Nada pela areia do Deserto Gerudo e patrulha um território fixo. A luta pode ser feita surfando com escudo puxado por uma Morsareia.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "A dica de Kilton",
+      "text": "Se Link ainda não derrotou nenhum Molduga, Kilton sugere assustá-los de longe com um grande barulho para atordoá-los o suficiente para acabar com eles.",
+      "sources": ["jogo", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Medalha de honra: Molduga",
+      "text": "Depois de derrotar Ganon, a Calamidade pela primeira vez, Kilton conta que há só quatro Moldugas em Hyrule e pede que Link derrote todos. Feito isso, entrega a Medalha de honra: Molduga e diz ter aprendido sobre o limite de tamanho da espécie. O Molduga-rei, do DLC 2, não entra na contagem.",
+      "sources": ["zw", "zw:Kilton", "zw:Molduking"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Vísceras como remédio",
+      "text": "Malena, na Cidade Gerudo, recém-casada, conta que o marido tem uma doença rara cujo único remédio são vísceras de Molduga; nenhuma soldado aceitou enfrentar o monstro por ela.",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Surfar com escudo puxado por uma Morsareia para manter distância e posicionar bombas no caminho dele."
+  ],
+  "limitations": [
+    "Só fica vulnerável fora da areia, quando salta ou cai atordoado.",
+    "Há apenas quatro no jogo base."
+  ],
+  "related": [
+    { "id": "botw_monster_molduking", "relation": "Subespécie mais forte (DLC 2)" },
+    { "id": "botw_material_molduga_fin", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_molduga_guts", "relation": "Parte deixada; usada em \"Medicinal Molduga\"" },
+    { "id": "botw_rune_remote_bomb", "relation": "Isca sonora que o atordoa" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Atordoa ao explodir perto dele" },
+    { "id": "botw_creature_sand_seal", "relation": "Permite enfrentá-lo surfando na areia" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Forma de lutar sobre a areia" },
+    { "id": "botw_treasure_treasure_chest", "relation": "Deixa um ou dois baús com armas" },
+    { "id": "botw_keyitem_medal_of_honor_molduga", "relation": "Prêmio de Kilton por derrotar os quatro" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

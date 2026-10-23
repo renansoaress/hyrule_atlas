@@ -1,0 +1,159 @@
+{
+  "id": "botw_armor_moblin_mask",
+  "summary": "Máscara de Kilton com o nariz comprido e o chifre grande dos Moblins, que disfarça Link entre Moblins e Stalmoblins. Custa 199 Mon e aparece na Fang and Bone após libertar uma Fera Divina.",
+  "description": "A Máscara de Moblin é a segunda da linha de disfarces de Kilton: reproduz o nariz comprido e o chifre grande do monstro e custa 199 Mon na Fang and Bone, onde só aparece depois que Link liberta a primeira Fera Divina.\n\nVestida, concede o efeito oculto Disfarce de Moblin: Moblins e Stalmoblins não atacam Link enquanto ele não os atacar primeiro; em vez disso, o seguem e o observam. Link adota a pose de espera de um Moblin e a máscara faz baixinho os sons do monstro. Outros inimigos atacam normalmente — e se um deles começar a atacar, os Moblins também percebem o disfarce. A defesa é fixa em 3: não pode ser melhorada nem tingida.",
+  "locations": [
+    "Fang and Bone, a loja noturna de Kilton (Skull Lake, no Coração de Akkala, e arredores dos principais povoados, das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 199 Mon depois de libertar uma Fera Divina."
+  ],
+  "uses": [
+    "Passar por Moblins e Stalmoblins sem combate."
+  ],
+  "effects": [
+    "Disfarce de Moblin (efeito oculto): Moblins e Stalmoblins não atacam a menos que Link ataque primeiro."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa e ativa o Disfarce de Moblin; Link adota a pose de espera de um Moblin e a máscara emite sons baixos do monstro.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Moblins e Stalmoblins não atacam Link; passam a segui-lo e observá-lo.",
+      "conditions": [
+        "Link não pode atacá-los primeiro."
+      ],
+      "side_effects": [
+        "Com os monstros rondando Link, fica mais difícil dar Ataque-surpresa."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "outras espécies",
+      "status": "confirmado",
+      "result": "Outros inimigos atacam normalmente; se um deles começar a atacar, os Moblins também descobrem o disfarce.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Também vale para Stalmoblins",
+      "text": "O Disfarce de Moblin cobre a versão esquelética do monstro: Stalmoblins também deixam Link em paz enquanto ele não atacar.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Estoque liberado pelas Feras Divinas",
+      "text": "A Fang and Bone ganha novos produtos a cada Fera Divina libertada; a Máscara de Moblin é a recompensa da primeira.",
+      "sources": [
+        "zw",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Acampamentos guardados por Moblins costumam ter Koboblins junto; nesses casos a máscara sozinha não basta, e a Máscara de Majora cobre as duas espécies."
+  ],
+  "limitations": [
+    "Não engana outras espécies.",
+    "Defesa fixa em 3, sem melhorias nem tingimento.",
+    "Atacar um Moblin encerra o disfarce."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Monstro enganado pelo disfarce"
+    },
+    {
+      "id": "botw_monster_stalmoblin",
+      "relation": "Versão Stal também enganada"
+    },
+    {
+      "id": "botw_armor_bokoblin_mask",
+      "relation": "Máscara anterior da Fang and Bone"
+    },
+    {
+      "id": "botw_armor_lizalfos_mask",
+      "relation": "Máscara seguinte (após duas Feras)"
+    },
+    {
+      "id": "botw_armor_majoras_mask",
+      "relation": "Combina este e os outros disfarces de Kilton"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

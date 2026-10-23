@@ -1,0 +1,174 @@
+{
+  "id": "botw_food_frozen_hearty_salmon",
+  "summary": "Salmão nutritivo congelado, menos \"peixudo\" porque o excesso de gordura foi removido. Cura 4 corações, a maior cura entre os congelados, dá Resistência ao calor por 1 minuto e vale 18 rupias.",
+  "description": "O Salmão nutritivo, peixe gordo das águas frias das Cordilheiras de Hebra e da Fronteira de Tabantha, vira Salmão nutritivo congelado quando exposto ao gelo — ou, como qualquer peixe, ao clima congelante e à água gelada da região onde vive. Segundo o texto do jogo, o salmão congelado tem gosto menos forte de peixe, porque o excesso de gordura foi removido, e é tão gelado que comê-lo aumenta temporariamente a resistência ao calor.\n\nMantém os 4 corações do salmão cru — a maior cura da tabela de comidas congeladas — e acrescenta Resistência ao calor de nível 1 por um minuto. Na venda vale 18 rupias, contra 10 do cru e 15 do Salmão nutritivo assado, que cura 4,5.",
+  "locations": [
+    "Prepara-se a partir de Salmões nutritivos em regiões de clima congelante — Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia — ou na água gelada de Hebra Falls, Hebra Headspring, Hebra Plunge e do River of the Dead.",
+    "O próprio salmão vive nas águas frias das Cordilheiras de Hebra e da Fronteira de Tabantha, a mesma região de Hebra Falls, Hebra Headspring e Hebra Plunge."
+  ],
+  "obtaining": [
+    "Largar um Salmão nutritivo no chão de uma região de clima congelante, como as Cordilheiras de Hebra ou o Monte Lanayru.",
+    "Jogar um Salmão nutritivo na água gelada (Cold Water), como a de Hebra Plunge ou a do River of the Dead.",
+    "Acertar um Salmão nutritivo com uma Flecha congelante ou com Espada álgida, Grã-Espada álgida ou Lança congelante."
+  ],
+  "uses": [
+    "A cura mais alta entre os congelados: 4 corações, com Resistência ao calor de brinde.",
+    "Venda: 18 rupias."
+  ],
+  "effects": [
+    "Recupera 4 corações.",
+    "Resistência ao calor de nível 1 (baixo) por 1 minuto."
+  ],
+  "interactions": [
+    {
+      "action": "frio_extremo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: basta largar um Salmão nutritivo no chão de uma região de clima congelante para que o ingrediente endureça e vire Salmão nutritivo congelado.",
+      "conditions": [
+        "Clima congelante: Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia (no pico nevado do Grande Platô) ou pontos altos como o topo do Castelo de Hyrule."
+      ],
+      "side_effects": [
+        "O mesmo frio fere Link aos poucos se ele não tiver Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Freezing Climate",
+        "zw:Mount Hylia"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Jogar um Salmão nutritivo na água gelada (Cold Water) das regiões frias também congela o ingrediente, que vira Salmão nutritivo congelado.",
+      "conditions": [
+        "Água gelada, como a de Hebra Falls, Hebra Headspring e Hebra Plunge (Fronteira de Tabantha) e a do River of the Dead, no Grande Platô."
+      ],
+      "side_effects": [
+        "Não entre na água: nadar nela tira meio coração a cada 0,5 s, e nenhuma roupa ou comida protege."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cold Water",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingir um Salmão nutritivo com uma Flecha congelante ou com golpes de Espada álgida, Grã-Espada álgida ou Lança congelante também produz Salmão nutritivo congelado.",
+      "applications": [
+        "Congelar a pesca ou a caça na hora, longe das regiões frias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4 corações — o mesmo do Salmão nutritivo cru — e concede Resistência ao calor de nível 1 por 1 minuto.",
+      "side_effects": [
+        "Como todo efeito temporário de comida, a Resistência ao calor substitui qualquer outro efeito de comida ou elixir que estiver ativo — inclusive um efeito refrescante mais forte ou mais longo."
+      ],
+      "applications": [
+        "Proteção curta contra o calor diurno do Deserto Gerudo sem passar pela Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Food",
+        "zw:Hearty Salmon"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 18 rupias; o Salmão nutritivo cru vale 10 e o assado, 15.",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Hearty Salmon",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Salmão nutritivo congelado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece ao expor Salmão nutritivo congelado ao fogo (se descongela ou se vira a versão assada)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O congelado que mais cura",
+      "text": "Nenhum outro item da tabela de comidas congeladas do Zelda Wiki passa de 3 corações; o Salmão nutritivo congelado cura 4.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Menos gordura, menos cheiro",
+      "text": "A descrição do jogo explica que o salmão congelado não tem um sabor tão forte de peixe porque o excesso de gordura — que o salmão acumula para viver na água fria — foi removido.",
+      "sources": [
+        "zw",
+        "zw:Hearty Salmon"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível 1 e só contra o calor do deserto",
+      "text": "Toda comida congelada dá um nível de Resistência ao calor por um minuto. Esse efeito evita o dano do calor do Deserto Gerudo de dia, mas as zonas de calor extremo do sul e do oeste do deserto pedem dois níveis, e ele não ajuda contra o clima escaldante, o fogo ou a lava de Eldin.",
+      "sources": [
+        "zw:Food",
+        "zw:Frozen Food",
+        "zw:Added Effect",
+        "zw:Extremely Hot Zone",
+        "zw:Heat"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: esse efeito do salmão só aparece em pratos de Panela.",
+    "Dá só Resistência ao calor de nível 1, insuficiente para as zonas de calor extremo do Deserto Gerudo, e não protege em Eldin.",
+    "Comer durante outro efeito temporário troca esse efeito pela Resistência ao calor de 1 minuto."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_salmon",
+      "relation": "Ingrediente cru (Corações extras na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_hearty_salmon",
+      "relation": "Versão assada do mesmo peixe"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Congela o ingrediente cru à distância"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Resistência ao calor mais longa e mais forte"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_calor"
+  ],
+  "verification_status": "verificado"
+}

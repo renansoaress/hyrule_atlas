@@ -1,0 +1,166 @@
+{
+  "id": "botw_material_palm_fruit",
+  "summary": "Fruto dos coqueiros do litoral e do deserto. Sem efeito especial, mas cura 1 coração cru e 1,5 coração assado (Coco assado), o dobro de uma maçã. Pode ser derrubado da palmeira com flechas.",
+  "description": "O Coco nasce nas palmeiras do Deserto Gerudo e do litoral de Necluda Oriental. Não concede efeito especial quando cozido, mas a descrição do jogo destaca que ele aumenta a recuperação de corações do prato — cru, já cura 1 coração inteiro, o dobro de uma maçã. Exposto ao fogo, vira Coco assado, que recupera 1,5 coração.\n\nComo as maçãs, os cocos ficam pendurados na árvore: podem ser colhidos subindo na palmeira, derrubados com flechas ou recolhidos depois de derrubar a palmeira. Também são vendidos no Bazar Kara Kara e pelo mercador ambulante Chumin, e servem de ingrediente para o corante amarelo-claro na Tinturaria Kochi.",
+  "locations": [
+    "Palmeiras do Deserto Gerudo e do litoral de Necluda Oriental (os dois locais citados pelo compendium).",
+    "Lojas: armazém de Emri no Bazar Kara Kara (Kara Kara Bazaar) e o mercador Chumin, que circula entre a Vila Lurelin e o Highland Stable — 16 rupias cada."
+  ],
+  "obtaining": [
+    "Subir na palmeira e colher, derrubar os frutos com flechas ou derrubar a palmeira.",
+    "Rinoxes comuns podem deixar cocos ao serem derrotados.",
+    "Comprar com Emri ou Chumin."
+  ],
+  "uses": [
+    "Cura: 1 coração cru, 1,5 coração assado.",
+    "Ingrediente de pratos de fruta (Compota de frutas, Compota farta de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos) para aumentar a cura.",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito especial; aumenta a quantidade de corações recuperados pelo prato."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto de uma fogueira ou no clima escaldante de Eldin, assa sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um coco largado no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "palmeira",
+      "status": "confirmado",
+      "result": "Derrubar a palmeira com uma arma cortante faz os cocos caírem.",
+      "conditions": ["Palmeira fina ou média o bastante para ser cortada."],
+      "kind": "mecanica",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "action": "flecha",
+      "variant": "palmeira",
+      "status": "confirmado",
+      "result": "Flechas disparadas contra a copa derrubam os cocos.",
+      "applications": ["Colher cocos no alto sem escalar a palmeira."],
+      "kind": "mecanica",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Em contato com o fogo, vira Coco assado, que recupera 1,5 coração.",
+      "conditions": ["Chamas diretas: fogueira, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "side_effects": ["A versão assada não pode receber efeitos; só cura."],
+      "produces": ["botw_food_baked_palm_fruit"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Coco assado.",
+      "produces": ["botw_food_baked_palm_fruit"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima escaldante (Cânion de Eldin, Montanha da Morte), vira Coco assado.",
+      "produces": ["botw_food_baked_palm_fruit"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela no frio extremo; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o coco flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o coco não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um coco largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Sem efeito próprio, aumenta a cura do prato. Entra em todas as receitas que aceitam qualquer fruta, inclusive Torta de frutas e Frutas com mel.",
+      "applications": ["Encorpar a cura de um prato de efeito sem trocar o efeito principal."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Fruit"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias; assado, vale 6 rupias segundo a tabela de comidas assadas.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O dobro da cura de uma maçã",
+      "text": "Entre as frutas sem efeito, o Coco é a que mais cura cru: 1 coração, contra meio coração da Maçã e da Framboesa. Assado, chega a 1,5 coração.",
+      "sources": ["comp", "zw", "zw:Roasted Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Melhor servido quente",
+      "text": "A descrição do Coco assado recomenda comê-lo no momento em que o suco começa a escorrer durante o cozimento.",
+      "sources": ["zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "No deserto, derrube cocos das palmeiras com flechas e asse-os numa fogueira: viram uma cura empilhável de 1,5 coração."
+  ],
+  "limitations": [
+    "Não dá nenhum efeito especial, cru, assado ou cozido."
+  ],
+  "related": [
+    { "id": "botw_food_baked_palm_fruit", "relation": "Resultado de expor o coco ao fogo" },
+    { "id": "botw_food_simmered_fruit", "relation": "Prato de fruta genérico" },
+    { "id": "botw_food_fruit_pie", "relation": "Aceita qualquer fruta exceto maçã" },
+    { "id": "botw_food_honeyed_fruits", "relation": "Aceita qualquer fruta exceto maçã" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixar cocos" },
+    { "id": "botw_object_tree", "relation": "Palmeiras: colheita, flechas ou derrubada" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo-claro" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "verificado"
+}

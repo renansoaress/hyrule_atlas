@@ -1,0 +1,103 @@
+{
+  "id": "botw_food_simmered_fruit",
+  "summary": "Frutas cozidas até ficarem macias, de um a três tipos. A fruta de efeito define a variante; Maçã, Coco e Framboesa só somam cura e alguns segundos de duração.",
+  "description": "A Compota de frutas é feita só com frutas — até três tipos diferentes; com quatro tipos, o resultado é Compota farta de frutas. O inventário descreve um prato doce, de frutas amontoadas na panela e cozidas até amolecer, que recupera pelo menos um coração. Maçã, Coco e Framboesa não têm efeito e dão a versão comum; as frutas de efeito dão as variantes: Durião nutritivo (Corações extras), Grãos de lótus-fugaz (Velocidade aumentada), Pimenta de fogo (Resistência ao frio), Fruta isolante (Resistência a choques), Bananas valentes (Ataque aumentado) e Melancia oásica (Resistência ao calor).\n\nO artigo sobre comida do Zelda Wiki usa justamente esta compota para explicar a duração: uma Melancia oásica dá 2:30 de Resistência ao calor, duas dão 5:00, e uma melancia com uma Maçã dá 3:00, porque ingredientes sem efeito também somam tempo. Atenção às outras receitas de fruta testadas antes: com Manteiga de cabra ou Mel de abelha a Maçã vira Maçã quente na manteiga ou Maçã com mel, e uma fruta com legume vira Frutas no vapor. A Pimenta de fogo sozinha forma Pimentas salteadas, não compota.",
+  "obtaining": [
+    "Cozinhar numa Panela de uma a cinco frutas, de no máximo três tipos diferentes."
+  ],
+  "uses": [
+    "Prato de efeito com frutas colhidas, sem ingredientes comprados.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera pelo menos um coração.",
+    "Efeito definido pelas frutas: Corações extras (Durião nutritivo), Velocidade aumentada (Grãos de lótus-fugaz), Resistência ao frio (Pimenta de fogo), Resistência a choques (Fruta isolante), Ataque aumentado (Bananas valentes) ou Resistência ao calor (Melancia oásica); a fonte também lista versões com outros efeitos usando ingredientes extras."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito das frutas.",
+      "conditions": [
+        "Exemplo da fonte: 1 Melancia oásica = 2:30 de Resistência ao calor; 2 = 5:00; Melancia + Maçã = 3:00."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "quatro tipos de fruta, manteiga, mel ou legume",
+      "status": "confirmado",
+      "result": "Quatro tipos de fruta formam Compota farta de frutas; Maçã com Manteiga de cabra forma Maçã quente na manteiga; frutas com Mel de abelha formam Maçã com mel ou Frutas com mel; fruta com legume forma Frutas no vapor.",
+      "produces": [
+        "botw_food_copious_simmered_fruit",
+        "botw_food_hot_buttered_apple",
+        "botw_food_honeyed_apple",
+        "botw_food_honeyed_fruits",
+        "botw_food_steamed_fruit"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Meal"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Frutas neutras também contam tempo",
+      "text": "Ingredientes sem efeito acrescentam duração: cada fruta neutra soma 0:30. Por isso uma Melancia oásica com uma Maçã dura 3:00, e não 2:30.",
+      "sources": [
+        "zw:Food",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Quatro ou mais tipos de fruta mudam a receita.",
+    "Pimenta de fogo sozinha forma outro prato."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hydromelon",
+      "relation": "Fruta do exemplo de duração (Resistência ao calor)"
+    },
+    {
+      "id": "botw_material_apple",
+      "relation": "Fruta neutra para a versão comum"
+    },
+    {
+      "id": "botw_food_copious_simmered_fruit",
+      "relation": "Resultado com quatro tipos de fruta"
+    },
+    {
+      "id": "botw_food_steamed_fruit",
+      "relation": "Fruta com legume, erva ou flor"
+    },
+    {
+      "id": "botw_food_sauteed_peppers",
+      "relation": "O que sai com Pimenta de fogo sozinha"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

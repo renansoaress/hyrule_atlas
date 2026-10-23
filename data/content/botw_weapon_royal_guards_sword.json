@@ -1,0 +1,183 @@
+{
+  "id": "botw_weapon_royal_guards_sword",
+  "summary": "Réplica sheikah da Espada Mestra, feita com tecnologia ancestral para enfrentar a Grande Calamidade. Ataque altíssimo (48), mas durabilidade de só 14. Encontrada no Castelo de Hyrule; Parcy a troca por um Rubi.",
+  "description": "A Espada da guarda real faz parte do equipamento da guarda real (Royal Guard's Series), forjado cem anos atrás com tecnologia ancestral para armar a guarda real contra a Grande Calamidade. Segundo o jogo, é uma réplica da \"espada que sela as trevas\" feita pelos Sheikah, mas a baixa durabilidade a tornou ineficiente. É o exemplo clássico do arquétipo: ataque muito alto (48) às custas de durabilidade (14). Aparece com frequência no Castelo de Hyrule, tanto espalhada pelo chão quanto nas mãos de inimigos.\n\nTambém tem utilidade fora do combate: na Missão secundária \"The Royal Guard's Gear\", Parcy, viajante do Estábulo Riverside (Riverside Stable), quer ver uma peça do equipamento da guarda real e paga uma rupia dourada; depois disso, sempre que Link fala com ela carregando uma Espada da guarda real, ela pede a espada em troca de um Rubi. Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser recuperada com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Castelo de Hyrule, no chão e com os inimigos que o ocupam."
+  ],
+  "obtaining": [
+    "Explorar o Castelo de Hyrule ou derrotar inimigos que a empunhem lá dentro.",
+    "Armas que estão no chão ou com inimigos voltam a aparecer depois de cada Lua de sangue, se não estiverem na algibeira de Link.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Golpes de dano muito alto contra chefes e inimigos fortes, enquanto durar.",
+    "Missão secundária \"The Royal Guard's Gear\" (Parcy, rupia dourada) e troca posterior por um Rubi a cada espada.",
+    "Arremesso final de altíssimo dano: o golpe que quebra a arma é crítico (96 de dano base)."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo; quebra muito rápido.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "applications": [
+        "Com só 14 de durabilidade, terminar a vida útil da espada com um arremesso aproveita o dano dobrado sobre o ataque 48."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos do Castelo de Hyrule a empunham com frequência.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "glitch",
+      "title": "Rubis infinitos com Parcy",
+      "text": "Existe um glitch em que Parcy recebe a Espada da guarda real, mas o item continua na algibeira de Link, permitindo trocar a mesma espada por Rubis indefinidamente. O mesmo vale para o Montante da guarda real.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus de ataque enorme",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +9 a +16 (nível comum) ou +17 a +33 (nível dourado), mas o bônus de durabilidade é pequeno: +2 a +3 (ou +4 a +7 no nível dourado). Lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite. Com o bônus dourado máximo, o ataque chega a 81.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cópia que falhou",
+      "text": "A espada é uma tentativa sheikah de reproduzir a Espada Mestra com tecnologia ancestral; o próprio jogo admite que a pouca durabilidade a tornou ineficiente.",
+      "sources": [
+        "jogo",
+        "zw",
+        "zw:Ancient Technology"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar espadas da guarda real para trocá-las por Rubis com Parcy depois de concluir a missão.",
+    "Usá-las só em golpes decisivos e no arremesso final, já que a durabilidade é de apenas 14."
+  ],
+  "limitations": [
+    "Durabilidade baixíssima (14).",
+    "Metálica: perigosa em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Espada original que ela tenta copiar"
+    },
+    {
+      "id": "botw_weapon_royal_guards_claymore",
+      "relation": "Mesmo arquétipo (duas mãos); também aceito por Parcy"
+    },
+    {
+      "id": "botw_weapon_royal_guards_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_bow_royal_guards_bow",
+      "relation": "Mesmo arquétipo (arco)"
+    },
+    {
+      "id": "botw_shield_royal_guards_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Recompensa de Parcy por cada espada"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

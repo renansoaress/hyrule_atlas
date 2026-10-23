@@ -1,0 +1,141 @@
+{
+  "id": "botw_material_silent_princess",
+  "summary": "A flor favorita da princesa Zelda, rara e ameaçada, que só prospera na natureza. Cozida, dá Furtividade aumentada; é exigida em todos os níveis da Túnica do campeão e da Máscara de Sheik.",
+  "description": "A Princesa plácida é uma flor rara, considerada em risco de extinção. Uma das Memórias recuperadas mostra Zelda explicando a Link que ela era a sua favorita e que, apesar dos esforços, ninguém conseguia cultivá-la em casa: \"a princesa só prospera aqui, na natureza\". Na época de Breath of the Wild, temia-se que tivesse desaparecido, mas ela voltou a ser vista na natureza — sobretudo perto das Fontes das Grandes Fadas. O compendium cita os Cerros de Hyrule e Necluda Ocidental.\n\nCrua, não recupera corações; cozida, concede Furtividade aumentada. Mas o seu maior valor está nas melhorias de armadura: a Túnica do campeão pede Princesas plácidas nos quatro níveis, a Máscara de Sheik também, e o último nível de cada peça do Conjunto furtivo exige 5 delas. Na Tinturaria Kochi, é o ingrediente do corante branco. O casal Tye e Sorelia viaja há meses atrás da flor por causa de uma lenda sobre o amor.",
+  "locations": [
+    "Perto das Fontes das Grandes Fadas em toda Hyrule.",
+    "O compendium cita os Cerros de Hyrule e Necluda Ocidental."
+  ],
+  "obtaining": [
+    "Colher na natureza. Os dados estruturados não listam lojas que vendam a flor."
+  ],
+  "uses": [
+    "Melhoria de armadura: Túnica do campeão (3 no 1º nível; 3 + 2 Lascas do chifre de Farosh no 2º; 3 + 2 Lascas do chifre de Naydra no 3º; 10 + 2 Lascas do chifre de Dinraal no 4º).",
+    "Melhoria de armadura: Máscara de Sheik (1, 2, 3 e 4 Princesas plácidas, cada vez com o mesmo número de Fragmentos de estrela).",
+    "Melhoria de armadura: 4º nível de Máscara furtiva, Peitoral furtivo e Meia-calça furtiva (10 Trutas discretas + 5 Princesas plácidas por peça).",
+    "Pratos de Furtividade aumentada.",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante branco na Tinturaria Kochi.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Cozida: Furtividade aumentada (até o nível 3)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a flor no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a flor largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe uma versão assada da Princesa plácida na lista de comidas assadas, e as fontes não dizem o que acontece se ela for exposta ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-la numa fogueira; ela não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da flor na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a flor não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Furtividade aumentada. Mais unidades prolongam o efeito; combinada com Beladona azul ou Silencimelo, prolonga e pode elevar o nível, até o máximo de 3.",
+      "side_effects": ["Correr em disparada faz barulho seja qual for o nível de furtividade."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Stealth"]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Crua, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": ["comp", "zw:Flower"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 10 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quarenta e quatro flores para tudo",
+      "text": "Somando as melhorias que pedem a flor, são 19 para a Túnica do campeão (3 + 3 + 3 + 10), 10 para a Máscara de Sheik (1 + 2 + 3 + 4) e 15 para o último nível das três peças do Conjunto furtivo: 44 Princesas plácidas no total. Não use as que vai precisar na cozinha.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A flor da princesa",
+      "text": "Na Memória recuperada \"Silent Princess\", Zelda mostra a flor a Link, diz que é uma espécie rara e ameaçada e lamenta que ainda não tenham conseguido cultivá-la domesticamente. Na versão japonesa, a fala é mais sombria: ela imagina que talvez a extinção da \"princesa\" seja inevitável.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A lenda de Tye e Sorelia",
+      "text": "O casal Tye e Sorelia procura a flor há meses. Segundo a lenda que eles contam, quem jurar amor diante de uma Princesa plácida recém-colhida viverá uma vida abençoada ao lado do parceiro. Até então, a busca não deu certo.",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Ao visitar cada Fonte da Grande Fada, colha as Princesas plácidas próximas: é onde elas costumam aparecer.",
+    "Reserve as flores para a Túnica do campeão e a Máscara de Sheik antes de usá-las em pratos de furtividade, já que Beladona azul e Silencimelo dão o mesmo efeito na panela."
+  ],
+  "limitations": [
+    "Crua não cura nada.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ela não está documentado."
+  ],
+  "related": [
+    { "id": "botw_armor_champions_tunic", "relation": "Exige a flor nos quatro níveis de melhoria" },
+    { "id": "botw_armor_sheiks_mask", "relation": "Exige a flor nos quatro níveis de melhoria" },
+    { "id": "botw_material_star_fragment", "relation": "Acompanha a flor nas melhorias da Máscara de Sheik" },
+    { "id": "botw_armorset_stealth_set", "relation": "4º nível: 10 Trutas discretas + 5 flores por peça" },
+    { "id": "botw_creature_stealthfin_trout", "relation": "Acompanha a flor no 4º nível do Conjunto furtivo" },
+    { "id": "botw_material_blue_nightshade", "relation": "Outro ingrediente de Furtividade aumentada" },
+    { "id": "botw_material_silent_shroom", "relation": "Outro ingrediente de Furtividade aumentada" },
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "A flor cresce perto das fontes" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante branco" }
+  ],
+  "capabilities": ["furtividade"],
+  "verification_status": "parcial"
+}

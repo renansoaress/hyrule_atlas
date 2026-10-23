@@ -1,0 +1,145 @@
+{
+  "id": "botw_food_sneaky_river_escargot",
+  "summary": "Caramujo discreto assado inteiro na concha, de carne macia e um pouco borrachuda — tirá-la inteira de uma vez dá \"sensação de vitória\". Cura 1,5 coração (cru, 1) e vale 9 rupias.",
+  "description": "O Caramujo discreto, que brilha à noite nas margens de Necluda Ocidental e da Grande Nascente de Lanayru, vira Escargô discreto ao ser assado no fogo ou no clima escaldante. O texto do jogo descreve um caramujo assado inteiro na concha, de carne macia e um tanto borrachuda, e diz que puxar toda a carne de uma só vez enche quem come de uma sensação de realização.\n\nA cura sobe de 1 para 1,5 coração e o valor, de 6 para 9 rupias. O efeito Furtividade aumentada, que o caramujo daria cozido na Panela, se perde. A versão congelada (Caramujo discreto congelado) vale 10 rupias e dá Resistência ao calor.",
+  "locations": [
+    "Prepara-se a partir de Caramujos discretos (margens de Necluda Ocidental e da Grande Nascente de Lanayru) numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um Caramujo discreto ao fogo ou largá-lo no chão em clima escaldante.",
+    "Derrotar um Rinox azul: é uma das comidas mais raras da tabela dele (3%, lote de 5)."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 9 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Caramujo discreto — queima por alguns instantes e se transforma em Escargô discreto.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Escargô discreto.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Caramujo discreto no chão para que o ingrediente asse sozinho e vire Escargô discreto.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração do Caramujo discreto cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 9 rupias; o Caramujo discreto cru vale 6.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Sneaky River Snail"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Escargô discreto como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O prazer de tirar a carne inteira",
+      "text": "A descrição do jogo diz que conseguir puxar toda a carne da concha de uma só vez dá uma sensação de realização.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Raro no Rinox azul",
+      "text": "Na tabela de comidas do Rinox azul, o Escargô discreto divide com o Escargô nutritivo a menor chance: 3%.",
+      "sources": [
+        "zw",
+        "zw:Blue Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Furtividade aumentada: o efeito do caramujo só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_sneaky_river_snail",
+      "relation": "Ingrediente cru (Furtividade aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_river_snail",
+      "relation": "Versão congelada do mesmo caramujo"
+    },
+    {
+      "id": "botw_food_blueshell_escargot",
+      "relation": "O outro escargô do jogo"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

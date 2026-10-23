@@ -1,0 +1,77 @@
+{
+  "id": "botw_mechanic_perfect_dodge",
+  "summary": "Saltar para trás ou para o lado no último instante antes de um golpe (travado no alvo com ZL): o tempo desacelera e Link pode desferir um Frenesi. O salto para trás evita ataques horizontais e verticais diretos.",
+  "description": "A Esquiva perfeita acontece quando Link pula para fora do caminho de um ataque inimigo no último momento. Há dois saltos possíveis: o salto lateral (Side Hop) e o salto para trás (backflip), executado segurando ZL, inclinando o direcional esquerdo para baixo e apertando X. O salto para trás é o indicado contra ataques horizontais e golpes que descem diretamente sobre Link.\n\nQuando a esquiva é perfeita, o tempo desacelera e Link ganha a chance de um Frenesi (Flurry Rush), uma sequência rápida de golpes cujo número depende da arma: sete com armas de uma mão, quatro com armas de duas mãos e nove com lanças. Se o tempo do salto não for perfeito, o salto para trás ainda permite emendar um golpe aéreo (Jump Slash).",
+  "locations": [
+    "Pode ser feita em qualquer combate. O monge do Santuário Ta'loh Naeg, perto da Vila Kakariko, ensina o salto lateral e depois o salto para trás."
+  ],
+  "obtaining": [
+    "Disponível desde o início; não precisa ser aprendida. A entrada correspondente nos controles de habilidades é desbloqueada depois da primeira Esquiva perfeita."
+  ],
+  "uses": [
+    "Abrir o Frenesi contra inimigos fortes, como Centaleões.",
+    "Evitar golpes pesados sem depender de escudo."
+  ],
+  "effects": [
+    "Desaceleração do tempo e oportunidade de Frenesi."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Travado no inimigo (ZL), saltar para trás (direcional para baixo + X) ou para o lado no instante final do ataque desacelera o tempo e libera o Frenesi.",
+      "conditions": [
+        "Estar travado no alvo com ZL.",
+        "Saltar no último momento antes do impacto."
+      ],
+      "side_effects": ["Esquiva fora de tempo é só um salto comum; após o salto para trás, ainda dá para emendar um golpe aéreo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Backflip", "zw:Side Hopping", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "O número de golpes do Frenesi depende da arma equipada no início: sete (uma mão), quatro (duas mãos) ou nove (lança). Com arma de duas mãos, se Link não der o quarto golpe, precisa de um instante para se recuperar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Centaleão",
+      "status": "confirmado",
+      "result": "A maioria dos ataques dos Centaleões pode ser esquivada com Esquiva perfeita, deixando-os vulneráveis.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Ensinada, mas não obrigatória",
+      "text": "O santuário Ta'loh Naeg ensina primeiro o salto lateral e depois o salto para trás, cada um seguido de um Frenesi; mas Link pode fazer o salto para trás sem passar por lá, e a entrada nos controles aparece depois da primeira Esquiva perfeita de qualquer tipo.",
+      "sources": ["zw:Backflip", "zw:Ta'loh Naeg Shrine"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Qual salto usar",
+      "text": "O salto para trás evita ataques horizontais e golpes que descem diretamente sobre Link; o salto lateral é a alternativa ensinada primeiro no santuário.",
+      "sources": ["zw:Backflip", "zw:Ta'loh Naeg Shrine"]
+    }
+  ],
+  "advanced_uses": [
+    "Começar a luta com uma lança equipada: a Esquiva perfeita rende um Frenesi de nove golpes, o mais longo do jogo."
+  ],
+  "limitations": [
+    "Exige tempo preciso; não há proteção se o salto sair cedo ou tarde.",
+    "Com armas de duas mãos o Frenesi tem só quatro golpes."
+  ],
+  "related": [
+    { "id": "botw_mechanic_flurry_rush", "relation": "Sequência liberada pela Esquiva perfeita" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Técnica equivalente com escudo" },
+    { "id": "botw_monster_lynel", "relation": "Ataques que podem ser esquivados" },
+    { "id": "botw_monster_guardian_scout_ii", "relation": "Adversário do treino no Santuário Ta'loh Naeg" },
+    { "id": "botw_weapon_travelers_spear", "relation": "Exemplo de lança: Frenesi de nove golpes" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

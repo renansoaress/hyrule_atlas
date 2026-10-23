@@ -1,0 +1,135 @@
+{
+  "id": "botw_monster_sky_octorok_mm",
+  "summary": "Exclusivo do Modo Mestre: Octorocs inofensivos que sustentam no ar plataformas de madeira com baús e monstros. Uma flecha estoura cada um e derruba o conteúdo; sobem quando ouvem um assobio ou a corneta dos Koboblins.",
+  "description": "O Octoroc celeste só aparece no Modo Mestre, do Pacote de Conteúdo Adicional 1. Segundo o compendium, é um Octoroc de baixo nível, outrora aquático, cujo saco de ar evoluiu para mantê-lo flutuando; outros monstros aproveitam essa habilidade para montar fortalezas flutuantes. São treinados para subir quando ouvem um assobio, mas não atacam.\n\nVoam em grupos de três ou quatro segurando tábuas de madeira com Baús do tesouro e inimigos, perto de pontes e Torres Sheikah ou sobre corpos d'água. O Zelda Wiki confirma que eles sobem ao ouvir a corneta de um Koboblin ou o assobio de Link. Cada um estoura com uma única flecha, e, quando caem, o conteúdo da plataforma cai junto — esses baús costumam guardar armas fortes e raras, como as da linha da guarda real. São inofensivos, não deixam materiais e reaparecem sem precisar de Lua de sangue.",
+  "locations": [
+    "Apenas no Modo Mestre, em toda Hyrule: no céu perto de pontes e Torres Sheikah ou sobre corpos d'água."
+  ],
+  "obtaining": [
+    "Não deixa materiais.",
+    "Derrubá-los faz cair os Baús do tesouro e os monstros da plataforma que sustentam.",
+    "Reaparecem sem Lua de sangue."
+  ],
+  "uses": [
+    "Acesso aos baús das plataformas flutuantes, que costumam ter armas fortes e raras (como as da guarda real).",
+    "Registro no compendium do Modo Mestre."
+  ],
+  "effects": [
+    "Nenhum ataque: são inofensivos para Link."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma única flecha estoura um Octoroc celeste; derrubando os que sustentam a plataforma, o conteúdo cai.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Octorok"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Estoura com um único golpe, segundo o Zelda Wiki — mas, voando, raramente fica ao alcance de armas corpo a corpo.",
+      "kind": "mecanica",
+      "sources": ["zw:Octorok"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Assobiar perto deles, ou o toque de corneta de um Koboblin, faz os Octorocs celestes subirem com a plataforma.",
+      "side_effects": ["Assobiar perto deles por qualquer motivo, como chamar o cavalo, também os faz subir."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo no Octoroc celeste ou nas tábuas que ele segura."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo no Octoroc celeste."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques no Octoroc celeste."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Muitos voam sobre a água, mas as fontes não dizem o que acontece com o conteúdo que cai nela."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões no Octoroc celeste."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o uso de Bomba remota contra o Octoroc celeste."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Estátis+ pode segurar a plataforma no ar."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Sustenta plataformas de madeira com baús e inimigos, formando as fortalezas flutuantes do Modo Mestre.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Master Mode"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Outros monstros o usam para manter fortalezas no ar, e ele sobe quando ouve a corneta de um Koboblin.",
+      "kind": "curiosidade",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Treinados para o assobio",
+      "text": "O compendium diz que os Octorocs celestes são treinados para subir quando ouvem um assobio. Na prática, tanto o assobio de Link quanto a corneta de alarme dos Koboblins os fazem ganhar altitude.",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Únicos Octorocs sem espólio",
+      "text": "Todos os outros Octorocs deixam Tentáculo, Olho e Balão de Octoroc; o celeste não deixa nenhuma parte de monstro. Também não precisa de Lua de sangue para reaparecer.",
+      "sources": ["zw:Octorok", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Baús com armas raras",
+      "text": "O artigo do Modo Mestre observa que os baús das plataformas costumam guardar armas fortes e raras, como as da linha da guarda real.",
+      "sources": ["zw:Master Mode"]
+    }
+  ],
+  "advanced_uses": [
+    "Aproximar-se sem assobiar e sem deixar o vigia Koboblin tocar a corneta, e então estourar os Octorocs com flechas para derrubar o baú perto de Link."
+  ],
+  "limitations": [
+    "Não existe no modo normal.",
+    "O conteúdo cai onde a plataforma estiver — às vezes sobre a água."
+  ],
+  "related": [
+    { "id": "botw_mechanic_master_mode", "relation": "Modo em que aparece" },
+    { "id": "botw_treasure_treasure_chest", "relation": "Baús carregados nas plataformas" },
+    { "id": "botw_monster_bokoblin", "relation": "A corneta dos Koboblins o faz subir" },
+    { "id": "botw_monster_water_octorok", "relation": "Outro Octoroc que flutua (na chuva)" },
+    { "id": "botw_weapon_royal_guards_sword", "relation": "Exemplo de arma rara guardada nos baús" }
+  ],
+  "capabilities": ["faz_flutuar", "habilidade_especial"],
+  "verification_status": "parcial"
+}

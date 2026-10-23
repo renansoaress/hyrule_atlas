@@ -1,0 +1,112 @@
+{
+  "id": "botw_object_barrel",
+  "summary": "Barril comum que guarda materiais, comida, flechas e às vezes rupias, liberados ao ser quebrado. Pode ser empurrado, erguido por Balões de Octoroc e servir de esconderijo — os gigantes por dentro.",
+  "description": "Barris aparecem por toda Hyrule e funcionam como pequenos depósitos: ao serem destruídos, liberam materiais, alimentos ou flechas. Em BOTW as rupias não caem de grama nem da maioria dos monstros, e os barris estão entre os lugares onde elas podem ser achadas, junto de pedras, caixas e baús. Armas como a Espada larga do soldado e a Espada do cavaleiro destroem barris.\n\nAlém do conteúdo, o barril é útil como objeto: pode ser empurrado (a dica do jogo sugere tirar proveito disso), recebe Balões de Octoroc (bastam dois para fazê-lo subir) e serve de esconderijo. Existem barris gigantes, raros, dentro dos quais Link se esconde para não ser detectado, e no Esconderijo do Clã Yiga ele pode se ocultar sob os barris da sala para passar despercebido. Monstros também tiram proveito deles: Koboblins sem arma pegam barris próximos e os arremessam em Link.",
+  "locations": [
+    "Por toda Hyrule: acampamentos de monstros, estábulos, vilas e ruínas.",
+    "Barris de pedra aparecem dentro de Santuários.",
+    "Esconderijo do Clã Yiga, onde servem para Link se esconder."
+  ],
+  "obtaining": [
+    "Objeto do cenário; alguns amiibos lidos com a runa amiibo também fazem surgir barris com itens."
+  ],
+  "uses": [
+    "Quebrar para obter materiais, comida, flechas e rupias.",
+    "Empurrar pelo cenário, como sugere a dica \"Pushing Objects\" do jogo.",
+    "Esconder-se dentro de barris gigantes ou sob barris no Esconderijo do Clã Yiga.",
+    "Missão secundária \"Balloon Flight\", no Estábulo da Floresta (Woodland Stable): fazer um barril voar com Balões de Octoroc."
+  ],
+  "effects": [
+    "Nenhum efeito próprio; o valor está no conteúdo e no uso como cobertura."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes de arma destroem o barril e liberam o conteúdo (materiais, comida, flechas ou rupias).",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Soldier's Broadsword", "zw:Rupee"]
+    },
+    {
+      "action": "usar",
+      "variant": "empurrar",
+      "status": "confirmado",
+      "result": "Barris podem ser empurrados pelo cenário.",
+      "kind": "mecanica",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Barris gigantes permitem que Link se esconda dentro deles; no Esconderijo do Clã Yiga, ele pode se ocultar sob os barris para passar pelos guardas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Yiga Clan Hideout"]
+    },
+    {
+      "action": "vento",
+      "variant": "Balões de Octoroc",
+      "status": "confirmado",
+      "result": "Com pelo menos dois Balões de Octoroc presos, o barril flutua e sobe.",
+      "kind": "mecanica",
+      "sources": ["zw:Octo Balloon", "zw:Balloon Flight"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins pegam barris próximos e os arremessam em Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um barril comum exposto ao fogo; a página de Fogo diz que madeira em geral é inflamável, mas não cita barris."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre barris comuns."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As fontes não informam o material dos barris nem se Magnétis os afeta."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não dizem se o barril comum pode ser congelado com Estátis."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Onde estão as rupias de BOTW",
+      "text": "Ao contrário de outros jogos da série, cortar grama e derrotar a maioria dos monstros não dá rupias em BOTW. Barris, pedras, caixas e baús estão entre os lugares onde elas aparecem.",
+      "sources": ["zw:Rupee"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O barril voador de Shamae",
+      "text": "Na Missão secundária \"Balloon Flight\", a menina Shamae, do Estábulo da Floresta, pede que Link prenda Balões de Octoroc ao barril ao lado dela; são necessários pelo menos dois para que ele comece a flutuar.",
+      "sources": ["zw:Balloon Flight"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar os barris do Esconderijo do Clã Yiga como cobertura móvel para atravessar salas vigiadas."
+  ],
+  "limitations": [
+    "O conteúdo é aleatório entre materiais, comida, flechas e rupias.",
+    "Monstros podem arremessá-lo contra Link."
+  ],
+  "related": [
+    { "id": "botw_object_explosive_barrel", "relation": "Versão com pólvora, que explode" },
+    { "id": "botw_object_wooden_box", "relation": "Outro contêiner quebrável do cenário" },
+    { "id": "botw_material_octo_balloon", "relation": "Faz o barril flutuar" },
+    { "id": "botw_monster_bokoblin", "relation": "Arremessa barris em Link" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Alguns amiibos fazem surgir barris" },
+    { "id": "botw_weapon_soldiers_broadsword", "relation": "Exemplo de arma que destrói barris" }
+  ],
+  "capabilities": ["furtividade"],
+  "verification_status": "parcial"
+}

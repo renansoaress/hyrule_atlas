@@ -1,0 +1,102 @@
+{
+  "id": "botw_food_sauteed_nuts",
+  "summary": "Bolotas e Nozes salteadas, o petisco do aventureiro apressado. Não tem efeito nem variantes, mas misturar os dois tipos de noz rende mais cura do que usar um só.",
+  "description": "As Nozes salteadas são feitas só com Bolotas, Nozes ou as duas juntas; o inventário as chama de petisco perfeito para o aventureiro sempre em movimento. Como as duas castanhas são neutras, o prato nunca tem efeito, e não existem variações: as castanhas estão entre os poucos ingredientes \"de apoio\" que podem ir sozinhos à panela, e quase qualquer outro ingrediente leva a outra receita (com uma fruta, por exemplo, sai Compota de frutas). Já com Arroz hyliano o resultado é Comida duvidosa.\n\nO detalhe que vale conhecer está na cura. Sozinhas, cada Bolota ou Noz dá meio coração depois de cozida (cinco castanhas iguais dão 2,5 corações). Misturando os dois tipos, cada tipo recebe um bônus de meio coração por ser cozido \"com outro ingrediente\": cinco castanhas mistas, em qualquer proporção, chegam a 3,5 corações. O preço também varia: uma única Bolota é vendida por 8 rupias, uma exceção à regra de arredondamento, e cinco Nozes chegam a 50 rupias.",
+  "obtaining": [
+    "Cozinhar numa Panela de uma a cinco Bolotas e/ou Nozes, sem outros ingredientes."
+  ],
+  "uses": [
+    "Cura pequena com castanhas colhidas em árvores.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera de 0,5 a 3,5 corações, conforme a quantidade e a mistura de castanhas.",
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações (meio coração por castanha, com bônus quando os dois tipos são misturados), sem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Arroz hyliano",
+      "status": "confirmado",
+      "result": "Arroz hyliano com castanhas resulta em Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw"
+      ],
+      "side_effects": [
+        "Pela tabela do prato, uma Bolota rende 8 rupias e cinco Nozes, 50; cinco Bolotas, 30."
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Misture as castanhas",
+      "text": "Cinco Nozes iguais rendem 2,5 corações, mas quatro Nozes e uma Bolota (ou qualquer outra mistura dos dois tipos) rendem 3,5 corações, porque Bolota e Noz ganham cada uma meio coração extra quando cozidas com outro ingrediente.",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Nunca tem efeito.",
+    "Arroz hyliano junto resulta em Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_material_acorn",
+      "relation": "Castanha aceita"
+    },
+    {
+      "id": "botw_material_chickaloo_tree_nut",
+      "relation": "Castanha aceita"
+    },
+    {
+      "id": "botw_food_nutcake",
+      "relation": "Bolo feito com as castanhas"
+    },
+    {
+      "id": "botw_food_roasted_acorn",
+      "relation": "Bolota tostada na fogueira, sem panela"
+    },
+    {
+      "id": "botw_food_roasted_tree_nut",
+      "relation": "Noz tostada na fogueira, sem panela"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhar castanhas com arroz"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

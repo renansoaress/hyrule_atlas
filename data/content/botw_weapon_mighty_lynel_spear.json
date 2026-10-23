@@ -1,0 +1,206 @@
+{
+  "id": "botw_weapon_mighty_lynel_spear",
+  "summary": "Lança centaleônica com peso e gume reforçados (ataque 20, durabilidade 35): pesadíssima para um hyliano, um Centaleão racha rocha com ela. Usada pelos Centaleões de juba azul.",
+  "description": "A Lança centaleônica forte teve o peso e o gume reforçados pelos Centaleões. Segundo o jogo, é pesadíssima para um hyliano, mas um Centaleão consegue partir rochas com um só golpe dela. É usada pelos Centaleões de juba azul espalhados por Hyrule — no Modo Mestre, pelos de juba branca — e é mais comum na Grande Floresta de Hyrule e no Coração de Akkala.\n\nAssim como a Lança centaleônica, pode se perder para sempre: deixa de aparecer quando os Centaleões de juba azul sobem para juba branca (no Modo Mestre, quando os de juba branca viram prateados). É de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Grande Floresta de Hyrule e Coração de Akkala, com os Centaleões dessas regiões."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão de juba azul (no Modo Mestre, um de juba branca): todo Centaleão derrotado deixa cair a arma.",
+    "A Lua de sangue revive os Centaleões, permitindo repetir a luta — até que eles subam de nível."
+  ],
+  "uses": [
+    "Lança de metal forte para a segunda metade do jogo.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Empunhada pelos Centaleões de juba azul (de juba branca no Modo Mestre). Como todo Centaleão, eles só largam a arma ao serem derrotados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Item que pode se perder",
+      "text": "A lança é um item permanentemente perdível: deixa de aparecer quando os Centaleões de juba azul sobem de nível para juba branca; no Modo Mestre, quando os de juba branca passam a prateados.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes de graça sobre o Centaleão",
+      "text": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes com qualquer arma sem gastar durabilidade, e o Zelda Wiki registra que esses golpes também contam como acerto crítico. É a melhor forma de usar a Lança centaleônica forte contra o próprio tipo de monstro que a fornece.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança centaleônica forte pode surgir com um bônus branco (comum) — ataque +3 a +5, durabilidade +4 a +7 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +6 a +9, durabilidade +8 a +16 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "limitations": [
+    "Pode deixar de existir no jogo depois que os Centaleões sobem de nível.",
+    "Exige derrotar Centaleões de juba azul, adversários perigosos."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_blue_maned_lynel",
+      "relation": "Monstro que a empunha"
+    },
+    {
+      "id": "botw_monster_white_maned_lynel",
+      "relation": "A empunha no Modo Mestre"
+    },
+    {
+      "id": "botw_weapon_lynel_spear",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_spear",
+      "relation": "Versão máxima"
+    },
+    {
+      "id": "botw_weapon_mighty_lynel_sword",
+      "relation": "Mesmo arquétipo e nível, uma mão"
+    },
+    {
+      "id": "botw_weapon_mighty_lynel_crusher",
+      "relation": "Mesmo arquétipo e nível, duas mãos"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

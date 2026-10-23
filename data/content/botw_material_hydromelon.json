@@ -1,0 +1,151 @@
+{
+  "id": "botw_material_hydromelon",
+  "summary": "Melancia resistente do Deserto Gerudo, cujo suco refresca: cozida, dá Resistência ao calor (2:30 por unidade, o exemplo usado pelo Zelda Wiki). Crua cura meio coração; é obrigatória na Sopa cremosa do coração.",
+  "description": "A Melancia oásica cresce em ramas no Deserto Gerudo e em alguns trechos do Monte Satori. O líquido hidratante dentro dela tem efeito refrescante: qualquer prato de panela que a leve ganha Resistência ao calor, o efeito que protege Link do calor do deserto durante o dia. É justamente a melancia que o Zelda Wiki usa para explicar a duração dos efeitos: uma unidade dá 2:30 de Resistência ao calor, duas dão 5:00, e uma melancia com uma maçã dá 3:00.\n\nCrua, recupera meio coração; exposta ao fogo, vira Melancia oásica assada (3/4 de coração), que dobra o valor de venda mas perde o efeito. É vendida no Bazar Kara Kara e na barraca de frutas de Lorn, na Cidade Gerudo, é obrigatória na Sopa cremosa do coração e serve para o corante verde na Tinturaria Kochi.",
+  "locations": [
+    "Ramas no Deserto Gerudo e em partes do Monte Satori; o compendium cita também os Prados de Faron.",
+    "Lojas: armazém de Emri no Bazar Kara Kara e Lorn's Fruit Stand, na Cidade Gerudo — 16 rupias cada."
+  ],
+  "obtaining": [
+    "Colher nas ramas do deserto.",
+    "Comprar no Bazar Kara Kara ou na barraca de Lorn.",
+    "Recompensa da Missão secundária \"The Mystery Polluter\", segundo a tabela de missões do Zelda Wiki."
+  ],
+  "uses": [
+    "Ingrediente principal de pratos de Resistência ao calor para atravessar o Deserto Gerudo de dia.",
+    "Obrigatória na Sopa cremosa do coração (Melancia oásica, Fruta isolante, qualquer rabanete e Leite fresco).",
+    "Receitas de fruta genéricas (Compota de frutas, Compota farta de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Cozida: Resistência ao calor, 2:30 por melancia usada."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; junto a uma fogueira ou no clima escaldante de Eldin, assa sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma melancia largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Em contato com o fogo, vira Melancia oásica assada, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Resistência ao calor."],
+      "applications": ["Vender: a versão assada vale 8 rupias, o dobro da crua."],
+      "produces": ["botw_food_roasted_hydromelon"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Melancia oásica assada.",
+      "produces": ["botw_food_roasted_hydromelon"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, assa ao ser largada no chão.",
+      "produces": ["botw_food_roasted_hydromelon"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da melancia na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a melancia não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Cada melancia soma 2:30 de Resistência ao calor ao prato (duas: 5:00). Ingredientes sem efeito também somam tempo — uma maçã acrescenta 0:30.",
+      "conditions": ["Evite ingredientes de outros efeitos: só o efeito predominante permanece."],
+      "applications": ["Cozinhar 5 melancias numa só panela para uma travessia longa do deserto."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera meio coração e não dá efeito: a Resistência ao calor só aparece depois de cozida.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 4 rupias; assada, vale 8.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A régua da duração",
+      "text": "O Zelda Wiki usa a melancia para ilustrar como a duração soma: 1 melancia = 2:30; 2 melancias = 5:00; 1 melancia + 1 maçã = 3:00. Ingredientes com o mesmo efeito somam o tempo deles, e ingredientes sem efeito também acrescentam alguns segundos.",
+      "sources": ["zw:Food"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Proteção contra o calor do deserto",
+      "text": "O calor do Deserto Gerudo durante o dia fere Link aos poucos. Pratos refrescantes, como os feitos com Melancia oásica, evitam esse dano; a sombra, a água e as cidades (Cidade Gerudo e Bazar Kara Kara) também protegem.",
+      "sources": ["zw:Heat", "zw:Heat Resistance"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine melancias com Glacimelos ou Ervas fogueira (outros ingredientes de Resistência ao calor): ingredientes diferentes com o mesmo efeito prolongam a duração e podem elevar o nível do efeito."
+  ],
+  "limitations": [
+    "Crua ou assada não dá Resistência ao calor; só cozida na panela.",
+    "Resistência ao calor não protege das chamas da região de Eldin, que exigem Proteção contra chamas."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_hydromelon", "relation": "Resultado de expor a melancia ao fogo" },
+    { "id": "botw_food_creamy_heart_soup", "relation": "Prato que exige melancia" },
+    { "id": "botw_material_voltfruit", "relation": "Também exigida na Sopa cremosa do coração" },
+    { "id": "botw_material_chillshroom", "relation": "Outro ingrediente de Resistência ao calor" },
+    { "id": "botw_material_cool_safflina", "relation": "Outro ingrediente de Resistência ao calor" },
+    { "id": "botw_elixir_chilly_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante verde" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "protege_calor"],
+  "verification_status": "verificado"
+}

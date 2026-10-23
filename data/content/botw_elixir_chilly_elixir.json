@@ -1,0 +1,118 @@
+{
+  "id": "botw_elixir_chilly_elixir",
+  "summary": "Elixir de Libélula gélida ou Borboleta invernal com parte de monstro. Dá Resistência ao calor para cruzar o Deserto Gerudo de dia, mas não substitui a Proteção contra chamas exigida na região vulcânica de Eldin.",
+  "description": "O Elixir refrescante é o elixir de Resistência ao calor: o jogo o descreve como um efeito de resfriamento \"crucial para longas jornadas pelo deserto\". Ele resolve o calor diurno do Deserto Gerudo, que fere Link acima de 40 °C (um nível de calor) e mais rápido acima de 50 °C, nas Zonas extremamente quentes do sul e do oeste do deserto, onde são necessários dois níveis de resistência.\n\nÉ feito numa Panela com pelo menos um bicho refrescante (Libélula gélida ou Borboleta invernal) e uma parte de monstro. Cada bicho soma 2:30 de duração e cada parte de monstro soma 1:10, 1:50 ou 3:10 conforme o grau; o total chega a no máximo 30:00. A potência vem das estrelas dos ingredientes: a Libélula gélida vale duas e a Borboleta invernal uma, e o segundo nível exige seis estrelas. Ingredientes refrescantes comuns (Melancia oásica, Glacimelo, Erva fogueira e Truta glacial) também podem entrar para que o elixir recupere corações.\n\nNa região vulcânica de Eldin a situação é outra: lá Link pega fogo, e a defesa indicada pelas fontes é a Proteção contra chamas do Elixir corta-fogo ou da Armadura antichamas, não a resistência ao calor.",
+  "locations": [
+    "Não é vendido pronto segundo as fontes: o próprio Guy, no Bazar Kara Kara, comenta que o elixir não existe à venda ali.",
+    "Os bichos usados aparecem principalmente na Fronteira de Tabantha e nos Cerros de Hyrule; o Diário de aventura indica as partes mais frias das Montanhas Gerudo para encontrar o inseto."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela pelo menos uma Libélula gélida ou Borboleta invernal com pelo menos uma parte de monstro.",
+    "Libélulas gélidas são vendidas por Beedle e por Maypin (10 rupias cada); Borboletas invernais, por Beedle (10 rupias)."
+  ],
+  "uses": [
+    "Atravessar o Deserto Gerudo durante o dia sem perder corações para o calor.",
+    "Missão secundária \"An Ice Guy\": entregar um Elixir refrescante a Guy, no Bazar Kara Kara, rende 50 rupias.",
+    "Completar o segundo nível de resistência nas Zonas extremamente quentes junto com equipamentos refrescantes."
+  ],
+  "effects": [
+    "Resistência ao calor em um ou dois níveis (o efeito tem no máximo dois níveis), com duração somada pelos ingredientes, até 30:00.",
+    "Se levar ingredientes refrescantes que curam, também recupera corações (a cura dobra na panela)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ao beber, Link recebe Resistência ao calor pelo tempo indicado e deixa de sofrer dano do calor diurno do deserto.",
+      "conditions": [
+        "Um nível basta para o calor básico (acima de 40 °C).",
+        "Nas Zonas extremamente quentes (acima de 50 °C, sul e oeste do Deserto Gerudo) são necessários dois níveis."
+      ],
+      "side_effects": [
+        "Só um efeito de prato ou elixir fica ativo por vez: comer algo com outro efeito cancela a resistência."
+      ],
+      "applications": ["Explorar o deserto de dia sem depender de sombra ou água."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Heat", "zw:Extremely Hot Zone", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima vulcânico de Eldin",
+      "status": "sem_efeito",
+      "result": "Na Montanha da Morte e no Cânion de Eldin o perigo é pegar fogo, e as fontes só apontam a Proteção contra chamas como defesa; a Resistência ao calor do elixir não substitui esse efeito.",
+      "conditions": ["Clima escaldante da região vulcânica de Eldin."],
+      "applications": ["Levar um Elixir corta-fogo (ou a Armadura antichamas) para Eldin."],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Ice Rod"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Bicho refrescante + parte de monstro na Panela gera o elixir. Libélula gélida vale ★★ e Borboleta invernal ★; cada uma soma 2:30. Seis estrelas no total dão o segundo nível.",
+      "conditions": [
+        "Pelo menos um bicho e uma parte de monstro.",
+        "Partes de monstro somam 1:10 (grau baixo, ex.: Chifre de Koboblin), 1:50 (grau médio, ex.: Presa de Koboblin) ou 3:10 (grau alto, ex.: Vísceras de Koboblin) e não alteram a potência.",
+        "Ingredientes refrescantes que curam: Truta glacial (★★★), Glacimelo (★★), Melancia oásica (★) e Erva fogueira (★), cada um com +2:30."
+      ],
+      "side_effects": [
+        "Ingredientes com outro efeito anulam tudo e o resultado vira Comida duvidosa.",
+        "Colocar uma Fada na receita transforma o elixir em Tônico de fada, sem efeito."
+      ],
+      "applications": ["Três Libélulas gélidas e uma parte de monstro alcançam as seis estrelas do segundo nível."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Não tem preço fixo: o valor de venda soma o preço dos ingredientes e multiplica por um fator que vai de 1,5 (um ingrediente) a 2,8 (cinco ingredientes), com arredondamento para a dezena acima.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O Arás que não aguenta o sol",
+      "text": "Guy, um viajante Arás parado no Bazar Kara Kara, quer ver a Cidade Gerudo mas não suporta o calor do dia. Ele sabe que o inseto necessário vive nas Montanhas Gerudo, porém tem medo dos monstros de lá. Entregar-lhe um Elixir refrescante conclui a missão \"An Ice Guy\" e rende 50 rupias.",
+      "sources": ["zw", "zw:Heat"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus crítico",
+      "text": "Todo cozimento tem chance de sucesso crítico (5% por ingrediente diferente). Num elixir de duração, o bônus acrescenta 5:00 ou sobe o efeito um nível; se a resistência já estiver no nível máximo, o bônus de nível não é sorteado.",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Elixir"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Vísceras para durar mais",
+      "text": "As partes de monstro de grau alto (vísceras, caudas de Lagalfos, Olho de Morci, núcleos ancestrais) somam 3:10 cada e elevam a chance de crítico para 30%. Não importa a raridade: Vísceras de Centaleão rendem o mesmo tempo que as de Koboblin.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "O Traje Gerudo equivale a um nível de Resistência ao calor e soma com um efeito de nível 1: vestido junto com um Elixir refrescante simples, garante os dois níveis exigidos nas Zonas extremamente quentes.",
+    "Peças do Conjunto voe do deserto dão resistência baixa cada uma e, juntas, chegam ao nível médio, dispensando o elixir."
+  ],
+  "limitations": [
+    "Não protege contra o clima escaldante de Eldin.",
+    "Comer outro prato com efeito diferente durante a duração cancela a resistência.",
+    "Sem bicho, os ingredientes refrescantes viram um prato comum, não um elixir."
+  ],
+  "related": [
+    { "id": "botw_creature_cold_darner", "relation": "Bicho refrescante (★★, +2:30)" },
+    { "id": "botw_creature_winterwing_butterfly", "relation": "Bicho refrescante (★, +2:30)" },
+    { "id": "botw_creature_chillfin_trout", "relation": "Ingrediente refrescante mais forte (★★★)" },
+    { "id": "botw_material_chillshroom", "relation": "Ingrediente refrescante (★★)" },
+    { "id": "botw_material_hydromelon", "relation": "Ingrediente refrescante (★)" },
+    { "id": "botw_material_cool_safflina", "relation": "Ingrediente refrescante (★)" },
+    { "id": "botw_material_bokoblin_guts", "relation": "Parte de monstro de grau alto (+3:10)" },
+    { "id": "botw_armorset_gerudo_outfit", "relation": "Bônus equivalente a um nível de resistência, somável ao elixir" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Alternativa de equipamento com Resistência ao calor" },
+    { "id": "botw_elixir_fireproof_elixir", "relation": "Elixir certo para o clima vulcânico de Eldin" },
+    { "id": "botw_mechanic_temperature", "relation": "Regras de calor e frio" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de cozimento de elixires" }
+  ],
+  "capabilities": ["protege_calor", "item_de_missao"],
+  "verification_status": "verificado"
+}

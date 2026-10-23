@@ -1,0 +1,205 @@
+{
+  "id": "botw_weapon_guardian_spear",
+  "summary": "Lança dos Guardiões batedores 2.0, de tecnologia Sheikah: a ponta azul só aparece ao empunhá-la (ataque 10, durabilidade 20). Dano 1,3× contra Guardiões e Ganon; flutua e não atrai raios.",
+  "description": "A Lança guardiã é a arma dos Guardiões batedores 2.0 nos santuários de \"teste de força menor\" (A Minor Test of Strength), que a deixam ao ser derrotados. A ponta azul brilhante só surge quando a lança é empunhada e some quando ela volta às costas de Link; o alto poder de perfuração é um testemunho, segundo o jogo, do nível da tecnologia Sheikah.\n\nPor ser de tecnologia ancestral, causa 1,3× de dano a Guardiões e Guardiões batedores, às Iras de Ganon e a Ganon. Não é magnética: não conduz eletricidade, não atrai raios e não pode ser movida com Magnétis; também não pega fogo e flutua na água. É a mais fraca das três Lanças guardiãs.",
+  "locations": [
+    "Santuários de \"teste de força menor\" (A Minor Test of Strength), com os Guardiões batedores 2.0."
+  ],
+  "obtaining": [
+    "Derrotar o Guardião batedor 2.0 que a empunha nesses santuários.",
+    "O amiibo de Guardião (série Breath of the Wild) pode gerar um baú com uma Lança guardiã.",
+    "A Lua de sangue revive também os Guardiões batedores dos santuários, o que permite repetir a luta e obter outra lança."
+  ],
+  "uses": [
+    "Combater Guardiões, Guardiões batedores e as Iras de Ganon com bônus de dano.",
+    "Arma segura em tempestades: não atrai raios.",
+    "Arremesso de emergência quando estiver quase quebrada: o golpe final é sempre crítico."
+  ],
+  "effects": [
+    "Multiplicador de dano de 1,3× contra Guardiões, Guardiões batedores, as Iras de Ganon e Ganon (parâmetro datamined)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: não pega fogo nem queima nas áreas escaldantes de Eldin.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é feita de tecnologia ancestral, não de metal.",
+      "side_effects": [
+        "Ainda assim, se Link for eletrocutado com ela na mão, a lança voa para o chão — isso vale para quase todas as armas."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "applications": [
+        "Pode ficar equipada numa tempestade, ao contrário das lanças de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, como as demais armas de tecnologia ancestral.",
+      "applications": [
+        "Se cair num lago ou rio, pode ser recolhida na superfície."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálica, então Magnétis não consegue movê-la.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Causa 1,3× o dano normal contra todos os Guardiões e Guardiões batedores (incluindo pernas e hélices), as Iras de Ganon, Ganon, a Calamidade, e Ganon, Besta Sombria. É a arma dos Guardiões batedores 2.0.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Renasce com a Lua de sangue",
+      "text": "A Lua de sangue revive quase todos os inimigos derrotados, inclusive os Guardiões batedores pacíficos dos santuários. Depois de uma Lua de sangue, o Guardião batedor 2.0 do santuário volta e pode deixar outra Lança guardiã.",
+      "sources": [
+        "zw:Blood Moon",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ponta que aparece e some",
+      "text": "A lâmina de energia azul só existe enquanto a lança está empunhada; guardada nas costas de Link, a arma mostra apenas a haste.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança guardiã pode surgir com um bônus branco (comum) — ataque +2 a +3, durabilidade +2 a +4 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +4, durabilidade +5 a +9 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer. Exemplares tirados de baús de amiibo vêm com o valor máximo da faixa sorteada, embora o bônus apareça sempre em branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus menor que o da Lança ancestral",
+      "text": "O multiplicador das Lanças guardiãs contra Guardiões e Ganon é 1,3×; a Lança ancestral, fabricada por Robbie, chega a 1,5× contra a mesma lista de alvos.",
+      "sources": [
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Nos santuários de teste de força seguintes, use-a contra os Guardiões batedores 3.0 e 4.0 para aproveitar o bônus de 1,3×."
+  ],
+  "limitations": [
+    "Durabilidade baixa (20).",
+    "O bônus contra Guardiões é menor que o da Lança ancestral."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_guardian_scout_ii",
+      "relation": "Guardião que a empunha e a deixa ao ser derrotado"
+    },
+    {
+      "id": "botw_weapon_guardian_spear_plus",
+      "relation": "Versão aprimorada (2.0)"
+    },
+    {
+      "id": "botw_weapon_guardian_spear_plus_plus",
+      "relation": "Versão máxima (3.0)"
+    },
+    {
+      "id": "botw_weapon_ancient_spear",
+      "relation": "Lança ancestral, com bônus maior contra Guardiões"
+    },
+    {
+      "id": "botw_weapon_guardian_sword",
+      "relation": "Mesmo arquétipo (Guardião), uma mão"
+    },
+    {
+      "id": "botw_shield_guardian_shield",
+      "relation": "Escudo do mesmo arquétipo"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Revive o Guardião batedor do santuário"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "botw_food_fruit_pie",
+  "summary": "Torta de qualquer fruta, exceto Maçã, com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra — \"sem ela não há comemoração\", diz o jogo. Com Maçã, vira Torta de maçã.",
+  "description": "A Torta de frutas leva Trigo de Tabantha, Cana-de-açúcar, Manteiga de cabra e qualquer fruta, menos a Maçã: com maçã, a receita vira Torta de maçã. A versão comum sai com Coco ou Framboesa, as frutas sem efeito permitidas. Segundo a descrição do jogo, uma comemoração não é uma comemoração até essa torta recheada de frutas chegar à mesa.\n\nA fruta escolhida dá o efeito: Melancia oásica (refrescante), Fruta isolante (isolante), Grãos de lótus-fugaz (veloz), Durião nutritivo (nutritiva), Bananas valentes (valente) e Pimenta de fogo (picante). As versões tenaz, energizante, discreta e blindada dependem de um ingrediente extra com esse efeito no único espaço livre da panela.\n\nA diferença em relação ao Bolo de frutas é dupla: a torta usa Manteiga de cabra e uma única fruta qualquer (que não seja maçã), enquanto o bolo dispensa a manteiga e exige Maçã ou Framboesa mais outra fruta.",
+  "locations": [
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer fruta (exceto Maçã) + Trigo de Tabantha + Cana-de-açúcar + Manteiga de cabra."
+  ],
+  "uses": [
+    "Prato de efeito a partir de frutas como Melancia oásica, Fruta isolante ou Bananas valentes.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Coco ou Framboesa): recupera alguns corações.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Melancia oásica.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Fruta isolante.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Grãos de lótus-fugaz.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Durião nutritivo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Bananas valentes.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Pimenta de fogo.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — com um ingrediente tenaz extra.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com um ingrediente energizante extra.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — com um ingrediente discreto extra.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com um ingrediente blindado extra."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "A fruta (ou o ingrediente extra) define o efeito; as descrições citadas são de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A Maçã muda a receita",
+      "text": "Basta trocar a fruta por uma Maçã para o resultado ser Torta de maçã. Por isso, a versão comum da Torta de frutas só pode ser feita com Coco ou Framboesa.",
+      "sources": [
+        "zw",
+        "zw:Apple Pie"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não aceita Maçã.",
+    "Só um espaço livre para efeito além da fruta."
+  ],
+  "related": [
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Mesma receita com Maçã"
+    },
+    {
+      "id": "botw_food_fruitcake",
+      "relation": "Bolo com duas frutas e sem manteiga"
+    },
+    {
+      "id": "botw_material_palm_fruit",
+      "relation": "Fruta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Fruta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_hydromelon",
+      "relation": "Gera a versão refrescante"
+    },
+    {
+      "id": "botw_material_voltfruit",
+      "relation": "Gera a versão isolante"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

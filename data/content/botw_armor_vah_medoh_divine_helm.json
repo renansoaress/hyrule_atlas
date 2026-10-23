@@ -1,0 +1,199 @@
+{
+  "id": "botw_armor_vah_medoh_divine_helm",
+  "summary": "Elmo inspirado na cabeça da Fera Divina Vah Medoh, obtido com o amiibo Revali. Une Resistência a Guardiões, Resistência ao frio e Exibe a vida dos inimigos, e conta como elmo do Conjunto ancestral.",
+  "description": "Descrito como um tesouro dado a quem controla a Fera Divina Vah Medoh, o Elmo divino de Vah Medoh imita a cabeça da Fera pilotada por Revali, o Campeão Rito. Só pode ser obtido com a runa amiibo, lendo o amiibo Revali (série Breath of the Wild), e exige a versão 1.3.3 do jogo. Quando a leitura rende um baú de prêmio maior (GreatHit) e ao menos uma Fera Divina já foi libertada, o elmo é garantido enquanto Link ainda não o tiver.\n\nReúne três efeitos: Resistência a Guardiões nível 1 (−20% de dano de Guardiões), Resistência ao frio nível 1 e Exibe a vida dos inimigos, que mostra o valor numérico da vida acima da barra e faz a barra aparecer sozinha quando Link se aproxima. Defesa e melhorias são idênticas às do Elmo ancestral (4 a 28; peças ancestrais, e no último nível 2 Núcleos ancestrais gigantes e um Fragmento de estrela). Com a Couraça ancestral e as Grevas ancestrais, todas a ★★, ativa a Proficiência ancestral (+80% de ataque com armas ancestrais). Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Não há local fixo: surge em baús invocados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Ler o amiibo Revali (série Breath of the Wild) com a runa amiibo; requer a versão 1.3.3.",
+    "Com ao menos uma Fera Divina libertada, um baú GreatHit desse amiibo traz o elmo com certeza, enquanto Link não o tiver."
+  ],
+  "uses": [
+    "Explorar regiões geladas sem perder vida com o frio.",
+    "Ver a vida exata dos inimigos.",
+    "Substituir o Elmo ancestral no Conjunto ancestral."
+  ],
+  "effects": [
+    "Resistência a Guardiões nível 1.",
+    "Resistência ao frio nível 1.",
+    "Exibe a vida dos inimigos.",
+    "Bônus Proficiência ancestral com Couraça e Grevas ancestrais ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 4 de defesa (28 no nível máximo) e dá Resistência a Guardiões nível 1, Resistência ao frio nível 1 e Exibe a vida dos inimigos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "com Couraça e Grevas ancestrais ★★",
+      "status": "confirmado",
+      "result": "As três peças melhoradas a ★★ ativam a Proficiência ancestral: +80% de ataque com armas ancestrais, multiplicado com Ataque aumentado.",
+      "conditions": [
+        "Elmo, Couraça ancestral e Grevas ancestrais vestidos e melhorados ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões",
+      "status": "confirmado",
+      "result": "Resistência a Guardiões nível 1: o dano recebido de Guardiões cai 20% (30% no nível 2 e 50% no nível 3, o máximo). A redução é calculada depois de descontada a defesa total de Link.",
+      "conditions": [
+        "Vale para ataques de Guardiões; não reduz o dano de inimigos comuns que empunham armas ancestrais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Guardian Resist Up",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "vida dos inimigos",
+      "status": "confirmado",
+      "result": "Mostra o número exato de vida acima da barra dos inimigos e exibe a barra automaticamente quando Link chega perto, sem precisar atingi-los antes.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Evita o dano do frio abaixo de 0 °C; ambientes mais gelados podem exigir o nível 2 de Resistência ao frio.",
+      "side_effects": [
+        "Não protege da água gelada nem de ataques de gelo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Garantido em poucas leituras",
+      "text": "Pela lógica de sorteio da runa amiibo, o baú traz um prêmio GreatHit em 20% das vezes, e depois de quatro BigHits seguidos do mesmo amiibo a quinta leitura garante um GreatHit. Com uma Fera Divina libertada e um baú a cada leitura, o elmo correspondente sai, portanto, em no máximo cinco leituras dessa figura.",
+      "sources": [
+        "zw:amiibo Rune"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Vida dos inimigos à vista",
+      "text": "Exibe a vida dos inimigos é um efeito oculto compartilhado só pelos quatro Elmos divinos e pela Túnica do campeão: a vida aparece em números, e a barra surge assim que Link se aproxima.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Vestir o elmo com a Couraça e as Grevas ancestrais ★★ dá Resistência a Guardiões nível 3 (−50%), Proficiência ancestral e, de quebra, o efeito próprio do elmo."
+  ],
+  "limitations": [
+    "Depende do amiibo do Campeão e da versão 1.3.3.",
+    "As melhorias exigem 2 Núcleos ancestrais gigantes no último nível."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Conta como elmo do conjunto"
+    },
+    {
+      "id": "botw_armor_ancient_cuirass",
+      "relation": "Peça necessária para o bônus"
+    },
+    {
+      "id": "botw_armor_ancient_greaves",
+      "relation": "Peça necessária para o bônus"
+    },
+    {
+      "id": "botw_armor_ancient_helm",
+      "relation": "Mesma defesa e mesmas melhorias"
+    },
+    {
+      "id": "botw_armor_champions_tunic",
+      "relation": "Também exibe a vida dos inimigos"
+    },
+    {
+      "id": "botw_ability_revalis_gale",
+      "relation": "Habilidade de Revali, piloto de Vah Medoh"
+    },
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Outra peça de cabeça com Resistência ao frio"
+    },
+    {
+      "id": "botw_armor_snowquill_headdress",
+      "relation": "Outra peça de cabeça com Resistência ao frio"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Única forma de obtenção"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "habilidade_especial",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,165 @@
+{
+  "id": "botw_arrow_ancient_arrow",
+  "summary": "Flecha de tecnologia ancestral feita por Robbie: derrota Guardiões com um tiro no olho e desintegra inimigos comuns com armas e tudo — mas eles não deixam nenhum material.",
+  "description": "A Flecha ancestral foi projetada especificamente para derrotar Guardiões. São adagas de tecnologia ancestral adaptadas como flechas, criadas por Robbie cerca de 40 ou 50 anos depois da Grande Calamidade, e fazem parte do equipamento ancestral. Segundo a descrição do jogo, ser atingido por uma delas é ser lançado ao esquecimento num instante.\n\nCausa dano pesado em Guardiões, e um acerto direto no olho de um Guardião o derrota na hora. Contra chefes, o dano é moderado. Já inimigos comuns (que não sejam Guardiões nem chefes) se desintegram por completo junto com as armas — e, justamente por isso, não deixam nenhum material.\n\nAo contrário das outras flechas especiais, ela não some ao acertar objetos, então pode ser recolhida se Link errar. Também quebra blocos de gelo de Gelítis, detona Bombas remotas na hora, destrói instantaneamente os canhões de Vah Medoh e é um dos poucos meios de ferir Ganon, Besta Sombria.",
+  "locations": [
+    "Castelo de Hyrule: nove baús (três com 1 flecha, cinco com 3 e um com 5).",
+    "Laboratório de Tecnologia Ancestral de Akkala (Akkala Ancient Tech Lab), no Forno ancestral."
+  ],
+  "obtaining": [
+    "Fabricar no Forno ancestral de Akkala: 1 flecha por 90 rupias, 2 Parafusos ancestrais, 1 Eixo ancestral e 1 Flecha; 3 flechas por 250 rupias, 6 Parafusos, 3 Eixos e 3 Flechas; 5 flechas por 400 rupias, 5 Molas ancestrais, 5 Eixos e 5 Flechas.",
+    "Abrir os nove baús do Castelo de Hyrule que as contêm.",
+    "Beedle dá uma de presente no \"dia de agradecimento ao cliente\", que pode ocorrer em qualquer estábulo depois que Link liberta a primeira Fera Divina — se Link não tiver espaço para mais Flechas ancestrais, fica sem o presente."
+  ],
+  "uses": [
+    "Derrotar Guardiões com um tiro no olho.",
+    "Eliminar instantaneamente inimigos comuns perigosos (sem drops).",
+    "Destruir os canhões de Vah Medoh e ferir Ganon, Besta Sombria."
+  ],
+  "effects": [
+    "Desintegra inimigos comuns e as armas deles.",
+    "Dano pesado em Guardiões; moderado em chefes."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Disparada por qualquer arco que use flechas comuns. Não desaparece ao atingir objetos, podendo ser recolhida se errar o alvo, e se crava em madeira e em materiais como o Cogumelo hyliano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha ancestral com fogo."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação com gelo além de quebrar os blocos criados por Gelítis (ver Cenário)."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha ancestral com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a Flecha ancestral na água."
+    },
+    {
+      "action": "chuva",
+      "status": "desconhecido",
+      "result": "As fontes não indicam mudança de efeito da Flecha ancestral na chuva."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos comuns atingidos se desintegram por completo, com as armas, e não deixam materiais. Guardiões sofrem dano pesado e morrem na hora com um acerto no olho; chefes recebem dano moderado.",
+      "side_effects": [
+        "Usá-la em monstros comuns sacrifica todos os drops, inclusive as armas que eles carregavam."
+      ],
+      "applications": [
+        "Eliminar um Guardião persecutório de uma vez com um tiro no olho.",
+        "Ferir Ganon, Besta Sombria, na batalha final."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Dark Beast Ganon"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra blocos de gelo de Gelítis, detona Bombas remotas instantaneamente e destrói na hora os canhões da Fera Divina Vah Medoh. Crava-se em madeira e em alguns materiais.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Desintegração sem recompensa",
+      "text": "Fora Guardiões e chefes, qualquer inimigo atingido pela Flecha ancestral desaparece com as próprias armas e não deixa nenhum material. É uma vitória instantânea, mas sem drops.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Adagas transformadas em flechas",
+      "text": "O Zelda Wiki descreve as Flechas ancestrais como adagas de tecnologia ancestral reaproveitadas como flechas, criadas por Robbie uns 40 ou 50 anos depois da Grande Calamidade.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Uma das armas contra Ganon, Besta Sombria",
+      "text": "Além do Arco da Luz, Ganon, Besta Sombria pode ser ferido com Flechas ancestrais, com o Arco do crepúsculo, com a Fúria de Urbosa e com os feixes de espada da Espada Mestra.",
+      "sources": [
+        "zw",
+        "zw:Dark Beast Ganon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine-a com o Arco ancestral, que por si só já causa 1,5 vez mais dano em Guardiões.",
+    "Guarde-as para Guardiões e para inimigos perigosos cujos drops não importam."
+  ],
+  "limitations": [
+    "Inimigos comuns desintegrados não deixam materiais nem armas.",
+    "Contra chefes o dano é apenas moderado.",
+    "Cara de fabricar: exige peças ancestrais e rupias."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_ancient_bow",
+      "relation": "Arco do mesmo arquétipo, com dano extra contra Guardiões"
+    },
+    {
+      "id": "botw_arrow_arrow",
+      "relation": "Ingrediente da fabricação"
+    },
+    {
+      "id": "botw_material_ancient_screw",
+      "relation": "Ingrediente da fabricação"
+    },
+    {
+      "id": "botw_material_ancient_shaft",
+      "relation": "Ingrediente da fabricação"
+    },
+    {
+      "id": "botw_material_ancient_spring",
+      "relation": "Ingrediente do pacote de 5"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Derrotado com um tiro no olho"
+    },
+    {
+      "id": "botw_monster_dark_beast_ganon",
+      "relation": "Pode ser ferido com estas flechas"
+    },
+    {
+      "id": "botw_rune_cryonis",
+      "relation": "Quebra os blocos de gelo criados"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Detona Bombas remotas na hora"
+    }
+  ],
+  "capabilities": [
+    "vence_rapido",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

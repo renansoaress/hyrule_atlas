@@ -1,0 +1,117 @@
+{
+  "id": "botw_shield_kite_shield",
+  "summary": "Escudo de madeira dos guerreiros Rito, com o emblema Rito e forma pensada para o combate aéreo. Só existem três no jogo inteiro — se todos quebrarem, não há como conseguir outro.",
+  "description": "O Escudo-pipa é estimado pelos guerreiros Rito; segundo o jogo, sua forma foi projetada pensando no voo durante a batalha, para facilitar o combate aéreo. Traz o emblema Rito na frente, parecido com o do Planador, e pertence ao equipamento Rito (Rito Gear). Com Defesa 14 e durabilidade 16, é um escudo de madeira de nível médio; as fontes não registram nenhum efeito especial em combate aéreo, e seus parâmetros de surfe são os padrões.\n\nA raridade é o que o torna notável: há apenas três exemplares. Um está num baú de metal enterrado dentro de um crânio gigante no N. Tabantha Snowfield, que precisa ser puxado com Magnétis; outro num baú preso no gelo em Hebra Headspring; e o terceiro fica pendurado na parede da cabana de Selmie, entregue como prêmio do surfe. Se os três forem destruídos, o Escudo-pipa se perde para sempre.\n\nPor ser de madeira, pega fogo, queima no calor de Eldin, flutua e não reage a Magnétis nem a raios.",
+  "locations": [
+    "N. Tabantha Snowfield: baú de metal enterrado num crânio gigante de um acampamento inimigo (puxar com Magnétis).",
+    "Hebra Headspring: baú dentro de uma formação de gelo.",
+    "Selmie's Spot, nas Cordilheiras de Hebra: pendurado na parede da cabana de Selmie."
+  ],
+  "obtaining": [
+    "Abrir os dois baús fixos (N. Tabantha Snowfield e Hebra Headspring).",
+    "Prêmio de Selmie no curso avançado de surfe com escudo. A tabela de recompensas do minijogo indica tempos entre 2:15 e 2:30; a página do escudo cita 2:05 a 2:20. Depois de entregue, o escudo some da parede e Selmie passa a dar 20 rupias nessa faixa de tempo."
+  ],
+  "uses": [
+    "Escudo de madeira de nível médio para as regiões frias de Hebra e Tabantha.",
+    "Item de coleção: é um dos itens que podem ser perdidos permanentemente."
+  ],
+  "effects": [
+    "Nenhum efeito especial documentado, apesar da descrição voltada ao combate aéreo."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 14; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Como não há reposição, evite surfar com ele em pedra."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e perde durabilidade aos poucos enquanto queima.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima — importante, já que ele não pode ser reposto."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "O escudo em si não é metálico e não é movido por Magnétis — mas o baú de metal que guarda um dos exemplares precisa ser puxado com a runa.",
+      "sources": ["dm", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +8 (nível amarelo) e com Defesa do escudo aumentada de +6 a +11 (branco) ou +12 a +21 (amarelo). Com o bônus amarelo máximo, a Defesa chega a 35.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Item perdível",
+      "text": "O Escudo-pipa está entre os itens que podem ser perdidos de vez: se os dois exemplares dos baús e o prêmio de Selmie forem destruídos, não há mais como obter outro.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Prêmio único de Selmie",
+      "text": "Selmie entrega como prêmio os escudos pendurados em sua cabana. No caso do Escudo-pipa, depois que o exemplar da parede é entregue, repetir o tempo rende só 20 rupias.",
+      "sources": ["zw", "zw:Selmie's Spot"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar um exemplar sem usá-lo em combate, como peça de coleção, já que não existe reposição."
+  ],
+  "limitations": [
+    "Apenas três exemplares em todo o jogo.",
+    "Queima se equipado em Eldin."
+  ],
+  "related": [
+    { "id": "botw_weapon_feathered_edge", "relation": "Mesmo arquétipo (equipamento Rito)" },
+    { "id": "botw_weapon_feathered_spear", "relation": "Mesmo arquétipo (equipamento Rito)" },
+    { "id": "botw_keyitem_paraglider", "relation": "Tem um emblema parecido com o do escudo" },
+    { "id": "botw_rune_magnesis", "relation": "Necessária para desenterrar o baú de metal do N. Tabantha Snowfield" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Prêmio do minijogo de surfe de Selmie" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,170 @@
+{
+  "id": "botw_armor_ancient_cuirass",
+  "summary": "Couraça feita pelo Forno ancestral de Akkala com tecnologia de Guardião. Reduz o dano de Guardiões e, no Conjunto ancestral em ★★, dá +80% de ataque às armas ancestrais.",
+  "description": "A Couraça ancestral é a peça de torso do Conjunto ancestral, ao lado do Elmo ancestral e das Grevas ancestrais. Ela é fabricada pelo Forno ancestral do laboratório de tecnologia ancestral de Akkala (Akkala Ancient Tech Lab), que cobra 2.000 rupias e materiais de Guardião: 20 Engrenagens ancestrais, 5 Parafusos ancestrais e 3 Núcleos ancestrais. Segundo a descrição do jogo, foi criada com tecnologia Sheikah a partir de partes de Guardião.\n\nVestida, concede um nível de Resistência a Guardiões, que corta 20% do dano de ataques de Guardiões (30% e 50% com dois e três níveis). A defesa começa em 4 e chega a 28 no quarto nível, um dos valores mais altos entre as armaduras; a última melhoria pede um Fragmento de estrela e dois Núcleos ancestrais gigantes, os materiais mais difíceis da lista.\n\nCom as três peças do conjunto em ★★, ativa a Proficiência ancestral: armas ancestrais causam 80% a mais de dano. Qualquer um dos quatro elmos divinos dos Campeões pode ocupar o lugar do Elmo ancestral nessa combinação. A couraça pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Laboratório de tecnologia ancestral de Akkala (Akkala Ancient Tech Lab), onde fica o Forno ancestral."
+  ],
+  "obtaining": [
+    "Comprar no Forno ancestral por 2.000 rupias mais 20 Engrenagens ancestrais, 5 Parafusos ancestrais e 3 Núcleos ancestrais.",
+    "O forno só funciona depois que a fornalha do laboratório é reacesa com a Chama azul, na Missão secundária \"Robbie's Research\"."
+  ],
+  "uses": [
+    "Reduzir o dano de lasers e golpes de Guardiões.",
+    "Completar o Conjunto ancestral para ativar a Proficiência ancestral.",
+    "Defesa alta no fim do jogo (28 no nível máximo)."
+  ],
+  "effects": [
+    "Resistência a Guardiões, nível 1 (−20% de dano de Guardiões); acumula com as outras peças até o nível 3 (−50%).",
+    "Bônus de conjunto (três peças em ★★): Proficiência ancestral, +80% de ataque com armas ancestrais."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência a Guardiões. Com o Elmo ancestral (ou um elmo divino), a Couraça ancestral e as Grevas ancestrais vestidos, todos em ★★, ativa a Proficiência ancestral: armas ancestrais causam 80% a mais de dano.",
+      "conditions": [
+        "Para o bônus: as três peças equipadas e cada uma melhorada pelo menos duas vezes por uma Grande Fada."
+      ],
+      "side_effects": [
+        "Sem as melhorias, vale apenas a Resistência a Guardiões de cada peça."
+      ],
+      "applications": [
+        "A Proficiência ancestral se multiplica com o Ataque aumentado de pratos e elixires."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Guardian Resist Up"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões",
+      "status": "confirmado",
+      "result": "Reduz o dano de ataques de Guardiões em 20% com um nível do efeito, 30% com dois e 50% com três (o máximo); a redução é aplicada depois de descontada a defesa de Link.",
+      "conditions": [
+        "O ataque precisa vir de um Guardião."
+      ],
+      "side_effects": [
+        "Não reduz o dano de inimigos que não são Guardiões, mesmo que empunhem armas ancestrais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Guardian Resist Up",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A descrição promete mais do que o efeito entrega",
+      "text": "O texto do inventário diz que a couraça reduz o dano de \"armamentos ancestrais\", mas a Resistência a Guardiões só atua contra Guardiões: inimigos de outros tipos que empunhem armas ancestrais causam dano normal.",
+      "sources": [
+        "jogo",
+        "zw:Guardian Resist Up"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Elmos divinos completam o conjunto",
+      "text": "Para a Proficiência ancestral, o Elmo ancestral pode ser trocado pelo Elmo divino de Vah Medoh, de Vah Naboris, de Vah Rudania ou de Vah Ruta, desde que esse elmo, a couraça e as grevas estejam todos em ★★.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra Guardiões persecutórios, use o conjunto completo em ★★ com uma Espada ancestral ou outra arma ancestral: menos dano recebido e 80% a mais de dano causado."
+  ],
+  "limitations": [
+    "A redução de dano vale apenas contra Guardiões.",
+    "O bônus de conjunto exige as três peças em ★★; a quarta melhoria consome Fragmento de estrela e Núcleos ancestrais gigantes."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_ancient_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_ancient_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armor_vah_medoh_divine_helm",
+      "relation": "Elmo divino que pode substituir o Elmo ancestral no bônus"
+    },
+    {
+      "id": "botw_material_giant_ancient_core",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Inimigo cujo dano a peça reduz"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Arma ancestral fortalecida pelo bônus de conjunto"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

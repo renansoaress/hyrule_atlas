@@ -1,0 +1,140 @@
+{
+  "id": "botw_monster_electric_lizalfos",
+  "summary": "Lagalfos do deserto com chifres carregados de eletricidade: seus arcos elétricos fazem Link largar armas, arcos e escudos de metal. Uma flecha no chifre provoca uma descarga involuntária que atinge os inimigos ao redor.",
+  "description": "O Lagalfos elétrico é a variante elétrica da espécie. Segundo o compendium, ele emite correntes elétricas fortes pelo corpo, por isso é melhor não chegar muito perto; seus chifres estão tão carregados que, se forem atingidos por uma flecha, descarregam e espalham arcos elétricos ao redor. Prefere climas desérticos: o compendium cita o Deserto Gerudo e os Cerros de Hyrule, e o Zelda Wiki menciona também as ruínas Zonai (Zonai Ruins).\n\nOs chifres geram um campo elétrico, e os arcos que ele lança fazem Link largar armas, arcos e escudos de metal. A fraqueza é justamente o chifre: uma flecha bem colocada dispara a descarga de forma involuntária, e Link pode usar isso para eletrocutar outros inimigos que estejam perto. Tem 288 pontos de vida e pode deixar Chifre de Lagalfos, Garra de Lagalfos e a Cauda de Lagalfos elétrico, exclusiva dele. Como todos os Lagalfos, não ataca Link se ele estiver usando a Máscara de Lagalfos.",
+  "locations": [
+    "Deserto Gerudo e Cerros de Hyrule, segundo o compendium.",
+    "Ruínas Zonai (Zonai Ruins) e outros climas desérticos."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Lagalfos, Garra de Lagalfos e Cauda de Lagalfos elétrico.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Única fonte de Cauda de Lagalfos elétrico, parte de terceiro nível para elixires.",
+    "Registro no compendium (entrada nº 119)."
+  ],
+  "effects": [
+    "Arcos elétricos que fazem Link largar armas, arcos e escudos metálicos."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no chifre faz o Lagalfos elétrico descarregar involuntariamente uma forte descarga que se espalha pelos arredores.",
+      "applications": ["Provocar a descarga quando ele estiver perto de outros monstros para eletrocutá-los também."],
+      "kind": "tecnica_avancada",
+      "sources": ["comp", "zw", "zw:Lizalfos", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Tem 288 pontos de vida, e o corpo emite correntes elétricas: lutar de perto com armas de metal arrisca perder a arma com os arcos elétricos.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a ataques elétricos."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado como outros inimigos atingidos por Flecha incendiária.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Pode ser congelado com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o comportamento da variante elétrica na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas causam dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo; nesse estado fica imune a choques.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos lançados com Magnétis o atingem — e as armas metálicas que Link largar por causa dos choques podem ser recuperadas com a runa.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "A descarga provocada no chifre se espalha para os arredores, atingindo outros inimigos próximos.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Lizalfos"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "A descarga involuntária eletrocuta os inimigos próximos, transformando o próprio Lagalfos elétrico numa arma contra o grupo.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lizalfos"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "Como todos os Lagalfos, não ataca Link se ele estiver com a Máscara de Lagalfos (ou a de Majora).",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Usar o chifre como bomba elétrica",
+      "text": "Uma dica do próprio jogo diz que acertar o chifre do Lagalfos elétrico com uma flecha libera um choque enorme. O Zelda Wiki explica que esse choque atinge os inimigos próximos, então vale esperar o Lagalfos se aproximar de outros monstros antes de disparar.",
+      "sources": ["zw:Tips and Tricks", "zw:Lizalfos"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Desarme por arco elétrico",
+      "text": "Os arcos elétricos que ele gera fazem Link largar não só armas, mas também arcos e escudos de metal.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Atirar no chifre de longe, com o Lagalfos elétrico no meio de um grupo, para atordoar todos de uma vez."
+  ],
+  "limitations": [
+    "Equipamento metálico de Link (armas, arcos e escudos) pode ser derrubado pelos choques."
+  ],
+  "related": [
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_material_yellow_lizalfos_tail", "relation": "Parte exclusiva" },
+    { "id": "botw_material_lizalfos_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_armor_lizalfos_mask", "relation": "Disfarce que impede seus ataques" },
+    { "id": "botw_mechanic_electricity", "relation": "Mecânica de choque e desarme" }
+  ],
+  "capabilities": ["gera_eletricidade", "eletrocuta_inimigos", "vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,183 @@
+{
+  "id": "botw_weapon_royal_guards_claymore",
+  "summary": "Montante da guarda real forjado pelos Sheikah contra a Calamidade: ataque 72, mas só 15 de durabilidade. Exclusivo do Castelo de Hyrule; Parcy paga uma rupia dourada e depois topázios por ele.",
+  "description": "O Montante da guarda real integra a Série da guarda real, ao lado da Espada, da Lança, do Arco e do Escudo da guarda real. O jogo conta que os Sheikah usaram a própria essência da tecnologia ancestral para forjá-lo como arma contra a Calamidade, mas a durabilidade baixa o tornou pouco prático em batalha. O resultado é uma das armas de maior dano do jogo (72) com apenas 15 usos.\n\nTodos os exemplares ficam no Castelo de Hyrule, na prisão (Lockup) e no Salão dos Guardas (Guards' Chamber). Apesar da origem ancestral, os dados o tratam como arma de metal comum: conduz eletricidade, atrai raios, afunda e responde a Magnétis, e não tem o multiplicador de dano contra Guardiões das armas ancestrais. É o item pedido por Parcy, no Estábulo do Rio (Riverside Stable), na missão secundária \"The Royal Guard's Gear\".",
+  "locations": [
+    "Castelo de Hyrule: prisão (Lockup) e Salão dos Guardas (Guards' Chamber)."
+  ],
+  "obtaining": [
+    "Recolher no Castelo de Hyrule; armas deixadas no mundo reaparecem após a Lua de sangue, desde que não estejam na algibeira de Link nem num suporte da casa dele.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Missão secundária \"The Royal Guard's Gear\": entregar um a Parcy rende uma rupia dourada; depois, cada montante extra entregue vale um Topázio.",
+    "Golpe de dano máximo contra chefes, aceitando que a arma dure poucos golpes.",
+    "Arremesso crítico de dano altíssimo quando estiver quase quebrado."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e devastadores de duas mãos, sem escudo. O giro carregado atinge vários alvos — e gasta a pouca durabilidade rapidamente. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao atingir o inimigo e causa acerto crítico: 144 de dano com o ataque base.",
+      "applications": [
+        "Usar o último uso como projétil em vez de quebrá-lo num golpe comum (o golpe de quebra também é crítico)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima perto de fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado em tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Puxá-lo de volta com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "sem_efeito",
+      "result": "Embora forjado com tecnologia ancestral, não tem dano extra contra Guardiões: os parâmetros não listam alvos especiais e o item não é marcado como ancestral.",
+      "sources": [
+        "dm"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Os maiores bônus de ataque entre as armas de duas mãos",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco) o montante pode receber Ataque aumentado de +14 a +26, Durabilidade aumentada de +3 a +8 ou Acerto crítico; no nível dourado (amarelo), Ataque de +27 a +44, Durabilidade de +9 a +35 ou Lançamento longo (×1,5 a ×2). Com Ataque +44 ele chega a 116, e com Durabilidade +35 passa de 15 para 50 usos.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "glitch",
+      "title": "Topázios infinitos com Parcy",
+      "text": "Existe um glitch em que Parcy aceita o Montante da guarda real, mas a arma continua na algibeira de Link, permitindo entregá-la de novo e obter Topázios sem fim. O mesmo truque funciona com a Espada da guarda real.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Mais forte que a Espada Mestra\"",
+      "text": "O Zelda Wiki inclui o Montante da guarda real entre as poucas armas mais fortes que a Espada Mestra aprimorada (60 de ataque): ele tem 72 de base.",
+      "sources": [
+        "zw:Savage Lynel Crusher",
+        "zw:Master Sword"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o bônus de Durabilidade dourado máximo (+35), o montante deixa de ser frágil. Como as armas deixadas no castelo voltam a aparecer com a Lua de sangue, vale revisitar Lockup e o Salão dos Guardas atrás de exemplares com bônus melhores."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 15 sem bônus.",
+    "Só existe no Castelo de Hyrule.",
+    "Metálico: atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_royal_guards_sword",
+      "relation": "Espada da mesma série; também entregue a Parcy"
+    },
+    {
+      "id": "botw_weapon_royal_guards_spear",
+      "relation": "Lança da mesma série"
+    },
+    {
+      "id": "botw_bow_royal_guards_bow",
+      "relation": "Arco da mesma série"
+    },
+    {
+      "id": "botw_shield_royal_guards_shield",
+      "relation": "Escudo da mesma série"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Recompensa de Parcy por montantes extras"
+    },
+    {
+      "id": "botw_weapon_royal_claymore",
+      "relation": "Montante real, mais fraco e mais durável"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Tem ataque base maior que o da Espada Mestra"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

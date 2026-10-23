@@ -1,0 +1,142 @@
+{
+  "id": "botw_material_ancient_shaft",
+  "summary": "Eixo de máquinas Sheikah, robusto e de material irreconhecível. Três deles dão a Bomba remota+ com Purah; no Forno ancestral, aparecem em todas as armas e flechas ancestrais. Teli só o vende em dias de chuva.",
+  "description": "O Eixo ancestral é uma peça de máquinas antigas incrivelmente resistente, feita de um material que ninguém reconhece; o texto do jogo arrisca que \"pode ser útil algum dia\". E é: na missão \"Slated for Upgrades\", Purah troca 3 eixos pela melhoria Bomba remota+, e no Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala ele entra em praticamente toda a linha ofensiva de Robbie — Espada ancestral, Espada serrada ancestral, Lança ancestral e os três pacotes de Flechas ancestrais — além do Elmo ancestral.\n\nCai de quase todos os Guardiões (exceto o batedor de nível I) e aparece em baús dentro de santuários. Teli, entre o Forte Hateno e a Vila Hateno, só o inclui no estoque quando chove. Na Fonte da Grande Fada, o 3º nível de cada peça do Conjunto ancestral e dos Elmos divinos pede 15 eixos — 105 no total, o segundo maior consumo entre os materiais ancestrais. Como parte de monstro de grau médio, rende 1:50 nos elixires; Kilton paga 20 Mon.",
+  "locations": [
+    "Guardiões de Toda Hyrule (exceto o Guardião batedor de nível I).",
+    "Baús em santuários.",
+    "Teli, entre o Forte Hateno e a Vila Hateno, somente em dias de chuva."
+  ],
+  "obtaining": [
+    "Derrotar Guardiões batedores II, III e IV, Guardiões deteriorados, persecutórios, altívagos, torretas e Sentinelas.",
+    "Abrir baús em santuários.",
+    "Comprar de Teli quando estiver chovendo."
+  ],
+  "uses": [
+    "Missão secundária \"Slated for Upgrades\": 3 Eixos ancestrais para Purah melhorar a Bomba remota para Bomba remota+.",
+    "Forno ancestral (Akkala): 5 eixos na Espada ancestral, na Espada serrada ancestral, na Lança ancestral e no Elmo ancestral; 1, 3 ou 5 eixos nos pacotes de 1, 3 ou 5 Flechas ancestrais.",
+    "Melhorias na Fonte da Grande Fada: 15 por peça no 3º nível do Conjunto ancestral e dos quatro Elmos divinos (105 no total).",
+    "Elixires: cozido com um bicho, acrescenta 1:50 de duração e +10% de chance de crítico.",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 40 rupias, ou 20 Mon na Fang and Bone."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; nos elixires, prolonga a duração (1:50)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "Purah",
+      "status": "confirmado",
+      "result": "Entregar 3 Eixos ancestrais a Purah, no Laboratório de Tecnologia Ancestral de Hateno, melhora a Bomba remota para Bomba remota+.",
+      "conditions": ["Missão secundária \"Slated for Upgrades\" ativa."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Slated for Upgrades"]
+    },
+    {
+      "action": "usar",
+      "variant": "Forno ancestral",
+      "status": "confirmado",
+      "result": "Faz parte do preço da Espada ancestral, da Espada serrada ancestral, da Lança ancestral, do Elmo ancestral e de todas as ofertas de Flechas ancestrais.",
+      "conditions": ["Fornalha do laboratório de Akkala reacesa com a Chama azul (missão \"Robbie's Research\")."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Oven"]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem uso especial do eixo solto.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um eixo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Eixo ancestral ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um eixo largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do eixo ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve se o eixo conduz ou reage à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Eixo ancestral afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "O jogo diz que o eixo não é feito de nenhum material reconhecível; as fontes não informam se Magnétis o atrai."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um eixo largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Parte de monstro de grau médio: com pelo menos um bicho, forma um elixir, acrescenta 1:50 de duração e dá 10% de chance de bônus crítico. Sem bicho, ou com comida comum, vira Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Monster Part", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 40 rupias ou trocado por 20 Mon na Fang and Bone, de Kilton.",
+      "sources": ["zw", "zw:Monster Part"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Só na chuva",
+      "text": "Teli normalmente vende apenas parafusos, molas e engrenagens. Nos dias de chuva, ele amplia o estoque com Eixos ancestrais e Núcleos ancestrais.",
+      "sources": ["zw:Teli"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A peça de todas as flechas ancestrais",
+      "text": "As três ofertas de Flechas ancestrais do Forno pedem eixos na mesma proporção das flechas: 1 eixo para 1 flecha, 3 para 3 e 5 para 5. Quem usa muitas Flechas ancestrais acaba precisando de um estoque constante de eixos.",
+      "sources": ["zw:Ancient Oven"]
+    }
+  ],
+  "advanced_uses": [
+    "Se faltarem eixos para uma melhoria, espere um dia de chuva em Necluda e procure Teli no caminho do Forte Hateno."
+  ],
+  "limitations": [
+    "Não pode ser comido nem cozido com comida comum.",
+    "Teli só o vende quando chove."
+  ],
+  "related": [
+    { "id": "botw_rune_remote_bomb", "relation": "Melhorada por Purah com 3 eixos" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Cada flecha do Forno pede um eixo" },
+    { "id": "botw_weapon_ancient_short_sword", "relation": "Pede 5 eixos no Forno ancestral" },
+    { "id": "botw_weapon_ancient_bladesaw", "relation": "Pede 5 eixos no Forno ancestral" },
+    { "id": "botw_weapon_ancient_spear", "relation": "Pede 5 eixos no Forno ancestral" },
+    { "id": "botw_armor_ancient_helm", "relation": "Pede 5 eixos na compra e 15 no 3º nível" },
+    { "id": "botw_material_ancient_screw", "relation": "Parceiro do eixo nas Flechas ancestrais" },
+    { "id": "botw_material_ancient_gear", "relation": "Outra peça ancestral de grau médio" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem bichos" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante cinza" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

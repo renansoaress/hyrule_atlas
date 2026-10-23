@@ -1,0 +1,139 @@
+{
+  "id": "botw_bow_bow_of_light",
+  "summary": "Arco que a princesa Zelda entrega a Link na batalha contra Ganon, Besta Sombria: ataque 100, Flechas de luz infinitas e durabilidade que nunca se gasta. Só existe nessa luta final.",
+  "description": "O Arco da Luz é entregue pela princesa Zelda a Link no início da batalha final contra Ganon, Besta Sombria, na Pradaria de Hyrule. Segundo a descrição do jogo, nas mãos do herói ele dispara flechas de pura luz, fortes o bastante para se opor à Calamidade. Zelda o apresenta como uma arma poderosa diante do mal, e a página do chefe no Zelda Wiki o descreve como a única arma inquebrável capaz de repelir Ganon.\n\nTem ataque 100, dispara Flechas de luz infinitas — geradas pelo próprio arco, que não aceita outras flechas — e não gasta durabilidade. Pelos parâmetros extraídos do jogo, a flecha percorre 500 m em linha reta antes de sofrer gravidade (5 m/s²).\n\nNa luta, Zelda segura a Malícia e faz surgir pontos brilhantes no corpo de Ganon; Link deve acertá-los com o arco. Depois de seis acertos aparece um último ponto na barriga e, ao acertá-lo, Ganon expõe o núcleo do seu ser, um olho gigante. O disparo final do Arco da Luz nesse núcleo destrói a forma física de Ganon.",
+  "locations": [
+    "Pradaria de Hyrule, apenas durante a batalha contra Ganon, Besta Sombria."
+  ],
+  "obtaining": [
+    "Recebido automaticamente da princesa Zelda no começo da batalha contra Ganon, Besta Sombria, depois de derrotar Ganon, a Calamidade."
+  ],
+  "uses": [
+    "Acertar os pontos brilhantes que Zelda revela no corpo de Ganon, Besta Sombria, e depois o núcleo dele."
+  ],
+  "effects": [
+    "Dispara Flechas de luz infinitas.",
+    "A durabilidade não diminui com o uso."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara apenas Flechas de luz, criadas pelo próprio arco e por isso infinitas; não pode disparar outros tipos de flecha. A flecha percorre 500 m em linha reta, e o arco não perde durabilidade.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Arrow",
+        "zw:Light Arrow"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É a arma principal contra Ganon, Besta Sombria: as Flechas de luz ferem os pontos brilhantes que Zelda abre na Malícia (ombros, costelas e coxas, dos dois lados) e, depois de seis acertos, o ponto na barriga; o último disparo no núcleo exposto encerra a luta.",
+      "conditions": [
+        "Esperar Zelda revelar os pontos brilhantes; se Link demorar, eles somem até ela recuperar as forças."
+      ],
+      "applications": [
+        "Para alcançar o núcleo, use as correntes ascendentes criadas pelos raios de energia de Ganon ou o Vendaval de Revali e mire no ar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Dark Beast Ganon"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "O arco só existe durante a batalha final e as fontes não descrevem suas propriedades de material."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "O arco só existe durante a batalha final e as fontes não descrevem suas propriedades de material."
+    },
+    {
+      "action": "raio",
+      "status": "desconhecido",
+      "result": "O arco só existe durante a batalha final e as fontes não descrevem suas propriedades de material."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "O arco só existe durante a batalha final e as fontes não descrevem suas propriedades de material."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "O arco só existe durante a batalha final e as fontes não descrevem suas propriedades de material."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Espaço extra temporário na algibeira",
+      "text": "Ao receber o Arco da Luz, Link ganha automaticamente um espaço extra de arco na algibeira, além do limite de 13 obtido com Ruri. Esse espaço existe só durante a batalha e não pode ser desbloqueado de forma permanente.",
+      "sources": [
+        "zw:Hestu",
+        "zw:Bow"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem bônus",
+      "text": "Todos os parâmetros de bônus do arco são zero, e o Zelda Wiki o lista entre os equipamentos únicos que nunca recebem bônus.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Não é a única forma de ferir Ganon",
+      "text": "Embora Zelda entregue o Arco da Luz para a luta, Ganon, Besta Sombria também pode ser ferido com o Arco do crepúsculo, com Flechas ancestrais, com a Fúria de Urbosa e com os feixes de espada da Espada Mestra.",
+      "sources": [
+        "zw:Dark Beast Ganon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Salte do cavalo para ativar a mira em câmera lenta e acertar os pontos brilhantes com mais precisão."
+  ],
+  "limitations": [
+    "Existe apenas durante a batalha contra Ganon, Besta Sombria.",
+    "Só dispara Flechas de luz.",
+    "Nunca recebe bônus."
+  ],
+  "related": [
+    {
+      "id": "botw_arrow_light_arrow",
+      "relation": "Única flecha que este arco dispara"
+    },
+    {
+      "id": "botw_monster_dark_beast_ganon",
+      "relation": "Chefe contra o qual o arco é usado"
+    },
+    {
+      "id": "botw_bow_twilight_bow",
+      "relation": "O outro arco que dispara Flechas de luz"
+    },
+    {
+      "id": "botw_arrow_ancient_arrow",
+      "relation": "Alternativa para ferir Ganon, Besta Sombria"
+    },
+    {
+      "id": "botw_ability_revalis_gale",
+      "relation": "Ajuda a alcançar o núcleo de Ganon"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Os feixes de espada também ferem Ganon, Besta Sombria"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "parcial"
+}

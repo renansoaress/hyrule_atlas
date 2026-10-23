@@ -1,0 +1,143 @@
+{
+  "id": "botw_creature_stealthfin_trout",
+  "summary": "Truta bioluminescente da Grande Floresta de Hyrule e de Eldin, fácil de achar à noite pelo brilho. Cozida, dá Furtividade aumentada; 10 por peça levam o Conjunto furtivo ao nível máximo.",
+  "description": "A Truta discreta brilha no escuro graças a um composto bioluminescente que, segundo o jogo, aumenta a concentração de quem o consome: pratos feitos com ela abafam os ruídos de Link. Vive em corpos d'água da Grande Floresta de Hyrule e da Cordilheira de Eldin e é especialmente abundante no Lago Mekar (Lake Mekar). Por causa do brilho, é mais fácil de localizar à noite.\n\nCrua, recupera 1 coração. Na panela, dá Furtividade aumentada, efeito que ajuda a se aproximar de monstros e animais sem ser notado. Também é um dos ingredientes discretos que podem ser somados a um Elixir discreto para que ele cure. Exposta ao fogo vira Truta assada; congelada, Truta congelada.\n\nO uso mais valioso é nas Fontes da Grande Fada: o quarto e último nível de cada peça do Conjunto furtivo exige 10 Trutas discretas e 5 Princesas plácidas.",
+  "locations": [
+    "Corpos d'água da Grande Floresta de Hyrule e da Cordilheira de Eldin; abundante no Lago Mekar (Lake Mekar).",
+    "Mais fácil de ver à noite, quando o brilho se destaca."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ela, viva ou morta."
+  ],
+  "uses": [
+    "Pratos de Furtividade aumentada: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Frutos do mar à meunière e as demais receitas de peixe ou fruto do mar.",
+    "Ingrediente discreto de um Elixir discreto, que passa a recuperar corações.",
+    "Melhoria de armadura: 10 unidades por peça do Conjunto furtivo (Máscara furtiva, Peitoral furtivo e Meia-calça furtiva) para o 4º nível, junto com 5 Princesas plácidas.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Crua: recupera 1 coração.",
+    "Na panela: Furtividade aumentada temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhada à mão enquanto Link nada, viva ou morta. O brilho facilita encontrá-la à noite.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish", "zw"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma truta viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Truta discreta dão Furtividade aumentada, que reduz o ruído dos passos de Link.",
+      "applications": ["Ataque-surpresa em acampamentos e captura de animais ariscos."],
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Stealth"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somada a um Elixir discreto (Vaga-lume do poente + parte de monstro), faz o elixir também recuperar corações.",
+      "produces": ["botw_elixir_sneaky_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Sneaky Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 10 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimada pelo fogo, vira Truta assada, sem o efeito de furtividade.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada perto do fogo, assa e vira Truta assada.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima abrasador, vira Truta assada.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriada com gelo, vira Truta congelada.",
+      "produces": ["botw_food_frozen_trout"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gélido ou água gelada, vira Truta congelada.",
+      "produces": ["botw_food_frozen_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre esta truta."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Furtividade não silencia a corrida",
+      "text": "A furtividade de comida ou armadura vai até o nível 3, mas correr em disparada sempre faz barulho, qualquer que seja o nível. Chuva e grama alta também ajudam a passar despercebido.",
+      "sources": ["zw:Stealth"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Conjunto furtivo completo",
+      "text": "O Conjunto furtivo usa três criaturas \"discretas\" em níveis sucessivos: 5 Vaga-lumes do poente no 2º nível, 5 Caramujos discretos no 3º e 10 Trutas discretas no 4º, sempre por peça. Para as três peças, são 30 trutas só no último nível.",
+      "sources": ["zw", "zw:Sunset Firefly", "zw:Sneaky River Snail"]
+    }
+  ],
+  "advanced_uses": [
+    "Pesque à noite no Lago Mekar: o brilho denuncia as trutas e facilita juntar as 30 necessárias para o Conjunto furtivo."
+  ],
+  "limitations": [
+    "Assada ou congelada, perde a Furtividade aumentada.",
+    "Furtividade não impede o barulho de correr em disparada."
+  ],
+  "related": [
+    { "id": "botw_armorset_stealth_set", "relation": "Usa 10 por peça no 4º nível de melhoria" },
+    { "id": "botw_food_roasted_trout", "relation": "Resultado de expô-la ao fogo" },
+    { "id": "botw_food_frozen_trout", "relation": "Resultado de congelá-la" },
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Pode ser somada como ingrediente discreto" },
+    { "id": "botw_creature_sneaky_river_snail", "relation": "Outro fruto do mar discreto e brilhante" },
+    { "id": "botw_creature_sunset_firefly", "relation": "Bicho base do Elixir discreto" },
+    { "id": "botw_material_silent_princess", "relation": "Acompanha a truta no 4º nível do Conjunto furtivo" }
+  ],
+  "capabilities": ["cura", "furtividade", "ilumina", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

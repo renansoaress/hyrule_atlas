@@ -1,0 +1,182 @@
+{
+  "id": "botw_weapon_gerudo_spear",
+  "summary": "Lança das soldadas Gerudo, com o centro de gravidade na ponta (ataque 16, durabilidade 35). Desajeitada para guerreiros comuns, confiável nas mãos certas; é de metal.",
+  "description": "A Lança Gerudo pertence ao equipamento criado e usado pelo povo Gerudo e é a arma das soldadas que mantêm intrusos longe da Cidade Gerudo — o Zelda Wiki lista quinze delas, como Grampela (Babi), Calere (Katta) e Nenti (Marta). O centro de gravidade fica na ponta, o que a torna um tanto desajeitada para um guerreiro comum; nas mãos de uma guerreira Gerudo habilidosa, segundo o jogo, é uma arma de força confiável.\n\nÉ encontrada nas Montanhas Gerudo e no Deserto Gerudo, principalmente nos arredores da Cidade Gerudo. Por ser metálica, conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser movida com Magnétis; não queima com fogo nem no calor de Eldin.",
+  "locations": [
+    "Montanhas Gerudo e Deserto Gerudo, principalmente nos arredores da Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Encontrada nessas regiões, sobretudo perto da Cidade Gerudo."
+  ],
+  "uses": [
+    "Lança de metal de bom dano para a região do deserto.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não citam monstros que a empunhem; na Cidade Gerudo, ela é a arma das soldadas Gerudo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança Gerudo pode surgir com um bônus branco (comum) — ataque +5 a +9, durabilidade +4 a +7 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +10 a +15, durabilidade +8 a +16 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Arma da guarda Gerudo",
+      "text": "Quinze soldadas Gerudo aparecem empunhando esta lança no jogo, entre elas Grampela (Babi), Calere (Katta) e Nenti (Marta), encarregadas de afastar intrusos da cidade.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Atrai raios em tempestades.",
+    "Afunda na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_gerudo_scimitar",
+      "relation": "Mesmo arquétipo (Gerudo), uma mão"
+    },
+    {
+      "id": "botw_weapon_moonlight_scimitar",
+      "relation": "Mesmo arquétipo (Gerudo)"
+    },
+    {
+      "id": "botw_shield_gerudo_shield",
+      "relation": "Escudo Gerudo"
+    },
+    {
+      "id": "botw_weapon_scimitar_of_the_seven",
+      "relation": "Arma Gerudo única"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

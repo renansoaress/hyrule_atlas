@@ -1,0 +1,184 @@
+{
+  "id": "botw_weapon_thunderblade",
+  "summary": "Espada mágica forjada e refinada com raios dos Cerros de Hyrule: quando a lâmina brilha dourada, eletrocuta os inimigos atingidos. Mesmo sendo elétrica, é de metal — atrai raios e conduz eletricidade.",
+  "description": "A Espada faiscante pertence ao equipamento mágico (Magic Gear); as armas elétricas dessa linha foram forjadas pela família real de Hyrule usando raios dos Cerros de Hyrule e do Planalto Thundra. Enquanto a lâmina brilha com luz dourada, todo inimigo atingido é eletrocutado. É comum na Pradaria de Hyrule e em Necluda Ocidental.\n\nApesar da natureza elétrica, a espada é de metal: conduz eletricidade e atrai raios quando equipada durante uma tempestade. Em compensação, pode ser erguida com Magnétis — útil porque afunda se cair na água — e não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Ocidental (locais comuns segundo o compendium e o Zelda Wiki)."
+  ],
+  "obtaining": [
+    "Recolhida na Pradaria de Hyrule e em Necluda Ocidental, onde é comum.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Eletrocutar inimigos em combate corpo a corpo.",
+    "Espada de uma mão de durabilidade boa (36) para a metade do jogo."
+  ],
+  "effects": [
+    "Golpes com a lâmina brilhando dourada eletrocutam o alvo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão com ataque giratório carregado e uso junto do escudo. Quando a lâmina brilha dourada, os golpes eletrocutam os inimigos.",
+      "conditions": [
+        "A lâmina precisa estar brilhando; depois de alguns golpes, o brilho some até recarregar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magic Gear",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade como qualquer arma de metal. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link, apesar do elemento elétrico.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos atingidos enquanto a lâmina brilha são eletrocutados. Centaleões, porém, resistem a todos os ataques elementais e a seus efeitos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magic Gear",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Carga do brilho",
+      "text": "Nos parâmetros extraídos, a energia elemental máxima da espada é 4000 e cada golpe elétrico consome 1000: quatro golpes eletrizados antes de o brilho apagar. A energia se recupera com o tempo (taxa 40 a cada intervalo de 60, em unidades internas do jogo).",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +5 a +8 (nível comum) ou +9 a +18 (nível dourado), bônus de durabilidade de +4 a +8 (ou +9 a +18 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Forja real",
+      "text": "Diferente das armas de fogo (forjadas por gorons) e de gelo (feitas em Hebra), as armas elétricas do equipamento mágico foram forjadas pela própria família real de Hyrule, com raios dos Cerros de Hyrule e do Planalto Thundra.",
+      "sources": [
+        "zw:Magic Gear"
+      ]
+    }
+  ],
+  "limitations": [
+    "Metálica: atrai raios em tempestades, apesar de ser uma espada elétrica.",
+    "O efeito elétrico depende do brilho da lâmina, que se esgota após alguns golpes.",
+    "Centaleões resistem ao efeito elétrico."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_flameblade",
+      "relation": "Mesmo arquétipo (fogo)"
+    },
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Mesmo arquétipo (gelo)"
+    },
+    {
+      "id": "botw_weapon_great_thunderblade",
+      "relation": "Versão de duas mãos"
+    },
+    {
+      "id": "botw_weapon_thunderspear",
+      "relation": "Versão lança"
+    },
+    {
+      "id": "botw_weapon_lightning_rod",
+      "relation": "Arma elétrica de uma mão à distância"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Atrai raios mesmo sendo elétrica"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "eletrocuta_inimigos",
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

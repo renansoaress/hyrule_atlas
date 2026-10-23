@@ -1,0 +1,130 @@
+{
+  "id": "botw_rune_cryonis",
+  "summary": "Runa que ergue pilares de gelo a partir de qualquer superfície de água, inclusive cachoeiras, com no máximo 3 pilares ao mesmo tempo. Não funciona em fontes termais nem fora da água.",
+  "description": "Gelítis é a runa obtida no Santuário Keh Namut, no Planalto (Great Plateau). Ela cria um pilar de gelo muito estável na superfície de qualquer corpo de água, inclusive em cachoeiras e em pântanos sem fundo (Bottomless Bogs). Podem existir até três pilares simultâneos; erguer um quarto quebra o primeiro. A própria runa também desfaz um pilar existente: basta mirar nele e confirmar. Depois de cada pilar criado, um medidor de recarga precisa se completar antes do próximo uso.\n\nOs pilares servem de degraus, de apoio para escalar e de obstáculo, e podem levantar objetos ou portões ao surgirem embaixo deles. Eles são resistentes a quase tudo: armas, flechas comuns e as demais runas não os afetam e até Flechas explosivas falham. Só cedem à Bomba remota, a Flechas ancestrais (que os desintegram e caem no lugar), à Chama azul, à evaporação da água em que estão apoiados ou à passagem de um Korok escondido por baixo. Em fontes termais (Hot Spring Water) a runa não funciona. Gelítis não tem versão aprimorada.",
+  "locations": [
+    "Santuário Keh Namut, no Planalto."
+  ],
+  "obtaining": [
+    "Extrair a runa no terminal (Guidance Stone) do Santuário Keh Namut."
+  ],
+  "uses": [
+    "Atravessar rios e lagos criando degraus de gelo.",
+    "Escalar cachoeiras criando pilares na queda-d'água.",
+    "Erguer portões ou objetos fazendo o pilar surgir embaixo deles.",
+    "Criar abrigo contra a chuva numa cachoeira: a chuva não atravessa os blocos de gelo."
+  ],
+  "effects": [
+    "Cria um pilar de gelo estável na água; no máximo 3 ao mesmo tempo, e o quarto apaga o primeiro."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ergue um pilar de gelo na superfície da água mirada. Apontar para os pés (direcional para baixo) cria o pilar logo abaixo de Link; mirar num pilar existente e confirmar o quebra.",
+      "conditions": ["Precisa de uma superfície de água; não funciona em fontes termais."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Funciona em qualquer corpo de água, incluindo cachoeiras e pântanos sem fundo; não funciona em água de fonte termal. Se a água sob o pilar evaporar, ele quebra.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva não penetra os blocos de gelo, que podem servir de abrigo temporário quando criados numa cachoeira.",
+      "applications": ["Abrigar-se da chuva junto a uma cachoeira."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Rain"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota destrói os pilares de gelo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas comuns e Flechas explosivas não afetam os pilares; Flechas ancestrais os desintegram e a flecha fica no lugar.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "sem_efeito",
+      "result": "Os pilares são imunes a armas.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "variant": "Chama azul",
+      "status": "confirmado",
+      "result": "A Chama azul estilhaça blocos de Gelítis ao tocá-los.",
+      "kind": "mecanica",
+      "sources": ["zw:Blue Flame"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Contra a Ira áquea de Ganon, blocos de gelo colocados entre Link e o chefe fazem ele quebrar a lança neles, abrindo uma brecha para o ataque. Pilares também permitem chegar perto de Octorocs aquáticos para golpeá-los quando saltam.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Waterblight Ganon", "zw:Water Octorok"]
+    },
+    {
+      "action": "gelitis",
+      "variant": "pilares inimigos",
+      "status": "confirmado",
+      "result": "A Fera Divina Vah Ruta e a Ira áquea de Ganon também criam pilares e bolas de gelo com espinhos; como toda formação de Gelítis, podem ser destruídos com a própria runa.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Divine Beast"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Koroks quebram o gelo",
+      "text": "Um Korok escondido que se desloque por baixo de um pilar de Gelítis faz o pilar se quebrar.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Abrir portões por baixo",
+      "text": "Alguns portões sobre a água são abertos erguendo um pilar de gelo exatamente embaixo deles, que os empurra para cima.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Recuperar o Tridente cerimonial",
+      "text": "Na Missão de santuário \"The Ceremonial Song\", o Tridente cerimonial caiu de uma ponte na saída oeste do Domínio Zora. Link caminha sobre a água com pilares de Gelítis até ficar ao alcance e o retira com Magnétis.",
+      "sources": ["zw:The Ceremonial Song"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar com Magnétis para alcançar e retirar baús metálicos submersos em lagos.",
+    "Usar pilares como barreira contra ataques corpo a corpo de chefes aquáticos."
+  ],
+  "limitations": [
+    "Só cria pilares sobre água; não funciona em fontes termais.",
+    "Máximo de 3 pilares; o quarto quebra o primeiro.",
+    "Os pilares quebram se a água sob eles evaporar.",
+    "Não tem versão + no Laboratório de Hateno."
+  ],
+  "related": [
+    { "id": "botw_keyitem_sheikah_slate", "relation": "Runa da Tabuleta Sheikah" },
+    { "id": "botw_rune_remote_bomb", "relation": "Destrói os pilares de gelo" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Desintegra os pilares" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Não afeta os pilares" },
+    { "id": "botw_monster_waterblight_ganon", "relation": "Usa formações de Gelítis; blocos ajudam na luta" },
+    { "id": "botw_monster_water_octorok", "relation": "Pilares permitem alcançá-los" },
+    { "id": "botw_mechanic_rain", "relation": "Os blocos servem de abrigo contra a chuva" },
+    { "id": "botw_rune_magnesis", "relation": "Combinação para pegar objetos na água" }
+  ],
+  "capabilities": ["gera_gelo", "habilidade_especial"],
+  "verification_status": "verificado"
+}

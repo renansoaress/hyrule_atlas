@@ -1,0 +1,183 @@
+{
+  "id": "botw_weapon_mighty_lynel_sword",
+  "summary": "Espada centaleônica de segundo nível, com mais lâminas e mais força (36). Usada pelos Centaleões de juba azul; o da Primeira Guarita do Castelo de Hyrule nunca evolui e é a fonte permanente dela. Metálica.",
+  "description": "A Espada centaleônica forte pertence ao equipamento centaleônico (Lynel Gear). Segundo o jogo, tem mais lâminas e mais poder de ataque que a versão comum, e um Centaleão habilidoso consegue sacá-la de passagem e ainda assim partir um inimigo ao meio. É usada pelos Centaleões de juba azul — no Modo Mestre, pelos Centaleões de juba branca.\n\nComo a maioria dos Centaleões sobe de nível à medida que Link derrota inimigos, a espada pode ficar escassa com o avanço do jogo. A exceção é o Centaleão de juba azul da Primeira Guarita (First Gatehouse) do Castelo de Hyrule, que não evolui e serve como fonte permanente. Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser recuperada com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Pradaria de Hyrule e Grande Nascente de Lanayru (locais comuns segundo o compendium).",
+    "Com o Centaleão de juba azul da Primeira Guarita do Castelo de Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão de juba azul (no Modo Mestre, de juba branca) que a empunhe.",
+    "O Centaleão de juba azul da Primeira Guarita não sobe de nível; segundo o Zelda Wiki, salvar e recarregar o jogo dentro da guarita permite obter o equipamento dele de novo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão de dano alto (36) para a metade final do jogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Centaleões de juba azul a empunham (de juba branca no Modo Mestre). Centaleões só largam a arma quando derrotados, nunca quando atordoados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fonte permanente na Primeira Guarita",
+      "text": "O Centaleão de juba azul da Primeira Guarita do Castelo de Hyrule não acompanha a evolução dos outros Centaleões. Segundo a lista de itens perdíveis do Zelda Wiki, salvar e recarregar dentro da guarita permite obter outra vez a Espada, o Escudo e o Arco centaleônicos fortes dele.",
+      "sources": [
+        "zw",
+        "zw:Permanently Missable Items"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes montado sem desgaste",
+      "text": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes com qualquer arma sem gastar durabilidade, e a regra do último golpe crítico também vale nessa situação.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +6 a +11 (nível comum) ou +12 a +21 (nível dourado), bônus de durabilidade de +4 a +7 (ou +8 a +16 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o Centaleão da Primeira Guarita como fonte recorrente da espada, inclusive em busca de bônus melhores."
+  ],
+  "limitations": [
+    "Pode ficar escassa com o avanço do jogo, já que a maioria dos Centaleões evolui para níveis superiores.",
+    "Metálica: perigosa em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lynel_sword",
+      "relation": "Nível anterior"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_sword",
+      "relation": "Nível seguinte"
+    },
+    {
+      "id": "botw_weapon_mighty_lynel_crusher",
+      "relation": "Mesmo nível (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_mighty_lynel_spear",
+      "relation": "Mesmo nível (lança)"
+    },
+    {
+      "id": "botw_shield_mighty_lynel_shield",
+      "relation": "Mesmo nível (escudo)"
+    },
+    {
+      "id": "botw_bow_mighty_lynel_bow",
+      "relation": "Mesmo nível (arco)"
+    },
+    {
+      "id": "botw_monster_blue_maned_lynel",
+      "relation": "Portador habitual"
+    },
+    {
+      "id": "botw_monster_white_maned_lynel",
+      "relation": "Portador no Modo Mestre"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

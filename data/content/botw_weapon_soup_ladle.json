@@ -1,0 +1,161 @@
+{
+  "id": "botw_weapon_soup_ladle",
+  "summary": "Concha de cozinha para servir sopa, entalhada em madeira de árvore resistente — e que, segundo o jogo, até bate com certa força. Há uma ao lado da panela da cozinha comunitária de Hateno. Queima e flutua.",
+  "description": "A Concha de madeira pertence aos utensílios do dia a dia (Daily Use Goods), objetos de uso cotidiano dos moradores de Hyrule que também servem como arma. A descrição do jogo explica que ela é feita da madeira de uma árvore resistente, então até causa um golpe razoável — embora o dano seja baixo (4) e a durabilidade, mínima (5). É encontrada na Pradaria de Hyrule e na Fronteira de Tabantha, e uma delas fica junto da panela do espaço de cozinha compartilhado de Hateno.\n\nPor ser de madeira, queima no fogo e em clima escaldante, não atrai raios, não conduz eletricidade e flutua na água.",
+  "locations": [
+    "Pradaria de Hyrule e Fronteira de Tabantha (locais comuns segundo o compendium).",
+    "Ao lado da panela do espaço de cozinha compartilhado de Hateno."
+  ],
+  "obtaining": [
+    "Recolher a concha nos locais citados.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma improvisada de dano baixo.",
+    "Fonte de fogo portátil quando acesa, por ser de madeira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo; causa pouco dano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queima se exposta ao fogo ou a clima escaldante.",
+      "side_effects": [
+        "Nas áreas escaldantes de Eldin, armas inflamáveis queimam e desaparecem se ficarem expostas por muito tempo."
+      ],
+      "applications": [
+        "Acesa, pode acender lenha para fazer uma fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Fire",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na superfície da água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálica e não responde a Magnétis.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que usem a Concha de madeira."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis — e um valor estranho",
+      "text": "Pelos parâmetros extraídos do jogo, a concha pode surgir com bônus de ataque de +3 a +4 (nível comum) ou +5 a +7 (nível dourado), bônus de durabilidade de +1 (nível comum) e lançamento longo de 1,5× a 2×; pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite. A faixa dourada de durabilidade registrada vai de +2 a +45: nove vezes a durabilidade base da concha, enquanto nas outras armas de uma mão o teto dourado não passa da durabilidade base. As fontes não comentam esse valor, que pode ser um erro de transcrição.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Utensílio de cozinha",
+      "text": "A descrição do jogo lembra que a concha serve para servir sopas deliciosas; não por acaso, uma delas fica ao lado da panela comunitária de Hateno.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Dano e durabilidade muito baixos.",
+    "Madeira: queima perto de fogo e em clima escaldante.",
+    "Arma contundente: não corta árvores."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_wooden_mop",
+      "relation": "Mesmo arquétipo (utensílios do dia a dia)"
+    },
+    {
+      "id": "botw_weapon_farming_hoe",
+      "relation": "Mesmo arquétipo (utensílios do dia a dia)"
+    },
+    {
+      "id": "botw_weapon_boat_oar",
+      "relation": "Mesmo arquétipo (utensílios do dia a dia)"
+    },
+    {
+      "id": "botw_weapon_torch",
+      "relation": "Mesmo arquétipo (utensílios do dia a dia)"
+    },
+    {
+      "id": "botw_object_cooking_pot",
+      "relation": "Uma concha fica ao lado da panela comunitária de Hateno"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

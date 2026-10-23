@@ -1,0 +1,77 @@
+{
+  "id": "botw_keyitem_medal_of_honor_molduga",
+  "summary": "Medalha que Kilton entrega, depois de Ganon, a Calamidade, ser derrotado, a quem eliminar os quatro Molduga do deserto. Das três medalhas de honra, é a que exige menos chefes; não tem efeito de jogo.",
+  "description": "A Medalha de honra: Molduga é a medalha de Kilton dedicada à \"fera gigante da areia\". Depois que Link derrota Ganon, a Calamidade, Kilton conta que, segundo suas fontes, só existem quatro Molduga em Hyrule, todos vivendo sob a areia do deserto. Ele não consegue chegar perto deles por causa do tamanho e pede que Link derrote todos, para analisar o cheiro dos fluidos que ficam em Link durante a batalha e assim entender os hábitos e o comportamento desses monstros.\n\nQuando os quatro forem derrotados, Kilton fareja Link, exclama que é como se houvesse um Molduga parado à sua frente e entrega a medalha. A descrição dela a chama de homenagem solene: matar um monstro é um fardo pesado, e é preciso ter firmeza para carregá-lo.\n\nA medalha não tem efeito de jogo. Depois de recebê-la, Kilton passa a se perguntar até que tamanho um Molduga pode chegar.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton (aberta das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Derrotar Ganon, a Calamidade, ao menos uma vez e depois derrotar os quatro Molduga; em seguida, falar com Kilton."
+  ],
+  "uses": [
+    "Troféu pela caçada completa aos Molduga; não tem uso prático."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "sem_efeito",
+      "result": "A medalha é apenas uma lembrança; não tem função de jogo.",
+      "sources": [
+        "zw:Medal of Honor",
+        "zw:Kilton"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Só quatro alvos",
+      "text": "Enquanto as medalhas de Rinox e de Tálus exigem 40 chefes cada, a de Molduga pede apenas os quatro Molduga do mapa. Chefes já derrotados mostram \"★ Defeated\" ao lado da barra de vida.",
+      "sources": [
+        "zw:Medal of Honor"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Matador da fera gigante da areia\"",
+      "text": "Ao entregar a medalha, Kilton diz que Link não precisa mais sofrer em silêncio e que destruir monstros é um trabalho \"de partir a alma\", mas necessário. Depois, ao falar de novo sobre os Molduga, ele chama Link de matador de feras gigantes da areia.",
+      "sources": [
+        "zw:Kilton"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Se ainda faltar algum, pergunte a Kilton a contagem exata de Molduga derrotados."
+  ],
+  "limitations": [
+    "Só fica disponível depois de derrotar Ganon, a Calamidade.",
+    "Sem efeito de jogo."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_molduga",
+      "relation": "Monstro que precisa ser derrotado"
+    },
+    {
+      "id": "botw_monster_molduking",
+      "relation": "Molduga especial da DLC; as fontes não dizem se entra na contagem"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_hinox",
+      "relation": "Medalha de Kilton para os Rinox"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_talus",
+      "relation": "Medalha de Kilton para os Tálus"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "Precisa ser derrotado antes do pedido de Kilton"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "botw_shield_shield_of_the_minds_eye",
+  "summary": "Pequeno escudo Sheikah feito para reduzir pontos cegos sem perder muita defesa (Defesa 16, durabilidade 16). Um dos três escudos de surfe com atrito reduzido (0,25). É metálico nos dados do jogo.",
+  "description": "O Escudo da visão anímica é um escudo pequeno feito pelos Sheikah. Segundo o jogo, seu desenho busca diminuir os pontos cegos de quem o usa sem sacrificar defesa demais — as fontes, porém, não registram nenhum efeito prático disso no combate. Com Defesa 16 e durabilidade 16, é um escudo de nível médio-baixo do equipamento Sheikah (Sheikah Gear), ao lado da Katana Sheikah, da Katana da desconfiança e do Arco de precisão.\n\nSeu diferencial aparece ao Surfar com escudo: o atrito é multiplicado por 0,25, o que o coloca entre os três únicos escudos que perdem velocidade mais devagar que o normal, junto do Escudo luminescente e do Escudo ancestral. Aparece em Necluda Oriental e Necluda Ocidental.\n\nNos parâmetros do jogo e no artigo do Zelda Wiki ele é de metal: conduz eletricidade, atrai raios, afunda e pode ser movido com Magnétis; não queima. A tabela geral de escudos do wiki, porém, lista sua composição como madeira.",
+  "locations": [
+    "Necluda Oriental e Necluda Ocidental."
+  ],
+  "obtaining": [
+    "Recolher exemplares encontrados em Necluda.",
+    "Baú invocado pelo amiibo de Sheik (série Super Smash Bros.), com chance de conter este escudo."
+  ],
+  "uses": [
+    "Prancha rápida para Surfar com escudo, graças ao atrito reduzido.",
+    "Escudo leve de nível médio para o começo do jogo."
+  ],
+  "effects": [
+    "Atrito reduzido ao surfar (multiplicador 0,25). Nenhum efeito documentado sobre pontos cegos."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 16; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao Surfar com escudo, a perda de velocidade é multiplicada por 0,25, bem menos que o normal; o desgaste é o padrão (multiplicador 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Ao contrário do Escudo ancestral e do luminescente, não tem desgaste reduzido: em pedra perde durabilidade normalmente."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters", "zw:Ancient Shield", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo (não inflamável nos parâmetros do jogo).",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +8 (nível amarelo) e com Defesa do escudo aumentada de +7 a +12 (branco) ou +13 a +24 (amarelo). Com o bônus amarelo máximo, a Defesa passa de 16 para 40, mais que dobrando.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Madeira ou metal?",
+      "text": "A tabela \"Shields in Breath of the Wild\" do Zelda Wiki lista o escudo como madeira, mas os parâmetros extraídos do jogo (não inflamável, magnético, condutor e que afunda) e o próprio artigo do escudo o tratam como metal. Esta ficha segue os parâmetros.",
+      "sources": ["zw:Shields in Breath of the Wild", "dm", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo como prancha nas encostas de neve: o surfe ali não gasta durabilidade e o atrito baixo dá muita velocidade, sem arriscar um Escudo luminescente ou ancestral."
+  ],
+  "limitations": [
+    "Defesa e durabilidade modestas (16).",
+    "Metálico: atrai raios e cai das mãos com choques.",
+    "A redução de pontos cegos citada na descrição não tem efeito documentado."
+  ],
+  "related": [
+    { "id": "botw_weapon_eightfold_blade", "relation": "Mesmo arquétipo (equipamento Sheikah)" },
+    { "id": "botw_weapon_eightfold_longblade", "relation": "Mesmo arquétipo (equipamento Sheikah)" },
+    { "id": "botw_bow_phrenic_bow", "relation": "Mesmo arquétipo (equipamento Sheikah)" },
+    { "id": "botw_shield_radiant_shield", "relation": "Outro escudo de atrito reduzido (0,1)" },
+    { "id": "botw_shield_ancient_shield", "relation": "Outro escudo de atrito reduzido (0,15)" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Surfa com atrito reduzido" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

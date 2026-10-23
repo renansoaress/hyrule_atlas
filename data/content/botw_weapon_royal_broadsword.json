@@ -1,0 +1,185 @@
+{
+  "id": "botw_weapon_royal_broadsword",
+  "summary": "Espada que a família real de Hyrule concedia a cavaleiros de feitos notáveis, equilibrando força e beleza (ataque 36, durabilidade 36). Encontrada no Castelo de Hyrule e com Koboblins prateados e dourados. Metálica.",
+  "description": "A Espada real pertence ao equipamento real (Royal Gear), usado por figuras ilustres de Hyrule. Antes da Grande Calamidade, a família real a concedia a cavaleiros hylianos que realizassem feitos notáveis; segundo o jogo, uma espada que une força e beleza com tanta elegância é rara. Tem ataque e durabilidade de 36.\n\nAparece no Castelo de Hyrule e, às vezes, nas mãos de Koboblins prateados e dourados (estes no Modo Mestre); os Koboblins mais fortes costumam usar armas como a Espada larga do soldado, a Espada do cavaleiro e a Espada real. Há ainda uma via curiosa: um Octoroc rochoso que engole uma Espada enferrujada tem 5% de chance de devolvê-la como Espada real. Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser erguida com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Castelo de Hyrule.",
+    "Fronteira de Tabantha e Altiplano de Akkala (locais comuns segundo o compendium)."
+  ],
+  "obtaining": [
+    "Explorar o Castelo de Hyrule ou derrotar Koboblins prateados e dourados (Modo Mestre) que a empunhem.",
+    "Dar uma Espada enferrujada para um Octoroc rochoso engolir: há 5% de chance de ele cuspir uma Espada real.",
+    "Pode aparecer nos baús gerados pela runa amiibo com o amiibo de Young Link (Super Smash Bros.), o de Link (Link's Awakening) e o de Link (Rider), da série Breath of the Wild.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão forte e equilibrada para o fim do jogo.",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "É magnética e pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins prateados e dourados às vezes a empunham. Um Octoroc rochoso que engole uma Espada enferrujada pode devolvê-la como Espada real (5% de chance).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bokoblin",
+        "zw:Rock Octorok"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Loteria do Octoroc rochoso",
+      "text": "Octorocs rochosos limpam o equipamento enferrujado que aspiram. Uma Espada enferrujada volta como Espada do viajante (50%), Espada larga do soldado (35%), Espada do cavaleiro (10%) ou Espada real (5%). Com várias Espadas enferrujadas, dá para tentar a sorte até conseguir uma.",
+      "sources": [
+        "zw:Rock Octorok",
+        "zw:Rusty Broadsword"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +6 a +12 (nível comum) ou +13 a +24 (nível dourado), bônus de durabilidade de +5 a +9 (ou +10 a +18 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Não adianta rebater com Defesa perfeita a arma limpa cuspida pelo Octoroc rochoso: ela atravessa Link. Basta recolhê-la do chão."
+  ],
+  "limitations": [
+    "Metálica: perigosa em tempestades e contra inimigos elétricos.",
+    "Pela via do Octoroc rochoso, a chance é de só 5% por espada enferrujada."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_royal_claymore",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_royal_halberd",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_bow_royal_bow",
+      "relation": "Mesmo arquétipo (arco)"
+    },
+    {
+      "id": "botw_shield_royal_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_weapon_rusty_broadsword",
+      "relation": "Pode virar Espada real com um Octoroc rochoso"
+    },
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Limpa espadas enferrujadas"
+    },
+    {
+      "id": "botw_monster_silver_bokoblin",
+      "relation": "Pode empunhá-la"
+    },
+    {
+      "id": "botw_monster_golden_bokoblin_mm",
+      "relation": "Pode empunhá-la (Modo Mestre)"
+    },
+    {
+      "id": "botw_weapon_knights_broadsword",
+      "relation": "Espada um nível abaixo"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "botw_food_nutcake",
+  "summary": "Bolo de Bolota ou Noz com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra. A receita está no livro de Misa, na vila dos Arás; as nozes ganham cura extra quando cozidas com outros ingredientes.",
+  "description": "O Bolo de nozes combina uma Bolota ou uma Noz com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra. As nozes da floresta, diz o inventário, dão ao bolo uma textura agradável e uma doçura simples e discreta. As duas castanhas são neutras, então a versão básica não tem efeito; o quinto espaço da panela é que decide a variante, com qualquer ingrediente de efeito (um \"veloz\" dá Velocidade aumentada, um \"tenaz\" restaura e ultrapassa o Medidor de vigor, e assim por diante).\n\nA receita está no livro de receitas de Misa, na loja The Slippery Falcon, que Misa administra na vila dos Arás (Rito Village): ela manda comprar trigo, manteiga e açúcar na loja dela e jogá-los na panela com as nozes que preferir — a favorita de Misa é a Bolota. Há um detalhe a favor do prato: Bolota e Noz ganham meio coração de cura extra quando cozidas junto com outros ingredientes, e a Cana-de-açúcar dá a maior chance extra de bônus crítico entre os ingredientes comuns (30%).",
+  "locations": [
+    "A receita está no livro de Misa (Misa's Recipe Book), na loja The Slippery Falcon, na vila dos Arás (Rito Village)."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela uma Bolota ou uma Noz, Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra; um quinto ingrediente é opcional.",
+    "Segundo o livro de Misa, o trigo, a manteiga e o açúcar podem ser comprados na loja dela, na vila dos Arás."
+  ],
+  "uses": [
+    "Recuperar corações; com um ingrediente extra, obter um efeito.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (a quantidade depende dos ingredientes).",
+    "Com um quinto ingrediente de efeito, ganha a versão correspondente: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações; na versão com ingrediente extra de efeito, aplica esse efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "quinto ingrediente",
+      "status": "confirmado",
+      "result": "Um ingrediente de efeito no quinto espaço cria a variante correspondente (por exemplo, ingrediente \"discreto\" → Furtividade aumentada).",
+      "conditions": [
+        "Só sobra um espaço na panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Nozes rendem mais na panela",
+      "text": "Bolota e Noz recebem um bônus de meio coração de cura quando são cozidas com outros ingredientes — por isso valem mais no bolo do que sozinhas.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Açúcar e crítico",
+      "text": "A Cana-de-açúcar eleva para 30% a chance extra de bônus crítico, o maior valor entre os ingredientes comuns (só pedaços de dragão e Fragmento de estrela garantem o crítico). O bônus pode render 3 corações a mais ou, nas variantes, mais duração ou um nível a mais no efeito.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito.",
+    "Sem ingrediente extra, não tem efeito algum."
+  ],
+  "related": [
+    {
+      "id": "botw_material_acorn",
+      "relation": "Castanha aceita (a preferida de Misa)"
+    },
+    {
+      "id": "botw_material_chickaloo_tree_nut",
+      "relation": "Castanha aceita"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório; aumenta a chance de crítico"
+    },
+    {
+      "id": "botw_food_sauteed_nuts",
+      "relation": "Prato feito só de nozes"
+    },
+    {
+      "id": "botw_food_pumpkin_pie",
+      "relation": "Mesma base de trigo, açúcar e manteiga"
+    },
+    {
+      "id": "botw_food_monster_cake",
+      "relation": "Mesma base de bolo, com Extrato de monstro"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

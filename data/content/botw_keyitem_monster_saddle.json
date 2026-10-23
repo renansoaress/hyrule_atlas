@@ -1,0 +1,60 @@
+{
+  "id": "botw_keyitem_monster_saddle",
+  "summary": "Sela de aparência estranha feita à mão por Kilton, vendida por 299 Mon na Fang and Bone. É a peça mais barata do equipamento de monstro e não muda nada além do visual.",
+  "description": "A Sela de monstro forma, com a Rédea de monstro, o equipamento de montaria de monstro. A descrição do jogo conta que Kilton a fez à mão pensando em algum tipo de cavalo monstruoso e admite que ela \"parece estranha, mas certamente é utilizável\".\n\nÉ vendida por 299 Mon na Fang and Bone, que só abre à noite (21h às 5h) e aceita apenas Mon, obtidos trocando partes de monstros com Kilton. Há uma unidade à venda.\n\nA sela não altera os atributos do cavalo. Como as demais, é colocada por funcionários dos estábulos Highland, Outskirt, South Akkala e Woodland, apenas em cavalos com vínculo máximo, e não serve em Epona nem no Cavalo gigante.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton (aberta das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 299 Mon."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo com visual de monstro."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Colocada no cavalo por um funcionário de estábulo, muda apenas a aparência.",
+      "conditions": [
+        "Falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse Gear"]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": ["zw:Horse Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Onde encontrar Kilton",
+      "text": "A Fang and Bone aparece primeiro no Lago Caveira (Skull Lake), em Coração de Akkala; depois da primeira conversa, surge perto de quase todos os povoados importantes, com exceção da Cidade Goron, sempre marcada por uma placa.",
+      "sources": ["zw:Fang and Bone"]
+    }
+  ],
+  "advanced_uses": [
+    "Converta partes de monstros acumuladas em Mon com Kilton para comprar a sela e a rédea na mesma visita (698 Mon no total)."
+  ],
+  "limitations": [
+    "Apenas cosmética.",
+    "Só pode ser comprada com Mon, à noite."
+  ],
+  "related": [
+    { "id": "botw_keyitem_monster_bridle", "relation": "Outra peça do equipamento de monstro" },
+    { "id": "botw_keyitem_medal_of_honor_hinox", "relation": "Outro item obtido com Kilton" },
+    { "id": "botw_creature_horse", "relation": "Montaria que recebe a sela" },
+    { "id": "botw_mechanic_stable", "relation": "Onde a sela é colocada" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

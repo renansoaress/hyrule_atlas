@@ -1,0 +1,180 @@
+{
+  "id": "botw_weapon_lizal_tri_boomerang",
+  "summary": "O bumerangue Lagal de três lâminas, carregado por Lagalfos pretos veteranos. Mais lâminas, mais dano (36) — e mais perigo: arremessado, volta e fere Link se ele não o apanhar. Metálico.",
+  "description": "O Trimerangue Lagal é o topo do equipamento Lagalfos (Lizalfos Gear): o terceiro nível, usado por Lagalfos pretos, prateados e dourados, é reforçado com melhorias de metal. A descrição do jogo brinca que mais lâminas significam mais poder de ataque, mas também tornam o arremesso um pouco mais perigoso. Os Lagalfos pretos experientes em combate são os portadores típicos, mas Lagalfos prateados, dourados (no Modo Mestre), ígneos, glaciais e elétricos também podem usá-lo. É comum nas Cordilheiras de Hebra e no Altiplano de Akkala.\n\nPode ser usado como espada de uma mão ou arremessado como bumerangue: ele retorna sem quebrar no impacto, mas precisa ser apanhado antes de voltar até Link, ou o fere. Como todo o equipamento Lagalfos de metal, conduz eletricidade, atrai raios quando equipado em tempestades, afunda na água, pode ser erguido com Magnétis e não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Cordilheiras de Hebra e Altiplano de Akkala (locais comuns segundo o compendium)."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos pretos, prateados ou dourados (Modo Mestre) que o carreguem; Lagalfos elementais também podem usá-lo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Ataque à distância reutilizável de dano alto.",
+    "Espada de uma mão forte no corpo a corpo."
+  ],
+  "effects": [
+    "Arremessado, volta para Link em vez de quebrar no impacto."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "No corpo a corpo, funciona como arma de uma mão: velocidade média, ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado, ataca à distância e retorna como bumerangue, sem quebrar no impacto.",
+      "conditions": [
+        "Apanhar a arma antes que ela chegue até Link."
+      ],
+      "side_effects": [
+        "Se não for apanhado, Link leva dano."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lizalfos Gear",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante, como todo o equipamento Lagalfos metálico.",
+      "sources": [
+        "dm",
+        "zw:Lizalfos Gear"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ele na mão, a arma voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante uma tempestade, atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Típico dos Lagalfos pretos; também é usado por Lagalfos prateados, dourados, ígneos, glaciais e elétricos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lizalfos Gear",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o trimerangue pode surgir com bônus de ataque de +6 a +12 (nível comum) ou +13 a +24 (nível dourado) e bônus de durabilidade de +3 a +6 (ou +7 a +14 no nível dourado). O multiplicador de lançamento longo fica em 1×, então esse bônus não aumenta o alcance. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Divergência no ataque",
+      "text": "O compendium, a tabela do Zelda Wiki e o parâmetro interno Power dão ataque 36, mas a tabela de propriedades de item extraída registra força 35. As fontes não explicam a diferença.",
+      "sources": [
+        "dm",
+        "zw",
+        "comp"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não apanhado, fere o próprio Link.",
+    "Metálico: perigoso em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lizal_boomerang",
+      "relation": "Primeiro nível"
+    },
+    {
+      "id": "botw_weapon_lizal_forked_boomerang",
+      "relation": "Segundo nível"
+    },
+    {
+      "id": "botw_weapon_forked_lizal_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_bow_steel_lizal_bow",
+      "relation": "Mesmo arquétipo (arco)"
+    },
+    {
+      "id": "botw_shield_steel_lizal_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_black_lizalfos",
+      "relation": "Portador típico"
+    },
+    {
+      "id": "botw_monster_silver_lizalfos",
+      "relation": "Também o empunha"
+    },
+    {
+      "id": "botw_monster_golden_lizalfos_mm",
+      "relation": "Também o empunha (Modo Mestre)"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "a_verificar"
+}

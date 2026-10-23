@@ -1,0 +1,131 @@
+{
+  "id": "botw_food_roasted_swift_carrot",
+  "summary": "Cenoura veloz levemente assada e perfumada, mas sem efeito especial: cura 3/4 de coração (crua, meio) e vale 6 rupias, contra 4. A Velocidade aumentada só vem da cenoura crua na Panela.",
+  "description": "A Cenoura veloz, um dos três alimentos preferidos dos Sheikah e cultivada por Steen em Vila Kakariko, vira Cenoura veloz assada no fogo ou no clima escaldante de Eldin. O texto do jogo a descreve como perfumada e levemente assada, sem efeitos especiais, mas capaz de restaurar um pouco de vida.\n\nA cura sobe de meio coração para 3/4 e a venda, de 4 para 6 rupias. Assar remove a Velocidade aumentada que a cenoura daria cozida na Panela — o motivo de ela ser procurada.",
+  "locations": [
+    "Prepara-se a partir de Cenouras velozes (campo de Steen em Vila Kakariko, pé do Monte Satori e atrás dos cavalos do Highland Stable) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Cenoura veloz ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Cenoura veloz — queima por alguns instantes e se transforma em Cenoura veloz assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Cenoura veloz assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Cenoura veloz no chão para que o ingrediente asse sozinho e vire Cenoura veloz assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração da Cenoura veloz crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 6 rupias; a Cenoura veloz crua vale 4.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Swift Carrot"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Cenoura veloz assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Velocidade perdida no fogo",
+      "text": "A página do item registra que o processo de assar remove os efeitos especiais da Cenoura veloz; para Velocidade aumentada, cozinhe-a crua na Panela.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Velocidade aumentada."
+  ],
+  "related": [
+    {
+      "id": "botw_material_swift_carrot",
+      "relation": "Ingrediente cru (Velocidade aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_endura_carrot",
+      "relation": "A outra cenoura assada"
+    },
+    {
+      "id": "botw_food_toasty_rushroom",
+      "relation": "Outro ingrediente de velocidade que perde o efeito tostado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

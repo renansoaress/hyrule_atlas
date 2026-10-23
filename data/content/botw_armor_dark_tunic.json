@@ -1,0 +1,143 @@
+{
+  "id": "botw_armor_dark_tunic",
+  "summary": "Túnica preta de Kilton, réplica \"espúria\" do traje verde de um herói lendário. Custa 999 Mon na Fang and Bone; com a Série sombria completa, Link corre 20% mais rápido à noite.",
+  "description": "A Túnica sombria é a peça de torso da Série sombria, desenvolvida por Kilton a partir de suas pesquisas sobre monstros. A descrição a chama de réplica espúria do traje verde de um herói lendário, e de fato o modelo é uma troca de cor da Túnica do tempo. Ela é vendida na loja Fang and Bone por 999 Mon depois que Link liberta as quatro Feras Divinas.\n\nSozinha, dá apenas 3 de defesa. Com o Capuz sombrio e as Calças sombrias, a série ativa a Velocidade noturna: das 21h às 4h, Link corre 20% mais rápido. A túnica não pode ser melhorada por Grandes Fadas nem tingida na Tinturaria Kochi, então o bônus funciona desde a compra, mas a defesa nunca sobe. Moradores se assustam quando veem Link com a série completa.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton (à noite, perto dos principais povoados; a sede fica no Lago Caveira, no Coração de Akkala)."
+  ],
+  "obtaining": [
+    "Comprar na Fang and Bone por 999 Mon, depois de libertar as quatro Feras Divinas."
+  ],
+  "uses": [
+    "Completar a Série sombria para ganhar velocidade à noite."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto (Série sombria completa): Velocidade noturna, +20% de velocidade entre 21h e 4h."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, só soma 3 de defesa, sem efeito adicional. Com o Capuz sombrio, a Túnica sombria e as Calças sombrias vestidos ao mesmo tempo, ativa a Velocidade noturna (Night Speed Up): entre 21h e 4h do relógio do jogo, Link corre 20% mais rápido, como no nível 2 de Velocidade aumentada.",
+      "conditions": [
+        "As três peças da Série sombria equipadas; não há melhorias nessa série, então o bônus vale desde a compra."
+      ],
+      "side_effects": [
+        "Moradores se assustam ao ver Link com o conjunto."
+      ],
+      "applications": [
+        "Pode ser somada a um efeito de Velocidade aumentada de nível 1 (de pratos ou elixires)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Túnica do tempo pintada de preto",
+      "text": "O design é uma troca direta de cor da Túnica do tempo; o Capuz sombrio e as Calças sombrias seguem o Gorro do tempo e as Calças do tempo.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Disponível só no fim da jornada",
+      "text": "A Fang and Bone ganha novos produtos a cada Fera Divina libertada; a Série sombria só entra no estoque depois das quatro.",
+      "sources": [
+        "zw",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Viajar a pé à noite com a série completa somada a Velocidade aumentada nível 1 de um prato ou elixir."
+  ],
+  "limitations": [
+    "Não pode ser melhorada nem tingida.",
+    "Vende por apenas 9 rupias.",
+    "O bônus some durante o dia."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_dark_series",
+      "relation": "Série da qual faz parte"
+    },
+    {
+      "id": "botw_armor_dark_hood",
+      "relation": "Peça de cabeça da série"
+    },
+    {
+      "id": "botw_armor_dark_trousers",
+      "relation": "Peça de pernas da série"
+    },
+    {
+      "id": "botw_armor_tunic_of_time",
+      "relation": "Modelo do qual a túnica é uma troca de cor"
+    },
+    {
+      "id": "botw_armorset_tingles_outfit",
+      "relation": "Outro traje com Velocidade noturna sem melhorias"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

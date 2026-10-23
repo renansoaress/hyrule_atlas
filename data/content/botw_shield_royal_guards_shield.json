@@ -1,0 +1,129 @@
+{
+  "id": "botw_shield_royal_guards_shield",
+  "summary": "Escudo da guarda real forjado com tecnologia Sheikah: Defesa 70, mas só 14 de durabilidade, e o pior escudo para surfar (desgaste triplicado). Parcy o troca por gemas em \"The Royal Guard's Gear\".",
+  "description": "O Escudo da guarda real foi forjado com tecnologia ancestral Sheikah para a guarda real do reino de Hyrule. O jogo resume o problema: o poder de bloqueio é altíssimo, mas uma fragilidade estrutural deixou a durabilidade baixa demais para o combate. Com Defesa 70 — igual à do Escudo ancestral — e apenas 14 de durabilidade, segue a marca de toda a série da guarda real (Royal Guard's Series): muita força, pouca resistência.\n\nApesar da tecnologia Sheikah, nos dados do jogo ele é um escudo de metal comum: não desvia lasers automaticamente, conduz eletricidade, atrai raios, afunda e pode ser movido com Magnétis; não queima. Para surfar é o pior de todos: o desgaste ao Surfar com escudo é multiplicado por 3. Selmie boceja ao vê-lo e o chama de lixo frágil, inútil para surfistas sérios.\n\nSó é encontrado no Castelo de Hyrule, abandonado ou nas mãos dos inimigos de lá; um deles fica no Gabinete do Rei (King's Study), dentro da biblioteca.",
+  "locations": [
+    "Castelo de Hyrule, abandonado ou empunhado pelos inimigos do castelo.",
+    "Gabinete do Rei (King's Study), na biblioteca do Castelo de Hyrule."
+  ],
+  "obtaining": [
+    "Recolher no Castelo de Hyrule ou derrotar os inimigos do castelo que o carregam."
+  ],
+  "uses": [
+    "Missão secundária \"The Royal Guard's Gear\": mostrar um a Parcy rende uma rupia dourada (Gold Rupee).",
+    "Depois da missão, cada Escudo da guarda real pode ser trocado com Parcy por um Topázio, um Rubi ou uma Safira.",
+    "Bloquear golpes muito fortes por pouco tempo, graças à Defesa 70."
+  ],
+  "effects": [
+    "Nenhum efeito especial; não compartilha o desvio de lasers do Escudo ancestral."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 70, o que reduz bastante o desgaste por golpe, mas os 14 pontos de durabilidade acabam rápido. A Defesa perfeita não gasta durabilidade.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Template:BotW Shield Parameters", "zw:Shield"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo desgasta este escudo três vezes mais que o normal (multiplicador 3); o atrito é o padrão.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Em terreno rochoso, quebra rapidamente."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +4 a +7 (nível amarelo) e com Defesa do escudo aumentada de +7 a +13 (branco) ou +14 a +26 (amarelo). Com o bônus amarelo máximo, a Defesa chega a 96.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Escudos que viram gemas",
+      "text": "Depois de mostrar um Escudo da guarda real a Parcy em \"The Royal Guard's Gear\" e receber a rupia dourada, Link pode continuar trocando esses escudos por Topázio, Rubi ou Safira. Como o castelo tem vários exemplares, é uma forma de converter escudos frágeis em gemas.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O bocejo de Selmie",
+      "text": "Selmie fica tão pouco impressionada que boceja e chama o escudo de lixo frágil, sem valor para surfistas de verdade — opinião que os dados confirmam com o desgaste triplicado no surfe.",
+      "sources": ["zw", "zw:Selmie", "dm"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Mesma Defesa do Escudo ancestral",
+      "text": "Os dois escudos de tecnologia Sheikah têm Defesa 70, mas o Escudo ancestral dura mais que o dobro (32) e desvia lasers sozinho, o que torna o da guarda real obsoleto em combate.",
+      "sources": ["zw:Ancient Shield", "zw:Shields in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Recolher os exemplares do Castelo de Hyrule e levá-los a Parcy para trocá-los por gemas, em vez de gastá-los em combate."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 14.",
+    "Desgaste triplicado ao surfar.",
+    "Só é encontrado no Castelo de Hyrule."
+  ],
+  "related": [
+    { "id": "botw_weapon_royal_guards_sword", "relation": "Mesma série (guarda real)" },
+    { "id": "botw_weapon_royal_guards_spear", "relation": "Mesma série (guarda real)" },
+    { "id": "botw_weapon_royal_guards_claymore", "relation": "Mesma série (guarda real)" },
+    { "id": "botw_bow_royal_guards_bow", "relation": "Mesma série (guarda real)" },
+    { "id": "botw_shield_ancient_shield", "relation": "Mesma Defesa, mais durável e com desvio de lasers" },
+    { "id": "botw_material_topaz", "relation": "Uma das gemas oferecidas por Parcy na troca" },
+    { "id": "botw_material_ruby", "relation": "Uma das gemas oferecidas por Parcy na troca" },
+    { "id": "botw_material_sapphire", "relation": "Uma das gemas oferecidas por Parcy na troca" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "item_de_missao"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "botw_creature_sunset_firefly",
+  "summary": "Vaga-lume que só se destaca à noite, pelo brilho suave. Com partes de monstro vira Elixir discreto; soltar cinco na casa de Lasli, em Vila Kakariko, conclui a missão \"By Firefly's Light\".",
+  "description": "O Vaga-lume do poente voa durante a noite e é fácil de notar pelo brilho; o compendium cita Necluda Ocidental e a Grande Floresta de Hyrule como locais comuns, e o texto da missão de Lasli diz que Vila Kakariko é famosa pelos vaga-lumes, cujo brilho no ar noturno lembra o céu estrelado. Segundo o jogo, o composto que o faz brilhar, cozido com partes de monstro, resulta num elixir que permite andar mais silenciosamente.\n\nCozido com partes de monstro, produz o Elixir discreto (Furtividade aumentada); cada vaga-lume acrescenta 2:00 de duração. Sem parte de monstro, vira Comida duvidosa. Na Tinturaria Kochi, entra no corante roxo, e nas Fontes da Grande Fada é exigido no 2º nível do Conjunto furtivo (5 por peça, com 5 Beladonas azuis).\n\nNa Missão secundária \"By Firefly's Light\", Lasli, que trabalha na loja de roupas de Vila Kakariko, lamenta não poder mais procurar vaga-lumes porque as estradas são perigosas à noite. Link precisa soltar cinco Vaga-lumes do poente dentro da casa dela; em troca, recebe uma Rupia roxa. Se Link lembrar que os vaga-lumes vivem pouco, Lasli se irrita e reclama que garotos não têm romantismo.",
+  "locations": [
+    "Voa à noite; o compendium cita Necluda Ocidental e a Grande Floresta de Hyrule.",
+    "Vila Kakariko é famosa pelos vaga-lumes; a missão de Lasli indica a ponte próxima da vila."
+  ],
+  "obtaining": [
+    "Apanhar à noite, quando o brilho denuncia a posição.",
+    "Comprar de Beedle por 10 rupias."
+  ],
+  "uses": [
+    "Elixir discreto: cozinhar com pelo menos uma parte de monstro.",
+    "Melhoria de armadura: 5 por peça do Conjunto furtivo (Máscara furtiva, Peitoral furtivo e Meia-calça furtiva) no 2º nível, com 5 Beladonas azuis.",
+    "Missão secundária \"By Firefly's Light\": soltar cinco na casa de Lasli rende uma Rupia roxa.",
+    "Ingrediente do corante roxo na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Furtividade aumentada; +2:00 de duração por vaga-lume."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como o vaga-lume reage à aproximação de Link; indicam apenas que ele voa à noite e é fácil de notar pelo brilho."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser solto da algibeira. Soltar cinco vaga-lumes dentro da casa de Lasli, em Vila Kakariko, conclui a missão \"By Firefly's Light\".",
+      "conditions": ["Ter concluído antes \"Find the Fairy Fountain\" e \"Flown the Coop\" para receber a missão."],
+      "side_effects": ["As fontes não detalham o comportamento dos vaga-lumes soltos fora dessa missão."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:By Firefly's Light"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir discreto (Furtividade aumentada). Cada vaga-lume acrescenta 2:00 de duração.",
+      "applications": ["Somar Beladona azul, Princesa plácida, Silencimelo, Caramujo discreto ou Truta discreta para que o elixir também cure."],
+      "produces": ["botw_elixir_sneaky_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Sneaky Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 2 rupias; Beedle cobra 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o vaga-lume exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o vaga-lume."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Romantismo à luz dos vaga-lumes",
+      "text": "Depois de receber os vaga-lumes, Lasli comenta como o brilho deles é mágico. Se Link disser que ela também é bonita, ela agradece; se lembrar que eles vivem pouco, ela se irrita e diz que garotos não têm romantismo.",
+      "sources": ["zw:By Firefly's Light"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Confundido com fada",
+      "text": "O compendium da Fada avisa que ela é fácil de confundir com um vaga-lume; a diferença é que a fada brilha também durante o dia.",
+      "sources": ["zw:Fairy", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Vários vaga-lumes e uma parte de monstro de longa duração rendem um Elixir discreto longo, útil para ataques-surpresa em acampamentos.",
+    "Numa só caçada noturna, junte os 5 vaga-lumes da missão de Lasli e os 15 do 2º nível do Conjunto furtivo (as três peças)."
+  ],
+  "limitations": [
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "Furtividade aumentada não silencia a corrida em disparada."
+  ],
+  "related": [
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_armorset_stealth_set", "relation": "Usa 5 por peça no 2º nível de melhoria" },
+    { "id": "botw_material_blue_nightshade", "relation": "Acompanha o vaga-lume no 2º nível do Conjunto furtivo" },
+    { "id": "botw_creature_fairy", "relation": "Criatura com que é confundido" },
+    { "id": "botw_creature_stealthfin_trout", "relation": "Ingrediente discreto que faz o elixir curar" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante roxo" }
+  ],
+  "capabilities": ["furtividade", "ilumina", "item_de_missao"],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "botw_mechanic_rain",
+  "summary": "Chuva deixa paredes escorregadias (Link escorrega ao escalar), apaga fogo exposto, inutiliza Panelas descobertas e desarma Flechas incendiárias e explosivas. Em troca, abafa os passos, fortalece Flechas eletrizantes e acelera o surfe com escudo.",
+  "description": "A chuva cai aleatoriamente nas regiões mais quentes e muda as regras de vários sistemas. A mais sentida é a escalada: as superfícies ficam escorregadias e Link periodicamente perde o apoio e escorrega — nem o Conjunto de escalada impede isso. O fogo exposto se apaga na hora (exceto a chama azul); Tochas se apagam, Panelas descobertas ficam inutilizáveis até a chuva passar, Flechas incendiárias não acendem nada e Flechas explosivas não explodem: quicam e podem ser recolhidas e disparadas de novo. Fogo sob abrigo não é afetado, e blocos de Gelítis criados numa cachoeira servem de telhado improvisado.\n\nHá vantagens. A chuva torna os passos de Link mais difíceis de ouvir, ajudando na furtividade; Flechas eletrizantes causam dano extra; surfar com escudo fica mais rápido e desgasta menos. Alguns animais e plantas só aparecem com chuva — entre eles a Libélula do relâmpago, a Borboleta trovejante e o Sapo obstinado — e certos vendedores mudam o estoque conforme o tempo. O Domínio Zora e arredores ficam sob chuva permanente até que a Fera Divina Vah Ruta seja liberada da Ira áquea de Ganon.",
+  "locations": [
+    "Regiões mais quentes de Hyrule, de forma aleatória.",
+    "Chuva permanente no Domínio Zora e arredores até a libertação de Vah Ruta."
+  ],
+  "obtaining": [
+    "Fenômeno climático aleatório; tempestades de raios também trazem chuva."
+  ],
+  "uses": [
+    "Aproximar-se de inimigos para Ataques-surpresa.",
+    "Capturar bichos que só aparecem na chuva.",
+    "Surfar com escudo mais rápido e com menos desgaste."
+  ],
+  "effects": [
+    "Superfícies escorregadias, fogo exposto apagado e passos abafados."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "A chuva cai aleatoriamente nas regiões quentes e torna as superfícies escorregadias.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "variant": "escalada",
+      "status": "confirmado",
+      "result": "Escalando na chuva, Link escorrega de tempos em tempos; penhascos íngremes podem ficar impossíveis de subir. O Conjunto de escalada não evita os escorregões.",
+      "applications": ["Esperar o tempo firmar ou procurar outra rota antes de uma escalada longa."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks", "zw:Climbing Set"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Todo fogo exposto se apaga imediatamente, menos a chama azul; fogo abrigado não é afetado. Tochas acesas se apagam.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Brazier", "zw:Blue Flame"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Panelas expostas à chuva ficam inutilizáveis até ela parar.",
+      "applications": ["Cozinhar numa Panela abrigada da chuva ou esperar o tempo firmar."],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking Pot"]
+    },
+    {
+      "action": "flecha",
+      "variant": "incendiária e explosiva",
+      "status": "confirmado",
+      "result": "Flechas incendiárias não conseguem incendiar nada na chuva. Flechas explosivas não explodem: comportam-se como flechas comuns, quicam nos objetos e podem ser recolhidas para novo disparo.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Flechas eletrizantes causam dano extra na chuva.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Os passos de Link ficam mais difíceis de ouvir na chuva, o que melhora a furtividade.",
+      "kind": "mecanica",
+      "sources": ["zw:Stealth", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "usar",
+      "variant": "surfar com escudo",
+      "status": "confirmado",
+      "result": "Na chuva, surfar com escudo é mais rápido e desgasta menos o escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Shield Surfing"]
+    },
+    {
+      "action": "gelitis",
+      "status": "confirmado",
+      "result": "A chuva não atravessa os blocos de Gelítis: criados numa cachoeira, viram abrigo temporário.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "variant": "fauna e lojas",
+      "status": "confirmado",
+      "result": "Libélula do relâmpago, Borboleta trovejante e Sapo obstinado só aparecem com chuva. Botrick, no Estábulo Outskirt, só vende Flechas congelantes enquanto chove; Jini, no acampamento de arqueria montada, vende Flechas eletrizantes só na chuva e Flechas explosivas só com tempo seco.",
+      "kind": "mecanica",
+      "sources": ["zw:Electric Darner", "zw:Thunderwing Butterfly", "zw:Tireless Frog", "zw:Ice Arrow", "zw:Shock Arrow", "zw:Bomb Arrow", "zw:Tips and Tricks"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Domínio Zora sempre molhado",
+      "text": "Enquanto Vah Ruta estiver tomada pela Ira áquea de Ganon, chove sem parar no Domínio Zora e arredores — o que também torna as escaladas da região mais difíceis.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Beedle se abriga",
+      "text": "No Estábulo Highland, Beedle fica sentado do lado de fora, mas se recolhe para dentro, junto ao poste principal, quando chove.",
+      "sources": ["zw:Highland Stable"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar a chuva para limpar acampamentos com Ataques-surpresa e Flechas eletrizantes reforçadas.",
+    "Criar um bloco de Gelítis numa cachoeira para se abrigar e manter uma fogueira ou Tocha acesa."
+  ],
+  "limitations": [
+    "Escaladas longas ficam arriscadas.",
+    "Fogo e Flechas explosivas param de funcionar ao ar livre."
+  ],
+  "related": [
+    { "id": "botw_mechanic_climbing", "relation": "Escorregões na escalada" },
+    { "id": "botw_mechanic_fire", "relation": "Apaga o fogo exposto" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Tempestades trazem chuva e raios" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Surfe mais rápido na chuva" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "Passos abafados" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Dano extra na chuva" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Não acende nada na chuva" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Não explode na chuva" },
+    { "id": "botw_object_cooking_pot", "relation": "Fica inutilizável na chuva" },
+    { "id": "botw_rune_cryonis", "relation": "Blocos servem de abrigo" },
+    { "id": "botw_creature_tireless_frog", "relation": "Só aparece na chuva" },
+    { "id": "botw_creature_electric_darner", "relation": "Só aparece na chuva" },
+    { "id": "botw_monster_waterblight_ganon", "relation": "Causa a chuva permanente no Domínio Zora" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

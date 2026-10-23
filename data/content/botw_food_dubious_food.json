@@ -1,0 +1,95 @@
+{
+  "id": "botw_food_dubious_food",
+  "summary": "Resultado de combinações inválidas: comida com bichos ou partes de monstro (sem os dois juntos), elixir sem efeito, temperos sem comida. Cura uma quantidade aleatória e pequena de corações.",
+  "description": "A Comida duvidosa é o prato que sai quando a combinação na panela não forma nem refeição nem elixir. O Zelda Wiki lista os casos: comida misturada a partes de monstro ou a bichos (mas não aos dois juntos); partes de monstro sozinhas; bichos sozinhos; qualquer combinação que daria um elixir sem efeito (por exemplo, parte de monstro com um bicho refrescante e um bicho picante); temperos sem comida; e Arroz hyliano com nozes. A descrição do jogo é honesta: o monte é nojento de se olhar, solta um cheiro estranho, mas comê-lo \"não vai fazer mal... provavelmente\".\n\nO prato cura uma quantidade aleatória de corações, que depende dos ingredientes usados, e não tem efeito. Não deve ser confundido com a Comida dura como pedra, que surge quando há Madeira ou minério na panela e cura só um quarto de coração.\n\nPerto do Santuário Ishto Soh, nas Montanhas Gerudo, a cozinheira Moza ensina três receitas, e duas delas sempre terminam em Comida duvidosa: o \"prato de carne ancestral\" (carne cozida com uma peça de Guardião quebrado) e o \"prato supremo de sobrevivência\" (um monte de partes de monstro na panela). Ela não entende o que há de duvidoso e conclui que cozinhar é complicado.",
+  "locations": [
+    "Moza, que ensina duas receitas que resultam neste prato: perto do Santuário Ishto Soh, nas Montanhas Gerudo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela comida com partes de monstro ou com bichos (sem os dois juntos).",
+    "Cozinhar só partes de monstro, só bichos, temperos sem comida ou Arroz hyliano com nozes.",
+    "Errar um elixir: bichos de categorias diferentes com parte de monstro."
+  ],
+  "uses": [
+    "Cura de emergência, pequena e aleatória."
+  ],
+  "effects": [
+    "Recupera uma quantidade aleatória de corações, conforme os ingredientes; nunca tem efeito adicional."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera uma quantidade aleatória de corações, que depende dos ingredientes usados, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Food",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se a Comida duvidosa pode ser vendida nem por quanto."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O elixir que dá errado",
+      "text": "Elixires exigem bichos e partes de monstro juntos, e os bichos precisam ser da mesma categoria. Misturar categorias — como um bicho refrescante e um picante — gera Comida duvidosa em vez de elixir.",
+      "sources": [
+        "zw",
+        "zw:Elixir"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Combinações traiçoeiras",
+      "text": "Nem tudo que parece comida combina: Arroz hyliano com nozes e temperos cozidos sem comida também resultam em Comida duvidosa.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "As receitas de Moza",
+      "text": "Moza recomenda carne de ave ou bife para o \"prato de carne ancestral\", a ser cozido com uma peça ancestral de Guardião, e um monte de partes de monstro para o \"prato supremo de sobrevivência\". Ela admite que sempre acaba com Comida duvidosa; a terceira receita dela, com minério, resulta em Comida dura como pedra.",
+      "sources": [
+        "zw",
+        "zw:Moza"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cura pouco e de forma imprevisível.",
+    "Madeira ou minério na panela não geram Comida duvidosa, e sim Comida dura como pedra."
+  ],
+  "related": [
+    {
+      "id": "botw_food_rock_hard_food",
+      "relation": "Outro prato falho, causado por Madeira ou minério"
+    },
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Parte de monstro que, cozida sem bichos, gera este prato"
+    },
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Exceção: parte de monstro que forma pratos válidos com comida (Bolo de monstro, Curry de monstro etc.)"
+    },
+    {
+      "id": "botw_object_cooking_pot",
+      "relation": "Onde as combinações são testadas"
+    },
+    {
+      "id": "botw_mechanic_cooking",
+      "relation": "Regras de culinária"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,184 @@
+{
+  "id": "botw_food_icy_meat",
+  "summary": "Bloco congelado de carne animal: \"se conseguir mastigar e engolir\", cura 1 coração, como a crua, e baixa a temperatura do corpo. Vale 15 rupias e aparece pronta em caixas de madeira de Hebra.",
+  "description": "A Carne de terceira — deixada por Javali da mata, Bode da montanha e Raposa do prado — vira Carne de terceira congelada no clima congelante, na água gelada ou sob ataques de gelo. A descrição do jogo a trata como um bloco congelado de carne: se Link conseguir mastigar e engolir, recupera alguns corações e baixa a temperatura do corpo.\n\nA cura continua em 1 coração, com Resistência ao calor de nível 1 por um minuto. Também pode ser encontrada pronta: há Carnes de terceira congeladas dentro de caixas de madeira nas Cordilheiras de Hebra. Na venda vale 15 rupias, contra 8 da crua e 12 do Bife selado.",
+  "locations": [
+    "Caixas de madeira nas Cordilheiras de Hebra.",
+    "Prepara-se a partir de Carne de terceira em regiões de clima congelante — Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia — ou na água gelada de Hebra Falls, Hebra Headspring, Hebra Plunge e do River of the Dead."
+  ],
+  "obtaining": [
+    "Quebrar caixas de madeira nas Cordilheiras de Hebra.",
+    "Largar a Carne de terceira no chão de uma região de clima congelante, como as Cordilheiras de Hebra ou o Monte Lanayru.",
+    "Jogar a Carne de terceira na água gelada (Cold Water), como a de Hebra Plunge ou a do River of the Dead.",
+    "Acertar a Carne de terceira com uma Flecha congelante ou com Espada álgida, Grã-Espada álgida ou Lança congelante."
+  ],
+  "uses": [
+    "Refresco rápido para o calor diurno do Deserto Gerudo.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Recupera 1 coração.",
+    "Resistência ao calor de nível 1 (baixo) por 1 minuto."
+  ],
+  "interactions": [
+    {
+      "action": "frio_extremo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: basta largar a Carne de terceira no chão de uma região de clima congelante para que o ingrediente endureça e vire Carne de terceira congelada.",
+      "conditions": [
+        "Clima congelante: Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia (no pico nevado do Grande Platô) ou pontos altos como o topo do Castelo de Hyrule."
+      ],
+      "side_effects": [
+        "O mesmo frio fere Link aos poucos se ele não tiver Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Freezing Climate",
+        "zw:Mount Hylia"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Jogar a Carne de terceira na água gelada (Cold Water) das regiões frias também congela o ingrediente, que vira Carne de terceira congelada.",
+      "conditions": [
+        "Água gelada, como a de Hebra Falls, Hebra Headspring e Hebra Plunge (Fronteira de Tabantha) e a do River of the Dead, no Grande Platô."
+      ],
+      "side_effects": [
+        "Não entre na água: nadar nela tira meio coração a cada 0,5 s, e nenhuma roupa ou comida protege."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cold Water",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingir a Carne de terceira com uma Flecha congelante ou com golpes de Espada álgida, Grã-Espada álgida ou Lança congelante também produz Carne de terceira congelada.",
+      "applications": [
+        "Congelar a pesca ou a caça na hora, longe das regiões frias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1 coração — o mesmo da Carne de terceira crua — e concede Resistência ao calor de nível 1 por 1 minuto.",
+      "side_effects": [
+        "Como todo efeito temporário de comida, a Resistência ao calor substitui qualquer outro efeito de comida ou elixir que estiver ativo — inclusive um efeito refrescante mais forte ou mais longo."
+      ],
+      "applications": [
+        "Proteção curta contra o calor diurno do Deserto Gerudo sem passar pela Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 15 rupias; a Carne de terceira crua vale 8 e o Bife selado, 12.",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Raw Meat",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Carne de terceira congelada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece ao expor Carne de terceira congelada ao fogo (se descongela ou se vira a versão assada)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pronta nas caixas de Hebra",
+      "text": "Além de ser preparada, a Carne de terceira congelada pode ser achada dentro de caixas de madeira nas Cordilheiras de Hebra.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Congelar para vender",
+      "text": "A Carne de terceira vale 8 rupias crua, 12 selada e 15 congelada.",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Roasted Food",
+        "zw:Raw Meat"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível 1 e só contra o calor do deserto",
+      "text": "Toda comida congelada dá um nível de Resistência ao calor por um minuto. Esse efeito evita o dano do calor do Deserto Gerudo de dia, mas as zonas de calor extremo do sul e do oeste do deserto pedem dois níveis, e ele não ajuda contra o clima escaldante, o fogo ou a lava de Eldin.",
+      "sources": [
+        "zw:Food",
+        "zw:Frozen Food",
+        "zw:Added Effect",
+        "zw:Extremely Hot Zone",
+        "zw:Heat"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Dá só Resistência ao calor de nível 1: não basta para as zonas de calor extremo do sul e do oeste do Deserto Gerudo, que exigem nível 2.",
+    "Não serve para Eldin: Resistência ao calor não protege do clima escaldante, do fogo nem da lava — para isso é preciso Proteção contra chamas.",
+    "Comer durante outro efeito temporário (ataque, defesa, um Elixir refrescante etc.) troca esse efeito pela Resistência ao calor de 1 minuto."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_seared_steak",
+      "relation": "Versão assada da mesma carne"
+    },
+    {
+      "id": "botw_object_wooden_box",
+      "relation": "Guarda carnes congeladas em Hebra"
+    },
+    {
+      "id": "botw_food_icy_prime_meat",
+      "relation": "Congelado da carne de segunda"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Congela o ingrediente cru à distância"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Resistência ao calor mais longa e mais forte"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_calor"
+  ],
+  "verification_status": "verificado"
+}

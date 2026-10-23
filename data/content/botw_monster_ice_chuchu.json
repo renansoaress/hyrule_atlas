@@ -1,0 +1,193 @@
+{
+  "id": "botw_monster_ice_chuchu",
+  "summary": "Chulchul envolto em ar congelante que congela Link ao toque. Morto com a camada de gelo ativa, explode numa nuvem de geada que congela tudo ao redor, inclusive monstros. A Folha Korok o sopra para longe.",
+  "description": "O Chulchul glacial habita climas gelados, como o Monte Hylia (Mount Hylia) e as Cordilheiras de Hebra; o compendium cita também as Montanhas Gerudo. Feitiçanos glaciais e da nevasca podem invocá-lo. Como os outros Chulchuls, existe em três tamanhos, e sua força varia conforme o tamanho.\n\nO ar gelado que ele emite congela Link por alguns instantes ao contato; o ataque principal é saltar sobre Link e criar uma explosão gélida ao redor. Depois de atacar, perde temporariamente a camada de gelo e fica vulnerável. Se for derrotado enquanto ainda está coberto de gelo, explode numa nuvem de geada que congela tudo o que estiver no raio — perigo para Link de perto, mas uma arma contra outros monstros, como sugere uma dica do jogo. Por ser leve, pode ser empurrado pelas rajadas da Folha Korok. Deixa Geleca gélida.",
+  "locations": [
+    "Montanhas Gerudo e Cordilheiras de Hebra, segundo o compendium; também o Monte Hylia (Mount Hylia).",
+    "Invocado em combate por Feitiçanos glaciais e Feitiçanos da nevasca."
+  ],
+  "obtaining": [
+    "Deixa Geleca gélida.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte direta de Geleca gélida.",
+    "Arma improvisada: a explosão ao morrer congela monstros próximos.",
+    "Registro no compendium (entrada nº 86)."
+  ],
+  "effects": [
+    "Congela Link ao contato ou com a explosão gélida."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Matá-lo de perto enquanto está coberto de gelo provoca a explosão de geada que congela quem estiver no raio. Atacá-lo logo após a investida, sem a camada de gelo, é mais seguro.",
+      "applications": [
+        "Usar lanças, como o compendium recomenda para os Chulchuls elementais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas o derrotam de longe, fora do alcance da explosão de geada.",
+      "kind": "mecanica",
+      "sources": [
+        "comp"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Ataques de fogo contra inimigos de gelo podem derrotá-los com um só golpe (regra dos opostos).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Enemy",
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques nem a geleca resultante ao matá-lo com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de água sobre o Chulchul glacial."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Flechas explosivas derrotam instantaneamente inimigos ligados ao gelo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Arrow"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota causa dano a inimigos, permitindo derrotá-lo à distância.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "É leve e pode ser empurrado pelas rajadas da Folha Korok.",
+      "applications": [
+        "Afastá-lo antes que encoste em Link, ou empurrá-lo para perto de outros monstros."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interações específicas do Chulchul glacial com o cenário."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "A explosão de geada ao morrer congela monstros próximos; Feitiçanos glaciais e da nevasca o invocam em combate.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "zw:Tips and Tricks"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congelar o grupo inimigo",
+      "text": "A dica do jogo é direta: ao ser atacado, o Chulchul glacial explode numa rajada de geada, e Link pode usar isso para deixar os monstros vizinhos \"no gelo\".",
+      "sources": [
+        "zw:Tips and Tricks"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Camada de gelo recarregável",
+      "text": "Depois de atacar, o Chulchul glacial perde a cobertura de gelo e fica vulnerável por alguns segundos, antes de recuperá-la.",
+      "sources": [
+        "zw",
+        "zw:Chuchu"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Soprá-lo com a Folha Korok para perto de um acampamento e depois derrotá-lo com uma flecha para congelar os monstros ao redor."
+  ],
+  "limitations": [
+    "Combate corpo a corpo com a camada de gelo ativa congela Link."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_chuchu",
+      "relation": "Forma comum"
+    },
+    {
+      "id": "botw_monster_fire_chuchu",
+      "relation": "Variante de fogo"
+    },
+    {
+      "id": "botw_monster_electric_chuchu",
+      "relation": "Variante elétrica"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Espólio"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Pode invocá-lo"
+    },
+    {
+      "id": "botw_monster_blizzrobe",
+      "relation": "Pode invocá-lo"
+    },
+    {
+      "id": "botw_weapon_korok_leaf",
+      "relation": "A rajada o empurra"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "congela_inimigos",
+    "vence_rapido"
+  ],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,166 @@
+{
+  "id": "botw_armor_radiant_tights",
+  "summary": "Meia-calça do Clube Secreto Gerudo pintada com Pedras luminosas moídas, que brilha no escuro. Completa o Conjunto radiante: em ★★, os esqueletos Stal deixam Link em paz.",
+  "description": "A Meia-calça radiante é a peça de pernas do Conjunto radiante, com a Máscara radiante e a Camisa radiante. É vendida no Clube Secreto Gerudo, na Cidade Gerudo, por 800 rupias mais 3 Pedras luminosas, depois da Missão secundária \"The Secret Club's Secret\"; o conjunto inteiro custa 2.400 rupias e 9 Pedras luminosas. A tinta de Pedras luminosas moídas dá à peça um brilho sinistro no escuro.\n\nCom as três peças em ★★, o conjunto ativa o Disfarce Stal e o Ataque com ossos aumentado (+80% com armas de osso). O efeito individual \"Atrai monstros Stal\" (Stal Lure), presente nas tabelas de efeitos, não tem confirmação de que exista no jogo. A defesa vai de 3 a 20, com as mesmas melhorias da camisa: Pedras luminosas em todos os níveis e vísceras de Koboblin, Moblin, Molduga e Centaleão. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Clube Secreto Gerudo (Gerudo Secret Club), na Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Comprar por 800 rupias e 3 Pedras luminosas no Clube Secreto Gerudo."
+  ],
+  "uses": [
+    "Completar o Conjunto radiante."
+  ],
+  "effects": [
+    "Efeito individual listado como \"Atrai monstros Stal\", sem confirmação.",
+    "Bônus de conjunto (três peças em ★★): Disfarce Stal e Ataque com ossos aumentado."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "variant": "peça isolada",
+      "status": "desconhecido",
+      "result": "O efeito \"Atrai monstros Stal\" atribuído à peça não tem indício de estar implementado, segundo o Zelda Wiki."
+    },
+    {
+      "action": "equipar",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "Com as três peças radiantes em ★★, ativa o Disfarce Stal e o Ataque com ossos aumentado.",
+      "conditions": [
+        "As três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "monstros Stal",
+      "status": "confirmado",
+      "result": "Com o bônus de conjunto ativo, Stalboblins, Stalmoblins e Stallagalfos não atacam Link a menos que ele ataque primeiro; em vez disso, seguem e observam Link. Stalnox são enganados apenas por um tempo.",
+      "conditions": [
+        "Conjunto radiante completo, com as três peças em ★★."
+      ],
+      "side_effects": [
+        "O disfarce acaba antes se um inimigo que não é afetado por ele começar a atacar Link."
+      ],
+      "applications": [
+        "Explorar à noite, quando esses esqueletos saem da terra, sem ser incomodado por eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Disfarce parecido com as máscaras de Kilton",
+      "text": "O Disfarce Stal funciona como as máscaras de disfarce vendidas por Kilton na Fang and Bone, mas só contra Stalboblins, Stalmoblins e Stallagalfos.",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Efeito de guia",
+      "text": "O \"Stal Lure\" vem do guia da Piggyback; o Zelda Wiki não encontrou sinal de que ele funcione.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto em ★★ e uma Clava Moblin dracônica, Link pode escolher quando enfrentar esqueletos à noite e causar 80% a mais de dano quando atacar."
+  ],
+  "limitations": [
+    "O bônus exige as três peças em ★★.",
+    "Melhorias consomem muitas Pedras luminosas."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_radiant_mask",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_radiant_shirt",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_material_luminous_stone",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_monster_stalizalfos",
+      "relation": "Não ataca Link com o conjunto em ★★"
+    },
+    {
+      "id": "botw_weapon_dragonbone_moblin_club",
+      "relation": "Arma de osso fortalecida pelo bônus"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "parcial"
+}

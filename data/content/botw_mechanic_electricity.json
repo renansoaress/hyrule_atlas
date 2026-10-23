@@ -1,0 +1,167 @@
+{
+  "id": "botw_mechanic_electricity",
+  "summary": "Choques atordoam e fazem Link largar armas e escudos de metal. Metal conduz a corrente, a água a espalha e a chuva aumenta o dano das Flechas eletrizantes. Madeira e tecnologia ancestral não conduzem.",
+  "description": "A eletricidade em BOTW age sobre o equipamento tanto quanto sobre a vida. Segundo a página de armas do Zelda Wiki, quando Link é eletrocutado empunhando qualquer arma — exceto a Espada Mestra e o Obliterador —, ela voa das mãos dele e cai por perto. Os arcos elétricos dos Lagalfos elétricos derrubam armas, arcos e escudos de metal; o choque dos Feitiçanos elétricos e dos Morcis elétricos derruba armas de metal; e, contra um Chulchul elétrico, ter armas metálicas equipadas faz Link largá-las e sofrer o dobro do dano. A página do Feitiçano elétrico afirma que armas de madeira ou de tecnologia ancestral evitam o desarme — o que diverge da regra geral \"qualquer arma\".\n\nO metal conduz: Flechas eletrizantes mandam descargas por caixas e armas metálicas, e atiradas na água criam uma área de choque ao redor do ponto de impacto. A descrição da flecha a declara \"incrivelmente eficaz contra metal ou qualquer coisa molhada\", e o Zelda Wiki registra dano extra na chuva. Do lado da defesa, a Resistência a choques (Conjunto de borracha, Elmo divino de Vah Naboris, Brincos de topázio, Elixir isolante) reduz o dano, e a Imunidade a raios do Elmo do trovão e do Conjunto de borracha melhorado anula dano e desarme.",
+  "locations": [
+    "Inimigos elétricos: Chulchuls elétricos e Morcis elétricos (Necluda Oriental, Deserto Gerudo, Grande Nascente de Lanayru), Lagalfos elétricos (Deserto Gerudo), Feitiçanos elétricos (Cerros de Hyrule, Necluda Ocidental) e Feitiçanos do trovão.",
+    "Farosh, o dragão elétrico, nas Montanhas Gerudo e no Lago Floria; a Ira fulmínea de Ganon, em Vah Naboris."
+  ],
+  "obtaining": [
+    "Flechas eletrizantes, Espada faiscante, Lança voltaica, Grã-Espada faiscante, Varinha do raio e Cajado trovejante; Gelecas elétricas golpeadas; a Fúria de Urbosa."
+  ],
+  "uses": [
+    "Atordoar e desarmar inimigos.",
+    "Eletrificar a água ou objetos de metal para atingir vários inimigos.",
+    "Usar pilares metálicos com Magnétis para devolver a eletricidade à Ira fulmínea de Ganon."
+  ],
+  "effects": [
+    "Dano elétrico e atordoamento breve.",
+    "Quem é eletrocutado com itens de metal equipados os deixa cair."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ser eletrocutado atordoa e faz Link largar a arma empunhada (exceto Espada Mestra e Obliterador); os arcos elétricos dos Lagalfos elétricos derrubam também arcos e escudos de metal.",
+      "side_effects": [
+        "Contra Chulchuls elétricos, armas de metal equipadas caem e Link sofre o dobro do dano.",
+        "Fontes divergentes: a página de armas fala em \"qualquer arma\", enquanto as dos Feitiçanos e Morcis elétricos citam só armas de metal e indicam madeira ou tecnologia ancestral para evitar o desarme."
+      ],
+      "applications": ["Preferir armas de madeira ou ancestrais contra Feitiçanos elétricos, como recomenda a página do inimigo."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Electric Lizalfos", "zw:Electric Wizzrobe", "zw:Electric Keese", "zw:Electric Chuchu", "zw:Master Sword"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "A Flecha eletrizante (+20 de dano) se dissipa numa descarga no impacto, eletrocuta e atordoa o alvo e faz quem estiver com itens equipados largá-los.",
+      "side_effects": ["Zoras são muito vulneráveis a ela."],
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flecha eletrizante atirada numa massa de água cria uma área que causa dano ao redor do ponto de impacto; o jogo a descreve como eficaz contra qualquer coisa molhada.",
+      "applications": ["Atingir grupos de inimigos que estão dentro d'água."],
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Flechas eletrizantes causam dano extra quando usadas na chuva.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "cenario",
+      "variant": "metal",
+      "status": "confirmado",
+      "result": "Objetos condutores, como caixas de metal e armas metálicas, transmitem a descarga das Flechas eletrizantes para quem estiver em contato.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "variant": "madeira e tecnologia ancestral",
+      "status": "sem_efeito",
+      "result": "Equipamento de madeira (Tocha, Folha Korok) e de tecnologia ancestral (Escudo guardião) não conduz eletricidade; as varinhas elementais também não.",
+      "kind": "mecanica",
+      "sources": ["zw:Brazier", "zw:Korok Leaf", "zw:Guardian Shield", "zw:Lightning Rod"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "A Espada faiscante eletrocuta quem atinge quando a lâmina brilha em dourado, mas, por ser de metal, também conduz e atrai raios. A Varinha do raio lança bolas elétricas e não conduz.",
+      "kind": "mecanica",
+      "sources": ["zw:Thunderblade", "zw:Lightning Rod"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Na segunda fase da Ira fulmínea de Ganon, o chefe eletrifica pilares de metal; Link pega um deles com Magnétis para devolver-lhe a própria eletricidade.",
+      "kind": "mecanica",
+      "sources": ["zw:Thunderblight Ganon"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Chulchuls elétricos explodem numa descarga se morrerem carregados e ficam inofensivos por alguns segundos depois de soltar choque; acertar o chifre de um Lagalfos elétrico com flecha provoca uma descarga que se espalha. Derrotar um Chulchul comum com eletricidade faz cair Geleca elétrica.",
+      "side_effects": ["Centaleões resistem a todos os elementos; monstros dourados se recuperam do choque mais rápido."],
+      "produces": ["botw_material_yellow_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw:Electric Chuchu", "zw:Electric Lizalfos", "zw:Chuchu", "zw:Lynel", "zw:Gold Enemy"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Resistência a choques vem do Conjunto de borracha, do Elmo divino de Vah Naboris, dos Brincos de topázio e de ingredientes isolantes. A Imunidade a raios (Elmo do trovão; Conjunto de borracha melhorado duas vezes) anula dano elétrico, recuo e desarme. O bônus do Conjunto voe do deserto reduz o dano elétrico em 66%.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Resistance", "zw:Lightning-Proof", "zw:Set Bonus"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Pratos e elixires com ingredientes isolantes concedem Resistência a choques temporária; o nível alto é o recomendado contra a Ira fulmínea de Ganon.",
+      "kind": "mecanica",
+      "sources": ["zw:Thunderblight Ganon", "zw:Shock Resistance"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipamento de metal faísca durante tempestades e atrai raios; ver a ficha Tempestade de raios.",
+      "kind": "mecanica",
+      "sources": ["zw:Thunderstorm", "zw:Lightning"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Fúria de Urbosa",
+      "text": "Carregando um ataque giratório por cerca de dois segundos, Link libera a Fúria de Urbosa: uma grande esfera de eletricidade que causa 150 de dano e atordoa os inimigos que sobreviverem. Criaturas não são afetadas, e é o único ataque elétrico ao qual os Centaleões não resistem. Recarrega em 12 minutos (4 com a versão +).",
+      "sources": ["zw:Urbosa's Fury", "zw:Lynel"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Explodir Chulchuls elétricos em grupo",
+      "text": "As dicas do jogo sugerem atacar Chulchuls elétricos perto de outros monstros: ao explodirem em faíscas, eles eletrocutam quem estiver ao redor. O compendium recomenda armas de alcance, como lanças e flechas, para não ser atingido.",
+      "sources": ["zw:Tips and Tricks", "zw:Electric Chuchu"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Farosh não quer ferir ninguém",
+      "text": "Farosh não ataca Link, mas a eletricidade ao redor do corpo do dragão causa dano a quem chega perto demais — a menos que Link use o Elmo do trovão ou o Conjunto de borracha melhorado duas vezes.",
+      "sources": ["zw:Farosh"]
+    }
+  ],
+  "advanced_uses": [
+    "Atirar uma Flecha eletrizante na água para atingir de uma vez todos os inimigos que estiverem dentro dela.",
+    "Trocar para armas de madeira ou ancestrais antes de enfrentar Feitiçanos elétricos, como recomenda a página do inimigo.",
+    "Usar Magnétis para jogar objetos de metal em acampamentos e depois eletrificá-los com Flechas eletrizantes."
+  ],
+  "limitations": [
+    "Itens de metal equipados viram um risco contra inimigos elétricos e em tempestades.",
+    "Centaleões resistem a eletricidade (exceto à Fúria de Urbosa).",
+    "Não está claro nas fontes se armas de madeira também caem quando Link é eletrocutado: a página de armas diz que qualquer arma cai; as dos inimigos elétricos falam apenas de metal."
+  ],
+  "related": [
+    { "id": "botw_arrow_shock_arrow", "relation": "Principal fonte de eletricidade à distância" },
+    { "id": "botw_weapon_thunderblade", "relation": "Eletrocuta ao brilhar, mas conduz por ser metal" },
+    { "id": "botw_weapon_lightning_rod", "relation": "Varinha elétrica que não conduz" },
+    { "id": "botw_object_metal_box", "relation": "Objeto metálico que conduz descargas" },
+    { "id": "botw_monster_electric_chuchu", "relation": "Desarma e dobra o dano com metal equipado" },
+    { "id": "botw_monster_electric_lizalfos", "relation": "Arcos elétricos que derrubam itens de metal" },
+    { "id": "botw_monster_electric_wizzrobe", "relation": "Choques que desarmam" },
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Chefe elétrico vencido com pilares de metal" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Ataque elétrico em área" },
+    { "id": "botw_material_yellow_chuchu_jelly", "relation": "Geleca obtida com eletricidade" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Resistência e imunidade a choques" },
+    { "id": "botw_armor_thunder_helm", "relation": "Imunidade a raios" },
+    { "id": "botw_elixir_electro_elixir", "relation": "Resistência a choques temporária" },
+    { "id": "botw_weapon_master_sword", "relation": "Nunca é derrubada por choques" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Raios atraídos pelo metal" }
+  ],
+  "capabilities": ["gera_eletricidade", "eletrocuta_inimigos", "conduz_eletricidade"],
+  "verification_status": "a_verificar"
+}

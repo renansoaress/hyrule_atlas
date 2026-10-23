@@ -1,0 +1,178 @@
+{
+  "id": "botw_armor_zora_armor",
+  "summary": "Armadura feita à mão por Mipha para Link, entregue pelo Rei Dorephan no Território Zora. Natação mais rápida e a capacidade de subir cachoeiras nadando; não pode ser vendida.",
+  "description": "Pela tradição Zora, cada princesa confecciona esta armadura para o futuro marido. A de Link foi feita pelas mãos de Mipha, a Campeã Zora, como símbolo do que sentia por ele; cem anos depois, o Rei Dorephan a entrega a Link na primeira visita ao Território Zora, durante a Missão principal \"Divine Beast Vah Ruta\". Se a algibeira estiver cheia, o rei pede que Link abra espaço antes de recebê-la. Com o Elmo Zora e as Grevas Zora, forma o Conjunto Zora.\n\nA armadura dá um nível de Natação mais rápida (+30%) e o efeito oculto Subir cachoeiras: perto da base de uma cachoeira, basta apertar o botão de ação para Link nadar direto até o topo, de onde é lançado no ar e abre o Planador automaticamente. Durante a subida não dá para ir para os lados nem parar, a não ser tirando a armadura. Com as três peças Zora em ★★, o conjunto ativa o Impulso aquático econômico.\n\nA defesa vai de 3 a 20; as melhorias pedem partes de Lagalfos (chifre, garra e cauda) e peixes — Robalos hylianos e nutritivos — e, no último nível, 10 Caudas de Lagalfos e 15 Opalas. Pode ser tingida na Tinturaria Kochi, mas não pode ser vendida, por causa da história por trás dela.",
+  "locations": [
+    "Território Zora, entregue pelo Rei Dorephan."
+  ],
+  "obtaining": [
+    "Missão principal \"Divine Beast Vah Ruta\": recebê-la do Rei Dorephan na primeira visita ao Território Zora (é preciso ter espaço na algibeira)."
+  ],
+  "uses": [
+    "Subir cachoeiras para alcançar lugares altos.",
+    "Nadar mais rápido.",
+    "Completar o Conjunto Zora."
+  ],
+  "effects": [
+    "Natação mais rápida, nível 1 (+30%).",
+    "Subir cachoeiras (efeito oculto).",
+    "Bônus de conjunto (três peças em ★★): Impulso aquático econômico (−75% de vigor nos impulsos e giros nadando)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Natação mais rápida: Link nada 30% mais rápido (60% com dois níveis e 100% com três). Além disso, permite subir cachoeiras nadando. Com o Elmo Zora, a Armadura Zora e as Grevas Zora vestidos, todos em ★★, ativa o Impulso aquático econômico (Swim Dash Stamina Up): impulsos e giros nadando custam 75% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Swim Speed Up",
+        "zw:Set Bonus",
+        "zw:Zora Set"
+      ]
+    },
+    {
+      "action": "cenario",
+      "variant": "cachoeiras",
+      "status": "confirmado",
+      "result": "Na base de uma cachoeira, Link avança até um ponto fixo e nada em linha reta até o alto; no topo, é lançado acima da queda e o Planador se abre sozinho.",
+      "conditions": [
+        "Armadura Zora vestida; começar a subida pela base da cachoeira."
+      ],
+      "side_effects": [
+        "Não é possível desviar para os lados nem interromper a subida, exceto tirando a armadura."
+      ],
+      "applications": [
+        "Usar a subida e o lançamento final para alcançar plataformas altas e planar a partir delas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Swim Up Waterfalls",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Presente de casamento",
+      "text": "A descrição diz que cada geração de princesas Zora faz a armadura para o futuro marido. Muzu, contrariado, lembra que Mipha a fez com as próprias mãos e que é importante demais para ser confiada a \"um hyliano suspeito\".",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Peça por peça",
+      "text": "A armadura combina um grande peitoral, uma cota de escamas cobrindo ombros e parte das costas, duas ombreiras de aço e braçadeiras de placas de prata e aço.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Efeito exclusivo",
+      "text": "Subir cachoeiras é um efeito oculto exclusivo da Armadura Zora: nem o Elmo Zora, nem as Grevas Zora, nem o Conjunto de mergulhador o concedem.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com o Elmo Zora (giro nadando) e as Grevas Zora para nadar com Natação mais rápida nível 3 (+100%) e, em ★★, gastar 75% menos vigor nos impulsos."
+  ],
+  "limitations": [
+    "Não pode ser vendida.",
+    "Durante a subida de cachoeira, Link não consegue parar nem desviar."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_zora_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_keyitem_paraglider",
+      "relation": "Abre sozinho no topo da cachoeira"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Material da última melhoria (15 unidades)"
+    },
+    {
+      "id": "botw_material_lizalfos_tail",
+      "relation": "Material das duas últimas melhorias"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "Mecânica acelerada pela peça"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "habilidade_especial",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

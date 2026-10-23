@@ -1,0 +1,114 @@
+{
+  "id": "botw_monster_guardian_scout_iii",
+  "summary": "Guardião batedor dos Santuários \"A Moderate Test of Strength\" (1.500 de vida), que luta com duas armas da linha guardiã 2.0 ao mesmo tempo e pode deixar Núcleo ancestral.",
+  "description": "O Guardião batedor 3.0 é a terceira versão do batedor e o adversário dos Santuários \"A Moderate Test of Strength\" (prova de força moderada), que só se concluem ao derrotá-lo. O compendium explica que este modelo recebeu a função de duas lâminas, para testar ainda mais a destreza de quem enfrenta as provações, e avisa que é preciso agilidade para superá-lo.\n\nEle empunha simultaneamente duas armas, em qualquer combinação de Espada guardiã 2.0, Escudo guardião 2.0, Lança guardiã 2.0 e Acha ancestral 2.0. Como os outros batedores dos Santuários de prova de força, pode queimar o chão ao redor com o laser, empurrando Link, e carrega um laser mais forte e impossível de interromper quando está perto de ser destruído.\n\nAlém das armas, pode deixar Parafuso, Mola, Engrenagem e Eixo ancestrais e Núcleo ancestral.",
+  "locations": [
+    "Santuários \"A Moderate Test of Strength\" e outros: Ke'nai Shakah, Shora Hah, Mijah Rokee, Muwo Jeem, Namika Ozz, Sasa Kai, Shoqa Tatone e Ruvo Korbah (DLC 2).",
+    "Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende as armas que empunhava (linha guardiã 2.0) e pode render Parafuso, Mola, Engrenagem e Eixo ancestrais e Núcleo ancestral.",
+    "Os batedores dos Santuários voltam após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte da linha guardiã 2.0 e de Núcleos ancestrais."
+  ],
+  "effects": [
+    "Ataques com duas armas guardiãs, laser e laser que queima o chão ao redor."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Combate com duas armas ao mesmo tempo, em qualquer combinação de armas e escudo da linha guardiã 2.0.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Escudos da linha guardiã desviam os feixes dos batedores, e lasers de Guardiões podem ser devolvidos com Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian Gear", "zw:Perfect Guard"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "O olho é o ponto fraco: flechas nele causam dano extra e atordoam, e uma Flecha ancestral no olho destrói Guardiões.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Pode queimar repetidamente o chão em volta com o laser, empurrando Link, e perto do fim carrega um laser mais forte que não pode ser interrompido.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre ele."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nele; as armas guardiãs que porta não são metálicas."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Combinações de armas",
+      "text": "As duas armas vêm de um conjunto fixo — Espada guardiã 2.0, Escudo guardião 2.0, Lança guardiã 2.0 e Acha ancestral 2.0 —, combinadas de qualquer forma.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar flechas para o olho quando ele começar a carregar o laser final, que não pode ser interrompido por golpes."
+  ],
+  "limitations": [
+    "As armas guardiãs 2.0 que ele deixa têm durabilidade modesta."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_scout_ii", "relation": "Versão anterior, com uma arma" },
+    { "id": "botw_monster_guardian_scout_iv", "relation": "Versão seguinte, com três armas" },
+    { "id": "botw_weapon_guardian_sword_plus", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_weapon_guardian_spear_plus", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_shield_guardian_shield_plus", "relation": "Escudo que pode portar e deixar" },
+    { "id": "botw_weapon_ancient_battle_axe_plus", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_material_ancient_core", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "parcial"
+}

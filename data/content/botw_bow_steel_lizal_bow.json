@@ -1,0 +1,169 @@
+{
+  "id": "botw_bow_steel_lizal_bow",
+  "summary": "Arco dos Lagalfos atiradores de elite, reforçado com metal que acrescenta peso mas aumenta a durabilidade (ataque 36, durabilidade 50). Ao contrário do Arco Lagal reforçado, é metálico de verdade.",
+  "description": "O Arco Lagal de aço é o arco mais forte do equipamento dos Lagalfos. Segundo a descrição do jogo, é usado pelos Lagalfos que são atiradores exímios, e o metal que reforça boa parte da peça deixa o arco mais pesado, mas bem mais durável. Aparece sobretudo nas Cordilheiras de Hebra e no Altiplano de Akkala, nas mãos de Lagalfos pretos, prateados e dourados, e também com Lagalfos ígneos, glaciais e elétricos.\n\nNos parâmetros extraídos do jogo, dispara uma flecha por vez com 20 m de trajetória reta e velocidades padrão; os números de disparo múltiplo que constam nos dados (5 flechas em leque e 3 em sequência) estão desligados.\n\nDiferentemente do Arco Lagal reforçado, que o jogo trata como madeira, este é de metal: não queima, afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios em tempestades.",
+  "locations": [
+    "Cordilheiras de Hebra e Altiplano de Akkala (locais comuns segundo o compendium), com Lagalfos de nível alto."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos pretos, prateados, dourados (Modo Mestre) ou elementais arqueiros e recolher o arco."
+  ],
+  "uses": [
+    "Arco de dano alto que pode ser usado no clima escaldante de Eldin sem queimar."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. A flecha percorre 20 m em linha reta antes de começar a cair, e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco Lagal de aço pode surgir com bônus de ataque de +3 a +6 (nível branco) ou de +7 a +11 (nível amarelo), e com bônus de durabilidade de +5 a +10 (branco) ou de +11 a +25 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Disparo múltiplo desligado nos dados",
+      "text": "Os parâmetros do Arco Lagal de aço trazem LeadShotNum 5 (ângulo 20°) e RapidFireNum 3, mas os interruptores IsLeadShot e IsRapidFire estão desativados, e esses números só valem quando o interruptor correspondente está ligado. Na prática o arco dispara uma única flecha — a tabela de arcos do Zelda Wiki lista o ataque dele sem multiplicador.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Bows in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de uma tempestade, troque-o por um arco de madeira de dano parecido, como o Arco Lagal reforçado."
+  ],
+  "limitations": [
+    "Atrai raios em tempestades e cai das mãos de Link com choques elétricos.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_lizal_bow",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_bow_strengthened_lizal_bow",
+      "relation": "Versão intermediária, tratada como madeira"
+    },
+    {
+      "id": "botw_shield_steel_lizal_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_black_lizalfos",
+      "relation": "Um dos Lagalfos que o empunham"
+    },
+    {
+      "id": "botw_monster_silver_lizalfos",
+      "relation": "Um dos Lagalfos que o empunham"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,179 @@
+{
+  "id": "botw_armor_radiant_mask",
+  "summary": "Máscara do Gerudo Secret Club pintada com tinta de pedra luminosa, que brilha no escuro. Sem efeito individual confirmado; com o Conjunto radiante ★★, engana monstros Stal e fortalece armas de osso em 80%.",
+  "description": "A Máscara radiante é vendida no Gerudo Secret Club, dentro da Cidade Gerudo, por 800 rupias e 3 Pedras luminosas, depois da missão “The Secret Club's Secret” (a senha é “GSC♦”). Foi pintada com um corante feito de pedras luminosas trituradas, por isso as marcas de esqueleto brilham quando ela é usada à noite.\n\nSozinha, não tem efeito confirmado além da defesa (3 a 20). Com a Camisa radiante e a Meia-calça radiante, todas a ★★, o Conjunto radiante ativa dois bônus: Disfarce Stal (Stalboblins, Stalmoblins e Stallagalfos não atacam a menos que Link os ataque; Stalnoxes são enganados por algum tempo) e Ataque com ossos aumentado (+80% com armas de osso, como a Clava Kobo dracônica). As melhorias usam Pedras luminosas em todos os níveis — 43 ao todo, o gargalo — mais vísceras de Koboblin, Moblin, Molduga e Centaleão. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Gerudo Secret Club, na Cidade Gerudo (Deserto Gerudo)."
+  ],
+  "obtaining": [
+    "Comprar por 800 rupias e 3 Pedras luminosas, depois da missão secundária “The Secret Club's Secret”."
+  ],
+  "uses": [
+    "Completar o Conjunto radiante para andar entre monstros Stal à noite e aumentar o dano das armas de osso."
+  ],
+  "effects": [
+    "Nenhum efeito individual confirmado.",
+    "Bônus de conjunto (três peças ★★): Disfarce Stal e Ataque com ossos aumentado (+80%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 3 de defesa (20 no nível máximo). As marcas de esqueleto brilham à noite.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto radiante ★★",
+      "status": "confirmado",
+      "result": "Com Camisa e Meia-calça radiantes, todas ★★, ativa o Disfarce Stal e o Ataque com ossos aumentado (+80% com armas de osso).",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Radiant Set"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "monstros Stal (conjunto ★★)",
+      "status": "confirmado",
+      "result": "Stalboblins, Stalmoblins e Stallagalfos não atacam enquanto Link não os atacar; Stalnoxes são enganados temporariamente. Se um inimigo não afetado atacar, o disfarce acaba.",
+      "conditions": [
+        "Conjunto radiante completo a ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "O efeito “Stal Lure” que talvez não exista",
+      "text": "Um guia do jogo (Piggyback) lista um efeito chamado “Stal Lure” em cada peça do Conjunto radiante, que aumentaria o aparecimento de monstros Stal. Segundo o Zelda Wiki, não há indício de que esse efeito esteja implementado no jogo.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Armas de osso que se beneficiam",
+      "text": "O Ataque com ossos aumentado vale para 15 armas: Braço de Koboblin, Braço de Lagalfos, Braço de Moblin, Taco Kobo dracônico, Clava Kobo dracônica, Lança Kobo dracônica, Arco Kobo dracônico, Clava Moblin dracônica, Lança Moblin dracônica, Clava Kobo pontuda, Lança Kobo pontuda, Arco Kobo pontudo, Clava Moblin pontuda, Lança Moblin espinhosa e Arco Lagal. O Taco Kobo pontudo não aparece na lista.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Traje que assusta",
+      "text": "Como o Conjunto sombrio e os conjuntos fantasmas, o Conjunto radiante faz outros personagens se assustarem com Link.",
+      "sources": [
+        "zw:Tingle's Outfit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, com o conjunto ★★ e uma arma de osso, é possível escolher quando enfrentar os monstros Stal — e cada golpe com a arma de osso causa 80% a mais de dano."
+  ],
+  "limitations": [
+    "Sem efeito individual confirmado.",
+    "Os bônus exigem as três peças a ★★, com 43 Pedras luminosas só para a máscara.",
+    "O disfarce não vale para monstros comuns."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_radiant_shirt",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_radiant_tights",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_luminous_stone",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_skull",
+      "relation": "Peça de outro conjunto com os mesmos bônus"
+    },
+    {
+      "id": "botw_monster_stalmoblin",
+      "relation": "Monstro enganado pelo Disfarce Stal"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_club",
+      "relation": "Arma de osso fortalecida pelo bônus"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

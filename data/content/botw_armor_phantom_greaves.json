@@ -1,0 +1,139 @@
+{
+  "id": "botw_armor_phantom_greaves",
+  "summary": "Grevas dos fantasmas temidos pelos heróis (DLC The Master Trials), enterradas perto de um Guardião destruído nas Ruínas da Guarnição de Hyrule. Ataque aumentado e 8 de defesa.",
+  "description": "As Grevas fantasmas completam o Conjunto fantasma, do pacote The Master Trials (DLC 1), com o Elmo fantasma e a Armadura fantasma. A pista do Diário EX de Misko fala nas \"ruínas onde os soldados de Hyrule se reuniam\": o baú está enterrado no sudeste das Ruínas da Guarnição de Hyrule (Hyrule Garrison Ruins), perto de um Guardião persecutório destroçado, e sai da terra com Magnétis (Missão secundária \"EX Treasure: Phantasma\").\n\nConcedem um nível de Ataque aumentado e 8 de defesa fixos: não podem ser melhoradas por Grandes Fadas nem tingidas. As três peças juntas dão Ataque aumentado nível 3 (+50%), sem bônus de conjunto. Depois de obtidas, Granté as vende por 50 rupias; antes da versão 1.3.3, uma vez vendidas, não havia como recuperá-las.",
+  "locations": [
+    "Ruínas da Guarnição de Hyrule (Hyrule Garrison Ruins), na Pradaria de Hyrule: baú enterrado perto de um Guardião persecutório destruído."
+  ],
+  "obtaining": [
+    "Missão secundária \"EX Treasure: Phantasma\" (DLC 1): desenterrar o baú com Magnétis.",
+    "Recomprar de Granté por 50 rupias depois de obtê-las."
+  ],
+  "uses": [
+    "Ataque extra e defesa 8 sem depender de Grandes Fadas."
+  ],
+  "effects": [
+    "Ataque aumentado, nível 1 (+20%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Ataque aumentado (+20%). Com o Elmo fantasma, a Armadura fantasma e as Grevas fantasmas, o efeito chega ao nível 3 (+50%), mas o Conjunto fantasma não tem bônus de conjunto.",
+      "side_effects": [
+        "Com o conjunto completo, as pessoas que Link encontra se assustam."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Phantom Set",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Três ruínas, três peças",
+      "text": "As peças do Conjunto fantasma estão nas Ruínas do Coliseu (elmo), nas Ruínas do Solo Sagrado (armadura) e nas Ruínas da Guarnição de Hyrule (grevas) — os três lugares descritos no Diário EX de Misko como campo de batalha, solo cerimonial dos guardas reais e ponto de reunião dos soldados.",
+      "sources": [
+        "zw:EX Treasure: Phantasma",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Descrição atualizada",
+      "text": "Antes da versão 1.3.3, a descrição dizia que o achado raro não poderia ser recuperado se vendido; a frase mudou quando Granté passou a vender as peças de DLC.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "As grevas combinam com o Elmo bárbaro e a Armadura bárbara para manter Ataque aumentado nível 3 enquanto as peças bárbaras ainda não foram todas obtidas."
+  ],
+  "limitations": [
+    "Não podem ser melhoradas nem tingidas.",
+    "Sem bônus de conjunto.",
+    "Exigem o pacote The Master Trials."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_phantom_equipment",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_phantom_helmet",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "O baú fica junto a um Guardião destruído"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para desenterrar o baú"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

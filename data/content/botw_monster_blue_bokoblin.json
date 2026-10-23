@@ -1,0 +1,261 @@
+{
+  "id": "botw_monster_blue_bokoblin",
+  "summary": "Koboblin de segundo nível (72 pontos de vida) que aprendeu a chutar a Bomba remota para longe antes da explosão. É o primeiro a deixar Vísceras de Koboblin e o Koboblin inicial do Modo Mestre.",
+  "description": "O Koboblin azul é a versão reforçada do Koboblin comum: tem mais vida (72 pontos, contra 13 do vermelho), carrega armas melhores — tipicamente o equipamento Kobo pontudo, reforçado com espinhos de osso — e, segundo o compendium, é um pouco mais esperto. A prova citada pelo próprio jogo é que ele descobriu que basta chutar uma Bomba remota para longe para escapar da explosão. Há registro até de Koboblins azuis empunhando o Cajado meteórico.\n\nFora isso, mantém todo o repertório da espécie: vive em acampamentos, usa torres de vigia e corneta, arremessa barris e rochas, acende armas de madeira no fogo, dorme à noite e não sabe nadar. O compendium aponta o Deserto Gerudo e as Montanhas Gerudo como locais comuns, mas com a progressão oculta de inimigos ele se espalha por toda Hyrule. No Modo Mestre, em que todos os inimigos sobem um nível, ele é o primeiro tipo de Koboblin que Link encontra.\n\nÉ também o monstro da missão secundária \"Missing in Action\": no caminho do Koukot Plateau, Koboblins azuis atacam Canolo, Flaxel, Oliff e Palme, que depois de salvos seguem para o Estábulo do Cânion Gerudo (Gerudo Canyon Stable) ao encontro de Sesami.",
+  "locations": [
+    "Deserto Gerudo e Montanhas Gerudo, segundo o compendium; com a progressão de inimigos, aparece em toda Hyrule.",
+    "Acampamentos de monstros e estradas, como o caminho do Koukot Plateau durante a missão \"Missing in Action\".",
+    "No Modo Mestre, desde o início do jogo no lugar do Koboblin vermelho."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Koboblin, Presa de Koboblin e Vísceras de Koboblin — é a variante mais fraca a deixar vísceras.",
+    "A arma que usava, geralmente equipamento Kobo pontudo, pode ser recolhida.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Primeira fonte de Vísceras de Koboblin, parte de terceiro nível que vale mais rupias e Mon.",
+    "Fonte de armas Kobo pontudas (clava, taco, lança, arco e escudo).",
+    "Registro no compendium (entrada nº 104).",
+    "Missão secundária \"Missing in Action\"."
+  ],
+  "effects": [
+    "Golpes físicos mais fortes que os do Koboblin vermelho; arremessa pedras, barris e Barris explosivos e pode incendiar Link com armas de madeira acesas."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Aguenta bem mais golpes que o vermelho (72 pontos de vida) e revida com armas Kobo pontudas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bokoblin Gear"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "Como todo Koboblin, dorme à noite; um golpe furtivo em um alvo desatento causa 8 vezes o dano da arma, o bastante para compensar a vida extra.",
+      "conditions": [
+        "Aproximar-se agachado sem ser notado."
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw:Bokoblin",
+        "zw:Sneakstrike"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça causa dano dobrado; vigias em torres de observação morrem com uma flecha na cabeça.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e sofre dano; o equipamento Kobo pontudo continua sendo de madeira e queima. Perto de fogo, ele mesmo acende a arma de madeira para atacar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Arrow",
+        "zw:Bokoblin Gear",
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano acima do normal.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o obrigam a largar a arma.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shock Arrow",
+        "zw:Great Thunderblade"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Não nada: afoga-se em água funda, como os demais Koboblins.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Barris explosivos e de Flechas explosivas o atingem normalmente; a Flecha explosiva também incendeia o alvo. Ele próprio pega Barris explosivos para arremessar.",
+      "conditions": [
+        "Flechas explosivas não explodem na chuva."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Barrel",
+        "zw:Bomb Arrow",
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Ao ver uma Bomba remota perto, chuta-a para longe para evitar a explosão — o compendium cita esse truque como sinal de que ele é mais esperto que o vermelho.",
+      "side_effects": [
+        "A bomba chutada pode parar perto de Link."
+      ],
+      "applications": [
+        "Detonar a bomba antes que ele chegue até ela, ou preferir Barris explosivos e Flechas explosivas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "comp",
+        "zw",
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, e por pouco tempo; enquanto paralisado fica imune a congelar, queimar e levar choque.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não pode ser agarrado com Magnétis, mas leva dano de objetos metálicos largados ou balançados contra ele; suas armas Kobo, de madeira, não são magnéticas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis",
+        "zw:Tips and Tricks",
+        "zw:Bokoblin Gear"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Arremessa rochas grandes, Barris e Barris explosivos e vigia acampamentos com corneta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin",
+        "zw:Monster Stronghold"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Koboblin",
+      "status": "confirmado",
+      "result": "A Máscara de Koboblin e a Máscara de Majora fazem os Koboblins ignorarem Link; outros monstros da área continuam atacando.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Missão \"Missing in Action\"",
+      "text": "No caminho do Koukot Plateau, Koboblins azuis mantêm Canolo, Flaxel, Oliff e Palme encurralados. Depois que Link derrota os monstros, os quatro partem para o Estábulo do Cânion Gerudo para reencontrar Sesami — e cada um reage de um jeito diferente a saber que ele os esperava em segurança.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O Koboblin inicial do Modo Mestre",
+      "text": "No Modo Mestre os inimigos sobem um nível, então os primeiros Koboblins encontrados já são azuis. Eles também regeneram vida aos poucos (até um limite) e notam Link com mais facilidade.",
+      "sources": [
+        "zw",
+        "zw:Master Mode"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Koboblin com cajado de fogo",
+      "text": "O Cajado meteórico é usado principalmente por Feitiçanos meteóricos, mas o Zelda Wiki registra que Koboblins azuis também podem empunhá-lo.",
+      "sources": [
+        "zw:Meteor Rod"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Presente na premonição",
+      "text": "Na lembrança \"A Premonition\", um Koboblin azul aparece entre os monstros que Link acabou de derrotar.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra grupos de Koboblins azuis, preferir Barris explosivos ou Flechas explosivas em vez de Bombas remotas, que eles chutam para longe.",
+    "Desarmá-los com choque e usar as armas pontudas deles contra o próprio grupo."
+  ],
+  "limitations": [
+    "Bombas remotas deixadas no chão tendem a ser chutadas para longe.",
+    "Flechas ancestrais o desintegram sem deixar materiais nem a arma."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Forma básica da espécie"
+    },
+    {
+      "id": "botw_monster_black_bokoblin",
+      "relation": "Variante seguinte na progressão"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Parte de terceiro nível que ele já pode deixar"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_material_bokoblin_fang",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_weapon_spiked_boko_club",
+      "relation": "Arma Kobo pontuda típica"
+    },
+    {
+      "id": "botw_weapon_meteor_rod",
+      "relation": "Também pode ser empunhado por Koboblins azuis"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Bomba que ele aprendeu a chutar"
+    },
+    {
+      "id": "botw_mechanic_master_mode",
+      "relation": "Substitui o Koboblin vermelho no início"
+    },
+    {
+      "id": "botw_armor_bokoblin_mask",
+      "relation": "Disfarce que impede seus ataques"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

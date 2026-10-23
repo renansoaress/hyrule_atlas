@@ -1,0 +1,242 @@
+{
+  "id": "botw_monster_silver_lynel",
+  "summary": "Centaleão prateado com listras roxas, fortalecido pela magia de Ganon (5.000 de vida). Porta armas Ferozes que costumam vir com bônus e, além das partes de Centaleão, deixa gemas e Fragmentos de estrela.",
+  "description": "O Centaleão prateado é, no modo normal, o mais forte da espécie: o compendium explica que ele foi influenciado pela magia maligna de Ganon e supera até os de juba branca. \"Prateado\" se refere tanto à cor quanto à raridade, e as listras roxas o tornam fácil de reconhecer. Como os de juba branca, carrega a linha centaleônica Feroz, mas suas armas costumam vir com bônus. Ele aparece conforme o nível do mundo progride, substituindo Centaleões de tipos inferiores.\n\nAntes de lutar, ele também prefere encarar Link; as Máscaras de Centaleão e de Majora o enganam por um tempo, até que perceba o disfarce. Quando a luta começa, ruge e bate a arma no chão, causando uma explosão de fogo ao redor. Mantém todas as resistências da espécie, inclusive a todos os elementos.\n\nA recompensa é o grande atrativo: além de Chifre, Casco e Vísceras de Centaleão, deixa Topázios, Rubis, Safiras, Diamantes e Fragmentos de estrela. Um exemplar notável é o das Ruínas do Coliseu (Coliseum Ruins), que, quando se torna prateado, empunha uma Espada flamejante em vez de uma arma centaleônica.",
+  "locations": [
+    "Não tem área própria no compendium: surge no lugar de Centaleões de tipos inferiores à medida que o nível do mundo progride.",
+    "Ruínas do Coliseu (Coliseum Ruins): o Centaleão dali usa Espada flamejante quando aparece na forma prateada."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Chifre, Casco e Vísceras de Centaleão, Topázio, Rubi, Safira, Diamante e Fragmento de estrela, além das armas (geralmente com bônus) e de um maço de flechas.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de armas centaleônicas Ferozes com bônus.",
+    "Fonte repetível (a cada Lua de sangue) de Diamantes e Fragmentos de estrela.",
+    "Partes de Centaleão para elixires, melhorias de armadura e troca por Mon."
+  ],
+  "effects": [
+    "Explosão de fogo ao iniciar a luta; sopro de fogo, golpes de armas Ferozes, investidas e pisoteio."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Costuma encarar Link antes de atacar. Ao começar a luta, ruge e bate a arma no chão, provocando uma explosão de fogo.",
+      "applications": [
+        "Com a Máscara de Centaleão ou a de Majora, Link passa por ele por algum tempo sem ser atacado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Como todo Centaleão, não é derrubado por golpes e não larga a arma até morrer.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça atordoa e causa dano dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Resistente ao fogo e aos efeitos dele.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resistente ao gelo e ao congelamento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resistente à eletricidade; apenas a Fúria de Urbosa ignora a resistência dos Centaleões.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre o Centaleão prateado na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "O efeito de explosões sobre ele não é detalhado pelas fontes."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Usar qualquer runa à vista dele encerra a encarada e inicia a luta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Centaleão prateado."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre o monstro.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado nas mesmas situações dos demais Centaleões, com até cinco golpes por montaria sem gasto de durabilidade.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "A maioria dos ataques admite Defesa perfeita ou Esquiva perfeita.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Teletransporta-se quando preso no terreno ou longe do território.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Marcado pela magia de Ganon",
+      "text": "O compendium atribui a força do Centaleão prateado à magia maligna de Ganon e explica que o nome indica tanto a cor quanto a raridade; as listras roxas o destacam ainda mais.",
+      "sources": [
+        "comp"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Armas com bônus",
+      "text": "Embora use a mesma linha Feroz do Centaleão de juba branca, as armas do prateado tendem a vir com bônus aleatórios.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Espada flamejante do Coliseu",
+      "text": "O Centaleão das Ruínas do Coliseu é o único da espécie que não usa só equipamento centaleônico: na forma prateada, empunha uma Espada flamejante.",
+      "sources": [
+        "zw:Lynel"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ainda há um degrau acima",
+      "text": "No Modo Mestre existe o Centaleão dourado, que o compendium descreve como um Centaleão prateado transformado depois de ser atingido por um raio.",
+      "sources": [
+        "zw:Golden Lynel"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar flechas na cabeça com montaria para encurtar uma luta de 5.000 de vida sem gastar armas.",
+    "Usar a Máscara de Centaleão para atravessar a área dele quando a luta não compensa."
+  ],
+  "limitations": [
+    "Resistências elementais tornam inúteis os truques de fogo, gelo e eletricidade (exceto a Fúria de Urbosa).",
+    "Não aparece no início do jogo: depende da progressão do nível do mundo."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_white_maned_lynel",
+      "relation": "Variação anterior (juba branca)"
+    },
+    {
+      "id": "botw_monster_golden_lynel_mm",
+      "relation": "Forma ainda mais forte, no Modo Mestre"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Regras gerais da espécie"
+    },
+    {
+      "id": "botw_weapon_flameblade",
+      "relation": "Arma do Centaleão prateado das Ruínas do Coliseu"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_sword",
+      "relation": "Arma da linha Feroz"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_crusher",
+      "relation": "Arma da linha Feroz"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Disfarce temporário"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "gera_explosao",
+    "montavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

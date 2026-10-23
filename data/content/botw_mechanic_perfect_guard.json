@@ -1,0 +1,119 @@
+{
+  "id": "botw_mechanic_perfect_guard",
+  "summary": "Aparar com o escudo no instante exato do golpe (escudo erguido com ZL + A): desequilibra o inimigo, pode desarmá-lo e devolve projéteis como os lasers de Guardiões. Não gasta o escudo, salvo os de Centaleão.",
+  "description": "A Defesa perfeita é a versão cronometrada da aparada (parry). Com qualquer escudo equipado, Link segura ZL para se defender e aperta A para desferir uma aparada; se o A for pressionado no momento imediatamente anterior ao impacto, a aparada vira Defesa perfeita. O inimigo cambaleia, abrindo espaço para um contra-ataque, e às vezes perde a arma.\n\nA técnica também devolve certos projéteis ao atirador. O caso mais conhecido são os lasers de Guardião, que voltam e causam muito dano à máquina. Há exceções: as rochas explosivas dos Octorocs rochosos não podem ser devolvidas nem com Defesa perfeita e explodem diante de Link. Quanto ao desgaste, a Defesa perfeita impede que o escudo perca durabilidade, ao contrário de um bloqueio comum; a exceção são os escudos de Centaleão, que perdem durabilidade ao aparar, mas em troca causam dano de corte com a borda.",
+  "locations": [
+    "Pode ser usada em qualquer lugar com um escudo equipado. No Santuário Ta'loh Naeg, na colina ao leste da Vila Kakariko, o monge ensina a técnica contra um Guardião batedor 2.0 translúcido."
+  ],
+  "obtaining": [
+    "Disponível desde o início do jogo; basta equipar um escudo."
+  ],
+  "uses": [
+    "Abrir a guarda de inimigos para contra-atacar, inclusive Centaleões.",
+    "Destruir Guardiões devolvendo os próprios lasers.",
+    "Desarmar inimigos sem gastar o escudo."
+  ],
+  "effects": [
+    "Inimigo desequilibrado por alguns instantes; possível desarme.",
+    "Projéteis compatíveis voltam contra quem os disparou."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Com o escudo erguido (ZL), apertar A logo antes de o ataque inimigo acertar executa a Defesa perfeita: o inimigo cambaleia e Link pode contra-atacar.",
+      "conditions": [
+        "Ter um escudo equipado.",
+        "Pressionar A no instante anterior ao impacto; cedo demais, é só uma aparada comum."
+      ],
+      "side_effects": ["Pode fazer o inimigo largar a arma."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Parry", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "defender",
+      "variant": "laser de Guardião",
+      "status": "confirmado",
+      "result": "O laser é refletido de volta ao Guardião e causa muito dano a ele.",
+      "conditions": ["Acertar o tempo da aparada no momento em que o laser chega."],
+      "applications": ["Derrotar Guardiões persecutórios e torretas sem armas ancestrais."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield"]
+    },
+    {
+      "action": "defender",
+      "variant": "desgaste do escudo",
+      "status": "confirmado",
+      "result": "A Defesa perfeita não tira durabilidade do escudo, diferentemente de cada golpe recebido num bloqueio comum.",
+      "side_effects": ["Defesa centaleônica, Defesa centaleônica forte e Defesa centaleônica Feroz perdem durabilidade ao aparar."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Durability"]
+    },
+    {
+      "action": "defender",
+      "variant": "escudos de Centaleão",
+      "status": "confirmado",
+      "result": "As bordas dos escudos de Centaleão causam dano de corte ao defletir (7 de dano com a Defesa centaleônica).",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel Shield", "zw:Shield"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "sem_efeito",
+      "result": "Ao contrário das rochas dos outros Octorocs, as rochas explosivas do Octoroc rochoso não são devolvidas nem com Defesa perfeita: explodem na frente de Link. A arma limpa que ele cospe atravessa Link se for aparada.",
+      "kind": "mecanica",
+      "sources": ["zw:Rock Octorok"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Centaleão",
+      "status": "confirmado",
+      "result": "A maioria dos ataques dos Centaleões pode ser defendida com Defesa perfeita, deixando-os vulneráveis a contra-ataques.",
+      "side_effects": ["Ser repelido pelo escudo faz o Centaleão atacar sem a encarada inicial de 30 segundos."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A \"arte secreta da defesa\"",
+      "text": "Na Vila Kakariko, Olkin diz que só quem domina a \"arte secreta da defesa\" supera o santuário da colina. Lá dentro, o monge Ta'loh Naeg ensina, em sequência, o salto lateral, o salto para trás e, por fim, a Defesa perfeita.",
+      "sources": ["zw:Ta'loh Naeg Shrine"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O Centaleão do Monte Ploymus",
+      "text": "O Centaleão do Monte Ploymus é programado de modo diferente: aparar com um escudo de Centaleão não o alerta imediatamente da presença de Link.",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Escudo guardião contra batedores",
+      "text": "O Escudo guardião, feito com tecnologia Sheikah, tem a habilidade especial de defletir os feixes dos Guardiões batedores.",
+      "sources": ["zw:Guardian Shield"]
+    }
+  ],
+  "advanced_uses": [
+    "Contra Guardiões, a Defesa perfeita transforma qualquer escudo em arma: cada laser devolvido causa dano alto, poupando armas ancestrais.",
+    "Treinar o tempo da aparada no Santuário Ta'loh Naeg, onde o Guardião de treino não oferece risco real."
+  ],
+  "limitations": [
+    "Exige escudo; sem ele, não há aparada.",
+    "Não funciona contra as rochas do Octoroc rochoso.",
+    "Escudos de Centaleão se desgastam a cada aparada."
+  ],
+  "related": [
+    { "id": "botw_mechanic_perfect_dodge", "relation": "Outra técnica de tempo exato, que abre o Frenesi" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Laser que pode ser devolvido" },
+    { "id": "botw_monster_guardian_scout_ii", "relation": "Adversário do treino no Santuário Ta'loh Naeg" },
+    { "id": "botw_monster_rock_octorok", "relation": "Rochas que não podem ser devolvidas" },
+    { "id": "botw_monster_lynel", "relation": "Ataques que podem ser aparados" },
+    { "id": "botw_shield_lynel_shield", "relation": "Causa dano ao aparar, mas se desgasta" },
+    { "id": "botw_shield_guardian_shield", "relation": "Deflete feixes de Guardiões batedores" },
+    { "id": "botw_mechanic_durability", "relation": "Regras de desgaste dos escudos" }
+  ],
+  "capabilities": ["reflete_laser", "habilidade_especial"],
+  "verification_status": "verificado"
+}

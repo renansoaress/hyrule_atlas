@@ -1,0 +1,140 @@
+{
+  "id": "botw_food_toasty_hylian_shroom",
+  "summary": "Cogumelo hyliano tostado no ponto, de sabor e aroma realçados. Vale 3 rupias, como o cru, e é vendido pronto na Protein Palace; a cura diverge entre as fontes (3/4 ou 1,5 coração; cru, meio).",
+  "description": "O cogumelo mais comum de Hyrule, encontrado perto de árvores, vira Cogumelo hyliano tostado quando encosta no fogo ou fica no clima escaldante de Eldin. O texto do jogo diz que ele foi tostado à perfeição e que o sabor e o aroma, amplificados, restauram mais vida do que o cogumelo cru.\n\nQuanto, exatamente, não é consenso: a página do item e a do Cogumelo hyliano falam em 3/4 de coração — 50% a mais que o meio coração do cogumelo cru, como diz o próprio texto do jogo do cru —, mas a tabela de comidas assadas do Zelda Wiki registra 1,5 coração. O preço de venda não muda (3 rupias), e a Protein Palace, na Cidade Goron, vende o cogumelo já tostado por 12.",
+  "locations": [
+    "Prepara-se a partir de Cogumelos hylianos, comuns perto de árvores em toda Hyrule, numa fogueira ou no chão escaldante de Eldin.",
+    "À venda na Protein Palace, na Cidade Goron."
+  ],
+  "obtaining": [
+    "Expor um Cogumelo hyliano ao fogo ou largá-lo no chão em clima escaldante.",
+    "Comprar na Protein Palace, na Cidade Goron, por 12 rupias."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração pelas páginas do item (1,5 coração pela tabela de comidas assadas).",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração segundo as páginas do Zelda Wiki (1,5 coração segundo a tabela de comidas assadas).",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Cogumelo hyliano — queima por alguns instantes e se transforma em Cogumelo hyliano tostado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Cogumelo hyliano tostado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Cogumelo hyliano no chão para que o ingrediente asse sozinho e vire Cogumelo hyliano tostado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cura mais que o Cogumelo hyliano cru (meio coração): 3/4 de coração segundo a página do item e a do cogumelo cru, ou 1,5 coração segundo a tabela de comidas assadas. Não concede efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hylian Shroom"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 3 rupias, o mesmo que o Cogumelo hyliano cru.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hylian Shroom"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Cogumelo hyliano tostado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "3/4 ou 1,5 coração?",
+      "text": "A página do item e a do Cogumelo hyliano dizem 3/4 de coração, valor coerente com a regra de +50% sobre o meio coração do cogumelo cru; a tabela de comidas assadas do Zelda Wiki registra 1,5 coração. As fontes consultadas não resolvem a divergência."
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Pago quatro vezes mais na loja",
+      "text": "Na Protein Palace, o cogumelo tostado custa 12 rupias; vendido, rende só 3.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não se valoriza na venda.",
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_roasted_bass",
+      "relation": "Outro assado vendido pronto na Protein Palace"
+    },
+    {
+      "id": "botw_food_seared_steak",
+      "relation": "Outro assado vendido pronto na Protein Palace"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "a_verificar"
+}

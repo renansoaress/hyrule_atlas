@@ -1,0 +1,100 @@
+{
+  "id": "botw_creature_woodland_boar",
+  "summary": "Javali robusto espalhado por toda Hyrule e o único animal grande do Grande Planalto. Costuma fugir, mas às vezes investe contra Link; abatido, deixa uma ou duas Carnes de terceira.",
+  "description": "O Javali da mata é um javali atarracado, de porte médio, encontrado por toda Hyrule — mais comum na Pradaria de Hyrule e na Grande Nascente de Lanayru — e o único animal de grande porte do Grande Planalto, onde o jogo começa. Passa o dia procurando comida em florestas e campos.\n\nGeralmente é dócil e prefere fugir quando incomodado, mas, se Link chegar perto demais, pode investir com tudo em autodefesa; isso não acontece se Link estiver montado a cavalo. Ao morrer, deixa de uma a duas Carnes de terceira, o que faz dele a primeira fonte de carne do jogo. Koboblins perseguem javalis que se aproximam dos seus acampamentos para matá-los e comê-los.",
+  "locations": [
+    "Toda Hyrule; mais comum na Pradaria de Hyrule e na Grande Nascente de Lanayru (compendium).",
+    "Grande Planalto, onde é o único animal grande."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Fonte de Carne de terceira (1 a 2 por javali), útil desde o início do jogo no Grande Planalto.",
+    "Registrar sua foto no compendium (entrada nº 10)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano da investida."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Na maioria das vezes foge; às vezes, assustado, investe contra Link em autodefesa.",
+      "conditions": ["A investida não acontece se Link estiver montado a cavalo."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Boar"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser abatido; deixa entre uma e duas Carnes de terceira.",
+      "produces": ["botw_material_raw_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Raw Meat"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que o javali pode ser abatido, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins perseguem javalis que chegam perto dos seus acampamentos, para matá-los e comê-los.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Boar"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O único animal grande do Grande Planalto",
+      "text": "No Grande Planalto, área inicial do jogo, o Javali da mata é o único animal de grande porte, por isso é a primeira fonte de carne para o jogador.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Seguro a cavalo",
+      "text": "O javali não investe contra Link quando ele está montado a cavalo.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "A Carne de terceira vira Bife selado se exposta ao fogo e Carne de terceira congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Deixa apenas Carne de terceira, a de menor qualidade.",
+    "Pode investir se Link chegar perto demais a pé."
+  ],
+  "related": [
+    { "id": "botw_creature_red_tusked_boar", "relation": "Javali mais forte de Akkala, que deixa Carne de segunda" },
+    { "id": "botw_material_raw_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_food_seared_steak", "relation": "Carne de terceira exposta ao fogo" },
+    { "id": "botw_food_icy_meat", "relation": "Carne de terceira exposta ao gelo" },
+    { "id": "botw_monster_bokoblin", "relation": "Caça javalis perto dos acampamentos" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

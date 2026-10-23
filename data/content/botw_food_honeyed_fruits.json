@@ -1,0 +1,84 @@
+{
+  "id": "botw_food_honeyed_fruits",
+  "summary": "Qualquer fruta, exceto Maçã, cozida com Mel de abelha, unindo doçura e acidez. Com Coco ou Framboesa (neutras) sai energizante; frutas de outro efeito anulam o mel.",
+  "description": "As Frutas com mel juntam Mel de abelha e qualquer fruta que não seja a Maçã — com maçã, a receita é Maçã com mel. A descrição do jogo diz que o prato combina a doçura densa do mel com a acidez das frutas.\n\nSó existe uma versão com efeito, a energizante, e ela depende de frutas neutras como Coco ou Framboesa, que deixam o mel agir. Frutas de outros efeitos — Durião nutritivo, Bananas valentes, Melancia oásica e assim por diante — contrariam o mel, e o prato sai na versão comum.",
+  "locations": [
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Mel de abelha + qualquer fruta, exceto Maçã."
+  ],
+  "uses": [
+    "Recuperação de vigor com Coco ou Framboesa.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Coco ou Framboesa.",
+    "Versão comum (fruta de efeito diferente do mel): recupera alguns corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera parte do Medidor de vigor e alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão energizante"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com fruta de outro efeito, perde o efeito e apenas cura.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não há segredo conhecido; a diferença em relação à Maçã com mel é apenas a fruta aceita.",
+  "limitations": [
+    "Não aceita Maçã.",
+    "Frutas com efeito anulam o mel em vez de somar efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_food_honeyed_apple",
+      "relation": "Mesma receita com Maçã"
+    },
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_palm_fruit",
+      "relation": "Fruta neutra que mantém o efeito"
+    },
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Fruta neutra que mantém o efeito"
+    },
+    {
+      "id": "botw_food_honey_candy",
+      "relation": "Prato só de mel"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

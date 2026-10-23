@@ -1,0 +1,584 @@
+{
+  "_doc": "Curadoria manual do inventário: grafias alternativas, títulos de páginas do Zelda Wiki, entidades que não constam de tabelas (runas, mecânicas, objetos, montarias especiais) e exclusões justificadas.",
+  "aliases_en": {
+    "Dragonbone Boko Bow": [
+      "Dragon Bone Boko Bow"
+    ],
+    "Vicious Sickle": [
+      "Vicous Sickle"
+    ],
+    "Majora's Mask": [
+      "Majora's Mask (Item)"
+    ],
+    "Luminous Stone": [
+      "Luminous Stone Deposit"
+    ],
+    "Stone Talus (Luminous)": [
+      "Luminous Stone Talus"
+    ],
+    "Stone Talus (Rare)": [
+      "Rare Stone Talus"
+    ],
+    "Stalnox": [],
+    "Sword": [
+      "Sword (8-bit)"
+    ],
+    "Silver Bow": [
+      "Zora Bow"
+    ],
+    "Silver Longsword": [
+      "Zora Longsword"
+    ],
+    "Silver Shield": [
+      "Zora Shield"
+    ],
+    "Golden Bow": [
+      "Gerudo Bow"
+    ],
+    "Golden Claymore": [
+      "Gerudo Claymore"
+    ],
+    "Twilight Bow": [
+      "Dusk Bow"
+    ],
+    "Sword of the Six Sages": [
+      "Dusk Claymore"
+    ],
+    "Hero's Shield": [
+      "Sea-Breeze Shield"
+    ],
+    "Goddess Sword": [
+      "White Sword of the Sky"
+    ],
+    "Luminous Ore Deposit": [
+      "Luminous Stone Deposit"
+    ]
+  },
+  "compendium_names": {
+    "dragon bone boko bow": "Dragonbone Boko Bow"
+  },
+  "wiki_titles": {
+    "Hero's Shield": "Sea-Breeze Shield",
+    "Goddess Sword": "White Sword of the Sky",
+    "Luminous Ore Deposit": "Luminous Stone Deposit"
+  },
+  "extra_equipment": {
+    "Light Arrow": {
+      "type": "arrow",
+      "category": "flechas",
+      "subcategory": "flechas",
+      "tags": [
+        "batalha_final"
+      ]
+    }
+  },
+  "entities": [
+    {
+      "name_en": "Epona",
+      "type": "creature",
+      "category": "criaturas",
+      "subcategory": "montarias",
+      "amiibo": "Link (Super Smash Bros.) ou Link de Twilight Princess (série The Legend of Zelda)",
+      "note": "Montaria especial obtida via amiibo; não é entrada do compendium."
+    },
+    {
+      "name_en": "Remote Bomb",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas",
+      "variants": [
+        {
+          "name_en": "Remote Bomb +",
+          "description": "Melhoria do Laboratório Ancestral de Hateno: dano dobrado (12 → 24) e recarga mais rápida (6 s → 3 s); o raio da explosão não muda."
+        }
+      ]
+    },
+    {
+      "name_en": "Magnesis",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas"
+    },
+    {
+      "name_en": "Stasis",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas",
+      "variants": [
+        {
+          "name_en": "Stasis +",
+          "description": "Melhoria do Laboratório Ancestral de Hateno: passa a paralisar inimigos por alguns segundos."
+        }
+      ]
+    },
+    {
+      "name_en": "Cryonis",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas"
+    },
+    {
+      "name_en": "Camera",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas",
+      "wiki_title": "Camera"
+    },
+    {
+      "name_en": "Sheikah Sensor",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas",
+      "variants": [
+        {
+          "name_en": "Sheikah Sensor +",
+          "description": "Melhoria do Laboratório Ancestral de Hateno (3 Parafusos ancestrais): permite escolher como alvo qualquer criatura, monstro ou item já fotografado no compendium."
+        }
+      ]
+    },
+    {
+      "name_en": "amiibo (Rune)",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas",
+      "wiki_title": "amiibo (Rune)"
+    },
+    {
+      "name_en": "Master Cycle Zero",
+      "type": "rune",
+      "category": "runas",
+      "subcategory": "runas",
+      "dlc": "TCB"
+    },
+    {
+      "name_en": "Perfect Guard",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "combate"
+    },
+    {
+      "name_en": "Perfect Dodge",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "combate"
+    },
+    {
+      "name_en": "Flurry Rush",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "combate"
+    },
+    {
+      "name_en": "Sneakstrike",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "combate"
+    },
+    {
+      "name_en": "Critical Hit",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "combate"
+    },
+    {
+      "name_en": "Shield Surfing",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao"
+    },
+    {
+      "name_en": "Durability",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "combate"
+    },
+    {
+      "name_en": "Fire",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "elementos_e_clima"
+    },
+    {
+      "name_en": "Electricity",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "elementos_e_clima"
+    },
+    {
+      "name_en": "Ice",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "elementos_e_clima"
+    },
+    {
+      "name_en": "Temperature",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "elementos_e_clima"
+    },
+    {
+      "name_en": "Rain",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "elementos_e_clima"
+    },
+    {
+      "name_en": "Thunderstorm",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "elementos_e_clima"
+    },
+    {
+      "name_en": "Updraft",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao"
+    },
+    {
+      "name_en": "Stamina",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao"
+    },
+    {
+      "name_en": "Climbing",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao"
+    },
+    {
+      "name_en": "Swimming",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao"
+    },
+    {
+      "name_en": "Blood Moon",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "progressao"
+    },
+    {
+      "name_en": "Cooking",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "culinaria"
+    },
+    {
+      "name_en": "Dye",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "progressao",
+      "wiki_title": "Kochi Dye Shop",
+      "extra_wiki_titles": [
+        "Dye"
+      ]
+    },
+    {
+      "name_en": "Great Fairy Fountain",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "progressao",
+      "extra_wiki_titles": [
+        "Great Fairy"
+      ]
+    },
+    {
+      "name_en": "Stable",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao"
+    },
+    {
+      "name_en": "Master Mode",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "progressao",
+      "dlc": "TMT"
+    },
+    {
+      "name_en": "Trial of the Sword",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "progressao",
+      "dlc": "TMT"
+    },
+    {
+      "name_en": "Hero's Path Mode",
+      "type": "mechanic",
+      "category": "mecanicas",
+      "subcategory": "exploracao",
+      "dlc": "TMT"
+    },
+    {
+      "name_en": "Campfire",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Cooking Pot",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Explosive Barrel",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Barrel",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Boulder",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Metal Box",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Wooden Box",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Tree",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    },
+    {
+      "name_en": "Grass",
+      "type": "object",
+      "category": "objetos",
+      "subcategory": "objetos"
+    }
+  ],
+  "families": [
+    {
+      "name": "Guardian Sword",
+      "members": [
+        "Guardian Sword",
+        "Guardian Sword+",
+        "Guardian Sword++"
+      ]
+    },
+    {
+      "name": "Guardian Spear",
+      "members": [
+        "Guardian Spear",
+        "Guardian Spear+",
+        "Guardian Spear++"
+      ]
+    },
+    {
+      "name": "Guardian Shield",
+      "members": [
+        "Guardian Shield",
+        "Guardian Shield+",
+        "Guardian Shield++"
+      ]
+    },
+    {
+      "name": "Ancient Battle Axe",
+      "members": [
+        "Ancient Battle Axe",
+        "Ancient Battle Axe+",
+        "Ancient Battle Axe++"
+      ]
+    }
+  ],
+  "exclude": [],
+  "exclude_reasons": {},
+  "mechanic_reference_pages": [
+    "Monster Part",
+    "Critter",
+    "Elixir",
+    "Dubious Food",
+    "Rock-Hard Food",
+    "Kilton",
+    "Mon",
+    "Lightning",
+    "Wind",
+    "Bomb",
+    "Korok",
+    "Horse",
+    "Horse Gear",
+    "Wild Horse",
+    "Armor",
+    "Set Bonus",
+    "Material",
+    "Food",
+    "Frozen",
+    "Burning",
+    "Shock"
+  ],
+  "props_ignore": {
+    "Ancient Orb": "Objeto de cenário (orbe ancestral de quebra-cabeças), não é item de inventário.",
+    "Horn": "Corneta usada por monstros; objeto sem página de BOTW (stub), não é item de inventário."
+  },
+  "image_overrides": {
+    "Medal of Honor: Hinox": [
+      {
+        "role": "icon",
+        "file": "File:BotW Medal of Honor： Hinox Icon.png"
+      }
+    ],
+    "Medal of Honor: Molduga": [
+      {
+        "role": "icon",
+        "file": "File:BotW Medal of Honor： Molduga Icon.png"
+      }
+    ],
+    "Medal of Honor: Talus": [
+      {
+        "role": "icon",
+        "file": "File:BotW Medal of Honor： Talus Icon.png"
+      }
+    ],
+    "Rubber Armor (Set)": [
+      {
+        "role": "screenshot",
+        "file": "File:BotW Link Wearing Rubber Armor.jpg"
+      }
+    ],
+    "Salvager Armor Set": [
+      {
+        "role": "screenshot",
+        "file": "File:BotW Link Wearing Salvager Set.jpg"
+      }
+    ],
+    "Durability": [
+      {
+        "role": "icon",
+        "file": "File:BotW Durability Up Icon.png"
+      }
+    ],
+    "Stamina": [
+      {
+        "role": "icon",
+        "file": "File:BotW Extra Stamina Wheel Icon.png"
+      }
+    ],
+    "Temperature": [
+      {
+        "role": "icon",
+        "file": "File:BotW Freezing Temperature Gauge Icon.png"
+      }
+    ],
+    "Electricity": [
+      {
+        "role": "screenshot",
+        "file": "File:BotW Electric Lizalfos Shock Wave.png"
+      }
+    ],
+    "Trial of the Sword": [
+      {
+        "role": "screenshot",
+        "file": "File:BotW EX Trial of the Sword.png"
+      }
+    ],
+    "Tree": [
+      {
+        "role": "model",
+        "file": "File:BotW Cedar Tree Model.png"
+      }
+    ],
+    "Grass": [
+      {
+        "role": "screenshot",
+        "file": "File:BotW Faron Grasslands.png"
+      }
+    ],
+    "Golden Bokoblin": [
+      {
+        "role": "compendium",
+        "file": "File:BotW Hyrule Compendium Golden Bokoblin.png"
+      }
+    ],
+    "Golden Moblin": [
+      {
+        "role": "compendium",
+        "file": "File:BotW Hyrule Compendium Golden Moblin.png"
+      }
+    ],
+    "Golden Lizalfos": [
+      {
+        "role": "compendium",
+        "file": "File:BotW Hyrule Compendium Golden Lizalfos.png"
+      }
+    ],
+    "Golden Lynel": [
+      {
+        "role": "compendium",
+        "file": "File:BotW Hyrule Compendium Golden Lynel.png"
+      }
+    ],
+    "Sky Octorok": [
+      {
+        "role": "compendium",
+        "file": "File:BotW Hyrule Compendium Sky Octorok.png"
+      }
+    ],
+    "Explosive Barrel": [
+      {
+        "role": "model",
+        "file": "File:BotW Bomb Barrel Model.png"
+      }
+    ],
+    "Metal Box": [
+      {
+        "role": "model",
+        "file": "File:BotW Iron Box Model.png"
+      }
+    ],
+    "Wooden Box": [
+      {
+        "role": "model",
+        "file": "File:BotW Wooden Box Model.png"
+      }
+    ],
+    "Boulder": [
+      {
+        "role": "model",
+        "file": "File:BotW Boulder Model.png"
+      }
+    ],
+    "Campfire": [
+      {
+        "role": "model",
+        "file": "File:BotW Campfire Model.png"
+      }
+    ],
+    "Cooking Pot": [
+      {
+        "role": "model",
+        "file": "File:BotW Cooking Pot Model.png"
+      }
+    ],
+    "Barrel": [
+      {
+        "role": "model",
+        "file": "File:BotW Barrel Model.png"
+      }
+    ]
+  },
+  "dlc_overrides": {
+    "Molduking": "TCB",
+    "Igneo Talus Titan": "TCB",
+    "Monk Maz Koshia": "TCB",
+    "One-Hit Obliterator": "TCB"
+  },
+  "_dlc_overrides_doc": "Conteúdo exclusivo de DLC que o compendium marca como dlc=false. Entradas do Modo Mestre recebem automaticamente DLC 1 (The Master Trials)."
+}

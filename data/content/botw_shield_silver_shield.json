@@ -1,0 +1,109 @@
+{
+  "id": "botw_shield_silver_shield",
+  "summary": "Escudo Zora ricamente ornamentado; dizem que seus mestres desviam ataques como a pedra desvia a correnteza. Defesa 18, mas com faixa de bônus de Defesa enorme: pode chegar a 44.",
+  "description": "O Escudo prateado é feito pelos Zora e chama atenção pelos ornamentos detalhados. A descrição do jogo traz um ditado: os verdadeiros mestres deste escudo conseguem redirecionar ataques como uma rocha redireciona a água corrente. Em números é modesto — Defesa 18 e durabilidade 20 —, mas seus parâmetros têm uma das faixas de bônus de Defesa mais generosas do jogo em proporção ao valor base. Pertence ao equipamento Zora (Zora Gear), junto da Espada Zora, da Lança Zora, da Espada longa prateada e do Arco prateado.\n\nHá cinco exemplares no mapa, a maioria na Grande Nascente de Lanayru e em volta do Lago Hylia, e mais dois em baús no Modo Mestre. Sendo de metal, conduz eletricidade, atrai raios, afunda — algo a considerar perto dos rios e lagos onde ele aparece — e pode ser movido com Magnétis; não queima.",
+  "locations": [
+    "Ponte oeste do Domínio Zora (Zora's Domain).",
+    "Baú sob a sala do trono do Domínio Zora.",
+    "Baú no meio do Lago Akkala, a oeste do Santuário Dah Hesho.",
+    "Baú de madeira na margem sudeste do Lago Hylia, ao norte da árvore solitária.",
+    "Baú logo a oeste da costa da Eventide Island.",
+    "Mais dois em baús no Modo Mestre."
+  ],
+  "obtaining": [
+    "Recolher um dos cinco exemplares fixos (sete no Modo Mestre)."
+  ],
+  "uses": [
+    "Escudo de metal de nível médio-baixo, valioso quando vem com bônus de Defesa.",
+    "Prancha para Surfar com escudo."
+  ],
+  "effects": [
+    "Nenhum efeito especial documentado; o \"redirecionar ataques\" da descrição é apenas texto descritivo."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 18; cada golpe consome durabilidade, exceto na Defesa perfeita, que desvia o ataque e desequilibra o inimigo.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão; Lanayru, onde fica a maioria dos exemplares, é uma das regiões com tempestades."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo do fundo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +10 (nível amarelo) e com Defesa do escudo aumentada de +7 a +14 (branco) ou +15 a +26 (amarelo). Com o bônus amarelo máximo, a Defesa sobe de 18 para 44, acima do Escudo do cavaleiro (40).",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Shields in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Vale procurar exemplares com Shield Guard Up+: um Escudo prateado com bônus amarelo alto rivaliza com escudos de metal bem mais raros."
+  ],
+  "limitations": [
+    "Poucos exemplares fixos.",
+    "Metálico: atrai raios e cai das mãos com choques."
+  ],
+  "related": [
+    { "id": "botw_weapon_zora_sword", "relation": "Mesmo arquétipo (equipamento Zora)" },
+    { "id": "botw_weapon_zora_spear", "relation": "Mesmo arquétipo (equipamento Zora)" },
+    { "id": "botw_weapon_silver_longsword", "relation": "Mesmo arquétipo e estilo prateado" },
+    { "id": "botw_bow_silver_bow", "relation": "Mesmo arquétipo (equipamento Zora)" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Técnica de desviar ataques no momento certo, com qualquer escudo" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

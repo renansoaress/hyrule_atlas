@@ -1,0 +1,230 @@
+{
+  "id": "botw_weapon_drillshaft",
+  "summary": "Lança Goron feita de metal reciclado com a ponta de uma antiga broca (ataque 14, durabilidade 50). Quebra depósitos de minério num golpe e é a única lança que destrói caixas de metal.",
+  "description": "A Perfuradeira foi forjada por artesãos Goron com metal reciclado; a ponta é uma antiga broca de escavação, que lhe dá capacidade de perfuração incomparável. Pertence ao equipamento Goron e, nos parâmetros do jogo, é tratada como martelo: quebra Depósitos de minério com um só golpe e destrói pilhas de pedra que normalmente exigiriam bombas, assim como a Marreta de ferro, o Esmaga-Fraga, o Quebra-Pedra e o Racha-Rocha.\n\nÉ também a única lança capaz de destruir caixas de metal e elimina Britas rochosas instantaneamente — mas, ao contrário das marretas, não recebe dano extra contra o Tálus rochoso. É encontrada no Cânion de Eldin e nas Cordilheiras de Hebra, em baús ou nas mãos de inimigos como Lagalfos. Por ser de metal, conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Cânion de Eldin e Cordilheiras de Hebra, em baús e nas mãos de inimigos como Lagalfos.",
+    "Sobre uma queda de lava a leste das fontes termais Goron, escondida sob entulho (missão \"O segredo da montanha\")."
+  ],
+  "obtaining": [
+    "Abrir baús ou derrotar os inimigos que a empunham.",
+    "Missão secundária \"O segredo da montanha\": Apá (Dugby) desafia Link a achar o tesouro escondido perto da Ponte de Eldin. Falando com ele à noite, Apá revela em sonho que o escondeu sobre uma queda de lava a leste das fontes termais Goron. É preciso quebrar o entulho para pegar a Perfuradeira; Apá confere se é a mesma e deixa Link ficar com ela."
+  ],
+  "uses": [
+    "Mineração: quebra Depósitos de minério com um único golpe, liberando o que eles guardam (como Sílex).",
+    "Destruir pilhas de pedra que bloqueiam passagens sem gastar Bombas remotas.",
+    "Destruir caixas de metal, algo que nenhuma outra lança consegue.",
+    "Golpear Sílex para fazer fogo, como qualquer arma de metal."
+  ],
+  "effects": [
+    "Comporta-se como martelo contra rochas e minérios (parâmetro IsHammer)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra Depósitos de minério com um único golpe, destrói pilhas de pedra que normalmente exigem explosivos e destrói caixas de metal — as outras lanças e as armas de uma mão não causam dano a essas caixas.",
+      "applications": [
+        "Minerar sem bombas e liberar passagens bloqueadas por entulho."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Elimina Britas rochosas instantaneamente, mas não ganha o dano extra contra Tálus rochosos que as marretas recebem. Pode ser encontrada nas mãos de inimigos como Lagalfos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Uma lança que é martelo",
+      "text": "Nos parâmetros extraídos do jogo, a Perfuradeira tem a marcação de martelo (IsHammer), o que explica por que quebra minérios e rochas como a Marreta de ferro, o Esmaga-Fraga, o Quebra-Pedra e o Racha-Rocha, apesar de atacar com estocadas.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O tesouro de Apá",
+      "text": "Na missão \"O segredo da montanha\", Apá (Dugby) fala debaixo d'água e é difícil de entender; à noite, porém, ele murmura dormindo onde escondeu o tesouro — sobre uma queda de lava a leste das fontes termais Goron. O tesouro é uma Perfuradeira.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Perfuradeira pode surgir com um bônus branco (comum) — ataque +5 a +8, durabilidade +5 a +9 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +9 a +13, durabilidade +10 a +23 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em cavernas e montanhas com muitos minérios, leve a Perfuradeira para minerar sem gastar a durabilidade das armas principais nem esperar a recarga das Bombas remotas."
+  ],
+  "limitations": [
+    "Sem dano extra contra Tálus rochosos, ao contrário das marretas.",
+    "Por ser de metal, atrai raios se ficar equipada numa tempestade."
+  ],
+  "related": [
+    {
+      "id": "botw_treasure_ore_deposit",
+      "relation": "Quebrado com um único golpe"
+    },
+    {
+      "id": "botw_object_metal_box",
+      "relation": "Única lança que a destrói"
+    },
+    {
+      "id": "botw_monster_stone_pebblit",
+      "relation": "Eliminada instantaneamente"
+    },
+    {
+      "id": "botw_monster_stone_talus",
+      "relation": "Não recebe dano extra da Perfuradeira"
+    },
+    {
+      "id": "botw_weapon_iron_sledgehammer",
+      "relation": "Martelo com a mesma capacidade de quebrar rochas"
+    },
+    {
+      "id": "botw_weapon_cobble_crusher",
+      "relation": "Mesmo arquétipo (Goron)"
+    },
+    {
+      "id": "botw_weapon_boulder_breaker",
+      "relation": "Mesmo arquétipo (Goron)"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

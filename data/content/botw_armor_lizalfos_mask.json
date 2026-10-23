@@ -1,0 +1,163 @@
+{
+  "id": "botw_armor_lizalfos_mask",
+  "summary": "Máscara de Kilton que imita a língua e o chifre dos Lagalfos e disfarça Link entre Lagalfos e Stallagalfos. Custa 299 Mon e só aparece na Fang and Bone após libertar duas Feras Divinas.",
+  "description": "Kilton a apresenta como solução para os Lagalfos, que “atacam sem aviso” quando parecem dormir e às vezes se camuflam no ambiente: com a máscara, diz ele, eles vão achar que Link é um deles e ignorá-lo. A peça reproduz a língua e o chifre característicos do monstro e custa 299 Mon na Fang and Bone, onde só aparece depois que duas Feras Divinas são libertadas.\n\nVestida, concede o efeito oculto Disfarce de Lagalfos: Lagalfos e Stallagalfos não atacam Link enquanto ele não os atacar primeiro; em vez disso, o seguem e o observam. Link adota a pose de espera de um Lagalfos e a máscara faz baixinho os sons do monstro. Outros inimigos atacam normalmente — e, quando um deles ataca, os Lagalfos também percebem o disfarce. A defesa é fixa em 3: não pode ser melhorada nem tingida.",
+  "locations": [
+    "Fang and Bone, a loja noturna de Kilton (Skull Lake, no Coração de Akkala, e arredores dos principais povoados, das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 299 Mon depois de libertar duas Feras Divinas."
+  ],
+  "uses": [
+    "Passar por Lagalfos e Stallagalfos sem combate, inclusive os camuflados."
+  ],
+  "effects": [
+    "Disfarce de Lagalfos (efeito oculto): Lagalfos e Stallagalfos não atacam a menos que Link ataque primeiro."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa e ativa o Disfarce de Lagalfos; Link adota a pose de espera de um Lagalfos e a máscara emite sons baixos do monstro.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Lagalfos e Stallagalfos não atacam Link; passam a segui-lo e observá-lo.",
+      "conditions": [
+        "Link não pode atacá-los primeiro."
+      ],
+      "side_effects": [
+        "Com os inimigos rondando Link, fica mais difícil dar um Ataque-surpresa."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "outras espécies",
+      "status": "confirmado",
+      "result": "Outros inimigos atacam normalmente; se um deles começar a atacar, os Lagalfos também descobrem o disfarce.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O discurso de Kilton",
+      "text": "Ao lançar a máscara, Kilton reclama que os Lagalfos são um tormento quando se está ferido, porque atacam de repente quando parecem dormir, e que alguns ainda se camuflam no cenário.",
+      "sources": [
+        "zw:Fang and Bone"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cobre também os Stallagalfos",
+      "text": "O Disfarce de Lagalfos vale para a versão esquelética do monstro, os Stallagalfos que surgem à noite.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em áreas com muitos Lagalfos, a máscara evita as emboscadas dos que se camuflam enquanto Link explora — o próprio Kilton a recomenda para isso."
+  ],
+  "limitations": [
+    "Não engana outras espécies.",
+    "Defesa fixa em 3, sem melhorias nem tingimento.",
+    "Atacar um Lagalfos encerra o disfarce."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Monstro enganado pelo disfarce"
+    },
+    {
+      "id": "botw_monster_stalizalfos",
+      "relation": "Versão Stal também enganada"
+    },
+    {
+      "id": "botw_armor_bokoblin_mask",
+      "relation": "Primeira máscara da Fang and Bone"
+    },
+    {
+      "id": "botw_armor_moblin_mask",
+      "relation": "Máscara anterior (após uma Fera Divina)"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Máscara seguinte (após três Feras Divinas)"
+    },
+    {
+      "id": "botw_armor_majoras_mask",
+      "relation": "Combina este e os outros disfarces de Kilton"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "botw_food_mushroom_skewer",
+  "summary": "Espetinho feito só de cogumelos, de apresentação colorida. Aceita até três tipos diferentes; quatro tipos viram Espetinhos fartos de cogumelo, e qualquer outro ingrediente muda a receita.",
+  "description": "O Espetinho de cogumelos é a receita mais direta para quem colheu cogumelos: só cogumelos vão à panela, e o inventário diz que seu apelo vem da apresentação colorida. Cada cogumelo dá sua variante — Glacimelo (Resistência ao calor), Flamelo (Resistência ao frio), Aterramelo (Resistência a choques), Energimelo (Recuperação de vigor), Cogumelo tenaz (Vigor extra), Agilimelo (Velocidade aumentada), Trufa nutritiva e Trufona nutritiva (Corações extras), Ferromelo (Ataque aumentado), Blindamelo (Defesa aumentada) e Silencimelo (Furtividade aumentada). Só Cogumelos hylianos, ou cogumelos de efeitos diferentes, resultam na versão comum.\n\nPor ser feito só de cogumelos, é um prato fácil de \"estragar\": a panela aceita até três tipos diferentes de cogumelo (com quatro tipos, o resultado é Espetinhos fartos de cogumelo), e qualquer outro ingrediente leva a outra receita — fruta gera Mix de frutas e cogumelos, carne gera Espetinho de carne e cogumelo, peixe gera Espetinho de peixe e cogumelo, legume gera Cogumelos no vapor, Halita gera Cogumelos grelhados no sal, Tempero Goron gera Cogumelos salteados aromáticos e Mel de abelha gera Cogumelos glaceados.",
+  "obtaining": [
+    "Cozinhar numa Panela de um a cinco cogumelos, de no máximo três tipos diferentes e sem outros ingredientes."
+  ],
+  "uses": [
+    "Aproveitar cogumelos colhidos sem precisar de temperos comprados.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera pelo menos um coração.",
+    "Efeito definido pelos cogumelos: Resistência ao calor, Resistência ao frio, Resistência a choques, Recuperação de vigor, Vigor extra, Velocidade aumentada, Corações extras, Ataque aumentado, Defesa aumentada ou Furtividade aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito dos cogumelos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "outros ingredientes",
+      "status": "confirmado",
+      "result": "Qualquer ingrediente que não seja cogumelo muda a receita (Mix de frutas e cogumelos, Espetinho de carne e cogumelo, Espetinho de peixe e cogumelo, Cogumelos no vapor, Cogumelos grelhados no sal, Cogumelos salteados aromáticos ou Cogumelos glaceados).",
+      "produces": [
+        "botw_food_fruit_and_mushroom_mix",
+        "botw_food_meat_and_mushroom_skewer",
+        "botw_food_fish_and_mushroom_skewer",
+        "botw_food_steamed_mushrooms",
+        "botw_food_salt_grilled_mushrooms",
+        "botw_food_fragrant_mushroom_saute",
+        "botw_food_glazed_mushrooms"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "quatro tipos de cogumelo",
+      "status": "confirmado",
+      "result": "Quatro tipos diferentes de cogumelo formam Espetinhos fartos de cogumelo em vez deste prato.",
+      "produces": [
+        "botw_food_copious_mushroom_skewers"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Meal"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Cinco trufas",
+      "text": "Repetir o mesmo cogumelo de efeito não temporizado fortalece o efeito. Cinco Trufonas nutritivas, por exemplo, formam um espetinho que cura tudo e concentra muitos Corações extras num único espaço da algibeira.",
+      "sources": [
+        "zw:Food",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Qualquer ingrediente que não seja cogumelo muda a receita.",
+    "Quatro ou mais tipos de cogumelo viram Espetinhos fartos de cogumelo."
+  ],
+  "related": [
+    {
+      "id": "botw_food_copious_mushroom_skewers",
+      "relation": "Resultado com quatro tipos de cogumelo"
+    },
+    {
+      "id": "botw_food_salt_grilled_mushrooms",
+      "relation": "Resultado ao acrescentar Halita"
+    },
+    {
+      "id": "botw_food_steamed_mushrooms",
+      "relation": "Resultado ao acrescentar legume, erva ou flor"
+    },
+    {
+      "id": "botw_material_big_hearty_truffle",
+      "relation": "Cogumelo que gera a versão com Corações extras"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito para a versão comum"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

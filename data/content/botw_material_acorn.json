@@ -1,0 +1,176 @@
+{
+  "id": "botw_material_acorn",
+  "summary": "Noz caída ao pé das árvores, disputada pelos esquilos. Crua cura 1/4 de coração; na panela, só a primeira bolota soma 10 s ao efeito. Dez por peça levam o Conjunto do herói selvagem ao 1º nível.",
+  "description": "A Bolota aparece em toda Hyrule, normalmente no chão ao pé das árvores, e também cai quando uma árvore é derrubada. A descrição do jogo avisa que os esquilos adoram essa noz, então Link pode ter concorrência — e, de fato, Esquilos caudafofa também deixam bolotas ao serem abatidos. Crua, recupera um quarto de coração. Por ser inflamável, pega fogo quando exposta a chamas ou a um clima escaldante e vira Bolota tostada (meio coração).\n\nNa panela, cada bolota acrescenta meio coração ao prato, mas só a primeira soma tempo ao efeito (10 segundos); as demais não trazem benefício algum para efeitos de pratos ou elixires. Ela é obrigatória no Bolo de nozes e nas Nozes salteadas e não conta como fruta nas receitas. O uso mais valioso fica nas Grandes Fadas: o primeiro nível de cada peça do Conjunto do herói selvagem pede 10 bolotas e 2 escamas de dragão.",
+  "locations": [
+    "Chão ao pé das árvores em toda Hyrule; as árvores grossas demais para cortar costumam ter bolotas na copa."
+  ],
+  "obtaining": [
+    "Recolher do chão perto das árvores.",
+    "Derrubar árvores (com arma cortante, explosões ou raios): elas podem soltar bolotas.",
+    "Abater Esquilos caudafofa.",
+    "Comprar com o mercador ambulante Gartan, entre o Gerudo Canyon Stable e a Cidade Gerudo, por 8 rupias."
+  ],
+  "uses": [
+    "Obrigatória no Bolo de nozes (com Trigo de Tabantha, Cana-de-açúcar e Manteiga de cabra) e nas Nozes salteadas; a Noz serve como alternativa.",
+    "Melhoria de armadura: 10 por peça no 1º nível do Gorro selvagem (+2 Escamas de Farosh), da Túnica selvagem (+2 Escamas de Naydra) e das Calças selvagens (+2 Escamas de Dinraal).",
+    "Ingrediente do corante marrom na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "Sem efeito próprio. Na panela, cada bolota acrescenta meio coração; a primeira soma 10 segundos à duração do efeito do prato."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma bolota largada."
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "árvore",
+      "status": "confirmado",
+      "result": "Cortar uma árvore com arma afiada pode fazer cair bolotas.",
+      "conditions": ["Árvore fina ou média; as grossas não podem ser derrubadas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tree"]
+    },
+    {
+      "action": "bomba_remota",
+      "variant": "árvore",
+      "status": "confirmado",
+      "result": "Árvores derrubadas pela explosão de uma Bomba remota também podem soltar bolotas.",
+      "kind": "mecanica",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Inflamável, pega fogo em contato com chamas e vira Bolota tostada, que recupera meio coração.",
+      "conditions": ["Fogueira, Flecha incendiária, armas de fogo ou grama em chamas."],
+      "produces": ["botw_food_roasted_acorn"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Bolota tostada.",
+      "produces": ["botw_food_roasted_acorn"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, pega fogo e vira Bolota tostada.",
+      "produces": ["botw_food_roasted_acorn"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; a lista de Comidas congeladas não inclui nozes.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da bolota na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a bolota não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Cada bolota acrescenta meio coração ao prato. Só a primeira soma 10 segundos à duração do efeito; as seguintes não melhoram o efeito de pratos nem de elixires.",
+      "side_effects": ["Não conta como fruta: não serve para receitas de \"qualquer fruta\"."],
+      "applications": ["Base do Bolo de nozes e das Nozes salteadas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fruit"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera um quarto de coração.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; a versão tostada vale o mesmo.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Só a primeira conta",
+      "text": "A primeira bolota de uma receita acrescenta 10 segundos à duração do efeito; a partir da segunda, cada bolota só acrescenta meio coração de cura, sem nenhum ganho de duração.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Trinta bolotas para o herói selvagem",
+      "text": "O primeiro nível de melhoria de cada peça do Conjunto do herói selvagem pede 10 bolotas, mais 2 escamas de um dragão diferente por peça (Farosh no gorro, Naydra na túnica, Dinraal nas calças). Para as três peças, são 30 bolotas.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Concorrência dos esquilos",
+      "text": "A descrição do jogo avisa que os esquilos adoram bolotas e podem disputá-las com Link; os Esquilos caudafofa também deixam bolotas ao serem abatidos.",
+      "sources": ["jogo", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para aumentar a duração de um prato de efeito, use uma única bolota; mais bolotas só somam cura."
+  ],
+  "limitations": [
+    "Não tem efeito próprio e cura pouco (1/4 de coração crua).",
+    "Não conta como fruta na culinária."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_acorn", "relation": "Resultado de expor a bolota ao fogo" },
+    { "id": "botw_food_nutcake", "relation": "Exige bolota ou noz" },
+    { "id": "botw_food_sauteed_nuts", "relation": "Exige bolota ou noz" },
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Alternativa à bolota nas receitas de nozes" },
+    { "id": "botw_armorset_hero_of_the_wild_set", "relation": "Usa 10 bolotas por peça no 1º nível de melhoria" },
+    { "id": "botw_armor_cap_of_the_wild", "relation": "1º nível: 10 bolotas + 2 Escamas de Farosh" },
+    { "id": "botw_armor_tunic_of_the_wild", "relation": "1º nível: 10 bolotas + 2 Escamas de Naydra" },
+    { "id": "botw_armor_trousers_of_the_wild", "relation": "1º nível: 10 bolotas + 2 Escamas de Dinraal" },
+    { "id": "botw_creature_bushy_tailed_squirrel", "relation": "Deixa bolotas ao ser abatido" },
+    { "id": "botw_object_tree", "relation": "Árvores derrubadas podem soltar bolotas" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante marrom" }
+  ],
+  "capabilities": ["cura", "inflamavel", "reage_fogo"],
+  "verification_status": "verificado"
+}

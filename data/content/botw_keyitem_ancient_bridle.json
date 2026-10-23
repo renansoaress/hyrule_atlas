@@ -1,0 +1,82 @@
+{
+  "id": "botw_keyitem_ancient_bridle",
+  "summary": "Rédea de tecnologia ancestral (DLC The Champions' Ballad) enterrada sob a cerejeira do Monte Satori. Uma das duas únicas peças de montaria com efeito: dá ao cavalo duas esporas a mais.",
+  "description": "A Rédea ancestral faz parte do equipamento de montaria ancestral, ao lado da Sela ancestral, e é exclusiva da DLC The Champions' Ballad. Ela é o alvo da Missão secundária \"EX Ancient Horse Rumors\": na Super Rumor Mill V3, no Estábulo Highland, Traysi conta que uma rédea de um passado distante, capaz de melhorar o cavalo, estaria ao sul dos Cerros de Hyrule, sob uma cerejeira numa montanha onde as criaturas se reúnem. A rédea está num baú metálico enterrado sob a Árvore Mãe, no topo do Monte Satori, e o baú precisa ser puxado do chão com Magnétis.\n\nSegundo a descrição do jogo, a rédea \"maximiza as habilidades\" do cavalo, aumentando o número de esporas; o Zelda Wiki especifica que são duas esporas a mais, e o registro da missão fala num galope \"mais duradouro\". Junto com a Sela ancestral, é a única peça de montaria que tem efeito real: todas as outras são apenas cosméticas.\n\nComo qualquer rédea, ela é colocada por funcionários de estábulo — e só em cavalos com vínculo máximo. Epona e o Cavalo gigante não aceitam rédeas.",
+  "locations": [
+    "Topo do Monte Satori, sob a Árvore Mãe (uma cerejeira), em baú metálico enterrado."
+  ],
+  "obtaining": [
+    "Com a DLC The Champions' Ballad, ler a Super Rumor Mill V3 no Estábulo Highland (\"EX Ancient Horse Rumors\"; a missão também é ativada ao carregar o mundo depois de sair do Grande Platô).",
+    "Puxar com Magnétis o baú enterrado sob a cerejeira no topo do Monte Satori."
+  ],
+  "uses": [
+    "Dar duas esporas extras a um cavalo registrado, para galopar por mais tempo.",
+    "Enfeitar o cavalo com o visual de tecnologia ancestral."
+  ],
+  "effects": [
+    "+2 esporas para o cavalo que a usa (a descrição do jogo diz que ela maximiza as habilidades do cavalo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Equipada por um funcionário de estábulo, aumenta em duas o número de esporas do cavalo.",
+      "conditions": [
+        "Falar com Phanna (Estábulo Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "O cavalo precisa ter vínculo máximo com Link."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse Gear", "zw:Ancient Horse Gear"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Montado num cavalo com a rédea, Link tem duas esporas a mais disponíveis.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Horse Gear"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "O baú que guarda a rédea está enterrado e é desenterrado com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw:EX Ancient Horse Rumors"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Esporas e vigor do cavalo",
+      "text": "O número de esporas de um cavalo é definido pelo atributo de vigor dele. A rédea soma duas esporas a esse número; para comparação, uma Cenoura tenaz dá três esporas extras, mas só até serem usadas.",
+      "sources": ["zw:Horse", "zw:Ancient Horse Gear"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Descrições trocadas",
+      "text": "A página do equipamento ancestral no Zelda Wiki resume o boato de Traysi invertido (sela que melhora o cavalo e rédea que o chama), mas a missão e as descrições do inventário deixam claro que é a rédea que aumenta as esporas e a sela que permite chamar o cavalo de longe.",
+      "sources": ["zw:Ancient Horse Gear", "zw:EX Ancient Horse Rumors", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Num Cavalo branco (vigor 5), a rédea aumenta ainda mais o número de esporas de uma montaria que já tem o vigor máximo entre os cavalos registráveis."
+  ],
+  "limitations": [
+    "Só pode ser equipada em quatro estábulos e em cavalos com vínculo máximo.",
+    "Não serve em Epona nem no Cavalo gigante.",
+    "Exige a DLC The Champions' Ballad."
+  ],
+  "related": [
+    { "id": "botw_keyitem_ancient_saddle", "relation": "Outra peça do equipamento de montaria ancestral" },
+    { "id": "botw_creature_horse", "relation": "Montaria que recebe a rédea" },
+    { "id": "botw_creature_white_horse", "relation": "Cavalo de vigor máximo que pode usar a rédea" },
+    { "id": "botw_creature_epona", "relation": "Não aceita rédeas" },
+    { "id": "botw_creature_giant_horse", "relation": "Não aceita rédeas" },
+    { "id": "botw_creature_lord_of_the_mountain", "relation": "Espírito que aparece no mesmo Monte Satori" },
+    { "id": "botw_material_endura_carrot", "relation": "Outra forma de dar esporas extras" },
+    { "id": "botw_mechanic_stable", "relation": "Onde a rédea é colocada" },
+    { "id": "botw_rune_magnesis", "relation": "Necessária para desenterrar o baú" }
+  ],
+  "capabilities": ["habilidade_especial", "velocidade"],
+  "verification_status": "verificado"
+}

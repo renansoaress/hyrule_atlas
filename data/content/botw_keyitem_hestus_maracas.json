@@ -1,0 +1,63 @@
+{
+  "id": "botw_keyitem_hestus_maracas",
+  "summary": "As maracas que Ruri sacode desde os dois anos, roubadas por Koboblins azuis perto de Kakariko. Devolvê-las conclui \"The Priceless Maracas\" e libera as ampliações da algibeira com Sementes Korok.",
+  "description": "As Maracas de Ruri são o item-chave da Missão secundária \"The Priceless Maracas\". No caminho entre a Ponte Kakariko e Vila Kakariko, o enorme Korok Ruri se espanta por Link conseguir vê-lo — ninguém o via havia cem anos — e conta que um grupo de monstros roubou suas amadas maracas, sem as quais ele não consegue usar seus poderes. Segundo a descrição do item, Ruri as sacode desde os dois anos de idade.\n\nAs maracas estão num baú atrás de um arco de pedra, um pouco adiante na estrada, num acampamento de três Koboblins azuis; o baú só destrava depois que todos são derrotados. Ao recebê-las de volta, Ruri percebe que as Sementes Korok de dentro sumiram — os outros Koroks as levaram como pegadinha — e explica que, com uma única semente, poderia cantar, dançar e usar o poder de ampliação da algibeira.\n\nAs Sementes Korok que Link encontra pelo mundo são justamente as contas dessas maracas. São 900 ao todo, mas Ruri só usa 441 para as ampliações.",
+  "locations": [
+    "Necluda Ocidental: baú atrás de um arco de pedra na estrada ao sul de Vila Kakariko, guardado por três Koboblins azuis."
+  ],
+  "obtaining": [
+    "Falar com Ruri entre a Ponte Kakariko e Vila Kakariko, derrotar os três Koboblins azuis do acampamento próximo e abrir o baú."
+  ],
+  "uses": [
+    "Devolver a Ruri para concluir \"The Priceless Maracas\" e começar a trocar Sementes Korok por espaços na algibeira."
+  ],
+  "effects": [
+    "Nenhum efeito direto; destrava o serviço de ampliação de Ruri."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Entregues a Ruri, ele percebe a falta das sementes e passa a aceitar Sementes Korok para ampliar os estoques de armas, arcos e escudos.",
+      "conditions": ["Baú do acampamento aberto depois de derrotar os três Koboblins azuis."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:The Priceless Maracas", "zw:Hestu"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "O baú das maracas fica trancado até que os três Koboblins azuis do acampamento sejam derrotados.",
+      "kind": "mecanica",
+      "sources": ["zw:The Priceless Maracas"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Espero que não estejam sacudindo\"",
+      "text": "Se Link falar com Ruri antes de recuperar as maracas, ele pergunta se já as conseguiu e torce para que os monstros não as estejam sacudindo.",
+      "sources": ["zw:Hestu"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Duas ampliações e partida",
+      "text": "Depois de devolver as maracas, Ruri faz só duas ampliações na estrada de Kakariko e vai embora para a Floresta Korok, antes que \"o vovô\" brigue com ele. As instruções que recebeu para voltar são seguir o Rio Hylia para o norte, e no caminho ele se perde e aparece em estábulos.",
+      "sources": ["zw:The Priceless Maracas", "zw:Hestu"]
+    }
+  ],
+  "advanced_uses": [
+    "Recupere as maracas cedo, já na primeira passagem por Kakariko: sem elas, as Sementes Korok coletadas não têm uso."
+  ],
+  "limitations": [
+    "Exige enfrentar três Koboblins azuis.",
+    "Ruri não amplia a algibeira sem as maracas nem sem Sementes Korok."
+  ],
+  "related": [
+    { "id": "botw_keyitem_korok_seed", "relation": "As sementes são as contas das maracas" },
+    { "id": "botw_keyitem_hestus_gift", "relation": "Presente final de Ruri" },
+    { "id": "botw_monster_blue_bokoblin", "relation": "Guardam o baú das maracas" },
+    { "id": "botw_treasure_treasure_chest", "relation": "As maracas ficam num baú trancado" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

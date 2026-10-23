@@ -1,0 +1,146 @@
+{
+  "id": "botw_material_stamella_shroom",
+  "summary": "Cogumelo verde \"cheio de energia natural\" que cresce perto das árvores e se esconde na grama. Cozido, recupera vigor na hora (Recuperação de vigor). As fontes divergem sobre quanto ele cura cru.",
+  "description": "O Energimelo é um cogumelo verde que cresce perto das árvores nas florestas; por causa da cor, é difícil de enxergar no meio da grama. O jogo o descreve como \"cheio de energia natural\" e explica que é preciso cozinhá-lo para liberar suas propriedades: os pratos de panela feitos com ele concedem Recuperação de vigor, que devolve imediatamente parte do Medidor de vigor. Cru, cura pouco — a API do compendium registra meio coração e o Zelda Wiki fala em 1 coração.\n\nExposto ao fogo, vira Energimelo tostado, que perde o efeito e só cura. É vendido na Spore Store, na Floresta Korok, e pelos mercadores ambulantes Bugut, Giro e Kanny, por 20 rupias. Na Tinturaria Kochi, entra no corante verde.",
+  "locations": [
+    "Perto das árvores nas florestas; o compendium cita os Cerros de Hyrule e a Pradaria de Hyrule.",
+    "Lojas: Spore Store (Floresta Korok), Bugut, Giro e Kanny — 20 rupias."
+  ],
+  "obtaining": [
+    "Colher ao pé das árvores, procurando com atenção na grama.",
+    "Comprar nas lojas citadas."
+  ],
+  "uses": [
+    "Pratos de Recuperação de vigor para emergências durante escaladas, nado ou voo com o Planador.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozido: Recuperação de vigor — devolve instantaneamente parte do Medidor de vigor (efeito sem duração)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Stamella Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Energimelo tostado, que só cura.",
+      "side_effects": ["Perde a Recuperação de vigor.", "As fontes divergem sobre a cura da versão tostada: a página do Energimelo tostado fala em 3/4 de coração; a tabela de comidas assadas, em 1,5 coração."],
+      "produces": ["botw_food_toasty_stamella_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Toasty Stamella Shroom", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Energimelo tostado.",
+      "produces": ["botw_food_toasty_stamella_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Toasty Stamella Shroom"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_stamella_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Stamella Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Recuperação de vigor, efeito instantâneo e sem duração. Mais unidades ou outros ingredientes do mesmo efeito (Mel de abelha, Robalo enérgico, Caranguejo esperto) recuperam mais vigor.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Stamina Recovery"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, cura pouco e não recupera vigor. A API do compendium registra meio coração; o Zelda Wiki, 1 coração.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 5 rupias; o tostado vale o mesmo.",
+      "sources": ["zw", "zw:Toasty Stamella Shroom"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Instantâneo, sem duração",
+      "text": "Recuperação de vigor funciona como a cura de corações: age no instante em que o prato é comido e não tem tempo de duração. Um prato de Energimelo serve, portanto, para socorro imediato, não para preparar uma escalada com antecedência.",
+      "sources": ["zw:Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Camuflado na grama",
+      "text": "Por causa da cor verde brilhante, o Energimelo é difícil de distinguir no meio da grama, mesmo crescendo perto das árvores como os outros cogumelos.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde pratos de Energimelo para quando o Medidor de vigor esvaziar no meio de uma escalada: o efeito é imediato."
+  ],
+  "limitations": [
+    "Cru ou tostado não recupera vigor; só cozido.",
+    "Não aumenta o limite do Medidor de vigor (para isso, use Cogumelo tenaz ou Cenoura tenaz)."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_stamella_shroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_material_endura_shroom", "relation": "Cogumelo de Vigor extra (efeito diferente)" },
+    { "id": "botw_material_courser_bee_honey", "relation": "Outro ingrediente de Recuperação de vigor" },
+    { "id": "botw_creature_staminoka_bass", "relation": "Outro ingrediente de Recuperação de vigor" },
+    { "id": "botw_elixir_energizing_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_stamina", "relation": "O efeito recupera o Medidor de vigor" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante verde" }
+  ],
+  "capabilities": ["cura", "vigor", "reage_fogo"],
+  "verification_status": "a_verificar"
+}

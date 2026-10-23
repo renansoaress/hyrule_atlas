@@ -1,0 +1,108 @@
+{
+  "id": "botw_food_gourmet_poultry_curry",
+  "summary": "Curry de Ave inteira com Tempero Goron e Arroz hyliano, que segundo o jogo já foi servido no Castelo de Hyrule. Só aceita a Ave inteira; com Carne de primeira, vira outro curry.",
+  "description": "O Curry de ave inteira exige Ave inteira, Tempero Goron e Arroz hyliano. A descrição do jogo conta que o prato era servido no Castelo de Hyrule e que a ave usada é de altíssima qualidade; o Zelda Wiki situa isso antes da segunda Grande Calamidade. Cura vários corações.\n\nComo os três ingredientes não têm efeito, os dois espaços livres definem a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nÉ o topo da linha de curries de ave: Coxa gera Curry de coxa, Sobrecoxa gera Curry de sobrecoxa e Ave inteira gera este. A Ave inteira não pode ser trocada por Carne de primeira aqui — esta carne leva ao Curry de carne de primeira.",
+  "locations": [
+    "Ave inteira: deixada por Pombos brancos e Avestruzes de Eldin.",
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge.",
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Ave inteira + Tempero Goron + Arroz hyliano."
+  ],
+  "uses": [
+    "Cura de vários corações com dois espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera vários corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ingredientes extras de efeito definem a versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Prato da corte",
+      "text": "A descrição do inventário afirma que este curry já foi servido no Castelo de Hyrule; o Zelda Wiki situa essa época antes da segunda Grande Calamidade.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita Ave inteira como carne.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_gourmet_meat_curry",
+      "relation": "Curry equivalente com Carne de primeira"
+    },
+    {
+      "id": "botw_food_poultry_curry",
+      "relation": "Curry com Coxa"
+    },
+    {
+      "id": "botw_food_prime_poultry_curry",
+      "relation": "Curry com Sobrecoxa"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

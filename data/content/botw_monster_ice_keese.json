@@ -1,0 +1,131 @@
+{
+  "id": "botw_monster_ice_keese",
+  "summary": "Morci envolto em geada intensa, típico dos picos gelados como o Monte Lanayru. Basta encostar em Link para congelá-lo; como todo Morci, cai com um único acerto.",
+  "description": "O Morci glacial é a variante de gelo do Morci. Segundo o compendium, a geada intensa que envolve seu corpo o torna mais perigoso que o comum, porque ele pode congelar qualquer coisa que toque. Vive em topos de montanha gelados, como o Monte Lanayru; o compendium cita as Cordilheiras de Hebra e as Montanhas Gerudo como locais comuns. Feitiçanos glaciais e da nevasca invocam monstros congelados, como Morcis glaciais.\n\nAo entrar em contato com Link, congela-o por alguns instantes — o que, em grupo, pode ser perigoso. Com 1 ponto de vida, porém, qualquer acerto o derruba, e a Defesa perfeita na investida o mata como a qualquer Morci. Pode deixar Asa de Morci glacial e Olho de Morci.",
+  "locations": [
+    "Topos de montanha gelados, como o Monte Lanayru; o compendium cita as Cordilheiras de Hebra e as Montanhas Gerudo.",
+    "Invocado em combate por Feitiçanos glaciais e da nevasca."
+  ],
+  "obtaining": [
+    "Pode deixar Asa de Morci glacial e Olho de Morci.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Asas de Morci glacial.",
+    "Registro no compendium (entrada nº 90)."
+  ],
+  "effects": [
+    "Congela Link ao contato."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cai com um único golpe (1 ponto de vida), mas encostar nele congela Link.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Aparar a investida de um Morci com Defesa perfeita o mata instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw:Keese"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha o derruba de longe, sem risco de congelamento.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Ataques de fogo contra inimigos de gelo podem derrotá-los com um golpe; com 1 ponto de vida, qualquer acerto basta.",
+      "kind": "mecanica",
+      "sources": ["zw:Enemy", "zw:Fire Arrow"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune a gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Qualquer ataque que o acerte o derruba, incluindo Flechas eletrizantes.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Morci glacial com água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Flechas explosivas derrotam instantaneamente inimigos ligados ao gelo.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interações do Morci glacial com o cenário."
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A rajada da Folha Korok derruba Morcis no chão por um momento.",
+      "kind": "mecanica",
+      "sources": ["zw:Keese", "zw:Korok Leaf"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Congelamento ao toque",
+      "text": "O compendium diz que o Morci glacial pode congelar qualquer coisa que toque; o Zelda Wiki confirma que o contato congela Link.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Manter um arco pronto ao escalar picos gelados como o Monte Lanayru e derrubar os Morcis glaciais antes que encostem."
+  ],
+  "limitations": [
+    "Ser congelado no meio de um bando deixa Link exposto a outros ataques."
+  ],
+  "related": [
+    { "id": "botw_monster_keese", "relation": "Forma comum" },
+    { "id": "botw_monster_fire_keese", "relation": "Variante de fogo" },
+    { "id": "botw_monster_electric_keese", "relation": "Variante elétrica" },
+    { "id": "botw_material_ice_keese_wing", "relation": "Parte exclusiva" },
+    { "id": "botw_material_keese_eyeball", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_monster_ice_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_monster_blizzrobe", "relation": "Pode invocá-lo" }
+  ],
+  "capabilities": ["gera_gelo", "vence_rapido"],
+  "verification_status": "parcial"
+}

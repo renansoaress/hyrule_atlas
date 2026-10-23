@@ -1,0 +1,122 @@
+{
+  "id": "botw_armor_nintendo_switch_shirt",
+  "summary": "Camiseta com o logotipo do Nintendo Switch, brinde do Passe de Expansão, num baú no alto de um muro da Abadia Oriental, no Grande Planalto. Só dá 1 de defesa.",
+  "description": "A Camiseta Nintendo Switch é um brinde exclusivo do Passe de Expansão: depois da compra, aparece um baú no alto de um muro da Abadia Oriental (Eastern Abbey), no Grande Planalto (Great Plateau). A peça existe também na versão de Wii U, com o mesmo logotipo do Switch. A descrição do inventário traz a marca \"Expansion Pass Bonus\" e diz que é um achado raro, \"para vestir com orgulho\".\n\nNão tem efeito especial nem faz parte de conjunto: dá 1 de defesa e não há níveis de melhoria registrados para ela. As fontes consultadas não dizem se pode ser tingida na Tinturaria Kochi. Antes da versão 1.3.3, a camiseta não podia ser recuperada se fosse vendida, e a descrição avisava disso; desde essa atualização, Granté a vende por 50 rupias na Vila de Nício (Tarrey Town) e o texto foi alterado.",
+  "locations": [
+    "Abadia Oriental (Eastern Abbey), no Grande Planalto: baú no alto de um muro."
+  ],
+  "obtaining": [
+    "Abrir o baú da Abadia Oriental, que só aparece para quem comprou o Passe de Expansão.",
+    "Recomprar de Granté por 50 rupias depois de obtê-la (versão 1.3.3 ou posterior)."
+  ],
+  "uses": [
+    "Peça cosmética; a única vantagem é 1 de defesa no começo do jogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só soma 1 de defesa; não tem efeito nem bônus de conjunto.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A descrição que mudou com a versão 1.3.3",
+      "text": "Na versão original, o texto avisava que a camiseta não poderia ser recuperada se fosse vendida. Com a atualização 1.3.3, Granté passou a vender as peças exclusivas do Passe de Expansão e do pacote The Master Trials, e a descrição perdeu o aviso.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Logotipo do Switch no Wii U",
+      "text": "Quem joga no Wii U e tem o Passe de Expansão também recebe a camiseta — com o logotipo do Nintendo Switch.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como o baú fica no Grande Planalto, a camiseta pode ser pega antes de sair da região, dando 1 de defesa extra no torso antes de conseguir outras peças."
+  ],
+  "limitations": [
+    "Defesa 1 e nenhum nível de melhoria registrado.",
+    "Exige o Passe de Expansão.",
+    "Não há informação nas fontes sobre tingimento."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_old_shirt",
+      "relation": "Outra camisa de defesa 1 do Grande Planalto"
+    },
+    {
+      "id": "botw_treasure_treasure_chest",
+      "relation": "Fica num baú da Abadia Oriental"
+    },
+    {
+      "id": "botw_armor_island_lobster_shirt",
+      "relation": "Outra peça de torso ligada aos DLC"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "parcial"
+}

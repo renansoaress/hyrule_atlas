@@ -1,0 +1,82 @@
+{
+  "id": "botw_creature_blue_winged_heron",
+  "summary": "Garça branca de asas e crista azul-escuras que fica imóvel à espera de peixes e sapos, esticando o pescoço para capturá-los. Anda em grupos, voa quando Link se aproxima e deixa uma Coxa.",
+  "description": "A Garça azulada tem pernas longas e pescoço comprido, plumagem predominantemente branca com asas e crista azul-escuras e pernas e bico escuros. Anda em grupos de duas ou mais, caminhando devagar. O compendium diz que vive à beira d'água por toda Hyrule, citando os Cerros de Hyrule e os Prados de Faron, mas o Zelda Wiki observa que ela também aparece em áreas planas e gramadas sem nenhuma água por perto.\n\nCaça ficando perfeitamente imóvel até a presa chegar e então estica o pescoço para capturar peixes e sapos. Quando Link se aproxima, levanta voo. Abatida, deixa uma Coxa.",
+  "locations": [
+    "Cerros de Hyrule e Prados de Faron (compendium), à beira d'água e também em campos abertos."
+  ],
+  "obtaining": [
+    "Não pode ser capturada; abatida, deixa uma Coxa."
+  ],
+  "uses": [
+    "Fonte de Coxa.",
+    "Registrar sua foto no compendium (entrada nº 42)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Levanta voo quando Link se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Heron"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatida à distância; ao morrer, deixa uma Coxa.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_raw_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Heron", "zw:Raw Bird Drumstick", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra a garça, que voa quando Link se aproxima."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Garça longe da água",
+      "text": "Apesar de o compendium associá-la às margens de rios e lagos, a Garça azulada também é vista em áreas planas e gramadas sem água por perto.",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "A Coxa vira Coxa assada se exposta ao fogo e Coxa congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Rende só Coxa, a carne de ave mais simples."
+  ],
+  "related": [
+    { "id": "botw_creature_pink_heron", "relation": "A outra garça de Hyrule, de campos secos" },
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Carne deixada ao ser abatida" },
+    { "id": "botw_food_roasted_bird_drumstick", "relation": "Coxa exposta ao fogo" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

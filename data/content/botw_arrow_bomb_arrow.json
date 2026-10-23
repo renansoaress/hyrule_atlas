@@ -1,0 +1,179 @@
+{
+  "id": "botw_arrow_bomb_arrow",
+  "summary": "Flecha com pólvora na ponta que explode no impacto (+50 de dano; 50 fixos na área), incendiando alvos e destruindo inimigos de gelo. Na chuva não explode, e no calor de Eldin explode ao ser tensionada.",
+  "description": "A Flecha explosiva foi feita para destruir monstros: segundo a descrição do jogo, a pólvora na ponta se inflama no impacto e causa dano enorme a tudo o que estiver na explosão. Funciona com qualquer arco que use flechas comuns e soma 50 ao ataque do arco; quem é atingido só pela explosão leva 50 de dano, qualquer que seja o arco. Como toda flecha, causa o dobro na cabeça, mas não se crava em objetos como árvores.\n\nA explosão incendeia inimigos e objetos inflamáveis e derrota na hora inimigos ligados ao gelo. É também a munição da história contra os canhões da Fera Divina Vah Medoh — Teba avisa que flechas comuns não fazem nem um arranhão neles — e Teba e Riju dão vinte Flechas explosivas a Link antes das respectivas Feras Divinas.\n\nTem duas restrições importantes: na chuva a pólvora molha, a flecha não explode e se comporta como uma flecha comum, ricocheteando nos objetos; no clima escaldante de Eldin, explode assim que Link tensiona o arco, ferindo-o.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Oriental (locais comuns segundo o compendium).",
+    "Em baús, geralmente em feixes de 5, 10 ou 20."
+  ],
+  "obtaining": [
+    "Recolher em baús ou como drop de alguns Koboblins e Lagalfos arqueiros.",
+    "No Modo Mestre, um Moblin perto de Spectacle Rock e um Centaleão de juba branca no planalto inicial (Great Plateau) usam Flechas explosivas.",
+    "Teba e Riju entregam vinte cada um antes das lutas contra Vah Medoh e Vah Naboris.",
+    "Comprar na loja de flechas da Cidade Gerudo (Arrow Specialty Shop), na East Wind de Vila Hateno, no Slippery Falcon da vila dos Arás e na filial de Tarrey Town, na loja de Shaillu no Bazar Kara Kara e com Jini, no Mounted Archery Camp, quando não está chovendo."
+  ],
+  "uses": [
+    "Destruir os canhões da Fera Divina Vah Medoh.",
+    "Abrir paredes rachadas e causar explosões à distância.",
+    "Atordoar Moldugas, que são sensíveis a barulhos altos, quando saltam da areia."
+  ],
+  "effects": [
+    "+50 de dano sobre o ataque do arco; 50 de dano fixo para quem só é pego pela explosão.",
+    "Incendeia o que estiver na explosão."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Explode no impacto, somando 50 ao ataque do arco. Inimigos atingidos apenas pela explosão levam 50 de dano, seja qual for o arco. Acertos na cabeça dobram o dano, e a flecha não se crava em objetos como árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "A explosão incendeia inimigos e objetos inflamáveis atingidos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante da região da Montanha da Morte, a flecha explode logo depois que Link tensiona o arco, ferindo o próprio Link.",
+      "side_effects": [
+        "Não dá para usá-la nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "variant": "inimigos de gelo",
+      "result": "Contra inimigos ligados ao gelo, a explosão os derrota instantaneamente — a dica do jogo lembra que ataques de fogo podem derrotar inimigos de gelo com um golpe.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha explosiva com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes só tratam da chuva; não informam o que acontece quando a Flecha explosiva atinge a água."
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Na chuva a pólvora molha: a flecha não explode e age como uma flecha comum. Em vez de sumir, ricocheteia nos objetos e pode ser recolhida e disparada de novo.",
+      "applications": [
+        "Recolher as flechas que ricochetearam e guardá-las para depois da chuva."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Causa dano alto em área e derrota inimigos de gelo instantaneamente. Moldugas, sensíveis a barulhos altos, ficam atordoados com a explosão quando saltam da areia.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Molduga"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Abre paredes rachadas e causa explosões à distância; é a arma indicada por Teba contra os canhões de Vah Medoh, que flechas comuns não danificam.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Teba",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dano fixo da explosão",
+      "text": "Quem é atingido indiretamente, só pela explosão, leva sempre 50 de dano, independentemente do arco usado. O ataque do arco só pesa quando a flecha acerta o alvo em cheio.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ricochete na chuva",
+      "text": "Molhada pela chuva, a Flecha explosiva não detona e passa a quicar nos objetos, como uma flecha comum que não se crava. Ela pode então ser recolhida do chão e reaproveitada.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Presente de Teba e de Riju",
+      "text": "Teba avisa que as Flechas explosivas são preciosas e que não repetirá o presente: entrega vinte antes do ataque a Vah Medoh. Riju faz o mesmo antes de Vah Naboris.",
+      "sources": [
+        "zw",
+        "zw:Teba",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Atire perto de um grupo, não necessariamente nele: a explosão garante 50 de dano a cada inimigo na área.",
+    "Use-a contra Moldugas para atordoá-los ao saírem da areia."
+  ],
+  "limitations": [
+    "Não explode na chuva.",
+    "Inutilizável no clima escaldante de Eldin: explode ao tensionar o arco.",
+    "Não se crava em objetos."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_molduga",
+      "relation": "Fica atordoado com a explosão"
+    },
+    {
+      "id": "botw_mechanic_rain",
+      "relation": "Impede a explosão"
+    },
+    {
+      "id": "botw_mechanic_temperature",
+      "relation": "O calor extremo a faz explodir ao ser tensionada"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Outra fonte de explosão de Link"
+    },
+    {
+      "id": "botw_bow_falcon_bow",
+      "relation": "Arco que Teba empresta, junto destas flechas, para a luta contra Vah Medoh"
+    }
+  ],
+  "capabilities": [
+    "gera_explosao",
+    "gera_fogo",
+    "queima_inimigos",
+    "vence_rapido",
+    "item_de_missao"
+  ],
+  "verification_status": "parcial"
+}

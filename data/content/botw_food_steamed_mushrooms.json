@@ -1,0 +1,98 @@
+{
+  "id": "botw_food_steamed_mushrooms",
+  "summary": "Cogumelo cozido no vapor em folhas de plantas, prato saudável. Juntar cogumelo e planta do mesmo efeito (Cogumelo tenaz e Cenoura tenaz, por exemplo) reforça a variante.",
+  "description": "Os Cogumelos no vapor levam um cogumelo e um legume, erva ou flor; o inventário os descreve como um prato saudável de cogumelos cozidos no vapor dentro de folhas. A versão comum sai com Cogumelo hyliano e Capim hyruliano, ou com efeitos que se anulam. O prato se destaca por permitir somar um cogumelo e uma planta do mesmo efeito: Trufas nutritivas com Rabanetes nutritivos (Corações extras), Cogumelo tenaz com Cenoura tenaz (Vigor extra), Agilimelo com Cenoura veloz ou Violeta veloz (Velocidade aumentada), Flamelo com Erva geleira (Resistência ao frio), Aterramelo com Erva relampagueira (Resistência a choques), Ferromelo com Protechofra (Ataque aumentado), Blindamelo com Amaranto blindado (Defesa aumentada), Silencimelo com Beladona azul ou Princesa plácida (Furtividade aumentada) e Glacimelo com Erva fogueira (Resistência ao calor). Energimelo dá Recuperação de vigor.\n\nKairo, mercador Goron que percorre a estrada entre o Estábulo do Sopé (Foothill Stable) e a Boca da Montanha da Morte (Maw of Death Mountain), pode dar Cogumelos no vapor com Velocidade aumentada a Link como agradecimento quando é salvo de monstros. Na panela, cuidado com as receitas testadas antes: com Leite fresco e Halita o prato vira Creme de cogumelos, só com Halita vira Ervas grelhadas no sal e, pela tabela de prioridades, dois tipos de cogumelo formam Espetinho de cogumelos.",
+  "obtaining": [
+    "Cozinhar numa Panela um cogumelo e um legume, erva ou flor (um tipo de cada), com até três ingredientes extras.",
+    "Recompensa possível de Kairo, que às vezes dá a versão com Velocidade aumentada ao ser salvo de monstros na estrada da Montanha da Morte."
+  ],
+  "uses": [
+    "Combinar cogumelo e planta do mesmo efeito para efeitos mais fortes.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pelo cogumelo e pela planta: Corações extras, Recuperação de vigor, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito comum ao cogumelo e à planta usados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "leite, Halita ou segundo cogumelo",
+      "status": "confirmado",
+      "result": "Com Leite fresco e Halita, o resultado é Creme de cogumelos; só com Halita, Ervas grelhadas no sal; com dois tipos de cogumelo, Espetinho de cogumelos.",
+      "produces": [
+        "botw_food_cream_of_mushroom_soup",
+        "botw_food_salt_grilled_greens",
+        "botw_food_mushroom_skewer"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Pares de mesmo efeito",
+      "text": "Dois ingredientes diferentes com o mesmo efeito temporizado prolongam o efeito e podem elevar o nível. Pares como Agilimelo e Cenoura veloz, ou Ferromelo e Protechofra, cabem no Cogumelos no vapor sem mudar a receita.",
+      "sources": [
+        "zw:Food",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Um tipo de cogumelo e um tipo de planta.",
+    "Leite com Halita, ou só Halita, mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_food_cream_of_mushroom_soup",
+      "relation": "Resultado com leite e halita"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Prato só de cogumelos"
+    },
+    {
+      "id": "botw_food_steamed_fish",
+      "relation": "Mesmo preparo com peixe"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

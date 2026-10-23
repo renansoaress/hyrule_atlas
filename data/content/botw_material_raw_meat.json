@@ -1,0 +1,177 @@
+{
+  "id": "botw_material_raw_meat",
+  "summary": "A carne básica de javalis da mata, bodes da montanha e raposas do prado. Crua cura 1 coração; no fogo vira Bife selado (1,5) e no frio vira Carne de terceira congelada, que dá resistência ao calor e vende quase o dobro.",
+  "description": "A Carne de terceira (Raw Meat) é a carne de animais das planícies e florestas: cai de Javalis da mata, Bodes da montanha e Raposas do prado, e os mercadores Cambo e Mezer a vendem. O jogo diz que dá para comê-la crua (1 coração), mas que cozida fica mais saborosa e nutritiva — e as três formas de preparo dão resultados bem diferentes. Exposta ao fogo (fogueira, clima escaldante, Flecha incendiária ou armas de fogo), vira Bife selado, que recupera 50% a mais. Exposta ao frio extremo, à água gelada ou a ataques de gelo, vira Carne de terceira congelada, que mantém a cura e acrescenta 1 minuto de Resistência ao calor nível 1. Na panela, a cura dobra e a carne entra em dezenas de pratos.\n\nÉ a carne obrigatória da Tigela de arroz com carne, do Curry de carne e do Espetinho temperado de carne, divide com a Coxa o Ensopado de carne e a Carne grelhada no sal, e serve em todas as receitas que aceitam \"qualquer carne\". Na Missão secundária \"Koko Cuisine\", Koko precisa de Carne de terceira para fazer a Abóbora recheada com carne favorita do pai e dá uma porção a Link como agradecimento. Os cães (Pastores hylianos) também comem carne deixada perto deles.",
+  "locations": [
+    "Javalis da mata, Bodes da montanha e Raposas do prado, comuns em planícies e florestas.",
+    "Mercadores ambulantes Cambo (entre o Wetland Stable e a Vila Kakariko) e Mezer (perto do Dueling Peaks Stable)."
+  ],
+  "obtaining": [
+    "Caçar Javalis da mata, Bodes da montanha ou Raposas do prado.",
+    "Comprar de Cambo ou Mezer."
+  ],
+  "uses": [
+    "Cura imediata: 1 coração crua, 1,5 como Bife selado.",
+    "Receitas exclusivas: Tigela de arroz com carne, Curry de carne e Espetinho temperado de carne; com a Coxa, Ensopado de carne e Carne grelhada no sal.",
+    "Receitas de \"qualquer carne\": Sopa cremosa de carne, Carne glaceada, Abóbora recheada com carne, Espetinho de carne e cogumelo, Fritada de carne e frutos do mar, Torta de carne, Espetinho de carne, Espetinhos fartos de carne, Bolinhos de arroz com carne, Ensopado de monstro, Bife apimentado e Carne no vapor.",
+    "Missão secundária \"Koko Cuisine\": entregar a Koko para ela preparar a Abóbora recheada com carne.",
+    "Alimentar Pastores hylianos: três vezes seguidas, enquanto estão felizes, e o cão leva Link a um baú enterrado.",
+    "Venda: 8 rupias (congelada, 15; selada, 12)."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Bife selado, que recupera 1,5 coração, mas não recebe nenhum efeito especial.",
+      "conditions": ["Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "produces": ["botw_food_seared_steak"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Bife selado.",
+      "produces": ["botw_food_seared_steak"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão no clima escaldante da Montanha da Morte e do Cânion de Eldin, assa sozinha e vira Bife selado.",
+      "produces": ["botw_food_seared_steak"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingida por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, congela e vira Carne de terceira congelada.",
+      "produces": ["botw_food_icy_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gelado ou mergulhada em água gelada, congela e vira Carne de terceira congelada: mantém 1 coração de cura e dá 1:00 de Resistência ao calor nível 1.",
+      "produces": ["botw_food_icy_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Food", "zw:Icy Meat"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma elemental",
+      "status": "confirmado",
+      "result": "Golpeada com uma arma de fogo (Espada flamejante, Grã-Espada flamejante, Lança carbonizante), assa; com uma arma de gelo (Espada álgida, Grã-Espada álgida, Lança congelante), congela.",
+      "produces": ["botw_food_seared_steak", "botw_food_icy_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Frozen Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a carne com uma arma comum."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão para assar perto do fogo ou congelar no frio. Largada perto de um Pastor hyliano, o cão a come.",
+      "applications": ["Alimentar o cão três vezes enquanto ele está feliz faz com que leve Link a um baú enterrado."],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Hylian Retriever"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da carne à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Em água gelada (de regiões frias), congela e vira Carne de terceira congelada. As fontes não dizem o que acontece em água comum.",
+      "produces": ["botw_food_icy_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a carne não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a carne largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, a cura dobra (2 corações por unidade) e a carne entra nas receitas de carne. Sem efeito próprio, soma 30 segundos à duração de um prato com efeito.",
+      "conditions": ["Panela acesa; até cinco ingredientes."],
+      "produces": ["botw_food_meat_skewer", "botw_food_meat_and_rice_bowl", "botw_food_spiced_meat_skewer", "botw_food_meat_curry", "botw_food_salt_grilled_meat", "botw_food_meat_stew"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild", "zw:Meat"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Crua vale 8 rupias. Selada passa a valer 12 e congelada, 15.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Frozen Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congelar para vender",
+      "text": "Comidas assadas e congeladas têm preço fixo de venda. A Carne de terceira congelada vale 15 rupias, quase o dobro da crua (8) e mais que o Bife selado (12): basta largar a carne na neve antes de vender.",
+      "sources": ["zw:Frozen Food", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O prato favorito do pai de Koko",
+      "text": "Em \"Koko Cuisine\", Koko quer preparar o prato favorito do pai, a abóbora recheada com carne, mas está sem carne crua. Ao receber a Carne de terceira, cozinha o prato \"do jeito que a mãe fazia\" e divide uma porção com Link.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assada ou congelada, a carne empilha",
+      "text": "Ao contrário dos pratos da panela, que ocupam um espaço cada, Bifes selados e carnes congeladas se acumulam até 999 no mesmo espaço da algibeira.",
+      "sources": ["zw:Food", "zw:Inventory"]
+    }
+  ],
+  "advanced_uses": [
+    "Carne congelada é uma forma barata de Resistência ao calor por 1 minuto para atravessar trechos curtos do Deserto Gerudo de dia.",
+    "Num Espetinho farto de carne, use quatro carnes diferentes; a Carne de terceira é a mais fácil de juntar."
+  ],
+  "limitations": [
+    "Assada ou congelada, nunca ganha efeitos especiais (o congelamento só dá a resistência ao calor de 1 minuto).",
+    "É a carne de menor cura entre as de mamíferos."
+  ],
+  "related": [
+    { "id": "botw_food_seared_steak", "relation": "Resultado de assar no fogo" },
+    { "id": "botw_food_icy_meat", "relation": "Resultado de congelar" },
+    { "id": "botw_creature_woodland_boar", "relation": "Animal que a deixa" },
+    { "id": "botw_creature_mountain_goat", "relation": "Animal que a deixa" },
+    { "id": "botw_creature_grassland_fox", "relation": "Animal que a deixa" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne de mamífero de qualidade superior" },
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Equivalente de ave nas receitas de carne simples" },
+    { "id": "botw_food_meat_stuffed_pumpkin", "relation": "Prato de Koko feito com ela" },
+    { "id": "botw_creature_hylian_retriever", "relation": "Come carne largada perto dele" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de culinária" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo", "item_de_missao"],
+  "verification_status": "verificado"
+}

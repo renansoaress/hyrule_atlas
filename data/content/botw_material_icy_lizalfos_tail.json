@@ -1,0 +1,180 @@
+{
+  "id": "botw_material_icy_lizalfos_tail",
+  "summary": "Cauda de escamas e carne duras do Lagalfos glacial. Acrescenta 3:10 aos elixires e completa o Conjunto voe do deserto, que protege do calor usando materiais gelados.",
+  "description": "A Cauda de Lagalfos glacial vem dos Lagalfos que cospem bolas de gelo e vivem nas regiões montanhosas e frias de Hyrule. Segundo o inventário, as escamas e a carne duras a tornam imprópria para cozinhar, mas perfeita para elixires: cozida com bichos, acrescenta 3:10 à duração. O frio é só temático — o tipo de elixir continua sendo definido pelo bicho.\n\nNas Grandes Fadas, é exigida no 3º nível do Conjunto voe do deserto (3 por peça) e no 4º nível (10 por peça, com 5 Safiras), somando 39. Curiosamente, todas as melhorias desse conjunto de resistência ao calor usam materiais gelados: Gelecas gélidas, Asas de Morci glacial e esta cauda. Na Tinturaria Kochi, entra no corante azul.",
+  "locations": [
+    "Regiões montanhosas e frias, onde vivem os Lagalfos glaciais."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos glaciais. O compendium indica que a exposição ao fogo os mata instantaneamente."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 3:10 à duração.",
+    "Melhoria de armadura: 3 por peça no 3º nível e 10 por peça no 4º nível do Conjunto voe do deserto — 39 no total.",
+    "Corante azul na Tinturaria Kochi.",
+    "Venda: 35 rupias, ou 16 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Cauda de Lagalfos glacial no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Cauda de Lagalfos glacial largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Cauda de Lagalfos glacial queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Cauda de Lagalfos glacial numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Cauda de Lagalfos glacial a gelo ou congelamento, apesar de vir de um monstro de gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Cauda de Lagalfos glacial à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Cauda de Lagalfos glacial flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Cauda de Lagalfos glacial não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Cauda de Lagalfos glacial largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 35 rupias em lojas e comerciantes, ou 16 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fogo derruba o dono da cauda",
+      "text": "Segundo o compendium, os Lagalfos glaciais morrem instantaneamente quando expostos ao fogo. Uma Flecha incendiária é um jeito rápido de colher caudas sem enfrentar as bolas de gelo que eles cospem.",
+      "sources": [
+        "zw:Ice-Breath Lizalfos",
+        "zw:Lizalfos"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O tema elemental não define o elixir",
+      "text": "Apesar de vir de um monstro de gelo, a Cauda de Lagalfos glacial não dá efeito próprio ao elixir: em BOTW, o efeito vem da categoria dos bichos (e de alguns outros materiais), e a parte de monstro entra com a duração. Cozida com uma Borboleta estival, por exemplo, resulta num Elixir picante, de resistência ao frio.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part",
+        "zw:Summerwing Butterfly"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Gelo para resistir ao calor",
+      "text": "Todas as melhorias do Conjunto voe do deserto, que protege do calor, usam materiais ligados ao gelo: Gelecas gélidas no 1º e 2º níveis, Asas de Morci glacial no 2º e 3º e Caudas de Lagalfos glacial no 3º e 4º.",
+      "sources": [
+        "zw",
+        "zw:White Chuchu Jelly",
+        "zw:Ice Keese Wing"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Leve Flechas incendiárias ao caçar Lagalfos glaciais: além de matá-los na hora, evita combates longos no frio."
+  ],
+  "limitations": [
+    "O frio da cauda é temático: não protege do calor nem gera gelo, segundo as fontes.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_ice_breath_lizalfos",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_armorset_desert_voe_set",
+      "relation": "Usa 3 e 10 caudas por peça no 3º e 4º níveis"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Material dos primeiros níveis do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_ice_keese_wing",
+      "relation": "Acompanha a cauda no 3º nível do conjunto"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Acompanha a cauda no 4º nível do conjunto"
+    },
+    {
+      "id": "botw_arrow_fire_arrow",
+      "relation": "Fogo mata o Lagalfos glacial instantaneamente"
+    },
+    {
+      "id": "botw_material_lizalfos_tail",
+      "relation": "Cauda dos Lagalfos não elementais"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

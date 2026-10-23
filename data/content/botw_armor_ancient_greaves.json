@@ -1,0 +1,165 @@
+{
+  "id": "botw_armor_ancient_greaves",
+  "summary": "Grevas projetadas por Robbie com a tecnologia dos Guardiões, compradas no Forno ancestral de Akkala. Reduzem o dano de Guardiões e completam o Conjunto ancestral.",
+  "description": "As Grevas ancestrais são a peça de pernas do Conjunto ancestral, junto do Elmo ancestral e da Couraça ancestral. Segundo a descrição do jogo, Robbie as criou no instituto de pesquisa usando a mesma tecnologia dos autômatos Guardiões. São compradas no Forno ancestral — que Robbie apelidava de Cherry — no laboratório de tecnologia ancestral de Akkala, por 2.000 rupias, 20 Engrenagens ancestrais, 5 Molas ancestrais e 3 Núcleos ancestrais (a couraça pede Parafusos no lugar das Molas).\n\nCada peça concede um nível de Resistência a Guardiões (−20% de dano de Guardiões; −30% e −50% com dois e três níveis). A defesa vai de 4 a 28, com a mesma escada de materiais da couraça: parafusos e molas no início, eixos e núcleos no terceiro nível e, no quarto, um Fragmento de estrela e dois Núcleos ancestrais gigantes.\n\nCom as três peças em ★★, o conjunto dá a Proficiência ancestral (+80% de ataque com armas ancestrais). As grevas podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Laboratório de tecnologia ancestral de Akkala (Akkala Ancient Tech Lab), onde fica o Forno ancestral."
+  ],
+  "obtaining": [
+    "Comprar no Forno ancestral por 2.000 rupias mais 20 Engrenagens ancestrais, 5 Molas ancestrais e 3 Núcleos ancestrais.",
+    "O forno só funciona depois da Missão secundária \"Robbie's Research\", quando a fornalha do laboratório é reacesa com a Chama azul."
+  ],
+  "uses": [
+    "Reduzir o dano recebido de Guardiões.",
+    "Completar o Conjunto ancestral para ativar a Proficiência ancestral."
+  ],
+  "effects": [
+    "Resistência a Guardiões, nível 1; acumula com as outras peças até o nível 3.",
+    "Bônus de conjunto (três peças em ★★): Proficiência ancestral."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência a Guardiões. Com o Elmo ancestral (ou um elmo divino), a Couraça ancestral e as Grevas ancestrais vestidos, todos em ★★, ativa a Proficiência ancestral: armas ancestrais causam 80% a mais de dano.",
+      "conditions": [
+        "Para o bônus: as três peças equipadas e cada uma melhorada pelo menos duas vezes por uma Grande Fada."
+      ],
+      "side_effects": [
+        "Sem as melhorias, vale apenas a Resistência a Guardiões de cada peça."
+      ],
+      "applications": [
+        "A Proficiência ancestral se multiplica com o Ataque aumentado de pratos e elixires."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Guardian Resist Up"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões",
+      "status": "confirmado",
+      "result": "Reduz o dano de ataques de Guardiões em 20% com um nível do efeito, 30% com dois e 50% com três (o máximo); a redução é aplicada depois de descontada a defesa de Link.",
+      "conditions": [
+        "O ataque precisa vir de um Guardião."
+      ],
+      "side_effects": [
+        "Não reduz o dano de inimigos que não são Guardiões, mesmo que empunhem armas ancestrais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Guardian Resist Up",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Obra de Robbie e do forno Cherry",
+      "text": "A descrição das grevas credita o projeto a Robbie. O Forno ancestral que as fabrica é uma antiga Pedra-guia de Kakariko adaptada por ele, que a chamava de \"Cherry\" antes de abandonar o apelido por causa da esposa, Jerrin.",
+      "sources": [
+        "jogo",
+        "zw:Ancient Oven"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Só contra Guardiões",
+      "text": "A redução de dano não vale para inimigos que não são Guardiões, mesmo quando eles usam armas ancestrais — apesar de a descrição falar em \"armamento ancestral\".",
+      "sources": [
+        "zw:Guardian Resist Up"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use as grevas com um elmo divino em ★★ e a Couraça ancestral em ★★ para ter a Proficiência ancestral somada ao efeito do elmo (como a exibição da vida dos inimigos)."
+  ],
+  "limitations": [
+    "Sem as outras peças em ★★, não há bônus de conjunto.",
+    "A última melhoria exige dois Núcleos ancestrais gigantes, material raro de Guardiões."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_ancient_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_ancient_cuirass",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_material_ancient_spring",
+      "relation": "Pedido na compra e nas duas primeiras melhorias"
+    },
+    {
+      "id": "botw_material_giant_ancient_core",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Inimigo cujo dano a peça reduz"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

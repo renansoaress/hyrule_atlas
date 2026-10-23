@@ -1,0 +1,85 @@
+{
+  "id": "botw_food_prime_poultry_pilaf",
+  "summary": "Pilaf de Sobrecoxa, Arroz hyliano, Ovo e Manteiga de cabra, favorito da região Gerudo segundo o jogo. Aceita um quinto ingrediente, que decide o efeito.",
+  "description": "O Pilaf de sobrecoxa é feito com Sobrecoxa, Arroz hyliano, Ovo e Manteiga de cabra. O inventário diz que o arroz absorve o sabor da ave e que o prato é um favorito da região Gerudo. Como são quatro ingredientes obrigatórios, há espaço para um quinto, que gera a variante correspondente ao seu efeito; sem ele, o pilaf só recupera corações.\n\nEntre os três pilafs de ave, este fica no meio: o Pilaf de ave inteira é testado antes e o Pilaf de coxa depois. Uma Sobrecoxa junto com uma Coxa resulta, portanto, neste prato. Ovo e Manteiga de cabra também dão ao pilaf uma pequena vantagem no cozimento: elevam para 10% a chance extra de bônus crítico.",
+  "obtaining": [
+    "Cozinhar numa Panela uma Sobrecoxa, Arroz hyliano, Ovo e Manteiga de cabra; um quinto ingrediente é opcional."
+  ],
+  "uses": [
+    "Recuperar corações; com um extra, obter um efeito.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com um quinto ingrediente de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na variante, aplica o efeito do quinto ingrediente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Coxa ou Ave inteira",
+      "status": "confirmado",
+      "result": "Com uma Coxa como quinto ingrediente, continua sendo Pilaf de sobrecoxa; com uma Ave inteira, vira Pilaf de ave inteira.",
+      "produces": [
+        "botw_food_gourmet_poultry_pilaf"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da ligação com a região Gerudo citada no inventário e da ordem entre os pilafs, as fontes não trazem particularidades deste prato.",
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_bird_thigh",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_poultry_pilaf",
+      "relation": "Versão com Coxa"
+    },
+    {
+      "id": "botw_food_gourmet_poultry_pilaf",
+      "relation": "Versão com Ave inteira (prioridade maior)"
+    },
+    {
+      "id": "botw_food_prime_poultry_curry",
+      "relation": "Outro prato de Sobrecoxa com arroz"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,174 @@
+{
+  "id": "botw_bow_forest_dwellers_bow",
+  "summary": "Arco que os Korok fizeram para os hylianos, de madeira flexível e corda de cipó: dispara três flechas de uma vez (15 cada) gastando só uma e é um dos quatro arcos que podem ganhar disparo quíntuplo.",
+  "description": "O Arco da Floresta foi feito pelos Korok para ser usado por hylianos. A descrição do jogo conta que ele é de madeira flexível, com corda de cipós resistentes, e que, apesar da construção simples, dispara várias flechas de uma vez. É mais comum na Floresta Korok e também aparece em baús na Fronteira de Tabantha e nos Cerros de Hyrule. Pertence ao equipamento Korok, junto da Espada da Floresta, da Lança da Floresta e do Escudo da Floresta.\n\nCada disparo lança três flechas num leque estreito, mas gasta apenas uma da algibeira; em troca, cada flecha causa menos dano. Os parâmetros extraídos do jogo mostram ainda um tensionamento 1,6 vez mais rápido que o padrão, enquanto o Zelda Wiki registra que as flechas voam cerca de 11% mais devagar. Junto dos três arcos de Centaleão, é o único que pode receber o bônus de disparo quíntuplo.\n\nSendo de madeira, queima no fogo e no clima escaldante, flutua, não conduz eletricidade, não atrai raios e não pode ser pego com Magnétis.",
+  "locations": [
+    "Floresta Korok, onde é mais comum.",
+    "Baús na Fronteira de Tabantha e nos Cerros de Hyrule (locais comuns segundo o compendium)."
+  ],
+  "obtaining": [
+    "Recolher na Floresta Korok ou em baús das regiões citadas.",
+    "É entregue a Link na missão de santuário \"The Test of Wood\", que leva ao Santuário Maag Halan."
+  ],
+  "uses": [
+    "Acertar alvos em movimento ou grupos de inimigos com três flechas por disparo.",
+    "Arco obrigatório da missão de santuário \"The Test of Wood\"."
+  ],
+  "effects": [
+    "Disparo triplo: três flechas por puxada, ao custo de uma."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara três flechas num leque horizontal com abertura total de 6°, consumindo apenas uma flecha. O tensionamento é 1,6 vez mais rápido que o padrão e a trajetória reta é de 20 m, mas as flechas voam cerca de 11% mais devagar que as de outros arcos.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Bow",
+        "zw:Template:BotW Bow Parameters"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Por ser de madeira, pega fogo ao tocar chamas e, se continuar exposto, queima até se desfazer.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Arco da missão \"The Test of Wood\"",
+      "text": "Na missão de santuário \"The Test of Wood\", Link recebe um Arco da Floresta, uma Espada da Floresta e um Escudo da Floresta e precisa abrir caminho até o Santuário Maag Halan só com eles. Se qualquer um desses itens for trocado ou quebrar, a provação acaba e tem de ser reiniciada.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco da Floresta pode surgir com bônus de ataque de +4 a +7 (nível branco) ou de +8 a +12 (nível amarelo), e com bônus de durabilidade de +4 a +8 (branco) ou de +9 a +20 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Por ter o parâmetro PoweredSharpAddSpreadFire ativo, é um dos quatro arcos que podem receber o disparo quíntuplo e lançar cinco flechas em vez de três. Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 12,5% ataque, 22,2% durabilidade, 36,1% disparo rápido e 29,2% disparo quíntuplo. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Possível referência às roupas Kokiri",
+      "text": "O Zelda Wiki sugere que a capacidade do arco de disparar várias flechas pode ser uma referência às roupas Kokiri de Tri Force Heroes, que também permitem a Link disparar três flechas de uma vez.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Procure exemplares com o bônus de disparo quíntuplo: cada flecha gasta passa a render cinco disparos."
+  ],
+  "limitations": [
+    "Dano por flecha baixo (15).",
+    "Flechas mais lentas que as de outros arcos, o que exige antecipar alvos distantes.",
+    "Queima no clima escaldante de Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_forest_dwellers_sword",
+      "relation": "Mesmo arquétipo; usada na missão \"The Test of Wood\""
+    },
+    {
+      "id": "botw_shield_forest_dwellers_shield",
+      "relation": "Mesmo arquétipo; usado na missão \"The Test of Wood\""
+    },
+    {
+      "id": "botw_weapon_forest_dwellers_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_bow_lynel_bow",
+      "relation": "Outro arco de três flechas que pode ganhar disparo quíntuplo"
+    },
+    {
+      "id": "botw_bow_great_eagle_bow",
+      "relation": "Outro arco de madeira de três flechas"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

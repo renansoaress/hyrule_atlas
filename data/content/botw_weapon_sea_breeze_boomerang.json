@@ -1,0 +1,167 @@
+{
+  "id": "botw_weapon_sea_breeze_boomerang",
+  "summary": "Bumerangue exclusivo de amiibo que teria pertencido ao herói que viajou pelo Grande Mar — e ainda cheira levemente a água salgada. De madeira, volta quando arremessado e fere Link se ele não o apanhar.",
+  "description": "O Bumerangue da brisa é a versão em Breath of the Wild do bumerangue de The Wind Waker. Só pode ser obtido pela runa amiibo, escaneando o amiibo de Toon Link da série Super Smash Bros. ou o da série The Legend of Zelda; segundo o jogo, foi usado por um herói da era do Grande Mar e cheira levemente a água salgada. Apesar dessa origem única, é possível conseguir vários, escaneando o amiibo repetidas vezes.\n\nArremessado, volta para Link pouco depois, sem quebrar no impacto; se Link não o apanhar, é atingido e leva dano. Com ataque 20, é bem mais forte que o Bumerangue korok (8). Por ser de madeira, queima e se desfaz no fogo ou em clima escaldante, não atrai raios, não conduz eletricidade e flutua na água.",
+  "locations": [
+    "Não aparece no mundo do jogo: só sai de baús gerados pela runa amiibo com os amiibo de Toon Link."
+  ],
+  "obtaining": [
+    "Escanear com a runa amiibo o amiibo de Toon Link (série Super Smash Bros.) ou o de Toon Link (The Wind Waker, série The Legend of Zelda).",
+    "Pode ser obtido várias vezes, com novas leituras do amiibo (cada amiibo de Toon Link só pode ser lido uma vez por dia real).",
+    "Armas obtidas por amiibo sempre vêm com bônus, no valor máximo do nível sorteado."
+  ],
+  "uses": [
+    "Ataque à distância reutilizável com dano 20.",
+    "Arma de uma mão de madeira no corpo a corpo."
+  ],
+  "effects": [
+    "Arremessado, volta para Link em vez de quebrar no impacto."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "No corpo a corpo, comporta-se como uma arma de uma mão: velocidade média, ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado, volta para Link pouco depois, sem quebrar ao atingir o inimigo.",
+      "conditions": [
+        "Apanhá-lo quando ele retornar."
+      ],
+      "side_effects": [
+        "Se não for apanhado, atinge Link e causa dano."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queima e se desintegra se exposto ao fogo ou a clima escaldante.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na superfície da água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico e não responde a Magnétis.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não citam monstros que empunhem o Bumerangue da brisa; ele só vem de baús de amiibo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus garantido e no máximo",
+      "text": "Como arma de amiibo, sempre vem com bônus no valor máximo do nível sorteado. Pelos parâmetros, as faixas são de +4 a +7 de ataque (nível comum) ou +8 a +12 (dourado) e de +2 a +4 de durabilidade (ou +5 a +10 no dourado). O multiplicador de lançamento longo fica em 1×, então esse bônus não aumenta o alcance. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — nas armas comuns, esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite; as fontes não dizem se o limite vale para baús de amiibo.",
+      "sources": [
+        "zw:Amiibo (Ability)",
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Parâmetros de bumerangue",
+      "text": "Assim como o Bumerangue korok, tem alcance de arremesso 20 (quatro vezes o das espadas comuns) e rotação de 1500 no ar, e é marcado como arma de arremesso que não quebra ao ser lançada.",
+      "sources": [
+        "dm",
+        "zw:Boomerang"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Herança de The Wind Waker",
+      "text": "É o mesmo bumerangue chamado simplesmente de Bumerangue em The Wind Waker; a descrição em Breath of the Wild lembra o herói que navegou pelo Grande Mar.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como dá para obter vários com novas leituras do amiibo, vale guardar os que vierem com bônus dourado de ataque."
+  ],
+  "limitations": [
+    "Depende dos amiibo de Toon Link.",
+    "Madeira: queima perto do fogo e em clima escaldante.",
+    "Fere Link se não for apanhado."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_boomerang",
+      "relation": "Bumerangue korok, mais fraco"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Única forma de obtê-lo"
+    },
+    {
+      "id": "botw_armorset_hero_of_winds_set",
+      "relation": "Conjunto do herói dos ventos, obtido com os mesmos amiibo de Toon Link"
+    },
+    {
+      "id": "botw_weapon_lizal_boomerang",
+      "relation": "Bumerangue metálico dos Lagalfos"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

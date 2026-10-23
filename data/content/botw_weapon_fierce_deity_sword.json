@@ -1,0 +1,101 @@
+{
+  "id": "botw_weapon_fierce_deity_sword",
+  "summary": "Grande espada do herói de Majora's Mask, exclusiva do amiibo de Link (Majora's Mask). Ataque 60, igual ao poder máximo da Espada Mestra, com 35 de durabilidade. Material em conflito nas fontes.",
+  "description": "A Espada da Deidade Feroz é uma arma de duas mãos exclusiva de amiibo. O jogo a descreve como uma grande espada peculiar, supostamente usada por um herói de um mundo onde a lua ameaçava cair, e que golpeia de forma selvagem, como se estivesse possuída por uma divindade feroz. Ela tem uma chance rara de aparecer no baú gerado pelo amiibo de Link (Majora's Mask), mas só depois que Link concluir pelo menos uma Fera Divina. Pode ser usada mesmo sem vestir o Conjunto da Deidade Feroz, que sai do mesmo amiibo.\n\nO ataque base de 60 iguala o poder máximo da Espada Mestra; a durabilidade de 35, porém, é bem inferior. Se quebrar ou for perdida, basta usar o amiibo de novo para tentar outra. As fontes divergem sobre o material: o texto do Zelda Wiki diz que ela é de metal (conduz, atrai raios, afunda e responde a Magnétis), enquanto as propriedades extraídas do jogo publicadas no mesmo artigo a marcam como não magnética, não condutora, flutuante e de tipo ancestral (guardian). Até haver confirmação, as interações elementais ficam como desconhecidas.",
+  "locations": [
+    "Não existe no mapa: só aparece em baús gerados pelo amiibo de Link (Majora's Mask)."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Majora's Mask) com a runa amiibo depois de concluir pelo menos uma Fera Divina; a espada é um prêmio raro do baú.",
+    "Repetir o escaneamento do mesmo amiibo para obter uma substituta se ela quebrar ou se perder.",
+    "Cada amiibo só pode ser escaneado uma vez por dia real, e o mesmo baú também sorteia as peças do Conjunto da Deidade Feroz."
+  ],
+  "uses": [
+    "Ataque 60: o maior entre as três armas de duas mãos exclusivas de amiibo (Espada do Biggoron 50, Montante do crepúsculo 48).",
+    "Pode ser exposta no suporte de armas da casa de Link.",
+    "Como espada, corta árvores."
+  ],
+  "effects": [
+    "Nenhum efeito especial confirmado além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de duas mãos: golpes lentos e fortes, sem escudo, com o giro carregado que gasta vigor e termina numa pancada para baixo. Pode ser empunhada com qualquer roupa, sem exigir o Conjunto da Deidade Feroz.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Pode ser arremessada como as outras armas de duas mãos; ao acertar um inimigo, quebra e causa acerto crítico.",
+      "side_effects": ["Só pode ser reposta pelo amiibo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Weapon", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante — neste ponto o texto e os parâmetros concordam.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Fontes em conflito: o texto do Zelda Wiki diz que conduz eletricidade; as propriedades extraídas a marcam como não condutora."
+    },
+    {
+      "action": "raio",
+      "status": "desconhecido",
+      "result": "Fontes em conflito: o texto afirma que atrai raios quando equipada; as propriedades extraídas indicam que ela não é metálica nem condutora."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Fontes em conflito: o texto diz que afunda; as propriedades extraídas dizem que flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Fontes em conflito: o texto diz que pode ser erguida com Magnétis; as propriedades extraídas a marcam como não magnética."
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes só descrevem a obtenção por amiibo; não há registro de monstros que a usem."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +12, Durabilidade aumentada de +6 a +18 ou Acerto crítico; no nível dourado (amarelo): Ataque de +13 a +23, Durabilidade de +19 a +30 ou Lançamento longo (×1,5 a ×2). Armas de amiibo recebem sempre o valor máximo do nível, embora o bônus apareça sempre como branco — uma cópia com Ataque dourado chega a 83.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Sem o multiplicador ancestral",
+      "text": "Apesar de as propriedades extraídas a marcarem como \"guardian\", os parâmetros da espada não listam alvos de dano extra (SpHitActor), ao contrário das armas do Equipamento guardião, que causam 1,3× em Guardiões.",
+      "sources": ["dm"]
+    }
+  ],
+  "advanced_uses": [
+    "Repetir o amiibo depois de libertar uma Fera Divina até sair a espada com bônus de ataque: com o valor máximo garantido, ela supera a Espada Mestra desperta em dano base."
+  ],
+  "limitations": [
+    "Exclusiva do amiibo de Link (Majora's Mask) e só depois da primeira Fera Divina.",
+    "Durabilidade 35, inferior à da Espada Mestra.",
+    "Comportamento com eletricidade, raios, água e Magnétis não confirmado (fontes divergentes)."
+  ],
+  "related": [
+    { "id": "botw_armorset_fierce_deity_set", "relation": "Conjunto obtido com o mesmo amiibo" },
+    { "id": "botw_armor_fierce_deity_mask", "relation": "Peça do conjunto do mesmo amiibo" },
+    { "id": "botw_weapon_master_sword", "relation": "Mesmo ataque máximo (60), durabilidade maior" },
+    { "id": "botw_weapon_biggorons_sword", "relation": "Outra arma de duas mãos exclusiva de amiibo" },
+    { "id": "botw_weapon_sword_of_the_six_sages", "relation": "Outra arma de duas mãos exclusiva de amiibo" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para obtê-la" }
+  ],
+  "capabilities": ["arremessavel"],
+  "verification_status": "a_verificar"
+}

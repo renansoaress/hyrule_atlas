@@ -1,0 +1,124 @@
+{
+  "id": "botw_armor_old_shirt",
+  "summary": "Camisa fina e gasta encontrada num baú do Santuário da Ressurreição, a primeira roupa de Link. Dá só 1 de defesa, não pode ser melhorada, mas pode ser tingida.",
+  "description": "A Camisa velha é uma das duas primeiras peças do jogo: está num baú de pedra dentro do Santuário da Ressurreição (Shrine of Resurrection), onde Link acorda; as Calças surradas ficam em outro baú do mesmo santuário. A descrição diz que foi feita há muito tempo e está se desfazendo nas costuras, \"mas é melhor do que nada\" — e que as mangas são um pouco curtas. O Zelda Wiki observa que, pelas mangas e pela barra curtas, ela não parece ter sido feita para Link na idade atual.\n\nNão tem efeito além de 1 de defesa. Com as Calças surradas forma o Traje surrado, que não tem bônus de conjunto. Não pode ser melhorada por Grandes Fadas, mas pode ser tingida na Tinturaria Kochi. Se for vendida, Granté a revende por 50 rupias na Vila de Nício (Tarrey Town) depois da Missão secundária \"From the Ground Up\".",
+  "locations": [
+    "Santuário da Ressurreição (Shrine of Resurrection), no Grande Planalto."
+  ],
+  "obtaining": [
+    "Abrir o baú de pedra do Santuário da Ressurreição, no início do jogo.",
+    "Comprar de Granté por 50 rupias depois de \"From the Ground Up\"."
+  ],
+  "uses": [
+    "Única proteção de torso disponível nos primeiros minutos.",
+    "Peça cosmética que pode ser tingida."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só soma 1 de defesa. O Traje surrado (com as Calças surradas) não tem bônus de conjunto.",
+      "sources": [
+        "zw",
+        "zw:Well-Worn Outfit",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa de outro tamanho",
+      "text": "A camisa foi feita muito antes de Link despertar do Sono da Restauração; as mangas e a barra curtas sugerem que não foi feita para ele na idade atual. A própria descrição comenta que as mangas são curtas.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Melhor que nada",
+      "text": "Se Link andar sem nenhuma armadura, alguns personagens comentam a falta de roupa — o que a Camisa velha, recolhida logo no primeiro baú, evita desde o começo.",
+      "sources": [
+        "zw:Armor"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para quem quer manter o visual do começo do jogo, a camisa pode ser tingida na Tinturaria Kochi, ao contrário de várias peças especiais."
+  ],
+  "limitations": [
+    "Não pode ser melhorada: a defesa fica em 1.",
+    "Sem efeito e sem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_well_worn_outfit",
+      "relation": "Traje do qual faz parte"
+    },
+    {
+      "id": "botw_armor_well_worn_trousers",
+      "relation": "Calças do mesmo traje, em outro baú do santuário"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Pode ser tingida"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

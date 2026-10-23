@@ -1,0 +1,133 @@
+{
+  "id": "botw_food_toasty_silent_shroom",
+  "summary": "Silencimelo tostado inteiro: o calor apagou o brilho suave do cogumelo, mas o deixou perfumado e saboroso. Cura 3/4 de coração (cru, meio) e vale as mesmas 3 rupias.",
+  "description": "O Silencimelo, cogumelo que brilha à noite ao pé de árvores da Grande Nascente de Lanayru e de Necluda Ocidental, vira Silencimelo tostado ao encostar no fogo ou ficar no chão escaldante de Eldin. O texto do jogo diz que o calor forte destruiu o brilho suave, mas deixou o cogumelo perfumado e gostoso.\n\nA cura sobe de meio coração para 3/4; o valor de venda continua em 3 rupias. A Furtividade aumentada, que o cogumelo daria cozido na Panela, se perde junto com o brilho.",
+  "locations": [
+    "Prepara-se a partir de Silencimelos (ao pé de árvores da Grande Nascente de Lanayru e de Necluda Ocidental, fáceis de ver à noite pelo brilho) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Silencimelo ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Silencimelo — queima por alguns instantes e se transforma em Silencimelo tostado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Silencimelo tostado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Silencimelo no chão para que o ingrediente asse sozinho e vire Silencimelo tostado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração do Silencimelo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 3 rupias, o mesmo que o Silencimelo cru.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Silent Shroom"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Silencimelo tostado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O brilho se apaga",
+      "text": "O Silencimelo cru brilha no escuro; segundo a descrição do jogo, o calor forte destrói esse brilho suave. O mesmo acontece com o Caramujo discreto quando congelado.",
+      "sources": [
+        "zw",
+        "zw:Silent Shroom",
+        "zw:Frozen River Snail"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Furtividade aumentada.",
+    "Não se valoriza na venda."
+  ],
+  "related": [
+    {
+      "id": "botw_material_silent_shroom",
+      "relation": "Ingrediente cru (Furtividade aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_river_snail",
+      "relation": "Outro ingrediente furtivo que perde o brilho"
+    },
+    {
+      "id": "botw_food_sneaky_river_escargot",
+      "relation": "Outro ingrediente furtivo que perde o efeito no fogo"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

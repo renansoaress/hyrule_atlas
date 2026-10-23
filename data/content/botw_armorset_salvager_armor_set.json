@@ -1,0 +1,78 @@
+{
+  "id": "botw_armorset_salvager_armor_set",
+  "summary": "Traje de mergulhador da colaboração com Xenoblade Chronicles 2 (atualização 1.3.3), caído do céu em estrelas cadentes vermelhas. Cada peça acelera a natação; o conjunto reduz o vigor dos impulsos a nado.",
+  "description": "O Conjunto de mergulhador reúne o Capacete de mergulhador, o Colete de mergulhador e as Calças de mergulhador. Foi adicionado gratuitamente na atualização 1.3.3 como colaboração com Xenoblade Chronicles 2, cujo mundo tem os Salvagers, coletores de tesouros afundados no Mar de Nuvens. A Missão secundária \"[Xenoblade Chronicles 2]\" é ativada ao carregar o mundo depois de sair do Grande Platô e pede para encontrar três estrelas cadentes vermelhas.\n\nÀ noite, olhando na direção certa, Link vê uma estrela cadente vermelha cair e deixar um baú metálico que emite uma coluna de luz vermelha todas as noites até ser aberto (de dia ele também pode ser aberto, mas sem a luz). O capacete cai ao sul de quem olha do meio da Ponte de Hylia; o colete, a leste de quem olha do olho esquerdo do Lago Caveira (Skull Lake); as calças, a sudoeste de quem olha do Pico Hebra.\n\nCada peça dá um nível de Natação mais rápida (+30%, +60% e +100% nos níveis 1 a 3), e o conjunto completo reduz em 75% o vigor gasto ao dar impulsos ou golpes giratórios nadando. As peças não podem ser melhoradas nem tingidas, por isso o bônus vale desde o início. Depois de achadas, Granté as revende por 50 rupias cada.",
+  "locations": [
+    "Ao sul da Ponte de Hylia (vista do meio da ponte, à noite): Capacete de mergulhador.",
+    "A leste do olho esquerdo do Lago Caveira (Skull Lake): Colete de mergulhador.",
+    "A sudoeste do Pico Hebra: Calças de mergulhador.",
+    "Tarrey Town, onde Granté revende as peças já obtidas."
+  ],
+  "obtaining": [
+    "Ter a atualização 1.3.3 e sair do Grande Platô para ativar a missão \"[Xenoblade Chronicles 2]\".",
+    "À noite, ir a cada mirante, olhar na direção indicada e esperar a estrela cadente vermelha; abrir o baú metálico onde ela cair.",
+    "Depois de obtidas, comprar com Granté por 50 rupias cada."
+  ],
+  "uses": [
+    "Atravessar rios e lagos nadando muito mais rápido e com menos gasto de vigor nos impulsos.",
+    "Alternativa ao Conjunto Zora para quem ainda não o completou."
+  ],
+  "effects": [
+    "Cada peça: Natação mais rápida (um nível por peça; as três chegam ao nível 3, +100%).",
+    "Conjunto completo (sem exigir melhorias): impulso e golpe giratório a nado com 75% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Natação mais rápida de nível 3 e ativam a economia de 75% de vigor nos impulsos e golpes giratórios a nado.",
+      "conditions": ["Capacete, colete e calças de mergulhador vestidos juntos."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Na água, Link nada até 100% mais rápido e gasta 75% menos vigor ao dar impulsos.",
+      "kind": "mecanica",
+      "sources": ["zw:Added Effect", "zw:Set Bonus"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Salvagers do Mar de Nuvens",
+      "text": "O registro da missão explica que, em Xenoblade Chronicles 2, as pessoas que recolhem tesouros afundados no Mar de Nuvens são chamadas de Salvagers, e convida Link a usar o equipamento \"como um verdadeiro Salvager\".",
+      "sources": ["zw:Xenoblade Chronicles 2"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A coluna de luz volta toda noite",
+      "text": "Depois que a estrela cai, o baú fica no local e volta a emitir a coluna de luz vermelha todas as noites até ser aberto, o que ajuda quem perdeu o momento da queda.",
+      "sources": ["zw:Xenoblade Chronicles 2"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus sem ★★",
+      "text": "O Conjunto Zora precisa de ★★ nas três peças para o mesmo bônus de impulso a nado; o de mergulhador o concede de imediato, já que não pode ser melhorado.",
+      "sources": ["zw:Set Bonus", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Com as três peças, o nível 3 de Natação mais rápida já é o máximo do efeito, então elixires de velocidade não aceleram mais o nado."
+  ],
+  "limitations": [
+    "Não tem as habilidades especiais do Conjunto Zora (subir cachoeiras e golpe giratório como efeito do elmo).",
+    "Não pode ser melhorado nem tingido."
+  ],
+  "related": [
+    { "id": "botw_armor_salvager_headwear", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_salvager_vest", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_salvager_trousers", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_zora_set", "relation": "Mesmo bônus de nado, mas em ★★" },
+    { "id": "botw_armorset_royal_guard_set", "relation": "Tem o mesmo bônus de impulso a nado, oculto" },
+    { "id": "botw_mechanic_swimming", "relation": "O conjunto acelera e barateia o nado" }
+  ],
+  "capabilities": ["velocidade"],
+  "verification_status": "verificado"
+}

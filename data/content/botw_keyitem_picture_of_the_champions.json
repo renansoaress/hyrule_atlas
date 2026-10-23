@@ -1,0 +1,85 @@
+{
+  "id": "botw_keyitem_picture_of_the_champions",
+  "summary": "Foto de Zelda e dos cinco Campeões tirada após a cerimônia de posse, que Kass entrega no Grande Platô ao concluir a balada dos Campeões (DLC). Pode ser pendurada na casa de Link em Hateno.",
+  "description": "A Foto dos Campeões é o presente final da missão principal \"EX The Champions' Ballad\", da DLC The Champions' Ballad. Depois que Kass canta a canção completa de seu falecido mestre, ele entrega a foto a Link no alto do Grande Platô, entendendo que ninguém a valorizaria mais.\n\nA imagem foi feita com a Tabuleta Sheikah logo depois da cerimônia de posse dos Campeões no Castelo de Hyrule. Urbosa contou que a tabuleta tirava fotos realistas, Mipha sugeriu registrar o momento e Purah apertou o botão — mas, no último instante, Daruk puxou todo mundo para perto à força, eternizando uma cena cômica. Mais tarde a foto foi impressa e chegou às mãos do mestre de Kass, o poeta da corte, que a guardou; Kass a encontrou enquanto tentava terminar a canção.\n\nO item não tem efeito de jogo, mas tem uso decorativo: com a Missão secundária \"Hylian Homeowner\" concluída, Link pode pendurar a foto na parede ao lado da cama da sua casa em Hateno.",
+  "locations": [
+    "Grande Platô, onde Kass a entrega ao fim de \"EX The Champions' Ballad\"."
+  ],
+  "obtaining": [
+    "Concluir a missão principal \"EX The Champions' Ballad\" (DLC The Champions' Ballad) e ouvir a canção de Kass no Grande Platô."
+  ],
+  "uses": [
+    "Decorar a casa de Link em Hateno, na parede ao lado da cama, depois de \"Hylian Homeowner\".",
+    "Lembrança da balada dos Campeões."
+  ],
+  "effects": [
+    "Nenhum efeito de jogo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Com a Missão secundária \"Hylian Homeowner\" concluída, a foto pode ser pendurada na parede ao lado da cama da casa de Link em Hateno.",
+      "conditions": [
+        "Missão secundária \"Hylian Homeowner\" concluída."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O abraço de Daruk",
+      "text": "A foto saiu engraçada porque Daruk puxou os outros Campeões e Zelda para junto dele no momento do clique. Quem tirou a foto foi Purah, usando a Tabuleta Sheikah.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Do poeta da corte para Kass",
+      "text": "A foto impressa pertencia ao mestre de Kass, o poeta da corte, que a guardou com cuidado; Kass a descobriu enquanto tentava completar a canção inacabada do mestre.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [],
+  "limitations": [
+    "Exige a DLC The Champions' Ballad completa.",
+    "Não tem efeito em combate nem em atributos."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_sheikah_slate",
+      "relation": "Usada para tirar a foto há cem anos"
+    },
+    {
+      "id": "botw_keyitem_medohs_emblem",
+      "relation": "Parte do caminho da balada dos Campeões"
+    },
+    {
+      "id": "botw_keyitem_naboriss_emblem",
+      "relation": "Parte do caminho da balada dos Campeões"
+    },
+    {
+      "id": "botw_keyitem_rudanias_emblem",
+      "relation": "Parte do caminho da balada dos Campeões"
+    },
+    {
+      "id": "botw_keyitem_rutas_emblem",
+      "relation": "Parte do caminho da balada dos Campeões"
+    },
+    {
+      "id": "botw_rune_camera",
+      "relation": "Função de foto da Tabuleta Sheikah"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

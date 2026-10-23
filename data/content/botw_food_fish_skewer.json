@@ -1,0 +1,101 @@
+{
+  "id": "botw_food_fish_skewer",
+  "summary": "Espetinho de um a três peixes, sem outro ingrediente obrigatório. O peixe dá o efeito; a versão comum usa Robalo hyruliano ou Carpa tricolor. Caranguejos e caramujos fazem outro espetinho.",
+  "description": "O Espetinho de peixe é feito com um a três peixes na panela. A descrição do jogo fala de um prato simples de pedaços de peixe fresco no espeto. A versão comum só sai com Robalo hyruliano ou Carpa tricolor, os peixes sem efeito, ou com peixes de efeitos contrários.\n\nCom os demais peixes, o espetinho herda o efeito deles: nutritiva (Robalo nutritivo ou Salmão nutritivo), energizante (Robalo enérgico), picante (Truta rescaldada), isolante (Truta voltaica), valente (Carpa valente ou Pargo valente), blindada (Carpa blindada ou Pargo blindado), discreta (Truta discreta) e refrescante (Truta glacial). A versão veloz depende de um ingrediente de velocidade adicional.\n\nO prato é só de peixe: caranguejos e caramujos sozinhos formam o Espetinho de frutos do mar, quatro frutos do mar diferentes formam os Espetinhos fartos de frutos do mar e peixe com Halita vira Peixe grelhado no sal.",
+  "obtaining": [
+    "Cozinhar numa Panela de um a três peixes."
+  ],
+  "uses": [
+    "Aproveitar peixes de efeito sem outros ingredientes.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Robalo hyruliano, Carpa tricolor ou peixes de efeitos opostos): recupera corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Robalo nutritivo ou Salmão nutritivo.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Robalo enérgico.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — ingrediente de velocidade adicional.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Truta rescaldada.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Truta voltaica.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Carpa valente ou Pargo valente.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Carpa blindada ou Pargo blindado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Truta discreta.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Truta glacial."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações; a quantidade depende dos peixes usados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O peixe define o efeito; as versões temporárias citadas são de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Espetinho só de peixe",
+      "text": "Caranguejos e caramujos não formam este prato: sozinhos, eles viram Espetinho de frutos do mar. E quatro frutos do mar diferentes formam a versão farta, Espetinhos fartos de frutos do mar.",
+      "sources": [
+        "zw",
+        "zw:Seafood Skewer",
+        "zw:Copious Seafood Skewers"
+      ]
+    }
+  ],
+  "limitations": [
+    "Aceita no máximo três peixes no papel de ingrediente principal; a variedade de quatro frutos do mar muda o prato."
+  ],
+  "related": [
+    {
+      "id": "botw_food_seafood_skewer",
+      "relation": "Espetinho de caranguejo ou caramujo"
+    },
+    {
+      "id": "botw_food_copious_seafood_skewers",
+      "relation": "Versão farta, com quatro frutos do mar diferentes"
+    },
+    {
+      "id": "botw_food_salt_grilled_fish",
+      "relation": "Peixe com Halita"
+    },
+    {
+      "id": "botw_food_fish_and_mushroom_skewer",
+      "relation": "Peixe com cogumelo"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito"
+    },
+    {
+      "id": "botw_creature_sanke_carp",
+      "relation": "Peixe sem efeito"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

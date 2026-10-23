@@ -1,0 +1,159 @@
+{
+  "id": "botw_weapon_edge_of_duality",
+  "summary": "Espada Sheikah de dois gumes (ataque 50, durabilidade 35), criada para cavaleiros hylianos que não se adaptavam às lâminas de um só fio. Encontrada no Castelo de Hyrule e nas Montanhas Gerudo.",
+  "description": "A Lâmina da dualidade pertence ao Equipamento Sheikah, mas tem uma origem curiosa: segundo o jogo, os Sheikah a forjaram com sua tecnologia especificamente para os cavaleiros de Hyrule, que não estavam acostumados às espadas de um só gume preferidas pelos Sheikah. O resultado é uma espada de duas mãos de lâmina marrom, empunhadura azul e dourada e guarda preta, guardada numa bainha aberta gravada com o brasão Sheikah.\n\nCom ataque 50, fica no grupo de cima das armas de duas mãos, pouco abaixo do Montante real (52). Aparece em vários pontos do Castelo de Hyrule e das Montanhas Gerudo e pode sair de baús do amiibo de Sheik. É metálica: conduz eletricidade, atrai raios, afunda e pode ser recuperada com Magnétis; não queima.",
+  "locations": [
+    "Vários pontos do Castelo de Hyrule e das Montanhas Gerudo.",
+    "O compendium lista a Pradaria de Hyrule e Necluda Ocidental como locais comuns."
+  ],
+  "obtaining": [
+    "Recolher nos pontos do Castelo de Hyrule e das Montanhas Gerudo onde ela aparece.",
+    "Chance de surgir num baú ao escanear o amiibo de Sheik (Super Smash Bros.) com a runa amiibo.",
+    "Armas deixadas no mundo voltam a aparecer depois da Lua de sangue, desde que não estejam na algibeira de Link nem num suporte da casa dele."
+  ],
+  "uses": [
+    "Arma principal de duas mãos para o fim de jogo.",
+    "Como espada, corta árvores; por ser de metal, acende sílex ao golpeá-lo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos lentos e fortes, sem escudo; o golpe carregado é o giro contínuo que gasta vigor e acaba numa pancada para baixo. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançada contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque em Link faz a espada cair das mãos dele.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada em tempestades, solta faíscas e atrai raios para Link.",
+      "applications": [
+        "Desequipar ao ver faíscas ou usar o Elmo do trovão."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes citam onde a espada é encontrada, mas não quais monstros a empunham."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +10, Durabilidade aumentada de +4 a +7 ou Acerto crítico; no nível dourado (amarelo): Ataque de +11 a +19, Durabilidade de +8 a +16 ou Lançamento longo (×1,5 a ×2). Com +19, a lâmina chega a 69 de ataque.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma espada Sheikah para hylianos",
+      "text": "Enquanto a Katana da desconfiança segue a tradição Sheikah de um só fio, a Lâmina da dualidade tem dois gumes justamente para agradar os cavaleiros de Hyrule. As duas fazem parte do Equipamento Sheikah.",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Eightfold Longblade"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o bônus de Acerto crítico, a última pancada de cada sequência causa dano dobrado — 100 com o ataque base de 50."
+  ],
+  "limitations": [
+    "Metálica: perigosa em tempestades.",
+    "Sem escudo enquanto estiver empunhada."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_eightfold_longblade",
+      "relation": "Outra arma Sheikah de duas mãos"
+    },
+    {
+      "id": "botw_weapon_eightfold_blade",
+      "relation": "Arma Sheikah de uma mão"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Repõe as armas deixadas no mundo"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "O amiibo de Sheik pode gerá-la"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

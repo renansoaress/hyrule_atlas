@@ -1,0 +1,133 @@
+{
+  "id": "botw_material_ancient_spring",
+  "summary": "Mola de máquinas Sheikah, leve a ponto de flutuar na água e que nunca perde a tensão. É o material ancestral mais pedido nas melhorias (140 unidades) e entra no Arco, no Escudo e na Espada ancestrais.",
+  "description": "A Mola ancestral é uma peça de máquinas antigas que, segundo o próprio jogo, é leve e flutuante o bastante para boiar na água e nunca perde a tensão, por mais vezes que seja comprimida. É a única peça ancestral cuja flutuação é confirmada pelas fontes. Cai de todos os tipos de Guardião e é vendida por Teli, na estrada entre o Forte Hateno e a Vila Hateno.\n\nNa prática, é o material ancestral de que se precisa em maior quantidade: os níveis 1 e 2 de melhoria do Conjunto ancestral e dos quatro Elmos divinos pedem 5 e 15 molas por peça, somando 140. No Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala, molas fazem parte do preço do Arco ancestral, do Escudo ancestral, da Espada ancestral, das Grevas ancestrais e do pacote de 5 Flechas ancestrais. Como parte de monstro de grau baixo, rende 1:10 de duração em elixires, e Kilton paga 5 Mon por unidade.",
+  "locations": [
+    "Guardiões de Toda Hyrule, inclusive os batedores dos santuários e os Guardiões deteriorados.",
+    "Teli, entre o Forte Hateno e a Vila Hateno."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Guardião: batedores (todas as versões), deteriorados, persecutórios, altívagos, torretas e Sentinelas.",
+    "Comprar de Teli."
+  ],
+  "uses": [
+    "Forno ancestral (Akkala): 15 molas + 10 Engrenagens + 1 Núcleo ancestral gigante + 1.000 rupias = Arco ancestral ou Escudo ancestral; 15 + 5 Eixos + 2 Núcleos ancestrais + 1.000 rupias = Espada ancestral; 5 + 20 Engrenagens + 3 Núcleos + 2.000 rupias = Grevas ancestrais; 5 + 5 Eixos + 5 Flechas + 400 rupias = 5 Flechas ancestrais.",
+    "Melhorias na Fonte da Grande Fada: 5 no 1º nível e 15 no 2º nível de cada peça do Conjunto ancestral e dos quatro Elmos divinos (140 no total).",
+    "Elixires: cozida com um bicho, acrescenta 1:10 de duração.",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 15 rupias, ou 5 Mon na Fang and Bone."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; nos elixires, só prolonga a duração (1:10)."
+  ],
+  "interactions": [
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua quando colocada na água — o texto do jogo diz que ela é leve e flutuante o bastante para boiar.",
+      "applications": ["Uma mola que cair na água pode ser recuperada na superfície em vez de afundar."],
+      "kind": "mecanica",
+      "sources": ["jogo", "zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "Forno ancestral",
+      "status": "confirmado",
+      "result": "É parte do preço do Arco ancestral, do Escudo ancestral, da Espada ancestral, das Grevas ancestrais e do pacote de 5 Flechas ancestrais no Forno ancestral.",
+      "conditions": ["Fornalha do laboratório de Akkala reacesa com a Chama azul (missão \"Robbie's Research\")."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Oven", "zw:Akkala Ancient Tech Lab"]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurada e largada no chão ou na água, onde boia.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma mola largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Mola ancestral ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com uma mola largada numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da mola ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve se a mola conduz ou reage à eletricidade."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "As fontes não dizem de que material a mola é feita nem se Magnétis a atrai."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma mola largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Parte de monstro de grau baixo: com pelo menos um bicho, forma um elixir e acrescenta 1:10 de duração, sem somar corações nem força ao efeito. Sem bicho, ou com comida comum, vira Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Monster Part", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 15 rupias ou trocada por 5 Mon na Fang and Bone, de Kilton.",
+      "sources": ["zw", "zw:Monster Part"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A única peça ancestral que boia",
+      "text": "Entre os seis materiais ancestrais, só a Mola tem a flutuação descrita pelo jogo e pelo Zelda Wiki. Para parafusos, engrenagens, eixos e núcleos, as fontes não dizem se afundam ou boiam.",
+      "sources": ["jogo", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O gargalo do Conjunto ancestral",
+      "text": "Levar as três peças do Conjunto ancestral ao nível 2 consome 60 molas (5 + 15 por peça), além das 5 molas das Grevas ancestrais no Forno. Com os quatro Elmos divinos, o total de melhorias chega a 140.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Compre molas com Teli quando precisar completar um nível de melhoria: ele as vende sempre, não só nos dias de chuva."
+  ],
+  "limitations": [
+    "Não pode ser comida nem cozida com comida comum.",
+    "Rende pouco na venda (15 rupias, 5 Mon)."
+  ],
+  "related": [
+    { "id": "botw_bow_ancient_bow", "relation": "Pede 15 molas no Forno ancestral" },
+    { "id": "botw_shield_ancient_shield", "relation": "Pede 15 molas no Forno ancestral" },
+    { "id": "botw_weapon_ancient_short_sword", "relation": "Pede 15 molas no Forno ancestral" },
+    { "id": "botw_armor_ancient_greaves", "relation": "Pede 5 molas na compra" },
+    { "id": "botw_armorset_ancient_set", "relation": "Usa 5 e 15 molas por peça nos níveis 1 e 2" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "O pacote de 5 flechas pede 5 molas" },
+    { "id": "botw_material_ancient_screw", "relation": "Outra peça ancestral de grau baixo" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Um dos Guardiões que a deixam" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem bichos" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante cinza" }
+  ],
+  "capabilities": ["flutua"],
+  "verification_status": "verificado"
+}

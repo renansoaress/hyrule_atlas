@@ -1,0 +1,175 @@
+{
+  "id": "botw_food_baked_apple",
+  "summary": "Maçã amolecida e adoçada pelo calor direto: cura 3/4 de coração (a crua cura meio), mas vale as mesmas 3 rupias. É o que Juney exige na missão \"The Apple of My Eye\", na Vila dos Arás.",
+  "description": "A Maçã assada surge quando uma Maçã entra em contato com o fogo ou com o clima escaldante de Eldin; segundo o texto do jogo, o calor direto a deixa mais macia e doce. Como toda comida assada, cura 50% a mais que o ingrediente cru — 3/4 de coração contra meio — e não traz efeito algum. Na venda a comerciantes, porém, não se valoriza: continua valendo 3 rupias, como a maçã crua.\n\nÉ a primeira comida assada que o jogador encontra. Perto do Santuário da Ressurreição, o Velho do Grande Platô descansa junto a uma fogueira rodeada de maçãs assadas e explica que, embora possam ser comidas cruas, ficam mais nutritivas cozidas no fogo. Mais tarde, na Vila dos Arás, a recém-casada Juney ameaça se divorciar se o marido não lhe trouxer uma Maçã assada — e paga Link com uma rupia prateada pela dele.",
+  "locations": [
+    "Grande Platô: em volta da fogueira do Velho, perto do Santuário da Ressurreição, logo no início do jogo.",
+    "Prepara-se a partir de Maçãs em qualquer fogueira, ou largando-as no chão do Cânion de Eldin e da Montanha da Morte, onde assam sozinhas."
+  ],
+  "obtaining": [
+    "Pegar as maçãs assadas da fogueira do Velho: ele reclama, mas era brincadeira, e deixa Link ficar com elas.",
+    "Assar Maçãs numa fogueira, com Flecha incendiária ou armas de fogo, ou no clima escaldante de Eldin.",
+    "Incendiar uma Caixa de madeira com maçãs dentro: o fogo libera o conteúdo já assado.",
+    "DLC: faz parte do kit fixo entregue na batalha contra a Ira ígnea de Ganon no Reino ilusório (\"EX Champion Daruk's Song\")."
+  ],
+  "uses": [
+    "Missão secundária \"The Apple of My Eye\": entregar uma a Juney, na Vila dos Arás, rende uma rupia prateada; depois disso ela continua comprando maçãs assadas.",
+    "Cura leve e barata: 3/4 de coração por unidade.",
+    "Venda: 3 rupias a comerciantes."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Maçã — queima por alguns instantes e se transforma em Maçã assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Maçã assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Maçã no chão para que o ingrediente asse sozinho e vire Maçã assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, um quarto a mais que a Maçã crua (meio coração), e não concede nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 3 rupias, exatamente o mesmo que a Maçã crua; assar não aumenta o preço.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Apple"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Maçã assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Juney paga melhor por quantidade",
+      "text": "Depois da missão, Juney continua aceitando Maçãs assadas e as compra em lotes de 1, 5, 10, 30, 50 ou 100 unidades; quanto mais maçãs Link tiver, mais ela paga por unidade. É a forma de valorizar uma fruta que, vendida a comerciantes, rende só 3 rupias.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A bronca de brincadeira do Velho",
+      "text": "Se Link pega uma das maçãs assadas da fogueira do Velho, ele se irrita por Link tê-la pegado sem pedir — mas logo revela que estava brincando e oferece as outras. Na conversa, conta que pretende assar mais uma e que cozinhar a maçã a deixa mais nutritiva.",
+      "sources": [
+        "zw",
+        "zw:Old Man"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Caixa queimada, maçã assada",
+      "text": "Caixas de madeira podem guardar maçãs. Em BOTW, incendiar a caixa abre-a, mas transforma em comida assada todos os alimentos que estavam dentro.",
+      "sources": [
+        "zw:Wooden Box"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ração do Reino ilusório",
+      "text": "Na missão principal \"EX Champion Daruk's Song\", da DLC, o equipamento de Link é trocado por um kit fixo — Conjunto antichamas melhorado duas vezes, Racha-Rocha, Arco do cavaleiro e cinco Flechas congelantes — cuja comida é justamente Bife selado, Blindamelo tostado e Maçã assada.",
+      "sources": [
+        "zw:EX Champion Daruk's Song"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde algumas maçãs assadas antes de chegar à Vila dos Arás para concluir \"The Apple of My Eye\" na hora e, depois, venda lotes grandes a Juney em vez de vendê-las a comerciantes.",
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não rende mais na venda comum do que a Maçã crua: as duas valem 3 rupias.",
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_apple",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Assa a maçã ao contato"
+    },
+    {
+      "id": "botw_object_wooden_box",
+      "relation": "Pode guardar maçãs; queimada, assa o conteúdo"
+    },
+    {
+      "id": "botw_food_seared_steak",
+      "relation": "Também faz parte do kit do Reino ilusório de Daruk"
+    },
+    {
+      "id": "botw_food_toasty_ironshroom",
+      "relation": "Também faz parte do kit do Reino ilusório de Daruk"
+    },
+    {
+      "id": "botw_monster_fireblight_ganon",
+      "relation": "Chefe enfrentado com esse kit na DLC"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

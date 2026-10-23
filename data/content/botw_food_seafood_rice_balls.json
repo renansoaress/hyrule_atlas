@@ -1,0 +1,88 @@
+{
+  "id": "botw_food_seafood_rice_balls",
+  "summary": "Bolinhos de Arroz hyliano recheados com qualquer fruto do mar, cujo sabor \"varia, mas nunca decepciona\". O fruto do mar define o efeito, e sobram três espaços.",
+  "description": "Os Bolinhos de arroz com frutos do mar pedem apenas Arroz hyliano e qualquer fruto do mar; o inventário diz que o sabor varia conforme o recheio, mas nunca decepciona. O efeito vem do fruto do mar: Robalo nutritivo, Salmão nutritivo ou Caramujo nutritivo (cura total com Corações extras), Robalo enérgico ou Caranguejo esperto (Recuperação de vigor), Truta rescaldada (Resistência ao frio), Truta voltaica (Resistência a choques), Carpa valente, Pargo valente ou Caranguejo espadachim (Ataque aumentado), Carpa blindada, Pargo blindado ou Caranguejo couraçado (Defesa aumentada), Truta discreta ou Caramujo discreto (Furtividade aumentada) e Truta glacial (Resistência ao calor). Robalo hyliano e Carpa tricolor dão a versão comum.\n\nCom só dois ingredientes obrigatórios, o prato aceita três frutos do mar a mais, e é a \"rede de segurança\" das receitas de arroz com peixe: qualquer peixe com arroz e Tempero Goron ou Halita cai aqui, a menos que seja um pargo ou caramujo nutritivo (que formam Curry de frutos do mar e Arroz frito com frutos do mar). Carne na mesma panela tem prioridade e gera Bolinhos de arroz com carne.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano e qualquer fruto do mar, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Prato de efeito simples com qualquer peixe pescado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pelo fruto do mar: Corações extras, Recuperação de vigor, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do fruto do mar usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne ou pargo com tempero/sal",
+      "status": "confirmado",
+      "result": "Com carne, o prato vira Bolinhos de arroz com carne; com Caramujo nutritivo ou pargo mais Tempero Goron ou Halita, vira Curry de frutos do mar ou Arroz frito com frutos do mar.",
+      "produces": [
+        "botw_food_meaty_rice_balls",
+        "botw_food_seafood_curry",
+        "botw_food_seafood_fried_rice"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da posição na ordem de receitas de arroz, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Carne na panela muda a receita.",
+    "Frutos do mar de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_meaty_rice_balls",
+      "relation": "Bolinhos de arroz com carne (prioridade maior)"
+    },
+    {
+      "id": "botw_food_mushroom_rice_balls",
+      "relation": "Bolinhos de arroz com cogumelo"
+    },
+    {
+      "id": "botw_food_seafood_fried_rice",
+      "relation": "Prato de arroz com caramujo ou pargo e Halita"
+    },
+    {
+      "id": "botw_food_seafood_curry",
+      "relation": "Prato de arroz com caramujo ou pargo e Tempero Goron"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

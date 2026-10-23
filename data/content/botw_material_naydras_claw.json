@@ -1,0 +1,214 @@
+{
+  "id": "botw_material_naydras_claw",
+  "summary": "Garra arrancada com uma flecha nas mãos de Naydra, o dragão de gelo. Vale 180 rupias, soma 3:30 à primeira dose de um elixir e é o 2º nível da Túnica selvagem e da Armadura da Deidade Feroz.",
+  "description": "A Garra de Naydra é uma parte do espírito azul Naydra, o dragão de gelo que, segundo o compendium, não tem má vontade com as pessoas. Ela se solta quando Link acerta uma flecha nas mãos (garras) do dragão e cai no chão envolta em luz. Naydra vive no Monte Lanayru. Depois de purificada, percorre as regiões de Lanayru e de Necluda Oriental, descendo para a Lanayru Promenade e a Lanayru Bay, e aparece circulando sobre a Fonte da Sabedoria às 5h e às 17h — a não ser que Link já esteja lá nesse momento. O inventário diz que ela estava congelante antes de ser arrancada e que, além da venda, \"deve ter outro uso\".\n\nNa panela, funciona como parte de monstro: com bichos forma um elixir e acrescenta 3:30 à duração na primeira unidade (0:30 em cada unidade extra da mesma parte); sem bichos, vira Comida duvidosa. Vale 180 rupias ou 80 Mon com Kilton. Nas Grandes Fadas, é o material do 2º nível da Túnica selvagem e da Armadura da Deidade Feroz. Na Tinturaria Kochi, entra no corante azul-claro.",
+  "locations": [
+    "Monte Lanayru e arredores (Lanayru Road, Lanayru Promenade e Lanayru Bay), depois de Naydra ser libertada da Malícia."
+  ],
+  "obtaining": [
+    "Acertar uma flecha nas mãos (garras) de Naydra enquanto o dragão voa; a peça cai no chão envolta em luz.",
+    "Cada tipo de parte só cai uma vez por encontro com o dragão; os dragões voltam a aparecer a cada dia no jogo, em horários aproximadamente fixos.",
+    "Naydra só passa a voar regularmente depois de ser libertada da Malícia na missão \"The Spring of Wisdom\"."
+  ],
+  "uses": [
+    "Melhoria de armadura: 2 no 2º nível da peça Túnica selvagem do Conjunto do herói selvagem (com 5 unidades de Mel de abelha); 1 no 2º nível da Armadura da Deidade Feroz (com 5 Dentes de Rinox) — 3 no total.",
+    "Elixires: cozida com um bicho, acrescenta 3:30 na primeira unidade e 0:30 em cada unidade extra.",
+    "Corante azul-claro na Tinturaria Kochi.",
+    "Venda: 180 rupias, ou 80 Mon na loja de Kilton, que a aceita como parte de monstro."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Garra de Naydra no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Garra de Naydra largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Garra de Naydra queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Garra de Naydra numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Garra de Naydra a gelo ou congelamento, apesar do frio descrito no inventário."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Garra de Naydra à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Garra de Naydra flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Garra de Naydra não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Garra de Naydra largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho forma um elixir e acrescenta 3:30 à duração na primeira unidade; cada unidade extra da mesma parte soma só 0:30. Sem bichos (sozinha ou só com alimentos comuns), o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "side_effects": [
+        "Repetir a mesma parte rende pouco: só a primeira unidade dá o acréscimo cheio."
+      ],
+      "applications": [
+        "Combinar com outras partes de monstro diferentes para somar duração, em vez de repetir a garra."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 180 rupias em lojas e comerciantes, ou 80 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Onde mirar no dragão",
+      "text": "Naydra solta uma peça diferente conforme a parte atingida por uma flecha: chifre (Lasca do chifre), dentes na parte de baixo da boca (Lasca da presa), mãos (Garra) ou o restante do corpo (Escama). A garra sai quando a flecha acerta as mãos (garras); a peça se solta e cai no chão envolta em luz. O primeiro acerto em cada dragão sempre rende uma escama, onde quer que a flecha pegue.",
+      "sources": [
+        "zw:Naydra",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Planar na corrente do dragão",
+      "text": "Os dragões geram correntes de ar ascendentes ao voar, e abrir o Planador dentro delas recupera todo o vigor de Link. Isso permite acompanhar Naydra no ar e mirar com calma — lembrando que chegar perto demais congela Link com a aura gelada do dragão; o Conjunto de pluma nevada completo, melhorado duas vezes, ou o Elmo de Zant evitam isso.",
+      "sources": [
+        "zw:Updraft",
+        "zw:Naydra"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Frio só na descrição",
+      "text": "O inventário diz que a Garra de Naydra estava congelante antes de ser arrancada e que, além da venda, \"deve ter outro uso\". Esse tema elemental não vira mecânica: como parte de monstro, ela não define o efeito do elixir (que vem do bicho usado), e as fontes não atribuem a ela dano ou proteção de gelo.",
+      "sources": [
+        "zw:Monster Part",
+        "zw:Elixir"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para todas as melhorias, junte 3 unidades: 2 para a Túnica selvagem e 1 para a Armadura da Deidade Feroz.",
+    "Cuidado ao se aproximar: chegar perto demais congela Link com a aura gelada do dragão; o Conjunto de pluma nevada completo, melhorado duas vezes, ou o Elmo de Zant evitam isso."
+  ],
+  "limitations": [
+    "Só uma unidade de cada tipo de parte por encontro com o dragão.",
+    "O frio citado no inventário é descritivo: as fontes não atribuem ao item efeito elemental nem proteção.",
+    "As fontes consultadas não ligam o reaparecimento dos dragões à Lua de sangue; o ciclo descrito é diário.",
+    "Só a primeira unidade da mesma parte dá o acréscimo cheio de duração.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_naydra",
+      "relation": "Dragão que a solta ao ser atingido por uma flecha"
+    },
+    {
+      "id": "botw_material_naydras_scale",
+      "relation": "Outra parte de Naydra (escama)"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_fang",
+      "relation": "Outra parte de Naydra (lasca de presa)"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Outra parte de Naydra (lasca de chifre)"
+    },
+    {
+      "id": "botw_material_dinraals_claw",
+      "relation": "Equivalente de Dinraal"
+    },
+    {
+      "id": "botw_material_faroshs_claw",
+      "relation": "Equivalente de Farosh"
+    },
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Usa 2 na Túnica selvagem (2º nível)"
+    },
+    {
+      "id": "botw_armor_tunic_of_the_wild",
+      "relation": "Peça melhorada com ela no 2º nível"
+    },
+    {
+      "id": "botw_armor_fierce_deity_armor",
+      "relation": "Peça melhorada com ela no 2º nível"
+    },
+    {
+      "id": "botw_material_hinox_tooth",
+      "relation": "Acompanha a garra na melhoria da Armadura da Deidade Feroz"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Completo e melhorado duas vezes, protege da aura de Naydra"
+    },
+    {
+      "id": "botw_armor_zants_helmet",
+      "relation": "Protege da aura congelante de Naydra"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "O voo do dragão gera correntes ascendentes que recuperam o vigor"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul-claro"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

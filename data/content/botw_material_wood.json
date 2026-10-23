@@ -1,0 +1,169 @@
+{
+  "id": "botw_material_wood",
+  "summary": "Feixe de lenha portátil obtido ao partir troncos de árvores derrubadas. Largado e incendiado (com Sílex e arma metálica ou com uma arma em chamas), vira fogueira. Também paga a casa de Link e as casas da Vila Tarrey.",
+  "description": "A Madeira é o feixe de lenha que Link carrega para fazer fogueiras onde quiser. O texto do jogo avisa que ela só vira fogueira \"se você tiver algo para acendê-la\": é preciso largá-la no chão e atear fogo, seja com um Sílex golpeado por uma arma metálica, seja com uma arma inflamável já em chamas, como uma Tocha acesa. A fogueira resultante assa alimentos, permite sentar para passar o tempo e acende armas de madeira.\n\nPara conseguir feixes, derrube uma árvore fina ou média com qualquer arma cortante (machados são os mais eficientes), com a explosão de uma Bomba remota ou de um Barril explosivo — raios também derrubam árvores — e depois golpeie ou exploda o tronco caído, que se parte em vários feixes. Também há feixes soltos em povoados e estábulos, como em Hateno. Fora das fogueiras, a Madeira é moeda de construção: Bolson cobra 30 feixes (além de 3.000 rupias) pela casa de Link em Hateno, Hudson pede 10 para começar a Vila Tarrey, e Harth exige 5 para refazer o Arco da harpia. Na panela, só estraga a receita: qualquer prato com Madeira vira Comida dura como pedra.",
+  "locations": [
+    "Árvores finas e médias de Toda Hyrule (as muito grossas não podem ser derrubadas).",
+    "Feixes soltos em povoados e estábulos, como na Vila Hateno."
+  ],
+  "obtaining": [
+    "Derrubar uma árvore com arma cortante de uma ou duas mãos (machados são os mais eficazes), com Bomba remota ou Barril explosivo; depois golpear ou explodir o tronco caído para parti-lo em feixes.",
+    "Recolher feixes deixados em povoados e estábulos."
+  ],
+  "uses": [
+    "Fazer fogueiras: largar o feixe e acendê-lo com Sílex mais arma metálica ou com uma arma em chamas.",
+    "Missão secundária \"Hylian Homeowner\": 30 feixes e 3.000 rupias compram a casa de Link na Vila Hateno.",
+    "Missão secundária \"From the Ground Up\": Hudson pede 10 feixes para construir as primeiras casas da Vila Tarrey.",
+    "Refazer o Arco da harpia, de Revali: Harth pede um Arco da andorinha, um Diamante e 5 feixes de Madeira.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser consumida; não é comestível."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Precisa ser largada no chão para virar fogueira; a fogueira improvisada clássica é Madeira largada com um Sílex ao lado.",
+      "applications": ["Preparar uma fogueira em qualquer lugar."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Campfire"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e se torna uma fogueira duradoura.",
+      "conditions": [
+        "Madeira largada no chão.",
+        "Fonte de fogo: Sílex golpeado por arma metálica, ou uma arma inflamável em chamas (por exemplo, uma Tocha acesa)."
+      ],
+      "side_effects": ["A fogueira é fogo real e pode se espalhar para grama e vegetação próximas."],
+      "applications": ["Assar alimentos, sentar para passar o tempo e acender armas de madeira."],
+      "produces": ["botw_object_campfire"],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Campfire", "zw:Fire"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Em contato com chamas, a madeira queima e o fogo se propaga a ela — é exatamente assim que um feixe vira fogueira.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire", "zw:Campfire"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece ao golpear um feixe de Madeira já largado no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "árvore e tronco",
+      "status": "confirmado",
+      "result": "Golpes com arma cortante derrubam árvores finas e médias; o tronco caído, golpeado de novo, parte-se em vários feixes de Madeira.",
+      "conditions": ["Arma afiada de uma ou duas mãos; machados são os mais eficientes.", "Árvores grossas demais não caem."],
+      "side_effects": ["O tronco cai para o lado oposto ao de Link."],
+      "applications": ["O Velho do Grande Platô ensina a virar o quadril na direção em que se quer derrubar a árvore."],
+      "kind": "mecanica",
+      "sources": ["zw:Woodcutting", "zw:Tree", "zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "variant": "árvore e tronco",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota derruba árvores finas e médias e também parte o tronco caído em feixes de Madeira.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tree"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva apaga imediatamente qualquer fogo exposto; a fogueira feita com Madeira só se mantém se estiver abrigada.",
+      "kind": "mecanica",
+      "sources": ["zw:Rain"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação de um feixe de Madeira ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação de um feixe de Madeira à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o feixe de Madeira largado na água flutua (a regra de flutuação das armas de madeira não é estendida aos feixes)."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a Madeira não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes dizem que troncos derrubados podem ser congelados no tempo com Estátis, mas não tratam do feixe de Madeira largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita com Madeira resulta em Comida dura como pedra (1/4 de coração, sem efeitos), com prioridade sobre a Comida duvidosa.",
+      "produces": ["botw_food_rock_hard_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Food", "zw:Rock-Hard Food", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Casa própria pela metade do preço... em lenha",
+      "text": "A prefeitura de Hateno pagou 50.000 rupias à Bolson Construction para demolir a casa abandonada. Bolson aceita vendê-la a Link por 3.000 rupias e 30 feixes de Madeira — e mantém essa oferta mesmo que Link tenha as 50.000 rupias.",
+      "sources": ["zw:Hylian Homeowner"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Raios também cortam lenha",
+      "text": "Além de armas cortantes e explosões, um raio que atinja uma árvore fina ou média também a derruba, deixando o tronco pronto para ser partido em Madeira.",
+      "sources": ["zw:Tree"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Lenha\" na demonstração da E3",
+      "text": "Na demonstração da E3 2016, o item se chamava Firewood (lenha) e tinha outra descrição: um feixe portátil que serve para fazer fogo, \"desde que você tenha algo para acendê-lo\".",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Derrube a árvore já pensando onde quer o tronco: ele cai para o lado oposto ao de Link, e o Velho do Grande Platô recomenda virar o quadril na direção desejada.",
+    "Com uma Bomba remota, é possível derrubar a árvore e depois partir o tronco sem gastar durabilidade de arma."
+  ],
+  "limitations": [
+    "Sozinha não acende: precisa de Sílex e arma metálica ou de uma arma em chamas.",
+    "Fogueiras expostas se apagam com a chuva.",
+    "Árvores grossas não podem ser derrubadas.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    { "id": "botw_material_flint", "relation": "Acendedor usado junto com a Madeira" },
+    { "id": "botw_object_campfire", "relation": "Resultado de atear fogo à Madeira" },
+    { "id": "botw_object_tree", "relation": "Fonte dos troncos que viram Madeira" },
+    { "id": "botw_weapon_woodcutters_axe", "relation": "Machado, o tipo de arma mais eficiente para derrubar árvores" },
+    { "id": "botw_weapon_torch", "relation": "Arma inflamável que pode acender a Madeira" },
+    { "id": "botw_rune_remote_bomb", "relation": "Derruba árvores e parte troncos" },
+    { "id": "botw_bow_great_eagle_bow", "relation": "Refeito por Harth com 5 feixes de Madeira" },
+    { "id": "botw_bow_swallow_bow", "relation": "Também exigido para refazer o Arco da harpia" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado de cozinhar com Madeira" },
+    { "id": "botw_mechanic_fire", "relation": "Regras de propagação do fogo" }
+  ],
+  "capabilities": ["inflamavel", "item_de_missao"],
+  "verification_status": "verificado"
+}

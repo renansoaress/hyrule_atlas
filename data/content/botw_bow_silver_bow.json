@@ -1,0 +1,164 @@
+{
+  "id": "botw_bow_silver_bow",
+  "summary": "Arco de metal que os Zora usam para pescar: ataque modesto (15), mas metal especial que prioriza a durabilidade (40). Suas flechas caem mais devagar que as dos arcos comuns (gravidade 7 em vez de 9,8).",
+  "description": "O Arco prateado é o arco preferido dos Zora para a pesca. Como diz a descrição do jogo, ele não tem o maior poder de fogo, mas o metal especial de que é feito prioriza a durabilidade. É comum na Grande Nascente de Lanayru, em especial nos arredores do Domínio Zora, e no Altiplano de Akkala, onde muitos Lagalfos o utilizam. Pertence ao equipamento dos Zora.\n\nNos parâmetros extraídos do jogo, dispara uma flecha por vez com 20 m de trajetória reta, mas, depois desse trecho, a flecha sofre uma gravidade de 7 m/s², menor que os 9,8 m/s² dos arcos comuns. Entre os arcos que usam flechas comuns, só ele e o Arco ancestral têm a gravidade alterada.\n\nPor ser de metal, não queima, afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios em tempestades.",
+  "locations": [
+    "Grande Nascente de Lanayru (arredores do Domínio Zora) e Altiplano de Akkala, locais comuns segundo o compendium."
+  ],
+  "obtaining": [
+    "Derrotar os Lagalfos dessas regiões que o empunham ou encontrá-lo em baús."
+  ],
+  "uses": [
+    "Arco durável para o meio do jogo, com flechas que perdem menos altura em tiros longos."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. A flecha percorre 20 m em linha reta e, depois disso, cai sob gravidade de 7 m/s², mais suave que a dos arcos comuns (9,8 m/s²). Tensionamento e recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Ancient Bow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Gravidade reduzida",
+      "text": "O Zelda Wiki aponta o Arco prateado e o Arco ancestral como os únicos arcos (de flechas comuns) com o parâmetro de gravidade da flecha alterado. No prateado a redução é pequena — 7 m/s² contra 9,8 m/s² —, enquanto no ancestral cai para 2,8 m/s².",
+      "sources": [
+        "dm",
+        "zw:Ancient Bow"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco prateado pode surgir com bônus de ataque de +4 a +7 (nível branco) ou de +8 a +12 (nível amarelo), e com bônus de durabilidade de +4 a +8 (branco) ou de +9 a +20 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em disparos além de 20 m, a queda menor da flecha exige compensar um pouco menos a mira que com outros arcos."
+  ],
+  "limitations": [
+    "Ataque baixo (15) para um arco de metal.",
+    "Atrai raios em tempestades e afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_ancient_bow",
+      "relation": "O outro arco com gravidade de flecha alterada"
+    },
+    {
+      "id": "botw_weapon_silver_longsword",
+      "relation": "Mesmo arquétipo (equipamento dos Zora)"
+    },
+    {
+      "id": "botw_shield_silver_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Monstros que costumam empunhá-lo"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico"
+  ],
+  "verification_status": "verificado"
+}

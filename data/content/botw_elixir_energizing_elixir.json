@@ -1,0 +1,83 @@
+{
+  "id": "botw_elixir_energizing_elixir",
+  "summary": "Elixir de Recuperação de vigor feito com Gafanhoto agitado ou Escaravelho vibrante. Repõe parte da roda de Vigor na hora, sem ultrapassar o máximo; a quantidade exata do Escaravelho vibrante diverge entre as fontes.",
+  "description": "O Elixir energizante devolve vigor instantaneamente — o jogo o recomenda para ações físicas como escalar paredes e nadar. Ao contrário do Elixir tenaz, ele não cria uma roda extra: apenas reabastece o Medidor de vigor existente. Não há duração, e as partes de monstro servem só para transformar a receita em elixir.\n\nDois bichos o produzem. O Gafanhoto agitado é comum (Pradaria de Hyrule, Necluda Oriental) e restaura pouco. O Escaravelho vibrante é raro, vive até dez anos segundo o compendium e restaura muito mais; aparece no Altiplano de Akkala e em Necluda Ocidental, inclusive nas árvores perto do Estábulo South Akkala e nas colunas da Vila Kakariko. A tabela de culinária do Zelda Wiki mede a recuperação em quintos de roda: cada estrela repõe 1/5, cada estrela vazada vale 1/5 de estrela e o símbolo de roda cheia vale uma roda inteira.",
+  "locations": [
+    "Gafanhotos agitados: Pradaria de Hyrule e Necluda Oriental, e às vezes saltam da Grama cortada.",
+    "Escaravelhos vibrantes: Altiplano de Akkala e Necluda Ocidental, em árvores perto do Estábulo South Akkala e em colunas da Vila Kakariko."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela um Gafanhoto agitado ou Escaravelho vibrante com pelo menos uma parte de monstro.",
+    "Gafanhotos agitados custam 10 rupias com Beedle e Gartan; Escaravelhos vibrantes custam 150 rupias com o mercador Bugut, na estrada entre o Estábulo Dueling Peaks e a Vila Kakariko."
+  ],
+  "uses": [
+    "Recuperar vigor no meio de uma escalada, de um voo de Planador ou de um nado longo.",
+    "Repor o vigor gasto em ataques giratórios e corridas durante combates."
+  ],
+  "effects": [
+    "Restaura vigor imediatamente, sem ultrapassar o limite da roda.",
+    "Recupera corações se incluir ingredientes energizantes que curam."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Repõe parte do Medidor de vigor na hora; útil para ações físicas como escalar e nadar.",
+      "side_effects": ["Não amplia a roda: vigor acima do máximo não é guardado."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pela tabela de culinária, o Gafanhoto agitado vale ★☆☆ (1,4/5 de roda) e o Escaravelho vibrante vale uma roda inteira mais ★★★☆☆ (cerca de 1 roda e 3,4/5). Ingredientes energizantes que curam: Robalo enérgico (1 roda e 0,6/5), Mel de abelha e Caranguejo esperto (2,8/5 cada) e Energimelo (1,4/5).",
+      "conditions": ["Pelo menos um bicho energizante e uma parte de monstro."],
+      "side_effects": [
+        "A página de elixires do Zelda Wiki lista o Escaravelho vibrante como 1/5 de roda, com marca de \"verificar\" — valor que contradiz a tabela de culinária.",
+        "Misturar ingredientes de outro efeito resulta em Comida duvidosa."
+      ],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço variável pela regra geral (soma dos ingredientes × 1,5 a 2,8). Com Escaravelho vibrante (30 rupias como ingrediente) o elixir sai bem mais caro que com Gafanhoto agitado (2 rupias).",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Energetic Rhino Beetle"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O besouro preferido de Beedle",
+      "text": "Se Link conversar com Beedle levando um Escaravelho vibrante, o mercador implora pelo inseto, que considera um bom presságio, e oferece um prato ou elixir em troca (numa das falas, um Elixir veloz). Recusado, ele cochicha que vai contratar alguém para trocar o besouro por um comum na algibeira de Link.",
+      "sources": ["zw:Energetic Rhino Beetle", "zw:Beedle"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Crítico em quintos de roda",
+      "text": "Para Recuperação de vigor, o bônus crítico de cozimento aumenta a recuperação em dois quintos de roda.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar um elixir com Escaravelho vibrante para emergências: ele vale por várias receitas com gafanhotos."
+  ],
+  "limitations": [
+    "Valor exato do Escaravelho vibrante não confirmado: as duas páginas do Zelda Wiki divergem.",
+    "Não ultrapassa o máximo de vigor; para isso é preciso o Elixir tenaz."
+  ],
+  "related": [
+    { "id": "botw_creature_restless_cricket", "relation": "Bicho energizante comum" },
+    { "id": "botw_creature_energetic_rhino_beetle", "relation": "Bicho energizante raro e mais forte" },
+    { "id": "botw_creature_staminoka_bass", "relation": "Ingrediente energizante que cura" },
+    { "id": "botw_material_stamella_shroom", "relation": "Ingrediente energizante que cura" },
+    { "id": "botw_material_courser_bee_honey", "relation": "Ingrediente energizante que cura" },
+    { "id": "botw_creature_bright_eyed_crab", "relation": "Ingrediente energizante que cura" },
+    { "id": "botw_elixir_enduring_elixir", "relation": "Elixir que ultrapassa o máximo de vigor" },
+    { "id": "botw_mechanic_stamina", "relation": "Regras de Vigor" }
+  ],
+  "capabilities": ["vigor"],
+  "verification_status": "a_verificar"
+}

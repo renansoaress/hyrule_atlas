@@ -1,0 +1,134 @@
+{
+  "id": "botw_monster_fire_chuchu",
+  "summary": "Chulchul envolto em chamas que deixa um rastro de fogo e incendeia Link ao atacar. Morto enquanto está aceso, explode numa bola de fogo; depois de atacar, apaga por alguns segundos e fica vulnerável.",
+  "description": "O Chulchul ígneo vive em lugares quentes, como a região de Eldin (o compendium cita o Cânion de Eldin e a Cordilheira de Eldin), e também é invocado por Feitiçanos ígneos e meteóricos. Por onde passa deixa um rastro de fogo que incendeia materiais inflamáveis, como a grama. Existe em três tamanhos, e a força acompanha o tamanho.\n\nAtaca investindo e soltando uma explosão de fogo ao redor do corpo; se for atingido, Link pega fogo por alguns instantes, a menos que use o bônus do Conjunto antichamas. Depois de atacar, o Chulchul perde temporariamente a camada de fogo, ganha uma cor mais escura e fica vulnerável, recuperando as chamas pouco depois. Se morrer ainda aceso, explode numa rajada de fogo — por isso o compendium recomenda lanças, flechas e outras armas de alcance. A explosão também pode ser usada a favor de Link, para \"esquentar\" monstros próximos, como sugere uma dica do jogo. Deixa Geleca ígnea.",
+  "locations": [
+    "Cânion de Eldin e Cordilheira de Eldin, segundo o compendium; lugares quentes em geral.",
+    "Invocado em combate por Feitiçanos ígneos e Feitiçanos meteóricos."
+  ],
+  "obtaining": [
+    "Deixa Geleca ígnea.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte direta de Geleca ígnea.",
+    "Arma improvisada: sua explosão ao morrer incendeia monstros próximos.",
+    "Registro no compendium (entrada nº 85)."
+  ],
+  "effects": [
+    "Incendeia Link ao atingi-lo; o bônus do Conjunto antichamas completo evita isso.",
+    "Deixa rastro de fogo que queima a grama."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpeá-lo de perto enquanto está aceso faz com que, ao morrer, exploda numa rajada de fogo que atinge Link. Atacá-lo logo depois que ele investe, quando está apagado e escuro, é seguro.",
+      "applications": ["Usar lanças para manter distância, como recomenda o compendium."],
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas o derrotam de longe, fora do alcance da explosão — a abordagem recomendada pelo compendium.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Ataques de gelo contra inimigos de fogo podem derrotá-los com um só golpe (regra dos opostos).",
+      "kind": "mecanica",
+      "sources": ["zw:Enemy", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de eletricidade nem a geleca resultante ao matar um Chulchul ígneo com choque."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de água ou chuva sobre o Chulchul ígneo."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Ele mesmo é uma fonte de explosão: morto enquanto aceso, solta uma bola de fogo que incendeia o que estiver perto, inclusive outros monstros.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota causa dano a inimigos de longe, evitando o contato com as chamas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo; durante o efeito, ficam imunes a gelo, fogo e choque.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "O rastro de fogo incendeia grama e outros materiais inflamáveis por onde ele passa.",
+      "side_effects": ["Incêndios em grama podem se espalhar com o vento."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "A explosão ao morrer incendeia monstros próximos; Feitiçanos ígneos e meteóricos o invocam durante o combate.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Janela de vulnerabilidade",
+      "text": "Depois de cada explosão de ataque, o Chulchul ígneo perde a camada de fogo e fica mais escuro por alguns segundos. Nesse estado ele não usa habilidades elementais e pode ser atacado sem risco; depois a camada volta.",
+      "sources": ["zw", "zw:Chuchu"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Bomba de fogo viva",
+      "text": "Uma dica do jogo sugere atacar o Chulchul ígneo perto de outros monstros: ele explode e começa um incêndio que \"esquenta\" os vizinhos.",
+      "sources": ["zw:Tips and Tricks"]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar a investida, golpear durante o estado apagado, ou derrotá-lo aceso de longe perto de um grupo inimigo para incendiá-lo."
+  ],
+  "limitations": [
+    "Combate corpo a corpo com ele aceso resulta em queimaduras."
+  ],
+  "related": [
+    { "id": "botw_monster_chuchu", "relation": "Forma comum" },
+    { "id": "botw_monster_ice_chuchu", "relation": "Variante de gelo" },
+    { "id": "botw_monster_electric_chuchu", "relation": "Variante elétrica" },
+    { "id": "botw_material_red_chuchu_jelly", "relation": "Espólio" },
+    { "id": "botw_monster_fire_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_monster_meteo_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Bônus que evita as queimaduras" }
+  ],
+  "capabilities": ["gera_fogo", "queima_inimigos", "gera_explosao", "vence_rapido"],
+  "verification_status": "parcial"
+}

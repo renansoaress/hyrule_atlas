@@ -1,0 +1,145 @@
+{
+  "id": "botw_armor_tingles_shirt",
+  "summary": "Camisa verde do homem que se dizia reencarnação de uma fada (DLC The Master Trials), enterrada nas ruínas da Prisão da Cidade do Castelo. \"Kooloo-Limpah!\"",
+  "description": "A Camisa de Tingle faz parte do Traje de Tingle, do pacote The Master Trials (DLC 1), com o Capuz e a Meia-calça de Tingle. Na Missão secundária \"EX Treasure: Fairy Clothes\", o Diário EX de Misko, nas Ruínas do Posto Avançado (Outpost Ruins), fala das \"vestes verdes do homem que queria ser fada\" e aponta \"as ruínas onde pecadores eram presos\": o baú está enterrado nas ruínas da Prisão da Cidade do Castelo (Castle Town Prison), a oeste do Castelo de Hyrule, e sai da terra com Magnétis. A descrição termina com o bordão de Tingle, \"Kooloo-Limpah!\".\n\nSozinha, dá só 2 de defesa. Com o traje completo, a tabela de bônus de conjunto do Zelda Wiki registra a Velocidade noturna (+20% de velocidade entre 21h e 4h), que vale sem melhorias, já que as peças não podem ser melhoradas nem tingidas. A página da própria camisa, porém, afirma que ela não dá efeito nem como parte do conjunto. Com o traje completo, os moradores se assustam ao ver Link. Depois de obtida, Granté a vende por 50 rupias.",
+  "locations": [
+    "Ruínas da Prisão da Cidade do Castelo (Castle Town Prison), a oeste do Castelo de Hyrule: baú enterrado."
+  ],
+  "obtaining": [
+    "Missão secundária \"EX Treasure: Fairy Clothes\" (DLC 1): ler o Diário EX de Misko e desenterrar o baú com Magnétis.",
+    "Recomprar de Granté por 50 rupias depois de obtê-la."
+  ],
+  "uses": [
+    "Completar o Traje de Tingle."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Traje completo: Velocidade noturna, segundo a tabela de bônus de conjunto (há uma fonte divergente)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só dá 2 de defesa. Com o Capuz de Tingle, a Camisa de Tingle e a Meia-calça de Tingle vestidos, ativa a Velocidade noturna (Night Speed Up) sem precisar de melhorias: entre 21h e 4h, Link corre 20% mais rápido.",
+      "conditions": [
+        "As três peças do Traje de Tingle equipadas; elas não podem ser melhoradas, então o bônus vale assim que o traje é reunido."
+      ],
+      "side_effects": [
+        "Moradores se assustam ao ver Link com o traje completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Night Speed Up",
+        "zw:Tingle's Tights",
+        "zw:Tingle's Outfit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Fontes divergentes sobre o bônus",
+      "text": "A tabela de bônus de conjunto, a página da Velocidade noturna e a página da Meia-calça de Tingle dizem que o traje completo dá Velocidade noturna. A página da camisa diz o contrário: que ela não tem efeito nem sozinha nem no conjunto.",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Night Speed Up",
+        "zw:Tingle's Tights"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O homem que queria ser fada",
+      "text": "A descrição fala de um homem que afirmava ser a reencarnação de uma fada e que tinha a camisa como tesouro — Tingle, personagem de outros jogos da série, cujo bordão \"Kooloo-Limpah!\" fecha o texto.",
+      "sources": [
+        "jogo",
+        "zw:EX Treasure: Fairy Clothes"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como as peças não aceitam melhorias, o Traje de Tingle dá a Velocidade noturna logo no começo do jogo, antes de o Conjunto furtivo chegar a ★★."
+  ],
+  "limitations": [
+    "Não pode ser melhorada nem tingida (defesa 2).",
+    "Exige o pacote The Master Trials.",
+    "O bônus de conjunto tem registro divergente entre as fontes."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_tingles_outfit",
+      "relation": "Traje do qual faz parte"
+    },
+    {
+      "id": "botw_armor_tingles_hood",
+      "relation": "Peça de cabeça do traje"
+    },
+    {
+      "id": "botw_armor_tingles_tights",
+      "relation": "Peça de pernas do traje"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para desenterrar o baú"
+    },
+    {
+      "id": "botw_armorset_dark_series",
+      "relation": "Outro traje com Velocidade noturna sem melhorias"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "a_verificar"
+}

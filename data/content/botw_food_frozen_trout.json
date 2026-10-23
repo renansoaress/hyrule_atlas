@@ -1,0 +1,190 @@
+{
+  "id": "botw_food_frozen_trout",
+  "summary": "Truta congelada, com o sabor de peixe \"condensado\" pelo frio. Sai de qualquer das quatro trutas, cura 1 coração como a crua, dá Resistência ao calor por 1 minuto e vale 10 rupias.",
+  "description": "As quatro trutas — glacial, rescaldada, voltaica e discreta — viram a mesma Truta congelada no clima congelante, na água gelada ou sob ataques de gelo. Segundo o texto do jogo, o congelamento condensou o sabor de peixe dentro do corpo da truta, e comê-la aumenta temporariamente a resistência ao calor.\n\nA cura fica em 1 coração, como a de qualquer truta crua, com Resistência ao calor de nível 1 por um minuto — inclusive quando a truta de origem é a rescaldada, cujo efeito de Panela é o oposto (Resistência ao frio). Vale 10 rupias, contra 6 das trutas glacial, rescaldada e voltaica, 10 da discreta e 9 da Truta assada.",
+  "locations": [
+    "Prepara-se a partir de qualquer truta em regiões de clima congelante — Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia — ou na água gelada de Hebra Falls, Hebra Headspring, Hebra Plunge e do River of the Dead."
+  ],
+  "obtaining": [
+    "Largar uma truta no chão de uma região de clima congelante, como as Cordilheiras de Hebra ou o Monte Lanayru.",
+    "Jogar uma truta na água gelada (Cold Water), como a de Hebra Plunge ou a do River of the Dead.",
+    "Acertar uma truta com uma Flecha congelante ou com Espada álgida, Grã-Espada álgida ou Lança congelante."
+  ],
+  "uses": [
+    "Refresco rápido para o calor diurno do Deserto Gerudo.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Recupera 1 coração.",
+    "Resistência ao calor de nível 1 (baixo) por 1 minuto."
+  ],
+  "interactions": [
+    {
+      "action": "frio_extremo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: basta largar uma truta (Truta glacial, Truta rescaldada, Truta voltaica ou Truta discreta) no chão de uma região de clima congelante para que o ingrediente endureça e vire Truta congelada.",
+      "conditions": [
+        "Clima congelante: Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia (no pico nevado do Grande Platô) ou pontos altos como o topo do Castelo de Hyrule."
+      ],
+      "side_effects": [
+        "O mesmo frio fere Link aos poucos se ele não tiver Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Freezing Climate",
+        "zw:Mount Hylia"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Jogar uma truta (Truta glacial, Truta rescaldada, Truta voltaica ou Truta discreta) na água gelada (Cold Water) das regiões frias também congela o ingrediente, que vira Truta congelada.",
+      "conditions": [
+        "Água gelada, como a de Hebra Falls, Hebra Headspring e Hebra Plunge (Fronteira de Tabantha) e a do River of the Dead, no Grande Platô."
+      ],
+      "side_effects": [
+        "Não entre na água: nadar nela tira meio coração a cada 0,5 s, e nenhuma roupa ou comida protege."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cold Water",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingir uma truta (Truta glacial, Truta rescaldada, Truta voltaica ou Truta discreta) com uma Flecha congelante ou com golpes de Espada álgida, Grã-Espada álgida ou Lança congelante também produz Truta congelada.",
+      "applications": [
+        "Congelar a pesca ou a caça na hora, longe das regiões frias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1 coração — o mesmo de qualquer truta crua — e concede Resistência ao calor de nível 1 por 1 minuto.",
+      "side_effects": [
+        "Como todo efeito temporário de comida, a Resistência ao calor substitui qualquer outro efeito de comida ou elixir que estiver ativo — inclusive um efeito refrescante mais forte ou mais longo."
+      ],
+      "applications": [
+        "Proteção curta contra o calor diurno do Deserto Gerudo sem passar pela Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 10 rupias; cruas, a Truta glacial, a rescaldada e a voltaica valem 6, e a discreta, 10.",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Chillfin Trout",
+        "zw:Sizzlefin Trout",
+        "zw:Voltfin Trout",
+        "zw:Stealthfin Trout"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Truta congelada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece ao expor Truta congelada ao fogo (se descongela ou se vira a versão assada)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Até a truta \"quente\" refresca",
+      "text": "A Truta rescaldada dá Resistência ao frio na Panela, mas, congelada, vira a mesma Truta congelada das outras e passa a dar Resistência ao calor — o efeito de toda comida congelada.",
+      "sources": [
+        "zw",
+        "zw:Sizzlefin Trout",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Glacial: Panela ou gelo?",
+      "text": "A Truta glacial já é um ingrediente de Resistência ao calor na Panela, onde o efeito pode durar mais e subir de nível. Congelada, o efeito é sempre de nível 1 e dura só um minuto.",
+      "sources": [
+        "zw:Chillfin Trout",
+        "zw:Food",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível 1 e só contra o calor do deserto",
+      "text": "Toda comida congelada dá um nível de Resistência ao calor por um minuto. Esse efeito evita o dano do calor do Deserto Gerudo de dia, mas as zonas de calor extremo do sul e do oeste do deserto pedem dois níveis, e ele não ajuda contra o clima escaldante, o fogo ou a lava de Eldin.",
+      "sources": [
+        "zw:Food",
+        "zw:Frozen Food",
+        "zw:Added Effect",
+        "zw:Extremely Hot Zone",
+        "zw:Heat"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Dá só Resistência ao calor de nível 1: não basta para as zonas de calor extremo do sul e do oeste do Deserto Gerudo, que exigem nível 2.",
+    "Não serve para Eldin: Resistência ao calor não protege do clima escaldante, do fogo nem da lava — para isso é preciso Proteção contra chamas.",
+    "Comer durante outro efeito temporário (ataque, defesa, um Elixir refrescante etc.) troca esse efeito pela Resistência ao calor de 1 minuto."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_chillfin_trout",
+      "relation": "Ingrediente cru (Resistência ao calor na Panela)"
+    },
+    {
+      "id": "botw_creature_sizzlefin_trout",
+      "relation": "Ingrediente cru (Resistência ao frio na Panela)"
+    },
+    {
+      "id": "botw_creature_voltfin_trout",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_stealthfin_trout",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_roasted_trout",
+      "relation": "Versão assada das mesmas trutas"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Congela o ingrediente cru à distância"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Resistência ao calor mais longa e mais forte"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_calor"
+  ],
+  "verification_status": "verificado"
+}

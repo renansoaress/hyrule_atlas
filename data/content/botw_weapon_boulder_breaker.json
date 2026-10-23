@@ -1,0 +1,143 @@
+{
+  "id": "botw_weapon_boulder_breaker",
+  "summary": "A marreta do Campeão Daruk (ataque 60, durabilidade 60), prêmio de Bludo após Vah Rudania. Quebra depósitos de minério num golpe, dobra o dano nos Tálus e Rohan a refaz se for perdida.",
+  "description": "O Racha-Rocha é a arma de duas mãos que pertenceu a Daruk, o Campeão Goron, feita para ele por um ferreiro da Cidade Goron. O jogo diz que Daruk o girava com facilidade, enquanto um hyliano precisaria de uma força imensa. Bludo conta que Daruk abriu sozinho, numa única noite, o vale do Penhasco Gortram (Gortram Cliff) para facilitar o acesso dos Gorons ao Assado de rocha, e que há até o boato de que ele usava a marreta para se abanar.\n\nÉ a versão mais forte do Esmaga-Fraga e funciona como martelo: quebra depósitos de minério com um golpe, tem o dano dobrado nos pontos fracos dos Tálus e destrói Britas rochosas instantaneamente. Apesar de Bludo chamá-la de \"lâmina afiada\", não corta grama nem árvores. É metálica — conduz eletricidade, atrai raios, afunda e responde a Magnétis — e, como equipamento único, nunca recebe bônus aleatórios.",
+  "locations": [
+    "Baú na casa de Bludo, na Cidade Goron (Cânion de Eldin), liberado depois de acalmar a Fera Divina Vah Rudania."
+  ],
+  "obtaining": [
+    "Depois de apaziguar a Fera Divina Vah Rudania, Bludo deixa Link pegar o Racha-Rocha do baú em sua casa.",
+    "Se for perdido ou quebrar, o ferreiro Rohan, na Cidade Goron, faz outro em troca de um Esmaga-Fraga, cinco Sílex e um Diamante.",
+    "Rohan só aceita refazê-lo quando a arma não pode mais ser recuperada; se ela estiver caída em algum lugar, ele pede que Link procure."
+  ],
+  "uses": [
+    "Mineração: quebra depósitos de minério com um único golpe.",
+    "Combate contra Tálus: o dano nos pontos fracos (o depósito sobre o corpo) é dobrado.",
+    "Destrói Britas rochosas com um golpe, independentemente do dano."
+  ],
+  "effects": [
+    "Dano 2× nos pontos fracos dos Tálus (multiplicador oculto).",
+    "Quebra depósitos de minério com um golpe (propriedade de martelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e devastadores de duas mãos, sem escudo; o ataque carregado é o giro que consome vigor e termina numa pancada para baixo. O peso desequilibra inimigos com escudo. Por ser contundente, não corta grama nem árvores.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "side_effects": ["Depois de quebrar, só Rohan pode refazê-lo, e com custo de materiais."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ser usado em toda a região de Eldin, onde as armas de madeira queimam.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link for eletrocutado, a marreta voa para o chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante uma tempestade, faísca e atrai raios para Link.",
+      "applications": ["Desequipar ao ver faíscas ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-lo com Magnétis antes de pedir outro a Rohan — ele recusa enquanto a arma original for recuperável."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Tem dano 2× nos pontos fracos dos Tálus e destrói Britas rochosas instantaneamente.",
+      "applications": ["Subir no Tálus rochoso e martelar o depósito de minério nas costas."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Stone Pebblit"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Quebra depósitos de minério com um único golpe, como os demais martelos.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Weapon Parameters", "zw:Ore Deposit"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Nunca tem bônus",
+      "text": "Os parâmetros do Racha-Rocha trazem faixas de bônus (Ataque de +4 a +8 e Durabilidade de +6 a +11 no nível comum, por exemplo), mas ele está na lista de equipamentos únicos que nunca recebem bônus — inclusive a cópia refeita por Rohan.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O vale cavado numa noite",
+      "text": "Segundo Bludo, o vale do Penhasco Gortram, a sudoeste do Túnel Gorko, foi aberto por Daruk com o Racha-Rocha em uma única noite, para que os Gorons chegassem mais fácil ao Assado de rocha.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Lâmina afiada\" que não corta",
+      "text": "Ao entregar a arma, Bludo a descreve como uma lâmina afiada que Daruk empunhava. Na prática, o Racha-Rocha não age como arma de lâmina: não corta grama nem derruba árvores.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Daruk em ação",
+      "text": "Na memória extra \"Champion Daruk's Song\" (DLC), Daruk usa o Racha-Rocha para espantar um bando de Koboblins que importunava um cão Pastor hyliano.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para o golpe final de um Tálus rochoso, combine o dano 2× do ponto fraco com o acerto crítico do golpe de quebra — mas lembre que refazê-lo exige um Esmaga-Fraga, cinco Sílex e um Diamante."
+  ],
+  "limitations": [
+    "Não corta árvores nem grama.",
+    "Metálico: perigoso em tempestades.",
+    "Não recebe bônus aleatórios.",
+    "A reposição depende de Rohan e de materiais, e só quando o original não pode ser recuperado."
+  ],
+  "related": [
+    { "id": "botw_weapon_cobble_crusher", "relation": "Versão básica; necessária para Rohan refazer o Racha-Rocha" },
+    { "id": "botw_weapon_stone_smasher", "relation": "Outra marreta Goron" },
+    { "id": "botw_material_flint", "relation": "Cinco unidades para refazer a arma" },
+    { "id": "botw_material_diamond", "relation": "Uma unidade para refazer a arma" },
+    { "id": "botw_ability_daruks_protection", "relation": "Habilidade do mesmo Campeão" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Quebrado com um golpe" },
+    { "id": "botw_monster_stone_talus", "relation": "Recebe dano dobrado no ponto fraco" },
+    { "id": "botw_monster_stone_pebblit", "relation": "Destruída com um golpe" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

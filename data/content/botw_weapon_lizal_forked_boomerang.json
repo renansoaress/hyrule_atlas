@@ -1,0 +1,172 @@
+{
+  "id": "botw_weapon_lizal_forked_boomerang",
+  "summary": "Bumerangue Lagal de segundo nível, com uma lâmina a mais para cortar melhor, preferido pelos Lagalfos azuis. Volta quando arremessado — e fere Link se não for apanhado. Metálico, comum no Deserto Gerudo e em Tabantha.",
+  "description": "O Bimerangue Lagal pertence ao segundo nível do equipamento Lagalfos (Lizalfos Gear), que recebe metal adicional para ganhar durabilidade e poder de ataque. Segundo o jogo, tem uma lâmina a mais que o Bumerangue Lagal, para cortar melhor, e mesmo assim continua voltando quando é lançado. É a arma favorita dos Lagalfos azuis, mas também aparece com Lagalfos ígneos, glaciais e elétricos e até com Stallagalfos, sendo comum nos acampamentos de Lagalfos do Deserto Gerudo e da Fronteira de Tabantha.\n\nArremessado, não quebra no impacto e retorna; Link deve apanhá-lo antes que o acerte. Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser recuperado com Magnétis, sem queimar no fogo ou em clima escaldante.",
+  "locations": [
+    "Deserto Gerudo e Fronteira de Tabantha, em acampamentos de Lagalfos."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos azuis (os principais portadores) ou outros Lagalfos e Stallagalfos que o empunhem.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Ataque à distância reutilizável com dano 24.",
+    "Espada curva de uma mão no corpo a corpo."
+  ],
+  "effects": [
+    "Arremessado, volta para Link em vez de quebrar no impacto."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "No corpo a corpo, funciona como arma de uma mão: velocidade média, ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado, retorna como bumerangue sem quebrar ao atingir o inimigo.",
+      "conditions": [
+        "Apanhar a arma na volta."
+      ],
+      "side_effects": [
+        "Se não for apanhado, pode atingir o próprio Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lizalfos Gear",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ele na mão, a arma voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Atrai raios: é perigoso mantê-lo equipado durante tempestades.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda quando cai na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Arma favorita dos Lagalfos azuis; também é usado por alguns Lagalfos ígneos, glaciais e elétricos e por Stallagalfos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Stalizalfos",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o bimerangue pode surgir com bônus de ataque de +3 a +6 (nível comum) ou +7 a +11 (nível dourado) e bônus de durabilidade de +3 a +5 (ou +6 a +12 no nível dourado). O multiplicador de lançamento longo fica em 1×, então esse bônus não aumenta o alcance. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Divergência na durabilidade",
+      "text": "O compendium, a tabela de armas e os parâmetros de item dão durabilidade 25, mas o parâmetro interno Life extraído do jogo vale 23. As fontes não explicam a diferença.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lizalfos Gear"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não apanhado, pode ferir o próprio Link.",
+    "Metálico: perigoso em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lizal_boomerang",
+      "relation": "Primeiro nível"
+    },
+    {
+      "id": "botw_weapon_lizal_tri_boomerang",
+      "relation": "Terceiro nível"
+    },
+    {
+      "id": "botw_weapon_enhanced_lizal_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_shield_reinforced_lizal_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_blue_lizalfos",
+      "relation": "Portador preferido"
+    },
+    {
+      "id": "botw_monster_stalizalfos",
+      "relation": "Também pode empunhá-lo"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "a_verificar"
+}

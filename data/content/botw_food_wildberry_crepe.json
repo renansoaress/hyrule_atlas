@@ -1,0 +1,93 @@
+{
+  "id": "botw_food_wildberry_crepe",
+  "summary": "Crepe de Framboesa, Leite fresco, Cana-de-açúcar, Trigo de Tabantha e Ovo. Não tem efeito nem variações, mas tem o maior bônus de cura de receita do jogo: 4 corações.",
+  "description": "O Crepe de framboesa exige cinco ingredientes: Framboesa, Leite fresco, Cana-de-açúcar, Trigo de Tabantha e Ovo. O inventário descreve framboesas doces e azedinhas dobradas numa massa fina e elástica. Como todos os ingredientes são neutros e a panela fica cheia, não existem variações — o crepe nunca tem efeito.\n\nO que o torna especial é a cura: a tabela de bônus de receitas do Zelda Wiki dá ao Crepe de framboesa 4 corações a mais do que a soma dos ingredientes, o maior bônus entre todas as receitas (a Paella de frutos do mar ganha 2). Além disso, a Cana-de-açúcar eleva para 30% a chance extra de bônus crítico, e, num prato sem efeito, o crítico só pode render 3 corações a mais. A receita é testada antes do Crepe de mel e do Crepe simples.",
+  "obtaining": [
+    "Cozinhar numa Panela Framboesa, Leite fresco, Cana-de-açúcar, Trigo de Tabantha e Ovo."
+  ],
+  "uses": [
+    "Cura alta sem efeito, graças ao bônus da receita.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações, com 4 corações de bônus próprios da receita.",
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações, sem efeito; a receita soma 4 corações à cura dos ingredientes.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "mel no lugar da framboesa",
+      "status": "confirmado",
+      "result": "Com Mel de abelha no lugar da Framboesa, a mesma massa forma Crepe de mel.",
+      "produces": [
+        "botw_food_honey_crepe"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "A receita já ocupa os cinco espaços da panela, então o fator é sempre o máximo (2,8×)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O maior bônus de receita",
+      "text": "Entre as receitas com bônus próprio de cura listadas pelo Zelda Wiki — Crepe de framboesa (4), Paella de frutos do mar (2), Maçã quente na manteiga, Bolo de frutas e Crepe de mel (1 cada) e Leite quente puro (meio coração) —, o Crepe de framboesa é o que ganha mais.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Nunca tem efeito.",
+    "Ocupa os cinco espaços da panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_plain_crepe",
+      "relation": "Crepe sem fruta"
+    },
+    {
+      "id": "botw_food_honey_crepe",
+      "relation": "Crepe com Mel de abelha"
+    },
+    {
+      "id": "botw_food_seafood_paella",
+      "relation": "Outra receita com bônus próprio de cura"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório; aumenta a chance de crítico"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "botw_armorset_snowquill_set",
+  "summary": "Roupa contra o frio vendida na Vila dos Arás. Cada peça dá Resistência ao frio; em ★★ o conjunto impede que Link seja congelado e anula o dano de ataques de gelo.",
+  "description": "O Conjunto de pluma nevada é formado pelo Cocar de pluma nevada, pela Túnica de pluma nevada e pelas Calças de pluma nevada. As três peças são vendidas na loja Brazen Beak, na Vila dos Arás, por 2.150 rupias no total (1.000 pelo cocar, 600 pela túnica e 550 pelas calças).\n\nCada peça dá Resistência ao frio, efeito que impede o dano dos climas congelantes; algumas regiões exigem um nível mais alto. A página do conjunto afirma que as três peças somam nível 3, mas a lista de efeitos do Zelda Wiki indica que a Resistência ao frio tem teto no nível 2. Esse efeito não protege contra gelo, ataques de gelo nem água gelada.\n\nPara isso existe o bônus de conjunto: com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, Link ganha a Imunidade a congelamento (Unfreezable), que anula o dano de ataques de gelo e impede que ele seja congelado. O bônus continua sem proteger do clima congelante ou da água gelada, que ficam por conta da Resistência ao frio das peças. As melhorias usam Geleca ígnea, Erva geleira, Asa de Morci ígneo, Flamelo, Cauda de Lagalfos ígneo e Rubi. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Loja Brazen Beak, na Vila dos Arás."
+  ],
+  "obtaining": [
+    "Comprar na Brazen Beak: Cocar de pluma nevada por 1.000, Túnica de pluma nevada por 600 e Calças de pluma nevada por 550 rupias."
+  ],
+  "uses": [
+    "Explorar as regiões geladas sem perder corações pelo frio.",
+    "Em ★★, enfrentar inimigos de gelo sem ser congelado."
+  ],
+  "effects": [
+    "Cada peça: Resistência ao frio.",
+    "Bônus de conjunto (três peças em ★★): Imunidade a congelamento, sem dano de ataques de gelo e sem ser congelado."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As peças protegem do clima congelante; com as três em ★★, Link não é congelado e não sofre dano de ataques de gelo.",
+      "conditions": ["Para o bônus: cocar, túnica e calças de pluma nevada vestidos juntos, todos com ★★."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "A Resistência ao frio das peças impede o dano dos climas congelantes; algumas áreas pedem nível mais alto do efeito.",
+      "side_effects": ["Não protege da água gelada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Added Effect"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Com o conjunto em ★★, ataques de gelo não causam dano e Link não fica congelado. Sem o bônus, a Resistência ao frio não ajuda contra gelo.",
+      "conditions": ["Três peças com ★★ para a imunidade."],
+      "applications": ["Lutar contra inimigos que usam ataques de gelo sem ser imobilizado."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus", "zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Frio e gelo são coisas diferentes",
+      "text": "Resistência ao frio (das peças) só cobre o clima congelante; a Imunidade a congelamento (bônus em ★★) cobre ataques de gelo e congelamento. Nenhum dos dois protege da água gelada.",
+      "sources": ["zw:Added Effect", "zw:Set Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mesmo efeito do Elmo de Zant",
+      "text": "A Imunidade a congelamento do conjunto em ★★ é a mesma que o Elmo de Zant concede sozinho, como efeito de uma única peça.",
+      "sources": ["zw:Added Effect", "zw:Set Bonus"]
+    }
+  ],
+  "advanced_uses": [
+    "Em ★★, combine o conjunto com armas de fogo para enfrentar monstros de gelo sem risco de ficar congelado."
+  ],
+  "limitations": [
+    "Não protege contra água gelada.",
+    "A imunidade a congelamento exige as três peças em ★★."
+  ],
+  "related": [
+    { "id": "botw_armor_snowquill_headdress", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_snowquill_tunic", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_snowquill_trousers", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armor_zants_helmet", "relation": "Dá a mesma imunidade a congelamento sozinho" },
+    { "id": "botw_armor_warm_doublet", "relation": "Outra peça com Resistência ao frio" },
+    { "id": "botw_material_red_chuchu_jelly", "relation": "Material das primeiras melhorias" },
+    { "id": "botw_material_ruby", "relation": "Material da última melhoria" },
+    { "id": "botw_mechanic_ice", "relation": "O bônus impede o congelamento" },
+    { "id": "botw_mechanic_temperature", "relation": "Climas congelantes" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["protege_frio", "habilidade_especial"],
+  "verification_status": "verificado"
+}

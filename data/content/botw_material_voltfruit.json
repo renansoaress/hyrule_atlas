@@ -1,0 +1,152 @@
+{
+  "id": "botw_material_voltfruit",
+  "summary": "Fruta doce dos cactos do Deserto Gerudo, \"naturalmente isolada\": cozida, dá Resistência a choques. Crua cura meio coração; também é pedida na Sopa cremosa do coração e no 2º nível do Conjunto de borracha.",
+  "description": "A Fruta isolante nasce nos cactos do Deserto Gerudo. Segundo a descrição do jogo, ela é naturalmente isolante, e por isso os pratos de panela feitos com ela concedem Resistência a choques, que reduz o perigo dos ataques elétricos. Crua, recupera meio coração; exposta ao fogo, vira Fruta isolante assada (3/4 de coração), que dobra o valor de venda mas perde o efeito.\n\nAlém da culinária, é obrigatória na Sopa cremosa do coração, ao lado da Melancia oásica, e é usada nas Grandes Fadas: cada peça do Conjunto de borracha pede 5 Gelecas elétricas e 5 Frutas isolantes no segundo nível de melhoria. Pode ser comprada na barraca de frutas de Lorn, na Cidade Gerudo, cai às vezes de Rinoxes comuns e serve para o corante laranja na Tinturaria Kochi.",
+  "locations": [
+    "Cactos do Deserto Gerudo; o compendium cita também as Montanhas Gerudo.",
+    "Loja: Lorn's Fruit Stand, na Cidade Gerudo, por 16 rupias."
+  ],
+  "obtaining": [
+    "Colher nos cactos do deserto.",
+    "Rinoxes comuns podem deixá-la ao serem derrotados.",
+    "Comprar na barraca de Lorn."
+  ],
+  "uses": [
+    "Pratos de Resistência a choques.",
+    "Obrigatória na Sopa cremosa do coração (Melancia oásica, Fruta isolante, qualquer rabanete e Leite fresco).",
+    "Melhoria de armadura: 5 por peça (com 5 Gelecas elétricas) no 2º nível de Elmo de borracha, Armadura de borracha e Meia-calça de borracha.",
+    "Receitas de fruta genéricas (Compota de frutas, Torta de frutas, Frutas com mel, Bolo de frutas, Frutas no vapor, Mix de frutas e cogumelos).",
+    "Ingrediente do corante laranja na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Cozida: Resistência a choques."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão; junto a uma fogueira ou no clima escaldante de Eldin, assa sozinha.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma fruta largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Fruta isolante assada, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Resistência a choques."],
+      "applications": ["Vender: assada vale 8 rupias, o dobro da crua."],
+      "produces": ["botw_food_roasted_voltfruit"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Fruta isolante assada.",
+      "produces": ["botw_food_roasted_voltfruit"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, assa ao ser largada no chão.",
+      "produces": ["botw_food_roasted_voltfruit"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; frutas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Apesar de o jogo descrevê-la como isolante, as fontes não dizem o que acontece se a fruta largada for atingida por eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da fruta na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a fruta não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência a choques. Mais unidades prolongam o efeito; misturar com Aterramelos ou Ervas relampagueiras (mesmo efeito) prolonga e pode elevar o nível.",
+      "conditions": ["Na Sopa cremosa do coração, precisa estar junto de Melancia oásica, um rabanete e Leite fresco."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Shock Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera meio coração e não dá resistência.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 4 rupias; assada, vale 8.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A sopa para dividir",
+      "text": "A Sopa cremosa do coração, que exige Fruta isolante e Melancia oásica, é descrita como um prato que aproxima quem o compartilha.",
+      "sources": ["zw:Food in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fruta e borracha",
+      "text": "O Conjunto de borracha, que protege de choques, usa a Fruta isolante no segundo nível de melhoria: 5 frutas e 5 Gelecas elétricas por peça, ou 15 frutas para o conjunto inteiro.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Separe 15 Frutas isolantes antes de levar o Conjunto de borracha à Grande Fada para o segundo nível."
+  ],
+  "limitations": [
+    "Crua ou assada não dá Resistência a choques; só cozida."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_voltfruit", "relation": "Resultado de expor a fruta ao fogo" },
+    { "id": "botw_food_creamy_heart_soup", "relation": "Prato que exige Fruta isolante" },
+    { "id": "botw_material_hydromelon", "relation": "Também exigida na Sopa cremosa do coração" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Usa 5 frutas por peça no 2º nível de melhoria" },
+    { "id": "botw_material_yellow_chuchu_jelly", "relation": "Acompanha a fruta na melhoria do Conjunto de borracha" },
+    { "id": "botw_material_zapshroom", "relation": "Outro ingrediente de Resistência a choques" },
+    { "id": "botw_elixir_electro_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixá-la" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante laranja" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "protege_choque"],
+  "verification_status": "verificado"
+}

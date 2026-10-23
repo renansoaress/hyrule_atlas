@@ -1,0 +1,182 @@
+{
+  "id": "botw_material_opal",
+  "summary": "Gema iridescente que \"contém o poder da água\" — poder que só atua nas joias: 8 Opalas compram os Brincos de opala (natação mais rápida). Também melhora os conjuntos dos ventos e Zora.",
+  "description": "A Opala é descrita como um minério valioso com uma iridescência hipnótica, parecida com o interior de uma concha, que \"contém o poder da água\". Nenhuma fonte descreve uma reação mecânica da Opala solta à água ou a outro elemento: a associação com a água se concretiza nos Brincos de opala, vendidos pela Starlight Memories, na Cidade Gerudo, por 200 rupias e 8 Opalas, que dão o efeito Natação mais rápida. Ao contrário das Tiaras de rubi e safira e dos Brincos de topázio, esses brincos não estão entre as joias oferecidas por Isha como recompensa de \"Tools of the Trade\".\n\nÉ a segunda gema mais barata (60 rupias) e uma das mais comuns: sai de Depósitos de minério e de minério raro, de Tálus e Britas, de inimigos prateados e de Espadachins Yiga, e Kairo a vende na estrada entre o Foothill Stable e a Montanha da Morte. O cão do Wetland Stable leva a um baú enterrado com uma Opala. Somando todas as melhorias, são necessárias 151 Opalas: Brincos de opala, as três peças do Conjunto do herói dos ventos e o último nível das três peças do Conjunto Zora.",
+  "locations": [
+    "Depósitos de minério e Depósitos de minério raro em Toda Hyrule.",
+    "Baú enterrado perto do Wetland Stable, revelado pelo cão do estábulo."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de minério e Depósitos de minério raro (os destruídos só voltam após uma Lua de sangue).",
+    "Derrotar Tálus rochosos (comum, luminoso e raro), Tálus glaciais e ígneos, Britas rochosas, Koboblins, Moblins e Lagalfos prateados e Espadachins Yiga.",
+    "Comprar de Kairo, na estrada entre o Foothill Stable e a entrada da Montanha da Morte.",
+    "Alimentar três vezes o Pastor hyliano do Wetland Stable enquanto ele estiver feliz: ele leva Link a um baú com uma Opala."
+  ],
+  "uses": [
+    "Comprar os Brincos de opala na Starlight Memories: 8 Opalas e 200 rupias.",
+    "Melhorias na Fonte da Grande Fada: Brincos de opala (5, 8, 16 e 20 por nível), Gorro, Túnica e Calças do vento (1, 3, 5 e 10 por nível) e o 4º nível do Elmo, da Armadura e das Grevas Zora (15 cada) — 151 no total.",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 60 rupias; Ramella pode pedi-la em lotes de 10, pagando acima do preço de loja, quando a Opala for a gema sorteada."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregada; a Natação mais rápida vem dos Brincos de opala."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "joalheria",
+      "status": "confirmado",
+      "result": "Paga os Brincos de opala na Starlight Memories (8 Opalas e 200 rupias); a joia usa \"o poder da água\" da gema para aumentar a velocidade de natação.",
+      "conditions": [
+        "Starlight Memories reaberta pela missão \"Tools of the Trade\"."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Opal Earrings",
+        "zw:Starlight Memories"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; as fontes não descrevem reação ou uso especial da Opala solta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Apesar de o jogo dizer que a Opala \"contém o poder da água\", nenhuma fonte descreve uma reação dela à água (nem se afunda ou flutua). O poder só tem efeito através dos Brincos de opala."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma Opala largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Opala ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com uma Opala largada numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Opala ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Opala à eletricidade."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a Opala é uma gema.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma Opala largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita com Opala vira Comida dura como pedra (1/4 de coração, sem efeito).",
+      "produces": [
+        "botw_food_rock_hard_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Rock-Hard Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 60 rupias. Depois de \"The Jewel Trade\", Ramella, na Cidade Goron, compra lotes de 10 de uma gema sorteada por mais do que as lojas pagam.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Gem",
+        "zw:The Jewel Trade"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Poder temático, não reação",
+      "text": "O texto da Opala fala em \"poder da água\", e o dos Brincos de opala explica que a joia aproveita esse poder para acelerar a natação. Nenhuma fonte descreve a gema reagindo à água ou a outro elemento: o efeito existe apenas quando ela está engastada na joia.",
+      "sources": [
+        "jogo",
+        "zw:Opal Earrings"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Opala no faro do cão",
+      "text": "O Pastor hyliano do Wetland Stable, alimentado três vezes enquanto está feliz, leva Link a um baú enterrado que contém uma Opala.",
+      "sources": [
+        "zw:Hylian Retriever"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para levar os Brincos de opala ao nível máximo são precisas 57 Opalas (8 na compra e 49 nas melhorias), além de 12 Sílex."
+  ],
+  "limitations": [
+    "Os Brincos de opala não fazem parte das recompensas de \"Tools of the Trade\": precisam ser comprados.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_opal_earrings",
+      "relation": "Joia comprada e melhorada com Opalas"
+    },
+    {
+      "id": "botw_armor_cap_of_the_wind",
+      "relation": "Usa Opalas em todos os níveis de melhoria"
+    },
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Pede 15 Opalas no 4º nível"
+    },
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Conjunto cujas peças usam Opala no último nível"
+    },
+    {
+      "id": "botw_treasure_ore_deposit",
+      "relation": "Fonte comum de Opalas"
+    },
+    {
+      "id": "botw_creature_hylian_retriever",
+      "relation": "O cão do Wetland Stable leva a uma Opala"
+    },
+    {
+      "id": "botw_material_amber",
+      "relation": "Outra gema barata dos depósitos"
+    },
+    {
+      "id": "botw_food_rock_hard_food",
+      "relation": "Resultado de cozinhar com Opala"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo-claro"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

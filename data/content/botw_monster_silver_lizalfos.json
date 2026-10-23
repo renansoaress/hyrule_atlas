@@ -1,0 +1,147 @@
+{
+  "id": "botw_monster_silver_lizalfos",
+  "summary": "O Lagalfos mais forte do modo normal: 864 pontos de vida, as melhores armas Lagal e ataques de língua e jatos de água, inclusive de dentro d'água. Pode deixar pedras preciosas.",
+  "description": "Segundo o compendium, a magia maligna de Ganon tornou os Lagalfos prateados os mais fortes da espécie; o nome vem da cor e da raridade, e o padrão roxo os deixa ainda mais inconfundíveis. Superam os azuis e os pretos, com 864 pontos de vida, e carregam as variantes mais fortes das armas Lagal.\n\nAtacam com golpes de arma, jatos de água cuspidos e chicotadas com a língua, e são capazes de nadar e cuspir água em Link de dentro da água. Podem ser derrotados com qualquer arma ou arco. Além de Chifre, Garra e Cauda de Lagalfos, podem deixar pedras preciosas como Âmbar, Opala, Topázio, Rubi, Safira e Diamante. No Modo Mestre, ficam abaixo apenas dos Lagalfos dourados.",
+  "locations": [
+    "Sem local característico no compendium; aparece nos níveis altos da progressão de inimigos, perto da água ou em acampamentos."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre, Garra e Cauda de Lagalfos e pedras preciosas (Âmbar, Opala, Topázio, Rubi, Safira e Diamante).",
+    "Carrega as armas Lagal mais fortes.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de pedras preciosas e de armas Lagal de terceiro nível.",
+    "Registro no compendium (entrada nº 120)."
+  ],
+  "effects": [
+    "Golpes de arma, jatos de água e ataques com a língua."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser derrotado com qualquer arma, mas tem 864 pontos de vida e golpeia, cospe água e ataca com a língua.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Arcos funcionam contra ele; flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado; as armas Lagal metálicas não queimam.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o forçam a largar a arma; a resistência elétrica é exclusiva do Lagalfos dourado.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade", "zw:Golden Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Com armas Lagal metálicas, atrai raios em tempestades.",
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Nada e cospe água em Link a partir da água; não se afoga.",
+      "applications": ["Flechas eletrizantes disparadas na água atingem a área ao redor do impacto."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas causam dano.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar as bombas.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; suas armas metálicas largadas podem ser puxadas com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Lizalfos Gear"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se e embosca como os demais Lagalfos.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Lagalfos",
+      "status": "confirmado",
+      "result": "As máscaras de Lagalfos e de Majora fazem os Lagalfos ignorarem Link.",
+      "kind": "mecanica",
+      "sources": ["zw:Lizalfos Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Marca de raridade",
+      "text": "O compendium explica que \"prateado\" indica a cor e a raridade; o padrão roxo existe para torná-los ainda mais distintos.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pedras preciosas",
+      "text": "Como os outros monstros prateados, tem pedras preciosas na lista de espólios, do Âmbar ao Diamante.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Mantê-lo fora da água para que não use o rio ou o lago como base de tiro."
+  ],
+  "limitations": [
+    "Não se afoga.",
+    "Flecha ancestral o desintegra sem deixar as pedras preciosas."
+  ],
+  "related": [
+    { "id": "botw_monster_black_lizalfos", "relation": "Variante anterior" },
+    { "id": "botw_monster_golden_lizalfos_mm", "relation": "Variante superior do Modo Mestre" },
+    { "id": "botw_monster_lizalfos", "relation": "Forma básica" },
+    { "id": "botw_material_diamond", "relation": "Pedra preciosa que pode deixar" },
+    { "id": "botw_material_ruby", "relation": "Pedra preciosa que pode deixar" },
+    { "id": "botw_material_lizalfos_tail", "relation": "Parte de terceiro nível" },
+    { "id": "botw_weapon_lizal_tri_boomerang", "relation": "Arma Lagal de terceiro nível" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

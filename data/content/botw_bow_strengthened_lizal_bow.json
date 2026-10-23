@@ -1,0 +1,166 @@
+{
+  "id": "botw_bow_strengthened_lizal_bow",
+  "summary": "Arco Lagal com empunhadura de metal e corpo de uma árvore flexível que cresce perto da água (ataque 25, durabilidade 35). Apesar do metal, o jogo o trata como madeira: queima e não atrai raios.",
+  "description": "O Arco Lagal reforçado é a versão melhorada do Arco Lagal. A descrição do jogo explica que a empunhadura foi reforçada com metal e que o corpo é feito de galhos de uma árvore flexível que cresce perto da água, o que lhe dá um poder destrutivo considerável. É usado sobretudo por Lagalfos azuis na Fronteira de Tabantha e no Deserto Gerudo, e também pelos Lagalfos ígneos, glaciais e elétricos.\n\nO detalhe mais importante é que, apesar das peças metálicas, o jogo o considera uma arma de madeira: ele queima no fogo e no clima escaldante, flutua na água, não conduz eletricidade, não atrai raios e não pode ser pego com Magnétis. Nos parâmetros de disparo, é um arco de flecha única com trajetória reta de 20 m e velocidades padrão.",
+  "locations": [
+    "Fronteira de Tabantha e Deserto Gerudo (locais comuns segundo o compendium), com Lagalfos azuis e Lagalfos elementais."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos azuis ou elementais arqueiros e recolher o arco."
+  ],
+  "uses": [
+    "Arco de dano bom que pode ficar equipado em tempestades de raios."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros do jogo, a flecha percorre 20 m em linha reta antes de começar a cair (gravidade padrão de 9,8 m/s²), e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Por ser de madeira, pega fogo ao tocar chamas e, se continuar exposto, queima até se desfazer.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Metal na aparência, madeira para o jogo",
+      "text": "Embora tenha componentes metálicos, o Arco Lagal reforçado é tratado pelo jogo como arma de madeira: os parâmetros o marcam como inflamável, flutuante, não condutor e não magnético. Por isso ele queima em Eldin e não atrai raios.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco Lagal reforçado pode surgir com bônus de ataque de +3 a +6 (nível branco) ou de +7 a +10 (nível amarelo), e com bônus de durabilidade de +4 a +7 (branco) ou de +8 a +18 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Disparo múltiplo desligado nos dados",
+      "text": "Os parâmetros do Arco Lagal reforçado trazem LeadShotNum 3 (ângulo 13°) e RapidFireNum 2, mas os interruptores IsLeadShot e IsRapidFire estão desativados, e esses números só valem quando o interruptor correspondente está ligado. Na prática o arco dispara uma única flecha — a tabela de arcos do Zelda Wiki lista o ataque dele sem multiplicador.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Bows in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use-o no lugar de arcos de metal durante tempestades: tem ataque 25 sem risco de atrair raios."
+  ],
+  "limitations": [
+    "Queima no clima escaldante de Eldin, apesar da empunhadura de metal.",
+    "Magnétis não o detecta, mesmo com as partes metálicas."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_lizal_bow",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_bow_steel_lizal_bow",
+      "relation": "Versão de aço, de fato metálica"
+    },
+    {
+      "id": "botw_monster_blue_lizalfos",
+      "relation": "Monstro que costuma empunhá-lo"
+    },
+    {
+      "id": "botw_weapon_lizal_spear",
+      "relation": "Mesmo arquétipo (equipamento dos Lagalfos)"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua"
+  ],
+  "verification_status": "verificado"
+}

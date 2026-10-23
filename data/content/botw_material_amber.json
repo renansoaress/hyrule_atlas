@@ -1,0 +1,189 @@
+{
+  "id": "botw_material_amber",
+  "summary": "Resina fossilizada cor de caramelo, a gema mais comum e barata (30 rupias). É a base dos Brincos de âmbar, melhora o Conjunto do herói do tempo e o Conjunto hyliano e abre a missão de Ramella.",
+  "description": "O Âmbar é uma resina fossilizada que, segundo o jogo, é valorizada em decoração e artesanato desde tempos antigos. É a gema mais barata e mais frequente: cai dos Depósitos de minério (as gemas menos valiosas saem com mais frequência), de Tálus e Britas, de inimigos prateados e de Espadachins Yiga, aparece em baús e pode surgir de dentro de bolas de neve quando elas se desfazem. O mercador goron Kairo vende uma unidade por vez na estrada entre o Foothill Stable e a entrada da Montanha da Morte.\n\nNão há fonte que atribua ao Âmbar alguma reação a fogo, gelo ou eletricidade; sua utilidade é econômica e de equipamento. Na Starlight Memories, a joalheria da Cidade Gerudo, 10 Âmbares (mais 100 rupias) compram os Brincos de âmbar, que \"aproveitam o poder da terra\" para aumentar a defesa. Ele também é o gargalo das melhorias desses brincos, das três peças do Conjunto do herói do tempo e do quarto nível das peças do Conjunto hyliano. Em Cidade Goron, Ramella inicia a missão \"The Jewel Trade\" pedindo justamente 10 Âmbares, e paga 500 rupias por eles, contra 300 numa loja.",
+  "locations": [
+    "Depósitos de minério e Depósitos de minério raro em Toda Hyrule; bolas de neve da região de Hebra às vezes escondem uma unidade.",
+    "Baús do tesouro em várias regiões."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de minério: as gemas menos valiosas, como o Âmbar, são as que caem com mais frequência.",
+    "Derrotar Tálus rochosos (comum, luminoso e raro), Britas rochosas, glaciais e ígneas, Koboblins, Moblins e Lagalfos prateados e Espadachins Yiga.",
+    "Comprar de Kairo, na estrada entre o Foothill Stable e a entrada da Montanha da Morte.",
+    "Os depósitos destruídos voltam depois de cada Lua de sangue."
+  ],
+  "uses": [
+    "Comprar os Brincos de âmbar na Starlight Memories (Cidade Gerudo): 10 Âmbares e 100 rupias.",
+    "Melhorias na Fonte da Grande Fada: Brincos de âmbar (5, 10, 20 e 30 por nível), Gorro, Túnica e Calças do tempo (1, 3, 5 e 10 por nível) e o 4º nível do Capuz, da Túnica e das Calças hylianas (15 cada) — 167 unidades no total.",
+    "Missão secundária \"The Jewel Trade\": vender 10 Âmbares a Ramella, em Cidade Goron, por 500 rupias.",
+    "Ingrediente do corante laranja na Tinturaria Kochi.",
+    "Venda: 30 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregado; o bônus de defesa vem dos Brincos de âmbar feitos com ele."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "joalheria",
+      "status": "confirmado",
+      "result": "Faz parte do pagamento dos Brincos de âmbar na Starlight Memories: Isha pede 10 Âmbares e 100 rupias, porque as joias canalizam o poder das gemas e elas são difíceis de obter.",
+      "conditions": [
+        "Starlight Memories reaberta pela missão \"Tools of the Trade\"."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Starlight Memories"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado nas mãos e largado no chão; as fontes não descrevem nenhuma reação ou uso especial do Âmbar solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um Âmbar largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Âmbar ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um Âmbar largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Âmbar ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Âmbar à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Âmbar afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Âmbar é resina fossilizada.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um Âmbar largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Receitas com Âmbar viram Comida dura como pedra (1/4 de coração, sem efeito).",
+      "produces": [
+        "botw_food_rock_hard_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Rock-Hard Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 30 rupias numa loja. Ramella, em Cidade Goron, paga 500 rupias por um lote de 10 (contra 300 numa loja) e depois passa a comprar lotes de 10 de uma gema sorteada, sempre acima do preço normal.",
+      "conditions": [
+        "Ramella só aparece em Cidade Goron depois de Vah Rudania ser libertada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:The Jewel Trade",
+        "zw:Gem"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A primeira encomenda de Ramella",
+      "text": "A gerudo Ramella foi a Cidade Goron comprar gemas e, quando as erupções da Montanha da Morte cessam, começa pedindo 10 Âmbares. Concluída \"The Jewel Trade\", ela continua comprando lotes de 10 de uma gema que muda de tempos em tempos.",
+      "sources": [
+        "zw:The Jewel Trade"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"O poder da terra\"",
+      "text": "Cada joia Gerudo associa a gema a uma força: o Âmbar dos Brincos de âmbar \"aproveita o poder da terra\" para aumentar a defesa. É uma associação descritiva — o próprio Âmbar não tem efeito fora da joia.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde os Âmbares para quando Ramella os pedir: o lote de 10 rende 200 rupias a mais do que numa loja.",
+    "Quem pretende maximizar os Brincos de âmbar precisa de 75 Âmbares (10 na compra e 65 nas melhorias)."
+  ],
+  "limitations": [
+    "Preço de venda baixo (30 rupias) — a gema menos valiosa de Hyrule.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_amber_earrings",
+      "relation": "Joia comprada e melhorada com Âmbar"
+    },
+    {
+      "id": "botw_armor_cap_of_time",
+      "relation": "Usa Âmbar em todos os níveis de melhoria"
+    },
+    {
+      "id": "botw_armor_hylian_hood",
+      "relation": "Pede 15 Âmbares no 4º nível"
+    },
+    {
+      "id": "botw_treasure_ore_deposit",
+      "relation": "Fonte mais comum de Âmbar"
+    },
+    {
+      "id": "botw_monster_stone_talus",
+      "relation": "Pode deixar Âmbar ao ser derrotado"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Outra gema barata dos depósitos de minério"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Também exigido (3 por nível) nas melhorias dos Brincos de âmbar"
+    },
+    {
+      "id": "botw_food_rock_hard_food",
+      "relation": "Resultado de cozinhar com Âmbar"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante laranja"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,169 @@
+{
+  "id": "botw_material_moblin_horn",
+  "summary": "Chifre deixado por Moblins e Stalmoblins. Vale mais rupias que o de Koboblin (5), mas rende só 2 Mon; é o material de monstro do 1º nível do Conjunto antichamas.",
+  "description": "O Chifre de Moblin é descrito pelo jogo como um \"chifre esplêndido\" que crescia no alto da cabeça de um Moblin. Cai de todos os Moblins e também dos Stalmoblins. Não serve para receitas comuns; cozido com bichos, acrescenta 1:10 à duração do elixir, o mesmo que o Chifre de Koboblin.\n\nO uso mais importante está no Conjunto antichamas: cada peça precisa de 2 chifres, além de um Lagarto corta-fogo, para chegar ao 1º nível numa Fonte da Grande Fada. É a etapa inicial de uma sequência que continua com Presas e Vísceras de Moblin. Na Tinturaria Kochi, o chifre vira corante cinza.",
+  "locations": [
+    "Onde houver Moblins; à noite, Stalmoblins também o deixam."
+  ],
+  "obtaining": [
+    "Derrotar Moblins de qualquer cor ou Stalmoblins.",
+    "Os monstros voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Elixires: cozido com um bicho, acrescenta 1:10 à duração.",
+    "Melhoria de armadura: 2 por peça no 1º nível do Conjunto antichamas (junto com 1 Lagarto corta-fogo por peça) — 6 no total.",
+    "Corante cinza na Tinturaria Kochi.",
+    "Venda: 5 rupias, ou 2 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Chifre de Moblin no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Chifre de Moblin largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Chifre de Moblin queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Chifre de Moblin numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Chifre de Moblin a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Chifre de Moblin à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Chifre de Moblin flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Chifre de Moblin não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Chifre de Moblin largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 5 rupias em lojas e comerciantes, ou 2 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Mais rupias, menos Mon",
+      "text": "Entre os chifres, o de Moblin é vendido por mais rupias que o de Koboblin (5 contra 3), mas Kilton paga menos por ele (2 Mon contra 3). Quem junta Mon ganha mais trocando chifres de Koboblin.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Caminho até a proteção contra Dinraal",
+      "text": "O Zelda Wiki indica que o Conjunto antichamas completo melhorado duas vezes protege Link do fogo que envolve Dinraal. O chifre cobre o 1º desses dois níveis; o 2º pede Presas de Moblin.",
+      "sources": [
+        "zw",
+        "zw:Dinraal"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Seis chifres bastam para todas as melhorias. Proporcionalmente, o excedente rende mais vendido por rupias (5) do que trocado com Kilton (2 Mon) — o inverso do que acontece com o Chifre de Koboblin."
+  ],
+  "limitations": [
+    "Pouca utilidade além do 1º nível do Conjunto antichamas e do corante cinza.",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Monstro que o deixa"
+    },
+    {
+      "id": "botw_monster_stalmoblin",
+      "relation": "Versão esquelética que também o deixa"
+    },
+    {
+      "id": "botw_material_moblin_fang",
+      "relation": "Usado no nível seguinte do Conjunto antichamas"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Parte rara dos Moblins mais fortes"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Usa 2 chifres por peça no 1º nível"
+    },
+    {
+      "id": "botw_creature_fireproof_lizard",
+      "relation": "Acompanha o chifre na melhoria do 1º nível"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Chifre equivalente dos Koboblins"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

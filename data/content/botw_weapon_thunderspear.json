@@ -1,0 +1,233 @@
+{
+  "id": "botw_weapon_thunderspear",
+  "summary": "Lança mágica com o trovão do Thundra Plateau na ponta (ataque 22, durabilidade 50). Com a lâmina dourada, eletrocuta os inimigos; ironicamente, é de metal e atrai raios.",
+  "description": "A Lança voltaica guarda na ponta o trovão do Thundra Plateau e faz parte do equipamento mágico; segundo o Zelda Wiki, as armas de raio dessa série foram forjadas pela família real de Hyrule com relâmpagos dos Cerros de Hyrule e do Thundra Plateau. Quando a lâmina brilha com luz dourada, o ataque libera uma descarga que eletrocuta os inimigos. É encontrada nos Cerros de Hyrule e na Pradaria de Hyrule, sobretudo dentro do Castelo de Hyrule.\n\nComo as outras lanças elementais, tem reserva de energia de 5000 e gasta 1000 por ataque elétrico — cinco descargas com a carga cheia. Apesar do elemento, continua sendo uma arma de metal: conduz eletricidade, atrai raios se estiver equipada numa tempestade, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Cerros de Hyrule.",
+    "Pradaria de Hyrule, principalmente dentro do Castelo de Hyrule."
+  ],
+  "obtaining": [
+    "Encontrada nos Cerros de Hyrule e, na Pradaria de Hyrule, sobretudo no interior do Castelo de Hyrule.",
+    "A Lua de sangue repõe as armas largadas pelo mundo e as que estão nas mãos dos inimigos."
+  ],
+  "uses": [
+    "Eletrocutar inimigos com os ataques elementais.",
+    "Lança de metal forte e durável."
+  ],
+  "effects": [
+    "Com a lâmina brilhando em dourado, os ataques liberam uma descarga elétrica que eletrocuta o alvo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "ataque elemental",
+      "status": "confirmado",
+      "result": "Com a lâmina brilhando com luz dourada, as estocadas liberam um ataque elétrico que eletrocuta o inimigo. Com a reserva cheia (5000), a lança faz cinco ataques elétricos (1000 cada) antes de precisar recuperar energia.",
+      "conditions": [
+        "A lâmina precisa estar brilhando em dourado."
+      ],
+      "side_effects": [
+        "Sem o brilho, a lança causa apenas dano físico, como indica a descrição do jogo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Magic Gear",
+        "dm",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Eletrocuta os inimigos atingidos com a lâmina brilhando. Centaleões, porém, resistem a todos os ataques elementais e aos efeitos deles.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cinco descargas por carga",
+      "text": "Pelos parâmetros, a lança tem energia elemental máxima de 5000 e gasta 1000 por ataque elétrico — cinco descargas com a carga cheia —, com taxa de recuperação 50. A Espada faiscante, de uma mão, tem 4000 de energia (quatro descargas) e taxa 40.",
+      "sources": [
+        "dm",
+        "zw:Thunderblade"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A arma do raio que atrai raios",
+      "text": "Embora contenha o trovão do Thundra Plateau, a Lança voltaica é de metal e, equipada numa tempestade, atrai raios para Link como qualquer arma metálica. O Elmo do trovão é o que neutraliza o raio.",
+      "sources": [
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança voltaica pode surgir com um bônus branco (comum) — ataque +5 a +9, durabilidade +5 a +9 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +10 a +18, durabilidade +10 a +23 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de uma tempestade, troque-a por uma arma que não seja de metal: o elemento elétrico não a protege dos raios."
+  ],
+  "limitations": [
+    "Só eletrocuta quando a lâmina está brilhando.",
+    "Centaleões resistem ao choque.",
+    "Atrai raios em tempestades, apesar de ser uma arma elétrica."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_thunderblade",
+      "relation": "Espada elétrica do mesmo arquétipo (4 cargas)"
+    },
+    {
+      "id": "botw_weapon_great_thunderblade",
+      "relation": "Espada de duas mãos elétrica do mesmo arquétipo"
+    },
+    {
+      "id": "botw_weapon_flamespear",
+      "relation": "Lança elemental de fogo"
+    },
+    {
+      "id": "botw_weapon_frostspear",
+      "relation": "Lança elemental de gelo"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Neutraliza os raios atraídos pela lança"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Resiste ao choque da lança"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "gera_eletricidade",
+    "eletrocuta_inimigos",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

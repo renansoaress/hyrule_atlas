@@ -1,0 +1,216 @@
+{
+  "id": "botw_weapon_blizzard_rod",
+  "summary": "Versão superior da Varinha de gelo, carregada pelos Feitiçanos da nevasca. Cada golpe lança três rajadas de gelo que congelam inimigos, o ataque giratório dispara oito e ela concede um nível de resistência ao calor.",
+  "description": "O Cajado glacial é uma varinha mágica feita, segundo o jogo, de gelo refinado do cume do Pico Hebra. Funciona como a Varinha de gelo, porém mais forte: em vez de uma rajada, cada movimento produz três correntes de gelo que avançam em frente, e o ataque giratório solta oito disparos de uma vez em direções diferentes. A fonte principal de cajados são os Feitiçanos da nevasca, que o usam para soprar ar congelante e invocar Chulchuls glaciais e Morcis glaciais, e o deixam cair ao serem derrotados.\n\nComo toda varinha, quase não serve para bater: é frágil, quebra com facilidade se atingir diretamente objetos ou inimigos e também se desgasta pelo uso prolongado. Usada em excesso, perde temporariamente o poder mágico e precisa de um breve intervalo para recarregar. Não é de metal nem de madeira: não queima, não conduz eletricidade, não atrai raios, flutua e não responde a Magnétis.",
+  "locations": [
+    "Montanhas Gerudo e Cordilheiras de Hebra, regiões citadas pelo compendium.",
+    "Nas mãos dos Feitiçanos da nevasca, que o derrubam ao serem derrotados."
+  ],
+  "obtaining": [
+    "Derrotar um Feitiçano da nevasca: ele sempre deixa cair o cajado que usava.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Congelar inimigos à distância sem gastar flechas de gelo.",
+    "Missão secundária \"A Freezing Rod\": Kula, na Floresta Korok, aceita o Cajado glacial no lugar da Varinha de gelo e paga uma rupia dourada (pela Varinha de gelo ele dá uma rupia prateada).",
+    "Resistência ao calor de um nível enquanto equipado."
+  ],
+  "effects": [
+    "Três rajadas de gelo por golpe; oito no ataque giratório.",
+    "Um nível de resistência ao calor enquanto equipado (sem efeito contra o clima escaldante de Eldin)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe gera três correntes de gelo que avançam em linha reta; o ataque giratório carregado dispara oito rajadas ao redor de Link.",
+      "conditions": [
+        "A varinha precisa ter energia mágica; após uso excessivo, para de lançar gelo até recarregar."
+      ],
+      "side_effects": [
+        "Golpear diretamente objetos ou inimigos desgasta e quebra a varinha rapidamente."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "dm"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "O botão de arremesso não solta o cajado: Link mantém a varinha na mão e lança as três rajadas de gelo na direção do movimento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "As rajadas são ataques de gelo e congelam os inimigos atingidos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:A Freezing Rod",
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: pode ser usado perto de chamas e em clima escaldante sem queimar.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: não é feito de metal.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser manipulado com Magnétis: não é magnético.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos da nevasca empunham o cajado e o derrubam ao morrer.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Blizzrobe",
+        "zw:Wizzrobe"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "inimigos de fogo",
+      "status": "confirmado",
+      "result": "Ataques de gelo fazem um Feitiçano ígneo ou um Feitiçano meteórico evaporar na hora; Lagalfos ígneos também são vulneráveis ao gelo.",
+      "applications": [
+        "Eliminar Feitiçanos de fogo com uma única rajada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Wizzrobe",
+        "zw:Meteo Wizzrobe",
+        "zw:Lizalfos"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Energia mágica e recarga",
+      "text": "Nos parâmetros extraídos, a energia máxima do cajado é 400 e cada uso consome 100, ou seja, quatro usos seguidos antes de esgotar. A energia volta aos poucos (taxa de recuperação 10 a cada intervalo de 90, em unidades internas do jogo).",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Magia mais forte que o golpe",
+      "text": "O ataque físico do cajado é 10, mas o parâmetro de poder da magia (MagicPower) é 30, o triplo. A força do item está nas rajadas, não no contato direto.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o cajado pode surgir com bônus de ataque de +5 a +6 (nível comum) ou +7 a +16 (nível dourado) e bônus de durabilidade de +4 a +7 (ou +8 a +16 no nível dourado). O multiplicador de lançamento fica em 1×, então o bônus de lançamento longo não muda nada. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Contra um Feitiçano ígneo ou meteórico, uma rajada basta para evaporá-lo, poupando flechas de gelo.",
+    "Usar com moderação: depois de quatro disparos seguidos, a energia se esgota e é preciso esperar a recarga."
+  ],
+  "limitations": [
+    "Frágil: golpes diretos contra inimigos ou objetos gastam a durabilidade rapidamente.",
+    "A resistência ao calor não protege do clima escaldante (Montanha da Morte e arredores).",
+    "Quebra quando a durabilidade se esgota, inclusive só pelo uso das rajadas."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_ice_rod",
+      "relation": "Versão mais fraca"
+    },
+    {
+      "id": "botw_monster_blizzrobe",
+      "relation": "Monstro que o empunha e derruba"
+    },
+    {
+      "id": "botw_weapon_meteor_rod",
+      "relation": "Equivalente de fogo"
+    },
+    {
+      "id": "botw_weapon_thunderstorm_rod",
+      "relation": "Equivalente elétrico"
+    },
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Outra arma de gelo de uma mão"
+    },
+    {
+      "id": "botw_monster_fire_wizzrobe",
+      "relation": "Evapora com ataques de gelo"
+    },
+    {
+      "id": "botw_monster_meteo_wizzrobe",
+      "relation": "Evapora com ataques de gelo"
+    },
+    {
+      "id": "botw_mechanic_ice",
+      "relation": "Congelamento"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "congela_inimigos",
+    "protege_calor",
+    "flutua",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

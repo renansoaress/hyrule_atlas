@@ -1,0 +1,128 @@
+{
+  "id": "botw_monster_blizzrobe",
+  "summary": "Versão mais forte do Feitiçano glacial (300 pontos de vida): solta uma enorme rajada congelante com o Cajado glacial e provoca nevascas. Uma Flecha incendiária ou a Espada flamejante o evaporam instantaneamente.",
+  "description": "O Feitiçano da nevasca é a variante superior do Feitiçano glacial. Com o Cajado glacial, dispara uma enorme rajada de ar congelante e invoca monstros como Chulchuls glaciais e Morcis glaciais; também provoca nevascas que derrubam a temperatura da área, deixando-a fria demais para Link sem armadura ou elixir de resistência ao frio. O compendium cita a Pradaria de Hyrule e as Cordilheiras de Hebra como locais comuns e afirma que o clima volta ao normal quando ele é derrotado.\n\nFica invisível depois de atacar, deixando ondulações no ar a cada passo, e uma flecha na cabeça o atordoa. Ataques de fogo, como os de uma Flecha incendiária ou da Espada flamejante, o evaporam imediatamente; a explosão de uma Flecha explosiva também derrota instantaneamente inimigos de gelo. Tem 300 pontos de vida e deixa o Cajado glacial — feito, segundo sua descrição, de gelo refinado do cume do Pico de Hebra (Hebra Peak).",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra, segundo o compendium."
+  ],
+  "obtaining": [
+    "Deixa o Cajado glacial ao ser derrotado.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte do Cajado glacial: três rajadas de gelo por golpe, oito no ataque giratório e um nível de resistência ao calor.",
+    "O Cajado glacial completa a missão secundária \"A Freezing Rod\": Kula dá uma rupia dourada ao vê-lo.",
+    "Registro no compendium (entrada nº 101)."
+  ],
+  "effects": [
+    "Rajada congelante enorme; frio intenso na área durante a nevasca."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Ataques de fogo, como uma Flecha incendiária ou a Espada flamejante, o evaporam imediatamente.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Arrow"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de uma Flecha explosiva derrota instantaneamente inimigos de gelo.",
+      "kind": "mecanica",
+      "sources": ["zw:Bomb Arrow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha na cabeça o atordoa, abrindo espaço para atacar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Tem 300 pontos de vida e fica invisível após atacar, deixando ondulações a cada passo; o Cajado meteórico o mata com qualquer ataque.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Meteor Rod", "zw:Enemy"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques no Feitiçano da nevasca."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Feitiçano da nevasca com água."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "A morte instantânea por explosão é documentada para Flechas explosivas; não há confirmação para a Bomba remota."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo; nesse estado ficam imunes a fogo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Nem o Feitiçano nem o Cajado glacial são metálicos.",
+      "sources": ["zw:Magnesis", "zw:Blizzard Rod"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Provoca nevascas que reduzem a temperatura; o clima se normaliza quando ele é derrotado.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Invoca Chulchuls glaciais e Morcis glaciais.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Gelo do Pico de Hebra",
+      "text": "A descrição do Cajado glacial diz que ele é feito de gelo refinado encontrado no cume do Pico de Hebra (Hebra Peak).",
+      "sources": ["zw:Blizzard Rod"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rupia dourada de Kula",
+      "text": "Kula, na Floresta Korok, pede para ver uma varinha com o poder do gelo. A Varinha de gelo rende uma rupia prateada; o Cajado glacial deste Feitiçano rende uma rupia dourada.",
+      "sources": ["zw:Blizzard Rod", "zw:Ice Rod"]
+    }
+  ],
+  "advanced_uses": [
+    "Derrotar o Feitiçano da nevasca com uma Flecha incendiária e entregar o Cajado glacial a Kula pela rupia dourada."
+  ],
+  "limitations": [
+    "Na chuva, Flechas incendiárias não ateiam fogo e Flechas explosivas não explodem."
+  ],
+  "related": [
+    { "id": "botw_weapon_blizzard_rod", "relation": "Arma que deixa" },
+    { "id": "botw_monster_ice_wizzrobe", "relation": "Versão mais fraca" },
+    { "id": "botw_monster_meteo_wizzrobe", "relation": "Feitiçano forte do elemento oposto" },
+    { "id": "botw_monster_ice_chuchu", "relation": "Monstro que invoca" },
+    { "id": "botw_monster_ice_keese", "relation": "Monstro que invoca" },
+    { "id": "botw_arrow_fire_arrow", "relation": "Mata-o com um acerto" },
+    { "id": "botw_weapon_flameblade", "relation": "Arma de fogo que o evapora" }
+  ],
+  "capabilities": ["gera_gelo", "congela_inimigos", "reage_fogo", "vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "botw_keyitem_spirit_orb",
+  "summary": "Símbolo de coragem dado pelo monge de cada santuário concluído. Quatro orbes trocados numa Estátua da Deusa viram um Recipiente de coração ou de vigor: 120 orbes no jogo base, mais 4 da DLC.",
+  "description": "O Orbe espiritual é uma esfera translúcida com o brasão da deusa no centro, entregue pelos monges Sheikah ao fim de cada Santuário como \"símbolo de coragem\". Rezando diante de uma Estátua da Deusa com quatro orbes, Link escolhe entre um Recipiente de coração, que aumenta o medidor de vida, ou um Recipiente de vigor, que amplia o Medidor de vigor.\n\nO jogo base tem 120 orbes, o suficiente para 30 melhorias. A DLC The Champions' Ballad acrescenta mais quatro, vindos dos santuários que aparecem no Grande Platô durante \"EX The Champions' Ballad\", o que permite uma 31ª melhoria. O primeiro orbe tem um papel na história: é o \"tesouro\" do Santuário Oman Au que o Velho do Grande Platô pede em troca do Planador.\n\nExistem 20 Estátuas da Deusa em Hyrule, mas só 14 aceitam orações; no Templo do Tempo, apenas a estátua central funciona. Quem quiser redistribuir as escolhas pode usar a Estátua com chifres, em Hateno, que compra um recipiente por 100 rupias e o devolve por 120, como coração ou como vigor.",
+  "locations": [
+    "Recebido ao concluir cada Santuário, em toda Hyrule.",
+    "Usado nas Estátuas da Deusa dos povoados, do Templo do Tempo e de outros pontos."
+  ],
+  "obtaining": [
+    "Concluir Santuários: cada monge entrega um orbe (120 no jogo base).",
+    "Com a DLC The Champions' Ballad, mais quatro orbes nos santuários do Grande Platô de \"EX The Champions' Ballad\"."
+  ],
+  "uses": [
+    "Trocar quatro orbes por um Recipiente de coração ou um Recipiente de vigor numa Estátua da Deusa.",
+    "O primeiro orbe faz parte da troca do Velho pelo Planador."
+  ],
+  "effects": [
+    "A cada quatro orbes trocados: um Recipiente de coração (aumenta o medidor de vida) ou um Recipiente de vigor (aumenta o Medidor de vigor)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Rezando numa Estátua da Deusa com quatro orbes, Link escolhe um Recipiente de coração ou um Recipiente de vigor; os orbes são consumidos.",
+      "conditions": [
+        "Ter pelo menos quatro orbes.",
+        "Usar uma das estátuas que aceitam orações."
+      ],
+      "side_effects": [
+        "Sem orbes suficientes, a estátua apenas lembra Link de sua jornada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Goddess Statue"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "nao_aplicavel",
+      "result": "É item-chave; não é vendido. Recipientes já obtidos podem ser trocados por rupias apenas com a Estátua com chifres."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Redistribuir corações e vigor",
+      "text": "A Estátua com chifres de Hateno compra um Recipiente de coração ou de vigor por 100 rupias e devolve qualquer um dos dois por 120. Assim dá para converter corações em vigor e vice-versa, mas ela recusa reduzir Link abaixo de 3 corações ou de uma roda de vigor.",
+      "sources": [
+        "zw:Horned Statue"
+      ]
+    },
+    {
+      "kind": "glitch",
+      "title": "Travamento com 999.999 rupias",
+      "text": "Tentar vender um recipiente à Estátua com chifres tendo 999.999 rupias trava o jogo.",
+      "sources": [
+        "zw:Horned Statue"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Estátuas especiais",
+      "text": "A estátua de Vila Kakariko usa um babador vermelho, inspirado nas estátuas budistas de Ojizō-sama. Nas Fontes da Coragem, do Poder e da Sabedoria, as estátuas guardam santuários e pedem escamas de Dinraal, Farosh e Naydra antes de revelá-los.",
+      "sources": [
+        "zw:Goddess Statue"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Os santuários da DLC não dão o traje",
+      "text": "Os santuários da DLC, que rendem os quatro orbes extras, não entram na conta dos 120 santuários que liberam o Conjunto do herói selvagem.",
+      "sources": [
+        "zw",
+        "zw:A Gift from the Monks"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Priorize Recipientes de vigor se o objetivo for escalar e planar mais longe; depois, a Estátua com chifres permite rever a escolha pagando rupias."
+  ],
+  "limitations": [
+    "Só 14 das 20 Estátuas da Deusa aceitam orações.",
+    "A Estátua com chifres não deixa reduzir abaixo de 3 corações ou de uma roda de vigor."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_paraglider",
+      "relation": "O primeiro orbe é parte da troca do Velho"
+    },
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Recompensa por concluir os 120 santuários"
+    },
+    {
+      "id": "botw_mechanic_stamina",
+      "relation": "Recipientes de vigor ampliam o medidor"
+    },
+    {
+      "id": "botw_monster_dinraal",
+      "relation": "Escama exigida por uma das estátuas das fontes"
+    }
+  ],
+  "capabilities": [
+    "vigor",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

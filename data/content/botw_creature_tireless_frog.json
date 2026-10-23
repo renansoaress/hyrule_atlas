@@ -1,0 +1,130 @@
+{
+  "id": "botw_creature_tireless_frog",
+  "summary": "Sapo raro que só aparece na chuva, perto das lagoas da Grande Nascente de Lanayru e dos Cerros de Hyrule. É o único bicho do Elixir tenaz, que enche e ultrapassa o Medidor de vigor.",
+  "description": "O Sapo obstinado é um sapo raro que, segundo o próprio jogo, só sai quando chove. Fica perto das lagoas da Grande Nascente de Lanayru e dos Cerros de Hyrule e foge ao notar Link; para pegá-lo, Link pode se aproximar sorrateiramente, persegui-lo ou atordoá-lo com uma flecha ou uma Bomba remota. Quem não quiser esperar a chuva pode comprá-lo de Beedle ou do mercador ambulante Bugut, por 100 rupias.\n\nÉ o único bicho que produz o Elixir tenaz: cozido com uma parte de monstro, gera um elixir que restaura todo o vigor e ainda amplia temporariamente o Medidor de vigor (Vigor extra). Na tabela do Zelda Wiki, cada sapo acrescenta cerca de 1/5 de medidor de vigor temporário. Somar Cogumelo tenaz ou Cenoura tenaz faz o elixir também recuperar corações. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante carmesim.",
+  "locations": [
+    "Lagoas da Grande Nascente de Lanayru e dos Cerros de Hyrule, apenas durante a chuva."
+  ],
+  "obtaining": [
+    "Pegar à mão em dia de chuva: aproximar-se agachado, perseguir ou atordoá-lo com flecha ou Bomba remota.",
+    "Comprar de Beedle ou de Bugut por 100 rupias."
+  ],
+  "uses": [
+    "Elixir tenaz: cozinhar com pelo menos uma parte de monstro.",
+    "Ingrediente do corante carmesim na Tinturaria Kochi.",
+    "Venda: 20 rupias."
+  ],
+  "effects": [
+    "No elixir: restaura o vigor e acrescenta Vigor extra temporário (cerca de 1/5 de medidor por sapo)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima. Pode ser apanhado chegando sorrateiramente, perseguindo-o ou atordoando-o.",
+      "conditions": ["A chuva, condição para ele aparecer, também abafa os passos de Link."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frog", "zw:Stealth"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Só aparece enquanto chove.",
+      "applications": ["Visitar as lagoas da Grande Nascente de Lanayru ou dos Cerros de Hyrule em dias chuvosos."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Frog"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha atordoa o sapo, permitindo pegá-lo.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Frog"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota atordoa o sapo.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Frog"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um sapo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir tenaz, que restaura e ultrapassa o Medidor de vigor; o excedente some à medida que é usado.",
+      "applications": ["Somar Cogumelo tenaz ou Cenoura tenaz para que o elixir também cure."],
+      "produces": ["botw_elixir_enduring_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Enduring Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 20 rupias; Beedle e Bugut cobram 100.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o sapo exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o sapo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Vigor extra não se soma",
+      "text": "Assim como os Corações extras, o Vigor extra de pratos e elixires diferentes não se acumula: fica valendo o mais forte até o excedente ser gasto.",
+      "sources": ["zw:Food"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Chuva dupla vantagem",
+      "text": "A chuva é a única ocasião em que o sapo aparece e também é uma das condições que tornam os passos de Link mais difíceis de perceber, facilitando a aproximação.",
+      "sources": ["zw", "zw:Stealth"]
+    }
+  ],
+  "advanced_uses": [
+    "Vários sapos no mesmo Elixir tenaz ampliam o medidor de vigor temporário, útil para escaladas e nados longos."
+  ],
+  "limitations": [
+    "Só aparece na chuva; em tempo seco, é preciso comprá-lo.",
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "O efeito não tem duração: o vigor extra some conforme é gasto."
+  ],
+  "related": [
+    { "id": "botw_elixir_enduring_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_material_endura_shroom", "relation": "Ingrediente tenaz que faz o elixir curar" },
+    { "id": "botw_material_endura_carrot", "relation": "Ingrediente tenaz que faz o elixir curar" },
+    { "id": "botw_creature_hot_footed_frog", "relation": "O outro sapo de BOTW" },
+    { "id": "botw_mechanic_rain", "relation": "Só aparece durante a chuva" },
+    { "id": "botw_mechanic_stamina", "relation": "Amplia o Medidor de vigor" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante carmesim" }
+  ],
+  "capabilities": ["vigor"],
+  "verification_status": "verificado"
+}

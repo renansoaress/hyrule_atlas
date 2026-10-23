@@ -1,0 +1,147 @@
+{
+  "id": "botw_armor_barbarian_armor",
+  "summary": "Armadura de uma antiga tribo guerreira de Faron que aumenta o ataque. Fica no Santuário Dila Maag, no Labirinto de Lomei Sul; no conjunto em ★★, ataques carregados gastam metade do vigor.",
+  "description": "A Armadura bárbara forma o Conjunto bárbaro com o Elmo bárbaro e as Faixas de perna bárbaras. Ela está dentro do Santuário Dila Maag, no Labirinto de Lomei Sul (South Lomei Labyrinth); depois de obtida, Granté passa a vendê-la por 4.000 rupias na Vila de Nício (Tarrey Town). A descrição diz que a pintura de guerra fortalece o espírito de luta de quem a veste.\n\nVestida, concede um nível de Ataque aumentado (+20%; o efeito chega a +50% com três níveis, que é o teto). Com as três peças em ★★, ativa o bônus Ataque carregado econômico (Charge Atk. Stamina Up), que corta pela metade o vigor gasto em ataques carregados.\n\nA defesa vai de 3 a 20. Todas as melhorias usam partes de Centaleão — chifre, casco e vísceras — e a última pede ainda uma Lasca do chifre de Farosh, então caçar Centaleões é o gargalo. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Dila Maag, no Labirinto de Lomei Sul (South Lomei Labyrinth).",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Encontrar no Santuário Dila Maag, no Labirinto de Lomei Sul.",
+    "Comprar de Granté por 4.000 rupias, mas só depois de já tê-la obtido (ele não vende armaduras que Link nunca teve)."
+  ],
+  "uses": [
+    "Aumentar o dano de qualquer arma.",
+    "Completar o Conjunto bárbaro para economizar vigor em ataques carregados."
+  ],
+  "effects": [
+    "Ataque aumentado, nível 1 (+20%).",
+    "Bônus de conjunto (três peças em ★★): ataques carregados custam 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Ataque aumentado (+20%; +30% com dois níveis e +50% com três, o teto do efeito). Com o Elmo bárbaro, a Armadura bárbara e as Faixas de perna bárbaras vestidos, todos em ★★, ativa o bônus Ataque carregado econômico (Charge Atk. Stamina Up): ataques carregados gastam 50% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "applications": [
+        "Golpes carregados mais frequentes, como o giro contínuo das armas de duas mãos, sem esgotar o Medidor de vigor tão rápido."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Conjunto completo já atinge o teto de ataque",
+      "text": "Cada peça bárbara dá um nível de Ataque aumentado, e o efeito tem teto no nível 3 (+50%). Com as três peças vestidas, o conjunto sozinho já alcança esse máximo.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Reposição com Granté",
+      "text": "Granté vende armaduras que não teriam outra forma de reposição, como as encontradas em santuários, mas apenas as que Link já obteve. Por isso a Armadura bárbara só aparece no estoque dele depois da visita ao Labirinto de Lomei Sul.",
+      "sources": [
+        "zw:Grantéson",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto em ★★, o giro carregado das armas de duas mãos dura mais com o mesmo Medidor de vigor, e o Ataque aumentado nível 3 do conjunto eleva o dano de cada golpe em 50%."
+  ],
+  "limitations": [
+    "As quatro melhorias consomem partes de Centaleão em todos os níveis, além de uma Lasca do chifre de Farosh no último.",
+    "Defesa máxima de 20, menor que a de conjuntos sem efeito especial, como o do soldado."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_barbarian_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_barbarian_leg_wraps",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Material das duas últimas melhorias"
+    },
+    {
+      "id": "botw_material_shard_of_faroshs_horn",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Fonte de todos os materiais de melhoria"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

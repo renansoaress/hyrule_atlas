@@ -1,0 +1,157 @@
+{
+  "id": "botw_monster_golden_lynel_mm",
+  "summary": "Centaleão dourado, exclusivo do Modo Mestre (7.500 de vida): o compendium diz que é um Centaleão prateado transformado por um raio. Sua explosão de fogo causa 216 de dano e costuma matar com um só golpe.",
+  "description": "O Centaleão dourado é o topo da espécie e só existe no Modo Mestre (DLC 1). Segundo o compendium, seriam Centaleões prateados que se transformaram misteriosamente depois de serem atingidos por um raio, ganhando ainda mais força e vida — e a recomendação oficial é fugir ao ver um. O dano básico dele é o dobro do Centaleão prateado (60 mais o ataque da arma), e a explosão de fogo com que abre a luta causa 216 de dano: sem armadura forte e melhorada e sem um efeito de Defesa aumentada, ela mata Link de uma vez, mesmo com todos os corações. No Modo Mestre não existe a proteção que normalmente deixa Link com um quarto de coração após um golpe fatal.\n\nComo os outros Centaleões, encara Link antes de lutar e pode ser enganado por pouco tempo pela Máscara de Centaleão ou pela Máscara de Majora. De perto, golpeia com a arma e pisoteia; de longe, sopra fogo em três rajadas, investe para arremessar Link ou salta e crava a arma no chão, gerando uma onda de choque. Se Link estiver fora de alcance ou sacar o arco, troca para o Arco centaleônico Feroz e dispara saraivadas — inclusive para o alto, em chuva de flechas que atinge Link mesmo sob abrigo ou dentro de construções.\n\nQuase todos os ataques permitem Esquiva perfeita; as exceções são as explosões, as flechas e o pisoteio. Desviar de uma investida faz o Centaleão derrapar e demorar a se recuperar. Uma flecha na cabeça o derruba atordoado, momento em que Link pode montá-lo e dar até cinco golpes sem desgastar a arma. Ao morrer, deixa partes de Centaleão, Rubis, Safiras, Topázios, Diamantes e Fragmentos de estrela.",
+  "locations": [
+    "Apenas no Modo Mestre; o compendium não lista áreas fixas para ele.",
+    "O Centaleão das Ruínas do Coliseu (Coliseum Ruins), quando dourado, pode empunhar uma Espada flamejante com Defesa e Arco centaleônicos Ferozes."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Chifre, Casco e Vísceras de Centaleão, Rubi, Safira, Topázio, Diamante e Fragmento de estrela, além das armas Ferozes e de flechas.",
+    "Revive após cada Lua de sangue, como os demais inimigos."
+  ],
+  "uses": [
+    "Fonte de armas centaleônicas Ferozes no Modo Mestre.",
+    "Fonte de gemas raras e Fragmentos de estrela."
+  ],
+  "effects": [
+    "Explosão de fogo de 216 de dano ao iniciar a luta.",
+    "Sopro de fogo em três rajadas, investida, salto com onda de choque, golpes de arma, pisoteio e saraivadas de flechas (inclusive em arco, vindas do céu)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Tende a não atacar quem apenas passa pelo território, mas, se Link permanecer por perto, começa a luta com rugido e explosão de fogo. As máscaras de Centaleão e de Majora só enganam até ele observar Link por tempo demais ou ver Link sacar uma arma.",
+      "side_effects": ["A explosão de abertura pode matar Link num só golpe."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Os golpes funcionam, mas ele não é derrubado por eles, como todo Centaleão.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha na cabeça o faz cair temporariamente atordoado, abrindo a chance de montá-lo.",
+      "applications": ["Atordoar e montar para cinco golpes sem desgaste."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Resistente ao fogo e aos seus efeitos, como os Centaleões mais fracos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resistente ao gelo e ao congelamento.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resistente à eletricidade; a Fúria de Urbosa é a exceção citada para a espécie.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lynel"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre o Centaleão dourado na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre o monstro.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Atordoado por uma flecha na cabeça, pode ser montado para até cinco golpes com arma corpo a corpo, sem perda de durabilidade.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Durability"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Todos os ataques admitem Esquiva perfeita, exceto as explosões, as flechas do Arco centaleônico Feroz e o pisoteio. Desviar de uma investida faz ele derrapar e levar um tempo para se recompor.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "As flechas disparadas para o alto caem do céu e atingem Link mesmo sob abrigo ou dentro de construções. Se se afastar demais do território ou perder Link de vista, ele se teletransporta de volta ao ponto inicial.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Prateado atingido por um raio",
+      "text": "O compendium relata que os Centaleões dourados seriam Centaleões prateados transformados misteriosamente ao serem atingidos por um raio, e aconselha fugir o mais rápido possível ao avistar um.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Dano capaz de matar com um golpe",
+      "text": "O dano básico do Centaleão dourado é 60 mais o ataque da arma, o dobro do prateado, e a explosão de fogo causa 216 de dano. Como o Modo Mestre não tem a proteção contra morte instantânea, a explosão mata Link mesmo com o Medidor de corações cheio, a menos que ele use armadura forte e melhorada junto com Defesa aumentada.",
+      "sources": ["zw", "zw:Master Mode"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Regeneração do Modo Mestre",
+      "text": "No Modo Mestre, a maioria dos inimigos recupera vida com o tempo (até um limite). Contra um inimigo de 7.500 de vida, pausas longas devolvem parte do progresso.",
+      "sources": ["zw:Master Mode"]
+    }
+  ],
+  "advanced_uses": [
+    "Esquivar perfeitamente das investidas para fazê-lo derrapar e abrir contra-ataques.",
+    "Atirar na cabeça e montar repetidamente para concentrar dano sem gastar armas."
+  ],
+  "limitations": [
+    "Exclusivo do Modo Mestre (DLC 1).",
+    "Explosões, flechas e pisoteio não permitem Esquiva perfeita.",
+    "Abrigos não protegem da chuva de flechas."
+  ],
+  "related": [
+    { "id": "botw_monster_silver_lynel", "relation": "Forma que, segundo o compendium, se transforma nele" },
+    { "id": "botw_monster_lynel", "relation": "Regras gerais da espécie" },
+    { "id": "botw_mechanic_master_mode", "relation": "Modo em que aparece" },
+    { "id": "botw_bow_savage_lynel_bow", "relation": "Arco das saraivadas" },
+    { "id": "botw_weapon_flameblade", "relation": "Arma possível do exemplar das Ruínas do Coliseu" },
+    { "id": "botw_mechanic_perfect_dodge", "relation": "Principal defesa contra a maioria dos ataques" },
+    { "id": "botw_armor_lynel_mask", "relation": "Disfarce temporário" },
+    { "id": "botw_armor_majoras_mask", "relation": "Disfarce temporário" },
+    { "id": "botw_material_star_fragment", "relation": "Possível recompensa" },
+    { "id": "botw_material_diamond", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["gera_fogo", "gera_explosao", "montavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

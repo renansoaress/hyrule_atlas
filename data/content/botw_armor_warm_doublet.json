@@ -1,0 +1,150 @@
+{
+  "id": "botw_armor_warm_doublet",
+  "summary": "Pulôver grosso dos povos da montanha, presente do Velho no Grande Planalto, onde o Monte Hylia é gelado. Dá Resistência ao frio por 80 rupias em Hateno, mas não pode ser melhorado.",
+  "description": "O Gibão aquecido é a primeira proteção contra o frio do jogo. No Grande Planalto (Great Plateau), o Velho (Old Man) o entrega quando Link lhe leva o prato picante de carne e frutos do mar que ele pede (Spicy Meat and Seafood Fry), em sua cabana ou na Floresta dos Espíritos (Forest of Spirits), ou quando Link o encontra no Túmulo do Rei (King's Tomb), no alto do Monte Hylia — uma das regiões de clima congelante do jogo. Se Link deixar o planalto sem recebê-lo, um baú de pedra com o gibão aparece na cabana do Velho, acompanhado de um bilhete no diário dele. A peça também é vendida por 80 rupias na Ventest Clothing Boutique, na Vila Hateno.\n\nDá um nível de Resistência ao frio e 1 de defesa. Não pode ser melhorado por Grandes Fadas e não faz parte de nenhum conjunto, mas pode ser tingido na Tinturaria Kochi. A descrição o chama de pulôver quente usado pelos povos da montanha, com tecido resistente e luvas grossas que retêm o calor.",
+  "locations": [
+    "Grande Planalto: com o Velho (Old Man), na cabana dele, na Floresta dos Espíritos ou no Túmulo do Rei, no Monte Hylia.",
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Levar ao Velho o prato picante de carne e frutos do mar que ele pede, ou encontrá-lo no topo do Monte Hylia.",
+    "Se Link sair do Grande Planalto sem o gibão, abrir o baú de pedra que surge na cabana do Velho.",
+    "Comprar por 80 rupias na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Proteção contra o frio do Monte Hylia, das Cordilheiras de Hebra e de outros climas congelantes.",
+    "Peça barata de Resistência ao frio para combinar com outras."
+  ],
+  "effects": [
+    "Resistência ao frio, nível 1."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência ao frio. Não faz parte de nenhum conjunto.",
+      "sources": [
+        "zw",
+        "zw:Freezing Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Impede que Link perca vida no frio dos climas congelantes, como o Monte Hylia, as Cordilheiras de Hebra, o Monte Lanayru e as Montanhas Gerudo. Alguns lugares exigem o nível 2 do efeito, que precisa de uma segunda fonte (outra peça ou um prato picante).",
+      "side_effects": [
+        "Não protege da água gelada dessas regiões, que fere Link com qualquer roupa."
+      ],
+      "applications": [
+        "Subir o Monte Hylia no Grande Planalto sem depender de Pimentas de fogo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Freezing Climate",
+        "zw:Chill-Proof",
+        "zw:Temperature"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Resistência ao frio não reduz o dano de ataques de gelo nem impede o congelamento.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Primeiro nome: Quilted Shirt",
+      "text": "Na demonstração da E3 2016, a peça se chamava \"Quilted Shirt\" (camisa acolchoada).",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O Velho deixa o presente mesmo assim",
+      "text": "Quem sai do Grande Planalto sem ganhar o gibão encontra um baú de pedra na cabana do Velho com a peça e uma anotação no diário: \"deixei o gibão aquecido aqui como uma espécie de presente\".",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o gibão no torso e uma peça de pluma nevada na cabeça ou nas pernas, Link chega ao nível 2 de Resistência ao frio sem comprar o conjunto inteiro."
+  ],
+  "limitations": [
+    "Não pode ser melhorado: a defesa fica em 1.",
+    "Um só nível de Resistência ao frio não basta nos lugares mais gelados."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_snowquill_tunic",
+      "relation": "Peça de torso de Resistência ao frio que pode ser melhorada"
+    },
+    {
+      "id": "botw_armor_snowquill_trousers",
+      "relation": "Combina com o gibão para o nível 2"
+    },
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Alternativa consumível contra o frio"
+    },
+    {
+      "id": "botw_mechanic_temperature",
+      "relation": "Mecânica de temperatura"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Pode ser tingido"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "botw_food_prime_meat_stew",
+  "summary": "Carne de segunda ou Sobrecoxa cozidas lentamente com Trigo de Tabantha, Manteiga de cabra e Leite fresco. Só cabe um ingrediente extra, e Abóbora robusta ou Caramujo nutritivo mudam a receita.",
+  "description": "O Ensopado de carne de segunda leva Carne de segunda ou Sobrecoxa, Trigo de Tabantha, Manteiga de cabra e Leite fresco; segundo o inventário, deixar as porções generosas de carne nobre cozinhando devagar realça seu sabor. Com quatro ingredientes obrigatórios, a panela aceita só um quinto, que define a variante: um \"refrescante\" para Resistência ao calor, um \"tenaz\" para Vigor extra, e assim por diante.\n\nA escolha desse quinto ingrediente tem armadilhas, porque o jogo testa outros pratos com a mesma base cremosa antes dos ensopados de carne. Uma Abóbora robusta (o ingrediente \"blindado\" mais óbvio) transforma tudo em Ensopado de abóbora, e um Caramujo nutritivo transforma em Creme de mariscos; para Defesa aumentada ou Corações extras, prefira outros ingredientes, como Amaranto blindado ou Rabanete nutritivo. Carne de primeira ou Ave inteira na panela também mudam o prato para o Ensopado de carne de primeira.",
+  "obtaining": [
+    "Cozinhar numa Panela Carne de segunda ou Sobrecoxa, Trigo de Tabantha, Manteiga de cabra e Leite fresco; um quinto ingrediente é opcional."
+  ],
+  "uses": [
+    "Recuperar corações com carne de qualidade média.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com um quinto ingrediente de efeito: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na variante, aplica o efeito do quinto ingrediente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Abóbora robusta ou Caramujo nutritivo",
+      "status": "confirmado",
+      "result": "Com Abóbora robusta o resultado é Ensopado de abóbora; com Caramujo nutritivo, Creme de mariscos — as duas receitas são verificadas antes dos ensopados de carne.",
+      "produces": [
+        "botw_food_pumpkin_stew",
+        "botw_food_clam_chowder"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Carne de primeira ou Ave inteira",
+      "status": "confirmado",
+      "result": "Carne de primeira ou Ave inteira na panela produzem Ensopado de carne de primeira, testado antes deste.",
+      "produces": [
+        "botw_food_gourmet_meat_stew"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Texto ambíguo no wiki",
+      "text": "O texto da página do prato no Zelda Wiki diz que basta a carne com trigo, manteiga \"ou\" leite, mas a lista de ingredientes e a tabela de receitas do mesmo wiki exigem os três juntos.",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre.",
+    "Abóbora robusta, Caramujo nutritivo ou Extrato de monstro mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_bird_thigh",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_gourmet_meat_stew",
+      "relation": "Versão com Carne de primeira ou Ave inteira"
+    },
+    {
+      "id": "botw_food_meat_stew",
+      "relation": "Versão com Carne de terceira ou Coxa"
+    },
+    {
+      "id": "botw_food_pumpkin_stew",
+      "relation": "Receita com a mesma base que tem prioridade quando há Abóbora robusta"
+    },
+    {
+      "id": "botw_food_clam_chowder",
+      "relation": "Receita com a mesma base que tem prioridade quando há Caramujo nutritivo"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

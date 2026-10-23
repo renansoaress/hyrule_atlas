@@ -1,0 +1,157 @@
+{
+  "id": "botw_food_roasted_trout",
+  "summary": "Truta \"do rio para a mesa\", cozida de forma simples: carne macia e de sabor suave. Sai de qualquer das quatro trutas, cura 1,5 coração (crua, 1) e vale 9 rupias.",
+  "description": "As quatro trutas do jogo — glacial, rescaldada, voltaica e discreta — viram a mesma Truta assada quando expostas ao fogo ou ao clima escaldante de Eldin. O texto do jogo lembra que a truta é encontrada em toda Hyrule e, servida \"do rio para a mesa\", é cozida de forma simples, com carne macia e sabor suave.\n\nA cura sobe de 1 para 1,5 coração, mas desaparece o efeito que diferencia cada truta na Panela: Resistência ao calor, Resistência ao frio, Resistência a choques ou Furtividade aumentada. Na venda vale 9 rupias — lucro sobre as três trutas de 6 rupias, prejuízo sobre a Truta discreta, que vale 10 crua.",
+  "locations": [
+    "Prepara-se a partir de qualquer truta numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor uma truta ao fogo ou largá-la no chão em clima escaldante.",
+    "Derrotar um Rinox azul: 20% de chance, a segunda maior da tabela de comidas dele (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 9 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — qualquer truta (Truta glacial, Truta rescaldada, Truta voltaica ou Truta discreta) — queima por alguns instantes e se transforma em Truta assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Truta assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar qualquer truta (Truta glacial, Truta rescaldada, Truta voltaica ou Truta discreta) no chão para que o ingrediente asse sozinho e vire Truta assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração de qualquer truta crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 9 rupias; cruas, a Truta glacial, a rescaldada e a voltaica valem 6, e a discreta, 10.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Chillfin Trout",
+        "zw:Sizzlefin Trout",
+        "zw:Voltfin Trout",
+        "zw:Stealthfin Trout"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Truta assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quatro efeitos, um só assado",
+      "text": "Cada truta tem um efeito de Panela diferente (calor, frio, choque ou furtividade), mas todas assam no mesmo item sem efeito. Se precisar da resistência, cozinhe a truta crua.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Vice-campeã do Rinox azul",
+      "text": "Na tabela de comidas do Rinox azul, a Truta assada aparece em 20% das vezes, atrás apenas do Robalo assado (40%).",
+      "sources": [
+        "zw",
+        "zw:Blue Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Perde o efeito culinário da truta de origem."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_chillfin_trout",
+      "relation": "Ingrediente cru (Resistência ao calor na Panela)"
+    },
+    {
+      "id": "botw_creature_sizzlefin_trout",
+      "relation": "Ingrediente cru (Resistência ao frio na Panela)"
+    },
+    {
+      "id": "botw_creature_voltfin_trout",
+      "relation": "Ingrediente cru (Resistência a choques na Panela)"
+    },
+    {
+      "id": "botw_creature_stealthfin_trout",
+      "relation": "Ingrediente cru (Furtividade aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_trout",
+      "relation": "Versão congelada das mesmas trutas"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-la cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "botw_shield_ancient_shield",
+  "summary": "Escudo de tecnologia Sheikah criado por Robbie: desvia sozinho qualquer laser de Guardião (gastando durabilidade), surfa com muito pouco atrito e só é vendido no Forno ancestral de Akkala.",
+  "description": "O Escudo ancestral foi projetado por Robbie para dar ao Campeão Link uma defesa específica contra os lasers dos Guardiões. A superfície brilha em azul quando o escudo é erguido — e também quando ele está pendurado na parede da casa de Link. Sua função aprimorada desvia os lasers de Guardião sem que Link precise executar a Defesa perfeita; a diferença é que esse desvio automático consome durabilidade, enquanto a Defesa perfeita manual continua funcionando e não gasta nada.\n\nCom Defesa 70, empata com o Escudo da guarda real, mas tem durabilidade bem maior (32) e o desvio automático, além de superar o Escudo guardião 3.0 nos dois atributos. Fica atrás do Escudo hyliano em defesa e durabilidade; o Resplendor da aurora e o Escudo do herói defendem menos, porém duram mais. Pertence ao arquétipo do equipamento ancestral (Ancient Soldier Gear).\n\nPor ser de tecnologia ancestral, não queima, flutua, não é atraído por Magnétis, não conduz eletricidade e não atrai raios. Os parâmetros do jogo também o tornam um dos melhores escudos para surfar: perde velocidade muito devagar e se desgasta só 20% do normal.",
+  "locations": [
+    "Laboratório Ancestral de Akkala (Akkala Ancient Tech Lab), no Forno ancestral (Ancient Oven) — único lugar onde é fabricado."
+  ],
+  "obtaining": [
+    "Comprar no Forno ancestral depois de concluir a Missão secundária \"Robbie's Research\": custa 1.000 rupias, 10 Engrenagens ancestrais, 15 Molas ancestrais e 1 Núcleo ancestral gigante.",
+    "Se quebrar, basta pagar de novo o mesmo preço no Forno ancestral; não há outra fonte."
+  ],
+  "uses": [
+    "Enfrentar Guardiões: desvia os lasers automaticamente e ainda permite rebatê-los com Defesa perfeita.",
+    "Surfar com escudo com alta velocidade e pouco desgaste.",
+    "Escudo de defesa alta (70) para o meio e o fim do jogo."
+  ],
+  "effects": [
+    "A superfície emite energia ancestral azul quando o escudo é erguido.",
+    "Desvia lasers de Guardiões sem Defesa perfeita, ao custo de durabilidade."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia golpes normalmente; cada impacto bloqueado reduz a durabilidade. Uma Defesa perfeita não desgasta o escudo, desequilibra o inimigo e rebate projéteis.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "zw:Durability"]
+    },
+    {
+      "action": "defender",
+      "variant": "laser de Guardião",
+      "status": "confirmado",
+      "result": "Desvia automaticamente os lasers de qualquer tipo de Guardião só por estar erguido (MirrorLevel 2, o valor que abrange todos os feixes). O desvio automático custa durabilidade; uma Defesa perfeita no momento certo rebate o laser sem desgaste.",
+      "conditions": ["Escudo erguido diante do laser."],
+      "side_effects": ["Bloquear vários lasers sem Defesa perfeita pode quebrar o escudo."],
+      "applications": ["Avançar contra Guardiões persecutórios ou torretas mesmo sem dominar o tempo da Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "dm", "zw:Template:BotW Shield Parameters", "jogo"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ótimo para Surfar com escudo: o atrito é multiplicado por 0,15 e o desgaste por 0,2, ou seja, perde muito menos velocidade e durabilidade que um escudo comum.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar para subir no escudo."],
+      "side_effects": ["Em pedra o desgaste continua existindo, só que reduzido; em neve e areia não há desgaste."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters", "zw:Shield Surfing", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo: não é inflamável.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ser equipado na Montanha da Morte e no Cânion de Eldin sem queimar.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, mesmo equipado.",
+      "applications": ["Manter defesa alta em tempestades sem trocar de escudo."],
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantado com Magnétis.",
+      "sources": ["dm", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus previstos, mas nunca aplicados",
+      "text": "Os parâmetros do jogo trazem faixas de bônus (durabilidade +7 no nível branco e +8 a +16 no amarelo; Defesa +7 a +13 no branco e +14 a +26 no amarelo), mas, por ser vendido em loja, o Escudo ancestral nunca recebe Weapon Bonus na prática.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Resistência extra contra Guardiões",
+      "text": "Escudos de composição ancestral perdem menos durabilidade ao defender ataques vindos de Guardiões, o que compensa em parte o custo do desvio automático.",
+      "sources": ["zw:Shields in Breath of the Wild", "dm"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Pouco atrito: três escudos especiais",
+      "text": "O artigo do Zelda Wiki diz que o escudo tem \"80% menos atrito\" ao surfar e que só o Escudo da visão anímica e o Escudo luminescente compartilham essa característica. Nos parâmetros, o atrito real é 0,15 (o do luminescente é 0,1 e o da visão anímica 0,25); o valor 0,2 corresponde ao multiplicador de desgaste.",
+      "sources": ["zw", "dm", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Selmie não conhece",
+      "text": "A surfista Selmie, que comenta quase todo escudo que Link carrega, parece não conhecer os escudos ancestrais nem os guardiões.",
+      "sources": ["zw:Selmie"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar o desvio automático com Defesas perfeitas: quando o tempo for certo, rebater o laser sem gastar durabilidade; quando errar, o escudo desvia sozinho mesmo assim.",
+    "Usá-lo como prancha nas encostas longas de neve, onde não perde durabilidade e ganha muita velocidade pelo baixo atrito."
+  ],
+  "limitations": [
+    "Caro e dependente de partes ancestrais; o Núcleo ancestral gigante é o componente mais raro do preço.",
+    "O desvio automático consome durabilidade (32 no total).",
+    "Nunca vem com bônus."
+  ],
+  "related": [
+    { "id": "botw_weapon_ancient_short_sword", "relation": "Mesmo arquétipo (equipamento ancestral)" },
+    { "id": "botw_weapon_ancient_spear", "relation": "Mesmo arquétipo (equipamento ancestral)" },
+    { "id": "botw_weapon_ancient_bladesaw", "relation": "Mesmo arquétipo (equipamento ancestral)" },
+    { "id": "botw_bow_ancient_bow", "relation": "Mesmo arquétipo (equipamento ancestral)" },
+    { "id": "botw_material_giant_ancient_core", "relation": "Componente do preço no Forno ancestral" },
+    { "id": "botw_material_ancient_gear", "relation": "Componente do preço (10 unidades)" },
+    { "id": "botw_material_ancient_spring", "relation": "Componente do preço (15 unidades)" },
+    { "id": "botw_shield_guardian_shield_plus_plus", "relation": "Escudo guardião mais forte, superado pelo ancestral" },
+    { "id": "botw_shield_royal_guards_shield", "relation": "Mesma Defesa (70), mas bem menos durável" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Guardião cujos lasers o escudo desvia" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Rebate lasers sem desgastar o escudo" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Surfa com atrito e desgaste reduzidos" }
+  ],
+  "capabilities": ["reflete_laser", "flutua", "habilidade_especial"],
+  "verification_status": "verificado"
+}

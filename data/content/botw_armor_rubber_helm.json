@@ -1,0 +1,184 @@
+{
+  "id": "botw_armor_rubber_helm",
+  "summary": "Elmo de “borracha”, material que já não existe em Hyrule, dado por Cima no Lakeside Stable. Dá Resistência a choques nível 1; com o Conjunto de borracha ★★, Link fica imune a eletricidade e a raios.",
+  "description": "Segundo a descrição, o Elmo de borracha foi feito com técnicas ancestrais e um material resistente à eletricidade chamado “borracha”, que não se encontra mais. É a recompensa da missão secundária “Thunder Magnet”: no Lakeside Stable, Cima reclama que raios caem no estábulo toda vez que chove; Link encontra um Machado de lenhador de metal no telhado, atraindo as descargas, e ao removê-lo recebe o elmo. Depois disso, Granté passa a vendê-lo em Tarrey Town por 4.000 rupias.\n\nDá Resistência a choques nível 1 (−33% de dano elétrico), mas não reduz a explosão de um raio. Com a Armadura de borracha e a Meia-calça de borracha a ★★, o Conjunto de borracha ativa a Imunidade a choques (Unshockable): Link não sofre dano de eletricidade nem de raios e não é arremessado nem desarmado. A defesa vai de 3 a 20; as melhorias usam Gelecas elétricas, Frutas isolantes, Aterramelos, Caudas de Lagalfos elétrico (15 ao todo) e 10 Topázios no último nível. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Lakeside Stable (recompensa de Cima).",
+    "Loja de Granté, em Tarrey Town (reposição)."
+  ],
+  "obtaining": [
+    "Concluir a missão secundária “Thunder Magnet”: tirar o Machado de lenhador do telhado do Lakeside Stable e falar com Cima.",
+    "Depois, comprar de Granté por 4.000 rupias."
+  ],
+  "uses": [
+    "Reduzir dano elétrico.",
+    "Completar o Conjunto de borracha para ficar imune a eletricidade e a raios."
+  ],
+  "effects": [
+    "Resistência a choques nível 1 (−33%).",
+    "Bônus de conjunto Imunidade a choques com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo) e dá Resistência a choques nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "O dano elétrico cai 33%; no nível 1, Link ainda pode largar a arma ao ser eletrocutado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "Conjunto de borracha ★★",
+      "status": "confirmado",
+      "result": "Com as três peças a ★★, Link não sofre dano elétrico e não é arremessado nem desarmado.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Rubber Armor (Set)"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★. A Resistência a choques do elmo sozinho não reduz a explosão causada pelo raio.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "variant": "Conjunto de borracha ★★",
+      "status": "confirmado",
+      "result": "Com o conjunto completo a ★★, raios também deixam de causar dano a Link.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "side_effects": [
+        "Equipamentos metálicos continuam atraindo os raios; o bônus só anula o dano."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um ímã de raios no telhado",
+      "text": "Na missão “Thunder Magnet”, os raios caíam no Lakeside Stable por causa de um Machado de lenhador deixado no telhado — o metal atrai descargas nas tempestades. Cima se pergunta se alguém o colocou ali de propósito e, mesmo aliviada, continua odiando o barulho dos trovões.",
+      "sources": [
+        "zw:Thunder Magnet"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "As outras peças vêm de tempestades permanentes",
+      "text": "A Armadura de borracha fica no santuário Toh Yahsa, no Planalto Thundra, e a Meia-calça, no santuário Qukah Nata, no Lago Calora — dois lugares sob tempestade constante até que suas missões de santuário sejam resolvidas.",
+      "sources": [
+        "zw:Rubber Armor (Set)",
+        "zw:Thunderstorm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto ★★, Link pode lutar com armas de metal sob tempestade e enfrentar inimigos elétricos sem dano nem desarme, como faria com o Elmo do trovão."
+  ],
+  "limitations": [
+    "Sozinho, só reduz 33% do dano elétrico e não protege de raios.",
+    "A imunidade exige as três peças a ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_rubber_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_rubber_tights",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "Peça de cabeça imune a raios sem precisar de conjunto"
+    },
+    {
+      "id": "botw_armor_topaz_earrings",
+      "relation": "Outra peça de cabeça com Resistência a choques"
+    },
+    {
+      "id": "botw_material_yellow_lizalfos_tail",
+      "relation": "Material dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Tema da missão que dá o elmo"
+    },
+    {
+      "id": "botw_weapon_woodcutters_axe",
+      "relation": "O machado no telhado que atraía os raios"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_choque"
+  ],
+  "verification_status": "verificado"
+}

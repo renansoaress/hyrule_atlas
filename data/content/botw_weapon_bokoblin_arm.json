@@ -1,0 +1,166 @@
+{
+  "id": "botw_weapon_bokoblin_arm",
+  "summary": "Braço esquelético de Stalboblin que continua se mexendo depois de arrancado. Arma improvisada de ossos, muito frágil, mas que flutua, não queima e não conduz eletricidade — boa escolha em tempestades.",
+  "description": "O Braço de Koboblin é o braço solto de um Stalboblin, os esqueletos de Koboblin que saem da terra à noite. Quando um Stalboblin desmonta, os ossos rolam até um ponto comum para remontar o esqueleto; se Link pegar o braço, ele passa a servir como arma de uma mão e continua animado mesmo depois que o resto do esqueleto é destruído. A descrição do jogo resume bem: é meio nojento carregá-lo nas costas, mas quebra o galho numa emergência — e, por ser velho e frágil, quebra rápido.\n\nSendo de osso, comporta-se de forma diferente das armas de madeira e de metal: flutua na água, não pega fogo como a madeira, não conduz eletricidade e não atrai raios.",
+  "locations": [
+    "Toda Hyrule, à noite, onde surgem Stalboblins."
+  ],
+  "obtaining": [
+    "Derrubar um Stalboblin e pegar o braço solto antes que ele volte ao esqueleto, ou recolhê-lo depois de derrotar o monstro.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma de emergência noturna, quando não há nada melhor por perto.",
+    "Arma segura durante tempestades, pois não atrai raios."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Funciona como arma de uma mão comum (golpes de velocidade média, ataque giratório carregado, uso com escudo), mas quebra muito depressa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao atingir um inimigo, e esse golpe é crítico (dano dobrado).",
+      "applications": [
+        "Aproveitar um braço quase quebrado para um último golpe à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima como as armas de madeira.",
+      "side_effects": [
+        "O Stalboblin em si pega fogo inteiro se tocar uma chama, junto com qualquer arma de madeira que carregue."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Stalkoblin"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios; a fonte o recomenda para uso em tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, por ser de osso.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico e não responde a Magnétis.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Solto de um Stalboblin, o braço rola de volta para remontar o esqueleto; se Link o pegar, ele fica animado mesmo depois que o resto do Stalboblin é destruído.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stalkoblin",
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o braço pode surgir com bônus de ataque de +1 a +2 (nível comum) ou +3 a +5 (nível dourado), bônus de durabilidade de +1 a +3 (ou +4 a +5 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Arma que se mexe sozinha",
+      "text": "Mesmo separado do corpo, o braço continua se movendo por conta própria — detalhe citado tanto na descrição do item quanto no artigo do Zelda Wiki.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em noites de tempestade, trocar armas de metal pelo braço evita que raios caiam sobre Link."
+  ],
+  "limitations": [
+    "Durabilidade mínima (é velho e frágil).",
+    "Só aparece à noite, quando os Stalboblins estão ativos."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Monstro de onde vem o braço"
+    },
+    {
+      "id": "botw_weapon_lizalfos_arm",
+      "relation": "Equivalente dos Stallagalfos"
+    },
+    {
+      "id": "botw_weapon_moblin_arm",
+      "relation": "Equivalente dos Stalmoblins"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Os Stalboblins são restos de Koboblins"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Arma segura em tempestades"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,171 @@
+{
+  "id": "botw_armor_salvager_headwear",
+  "summary": "Capacete da colaboração com Xenoblade Chronicles 2 (versão 1.3.3), que cai com uma estrela cadente vermelha no Lago Hylia. Dá Natação mais rápida; o conjunto completo, sem melhorias, poupa vigor na arrancada a nado.",
+  "description": "O Capacete de mergulhador é o equipamento de um garoto que procura tesouros afundados no Mar de Nuvens, numa colaboração com Xenoblade Chronicles 2 incluída gratuitamente na versão 1.3.3. Depois de sair do Grande Planalto, a missão secundária “Xenoblade Chronicles 2” pede que Link encontre três estrelas cadentes vermelhas; para o capacete, é preciso olhar para o sul a partir do meio da Ponte de Hylia durante a noite. A estrela cai na margem sul do Lago Hylia e deixa um baú de metal que emite uma coluna de luz vermelha todas as noites até ser aberto.\n\nDá Natação mais rápida nível 1 (+30%) e 5 de defesa fixa; não pode ser melhorado nem tingido. Com o Colete e as Calças de mergulhador, as três peças somam Natação mais rápida nível 3 (+100%) e ativam, sem melhorias, a Economia de vigor na arrancada a nado (Swim Dash Stamina Up): a arrancada e o ataque giratório na água gastam 75% menos vigor. Depois de achado, Granté o vende por 50 rupias.",
+  "locations": [
+    "Margem sul do Lago Hylia, onde cai a estrela cadente vermelha vista do meio da Ponte de Hylia."
+  ],
+  "obtaining": [
+    "Missão secundária “Xenoblade Chronicles 2” (versão 1.3.3): à noite, olhar para o sul do meio da Ponte de Hylia e seguir a estrela vermelha até o baú.",
+    "Reposição: Granté o vende por 50 rupias depois da primeira obtenção."
+  ],
+  "uses": [
+    "Nadar mais rápido.",
+    "Completar o Conjunto de mergulhador para arrancadas a nado mais baratas."
+  ],
+  "effects": [
+    "Natação mais rápida nível 1 (+30%).",
+    "Conjunto completo (sem melhorias): −75% de vigor na arrancada a nado."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 5 de defesa fixa e dá Natação mais rápida nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto de mergulhador completo",
+      "status": "confirmado",
+      "result": "Com o Colete e as Calças de mergulhador, a natação fica 100% mais rápida (nível 3) e a arrancada a nado gasta 75% menos vigor.",
+      "conditions": [
+        "As três peças vestidas; não há melhoria a fazer."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Salvager Armor Set",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Enquanto nada, Link se move 30% mais rápido.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O baú não some",
+      "text": "O baú que cai com a estrela fica onde pousou até ser aberto e emite a coluna de luz vermelha todas as noites; durante o dia ele também pode ser aberto, mas sem a luz para guiar.",
+      "sources": [
+        "zw:Xenoblade Chronicles 2"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ativar a missão",
+      "text": "A missão começa ao carregar o mundo depois da atualização e da saída do Grande Planalto — por exemplo, teletransportando-se, recarregando o jogo, morrendo ou saindo de um santuário.",
+      "sources": [
+        "zw:Xenoblade Chronicles 2"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Salvagers do Mar de Nuvens",
+      "text": "Em Xenoblade Chronicles 2, “Salvagers” são as pessoas que recolhem tesouros afundados no Mar de Nuvens; o objetivo da missão convida Link a usar os três equipamentos “como um verdadeiro Salvager”.",
+      "sources": [
+        "zw:Xenoblade Chronicles 2"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O conjunto completo é a forma mais barata de chegar a Natação mais rápida nível 3 com economia de vigor, pois dispensa as melhorias que o Conjunto Zora exige para o bônus."
+  ],
+  "limitations": [
+    "Defesa fixa em 5; não pode ser melhorado nem tingido.",
+    "Sem o ataque giratório na água do Elmo Zora."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_salvager_armor_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_salvager_vest",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_salvager_trousers",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Peça de cabeça com o mesmo bônus de conjunto (★★)"
+    },
+    {
+      "id": "botw_armor_opal_earrings",
+      "relation": "Outra peça de cabeça com Natação mais rápida"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "Mecânica acelerada pelo efeito"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

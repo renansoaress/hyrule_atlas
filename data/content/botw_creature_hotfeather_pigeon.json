@@ -1,0 +1,125 @@
+{
+  "id": "botw_creature_hotfeather_pigeon",
+  "summary": "Pombo raro e vermelho dos arredores da Montanha da Morte. As penas são à prova de fogo e valiosas para roupas, mas a carne não: no clima escaldante, a Sobrecoxa que ele deixa assa.",
+  "description": "O Pombo rubro é uma raça rara de pombo que vive nas áreas em torno da Montanha da Morte, sobretudo no Cânion de Eldin e na Cordilheira de Eldin. É vermelho, com manchas laranja no peito e asas e cabeça cinza.\n\nAs penas dele são à prova de fogo e muito valorizadas como material para roupas. A carne, porém, não tem a mesma proteção: o compendium diz que ela queima assim que o pombo é atingido, e o Zelda Wiki explica que ela assa quando exposta ao clima escaldante. Abatido, deixa uma Sobrecoxa, que pode assar se ficar exposta ao calor da região vulcânica.",
+  "locations": [
+    "Cânion de Eldin e Cordilheira de Eldin (compendium), em volta da Montanha da Morte."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Sobrecoxa."
+  ],
+  "uses": [
+    "Fonte de Sobrecoxa (ou Sobrecoxa assada, no calor de Eldin).",
+    "Registrar sua foto no compendium (entrada nº 38)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge se vir Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Pigeon"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser caçado à distância; ao morrer, deixa uma Sobrecoxa.",
+      "conditions": [
+        "O jogo descreve o Arco de madeira como excelente para caçar animais pequenos."
+      ],
+      "side_effects": [
+        "No clima escaldante, arcos de madeira equipados pegam fogo; flechas disparadas ali também se incendeiam."
+      ],
+      "produces": [
+        "botw_material_raw_bird_thigh"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Pigeon",
+        "zw:Raw Bird Thigh",
+        "zw:Wooden Bow",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "A carne do Pombo rubro queima quando exposta ao clima escaldante; a Sobrecoxa em contato com esse calor vira Sobrecoxa assada.",
+      "produces": [
+        "botw_food_roasted_bird_thigh"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra o pombo, que foge ao ver Link."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As penas são à prova de fogo, mas as fontes não descrevem o que acontece se a ave viva for atingida por chamas."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Penas à prova de fogo, carne não",
+      "text": "O compendium faz questão de contrastar: as penas resistem ao fogo e são valiosas para roupas, mas a carne não é à prova de fogo e \"queima assim que ele é atingido\". Na região escaldante, materiais que tocam o chão assam, então a Sobrecoxa pode virar Sobrecoxa assada.",
+      "sources": [
+        "comp",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "limitations": [
+    "Raro; vive principalmente nos arredores da Montanha da Morte, onde Link precisa de proteção contra chamas nas áreas de clima escaldante."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_bird_thigh",
+      "relation": "Carne deixada ao ser abatido"
+    },
+    {
+      "id": "botw_food_roasted_bird_thigh",
+      "relation": "Resultado da carne exposta ao clima escaldante"
+    },
+    {
+      "id": "botw_creature_golden_sparrow",
+      "relation": "Outra ave de Eldin com penas resistentes ao fogo"
+    },
+    {
+      "id": "botw_creature_eldin_ostrich",
+      "relation": "Outra ave de Eldin resistente ao calor"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

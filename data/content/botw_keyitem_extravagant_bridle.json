@@ -1,0 +1,94 @@
+{
+  "id": "botw_keyitem_extravagant_bridle",
+  "summary": "Rédea festiva enfeitada com penas, prêmio de Blynne por terminar a corrida de obstáculos do Estábulo Highland entre 1min15s e 1min30s. Puramente cosmética.",
+  "description": "A Rédea extravagante faz parte do equipamento de montaria extravagante e, segundo a descrição do jogo, costuma ser usada em festivais: é decorada com pequenas penas e serve para dar \"um toque de cor\" a qualquer cavalo. É ganha na corrida de obstáculos de Blynne, no Estábulo Highland, que custa 20 rupias e exige saltar os dez obstáculos espalhados pela Planície Fural montado num cavalo registrado, sem desmontar.\n\nBlynne entrega a rédea quando Link termina o percurso entre 1min15s e 1min30s. Se Link já tiver a rédea, o prêmio dessa faixa vira uma Cenoura tenaz ou, se ele já carregar uma, uma rupia roxa (50 rupias). Bater o recorde de Blynne (1min15s) rende a Sela extravagante — e, se Link já tiver a sela, ele recebe a rédea no lugar dela.\n\nComo quase todo equipamento de montaria, a rédea não tem efeito nos atributos do cavalo. Ela é colocada por funcionários de quatro estábulos, apenas em cavalos com vínculo máximo, e não serve em Epona nem no Cavalo gigante.",
+  "locations": [
+    "Estábulo Highland, onde Blynne organiza a corrida de obstáculos na Planície Fural."
+  ],
+  "obtaining": [
+    "Completar a corrida de obstáculos de Blynne entre 1min15s e 1min30s, montado num cavalo registrado.",
+    "Também é entregue ao bater o recorde de 1min15s se Link já tiver a Sela extravagante."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Colocada no cavalo por um funcionário de estábulo, muda só a aparência dele.",
+      "conditions": [
+        "Falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": [
+        "Não pode ser colocada em Epona nem no Cavalo gigante."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Horse Gear"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": [
+        "zw:Horse Gear"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Regras da corrida",
+      "text": "Blynne só aceita cavalos registrados, recusa outras montarias e não organiza a corrida se estiver chovendo. É preciso saltar os dez obstáculos antes de cruzar a linha de chegada, e desmontar desclassifica. Abaixo de 2 minutos (mas acima de 1min30s), o prêmio é uma Cenoura veloz.",
+      "sources": [
+        "zw:Obstacle Course"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Ordem dos prêmios",
+      "text": "Quem bater o recorde primeiro ganha a sela; repetindo o recorde depois, ganha a rédea. Assim é possível conseguir as duas peças sem precisar acertar a faixa de 1min15s a 1min30s.",
+      "sources": [
+        "zw:Obstacle Course"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Blynne avisa que o difícil é controlar o cavalo, e não apenas correr o mais rápido possível; errar um salto obriga a voltar, porque a linha de chegada só vale depois dos dez obstáculos."
+  ],
+  "limitations": [
+    "Apenas cosmética.",
+    "A corrida não acontece na chuva."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_extravagant_saddle",
+      "relation": "Outra peça do equipamento extravagante"
+    },
+    {
+      "id": "botw_material_swift_carrot",
+      "relation": "Prêmio da faixa de 1min30s a 2min"
+    },
+    {
+      "id": "botw_material_endura_carrot",
+      "relation": "Prêmio substituto quando a rédea já foi obtida"
+    },
+    {
+      "id": "botw_creature_horse",
+      "relation": "Montaria que recebe a rédea"
+    },
+    {
+      "id": "botw_mechanic_stable",
+      "relation": "Onde a rédea é colocada"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,152 @@
+{
+  "id": "botw_food_seared_prime_steak",
+  "summary": "Carne de segunda selada na chama, perfeitamente dourada por fora e suculenta por dentro. Cura 2,25 corações (crua, 1,5), vale 24 rupias e é vendida pronta por Estan, na Cidade Gerudo.",
+  "description": "A Carne de segunda vira Bife de carne de segunda selado quando encosta no fogo ou fica no chão escaldante de Eldin. O texto do jogo descreve o bife como perfeitamente dourado por fora e de dar água na boca por dentro.\n\nA cura sobe de 1,5 para 2,25 corações e o valor de venda, de 15 para 24 rupias. Pronto, é vendido na barraca de Estan, na Cidade Gerudo, por 58 rupias, e o Rinox preto também pode deixá-lo cair. Congelada, a mesma carne vira Carne de segunda congelada, que vale mais (28 rupias) e refresca, mas cura só 1,5 coração.",
+  "locations": [
+    "Prepara-se a partir de Carne de segunda numa fogueira ou no chão escaldante de Eldin.",
+    "À venda na barraca de Estan, na Cidade Gerudo.",
+    "Entre os itens que o Rinox preto pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor Carne de segunda ao fogo ou largá-la no chão em clima escaldante.",
+    "Comprar na barraca de Estan, na Cidade Gerudo, por 58 rupias.",
+    "Derrotar um Rinox preto: 10% de chance na tabela de comidas dele (lote de 5 a 6)."
+  ],
+  "uses": [
+    "Cura de 2,25 corações.",
+    "Venda: 24 rupias."
+  ],
+  "effects": [
+    "Recupera 2,25 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Carne de segunda — queima por alguns instantes e se transforma em Bife de carne de segunda selado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Bife de carne de segunda selado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Carne de segunda no chão para que o ingrediente asse sozinho e vire Bife de carne de segunda selado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 2,25 corações, contra 1,5 coração da Carne de segunda crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 24 rupias; a Carne de segunda crua vale 15.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Raw Prime Meat"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Bife de carne de segunda selado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Selar ou congelar",
+      "text": "Da mesma Carne de segunda saem o bife selado (2,25 corações, 24 rupias) e a Carne de segunda congelada (1,5 coração, 28 rupias e Resistência ao calor por um minuto).",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "No cardápio do Rinox preto",
+      "text": "O Rinox preto deixa cair carnes assadas; o Bife de carne de segunda selado aparece com 10% de chance, igual à Sobrecoxa assada.",
+      "sources": [
+        "zw",
+        "zw:Black Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não concede efeitos."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_icy_prime_meat",
+      "relation": "Versão congelada da mesma carne"
+    },
+    {
+      "id": "botw_food_seared_steak",
+      "relation": "Bife da carne comum"
+    },
+    {
+      "id": "botw_food_seared_gourmet_steak",
+      "relation": "Bife da carne de primeira"
+    },
+    {
+      "id": "botw_monster_black_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

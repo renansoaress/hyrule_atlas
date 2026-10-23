@@ -1,0 +1,200 @@
+{
+  "id": "botw_creature_horse",
+  "summary": "Montaria principal de Link. Cada cavalo selvagem tem força, velocidade, vigor (esporas) e temperamento próprios; depois de domado, pode ser registrado num estábulo por 20 rupias e ganhar afeição com maçãs e cenouras.",
+  "description": "Os cavalos selvagens vivem em bandos nas planícies, principalmente na Pradaria de Hyrule e nos Prados de Faron. São ariscos: fogem quando notados e dão coice se percebem Link bem atrás deles, por isso a abordagem certa é agachado, por trás. Ao ser montado, o cavalo selvagem pula e tenta derrubar Link, que precisa acalmá-lo gastando vigor até que aceite o comando; o tempo dessa doma varia conforme os atributos do animal.\n\nCada cavalo nasce com valores aleatórios de força, velocidade e vigor, além de um temperamento. O vigor define quantas esporas (acelerações) ele tem. A pelagem dá uma pista do temperamento: segundo os gêmeos do Dueling Peaks Stable, cavalos malhados são dóceis e fáceis de treinar, e os de cor única são mais selvagens. Os melhores cavalos comuns, com os atributos mais altos, ficam em Upland Lindor, nos Cerros de Hyrule.\n\nDomado, o cavalo pode ser registrado em qualquer estábulo por 20 rupias, que incluem sela e rédea; a partir daí ele recebe nome, pode ser retirado em qualquer estábulo da rede e atende ao assobio. A afeição (de 0 a 100) cresce ao acalmá-lo e, mais rápido, ao alimentá-lo com maçãs, Cenouras tenazes ou Cenouras velozes. Cavalos registrados podem morrer, mas Malanya, o deus dos cavalos, consegue revivê-los.",
+  "locations": [
+    "Planícies de quase toda Hyrule; o compendium cita a Pradaria de Hyrule e os Prados de Faron como locais comuns.",
+    "Upland Lindor, nos Cerros de Hyrule: onde aparecem os cavalos comuns com os maiores valores de velocidade, vigor e força.",
+    "Bandos selvagens perto do Dueling Peaks Stable e do Gerudo Canyon Pass, usados em missões secundárias."
+  ],
+  "obtaining": [
+    "Aproximar-se agachado por trás de um cavalo selvagem e montá-lo (ou cair nas costas dele do alto), depois acalmá-lo até aceitar o comando.",
+    "Derrubar um Koboblin que esteja montado: o cavalo fica disponível sem precisar ser acalmado.",
+    "Registrar num estábulo por 20 rupias para guardá-lo e chamá-lo depois; cada pessoa pode manter até cinco cavalos registrados."
+  ],
+  "uses": [
+    "Transporte rápido pelas estradas e planícies; cavalos obedientes seguem os caminhos sozinhos.",
+    "Combate montado: galopando, atropela monstros menores; saltar do cavalo ativa a mira em câmera lenta do arco.",
+    "Missões secundárias \"Good-Sized Horse\" (vender um cavalo não registrado a Zyle por 300 rupias) e \"Wild Horses\" (levar um cavalo selvagem ao Dueling Peaks Stable em menos de dois minutos)."
+  ],
+  "effects": [
+    "Cada espora dá um impulso de velocidade; o número de esporas depende do atributo de vigor.",
+    "Comer uma Cenoura tenaz concede três esporas extras temporárias."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Cavalos selvagens se assustam e fogem ao notar Link. Se o perceberem bem atrás deles, dão coice.",
+      "conditions": ["Andar agachado e chegar por trás; furtividade ajuda."],
+      "side_effects": ["Ser notado logo atrás do cavalo resulta em coice."],
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "zw:Wild Horse"]
+    },
+    {
+      "action": "montar",
+      "variant": "cavalo selvagem",
+      "status": "confirmado",
+      "result": "O cavalo pula e tenta derrubar Link; é preciso acalmá-lo repetidamente até que aceite o comando. Segurar-se e acalmá-lo consome vigor.",
+      "conditions": ["Vigor suficiente para aguentar a doma; cavalos mais fortes ou selvagens exigem mais."],
+      "side_effects": ["Recém-domado, o cavalo ainda desobedece com frequência; a obediência melhora com o tempo de convivência."],
+      "applications": ["Cair do alto direto nas costas do cavalo também inicia a doma."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "montar",
+      "variant": "cavalo registrado",
+      "status": "confirmado",
+      "result": "Atende ao assobio se estiver por perto, aparece no mapa e pode ser retirado em qualquer estábulo. Pode ser montado de qualquer ângulo.",
+      "conditions": ["Estar registrado num estábulo."],
+      "applications": ["Deixar o cavalo seguir a estrada sozinho, sem conduzi-lo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stable", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar",
+      "status": "confirmado",
+      "result": "Maçãs, Cenouras tenazes e Cenouras velozes aumentam rapidamente a afeição. A Cenoura tenaz também dá três esporas extras.",
+      "conditions": ["Oferecer o alimento ao cavalo."],
+      "applications": ["Chegar à afeição máxima para que o cavalo deixe de se rebelar e possa trocar sela e rédea."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Endura Carrot"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cavalos sofrem dano e podem morrer — inclusive pelas mãos do próprio Link, situação que Malanya comenta ao revivê-los. Feridos, perdem parte das esporas (o ícone pisca em vermelho).",
+      "side_effects": ["Um cavalo registrado morto só volta com a ajuda de Malanya."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Malanya"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem especificamente o efeito de flechas em cavalos, além da regra geral de que cavalos podem ser feridos e mortos."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Um cavalo pode morrer numa explosão; Malanya reage com tristeza a esse tipo de morte ao revivê-lo.",
+      "kind": "curiosidade",
+      "sources": ["zw:Malanya"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Galopando, o cavalo atropela e fere inimigos. Koboblins também montam cavalos; derrubar o cavaleiro deixa o animal livre para Link sem doma. Cavalos tímidos se assustam e tentam desviar quando conduzidos em direção a monstros.",
+      "applications": ["Atropelar monstros pequenos em grupo.", "Roubar o cavalo de um Koboblin montado."],
+      "side_effects": ["Guardiões podem matar o cavalo; Malanya menciona esse caso."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks", "zw:Malanya"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o que acontece com um cavalo exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre cavalos."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis ou Estátis+ podem ser aplicadas a um cavalo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pelagem malhada x cor única",
+      "text": "Os gêmeos Shibo e Darton, do Dueling Peaks Stable, explicam que a cor indica o temperamento: cavalos malhados são dóceis e fáceis de treinar, enquanto os de cor única são mais selvagens e difíceis de domar — bons para quem já tem experiência.",
+      "sources": ["zw:Shibo", "zw:Darton"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Temperamento tímido e rebelde",
+      "text": "Alguns cavalos são naturalmente tímidos e tentam dar meia-volta quando levados para perto de monstros. Outros são rebeldes: forçar um cavalo pouco domado a acelerar costuma derrubar Link no chão.",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Acalmar na hora certa",
+      "text": "Acalmar o cavalo aumenta a afeição, mas Darton conta que, segundo o pai, acalmar o tempo todo não adianta: o certo é fazer isso quando o cavalo obedece ao que foi pedido.",
+      "sources": ["zw:Darton", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ficha completa só no estábulo",
+      "text": "Ao registrar, o estábulo mostra força, velocidade, vigor, temperamento e vínculo com Link. A taxa de 20 rupias financia a conservação e paga a sela e a rédea locais; o nome do cavalo pode ter até nove caracteres.",
+      "sources": ["zw:Stable"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Esporas extras da Cenoura tenaz",
+      "text": "A Cenoura tenaz acrescenta três esporas amarelas, marcadas com um ícone de cenoura. Elas só são usadas depois das esporas normais (e das extras da Rédea ancestral) e se perdem depois de gastas. A versão assada tem o mesmo efeito se o cavalo a comer do chão.",
+      "sources": ["zw:Endura Carrot"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ressurreição com Malanya",
+      "text": "Malanya, o deus dos cavalos, vive na Malanya Spring, em Faron. Para libertá-lo é preciso pagar 1.000 rupias; a primeira ressurreição é gratuita e as seguintes custam uma Cenoura tenaz cada. Só cavalos registrados podem ser revividos. O artigo geral sobre cavalos acrescenta que o cavalo precisaria ter afeição máxima, exigência que a página de Malanya não menciona.",
+      "sources": ["zw:Malanya", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sela e rédea só com afeição máxima",
+      "text": "Trocar sela, rédea ou crina só é possível com vínculo máximo e apenas em quatro estábulos (Highland, Outskirt, South Akkala e Woodland). Fora o conjunto ancestral, todos os equipamentos de montaria são apenas visuais.",
+      "sources": ["zw:Horse Gear"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O cavalo padrão de Link",
+      "text": "O cavalo das artes oficiais e trailers — castanho, crina e cascos pretos e uma lista branca no focinho — tem força 4 e vigor e velocidade 3. Ele surge automaticamente se Link não tiver registrado nenhum cavalo antes da luta contra Ganon, Besta Sombria.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cavalos que desviam de árvores",
+      "text": "Durante o desenvolvimento, a equipe cuidou especialmente do comportamento dos cavalos, ensinando-os a desviar de árvores no caminho.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma moto contada como cavalo",
+      "text": "O Corcel de Hyrule zero, motocicleta de tecnologia Sheikah, é classificado como cavalo por Konba se Link o usar no minijogo de corrida a pé.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Saltar do cavalo em movimento para mirar o arco em câmera lenta.",
+    "Levar Cenouras tenazes em viagens longas para ganhar três esporas extras quando o vigor do cavalo acabar.",
+    "Para a missão \"Wild Horses\", escolher um cavalo do bando mais próximo do Dueling Peaks Stable: o tempo limite é de dois minutos e não é possível se teletransportar durante a prova."
+  ],
+  "limitations": [
+    "No máximo cinco cavalos registrados ao mesmo tempo (é possível trocá-los nos estábulos).",
+    "Com afeição baixa, o cavalo empina, sai do trajeto e desobedece.",
+    "Galopando, não faz curvas fechadas.",
+    "Ferido, perde parte das esporas."
+  ],
+  "related": [
+    { "id": "botw_mechanic_stable", "relation": "Registro por 20 rupias, nome e rede de estábulos" },
+    { "id": "botw_material_apple", "relation": "Alimento que aumenta a afeição" },
+    { "id": "botw_material_endura_carrot", "relation": "Aumenta a afeição, dá três esporas extras e paga a ressurreição com Malanya" },
+    { "id": "botw_material_swift_carrot", "relation": "Alimento que aumenta a afeição" },
+    { "id": "botw_creature_giant_horse", "relation": "Cavalo especial com força 5 e nenhuma espora" },
+    { "id": "botw_creature_white_horse", "relation": "Cavalo especial com vigor 5" },
+    { "id": "botw_creature_epona", "relation": "Cavalo especial obtido por amiibo" },
+    { "id": "botw_creature_stalhorse", "relation": "Cavalo esquelético que não pode ser registrado" },
+    { "id": "botw_creature_lord_of_the_mountain", "relation": "Montaria espiritual de vigor ilimitado" },
+    { "id": "botw_keyitem_ancient_bridle", "relation": "Única rédea com efeito prático (esporas extras)" },
+    { "id": "botw_monster_bokoblin", "relation": "Monta cavalos; derrubá-lo libera o animal" },
+    { "id": "botw_monster_dark_beast_ganon", "relation": "Sem cavalo registrado, o cavalo padrão de Link surge nessa luta" },
+    { "id": "botw_rune_master_cycle_zero", "relation": "Classificado como cavalo por Konba no minijogo de corrida" }
+  ],
+  "capabilities": ["montavel", "velocidade", "habilidade_especial", "item_de_missao"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,161 @@
+{
+  "id": "botw_armor_lynel_mask",
+  "summary": "Máscara de Kilton tão bem-feita que engana um Centaleão de verdade — mas só por pouco tempo. Custa 999 Mon e aparece na Fang and Bone depois de libertar três Feras Divinas.",
+  "description": "Kilton conta que quase morreu nas mãos de um Centaleão enquanto desenhava a máscara — “um dos melhores momentos da minha vida”. A peça custa 999 Mon na Fang and Bone e só aparece depois que três Feras Divinas são libertadas. A própria descrição avisa: ela engana um Centaleão real, mas não convém ficar perto por muito tempo, porque “essas feras são espertas”.\n\nO efeito oculto Disfarce de Centaleão é temporário: os Centaleões não atacam de imediato, mas passam a atacar depois de pouco tempo, ou antes disso se Link mostrar agressividade, como brandir uma arma ou usar a Câmera. Como nos outros disfarces, se um inimigo não enganado começar a atacar, o disfarce cai. Link adota a pose de espera de um Centaleão e a máscara faz baixinho os sons do monstro. A defesa é fixa em 3, sem melhorias nem tingimento.",
+  "locations": [
+    "Fang and Bone, a loja noturna de Kilton (Skull Lake, no Coração de Akkala, e arredores dos principais povoados, das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 999 Mon depois de libertar três Feras Divinas."
+  ],
+  "uses": [
+    "Ganhar alguns segundos sem ser atacado ao atravessar o território de um Centaleão."
+  ],
+  "effects": [
+    "Disfarce de Centaleão (efeito oculto e temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa e ativa o Disfarce de Centaleão; Link adota a pose de espera de um Centaleão e a máscara emite sons baixos do monstro.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Centaleões demoram a atacar Link, mas o disfarce acaba depois de pouco tempo e eles partem para o ataque.",
+      "conditions": [
+        "Não brandir armas nem usar a Câmera perto deles, o que encerra o disfarce mais cedo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "jogo"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "outras espécies",
+      "status": "confirmado",
+      "result": "Outros inimigos atacam normalmente; se algum deles atacar Link, o disfarce também acaba para o Centaleão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A Câmera denuncia Link",
+      "text": "Tirar foto de um Centaleão enquanto disfarçado conta como agressão e faz o disfarce acabar antes do tempo, assim como brandir uma arma.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O melhor momento da vida de Kilton",
+      "text": "Ao apresentar a máscara, Kilton diz que, se fosse um monstro, seria um Centaleão, e confessa que quase foi morto por um enquanto a projetava — algo que considera um dos melhores momentos da vida dele.",
+      "sources": [
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use o intervalo do disfarce para passar por um Centaleão ou se posicionar antes da luta; o disfarce não dura o suficiente para ignorá-lo por completo."
+  ],
+  "limitations": [
+    "O disfarce é temporário: Centaleões acabam atacando.",
+    "Não engana outras espécies.",
+    "Defesa fixa em 3, sem melhorias nem tingimento."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Monstro enganado temporariamente"
+    },
+    {
+      "id": "botw_monster_white_maned_lynel",
+      "relation": "Variante de Centaleão"
+    },
+    {
+      "id": "botw_armor_lizalfos_mask",
+      "relation": "Máscara anterior da Fang and Bone (após duas Feras)"
+    },
+    {
+      "id": "botw_armor_dark_hood",
+      "relation": "Item seguinte da Fang and Bone (após as quatro Feras)"
+    },
+    {
+      "id": "botw_armor_majoras_mask",
+      "relation": "Inclui o mesmo disfarce, com a mesma limitação"
+    },
+    {
+      "id": "botw_rune_camera",
+      "relation": "Usá-la perto do Centaleão encerra o disfarce"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,162 @@
+{
+  "id": "botw_creature_patricia",
+  "summary": "Morsareia azul de laço vermelho que pertence a Riju, a chefe Gerudo. Funciona como oráculo: uma fruta deixada diante dela rende uma profecia traduzida por Padda — e framboesas rendem dicas especiais.",
+  "description": "Patrícia foi um presente da mãe de Riju, o primeiro e último que a jovem chefe recebeu dela. Riju a mima — o laço vermelho que ela usa foi presente seu — e Patrícia tem cercado próprio no pátio do palácio (Palace Courtyard), no canto sudoeste da Cidade Gerudo, onde a Gerudo Padda cuida dela. O compendium a descreve como muito mais ágil e extrovertida que as outras Morsareias, sempre pronta para cruzar o deserto com Riju; boa parte das frutas que come vem da banca de Lorn.\n\nO que a torna única para Link é o seu dom de oráculo. Se ele colocar uma fruta diante dela, Patrícia transmite uma mensagem divina, que só Padda consegue entender e traduzir — quase sempre com um trocadilho de foca. Frutas comuns rendem conselhos gerais (pedir frutas melhores, atordoar Morsareias com explosões, botas para areia e neve, cuidado com o calor). Framboesas, as preferidas dela, rendem pistas sobre a Molduga, o dragão Farosh, a Estátua da Oitava Heroína e a Fonte da Grande Fada Tera, no deserto. Na história, Patrícia leva Riju até Vah Naboris durante a missão principal da Fera Divina.",
+  "locations": [
+    "Pátio do palácio (Palace Courtyard), no canto sudoeste da Cidade Gerudo, no Deserto Gerudo, vigiada por Padda.",
+    "Durante a missão principal de Vah Naboris, acompanha Riju no Lookout Post ao sul da cidade e nas East Barrens."
+  ],
+  "obtaining": [
+    "Não pode ser obtida; é a Morsareia de Riju. Pode ser fotografada para o compendium (entrada nº 8)."
+  ],
+  "uses": [
+    "Oráculo: colocar uma fruta diante dela rende uma profecia traduzida por Padda.",
+    "Framboesas rendem profecias especiais com pistas de locais e chefes do oeste de Hyrule.",
+    "Registrar sua foto no compendium."
+  ],
+  "effects": [
+    "Nenhum efeito direto para Link; as profecias são dicas de jogo."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Fica no cercado do pátio do palácio; ao se aproximar, Link encontra Padda, que explica o dom de oráculo de Patrícia.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "oferecer fruta",
+      "status": "confirmado",
+      "result": "Deixar uma fruta diante dela faz Patrícia transmitir uma mensagem que Padda traduz. Frutas comuns rendem conselhos gerais; framboesas rendem mensagens especiais.",
+      "conditions": [
+        "Colocar a fruta no chão diante dela."
+      ],
+      "applications": [
+        "Frutas comuns: pedir frutas de mais valor, atordoar Morsareias com explosões, Botas de areia e Botas de neve, aviso sobre o calor do deserto ao sul.",
+        "Framboesas: a Molduga come de tudo, até bombas; o topo das Montanhas Gerudo mostra o caminho até um dragão; Risoka Snowfield fica sobre os ombros da oitava heroína; o lugar para onde um dragão flutua é também o destino de quem procura uma Grande Fada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "desconhecido",
+      "result": "As fontes só descrevem Riju surfando com Patrícia; não dizem se Link pode usá-la."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se Patrícia for atacada."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre flechas acertando Patrícia."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Framboesas para as melhores profecias",
+      "text": "Padda conta que Patrícia aceita qualquer fruta, mas tem um carinho especial por framboesas. Só com elas surgem as profecias sobre a Molduga, o dragão Farosh, a Estátua da Oitava Heroína (Risoka Snowfield) e a Fonte da Grande Fada Tera.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Trocadilhos de foca",
+      "text": "Quase toda profecia vem com um trocadilho com \"seal\" (foca, em inglês), que Padda tenta poupar Link de ouvir. A mensagem sobre Risoka Snowfield é descrita por ela como uma rara profecia sem trocadilho.",
+      "sources": [
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A fuga rumo a Naboris",
+      "text": "No diário da chefe, Riju conta que se aproximou de Vah Naboris montada em Patrícia, foi repelida pela tempestade de areia e pelos raios e, ao voltar, Patrícia se assustou com um monstro e fugiu direto para a Fera Divina. Riju perdeu a consciência e foi resgatada por Buliara.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A rotina matinal de Riju",
+      "text": "Depois da missão \"The Thunder Helm\", Riju acorda às 7h e vai ao pátio conversar com Patrícia, hábito que havia abandonado durante o ataque de Vah Naboris.",
+      "sources": [
+        "zw:Riju"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Patricia loves it!",
+      "text": "Lorn, que vende frutas na Cidade Gerudo, alimenta Patrícia com a própria mercadoria e pensa em usar o slogan \"Lorn's Fruit Stand. Patricia loves it!\".",
+      "sources": [
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Levar framboesas à Cidade Gerudo antes de explorar o oeste: as profecias especiais apontam o caminho até Farosh, a Estátua da Oitava Heroína e a Fonte da Grande Fada Tera."
+  ],
+  "limitations": [
+    "Segundo Riju, as mensagens só são compreendidas por quem consegue se comunicar de verdade com Patrícia; para Link, quem as traduz é Padda.",
+    "As profecias com frutas comuns são conselhos genéricos; as úteis exigem framboesas."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_sand_seal",
+      "relation": "Espécie de Patrícia"
+    },
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Fruta preferida; rende as profecias especiais"
+    },
+    {
+      "id": "botw_monster_molduga",
+      "relation": "Tema de uma profecia com framboesa"
+    },
+    {
+      "id": "botw_armor_sand_boots",
+      "relation": "Citadas numa profecia com fruta comum"
+    },
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Citadas numa profecia com fruta comum"
+    },
+    {
+      "id": "botw_arrow_bomb_arrow",
+      "relation": "Usada por Link enquanto Riju e Patrícia enfrentam Vah Naboris"
+    }
+  ],
+  "capabilities": [
+    "revela_recursos",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

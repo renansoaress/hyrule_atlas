@@ -1,0 +1,175 @@
+{
+  "id": "botw_weapon_scimitar_of_the_seven",
+  "summary": "A famosa cimitarra da Campeã Gerudo Urbosa, que dizem fazê-la lutar como numa dança. Riju a entrega a Link após Vah Naboris, junto do Resplendor da aurora; se for perdida, Buliara a refaz.",
+  "description": "A Cimitarra das sete é uma das armas dos Campeões e pertence ao equipamento Gerudo (Gerudo Gear). Criada por um joalheiro Gerudo, era a espada favorita de Urbosa, a Campeã Gerudo, que a usava junto do escudo Resplendor da aurora; segundo o jogo, quando Urbosa a brandia em combate, seus movimentos lembravam uma bela dança. Na memória do DLC \"Champion Urbosa's Song\", ela aparece usando a cimitarra para afastar dois Soldados Yiga que atacam Zelda.\n\nDepois que Link conclui a missão principal \"Divine Beast Vah Naboris\", Riju lhe oferece a cimitarra e o escudo, considerando justo que fiquem com um amigo de Urbosa; as duas peças estão em baús de pedra atrás do trono de Riju, no palácio real da Cidade Gerudo. Se a cimitarra quebrar ou for perdida, Buliara a refaz em troca de um Diamante, cinco Sílex e uma Cimitarra Gerudo. Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser recuperada com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Baú de pedra atrás do trono de Riju, no palácio real da Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Concluir a missão principal \"Divine Beast Vah Naboris\": Riju oferece a Cimitarra das sete e o Resplendor da aurora, guardados atrás do trono.",
+    "Se for perdida ou quebrar, Buliara faz outra com 1 Diamante, 5 Sílex e 1 Cimitarra Gerudo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão de durabilidade alta (60) e bom ataque (32).",
+    "Combinada com o Resplendor da aurora, reproduz o equipamento de Urbosa."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "side_effects": [
+        "Para recuperá-la depois, é preciso pagar Buliara com Diamante, Sílex e uma Cimitarra Gerudo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la com Magnétis em vez de pagar a reforja."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não citam monstros que empunhem a Cimitarra das sete; a arma vem de Riju e de Buliara."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Reforja com Buliara",
+      "text": "Diferente da maioria das armas, a Cimitarra das sete nunca se perde de vez: Buliara a refaz sempre que ela for perdida, desde que Link leve um Diamante, cinco Sílex e uma Cimitarra Gerudo.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a cimitarra pode surgir com bônus de ataque de +3 a +5 (nível comum) ou +6 a +10 (nível dourado), bônus de durabilidade de +6 a +12 (ou +13 a +30 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite. Com o bônus dourado de durabilidade máximo, ela chega a 90 de durabilidade.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Lembrança da Campeã",
+      "text": "Riju explica que as peças são tesouros inestimáveis do povo Gerudo e que, como Link e Urbosa eram amigos, é justo que fiquem com ele.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Manter sempre uma Cimitarra Gerudo, cinco Sílex e um Diamante de reserva para poder pedir uma nova Cimitarra das sete assim que a atual quebrar."
+  ],
+  "limitations": [
+    "Só fica disponível depois de libertar Vah Naboris.",
+    "Metálica: perigosa em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_shield_daybreaker",
+      "relation": "Escudo de Urbosa, entregue junto"
+    },
+    {
+      "id": "botw_weapon_gerudo_scimitar",
+      "relation": "Necessária para a reforja"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Necessário para a reforja"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Necessário para a reforja (5)"
+    },
+    {
+      "id": "botw_ability_urbosas_fury",
+      "relation": "Poder nascido da fúria da mesma Campeã, ativado com ataque carregado"
+    },
+    {
+      "id": "botw_weapon_moonlight_scimitar",
+      "relation": "Outra cimitarra do equipamento Gerudo"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

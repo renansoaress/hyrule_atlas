@@ -1,0 +1,131 @@
+{
+  "id": "botw_food_roasted_voltfruit",
+  "summary": "Fruta isolante do Deserto Gerudo tostada para realçar o sabor agridoce. Cura 3/4 de coração (crua, meio) e vale o dobro, 8 rupias, mas perde a Resistência a choques.",
+  "description": "A Fruta isolante, que nasce nos cactos do Deserto Gerudo, vira Fruta isolante assada ao encostar no fogo ou ficar no chão escaldante de Eldin. O texto do jogo diz que ela foi chamuscada para realçar o sabor doce e azedo.\n\nA cura passa de meio coração para 3/4 e o valor de venda dobra, de 4 para 8 rupias. A Resistência a choques, que a fruta dá cozida na Panela, não sobrevive ao fogo.",
+  "locations": [
+    "Prepara-se a partir de Frutas isolantes (cactos do Deserto Gerudo; à venda na barraca de Lorn, na Cidade Gerudo) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Fruta isolante ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Venda: 8 rupias, o dobro da fruta crua.",
+    "Cura leve: 3/4 de coração."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Fruta isolante — queima por alguns instantes e se transforma em Fruta isolante assada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Fruta isolante assada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Fruta isolante no chão para que o ingrediente asse sozinho e vire Fruta isolante assada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração da Fruta isolante crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 8 rupias; a Fruta isolante crua vale 4.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Voltfruit"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Fruta isolante assada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Isolamento só na Panela",
+      "text": "A fruta crua dá Resistência a choques em pratos de Panela, mas comida assada não carrega efeitos. Assada, ela só cura — e vende pelo dobro.",
+      "sources": [
+        "zw:Voltfruit",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Resistência a choques."
+  ],
+  "related": [
+    {
+      "id": "botw_material_voltfruit",
+      "relation": "Ingrediente cru (Resistência a choques na Panela)"
+    },
+    {
+      "id": "botw_food_toasty_zapshroom",
+      "relation": "Outro ingrediente isolante que perde o efeito tostado"
+    },
+    {
+      "id": "botw_elixir_electro_elixir",
+      "relation": "Alternativa para resistir a choques"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

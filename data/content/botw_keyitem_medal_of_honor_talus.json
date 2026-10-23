@@ -1,0 +1,57 @@
+{
+  "id": "botw_keyitem_medal_of_honor_talus",
+  "summary": "Medalha que Kilton entrega, depois de Ganon, a Calamidade, ser derrotado, a quem eliminar todos os 40 Tálus de Hyrule. Rende a Link o apelido de \"esmagador de rochas\"; não tem efeito de jogo.",
+  "description": "A Medalha de honra: Tálus é a medalha de Kilton dedicada ao \"colosso de pedra\". Depois que Link derrota Ganon, a Calamidade, Kilton conta que estuda os Tálus, mas não consegue se aproximar deles por causa do tamanho, e pede que Link derrote todos os de Hyrule para que ele possa analisar o cheiro que os fluidos deixam no corpo de Link.\n\nSegundo o Zelda Wiki, a contagem exige os 40 Tálus do mapa. Se ainda faltar algum, Kilton diz quantos já foram derrotados, e chefes já vencidos mostram \"★ Defeated\" ao lado da barra de vida. Ao completar a lista, Kilton exclama que Link está \"perfumado\", como se houvesse um Tálus bem à sua frente, e entrega a medalha. A descrição a apresenta como uma homenagem solene: tirar a vida de um monstro é um ato grave, mas às vezes precisa ser feito.\n\nA medalha não tem efeito de jogo. Com a pesquisa, Kilton passa a entender a estrutura musculoesquelética e a dieta dos Tálus.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton (aberta das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Derrotar Ganon, a Calamidade, ao menos uma vez e depois todos os 40 Tálus; em seguida, falar com Kilton."
+  ],
+  "uses": [
+    "Troféu pela caçada completa aos Tálus; não tem uso prático."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "sem_efeito",
+      "result": "A medalha é apenas uma lembrança; não tem função de jogo.",
+      "sources": ["zw:Medal of Honor", "zw:Kilton"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Esmagador de rochas\"",
+      "text": "Depois da medalha, ao falar de novo sobre os Tálus, Kilton diz que divide a dor de Link e o chama de \"esmagador de rochas\" (rock crusher).",
+      "sources": ["zw:Kilton"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Contagem com aviso",
+      "text": "Chefes do mundo aberto já derrotados exibem \"★ Defeated\" ao lado da barra de vida, o que ajuda a saber se um Tálus ainda conta para a medalha.",
+      "sources": ["zw:Medal of Honor"]
+    }
+  ],
+  "advanced_uses": [
+    "Pergunte a Kilton quantos Tálus faltam antes de sair à caça; ele informa o número exato."
+  ],
+  "limitations": [
+    "Só fica disponível depois de derrotar Ganon, a Calamidade.",
+    "A descrição do item fala em \"todos os Tálus rochosos\", enquanto o Zelda Wiki fala em 40 Tálus no total.",
+    "Sem efeito de jogo."
+  ],
+  "related": [
+    { "id": "botw_monster_stone_talus", "relation": "Monstro que precisa ser derrotado" },
+    { "id": "botw_monster_igneo_talus", "relation": "Variante de Tálus" },
+    { "id": "botw_monster_frost_talus", "relation": "Variante de Tálus" },
+    { "id": "botw_keyitem_medal_of_honor_hinox", "relation": "Medalha de Kilton para os Rinox" },
+    { "id": "botw_keyitem_medal_of_honor_molduga", "relation": "Medalha de Kilton para os Molduga" },
+    { "id": "botw_monster_calamity_ganon", "relation": "Precisa ser derrotado antes do pedido de Kilton" }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

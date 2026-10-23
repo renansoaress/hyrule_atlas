@@ -1,0 +1,113 @@
+{
+  "id": "botw_creature_electric_darner",
+  "summary": "Libélula rara que só aparece na chuva, nos Cerros de Hyrule e no Deserto Gerudo; as asas desviam a eletricidade do corpo. Com partes de monstro vira Elixir isolante (Resistência a choques).",
+  "description": "A Libélula do relâmpago é rara e, segundo o jogo, só aparece quando chove. O compendium cita os Cerros de Hyrule e o Deserto Gerudo, e a página da missão de Jana aponta os arredores do Lago Rutile (Rutile Lake), nos Cerros de Hyrule, e o Cânion Gerudo (Gerudo Canyon). Beedle a vende no Estábulo Riverside, por 10 rupias. As asas dela, diz o jogo, conduzem a eletricidade para longe do corpo.\n\nCozida com partes de monstro, produz o Elixir isolante, que dá um nível de Resistência a choques, útil contra ataques elétricos. Cada libélula acrescenta 2:30 de duração. Ingredientes elétricos como Fruta isolante, Aterramelo, Erva relampagueira e Truta voltaica podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante amarelo.\n\nNa Missão secundária \"Little Sister's Big Request\", Jana, do Estábulo South Akkala, pede a Link uma Libélula do relâmpago, uma gélida e uma cálida para o aniversário da irmã Gleema, fã de libélulas — apesar de ela mesma detestá-las.",
+  "locations": [
+    "Cerros de Hyrule (arredores do Lago Rutile) e Deserto Gerudo/Cânion Gerudo, apenas durante a chuva."
+  ],
+  "obtaining": [
+    "Apanhar em dia de chuva nas regiões indicadas.",
+    "Comprar de Beedle no Estábulo Riverside por 10 rupias."
+  ],
+  "uses": [
+    "Elixir isolante: cozinhar com pelo menos uma parte de monstro.",
+    "Missão secundária \"Little Sister's Big Request\": uma das três libélulas pedidas por Jana (recompensa: Rupia prateada).",
+    "Ingrediente do corante amarelo na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Resistência a choques de um nível; +2:30 de duração por libélula."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como a libélula reage à aproximação de Link. A chuva, condição para ela aparecer, também abafa os passos de Link."
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Só aparece quando chove.",
+      "kind": "mecanica",
+      "sources": ["comp", "jogo", "zw:Dragonfly"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma libélula viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir isolante (Resistência a choques). Cada libélula acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinada com a Borboleta trovejante, da mesma categoria."],
+      "applications": ["Somar Fruta isolante, Aterramelo, Erva relampagueira ou Truta voltaica para que o elixir também cure."],
+      "produces": ["botw_elixir_electro_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Electro Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Beedle cobra 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a libélula exposta ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "O jogo diz que as asas desviam a eletricidade do corpo da libélula, mas as fontes não descrevem o que acontece se ela for atingida por eletricidade no mundo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Elixir que não funciona em Zoras",
+      "text": "Antes de se separar de Link na Ponte Inogo (Inogo Bridge), Sidon lhe dá um Elixir isolante e comenta que esses elixires não têm efeito nos Zoras — talvez, imagina ele, porque são feitos para hylianos.",
+      "sources": ["zw:Electro Elixir"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O grito de Jana",
+      "text": "Ao receber as libélulas, Gleema corre para mostrá-las à irmã: \"Olha, mana! Uma libélula cálida de verdade! E uma gélida e uma do relâmpago também!\". Jana grita de pavor antes de agradecer a Link com uma Rupia prateada.",
+      "sources": ["zw", "jogo", "zw:Little Sister's Big Request"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar a libélula com Borboletas trovejantes e ingredientes elétricos diferentes prolonga o Elixir isolante e pode elevar o nível do efeito."
+  ],
+  "limitations": [
+    "Só aparece na chuva; em tempo seco, é preciso comprá-la de Beedle.",
+    "Cozida sem parte de monstro, vira Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_elixir_electro_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_thunderwing_butterfly", "relation": "Outro bicho isolante, também ligado à chuva" },
+    { "id": "botw_creature_voltfin_trout", "relation": "Ingrediente elétrico que faz o elixir curar" },
+    { "id": "botw_creature_cold_darner", "relation": "Outra libélula pedida por Jana" },
+    { "id": "botw_creature_warm_darner", "relation": "Outra libélula pedida por Jana" },
+    { "id": "botw_mechanic_rain", "relation": "Só aparece durante a chuva" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo" }
+  ],
+  "capabilities": ["protege_choque", "item_de_missao"],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,113 @@
+{
+  "id": "botw_weapon_boko_bat",
+  "summary": "Taco de madeira tosco feito por Koboblins (ataque 6), uma das armas de duas mãos mais fracas. Pesado o bastante para arrancar escudos; pega fogo e flutua.",
+  "description": "O Taco Kobo é a clava rústica que os Koboblins fabricam e que eles e os Moblins carregam na Pradaria de Hyrule e em Necluda Ocidental. A descrição do jogo o chama de desajeitado, mas observa que, golpeando o escudo de um inimigo, ele pode arrancá-lo da mão do adversário — a vantagem típica das armas pesadas de duas mãos.\n\nFaz parte do Equipamento Koboblin e é a base de uma linha que inclui o Taco Kobo pontudo e o Taco Kobo dracônico. Sendo de madeira, pega fogo (e pode ser usado aceso para espalhar chamas), queima em clima escaldante e flutua; não conduz eletricidade, não atrai raios e não pode ser movido com Magnétis. As fontes divergem quanto à durabilidade: a tabela de armas e o compendium indicam 12, enquanto o parâmetro interno Life vale 8.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Ocidental, nas mãos de Koboblins e Moblins."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins e Moblins que o empunham ou recolhê-lo em acampamentos.",
+    "Chance de aparecer em baús gerados pelo amiibo do Koboblin (série Breath of the Wild) com a runa amiibo.",
+    "Armas derrubadas por inimigos voltam a aparecer depois da Lua de sangue."
+  ],
+  "uses": [
+    "Desarmar a defesa de Koboblins com escudo logo no começo do jogo.",
+    "Carregar fogo: aceso numa fogueira, incendeia grama e acende Madeira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo. O ataque carregado gira enquanto houver vigor e termina numa pancada para baixo. Bater no escudo de um inimigo pode derrubá-lo da mão dele.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "jogo"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas e pode ser usado aceso para propagar o fogo.",
+      "applications": ["Incendiar a grama de um acampamento a favor do vento ou acender uma fogueira."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Fire", "zw:Wood"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado em clima escaldante, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movido com Magnétis.",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins e Moblins da Pradaria de Hyrule e de Necluda Ocidental o carregam; derrotá-los faz o taco cair.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +3 a +6, Durabilidade aumentada de +1 a +2 ou Acerto crítico; no nível dourado (amarelo): Ataque de +7 a +11, Durabilidade de +3 a +4 ou Lançamento longo (×1,5 a ×2). Com o bônus dourado máximo o taco passa de 6 para 17 de ataque.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Durabilidade em disputa",
+      "text": "A infobox do Zelda Wiki e o compendium registram durabilidade 12, mas o parâmetro interno Life publicado no mesmo artigo vale 8. Até que se confirme no jogo, trate o número exibido com cautela.",
+      "sources": ["zw", "dm"]
+    }
+  ],
+  "advanced_uses": [
+    "Use o golpe carregado contra grupos de Koboblins com escudo: o giro atinge todos e o peso ajuda a desfazer a guarda."
+  ],
+  "limitations": [
+    "Ataque muito baixo: perde utilidade assim que surgem armas melhores.",
+    "Queima no calor de Eldin e em contato com fogo."
+  ],
+  "related": [
+    { "id": "botw_weapon_spiked_boko_bat", "relation": "Versão aprimorada com pontas" },
+    { "id": "botw_weapon_dragonbone_boko_bat", "relation": "Versão reforçada com osso fossilizado" },
+    { "id": "botw_monster_bokoblin", "relation": "Fabrica e empunha o taco" },
+    { "id": "botw_monster_moblin", "relation": "Também o empunha" },
+    { "id": "botw_weapon_boko_club", "relation": "Clava de uma mão do mesmo equipamento" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Repõe as armas dos inimigos" }
+  ],
+  "capabilities": ["inflamavel", "flutua", "arremessavel"],
+  "verification_status": "a_verificar"
+}

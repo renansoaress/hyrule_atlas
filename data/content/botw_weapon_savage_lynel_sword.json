@@ -1,0 +1,187 @@
+{
+  "id": "botw_weapon_savage_lynel_sword",
+  "summary": "A espada mais brutal dos Centaleões, com ataque 58, usada pelos de juba branca, prateados e dourados. O Centaleão de juba branca da Segunda Guarita do Castelo de Hyrule sempre a carrega. Metálica.",
+  "description": "A Espada centaleônica Feroz é o nível mais alto das espadas do equipamento centaleônico (Lynel Gear). A descrição do jogo diz que suas lâminas selvagens são fortes o bastante para derrubar qualquer inimigo, não importa quão forte seja; seu ataque base é 58. É usada pelos Centaleões de juba branca, pelos Centaleões prateados e, no Modo Mestre, pelos Centaleões dourados.\n\nComo os Centaleões só sobem de nível com o tempo, ela pode não aparecer antes do fim do jogo. A exceção é o Centaleão de juba branca da Segunda Guarita (Second Gatehouse) do Castelo de Hyrule, que não evolui e sempre carrega uma. Por ser de metal, atrai raios quando equipada em tempestades, conduz eletricidade, afunda na água e pode ser erguida com Magnétis; não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Pradaria de Hyrule e Cordilheiras de Hebra (locais comuns segundo o compendium).",
+    "Com o Centaleão de juba branca da Segunda Guarita do Castelo de Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão de juba branca, prateado ou dourado (Modo Mestre) que a empunhe.",
+    "O Centaleão da Segunda Guarita sempre tem uma, independentemente do progresso.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão de ataque muito alto (58) para chefes e Centaleões."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Centaleões de juba branca, prateados e dourados a empunham e só a largam quando derrotados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus dourado altíssimo",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +11 a +21 (nível comum) ou +22 a +42 (nível dourado), bônus de durabilidade de +5 a +9 (ou +10 a +21 no nível dourado) e lançamento longo de 1,5× a 2×. Com o bônus dourado máximo, o ataque chega a 100 (58 + 42). Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes montado sem desgaste",
+      "text": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes com qualquer arma sem gastar durabilidade, e a regra do último golpe crítico também vale nessa situação — combinação poderosa com uma arma de ataque tão alto.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fonte garantida na Segunda Guarita",
+      "text": "O Centaleão de juba branca da Segunda Guarita do Castelo de Hyrule está entre os poucos que não sobem de nível, então sempre carrega uma Espada centaleônica Feroz, mesmo cedo no jogo.",
+      "sources": [
+        "zw",
+        "zw:Permanently Missable Items"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Invadir o Castelo de Hyrule cedo e derrotar o Centaleão da Segunda Guarita para conseguir a espada antes que os Centaleões do mundo aberto evoluam."
+  ],
+  "limitations": [
+    "Exige derrotar Centaleões de alto nível.",
+    "Metálica: perigosa em tempestades e contra inimigos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lynel_sword",
+      "relation": "Primeiro nível"
+    },
+    {
+      "id": "botw_weapon_mighty_lynel_sword",
+      "relation": "Nível anterior"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_crusher",
+      "relation": "Mesmo nível (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_spear",
+      "relation": "Mesmo nível (lança)"
+    },
+    {
+      "id": "botw_shield_savage_lynel_shield",
+      "relation": "Mesmo nível (escudo)"
+    },
+    {
+      "id": "botw_bow_savage_lynel_bow",
+      "relation": "Mesmo nível (arco)"
+    },
+    {
+      "id": "botw_monster_white_maned_lynel",
+      "relation": "Portador"
+    },
+    {
+      "id": "botw_monster_silver_lynel",
+      "relation": "Portador"
+    },
+    {
+      "id": "botw_monster_golden_lynel_mm",
+      "relation": "Portador no Modo Mestre"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

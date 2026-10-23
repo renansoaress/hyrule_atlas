@@ -1,0 +1,100 @@
+{
+  "id": "botw_food_mushroom_omelet",
+  "summary": "Omelete de qualquer cogumelo com Ovo, Manteiga de cabra e Halita, de textura fofinha. O cogumelo escolhido define o efeito; o Cogumelo hyliano dá a versão comum.",
+  "description": "A Omelete de cogumelos leva qualquer cogumelo, Ovo, Manteiga de cabra e Halita. O efeito vem do cogumelo: Glacimelo dá Resistência ao calor, Flamelo Resistência ao frio, Aterramelo Resistência a choques, Energimelo Recuperação de vigor, Cogumelo tenaz Vigor extra, Agilimelo Velocidade aumentada, Trufa nutritiva ou Trufona nutritiva cura total com Corações extras, Ferromelo Ataque aumentado, Blindamelo Defesa aumentada e Silencimelo Furtividade aumentada. A versão comum é feita com Cogumelo hyliano, que não tem efeito, ou com cogumelos de efeitos diferentes, que se anulam.\n\nO inventário elogia a textura fofinha como \"uma das grandes alegrias deste prato, e da vida\". Com quatro ingredientes obrigatórios, sobra um espaço, que pode receber um segundo cogumelo do mesmo efeito. A receita fica acima da Omelete de legumes na prioridade do jogo, então cogumelo e legume juntos com ovo, manteiga e halita ainda resultam em Omelete de cogumelos.",
+  "obtaining": [
+    "Cozinhar numa Panela um cogumelo, Ovo, Manteiga de cabra e Halita; um quinto ingrediente é opcional."
+  ],
+  "uses": [
+    "Recuperar corações e obter o efeito do cogumelo usado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (a quantidade depende dos ingredientes).",
+    "Efeito definido pelo cogumelo: Resistência ao calor (Glacimelo), Resistência ao frio (Flamelo), Resistência a choques (Aterramelo), Recuperação de vigor (Energimelo), Vigor extra (Cogumelo tenaz), Velocidade aumentada (Agilimelo), Corações extras (Trufa nutritiva e Trufona nutritiva), Ataque aumentado (Ferromelo), Defesa aumentada (Blindamelo) ou Furtividade aumentada (Silencimelo)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações; nas variantes, aplica o efeito do cogumelo (ou de outro ingrediente de mesmo efeito).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "cogumelos de efeitos diferentes",
+      "status": "confirmado",
+      "result": "Dois cogumelos com efeitos diferentes se anulam e o prato sai na versão comum, sem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Ovo e manteiga ajudam no crítico",
+      "text": "Ovo e Manteiga de cabra elevam para 10% a chance extra de bônus crítico (só o maior bônus de ingrediente conta), que soma 5% por ingrediente diferente na panela. O bônus pode dar 3 corações a mais, 5:00 a mais de duração ou um nível a mais no efeito.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre além dos quatro ingredientes obrigatórios.",
+    "Cogumelos de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_vegetable_omelet",
+      "relation": "Mesma receita com legume, erva ou flor no lugar do cogumelo"
+    },
+    {
+      "id": "botw_food_omelet",
+      "relation": "Versão simples, só com Ovo"
+    },
+    {
+      "id": "botw_food_mushroom_risotto",
+      "relation": "Outro prato de cogumelo com manteiga e halita"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

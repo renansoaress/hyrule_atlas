@@ -1,0 +1,163 @@
+{
+  "id": "botw_monster_water_octorok",
+  "summary": "Octoroc que vive submerso com só uma planta à mostra e salta para cuspir pedras teleguiadas. Morre com qualquer dano: pedra rebatida no escudo, flecha (até debaixo d'água), Bomba remota na água. Na chuva infla e flutua.",
+  "description": "O Octoroc aquático é comum em lagos e rios de Necluda Ocidental e da Pradaria de Hyrule. Fica parado debaixo d'água, com apenas a planta da cabeça visível e o corpo azul confundido com a água. Quando Link chega perto, salta para fora a cada poucos segundos e cospe uma pedra; o tiro acompanha os movimentos de Link na horizontal e na vertical, mirando para onde ele está indo — andar, ou correr em linha reta de perto, quase garante ser atingido. Quando chove, a queda de pressão atmosférica infla o saco de ar interno (o Balão de Octoroc) e ele sobe, flutuando acima da água como um balão.\n\nTem 8 pontos de vida, mas morre com qualquer quantidade de dano. Há muitas formas de abatê-lo: rebater a pedra com qualquer escudo (de perto, a pedra devolvida o mata na hora; com Defesa perfeita ela volta mais rápido e alcança mais longe), acertar uma flecha de qualquer tipo, mesmo com ele submerso, cortar a planta da cabeça para obrigá-lo a emergir, explodir uma Bomba remota na água, usar a Fúria de Urbosa ou chegar perto com Gelítis ou uma jangada e golpeá-lo quando salta. Pode deixar Tentáculo de Octoroc, Olho de Octoroc, Balão de Octoroc e também peixes, caranguejos e caramujos da região — e reaparece mesmo sem Lua de sangue.",
+  "locations": [
+    "Lagos, rios e lagoas, sobretudo em Necluda Ocidental e na Pradaria de Hyrule (locais citados pelo compendium)."
+  ],
+  "obtaining": [
+    "Pode deixar qualquer combinação de Tentáculo de Octoroc, Olho de Octoroc, Balão de Octoroc e peixes, caranguejos e caramujos locais.",
+    "Reaparece sem precisar de Lua de sangue."
+  ],
+  "uses": [
+    "Fonte renovável de partes de Octoroc, inclusive o Balão de Octoroc, que faz objetos flutuarem no ar.",
+    "Fonte de frutos do mar da região.",
+    "Registro no compendium (entrada nº 92)."
+  ],
+  "effects": [
+    "Pedras cuspidas que perseguem a direção do movimento de Link."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloquear com qualquer escudo rebate a pedra; de perto, ela volta e mata o Octoroc na hora. A Defesa perfeita devolve a pedra mais rápido, permitindo abatê-lo de mais longe.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Octorok", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Qualquer flecha o mata, mesmo com ele submerso. Uma flecha (ou um golpe de espada) na planta da cabeça o obriga a emergir e olhar em volta antes de mergulhar de novo; a planta volta a crescer pouco depois.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Morre com qualquer dano. Chegando perto com Gelítis ou numa jangada, basta um golpe corpo a corpo quando ele salta para fora d'água.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Vive submerso e só a planta da cabeça aparece; uma Bomba remota explodida na água o mata mesmo escondido.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Na chuva, a queda de pressão infla o saco de ar interno e ele sobe, flutuando acima da água como um balão.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Uma Flecha incendiária, como qualquer flecha, o mata — ele morre com qualquer dano.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Flechas congelantes também o matam com um acerto; Gelítis cria pilares de gelo na água que permitem chegar até ele.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "A Fúria de Urbosa o mata mesmo debaixo d'água; Flechas eletrizantes disparadas na água criam uma área de dano ao redor do impacto.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes só confirmam a Bomba remota detonada na água; Flechas explosivas e Barris explosivos não são citados contra o Octoroc aquático submerso."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota detonada na água o derrota mesmo escondido; as bombas flutuam na água.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "A página do Octoroc aquático diz que a runa Estátis pode suspendê-lo no tempo. A página da própria runa, porém, afirma que congelar inimigos exige a melhoria Estátis+ — as fontes não deixam claro se a versão básica basta.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "gelitis",
+      "status": "confirmado",
+      "result": "Pilares de Gelítis permitem chegar perto o bastante para golpeá-lo quando ele salta.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Camufla-se submerso, com o corpo azul confundido com a água e só a planta à mostra.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Octorok"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Volta sem Lua de sangue",
+      "text": "Diferente da maioria dos monstros, o Octoroc aquático pode reaparecer sem que ocorra uma Lua de sangue.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pedras teleguiadas",
+      "text": "O Octoroc aquático rastreia o movimento de Link na horizontal e na vertical e mira para onde ele vai: andando, ou correndo em linha reta de perto, Link sempre é atingido. Mudar de direção ou bloquear com o escudo é a defesa.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Balão meteorológico",
+      "text": "O compendium explica que a queda de pressão barométrica durante a chuva infla o saco de ar do Octoroc aquático e o faz subir — o mesmo órgão que vira o Balão de Octoroc, usado para fazer objetos flutuarem.",
+      "sources": ["comp", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "8 pontos de vida, mas morre com qualquer dano",
+      "text": "Apesar de ter 8 pontos de vida registrados, o Octoroc aquático morre com qualquer quantidade de dano.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Rebater a pedra com Defesa perfeita para matá-lo de longe sem gastar flechas.",
+    "Coletar Balões de Octoroc caçando Octorocs aquáticos, que reaparecem sem Lua de sangue."
+  ],
+  "limitations": [
+    "Correr em linha reta na direção dele quase garante levar pedradas."
+  ],
+  "related": [
+    { "id": "botw_material_octo_balloon", "relation": "Parte deixada; faz objetos flutuarem" },
+    { "id": "botw_material_octorok_tentacle", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_octorok_eyeball", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_monster_forest_octorok", "relation": "Octoroc adaptado à floresta" },
+    { "id": "botw_monster_rock_octorok", "relation": "Octoroc de regiões vulcânicas" },
+    { "id": "botw_monster_snow_octorok", "relation": "Octoroc das áreas nevadas" },
+    { "id": "botw_rune_cryonis", "relation": "Permite chegar até ele" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Mata-o mesmo submerso" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Devolve a pedra mais rápido" }
+  ],
+  "capabilities": ["vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

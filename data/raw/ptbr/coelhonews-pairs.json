@@ -1,0 +1,2156 @@
+{
+  "source": "https://coelhonews.com/guias/traducoes-em-portugues-de-zelda-botw-e-totk-o-que-mudou-nos-jogos",
+  "title": "Master Sword agora é Espada Mestra! Lista de todos os termos traduzidos para Português em Zelda BotW e TotK",
+  "author": "Gomyde (Colaborador), Coelho News",
+  "published": "2025-06-04",
+  "fetched_at": "2026-10-23T21:27:56.666Z",
+  "reliability": "Fonte secundária: transcrição de nomes da localização oficial PT-BR. Contém erros de digitação conhecidos; ver overrides.",
+  "count": 429,
+  "pairs": [
+    {
+      "section": "Locais Importantes",
+      "en": "Hebra Mountains",
+      "ptbr": "Cordilheiras de Hebra"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Rito Village",
+      "ptbr": "Vila dos Arás"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Tabantha Tundra",
+      "ptbr": "Tundra de Tabantha"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Tabantha Frontier",
+      "ptbr": "Fronteira de Tabantha"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Hyrule Ridge",
+      "ptbr": "Cerros de Hyrule"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Gerudo Highlands",
+      "ptbr": "Montanhas Gerudo"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Gerudo Town",
+      "ptbr": "Cidade Gerudo"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Gerudo Desert",
+      "ptbr": "Deserto Gerudo"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Lake Hylia",
+      "ptbr": "Lago Hylia"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Faron Grasslands",
+      "ptbr": "Prados de Faron"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Faron Sea",
+      "ptbr": "Mar de Faron"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Lurelin Village",
+      "ptbr": "Vila Ishka"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Eventide Island",
+      "ptbr": "Ilha da Renúncia"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Necluda Sea",
+      "ptbr": "Mar de Necluda"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "East Necluda",
+      "ptbr": "Necluda Oriental"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Hateno Village",
+      "ptbr": "Vila Hateno"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "West Necluda",
+      "ptbr": "Necluda Oriental"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Mount Lanayru",
+      "ptbr": "Monte Lanayru"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Kakariko Village",
+      "ptbr": "Vila Kakariko"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Lanayru Wetlands",
+      "ptbr": "Palude de Lanayru"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Zora's Domain",
+      "ptbr": "Território Zora"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Lanayru Sea",
+      "ptbr": "Mar de Lanayru"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Tarrey Town",
+      "ptbr": "Vila de Nício"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Akkala Highlands",
+      "ptbr": "Altiplano de Akkala"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Akkala Sea",
+      "ptbr": "Mar de Akkala"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Deep Akkala",
+      "ptbr": "Coração de Akkala"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Death Mountain",
+      "ptbr": "Montanha da Morte"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Eldin Mountains",
+      "ptbr": "Cordilheira de Eldin"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Goron City",
+      "ptbr": "Cidade Goron"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Eldin Canyon",
+      "ptbr": "Cânion de Eldin"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Hyrule Forest",
+      "ptbr": "Floresta de Hyrule"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Korok Forest",
+      "ptbr": "Floresta Korok"
+    },
+    {
+      "section": "Locais Importantes",
+      "en": "Hyrule Field",
+      "ptbr": "Pradaria de Hyrule"
+    },
+    {
+      "section": "Materiais",
+      "en": "Apple",
+      "ptbr": "Maçã"
+    },
+    {
+      "section": "Materiais",
+      "en": "Palm Fruit",
+      "ptbr": "Coco"
+    },
+    {
+      "section": "Materiais",
+      "en": "Wildberry",
+      "ptbr": "Framboesa"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hearty Durian",
+      "ptbr": "Durião Nutritivo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hydromelon",
+      "ptbr": "Melancia Oásica"
+    },
+    {
+      "section": "Materiais",
+      "en": "Spicy Pepper",
+      "ptbr": "Pimenta de Fogo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Voltfruit",
+      "ptbr": "Fruta Isolante"
+    },
+    {
+      "section": "Materiais",
+      "en": "Fleet-Lotus Seeds",
+      "ptbr": "Grãos de Lótus-fugaz"
+    },
+    {
+      "section": "Materiais",
+      "en": "Mighty Bananas",
+      "ptbr": "Bananas Valentes"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hylian Shroom",
+      "ptbr": "Cogumelo Hyliano"
+    },
+    {
+      "section": "Materiais",
+      "en": "Endura Shroom",
+      "ptbr": "Cogumelo Tenaz"
+    },
+    {
+      "section": "Materiais",
+      "en": "Stamella Shroom",
+      "ptbr": "Energimelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hearty Truffle",
+      "ptbr": "Trufa Nutritiva"
+    },
+    {
+      "section": "Materiais",
+      "en": "Big Hearty Truffle",
+      "ptbr": "Trufona Nutritiva"
+    },
+    {
+      "section": "Materiais",
+      "en": "Chillshroom",
+      "ptbr": "Glacimelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Sunshroom",
+      "ptbr": "Flamelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Zapshroom",
+      "ptbr": "Aterramelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Rushroom",
+      "ptbr": "Agilimelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Razorshroom",
+      "ptbr": "Ferromelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Silent Shroom",
+      "ptbr": "Silencimelo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hyrule Herb",
+      "ptbr": "Capim Hyruliano"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hearty Radish",
+      "ptbr": "Rabanete Nutritivo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Big Hearty Radish",
+      "ptbr": "Rabanete Nutritivo Grande"
+    },
+    {
+      "section": "Materiais",
+      "en": "Cool Safflina",
+      "ptbr": "Erva Fogueira"
+    },
+    {
+      "section": "Materiais",
+      "en": "Warm Safflina",
+      "ptbr": "Erva Geleira"
+    },
+    {
+      "section": "Materiais",
+      "en": "Electric Safflina",
+      "ptbr": "Erva Relampagueira"
+    },
+    {
+      "section": "Materiais",
+      "en": "Swift Carrot",
+      "ptbr": "Cenoura Veloz"
+    },
+    {
+      "section": "Materiais",
+      "en": "Endura Carrot",
+      "ptbr": "Cenoura Tenaz"
+    },
+    {
+      "section": "Materiais",
+      "en": "Fortified Pumpkin",
+      "ptbr": "Abóbora Robusta"
+    },
+    {
+      "section": "Materiais",
+      "en": "Swift Violet",
+      "ptbr": "Violeta Veloz"
+    },
+    {
+      "section": "Materiais",
+      "en": "Mighty Thistle",
+      "ptbr": "Protechofra"
+    },
+    {
+      "section": "Materiais",
+      "en": "Blue Nightshade",
+      "ptbr": "Beladona Azul"
+    },
+    {
+      "section": "Materiais",
+      "en": "Silent Princess",
+      "ptbr": "Princesa Plácida"
+    },
+    {
+      "section": "Materiais",
+      "en": "Raw Meat",
+      "ptbr": "Carne de Terceira"
+    },
+    {
+      "section": "Materiais",
+      "en": "Raw Prime Meat",
+      "ptbr": "Carne de Segunda"
+    },
+    {
+      "section": "Materiais",
+      "en": "Raw Gourmet Meat",
+      "ptbr": "Carne de Primeira"
+    },
+    {
+      "section": "Materiais",
+      "en": "Raw Bird Drumstick",
+      "ptbr": "Coxa"
+    },
+    {
+      "section": "Materiais",
+      "en": "Raw Bird Thigh",
+      "ptbr": "Sobrecoxa"
+    },
+    {
+      "section": "Materiais",
+      "en": "Raw Whole Bird",
+      "ptbr": "Ave Inteira"
+    },
+    {
+      "section": "Materiais",
+      "en": "Courser Bee Honey",
+      "ptbr": "Mel de Abelha"
+    },
+    {
+      "section": "Materiais",
+      "en": "Hylian Rice",
+      "ptbr": "Arrox Hyliano"
+    },
+    {
+      "section": "Materiais",
+      "en": "Bird Egg",
+      "ptbr": "Ovo"
+    },
+    {
+      "section": "Materiais",
+      "en": "Tabantha Wheat",
+      "ptbr": "Trigo de Tabantha"
+    },
+    {
+      "section": "Materiais",
+      "en": "Acorn",
+      "ptbr": "Bolota"
+    },
+    {
+      "section": "Materiais",
+      "en": "Chickaloo Tree Nut",
+      "ptbr": "Noz"
+    },
+    {
+      "section": "Materiais",
+      "en": "Cane Sugar",
+      "ptbr": "Cana-de-açúcar"
+    },
+    {
+      "section": "Materiais",
+      "en": "Goat Butter",
+      "ptbr": "Manteiga de Cabra"
+    },
+    {
+      "section": "Materiais",
+      "en": "Fresh Milk",
+      "ptbr": "Leite Fresco"
+    },
+    {
+      "section": "Materiais",
+      "en": "Goron Spice",
+      "ptbr": "Tempero Goron"
+    },
+    {
+      "section": "Materiais",
+      "en": "Monster Extract",
+      "ptbr": "Extrato de Monstro"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hyrule Bass",
+      "ptbr": "Robalo Hyruliano"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Staminoka Bass",
+      "ptbr": "Robalo Energético"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hearty Bass",
+      "ptbr": "Robalo Nutritivo"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Chillfin Trout",
+      "ptbr": "Truta Glacial"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Voltfin Trout",
+      "ptbr": "Truta Voltaica"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Sizzlefin Trout",
+      "ptbr": "Truta Rescaldada"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Stealthfin Trout",
+      "ptbr": "Truta Discreta"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hearty Salmon",
+      "ptbr": "Salmão Nutritivo"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Mighty Carp",
+      "ptbr": "Carpa Valente"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Armored Carp",
+      "ptbr": "Carpa Blindada"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Sanke Carp",
+      "ptbr": "Carpa Tricolor"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Mighty Porgy",
+      "ptbr": "Pargo Valente"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Armored Porgy",
+      "ptbr": "Pargo Blindado"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Sneaky River Snail",
+      "ptbr": "Caramujo Discreto"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hearty Blueshell Snail",
+      "ptbr": "Caramujo Nutritivo"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Razorclaw Crab",
+      "ptbr": "Caranguejo Espadachim"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Ironshell Crab",
+      "ptbr": "Caranguejo Couraçado"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Bright-Eyed Crab",
+      "ptbr": "Caranguejo Esperto"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Winterwing Butterfly",
+      "ptbr": "Borboleta Invernal"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Summerwing Butterfly",
+      "ptbr": "Borboleta Estival"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Thunderwing Butterfly",
+      "ptbr": "Borboleta Trovejante"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Smotherwing Butterfly",
+      "ptbr": "Borboleta Abrasadora"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Cold Darner",
+      "ptbr": "Libélula Gélida"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Warm Darner",
+      "ptbr": "Libélula Cálida"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Electric Darner",
+      "ptbr": "Libélula do Relâmpago"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Bladed Rhino Beetle",
+      "ptbr": "Escaravelho Brigão"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Rugged Rhino Beetle",
+      "ptbr": "Escaravelho Resguardado"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Energetic Rhino Beetle",
+      "ptbr": "Escaravelho Vibrante"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Restless Cricket",
+      "ptbr": "Gafanhoto Agitado"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Sunset Firefly",
+      "ptbr": "Vaga-lume do Poente"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hot-Footed Frog",
+      "ptbr": "Sapo Apressado"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Tireless Frog",
+      "ptbr": "Sapo Obstinado"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hightail Lizard",
+      "ptbr": "Lagarto Fujão"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Hearty Lizard",
+      "ptbr": "Lagarto Nutritivo"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Fireproof Lizard",
+      "ptbr": "Lagarto Corta-fogo"
+    },
+    {
+      "section": "Criaturas",
+      "en": "Fairy",
+      "ptbr": "Fada"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Bokoblin Horn",
+      "ptbr": "Chifre de Koboblin"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Bokoblin Fang",
+      "ptbr": "Presa de Koboblin"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Bokoblin Guts",
+      "ptbr": "Vísceras de Koboblin"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Moblin Horn",
+      "ptbr": "Chifre de Moblin"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Moblin Fang",
+      "ptbr": "Presa de Moblin"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Moblin Guts",
+      "ptbr": "Vísceras de Moblin"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Lizalfos Horn",
+      "ptbr": "Chifre de Lagalfos"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Lizalfos Talon",
+      "ptbr": "Garra de Lagalfos"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Lizalfos Tail",
+      "ptbr": "Cauda de Lagalfos"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Icy Lizalfos Tail",
+      "ptbr": "Cauda de Lagalfos Glacial"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Red Lizalfos Tail",
+      "ptbr": "Cauda de Lagalfos Ígneo"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Yellow Lizalfos Tail",
+      "ptbr": "Cauda de Lagalfos Elétrico"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Lynel Horn",
+      "ptbr": "Chifre de Centaleão"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Lynel Hoof",
+      "ptbr": "Casco de Centaleão"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Lynel Guts",
+      "ptbr": "Vísceras de Centaleão"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Chuchu Jelly",
+      "ptbr": "Geleca de Chulchul"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "White Chuchu Jelly",
+      "ptbr": "Geleca Gélida"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Red Chuchu Jelly",
+      "ptbr": "Gelecca Ígnea"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Yellow Chuchu Jelly",
+      "ptbr": "Geleca Elétrica"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Keese Wing",
+      "ptbr": "Asa de Morci"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Ice Keese Wing",
+      "ptbr": "Asa de Morci Glacial"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Fire Keese Wing",
+      "ptbr": "Asa de Morci Ígneo"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Electric Keese Wing",
+      "ptbr": "Asa de Morci Elétrico"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Keese Eyeball",
+      "ptbr": "Olho de Morci"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Octorok Tentacle",
+      "ptbr": "Tentáculo de Octoroc"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Octorok Eyeball",
+      "ptbr": "Olho de Octoroc"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Octo Balloon",
+      "ptbr": "Balão de Octoroc"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Molduga Fin",
+      "ptbr": "Barbatana de Molduga"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Molduga Guts",
+      "ptbr": "Vísceras de Molduga"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Hinox Toenail",
+      "ptbr": "Unha de Rinox"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Hinox Tooth",
+      "ptbr": "Dente de Rinox"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Hinox Guts",
+      "ptbr": "Vísceras de Rinox"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Ancient Screw",
+      "ptbr": "Parafuso Ancestral"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Ancient Spring",
+      "ptbr": "Mola Ancestral"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Ancient Gear",
+      "ptbr": "Engrenagem Ancestral"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Ancient Shaft",
+      "ptbr": "Eixo Ancestral"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Ancient Core",
+      "ptbr": "Núcleo Ancestral"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Giant Ancient Core",
+      "ptbr": "Núcleo Ancestral Gigante"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Dinraal's Scale",
+      "ptbr": "Escama de Dinraal"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Naydra's Scale",
+      "ptbr": "Escama de Naydra"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Farosh's Scale",
+      "ptbr": "Escama de Farosh"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Dinraal's Claw",
+      "ptbr": "Garra de Dinraal"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Naydra's Claw",
+      "ptbr": "Garra de Naydra"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Farosh's Claw",
+      "ptbr": "Garra de Farosh"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Shard of Dinraal's Fang",
+      "ptbr": "Lasca da presa de Dinraal"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Shard of Naydra's Fang",
+      "ptbr": "Lasca da presa de Naydra"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Shard of Farosh's Fang",
+      "ptbr": "Lasca da presa de Farosh"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Shard of Dinraal's Horn",
+      "ptbr": "Lasca do chifre de Dinraal"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Shard of Naydra's Horn",
+      "ptbr": "Lasca do chifre de Naydra"
+    },
+    {
+      "section": "Partes de Monstros",
+      "en": "Shard of Farosh's Horn",
+      "ptbr": "Lasca do chifre de Farosh"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Wood",
+      "ptbr": "Madeira"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Flint",
+      "ptbr": "Sílex"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Rock Salt",
+      "ptbr": "Halita"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Luminous Stone",
+      "ptbr": "Pedra Luminosa"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Amber",
+      "ptbr": "Âmbar"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Opal",
+      "ptbr": "Opala"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Topaz",
+      "ptbr": "Topázio"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Ruby",
+      "ptbr": "Rubi"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Sapphire",
+      "ptbr": "Safira"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Diamond",
+      "ptbr": "Diamante"
+    },
+    {
+      "section": "Outros Materiais",
+      "en": "Star Fragment",
+      "ptbr": "Fragmento de estrela"
+    },
+    {
+      "section": "Armas",
+      "en": "Sea-Breeze Boomerang",
+      "ptbr": "Bumerangue da Brisa"
+    },
+    {
+      "section": "Armas",
+      "en": "Sword",
+      "ptbr": "Espada do Herói"
+    },
+    {
+      "section": "Armas",
+      "en": "Goddess Sword",
+      "ptbr": "Espada da Deusa"
+    },
+    {
+      "section": "Armas",
+      "en": "White Sword of the Sky",
+      "ptbr": "Espada Alva dos Céus"
+    },
+    {
+      "section": "Armas",
+      "en": "Master Sword",
+      "ptbr": "Espada Mestra"
+    },
+    {
+      "section": "Armas",
+      "en": "Tree Branch",
+      "ptbr": "Galho"
+    },
+    {
+      "section": "Armas",
+      "en": "Torch",
+      "ptbr": "Tocha"
+    },
+    {
+      "section": "Armas",
+      "en": "Soup Ladle",
+      "ptbr": "Concha de Madeira"
+    },
+    {
+      "section": "Armas",
+      "en": "Boomerang",
+      "ptbr": "Bumerangue"
+    },
+    {
+      "section": "Armas",
+      "en": "Spring-Loaded Hammer",
+      "ptbr": "Marreta Bóim"
+    },
+    {
+      "section": "Armas",
+      "en": "Traveler's Sword",
+      "ptbr": "Espada do Viajante"
+    },
+    {
+      "section": "Armas",
+      "en": "Soldier's Broadsword",
+      "ptbr": "Espada Larga do Soldado"
+    },
+    {
+      "section": "Armas",
+      "en": "Knight's Broadsword",
+      "ptbr": "Espada do Cavaleiro"
+    },
+    {
+      "section": "Armas",
+      "en": "Royal Broadsword",
+      "ptbr": "Espada Real"
+    },
+    {
+      "section": "Armas",
+      "en": "Forest Dweller's Sword",
+      "ptbr": "Espada da Floresta"
+    },
+    {
+      "section": "Armas",
+      "en": "Zora Sword",
+      "ptbr": "Espada Zora"
+    },
+    {
+      "section": "Armas",
+      "en": "Feathered Edge",
+      "ptbr": "Gume Plumado"
+    },
+    {
+      "section": "Armas",
+      "en": "Gerudo Scimitar",
+      "ptbr": "Cimitarra Gerudo"
+    },
+    {
+      "section": "Armas",
+      "en": "Moonlight Scimitar",
+      "ptbr": "Cimitarra Meia-lua"
+    },
+    {
+      "section": "Armas",
+      "en": "Scimitar of the Seven",
+      "ptbr": "Cimitarra das sete"
+    },
+    {
+      "section": "Armas",
+      "en": "Eightfold Blade",
+      "ptbr": "Katana Sheikah"
+    },
+    {
+      "section": "Armas",
+      "en": "Ancient Short Sword",
+      "ptbr": "Espada Ancestral"
+    },
+    {
+      "section": "Armas",
+      "en": "Rusty Broadsword",
+      "ptbr": "Espada Enferrujada"
+    },
+    {
+      "section": "Armas",
+      "en": "Royal Guard's Sword",
+      "ptbr": "Espada da Guarda Real"
+    },
+    {
+      "section": "Armas",
+      "en": "Flameblade",
+      "ptbr": "Espada Flamejante"
+    },
+    {
+      "section": "Armas",
+      "en": "Frostblade",
+      "ptbr": "Espada Álgida"
+    },
+    {
+      "section": "Armas",
+      "en": "Thunderblade",
+      "ptbr": "Espada Faiscante"
+    },
+    {
+      "section": "Armas",
+      "en": "Boko Club",
+      "ptbr": "Clava Kobo"
+    },
+    {
+      "section": "Armas",
+      "en": "Spiked Boko Club",
+      "ptbr": "Clava Kobo Pontuda"
+    },
+    {
+      "section": "Armas",
+      "en": "Dragonbone Boko Club",
+      "ptbr": "Clava Kobo Dracônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Lizal Boomerang",
+      "ptbr": "Bumerangue Lagal"
+    },
+    {
+      "section": "Armas",
+      "en": "Lizal Forked Boomerang",
+      "ptbr": "Bimerangue Lagal"
+    },
+    {
+      "section": "Armas",
+      "en": "Lizal Tri-Boomerang",
+      "ptbr": "Trimerangue Lagal"
+    },
+    {
+      "section": "Armas",
+      "en": "Guardian Sword",
+      "ptbr": "Espada Guardiã"
+    },
+    {
+      "section": "Armas",
+      "en": "Guardian Sword+",
+      "ptbr": "Espada Guardiã 2.0"
+    },
+    {
+      "section": "Armas",
+      "en": "Guardian Sword++",
+      "ptbr": "Espada Guardiã 3.0"
+    },
+    {
+      "section": "Armas",
+      "en": "Lynel Sword",
+      "ptbr": "Espada Centaleônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Mighty Lynel Sword",
+      "ptbr": "Espada Centaleônica Forte"
+    },
+    {
+      "section": "Armas",
+      "en": "Savage Lynel Sword",
+      "ptbr": "Espada Centaleônica Feroz"
+    },
+    {
+      "section": "Armas",
+      "en": "Fire Rod",
+      "ptbr": "Varinha de Fogo"
+    },
+    {
+      "section": "Armas",
+      "en": "Meteor Rod",
+      "ptbr": "Cajado Meteórico"
+    },
+    {
+      "section": "Armas",
+      "en": "Ice Rod",
+      "ptbr": "Varinha de Gelo"
+    },
+    {
+      "section": "Armas",
+      "en": "Blizzard Rod",
+      "ptbr": "Cajado Glacial"
+    },
+    {
+      "section": "Armas",
+      "en": "Lightning Rod",
+      "ptbr": "Varinha do Raio"
+    },
+    {
+      "section": "Armas",
+      "en": "Thunderstorm Rod",
+      "ptbr": "Cajado Trovejante"
+    },
+    {
+      "section": "Armas",
+      "en": "Vicous Sickle",
+      "ptbr": "Foice Brutal"
+    },
+    {
+      "section": "Armas",
+      "en": "Demon Carver",
+      "ptbr": "Trinchador Demoníaco"
+    },
+    {
+      "section": "Armas",
+      "en": "One-Hit Obliterator",
+      "ptbr": "Obliterador"
+    },
+    {
+      "section": "Armas",
+      "en": "Bokoblin Arm",
+      "ptbr": "Braço de Koboblin"
+    },
+    {
+      "section": "Armas",
+      "en": "Lizalfos Arm",
+      "ptbr": "Braço de Lagalfos"
+    },
+    {
+      "section": "Armas",
+      "en": "Sword of the Six Sages",
+      "ptbr": "Montante do Crepúsculo"
+    },
+    {
+      "section": "Armas",
+      "en": "Biggoron's Sword",
+      "ptbr": "Espada do Biggoron"
+    },
+    {
+      "section": "Armas",
+      "en": "Fierce Deity Sword",
+      "ptbr": "Espada da Deidade Feroz"
+    },
+    {
+      "section": "Armas",
+      "en": "Korok Leaf",
+      "ptbr": "Folha Korok"
+    },
+    {
+      "section": "Armas",
+      "en": "Farming Hoe",
+      "ptbr": "Enxada"
+    },
+    {
+      "section": "Armas",
+      "en": "Boat Oar",
+      "ptbr": "Remo"
+    },
+    {
+      "section": "Armas",
+      "en": "Woodcutter's Axe",
+      "ptbr": "Machado de Lenhador"
+    },
+    {
+      "section": "Armas",
+      "en": "Double Axe",
+      "ptbr": "Lábris"
+    },
+    {
+      "section": "Armas",
+      "en": "Iron Sledgehammer",
+      "ptbr": "Marreta de Ferro"
+    },
+    {
+      "section": "Armas",
+      "en": "Giant Boomerang",
+      "ptbr": "Bumerangue Gigante"
+    },
+    {
+      "section": "Armas",
+      "en": "Traveler's Claymore",
+      "ptbr": "Montante do Viajante"
+    },
+    {
+      "section": "Armas",
+      "en": "Soldier's Claymore",
+      "ptbr": "Montante do Soldado"
+    },
+    {
+      "section": "Armas",
+      "en": "Knight's Claymore",
+      "ptbr": "Montante do Cavaleiro"
+    },
+    {
+      "section": "Armas",
+      "en": "Royal Claymore",
+      "ptbr": "Montante Real"
+    },
+    {
+      "section": "Armas",
+      "en": "Silver Longsword",
+      "ptbr": "Espada Longa Prateada"
+    },
+    {
+      "section": "Armas",
+      "en": "Cobble Crusher",
+      "ptbr": "Esmaga-Fraga"
+    },
+    {
+      "section": "Armas",
+      "en": "Stone Smasher",
+      "ptbr": "Quebra-Pedra"
+    },
+    {
+      "section": "Armas",
+      "en": "Boulder Breaker",
+      "ptbr": "Racha-Rocha"
+    },
+    {
+      "section": "Armas",
+      "en": "Golden Claymore",
+      "ptbr": "Montante dourado"
+    },
+    {
+      "section": "Armas",
+      "en": "Eightfold Longblade",
+      "ptbr": "Katana da Desconfiança"
+    },
+    {
+      "section": "Armas",
+      "en": "Edge of Duality",
+      "ptbr": "Lâmina da Dualidade"
+    },
+    {
+      "section": "Armas",
+      "en": "Ancient Bladesaw",
+      "ptbr": "Espada Serrada Ancestral"
+    },
+    {
+      "section": "Armas",
+      "en": "Rusty Claymore",
+      "ptbr": "Montante Enferrujado"
+    },
+    {
+      "section": "Armas",
+      "en": "Royal Guard's Claymore",
+      "ptbr": "Montante da Guarda Real"
+    },
+    {
+      "section": "Armas",
+      "en": "Great Flameblade",
+      "ptbr": "Grã-Espada Flamejante"
+    },
+    {
+      "section": "Armas",
+      "en": "Great Frostblade",
+      "ptbr": "Grã-Espada Álgida"
+    },
+    {
+      "section": "Armas",
+      "en": "Great Thunderblade",
+      "ptbr": "Grã-Espada Faiscante"
+    },
+    {
+      "section": "Armas",
+      "en": "Boko Bat",
+      "ptbr": "Taco Kobo"
+    },
+    {
+      "section": "Armas",
+      "en": "Spiked Boko Bat",
+      "ptbr": "Taco Kobo Pontudo"
+    },
+    {
+      "section": "Armas",
+      "en": "Dragonbone Boko Bat",
+      "ptbr": "Taco Kobo Dracônico"
+    },
+    {
+      "section": "Armas",
+      "en": "Moblin Club",
+      "ptbr": "Clava Moblin"
+    },
+    {
+      "section": "Armas",
+      "en": "Spiked Moblin Club",
+      "ptbr": "Clava Moblin Pontuda"
+    },
+    {
+      "section": "Armas",
+      "en": "Dragonbone Moblin Club",
+      "ptbr": "Clava Moblin Dracônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Ancient Battle Axe",
+      "ptbr": "Acha Ancestral"
+    },
+    {
+      "section": "Armas",
+      "en": "Ancient Battle Axe+",
+      "ptbr": "Acha Ancestral 2.0"
+    },
+    {
+      "section": "Armas",
+      "en": "Ancient Battle Axe++",
+      "ptbr": "Acha Ancestral 3.0"
+    },
+    {
+      "section": "Armas",
+      "en": "Lynel Crusher",
+      "ptbr": "Maça Centaleônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Mighty Lynel Crusher",
+      "ptbr": "Maça Centaleônica Forte"
+    },
+    {
+      "section": "Armas",
+      "en": "Savage Lynel Crusher",
+      "ptbr": "Maça Centaleônica Feroz"
+    },
+    {
+      "section": "Armas",
+      "en": "Windcleaver",
+      "ptbr": "Corta-Vento"
+    },
+    {
+      "section": "Armas",
+      "en": "Moblin Arm",
+      "ptbr": "Braço de Moblin"
+    },
+    {
+      "section": "Armas",
+      "en": "Wooden Mop",
+      "ptbr": "Esfregão de Madeira"
+    },
+    {
+      "section": "Armas",
+      "en": "Farmer's Pitchfork",
+      "ptbr": "Forcado"
+    },
+    {
+      "section": "Armas",
+      "en": "Fishing Harpoon",
+      "ptbr": "Arpão"
+    },
+    {
+      "section": "Armas",
+      "en": "Throwing Spear",
+      "ptbr": "Lança de Arremesso"
+    },
+    {
+      "section": "Armas",
+      "en": "Traveler's Spear",
+      "ptbr": "Lança do Viajante"
+    },
+    {
+      "section": "Armas",
+      "en": "Soldier's Spear",
+      "ptbr": "Lança do Soldado"
+    },
+    {
+      "section": "Armas",
+      "en": "Knight's Halberd",
+      "ptbr": "Alabarda do Cavaleiro"
+    },
+    {
+      "section": "Armas",
+      "en": "Royal Halberd",
+      "ptbr": "Alabarda Real"
+    },
+    {
+      "section": "Armas",
+      "en": "Forest Dweller's Spear",
+      "ptbr": "Lança da Floresta"
+    },
+    {
+      "section": "Armas",
+      "en": "Zora Spear",
+      "ptbr": "Lança Zora"
+    },
+    {
+      "section": "Armas",
+      "en": "Silverscale Spear",
+      "ptbr": "Lança Escamada"
+    },
+    {
+      "section": "Armas",
+      "en": "Ceremonial Trident",
+      "ptbr": "Tridente Cerimonial"
+    },
+    {
+      "section": "Armas",
+      "en": "Lightscale Trident",
+      "ptbr": "Tridente Escamado"
+    },
+    {
+      "section": "Armas",
+      "en": "Drillshaft",
+      "ptbr": "Perfuradeira"
+    },
+    {
+      "section": "Armas",
+      "en": "Feathered Spear",
+      "ptbr": "Lança Plumada"
+    },
+    {
+      "section": "Armas",
+      "en": "Gerudo Spear",
+      "ptbr": "Lança Gerudo"
+    },
+    {
+      "section": "Armas",
+      "en": "Serpentine Spear",
+      "ptbr": "Lança Lunar"
+    },
+    {
+      "section": "Armas",
+      "en": "Ancient Spear",
+      "ptbr": "Lança Ancestral"
+    },
+    {
+      "section": "Armas",
+      "en": "Rusty Halberd",
+      "ptbr": "Alabarda Enferrujada"
+    },
+    {
+      "section": "Armas",
+      "en": "Royal Guard's Spear",
+      "ptbr": "Lança da Guarda Real"
+    },
+    {
+      "section": "Armas",
+      "en": "Flamespear",
+      "ptbr": "Lança Carbonizante"
+    },
+    {
+      "section": "Armas",
+      "en": "Frostspear",
+      "ptbr": "Lança Congelante"
+    },
+    {
+      "section": "Armas",
+      "en": "Thunderspear",
+      "ptbr": "Lança Voltaica"
+    },
+    {
+      "section": "Armas",
+      "en": "Boko Spear",
+      "ptbr": "Lança Kobo"
+    },
+    {
+      "section": "Armas",
+      "en": "Spiked Boko Spear",
+      "ptbr": "Lança Kobo Pontuda"
+    },
+    {
+      "section": "Armas",
+      "en": "Dragonbone Boko Spear",
+      "ptbr": "Lança Kobo Dracônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Moblin Spear",
+      "ptbr": "Lança Moblin"
+    },
+    {
+      "section": "Armas",
+      "en": "Spiked Moblin Spear",
+      "ptbr": "Lança Moblin Espinhosa"
+    },
+    {
+      "section": "Armas",
+      "en": "Dragonbone Moblin Spear",
+      "ptbr": "Lança Moblin Dracônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Lizal Spear",
+      "ptbr": "Lança Lagal"
+    },
+    {
+      "section": "Armas",
+      "en": "Enhanced Lizal Spear",
+      "ptbr": "Lança Lagal Aprimorada"
+    },
+    {
+      "section": "Armas",
+      "en": "Forked Lizal Spear",
+      "ptbr": "Lança Lagal Bifurcada"
+    },
+    {
+      "section": "Armas",
+      "en": "Guardian Spear",
+      "ptbr": "Lança Guardiã"
+    },
+    {
+      "section": "Armas",
+      "en": "Guardian Spear+",
+      "ptbr": "Lança Guardiã 2.0"
+    },
+    {
+      "section": "Armas",
+      "en": "Guardian Spear++",
+      "ptbr": "Lança Guardiã 3.0"
+    },
+    {
+      "section": "Armas",
+      "en": "Lynel Spear",
+      "ptbr": "Lança Centaleônica"
+    },
+    {
+      "section": "Armas",
+      "en": "Mighty Lynel Spear",
+      "ptbr": "Lança Centaleônica Forte"
+    },
+    {
+      "section": "Armas",
+      "en": "Savage Lynel Spear",
+      "ptbr": "Lança Centaleônica Feroz"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Twilight Bow",
+      "ptbr": "Arco do Crepúsculo"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Bow of Light",
+      "ptbr": "Arco da Luz"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Wooden Bow",
+      "ptbr": "Arco de Madeira"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Traveler's Bow",
+      "ptbr": "Arco do Viajante"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Soldier's Bow",
+      "ptbr": "Arco do Soldado"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Knight's Bow",
+      "ptbr": "Arco do Cavaleiro"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Royal Bow",
+      "ptbr": "Arco Real"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Forest Dweller's Bow",
+      "ptbr": "Arco da Floresta"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Silver Bow",
+      "ptbr": "Arco Prateado"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Swallow Bow",
+      "ptbr": "Arco da Andorinha"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Falcon Bow",
+      "ptbr": "Arco do Falcão"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Great Eagle Bow",
+      "ptbr": "Arco da Harpia"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Golden Bow",
+      "ptbr": "Arco Dourado"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Phrenic Bow",
+      "ptbr": "Arco de Precisão"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Ancient Bow",
+      "ptbr": "Arco Ancestral"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Royal Guard's Bow",
+      "ptbr": "Arco da Guarda Real"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Boko Bow",
+      "ptbr": "Arco Kobo"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Spiked Boko Bow",
+      "ptbr": "Arco Kobo Pontudo"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Dragonbone Boko Bow",
+      "ptbr": "Arco Kobo Dracônico"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Lizal Bow",
+      "ptbr": "Arco Lagal"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Strengthened Lizal Bow",
+      "ptbr": "Arco Lagal Reforçado"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Steel Lizal Bow",
+      "ptbr": "Arco Lagal de Aço"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Lynel Bow",
+      "ptbr": "Arco Centaleônico"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Mighty Lynel Bow",
+      "ptbr": "Arco Centaleônico Forte"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Savage Lynel Bow",
+      "ptbr": "Arco Centaleônico Feroz"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Duplex Bow",
+      "ptbr": "Arco Duplo"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Arrow",
+      "ptbr": "Flecha"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Fire Arrow",
+      "ptbr": "Flecha Incendiária"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Ice Arrow",
+      "ptbr": "Flecha Congelante"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Shock Arrow",
+      "ptbr": "Flecha Eletrizante"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Bomb Arrow",
+      "ptbr": "Flecha Explosiva"
+    },
+    {
+      "section": "Arcos e Flechas",
+      "en": "Ancient Arrow",
+      "ptbr": "Flecha Ancestral"
+    },
+    {
+      "section": "Escudos",
+      "en": "Hylian Shield",
+      "ptbr": "Escudo Hyliano"
+    },
+    {
+      "section": "Escudos",
+      "en": "Pot Lid",
+      "ptbr": "Tampa de Panela"
+    },
+    {
+      "section": "Escudos",
+      "en": "Wooden Shield",
+      "ptbr": "Escudo de Madeira"
+    },
+    {
+      "section": "Escudos",
+      "en": "Emblazoned Shield",
+      "ptbr": "Escudo Timbrado"
+    },
+    {
+      "section": "Escudos",
+      "en": "Hunter's Shield",
+      "ptbr": "Escudo do Caçador"
+    },
+    {
+      "section": "Escudos",
+      "en": "Fisherman's Shield",
+      "ptbr": "Escudo do Pescador"
+    },
+    {
+      "section": "Escudos",
+      "en": "Traveler's Shield",
+      "ptbr": "Escudo do Viajante"
+    },
+    {
+      "section": "Escudos",
+      "en": "Soldier's Shield",
+      "ptbr": "Escudo do Soldado"
+    },
+    {
+      "section": "Escudos",
+      "en": "Knight's Shield",
+      "ptbr": "Escudo do Cavaleiro"
+    },
+    {
+      "section": "Escudos",
+      "en": "Royal Shield",
+      "ptbr": "Escudo Real"
+    },
+    {
+      "section": "Escudos",
+      "en": "Forest Dweller's Shield",
+      "ptbr": "Escudo da Floresta"
+    },
+    {
+      "section": "Escudos",
+      "en": "Silver Shield",
+      "ptbr": "Escudo Prateado"
+    },
+    {
+      "section": "Escudos",
+      "en": "Kite Shield",
+      "ptbr": "Escudo-pipa"
+    },
+    {
+      "section": "Escudos",
+      "en": "Gerudo Shield",
+      "ptbr": "Escudo Gerudo"
+    },
+    {
+      "section": "Escudos",
+      "en": "Radiant Shield",
+      "ptbr": "Escudo Luminescente"
+    },
+    {
+      "section": "Escudos",
+      "en": "Daybreaker",
+      "ptbr": "Resplendor da Aurora"
+    },
+    {
+      "section": "Escudos",
+      "en": "Shield of the Mind's Eye",
+      "ptbr": "Escudo da Visão Anímica"
+    },
+    {
+      "section": "Escudos",
+      "en": "Ancient Shield",
+      "ptbr": "Escudo Ancestral"
+    },
+    {
+      "section": "Escudos",
+      "en": "Rusty Shield",
+      "ptbr": "Escudo Enferrujado"
+    },
+    {
+      "section": "Escudos",
+      "en": "Royal Guard's Shield",
+      "ptbr": "Escudo da Guarda Real"
+    },
+    {
+      "section": "Escudos",
+      "en": "Boko Shield",
+      "ptbr": "Escudo Kobo"
+    },
+    {
+      "section": "Escudos",
+      "en": "Spiked Boko Shield",
+      "ptbr": "Escudo Kobo Pontudo"
+    },
+    {
+      "section": "Escudos",
+      "en": "Dragonbone Boko Shield",
+      "ptbr": "Escudo Kobo Dracônico"
+    },
+    {
+      "section": "Escudos",
+      "en": "Lizal Shield",
+      "ptbr": "Escudo Lagal"
+    },
+    {
+      "section": "Escudos",
+      "en": "Reinforced Lizal Shield",
+      "ptbr": "Escudo Lagal Reforçado"
+    },
+    {
+      "section": "Escudos",
+      "en": "Steel Lizal Shield",
+      "ptbr": "Escudo Lagal de Aço"
+    },
+    {
+      "section": "Escudos",
+      "en": "Guardian Shield",
+      "ptbr": "Escudo Guardião"
+    },
+    {
+      "section": "Escudos",
+      "en": "Guardian Shield+",
+      "ptbr": "Escudo Guardião 2.0"
+    },
+    {
+      "section": "Escudos",
+      "en": "Guardian Shield++",
+      "ptbr": "Escudo Guardião 3.0"
+    },
+    {
+      "section": "Escudos",
+      "en": "Lynel Shield",
+      "ptbr": "Defesa Centaleônica"
+    },
+    {
+      "section": "Escudos",
+      "en": "Mighty Lynel Shield",
+      "ptbr": "Defesa Centaleônica Forte"
+    },
+    {
+      "section": "Escudos",
+      "en": "Savage Lynel Shield",
+      "ptbr": "Defesa Centaleônica Feroz"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Bokoblin",
+      "ptbr": "Koboblin"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Lizalfos",
+      "ptbr": "Lagalfos"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Stalkoblin",
+      "ptbr": "Stalboblin"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Stalizalfos",
+      "ptbr": "Stallagalfos"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Chuchu",
+      "ptbr": "Chulchul"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Keese",
+      "ptbr": "Morci"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Octorok",
+      "ptbr": "Octoroc"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Wizzrobe",
+      "ptbr": "Feitiçano"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Pebblit",
+      "ptbr": "Brita"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Lynel",
+      "ptbr": "Centaleão"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Decayed Guardian",
+      "ptbr": "Guardião Deteriorado"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Stalker",
+      "ptbr": "Guardião Persecutório"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Scout I",
+      "ptbr": "Guardião Batedor"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Scout II",
+      "ptbr": "Guardião Batedor 2.0"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Scout III",
+      "ptbr": "Guardião Batedor 3.0"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Scout IV",
+      "ptbr": "Guardião Batedor 4.0"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Skywatcher",
+      "ptbr": "Guardião Altívago"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Guardian Turret",
+      "ptbr": "Guardião Torreta"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Sentry",
+      "ptbr": "Sentinela"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Yiga Footsoldier",
+      "ptbr": "Soldado Yiga"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Yiga Blademaster",
+      "ptbr": "Espadachim Yiga"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Talus",
+      "ptbr": "Tálus"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Hinox",
+      "ptbr": "Rinox"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Waterblight Ganon",
+      "ptbr": "Ira Áquea de Ganon"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Fireblight Ganon",
+      "ptbr": "Ira Ígnea de Ganon"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Windblight Ganon",
+      "ptbr": "Ira Eólica de Ganon"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Thunderblight Ganon",
+      "ptbr": "Ira Fulmínea de Ganon"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Calamity Ganon",
+      "ptbr": "Ganon, a Calamidade"
+    },
+    {
+      "section": "Inimigos",
+      "en": "Dark Beast Ganon",
+      "ptbr": "Ganon, Besta Sombria"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Paya",
+      "ptbr": "Apaya"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Symin",
+      "ptbr": "Amipe"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Bolson",
+      "ptbr": "Jacé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Karson",
+      "ptbr": "Katucé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Hudson",
+      "ptbr": "Ticacé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Rhondson",
+      "ptbr": "Blucé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Fyson",
+      "ptbr": "Sancé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Greyson",
+      "ptbr": "Motocé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Pelison",
+      "ptbr": "Cavecé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Kapson",
+      "ptbr": "Kapocé"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Hestu",
+      "ptbr": "Ruri"
+    },
+    {
+      "section": "Personagens Importantes",
+      "en": "Great Deku Tree",
+      "ptbr": "Grande Árvore Deko"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Paraglider",
+      "ptbr": "Planador"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Sheikah Slate",
+      "ptbr": "Tabuleta Sheikah"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Travel Medallion",
+      "ptbr": "Teletransportador"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Sheikah Tower",
+      "ptbr": "Torre Sheikah"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Remote Bomb",
+      "ptbr": "Bomba Remota"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Magnesis",
+      "ptbr": "Magnétis"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Stasis",
+      "ptbr": "Estátis"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Cryonis",
+      "ptbr": "Gelítis"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Master Cycle Zero",
+      "ptbr": "Corcel de Hyrule Zero"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Mipha's Grace",
+      "ptbr": "Dádiva de Mipha"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Revali's Gale",
+      "ptbr": "Vendaval de Revali"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Daruk's Protection",
+      "ptbr": "Proteção de Daruk"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Urbosa's Fury",
+      "ptbr": "Fúria de Urbosa"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Shrine",
+      "ptbr": "Santuário"
+    },
+    {
+      "section": "Outros nomes e termos",
+      "en": "Rito",
+      "ptbr": "Ará"
+    }
+  ]
+}

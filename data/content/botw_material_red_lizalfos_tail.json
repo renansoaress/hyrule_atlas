@@ -1,0 +1,180 @@
+{
+  "id": "botw_material_red_lizalfos_tail",
+  "summary": "Cauda de sabor intragável do Lagalfos que cospe fogo. Acrescenta 3:10 aos elixires e é o material final do Conjunto de pluma nevada (10 por peça).",
+  "description": "A Cauda de Lagalfos ígneo é deixada pelos Lagalfos que cospem fogo, mais comuns no Deserto Gerudo e no Cânion de Eldin, com aparições em partes de Akkala. O inventário diz que o sabor torna a carne intragável, mas que, num ensopado com bichos, ela rende \"um belo elixir\" — acrescentando 3:10 à duração.\n\nSeu uso de destaque é o último nível do Conjunto de pluma nevada: cada peça pede 10 caudas e 5 Rubis, num total de 30 caudas. Como nas outras armaduras de resistência, o conjunto que protege do frio é melhorado com materiais ígneos (Gelecas ígneas, Asas de Morci ígneo e esta cauda). Na Tinturaria Kochi, ela entra no corante vermelho.",
+  "locations": [
+    "Deserto Gerudo, Cânion de Eldin e algumas áreas de Akkala, onde vivem os Lagalfos ígneos."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos ígneos. Ataques de gelo os derrotam instantaneamente."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 3:10 à duração.",
+    "Melhoria de armadura: 10 por peça no 4º nível do Conjunto de pluma nevada (com 5 Rubis) — 30 no total.",
+    "Corante vermelho na Tinturaria Kochi.",
+    "Venda: 35 rupias, ou 16 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Cauda de Lagalfos ígneo no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Cauda de Lagalfos ígneo largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Cauda de Lagalfos ígneo queima, some ou se transforma em contato com o fogo, apesar de vir de um monstro de fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Cauda de Lagalfos ígneo numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Cauda de Lagalfos ígneo a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Cauda de Lagalfos ígneo à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Cauda de Lagalfos ígneo flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Cauda de Lagalfos ígneo não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Cauda de Lagalfos ígneo largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 35 rupias em lojas e comerciantes, ou 16 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Gelo derruba o dono da cauda",
+      "text": "Ataques de gelo derrotam o Lagalfos ígneo instantaneamente. Uma única Flecha congelante bem colocada encerra o combate e evita a exposição prolongada ao sopro de fogo.",
+      "sources": [
+        "zw:Fire-Breath Lizalfos",
+        "zw:Lizalfos"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O tema elemental não define o elixir",
+      "text": "Apesar de vir de um monstro de fogo, a Cauda de Lagalfos ígneo não dá efeito próprio ao elixir: em BOTW, o efeito vem da categoria dos bichos (e de alguns outros materiais), e a parte de monstro entra com a duração. Cozida com uma Borboleta invernal, por exemplo, resulta num Elixir refrescante, de resistência ao calor.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part",
+        "zw:Winterwing Butterfly"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fogo para resistir ao frio",
+      "text": "O Conjunto de pluma nevada, que protege do frio, usa só materiais ígneos nas melhorias de monstro: Gelecas ígneas no 1º e 2º níveis, Asas de Morci ígneo no 3º e Caudas de Lagalfos ígneo no 4º.",
+      "sources": [
+        "zw",
+        "zw:Red Chuchu Jelly",
+        "zw:Fire Keese Wing"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "As 30 caudas do último nível do Conjunto de pluma nevada podem ser juntadas no Deserto Gerudo, onde também se encontram Lagalfos elétricos para o Conjunto de borracha."
+  ],
+  "limitations": [
+    "O calor temático não gera fogo nem protege do frio, segundo as fontes.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_fire_breath_lizalfos",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Usa 10 caudas por peça no 4º nível"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Acompanha a cauda no 4º nível do conjunto"
+    },
+    {
+      "id": "botw_material_red_chuchu_jelly",
+      "relation": "Material dos primeiros níveis do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_fire_keese_wing",
+      "relation": "Material do 3º nível do mesmo conjunto"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Gelo derrota o Lagalfos ígneo instantaneamente"
+    },
+    {
+      "id": "botw_material_lizalfos_tail",
+      "relation": "Cauda dos Lagalfos não elementais"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante vermelho"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

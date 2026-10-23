@@ -1,0 +1,89 @@
+{
+  "id": "botw_keyitem_knights_saddle",
+  "summary": "Sela reservada à elite dos cavaleiros de Hyrule, prêmio de Jini por estourar de 23 a 25 balões no arco e flecha a cavalo. Jini a entrega porque já não precisa dela. Puramente cosmética.",
+  "description": "A Sela do cavaleiro faz parte do equipamento de montaria dos cavaleiros. A descrição do jogo diz que os cavaleiros de Hyrule a preferiam e que apenas os mais destacados entre eles podiam equipar suas montarias com ela.\n\nPara ganhá-la, Link precisa estourar de 23 a 25 balões no minijogo de arco e flecha a cavalo de Jini, no Acampamento de Tiro Montado: são 20 rupias por tentativa, o alvo são balões espalhados pelas Planícies Parache e não é permitido desmontar. Ao atingir essa marca, Jini diz que não vê alguém tão jovem com tanto talento há muito tempo, duvida que Link tenha mais de 100 anos e lhe dá a sela, já que não precisa mais dela. Se Link já tiver a sela, o prêmio vira 20 Flechas explosivas.\n\nA sela não tem efeito nos atributos do cavalo. É colocada por funcionários dos estábulos Highland, Outskirt, South Akkala e Woodland, apenas em cavalos com vínculo máximo, e não serve em Epona nem no Cavalo gigante.",
+  "locations": [
+    "Acampamento de Tiro Montado (Mounted Archery Camp), com Jini."
+  ],
+  "obtaining": [
+    "Estourar de 23 a 25 balões no minijogo de arco e flecha a cavalo (20 rupias por tentativa)."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Colocada no cavalo por um funcionário de estábulo, muda apenas a aparência.",
+      "conditions": [
+        "Falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": [
+        "Não pode ser colocada em Epona nem no Cavalo gigante."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Horse Gear"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": [
+        "zw:Horse Gear"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Jini não acredita na idade de Link",
+      "text": "Ao entregar a sela, Jini elogia o talento de alguém tão jovem e se recusa a acreditar que Link tem mais de 100 anos.",
+      "sources": [
+        "zw:Horseback Archery"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem desistência reembolsada",
+      "text": "Link pode desistir no meio da tentativa falando com Jini, mas ele avisa que as 20 rupias não são devolvidas. A cada nova tentativa, Jini cobra de novo e conserta os alvos estourados.",
+      "sources": [
+        "zw:Horseback Archery"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Jini recomenda atirar com o cavalo em trote em vez de galope, e não se preocupar com o tempo: ele mesmo avisa quando a rodada termina."
+  ],
+  "limitations": [
+    "Apenas cosmética.",
+    "Exige arco, flechas e um cavalo; desmontar não é permitido."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_knights_bridle",
+      "relation": "Outra peça do equipamento do cavaleiro"
+    },
+    {
+      "id": "botw_arrow_bomb_arrow",
+      "relation": "Prêmio substituto quando a sela já foi obtida"
+    },
+    {
+      "id": "botw_creature_horse",
+      "relation": "Montaria que recebe a sela"
+    },
+    {
+      "id": "botw_mechanic_stable",
+      "relation": "Onde a sela é colocada"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

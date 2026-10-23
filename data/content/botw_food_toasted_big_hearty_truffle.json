@@ -1,0 +1,130 @@
+{
+  "id": "botw_food_toasted_big_hearty_truffle",
+  "summary": "Trufona nutritiva tostada inteira, \"nota máxima em aroma e nutrição\", diz o jogo. Cura 4,5 corações (crua, 3) e vale 24 rupias, contra 15, mas perde os Corações extras.",
+  "description": "A Trufona nutritiva — uma Trufa nutritiva que ficou anos sem ser colhida e cresceu, encontrada ao pé de árvores das Cordilheiras de Hebra e da Grande Floresta de Hyrule — vira Trufona nutritiva tostada no fogo ou no clima escaldante. O texto do jogo afirma que, tostada inteira, ela leva nota máxima em aroma e nutrição.\n\nA cura sobe de 3 para 4,5 corações e o valor de venda, de 15 para 24 rupias. Perdem-se os Corações extras, efeito que a trufona dá em potência maior que a trufa comum quando cozida na Panela.",
+  "locations": [
+    "Prepara-se a partir de Trufonas nutritivas (ao pé de árvores das Cordilheiras de Hebra e da Grande Floresta de Hyrule) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Trufona nutritiva ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura de 4,5 corações.",
+    "Venda: 24 rupias."
+  ],
+  "effects": [
+    "Recupera 4,5 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Trufona nutritiva — queima por alguns instantes e se transforma em Trufona nutritiva tostada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Trufona nutritiva tostada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Trufona nutritiva no chão para que o ingrediente asse sozinho e vire Trufona nutritiva tostada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4,5 corações, contra 3 da Trufona nutritiva crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 24 rupias; a Trufona nutritiva crua vale 15.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Big Hearty Truffle"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Trufona nutritiva tostada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Uma trufa que esperou anos",
+      "text": "Segundo o Zelda Wiki, a Trufona nutritiva é uma Trufa nutritiva comum que cresceu por ter ficado anos sem ser colhida.",
+      "sources": [
+        "zw:Big Hearty Truffle"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: o efeito da trufona só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_big_hearty_truffle",
+      "relation": "Ingrediente cru (Corações extras na Panela)"
+    },
+    {
+      "id": "botw_food_toasted_hearty_truffle",
+      "relation": "Versão tostada da trufa menor"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Tosta a trufona ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

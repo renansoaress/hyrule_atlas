@@ -1,0 +1,112 @@
+{
+  "id": "botw_food_meaty_rice_balls",
+  "summary": "Bolinhos de Arroz hyliano recheados com carne de sabor doce e picante, que \"mantêm a barriga cheia por um bom tempo\". Aceitam qualquer carne e curam ao menos 4 corações.",
+  "description": "Os Bolinhos de arroz com carne são feitos predominantemente com Arroz hyliano e alguma carne; segundo a descrição do jogo, a carne doce e picante que recheia os bolinhos mantém a barriga cheia por um bom tempo. Curam pelo menos 4 corações.\n\nComo nem o arroz nem a carne têm efeito, ingredientes extras definem a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada. O Zelda Wiki ressalta que o prato é feito predominantemente de arroz e carne.\n\nOs bolinhos fazem parte de uma família de bolinhos de arroz: com cogumelo são os Bolinhos de arroz com cogumelos, com plantas os Bolinhos de arroz com legumes, com fruto do mar os Bolinhos de arroz com frutos do mar e com Extrato de monstro os Bolinhos de arroz de monstro. Diferente da Tigela de arroz com carne, não levam Halita e aceitam qualquer carne.",
+  "locations": [
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Carne de terceira: deixada por Javalis da mata, Bodes da montanha e Raposas do prado; vendida pelos mercadores Cambo e Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Arroz hyliano + qualquer carne."
+  ],
+  "uses": [
+    "Cura de pelo menos 4 corações; três espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera pelo menos 4 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera pelo menos 4 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ingredientes extras de efeito definem a versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Qualquer carne, sem mudar de nome",
+      "text": "Todas as carnes do jogo, da Carne de terceira à Ave inteira, aparecem como aceitas pelos Bolinhos de arroz com carne, que não têm versões de segunda ou de primeira.",
+      "sources": [
+        "zw",
+        "zw:Raw Whole Bird",
+        "zw:Raw Bird Thigh"
+      ]
+    }
+  ],
+  "limitations": [
+    "O Zelda Wiki fala em usar predominantemente arroz e carne.",
+    "As fontes não informam a cura máxima nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_mushroom_rice_balls",
+      "relation": "Bolinhos com cogumelo"
+    },
+    {
+      "id": "botw_food_veggie_rice_balls",
+      "relation": "Bolinhos com plantas"
+    },
+    {
+      "id": "botw_food_seafood_rice_balls",
+      "relation": "Bolinhos com fruto do mar"
+    },
+    {
+      "id": "botw_food_monster_rice_balls",
+      "relation": "Bolinhos com Extrato de monstro"
+    },
+    {
+      "id": "botw_food_meat_and_rice_bowl",
+      "relation": "Arroz com Carne de terceira e Halita"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

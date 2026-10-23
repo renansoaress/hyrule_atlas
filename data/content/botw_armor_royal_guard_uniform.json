@@ -1,0 +1,151 @@
+{
+  "id": "botw_armor_royal_guard_uniform",
+  "summary": "Uniforme leve da guarda real de Hyrule (DLC 2), num baú escondido atrás de uma parede rachada perto do Refeitório do castelo. Completa um conjunto que economiza vigor sem melhorias.",
+  "description": "O Uniforme da guarda real é a peça de torso do Conjunto da guarda real, do pacote The Champions' Ballad (DLC 2), com o Quepe e as Botas da guarda real. Ele faz parte da Missão secundária \"EX Royal Guard Rumors\", que começa com a leitura do Super Rumor Mill V4 no Estábulo Riverside. O baú está numa pequena câmara escondida atrás de uma parede rachada que precisa ser explodida, a oeste do Refeitório (Dining Hall) do Castelo de Hyrule, logo atrás de uma Espada da guarda real. A descrição o chama de uniforme digno, feito de material leve, elegante e prático.\n\nSozinho, dá 4 de defesa e nenhum efeito. Com o conjunto completo, ativa o Ataque carregado econômico (ataques carregados −50% de vigor) e, de forma oculta, o Salto escalando econômico e o Impulso aquático econômico. Como as peças não podem ser melhoradas nem tingidas, os bônus valem desde que o conjunto é reunido. Depois de obtido, Granté o vende por 50 rupias; antes da versão 1.3.3, não havia reposição se fosse vendido.",
+  "locations": [
+    "Castelo de Hyrule: câmara secreta atrás de uma parede rachada, a oeste do Refeitório (Dining Hall)."
+  ],
+  "obtaining": [
+    "Missão secundária \"EX Royal Guard Rumors\" (DLC 2): abrir a passagem com uma bomba e pegar o baú.",
+    "Recomprar de Granté por 50 rupias depois de obtê-lo."
+  ],
+  "uses": [
+    "Completar o Conjunto da guarda real."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Conjunto completo: Ataque carregado econômico; ocultos: Salto escalando econômico e Impulso aquático econômico."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só dá defesa. Com o Quepe da guarda real, o Uniforme da guarda real e as Botas da guarda real vestidos, ativa o Ataque carregado econômico (ataques carregados custam 50% menos vigor) e, de forma oculta, também o Salto escalando econômico (−50% de vigor nos saltos de escalada) e o Impulso aquático econômico (−75% de vigor nos impulsos e giros nadando).",
+      "conditions": [
+        "As três peças equipadas; como não podem ser melhoradas, os bônus valem sem melhorias."
+      ],
+      "side_effects": [
+        "O inventário mostra só o bônus de ataque carregado; os outros dois ficam ocultos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Royal Guard Set"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A câmara do uniforme fica atrás de uma parede rachada que precisa ser explodida, por exemplo com a Bomba remota.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:EX Royal Guard Rumors"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus ocultos",
+      "text": "Além do bônus de ataque carregado mostrado no inventário, o conjunto reduz em 50% o vigor dos saltos de escalada e em 75% o dos impulsos e giros nadando.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Royal Guard Set"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O rumor da ex-criada",
+      "text": "No Super Rumor Mill V4, Traysi conta que só os melhores soldados guardavam a família real e que uma ex-criada falava de tesouros perto do Refeitório, na Câmara dos Guardas e no segundo andar — os três esconderijos do conjunto.",
+      "sources": [
+        "jogo",
+        "zw:EX Royal Guard Rumors"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Vista o conjunto assim que abrir os três baús: como as peças não aceitam melhorias, os três bônus valem na hora, ao contrário dos conjuntos de escalada e Zora, que só dão os bônus equivalentes em ★★."
+  ],
+  "limitations": [
+    "Não pode ser melhorado nem tingido.",
+    "Exige o pacote The Champions' Ballad."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_royal_guard_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_royal_guard_cap",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_royal_guard_boots",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_weapon_royal_guards_sword",
+      "relation": "Fica na frente do baú do uniforme"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Abre a parede rachada da câmara"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

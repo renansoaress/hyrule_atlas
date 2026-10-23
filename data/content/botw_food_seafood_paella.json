@@ -1,0 +1,120 @@
+{
+  "id": "botw_food_seafood_paella",
+  "summary": "Prato de festa dos pescadores: Caramujo nutritivo, um pargo, Arroz hyliano, Manteiga de cabra e Halita. Ocupa a panela inteira, não tem efeito e ganha 2 corações de bônus.",
+  "description": "A Paella de frutos do mar exige cinco ingredientes: Caramujo nutritivo, um Pargo valente ou Pargo blindado, Arroz hyliano, Manteiga de cabra e Halita. O inventário a chama de prato de primeira, indispensável em qualquer aniversário de pescador. Como os dois frutos do mar obrigatórios têm efeitos contraditórios (nutritivo contra valente ou blindado) e a panela fica cheia, não existe nenhuma variante: a paella sempre sai sem efeito. Em compensação, é uma das receitas com bônus próprio de cura — 2 corações a mais do que a soma dos ingredientes.\n\nNa Vila Lurelin, Kiana pergunta ao filho Kinov o que fazer para o jantar; ele pede a paella da mãe, e ela pede a Link a Manteiga de cabra e o Caramujo nutritivo que faltam, iniciando a Missão secundária \"What's for Dinner?\". Ao recebê-los, Kiana paga uma Rupia roxa e convida Link para comer, entregando-lhe uma Paella de frutos do mar. Fora da missão, ela passa o fim da tarde junto à panela ao lado de casa enquanto a família se reúne para comer o prato.",
+  "locations": [
+    "Kiana prepara o prato na Vila Lurelin, numa panela ao lado de casa, entre 15h e 21h."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela Caramujo nutritivo, Pargo valente ou Pargo blindado, Arroz hyliano, Manteiga de cabra e Halita.",
+    "Recompensa da Missão secundária \"What's for Dinner?\" (Kiana, Vila Lurelin), junto com uma Rupia roxa.",
+    "O Caramujo nutritivo vive nas praias do Mar de Lanayru e do Mar de Necluda; a Manteiga de cabra é vendida, entre outros, na High Spirits Produce (Vila Kakariko) e na The Slippery Falcon (vila dos Arás)."
+  ],
+  "uses": [
+    "Cura sem efeito, reforçada pelo bônus da receita.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações, com 2 corações de bônus próprios da receita.",
+    "Nenhum efeito especial (os efeitos do caramujo e do pargo se anulam)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações, sem efeito; a receita soma 2 corações à cura dos ingredientes.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "sem a Manteiga de cabra",
+      "status": "confirmado",
+      "result": "Sem a manteiga, caramujo, pargo, arroz e Halita formam Arroz frito com frutos do mar, também sem efeito.",
+      "produces": [
+        "botw_food_seafood_fried_rice"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Seafood Fried Rice"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "A receita já ocupa os cinco espaços da panela, então o fator é sempre o máximo (2,8×)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Crítico vira cura",
+      "text": "Como a paella não tem efeito nem duração, um bônus crítico de cozimento (a Manteiga de cabra eleva a chance para 10% extras) só pode render 3 corações a mais.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Uma das primeiras receitas da fila",
+      "text": "Na ordem em que o jogo testa as receitas, a Paella de frutos do mar só fica atrás do Bolo de frutas. Com os cinco ingredientes na panela, nenhuma outra receita de arroz, curry ou frutos do mar pode \"roubar\" o resultado.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Família de pescadores",
+      "text": "Kiana conta que Lurelin é uma pequena vila de pescadores, que o marido Sebasto é pescador e que espera que os filhos Kinov e Zuta sigam o mesmo caminho — o que combina com a descrição da paella como prato de aniversário de pescador.",
+      "sources": [
+        "zw:Kiana",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Nunca tem efeito.",
+    "Ocupa os cinco espaços da panela."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Ingrediente obrigatório pedido por Kiana"
+    },
+    {
+      "id": "botw_creature_mighty_porgy",
+      "relation": "Pargo usado na receita da missão"
+    },
+    {
+      "id": "botw_creature_armored_porgy",
+      "relation": "Pargo alternativo"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório pedido por Kiana"
+    },
+    {
+      "id": "botw_food_seafood_fried_rice",
+      "relation": "O que se obtém sem a manteiga"
+    },
+    {
+      "id": "botw_food_wildberry_crepe",
+      "relation": "Outra receita com bônus próprio de cura (o maior do jogo)"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

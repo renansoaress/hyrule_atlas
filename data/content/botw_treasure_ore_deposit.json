@@ -1,0 +1,116 @@
+{
+  "id": "botw_treasure_ore_deposit",
+  "summary": "Rocha com veios de minério que, quebrada com armas (martelos em um golpe) ou Bomba remota, solta Halita, Sílex e gemas — as mais baratas com mais frequência. Golpes de metal tiram faíscas; só volta após a Lua de sangue.",
+  "description": "O Depósito de minério (entrada nº 387 do compêndio) é a fonte mais comum de gemas em Hyrule. Ele pode ser quebrado com golpes de arma ou com a explosão de uma Bomba remota; armas do tipo martelo precisam de menos golpes, e martelos como a Marreta de ferro, o Esmaga-Fraga, o Quebra-Pedra e o Racha-Rocha — além da lança Perfuradeira — o quebram com um único golpe. Ao se partir, solta Halita, Sílex e gemas: Âmbar, Opala, Topázio, Rubi, Safira e Diamante podem cair, mas as menos valiosas são bem mais frequentes.\n\nQuebrado ou inteiro, o depósito solta faíscas quando é atingido por uma arma que não seja de madeira ou por uma flecha, e essas faíscas podem iniciar incêndios. Um depósito destruído não volta até a próxima Lua de sangue; depois dela, todos os depósitos saqueados reaparecem. Os Tálus rochosos, glaciais e ígneos carregam depósitos de minério nas costas: é o ponto fraco deles, que recebe muito dano e, quando atingido, derruba o monstro.",
+  "locations": [
+    "Toda Hyrule, área comum indicada pelo compêndio.",
+    "Nas costas de Tálus rochosos, Tálus glaciais e Tálus ígneos, como ponto fraco."
+  ],
+  "obtaining": [
+    "Objeto do cenário; reaparece depois de cada Lua de sangue."
+  ],
+  "uses": [
+    "Obter gemas para vender, melhorar armaduras e encomendar equipamentos.",
+    "Obter Halita e Sílex.",
+    "Gerar faíscas para acender fogo golpeando-o com uma arma de metal ou uma flecha.",
+    "Ponto fraco dos Tálus: atacar o depósito é a forma de derrotá-los."
+  ],
+  "effects": [
+    "Solta Halita, Sílex e gemas ao quebrar; as gemas menos valiosas, como Âmbar e Opala, caem com mais frequência que Topázio, Rubi, Safira e Diamante."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes quebram o depósito; armas do tipo martelo precisam de menos golpes, e alguns martelos e a Perfuradeira quebram com um só. Armas que não são de madeira tiram faíscas a cada golpe.",
+      "side_effects": ["As faíscas podem pôr fogo na grama seca ao redor."],
+      "produces": ["botw_material_rock_salt", "botw_material_flint", "botw_material_amber", "botw_material_opal", "botw_material_topaz", "botw_material_ruby", "botw_material_sapphire", "botw_material_diamond"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Drillshaft", "zw:Stone Smasher"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota quebra o depósito.",
+      "applications": ["Quebrar depósitos sem gastar a durabilidade das armas."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas que atingem o depósito geram faíscas capazes de iniciar incêndios.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O depósito funciona como fonte de faíscas: golpes de armas que não são de madeira ou flechas podem acender fogo ao redor.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Nos Tálus, o depósito é o ponto fraco: atacá-lo causa muito dano e derruba o monstro. A Marreta de ferro causa quatro vezes mais dano nele; Racha-Rocha, Esmaga-Fraga e Quebra-Pedra, o dobro. A Fúria de Urbosa também atinge esse ponto.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stone Talus", "zw:Iron Sledgehammer", "zw:Boulder Breaker", "zw:Frost Talus"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "É rocha, não metal; Magnétis não o afeta.",
+      "sources": ["zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Volta com a Lua de sangue",
+      "text": "Depósitos destruídos somem de vez até a próxima Lua de sangue; quando ela ocorre, todos os depósitos saqueados reaparecem.",
+      "sources": ["zw", "zw:Blood Moon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Martelos de mineração",
+      "text": "A Marreta de ferro, feita originalmente como ferramenta de mineração, tem uma propriedade oculta que quadruplica o dano contra o depósito nas costas de um Tálus rochoso. Racha-Rocha, Esmaga-Fraga e Quebra-Pedra dobram o dano nesse ponto; a Perfuradeira quebra depósitos com um golpe, mas não recebe o bônus contra Tálus.",
+      "sources": ["zw:Iron Sledgehammer", "zw:Boulder Breaker", "zw:Drillshaft"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Gemas valem a viagem",
+      "text": "A dica do jogo lembra que as gemas que às vezes caem dos depósitos são vendidas por um bom preço.",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Faíscas sem Sílex",
+      "text": "Mesmo depois de quebrado, o depósito continua soltando faíscas quando atingido por armas não madeireiras ou flechas — um jeito de acender fogo sem gastar Sílex.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Levar uma Marreta de ferro ou outro martelo para quebrar depósitos com um golpe e preservar as armas principais.",
+    "Combinar a faísca do depósito com Madeira largada ao lado para montar uma fogueira."
+  ],
+  "limitations": [
+    "As gemas mais valiosas são as mais raras.",
+    "Um depósito quebrado só reaparece após a Lua de sangue.",
+    "As faíscas podem iniciar incêndios indesejados."
+  ],
+  "related": [
+    { "id": "botw_treasure_rare_ore_deposit", "relation": "Variante com mais chance de gemas raras" },
+    { "id": "botw_treasure_luminous_ore_deposit", "relation": "Variante que solta Pedra luminosa" },
+    { "id": "botw_material_rock_salt", "relation": "Material liberado" },
+    { "id": "botw_material_flint", "relation": "Material liberado" },
+    { "id": "botw_material_amber", "relation": "Gema mais comum do depósito" },
+    { "id": "botw_material_diamond", "relation": "Gema mais rara do depósito" },
+    { "id": "botw_monster_stone_talus", "relation": "Tem um depósito como ponto fraco" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Quebra com um golpe; dano ×4 no Tálus rochoso" },
+    { "id": "botw_rune_remote_bomb", "relation": "Quebra o depósito à distância" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Faz os depósitos reaparecerem" }
+  ],
+  "capabilities": ["gera_fogo", "revela_recursos"],
+  "verification_status": "verificado"
+}

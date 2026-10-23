@@ -1,0 +1,91 @@
+{
+  "id": "botw_food_glazed_meat",
+  "summary": "Carne com Mel de abelha. Só com carne e mel sai sempre energizante (7 corações, 50 rupias); a versão comum precisa de um terceiro ingrediente que anule o mel e vale mais (60 rupias).",
+  "description": "A Carne glaceada é feita predominantemente com carne e Mel de abelha; segundo a descrição do jogo, a doçura do mel penetra na carne e dá um sabor complexo. Como o mel tem efeito energizante e as carnes não alteram isso, a receita só com carne e mel sempre sai na versão energizante, que recupera parte do Medidor de vigor, cura 7 corações e vale 50 rupias.\n\nA versão comum, sem efeito, exige um terceiro ingrediente com efeito diferente do mel, para que os efeitos se anulem; ela também cura 7 corações e vale 60 rupias. Entre os quatro pratos glaceados (carne, cogumelos, frutos do mar e legumes), a carne é o único em que a fonte informa corações e preços.",
+  "locations": [
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer carne + Mel de abelha."
+  ],
+  "uses": [
+    "Recuperação de vigor com cura de 7 corações.",
+    "Venda: 50 ou 60 rupias."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — receita padrão, só carne e mel; 7 corações, 50 rupias.",
+    "Versão comum (terceiro ingrediente de efeito diferente): recupera 7 corações, 60 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera parte do Medidor de vigor e 7 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão energizante"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um terceiro ingrediente de efeito diferente, perde o efeito e cura 7 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 50 rupias na versão energizante e 60 rupias na versão comum.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sem efeito, mais caro",
+      "text": "Anular o efeito do mel não muda a cura (7 corações), mas eleva o preço de 50 para 60 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só existe uma versão com efeito: a energizante."
+  ],
+  "related": [
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório, fonte do efeito energizante"
+    },
+    {
+      "id": "botw_food_glazed_mushrooms",
+      "relation": "Glaceado de cogumelos"
+    },
+    {
+      "id": "botw_food_glazed_seafood",
+      "relation": "Glaceado de frutos do mar"
+    },
+    {
+      "id": "botw_food_glazed_veggies",
+      "relation": "Glaceado de legumes"
+    },
+    {
+      "id": "botw_food_honey_candy",
+      "relation": "Prato só de mel"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

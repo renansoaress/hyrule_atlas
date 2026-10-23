@@ -1,0 +1,166 @@
+{
+  "id": "botw_material_ice_keese_wing",
+  "summary": "Asa de superfície congelada dos Morcis glaciais. Acrescenta 1:50 aos elixires e é a asa mais exigida em melhorias: 48 unidades entre o Conjunto voe do deserto e o de escalada.",
+  "description": "A Asa de Morci glacial é deixada pelos Morcis glaciais, comuns em climas congelantes como as Cordilheiras de Hebra e o Monte Lanayru, onde congelam Link ao encostar nele. O texto do inventário elogia a superfície congelada e brilhante da asa, mas diz que a utilidade dela \"não é evidente\" — é a única das quatro asas de Morci cuja descrição nem menciona elixires, embora funcione na panela como as outras, acrescentando 1:50 à duração.\n\nA utilidade real está nas Grandes Fadas: o Conjunto voe do deserto pede 3 asas por peça no 2º nível e 8 por peça no 3º, e o Conjunto de escalada pede 5 por peça no 3º nível — 48 no total, mais do que qualquer outra asa. Na Tinturaria Kochi, entra no corante azul.",
+  "locations": [
+    "Climas congelantes, como as Cordilheiras de Hebra e o Monte Lanayru."
+  ],
+  "obtaining": [
+    "Derrotar Morcis glaciais. Feitiçanos glaciais também os invocam durante a luta."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: Conjunto voe do deserto (3 por peça no 2º nível e 8 por peça no 3º) e Conjunto de escalada (5 por peça no 3º nível) — 48 no total.",
+    "Corante azul na Tinturaria Kochi.",
+    "Venda: 6 rupias, ou 6 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Asa de Morci glacial no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Asa de Morci glacial largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Asa de Morci glacial queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Asa de Morci glacial numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Asa de Morci glacial a gelo ou congelamento, apesar da superfície congelada."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Asa de Morci glacial à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Asa de Morci glacial flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Asa de Morci glacial não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Asa de Morci glacial largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 6 rupias em lojas e comerciantes, ou 6 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O tema elemental não define o elixir",
+      "text": "Apesar de a superfície congelada, a Asa de Morci glacial não dá efeito próprio ao elixir. No sistema de BOTW, o efeito vem da categoria dos bichos (e de alguns outros materiais); a parte de monstro só entra com a duração. Cozida com uma Borboleta estival, por exemplo, ela resulta num Elixir picante, de resistência ao frio.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part",
+        "zw:Summerwing Butterfly"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A asa que \"não serve para nada\"",
+      "text": "A descrição do inventário é a única das asas de Morci que não sugere o uso em elixires: diz apenas que a utilidade não é evidente. Na prática, ela é a asa mais exigida em melhorias de armadura.",
+      "sources": [
+        "jogo",
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para o Conjunto voe do deserto até o 3º nível, junte 33 asas glaciais (9 + 24) e mais 15 se também for melhorar o Conjunto de escalada."
+  ],
+  "limitations": [
+    "A superfície congelada é descritiva: as fontes não atribuem ao item efeito de frio ou proteção contra o calor.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_ice_keese",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_armorset_desert_voe_set",
+      "relation": "Usa 3 e 8 por peça no 2º e 3º níveis"
+    },
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Usa 5 por peça no 3º nível"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Acompanha a asa no 2º nível do Conjunto voe do deserto"
+    },
+    {
+      "id": "botw_material_icy_lizalfos_tail",
+      "relation": "Acompanha a asa no 3º nível do Conjunto voe do deserto"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Pode invocar Morcis glaciais"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

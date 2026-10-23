@@ -1,0 +1,84 @@
+{
+  "id": "botw_creature_wood_pigeon",
+  "summary": "Pombo cinza de cabeça roxa, o mais comum de Hyrule, visto em florestas, campos e vilarejos. Pouco atento ao perigo, é presa fácil até para caçadores inexperientes; abatido, deixa uma Coxa.",
+  "description": "O Pombo silvestre é a variedade de pombo mais comum: corpo cinza, pescoço cinza-claro e cabeça e pescoço com penas roxas. Vive por toda Hyrule, em florestas, campos e até vilarejos; o compendium cita a Grande Floresta de Hyrule e os Cerros de Hyrule.\n\nO compendium o descreve com pouco senso de alerta, de modo que até caçadores menos habilidosos conseguem pegá-lo com facilidade — ainda assim, ele foge se vir Link. Abatido, deixa uma Coxa, a carne de ave mais simples. O Pombo branco, das montanhas nevadas, teria surgido de um Pombo silvestre que mudou de cor para se camuflar na neve.",
+  "locations": [
+    "Grande Floresta de Hyrule e Cerros de Hyrule (compendium); florestas, campos e vilarejos de toda Hyrule."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Coxa."
+  ],
+  "uses": [
+    "Fonte fácil de Coxa, ingrediente de pratos com carne.",
+    "Registrar sua foto no compendium (entrada nº 36)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Tem pouco senso de alerta, mas foge se vir Link.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Pigeon", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser caçado à distância; ao morrer, deixa uma Coxa.",
+      "conditions": ["O jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_raw_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Pigeon", "zw:Raw Bird Drumstick", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra o pombo, que foge ao ver Link."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Ancestral do Pombo branco",
+      "text": "Segundo o compendium, o Pombo branco teria surgido de um Pombo silvestre que sobreviveu no alto de uma montanha nevada trocando as penas para se misturar à neve.",
+      "sources": ["comp", "zw:White Pigeon"]
+    }
+  ],
+  "advanced_uses": [
+    "A Coxa vira Coxa assada se exposta ao fogo e Coxa congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Rende só Coxa, a carne de ave de menor qualidade; o Pombo colorido deixa carne melhor."
+  ],
+  "related": [
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_food_roasted_bird_drumstick", "relation": "Coxa exposta ao fogo" },
+    { "id": "botw_food_frozen_bird_drumstick", "relation": "Coxa exposta ao gelo" },
+    { "id": "botw_creature_white_pigeon", "relation": "Descendente adaptado à neve" },
+    { "id": "botw_creature_rainbow_pigeon", "relation": "Pombo de carne de melhor qualidade" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

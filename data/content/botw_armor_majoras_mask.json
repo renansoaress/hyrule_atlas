@@ -1,0 +1,185 @@
+{
+  "id": "botw_armor_majoras_mask",
+  "summary": "Máscara antiga do DLC The Master Trials, escondida nas Kolomo Garrison Ruins. Só dá 1 de defesa, mas reúne os disfarces de Koboblin, Moblin, Lagalfos e Centaleão numa única peça.",
+  "description": "Exclusiva do pacote de DLC The Master Trials, a Máscara de Majora é o objetivo da missão secundária “EX Treasure: Ancient Mask”. O diário de Misko (Misko's EX Journal), nas Outpost Ruins, dá a pista, e a máscara está num baú escondido nas Kolomo Garrison Ruins. A descrição a apresenta como uma máscara sinistra passada desde tempos antigos, que torna Link “mais difícil de ser notado” por certos inimigos.\n\nNa prática, o efeito oculto Disfarce combina os quatro disfarces das máscaras de Kilton: Koboblins, Moblins e Lagalfos (com suas versões Stal) não atacam enquanto Link não os agredir, e os Centaleões também são enganados, mas atacam depois de pouco tempo. Se um inimigo não afetado começar a atacar, o disfarce cai. Os olhos da máscara brilham no escuro. A defesa é só 1 e, como as demais armaduras dos DLCs, ela não pode ser melhorada. Depois de achada, Granté a vende por 50 rupias.",
+  "locations": [
+    "Kolomo Garrison Ruins: baú escondido apontado pelo diário de Misko das Outpost Ruins."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Ancient Mask” (DLC The Master Trials), disponível depois de sair do Grande Planalto.",
+    "Reposição: Granté a vende por 50 rupias em Tarrey Town depois da primeira obtenção (a partir da versão 1.3.3)."
+  ],
+  "uses": [
+    "Andar entre acampamentos mistos de Koboblins, Moblins e Lagalfos sem lutar.",
+    "Substituir as quatro máscaras de Kilton por uma só peça."
+  ],
+  "effects": [
+    "Disfarce (efeito oculto): combina os disfarces de Koboblin, Moblin, Lagalfos e Centaleão."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 1 de defesa e ativa o Disfarce combinado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins, Moblins e Lagalfos — e as versões Stal cobertas por essas máscaras — não atacam Link enquanto ele não os atacar primeiro; passam a segui-lo e observá-lo.",
+      "side_effects": [
+        "Com os monstros rondando Link, fica mais difícil dar Ataque-surpresa."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Centaleões",
+      "status": "confirmado",
+      "result": "Centaleões também são enganados, mas só por um curto período; depois atacam.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "outras espécies",
+      "status": "confirmado",
+      "result": "Inimigos não cobertos pelo disfarce atacam normalmente, e quando um deles ataca, os monstros enganados também percebem o truque.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Aviso de “não pode ser recuperada”",
+      "text": "Antes da versão 1.3.3, Granté não vendia armaduras dos DLCs e a descrição alertava que a máscara não poderia ser recuperada se fosse vendida. Com a atualização, Granté passou a vendê-la e o texto mudou.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Olhos que brilham",
+      "text": "Assim como a Máscara da Deidade Feroz, a Máscara de Majora tem olhos que brilham e chamam a atenção em lugares escuros.",
+      "sources": [
+        "zw:Fierce Deity Mask"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Descrição modesta, efeito amplo",
+      "text": "O inventário só diz que a máscara dificulta que “certos inimigos” notem Link; o Zelda Wiki detalha que ela soma os efeitos das máscaras de Koboblin, Moblin, Lagalfos e Centaleão.",
+      "sources": [
+        "jogo",
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Num acampamento com Koboblins, Moblins e Lagalfos juntos, uma única máscara mantém todos pacíficos, o que nenhuma máscara de Kilton consegue sozinha."
+  ],
+  "limitations": [
+    "Defesa de apenas 1, sem melhorias.",
+    "Centaleões só são enganados por pouco tempo.",
+    "Não cobre Chulchuls, Morcis, Octorocs, Guardiões, o Clã Yiga nem outros inimigos fora das quatro espécies.",
+    "Exige o DLC The Master Trials; as fontes não informam se pode ser tingida."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_bokoblin_mask",
+      "relation": "Disfarce incluído"
+    },
+    {
+      "id": "botw_armor_moblin_mask",
+      "relation": "Disfarce incluído"
+    },
+    {
+      "id": "botw_armor_lizalfos_mask",
+      "relation": "Disfarce incluído"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Disfarce incluído"
+    },
+    {
+      "id": "botw_armor_fierce_deity_mask",
+      "relation": "Outra máscara de Majora's Mask com olhos que brilham"
+    },
+    {
+      "id": "botw_armor_korok_mask",
+      "relation": "Outra máscara do DLC The Master Trials"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

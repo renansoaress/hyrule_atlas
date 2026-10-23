@@ -1,0 +1,195 @@
+{
+  "id": "botw_material_cane_sugar",
+  "summary": "Cana que, fervida, vira o suco doce de bolos e tortas. Não recupera corações, mas dá +30% de chance de bônus crítico na panela, a maior entre os ingredientes comuns. Base de 13 doces, do Pudim de ovos ao Bolo de monstro.",
+  "description": "A Cana-de-açúcar é um ingrediente de loja: segundo o jogo, quando fervida com outros ingredientes, se desfaz num suco doce necessário para bolos e outros doces, e \"é comum em lojas de ingredientes\". Não é encontrada na natureza — é vendida na General Shoppe da Floresta Korok (Korok Forest), na Goron Gusto Shop (Cidade Goron), na Slippery Falcon (Vila Rito) e pelo mercador Yammo.\n\nNa tabela de culinária do Zelda Wiki, ela não recupera corações (0) e soma 1:20 à duração, mas tem um trunfo pouco óbvio: aumenta em 30% a chance de bônus crítico do prato, a maior entre os ingredientes comuns, empatada com as partes de monstro de grau alto e atrás apenas das partes de dragão e do Fragmento de estrela (100%). É obrigatória em 13 receitas de doces, como Torta de maçã, Bolo de cenoura, Pudim de ovos, Torta de ovos, Crepes, Bolo de frutas, Bolo de nozes e Torta de abóbora. Sozinha, ou só com outros ingredientes suplementares incompatíveis, resulta em Comida duvidosa. Na Tinturaria Kochi, entra no corante verde.",
+  "locations": [
+    "General Shoppe (Floresta Korok), Goron Gusto Shop (Cidade Goron), The Slippery Falcon (Vila Rito) e o mercador Yammo (Tabantha Bridge Stable–Serenne Stable)."
+  ],
+  "obtaining": [
+    "Comprar nas lojas e com o mercador citados (12 rupias)."
+  ],
+  "uses": [
+    "Receitas obrigatórias: Torta de maçã, Bolo de cenoura, Pudim de ovos, Torta de ovos, Bananas fritas, Torta de frutas, Bolo de frutas, Crepe de mel, Bolo de monstro, Bolo de nozes, Crepe simples, Torta de abóbora e Crepe de framboesa.",
+    "Aumentar em 30% a chance de bônus crítico de um prato.",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; acrescenta 1:20 à duração e +30% de chance de crítico."
+  ],
+  "interactions": [
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro que não recupera corações, acrescenta 1:20 à duração e +30% de chance de bônus crítico. Combinada com os ingredientes certos, forma os doces; sozinha ou com suplementos incompatíveis, vira Comida duvidosa.",
+      "side_effects": [
+        "Com Extrato de monstro no prato, o bônus crítico fica impossível."
+      ],
+      "produces": [
+        "botw_food_egg_pudding",
+        "botw_food_apple_pie",
+        "botw_food_egg_tart",
+        "botw_food_plain_crepe",
+        "botw_food_fruitcake",
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Cana-de-açúcar pode ser comida crua; a tabela de culinária do Zelda Wiki lhe atribui 0 de recuperação de vida."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Jogada perto do fogo, queima até virar cinzas: só materiais que recuperam vida crus viram comida assada, e a cana não recupera.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada numa fogueira, queima até virar cinzas, pelo mesmo motivo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada da cana na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; não há uso conhecido para a cana solta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a cana largada."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da cana à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com a cana largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a cana não é metálica.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à cana largada."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "O \"tempero\" do crítico",
+      "text": "A chance de bônus crítico é de 5% por ingrediente diferente, mais o maior bônus de material presente (calculado uma só vez). A Cana-de-açúcar dá +30%, o triplo do Ovo, da Manteiga de cabra e do Tempero Goron (+10% cada). Num doce como a Torta de maçã, ela já vem incluída.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Doce sem cura",
+      "text": "Apesar de ser a base de todos os bolos e tortas, a cana não acrescenta nenhum coração à receita: a cura dos doces vem das frutas, ovos, leite, trigo e mel.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como o bônus de crítico só conta o maior valor presente, adicionar cana a um prato que já tem uma parte de dragão ou Fragmento de estrela (100%) não acrescenta nada; ela só faz diferença em pratos sem esses ingredientes."
+  ],
+  "limitations": [
+    "Não é encontrada na natureza: só em lojas.",
+    "Não recupera corações.",
+    "Com Extrato de monstro, o bônus crítico é anulado."
+  ],
+  "related": [
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Doce que exige Cana-de-açúcar"
+    },
+    {
+      "id": "botw_food_egg_pudding",
+      "relation": "Doce que exige Cana-de-açúcar"
+    },
+    {
+      "id": "botw_food_honey_crepe",
+      "relation": "Doce que exige Cana-de-açúcar"
+    },
+    {
+      "id": "botw_food_monster_cake",
+      "relation": "Doce com Extrato de monstro que exige cana"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Parceiro na maioria dos bolos e tortas"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Parceira nas tortas"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Garante o crítico (100%), acima dos 30% da cana"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem combinação válida"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante verde"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

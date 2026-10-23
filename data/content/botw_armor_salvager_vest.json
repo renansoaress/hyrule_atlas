@@ -1,0 +1,140 @@
+{
+  "id": "botw_armor_salvager_vest",
+  "summary": "Colete de mergulho de Xenoblade Chronicles 2 que cai do céu nos Ermos de Akkala depois de olhar o leste a partir do olho esquerdo do Lago Caveira, à noite. Natação mais rápida, defesa 5.",
+  "description": "O Colete de mergulhador é a peça de torso do Conjunto de mergulhador, adicionado de graça na atualização 1.3.3 como colaboração com Xenoblade Chronicles 2. Na Missão secundária \"Xenoblade Chronicles 2\", o baú do colete cai com uma estrela cadente vermelha nos Ermos de Akkala (Akkala Wilds) depois que Link, à noite, olha para o céu a leste a partir do olho esquerdo do Lago Caveira (Skull Lake). A descrição fala no equipamento essencial de um garoto que busca tesouros afundados no Mar de Nuvens.\n\nDá um nível de Natação mais rápida (+30%). Com o Capacete e as Calças de mergulhador, o efeito chega a +100% e ativa o Impulso aquático econômico sem precisar de melhorias — as peças não podem ser melhoradas nem tingidas. A defesa é 5. Granté passa a vendê-lo por 50 rupias depois de obtido.",
+  "locations": [
+    "Ermos de Akkala (Akkala Wilds), onde o baú cai."
+  ],
+  "obtaining": [
+    "Missão secundária \"Xenoblade Chronicles 2\": à noite, olhar o céu a leste a partir do olho esquerdo do Lago Caveira e buscar o baú que cai.",
+    "Recomprar de Granté por 50 rupias depois de obtê-lo."
+  ],
+  "uses": [
+    "Nadar mais rápido.",
+    "Completar o Conjunto de mergulhador."
+  ],
+  "effects": [
+    "Natação mais rápida, nível 1 (+30%).",
+    "Conjunto completo (sem melhorias): Impulso aquático econômico (−75% de vigor)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Natação mais rápida: Link nada 30% mais rápido (60% com dois níveis e 100% com três). Com o Capacete, o Colete e as Calças de mergulhador vestidos, ativa sem melhorias o Impulso aquático econômico (Swim Dash Stamina Up): impulsos e giros nadando custam 75% menos vigor.",
+      "conditions": [
+        "Para o bônus: as três peças de mergulhador equipadas; elas não podem ser melhoradas, então o bônus vale assim que o conjunto é reunido."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Swim Speed Up",
+        "zw:Set Bonus",
+        "zw:Salvager Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O outro olho do Lago Caveira",
+      "text": "O ponto de observação do colete é o olho esquerdo do Lago Caveira; no olho direito fica a sede da Fang and Bone, a loja de Kilton.",
+      "sources": [
+        "zw",
+        "zw:Fang and Bone"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Brinde gratuito da versão 1.3.3",
+      "text": "Diferentemente das peças dos pacotes DLC, o Conjunto de mergulhador veio como conteúdo gratuito da atualização 1.3.3.",
+      "sources": [
+        "zw:Salvager Armor Set",
+        "zw:Armor in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Somado a pratos de Velocidade aumentada, que imitam a Natação mais rápida e se acumulam com ela até o teto, o colete ajuda a cruzar lagos e o mar rapidamente."
+  ],
+  "limitations": [
+    "Não pode ser melhorado nem tingido."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_salvager_armor_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_salvager_headwear",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_salvager_trousers",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armor_zora_armor",
+      "relation": "Outra peça de torso com Natação mais rápida"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "Mecânica acelerada pela peça"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

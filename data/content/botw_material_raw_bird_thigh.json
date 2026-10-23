@@ -1,0 +1,167 @@
+{
+  "id": "botw_material_raw_bird_thigh",
+  "summary": "Carne de ave de alta qualidade (pombos coloridos, rubros e brancos, gaviões insulares, avestruzes de Eldin). Crua cura 1,5 coração; assada, 2,25. Exigida no Curry e no Pilaf de sobrecoxa; congelada vale 28 rupias.",
+  "description": "A Sobrecoxa (Raw Bird Thigh) é um corte de ave de alta qualidade, \"difícil de conseguir\" segundo o jogo. Cai de Pombos coloridos, Pombos rubros, Pombos brancos, Gaviões insulares e Avestruzes de Eldin, e o mercador Mezer a vende perto do Dueling Peaks Stable. Crua, recupera 1,5 coração — o mesmo que a Carne de segunda, sua equivalente entre os mamíferos.\n\nNo fogo vira Sobrecoxa assada (2,25 corações). No frio extremo, na água gelada ou com ataques de gelo, vira Sobrecoxa congelada, tão sólida que \"parece poder ser usada como arma\", e que dá Resistência ao calor temporária. Na panela, é obrigatória no Curry de sobrecoxa e no Pilaf de sobrecoxa e pode substituir a Carne de segunda no Ensopado de carne de segunda, na Carne de segunda grelhada no sal e na Fritada de carne de segunda e frutos do mar.",
+  "locations": [
+    "Pombos coloridos, Pombos rubros, Pombos brancos, Gaviões insulares e Avestruzes de Eldin.",
+    "Mercador Mezer, perto do Dueling Peaks Stable."
+  ],
+  "obtaining": [
+    "Abater as aves citadas.",
+    "Comprar de Mezer (60 rupias)."
+  ],
+  "uses": [
+    "Cura imediata: 1,5 coração crua, 2,25 como Sobrecoxa assada.",
+    "Receitas exclusivas: Curry de sobrecoxa (com Arroz hyliano e Tempero Goron) e Pilaf de sobrecoxa (com Arroz hyliano, Ovo e Manteiga de cabra).",
+    "Alternativa à Carne de segunda: Ensopado de carne de segunda, Carne de segunda grelhada no sal e Fritada de carne de segunda e frutos do mar.",
+    "Receitas de \"qualquer carne\", como Espetinho de carne, Carne glaceada e Bife apimentado.",
+    "Venda: 15 rupias (assada, 24; congelada, 28)."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 30 segundos à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1,5 coração.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Vira Sobrecoxa assada, que recupera 2,25 corações, sem efeito especial.",
+      "conditions": ["Chamas diretas: fogueira, grama em chamas, Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "produces": ["botw_food_roasted_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada ao lado de uma fogueira acesa, assa e vira Sobrecoxa assada.",
+      "produces": ["botw_food_roasted_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no clima escaldante de Eldin, assa sozinha.",
+      "produces": ["botw_food_roasted_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingida por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, vira Sobrecoxa congelada.",
+      "produces": ["botw_food_frozen_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gelado ou em água gelada, vira Sobrecoxa congelada, que dá Resistência ao calor temporária.",
+      "side_effects": ["As fontes divergem sobre a cura da versão congelada: a página da Sobrecoxa congelada diz 1,5 coração, mas a tabela de Comidas congeladas lista 1."],
+      "produces": ["botw_food_frozen_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Frozen Bird Thigh"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "arma elemental",
+      "status": "confirmado",
+      "result": "Golpeada com arma de fogo (Espada flamejante, Grã-Espada flamejante, Lança carbonizante), assa; com arma de gelo (Espada álgida, Grã-Espada álgida, Lança congelante), congela.",
+      "produces": ["botw_food_roasted_bird_thigh", "botw_food_frozen_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Frozen Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a carne com uma arma comum."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada para assar perto do fogo ou congelar no frio; Pastores hylianos comem carne largada perto deles.",
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food", "zw:Hylian Retriever"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da carne à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Em água gelada, congela; as fontes não dizem o que acontece em água comum.",
+      "produces": ["botw_food_frozen_bird_thigh"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food", "zw:Frozen Bird Thigh"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a carne não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a carne largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, a cura dobra (3 corações por unidade). É obrigatória no Curry de sobrecoxa e no Pilaf de sobrecoxa e substitui a Carne de segunda em três pratos \"de segunda\".",
+      "produces": ["botw_food_prime_poultry_curry", "botw_food_prime_poultry_pilaf", "botw_food_prime_meat_stew", "botw_food_salt_grilled_prime_meat", "botw_food_prime_meat_and_seafood_fry"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Crua vale 15 rupias; assada, 24; congelada, 28.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Frozen Bird Thigh"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Congelar quase dobra o preço",
+      "text": "A Sobrecoxa congelada tem preço fixo de 28 rupias, contra 15 da crua e 24 da assada.",
+      "sources": ["zw:Frozen Bird Thigh", "zw:Frozen Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Quase uma arma",
+      "text": "A descrição da Sobrecoxa congelada brinca que ela está tão sólida que parece poder ser usada como arma — e recomenda não quebrar os dentes ao comê-la.",
+      "sources": ["zw:Frozen Bird Thigh"]
+    }
+  ],
+  "advanced_uses": [
+    "A Avestruz de Eldin e o Pombo branco também podem deixar a Ave inteira, mais valiosa: vale caçá-los quando o objetivo for carne de ave de qualidade."
+  ],
+  "limitations": [
+    "A página da Sobrecoxa diz que ela substitui a Carne de segunda também na Tigela de arroz com carne de segunda, mas a tabela de lógica de receitas do Zelda Wiki lista apenas a Carne de segunda para esse prato.",
+    "Assada ou congelada, não ganha efeitos especiais além da resistência ao calor da versão congelada."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_bird_thigh", "relation": "Resultado de assar no fogo" },
+    { "id": "botw_food_frozen_bird_thigh", "relation": "Resultado de congelar" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Equivalente de mamífero, substituível em três receitas" },
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Carne de ave mais simples" },
+    { "id": "botw_material_raw_whole_bird", "relation": "Carne de ave mais nobre" },
+    { "id": "botw_creature_eldin_ostrich", "relation": "Ave que a deixa" },
+    { "id": "botw_creature_islander_hawk", "relation": "Ave que a deixa" },
+    { "id": "botw_food_prime_poultry_pilaf", "relation": "Prato que exige Sobrecoxa" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de culinária" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

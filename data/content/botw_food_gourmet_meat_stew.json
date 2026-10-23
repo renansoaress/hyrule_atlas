@@ -1,0 +1,117 @@
+{
+  "id": "botw_food_gourmet_meat_stew",
+  "summary": "Ensopado de Carne de primeira ou Ave inteira com Trigo de Tabantha, Leite fresco e Manteiga de cabra. A carne \"derrete na boca\" — uma refeição para a lista de desejos, diz o jogo.",
+  "description": "O Ensopado de carne de primeira leva Carne de primeira ou Ave inteira, Trigo de Tabantha, Leite fresco e Manteiga de cabra. A descrição do jogo diz que a carne cozinhou por tanto tempo que derrete na boca e chama o prato de uma refeição para a lista de desejos. Cura vários corações.\n\nCom quatro ingredientes obrigatórios e nenhum deles com efeito, o quinto espaço da panela decide a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nÉ o topo da linha de ensopados de carne: o Ensopado de carne usa Carne de terceira ou Coxa, e o Ensopado de carne de segunda usa Carne de segunda ou Sobrecoxa. Ao contrário dos curries de primeira, aqui a Ave inteira vale como carne de primeira.",
+  "locations": [
+    "Carne de primeira: deixada por Búfalo-d'água, Raposa da neve, Lobo larápio, Coiote do deserto, Lobo pé-gelado, Alce de Tabantha, Rinoceronte chifrelongo, Urso melívoro e Grão-urso.",
+    "Ave inteira: deixada por Pombos brancos e Avestruzes de Eldin.",
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Carne de primeira ou Ave inteira + Trigo de Tabantha + Leite fresco + Manteiga de cabra."
+  ],
+  "uses": [
+    "Cura de vários corações; um espaço livre para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera vários corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O quinto ingrediente define o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Ave inteira vale como carne de primeira",
+      "text": "Tanto a página do ensopado quanto a da Ave inteira confirmam que a ave substitui a Carne de primeira nesta receita.",
+      "sources": [
+        "zw",
+        "zw:Raw Whole Bird"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de cozinhar, compare: Trott, no Outskirt Stable, paga 100 rupias por cada Carne de primeira depois da Missão secundária \"A Rare Find\"."
+  ],
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne aceita"
+    },
+    {
+      "id": "botw_food_meat_stew",
+      "relation": "Versão com Carne de terceira ou Coxa"
+    },
+    {
+      "id": "botw_food_prime_meat_stew",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

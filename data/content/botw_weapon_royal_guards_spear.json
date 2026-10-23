@@ -1,0 +1,239 @@
+{
+  "id": "botw_weapon_royal_guards_spear",
+  "summary": "Lança Sheikah de tecnologia ancestral feita para combater a Calamidade: ataque 32, o maior entre as lanças, mas só 15 de durabilidade por um defeito de projeto. Fica no Castelo de Hyrule.",
+  "description": "A Lança da guarda real faz parte da série da guarda real: foi criada pelos Sheikah com tecnologia ancestral para combater a Calamidade. O poder de ataque é altíssimo — 32, o maior entre todas as lanças —, mas um defeito crítico de projeto a deixou com durabilidade de apenas 15. Ela se destinava aos soldados que guardavam o Castelo de Hyrule, e é lá dentro que é encontrada: uma está escondida na lareira do salão de jantar e outra é empunhada por um Moblin preto.\n\nApesar da origem Sheikah, os parâmetros a tratam como arma de metal comum, sem bônus contra Guardiões: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis. Parsi (Parcy), no estábulo Riverside, procura peças da série; mostrar a lança a ela conclui a missão secundária \"As armas da guarda real\" e rende uma rupia dourada. Depois disso, ela passa a trocar peças da série por gemas — pela lança, oferece um Topázio.",
+  "locations": [
+    "Interior do Castelo de Hyrule: na lareira do salão de jantar e nas mãos de um Moblin preto. O compendium não lista locais comuns."
+  ],
+  "obtaining": [
+    "Pegar a lança escondida na lareira do salão de jantar do Castelo de Hyrule.",
+    "Derrotar o Moblin preto do castelo que empunha outra.",
+    "A Lua de sangue repõe as armas largadas pelo mundo e as que estão nas mãos dos inimigos, mas não acontece enquanto Link estiver dentro do Castelo de Hyrule."
+  ],
+  "uses": [
+    "Dano altíssimo concentrado em poucos golpes, para encerrar lutas difíceis.",
+    "Missão \"As armas da guarda real\": mostrá-la a Parsi (Parcy), no estábulo Riverside, rende uma rupia dourada.",
+    "Depois da missão, pode ser trocada com Parsi por um Topázio."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Com só 15 golpes, guarde-a para um golpe final: o ataque que a quebra — ou o arremesso — causa o dobro de 32."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Depois de concluída a missão \"As armas da guarda real\", Parsi (Parcy), no estábulo Riverside, aceita trocar a lança por uma gema — um Topázio, no caso da lança.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Parcy"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Um Moblin preto empunha uma Lança da guarda real dentro do Castelo de Hyrule.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Ancestral, mas sem bônus contra Guardiões",
+      "text": "O jogo diz que a lança foi feita pelos Sheikah com tecnologia ancestral, mas os parâmetros não lhe dão nenhum multiplicador contra Guardiões (ao contrário das Lanças guardiãs e da Lança ancestral) e a classificam como metal magnético e condutor.",
+      "sources": [
+        "jogo",
+        "dm"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes de graça sobre o Centaleão",
+      "text": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes com qualquer arma sem gastar durabilidade, e o Zelda Wiki registra que esses golpes também contam como acerto crítico. Com a Lança da guarda real, isso significa golpes fortíssimos sem desgastar uma arma tão frágil.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Durabilidade restaurada por um Octoroc",
+      "text": "Um Octoroc rochoso que aspire uma arma a devolve com a durabilidade restaurada. Para uma lança de 15 golpes como esta, isso permite reaproveitar o ataque 32 em vez de perdê-la; a Lua de sangue reinicia a capacidade de cada Octoroc de repor armas.",
+      "sources": [
+        "zw:Durability",
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança da guarda real pode surgir com um bônus branco (comum) — ataque +7 a +13, durabilidade +2 a +3 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +14 a +25, durabilidade +4 a +7 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A colecionadora do estábulo",
+      "text": "Parsi (Parcy) entrava no Castelo de Hyrule em busca do equipamento da guarda real, raríssimo entre colecionadores, mas desistiu quando a névoa de Malícia e os Guardiões aumentaram. Ela reconhece qualquer peça da série que Link lhe mostrar.",
+      "sources": [
+        "zw:Parcy"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Monte num Centaleão e golpeie com ela: 32 de ataque sem gastar nenhum dos 15 pontos de durabilidade."
+  ],
+  "limitations": [
+    "Durabilidade baixíssima (15), por um defeito de projeto citado no próprio jogo.",
+    "Atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_royal_guards_sword",
+      "relation": "Mesma série (guarda real), uma mão"
+    },
+    {
+      "id": "botw_weapon_royal_guards_claymore",
+      "relation": "Mesma série (guarda real), duas mãos"
+    },
+    {
+      "id": "botw_shield_royal_guards_shield",
+      "relation": "Escudo da mesma série"
+    },
+    {
+      "id": "botw_bow_royal_guards_bow",
+      "relation": "Arco da mesma série"
+    },
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Um deles a empunha no Castelo de Hyrule"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Gema oferecida por Parsi (Parcy) em troca da lança"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

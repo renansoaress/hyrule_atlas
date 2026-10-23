@@ -1,0 +1,161 @@
+{
+  "id": "botw_food_blackened_crab",
+  "summary": "Caranguejo assado lentamente na própria casca. Sai de qualquer um dos três caranguejos, cura 1,5 coração (cru, 1) e vale 12 rupias; o Rinox azul também o deixa cair.",
+  "description": "Tanto o Caranguejo espadachim quanto o Caranguejo couraçado e o Caranguejo esperto viram o mesmo Caranguejo tostado quando expostos ao fogo ou ao clima escaldante. O texto do jogo descreve um caranguejo assado inteiro e devagar dentro da casca, de carne macia que se desfaz e com cheiro de casca chamuscada — uma refeição que \"agride os cinco sentidos da melhor maneira\".\n\nA cura sobe de 1 para 1,5 coração, mas os efeitos de cada caranguejo na Panela (Ataque aumentado, Defesa aumentada ou Recuperação de vigor) se perdem. Na venda vale 12 rupias, mais que os caranguejos crus (8 ou 10) e menos que o Caranguejo congelado (14).",
+  "locations": [
+    "Prepara-se a partir de qualquer caranguejo em uma fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um caranguejo ao fogo ou largá-lo no chão em clima escaldante.",
+    "Derrotar um Rinox azul: na tabela de comidas que ele deixa, o Caranguejo tostado tem 10% de chance (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 12 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — qualquer caranguejo (Caranguejo espadachim, Caranguejo couraçado ou Caranguejo esperto) — queima por alguns instantes e se transforma em Caranguejo tostado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Caranguejo tostado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar qualquer caranguejo (Caranguejo espadachim, Caranguejo couraçado ou Caranguejo esperto) no chão para que o ingrediente asse sozinho e vire Caranguejo tostado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração de qualquer caranguejo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 12 rupias; crus, o Caranguejo espadachim e o couraçado valem 8, e o esperto, 10.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Razorclaw Crab",
+        "zw:Ironshell Crab",
+        "zw:Bright-Eyed Crab"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Caranguejo tostado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Três caranguejos, um só assado",
+      "text": "O efeito de cada caranguejo na Panela — Ataque aumentado (espadachim), Defesa aumentada (couraçado) ou Recuperação de vigor (esperto) — desaparece ao assar: os três rendem o mesmo Caranguejo tostado de 1,5 coração.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Presente do Rinox azul",
+      "text": "O Rinox azul deixa cair comida assada de frutos do mar. Na tabela do Zelda Wiki, o Caranguejo tostado aparece com 10% de chance, atrás do Robalo assado (40%) e da Truta assada (20%).",
+      "sources": [
+        "zw",
+        "zw:Blue Hinox"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Congelar vale mais",
+      "text": "O mesmo caranguejo congelado vira Caranguejo congelado, vendido por 14 rupias, duas a mais que o tostado.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Perde o efeito culinário do caranguejo de origem."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_razorclaw_crab",
+      "relation": "Ingrediente cru (Ataque aumentado na Panela)"
+    },
+    {
+      "id": "botw_creature_ironshell_crab",
+      "relation": "Ingrediente cru (Defesa aumentada na Panela)"
+    },
+    {
+      "id": "botw_creature_bright_eyed_crab",
+      "relation": "Ingrediente cru (Recuperação de vigor na Panela)"
+    },
+    {
+      "id": "botw_food_frozen_crab",
+      "relation": "Versão congelada dos mesmos caranguejos"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

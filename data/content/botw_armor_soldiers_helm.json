@@ -1,0 +1,139 @@
+{
+  "id": "botw_armor_soldiers_helm",
+  "summary": "Elmo padrão dos soldados de Hyrule, vendido por 180 rupias na Vila Hateno. Não tem efeito nem bônus de conjunto, mas está entre as peças de cabeça mais resistentes: 4 de defesa, até 28 com melhorias.",
+  "description": "O Elmo do soldado protege os soldados da linha de frente contra monstros e é “elogiado pela defesa superior”, diz a descrição. É vendido por 180 rupias na Ventest Clothing Boutique, na Vila Hateno, junto da Armadura e das Grevas do soldado. Alguns hylianos usam a peça, como Hoz e Savelle.\n\nNão dá nenhum efeito além da defesa, e o Conjunto do soldado não tem bônus de conjunto. Em troca, vai de 4 a 28 de defesa, o mesmo teto do Elmo ancestral e da Tiara de diamante, e as melhorias usam só partes de monstros: Geleca de Chulchul e Vísceras de Koboblin; Olhos de Morci e Vísceras de Moblin; Caudas de Lagalfos e Vísceras de Rinox; e, no último nível, 2 Cascos e 2 Vísceras de Centaleão — o gargalo. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Comprar por 180 rupias na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Defesa alta na cabeça quando nenhum efeito é necessário."
+  ],
+  "effects": [
+    "Nenhum efeito adicional."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 4 de defesa (28 no nível máximo), sem efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Defesa alta, nenhum bônus",
+      "text": "O Conjunto do soldado é um dos que não têm bônus de conjunto; o Zelda Wiki destaca que, como armadura padrão dos soldados de Hyrule, ele compensa com defesa muito maior que a da maioria das peças.",
+      "sources": [
+        "zw:Soldier's Set",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Quem usa o elmo",
+      "text": "Hoz e Savelle aparecem usando o Elmo do soldado, e Nell veste a Armadura do soldado.",
+      "sources": [
+        "zw:Soldier's Set"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como todas as melhorias usam partes de monstros, é uma maneira de chegar a 28 de defesa sem gastar joias nem Fragmentos de estrela."
+  ],
+  "limitations": [
+    "Sem efeito adicional e sem bônus de conjunto.",
+    "O último nível exige partes de Centaleão."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_soldiers_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_soldiers_greaves",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Material do 1º nível"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_armor_hylian_hood",
+      "relation": "Outra peça da mesma loja, com defesa menor"
+    },
+    {
+      "id": "botw_armor_amber_earrings",
+      "relation": "Outra peça sem efeito com teto de 28"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

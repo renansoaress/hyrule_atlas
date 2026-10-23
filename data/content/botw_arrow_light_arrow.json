@@ -1,0 +1,115 @@
+{
+  "id": "botw_arrow_light_arrow",
+  "summary": "Flecha de pura luz disparada apenas pelo Arco da Luz e pelo Arco do crepúsculo, que a geram sem limite. É com ela que Link fere os pontos brilhantes de Ganon, Besta Sombria.",
+  "description": "A Flecha de luz não é um item que se encontra ou compra: ela é gerada pelo próprio arco, por isso é infinita. Só dois arcos a disparam — o Arco da Luz, que a princesa Zelda entrega a Link na batalha final, e o Arco do crepúsculo, obtido com o amiibo Zelda da série Super Smash Bros. —, e nenhum dos dois aceita outras flechas.\n\nNa batalha contra Ganon, Besta Sombria, as Flechas de luz são usadas para acertar os pontos brilhantes que Zelda abre na Malícia que cobre o monstro, até expor e destruir o núcleo dele. O Arco do crepúsculo usa uma variante própria da flecha, identificada nos dados como flecha do crepúsculo.",
+  "locations": [
+    "Não existe no mundo: é gerada pelo Arco da Luz (batalha final na Pradaria de Hyrule) ou pelo Arco do crepúsculo."
+  ],
+  "obtaining": [
+    "Equipar o Arco da Luz ou o Arco do crepúsculo; as flechas são criadas pelo arco a cada disparo."
+  ],
+  "uses": [
+    "Ferir os pontos brilhantes e o núcleo de Ganon, Besta Sombria."
+  ],
+  "effects": [
+    "Munição infinita nos dois arcos que a disparam."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Disparada apenas pelo Arco da Luz e pelo Arco do crepúsculo, que a geram sem limite. Esses dois arcos não aceitam nenhuma outra flecha, e os demais arcos não disparam Flechas de luz.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Arrow",
+        "zw:Bow of Light"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É a munição principal contra Ganon, Besta Sombria: precisa acertar os pontos brilhantes que Zelda revela e, no fim, o núcleo exposto do monstro.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Dark Beast Ganon"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha de luz com fogo."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha de luz com gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação da Flecha de luz com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a Flecha de luz na água."
+    },
+    {
+      "action": "chuva",
+      "status": "desconhecido",
+      "result": "As fontes não indicam mudança de efeito na chuva."
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interações da Flecha de luz com o cenário nem o efeito dela em inimigos comuns."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Duas flechas de luz diferentes",
+      "text": "Nos parâmetros do jogo, o Arco da Luz dispara a flecha interna \"BrightArrow\", e o Arco do crepúsculo, \"BrightArrowTP\", a flecha do crepúsculo. A galeria do Zelda Wiki traz um ícone separado para a Flecha de luz usada com o Arco do crepúsculo.",
+      "sources": [
+        "dm",
+        "zw:Light Arrow"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fora da batalha final, só com amiibo",
+      "text": "O Arco da Luz existe apenas na batalha contra Ganon, Besta Sombria. A única forma de usar Flechas de luz em outros momentos é o Arco do crepúsculo, que sai raramente do baú do amiibo Zelda (série Super Smash Bros.) depois de concluída ao menos uma Fera Divina.",
+      "sources": [
+        "zw",
+        "zw:Twilight Bow"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Na batalha final, salte do cavalo ou use correntes ascendentes para mirar em câmera lenta nos pontos brilhantes."
+  ],
+  "limitations": [
+    "Só pode ser disparada por dois arcos.",
+    "Não existe como item separado: só aparece com um dos dois arcos equipado."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_bow_of_light",
+      "relation": "Arco da batalha final que a dispara"
+    },
+    {
+      "id": "botw_bow_twilight_bow",
+      "relation": "Arco de amiibo que a dispara"
+    },
+    {
+      "id": "botw_monster_dark_beast_ganon",
+      "relation": "Alvo principal destas flechas"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "parcial"
+}

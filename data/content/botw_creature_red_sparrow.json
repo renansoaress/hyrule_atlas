@@ -1,0 +1,79 @@
+{
+  "id": "botw_creature_red_sparrow",
+  "summary": "Pardal cinza de rosto vermelho-vivo das montanhas de Hebra, cujas penas são usadas como enfeite. Herbívoro, anda em bando e voa quando perturbado; abatido, deixa uma Noz.",
+  "description": "O Pardal vermelho vive nas montanhas da região de Hebra — nas Cordilheiras de Hebra propriamente ditas e na Fronteira de Tabantha; o compendium também menciona o Estábulo dos Arás. É cinza-escuro, de peito branco, com o rosto vermelho-vivo que lhe dá o nome. Diferente dos parentes onívoros, é herbívoro e se alimenta principalmente de nozes e plantas silvestres.\n\nAnda em bandos, mas voa se for incomodado. Suas penas vermelhas são muito usadas como decoração pelos hylianos. Abatido, deixa uma Noz, como todos os pardais.",
+  "locations": [
+    "Cordilheiras de Hebra, Fronteira de Tabantha e arredores do Estábulo dos Arás (compendium)."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Noz."
+  ],
+  "uses": [
+    "Fonte de Noz, ingrediente de Bolo de nozes e Nozes salteadas.",
+    "Registrar sua foto no compendium (entrada nº 31)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Anda em bando e voa quando perturbado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Noz.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_chickaloo_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra pardais, que voam ao serem perturbados."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Penas para enfeite",
+      "text": "Segundo o compendium, as penas vermelho-vivas desse pardal são muito usadas como enfeite.",
+      "sources": ["comp", "zw:Sparrow"]
+    }
+  ],
+  "limitations": [
+    "Vive em áreas frias de Hebra."
+  ],
+  "related": [
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Item deixado ao ser abatido" },
+    { "id": "botw_creature_common_sparrow", "relation": "Pardal mais comum de Hyrule" },
+    { "id": "botw_creature_blue_sparrow", "relation": "Outro pardal do compendium" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

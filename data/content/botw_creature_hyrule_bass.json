@@ -1,0 +1,147 @@
+{
+  "id": "botw_creature_hyrule_bass",
+  "summary": "O peixe mais comum de Hyrule, presente em rios e lagos de quase todo o reino. Cru recupera 1 coração, não tem efeito culinário próprio e, se nunca for pego, cresce até virar um Robalo enérgico.",
+  "description": "O Robalo hyruliano é o peixe comum de água doce, encontrado em rios e lagos por quase toda Hyrule — o compendium destaca a Pradaria de Hyrule e Necluda Ocidental. Como os demais peixes, foge quando Link chega perto, mas dispensa vara de pescar: basta nadar até ele e pegá-lo, vivo ou morto. Cru, recupera 1 coração, e o próprio texto do jogo avisa que cozinhá-lo amplia esse benefício.\n\nNão tem efeito próprio: na panela, apenas soma corações, e o prato só ganha efeito se outro ingrediente o fornecer. Entra em todas as receitas que pedem \"qualquer peixe\" ou \"qualquer fruto do mar\", como Espetinho de peixe, Peixe grelhado no sal, Torta de peixe e Peixe no vapor. Exposto ao fogo ou a um clima abrasador vira Robalo assado; congelado, vira Robalo congelado. Também é material de melhoria do Conjunto Zora (5 por peça no segundo nível).\n\nSegundo o Zelda Wiki, um Robalo hyruliano que escapa de ser pego acaba amadurecendo e se torna um Robalo enérgico — o que combina com a descrição deste último, \"o maior peixe por nunca ter sido pego\".",
+  "locations": [
+    "Rios e lagos de quase toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Ocidental como locais comuns."
+  ],
+  "obtaining": [
+    "Pegar à mão: nade até o peixe e apanhe-o, esteja ele vivo ou morto. Não é preciso vara de pescar."
+  ],
+  "uses": [
+    "Ingrediente de receitas com \"qualquer peixe\": Espetinho de peixe, Espetinho de peixe e cogumelo (com qualquer cogumelo) e Peixe grelhado no sal (com Halita).",
+    "Ingrediente de receitas com \"qualquer fruto do mar\": Sopa cremosa de frutos do mar, Torta de peixe, Frutos do mar glaceados, Fritada de carne e frutos do mar, Ensopado de monstro, Frutos do mar apimentados, Frutos do mar à meunière, Bolinhos de arroz com frutos do mar, Espetinhos fartos de frutos do mar e Peixe no vapor.",
+    "Melhoria de armadura: 5 unidades por peça do Conjunto Zora (Elmo Zora, Armadura Zora e Grevas Zora) para o 2º nível, junto com 5 Garras de Lagalfos.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: nenhum efeito especial; só aumenta a recuperação de corações do prato."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhado à mão enquanto Link nada, vivo ou morto; não é preciso vara de pescar.",
+      "conditions": ["Entrar na água e nadar até o peixe."],
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um robalo vivo largado da algibeira (se volta a nadar, foge ou fica parado)."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Na panela, não acrescenta efeito: apenas soma corações. Serve como o peixe ou fruto do mar de diversas receitas.",
+      "conditions": ["Panela acesa; combinar com os ingredientes da receita desejada."],
+      "applications": ["Espetinho de peixe só com peixes; Peixe grelhado no sal com Halita; Torta de peixe com Trigo de Tabantha, Manteiga de cabra e Halita."],
+      "produces": ["botw_food_fish_skewer", "botw_food_fish_and_mushroom_skewer", "botw_food_salt_grilled_fish", "botw_food_fish_pie", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Alimentos cozidos com partes de monstro (sem nenhum bicho) resultam em Comida duvidosa.",
+      "side_effects": ["Peixe não é \"bicho\": sozinho com partes de monstro, não forma elixir."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Food", "zw:Dubious Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Pode ser comido cru e recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 6 rupias a comerciantes.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Robalo assado, que recupera 50% mais corações que o peixe cru.",
+      "conditions": ["Chamas diretas, ou golpes de Flecha incendiária, Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."],
+      "produces": ["botw_food_roasted_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo de uma fogueira, assa depois de alguns instantes e vira Robalo assado.",
+      "produces": ["botw_food_roasted_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador (Cânion de Eldin e Montanha da Morte), assa sozinho e vira Robalo assado.",
+      "produces": ["botw_food_roasted_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingido por Flecha congelante, Espada álgida, Grã-Espada álgida ou Lança congelante, congela e vira Robalo congelado.",
+      "produces": ["botw_food_frozen_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou em água gelada, congela e vira Robalo congelado.",
+      "produces": ["botw_food_frozen_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o robalo, vivo ou na algibeira."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O robalo que nunca foi pego",
+      "text": "Segundo o Zelda Wiki, um Robalo hyruliano que evita ser apanhado acaba amadurecendo e vira um Robalo enérgico. A descrição do Robalo enérgico confirma a ideia: é um robalo que ficou enorme justamente por nunca ter sido pego.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assado ou congelado, sem panela",
+      "text": "O Robalo assado recupera 50% mais corações que o cru, mas nunca tem efeitos; o Robalo congelado recebe Resistência ao calor de nível baixo por cerca de um minuto. Ao contrário dos pratos da panela, assados e congelados se acumulam no mesmo espaço da algibeira, até 999.",
+      "sources": ["zw:Roasted Food", "zw:Food", "zw:Frozen Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Como conta como \"tipo diferente\" de fruto do mar, ajuda a completar os quatro tipos exigidos pelos Espetinhos fartos de frutos do mar."
+  ],
+  "limitations": [
+    "Não dá nenhum efeito sozinho; para comida com efeito é preciso outro ingrediente que o tenha.",
+    "Não é um bicho: cozido com partes de monstro, sem inseto, lagarto ou sapo, resulta em Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_creature_staminoka_bass", "relation": "Forma adulta de um robalo que nunca foi pego" },
+    { "id": "botw_food_roasted_bass", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_bass", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_food_fish_skewer", "relation": "Receita básica com qualquer peixe" },
+    { "id": "botw_food_salt_grilled_fish", "relation": "Receita com Halita" },
+    { "id": "botw_armorset_zora_set", "relation": "Usa 5 robalos por peça no 2º nível de melhoria" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo com partes de monstro" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

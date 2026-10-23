@@ -1,0 +1,207 @@
+{
+  "id": "botw_material_tabantha_wheat",
+  "summary": "Trigo das planícies de Tabantha, colhido ao cortar grama na Fronteira de Tabantha. Cru cura 1 coração. É a farinha de 25 receitas (pães, tortas, bolos, crepes, ensopados) e, com Halita, vira Pão de trigo.",
+  "description": "O Trigo de Tabantha é, segundo o jogo, um grão cultivado em larga escala nas planícies de Tabantha e moído fino num moinho de pedra para ser usado na cozinha. Na natureza, cai ao cortar a grama da Fronteira de Tabantha; também é vendido na The Slippery Falcon (Vila Rito), na banca de Spera (Cidade Gerudo) e pelo mercador Yammo. Cru, recupera 1 coração.\n\nNa panela, é neutro (1 coração, dobrado ao cozinhar, e 1:00 de duração) e funciona como a farinha do jogo: é obrigatório em 25 receitas, incluindo todos os bolos e tortas (de maçã, de frutas, de abóbora, de carne, de peixe, Bolo de cenoura, Bolo de nozes, Bolo de frutas, Bolo de monstro, Torta de ovos), os três crepes, as Bananas fritas, os ensopados com leite e manteiga, o Creme de mariscos, a Sopa de monstro e os três pratos à meunière. Sozinho não forma receita, mas com Halita é uma das combinações pré-definidas que funcionam sem nenhum alimento principal: o Pão de trigo. Na Tinturaria Kochi, entra no corante amarelo-claro.",
+  "locations": [
+    "Grama da Fronteira de Tabantha (cortar a vegetação faz o trigo cair).",
+    "The Slippery Falcon (Vila Rito), banca de Spera (Cidade Gerudo) e o mercador Yammo (Tabantha Bridge Stable–Serenne Stable)."
+  ],
+  "obtaining": [
+    "Cortar grama na Fronteira de Tabantha.",
+    "Comprar nas lojas e com o mercador citados (12 rupias)."
+  ],
+  "uses": [
+    "Cura imediata: 1 coração cru.",
+    "Receitas obrigatórias (25): Torta de maçã, Bolo de cenoura, Ensopado de cenoura, Creme de mariscos, Torta de ovos, Torta de peixe, Bananas fritas, Torta de frutas, Bolo de frutas, Ensopado de carne de primeira, Crepe de mel, Torta de carne, Ensopado de carne, Bolo de monstro, Sopa de monstro, Bolo de nozes, Crepe simples, Pargo à meunière, Ensopado de carne de segunda, Torta de abóbora, Ensopado de abóbora, Salmão à meunière, Frutos do mar à meunière, Pão de trigo e Crepe de framboesa.",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 1:00 à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro (1 coração, dobrado na panela; 1:00 de duração). Com Halita forma o Pão de trigo; com açúcar, manteiga e frutas ou ovos, as tortas e bolos; com leite e manteiga, os ensopados. Sozinho, ou só com suplementos incompatíveis, vira Comida duvidosa.",
+      "produces": [
+        "botw_food_wheat_bread",
+        "botw_food_apple_pie",
+        "botw_food_meat_pie",
+        "botw_food_meat_stew",
+        "botw_food_plain_crepe",
+        "botw_food_salmon_meuniere",
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "grama",
+      "status": "confirmado",
+      "result": "Cortar a grama da Fronteira de Tabantha com uma arma faz cair Trigo de Tabantha.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear o trigo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada do trigo na lista de Comidas assadas. A regra geral diz que materiais comestíveis crus assam e os demais viram cinzas, mas as fontes não descrevem o que acontece com o trigo no fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com o trigo largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada do trigo na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; não há uso conhecido para o trigo largado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do trigo à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com o trigo largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o trigo não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao trigo largado."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O pão de dois ingredientes",
+      "text": "Ingredientes suplementares cozidos sem alimento principal costumam virar Comida duvidosa, mas Trigo de Tabantha com Halita é uma combinação pré-definida válida: o Pão de trigo.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Moído no moinho",
+      "text": "A descrição do jogo explica que o grão é moído fino num moinho de pedra antes de ir para a cozinha — por isso ele aparece em pães, tortas e ensopados como se fosse farinha.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Cortar grama na Fronteira de Tabantha rende trigo de graça para estocar antes de cozinhar tortas, bolos e crepes."
+  ],
+  "limitations": [
+    "Sozinho resulta em Comida duvidosa.",
+    "Quase todas as receitas com trigo exigem ingredientes de loja (Manteiga de cabra, Cana-de-açúcar, Leite fresco)."
+  ],
+  "related": [
+    {
+      "id": "botw_food_wheat_bread",
+      "relation": "Trigo com Halita"
+    },
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Torta que exige trigo"
+    },
+    {
+      "id": "botw_food_meat_stew",
+      "relation": "Ensopado que exige trigo"
+    },
+    {
+      "id": "botw_food_salmon_meuniere",
+      "relation": "Meunière que exige trigo"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Parceira no Pão de trigo"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Parceira nas tortas, ensopados e meunières"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Parceira nos bolos e crepes"
+    },
+    {
+      "id": "botw_object_grass",
+      "relation": "Cortar grama em Tabantha rende trigo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sozinho"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo-claro"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

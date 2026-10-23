@@ -1,0 +1,153 @@
+{
+  "id": "botw_weapon_eightfold_blade",
+  "summary": "Kodachi tradicional dos Sheikah, de um só gume, forjado com tecnologia ancestral e tido como uma das armas convencionais mais afiadas. É de metal: conduz eletricidade, atrai raios e responde a Magnétis.",
+  "description": "A Katana Sheikah é a espada curta de um só gume típica da tribo Sheikah e pertence ao arquétipo de equipamento Sheikah (Sheikah Gear). Segundo o jogo, foi forjada com tecnologia ancestral e estaria entre as armas convencionais mais afiadas já feitas. Aparece sobretudo em Necluda Ocidental e nos arredores do Lago Hylia, especialmente perto da Vila Kakariko, a cidade dos Sheikah.\n\nApesar da origem ancestral, para o jogo ela é uma espada de metal comum, sem o marcador de arma de Guardião: não tem dano extra contra Guardiões, conduz eletricidade, atrai raios quando equipada em tempestades, afunda na água e pode ser erguida com Magnétis. Não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Necluda Ocidental e Lago Hylia, sobretudo perto da Vila Kakariko."
+  ],
+  "obtaining": [
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Sheik (série Super Smash Bros.) com a runa amiibo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão equilibrada para o início e o meio do jogo (ataque 15, durabilidade 26).",
+    "Lâmina: derruba árvores para obter madeira; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a arma voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, faísca e acaba atraindo um raio para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem a Katana Sheikah."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a katana pode surgir com bônus de ataque de +4 a +6 (nível comum) ou +7 a +12 (nível dourado), bônus de durabilidade de +3 a +6 (ou +7 a +13 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Tecnologia ancestral sem bônus contra Guardiões",
+      "text": "Embora forjada com tecnologia ancestral, a Katana Sheikah não tem a marcação de arma de Guardião nos parâmetros do jogo e se comporta como metal comum — ao contrário da Espada ancestral de Robbie, que flutua, não conduz eletricidade e causa dano extra em Guardiões.",
+      "sources": [
+        "dm",
+        "zw:Ancient Technology",
+        "zw:Ancient Short Sword"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em tempestades, equipá-la e depois largá-la perto de um acampamento faz o raio cair sobre os inimigos, não sobre Link."
+  ],
+  "limitations": [
+    "Metálica: perigosa durante tempestades e contra inimigos elétricos.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_eightfold_longblade",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Arma ancestral de verdade, com dano extra em Guardiões"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Golpear sílex com arma metálica produz faíscas"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

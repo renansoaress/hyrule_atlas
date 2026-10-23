@@ -1,0 +1,165 @@
+{
+  "id": "botw_bow_royal_bow",
+  "summary": "Arco ornamentado que o rei de Hyrule dava apenas aos arqueiros mais talentosos (ataque 38, durabilidade 60). De metal: não queima, mas atrai raios e afunda.",
+  "description": "Segundo a descrição do jogo, no passado o rei de Hyrule presenteava o Arco real somente aos arqueiros mais talentosos do reino, e sua capacidade de combate é tão impressionante quanto o design extravagante. O Zelda Wiki identifica esse rei como Rhoam. O arco aparece em baús ou nas mãos de inimigos de nível alto na Fronteira de Tabantha e nas Cordilheiras de Hebra, e pertence ao equipamento real, associado à família real de Hyrule.\n\nNos parâmetros extraídos do jogo é um arco de disparo simples e sem peculiaridades (uma flecha, 20 m de trajetória reta, velocidades padrão), mas com um dos maiores ataques entre os arcos de flecha única. Por ser de metal, não queima, afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios em tempestades.",
+  "locations": [
+    "Fronteira de Tabantha e Cordilheiras de Hebra (locais comuns segundo o compendium), em baús e com inimigos de nível alto."
+  ],
+  "obtaining": [
+    "Abrir baús ou derrotar inimigos de nível alto que o empunham.",
+    "Pode sair de baús gerados pela runa amiibo com os amiibo Zelda (série Super Smash Bros.) e Link arqueiro (série Breath of the Wild)."
+  ],
+  "uses": [
+    "Arco principal de dano alto para o meio e o fim do jogo, inclusive na região de Eldin."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros do jogo, a flecha percorre 20 m em linha reta antes de começar a cair (gravidade padrão de 9,8 m/s²), e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco real pode surgir com bônus de ataque de +4 a +8 (nível branco) ou de +9 a +15 (nível amarelo), e com bônus de durabilidade de +7 a +14 (branco) ou de +15 a +28 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Vindo de amiibo, o bônus sai no valor máximo",
+      "text": "Pode aparecer em baús gerados pela runa amiibo (Zelda da série Super Smash Bros. e Link arqueiro da série Breath of the Wild). Equipamentos obtidos assim recebem o valor máximo do nível de bônus sorteado, embora o ícone mostre sempre a cor branca.",
+      "sources": [
+        "zw",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine-o com flechas elementais: o bônus de dano da flecha soma-se ao ataque alto do arco."
+  ],
+  "limitations": [
+    "Atrai raios em tempestades e cai das mãos de Link com choques elétricos.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_knights_bow",
+      "relation": "Arco de metal do nível anterior"
+    },
+    {
+      "id": "botw_weapon_royal_broadsword",
+      "relation": "Mesmo arquétipo (espada)"
+    },
+    {
+      "id": "botw_shield_royal_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_bow_royal_guards_bow",
+      "relation": "Outro arco ligado à realeza, mais forte e frágil"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico"
+  ],
+  "verification_status": "verificado"
+}

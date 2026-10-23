@@ -1,0 +1,104 @@
+{
+  "id": "botw_food_gourmet_poultry_pilaf",
+  "summary": "Pilaf de Ave inteira com Arroz hyliano, Manteiga de cabra e Ovo — \"cada garfada enche a boca de sabor\". Com quatro ingredientes fixos, resta um espaço para o efeito.",
+  "description": "O Pilaf de ave inteira é feito com Ave inteira, Arroz hyliano, Manteiga de cabra e Ovo. A descrição do jogo diz que, feito com aves da mais alta qualidade, cada garfada enche a boca de sabor. O Zelda Wiki registra que ele recupera alguns corações.\n\nOs quatro ingredientes obrigatórios não têm efeito, então o único espaço livre define a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nÉ o topo da linha de pilafs de ave: o Pilaf de coxa usa Coxa (a receita aparece no diário de Ivee, em Hateno) e o Pilaf de sobrecoxa usa Sobrecoxa. O Pilaf ao curry troca a ave pelo Tempero Goron.",
+  "locations": [
+    "Ave inteira: deixada por Pombos brancos e Avestruzes de Eldin.",
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus.",
+    "Ovo: achado em ninhos no alto das árvores ou comprado na East Wind, na High Spirits Produce e com Agus."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Ave inteira + Arroz hyliano + Manteiga de cabra + Ovo."
+  ],
+  "uses": [
+    "Cura com um espaço livre para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera alguns corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O quinto ingrediente define o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não há segredo conhecido; o prato se distingue dos outros pilafs apenas pela ave usada.",
+  "limitations": [
+    "Só aceita Ave inteira como carne.",
+    "Apenas um espaço livre para ingrediente de efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_whole_bird",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_poultry_pilaf",
+      "relation": "Pilaf com Coxa"
+    },
+    {
+      "id": "botw_food_prime_poultry_pilaf",
+      "relation": "Pilaf com Sobrecoxa"
+    },
+    {
+      "id": "botw_food_curry_pilaf",
+      "relation": "Pilaf com Tempero Goron no lugar da ave"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

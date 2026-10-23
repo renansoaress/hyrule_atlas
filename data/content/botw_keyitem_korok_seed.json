@@ -1,0 +1,109 @@
+{
+  "id": "botw_keyitem_korok_seed",
+  "summary": "Semente de cheiro marcante dada por cada um dos 900 Koroks escondidos. Ruri a usa para ampliar os espaços de armas, arcos e escudos; 441 sementes bastam para tudo, e as 900 rendem um presente.",
+  "description": "A Semente Korok é entregue por um Korok sempre que Link resolve o enigma que o faz aparecer — e há 900 deles escondidos por Hyrule. A descrição do item diz que a semente tem um cheiro característico e que, juntando muitas, \"nunca se sabe o que pode acontecer\". O primeiro Korok encontrado confunde Link com Ruri e pede que a semente seja devolvida a ele: as sementes são, na verdade, as contas das Maracas de Ruri, levadas pelos outros Koroks como pegadinha.\n\nRuri troca sementes por espaços extras na algibeira, um espaço por vez, em um dos três estoques: armas, arcos ou escudos. O preço sobe a cada ampliação. Ele aparece primeiro no caminho entre a Ponte Kakariko e Vila Kakariko (onde faz duas ampliações e parte), depois nos estábulos Riverside, Wetland e Woodland (mais cinco) e, por fim, na Floresta Korok, onde oferece todas as ampliações restantes.\n\nPela tabela do Zelda Wiki, maximizar tudo custa 441 sementes: 208 para armas, 73 para arcos e 160 para escudos. As 459 restantes não ampliam nada, mas completar as 900 faz Ruri entregar o Presente de Ruri.",
+  "locations": [
+    "Escondida por toda Hyrule: cada um dos 900 Koroks entrega uma semente ao ser encontrado."
+  ],
+  "obtaining": [
+    "Resolver os enigmas espalhados por Hyrule até o Korok aparecer; um Korok aconselha não ter vergonha de \"meter o nariz em lugares suspeitos\".",
+    "A Máscara Korok (DLC) treme e faz barulho perto de um enigma Korok ainda não resolvido."
+  ],
+  "uses": [
+    "Entregar a Ruri para ampliar os estoques de armas, arcos ou escudos.",
+    "Completar as 900 para receber o Presente de Ruri."
+  ],
+  "effects": [
+    "Cada troca com Ruri adiciona um espaço ao estoque escolhido; o custo em sementes aumenta a cada ampliação."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Entregue a Ruri, amplia em um espaço o estoque de armas, de arcos ou de escudos, à escolha de Link.",
+      "conditions": [
+        "Ter as Maracas de Ruri devolvidas (Missão secundária \"The Priceless Maracas\").",
+        "Encontrar Ruri: estrada de Kakariko, estábulos Riverside, Wetland ou Woodland, ou Floresta Korok.",
+        "Estar vestido: Ruri se recusa a fazer ampliações se Link estiver sem armadura."
+      ],
+      "side_effects": [
+        "Ruri sente o cheiro das sementes e pede uma assim que Link se aproxima com elas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Hestu",
+        "zw:Korok"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quanto custa cada estoque",
+      "text": "Armas: os espaços 10 a 20 custam 1, 2, 3, 5, 8, 12, 17, 25, 35, 45 e 55 sementes (o primeiro espaço é da Espada Mestra). Arcos: os espaços 6 a 13 custam 1, 2, 3, 5, 8, 12, 17 e 25; os seguintes da fileira são ocupados pelas flechas e pelo Arco da Luz. Escudos: 1, 2, 3, 4 e 5 sementes para os espaços 5 a 9, 10 para cada um dos espaços 10 a 14, 15 para os espaços 15 a 19 e 20 para o último.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Do que a semente é feita",
+      "text": "O diretor de Breath of the Wild, Hidemaro Fujibayashi, confirmou que as Sementes Korok são, na verdade, fezes de Korok, o que combina com o \"cheiro característico\" citado na descrição.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Pular as visitas aos estábulos",
+      "text": "Se Link chegar à Floresta Korok antes de fazer as cinco ampliações dos estábulos, Ruri aparece direto na floresta e deixa de surgir nos estábulos, oferecendo ali todas as ampliações restantes.",
+      "sources": [
+        "zw:Hestu"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ninguém mais vê os Koroks",
+      "text": "A maioria das pessoas não consegue ver os Koroks. O comerciante Agus conta ter levado um susto com um \"grande fantasma de árvore\" perto do Lago Siela, onde Ruri aparece pela primeira vez — e Ruri diz que fazia cem anos que ninguém o via.",
+      "sources": [
+        "zw:Korok",
+        "zw:Hestu"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O estoque de armas é o mais caro (208 sementes no total); como as armas se desgastam e quebram, cada espaço extra permite carregar mais reservas.",
+    "Use a Máscara Korok para encontrar enigmas que ainda faltam: ela reage perto de um Korok escondido."
+  ],
+  "limitations": [
+    "Só 441 sementes têm uso prático; as demais servem apenas para completar a coleção.",
+    "Ruri não faz ampliações se Link estiver sem roupa."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_hestus_maracas",
+      "relation": "As sementes são as contas das maracas"
+    },
+    {
+      "id": "botw_keyitem_hestus_gift",
+      "relation": "Recompensa por entregar as 900 sementes"
+    },
+    {
+      "id": "botw_armor_korok_mask",
+      "relation": "Detecta enigmas Korok não resolvidos"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Ocupa o primeiro espaço de armas"
+    },
+    {
+      "id": "botw_mechanic_durability",
+      "relation": "Mais espaços compensam o desgaste das armas"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

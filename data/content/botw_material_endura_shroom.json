@@ -1,0 +1,149 @@
+{
+  "id": "botw_material_endura_shroom",
+  "summary": "Cogumelo raro, amarelo-alaranjado, que cozido dá Vigor extra: enche o Medidor de vigor e ainda acrescenta vigor além do limite. Cru cura 1 coração; tostado vale menos na venda que cru.",
+  "description": "O Cogumelo tenaz é um cogumelo raro de cor amarelo-alaranjada, espalhado pelos pequenos bosques dentro e ao redor da Pradaria de Hyrule. Há concentrações maiores na Dalite Forest, nos Cerros de Hyrule, ao pé das árvores dos Ermos de Seres e num bosque sem nome atrás do Wetland Stable. Cru, recupera 1 coração. Cozido, concede Vigor extra, que reabastece o Medidor de vigor por completo e ainda soma vigor acima do máximo — não confundir com a simples recuperação de vigor do Energimelo.\n\nExposto ao fogo, vira Cogumelo tenaz tostado (1,5 coração), sem efeito, e, curiosamente, cai de 6 para 5 rupias na venda. É vendido na loja East Wind, em Hateno, e pelos mercadores ambulantes Bugut e Kanny, por 24 rupias. Na Tinturaria Kochi, entra no corante laranja.",
+  "locations": [
+    "Pequenos bosques dentro e ao redor da Pradaria de Hyrule; o compendium cita os Cerros de Hyrule e a Pradaria de Hyrule.",
+    "Concentrações maiores: Dalite Forest (Cerros de Hyrule), pé das árvores dos Ermos de Seres e um bosque atrás do Wetland Stable.",
+    "Lojas: East Wind (Vila Hateno), Bugut e Kanny — 24 rupias."
+  ],
+  "obtaining": [
+    "Colher nos bosques citados.",
+    "Comprar na East Wind ou com os mercadores Bugut (entre Kakariko e o Dueling Peaks Stable) e Kanny (entre o Serenne Stable e o Snowfield Stable)."
+  ],
+  "uses": [
+    "Pratos de Vigor extra para escaladas e voos longos.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante laranja na Tinturaria Kochi.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Cozido: Vigor extra — enche o Medidor de vigor e acrescenta vigor além do limite, temporariamente."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Tostado perto do fogo, vira Cogumelo tenaz tostado, que recupera 1,5 coração.",
+      "side_effects": ["Perde o Vigor extra.", "O valor de venda cai de 6 para 5 rupias."],
+      "produces": ["botw_food_toasty_endura_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Toasty Endura Shroom", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Cogumelo tenaz tostado.",
+      "produces": ["botw_food_toasty_endura_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Campfire"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_endura_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Endura Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Vigor extra: o prato reabastece todo o vigor e acrescenta uma reserva acima do máximo. Mais unidades ou outros ingredientes do mesmo efeito (como a Cenoura tenaz) tornam o efeito mais forte.",
+      "side_effects": ["Vigor extra não se acumula entre pratos: comer outro do mesmo efeito mantém só o mais forte."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração e não mexe no vigor.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 6 rupias; tostado, vale só 5.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Vigor extra não é recuperar vigor",
+      "text": "O Zelda Wiki faz questão de distinguir: o Vigor extra do Cogumelo tenaz enche o Medidor de vigor e ainda soma uma reserva acima do máximo, enquanto o efeito do Energimelo apenas devolve parte do vigor gasto.",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Tostar desvaloriza",
+      "text": "Ao contrário da maioria dos ingredientes, que valem mais depois de assados, o Cogumelo tenaz tostado vale 5 rupias, uma a menos que o cru.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Toasty Endura Shroom"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de escaladas longas ou de travessias com o Planador, coma um prato de Vigor extra para começar com o medidor cheio e com vigor acima do limite normal.",
+    "Combine com Cenouras tenazes para um prato de Vigor extra mais forte."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Vigor extra; só cozido.",
+    "Tostado vale menos na venda."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_endura_shroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_material_endura_carrot", "relation": "Outro ingrediente de Vigor extra" },
+    { "id": "botw_material_stamella_shroom", "relation": "Cogumelo de recuperação de vigor (efeito diferente)" },
+    { "id": "botw_elixir_enduring_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_stamina", "relation": "O efeito amplia o Medidor de vigor" },
+    { "id": "botw_food_mushroom_skewer", "relation": "Receita de cogumelo" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante laranja" }
+  ],
+  "capabilities": ["cura", "vigor", "reage_fogo"],
+  "verification_status": "verificado"
+}

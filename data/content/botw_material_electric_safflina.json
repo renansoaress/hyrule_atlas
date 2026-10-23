@@ -1,0 +1,128 @@
+{
+  "id": "botw_material_electric_safflina",
+  "summary": "Erva medicinal abundante no Deserto Gerudo, de fibras que conduzem eletricidade. Cozida, dá Resistência a choques; crua não cura. Cresce junto à fonte da Grande Fada Tera e nos Cerros de Hyrule.",
+  "description": "A Erva relampagueira (Electric Safflina, no original em inglês) cresce em abundância no Deserto Gerudo e também nos Cerros de Hyrule, e pode ser encontrada perto da Fonte da Grande Fada Tera, sob o Grande Esqueleto Gerudo. A descrição do jogo diz que suas fibras peculiares conduzem eletricidade e que, por isso, cozida num prato, ela aumenta a resistência de Link à eletricidade: o resultado é o efeito Resistência a choques. Crua, não recupera corações.\n\nAo contrário das outras duas ervas da família, não é pedida em nenhuma melhoria de armadura. Não tem versão assada na lista de comidas assadas. Na Tinturaria Kochi, entra no corante amarelo-claro.",
+  "locations": [
+    "Deserto Gerudo e Cerros de Hyrule (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Arredores da Fonte da Grande Fada Tera, sob o Grande Esqueleto Gerudo."
+  ],
+  "obtaining": [
+    "Colher nos locais citados. Os dados estruturados não listam lojas que vendam a erva."
+  ],
+  "uses": [
+    "Pratos de Resistência a choques.",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante amarelo-claro na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Cozida: Resistência a choques (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a erva no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a erva largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada desta erva na lista de comidas assadas, e as fontes não dizem o que acontece se ela for exposta ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-la numa fogueira; ela não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "A descrição do jogo diz que as fibras da planta conduzem eletricidade, mas as fontes não descrevem o que acontece com a erva largada atingida por um choque."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da erva na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a erva não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência a choques. Mais unidades prolongam o efeito; combinada com Fruta isolante ou Aterramelo (mesmo efeito), prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Shock Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Crua, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": ["comp", "zw:Flower"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Conduz para proteger",
+      "text": "A lógica da descrição é curiosa: é justamente por suas fibras conduzirem eletricidade que a erva, cozida, aumenta a resistência a choques — o contrário da Fruta isolante e do Aterramelo, cujo efeito o jogo explica pelo isolamento natural.",
+      "sources": ["comp", "zw:Voltfruit", "zw:Zapshroom"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A única da família sem uso em armaduras",
+      "text": "Das três ervas da família (fogueira, geleira e relampagueira), só a Erva geleira é pedida em melhorias de armadura; esta não aparece em nenhuma.",
+      "sources": ["zw", "zw:Warm Safflina"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Frutas isolantes e Aterramelos, todos encontrados na região Gerudo, para Resistência a choques de nível mais alto."
+  ],
+  "limitations": [
+    "Crua não cura nada.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ela não está documentado.",
+    "Não é usada em melhorias de armadura."
+  ],
+  "related": [
+    { "id": "botw_material_cool_safflina", "relation": "Erva da mesma família (calor)" },
+    { "id": "botw_material_warm_safflina", "relation": "Erva da mesma família (frio)" },
+    { "id": "botw_material_voltfruit", "relation": "Outro ingrediente de Resistência a choques" },
+    { "id": "botw_material_zapshroom", "relation": "Outro ingrediente de Resistência a choques" },
+    { "id": "botw_elixir_electro_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Cresce perto da fonte de Tera" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante amarelo-claro" }
+  ],
+  "capabilities": ["protege_choque"],
+  "verification_status": "parcial"
+}

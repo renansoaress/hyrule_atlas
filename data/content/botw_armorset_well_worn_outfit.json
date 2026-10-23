@@ -1,0 +1,77 @@
+{
+  "id": "botw_armorset_well_worn_outfit",
+  "summary": "Camisa velha e Calças surradas, achadas em baús de pedra no Santuário da Ressurreição, onde Link desperta. Só duas peças, pequenas demais para ele, sem bônus e sem melhorias, mas tingíveis.",
+  "description": "O Traje surrado é um conjunto de apenas duas peças: a Camisa velha e as Calças surradas, sem peça de cabeça. Ambas estão em baús de pedra dentro do Santuário da Ressurreição, onde Link desperta no início do jogo.\n\nAs descrições do inventário deixam claro que elas são pequenas demais para Link: a camisa é fina, feita há muito tempo e está se desfazendo nas costuras, \"mas é melhor que nada\", com mangas curtas; as calças estão gastas, mas são surpreendentemente confortáveis, apesar das pernas curtas. O conjunto não tem efeitos nem bônus de conjunto e não pode ser melhorado por Grandes Fadas.\n\nEm compensação, as duas peças podem ser tingidas na Tinturaria Kochi. Se forem vendidas ou perdidas, Granté passa a revendê-las em Tarrey Town depois da Missão secundária \"From the Ground Up\".",
+  "locations": [
+    "Santuário da Ressurreição (baús de pedra).",
+    "Tarrey Town, onde Granté revende as peças depois de \"From the Ground Up\"."
+  ],
+  "obtaining": [
+    "Abrir os baús de pedra do Santuário da Ressurreição logo no início do jogo.",
+    "Recompra com Granté por 50 rupias cada, após a conclusão de \"From the Ground Up\"."
+  ],
+  "uses": [
+    "Proteção mínima logo após o despertar de Link, antes de qualquer compra.",
+    "Visual do começo da aventura, que pode ser tingido."
+  ],
+  "effects": [
+    "Nenhum efeito especial; defesa mínima."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "sem_efeito",
+      "result": "Vestir as duas peças não ativa nenhum bônus de conjunto.",
+      "sources": [
+        "zw:Armor Set"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa que não serve",
+      "text": "As duas descrições mencionam que as peças são curtas para Link: as mangas da camisa e as pernas das calças ficam pequenas.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Sem roupa, os personagens comentam",
+      "text": "Se Link tirar as roupas, alguns personagens comentam a falta delas; Ruri, por exemplo, comemora que os dois estão \"pelados juntos\" e se recusa a ampliar a algibeira até Link se vestir.",
+      "sources": [
+        "zw:Armor",
+        "zw:Hestu"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Tingir o traje na Tinturaria Kochi é uma forma barata de personalizar o visual clássico do início do jogo."
+  ],
+  "limitations": [
+    "Só duas peças: não há peça de cabeça.",
+    "Não pode ser melhorado e tem defesa mínima.",
+    "Sem efeitos e sem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_old_shirt",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_well_worn_trousers",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_keyitem_sheikah_slate",
+      "relation": "Também obtida no Santuário da Ressurreição"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "As peças podem ser tingidas"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

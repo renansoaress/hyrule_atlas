@@ -1,0 +1,135 @@
+{
+  "id": "botw_monster_igneo_pebblit",
+  "summary": "Filhote de Tálus ígneo que brilha à noite com veias de lava e queima Link ao toque. Bombas o arremessam longe; resfriado com uma Flecha congelante, pode ser pego e jogado para explodir.",
+  "description": "A Brita ígnea é um Tálus ígneo muito jovem. O compendium explica que o corpo endurece com a idade até se converter inteiramente em lava; na infância, ainda coberto de fogo, é frágil e leve o bastante para ser arremessado pela explosão de uma bomba. Vive em várias áreas de Eldin, muitas vezes perto da lava — o compendium cita o Cânion de Eldin e a Cordilheira de Eldin — e é fácil de ver à noite, porque brilha com as veias de lava que correm pelo corpo.\n\nO ataque principal é ir até Link e golpeá-lo com um braço; tocá-la sem proteção queima Link. Há três saídas: atirar Bombas remotas, resfriá-la com uma arma de gelo, como Flechas congelantes, para poder tocá-la com segurança, ou usar o Conjunto antichamas completo e melhorado duas vezes, cujo bônus permite segurá-la. Como as outras Britas, explode ao ser arremessada ou se for segurada por tempo demais. Pode deixar Âmbar, Sílex ou Rubi.",
+  "locations": [
+    "Várias áreas de Eldin, frequentemente perto da lava; o compendium cita o Cânion de Eldin e a Cordilheira de Eldin."
+  ],
+  "obtaining": [
+    "Pode deixar Âmbar, Sílex ou Rubi.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Rubi, Âmbar e Sílex na região de Eldin.",
+    "Registro no compendium (entrada nº 144)."
+  ],
+  "effects": [
+    "Queima Link ao contato, sem proteção."
+  ],
+  "interactions": [
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Uma arma de gelo, como a Flecha congelante, a resfria e permite tocá-la com segurança.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Bombas remotas a derrotam; o compendium diz que ela é leve o bastante para ser arremessada pela explosão de uma bomba.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de uma bomba é forte o bastante para arremessá-la, segundo o compendium.",
+      "side_effects": ["Flechas explosivas não podem ser usadas no clima escaldante perto da Montanha da Morte: explodem assim que o arco é puxado."],
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Depois de resfriada, ou com o bônus do Conjunto antichamas melhorado duas vezes, pode ser erguida e arremessada, explodindo em seguida; segurada por tempo demais, explode nas mãos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes da Brita ígnea não descrevem o efeito de armas comuns; para a Brita rochosa, armas comuns não funcionam."
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas congelantes a resfriam; o efeito de flechas comuns não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo na Brita ígnea."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques na Brita ígnea."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a água a elimina, como acontece com a Brita rochosa."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálica; Magnétis não a agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica perto da lava e brilha à noite com as veias de lava do corpo, o que facilita localizá-la no escuro.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Resfriar e arremessar",
+      "text": "Resfriada com uma arma de gelo, como uma Flecha congelante, a Brita ígnea pode ser tocada com segurança; daí basta erguê-la e arremessá-la para que exploda.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus antichamas",
+      "text": "Com o Conjunto antichamas completo e melhorado duas vezes por uma Grande Fada, o bônus de proteção contra fogo permite lidar com a Brita ígnea sem resfriá-la antes.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Futuro Tálus de lava",
+      "text": "O compendium diz que, com a idade, o corpo da Brita ígnea endurece e se converte inteiramente em lava, como o do Tálus ígneo adulto.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, usar o brilho das veias de lava para localizá-la de longe e eliminá-la com uma Bomba remota."
+  ],
+  "limitations": [
+    "Tocá-la sem proteção queima Link.",
+    "Explode se for segurada por tempo demais."
+  ],
+  "related": [
+    { "id": "botw_monster_igneo_talus", "relation": "Forma adulta" },
+    { "id": "botw_monster_stone_pebblit", "relation": "Brita de pedra" },
+    { "id": "botw_monster_frost_pebblit", "relation": "Brita de gelo" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Bônus que permite segurá-la" },
+    { "id": "botw_arrow_ice_arrow", "relation": "Resfria-a" },
+    { "id": "botw_material_ruby", "relation": "Pode ser deixado" },
+    { "id": "botw_material_flint", "relation": "Pode ser deixado" }
+  ],
+  "capabilities": ["arremessavel", "gera_fogo", "reage_gelo", "vence_rapido"],
+  "verification_status": "parcial"
+}

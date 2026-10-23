@@ -1,0 +1,131 @@
+{
+  "id": "botw_monster_stalmoblin",
+  "summary": "Esqueleto de Moblin que sai do chão à noite. Desmonta a cada golpe e o crânio pula de volta até o corpo; destruir a cabeça antes da remontagem o derrota. Deixa o Braço de Moblin, uma arma de duas mãos de osso.",
+  "description": "Stalmoblins são os restos esqueléticos de Moblins que emergem do chão durante a noite. O compendium resume o paradoxo: até os Moblins mais fortes ficam frágeis quando viram uma pilha de ossos e desmoronam com poucos ataques, mas, enquanto o crânio estiver inteiro, eles se recompõem e continuam lutando. Podem estar armados com vários tipos de arma; quando não estão, tentam acertar Link com os punhos.\n\nQualquer ataque desmonta o esqueleto. Depois de um curto intervalo, os ossos se reconstroem sem a cabeça e caminham até o crânio caído, enquanto o próprio crânio vai pulando em direção ao corpo. Se Link destruir a cabeça antes da remontagem, o Stalmoblin é derrotado de vez e corpo e cabeça desaparecem. Durante esse intervalo, Link pode pegar o Braço de Moblin solto e usá-lo como arma.\n\nComo todos os monstros esqueléticos, só deixa partes de primeiro e segundo nível — Chifre e Presa de Moblin — além do braço e da arma que empunhava.",
+  "locations": [
+    "Surge do chão à noite; o compendium cita a Grande Floresta de Hyrule e as Montanhas Gerudo como locais comuns."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Moblin e Presa de Moblin.",
+    "Deixa o Braço de Moblin e a arma que estivesse empunhando."
+  ],
+  "uses": [
+    "Fonte noturna de partes de Moblin sem enfrentar a vida alta dos Moblins vivos.",
+    "Fonte do Braço de Moblin.",
+    "Registro no compendium (entrada nº 111)."
+  ],
+  "effects": [
+    "Socos e golpes de arma."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Qualquer golpe desmonta o esqueleto; destruir o crânio antes que o corpo se reconstrua derrota o Stalmoblin permanentemente.",
+      "applications": ["Golpear a cabeça caída logo após desmontá-lo."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes do Stalmoblin não descrevem o efeito de flechas no corpo ou no crânio (a morte instantânea por flecha no crânio é documentada apenas para o Stalboblin)."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de fogo no Stalmoblin."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de gelo no Stalmoblin."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de choques no Stalmoblin."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes do Stalmoblin não dizem se submergir o crânio o derrota (isso é documentado só para o Stalboblin)."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de explosões no Stalmoblin."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito da Bomba remota no Stalmoblin."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "A Estátis+ paralisa inimigos por pouco tempo; a versão básica não os afeta.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Os ossos não são metálicos: nem o Stalmoblin nem o Braço de Moblin respondem a Magnétis. Objetos metálicos movidos com a runa podem atingi-lo.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Moblin Arm"]
+    },
+    {
+      "action": "cenario",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o Stalmoblin usando objetos do cenário."
+    },
+    {
+      "action": "aproximar",
+      "variant": "com disfarce",
+      "status": "confirmado",
+      "result": "Com a Máscara de Moblin, a Máscara de Majora ou o bônus de disfarce do Conjunto radiante (melhorado duas vezes) ou do Conjunto de Ganon Fantasma, os Stalmoblins só atacam se Link atacar primeiro.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Radiant Set", "zw:Phantom Ganon Set"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Corrida entre crânio e corpo",
+      "text": "Depois de desmontado, o corpo se reconstrói sem a cabeça e anda até ela, enquanto o crânio pula em direção ao corpo. É nesse intervalo que Link deve destruir a cabeça.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Braço de Moblin",
+      "text": "O braço do Stalmoblin vira uma arma de duas mãos que continua se mexendo sozinha. É muito frágil, mas, por ser de osso, não conduz eletricidade, não atrai raios, não queima e flutua — boa escolha de emergência em tempestades.",
+      "sources": ["zw", "zw:Moblin Arm"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Espólio dos monstros Stal",
+      "text": "Monstros esqueléticos só deixam partes de primeiro e segundo nível e soltam um braço além da arma empunhada; por isso o Stalmoblin nunca deixa Vísceras de Moblin.",
+      "sources": ["zw:Enemy"]
+    }
+  ],
+  "advanced_uses": [
+    "Pegar o Braço de Moblin assim que o esqueleto desmonta e usá-lo para destruir o próprio crânio."
+  ],
+  "limitations": [
+    "Não deixa Vísceras de Moblin.",
+    "O Braço de Moblin quebra com facilidade."
+  ],
+  "related": [
+    { "id": "botw_monster_moblin", "relation": "Monstro vivo do qual é o esqueleto" },
+    { "id": "botw_monster_stalkoblin", "relation": "Equivalente esquelético dos Koboblins" },
+    { "id": "botw_monster_stalizalfos", "relation": "Equivalente esquelético dos Lagalfos" },
+    { "id": "botw_weapon_moblin_arm", "relation": "Braço que deixa" },
+    { "id": "botw_armor_moblin_mask", "relation": "Disfarce que impede seus ataques" },
+    { "id": "botw_armorset_radiant_set", "relation": "Disfarce contra monstros Stal" },
+    { "id": "botw_material_moblin_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_moblin_fang", "relation": "Parte deixada ao ser derrotado" }
+  ],
+  "capabilities": ["vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

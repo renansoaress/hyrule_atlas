@@ -1,0 +1,158 @@
+{
+  "id": "botw_armor_cap_of_the_wild",
+  "summary": "Gorro do traje verde dado pelos monges após os 120 santuários, no Templo Esquecido. Defesa de 4 a 28; com o Conjunto do herói selvagem ★★, o feixe da Espada Mestra fica 50% mais forte.",
+  "description": "O Gorro selvagem é a recompensa da missão secundária “A Gift from the Monks”: depois do último dos 120 santuários (os santuários do DLC não contam), o monge manda Link ao Templo Esquecido (Forgotten Temple), onde surgem três baús de pedra diante da estátua da Deusa-Mãe; o do meio guarda o gorro. A descrição diz que ele foi feito para um herói que viaja por terras selvagens e que “vesti-lo parece tão certo”.\n\nNão tem efeito individual, mas é uma das peças de cabeça mais resistentes: começa em 4 e chega a 28 de defesa. Com a Túnica selvagem e as Calças selvagens a ★★, ativa o Feixe da Espada Mestra aumentado (+50%). As melhorias são as mais exigentes do grupo: pedem partes de Farosh em todos os níveis (escamas, garras, lascas da presa e do chifre), além de Bolotas, Mel de abelha, Escaravelhos vibrantes e um Fragmento de estrela no fim. Ao contrário dos gorros dos amiibo, pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Templo Esquecido (Forgotten Temple), diante da estátua da Deusa-Mãe, no fundo do templo."
+  ],
+  "obtaining": [
+    "Concluir os 120 santuários do jogo base; o último monge inicia “A Gift from the Monks” e manda Link ao Templo Esquecido.",
+    "O baú do meio, dos três que aparecem diante da estátua, contém o gorro."
+  ],
+  "uses": [
+    "Completar o Conjunto do herói selvagem para fortalecer o feixe da Espada Mestra.",
+    "Defesa de cabeça alta (até 28)."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto Feixe da Espada Mestra aumentado (+50%) com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 4 de defesa (28 no nível máximo), sem efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto do herói selvagem ★★",
+      "status": "confirmado",
+      "result": "Com Túnica selvagem e Calças selvagens, todas ★★, o feixe da Espada Mestra ganha 50% de poder.",
+      "conditions": [
+        "As três peças melhoradas ao menos duas vezes e vestidas.",
+        "Espada Mestra com vida cheia para disparar o feixe."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Master Sword"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Santuários do DLC não contam",
+      "text": "Os 16 santuários da missão principal “EX The Champions' Ballad” não entram na contagem de 120 exigida pelos monges.",
+      "sources": [
+        "zw",
+        "zw:A Gift from the Monks"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "“O mandado do verdadeiro herói”",
+      "text": "Ao entregar a recompensa, o último monge diz que os monges cumpriram seu propósito e concedem a Link “o mandado do verdadeiro herói”, antes de mandá-lo ao Templo Esquecido.",
+      "sources": [
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O teletransporte para o santuário Rona Kachta, dentro do Templo Esquecido, leva direto aos baús, já que todos os santuários estarão concluídos."
+  ],
+  "limitations": [
+    "Só aparece no fim do jogo, após todos os santuários do jogo base.",
+    "Melhorias exigem partes de Farosh em todos os níveis."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_tunic_of_the_wild",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_trousers_of_the_wild",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_faroshs_scale",
+      "relation": "Material da 1ª melhoria"
+    },
+    {
+      "id": "botw_material_shard_of_faroshs_horn",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_monster_farosh",
+      "relation": "Dragão cujas partes são usadas nas melhorias"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Arma cujo feixe é fortalecido pelo bônus"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

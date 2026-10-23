@@ -1,0 +1,125 @@
+{
+  "id": "botw_creature_seagull",
+  "summary": "Gaivota que voa em bandos sobre o mar, principalmente nos mares de Necluda e Akkala. Bandos pairando sobre a água indicam peixes — e costumam voar acima de baús submersos. Abatida, deixa uma Coxa.",
+  "description": "As Gaivotas vivem perto do oceano e são vistas com mais frequência voando sobre o Mar de Necluda e o Mar de Akkala. Comem principalmente peixe, por isso um bando pairando sobre a água é um bom indício de cardume — os pescadores usam esse comportamento para decidir onde lançar as redes.\n\nPara Link, o detalhe mais útil é outro: as gaivotas costumam voar justamente acima de pontos onde há baús do tesouro submersos. Seguir um bando sobre o mar pode, assim, levar a tesouros escondidos debaixo d'água. Abatida, a gaivota deixa uma Coxa.",
+  "locations": [
+    "Mar de Necluda e Mar de Akkala (compendium), voando em bandos perto da costa."
+  ],
+  "obtaining": [
+    "Não pode ser capturada; abatida, deixa uma Coxa."
+  ],
+  "uses": [
+    "Indicador de tesouro: costumam sobrevoar baús submersos.",
+    "Indicador de peixes, como fazem os pescadores.",
+    "Fonte de Coxa.",
+    "Registrar sua foto no compendium (entrada nº 45)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes descrevem as gaivotas voando em bandos sobre o mar, mas não detalham a reação à aproximação de Link."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Bandos de gaivotas costumam voar sobre locais onde há baús do tesouro debaixo d'água, e também sobre cardumes.",
+      "applications": [
+        "Procurar baús submersos logo abaixo dos bandos que circulam sobre o mar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatida à distância; ao morrer, deixa uma Coxa.",
+      "conditions": [
+        "Voa sobre o mar, por isso o ataque precisa ser à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."
+      ],
+      "produces": [
+        "botw_material_raw_bird_drumstick"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Raw Bird Drumstick",
+        "zw:Wooden Bow"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra gaivotas, que vivem no ar sobre o mar."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Gaivotas apontam tesouros",
+      "text": "As gaivotas costumam voar acima de locais onde há baús do tesouro debaixo d'água. Ao ver um bando circulando sobre o mar, vale a pena procurar o que está submerso logo abaixo.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O truque dos pescadores",
+      "text": "Como as gaivotas comem principalmente peixe, um bando pairando sobre a água indica onde há peixes, e os pescadores usam isso a seu favor, segundo o compendium.",
+      "sources": [
+        "comp"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Varrer a costa de Necluda e Akkala acompanhando os bandos de gaivotas para encontrar baús submersos."
+  ],
+  "limitations": [
+    "Vive só sobre o mar e a costa.",
+    "Rende só Coxa, a carne de ave que menos recupera corações crua (um coração)."
+  ],
+  "related": [
+    {
+      "id": "botw_treasure_treasure_chest",
+      "relation": "As gaivotas sobrevoam baús submersos"
+    },
+    {
+      "id": "botw_material_raw_bird_drumstick",
+      "relation": "Carne deixada ao ser abatida"
+    },
+    {
+      "id": "botw_food_roasted_bird_drumstick",
+      "relation": "Coxa exposta ao fogo"
+    }
+  ],
+  "capabilities": [
+    "revela_recursos"
+  ],
+  "verification_status": "verificado"
+}

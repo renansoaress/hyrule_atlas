@@ -1,0 +1,181 @@
+{
+  "id": "botw_bow_great_eagle_bow",
+  "summary": "O arco do Campeão Revali (ataque 28 por flecha, durabilidade 60): três flechas por disparo, o tensionamento mais rápido de todos os arcos (1,8×) e 40 m de trajetória reta. Nunca tem bônus; Harth pode refazê-lo.",
+  "description": "O Arco da harpia pertenceu a Revali, o Campeão dos Arás. A descrição do jogo diz que Revali disparava flechas com a velocidade de um vendaval, o que o tornava supremo no combate aéreo. Depois que a Fera Divina Vah Medoh é acalmada, Kaneli, o ancião dos Arás, entrega o arco a Link por sugestão de Teba, que ficou impressionado com a pontaria dele; o arco fica num baú de pedra na casa de Kaneli.\n\nÉ um arco de três flechas, como os de Centaleão, e os parâmetros extraídos do jogo lhe dão o tensionamento mais rápido entre todos os arcos (1,8 vez o padrão), além de 40 m de trajetória reta. Teba comenta que ele é pesado demais para o Ará comum: só a força e a velocidade de Revali compensavam o peso.\n\nComo equipamento único, nunca recebe bônus. Se quebrar ou se perder, Harth faz outro com um Arco da andorinha, cinco feixes de Madeira e um Diamante. Sendo de madeira, queima, flutua e não atrai raios.",
+  "locations": [
+    "Vila dos Arás (Rito Village), na Fronteira de Tabantha: baú de pedra na casa de Kaneli."
+  ],
+  "obtaining": [
+    "Recompensa de Kaneli depois de acalmar a Fera Divina Vah Medoh: pegar no baú de pedra da casa dele.",
+    "Se quebrar ou se perder de vez, Harth refaz o arco em troca de um Arco da andorinha, cinco feixes de Madeira e um Diamante. Se o arco foi apenas largado em algum lugar, Harth sugere procurá-lo primeiro, porque é caro de fazer."
+  ],
+  "uses": [
+    "Combate aéreo e contra grupos: três flechas de dano 28 com o tensionamento mais rápido do jogo."
+  ],
+  "effects": [
+    "Disparo triplo: três flechas por puxada, ao custo de uma.",
+    "Tensionamento 1,8 vez mais rápido que o padrão."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara três flechas num leque horizontal com abertura total de 6°, consumindo apenas uma flecha. O tensionamento é 1,8 vez mais rápido que o padrão — o maior valor entre os arcos — e a trajetória reta chega a 40 m.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "applications": [
+        "Encaixar vários disparos triplos durante a câmera lenta de mira no ar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Bow",
+        "zw:Template:BotW Bow Parameters"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Por ser de madeira, pega fogo ao tocar chamas e, se continuar exposto, queima até se desfazer.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Nunca recebe bônus",
+      "text": "Os parâmetros do jogo até definem faixas de bônus para ele (ataque de +6 a +23, durabilidade de +10 a +50), mas o Zelda Wiki o lista entre os equipamentos únicos que nunca recebem bônus. Também não tem o parâmetro de disparo quíntuplo ativo.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Pesado demais para Teba",
+      "text": "Teba admite que o arco é pesado demais para ele: no combate aéreo perderia toda a velocidade só para disparar. Por isso sugeriu ao ancião que o entregassem a Link depois de vê-lo enfrentar Vah Medoh.",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Teba"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Revali treinando no Campo de Voo",
+      "text": "Na memória recuperada extra \"Champion Revali's Song\" (do conteúdo adicional), Revali aparece treinando com o arco no Campo de Voo — e o arco surge sem o pano azul que lembra o traje de Campeão dele.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mire no ar com o Vendaval de Revali ou com correntes ascendentes: o tensionamento de 1,8× rende mais disparos triplos por uso da câmera lenta."
+  ],
+  "limitations": [
+    "Queima no clima escaldante de Eldin.",
+    "Não pode receber nenhum bônus, nem o disparo quíntuplo.",
+    "Refazê-lo exige um Arco da andorinha, Madeira e um Diamante."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_swallow_bow",
+      "relation": "Necessário para Harth refazê-lo"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Necessário para Harth refazê-lo"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Cinco feixes são necessários para refazê-lo"
+    },
+    {
+      "id": "botw_bow_falcon_bow",
+      "relation": "Outro arco Ará de tensionamento rápido"
+    },
+    {
+      "id": "botw_ability_revalis_gale",
+      "relation": "Habilidade do mesmo Campeão, útil para mirar no ar"
+    },
+    {
+      "id": "botw_bow_lynel_bow",
+      "relation": "Também dispara três flechas"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

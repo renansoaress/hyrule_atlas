@@ -1,0 +1,173 @@
+{
+  "id": "botw_armor_stealth_mask",
+  "summary": "Máscara de pano feita com técnicas Sheikah que abafam o farfalhar da roupa, vendida por 500 rupias em Kakariko. Dá Furtividade aumentada nível 1; o conjunto ★★ deixa Link mais rápido à noite.",
+  "description": "Parece uma máscara de pano comum, mas foi feita com técnicas Sheikah que suprimem o barulho do farfalhar das roupas, explica a descrição. É vendida por 500 rupias na Enchanted, a loja de armaduras da Vila Kakariko; ao contrário das roupas Sheikah comuns, o Conjunto furtivo pode ser comprado por gente de outras raças, como Link.\n\nDá Furtividade aumentada nível 1: o ruído de Link cai 20% (40% e 70% nos níveis 2 e 3, com as outras peças), embora correr continue fazendo barulho e o efeito não engane a visão dos inimigos. Com o Peitoral furtivo e a Meia-calça furtiva a ★★, o Conjunto furtivo ativa a Velocidade noturna: entre 21h e 4h, Link corre 20% mais rápido. A defesa é baixa, de 2 a 16; as melhorias usam ingredientes de furtividade — Beladonas azuis, Vaga-lumes do poente, Silencimelos, Caramujos discretos e, no último nível, 10 Trutas discretas e 5 Princesas plácidas. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Enchanted, loja de armaduras da Vila Kakariko."
+  ],
+  "obtaining": [
+    "Comprar por 500 rupias na Enchanted."
+  ],
+  "uses": [
+    "Aproximar-se de inimigos e animais com menos barulho.",
+    "Completar o Conjunto furtivo para correr mais rápido à noite."
+  ],
+  "effects": [
+    "Furtividade aumentada nível 1 (−20% de ruído).",
+    "Bônus de conjunto Velocidade noturna (+20% entre 21h e 4h) com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 2 de defesa (16 no nível máximo) e dá Furtividade aumentada nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto furtivo ★★",
+      "status": "confirmado",
+      "result": "Com Peitoral furtivo e Meia-calça furtiva, todas ★★, Link corre 20% mais rápido entre 21h e 4h (equivale a Velocidade aumentada nível 2 e soma com um nível 1 desse efeito).",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes.",
+        "Horário do jogo entre 21h e 4h."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Link faz 20% menos ruído; com as três peças furtivas, 70% menos.",
+      "side_effects": [
+        "Correr faz barulho independentemente da furtividade.",
+        "O efeito não reduz a detecção visual."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Stealth"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa de guerreiro, não de aldeão",
+      "text": "A arte conceitual mostra que o Conjunto furtivo foi pensado inicialmente como as roupas do dia a dia dos Sheikah, mas acabou redesenhado para lembrar o traje dos guerreiros Sheikah.",
+      "sources": [
+        "zw:Stealth Set"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ruído, não visão",
+      "text": "A Furtividade aumentada só reduz o som que Link produz. Ficar fora da linha de visão continua sendo necessário — a chuva e a grama alta também ajudam a passar despercebido.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Stealth"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, com o conjunto ★★, Link combina furtividade máxima (nível 3) e corrida mais rápida, ideal para se aproximar de acampamentos e montarias selvagens."
+  ],
+  "limitations": [
+    "Defesa baixa (até 16).",
+    "Correr anula o ganho de silêncio.",
+    "O bônus noturno exige as três peças a ★★."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_stealth_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_stealth_chest_guard",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_stealth_tights",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_sheiks_mask",
+      "relation": "Peça de cabeça com o mesmo efeito (amiibo)"
+    },
+    {
+      "id": "botw_creature_stealthfin_trout",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_material_blue_nightshade",
+      "relation": "Material dos dois primeiros níveis"
+    },
+    {
+      "id": "botw_mechanic_sneakstrike",
+      "relation": "Facilitado pela furtividade"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "furtividade",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,132 @@
+{
+  "id": "botw_monster_thunder_wizzrobe",
+  "summary": "Versão mais forte do Feitiçano elétrico (300 pontos de vida): lança três bolas elétricas de uma vez com o Cajado trovejante e invoca tempestades cujos raios caem em Link se ele estiver com armas de metal.",
+  "description": "O Feitiçano do trovão é a variante superior do Feitiçano elétrico. Com o Cajado trovejante, lança três bolas de eletricidade de uma vez, invoca Chulchuls elétricos e Morcis elétricos e chama tempestades que atingem Link com raios se ele estiver empunhando armas metálicas. O compendium cita a Pradaria de Hyrule e a Fronteira de Tabantha como locais comuns e diz que o clima volta ao normal quando ele é derrotado.\n\nFica invisível depois de atacar, mas deixa rastros sob os pés que denunciam sua posição, e um tiro na cabeça o atordoa. Tem 300 pontos de vida e, ao ser derrotado, deixa o Cajado trovejante, que dispara três bolas elétricas por golpe e não atrai raios.",
+  "locations": [
+    "Pradaria de Hyrule e Fronteira de Tabantha, segundo o compendium."
+  ],
+  "obtaining": [
+    "Deixa o Cajado trovejante ao ser derrotado.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte do Cajado trovejante: três bolas de eletricidade por golpe e oito no ataque giratório; não conduz eletricidade nem atrai raios.",
+    "Registro no compendium (entrada nº 102)."
+  ],
+  "effects": [
+    "Bolas elétricas; tempestades com raios que atingem Link se ele estiver com armas de metal."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Um tiro na cabeça o atordoa, dando tempo para atacar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Tem 300 pontos de vida e fica invisível após atacar, mas deixa rastros sob os pés.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Invoca tempestades cujos raios atingem Link se ele estiver empunhando armas metálicas.",
+      "applications": ["Trocar para armas de madeira, de osso ou varinhas, que não atraem raios, enquanto ele estiver vivo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a eletricidade."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo no Feitiçano do trovão."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo no Feitiçano do trovão."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Feitiçano do trovão com água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem um efeito específico de explosões nele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Nem o Feitiçano nem o Cajado trovejante são metálicos.",
+      "sources": ["zw:Magnesis", "zw:Thunderstorm Rod"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Provoca tempestades na área, que se dissipam quando ele é derrotado.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Invoca Chulchuls elétricos e Morcis elétricos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tempestade sob encomenda",
+      "text": "Diferente de uma tempestade natural, a do Feitiçano do trovão acaba junto com ele: o compendium diz que o clima se normaliza assim que ele é derrotado.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Eletricidade dos Cerros de Hyrule",
+      "text": "Segundo a descrição do Cajado trovejante, a gema da arma contém eletricidade dos Cerros de Hyrule, e o cajado quebra quando essa energia se esgota.",
+      "sources": ["zw:Thunderstorm Rod"]
+    }
+  ],
+  "advanced_uses": [
+    "Enfrentá-lo com o Cajado trovejante ou outra varinha elemental, que não atraem raios, deixando as armas de metal guardadas."
+  ],
+  "limitations": [
+    "Equipamento metálico vira para-raios enquanto a tempestade dele durar."
+  ],
+  "related": [
+    { "id": "botw_weapon_thunderstorm_rod", "relation": "Arma que deixa" },
+    { "id": "botw_monster_electric_wizzrobe", "relation": "Versão mais fraca" },
+    { "id": "botw_monster_electric_chuchu", "relation": "Monstro que invoca" },
+    { "id": "botw_monster_electric_keese", "relation": "Monstro que invoca" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Clima que ele provoca" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza raios que atingiriam Link" }
+  ],
+  "capabilities": ["gera_eletricidade", "habilidade_especial"],
+  "verification_status": "parcial"
+}

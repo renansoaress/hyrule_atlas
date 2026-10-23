@@ -1,0 +1,162 @@
+{
+  "id": "botw_armor_barbarian_helm",
+  "summary": "Elmo de uma antiga tribo guerreira de Faron, achado no santuário Tu Ka'loh, na Ilha do Labirinto Lomei. Dá Ataque aumentado nível 1 (+20%); o conjunto ★★ corta pela metade o vigor dos ataques carregados.",
+  "description": "Segundo a descrição do jogo, o Elmo bárbaro foi usado pelos guerreiros de uma antiga tribo belicosa da região de Faron e “desperta o animal interior” de quem o veste. Ele está num baú do santuário Tu Ka'loh, na Ilha do Labirinto Lomei (Lomei Labyrinth Island). Depois de obtê-lo, Granté passa a vendê-lo em Tarrey Town por 4.000 rupias, o que permite recuperá-lo se for vendido.\n\nCada peça do Conjunto bárbaro dá um nível de Ataque aumentado (+20%, +30% e +50% nos níveis 1, 2 e 3). Com a Armadura bárbara e as Faixas de perna bárbaras, todas melhoradas a ★★, o conjunto ativa a Economia de vigor no ataque carregado (Charge Atk. Stamina Up), que reduz em 50% o vigor gasto nesses golpes. A defesa sobe de 3 para 20; as melhorias usam partes de Centaleão (chifres, cascos e vísceras) e o último nível pede uma Lasca do chifre de Dinraal — esses são os gargalos. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Tu Ka'loh, na Ilha do Labirinto Lomei (Lomei Labyrinth Island).",
+    "Loja de Granté, em Tarrey Town (reposição)."
+  ],
+  "obtaining": [
+    "Abrir o baú do santuário Tu Ka'loh.",
+    "Depois da primeira obtenção, comprar de Granté em Tarrey Town por 4.000 rupias."
+  ],
+  "uses": [
+    "Aumentar o dano de todos os ataques em 20% (Ataque aumentado nível 1).",
+    "Completar o Conjunto bárbaro para economizar vigor em ataques carregados."
+  ],
+  "effects": [
+    "Ataque aumentado nível 1 (+20%).",
+    "Bônus de conjunto Economia de vigor no ataque carregado (−50% de vigor) com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 3 de defesa (20 no nível máximo) e dá Ataque aumentado nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto bárbaro ★★",
+      "status": "confirmado",
+      "result": "Com Armadura bárbara e Faixas de perna bárbaras, todas ★★, ativa a Economia de vigor no ataque carregado: ataques carregados gastam 50% menos vigor.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Ataque máximo só com o conjunto",
+      "text": "Cada peça bárbara soma um nível de Ataque aumentado, então as três juntas chegam ao nível 3 (+50%), o teto do efeito — mesmo sem melhorias.",
+      "sources": [
+        "zw:Barbarian Set",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Reposição com Granté",
+      "text": "Granté vende armaduras que não teriam outra forma de reposição, como as achadas em santuários, mas só depois que Link já obteve a peça original.",
+      "sources": [
+        "zw:Granté"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar o conjunto bárbaro ★★ com armas de duas mãos ou lanças, cujos ataques carregados passam a custar metade do vigor."
+  ],
+  "limitations": [
+    "A Economia de vigor exige as três peças a ★★.",
+    "Melhorias caras: partes de Centaleão em todos os níveis e uma Lasca do chifre de Dinraal no último."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_barbarian_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_barbarian_leg_wraps",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_lynel_hoof",
+      "relation": "Material de melhoria"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Material de melhoria dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_horn",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Fonte das partes usadas nas melhorias"
+    },
+    {
+      "id": "botw_armor_fierce_deity_mask",
+      "relation": "Outra peça de cabeça com Ataque aumentado e o mesmo bônus de conjunto"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

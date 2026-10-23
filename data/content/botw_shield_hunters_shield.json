@@ -1,0 +1,116 @@
+{
+  "id": "botw_shield_hunters_shield",
+  "summary": "Escudo de madeira com desenho de coelho, que os caçadores acham dar sorte. Fácil de usar, mas frágil (Defesa 3, durabilidade 10). Um exemplar no Labirinto de Lomei Norte reaparece com o tempo.",
+  "description": "O Escudo do caçador é o preferido dos caçadores por causa do coelho pintado, que dizem trazer sorte nas caçadas. O jogo o descreve como fácil de usar, mas com durabilidade que deixa a desejar — Defesa 3 e durabilidade 10, exatamente os números do Escudo do pescador. Junto deste e do Escudo timbrado, forma o trio de escudos de madeira decorados.\n\nHá poucos pontos fixos: um baú perto de um lago abaixo da Torre de Lanayru e um exemplar no lado leste do Labirinto de Lomei Norte, que volta a aparecer depois de um tempo. Viajantes hylianas também o carregam, o que permite fotografá-las com ele para o compendium. Sendo de madeira, pega fogo, queima no calor de Eldin, flutua e não reage a Magnétis nem a raios.",
+  "locations": [
+    "Baú perto de um lago abaixo da Torre de Lanayru.",
+    "Lado leste do Labirinto de Lomei Norte (North Lomei Labyrinth); reaparece depois de algum tempo.",
+    "O compendium cita as Cordilheiras de Hebra e a Palude de Lanayru como locais comuns."
+  ],
+  "obtaining": [
+    "Recolher um dos exemplares fixos; o do Labirinto de Lomei Norte se renova.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos entre 3:15 e 3:30."
+  ],
+  "uses": [
+    "Escudo leve de reserva no começo do jogo.",
+    "Prancha para Surfar com escudo em neve e areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial conhecido; a \"sorte nas caçadas\" é apenas a lenda do desenho."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia golpes leves; com Defesa 3, cada golpe forte gasta bastante durabilidade. A Defesa perfeita não desgasta o escudo.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Em pedra perde durabilidade rapidamente; em neve e areia não perde."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e perde durabilidade aos poucos enquanto queima.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantado com Magnétis.",
+      "sources": ["dm", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +4 a +5 (nível amarelo) e com Defesa do escudo aumentada de +2 a +6 (branco) ou +7 a +12 (amarelo).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fonte renovável no Labirinto de Lomei Norte",
+      "text": "O exemplar do lado leste do Labirinto de Lomei Norte reaparece depois de algum tempo, tornando o Escudo do caçador um dos escudos decorados mais fáceis de repor.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Foto com as viajantes",
+      "text": "Como viajantes hylianas andam com este escudo, Link pode fotografá-las para registrar o Escudo do caçador no compendium sem precisar ter um.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o exemplar renovável do Labirinto de Lomei Norte como prancha de surfe descartável."
+  ],
+  "limitations": [
+    "Pouca proteção e durabilidade baixa (10).",
+    "Queima se equipado em Eldin."
+  ],
+  "related": [
+    { "id": "botw_shield_fishermans_shield", "relation": "Mesmos atributos, desenho de peixe" },
+    { "id": "botw_shield_emblazoned_shield", "relation": "Outro escudo de madeira decorado" },
+    { "id": "botw_shield_wooden_shield", "relation": "Escudo de madeira simples, de proteção parecida" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Prêmio do minijogo de surfe de Selmie" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

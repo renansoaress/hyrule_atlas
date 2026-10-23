@@ -1,0 +1,159 @@
+{
+  "id": "botw_armor_diamond_circlet",
+  "summary": "Tiara com diamante que dá Resistência a Guardiões e o efeito oculto Poder ancestral aumentado (+20% nas armas ancestrais). Fica num baú sob a Ilha do Labirinto Lomei ou na Starlight Memories. Defesa de 4 a 28.",
+  "description": "Segundo a descrição, o diamante “aproveita o poder da luz” para reduzir o dano de inimigos ancestrais. Uma tiara fica num baú numa câmara sob a Ilha do Labirinto Lomei (Lomei Labyrinth Island) — ao pegá-la, todos os Guardiões deteriorados da sala se ativam. Também pode ser comprada na Starlight Memories, a joalheria da Cidade Gerudo, por 1.500 rupias e 3 Diamantes.\n\nDá Resistência a Guardiões nível 1 (−20% de dano de Guardiões) e o efeito oculto Poder ancestral aumentado (Ancient Pow Up): +20% de ataque com armas ancestrais e guardiãs, multiplicado com Ataque aumentado. A defesa vai de 4 a 28, o teto mais alto entre as peças de cabeça. As melhorias pedem Diamantes em todos os níveis (22 ao todo, o gargalo), Sílex nos dois primeiros e um Fragmento de estrela nos dois últimos. Não pode ser tingida e não pertence a nenhum conjunto.",
+  "locations": [
+    "Câmara sob a Ilha do Labirinto Lomei (Lomei Labyrinth Island), guardada por Guardiões deteriorados.",
+    "Starlight Memories, joalheria da Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Abrir o baú da câmara sob a Ilha do Labirinto Lomei (os Guardiões deteriorados acordam).",
+    "Comprar na Starlight Memories por 1.500 rupias e 3 Diamantes, depois da missão “Tools of the Trade”."
+  ],
+  "uses": [
+    "Reduzir o dano de Guardiões.",
+    "Aumentar o dano das armas ancestrais e guardiãs.",
+    "Defesa de cabeça máxima (28) quando nenhum outro efeito é necessário."
+  ],
+  "effects": [
+    "Resistência a Guardiões nível 1.",
+    "Poder ancestral aumentado (oculto): +20% de ataque com armas ancestrais e guardiãs."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 4 de defesa (28 no nível máximo), dá Resistência a Guardiões nível 1 e o efeito oculto Poder ancestral aumentado (+20% com armas ancestrais).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "Guardiões",
+      "status": "confirmado",
+      "result": "Resistência a Guardiões nível 1: o dano recebido de Guardiões cai 20% (30% no nível 2 e 50% no nível 3, o máximo). A redução é calculada depois de descontada a defesa total de Link.",
+      "conditions": [
+        "Vale para ataques de Guardiões; não reduz o dano de inimigos comuns que empunham armas ancestrais."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Guardian Resist Up",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Baú que desperta Guardiões",
+      "text": "Na câmara sob a Ilha do Labirinto Lomei, retirar a tiara do baú ativa todos os Guardiões deteriorados da sala. Chegue preparado para lasers vindos de vários lados.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus de ataque que o inventário não mostra",
+      "text": "O Poder ancestral aumentado é um dos efeitos ocultos do jogo: não aparece no inventário, mas aumenta em 20% o ataque das armas ancestrais. As Tiaras de rubi e de safira, os Brincos de topázio, o Elmo de Midna e o Elmo de Zant também o têm.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com uma arma guardiã ou ancestral, a tiara une defesa máxima de cabeça, proteção contra Guardiões e +20% de dano numa só peça."
+  ],
+  "limitations": [
+    "Não pode ser tingida na Tinturaria Kochi.",
+    "Sem conjunto: vestir a tiara com a Couraça e as Grevas ancestrais não ativa a Proficiência ancestral.",
+    "As melhorias consomem 22 Diamantes e 2 Fragmentos de estrela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_diamond",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Material dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_monster_decayed_guardian",
+      "relation": "Guardam o baú sob a Ilha do Labirinto Lomei"
+    },
+    {
+      "id": "botw_armor_ancient_helm",
+      "relation": "Outra peça de cabeça com Resistência a Guardiões"
+    },
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Outra tiara da Starlight Memories"
+    },
+    {
+      "id": "botw_armor_sapphire_circlet",
+      "relation": "Outra tiara da Starlight Memories"
+    },
+    {
+      "id": "botw_weapon_guardian_sword_plus_plus",
+      "relation": "Exemplo de arma guardiã beneficiada pelo efeito oculto"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

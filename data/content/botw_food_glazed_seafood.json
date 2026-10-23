@@ -1,0 +1,92 @@
+{
+  "id": "botw_food_glazed_seafood",
+  "summary": "Frutos do mar com Mel de abelha, prato \"para devorar inteiro\". Sai energizante com Robalo hyruliano, Carpa tricolor, Robalo enérgico ou Caranguejo esperto; os demais anulam o mel.",
+  "description": "Os Frutos do mar glaceados juntam qualquer fruto do mar com Mel de abelha; a descrição do jogo brinca que é um prato de frutos do mar que dá para devorar inteiro. Como nos outros glaceados, só existe uma versão com efeito: a energizante, que recupera parte do Medidor de vigor.\n\nA lista de frutos do mar compatíveis com o efeito é curta: Robalo hyruliano e Carpa tricolor, que não têm efeito, e Robalo enérgico e Caranguejo esperto, que têm o mesmo efeito energizante do mel. Qualquer outro peixe, caranguejo ou caramujo traz efeito diferente, anula o mel e produz a versão comum.",
+  "locations": [
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer fruto do mar + Mel de abelha."
+  ],
+  "uses": [
+    "Recuperação de vigor com peixes neutros ou energizantes.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Robalo hyruliano, Carpa tricolor, Robalo enérgico ou Caranguejo esperto.",
+    "Versão comum (fruto do mar de efeito diferente): recupera alguns corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera parte do Medidor de vigor e alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão energizante"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com fruto do mar de outro efeito, perde o efeito e apenas cura.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Robalo enérgico ou caranguejo esperto",
+      "text": "Robalo enérgico e Caranguejo esperto têm o mesmo efeito do mel e o reforçam; Robalo hyruliano e Carpa tricolor apenas não atrapalham.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só a versão energizante é possível."
+  ],
+  "related": [
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_creature_staminoka_bass",
+      "relation": "Peixe energizante que reforça o mel"
+    },
+    {
+      "id": "botw_creature_bright_eyed_crab",
+      "relation": "Caranguejo energizante que reforça o mel"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe neutro que mantém o efeito"
+    },
+    {
+      "id": "botw_food_glazed_meat",
+      "relation": "Glaceado de carne"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

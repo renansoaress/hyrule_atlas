@@ -1,0 +1,111 @@
+{
+  "id": "botw_weapon_spiked_boko_bat",
+  "summary": "Taco Kobo com pontas afiadas pregadas pelos Koboblins — a \"melhoria\" mais simples possível. Arma de madeira dos Koboblins e Moblins azuis; pega fogo e flutua. Ataque em disputa (16 ou 18).",
+  "description": "O Taco Kobo pontudo é a evolução do Taco Kobo. O jogo conta, com ironia, que depois de muito pensar em como melhorar o taco, os Koboblins simplesmente pregaram pontas afiadas nele — e que, nas mãos de um lutador habilidoso, ele causa um dano imenso. Faz parte do Equipamento Koboblin.\n\nÉ usado principalmente por Moblins azuis e Koboblins azuis em Necluda Oriental e nos Prados de Faron. Sendo de madeira, flutua, pega fogo e queima em clima escaldante, não conduz eletricidade, não atrai raios e não pode ser movido com Magnétis. As fontes divergem sobre o ataque: o compendium, a tabela de armas e o parâmetro interno Power indicam 18, enquanto a infobox e as propriedades extraídas do artigo do Zelda Wiki indicam 16.",
+  "locations": [
+    "Necluda Oriental e Prados de Faron, com Koboblins azuis e Moblins azuis."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins azuis ou Moblins azuis que o empunhem.",
+    "Chance de sair de baús gerados pelo amiibo do Koboblin (série Breath of the Wild).",
+    "Armas carregadas por inimigos reaparecem após a Lua de sangue."
+  ],
+  "uses": [
+    "Taco intermediário de madeira, seguro para tempestades.",
+    "Pode ser incendiado para levar fogo a grama, tochas ou Madeira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o golpe carregado gira consumindo vigor e termina numa pancada para baixo. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas e pode ser usado aceso para espalhar o fogo.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Fire"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado em clima escaldante, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movido com Magnétis.",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Arma comum de Moblins azuis e Koboblins azuis em Necluda Oriental e nos Prados de Faron.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +9, Durabilidade aumentada de +2 a +3 ou Acerto crítico; no nível dourado (amarelo): Ataque de +10 a +17, Durabilidade de +4 a +6 ou Lançamento longo (×1,5 a ×2).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ataque em disputa",
+      "text": "O compendium, a tabela de armas e o parâmetro interno Power registram 18 de ataque; a infobox e a tabela de propriedades do artigo do Zelda Wiki registram 16. Até a confirmação no jogo, trate o número exibido com cautela.",
+      "sources": ["dm", "zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Arma de madeira de dano razoável para lutar durante tempestades em Necluda e Faron, regiões onde ocorrem tempestades de raios."
+  ],
+  "limitations": [
+    "Durabilidade 12.",
+    "Queima em contato com fogo e no calor de Eldin."
+  ],
+  "related": [
+    { "id": "botw_weapon_boko_bat", "relation": "Versão básica" },
+    { "id": "botw_weapon_dragonbone_boko_bat", "relation": "Versão reforçada com osso" },
+    { "id": "botw_monster_blue_bokoblin", "relation": "Costuma empunhá-lo" },
+    { "id": "botw_monster_blue_moblin", "relation": "Costuma empunhá-lo" },
+    { "id": "botw_weapon_spiked_boko_club", "relation": "Clava de uma mão do mesmo nível" }
+  ],
+  "capabilities": ["inflamavel", "flutua", "arremessavel"],
+  "verification_status": "a_verificar"
+}

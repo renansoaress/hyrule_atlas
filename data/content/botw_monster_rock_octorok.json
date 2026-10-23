@@ -1,0 +1,227 @@
+{
+  "id": "botw_monster_rock_octorok",
+  "summary": "Octoroc vulcânico que cospe rochas explosivas em chamas, impossíveis de rebater. Ao inspirar, engole Bombas remotas (detone-as lá dentro) e devolve armas enferrujadas limpas e com durabilidade restaurada.",
+  "description": "O Octoroc rochoso vive em regiões vulcânicas — sobretudo no Cânion de Eldin e na Cordilheira de Eldin — e também nas Montanhas Gerudo. Ao contrário dos outros Octorocs, fica acima do chão até Link chegar perto demais; aí se enterra, deixando a rocha da cabeça como proteção. O ataque é marcante: ele inspira uma grande quantidade de ar e cospe uma rocha explosiva em chamas. Essa rocha explode mesmo com Defesa perfeita, então não pode ser devolvida.\n\nO compendium observa que, na mesma inspiração, ele às vezes aspira armas ou bombas. Isso abre dois truques. Uma Bomba remota colocada no caminho do ar é engolida e pode ser detonada dentro dele. E equipamento enferrujado que ele aspira é mastigado e cuspido de volta como uma versão limpa: 50% de chance de virar o equivalente do viajante, 35% do soldado, 10% do cavaleiro e 5% real; o Zelda Wiki acrescenta que armas e escudos aspirados voltam com a durabilidade restaurada. Tem 8 pontos de vida e pode deixar Tentáculo, Olho e Balão de Octoroc, além de Truta rescaldada.",
+  "locations": [
+    "Cânion de Eldin e Cordilheira de Eldin; também as Montanhas Gerudo (o compendium cita Cânion de Eldin e Montanhas Gerudo)."
+  ],
+  "obtaining": [
+    "Pode deixar Tentáculo de Octoroc, Olho de Octoroc, Balão de Octoroc e Truta rescaldada.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Restaurar equipamento enferrujado: Espada enferrujada, Montante enferrujado, Alabarda enferrujada e Escudo enferrujado voltam como versões do viajante, do soldado, do cavaleiro ou reais.",
+    "Restaurar a durabilidade de armas e escudos que ele aspira e cospe de volta.",
+    "Registro no compendium (entrada nº 94)."
+  ],
+  "effects": [
+    "Rochas explosivas em chamas que incendeiam e explodem perto de Link."
+  ],
+  "interactions": [
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Colocada no caminho enquanto ele inspira, a Bomba remota é engolida; detoná-la depois disso o derrota por dentro.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "A rocha explosiva não pode ser rebatida com o escudo: explode na frente de Link mesmo com Defesa perfeita. Já uma arma limpa cuspida por ele atravessa Link se ele tentar apará-la.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Octorok"
+      ]
+    },
+    {
+      "action": "largar",
+      "variant": "equipamento enferrujado",
+      "status": "confirmado",
+      "result": "Largar armas ou escudos enferrujados no caminho da inspiração faz o Octoroc aspirá-los, mastigá-los e cuspi-los limpos: 50% viajante, 35% soldado, 10% cavaleiro, 5% real.",
+      "conditions": [
+        "O equipamento precisa estar no fluxo de ar enquanto ele inspira."
+      ],
+      "produces": [
+        "botw_weapon_travelers_sword",
+        "botw_weapon_soldiers_broadsword",
+        "botw_weapon_knights_broadsword",
+        "botw_weapon_royal_broadsword",
+        "botw_shield_travelers_shield",
+        "botw_shield_royal_shield"
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "largar",
+      "variant": "armas desgastadas",
+      "status": "confirmado",
+      "result": "Armas e escudos aspirados e cuspidos por ele voltam com a durabilidade restaurada.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw:Durability"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Tem 8 pontos de vida; de perto, ele se enterra e se protege com a rocha da cabeça.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido com flechas enquanto está acima do chão; diferente dos outros Octorocs, não adianta atirar na cobertura para revelá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Octorok"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune a fogo."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo no Octoroc rochoso."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques no Octoroc rochoso."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o Octoroc rochoso na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Suas próprias rochas explodem ao chegar perto de Link; a Bomba remota engolida o derrota por dentro.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "O Octoroc não é metálico; Magnétis não o agarra.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Aspira o que estiver à frente durante a inspiração, inclusive armas e bombas.",
+      "kind": "mecanica",
+      "sources": [
+        "comp"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Lavanderia de armas enferrujadas",
+      "text": "Espada enferrujada vira Espada do viajante, Espada larga do soldado, Espada do cavaleiro ou Espada real; Montante enferrujado vira montante do viajante, do soldado, do cavaleiro ou real; Alabarda enferrujada vira Lança do viajante, Lança do soldado, Alabarda do cavaleiro ou Alabarda real; Escudo enferrujado vira escudo do viajante, do soldado, do cavaleiro ou real. As chances são 50%, 35%, 10% e 5%, nessa ordem.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Conserto de durabilidade",
+      "text": "O Zelda Wiki registra que a durabilidade de armas e escudos é restaurada quando eles são aspirados e cuspidos por um Octoroc rochoso.",
+      "sources": [
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pedra que não volta",
+      "text": "Diferente dos Octorocs aquático, da floresta e da neve, a rocha do Octoroc rochoso explode na frente de Link mesmo com Defesa perfeita.",
+      "sources": [
+        "zw",
+        "zw:Octorok"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de matar um Octoroc rochoso, usá-lo para limpar todo o equipamento enferrujado da algibeira.",
+    "Colocar uma Bomba remota no fluxo de ar e detoná-la assim que for engolida."
+  ],
+  "limitations": [
+    "A rocha explosiva não pode ser devolvida com o escudo.",
+    "A arma limpa cuspida atravessa Link se ele tentar apará-la; é preciso pegá-la do chão."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_rusty_broadsword",
+      "relation": "Vira espada limpa ao ser aspirada"
+    },
+    {
+      "id": "botw_weapon_rusty_claymore",
+      "relation": "Vira montante limpo ao ser aspirado"
+    },
+    {
+      "id": "botw_weapon_rusty_halberd",
+      "relation": "Vira lança/alabarda limpa ao ser aspirada"
+    },
+    {
+      "id": "botw_shield_rusty_shield",
+      "relation": "Vira escudo limpo ao ser aspirado"
+    },
+    {
+      "id": "botw_weapon_royal_broadsword",
+      "relation": "Resultado mais raro (5%) da Espada enferrujada"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Pode ser engolida e detonada dentro dele"
+    },
+    {
+      "id": "botw_creature_sizzlefin_trout",
+      "relation": "Pode ser deixada por ele"
+    },
+    {
+      "id": "botw_material_octo_balloon",
+      "relation": "Parte deixada ao ser derrotado"
+    },
+    {
+      "id": "botw_mechanic_durability",
+      "relation": "Restaura a durabilidade de equipamentos"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "gera_explosao",
+    "vence_rapido",
+    "habilidade_especial"
+  ],
+  "verification_status": "parcial"
+}

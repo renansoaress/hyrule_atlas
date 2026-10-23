@@ -1,0 +1,98 @@
+{
+  "id": "botw_food_seafood_curry",
+  "summary": "Curry de Arroz hyliano e Tempero Goron com Caramujo nutritivo, Pargo valente ou Pargo blindado — picante demais para crianças. O fruto do mar escolhido define o efeito.",
+  "description": "O Curry de frutos do mar só aceita três frutos do mar: Caramujo nutritivo, Pargo valente ou Pargo blindado, sempre com Arroz hyliano e Tempero Goron. O inventário diz que o prato transborda de \"tesouros do mar\", mas que o tempero é forte demais para crianças. Cada um dos três ingredientes traz seu efeito: o caramujo gera a versão que cura tudo e dá Corações extras, o Pargo valente a de Ataque aumentado e o Pargo blindado a de Defesa aumentada. A versão comum exige dois frutos do mar de efeitos diferentes.\n\nOutros peixes não formam este curry: com Robalo hyliano, arroz e tempero, por exemplo, a panela produz Bolinhos de arroz com frutos do mar, que são testados antes do Arroz com curry. O Curry de frutos do mar também aparece entre os pratos com que Gotter, de \"A Royal Recipe\", sonhava quando criança ao imaginar a culinária da corte.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano, Tempero Goron e um Caramujo nutritivo, Pargo valente ou Pargo blindado, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Prato de Corações extras, Ataque aumentado ou Defesa aumentada.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com Caramujo nutritivo: cura total com Corações extras.",
+    "Com Pargo valente: Ataque aumentado.",
+    "Com Pargo blindado: Defesa aumentada.",
+    "Com dois desses frutos do mar de efeitos diferentes: sem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do fruto do mar usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "outro peixe no lugar",
+      "status": "confirmado",
+      "result": "Com um peixe que não seja pargo, arroz e tempero, o resultado são Bolinhos de arroz com frutos do mar.",
+      "produces": [
+        "botw_food_seafood_rice_balls"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "No sonho de Gotter",
+      "text": "Ao contar que sonhava na infância com os pratos da corte real, Gotter cita o curry de frutos do mar ao lado do risoto de cogumelos e do pudim de ovos.",
+      "sources": [
+        "zw:A Royal Recipe"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só três frutos do mar formam este curry.",
+    "Carne na panela leva a um curry de carne, testado antes."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Fruto do mar da versão com Corações extras"
+    },
+    {
+      "id": "botw_creature_mighty_porgy",
+      "relation": "Fruto do mar da versão com Ataque aumentado"
+    },
+    {
+      "id": "botw_creature_armored_porgy",
+      "relation": "Fruto do mar da versão com Defesa aumentada"
+    },
+    {
+      "id": "botw_food_seafood_fried_rice",
+      "relation": "Mesmos frutos do mar com arroz e Halita"
+    },
+    {
+      "id": "botw_food_curry_rice",
+      "relation": "Curry básico de arroz e tempero"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "ataque",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

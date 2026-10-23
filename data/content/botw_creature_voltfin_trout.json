@@ -1,0 +1,142 @@
+{
+  "id": "botw_creature_voltfin_trout",
+  "summary": "Truta de lagos de água doce dos Cerros de Hyrule e de Tabantha, com escamas isolantes. Cozida, dá Resistência a choques. É a resposta de um dos enigmas do Korok Walton.",
+  "description": "A Truta voltaica vive nos lagos de água doce dos Cerros de Hyrule e da Fronteira de Tabantha. Segundo o jogo, as escamas dela têm um composto isolante que, cozido, oferece resistência à eletricidade, útil contra ataques elétricos. O Zelda Wiki registra que, como outros peixes, ela também pode ser derrubada por Octorocs, especificamente os Octorocs da floresta perto do Planalto Thundra (Thundra Plateau).\n\nCrua, recupera 1 coração. Além das receitas de peixe e fruto do mar, é um dos ingredientes elétricos que podem ser somados a um Elixir isolante para que ele também cure. Exposta ao fogo vira Truta assada; congelada, Truta congelada.\n\nNa Missão secundária \"Riddles of Hyrule\", o Korok Walton, no alto da Grande Árvore Deko, descreve no quarto enigma um \"nadador chocante\" cujas escamas e cauda dão choque: a resposta é colocar uma Truta voltaica na folha.",
+  "locations": [
+    "Lagos de água doce dos Cerros de Hyrule e da Fronteira de Tabantha."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ela, viva ou morta.",
+    "Derrubada por Octorocs da floresta perto do Planalto Thundra (Thundra Plateau)."
+  ],
+  "uses": [
+    "Pratos de Resistência a choques: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Frutos do mar à meunière e as demais receitas de peixe ou fruto do mar.",
+    "Ingrediente elétrico de um Elixir isolante, que passa a curar além de proteger de choques.",
+    "Missão secundária \"Riddles of Hyrule\": resposta do quarto enigma de Walton.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Crua: recupera 1 coração.",
+    "Na panela: Resistência a choques temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhada à mão enquanto Link nada, viva ou morta.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma truta viva largada da algibeira. Para o enigma de Walton, a fonte fala em colocá-la sobre a folha, sem detalhar o comportamento do peixe."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Truta voltaica dão Resistência a choques temporária.",
+      "applications": ["Enfrentar inimigos elétricos ou tempestades com menos risco."],
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somada a um Elixir isolante (Libélula do relâmpago ou Borboleta trovejante + parte de monstro), faz o elixir também recuperar corações.",
+      "produces": ["botw_elixir_electro_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Electro Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 6 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Truta assada, sem o efeito de Resistência a choques.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada perto do fogo, assa e vira Truta assada.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima abrasador, vira Truta assada.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriada com gelo, vira Truta congelada.",
+      "produces": ["botw_food_frozen_trout"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gélido ou água gelada, vira Truta congelada.",
+      "produces": ["botw_food_frozen_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Apesar do nome e do texto do enigma de Walton (\"escamas e cauda que dão choque\"), as fontes não descrevem a truta gerando eletricidade nem reagindo a ela no jogo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O \"nadador chocante\" de Walton",
+      "text": "No quarto enigma de \"Riddles of Hyrule\", Walton descreve algo com escamas e cauda que dão choque, \"um nadador chocante\". Ao ver a Truta voltaica na folha, comemora: \"Voltfin trout! That's it!\". Os cinco enigmas resolvidos rendem um Diamante.",
+      "sources": ["zw", "jogo", "zw:Riddles of Hyrule"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Drop de Octoroc",
+      "text": "Octorocs da floresta perto do Planalto Thundra podem derrubar Trutas voltaicas, uma forma de obtê-las sem entrar na água.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar com Fruta isolante, Aterramelo ou Erva relampagueira, que também dão Resistência a choques, aumenta o nível ou a duração do efeito."
+  ],
+  "limitations": [
+    "Assada ou congelada, perde a Resistência a choques.",
+    "Misturada a ingredientes com outro efeito, o prato fica só com o efeito predominante."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_trout", "relation": "Resultado de expô-la ao fogo" },
+    { "id": "botw_food_frozen_trout", "relation": "Resultado de congelá-la" },
+    { "id": "botw_elixir_electro_elixir", "relation": "Pode ser somada como ingrediente elétrico" },
+    { "id": "botw_monster_forest_octorok", "relation": "Pode derrubá-la perto do Planalto Thundra" },
+    { "id": "botw_material_voltfruit", "relation": "Outro ingrediente de Resistência a choques" },
+    { "id": "botw_material_lynel_hoof", "relation": "Resposta do enigma seguinte de Walton" }
+  ],
+  "capabilities": ["cura", "protege_choque", "reage_fogo", "reage_gelo", "item_de_missao"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "botw_elixir_spicy_elixir",
+  "summary": "Elixir de Resistência ao frio feito com Borboleta estival ou Libélula cálida. Aquece Link nos climas gelados (Monte Lanayru, Hebra, Montanhas Gerudo), mas não protege de ataques de gelo nem da água gelada.",
+  "description": "O Elixir picante aquece o corpo de Link \"de dentro para fora\", nas palavras do jogo, e evita o dano lento dos climas gelados — o Monte Lanayru, as Cordilheiras de Hebra, as Montanhas Gerudo e o topo de lugares altos como algumas Torres Sheikah. A Resistência ao frio tem no máximo dois níveis; o segundo exige seis estrelas de potência e é necessário em lugares como o campo de treino de voo dos Arás.\n\nA Libélula cálida vale duas estrelas e a Borboleta estival, uma; cada uma soma 2:30. Ingredientes picantes que curam podem entrar na receita: Truta rescaldada (três estrelas), Flamelo (duas), Pimenta de fogo e Erva geleira (uma). O limite é importante: segundo o Zelda Wiki, a Resistência ao frio não reduz o dano de gelo, de ataques gélidos nem da água gelada.",
+  "locations": [
+    "Libélulas cálidas: áreas abertas do Altiplano de Akkala e da Pradaria de Hyrule.",
+    "Borboletas estivais: Grande Floresta de Hyrule e trechos menos quentes da Cordilheira de Eldin."
+  ],
+  "obtaining": [
+    "Cozinhar uma Libélula cálida ou Borboleta estival com pelo menos uma parte de monstro.",
+    "Libélulas cálidas são vendidas por Maypin e por Beedle em vários estábulos; Borboletas estivais, por Beedle."
+  ],
+  "uses": [
+    "Explorar montanhas nevadas sem perder corações para o frio.",
+    "Completar os dois níveis exigidos no campo de treino de voo dos Arás (Flight Range)."
+  ],
+  "effects": [
+    "Resistência ao frio em até dois níveis, por tempo limitado (máximo de 30:00).",
+    "Recupera corações se levar ingredientes picantes que curam."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Concede Resistência ao frio e impede o dano dos climas gelados durante o efeito.",
+      "side_effects": ["Comer outro prato com efeito diferente cancela a resistência."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Freezing Climate", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Protege abaixo de 0 °C (frio básico) e, com dois níveis, no frio avançado abaixo de -10 °C; o campo de treino de voo dos Arás exige dois níveis.",
+      "conditions": ["Nível do efeito igual ou maior que o exigido no local."],
+      "kind": "mecanica",
+      "sources": ["zw:Temperature", "zw:Chill-Proof", "zw:Flight Range"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de gelo nem de ataques gélidos e não impede o congelamento; isso cabe ao efeito Imunidade a congelamento.",
+      "kind": "mecanica",
+      "sources": ["zw:Chill-Proof", "zw:Ice-Proof"]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "sem_efeito",
+      "result": "Nadar em água gelada fere Link (meio coração a cada 0,5 s) mesmo com o elixir: nem comida nem roupa especial ajudam.",
+      "kind": "mecanica",
+      "sources": ["zw:Cold Water", "zw:Chill-Proof"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Libélula cálida (★★) ou Borboleta estival (★) + parte de monstro; cada bicho soma 2:30. Seis estrelas dão o nível 2.",
+      "conditions": [
+        "Ingredientes picantes que curam: Truta rescaldada (★★★), Flamelo (★★), Pimenta de fogo (★) e Erva geleira (★), cada um com +2:30."
+      ],
+      "side_effects": ["Ingredientes de outro efeito geram Comida duvidosa."],
+      "applications": ["Três Libélulas cálidas e uma parte de monstro atingem o nível 2."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço pela regra geral dos elixires (soma dos ingredientes × 1,5 a 2,8, arredondada para a dezena acima).",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Alternativas ao elixir",
+      "text": "O calor de uma fogueira e uma Tocha acesa na mão também afastam o frio, segundo as dicas do jogo. Equipar uma Espada flamejante ou uma Varinha de fogo dá um nível de Resistência ao frio, e o Gibão aquecido oferece outro nível.",
+      "sources": ["zw:Tips and Tricks", "zw:Flameblade", "zw:Fire Rod", "zw:Warm Doublet"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Presente de aniversário assustador",
+      "text": "Na missão \"Little Sister's Big Request\", Jana pede a Link uma Libélula cálida, uma Libélula gélida e uma Libélula do relâmpago para a irmã Gleema, que adora libélulas — embora Jana tenha horror delas.",
+      "sources": ["zw:Warm Darner", "zw:Electric Darner"]
+    }
+  ],
+  "advanced_uses": [
+    "Uma Truta rescaldada (★★★) com uma Libélula cálida (★★), uma Borboleta estival (★) e uma parte de monstro chega às seis estrelas do nível 2 e ainda recupera corações."
+  ],
+  "limitations": [
+    "Não protege contra gelo, congelamento nem água gelada.",
+    "Resistência ao frio para no segundo nível."
+  ],
+  "related": [
+    { "id": "botw_creature_warm_darner", "relation": "Bicho picante (★★, +2:30)" },
+    { "id": "botw_creature_summerwing_butterfly", "relation": "Bicho picante (★, +2:30)" },
+    { "id": "botw_creature_sizzlefin_trout", "relation": "Ingrediente picante mais forte (★★★)" },
+    { "id": "botw_material_sunshroom", "relation": "Ingrediente picante (★★)" },
+    { "id": "botw_material_spicy_pepper", "relation": "Ingrediente picante (★)" },
+    { "id": "botw_material_warm_safflina", "relation": "Ingrediente picante (★)" },
+    { "id": "botw_armor_warm_doublet", "relation": "Roupa com um nível de Resistência ao frio" },
+    { "id": "botw_armorset_snowquill_set", "relation": "Conjunto contra o frio com bônus anticongelamento" },
+    { "id": "botw_weapon_flameblade", "relation": "Arma que dá um nível de Resistência ao frio" },
+    { "id": "botw_mechanic_temperature", "relation": "Regras de frio e calor" },
+    { "id": "botw_mechanic_ice", "relation": "Gelo e congelamento, que o elixir não evita" }
+  ],
+  "capabilities": ["protege_frio"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,194 @@
+{
+  "id": "botw_material_ruby",
+  "summary": "Gema vermelha que \"contém o poder do fogo\", mas sem reação descrita: o calor só protege do frio quando ela está numa armadura, como a Tiara de rubi. Melhora o Conjunto do herói e o de pluma nevada.",
+  "description": "O Rubi é uma gema vermelha extraída de grandes depósitos minerais que, segundo o jogo, contém o poder do fogo. O Zelda Wiki explica onde esse poder aparece: o rubi concede calor em temperaturas frias quando usado em armaduras. Não há fonte que descreva o Rubi solto reagindo ao fogo, explodindo ou liberando chamas — a associação com o fogo é temática e só vira efeito na Tiara de rubi da Starlight Memories (500 rupias e 3 Rubis), que dá Resistência ao frio nível 1 e o bônus oculto Poder ancestral aumentado. A tiara é uma das três joias que Isha oferece de graça ao final de \"Tools of the Trade\", e a descrição do Cocar de pluma nevada, dos Arás, revela que ele também é adornado com um rubi.\n\nComo gema de alto valor (210 rupias), cai ocasionalmente dos Depósitos de minério e com mais frequência dos de minério raro, além de Tálus rochosos e ígneos, Britas ígneas, inimigos prateados e Espadachins Yiga. Kairo e a Ore and More vendem Rubis. As melhorias que o exigem somam 94 unidades: a Tiara de rubi, as três peças do Conjunto do herói e o 4º nível das três peças do Conjunto de pluma nevada.",
+  "locations": [
+    "Depósitos de minério e, com mais frequência, Depósitos de minério raro.",
+    "Região de Eldin: Tálus ígneos e Britas ígneas também deixam Rubis."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de minério e de minério raro (voltam após uma Lua de sangue).",
+    "Derrotar Tálus rochosos (comum e raro), Tálus ígneos, Britas ígneas, Koboblins, Moblins e Lagalfos prateados, Centaleões prateados e Espadachins Yiga.",
+    "Comprar de Kairo, perto do Foothill Stable, ou na Ore and More, na Vila Tarrey (o dobro do preço)."
+  ],
+  "uses": [
+    "Comprar a Tiara de rubi na Starlight Memories: 3 Rubis e 500 rupias.",
+    "Melhorias na Fonte da Grande Fada: Tiara de rubi (2, 4, 6 e 10 por nível), Gorro, Túnica e Calças do herói (1, 3, 5 e 10 por nível) e o 4º nível do Cocar, da Túnica e das Calças de pluma nevada (5 cada) — 94 no total.",
+    "Ingrediente do corante vermelho na Tinturaria Kochi.",
+    "Venda: 210 rupias; Ramella paga 2.300 rupias por 10 quando os pede (numa loja, 2.100)."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregado na algibeira; segundo o Zelda Wiki, o calor do rubi atua quando ele é usado em armaduras."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "joalheria",
+      "status": "confirmado",
+      "result": "Paga a Tiara de rubi na Starlight Memories (3 Rubis e 500 rupias). A tiara aproveita \"o poder do fogo\" da gema para dar Resistência ao frio nível 1 e o efeito oculto Poder ancestral aumentado (+20% de dano com armas ancestrais e guardiãs).",
+      "conditions": [
+        "Starlight Memories reaberta pela missão \"Tools of the Trade\"."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ruby Circlet",
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o Rubi pegando fogo, explodindo ou liberando chamas. \"Contém o poder do fogo\" é uma associação temática: o efeito prático é a proteção contra o frio quando a gema está numa armadura."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um Rubi largado numa fogueira."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem reação ou uso especial do Rubi solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um Rubi largado."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Rubi ao gelo."
+    },
+    {
+      "action": "frio_extremo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem que carregar Rubis protege do frio; a proteção descrita vem das armaduras que os usam, como a Tiara de rubi."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Rubi à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Rubi afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Rubi é uma gema.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um Rubi largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita com Rubi vira Comida dura como pedra (1/4 de coração, sem efeito).",
+      "produces": [
+        "botw_food_rock_hard_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Rock-Hard Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 210 rupias nas lojas. Quando Ramella pede Rubis, paga 2.300 rupias pelo lote de 10, contra 2.100 numa loja.",
+      "conditions": [
+        "Missão \"The Jewel Trade\" concluída; a gema pedida por Ramella muda de tempos em tempos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:The Jewel Trade"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tiara de rubi sem gastar Rubis",
+      "text": "Ao entregar 10 Sílex a Isha em \"Tools of the Trade\", Link pode escolher a Tiara de rubi como presente. Isha explica a escolha: \"rubis têm o poder de conceder resistência ao frio\".",
+      "sources": [
+        "zw:Tools of the Trade",
+        "zw:Ruby Circlet"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O rubi do cocar dos Arás",
+      "text": "A descrição do Cocar de pluma nevada revela que a peça é adornada com um Rubi — coerente com o fato de o Conjunto de pluma nevada proteger do frio e pedir Rubis no último nível de melhoria.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "A Tiara de rubi soma Resistência ao frio a +20% de dano com armas ancestrais: combina bem com armas compradas no Forno ancestral em regiões geladas.",
+    "Guarde Rubis para os pedidos de Ramella: o lote de 10 rende 200 rupias a mais que numa loja."
+  ],
+  "limitations": [
+    "Não serve como fonte de fogo nem protege do frio por si só.",
+    "Comprar na Ore and More custa o dobro do preço de Kairo.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Joia comprada e melhorada com Rubis"
+    },
+    {
+      "id": "botw_armor_cap_of_the_hero",
+      "relation": "Usa Rubis em todos os níveis de melhoria"
+    },
+    {
+      "id": "botw_armor_snowquill_headdress",
+      "relation": "Adornado com rubi; pede 5 Rubis no 4º nível"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Conjunto de proteção ao frio que usa Rubis no último nível"
+    },
+    {
+      "id": "botw_treasure_rare_ore_deposit",
+      "relation": "Fonte mais provável de Rubis"
+    },
+    {
+      "id": "botw_monster_igneo_talus",
+      "relation": "Pode deixar Rubis ao ser derrotado"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Gema oposta, associada ao gelo"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Gema associada à eletricidade"
+    },
+    {
+      "id": "botw_food_rock_hard_food",
+      "relation": "Resultado de cozinhar com Rubi"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante vermelho"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

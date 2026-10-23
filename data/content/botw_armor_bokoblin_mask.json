@@ -1,0 +1,173 @@
+{
+  "id": "botw_armor_bokoblin_mask",
+  "summary": "Máscara artesanal de Kilton que disfarça Link entre Koboblins e Stalboblins: eles não atacam enquanto ele não os agredir. Custa 99 Mon na Fang and Bone e não pode ser melhorada nem tingida.",
+  "description": "Feita à mão por Kilton, a Máscara de Koboblin é, nas palavras da descrição, “quase charmosa, de um jeito monstruoso”. É vendida por 99 Mon na Fang and Bone, a loja noturna de Kilton. Vestida, concede o efeito oculto Disfarce de Koboblin: Koboblins e Stalboblins deixam de atacar Link enquanto ele não os atacar primeiro e passam a segui-lo e observá-lo. Link adota a pose de espera de um Koboblin, e a máscara faz baixinho os sons do monstro enquanto ele anda.\n\nO disfarce só engana essa espécie. Se um inimigo não afetado (um Moblin, por exemplo) começar a atacar, os Koboblins também percebem o truque e entram na briga. Como os disfarçados rondam Link para estudá-lo, fica mais difícil encaixar um Ataque-surpresa. A defesa é fixa em 3: a máscara não pode ser melhorada por Grandes Fadas nem tingida na Tinturaria Kochi.",
+  "locations": [
+    "Fang and Bone, a loja de Kilton: primeiro em Skull Lake, no Coração de Akkala, e depois perto dos principais povoados (exceto a Cidade Goron), das 21h às 5h."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 99 Mon. O Mon é obtido trocando partes de monstros com o próprio Kilton."
+  ],
+  "uses": [
+    "Passar por grupos de Koboblins e Stalboblins sem provocar combate."
+  ],
+  "effects": [
+    "Disfarce de Koboblin (efeito oculto): Koboblins e Stalboblins não atacam a menos que Link ataque primeiro."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa e ativa o Disfarce de Koboblin. Link passa a usar a pose de espera de um Koboblin e a máscara emite sons baixos do monstro enquanto ele se move.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins e Stalboblins não atacam Link; em vez disso, o seguem e o observam.",
+      "conditions": [
+        "Link não pode atacá-los primeiro."
+      ],
+      "side_effects": [
+        "Os inimigos disfarçados ficam rondando Link, o que dificulta o Ataque-surpresa."
+      ],
+      "applications": [
+        "Atravessar acampamentos de Koboblins sem lutar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "outras espécies",
+      "status": "confirmado",
+      "result": "Outros inimigos atacam normalmente; se um deles começar a atacar Link, os Koboblins enganados também descobrem o disfarce e atacam.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A primeira de uma linha de disfarces",
+      "text": "A cada Fera Divina libertada, a Fang and Bone ganha novos itens: depois desta vêm a Máscara de Moblin (1 Fera), a Máscara de Lagalfos (2), a Máscara de Centaleão (3) e o Conjunto sombrio (as 4).",
+      "sources": [
+        "zw:Fang and Bone",
+        "zw:Moblin Mask",
+        "zw:Lizalfos Mask",
+        "zw:Lynel Mask",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Também vale para Stalboblins",
+      "text": "O Disfarce de Koboblin cobre a versão esquelética do monstro: Stalboblins, que surgem à noite, também ignoram Link mascarado.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Prefira usar a máscara em grupos formados só por Koboblins ou Stalboblins: num acampamento misto, basta um Moblin ou Lagalfos atacar para que todos percebam o disfarce."
+  ],
+  "limitations": [
+    "Não engana Moblins, Lagalfos, Centaleões nem outros inimigos.",
+    "Defesa fixa em 3: não pode ser melhorada nem tingida.",
+    "Atacar um Koboblin encerra o disfarce."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Monstro enganado pelo disfarce"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Versão Stal também enganada"
+    },
+    {
+      "id": "botw_armor_moblin_mask",
+      "relation": "Máscara seguinte da Fang and Bone"
+    },
+    {
+      "id": "botw_armor_lizalfos_mask",
+      "relation": "Outra máscara de Kilton"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Outra máscara de Kilton"
+    },
+    {
+      "id": "botw_armor_majoras_mask",
+      "relation": "Combina os quatro disfarces de Kilton"
+    },
+    {
+      "id": "botw_mechanic_sneakstrike",
+      "relation": "Mais difícil de executar enquanto disfarçado"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

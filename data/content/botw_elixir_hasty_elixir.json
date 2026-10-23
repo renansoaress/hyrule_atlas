@@ -1,0 +1,90 @@
+{
+  "id": "botw_elixir_hasty_elixir",
+  "summary": "Elixir de Velocidade aumentada feito com Lagarto fujão ou Sapo apressado. Acelera Link ao correr, nadar e escalar, em três níveis; cada bicho soma só 1:00, então as partes de monstro pesam na duração.",
+  "description": "O Elixir veloz aumenta a velocidade de movimento de Link — e não só na corrida: o jogo especifica que o efeito vale também para nadar e escalar. Há três níveis (baixo, médio e alto); o médio exige cinco estrelas de potência e o alto, sete.\n\nO Sapo apressado vale duas estrelas e o Lagarto fujão, uma; cada um soma apenas 1:00 de duração, bem menos que os 2:30 dos bichos de resistência. Por isso as partes de monstro, que acrescentam 1:10, 1:50 ou 3:10 conforme o grau, fazem grande diferença no tempo final. Ingredientes velozes que curam — Grãos de lótus-fugaz, Violeta veloz, Agilimelo e Cenoura veloz — podem completar a receita.",
+  "locations": [
+    "Lagartos fujões: áreas quentes e temperadas de toda Hyrule, sobre árvores e rochas; também saltam da Grama cortada.",
+    "Sapos apressados: perto da água, na Grande Nascente de Lanayru e nos Cerros de Hyrule; também saltam da Grama cortada."
+  ],
+  "obtaining": [
+    "Cozinhar um Lagarto fujão ou Sapo apressado com pelo menos uma parte de monstro.",
+    "Beedle oferece um Elixir veloz em troca de um Escaravelho vibrante, segundo uma de suas falas."
+  ],
+  "uses": [
+    "Viagens longas a pé, escaladas e travessias a nado mais rápidas.",
+    "Perseguir criaturas ariscas ou fugir de inimigos."
+  ],
+  "effects": [
+    "Velocidade aumentada em até três níveis na corrida, no nado e na escalada, por tempo limitado (máximo de 30:00)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Aumenta a velocidade de Link ao correr, nadar e escalar durante o efeito.",
+      "side_effects": ["Comer outro prato com efeito diferente cancela a velocidade."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Sapo apressado (★★) ou Lagarto fujão (★) + parte de monstro; cada bicho soma 1:00. Cinco estrelas dão o nível médio e sete, o alto.",
+      "conditions": [
+        "Ingredientes velozes que curam: Grãos de lótus-fugaz (★★), Violeta veloz (★★), Agilimelo (★) e Cenoura veloz (★), cada um com +1:00.",
+        "Partes de monstro somam 1:10, 1:50 ou 3:10 e não mudam o nível."
+      ],
+      "side_effects": ["Sem parte de monstro, o Lagarto fujão cozido vira Comida duvidosa."],
+      "applications": ["Três Sapos apressados e uma parte de monstro ultrapassam as cinco estrelas do nível médio."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild", "zw:Hightail Lizard"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço variável pela regra geral dos elixires: soma dos ingredientes × 1,5 a 2,8, arredondado para a dezena acima.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Soma com o bônus noturno",
+      "text": "O bônus \"Night Speed Up\" (Conjunto sombrio, Conjunto furtivo melhorado duas vezes, Traje de Tingle) imita a corrida do nível 2 de velocidade entre 21h e 4h e pode ser somado a um efeito de nível 1.",
+      "sources": ["zw:Set Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O sapo que Zelda quis dar a Link",
+      "text": "Na lembrança \"Silent Princess\", Zelda captura um Sapo apressado, explica que pesquisas do castelo mostram que comê-lo pode aumentar certas habilidades e insiste para que Link prove.",
+      "sources": ["zw:Hot-Footed Frog"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Como pegar os bichos",
+      "text": "Lagartos fujões demoram a perceber Link, mas disparam quando notam; dá para persegui-los, chegar com furtividade ou atordoá-los com flecha ou Bomba remota. Sapos apressados podem ser pegos agachado ou numa corrida rápida antes que se assustem.",
+      "sources": ["zw:Hightail Lizard", "zw:Hot-Footed Frog"]
+    }
+  ],
+  "advanced_uses": [
+    "Como cada bicho veloz rende só 1:00, a parte de monstro decide a duração: um Lagarto fujão com Vísceras de Moblin (grau alto, 3:10) dá 4:10, contra 2:10 com um Chifre de Moblin (grau baixo, 1:10), e a parte de grau alto ainda eleva a chance de crítico para 30%."
+  ],
+  "limitations": [
+    "Duração curta por bicho (1:00): sem partes de monstro de grau alto o efeito acaba rápido.",
+    "Velocidade na areia e na neve são efeitos diferentes, dados por botas específicas."
+  ],
+  "related": [
+    { "id": "botw_creature_hot_footed_frog", "relation": "Bicho veloz (★★, +1:00)" },
+    { "id": "botw_creature_hightail_lizard", "relation": "Bicho veloz (★, +1:00)" },
+    { "id": "botw_material_fleet_lotus_seeds", "relation": "Ingrediente veloz (★★)" },
+    { "id": "botw_material_swift_violet", "relation": "Ingrediente veloz (★★)" },
+    { "id": "botw_material_rushroom", "relation": "Ingrediente veloz (★)" },
+    { "id": "botw_material_swift_carrot", "relation": "Ingrediente veloz (★)" },
+    { "id": "botw_armorset_stealth_set", "relation": "Bônus noturno de velocidade somável ao nível 1" },
+    { "id": "botw_mechanic_climbing", "relation": "O efeito acelera a escalada" },
+    { "id": "botw_mechanic_swimming", "relation": "O efeito acelera o nado" }
+  ],
+  "capabilities": ["velocidade"],
+  "verification_status": "verificado"
+}

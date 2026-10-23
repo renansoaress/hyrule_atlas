@@ -1,0 +1,179 @@
+{
+  "id": "botw_material_bokoblin_guts",
+  "summary": "Parte rara que só cai de Koboblins azuis ou mais fortes e que se contorce sozinha. Acrescenta 3:10 aos elixires, o mesmo das Vísceras de Centaleão, por um décimo do preço.",
+  "description": "As Vísceras de Koboblin são um material raro: ao contrário do chifre, só caem de Koboblins azuis, pretos, prateados e, no Modo Mestre, dourados. O texto do jogo comenta que elas se contorcem sozinhas de vez em quando, \"o que é bem assustador\", mas sugere que talvez tenham alguma utilidade. A utilidade aparece na panela: cozidas com um bicho, acrescentam 3:10 à duração do elixir, o maior valor alcançado por partes de monstro comuns — igual ao das Vísceras de Centaleão, que valem dez vezes mais.\n\nSão também um dos poucos materiais de monstro vendidos em loja: a High Spirits Produce, na Vila Kakariko, oferece até 3 unidades por 80 rupias cada. Nas Fontes das Grandes Fadas, aparecem em três conjuntos — hyliano, radiante e do soldado — e somam 78 unidades para todas as melhorias.",
+  "locations": [
+    "Acampamentos com Koboblins azuis, pretos ou prateados, mais frequentes conforme o jogo avança e os monstros ficam mais fortes.",
+    "Loja High Spirits Produce, na Vila Kakariko."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins azuis, pretos ou prateados (e dourados no Modo Mestre); os vermelhos comuns não as deixam.",
+    "Comprar na High Spirits Produce (Vila Kakariko): 80 rupias cada, estoque de 3, que se renova."
+  ],
+  "uses": [
+    "Elixires: cozidas com um bicho, acrescentam 3:10 à duração.",
+    "Melhoria de armadura: Conjunto hyliano (5 por peça no 3º nível e 15 por peça no 4º), Conjunto radiante (3 por peça no 1º nível) e Conjunto do soldado (3 por peça no 1º nível) — 78 no total.",
+    "Corante roxo na Tinturaria Kochi.",
+    "Venda: 20 rupias, ou 10 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não têm efeito culinário próprio; nos elixires, só prolongam a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar as Vísceras de Koboblin no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear as Vísceras de Koboblin largadas no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se as Vísceras de Koboblin queimam, somem ou se transformam em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar as Vísceras de Koboblin numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação das Vísceras de Koboblin a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor as Vísceras de Koboblin à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se as Vísceras de Koboblin flutuam ou afundam quando largadas na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e as Vísceras de Koboblin não são de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada às Vísceras de Koboblin largadas no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinhas ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 20 rupias em lojas e comerciantes, ou 10 Mon na loja de Kilton (Fang and Bone); compradas na Vila Kakariko custam 80 rupias.",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Duração de Centaleão a preço de Koboblin",
+      "text": "Na tabela de partes de monstro, as Vísceras de Koboblin (20 rupias) acrescentam exatamente o mesmo 3:10 que as Vísceras de Centaleão (200 rupias) e as Vísceras de Rinox (80 rupias). Para prolongar elixires, gastar as de Koboblin e vender as mais caras é a escolha mais econômica.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Só Koboblins de patente mais alta",
+      "text": "O Zelda Wiki usa as Vísceras de Koboblin como exemplo da regra de que partes mais raras só caem de inimigos de patente mais alta: o chifre cai de todos os Koboblins, mas as vísceras só dos azuis em diante.",
+      "sources": [
+        "zw:Monster Part",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Preço de loja",
+      "text": "As 80 rupias cobradas em Kakariko correspondem a quatro vezes o valor de venda (20), a mesma proporção que o Zelda Wiki descreve para a maioria dos comerciantes.",
+      "sources": [
+        "zw",
+        "zw:Material"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de enfrentar o 4º nível do Conjunto hyliano (15 por peça), compre o estoque da High Spirits Produce sempre que passar por Kakariko."
+  ],
+  "limitations": [
+    "Não caem de Koboblins vermelhos.",
+    "Cozidas sem bichos, só produzem Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_blue_bokoblin",
+      "relation": "Variante mais fraca que já pode deixá-las"
+    },
+    {
+      "id": "botw_monster_black_bokoblin",
+      "relation": "Também as deixa"
+    },
+    {
+      "id": "botw_monster_silver_bokoblin",
+      "relation": "Também as deixa"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Mesmo acréscimo de 3:10 nos elixires, por 200 rupias"
+    },
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Usa vísceras no 3º e 4º níveis"
+    },
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Usa 3 por peça no 1º nível"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 3 por peça no 1º nível"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante roxo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-las sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

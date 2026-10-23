@@ -1,0 +1,142 @@
+{
+  "id": "botw_armor_opal_earrings",
+  "summary": "Brincos da Starlight Memories, na Cidade Gerudo, com opala que usa o poder da água: Natação mais rápida nível 1 (+30%). Custam 200 rupias e 8 Opalas; as melhorias consomem 49 Opalas no total.",
+  "description": "Segundo a descrição, a opala “aproveita o poder da água” para aumentar a velocidade de nado. Os Brincos de opala são vendidos por Isha na Starlight Memories, a joalheria da Cidade Gerudo, por 200 rupias e 8 Opalas, depois da missão “Tools of the Trade”, que reabre a loja.\n\nDão Natação mais rápida nível 1: Link nada 30% mais rápido (60% no nível 2 e 100% no nível 3, o máximo). A defesa vai de 3 a 20; todas as melhorias pedem Opala e 3 Sílex, e a opala é o gargalo: 49 unidades até o nível máximo (5, 8, 16 e 20). Não podem ser tingidos na Tinturaria Kochi.",
+  "locations": [
+    "Starlight Memories, joalheria da Cidade Gerudo, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Comprar de Isha por 200 rupias e 8 Opalas, depois da missão secundária “Tools of the Trade”."
+  ],
+  "uses": [
+    "Nadar mais rápido em rios, lagos e no mar."
+  ],
+  "effects": [
+    "Natação mais rápida nível 1 (+30% de velocidade de nado)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 3 de defesa (20 no nível máximo) e dá Natação mais rápida nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Enquanto nada, Link se move 30% mais rápido.",
+      "conditions": [
+        "Brincos vestidos e Link nadando."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Natação nível 3 sem o Conjunto Zora",
+      "text": "Os níveis de Natação mais rápida das peças se somam até o nível 3 (+100%). Os brincos ocupam o lugar do Elmo Zora, então, com Armadura e Grevas Zora, o total continua sendo três níveis — mas sem o ataque giratório na água do elmo nem o bônus de conjunto Zora.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Zora Set"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Trocar o Elmo Zora pelos brincos quando a defesa importa mais que o ataque giratório: com melhorias, ambos chegam a 20."
+  ],
+  "limitations": [
+    "Não podem ser tingidos.",
+    "As melhorias exigem 49 Opalas e 12 Sílex.",
+    "Sem conjunto, portanto sem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_material_opal",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Material de melhoria (3 por nível)"
+    },
+    {
+      "id": "botw_armor_zora_helm",
+      "relation": "Outra peça de cabeça com Natação mais rápida"
+    },
+    {
+      "id": "botw_armor_vah_ruta_divine_helm",
+      "relation": "Outra peça de cabeça com Natação mais rápida"
+    },
+    {
+      "id": "botw_armor_amber_earrings",
+      "relation": "Outros brincos da mesma joalheria"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "Mecânica acelerada pelo efeito"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

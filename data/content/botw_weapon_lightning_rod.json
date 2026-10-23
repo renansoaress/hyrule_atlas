@@ -1,0 +1,180 @@
+{
+  "id": "botw_weapon_lightning_rod",
+  "summary": "Varinha mágica que dispara esferas de eletricidade; sua gema guarda raios dos Cerros de Hyrule. Carregada pelos Feitiçanos elétricos, quebra fácil no corpo a corpo e o ataque giratório solta cinco esferas.",
+  "description": "A Varinha do raio é a versão mais fraca do Cajado trovejante. Segundo o jogo, sua gema contém raios dos Cerros de Hyrule, e ela não é recomendada como arma corpo a corpo. Cada movimento gera uma esfera elétrica que avança em frente; com o ataque giratório, Link solta cinco esferas de uma vez em direções diferentes. Os Feitiçanos elétricos, comuns nos Cerros de Hyrule e em Necluda Ocidental, a usam para lançar esferas de eletricidade e invocar Chulchuls elétricos e Morcis elétricos, e a deixam cair ao serem derrotados.\n\nComo toda varinha, é frágil: quebra fácil se atingir diretamente objetos ou inimigos e também se gasta com o uso prolongado; usada em excesso, perde a magia por um tempo até recarregar. Apesar do elemento, não é feita de metal: não atrai raios, não conduz eletricidade, não queima no fogo nem em clima escaldante, flutua em água funda e não responde a Magnétis.",
+  "locations": [
+    "Necluda Ocidental e Cerros de Hyrule (locais comuns segundo o compendium).",
+    "Nas mãos dos Feitiçanos elétricos, geralmente perto de casas em ruínas."
+  ],
+  "obtaining": [
+    "Derrotar um Feitiçano elétrico: ele deixa cair a varinha.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Eletrocutar inimigos à distância sem gastar Flechas elétricas.",
+    "Ataque elétrico seguro para Link, já que a própria varinha não conduz eletricidade."
+  ],
+  "effects": [
+    "Uma esfera elétrica por golpe; cinco no ataque giratório."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe lança uma esfera elétrica que avança; o ataque giratório solta cinco esferas em direções diferentes.",
+      "conditions": [
+        "A varinha precisa ter energia mágica; após uso excessivo, fica sem magia até recarregar."
+      ],
+      "side_effects": [
+        "Bater diretamente em objetos ou inimigos quebra a varinha com facilidade."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Pelos parâmetros, a varinha não é lançada de verdade: o arremesso dispara a magia, cujo efeito registrado é eletrocutar inimigos.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "A varinha em si não conduz eletricidade: não é metálica.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: pode ser usada perto de fogo e em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnética e não pode ser manipulada com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos elétricos a usam para lançar esferas de eletricidade e invocar Chulchuls e Morcis elétricos. Se Link for atingido pela eletricidade da varinha, solta a arma de metal que estiver usando (a página do Feitiçano elétrico diz que armas de madeira ou de tecnologia ancestral evitam isso, mas a página geral de armas afirma que qualquer arma, exceto Espada Mestra e Obliterador, voa das mãos quando Link é eletrocutado); ao serem derrotados, os Feitiçanos deixam a varinha.",
+      "side_effects": [
+        "O Feitiçano elétrico também provoca tempestades na região, que só se normalizam quando ele é derrotado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Electric Wizzrobe",
+        "zw:Wizzrobe",
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Energia mágica e recarga",
+      "text": "Nos parâmetros extraídos, a energia máxima da varinha é 400 e cada uso consome 100: quatro disparos seguidos antes de esgotar. A energia volta aos poucos (taxa de recuperação 10 a cada intervalo de 90, em unidades internas do jogo).",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Esfera de longo alcance",
+      "text": "Nos parâmetros, a esfera elétrica tem alcance (MagicRange) 30, contra 10 da Varinha de gelo, e quase nenhuma gravidade (0,0001), por isso viaja reta em vez de quicar como a bola de fogo da Varinha de fogo.",
+      "sources": [
+        "dm",
+        "zw:Ice Rod",
+        "zw:Fire Rod"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a varinha pode surgir com bônus de ataque de +3 (nível comum) ou +4 a +8 (nível dourado) e bônus de durabilidade de +2 a +3 (ou +4 a +7 no nível dourado). O multiplicador de lançamento fica em 1×, então o bônus de lançamento longo não muda nada. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "limitations": [
+    "Muito frágil no corpo a corpo.",
+    "Quatro disparos seguidos esgotam a magia até a recarga."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_thunderstorm_rod",
+      "relation": "Versão mais forte"
+    },
+    {
+      "id": "botw_monster_electric_wizzrobe",
+      "relation": "Monstro que a empunha e derruba"
+    },
+    {
+      "id": "botw_weapon_fire_rod",
+      "relation": "Equivalente de fogo"
+    },
+    {
+      "id": "botw_weapon_ice_rod",
+      "relation": "Equivalente de gelo"
+    },
+    {
+      "id": "botw_weapon_thunderblade",
+      "relation": "Arma elétrica de uma mão corpo a corpo"
+    },
+    {
+      "id": "botw_mechanic_electricity",
+      "relation": "Eletricidade"
+    }
+  ],
+  "capabilities": [
+    "gera_eletricidade",
+    "eletrocuta_inimigos",
+    "flutua",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

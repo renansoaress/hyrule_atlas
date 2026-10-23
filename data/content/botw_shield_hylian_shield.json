@@ -1,0 +1,120 @@
+{
+  "id": "botw_shield_hylian_shield",
+  "summary": "O escudo lendário da família real: Defesa 90 e durabilidade 800, os maiores do jogo. Fica num baú do Castelo de Hyrule guardado por um Stalnox; se quebrar, Granté vende outro por 3.000 rupias.",
+  "description": "O Escudo hyliano foi passado de geração em geração pela família real de Hyrule, junto da lenda do herói que o empunhou. Segundo o jogo, sua defesa e sua durabilidade superam as de todos os outros escudos — e os números confirmam: Defesa 90 e durabilidade 800, com potencial para chegar a 144 de Defesa ou 1.160 de durabilidade com os bônus máximos. Mesmo assim, ele pode quebrar como qualquer outro escudo.\n\nO original está num baú da sala dos fundos do calabouço (Lockup Back Room) do Castelo de Hyrule, protegido por um Stalnox. Russ, da gangue de surfistas Shield Breakers, conta que todos os surfistas de escudo cobiçam o Escudo hyliano e que sua durabilidade o tornaria perfeito para o surfe; é ele quem espalha o boato de que existe um no castelo. Depois de obtido, um substituto pode ser comprado de Granté, em Tarrey Town.\n\nComo é de metal, conduz eletricidade, atrai raios, afunda e pode ser recuperado com Magnétis; não queima.",
+  "locations": [
+    "Castelo de Hyrule: baú no Lockup Back Room, guardado por um Stalnox."
+  ],
+  "obtaining": [
+    "Enfrentar o Stalnox do Lockup Back Room no Castelo de Hyrule e abrir o baú que ele guarda.",
+    "Reposição: depois de ter obtido o original, o comerciante Granté, em Tarrey Town, vende um novo por 3.000 rupias, desde que Link não esteja com nenhum. O exemplar comprado nunca vem com bônus."
+  ],
+  "uses": [
+    "O escudo mais resistente do jogo, para a luta final e para qualquer combate longo.",
+    "Prancha de surfe quase inesgotável, pela durabilidade de 800."
+  ],
+  "effects": [
+    "Nenhum efeito especial além da defesa e da durabilidade mais altas do jogo."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 90, a maior entre os escudos; como a Defesa reduz o desgaste de cada bloqueio, gasta muito pouco de seus 800 pontos. A Defesa perfeita não consome nada.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Template:BotW Shield Parameters", "zw:Shield"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1), mas com 800 de durabilidade é possível surfar até em pedra por muito tempo.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "side_effects": ["Contra inimigos elétricos, Link pode perder o escudo no meio da luta e precisar recolhê-lo."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, solta faíscas e atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo do fundo com Magnétis em vez de comprar outro."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o exemplar do castelo pode vir com Durabilidade aumentada de +104 a +216 (nível branco) ou +217 a +360 (nível amarelo) e com Defesa do escudo aumentada de +14 a +32 (branco) ou +33 a +54 (amarelo). Os máximos levam o escudo a 1.160 de durabilidade ou 144 de Defesa. O exemplar vendido por Granté não tem bônus.",
+      "sources": ["dm", "zw", "zw:Weapon Bonus", "zw:Grante"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Restaurar sem comprar outro",
+      "text": "Octorocs rochosos aspiram armas e escudos e os devolvem com a durabilidade restaurada. Para o Escudo hyliano, isso significa recuperar centenas de pontos de durabilidade — e preservar um eventual bônus que o exemplar comprado nunca teria.",
+      "sources": ["zw:Durability", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O sonho dos Shield Breakers",
+      "text": "Ao vender um escudo, Russ fala do Escudo hyliano, que acredita ter sido encomendado pela família real e que seria perfeito para surfar; o viajante Baumar também já ouviu falar de sua durabilidade. Selmie, por outro lado, não comenta o escudo quando Link o carrega.",
+      "sources": ["zw", "zw:Russ", "zw:Selmie"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar Defesas perfeitas mesmo com este escudo: elas não gastam durabilidade, o que adia por muito tempo a necessidade de repô-lo.",
+    "Levá-lo a um Octoroc rochoso quando estiver gasto, em vez de pagar 3.000 rupias por um novo sem bônus."
+  ],
+  "limitations": [
+    "Pode quebrar; a reposição custa 3.000 rupias e vem sem bônus.",
+    "Granté só vende outro se Link não estiver com um Escudo hyliano.",
+    "Metálico: atrai raios e cai das mãos com choques."
+  ],
+  "related": [
+    { "id": "botw_monster_stalnox", "relation": "Guarda o baú do escudo no Castelo de Hyrule" },
+    { "id": "botw_shield_heros_shield", "relation": "Segundo escudo mais durável" },
+    { "id": "botw_shield_knights_shield", "relation": "Russ compara sua robustez à do Escudo hyliano" },
+    { "id": "botw_monster_rock_octorok", "relation": "Restaura a durabilidade de escudos aspirados" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Os surfistas o cobiçam pela durabilidade" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,282 @@
+{
+  "id": "botw_material_white_chuchu_jelly",
+  "summary": "Geleca fria ao toque que, golpeada, explode numa névoa congelante capaz de congelar inimigos próximos. Vem de Chulchuls glaciais, de gelo ou de largar a geleca comum em água fria.",
+  "description": "A Geleca gélida é a forma de gelo da geleca de Chulchul. O inventário diz que ela é fria ao toque, que apertá-la parece aliviar o estresse e que, se golpeada, explode numa névoa gelada. Segundo o Zelda Wiki, essa nuvem de gelo pode congelar os inimigos próximos, o que a torna uma armadilha útil: largada perto de um grupo e atingida por uma arma, ela congela quem estiver em volta.\n\nAlém de cair dos Chulchuls glaciais, ela é obtida derrotando Chulchuls comuns com armas de gelo ou congelando uma Geleca de Chulchul comum — com uma Varinha de gelo, um Cajado glacial ou simplesmente largando-a em água fria. O fogo a converte em Geleca ígnea e a eletricidade, em Geleca elétrica. Na panela, acrescenta 1:50 à duração do elixir; nas Grandes Fadas, é o material dos dois primeiros níveis do Conjunto voe do deserto; na Tinturaria Kochi, faz o corante branco.",
+  "locations": [
+    "Climas gelados como o Monte Hylia (Mount Hylia) e as Cordilheiras de Hebra, onde vivem os Chulchuls glaciais.",
+    "Corpos de água fria, para converter a geleca comum."
+  ],
+  "obtaining": [
+    "Derrotar Chulchuls glaciais (Feitiçanos glaciais também os invocam).",
+    "Derrotar Chulchuls comuns com armas ou flechas de gelo.",
+    "Congelar uma Geleca de Chulchul comum com Varinha de gelo ou Cajado glacial, ou largá-la em água fria."
+  ],
+  "uses": [
+    "Combate: largada e golpeada, libera névoa congelante que pode congelar inimigos próximos.",
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 3 por peça no 1º nível e 5 por peça no 2º nível do Conjunto voe do deserto — 24 no total.",
+    "Corante branco na Tinturaria Kochi.",
+    "Venda: 10 rupias, ou 5 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Golpeada, explode numa névoa congelante que pode congelar inimigos próximos.",
+    "Na culinária, não tem efeito próprio; só prolonga a duração de elixires."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurada e largada no mundo a partir da algibeira; é assim que a Geleca gélida fica exposta a golpes e a outros elementos.",
+      "conditions": [
+        "Selecionar a geleca na algibeira, segurá-la e soltá-la no chão."
+      ],
+      "applications": [
+        "Preparar uma armadilha de gelo diante de inimigos antes de golpeá-la."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly",
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Estoura e libera uma névoa congelante (uma nuvem de gelo) capaz de congelar os inimigos próximos.",
+      "conditions": [
+        "Geleca largada no mundo e atingida por um golpe de arma (ataque físico)."
+      ],
+      "side_effects": [
+        "A fonte fala em congelar inimigos próximos e não esclarece se a névoa congela Link; por precaução, golpeie com alcance e fique fora da nuvem."
+      ],
+      "applications": [
+        "Congelar um grupo de inimigos antes de atacá-los."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Chuchu Jelly",
+        "jogo"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes falam em golpe de arma ou ataque físico, mas não especificam se uma flecha comum também detona a geleca. Disparar de longe seria a forma mais segura de detoná-la, mas isso não está confirmado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca ígnea.",
+      "conditions": [
+        "Exposição direta ao fogo."
+      ],
+      "side_effects": [
+        "A Geleca ígnea resultante explode numa bola de fogo se golpeada."
+      ],
+      "produces": [
+        "botw_material_red_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Colocada numa fogueira acesa, também vira Geleca ígnea, pela mesma regra de exposição ao fogo.",
+      "conditions": [
+        "A geleca precisa ficar em contato com as chamas. A fonte cita a fogueira como exemplo para a geleca comum e estende a conversão pelo fogo às outras formas."
+      ],
+      "produces": [
+        "botw_material_red_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "A Geleca gélida já é a forma de gelo; as fontes não descrevem efeito adicional ao expô-la a mais gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca elétrica.",
+      "conditions": [
+        "Exposição a um ataque ou efeito elétrico."
+      ],
+      "produces": [
+        "botw_material_yellow_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água fria",
+      "status": "confirmado",
+      "result": "A água fria é uma das formas de criar Geleca gélida: largar uma Geleca de Chulchul comum em água fria a congela. As fontes não descrevem o que acontece com a Geleca gélida já formada na água.",
+      "conditions": [
+        "Água fria de regiões congelantes."
+      ],
+      "applications": [
+        "Produzir Gelecas gélidas a partir das comuns sem gastar Varinhas de gelo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cold Water"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Geleca gélida não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Geleca gélida largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "applications": [
+        "Prolongar elixires em 1:50 por unidade, mais que a Geleca de Chulchul comum (1:10)."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 10 rupias em lojas e comerciantes, ou 5 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Explosivo de bolso",
+      "text": "Largar a geleca perto de um grupo de inimigos e golpeá-la libera o efeito elemental sobre todos ao redor. Como as fontes descrevem a explosão atingindo o que está próximo, convém golpear com uma arma de alcance maior, como uma lança — a mesma recomendação que o compendium faz para lutar contra os Chulchuls elementais, que explodem quando derrotados de perto.",
+      "sources": [
+        "zw:Chuchu Jelly",
+        "zw:Fire Chuchu",
+        "zw:Ice Chuchu",
+        "zw:Electric Chuchu"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Água fria como congelador",
+      "text": "Para fazer Gelecas gélidas sem Chulchuls glaciais, basta largar Gelecas de Chulchul comuns na água fria das regiões congelantes. Varinhas de gelo e o Cajado glacial também servem.",
+      "sources": [
+        "zw",
+        "zw:Cold Water"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Geleca antiestresse",
+      "text": "Segundo o inventário, apertar a Geleca gélida \"parece aliviar o estresse\".",
+      "sources": [
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Dica do próprio jogo",
+      "text": "Uma das dicas de carregamento lembra que os Chulchuls glaciais explodem numa rajada de gelo quando atacados e sugere usar isso para congelar os monstros próximos — o mesmo princípio da geleca.",
+      "sources": [
+        "zw:Ice Chuchu"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com o Conjunto voe do deserto: as 24 gelecas dos dois primeiros níveis podem ser feitas com Gelecas de Chulchul comuns largadas em água fria."
+  ],
+  "limitations": [
+    "A fonte não esclarece se a névoa também congela Link.",
+    "O frio dela é descritivo: as fontes não indicam que carregá-la proteja do calor.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Geleca comum que vira gélida com gelo ou água fria"
+    },
+    {
+      "id": "botw_material_red_chuchu_jelly",
+      "relation": "Forma obtida expondo-a ao fogo"
+    },
+    {
+      "id": "botw_material_yellow_chuchu_jelly",
+      "relation": "Forma obtida expondo-a à eletricidade"
+    },
+    {
+      "id": "botw_monster_ice_chuchu",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_chuchu",
+      "relation": "Deixa Geleca gélida se derrotado com gelo"
+    },
+    {
+      "id": "botw_weapon_ice_rod",
+      "relation": "Congela a geleca comum"
+    },
+    {
+      "id": "botw_weapon_blizzard_rod",
+      "relation": "Congela a geleca comum"
+    },
+    {
+      "id": "botw_armorset_desert_voe_set",
+      "relation": "Usa 3 e 5 por peça nos dois primeiros níveis"
+    },
+    {
+      "id": "botw_mechanic_ice",
+      "relation": "Congelamento causado pela névoa"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante branco"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "congela_inimigos",
+    "reage_fogo",
+    "reage_eletricidade"
+  ],
+  "verification_status": "verificado"
+}

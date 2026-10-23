@@ -1,0 +1,212 @@
+{
+  "id": "botw_weapon_ancient_spear",
+  "summary": "Lança de tecnologia ancestral criada por Robbie (ataque 30, durabilidade 50). Causa 1,5× de dano a Guardiões e a Ganon, flutua, não atrai raios e nunca vem com bônus aleatórios.",
+  "description": "A Lança ancestral é, segundo a descrição do próprio jogo, o resultado de incontáveis horas de pesquisa sobre a tecnologia dos Guardiões; a ponta brilhante tem enorme poder de perfuração. Pertence ao equipamento de soldado ancestral desenvolvido por Robbie e só é obtida na Forja ancestral (Ancient Oven) do Laboratório de Akkala, em troca de materiais ancestrais e rupias.\n\nO grande diferencial é o multiplicador de 1,5× sobre o dano contra Guardiões e Guardiões batedores (inclusive pernas e hélices), contra as Iras de Ganon, contra Ganon, a Calamidade, e contra Ganon, Besta Sombria. Por ser de tecnologia ancestral e não de metal, flutua na água, não conduz eletricidade, não atrai raios, não pega fogo e também não pode ser movida com Magnétis.",
+  "locations": [
+    "Laboratório de Akkala, no Coração de Akkala, onde fica a Forja ancestral que a fabrica. O compendium não lista locais em que ela apareça normalmente."
+  ],
+  "obtaining": [
+    "Fabricada pela Forja ancestral por 1000 rupias mais 15 Engrenagens ancestrais, 5 Eixos ancestrais e 2 Núcleos ancestrais.",
+    "A forja só funciona depois da missão secundária \"A pesquisa do Robbie\", quando Link leva a chama azul até a fornalha do laboratório.",
+    "O item volta ao estoque da forja, então é possível fabricar outra lança sempre que houver materiais e rupias."
+  ],
+  "uses": [
+    "Arma de combate contra Guardiões, Guardiões batedores dos santuários e as Iras de Ganon nas Feras Divinas.",
+    "Opção forte para enfrentar Ganon, a Calamidade, que também recebe o dano extra.",
+    "Arremesso de emergência quando estiver quase quebrada: o golpe final é sempre crítico."
+  ],
+  "effects": [
+    "Multiplicador de dano de 1,5× contra Guardiões, Guardiões batedores, as Iras de Ganon e Ganon (parâmetro datamined)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: não pega fogo nem queima nas áreas escaldantes de Eldin.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é feita de tecnologia ancestral, não de metal.",
+      "side_effects": [
+        "Ainda assim, se Link for eletrocutado com ela na mão, a lança voa para o chão — isso vale para quase todas as armas."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "applications": [
+        "Pode ficar equipada numa tempestade, ao contrário das lanças de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, como as demais armas de tecnologia ancestral.",
+      "applications": [
+        "Se cair num lago ou rio, pode ser recolhida na superfície."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálica, então Magnétis não consegue movê-la.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Causa 1,5× o dano normal contra todos os Guardiões e Guardiões batedores (incluindo pernas e hélices), as Iras de Ganon, Ganon, a Calamidade, e Ganon, Besta Sombria.",
+      "applications": [
+        "Destruir mais depressa as pernas e hélices dos Guardiões, que também recebem o bônus."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Guardian"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Mais eficaz que as Lanças guardiãs",
+      "text": "Os parâmetros dão à Lança ancestral um multiplicador de 1,5× contra Guardiões e Ganon; as três Lanças guardiãs, usadas pelos Guardiões batedores, atingem a mesma lista de alvos com apenas 1,3×.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus aleatórios",
+      "text": "Os parâmetros extraídos do jogo ainda listam faixas de bônus (ataque +6 a +12 ou +13 a +24, durabilidade +5 a +9 ou +10 a +23, arremesso longo de 1,5× a 2×), mas o Zelda Wiki registra que a Lança ancestral é vendida em loja e, como as demais armas de loja, nunca recebe bônus: todo exemplar vem com os valores-base.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A forja que Robbie chamava de Fornélia",
+      "text": "A Forja ancestral é uma antiga Guidance Stone (pedra-guia) de Kakariko que Robbie levou para Akkala e transformou numa máquina de refinar materiais e fabricar equipamento ancestral. Ele a apelidou de Cherry (Fornélia, na versão brasileira) em homenagem ao primeiro amor, mas parou de usar o nome para não chatear a esposa, Jerina.",
+      "sources": [
+        "zw:Ancient Oven"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Nos santuários de \"teste de força\", a lança encurta a luta contra Guardiões batedores graças ao multiplicador de 1,5×."
+  ],
+  "limitations": [
+    "Exige muitos materiais ancestrais por unidade, e cada exemplar se esgota em 50 golpes.",
+    "Não recebe bônus aleatórios, ao contrário das lanças encontradas no mundo.",
+    "Arremessada contra um inimigo, quebra no impacto."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_guardian_spear",
+      "relation": "Lança de tecnologia ancestral com bônus menor (1,3×) contra Guardiões"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Mesmo arquétipo (soldado ancestral), uma mão"
+    },
+    {
+      "id": "botw_weapon_ancient_bladesaw",
+      "relation": "Mesmo arquétipo (soldado ancestral), duas mãos"
+    },
+    {
+      "id": "botw_shield_ancient_shield",
+      "relation": "Escudo do mesmo arquétipo"
+    },
+    {
+      "id": "botw_bow_ancient_bow",
+      "relation": "Arco do mesmo arquétipo"
+    },
+    {
+      "id": "botw_material_ancient_gear",
+      "relation": "Material de fabricação (15 unidades)"
+    },
+    {
+      "id": "botw_material_ancient_shaft",
+      "relation": "Material de fabricação (5 unidades)"
+    },
+    {
+      "id": "botw_material_ancient_core",
+      "relation": "Material de fabricação (2 unidades)"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Alvo do multiplicador de dano"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "Alvo do multiplicador de dano"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

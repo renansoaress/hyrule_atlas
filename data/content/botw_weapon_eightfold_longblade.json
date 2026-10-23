@@ -1,0 +1,159 @@
+{
+  "id": "botw_weapon_eightfold_longblade",
+  "summary": "Katana longa Sheikah de um só fio (ataque 32), comum perto de Kakariko. Em vez do giro, o golpe carregado é um corte frontal rápido que derruba inimigos grandes e arremessa os pequenos.",
+  "description": "A Katana da desconfiança é uma espada de duas mãos passada de geração em geração entre os Sheikah. A descrição do jogo diz que espadas de um só gume como esta são raras em Hyrule e que o fio é surpreendentemente afiado, ideal para fatiar. É comum em Necluda Ocidental e na Grande Nascente de Lanayru, em especial nos arredores da Vila Kakariko.\n\nSeu diferencial é o ataque carregado: como o Corta-Vento dos Yiga, ela não faz o giro típico das armas de duas mãos. Link recolhe a lâmina e desfere um corte para a frente em alta velocidade, que derruba inimigos grandes e lança longe os menores. É metálica, portanto conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis; não queima.",
+  "locations": [
+    "Necluda Ocidental e Grande Nascente de Lanayru, principalmente nos arredores da Vila Kakariko."
+  ],
+  "obtaining": [
+    "Recolher nas regiões em volta de Kakariko.",
+    "Chance de aparecer em baús gerados pelo amiibo de Sheik (Super Smash Bros.) com a runa amiibo.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Golpe carregado frontal para derrubar inimigos grandes ou afastar os pequenos.",
+    "Como espada, corta árvores; por ser metálica, acende sílex."
+  ],
+  "effects": [
+    "Ataque carregado diferente: corte frontal rápido em vez do giro."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos, sem escudo. Ao carregar o ataque, Link puxa a katana para trás e corta para a frente com grande velocidade, derrubando inimigos grandes e arremessando os pequenos — não há o giro contínuo das demais armas de duas mãos.",
+      "applications": [
+        "Abrir espaço quando cercado por inimigos pequenos, jogando-os para longe."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao acertar um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link for eletrocutado, a katana voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperar com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não indicam monstros que a empunhem."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +4 a +6, Durabilidade aumentada de +3 a +5 ou Acerto crítico; no nível dourado (amarelo): Ataque de +7 a +11, Durabilidade de +6 a +12 ou Lançamento longo (×1,5 a ×2).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Golpe carregado em comum com o Corta-Vento",
+      "text": "A Katana da desconfiança e o Corta-Vento compartilham o corte frontal no lugar do giro das armas de duas mãos. No Corta-Vento o corte ainda dispara um projétil de ar; na katana, o efeito é apenas físico.",
+      "sources": [
+        "zw",
+        "zw:Windcleaver"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O corte carregado derruba inimigos grandes: use-o para abrir uma janela de ataques enquanto eles se levantam."
+  ],
+  "limitations": [
+    "O golpe carregado é um corte para a frente, sem o giro que atinge os inimigos em volta.",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_windcleaver",
+      "relation": "Mesmo tipo de golpe carregado frontal"
+    },
+    {
+      "id": "botw_weapon_eightfold_blade",
+      "relation": "Arma Sheikah de uma mão"
+    },
+    {
+      "id": "botw_weapon_edge_of_duality",
+      "relation": "Outra arma Sheikah de duas mãos"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "O amiibo de Sheik pode gerá-la"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

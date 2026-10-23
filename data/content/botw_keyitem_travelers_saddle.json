@@ -1,0 +1,61 @@
+{
+  "id": "botw_keyitem_travelers_saddle",
+  "summary": "Sela confortável para longas viagens, resistente a qualquer clima, obtida apenas com o amiibo de Link (Rider). Aparece no cavalo de Link nas memórias recuperadas. Puramente cosmética.",
+  "description": "A Sela do viajante é uma sela padrão, pensada, segundo a descrição do jogo, para o conforto em longas jornadas; o material durável aguenta todo tipo de clima, o que a tornou a favorita dos viajantes. Forma o equipamento do viajante com a Rédea do viajante.\n\nSó é obtida com a runa amiibo e o amiibo de Link (Rider): a leitura pode fazer surgir um par de baús, um com a sela e outro com a rédea. Depois de obtida, a sela fica entre os itens-chave da algibeira e pode ser colocada em qualquer cavalo com vínculo máximo pelos funcionários dos estábulos Highland, Outskirt, South Akkala e Woodland; Epona e o Cavalo gigante não aceitam selas.\n\nApesar da descrição sobre conforto e resistência ao clima, a sela não tem efeito nos atributos do cavalo. Nas memórias recuperadas, o cavalo de Link aparece equipado com ela e com a rédea do mesmo conjunto.",
+  "locations": [
+    "Não aparece no mapa: surge em baú criado pela runa amiibo com o amiibo de Link (Rider)."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Rider) com a runa amiibo; há chance de surgirem dois baús, um com a sela e outro com a rédea."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Colocada no cavalo por um funcionário de estábulo, muda apenas a aparência.",
+      "conditions": [
+        "Falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse Gear"]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo, apesar da descrição de conforto.",
+      "sources": ["zw:Horse Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O funcionário avalia o vínculo",
+      "text": "Antes de trocar o equipamento, o funcionário do estábulo observa o cavalo: se ele ainda não estiver domado de verdade, a pessoa pede que Link passe mais tempo mostrando carinho e volte depois.",
+      "sources": ["zw:Horse Gear"]
+    }
+  ],
+  "advanced_uses": [
+    "Aumente o vínculo do cavalo acalmando-o quando ele se rebela ou alimentando-o com Maçãs, Cenouras tenazes ou Cenouras velozes antes de levá-lo para trocar a sela."
+  ],
+  "limitations": [
+    "Depende do amiibo de Link (Rider) e de sorte na leitura.",
+    "Apenas cosmética."
+  ],
+  "related": [
+    { "id": "botw_keyitem_travelers_bridle", "relation": "Outra peça do equipamento do viajante" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para obter a sela" },
+    { "id": "botw_material_apple", "relation": "Aumenta o vínculo do cavalo, exigido para trocar a sela" },
+    { "id": "botw_creature_horse", "relation": "Montaria que recebe a sela" },
+    { "id": "botw_mechanic_stable", "relation": "Onde a sela é colocada" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

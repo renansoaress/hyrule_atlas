@@ -1,0 +1,123 @@
+{
+  "id": "botw_shield_knights_shield",
+  "summary": "Escudo de metal dos cavaleiros da família real (Defesa 40, durabilidade 23). Russ vende um por 300 rupias, Selmie o dá como prêmio, e um Escudo enferrujado limpo por um Octoroc rochoso pode virar um.",
+  "description": "O Escudo do cavaleiro era o preferido dos cavaleiros que serviam à família real de Hyrule. O jogo explica que a construção de metal o torna bastante durável, mas que o peso exige certa habilidade para manejá-lo. Com Defesa 40 e durabilidade 23, rivaliza com os melhores escudos de monstros e pertence ao equipamento do cavaleiro (Knight's Gear), ao lado da Espada, do Montante, da Alabarda e do Arco do cavaleiro.\n\nAparece sobretudo na metade norte do reino, nas mãos de inimigos das Cordilheiras de Hebra e da Cordilheira de Eldin. Também está à venda com Russ, que, ao vendê-lo, o chama de escudo robusto e lembra da durabilidade lendária do Escudo hyliano. Sendo de metal, conduz eletricidade, atrai raios, afunda na água e pode ser movido com Magnétis; não queima.",
+  "locations": [
+    "Cordilheiras de Hebra e Cordilheira de Eldin, nas mãos de inimigos.",
+    "Baú no Gerudo Canyon Pass.",
+    "Baú perto da Aquame Bridge, que leva às Coliseum Ruins."
+  ],
+  "obtaining": [
+    "Comprar de Russ, dos Shield Breakers, na Trilby Plain, por 300 rupias.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos entre 1:45 e 2:00.",
+    "Fazer um Octoroc rochoso aspirar um Escudo enferrujado: há 10% de chance de ele devolver um Escudo do cavaleiro.",
+    "Baús de amiibo: Link (Super Smash Bros.), Link (The Legend of Zelda), Toon Zelda (The Wind Waker), Link (Twilight Princess), Link (Skyward Sword) e Zelda (Breath of the Wild) têm chance de conter este escudo."
+  ],
+  "uses": [
+    "Escudo de metal de defesa alta para o meio do jogo, fácil de repor com Russ.",
+    "Prancha de surfe de durabilidade razoável."
+  ],
+  "effects": [
+    "Nenhum efeito especial além da defesa alta."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 40; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, solta faíscas e atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo do fundo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +4 a +5 (nível amarelo) e com Defesa do escudo aumentada de +4 a +8 (branco) ou +9 a +14 (amarelo). Exemplares de baús de amiibo vêm com o valor máximo da faixa.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Amiibo Rune"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ferrugem que vira cavaleiro",
+      "text": "Um Octoroc rochoso que aspira um Escudo enferrujado o mastiga e cospe uma versão limpa: 50% de chance de Escudo do viajante, 35% de Escudo do soldado, 10% de Escudo do cavaleiro e 5% de Escudo real.",
+      "sources": ["zw:Rock Octorok", "zw:Rusty Shield"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O comentário de Russ",
+      "text": "Ao vender o escudo, Russ o elogia como robusto e diz que isso o faz pensar na durabilidade lendária do Escudo hyliano.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Comprar de Russ, que repõe o estoque, sempre que precisar de um escudo de metal confiável."
+  ],
+  "limitations": [
+    "Metálico: atrai raios em tempestades e cai das mãos com choques.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    { "id": "botw_weapon_knights_broadsword", "relation": "Mesmo arquétipo (equipamento do cavaleiro)" },
+    { "id": "botw_weapon_knights_claymore", "relation": "Mesmo arquétipo (equipamento do cavaleiro)" },
+    { "id": "botw_weapon_knights_halberd", "relation": "Mesmo arquétipo (equipamento do cavaleiro)" },
+    { "id": "botw_bow_knights_bow", "relation": "Mesmo arquétipo (equipamento do cavaleiro)" },
+    { "id": "botw_shield_rusty_shield", "relation": "Pode virar um Escudo do cavaleiro ao ser limpo por um Octoroc rochoso" },
+    { "id": "botw_monster_rock_octorok", "relation": "Limpa Escudos enferrujados e restaura durabilidade" },
+    { "id": "botw_shield_hylian_shield", "relation": "Russ compara a robustez dos dois" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

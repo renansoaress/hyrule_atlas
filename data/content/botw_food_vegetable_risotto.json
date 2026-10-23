@@ -1,0 +1,90 @@
+{
+  "id": "botw_food_vegetable_risotto",
+  "summary": "Risoto suave de Arroz hyliano, Manteiga de cabra, Halita e Abóbora robusta ou cenoura. O legume define o efeito: vigor, velocidade ou defesa.",
+  "description": "O Risoto de legumes é feito com Arroz hyliano, Manteiga de cabra, Halita e uma Abóbora robusta ou cenoura (Cenoura tenaz ou Cenoura veloz). O inventário atribui o sabor suave à doçura dos ingredientes. Como os três legumes aceitos têm efeito, o risoto sempre sai numa variante — Cenoura tenaz para a versão que restaura e ultrapassa o Medidor de vigor, Cenoura veloz para Velocidade aumentada e Abóbora robusta para Defesa aumentada —, a menos que se misturem legumes de efeitos contraditórios, o que dá a versão comum.\n\nCom quatro ingredientes obrigatórios, sobra apenas um espaço. Na ordem dos risotos, este vem depois dos de salmão e de caranguejo e antes do de cogumelos: com cenoura e cogumelo juntos, o resultado é Risoto de legumes. Outros legumes com a mesma base não formam risoto e acabam em Bolinhos de arroz com legumes.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano, Manteiga de cabra, Halita e Abóbora robusta, Cenoura tenaz ou Cenoura veloz."
+  ],
+  "uses": [
+    "Prato de Vigor extra, Velocidade aumentada ou Defesa aumentada.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com Cenoura tenaz: restaura e ultrapassa o Medidor de vigor (Vigor extra).",
+    "Com Cenoura veloz: Velocidade aumentada.",
+    "Com Abóbora robusta: Defesa aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do legume usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "cogumelo ou outro legume",
+      "status": "confirmado",
+      "result": "Com cenoura ou abóbora presente, um cogumelo extra não muda o prato (o Risoto de legumes é testado antes do de cogumelos); sem elas, outro legume com a mesma base forma Bolinhos de arroz com legumes.",
+      "produces": [
+        "botw_food_veggie_rice_balls"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da restrição a cenouras e abóbora e da ordem entre os risotos, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Só um espaço livre.",
+    "Só aceita Abóbora robusta ou cenouras."
+  ],
+  "related": [
+    {
+      "id": "botw_material_endura_carrot",
+      "relation": "Legume da versão com Vigor extra"
+    },
+    {
+      "id": "botw_material_swift_carrot",
+      "relation": "Legume da versão com Velocidade aumentada"
+    },
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Legume da versão com Defesa aumentada"
+    },
+    {
+      "id": "botw_food_mushroom_risotto",
+      "relation": "Risoto com a mesma base e cogumelo"
+    },
+    {
+      "id": "botw_food_vegetable_curry",
+      "relation": "Mesmo trio de legumes com Tempero Goron"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor",
+    "velocidade",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

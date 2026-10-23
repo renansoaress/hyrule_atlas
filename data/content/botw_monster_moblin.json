@@ -1,0 +1,179 @@
+{
+  "id": "botw_monster_moblin",
+  "summary": "Monstro alto e pesado, bem mais perigoso que o Koboblin: sem arma, agarra Koboblins e os arremessa como projéteis; de longe, atira pedras que podem ser devolvidas com Defesa perfeita. Não nada e se afoga.",
+  "description": "Em BOTW os Moblins são mais altos e esguios que nos jogos anteriores e mantêm esse porte com uma dieta exclusivamente carnívora — uma dica do jogo lembra que precisam de grandes porções de carne e peixe. O compendium os descreve como fisicamente muito fortes, com pernas capazes de resistir à força de uma explosão de bomba, e muito mais perigosos que os Koboblins; tanto que já foram vistos pegando Koboblins para usá-los como projéteis improvisados.\n\nLutam com Clavas Moblin, usadas para esmagar, ou Lanças Moblin, ambas do equipamento Moblin, feito de madeira entalhada. Desarmados, às vezes agarram um Koboblin próximo e o atiram em Link; quando Link está fora do alcance, atiram pequenas pedras, que podem ser rebatidas com uma Defesa perfeita. Apesar do tamanho, compartilham a fraqueza dos Koboblins: não sabem nadar e se afogam se forem forçados para água funda.\n\nO Moblin vermelho, com 56 pontos de vida segundo o guia citado pelo Zelda Wiki, é a base de uma linhagem: Moblin azul, preto, prateado e, no Modo Mestre, dourado, além do Stalmoblin noturno e do Moblin amaldiçoado das Feras Divinas.",
+  "locations": [
+    "Toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Oriental como locais comuns.",
+    "Acampamentos de monstros, frequentemente acompanhando grupos de Koboblins."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre de Moblin e Presa de Moblin; Vísceras de Moblin só caem de variantes mais fortes.",
+    "A arma do equipamento Moblin que empunhava pode ser recolhida.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Chifres e Presas de Moblin para elixires e para trocar por Mon.",
+    "Fonte de Clavas Moblin e Lanças Moblin, armas de duas mãos e lanças de alcance longo.",
+    "Registro no compendium (entrada nº 108)."
+  ],
+  "effects": [
+    "Golpes pesados de clava ou lança; arremessa pedras e até Koboblins."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Aguenta mais que um Koboblin (56 pontos de vida) e golpeia com força; desarmado, procura um Koboblin por perto para arremessar.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "Atacar um Moblin desatento pelas costas causa 8 vezes o dano da arma corpo a corpo.",
+      "conditions": ["Aproximar-se agachado, sem ser percebido."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Sneakstrike", "zw:Stealth"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "As pedras que ele atira quando Link está fora do alcance podem ser rebatidas com uma Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw:Critical Hit"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado e sofre dano; Clavas e Lanças Moblin são de madeira e queimam ao serem expostas ao fogo.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire Arrow", "zw:Moblin Gear"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano maior que o normal.",
+      "kind": "mecanica",
+      "sources": ["zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o forçam a largar a arma. As armas Moblin, de madeira, não conduzem eletricidade nem atraem raios.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow", "zw:Great Thunderblade", "zw:Moblin Gear"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Não sabe nadar: afoga-se se for forçado para água funda.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "O compendium destaca que suas pernas são fortes o bastante para resistir à força da explosão de uma bomba. Explosões de Barris explosivos e Flechas explosivas ainda assim causam dano, e a da flecha também incendeia.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Bomb Barrel", "zw:Bomb Arrow"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota causa dano (12, ou 24 na versão melhorada); inimigos podem chutá-la ou pegá-la e arremessá-la de volta.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Paralisável só com Estátis+, por pouco tempo; durante o efeito fica imune a gelo, fogo e choque.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado pela runa, e suas armas de madeira também não; objetos metálicos lançados com Magnétis o atingem.",
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Moblin Gear", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Atira pequenas pedras quando Link está longe e usa Koboblins do acampamento como munição.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Agarra Koboblins próximos e os arremessa contra Link como projéteis.",
+      "applications": ["Eliminar primeiro os Koboblins ao redor tira a munição do Moblin desarmado."],
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Moblin",
+      "status": "confirmado",
+      "result": "A Máscara de Moblin (Kilton, 199 Mon, à venda após libertar uma Fera Divina) ou a Máscara de Majora fazem os Moblins ignorarem Link; a de Moblin não engana outros monstros da área.",
+      "kind": "mecanica",
+      "sources": ["zw:Moblin Mask", "zw:Majora's Mask (Item)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Koboblins como munição",
+      "text": "O compendium registra que Moblins já foram vistos pegando Koboblins para arremessá-los como armas improvisadas; o Zelda Wiki confirma que isso acontece quando o Moblin está sem arma e há Koboblins ao alcance.",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Dieta só de carne",
+      "text": "O porte alongado do Moblin de BOTW é sustentado por uma alimentação exclusivamente carnívora; a dica do jogo fala em \"grandes porções de carne e peixe\".",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lua de sangue e Modo Mestre",
+      "text": "A Lua de sangue revive os Moblins derrotados. No Modo Mestre, sobem um nível, percebem Link com mais facilidade e regeneram vida até um limite; perto da Spectacle Rock existe até um Moblin que usa Flechas explosivas nesse modo.",
+      "sources": ["zw:Blood Moon", "zw:Master Mode", "zw:Bomb Arrow"]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar a pedra arremessada e devolvê-la com Defesa perfeita.",
+    "Empurrá-lo para água funda em vez de enfrentar seus golpes pesados."
+  ],
+  "limitations": [
+    "Não deixa Vísceras de Moblin.",
+    "Golpes de clava são pesados; lutar sem escudo é arriscado.",
+    "Flechas ancestrais desintegram o monstro e a arma sem deixar materiais."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_moblin", "relation": "Variante mais forte (azul)" },
+    { "id": "botw_monster_black_moblin", "relation": "Variante mais forte (preta)" },
+    { "id": "botw_monster_silver_moblin", "relation": "Variante mais forte (prateada)" },
+    { "id": "botw_monster_golden_moblin_mm", "relation": "Variante do Modo Mestre" },
+    { "id": "botw_monster_stalmoblin", "relation": "Versão esquelética noturna" },
+    { "id": "botw_monster_cursed_moblin", "relation": "Crânio amaldiçoado" },
+    { "id": "botw_monster_bokoblin", "relation": "Usado por ele como projétil" },
+    { "id": "botw_weapon_moblin_club", "relation": "Arma típica" },
+    { "id": "botw_weapon_moblin_spear", "relation": "Arma típica" },
+    { "id": "botw_material_moblin_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_moblin_fang", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_armor_moblin_mask", "relation": "Disfarce que impede seus ataques" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Rebate as pedras que ele atira" }
+  ],
+  "capabilities": ["habilidade_especial", "vence_rapido"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "botw_food_curry_rice",
+  "summary": "Arroz hyliano com Tempero Goron, \"favorito em toda Hyrule\" e foco da missão de Lester no Estábulo dos Arás. Só aceita frutas e Mel de abelha como extras; outros ingredientes viram outros curries.",
+  "description": "O Arroz com curry é a receita mais simples com Tempero Goron: Arroz hyliano e o tempero, nada mais. Cura 2 corações e vale 20 rupias; a descrição do jogo diz que é um favorito em toda Hyrule, de sabor que não cansa.\n\nO prato é sensível aos extras: segundo o Zelda Wiki, só frutas e Mel de abelha podem ser adicionados sem mudar a receita. Com carne, cenoura, abóbora, frutos do mar ou Extrato de monstro, o resultado passa a ser outro curry (Curry de carne, Curry de legumes, Curry de frutos do mar, Curry de monstro etc.). As versões com efeito saem com Durião nutritivo (nutritiva, 50 rupias), Mel de abelha (energizante), Grãos de lótus-fugaz (veloz), Pimenta de fogo (picante), Fruta isolante (isolante, 6 corações), Bananas valentes (valente) e Melancia oásica (refrescante); as demais curam 3 corações e valem 30 rupias.\n\nNa Missão secundária \"Curry for What Ails You\", Lester, funcionário do Estábulo dos Arás, na Fronteira de Tabantha, sonha com arroz com curry: ele tem o Arroz hyliano, mas falta o Tempero Goron. Ao receber o tempero, paga 50 rupias (uma rupia roxa) e, a partir daí, troca Arroz hyliano por Tempero Goron sempre que Link quiser; o diário de aventuras registra que ele ensinou a receita e que outros ingredientes geram outros curries.",
+  "locations": [
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Tempero Goron: vendido na Goron Gusto Shop (Cidade Goron) e pelo mercador Yammo, perto da Tabantha Great Bridge.",
+    "Lester: no Estábulo dos Arás, na Fronteira de Tabantha (missão \"Curry for What Ails You\")."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Arroz hyliano + Tempero Goron."
+  ],
+  "uses": [
+    "Cura barata de 2 corações; com frutas de efeito, vira um prato de efeito.",
+    "Tema da missão \"Curry for What Ails You\": Lester quer o Tempero Goron para fazer o prato.",
+    "Venda: de 20 a 50 rupias."
+  ],
+  "effects": [
+    "Versão comum: recupera 2 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Durião nutritivo; 50 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Mel de abelha.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Grãos de lótus-fugaz; 3 corações, 30 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Pimenta de fogo; 3 corações, 30 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Fruta isolante; 6 corações, 30 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Bananas valentes; 3 corações, 30 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Melancia oásica; 3 corações, 30 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 2 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com uma fruta de efeito (ou Mel de abelha), ganha esse efeito; a versão isolante, com Fruta isolante, é a que mais cura (6 corações).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 20 rupias na versão comum, 30 na maioria das versões com efeito e 50 na nutritiva.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Lester troca arroz por tempero",
+      "text": "Depois de concluir \"Curry for What Ails You\", Link pode entregar Tempero Goron a Lester a qualquer momento em troca de Arroz hyliano — uma fonte fixa de arroz na Fronteira de Tabantha.",
+      "sources": [
+        "zw:Curry for What Ails You",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Extras que mudam o prato",
+      "text": "Qualquer extra que não seja fruta ou Mel de abelha transforma o arroz com curry em outra receita de curry. Por isso não há versões tenaz, blindada nem discreta deste prato.",
+      "sources": [
+        "zw",
+        "zw:Meal"
+      ]
+    }
+  ],
+  "limitations": [
+    "Sem versões tenaz, blindada ou discreta.",
+    "Cura pouco na versão comum (2 corações)."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goron_spice",
+      "relation": "Ingrediente obrigatório; pedido por Lester"
+    },
+    {
+      "id": "botw_food_curry_pilaf",
+      "relation": "Versão com Ovo e Manteiga de cabra"
+    },
+    {
+      "id": "botw_food_meat_curry",
+      "relation": "Curry que surge ao acrescentar Carne de terceira"
+    },
+    {
+      "id": "botw_food_vegetable_curry",
+      "relation": "Curry que surge com cenoura ou abóbora"
+    },
+    {
+      "id": "botw_food_seafood_curry",
+      "relation": "Curry que surge com Caramujo nutritivo ou pargo"
+    },
+    {
+      "id": "botw_food_monster_curry",
+      "relation": "Curry que surge com Extrato de monstro"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

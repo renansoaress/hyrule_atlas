@@ -1,0 +1,140 @@
+{
+  "id": "botw_creature_sneaky_river_snail",
+  "summary": "Caramujo grande e bioluminescente das margens de água doce de Necluda Ocidental e da Grande Nascente de Lanayru, fácil de achar à noite. Cozido, dá Furtividade aumentada.",
+  "description": "O Caramujo discreto é um caramujo grande de água doce que brilha no escuro. Vive nas margens de rios e lagos de Necluda Ocidental e da Grande Nascente de Lanayru, e o brilho facilita encontrá-lo à noite. Segundo o jogo, cozido ele aguça os sentidos de quem o come, permitindo andar em silêncio: pratos com ele dão Furtividade aumentada.\n\nCru, recupera 1 coração. Serve para o Peixe grelhado no sal (que aceita qualquer peixe ou caramujo), para o Espetinho de frutos do mar e para as receitas gerais de fruto do mar, além de poder ser somado a um Elixir discreto para que ele cure. Assado vira Escargô discreto, de carne macia e um pouco borrachuda; congelado vira Caramujo discreto congelado, que perde parte do brilho.\n\nNas Fontes da Grande Fada, o terceiro nível de cada peça do Conjunto furtivo exige 5 Caramujos discretos e 8 Silencimelos.",
+  "locations": [
+    "Margens de água doce de Necluda Ocidental e da Grande Nascente de Lanayru.",
+    "Mais fácil de localizar à noite, pelo brilho."
+  ],
+  "obtaining": [
+    "Pegar à mão nas margens; à noite, o brilho denuncia a posição."
+  ],
+  "uses": [
+    "Pratos de Furtividade aumentada: Peixe grelhado no sal (com Halita), Espetinho de frutos do mar e receitas gerais de fruto do mar, como Peixe no vapor e Frutos do mar à meunière.",
+    "Ingrediente discreto de um Elixir discreto, que passa a recuperar corações.",
+    "Melhoria de armadura: 5 unidades por peça do Conjunto furtivo (Máscara furtiva, Peitoral furtivo e Meia-calça furtiva) para o 3º nível, junto com 8 Silencimelos.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: Furtividade aumentada temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como o caramujo reage à aproximação de Link; indicam apenas que o brilho o torna fácil de ver à noite."
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um caramujo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Caramujo discreto dão Furtividade aumentada temporária.",
+      "produces": ["botw_food_salt_grilled_fish", "botw_food_seafood_skewer", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somado a um Elixir discreto (Vaga-lume do poente + parte de monstro), faz o elixir também recuperar corações.",
+      "produces": ["botw_elixir_sneaky_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Sneaky Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 6 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Assado no fogo, vira Escargô discreto (1,5 coração), sem o efeito de furtividade.",
+      "produces": ["botw_food_sneaky_river_escargot"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, vira Escargô discreto.",
+      "produces": ["botw_food_sneaky_river_escargot"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Escargô discreto.",
+      "produces": ["botw_food_sneaky_river_escargot"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriado com gelo, vira Caramujo discreto congelado; o brilho característico diminui, e comê-lo dá Resistência ao calor temporária.",
+      "produces": ["botw_food_frozen_river_snail"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Caramujo discreto congelado.",
+      "produces": ["botw_food_frozen_river_snail"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este caramujo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Uma pequena conquista",
+      "text": "A descrição do Escargô discreto diz que puxar toda a carne da concha de uma vez só enche quem come de uma sensação de realização.",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Elo do meio do Conjunto furtivo",
+      "text": "O Conjunto furtivo pede 5 Vaga-lumes do poente no 2º nível, 5 Caramujos discretos no 3º e 10 Trutas discretas no 4º (por peça). Os três brilham no escuro, o que facilita encontrá-los à noite.",
+      "sources": ["zw", "zw:Stealthfin Trout", "zw:Sunset Firefly"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Silencimelo, Beladona azul ou Truta discreta para prolongar ou subir o nível da Furtividade aumentada."
+  ],
+  "limitations": [
+    "Assado ou congelado, perde a Furtividade aumentada.",
+    "A página do Zelda Wiki o lista como opção para Creme de mariscos, Curry, Arroz frito e Paella de frutos do mar, mas as próprias receitas citadas pedem o Caramujo nutritivo; o uso do Caramujo discreto nesses pratos não está confirmado."
+  ],
+  "related": [
+    { "id": "botw_armorset_stealth_set", "relation": "Usa 5 por peça no 3º nível de melhoria" },
+    { "id": "botw_food_sneaky_river_escargot", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_river_snail", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Pode ser somado como ingrediente discreto" },
+    { "id": "botw_creature_stealthfin_trout", "relation": "Outro fruto do mar discreto e brilhante" },
+    { "id": "botw_creature_hearty_blueshell_snail", "relation": "O outro caramujo, de água salgada" },
+    { "id": "botw_material_silent_shroom", "relation": "Acompanha o caramujo no 3º nível do Conjunto furtivo" }
+  ],
+  "capabilities": ["cura", "furtividade", "ilumina", "reage_fogo", "reage_gelo"],
+  "verification_status": "parcial"
+}

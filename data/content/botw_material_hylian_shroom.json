@@ -1,0 +1,144 @@
+{
+  "id": "botw_material_hylian_shroom",
+  "summary": "Cogumelo comum ao pé das árvores de Hyrule. Cru cura meio coração e não tem efeito; no fogo vira Cogumelo hyliano tostado, vendido pronto até na Protein Palace, na Cidade Goron (Goron City).",
+  "description": "O Cogumelo hyliano é o cogumelo mais comum do jogo, encontrado perto das árvores em toda Hyrule — o compendium cita a Pradaria de Hyrule e Necluda Ocidental. Cru, recupera meio coração, como diz a própria descrição do jogo. Não tem efeito especial, mas conta como \"qualquer cogumelo\" em todas as receitas de cogumelo, do Espetinho de cogumelos ao Risoto de cogumelos.\n\nExposto ao fogo ou a um clima escaldante, vira Cogumelo hyliano tostado, de sabor e aroma realçados; essa versão também é vendida pronta por 12 rupias na Protein Palace, na Cidade Goron. Na Tinturaria Kochi, o cogumelo cru entra no corante vermelho, e o infobox do Zelda Wiki o lista ainda como isca para Robalo hyruliano e Carpa tricolor.",
+  "locations": [
+    "Perto das árvores em toda Hyrule; o compendium cita a Pradaria de Hyrule e Necluda Ocidental."
+  ],
+  "obtaining": [
+    "Colher ao pé das árvores. Os dados estruturados não listam lojas que vendam o cogumelo cru; a versão tostada é vendida na Protein Palace, na Cidade Goron."
+  ],
+  "uses": [
+    "Cura rápida de meio coração.",
+    "Receitas de cogumelo: Espetinho de cogumelos, Espetinhos fartos de cogumelo (4 cogumelos diferentes), Cogumelos grelhados no sal, Cogumelos glaceados, Cogumelos salteados aromáticos, Risoto de cogumelos, Omelete de cogumelos, Bolinhos de arroz com cogumelos, Creme de cogumelos, Cogumelos no vapor, Mix de frutas e cogumelos e os espetinhos com peixe ou carne.",
+    "Ingrediente do corante vermelho na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Hylian Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimado pelo fogo, vira Cogumelo hyliano tostado, que recupera mais corações que o cru.",
+      "side_effects": ["As fontes divergem sobre a cura da versão tostada: as páginas do cogumelo e do Cogumelo hyliano tostado falam em 3/4 de coração; a tabela de comidas assadas, em 1,5 coração."],
+      "produces": ["botw_food_toasty_hylian_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Toasty Hylian Shroom", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Cogumelo hyliano tostado.",
+      "produces": ["botw_food_toasty_hylian_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Toasty Hylian Shroom"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_hylian_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Hylian Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Vale como \"qualquer cogumelo\" em todas as receitas de cogumelo. Sem efeito próprio, só acrescenta cura e um pouco de duração a pratos com efeito.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Mushroom", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "jogo"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias; o tostado vale o mesmo.",
+      "sources": ["zw", "zw:Toasty Hylian Shroom"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Comida da Cidade Goron",
+      "text": "A Protein Palace, de Aji, na Cidade Goron, vende Cogumelos hylianos já tostados por 12 rupias — quatro vezes o valor de venda do cogumelo.",
+      "sources": ["zw:Toasty Hylian Shroom", "zw:Material"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Isca de pesca",
+      "text": "O infobox do Zelda Wiki lista o Cogumelo hyliano como isca para Robalo hyruliano e Carpa tricolor, mas o texto da página não explica como usá-lo para isso.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para Espetinhos fartos de cogumelo, combine o Cogumelo hyliano com três outros cogumelos diferentes."
+  ],
+  "limitations": [
+    "Não tem efeito especial; cura pouco."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_hylian_shroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_food_mushroom_skewer", "relation": "Receita de cogumelo" },
+    { "id": "botw_food_copious_mushroom_skewers", "relation": "Exige 4 cogumelos diferentes" },
+    { "id": "botw_food_mushroom_risotto", "relation": "Receita de cogumelo" },
+    { "id": "botw_food_salt_grilled_mushrooms", "relation": "Receita de cogumelo" },
+    { "id": "botw_creature_hyrule_bass", "relation": "Citado como peixe atraído pelo cogumelo" },
+    { "id": "botw_creature_sanke_carp", "relation": "Citada como peixe atraído pelo cogumelo" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante vermelho" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "a_verificar"
+}

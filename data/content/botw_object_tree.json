@@ -1,0 +1,141 @@
+{
+  "id": "botw_object_tree",
+  "summary": "Árvores finas e médias podem ser derrubadas com lâminas, Bombas remotas, barris explosivos ou raios; o tronco vira ponte, jangada ou Madeira. Macieiras e coqueiros dão frutas; as grossas guardam bolotas, nozes e ninhos.",
+  "description": "As árvores de Hyrule variam de espessura, e isso define o que se pode fazer com elas. As finas e médias são derrubadas por golpes de arma afiada (machados são os mais eficientes), pela explosão de uma Bomba remota ou de um Barril explosivo, ou por um raio. Ao cair, a árvore pode soltar Bolotas, Folhas Korok ou Galhos, e vira um tronco que rola, serve de ponte ou jangada improvisada, pode ser congelado com Estátis ou ser golpeado e explodido até se partir em Madeira. As grossas não podem ser derrubadas.\n\nÁrvores frutíferas têm suas próprias recompensas: macieiras dão Maçãs e coqueiros dão Cocos, que podem ser colhidos escalando a árvore, derrubados com flechas ou recolhidos depois de derrubá-la. As árvores grossas costumam ter Bolotas ou Nozes e ninhos com Ovos na copa; algumas guardam pedras que escondem Koroks, e certas árvores grandes perto da Grande Floresta de Hyrule têm cavidades em forma de rosto, onde às vezes há baús e outros itens. Qualquer árvore também serve de mirante para observar a paisagem com a luneta da Tabuleta Sheikah.",
+  "locations": [
+    "Por toda Hyrule; árvores grandes com cavidades em forma de rosto aparecem sobretudo perto da Grande Floresta de Hyrule.",
+    "Coqueiros e macieiras nas regiões onde essas frutas crescem."
+  ],
+  "obtaining": [
+    "Objeto do cenário; a Madeira é obtida golpeando ou explodindo o tronco de uma árvore derrubada."
+  ],
+  "uses": [
+    "Obter Madeira para fogueiras e para missões como \"Hylian Homeowner\" e \"From the Ground Up\".",
+    "Criar pontes ou jangadas com o tronco derrubado.",
+    "Colher Maçãs, Cocos, Bolotas, Nozes e Ovos.",
+    "Subir na copa para observar a região com a luneta."
+  ],
+  "effects": [
+    "Nenhum efeito próprio; derrubada, rende tronco, Madeira e às vezes Bolotas, Folhas Korok ou Galhos."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes de arma afiada de uma ou duas mãos derrubam árvores finas e médias; machados são os mais eficientes. A árvore cai para o lado oposto ao de Link.",
+      "side_effects": [
+        "Armas contundentes não cortam árvores nem gastam durabilidade ao golpeá-las; o Racha-Rocha, apesar de descrito como afiado, também não corta.",
+        "Árvores grossas não podem ser derrubadas."
+      ],
+      "applications": ["Virar o corpo para onde se quer que o tronco caia, como ensina o Velho no Planalto."],
+      "produces": ["botw_material_acorn", "botw_weapon_korok_leaf", "botw_weapon_tree_branch"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Woodcutting", "zw:Durability", "zw:Boulder Breaker"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Árvores finas e médias no raio de uma Bomba remota ou de um Barril explosivo são derrubadas; o tronco caído também pode ser explodido para virar Madeira.",
+      "produces": ["botw_material_wood"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Wood"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Um raio pode derrubar árvores finas e médias.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas derrubam Maçãs e Cocos das árvores frutíferas.",
+      "produces": ["botw_material_apple", "botw_material_palm_fruit"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "O tronco de uma árvore derrubada pode ser suspenso com Estátis.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "A página de Fogo do Zelda Wiki inclui qualquer madeira ou vegetação entre o que é inflamável e espalha o fogo; as fontes não detalham o que sobra de uma árvore queimada.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "O tronco derrubado pode servir de jangada improvisada.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Monstros podem derrubar árvores, embora não tentem fazê-lo de propósito; Rinox e o Stalnox arrancam árvores para atirá-las em Link, e Naydra possuída pela Malícia derruba as árvores no caminho ao sobrevoar o Monte Lanayru.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hinox", "zw:Stalnox"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Árvores e troncos não são metálicos; Magnétis não os afeta.",
+      "sources": ["zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Obliterador como machado",
+      "text": "Totalmente carregado, o Obliterador derruba uma árvore com um golpe; descarregado, precisa de 40 golpes para derrubá-la e de 12 para transformar o tronco em Madeira.",
+      "sources": ["zw:One-Hit Obliterator"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O machado do Velho",
+      "text": "Antes de Link concluir os quatro santuários do Planalto, o Velho corta um cedro perto da cabana para fazer lenha. Ele ensina que o segredo é virar o quadril para onde se quer que a árvore caia e, se Link tiver um Machado de lenhador, pede que ele continue o trabalho.",
+      "sources": ["zw:Woodcutting", "zw:Old Man"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Troncos de coqueiro",
+      "text": "Coqueiros derrubados formam troncos próprios (Palm-Tree Logs), que também se partem em Madeira quando golpeados.",
+      "sources": ["zw:Woodcutting"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rostos na madeira",
+      "text": "Algumas árvores grandes perto da Grande Floresta de Hyrule têm cavidades que lembram rostos; baús do tesouro e outros itens às vezes ficam escondidos dentro delas, como o baú da Máscara Korok na Floresta Perdida.",
+      "sources": ["zw", "zw:EX Strange Mask Rumors"]
+    }
+  ],
+  "advanced_uses": [
+    "Derrubar uma árvore na direção de um abismo ou rio estreito para criar uma ponte.",
+    "Explodir uma árvore e o tronco com Bombas remotas para obter Madeira sem gastar armas."
+  ],
+  "limitations": [
+    "Árvores grossas não podem ser derrubadas.",
+    "Armas contundentes não cortam árvores."
+  ],
+  "related": [
+    { "id": "botw_material_wood", "relation": "Obtida do tronco de árvores derrubadas" },
+    { "id": "botw_material_apple", "relation": "Fruto das macieiras" },
+    { "id": "botw_material_palm_fruit", "relation": "Fruto dos coqueiros" },
+    { "id": "botw_material_acorn", "relation": "Cai de árvores derrubadas ou fica na copa das grossas" },
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Encontrada na copa de árvores grossas" },
+    { "id": "botw_material_bird_egg", "relation": "Fica nos ninhos das árvores grossas" },
+    { "id": "botw_weapon_korok_leaf", "relation": "Pode cair de árvores derrubadas" },
+    { "id": "botw_weapon_woodcutters_axe", "relation": "Ferramenta ideal para cortar árvores" },
+    { "id": "botw_rune_remote_bomb", "relation": "Derruba árvores finas e médias" },
+    { "id": "botw_monster_hinox", "relation": "Arranca árvores para atirar em Link" }
+  ],
+  "capabilities": ["inflamavel"],
+  "verification_status": "verificado"
+}

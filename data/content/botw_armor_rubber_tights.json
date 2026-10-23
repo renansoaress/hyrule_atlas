@@ -1,0 +1,174 @@
+{
+  "id": "botw_armor_rubber_tights",
+  "summary": "Meia-calça de \"borracha\" resistente a eletricidade, guardada no Santuário Qukah Nata, no tempestuoso Lago Calora. Reduz choques e completa o Conjunto de borracha.",
+  "description": "A Meia-calça de borracha está num baú do Santuário Qukah Nata, no Lago Calora, em Necluda Ocidental. O santuário fica escondido dentro de um grande monte de pedra até a Missão de santuário \"A Song of Storms\": Kass canta sobre um herói que chama um raio do céu, e Link precisa atrair um raio para o monte com uma arma de metal. Depois de obtida, Granté a vende por 4.000 rupias na Vila de Nício (Tarrey Town). Segundo a descrição, é feita de \"borracha\", tecnologia antiga perdida.\n\nDá um nível de Resistência a choques (−33%); com as outras duas peças de borracha, o dano elétrico cai a zero e Link não solta mais a arma ao levar choque. Com as três em ★★, o conjunto ganha a Imunidade a choques, que protege também de raios. A defesa vai de 3 a 20, com as mesmas melhorias da armadura (Gelecas elétricas, Frutas isolantes, Aterramelos, Caudas de Lagalfos elétrico e 10 Topázios). Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Qukah Nata, no Lago Calora, em Necluda Ocidental.",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Resolver a Missão de santuário \"A Song of Storms\" (atrair um raio para o monte do Lago Calora) e abrir o baú do Santuário Qukah Nata.",
+    "Recomprar de Granté por 4.000 rupias depois de obtê-la."
+  ],
+  "uses": [
+    "Reduzir dano elétrico.",
+    "Completar o Conjunto de borracha."
+  ],
+  "effects": [
+    "Resistência a choques, nível 1 (−33%).",
+    "Bônus de conjunto (três peças em ★★): Imunidade a choques."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência a choques. Com o Elmo de borracha, a Armadura de borracha e a Meia-calça de borracha vestidos, todos em ★★, ativa o bônus Imunidade a choques (Unshockable).",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "sem melhorias",
+      "status": "confirmado",
+      "result": "Cada nível de Resistência a choques reduz o dano elétrico: −33% com uma peça, −66% com duas e −100% com as três. No nível 3, Link também deixa de soltar o equipamento que está segurando ao levar choque.",
+      "applications": [
+        "Lutar contra Lagalfos elétricos, Feitiçanos elétricos e Morcis elétricos sem perder a arma."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "O bônus Imunidade a choques impede qualquer dano de eletricidade e anula os efeitos negativos do choque, como ser arremessado ou desarmado.",
+      "conditions": [
+        "As três peças de borracha equipadas, todas em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "raio",
+      "variant": "sem o bônus de conjunto",
+      "status": "sem_efeito",
+      "result": "A peça não atrai raios (só armas, arcos e escudos metálicos fazem isso), mas a Resistência a choques também não reduz o dano da explosão de um raio que atinja Link.",
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "Com a Imunidade a choques, raios não causam dano a Link nem o derrubam ou desarmam.",
+      "conditions": [
+        "As três peças de borracha em pelo menos ★★."
+      ],
+      "applications": [
+        "Lutar com armas metálicas durante tempestades sem medo do raio que elas atraem."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Um raio para achar a meia-calça",
+      "text": "Para revelar o Santuário Qukah Nata, Link precisa fazer um raio cair no monte do Lago Calora usando uma arma metálica — justamente o tipo de perigo contra o qual a peça protege quando o conjunto está completo em ★★.",
+      "sources": [
+        "zw:A Song of Storms",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Chegar perto de Farosh",
+      "text": "O dragão Farosh fere quem se aproxima com a eletricidade que envolve seu corpo. O Conjunto de borracha completo em ★★ (ou o Elmo do trovão) evita esse dano, o que facilita colher as partes que ele solta ao ser atingido por flechas.",
+      "sources": [
+        "zw:Farosh"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em tempestades, o conjunto completo em ★★ permite usar armas metálicas à vontade: o raio que elas atraem não causa dano."
+  ],
+  "limitations": [
+    "Sem o bônus de conjunto, não reduz o dano de raios."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_rubber_armor_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_rubber_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_rubber_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_material_yellow_chuchu_jelly",
+      "relation": "Material das duas primeiras melhorias"
+    },
+    {
+      "id": "botw_material_voltfruit",
+      "relation": "Material do 2º nível"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Tempestade constante do Lago Calora até o santuário surgir"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_choque"
+  ],
+  "verification_status": "verificado"
+}

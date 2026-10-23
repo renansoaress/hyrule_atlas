@@ -1,0 +1,99 @@
+{
+  "id": "botw_food_steamed_fruit",
+  "summary": "Frutas quase maduras cozidas no vapor em folhas aromáticas: uma fruta e um legume, erva ou flor. Prato regional sem versão de Recuperação de vigor.",
+  "description": "As Frutas no vapor juntam uma fruta e um legume, erva ou flor; o inventário fala de um prato regional, de frutas quase maduras cozidas no vapor dentro de folhas perfumadas. A versão comum usa Capim hyruliano com Maçã, Coco ou Framboesa, ou ingredientes de efeitos que se anulam. As variantes combinam fruta e planta: Durião nutritivo ou Rabanetes nutritivos (Corações extras), Cenoura tenaz (Vigor extra), Grãos de lótus-fugaz, Cenoura veloz ou Violeta veloz (Velocidade aumentada), Pimenta de fogo ou Erva geleira (Resistência ao frio), Fruta isolante ou Erva relampagueira (Resistência a choques), Protechofra ou Bananas valentes (Ataque aumentado), Abóbora robusta ou Amaranto blindado (Defesa aumentada), Beladona azul ou Princesa plácida (Furtividade aumentada) e Melancia oásica ou Erva fogueira (Resistência ao calor).\n\nÉ o único dos pratos no vapor sem versão de Recuperação de vigor na lista da fonte, e aceita a Abóbora robusta, que a Carne no vapor recusa. Na ordem do jogo, é o último dos pratos no vapor: carne, peixe ou cogumelo junto da planta levam a Carne no vapor, Peixe no vapor ou Cogumelos no vapor, e, pela tabela de prioridades, dois tipos de fruta formam Compota de frutas e dois tipos de planta, Fritada de ervas.",
+  "obtaining": [
+    "Cozinhar numa Panela uma fruta e um legume, erva ou flor (um tipo de cada), com até três ingredientes extras."
+  ],
+  "uses": [
+    "Combinar fruta e planta do mesmo efeito para efeitos mais fortes.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pela fruta e pela planta: Corações extras, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito comum à fruta e à planta usadas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne, peixe, cogumelo ou segundo tipo",
+      "status": "confirmado",
+      "result": "Carne, peixe ou cogumelo com a planta formam Carne no vapor, Peixe no vapor ou Cogumelos no vapor; dois tipos de fruta formam Compota de frutas, e dois tipos de planta, Fritada de ervas.",
+      "produces": [
+        "botw_food_steamed_meat",
+        "botw_food_steamed_fish",
+        "botw_food_steamed_mushrooms",
+        "botw_food_simmered_fruit",
+        "botw_food_fried_wild_greens"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pimenta é fruta",
+      "text": "Na culinária de BOTW a Pimenta de fogo é classificada como fruta, por isso pimenta com Erva geleira forma Frutas no vapor com Resistência ao frio — dois ingredientes picantes diferentes.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Um tipo de fruta e um tipo de planta; mais tipos mudam a receita.",
+    "Sem versão de Recuperação de vigor."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_food_simmered_fruit",
+      "relation": "Prato só de frutas"
+    },
+    {
+      "id": "botw_food_steamed_meat",
+      "relation": "Mesmo preparo com carne"
+    },
+    {
+      "id": "botw_food_steamed_fish",
+      "relation": "Mesmo preparo com peixe"
+    },
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Aceita aqui para a versão com Defesa aumentada"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

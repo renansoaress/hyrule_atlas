@@ -1,0 +1,98 @@
+{
+  "id": "botw_food_clam_chowder",
+  "summary": "Sopa de Caramujo nutritivo com Leite fresco, Trigo de Tabantha e Manteiga de cabra. Já sai nutritiva (cura tudo e dá Corações extras); a versão comum exige um quinto ingrediente que anule o efeito.",
+  "description": "O Creme de mariscos (Clam Chowder) é feito com Leite fresco, Trigo de Tabantha, Manteiga de cabra e um Caramujo nutritivo. Como o caramujo carrega o efeito nutritivo, a receita padrão já sai na versão nutritiva: restaura todos os corações e concede Corações extras temporários. A descrição do jogo resume a ideia: o valor nutritivo do caramujo se junta à manteiga e ao leite numa sopa encorpada.\n\nO Caramujo nutritivo é insubstituível em apenas dois pratos: este e a Paella de frutos do mar. No Creme de mariscos, os outros três ingredientes são de loja e não têm efeito, então o caramujo decide sozinho o resultado. A versão comum, sem efeito, só aparece quando um quinto ingrediente de efeito contrário entra no único espaço livre da panela e anula o efeito nutritivo; ela recupera alguns corações.",
+  "locations": [
+    "Caramujo nutritivo: nas margens do Mar de Lanayru e do Mar de Necluda.",
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Leite fresco + Trigo de Tabantha + Manteiga de cabra + Caramujo nutritivo."
+  ],
+  "uses": [
+    "Cura completa com Corações extras usando um único ingrediente com efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — receita padrão, sem ingrediente extra.",
+    "Versão comum: só com um quinto ingrediente de efeito contrário; recupera alguns corações, sem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Na receita padrão, restaura todos os corações e concede Corações extras temporários.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão nutritiva"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um quinto ingrediente de efeito contrário ao do caramujo, perde o efeito e apenas recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Nutritivo por padrão",
+      "text": "O Caramujo nutritivo dá Corações extras quando cozido, e esse efeito passa direto para a sopa. É o inverso da maioria dos pratos: aqui é a versão sem efeito que precisa de um ingrediente a mais.",
+      "sources": [
+        "zw",
+        "zw:Hearty Blueshell Snail"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Um só Caramujo nutritivo já rende uma sopa que enche todos os corações e acrescenta Corações extras — útil antes de lutas difíceis."
+  ],
+  "limitations": [
+    "Não existe outra versão com efeito: o Zelda Wiki só cita a nutritiva.",
+    "As fontes não informam quantos corações extras a sopa concede nem o preço de venda."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Ingrediente que dá o efeito nutritivo"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_seafood_paella",
+      "relation": "O outro prato que exige Caramujo nutritivo"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

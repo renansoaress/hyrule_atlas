@@ -1,0 +1,156 @@
+{
+  "id": "botw_monster_naydra",
+  "summary": "Dragão do gelo que serve à Fonte da Sabedoria. Começa coberto de Malícia no topo do Monte Lanayru e precisa ser purificado com flechas; depois vaga por Lanayru e solta Escama, Garra e Lascas ao ser atingido.",
+  "description": "Naydra é um espírito do gelo que tomou a forma de um dragão gigante. O compendium conta que vive na região de Lanayru e serve à Fonte da Sabedoria desde tempos antigos; o gelo que cobre seu corpo torna perigoso chegar perto, mas Naydra não deseja mal às pessoas. Como Dinraal e Farosh, é invencível e não ataca Link, porém a aura gelada que o envolve congela quem se aproxima demais. O Conjunto de pluma nevada completo, melhorado duas vezes, ou o Elmo de Zant impedem o congelamento.\n\nAo contrário dos outros dragões, Naydra não vaga por Hyrule no começo. Na missão de santuário \"The Spring of Wisdom\", Link encontra no cume do Monte Lanayru a Naydra Malícia (Malice Naydra), enroscada na Fonte da Sabedoria e coberta de olhos brilhantes de Malícia. Hylia, falando pela estátua da Fonte, explica que o dragão foi atacado por Ganon, a Calamidade e pede que Link destrua os olhos. O primeiro tiro faz Naydra voar ao redor do Monte Lanayru, o segundo a faz descer a montanha, e o terceiro e o quarto, disparados na perseguição, destroem a Malícia. Purificada, Naydra volta à Fonte, Hylia pede que Link a acerte com uma flecha para obter uma Escama e, ao oferecê-la à Fonte, abre-se o Santuário Jitan Sa'mi.\n\nDepois disso, Naydra passa a sobrevoar Lanayru e Necluda Oriental, aparecendo acima da Fonte da Sabedoria às 5h e às 17h todos os dias — mas não se Link estiver na Fonte nesses horários. Flechas em pontos diferentes rendem partes diferentes: chifre → Lasca do chifre de Naydra, parte de baixo da boca → Lasca da presa, garras → Garra, corpo → Escama. As partes fazem o corante azul-claro na Tinturaria Kochi, melhoram armaduras e, no caso do chifre, rendem pratos com efeito de 30 minutos.",
+  "locations": [
+    "Antes da purificação: cume do Monte Lanayru, na Fonte da Sabedoria (como Naydra Malícia).",
+    "Depois: rotas por Lanayru e Necluda Oriental, como Monte Lanayru, Lanayru Road (portões leste e oeste), Rabia Plain, Samasa Plain, Lanayru Heights, Trotter's Downfall, Lanayru Promenade e Lanayru Bay.",
+    "Aparece sobre a Fonte da Sabedoria às 5h e às 17h, exceto se Link já estiver lá."
+  ],
+  "obtaining": [
+    "Não pode ser derrotado; as partes são obtidas atirando nele com o arco: Escama de Naydra (corpo), Garra de Naydra (garras), Lasca da presa de Naydra (parte de baixo da boca) e Lasca do chifre de Naydra (chifre).",
+    "Uma Escama de Naydra também está num baú sob uma laje acima da entrada norte da biblioteca do Castelo de Hyrule."
+  ],
+  "uses": [
+    "Missão de santuário \"The Spring of Wisdom\": purificar Naydra e oferecer a Escama abre o Santuário Jitan Sa'mi.",
+    "Fonte das quatro partes de Naydra para melhorias de armadura, corante azul-claro e culinária."
+  ],
+  "effects": [
+    "Aura gelada que congela Link de perto; o corpo solta orbes de gelo."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Não ataca, mas a aura gelada congela Link se ele chegar perto demais. Naydra também não aparece se Link estiver muito perto do ponto onde ela surge.",
+      "conditions": ["Conjunto de pluma nevada completo melhorado duas vezes ou Elmo de Zant evitam o congelamento."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dragon", "comp"]
+    },
+    {
+      "action": "flecha",
+      "variant": "Naydra Malícia",
+      "status": "confirmado",
+      "result": "Coberta de Malícia, Naydra só é purificada com flechas nos olhos brilhantes: quatro acertos, com perseguição montanha abaixo entre o segundo e o terceiro.",
+      "kind": "mecanica",
+      "sources": ["zw:Malice Naydra", "zw:Spring of Wisdom"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Depois de purificada, cada acerto solta uma parte que cai brilhando: chifre → Lasca do chifre, parte de baixo da boca → Lasca da presa, garras → Garra, corpo → Escama. O primeiro acerto sempre dá uma Escama.",
+      "produces": ["botw_material_naydras_scale", "botw_material_naydras_claw", "botw_material_shard_of_naydras_fang", "botw_material_shard_of_naydras_horn"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Naydra's Scale", "zw:Naydra's Claw", "zw:Shard of Naydra's Fang", "zw:Shard of Naydra's Horn"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Os dragões são invencíveis; as fontes não descrevem golpes corpo a corpo em Naydra."
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "É ela a fonte de gelo: a aura do corpo congela quem se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dragon"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "A Fonte da Sabedoria, onde ela surge, tem clima congelante: sem dois níveis de Resistência ao frio, Link sofre dano lá.",
+      "kind": "mecanica",
+      "sources": ["zw:Spring of Wisdom"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito do fogo sobre Naydra."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ela."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre Naydra e água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões sobre ela."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas nela."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Estátis em Naydra."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre o dragão.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Circula o pico do Monte Lanayru e a Fonte da Sabedoria em certos horários e desce pelas estradas de Lanayru, sumindo nas nuvens a leste do monte à noite.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Spring of Wisdom"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Música corrompida",
+      "text": "Durante a perseguição a Naydra Malícia toca uma versão corrompida do tema do dragão, intitulada \"Naydra, Possessed\".",
+      "sources": ["zw:Malice Naydra"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Horários fixos na Fonte",
+      "text": "Depois de purificada, Naydra aparece sobre a Fonte da Sabedoria às 5h e às 17h todos os dias. Se Link já estiver na Fonte nesses horários, ela não aparece — é melhor esperar um pouco abaixo.",
+      "sources": ["zw:Spring of Wisdom"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Fonte que Zelda não pôde visitar antes",
+      "text": "A Fonte da Sabedoria foi a última que Zelda visitou, porque menores de 17 anos não eram considerados sábios o bastante para subir o Monte Lanayru. Minutos depois da oração dela ali, Ganon, a Calamidade voltou.",
+      "sources": ["zw:Spring of Wisdom", "zw:Calamity Ganon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Drops de um dragão morto",
+      "text": "Os arquivos do jogo guardam dados não usados com o que Naydra deixaria se fosse morta.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar perto (mas não dentro) da Fonte da Sabedoria às 5h ou às 17h, com proteção contra o frio, para atirar no chifre."
+  ],
+  "limitations": [
+    "Só começa a vagar depois da purificação na missão \"The Spring of Wisdom\".",
+    "Sem proteção, a aura dela congela Link."
+  ],
+  "related": [
+    { "id": "botw_material_naydras_scale", "relation": "Parte obtida ao acertar o corpo" },
+    { "id": "botw_material_naydras_claw", "relation": "Parte obtida ao acertar as garras" },
+    { "id": "botw_material_shard_of_naydras_fang", "relation": "Parte obtida ao acertar a boca" },
+    { "id": "botw_material_shard_of_naydras_horn", "relation": "Parte obtida ao acertar o chifre" },
+    { "id": "botw_monster_dinraal", "relation": "Dragão do fogo" },
+    { "id": "botw_monster_farosh", "relation": "Dragão do raio" },
+    { "id": "botw_armorset_snowquill_set", "relation": "Melhorado duas vezes, evita o congelamento" },
+    { "id": "botw_armor_zants_helmet", "relation": "Também evita o congelamento" },
+    { "id": "botw_monster_calamity_ganon", "relation": "Corrompeu Naydra com Malícia" },
+    { "id": "botw_mechanic_dye", "relation": "As partes fazem o corante azul-claro" }
+  ],
+  "capabilities": ["gera_gelo", "habilidade_especial"],
+  "verification_status": "verificado"
+}

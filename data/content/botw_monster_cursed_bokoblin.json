@@ -1,0 +1,159 @@
+{
+  "id": "botw_monster_cursed_bokoblin",
+  "summary": "Crânio de Koboblin reanimado pela Malícia, cuspido sem parar por Poças de Malícia com boca nas Feras Divinas e no Castelo de Hyrule. Morre com um golpe; só deixa de surgir quando o Olho brilhante é destruído.",
+  "description": "O Koboblin amaldiçoado é apenas uma cabeça: o crânio de um Koboblin que a Malícia trouxe parcialmente de volta, sem nada da inteligência que o dono tinha e com um único impulso, atacar o que chegar perto. Flutua e investe contra Link, parecido com as Bolhas de outros jogos da série.\n\nNão surge sozinho. As Poças de Malícia que têm uma boca soltam Koboblins, Moblins e Lagalfos amaldiçoados quando o Olho brilhante ligado a elas avista Link, e continuam soltando enquanto o olho existir. Por isso a solução não é lutar contra os crânios, e sim destruir o olho, com uma flecha ou com a explosão de uma Bomba remota próxima — a poça de Malícia ligada a ele também desaparece.\n\nAparece somente dentro das quatro Feras Divinas e no Castelo de Hyrule. Tem 1 ponto de vida e não deixa nada: os arquivos do jogo têm uma tabela de espólio sem uso, e ela está vazia.",
+  "locations": [
+    "Fera Divina Vah Ruta, Fera Divina Vah Rudania, Fera Divina Vah Medoh e Fera Divina Vah Naboris.",
+    "Castelo de Hyrule.",
+    "Sempre saindo de Poças de Malícia com boca, vigiadas por um Olho brilhante."
+  ],
+  "obtaining": [
+    "Não deixa materiais: a tabela de espólio presente nos arquivos do jogo não contém nenhum item."
+  ],
+  "uses": [
+    "Registro no compendium (entrada nº 156); é preciso fotografá-lo nas Feras Divinas ou no Castelo de Hyrule."
+  ],
+  "effects": [
+    "Investidas diretas contra Link; o contato com a Poça de Malícia de onde saem também causa dano."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Com 1 ponto de vida, qualquer golpe o destrói — mas outro sai da poça logo em seguida enquanto o Olho brilhante existir.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cursed Moblin"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "A melhor flecha é a que acerta o Olho brilhante: destruí-lo interrompe o surgimento dos crânios e faz a Poça de Malícia sumir.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Glowing Eyeball"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo nos crânios amaldiçoados."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo nos crânios amaldiçoados."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de eletricidade nos crânios amaldiçoados."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não tratam de água em relação a esse monstro."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões sobre o crânio em si."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Detonar uma Bomba remota perto do Olho brilhante o destrói, encerrando o surgimento de crânios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Glowing Eyeball"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Inimigos só são paralisados pela Estátis+, e por pouco tempo; como o crânio cai com um golpe, raramente compensa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos; o crânio não é um deles.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Depende da Poça de Malícia com boca: quando o Olho brilhante ligado a ela vê Link, a boca começa a cuspir crânios amaldiçoados sem parar.",
+      "applications": [
+        "Localizar e destruir o olho antes de avançar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Glowing Eyeball",
+        "zw:Pool of Malice"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Espólio vazio nos arquivos",
+      "text": "Nos arquivos internos de BOTW existe uma tabela de espólio não utilizada para o Koboblin amaldiçoado — e ela não contém nenhum material.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Sem nada do antigo dono",
+      "text": "O compendium o descreve como uma coisa digna de pena: um crânio sem qualquer resquício da inteligência do Koboblin original, que existe só para atacar quem se aproxima. Os Lagalfos amaldiçoados são mais rápidos e os Moblins amaldiçoados mais resistentes que ele.",
+      "sources": [
+        "comp",
+        "zw:Cursed Lizalfos",
+        "zw:Cursed Moblin"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ignorar os crânios e mirar direto no Olho brilhante com uma flecha a distância, de preferência antes que ele avise Link."
+  ],
+  "limitations": [
+    "Não deixa materiais nem armas.",
+    "Só existe dentro das Feras Divinas e do Castelo de Hyrule."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_cursed_moblin",
+      "relation": "Outro crânio amaldiçoado das mesmas poças"
+    },
+    {
+      "id": "botw_monster_cursed_lizalfos",
+      "relation": "Outro crânio amaldiçoado das mesmas poças"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Espécie de origem"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Outra forma de Koboblin morto-vivo"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Destrói o Olho brilhante que o gera"
+    }
+  ],
+  "capabilities": [
+    "vence_rapido"
+  ],
+  "verification_status": "parcial"
+}

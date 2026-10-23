@@ -1,0 +1,169 @@
+{
+  "id": "botw_material_hinox_guts",
+  "summary": "Órgão gigante, fedorento e trêmulo de função desconhecida, deixado pelos três tipos de Rinox. Acrescenta 3:10 aos elixires e entra em três conjuntos de armadura.",
+  "description": "As Vísceras de Rinox são, nas palavras do inventário, um órgão gigante e malcheiroso de função desconhecida, que parece tremer quando observado de perto. Caem dos três tipos de Rinox (comum, azul e preto), mas não dos Stalnox. Cozidas com bichos, acrescentam 3:10 à duração do elixir, e o jogo comenta que \"alguns dizem que têm outros usos\".\n\nEsses usos estão nas Grandes Fadas: 2 vísceras por peça no 3º nível do Conjunto da Deidade Feroz e do Conjunto do soldado, e 2 por peça no 4º nível do Conjunto antichamas, num total de 18. Na Tinturaria Kochi, entram no corante amarelo.",
+  "locations": [
+    "Clareiras e florestas onde os Rinox dormem."
+  ],
+  "obtaining": [
+    "Derrotar um Rinox comum, azul ou preto.",
+    "Os Rinox voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Melhoria de armadura: Conjunto da Deidade Feroz (2 por peça no 3º nível), Conjunto do soldado (2 por peça no 3º) e Conjunto antichamas (2 por peça no 4º) — 18 no total.",
+    "Elixires: cozidas com um bicho, acrescentam 3:10 à duração.",
+    "Corante amarelo na Tinturaria Kochi.",
+    "Venda: 80 rupias, ou 40 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não têm efeito culinário próprio; nos elixires, só prolongam a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar as Vísceras de Rinox no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear as Vísceras de Rinox largadas no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se as Vísceras de Rinox queimam, somem ou se transformam em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar as Vísceras de Rinox numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação das Vísceras de Rinox a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor as Vísceras de Rinox à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se as Vísceras de Rinox flutuam ou afundam quando largadas na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e as Vísceras de Rinox não são de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada às Vísceras de Rinox largadas no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinhas ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 80 rupias em lojas e comerciantes, ou 40 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Kilton e os Rinox",
+      "text": "Depois de derrotar Ganon, a Calamidade, Link pode pedir a Kilton para falar dos monstros gigantes. Ele pede que Link derrote todos os Rinox de Hyrule para analisar o cheiro dos fluidos que ficam em Link e, se isso for feito, entrega a Medalha de honra: Rinox. A pesquisa revela que cada tipo de Rinox tem preferências alimentares diferentes — Curiosamente, a comida assada que cada tipo deixa ao morrer também varia: frutas nos comuns, peixes nos azuis e carnes nos pretos.",
+      "sources": [
+        "zw:Hinox",
+        "zw:Kilton"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Como derrubar um Rinox",
+      "text": "Uma flecha no olho atordoa o Rinox e abre espaço para ataques; depois da metade da vida, ele passa a cobrir o olho. As grevas de madeira dos Rinox azuis queimam com fogo, e as de metal dos Rinox pretos conduzem eletricidade, atordoando-os. Enquanto ele dorme, dá para roubar com furtividade as armas do colar.",
+      "sources": [
+        "zw:Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para o Conjunto antichamas completo, as vísceras de Rinox só entram no 4º nível; a proteção contra o fogo de Dinraal já vem no 2º."
+  ],
+  "limitations": [
+    "Os Stalnox não as deixam.",
+    "Cozidas sem bichos, só produzem Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_hinox",
+      "relation": "Monstro que as deixa"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Também as deixa"
+    },
+    {
+      "id": "botw_monster_black_hinox",
+      "relation": "Também as deixa"
+    },
+    {
+      "id": "botw_armorset_fierce_deity_set",
+      "relation": "Usa 2 por peça no 3º nível"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 2 por peça no 3º nível"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Usa 2 por peça no 4º nível"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_hinox",
+      "relation": "Prêmio de Kilton por derrotar todos os Rinox"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-las sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

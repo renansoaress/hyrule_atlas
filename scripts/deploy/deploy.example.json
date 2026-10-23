@@ -1,0 +1,7 @@
+{
+  "server": "usuario@seu-servidor.com",
+  "port": 22,
+  "webPath": "projects/botw_web",
+  "domain": "botw.seu-dominio.com",
+  "localPort": 5510
+}

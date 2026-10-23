@@ -1,0 +1,157 @@
+{
+  "id": "botw_weapon_golden_claymore",
+  "summary": "Montante Gerudo carregado só pelas melhores espadachins (ataque 28, durabilidade 30). Mais leve do que parece; é a arma de Buliara, guarda do trono de Riju. Metálico.",
+  "description": "O Montante dourado pertence ao Equipamento Gerudo. Segundo o jogo, só as espadachins Gerudo mais talentosas carregam esta espada de duas mãos, que na verdade é bem mais leve do que aparenta e surpreendentemente fácil de manejar. Na Cidade Gerudo, Buliara, a guarda pessoal de Riju, empunha um enquanto vigia o trono.\n\nLink o encontra nas Montanhas Gerudo e nos Cerros de Hyrule, em baús ou nas mãos de inimigos, e ele também pode sair de baús do amiibo de Ganondorf. Uma particularidade dos parâmetros é a durabilidade extra: o bônus de durabilidade dourado vai de +12 a +27, o que pode quase dobrar os 30 usos de base. Por ser metálico, conduz eletricidade, atrai raios, afunda e responde a Magnétis; não queima.",
+  "locations": [
+    "Montanhas Gerudo e Cerros de Hyrule, em baús ou com inimigos.",
+    "Cidade Gerudo: Buliara, guarda de Riju, carrega um enquanto vigia o trono."
+  ],
+  "obtaining": [
+    "Abrir baús ou derrotar inimigos que o empunhem nas Montanhas Gerudo e nos Cerros de Hyrule.",
+    "Chance de surgir num baú ao escanear o amiibo de Ganondorf (Super Smash Bros.) com a runa amiibo.",
+    "Armas carregadas por inimigos reaparecem com a Lua de sangue."
+  ],
+  "uses": [
+    "Montante de duas mãos de ataque médio e boa durabilidade.",
+    "Como espada, corta árvores; por ser de metal, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos, sem escudo; o ataque carregado é o giro contínuo que consome vigor e acaba numa pancada para baixo. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Quebra ao atingir um inimigo quando lançado e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largar o montante.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado em tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Magnétis resolve: ele pode ser puxado do fundo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos das Montanhas Gerudo e dos Cerros de Hyrule podem empunhá-lo; a fonte não especifica quais.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +4 a +8, Durabilidade aumentada de +6 a +11 ou Acerto crítico; no nível dourado (amarelo): Ataque de +9 a +15, Durabilidade de +12 a +27 ou Lançamento longo (×1,5 a ×2). Com Durabilidade +27 o montante chega a 57 usos.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Também chamado de Montante Gerudo",
+      "text": "O Zelda Wiki registra a arma também como Gerudo Claymore, nome alternativo do Montante dourado.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Procure exemplares com Durabilidade aumentada dourada: o montante passa a durar quase o dobro, compensando o ataque mediano."
+  ],
+  "limitations": [
+    "Metálico: perigoso em tempestades.",
+    "Ataque mediano (28) para uma arma de duas mãos de metal."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_gerudo_scimitar",
+      "relation": "Arma de uma mão do Equipamento Gerudo"
+    },
+    {
+      "id": "botw_weapon_gerudo_spear",
+      "relation": "Lança do Equipamento Gerudo"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "O amiibo de Ganondorf pode gerá-lo"
+    },
+    {
+      "id": "botw_weapon_sword_of_the_six_sages",
+      "relation": "Arma rara do mesmo amiibo de Ganondorf"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

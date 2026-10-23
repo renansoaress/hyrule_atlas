@@ -1,0 +1,204 @@
+{
+  "id": "botw_material_ancient_screw",
+  "summary": "Parafuso Sheikah que nunca se desgasta, o material ancestral mais comum. Três fazem Purah criar o Sensor Sheikah+; no Forno ancestral, viram Flechas ancestrais e a Espada serrada ancestral.",
+  "description": "O Parafuso ancestral é uma peça das máquinas antigas dos Sheikah, feita de um material desconhecido: por mais que seja girado, a rosca nunca mostra sinal de desgaste. É o material ancestral mais fácil de conseguir — todos os Guardiões, dos batedores dos santuários aos Guardiões persecutórios, deixam parafusos ao serem destruídos, e também é possível vasculhar Guardiões já destruídos. O caçador de tesouros Teli vende parafusos na estrada entre o Forte Hateno (Fort Hateno) e a Vila Hateno.\n\nTem três destinos principais. No Laboratório de Tecnologia Ancestral de Hateno, Purah troca 3 Parafusos ancestrais pela melhoria Sensor Sheikah+ (missão \"Slated for Upgrades\"). No Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala, junto com rupias, eixos e núcleos, ele vira Flechas ancestrais, a Espada serrada ancestral e a Couraça ancestral. E na Fonte da Grande Fada é pedido no 1º nível do Conjunto ancestral e dos Elmos divinos. Como conta como parte de monstro, também serve para elixires (acrescenta 1:10 de duração), e Kilton o troca por Mon.",
+  "locations": [
+    "Guardiões de Toda Hyrule, inclusive os Guardiões deteriorados e os batedores dos santuários; Guardiões já destruídos podem ser vasculhados.",
+    "Teli, entre o Forte Hateno e a Vila Hateno, em Necluda."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Guardião: batedores (todas as versões), deteriorados, persecutórios, altívagos, torretas e Sentinelas.",
+    "Vasculhar Guardiões já destruídos.",
+    "Comprar de Teli."
+  ],
+  "uses": [
+    "Missão secundária \"Slated for Upgrades\": 3 Parafusos ancestrais para Purah melhorar o Sensor Sheikah para Sensor Sheikah+.",
+    "Forno ancestral (Akkala): 2 parafusos + 1 Eixo ancestral + 1 Flecha + 90 rupias = 1 Flecha ancestral; 6 + 3 eixos + 3 Flechas + 250 rupias = 3 Flechas ancestrais; 15 + 5 eixos + 2 Núcleos ancestrais + 1.000 rupias = Espada serrada ancestral; 5 + 20 Engrenagens + 3 Núcleos + 2.000 rupias = Couraça ancestral.",
+    "Melhorias na Fonte da Grande Fada: 5 por peça no 1º nível do Elmo, da Couraça e das Grevas ancestrais e dos quatro Elmos divinos (35 no total).",
+    "Elixires: cozido com um bicho, acrescenta 1:10 de duração.",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 12 rupias, ou 2 Mon na loja Fang and Bone, de Kilton."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; nos elixires, só prolonga a duração (1:10)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "Purah",
+      "status": "confirmado",
+      "result": "Entregar 3 Parafusos ancestrais a Purah, no Laboratório de Tecnologia Ancestral de Hateno, melhora o Sensor Sheikah para Sensor Sheikah+.",
+      "conditions": [
+        "Missão secundária \"Slated for Upgrades\" ativa (começa durante \"Locked Mementos\")."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Slated for Upgrades"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "Forno ancestral",
+      "status": "confirmado",
+      "result": "Junto com rupias e outros materiais ancestrais, o Forno ancestral de Robbie fabrica Flechas ancestrais, a Espada serrada ancestral e a Couraça ancestral com parafusos.",
+      "conditions": [
+        "Reacender a fornalha do laboratório de Akkala com a Chama azul trazida de Tumlea Heights (missão \"Robbie's Research\")."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ancient Oven",
+        "zw:Akkala Ancient Tech Lab"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem uso especial do parafuso solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um parafuso largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Parafuso ancestral ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um parafuso largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do parafuso ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve se o parafuso conduz ou reage à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Parafuso ancestral afunda ou flutua (apenas a Mola ancestral é descrita como flutuante)."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "O jogo diz que o parafuso é feito de um material desconhecido; as fontes não informam se Magnétis o atrai."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um parafuso largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Conta como parte de monstro de grau baixo: cozido com pelo menos um bicho (inseto, lagarto ou sapo), forma um elixir e acrescenta 1:10 de duração. Não adiciona corações nem força ao efeito. Sem bicho, ou cozido com comida comum, vira Comida duvidosa.",
+      "side_effects": [
+        "A receita de \"carne ancestral\" de Moza (carne com peça de Guardião) sempre resulta em Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Cooking in Breath of the Wild",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 12 rupias aos comerciantes ou trocado por 2 Mon na Fang and Bone, de Kilton.",
+      "sources": [
+        "zw",
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pacote de 5 flechas não usa parafusos",
+      "text": "No Forno ancestral, as ofertas de 1 e de 3 Flechas ancestrais pedem parafusos (2 ou 6) e eixos, mas a de 5 flechas troca os parafusos por 5 Molas ancestrais, além de 5 eixos e 400 rupias.",
+      "sources": [
+        "zw:Ancient Oven"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Peças que nunca gastam",
+      "text": "Todas as peças ancestrais foram feitas pelos Sheikah há 10.000 anos. A do parafuso é a mais curiosa: a rosca continua intacta por mais que seja girada.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Os Guardiões batedores dos santuários de Teste de força também deixam parafusos, o que permite juntar materiais ancestrais sem enfrentar Guardiões persecutórios no mundo aberto."
+  ],
+  "limitations": [
+    "Não pode ser comido nem cozido com comida comum.",
+    "Rende pouco na venda (12 rupias, 2 Mon)."
+  ],
+  "related": [
+    {
+      "id": "botw_rune_sheikah_sensor",
+      "relation": "Melhorado por Purah com 3 parafusos"
+    },
+    {
+      "id": "botw_arrow_ancient_arrow",
+      "relation": "Fabricada no Forno ancestral com parafusos e eixos"
+    },
+    {
+      "id": "botw_weapon_ancient_bladesaw",
+      "relation": "Pede 15 parafusos no Forno ancestral"
+    },
+    {
+      "id": "botw_armor_ancient_cuirass",
+      "relation": "Pede 5 parafusos na compra e no 1º nível de melhoria"
+    },
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Conjunto melhorado com materiais ancestrais"
+    },
+    {
+      "id": "botw_material_ancient_shaft",
+      "relation": "Parceiro do parafuso nas Flechas ancestrais"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Um dos Guardiões que o deixam"
+    },
+    {
+      "id": "botw_monster_guardian_scout_i",
+      "relation": "O batedor mais fraco também o deixa"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

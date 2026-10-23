@@ -1,0 +1,147 @@
+{
+  "id": "botw_armor_trousers_of_the_wild",
+  "summary": "Calças feitas para o herói que viaja pelas terras selvagens, recompensa por completar os 120 santuários. Ficam no Templo Esquecido; chegam a 28 de defesa e fortalecem o raio da Espada Mestra.",
+  "description": "As Calças selvagens são parte do presente da Missão secundária \"A Gift from the Monks\": ao completar os 120 santuários originais (os 16 do pacote The Champions' Ballad não contam), o último monge manda Link ao Templo Esquecido (Forgotten Temple), onde três baús de pedra surgem diante da estátua da deusa — o da direita guarda as calças. Com o Gorro selvagem e a Túnica selvagem, formam o Conjunto do herói selvagem. A descrição diz que foram feitas para um herói que viaja pela natureza e que são as calças mais confortáveis que Link já usou.\n\nNão têm efeito individual. Com as três peças em ★★, o conjunto ativa o Raio da Espada Mestra aumentado (+50%). A defesa vai de 4 a 28, das mais altas do jogo; as melhorias pedem 10 Bolotas e Escamas de Dinraal, depois Mel de abelha e Garras de Dinraal, Escaravelhos vibrantes e Lascas da presa de Dinraal e, no último nível, 2 Lascas do chifre de Dinraal e um Fragmento de estrela. Podem ser tingidas na Tinturaria Kochi; a tabela de dados do Zelda Wiki as marca como não vendáveis.",
+  "locations": [
+    "Templo Esquecido (Forgotten Temple): baú de pedra da direita, diante da estátua da deusa."
+  ],
+  "obtaining": [
+    "Missão secundária \"A Gift from the Monks\": completar os 120 santuários originais e abrir o baú no Templo Esquecido."
+  ],
+  "uses": [
+    "Defesa alta no fim do jogo.",
+    "Completar o Conjunto do herói selvagem para o bônus da Espada Mestra."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto (três peças em ★★): Raio da Espada Mestra aumentado (+50%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só aumenta a defesa. Com o Gorro selvagem, a Túnica selvagem e as Calças selvagens vestidos, todos em ★★, ativa o Raio da Espada Mestra aumentado: o raio da Espada Mestra causa 50% a mais de dano.",
+      "conditions": [
+        "As três peças em pelo menos ★★.",
+        "O raio só sai da Espada Mestra com a vida cheia."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Master Sword",
+        "zw:Of the Wild Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O presente dos monges",
+      "text": "Ao completar o 120º santuário, o último monge entrega \"o mandado do verdadeiro herói\" e manda Link ao Templo Esquecido. Como todos os santuários já estão concluídos, dá para se teletransportar direto ao Santuário Rona Kachta, dentro do templo, onde três baús de pedra aparecem diante da estátua da deusa. Os 16 santuários do pacote The Champions' Ballad não entram na conta.",
+      "sources": [
+        "zw:A Gift from the Monks",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um design herdado",
+      "text": "Segundo o Zelda Wiki, o design do conjunto teria sido passado adiante desde um passado distante, inspirado num herói que usava roupa semelhante.",
+      "sources": [
+        "zw:Of the Wild Set"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mesmo sem usar o bônus, as calças em ★★★★ dão 28 de defesa, empatando com as peças de pernas mais resistentes, como as Grevas do soldado e as Grevas ancestrais."
+  ],
+  "limitations": [
+    "Só ficam disponíveis no fim do jogo, depois dos 120 santuários.",
+    "As melhorias exigem partes de Dinraal e um Fragmento de estrela."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_cap_of_the_wild",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_tunic_of_the_wild",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Arma cujo raio o bônus fortalece"
+    },
+    {
+      "id": "botw_material_dinraals_scale",
+      "relation": "Material do 1º nível de melhoria"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_horn",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_material_acorn",
+      "relation": "Material do 1º nível (10 unidades)"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "botw_food_salt_grilled_mushrooms",
+  "summary": "Cogumelos levemente salgados com Halita e grelhados. O cogumelo define o efeito, mas é o último grelhado no sal da fila: planta, peixe, carne ou trigo na panela mudam a receita.",
+  "description": "Os Cogumelos grelhados no sal levam qualquer cogumelo e Halita; o inventário descreve um prato básico, de cogumelos levemente salgados e grelhados. A variante depende do cogumelo: Trufa nutritiva e Trufona nutritiva (cura total com Corações extras), Energimelo (Recuperação de vigor), Cogumelo tenaz (Vigor extra), Agilimelo (Velocidade aumentada), Flamelo (Resistência ao frio), Aterramelo (Resistência a choques), Ferromelo (Ataque aumentado), Blindamelo (Defesa aumentada), Silencimelo (Furtividade aumentada) e Glacimelo (Resistência ao calor). Cogumelo hyliano, ou dois cogumelos de efeitos diferentes, dão a versão comum.\n\nEste é o último dos grelhados no sal na ordem do jogo, então é fácil \"perder\" a receita: com uma planta junto, o resultado são Ervas grelhadas no sal; com peixe, Peixe grelhado no sal; com carne, um grelhado de carne; e com Trigo de Tabantha, Pão de trigo — sempre com o efeito do cogumelo.",
+  "obtaining": [
+    "Cozinhar numa Panela um cogumelo e Halita, com até três ingredientes extras (planta, peixe, carne ou trigo mudam a receita)."
+  ],
+  "uses": [
+    "Prato de efeito com cogumelos colhidos e sal.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pelo cogumelo: Corações extras, Recuperação de vigor, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do cogumelo usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "planta, peixe, carne ou trigo",
+      "status": "confirmado",
+      "result": "Qualquer um desses ingredientes junto da Halita leva a uma receita testada antes: Ervas grelhadas no sal, Peixe grelhado no sal, grelhados de carne ou Pão de trigo.",
+      "produces": [
+        "botw_food_salt_grilled_greens",
+        "botw_food_salt_grilled_fish",
+        "botw_food_wheat_bread"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da posição na ordem de prioridade dos grelhados no sal, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Planta, peixe, carne ou trigo na panela mudam a receita.",
+    "Cogumelos de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Cogumelos na panela sem sal"
+    },
+    {
+      "id": "botw_food_salt_grilled_greens",
+      "relation": "Grelhado no sal que tem prioridade quando há planta"
+    },
+    {
+      "id": "botw_food_wheat_bread",
+      "relation": "Resultado ao acrescentar trigo"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

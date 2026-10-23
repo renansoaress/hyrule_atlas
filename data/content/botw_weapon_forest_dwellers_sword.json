@@ -1,0 +1,187 @@
+{
+  "id": "botw_weapon_forest_dwellers_sword",
+  "summary": "Espada de madeira que os Koroks fizeram para os hylianos, provavelmente para abrir caminho entre cipós. É obrigatória na prova \"The Test of Wood\" e pode se esgotar para sempre: só existe em baús e nessa prova.",
+  "description": "A Espada da Floresta pertence ao equipamento korok (Korok Gear). A descrição do jogo admite que, por ser de madeira, não é a melhor escolha para ataques frontais, e que sua função original deve ter sido cortar cipós para abrir trilhas na floresta. É encontrada sobretudo na Pradaria de Hyrule e na Grande Floresta de Hyrule.\n\nSeu papel mais marcante é na Missão de santuário \"The Test of Wood\", uma das Provas Korok: Damia, na borda leste da Floresta Korok, entrega a Link a Espada, o Escudo e o Arco da Floresta, e Link precisa chegar ao Santuário Maag Halan, atravessando o Pântano Mido (Mido Swamp), sem desequipar nem quebrar nenhuma das três peças. Por ser de madeira, a espada queima no fogo e em clima escaldante, flutua, não conduz eletricidade, não atrai raios e não pode ser erguida com Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Grande Floresta de Hyrule (locais comuns segundo o compendium).",
+    "Em baús e na prova \"The Test of Wood\", na Floresta Korok."
+  ],
+  "obtaining": [
+    "Abrir os baús que a contêm.",
+    "Recebida de Damia ao iniciar \"The Test of Wood\"; ao repetir a prova, é possível alugar uma por 20 rupias, mas ela não fica com Link depois do teste.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma obrigatória da prova \"The Test of Wood\" (junto do Escudo e do Arco da Floresta).",
+    "Arma de madeira de bom dano (22) para usar em tempestades e como fonte de fogo quando acesa."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "side_effects": [
+        "Durante \"The Test of Wood\", quebrar a espada desclassifica Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm",
+        "zw:The Test of Wood"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "É inflamável: pega fogo em contato com chamas ou em clima escaldante.",
+      "side_effects": [
+        "Nas áreas escaldantes de Eldin, armas inflamáveis queimam e desaparecem se ficarem expostas por muito tempo."
+      ],
+      "applications": [
+        "Acesa, pode acender lenha para fazer uma fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Fire",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser erguida com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "No trajeto de \"The Test of Wood\", Link precisa enfrentar ou evitar Morcis, Morcis ígneos, Chulchuls (comuns, elétricos e ígneos), Stalboblins e Octorocs aquáticos usando apenas o equipamento korok.",
+      "side_effects": [
+        "Chulchuls ígneos atacam com fogo, e as três peças do equipamento korok são de madeira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:The Test of Wood",
+        "zw",
+        "zw:Fire"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Item que pode se esgotar",
+      "text": "A Espada da Floresta só aparece em baús e na prova \"The Test of Wood\". Se todas forem coletadas e depois quebradas ou perdidas, não há como conseguir outra: a prova pode ser repetida, mas a espada alugada por 20 rupias não fica com Link.",
+      "sources": [
+        "zw",
+        "zw:Permanently Missable Items"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Regras da prova",
+      "text": "Damia exige espaço livre na algibeira para as três peças antes de começar. A prova falha se Link trocar de arma ou se a espada, o escudo ou o arco quebrarem antes de chegar ao Santuário Maag Halan.",
+      "sources": [
+        "zw:The Test of Wood",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +3 a +4 (nível comum) ou +5 a +8 (nível dourado), bônus de durabilidade de +3 a +6 (ou +7 a +14 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar uma Espada da Floresta com bom bônus em vez de gastá-la, já que o estoque do jogo é limitado.",
+    "Na prova, poupar a durabilidade das três peças evitando combates desnecessários, já que qualquer quebra desclassifica Link."
+  ],
+  "limitations": [
+    "Quantidade limitada no jogo: pode ficar indisponível para sempre.",
+    "Madeira: queima perto de fogo e em clima escaldante."
+  ],
+  "related": [
+    {
+      "id": "botw_shield_forest_dwellers_shield",
+      "relation": "Mesmo arquétipo; obrigatório na prova"
+    },
+    {
+      "id": "botw_bow_forest_dwellers_bow",
+      "relation": "Mesmo arquétipo; obrigatório na prova"
+    },
+    {
+      "id": "botw_weapon_forest_dwellers_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_monster_fire_chuchu",
+      "relation": "Inimigo de fogo no trajeto da prova"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Inimigo do trajeto da prova"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

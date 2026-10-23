@@ -1,0 +1,213 @@
+{
+  "id": "botw_weapon_lynel_spear",
+  "summary": "Lança de ponta em meia-lua feita pelos Centaleões (ataque 14, durabilidade 25): desequilibrada para hylianos, manejada com uma só mão por eles. Pode sumir do jogo para sempre.",
+  "description": "A Lança centaleônica é feita e usada pelos Centaleões, a única fonte das armas desse arquétipo. A ponta em forma de meia-lua a deixa mal balanceada e difícil de manejar, mas um Centaleão a maneja com eficiência numa só mão; nas mãos de Link, funciona como qualquer lança. Ela só é obtida derrotando Centaleões comuns, de juba vermelha — no Modo Mestre, quem a carrega é o Centaleão de juba azul. É mais comum nas Montanhas Gerudo e na Necluda Ocidental.\n\nEstá entre os itens que podem se perder para sempre: como as armas centaleônicas acompanham o nível de quem as empunha, a lança deixa de aparecer quando os Centaleões comuns dão lugar a variantes mais fortes, à medida que o nível do mundo sobe. É de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Montanhas Gerudo e Necluda Ocidental, com os Centaleões dessas regiões."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão comum (no Modo Mestre, um Centaleão de juba azul): todo Centaleão derrotado deixa cair a arma.",
+    "A Lua de sangue revive os Centaleões, permitindo repetir a luta — até que eles subam de nível."
+  ],
+  "uses": [
+    "Lança de metal de nível médio, obtida dos Centaleões comuns.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Os Centaleões são a única fonte da lança. Eles não a soltam quando atordoados, nem mesmo por um acerto crítico: só a deixam cair ao serem derrotados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Item que pode se perder",
+      "text": "A Lança centaleônica é um item permanentemente perdível: como as armas dos Centaleões sobem de nível junto com eles, ela para de aparecer quando os Centaleões comuns desaparecem. No Modo Mestre, o mesmo acontece quando os Centaleões de juba azul sobem de nível.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Golpes de graça sobre o Centaleão",
+      "text": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes com qualquer arma sem gastar durabilidade, e o Zelda Wiki registra que esses golpes também contam como acerto crítico. É a melhor forma de usar a Lança centaleônica contra o próprio tipo de monstro que a fornece.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança centaleônica pode surgir com um bônus branco (comum) — ataque +2 a +3, durabilidade +3 a +5 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +4 a +5, durabilidade +6 a +12 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Se quiser guardá-la no acervo, derrote os Centaleões comuns cedo, antes que o nível do mundo os substitua."
+  ],
+  "limitations": [
+    "Pode deixar de existir no jogo depois que os Centaleões sobem de nível.",
+    "Durabilidade modesta (25)."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Monstro que a empunha"
+    },
+    {
+      "id": "botw_monster_blue_maned_lynel",
+      "relation": "A empunha no Modo Mestre"
+    },
+    {
+      "id": "botw_weapon_mighty_lynel_spear",
+      "relation": "Versão do nível seguinte"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_spear",
+      "relation": "Versão máxima"
+    },
+    {
+      "id": "botw_weapon_lynel_sword",
+      "relation": "Mesmo arquétipo (Centaleão), uma mão"
+    },
+    {
+      "id": "botw_weapon_lynel_crusher",
+      "relation": "Mesmo arquétipo (Centaleão), duas mãos"
+    },
+    {
+      "id": "botw_mechanic_master_mode",
+      "relation": "Muda qual Centaleão a carrega"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

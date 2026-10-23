@@ -1,0 +1,180 @@
+{
+  "id": "botw_weapon_fishing_harpoon",
+  "summary": "Ferramenta de pescador para capturar peixes grandes, com ponta muito afiada (ataque 8, durabilidade 12). Comum em Lurelin e com Lagalfos do Lago Hylia; ponta de metal.",
+  "description": "O Arpão é uma ferramenta de pescador feita para capturar peixes grandes; a ponta particularmente afiada também o torna valioso como arma. É comum na vila de Lurelin, na Necluda Oriental, e é usado por Lagalfos no Lago Hylia.\n\nA ponta é de metal, então o Arpão conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser movido com Magnétis; não pega fogo. Tem ataque melhor que a Lança do viajante, mas durabilidade muito baixa.",
+  "locations": [
+    "Vila de Lurelin, na Necluda Oriental.",
+    "Lago Hylia, nas mãos de Lagalfos."
+  ],
+  "obtaining": [
+    "Recolher em Lurelin ou derrotar os Lagalfos do Lago Hylia que o empunham.",
+    "A Lua de sangue repõe as armas largadas pelo mundo e as que estão nas mãos dos inimigos."
+  ],
+  "uses": [
+    "Lança de reserva para o começo do jogo na costa sul.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis — atenção ao usá-lo perto do mar e do Lago Hylia."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Lagalfos do Lago Hylia usam o Arpão como arma.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arpão pode surgir com um bônus branco (comum) — ataque +3 a +4, durabilidade +2 a +3 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +5 a +6, durabilidade +4 a +6 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao lutar na beira d'água, prefira não arremessá-lo sobre o lago: se errar o alvo, ele afunda."
+  ],
+  "limitations": [
+    "Durabilidade muito baixa (12).",
+    "Afunda na água."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Lagalfos do Lago Hylia o empunham"
+    },
+    {
+      "id": "botw_shield_fishermans_shield",
+      "relation": "Equipamento de pescador"
+    },
+    {
+      "id": "botw_weapon_boat_oar",
+      "relation": "Outro utensílio da vida costeira usado como arma"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

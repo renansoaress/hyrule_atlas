@@ -1,0 +1,185 @@
+{
+  "id": "botw_bow_lynel_bow",
+  "summary": "Arco de metal bruto dos Centaleões comuns: dispara um leque de três flechas (10 cada) pelo custo de uma e às vezes surge com disparo quíntuplo. Fica escasso conforme os Centaleões evoluem.",
+  "description": "O Arco centaleônico é feito pelos Centaleões com metal bruto. Fiel à natureza feroz das armas de Centaleão, segundo a descrição do jogo, dispara um leque de várias flechas e é ideal para derrubar alvos rápidos. Normalmente são três flechas por disparo, mas às vezes aparece um exemplar que dispara cinco. Pertence ao equipamento de Centaleão.\n\nÉ usado pelos Centaleões comuns, em especial nas Montanhas Gerudo e na Grande Nascente de Lanayru. Como os Centaleões evoluem com o avanço do jogo, o arco fica raro; no Modo Mestre os Centaleões de juba azul passam a usá-lo, mas também acabam evoluindo. A exceção é o Centaleão do Monte Ploymus, que permanece sempre comum e pode se tornar a única fonte do arco.\n\nPor ser de metal, não queima, afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios em tempestades.",
+  "locations": [
+    "Montanhas Gerudo e Grande Nascente de Lanayru (locais comuns segundo o compendium), com Centaleões comuns.",
+    "Monte Ploymus, cujo Centaleão nunca evolui."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão comum: todos os Centaleões deixam as armas que usam e um feixe das flechas que estavam usando.",
+    "No Modo Mestre, também com Centaleões de juba azul."
+  ],
+  "uses": [
+    "Acertar alvos rápidos ou grupos com três flechas por disparo.",
+    "Arco de disparo múltiplo de metal para a região de Eldin."
+  ],
+  "effects": [
+    "Disparo triplo: três flechas por puxada, ao custo de uma."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara três flechas num leque horizontal com abertura total de 6°, consumindo apenas uma flecha da algibeira. A trajetória reta é de 20 m e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "applications": [
+        "Acertar alvos rápidos, que escapariam de uma flecha única."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Bow",
+        "zw:Template:BotW Bow Parameters"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco centaleônico pode surgir com bônus de ataque de +3 a +5 (nível branco) ou de +6 a +9 (nível amarelo), e com bônus de durabilidade de +4 a +7 (branco) ou de +8 a +18 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Por ter o parâmetro PoweredSharpAddSpreadFire ativo, é um dos quatro arcos que podem receber o disparo quíntuplo e lançar cinco flechas em vez de três. Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 12,5% ataque, 22,2% durabilidade, 36,1% disparo rápido e 29,2% disparo quíntuplo. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fonte garantida no Monte Ploymus",
+      "text": "Os Centaleões progridem com o nível do mundo e deixam de carregar o Arco centaleônico. O Centaleão do Monte Ploymus é um dos poucos que nunca progridem, por isso pode acabar sendo a única fonte desse arco no fim do jogo.",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Procure exemplares com disparo quíntuplo: cada flecha gasta passa a render cinco disparos."
+  ],
+  "limitations": [
+    "Dano por flecha baixo (10).",
+    "Atrai raios em tempestades e afunda se cair na água.",
+    "Fica raro conforme os Centaleões evoluem."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_mighty_lynel_bow",
+      "relation": "Versão dos Centaleões de juba azul"
+    },
+    {
+      "id": "botw_bow_savage_lynel_bow",
+      "relation": "Versão dos Centaleões de nível mais alto"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Monstro que o empunha"
+    },
+    {
+      "id": "botw_weapon_lynel_sword",
+      "relation": "Mesmo arquétipo (equipamento de Centaleão)"
+    },
+    {
+      "id": "botw_shield_lynel_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_bow_forest_dwellers_bow",
+      "relation": "Outro arco que pode ganhar disparo quíntuplo"
+    },
+    {
+      "id": "botw_mechanic_master_mode",
+      "relation": "Muda quais Centaleões usam este arco"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

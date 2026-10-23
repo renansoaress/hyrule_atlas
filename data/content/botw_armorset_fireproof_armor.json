@@ -1,0 +1,93 @@
+{
+  "id": "botw_armorset_fireproof_armor",
+  "summary": "Armadura antichamas vendida na Cidade Goron para suportar o calor da Montanha da Morte. Cada peça dá Proteção contra chamas; em ★★ o conjunto torna Link imune a ser incendiado.",
+  "description": "O Conjunto antichamas (Fireproof Armor) é formado pelo Elmo antichamas, pela Armadura antichamas e pelas Botas antichamas. As três peças são vendidas na loja Ripped and Shredded, na Cidade Goron, por 3.300 rupias no total; a armadura também pode ser ganha de graça na Missão secundária \"Fireproof Lizard Roundup\". Os próprios Gorons explicam que só começaram a vender a armadura para os turistas, já que normalmente não usam roupa, e que o calor piorou desde que Vah Rudania apareceu na montanha.\n\nCada peça dá Proteção contra chamas, efeito parecido com o de um Elixir corta-fogo: impede o dano do clima escaldante da Montanha da Morte e chega no máximo ao nível 2. Esse efeito não protege do fogo, da lava nem das zonas de calor extremo do deserto. Com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ganha o bônus À prova de fogo (Fireproof), que impede qualquer dano de fogo e de ataques de fogo, mas continua sem proteger contra lava e calor ambiente.\n\nOs nomes confundem: o efeito das peças, que protege do clima vulcânico, se chama Proteção contra chamas, enquanto o bônus que impede queimaduras se chama À prova de fogo. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Loja Ripped and Shredded, na Cidade Goron.",
+    "Mina do Sul (Southern Mine), onde Kima entrega a Armadura antichamas na missão secundária."
+  ],
+  "obtaining": [
+    "Comprar na Ripped and Shredded: Elmo antichamas por 2.000, Armadura antichamas por 600 e Botas antichamas por 700 rupias.",
+    "Armadura antichamas: recompensa de Kima, na Mina do Sul, por 10 Lagartos corta-fogo (\"Fireproof Lizard Roundup\")."
+  ],
+  "uses": [
+    "Explorar a Montanha da Morte sem perder corações pelo clima escaldante.",
+    "Com o conjunto em ★★, ignorar o dano de chamas, de ataques de fogo e de inimigos ígneos."
+  ],
+  "effects": [
+    "Cada peça: Proteção contra chamas (os níveis se somam até o máximo de 2).",
+    "Bônus de conjunto (três peças em ★★): À prova de fogo, nenhum dano de fogo ou de ataques de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As peças protegem do clima escaldante; com as três em ★★, Link fica imune a ser incendiado.",
+      "conditions": ["Para o bônus: elmo, armadura e botas antichamas vestidos juntos, todos com ★★."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Protege do clima escaldante da Montanha da Morte (Proteção contra chamas, até nível 2).",
+      "side_effects": [
+        "Não protege das zonas de calor extremo do deserto, que exigem Resistência ao calor."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Added Effect"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Com o conjunto completo em ★★, Link não sofre dano de fogo nem de ataques baseados em fogo.",
+      "conditions": ["As três peças com ★★."],
+      "side_effects": ["A lava continua causando dano."],
+      "applications": ["Atravessar grama em chamas ou enfrentar inimigos ígneos sem se queimar."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa para turistas",
+      "text": "Rogaro conta que os Gorons normalmente não usam roupa nenhuma e só passaram a vender armadura resistente a chamas para os turistas; Pyle acrescenta que o calor aumentou depois que Vah Rudania surgiu na Montanha da Morte.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Dois efeitos, dois nomes",
+      "text": "Proteção contra chamas (das peças) cobre o clima escaldante; À prova de fogo (bônus em ★★) cobre o fogo em si. Nenhum dos dois protege contra a lava ou contra o calor do deserto.",
+      "sources": ["zw", "zw:Added Effect", "zw:Set Bonus"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Kima continua comprando lagartos",
+      "text": "Depois de concluir a missão da armadura, Kima paga 20 rupias a cada três Lagartos corta-fogo entregues, que ele usa para preparar Elixires corta-fogo.",
+      "sources": ["zw:Fireproof Lizard Roundup"]
+    }
+  ],
+  "advanced_uses": [
+    "Em ★★, o conjunto permite lutar no meio de grama em chamas e contra inimigos de fogo sem perder corações por queimadura."
+  ],
+  "limitations": [
+    "Não protege contra lava nem contra o calor do Deserto Gerudo.",
+    "Kima não entrega o elmo: ele diz que é caro demais e manda Link comprá-lo na Cidade Goron.",
+    "Melhorias pedem Lagartos corta-fogo, Chifres, Presas e Vísceras de Moblin, Borboletas abrasadoras e Vísceras de Rinox."
+  ],
+  "related": [
+    { "id": "botw_armor_flamebreaker_helm", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_flamebreaker_armor", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_flamebreaker_boots", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_creature_fireproof_lizard", "relation": "Pedido por Kima e usado nas melhorias" },
+    { "id": "botw_armor_vah_rudania_divine_helm", "relation": "Outra peça com Proteção contra chamas" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Protege do calor do deserto, que este conjunto não cobre" },
+    { "id": "botw_mechanic_fire", "relation": "O bônus anula o dano de fogo" },
+    { "id": "botw_mechanic_temperature", "relation": "Clima escaldante e calor extremo" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["protege_calor", "protege_fogo"],
+  "verification_status": "verificado"
+}

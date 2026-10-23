@@ -1,0 +1,117 @@
+{
+  "id": "botw_creature_rugged_rhino_beetle",
+  "summary": "Besouro de corpo duro como armadura, pousado em árvores da Pradaria de Hyrule e dos Prados de Faron. Com partes de monstro vira Elixir blindado; Beedle o troca por um desses elixires.",
+  "description": "O Escaravelho resguardado vive pousado em árvores da Pradaria de Hyrule e dos Prados de Faron. Segundo o jogo, o corpo rígido dele lembra uma armadura, e a carapaça, cozida com partes de monstro, rende um elixir que aumenta a defesa.\n\nCozido com partes de monstro, produz o Elixir blindado (Defesa aumentada), que segundo o jogo fortalece os ossos e é indicado antes de enfrentar inimigos que batem forte; cada escaravelho acrescenta 0:50 de duração. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante verde.\n\nComo acontece com os outros escaravelhos, Beedle se encanta ao ver um Escaravelho resguardado na algibeira de Link (\"Beedle simplesmente aaama\" esse besouro) e oferece um Elixir blindado em troca, para acrescentá-lo à coleção dele.",
+  "locations": [
+    "Árvores da Pradaria de Hyrule e dos Prados de Faron."
+  ],
+  "obtaining": [
+    "Apanhar nas árvores dessas regiões."
+  ],
+  "uses": [
+    "Elixir blindado: cozinhar com pelo menos uma parte de monstro.",
+    "Troca com Beedle por um Elixir blindado.",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "No elixir: Defesa aumentada; +0:50 de duração por escaravelho."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como o escaravelho reage à aproximação de Link; indicam apenas que ele fica pousado em árvores."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica pousado em árvores da Pradaria de Hyrule e dos Prados de Faron.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um escaravelho vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir blindado (Defesa aumentada). Cada escaravelho acrescenta 0:50 de duração.",
+      "produces": ["botw_elixir_tough_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Tough Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "vender",
+      "variant": "troca com Beedle",
+      "status": "confirmado",
+      "result": "Com um Escaravelho resguardado na algibeira, Beedle pede o besouro e oferece um Elixir blindado. Se Link recusar, Beedle diz que se enganou sobre o caráter dele; se aceitar, pede que volte só no dia seguinte com outro.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Beedle"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o escaravelho exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o escaravelho."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Beedle e sua coleção",
+      "text": "Beedle anda por Hyrule com uma mochila em forma de besouro e diz carregar muitos \"insetos especiais\". Ao ganhar um Escaravelho resguardado, comemora: \"Vou acrescentar este aqui à minha coleção de escaravelhos!\".",
+      "sources": ["zw:Beedle", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Único bicho de defesa",
+      "text": "Na lista de bichos do Zelda Wiki, o Escaravelho resguardado é o único da categoria Tough (Defesa aumentada), assim como o Escaravelho brigão é o único da categoria Mighty.",
+      "sources": ["zw:Elixir"]
+    }
+  ],
+  "advanced_uses": [
+    "Como cada escaravelho acrescenta só 0:50, combine-o com partes de monstro de maior duração (vísceras, 3:10) para um Elixir blindado que dure mais."
+  ],
+  "limitations": [
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "As fontes não listam ingredientes de defesa que façam o Elixir blindado curar."
+  ],
+  "related": [
+    { "id": "botw_elixir_tough_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_bladed_rhino_beetle", "relation": "Escaravelho do Elixir valente" },
+    { "id": "botw_creature_energetic_rhino_beetle", "relation": "O escaravelho favorito de Beedle" },
+    { "id": "botw_creature_armored_carp", "relation": "Peixe de Defesa aumentada" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante verde" }
+  ],
+  "capabilities": ["defesa"],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,9 @@
+{
+  "requested": "Heat Resistance",
+  "title": "Heat Resistance",
+  "url": "https://zeldawiki.wiki/wiki/Heat_Resistance",
+  "revid": 1306088,
+  "timestamp": "2025-12-14T08:10:04Z",
+  "license": "GNU FDL 1.3 (Zelda Wiki)",
+  "wikitext": "{{Infobox Mechanic\n|image= \n{{Media\n |Sprite BotW= File:BotW Heat Resistance Icon.png\n |Sprite TotK= File:TotK Heat Resistance Icon.png\n}}\n|caption= \n|pronunciation= \n|game= BotW, TotK\n|other= \n|purpose= \n|related= \n{{List|\n * [[Added Effect]]\n * [[Armor]]\n * [[Cooking]]\n * [[Extremely Hot Zone]]\n}}\n}}\n{{Term/Store|Heat Resistance||Series, BotW, TotK}} is a recurring [[Added Effect]] in {{TLoZ Series}}.<ref>{{Cite Guide|BotW Piggyback|page= 280|edition= Expanded Edition|year= 2018}}</ref><ref>{{Cite Guide|TotK Piggyback|page=402-403}}</ref>\n\n==Overview==\nHeat Resistance is an [[Added Effect]] that prevents [[Link]] from taking damage due to [[Extremely Hot Zone]]s. Some environments require a higher Effect level. This Effect does not affect damage taken from [[Scorching Climate]]s, [[Fire]], Fire-based attacks, or [[Lava]], and it has a maximum potency of level two.\n\nIn {{BotW}} and {{TotK}}, the following [[Material]]s and [[Armor]] pieces grant Heat Resistance:\n\n{{Data Table\n|game= BotW\n|sortable= false\n|columns= Materials [IconList], Armor Pieces [IconList]\n|-\n| Hydromelon, Chillshroom, Cool Safflina, Chillfin Trout, Winterwing Butterfly, Cold Darner\n| Desert Voe Headband, Desert Voe Spaulder, Desert Voe Trousers, Sapphire Circlet, Island Lobster Shirt\n}}\n\n==Nomenclature==\n{{Nomenclature}}\n\n==See Also==\n* {{Term|Series|Added Effect|link}}\n* {{Term|Series|Cold Resistance|link}}\n* {{Term|Series|Extremely Hot Zone|link}}\n* {{Term|Series|Flame Guard|link}}\n* {{Term|Series|Heat-Resistant|link}}\n* {{Term|Series|Shock Resistance|link}}\n\n{{Ref}}\n\n{{Categories\n |Added Effects\n |mechanics= BotW, TotK\n}}"
+}

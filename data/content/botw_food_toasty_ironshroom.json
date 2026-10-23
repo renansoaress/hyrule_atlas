@@ -1,0 +1,136 @@
+{
+  "id": "botw_food_toasty_ironshroom",
+  "summary": "Blindamelo exposto à chama: a casca antes resistente fica crocante e saborosa. Cura 3/4 de coração (cru, meio), vale as mesmas 5 rupias e perde a Defesa aumentada. Faz parte do kit da DLC de Daruk.",
+  "description": "O Blindamelo, cogumelo das árvores da região de Necluda, vira Blindamelo tostado ao encostar no fogo ou ficar no chão escaldante de Eldin. O texto do jogo diz que o exterior, antes duro, ficou crocante e saboroso, e que restaura um pouco de vida.\n\nA cura sobe de meio coração para 3/4, mas o valor de venda não muda (5 rupias). Perde-se a Defesa aumentada que o cogumelo daria na Panela. Na DLC, o Blindamelo tostado é uma das três comidas do kit fixo da batalha contra a Ira ígnea de Ganon no Reino ilusório.",
+  "locations": [
+    "Prepara-se a partir de Blindamelos (árvores da região de Necluda; à venda na Spore Store e na barraca de Ardin, na Cidade Gerudo) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Blindamelo ao fogo ou largá-lo no chão em clima escaldante.",
+    "DLC: faz parte do kit fixo entregue na batalha contra a Ira ígnea de Ganon no Reino ilusório (\"EX Champion Daruk's Song\")."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Blindamelo — queima por alguns instantes e se transforma em Blindamelo tostado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Blindamelo tostado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Blindamelo no chão para que o ingrediente asse sozinho e vire Blindamelo tostado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração do Blindamelo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 5 rupias, o mesmo que o Blindamelo cru.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Ironshroom"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Blindamelo tostado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Ração do Reino ilusório",
+      "text": "Na missão principal \"EX Champion Daruk's Song\", da DLC, a comida do kit fixo de Link é Bife selado, Blindamelo tostado e Maçã assada.",
+      "sources": [
+        "zw:EX Champion Daruk's Song"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Defesa aumentada.",
+    "Não se valoriza na venda."
+  ],
+  "related": [
+    {
+      "id": "botw_material_ironshroom",
+      "relation": "Ingrediente cru (Defesa aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_seared_steak",
+      "relation": "Também faz parte do kit do Reino ilusório de Daruk"
+    },
+    {
+      "id": "botw_food_baked_apple",
+      "relation": "Também faz parte do kit do Reino ilusório de Daruk"
+    },
+    {
+      "id": "botw_monster_fireblight_ganon",
+      "relation": "Chefe enfrentado com esse kit na DLC"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

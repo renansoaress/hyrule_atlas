@@ -1,0 +1,163 @@
+{
+  "id": "botw_food_roasted_bass",
+  "summary": "Robalo assado inteiro na chama aberta, de carne que se desfaz e cheiro saboroso. Cura 1,5 coração (cru, 1), vale 9 rupias e é a comida mais comum deixada pelo Rinox azul.",
+  "description": "Tanto o Robalo hyruliano quanto o Robalo enérgico viram Robalo assado quando expostos ao fogo ou ao clima escaldante. O texto do jogo descreve um robalo cozido inteiro numa chama aberta, de carne em lascas e cheiro saboroso, que \"rende mais corações que a versão crua\": 1,5 coração, contra 1.\n\nO preço de venda, 9 rupias, é bom negócio para o Robalo hyruliano (6 cru), mas um prejuízo para o Robalo enérgico, que vale 18 cru e perde também a Recuperação de vigor que daria na Panela. O Robalo assado também é vendido pronto na Protein Palace, na Cidade Goron, e é a comida mais provável entre as que o Rinox azul deixa cair.",
+  "locations": [
+    "Prepara-se a partir de qualquer robalo em uma fogueira ou no chão escaldante de Eldin.",
+    "À venda na Protein Palace, na Cidade Goron (os dados de lojas também o listam no Bazar Kara Kara).",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um Robalo hyruliano ou um Robalo enérgico ao fogo, ou largá-lo no chão em clima escaldante.",
+    "Comprar na Protein Palace, na Cidade Goron, por 23 rupias.",
+    "Derrotar um Rinox azul: 40% de chance, a maior da tabela de comidas dele (lote de 5)."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 9 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Robalo hyruliano ou o Robalo enérgico — queima por alguns instantes e se transforma em Robalo assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Robalo assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Robalo hyruliano ou o Robalo enérgico no chão para que o ingrediente asse sozinho e vire Robalo assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração de qualquer robalo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 9 rupias; cru, o Robalo hyruliano vale 6 e o Robalo enérgico, 18.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hyrule Bass",
+        "zw:Staminoka Bass"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Robalo assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Não asse o Robalo enérgico para vender",
+      "text": "Cru, o Robalo enérgico vale 18 rupias e dá Recuperação de vigor na Panela; assado, vira o mesmo Robalo assado de 9 rupias do robalo comum. Para vender, venda-o cru.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Staminoka Bass"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O prato preferido do Rinox azul",
+      "text": "Na tabela de comidas do Rinox azul, o Robalo assado tem a maior chance (40%), seguido da Truta assada (20%) e do Caranguejo tostado (10%).",
+      "sources": [
+        "zw",
+        "zw:Blue Hinox"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Comprar sai caro",
+      "text": "Na Protein Palace o robalo pronto custa 23 rupias, mais do que o dobro das 9 que ele rende na venda.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Perde a Recuperação de vigor do Robalo enérgico.",
+    "O Robalo congelado, feito com os mesmos peixes, vale mais na venda (14 rupias)."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_staminoka_bass",
+      "relation": "Ingrediente cru (vale mais cru)"
+    },
+    {
+      "id": "botw_food_frozen_bass",
+      "relation": "Versão congelada dos mesmos robalos"
+    },
+    {
+      "id": "botw_food_roasted_hearty_bass",
+      "relation": "Assado do Robalo nutritivo, que cura o dobro"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

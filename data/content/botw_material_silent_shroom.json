@@ -1,0 +1,149 @@
+{
+  "id": "botw_material_silent_shroom",
+  "summary": "Cogumelo estranho que brilha suavemente nas florestas à noite, o que facilita achá-lo. Cozido, dá Furtividade aumentada; 8 por peça levam o Conjunto furtivo ao nível ★★★. Tostado, perde o brilho.",
+  "description": "O Silencimelo cresce ao pé das árvores na Grande Nascente de Lanayru e em Necluda Ocidental. À noite, emite um brilho suave que o torna bem mais fácil de encontrar. Segundo o jogo, cozinhá-lo libera os nutrientes do chapéu, e os pratos resultantes permitem a Link se mover furtivamente (efeito Furtividade aumentada). Cru, recupera meio coração; exposto ao fogo, vira Silencimelo tostado (3/4 de coração), que, como diz a descrição, perde o brilho suave com o calor, mas fica aromático e saboroso.\n\nNas Grandes Fadas, o cogumelo é o material do nível ★★★ do Conjunto furtivo: 8 Silencimelos e 5 Caramujos discretos por peça. Os dados estruturados não listam lojas que o vendam. Na Tinturaria Kochi, entra no corante azul-claro.",
+  "locations": [
+    "Pé das árvores na Grande Nascente de Lanayru e em Necluda Ocidental (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Mais fácil de achar à noite, quando brilha."
+  ],
+  "obtaining": [
+    "Colher ao pé das árvores, de preferência à noite. Os dados estruturados não listam lojas que o vendam."
+  ],
+  "uses": [
+    "Pratos de Furtividade aumentada.",
+    "Melhoria de armadura: 8 por peça (+5 Caramujos discretos) no nível ★★★ de Máscara furtiva, Peitoral furtivo e Meia-calça furtiva.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante azul-claro na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Cozido: Furtividade aumentada (até o nível 3)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Silent Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Assado no fogo, vira Silencimelo tostado, que recupera 3/4 de coração e perde o brilho.",
+      "side_effects": ["Perde a Furtividade aumentada.", "Tostado vale 3 rupias, o mesmo que cru."],
+      "produces": ["botw_food_toasty_silent_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Toasty Silent Shroom", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Silencimelo tostado.",
+      "produces": ["botw_food_toasty_silent_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Campfire"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_silent_shroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Silent Shroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Furtividade aumentada. Mais unidades prolongam o efeito; combinado com Beladona azul ou Princesa plácida, prolonga e pode elevar o nível, até o máximo de 3.",
+      "side_effects": ["Correr em disparada faz barulho seja qual for o nível de furtividade."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Stealth"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não dá furtividade.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Brilha à noite, apaga no fogo",
+      "text": "O Silencimelo emite um brilho suave nas florestas à noite, o que facilita a coleta no escuro. Depois de tostado, a descrição do jogo diz que o calor destruiu esse brilho.",
+      "sources": ["comp", "zw", "zw:Roasted Food"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Vinte e quatro para o Conjunto furtivo",
+      "text": "O nível ★★★ das três peças do Conjunto furtivo consome 24 Silencimelos (8 por peça), além de 15 Caramujos discretos.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Colha à noite, quando o brilho denuncia os cogumelos entre as raízes das árvores.",
+    "Combine com Beladonas azuis e Princesas plácidas para Furtividade aumentada de nível 3, útil para Ataques-surpresa e para capturar animais ariscos."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Furtividade aumentada; só cozido.",
+    "Correr em disparada faz barulho mesmo com o efeito ativo."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_silent_shroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_armorset_stealth_set", "relation": "Nível ★★★: 8 Silencimelos por peça" },
+    { "id": "botw_creature_sneaky_river_snail", "relation": "Acompanha o cogumelo na melhoria do Conjunto furtivo" },
+    { "id": "botw_material_blue_nightshade", "relation": "Outro ingrediente de Furtividade aumentada, que também brilha à noite" },
+    { "id": "botw_material_silent_princess", "relation": "Outro ingrediente de Furtividade aumentada" },
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "Furtividade facilita Ataques-surpresa" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul-claro" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "furtividade"],
+  "verification_status": "verificado"
+}

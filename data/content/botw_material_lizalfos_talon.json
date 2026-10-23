@@ -1,0 +1,165 @@
+{
+  "id": "botw_material_lizalfos_talon",
+  "summary": "Esporão que cresce no cotovelo dos Lagalfos, deixado por todas as variedades e pelos Stallagalfos. Acrescenta 1:50 aos elixires e é o material do 2º nível do Conjunto Zora.",
+  "description": "Apesar do nome, a Garra de Lagalfos não vem das mãos: o inventário explica que ela crescia no cotovelo do monstro. Cai de todos os tipos de Lagalfos e também dos Stallagalfos. Cozida com bichos, acrescenta 1:50 à duração do elixir, e o próprio jogo insinua que ela \"pode ter outros usos\".\n\nO outro uso é o Conjunto Zora: cada peça pede 5 garras e 5 Robalos hyrulianos para chegar ao 2º nível numa Fonte da Grande Fada. Na Tinturaria Kochi, a garra é ingrediente do corante cinza, e Kilton paga 8 Mon por ela.",
+  "locations": [
+    "Onde houver Lagalfos ou, à noite, Stallagalfos."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Lagalfos ou um Stallagalfos.",
+    "Os monstros voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 5 por peça no 2º nível do Conjunto Zora (com 5 Robalos hyrulianos) — 15 no total.",
+    "Corante cinza na Tinturaria Kochi.",
+    "Venda: 15 rupias, ou 8 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Garra de Lagalfos no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Garra de Lagalfos largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Garra de Lagalfos queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Garra de Lagalfos numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Garra de Lagalfos a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Garra de Lagalfos à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Garra de Lagalfos flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Garra de Lagalfos não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Garra de Lagalfos largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 15 rupias em lojas e comerciantes, ou 8 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Uma \"garra\" de cotovelo",
+      "text": "O texto do inventário descreve o item como um esporão que crescia no cotovelo do Lagalfos — não uma unha da mão, como o nome sugere.",
+      "sources": [
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Elo do meio do Conjunto Zora",
+      "text": "No Conjunto Zora, a garra substitui o Chifre de Lagalfos do 1º nível e antecede as Caudas de Lagalfos do 3º e 4º níveis.",
+      "sources": [
+        "zw",
+        "zw:Lizalfos Horn",
+        "zw:Lizalfos Tail"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Pesque os 15 Robalos hyrulianos na mesma viagem em que juntar as 15 garras: os dois materiais vão juntos no 2º nível do Conjunto Zora."
+  ],
+  "limitations": [
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_stalizalfos",
+      "relation": "Também a deixa"
+    },
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Usa 5 garras por peça no 2º nível"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Acompanha a garra na mesma melhoria"
+    },
+    {
+      "id": "botw_material_lizalfos_horn",
+      "relation": "Parte do 1º nível do Conjunto Zora"
+    },
+    {
+      "id": "botw_material_lizalfos_tail",
+      "relation": "Parte dos níveis seguintes do Conjunto Zora"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

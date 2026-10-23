@@ -1,0 +1,147 @@
+{
+  "id": "botw_treasure_treasure_chest",
+  "summary": "Baú com armas, flechas, materiais, gemas ou rupias. Há baús de madeira, de pedra e de metal (movidos com Magnétis, às vezes enterrados ou submersos) e os baús-caveira dos acampamentos, que só abrem sem monstros vivos.",
+  "description": "Os baús do tesouro (entrada nº 386 do compêndio) aparecem em Santuários, em acampamentos de monstros e até enterrados — o compêndio brinca que há quem os ache mais seguros debaixo da terra. O Zelda Wiki registra vários modelos em BOTW: baús de madeira, de pedra, de metal, os baús de acampamento e os baús \"EX\" das DLCs. O conteúdo vai de flechas, materiais e gemas a armas e rupias.\n\nOs baús de acampamento (Outpost Chests) têm forma de caveira e olhos roxos brilhantes. Enquanto houver inimigos associados vivos, não abrem; quando o último cai, passam a brilhar em amarelo — e continuam abertos mesmo que os monstros reapareçam. Os baús de metal, com faixas douradas e o brasão de Hyrule, não guardam itens diferentes dos outros, mas, por serem metálicos, podem ser erguidos com Magnétis, congelados com Estátis, conduzem eletricidade e podem atrair raios. Muitos estão submersos ou cravados no chão, e só saem com Magnétis.\n\nAs DLCs acrescentam 21 baús \"EX\" (Hidden Chests), roxos com as letras \"EX\", ligados a 12 missões secundárias e cheios de itens exclusivos; o Passe de Expansão ainda adiciona três baús bônus no Planalto (Great Plateau). Nem tudo que parece baú é baú: nas areias e nas neves, o Octoroc do tesouro se enterra disfarçado de baú e salta quando Link chega perto.",
+  "locations": [
+    "Santuários, acampamentos e fortalezas de monstros por toda Hyrule.",
+    "Enterrados ou submersos (baús de metal e baús \"EX\"), recuperáveis com Magnétis.",
+    "Baús bônus do Passe de Expansão no Planalto: na Abadia Oriental, Eastern Abbey (Camiseta Nintendo Switch), do lado de fora do Santuário Oman Au (Rubi) e na borda do Planalto perto do Monte Hylia (10 Flechas explosivas).",
+    "Campo de Voo dos Arás: dois baús de metal submersos, com uma Espada do cavaleiro e uma rupia dourada."
+  ],
+  "obtaining": [
+    "Abrir no cenário; baús de acampamento exigem derrotar todos os inimigos associados.",
+    "Alguns surgem por evento: o baú com o Escudo hyliano aparece ao derrotar o Stalnox do Castelo de Hyrule, e três baús de pedra com a roupa selvagem aparecem no Templo Esquecido (Forgotten Temple) depois dos 120 Santuários, na Missão secundária \"A Gift from the Monks\".",
+    "A runa amiibo faz surgir baús, às vezes com itens exclusivos."
+  ],
+  "uses": [
+    "Fonte de armas, flechas, materiais, gemas e rupias.",
+    "Baús \"EX\" guardam equipamentos exclusivos das DLCs, como a Máscara Korok, o Teletransportador e a Sela ancestral."
+  ],
+  "effects": [
+    "Nenhum efeito próprio; contém um item."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "abrir",
+      "status": "confirmado",
+      "result": "Link chuta o baú para abri-lo; sem armadura nas pernas, ele bate o dedo e reage à dor. Agachado, abre com um soco (e sente a mão se estiver sem armadura no torso). Baús de estilo Sheikah são abertos com a Tabuleta, a não ser que Link os aborde pelos lados ou por trás, ou que estejam tombados.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Baús de acampamento ficam trancados e com olhos roxos enquanto os monstros associados estiverem vivos; com todos derrotados, brilham em amarelo e podem ser abertos, mesmo após o retorno dos monstros.",
+      "kind": "mecanica",
+      "sources": ["zw:Outpost Chest", "zw:Monster Stronghold"]
+    },
+    {
+      "action": "magnetis",
+      "variant": "baús de metal",
+      "status": "confirmado",
+      "result": "Baús de metal, inclusive os \"EX\" e os bônus, podem ser erguidos e movidos com Magnétis; é assim que se retiram os que estão enterrados ou submersos.",
+      "applications": ["Puxar baús do fundo de lagos ou arrancá-los do chão nas missões \"EX Treasure\"."],
+      "kind": "mecanica",
+      "sources": ["zw:Iron Treasure Chest", "zw:Hidden Chest", "zw:Bonus Chest", "zw:Magnesis"]
+    },
+    {
+      "action": "magnetis",
+      "variant": "baú falso do Octoroc do tesouro",
+      "status": "sem_efeito",
+      "result": "O \"baú\" do Octoroc do tesouro não é metálico e não pode ser puxado com Magnétis.",
+      "sources": ["zw:Treasure Octorok"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Baús de metal, \"EX\" e bônus podem ser congelados com Estátis.",
+      "kind": "mecanica",
+      "sources": ["zw:Iron Treasure Chest", "zw:Hidden Chest", "zw:Bonus Chest"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Baús de metal conduzem eletricidade.",
+      "kind": "mecanica",
+      "sources": ["zw:Iron Treasure Chest", "zw:Hidden Chest"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Baús de metal podem atrair raios durante tempestades.",
+      "kind": "mecanica",
+      "sources": ["zw:Iron Treasure Chest", "zw:Hidden Chest"]
+    },
+    {
+      "action": "bomba_remota",
+      "variant": "Octoroc do tesouro",
+      "status": "confirmado",
+      "result": "Uma Bomba remota faz o Octoroc do tesouro disfarçado sair do chão atordoado, pronto para ser atacado.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Treasure Octorok"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito do fogo sobre baús de madeira."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O dedão de Link",
+      "text": "Sem armadura nas pernas, Link bate o dedo do pé ao chutar um baú para abri-lo; agachado e sem armadura no torso, ele se ressente da mão depois do soco.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O sensor não diferencia baús",
+      "text": "Fotografados com a Câmera, baús de metal, \"EX\" e bônus entram no compêndio como baús do tesouro comuns, e o Sensor Sheikah + não os distingue dos demais.",
+      "sources": ["zw:Iron Treasure Chest", "zw:Hidden Chest"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Baús \"EX\" por tipo de esconderijo",
+      "text": "Dos 21 baús \"EX\", 13 estão cravados no chão, 3 debaixo d'água e 5 à vista. Todos contêm itens únicos, como armaduras exclusivas, e cada um está ligado a uma das 12 missões secundárias das DLCs.",
+      "sources": ["zw:Hidden Chest"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Desmascarar o Octoroc do tesouro",
+      "text": "Em areia ou neve, um baú enterrado que não reage a Magnétis pode ser um Octoroc do tesouro. Uma Bomba remota o faz saltar confuso; derrotado, ele deixa várias rupias além das partes de Octoroc.",
+      "sources": ["zw:Treasure Octorok"]
+    },
+    {
+      "kind": "glitch",
+      "title": "Baú fantasma na cabana do Velho",
+      "text": "Se Link obtiver o Gibão aquecido por outro meio no Planalto, o baú alternativo da cabana do Velho nunca aparece, mas o Sensor Sheikah continua apontando um baú ali, que fica inalcançável naquele jogo salvo.",
+      "sources": ["zw:Permanently Missable Items"]
+    }
+  ],
+  "advanced_uses": [
+    "Limpar o acampamento inteiro antes de ir até o baú-caveira: ele só abre quando o último inimigo associado cai.",
+    "Usar o Sensor Sheikah + com o baú como alvo para varrer uma região em busca de baús que faltam."
+  ],
+  "limitations": [
+    "Baús de acampamento não abrem enquanto houver inimigos associados vivos.",
+    "Baús enterrados ou submersos exigem Magnétis, e só os de metal respondem a ela.",
+    "Baús de metal atraem raios em tempestades."
+  ],
+  "related": [
+    { "id": "botw_rune_magnesis", "relation": "Ergue baús de metal, inclusive enterrados e submersos" },
+    { "id": "botw_monster_treasure_octorok", "relation": "Disfarça-se de baú enterrado" },
+    { "id": "botw_rune_sheikah_sensor", "relation": "A versão + rastreia baús" },
+    { "id": "botw_rune_camera", "relation": "Registra o baú no compêndio" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Faz surgir baús com itens de amiibo" },
+    { "id": "botw_monster_stalnox", "relation": "Derrotá-lo no castelo faz surgir o baú do Escudo hyliano" },
+    { "id": "botw_shield_hylian_shield", "relation": "Guardado num baú no Castelo de Hyrule" },
+    { "id": "botw_armor_korok_mask", "relation": "Guardada num baú \"EX\"" },
+    { "id": "botw_keyitem_travel_medallion", "relation": "Guardado num baú \"EX\"" },
+    { "id": "botw_keyitem_ancient_saddle", "relation": "Guardada num baú \"EX\" enterrado" },
+    { "id": "botw_armorset_hero_of_the_wild_set", "relation": "Peças em baús de pedra no Templo Esquecido" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Baús de metal atraem raios" }
+  ],
+  "capabilities": ["magnetico", "conduz_eletricidade", "atrai_raios", "revela_recursos"],
+  "verification_status": "verificado"
+}

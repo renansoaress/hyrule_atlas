@@ -1,0 +1,240 @@
+{
+  "id": "botw_monster_silver_bokoblin",
+  "summary": "O Koboblin mais forte do modo normal: 720 pontos de vida, reflexos rápidos e golpes duplos. Fortalecido pela magia de Ganon, é o único Koboblin (fora o dourado) que pode deixar pedras preciosas, até Diamante.",
+  "description": "Segundo o compendium, os Koboblins prateados foram influenciados pela magia maligna de Ganon e superam até os pretos; o nome \"prateado\" se refere tanto à cor quanto à raridade, e as marcas roxas no corpo os tornam ainda mais fáceis de reconhecer. Têm 720 pontos de vida e só são superados pelos Koboblins dourados do Modo Mestre.\n\nMantêm todas as habilidades da espécie, inclusive chutar e evitar Bombas remotas, mas reagem mais rápido e usam padrões de ataque mais fortes: um corte duplo, às vezes um corte único mais lento, e saltos e golpes giratórios com mais frequência e duração. Usam armas parecidas com as dos Koboblins pretos — como a Clava Kobo dracônica —, além de arcos e escudos.\n\nO grande atrativo é o espólio: além de Chifre, Presa e Vísceras de Koboblin, podem deixar Âmbar, Opala, Topázio, Rubi, Safira e Diamante. Não têm local fixo no compendium; surgem quando a progressão oculta de inimigos atinge os níveis mais altos.",
+  "locations": [
+    "Sem local característico no compendium: aparecem em acampamentos de toda Hyrule quando a progressão de inimigos atinge os níveis mais altos."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre, Presa e Vísceras de Koboblin e também pedras preciosas: Âmbar, Opala, Topázio, Rubi, Safira e Diamante.",
+    "Costuma carregar armas Kobo dracônicas, arcos e escudos.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de pedras preciosas sem precisar quebrar depósitos de minério.",
+    "Fonte de armas Kobo dracônicas e de Vísceras de Koboblin.",
+    "Registro no compendium (entrada nº 107)."
+  ],
+  "effects": [
+    "Golpes pesados e rápidos (corte duplo, saltos, giros)."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Com 720 pontos de vida e reação mais rápida, resiste a lutas longas; alterna corte duplo, corte único lento, saltos e golpes giratórios.",
+      "applications": [
+        "Usar Esquiva perfeita e Defesa perfeita para abrir brechas em vez de trocar golpes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "Ataque-surpresa",
+      "status": "confirmado",
+      "result": "Koboblins dormem à noite; o Ataque-surpresa (8 vezes o dano da arma) é o atalho mais eficiente contra a vida alta do prateado.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw:Bokoblin",
+        "zw:Sneakstrike"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado; vigias em torres caem com uma flecha na cabeça.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e sofre dano; armas Kobo, de madeira, queimam.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Arrow",
+        "zw:Bokoblin Gear"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; o golpe que quebra o gelo causa dano extra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o forçam a largar a arma. (Ao contrário do dourado, não é descrito como resistente a eletricidade.)",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shock Arrow",
+        "zw:Great Thunderblade",
+        "zw:Golden Bokoblin"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Não nada e se afoga em água funda, como todo Koboblin.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Barris explosivos e Flechas explosivas o ferem — alternativas melhores que a Bomba remota, que ele sabe evitar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Barrel",
+        "zw:Bomb Arrow",
+        "zw"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Chuta e evita Bombas remotas, habilidade que também é atribuída aos Koboblins azuis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo, deixando-o imune a gelo, fogo e choque durante o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado pela runa; objetos metálicos lançados com Magnétis o atingem. As armas Kobo não são magnéticas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis",
+        "zw:Bokoblin Gear"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Como os demais Koboblins, pega rochas, Barris e Barris explosivos para arremessar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Koboblin",
+      "status": "confirmado",
+      "result": "As máscaras de Koboblin e de Majora fazem os Koboblins ignorarem Link enquanto ele não atacar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bokoblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Por que \"prateado\"",
+      "text": "O compendium explica que o nome vem da cor e também indica a raridade desses Koboblins; as marcas roxas existem para destacá-los ainda mais.",
+      "sources": [
+        "comp"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pedras preciosas como espólio",
+      "text": "Entre os Koboblins, apenas o prateado e o dourado têm pedras preciosas na lista de espólios — de Âmbar até Diamante.",
+      "sources": [
+        "zw",
+        "zw:Golden Bokoblin"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Topo da cadeia no modo normal",
+      "text": "No modo normal, nenhum Koboblin é mais forte. No Modo Mestre, os inimigos sobem um nível e passa a existir o Koboblin dourado acima dele.",
+      "sources": [
+        "zw",
+        "zw:Master Mode"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Atacar acampamentos de Koboblins prateados à noite, com Ataque-surpresa, para farmar pedras preciosas.",
+    "Usar Barris explosivos do próprio acampamento em vez de Bombas remotas."
+  ],
+  "limitations": [
+    "Bombas remotas são chutadas ou evitadas.",
+    "Flecha ancestral o desintegra sem deixar as pedras preciosas nem outros materiais."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_black_bokoblin",
+      "relation": "Variante anterior"
+    },
+    {
+      "id": "botw_monster_golden_bokoblin_mm",
+      "relation": "Variante superior do Modo Mestre"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Forma básica da espécie"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_amber",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Parte de terceiro nível"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_club",
+      "relation": "Arma típica"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

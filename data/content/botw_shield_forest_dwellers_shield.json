@@ -1,0 +1,110 @@
+{
+  "id": "botw_shield_forest_dwellers_shield",
+  "summary": "Escudo que os Koroks fizeram para hylianos com a madeira dura da Floresta Korok: Defesa 30, a maior entre os escudos de madeira. Peça obrigatória da Missão de santuário \"The Test of Wood\".",
+  "description": "O Escudo da Floresta foi feito pelos Koroks especificamente para hylianos, com a madeira mais dura das árvores que só crescem na Floresta Korok — por isso, segundo o jogo, é mais resistente do que parece. Com Defesa 30 e durabilidade 18, é o escudo de madeira mais forte de BOTW, à frente do Escudo Kobo dracônico (25) e do Escudo do soldado (16). Pertence ao equipamento Korok (Korok Gear), junto da Espada, da Lança e do Arco da Floresta.\n\nTem papel central na Missão de santuário \"The Test of Wood\": Damia entrega a Link um Escudo da Floresta, uma Espada da Floresta e um Arco da Floresta, e ele precisa abrir caminho até o Santuário Maag Halan usando só esses itens. Fora isso, existem apenas três exemplares na Grande Floresta de Hyrule e arredores, mais um num baú nas Floria Falls.\n\nApesar da madeira nobre, segue as regras de qualquer escudo de madeira: queima no fogo e no calor de Eldin, flutua e não conduz eletricidade nem atrai raios.",
+  "locations": [
+    "Três exemplares dentro e nos arredores da Grande Floresta de Hyrule.",
+    "Um baú nas Floria Falls."
+  ],
+  "obtaining": [
+    "Recolher os exemplares da Grande Floresta de Hyrule ou o do baú das Floria Falls.",
+    "Recebido de Damia no início da Missão de santuário \"The Test of Wood\"."
+  ],
+  "uses": [
+    "Concluir \"The Test of Wood\": o escudo precisa ser mantido equipado e inteiro até o Santuário Maag Halan.",
+    "Escudo de madeira de defesa alta para o meio do jogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além da defesa alta para um escudo de madeira."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 30, valor comparável ao de escudos de metal de nível médio; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Durante \"The Test of Wood\", gastá-lo surfando em pedra pode quebrá-lo e obrigar a reiniciar a prova."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e queima até virar cinzas, perdendo durabilidade aos poucos.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o move.",
+      "sources": ["dm", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +9 (nível amarelo) e com Defesa do escudo aumentada de +3 a +6 (branco) ou +7 a +12 (amarelo).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Regra de \"The Test of Wood\"",
+      "text": "Se Link trocar ou quebrar qualquer um dos três itens entregues por Damia (escudo, espada ou arco), a prova precisa ser recomeçada. Evitar fogo e bloqueios desnecessários é essencial nesse trajeto.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Na \"The Test of Wood\", priorizar a Defesa perfeita: ela não gasta durabilidade, o que preserva o escudo até o fim da prova."
+  ],
+  "limitations": [
+    "Continua sendo madeira: inútil em Eldin sem proteção contra o calor.",
+    "Poucos exemplares fixos no mapa."
+  ],
+  "related": [
+    { "id": "botw_weapon_forest_dwellers_sword", "relation": "Mesmo arquétipo; entregue junto em \"The Test of Wood\"" },
+    { "id": "botw_bow_forest_dwellers_bow", "relation": "Mesmo arquétipo; entregue junto em \"The Test of Wood\"" },
+    { "id": "botw_weapon_forest_dwellers_spear", "relation": "Mesmo arquétipo (equipamento Korok)" },
+    { "id": "botw_shield_dragonbone_boko_shield", "relation": "Segundo escudo de madeira com maior Defesa" },
+    { "id": "botw_shield_soldiers_shield", "relation": "Outro escudo de madeira de nível médio" }
+  ],
+  "capabilities": ["inflamavel", "flutua", "item_de_missao"],
+  "verification_status": "verificado"
+}

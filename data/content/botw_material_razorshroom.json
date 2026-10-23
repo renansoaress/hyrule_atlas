@@ -1,0 +1,210 @@
+{
+  "id": "botw_material_razorshroom",
+  "summary": "Cogumelo com um corte natural no chapéu que, segundo o jogo, desperta o espírito competitivo: cozido, dá Ataque aumentado. Cresce sob árvores da Grande Floresta de Hyrule e da Fronteira de Tabantha.",
+  "description": "O Ferromelo é conhecido pelo corte natural no chapéu. A descrição do jogo diz que comê-lo estimula o espírito competitivo, e os pratos de panela feitos com ele concedem Ataque aumentado, que eleva o poder dos golpes de Link. Cru, recupera meio coração; exposto ao fogo, vira Ferromelo tostado (3/4 de coração), cujo exterior afiado amolece bastante, mas que perde o efeito.\n\nCresce sob as árvores na Grande Floresta de Hyrule e na Fronteira de Tabantha. É vendido na Spore Store (Floresta Korok), na barraca de Ardin (Cidade Gerudo) e pelos mercadores ambulantes Kanny e Stamm, por 20 rupias. Na Tinturaria Kochi, entra no corante carmesim.",
+  "locations": [
+    "Sob as árvores na Grande Floresta de Hyrule e na Fronteira de Tabantha (locais citados pelo compendium e pelo Zelda Wiki).",
+    "Lojas: Spore Store, barraca de Ardin, Kanny e Stamm — 20 rupias."
+  ],
+  "obtaining": [
+    "Colher sob as árvores.",
+    "Comprar nas lojas citadas."
+  ],
+  "uses": [
+    "Pratos de Ataque aumentado antes de lutas difíceis.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante carmesim na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozido: Ataque aumentado (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Scorching Climate",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Assado por chamas diretas, vira Ferromelo tostado, que recupera 3/4 de coração.",
+      "side_effects": [
+        "Perde o Ataque aumentado.",
+        "Tostado vale 5 rupias, o mesmo que cru."
+      ],
+      "produces": [
+        "botw_food_toasty_razorshroom"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Ferromelo tostado.",
+      "produces": [
+        "botw_food_toasty_razorshroom"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": [
+        "botw_food_toasty_razorshroom"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; apesar do nome, o cogumelo não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Um ou mais Ferromelos dão Ataque aumentado ao prato. Mais unidades prolongam o efeito; combinado com Bananas valentes ou Protechofra, prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Food",
+        "zw:Attack Up"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não aumenta o ataque.",
+      "kind": "mecanica",
+      "sources": [
+        "comp",
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 5 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um cogumelo afiado",
+      "text": "O corte natural no chapéu é a marca registrada do Ferromelo. Na versão tostada, segundo a descrição do jogo, o exterior afiado amolece consideravelmente com o calor.",
+      "sources": [
+        "comp",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cogumelos que só os belos enxergam",
+      "text": "O Ferromelo é um dos cinco cogumelos vendidos na barraca de Ardin, na Cidade Gerudo, ao lado de Blindamelo, Flamelo, Aterramelo e Glacimelo. Ardin garante que as Gerudo mantêm a pele bonita com seus cogumelos, e, se Link comprar todo o estoque, ela brinca que passou a vender cogumelos que só as pessoas bonitas conseguem ver — antes de admitir a verdade e prometer repor o estoque.",
+      "sources": [
+        "zw:Stall"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Misture Ferromelos com Bananas valentes e Protechofras para obter Ataque aumentado de nível mais alto."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Ataque aumentado; só cozido."
+  ],
+  "related": [
+    {
+      "id": "botw_food_toasty_razorshroom",
+      "relation": "Resultado de expor o cogumelo ao fogo"
+    },
+    {
+      "id": "botw_material_mighty_bananas",
+      "relation": "Outro ingrediente de Ataque aumentado"
+    },
+    {
+      "id": "botw_material_mighty_thistle",
+      "relation": "Outro ingrediente de Ataque aumentado"
+    },
+    {
+      "id": "botw_material_ironshroom",
+      "relation": "Também vendido por Ardin, com efeito de defesa"
+    },
+    {
+      "id": "botw_elixir_mighty_elixir",
+      "relation": "Elixir com o mesmo efeito"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Receita de cogumelo"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante carmesim"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "reage_fogo",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

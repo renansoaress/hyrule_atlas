@@ -1,0 +1,129 @@
+{
+  "id": "botw_armor_hylian_trousers",
+  "summary": "Calças tradicionais de Hyrule, achadas num baú no Grande Planalto ou compradas por 90 rupias em Kakariko e Hateno. Sem efeito especial, mas fáceis de melhorar até 20 de defesa.",
+  "description": "As Calças hylianas formam o Conjunto hyliano com o Capuz hyliano e a Túnica hyliana. A primeira unidade pode ser achada cedo, num baú nas ruínas de um prédio em frente ao Templo do Tempo, no Grande Planalto (Great Plateau); depois, são vendidas por 90 rupias na loja Enchanted, na Vila Kakariko, e na Ventest Clothing Boutique, na Vila Hateno. A descrição destaca o tecido macio e a alta durabilidade, ideal para viajantes.\n\nNão têm efeito além da defesa, e o conjunto não tem bônus. A vantagem está nas melhorias, todas com partes de Koboblin, as mais comuns do jogo: chifres, presas e vísceras, mais 15 Âmbares no último nível, quando a defesa chega a 20. Podem ser tingidas na Tinturaria Kochi. São as calças que Link usa com a Túnica do campeão nas memórias recuperadas, no material promocional e no final do jogo.",
+  "locations": [
+    "Grande Planalto (Great Plateau): baú nas ruínas em frente ao Templo do Tempo.",
+    "Loja Enchanted, na Vila Kakariko.",
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Abrir o baú nas ruínas diante do Templo do Tempo, no Grande Planalto.",
+    "Comprar por 90 rupias na Enchanted ou na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Defesa barata para o início do jogo, com melhorias de materiais comuns."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas defesa."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só aumenta a defesa; não tem efeito adicional. O Conjunto hyliano também não tem bônus de conjunto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Hylian Armor Series",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "As calças \"oficiais\" de Link",
+      "text": "Embora pertençam ao Conjunto hyliano, as calças aparecem sempre combinadas à Túnica do campeão nas memórias recuperadas, na arte promocional e no final do jogo com todas as memórias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Melhore as calças cedo: os três primeiros níveis pedem só chifres, presas e vísceras de Koboblin, então o limite é o número de Grandes Fadas restauradas, não os materiais."
+  ],
+  "limitations": [
+    "Sem efeito adicional e sem bônus de conjunto.",
+    "O último nível pede 15 Âmbares, que exigem minerar bastante."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_hylian_hood",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_hylian_tunic",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_champions_tunic",
+      "relation": "Túnica com que aparece nas memórias"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Material das melhorias"
+    },
+    {
+      "id": "botw_material_amber",
+      "relation": "Material da última melhoria (15 unidades)"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

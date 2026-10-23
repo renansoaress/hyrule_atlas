@@ -1,0 +1,106 @@
+{
+  "id": "botw_mechanic_sneakstrike",
+  "summary": "Golpe corpo a corpo num inimigo que não percebeu Link, vindo por trás: causa 8 vezes o dano da arma. Agachar (pressionar o direcional esquerdo), grama alta, chuva e equipamentos furtivos ajudam; correr sempre denuncia.",
+  "description": "O Ataque-surpresa é o golpe de furtividade de BOTW: aproximar-se por trás de um inimigo distraído e atacá-lo com a arma corpo a corpo multiplica o dano por oito. A Tabuleta Sheikah mostra quanto barulho Link está fazendo ao andar, agachar ou atacar, e é esse ruído que decide se o monstro percebe a aproximação.\n\nVários fatores reduzem a chance de ser notado: agachar (pressionando o direcional esquerdo), a grama alta, que esconde Link, e a chuva, que abafa os passos. Armaduras e pratos de Furtividade aumentada somam até três níveis de furtividade. Monstros dormindo — os Koboblins dormem de barriga para cima à noite — são alvos ideais. Correr, por outro lado, faz barulho em qualquer nível de furtividade.",
+  "locations": [
+    "Qualquer encontro com inimigos que ainda não notaram Link, especialmente acampamentos à noite."
+  ],
+  "obtaining": [
+    "Disponível desde o início; basta ter uma arma corpo a corpo equipada."
+  ],
+  "uses": [
+    "Eliminar inimigos com um único golpe antes que alertem o acampamento.",
+    "Derrubar monstros de vigia antes que soem o chifre de alarme."
+  ],
+  "effects": [
+    "Dano multiplicado por 8 em relação à arma equipada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Atacar com arma corpo a corpo um inimigo que não percebeu Link, chegando por trás, causa 8 vezes o dano da arma.",
+      "conditions": [
+        "O inimigo não pode ter notado Link.",
+        "Arma corpo a corpo equipada."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Critical Hit"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Agachar (direcional esquerdo) e avançar devagar reduz o ruído; na grama alta Link fica menos visível; monstros dormindo podem ser atacados de surpresa.",
+      "side_effects": ["Correr produz ruído mesmo com três níveis de Furtividade aumentada."],
+      "kind": "mecanica",
+      "sources": ["zw:Stealth", "zw:Tips and Tricks", "zw:Sprinting"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva torna os passos mais difíceis de ouvir, o momento ideal para se aproximar de monstros, segundo as dicas do jogo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stealth", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Armaduras de furtividade (como o Conjunto furtivo completo) e pratos ou elixires discretos aumentam a furtividade até o máximo de três níveis.",
+      "kind": "mecanica",
+      "sources": ["zw:Stealth"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes descrevem o multiplicador apenas para armas corpo a corpo; não informam bônus de surpresa para flechas (que têm seu próprio crítico na cabeça)."
+    },
+    {
+      "action": "monstros",
+      "variant": "Modo Mestre e casos especiais",
+      "status": "confirmado",
+      "result": "No Modo Mestre os inimigos detectam a aproximação de Link com mais facilidade. O Centaleão do Monte Ploymus consegue ouvir Link mesmo com três níveis de furtividade.",
+      "kind": "mecanica",
+      "sources": ["zw:Master Mode", "zw:Lynel"]
+    },
+    {
+      "action": "montar",
+      "variant": "Centaleão",
+      "status": "confirmado",
+      "result": "Chegar por trás de um Centaleão sem ser notado também permite montá-lo temporariamente, em vez de golpeá-lo.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Roubar as armas do acampamento",
+      "text": "As dicas do jogo lembram que monstros às vezes deixam as armas espalhadas pelo acampamento: chegar de mansinho e pegá-las antes do Ataque-surpresa deixa os sobreviventes desarmados.",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Primeiro o vigia",
+      "text": "Koboblins nas torres de vigia tocam o chifre ao avistar Link e alertam o resto do acampamento; derrubá-los primeiro preserva a surpresa contra os demais.",
+      "sources": ["zw:Bokoblin", "zw:Tips and Tricks"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar a arma de maior dano disponível: com o multiplicador de 8, um único Ataque-surpresa costuma eliminar monstros comuns."
+  ],
+  "limitations": [
+    "Se o inimigo perceber Link, o bônus deixa de valer.",
+    "Correr sempre faz barulho."
+  ],
+  "related": [
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Aumenta a furtividade" },
+    { "id": "botw_armorset_stealth_set", "relation": "Conjunto de Furtividade aumentada" },
+    { "id": "botw_mechanic_critical_hit", "relation": "Outra forma de dano multiplicado" },
+    { "id": "botw_mechanic_rain", "relation": "A chuva abafa os passos" },
+    { "id": "botw_mechanic_master_mode", "relation": "Inimigos percebem Link com mais facilidade" },
+    { "id": "botw_monster_bokoblin", "relation": "Dormem à noite e vigiam acampamentos" },
+    { "id": "botw_monster_lynel", "relation": "Pode ser montado ao chegar por trás" }
+  ],
+  "capabilities": ["ataque", "furtividade"],
+  "verification_status": "verificado"
+}

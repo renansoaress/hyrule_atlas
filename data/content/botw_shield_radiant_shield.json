@@ -1,0 +1,122 @@
+{
+  "id": "botw_shield_radiant_shield",
+  "summary": "Escudo luxuoso das capitãs Gerudo e o melhor para surfar: tem o menor atrito do jogo (0,1) e desgasta 40% menos. Apesar do nome, não reflete lasers sozinho. Só há quatro no mapa (cinco no Modo Mestre).",
+  "description": "O Escudo luminescente é entregue às guerreiras Gerudo que chegam ao posto de capitã — Teake, capitã da guarda, carrega um nas costas. O jogo diz que sua opulência só é igualada pela capacidade de combate, e ele é considerado uma melhoria direta do Escudo Gerudo: Defesa 35 e durabilidade 26. Pertence ao equipamento Gerudo (Gerudo Gear).\n\nSua fama, porém, vem do surfe. Nos parâmetros, o atrito ao Surfar com escudo é multiplicado por 0,1, o menor valor entre todos os escudos, e o desgaste por 0,6. O Zelda Wiki o coloca, ao lado do Escudo ancestral e do Escudo da visão anímica, entre os únicos escudos com atrito reduzido, e chega a afirmar que ele consegue surfar sobre pedra, ao contrário dos outros. O nome não indica nenhum poder contra Guardiões: seu MirrorLevel é 0, então só rebate lasers com Defesa perfeita, como um escudo comum.\n\nÉ raro: quatro exemplares espalhados por Hyrule, mais um no Modo Mestre. Sendo de metal, conduz eletricidade, atrai raios, afunda e pode ser movido com Magnétis; não queima.",
+  "locations": [
+    "Caverna secreta na montanha a leste do Santuário Sho Dantu, junto de outras peças do equipamento Gerudo.",
+    "Deserto Gerudo e Montanhas Gerudo, segundo o compendium; quatro exemplares no total (cinco no Modo Mestre)."
+  ],
+  "obtaining": [
+    "Recolher um dos exemplares fixos, como o da caverna a leste do Santuário Sho Dantu.",
+    "Baús de amiibo: Zelda e Urbosa (série Breath of the Wild) têm chance de conter um Escudo luminescente."
+  ],
+  "uses": [
+    "A melhor prancha para Surfar com escudo: quase não perde velocidade.",
+    "Escudo de metal de defesa média-alta."
+  ],
+  "effects": [
+    "Atrito mínimo ao surfar (multiplicador 0,1) e desgaste reduzido (0,6)."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 35; cada golpe consome durabilidade, exceto na Defesa perfeita. Não desvia lasers automaticamente (MirrorLevel 0).",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao Surfar com escudo, a perda de velocidade é multiplicada por 0,1 — o menor atrito do jogo — e o desgaste por 0,6.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["O artigo do escudo diz que ele surfa até sobre pedra, ao contrário dos outros; a página do surfe com escudo lembra que terreno rochoso gasta rápido a durabilidade de qualquer escudo."],
+      "applications": ["Descer encostas longas na maior velocidade possível."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters", "zw", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo com Magnétis — vale a pena, pois há poucos exemplares."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +3 a +6 (nível branco) ou +7 a +13 (nível amarelo) e com Defesa do escudo aumentada de +4 a +7 (branco) ou +8 a +13 (amarelo). Exemplares de baús de amiibo vêm com o valor máximo da faixa.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Amiibo Rune"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Ranking de atrito",
+      "text": "Só três escudos têm atrito de surfe abaixo do padrão (1): o Escudo luminescente (0,1), o Escudo ancestral (0,15) e o Escudo da visão anímica (0,25). Existia ainda um bônus nunca usado, \"Shield Surf Up\", que multiplicaria o atrito por 0,2.",
+      "sources": ["dm", "zw:Ancient Shield", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Raro até para Selmie",
+      "text": "Ao ver Link com o escudo, Selmie comenta que ele é raríssimo e que praticamente não se vê mais nenhum.",
+      "sources": ["zw", "zw:Selmie"]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo só como prancha nas grandes encostas de neve de Hebra e nas dunas do Deserto Gerudo, onde o surfe não gasta durabilidade e o atrito mínimo rende a maior velocidade."
+  ],
+  "limitations": [
+    "Apenas quatro exemplares (cinco no Modo Mestre), além dos baús de amiibo.",
+    "Não desvia lasers de Guardiões sem Defesa perfeita.",
+    "Metálico: atrai raios e cai das mãos com choques."
+  ],
+  "related": [
+    { "id": "botw_shield_gerudo_shield", "relation": "Escudo Gerudo comum, do qual é a melhoria direta" },
+    { "id": "botw_shield_daybreaker", "relation": "Escudo Gerudo de Urbosa" },
+    { "id": "botw_shield_ancient_shield", "relation": "Outro escudo de atrito reduzido (0,15)" },
+    { "id": "botw_shield_shield_of_the_minds_eye", "relation": "Outro escudo de atrito reduzido (0,25)" },
+    { "id": "botw_weapon_gerudo_scimitar", "relation": "Mesmo arquétipo (equipamento Gerudo)" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Melhor escudo para surfar" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "habilidade_especial"],
+  "verification_status": "verificado"
+}

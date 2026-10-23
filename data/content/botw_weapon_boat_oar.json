@@ -1,0 +1,113 @@
+{
+  "id": "botw_weapon_boat_oar",
+  "summary": "Remo de madeira de Lurelin usado como arma de emergência (ataque 14, durabilidade 8). Flutua, pega fogo e nunca recebe bônus dourados — só os comuns, que podem quase dobrar seu ataque.",
+  "description": "O Remo faz parte dos Utensílios do dia a dia, ferramentas de moradores de Hyrule que Link pode usar como arma. A descrição do jogo explica que ele foi feito para remar contra correntezas fortes e que talvez sirva para autodefesa num aperto. É especialmente comum nos arredores da Vila Lurelin, em Necluda Oriental e no litoral do Mar de Necluda, onde até os monstros da região o empunham.\n\nComo arma é frágil (8 usos), mas tem ataque razoável para o começo do jogo. Sendo de madeira, flutua, pega fogo e queima em clima escaldante, não conduz eletricidade, não atrai raios e não responde a Magnétis. É um dos itens que só recebem bônus do nível comum (branco), nunca do dourado.",
+  "locations": [
+    "Necluda Oriental e Mar de Necluda, sobretudo nos arredores da Vila Lurelin."
+  ],
+  "obtaining": [
+    "Recolher remos deixados nas áreas costeiras de Necluda Oriental.",
+    "Pegar a arma derrubada pelos monstros da região que o empunham."
+  ],
+  "uses": [
+    "Arma barata de reserva no litoral de Necluda.",
+    "Pode ser incendiado para carregar fogo até grama, tochas ou madeira de fogueira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de duas mãos: golpes lentos, sem escudo; o ataque carregado é um giro que consome vigor e termina numa pancada para baixo.",
+      "side_effects": ["Com durabilidade 8, quebra depois de poucos acertos."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e o golpe é crítico (dano dobrado).",
+      "applications": ["Aproveitar o remo quase quebrado como projétil."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas; aceso, pode ser usado para espalhar o fogo.",
+      "side_effects": ["Mantenha-o longe de fogo se quiser conservá-lo como arma."],
+      "applications": ["Acender uma fogueira encostando o remo em chamas numa pilha de Madeira."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon", "zw:Wood"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo e acaba virando cinzas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade (madeira).",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movido com Magnétis.",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Monstros das áreas costeiras de Necluda Oriental usam remos como arma e os derrubam ao serem derrotados.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Só bônus comuns",
+      "text": "O remo está entre os itens que só recebem bônus brancos. Pelos parâmetros extraídos, esses bônus são Ataque aumentado de +7 a +13, Durabilidade aumentada de +1 a +2 ou Acerto crítico. Um remo com +13 de ataque chega a 27, quase o dobro do valor base. Os valores dourados que constam nos parâmetros (+14 a +26 de ataque) não aparecem no jogo normal.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Utensílio do dia a dia",
+      "text": "O remo pertence ao mesmo grupo de equipamento da Enxada: ferramentas que moradores de Hyrule usam no cotidiano e que Link pode empunhar como armas.",
+      "sources": ["zw", "zw:Farming Hoe"]
+    }
+  ],
+  "advanced_uses": [
+    "Procure remos com bônus de ataque branco no início do jogo: com +13, ele supera várias armas de duas mãos comuns da mesma fase."
+  ],
+  "limitations": [
+    "Durabilidade 8, uma das menores entre as armas de duas mãos.",
+    "Queima no calor de Eldin e quando exposto ao fogo."
+  ],
+  "related": [
+    { "id": "botw_weapon_farming_hoe", "relation": "Outro utensílio do dia a dia de duas mãos" },
+    { "id": "botw_weapon_woodcutters_axe", "relation": "Outro item que só recebe bônus brancos" },
+    { "id": "botw_material_wood", "relation": "Aceso, o remo acende fogueiras" },
+    { "id": "botw_mechanic_fire", "relation": "Pega fogo e espalha chamas" }
+  ],
+  "capabilities": ["inflamavel", "flutua", "arremessavel"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "botw_monster_electric_keese",
+  "summary": "Morci eletrificado que vive pendurado no teto de cavernas a qualquer hora e voa à noite. O choque atordoa Link e o faz largar armas de metal; cai com um único acerto.",
+  "description": "O Morci elétrico (Electric Keese, também conhecido em inglês como Thunder Keese) é a variante eletrificada do Morci. A eletricidade que envolve o corpo o torna mais perigoso que o comum, diz o compendium, pois ele pode dar choque em qualquer coisa que toque. É mais comum em Necluda Oriental, na Grande Nascente de Lanayru e no Deserto Gerudo. Fica pendurado no teto de cavernas em qualquer horário do dia e também voa à noite; Feitiçanos elétricos e do trovão podem invocá-lo.\n\nAo atacar, dá um choque que atordoa Link e o faz largar qualquer arma de metal que esteja segurando — um problema em cavernas apertadas. Como todos os Morcis, tem 1 ponto de vida. Pode deixar Asa de Morci elétrico e Olho de Morci.",
+  "locations": [
+    "Necluda Oriental, Grande Nascente de Lanayru e Deserto Gerudo.",
+    "Teto de cavernas, a qualquer hora; voando à noite.",
+    "Invocado em combate por Feitiçanos elétricos e do trovão."
+  ],
+  "obtaining": [
+    "Pode deixar Asa de Morci elétrico e Olho de Morci.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Asas de Morci elétrico.",
+    "Registro no compendium (entrada nº 91)."
+  ],
+  "effects": [
+    "Choque que atordoa Link e o faz largar armas de metal."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cai com um golpe (1 ponto de vida), mas o choque ao atacar pode fazer Link largar uma arma de metal.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Aparar a investida de um Morci com Defesa perfeita o mata instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw:Keese"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha o derruba de longe, sem risco de choque.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Qualquer ataque que o acerte o derruba, incluindo Flechas incendiárias.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Arrow"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Qualquer ataque que o acerte o derruba, incluindo Flechas congelantes.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ice Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune a eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Morci elétrico com água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões ferem inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica pendurado no teto de cavernas a qualquer hora do dia.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "A rajada da Folha Korok derruba Morcis no chão por um momento.",
+      "kind": "mecanica",
+      "sources": ["zw:Keese", "zw:Korok Leaf"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Desarme no meio da caverna",
+      "text": "O choque do Morci elétrico atordoa Link e faz cair qualquer arma de metal que ele esteja segurando. Armas de madeira não conduzem eletricidade, então não são derrubadas por esse motivo.",
+      "sources": ["zw", "zw:Bokoblin Gear"]
+    }
+  ],
+  "advanced_uses": [
+    "Entrar em cavernas com Morcis elétricos com uma arma de madeira em mãos ou com o arco pronto."
+  ],
+  "limitations": [
+    "Armas de metal podem ser derrubadas pelo choque."
+  ],
+  "related": [
+    { "id": "botw_monster_keese", "relation": "Forma comum" },
+    { "id": "botw_monster_fire_keese", "relation": "Variante de fogo" },
+    { "id": "botw_monster_ice_keese", "relation": "Variante de gelo" },
+    { "id": "botw_material_electric_keese_wing", "relation": "Parte exclusiva" },
+    { "id": "botw_material_keese_eyeball", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_monster_electric_wizzrobe", "relation": "Pode invocá-lo" },
+    { "id": "botw_monster_thunder_wizzrobe", "relation": "Pode invocá-lo" }
+  ],
+  "capabilities": ["gera_eletricidade", "vence_rapido"],
+  "verification_status": "parcial"
+}

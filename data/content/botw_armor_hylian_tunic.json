@@ -1,0 +1,126 @@
+{
+  "id": "botw_armor_hylian_tunic",
+  "summary": "Túnica de couro popular entre os viajantes, vendida por 120 rupias em Kakariko e Hateno. Sem efeito especial, mas melhorada só com partes de Koboblin e Âmbar até 20 de defesa.",
+  "description": "A Túnica hyliana é a peça de torso do Conjunto hyliano, com o Capuz hyliano e as Calças hylianas. É vendida por 120 rupias na loja Enchanted, na Vila Kakariko, e na Ventest Clothing Boutique, na Vila Hateno. A descrição a chama de traje comum que ficou popular em Hyrule, principalmente entre viajantes, por ser leve e resistente sem limitar os movimentos; o modelo combina peitoral, ombreira, luvas e braçadeiras, tudo de couro.\n\nNão tem efeito adicional e o conjunto não tem bônus. As melhorias são as mais acessíveis do jogo: 5 Chifres de Koboblin no primeiro nível, chifres e presas no segundo, presas e vísceras no terceiro e 15 Vísceras de Koboblin com 15 Âmbares no quarto, quando a defesa chega a 20. Pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Loja Enchanted, na Vila Kakariko.",
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Comprar por 120 rupias na Enchanted ou na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Defesa para o início do jogo, fácil de melhorar."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas defesa."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só aumenta a defesa; não tem efeito adicional. O Conjunto hyliano também não tem bônus de conjunto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Hylian Armor Series",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Coleção da Claree",
+      "text": "Na Enchanted, a dona Claree diz que as peças hylianas vão ficar bem em Link; o Conjunto hyliano e o Conjunto furtivo formam a \"Coleção Claree\" da loja.",
+      "sources": [
+        "zw:Enchanted"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use a túnica como peça de transição: os três primeiros níveis custam só partes de Koboblin, então o que limita as melhorias é quantas Grandes Fadas já foram restauradas, não os materiais."
+  ],
+  "limitations": [
+    "Sem efeito adicional e sem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_hylian_hood",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_hylian_trousers",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Material dos primeiros níveis"
+    },
+    {
+      "id": "botw_material_amber",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_armor_champions_tunic",
+      "relation": "Túnica de torso com efeito, alternativa a esta"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,164 @@
+{
+  "id": "botw_armor_dark_hood",
+  "summary": "Capuz do Conjunto sombrio, a “camuflagem de monstro” de Kilton, vendido por 1.999 Mon após libertar as quatro Feras Divinas. Sozinho não tem efeito; o traje completo dá Velocidade noturna e assusta as pessoas.",
+  "description": "O Capuz sombrio é produto da pesquisa de monstros de Kilton, que o criou pensando num monstro “nascido das sombras”; os olhos brilham num vermelho sinistro no escuro. É a peça mais cara do conjunto — 1.999 Mon, contra 999 Mon da Túnica e das Calças sombrias — e só aparece na Fang and Bone depois que as quatro Feras Divinas são libertadas.\n\nSozinho, dá apenas 3 de defesa. Com as três peças, o Conjunto sombrio concede a Velocidade noturna (Night Speed Up): entre 21h e 4h, Link corre 20% mais rápido, como no nível 2 de Velocidade aumentada, e o bônus ainda soma com um nível 1 de Velocidade aumentada. O conjunto não pode ser melhorado nem tingido, por isso o bônus vale desde a compra. Vestido com ele, Link assusta as pessoas que o veem.",
+  "locations": [
+    "Fang and Bone, a loja noturna de Kilton (Skull Lake, no Coração de Akkala, e arredores dos principais povoados, das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Comprar de Kilton por 1.999 Mon depois de libertar as quatro Feras Divinas."
+  ],
+  "uses": [
+    "Completar o Conjunto sombrio para correr mais rápido à noite."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Conjunto completo: Velocidade noturna (+20% na corrida entre 21h e 4h)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 3 de defesa; sozinho, não tem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto sombrio completo",
+      "status": "confirmado",
+      "result": "Com a Túnica e as Calças sombrias, Link corre 20% mais rápido entre 21h e 4h (equivale a Velocidade aumentada nível 2 e soma com um nível 1 desse efeito).",
+      "conditions": [
+        "As três peças vestidas; não há melhoria a fazer.",
+        "Horário do jogo entre 21h e 4h."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "pessoas",
+      "status": "confirmado",
+      "result": "Personagens se assustam ao ver Link usando o Conjunto sombrio.",
+      "kind": "curiosidade",
+      "sources": [
+        "zw",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Nem Kilton sabe explicar a velocidade",
+      "text": "Ao lançar o conjunto, Kilton diz que quem o vestir “vai virar um monstro” e espera que Link goste de ser caçado pelos órgãos; depois admite que, à noite, talvez dê para se mover um pouco mais rápido, sem saber como isso aconteceu.",
+      "sources": [
+        "zw:Fang and Bone",
+        "zw:Dark Series"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Assusta até o vendedor",
+      "text": "Se Link se aproximar de Kilton usando o Conjunto sombrio, ele comenta que o traje é assustador o bastante para fazer um mercador corajoso chorar chamando a mãe.",
+      "sources": [
+        "zw:Kilton"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para viagens noturnas a pé, somar a Velocidade noturna do conjunto a um prato de Velocidade aumentada nível 1."
+  ],
+  "limitations": [
+    "Sozinho, o capuz só dá 3 de defesa.",
+    "Não pode ser melhorado por Grandes Fadas nem tingido.",
+    "Só fica à venda depois de libertar as quatro Feras Divinas."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_dark_series",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_dark_tunic",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_dark_trousers",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_stealth_mask",
+      "relation": "Peça de outro conjunto com o mesmo bônus noturno (★★)"
+    },
+    {
+      "id": "botw_armor_tingles_hood",
+      "relation": "Peça de outro conjunto com Velocidade noturna"
+    },
+    {
+      "id": "botw_armor_lynel_mask",
+      "relation": "Item anterior da Fang and Bone (após três Feras)"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

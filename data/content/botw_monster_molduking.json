@@ -1,0 +1,180 @@
+{
+  "id": "botw_monster_molduking",
+  "summary": "Molduga gigante que dormiu séculos sob a areia dos East Barrens e tem pele rica em ferro (DLC 2). Bombas o atraem e o atordoam no ar; é o desafio de \"EX Champion Urbosa's Song\" e volta a cada Lua de sangue.",
+  "description": "O Molduga-rei é uma subespécie gigante de Molduga que, segundo o compendium, armazenou muita energia dormindo debaixo da terra por centenas de anos. A pele rica em ferro funciona como escudo protetor e o torna muito mais resistente que os Moldugas comuns. Ele carrega cravadas no corpo uma Lança Gerudo, um Montante dourado, uma Espada enferrujada, uma Alabarda enferrujada e uma Lança de arremesso — sinais de tentativas fracassadas de matá-lo. Há 100 anos, Urbosa o enfrentou na sua Provação do domador da Fera Divina (Divine Beast Tamer's Trial).\n\nComo os parentes, nada sob a areia dos East Barrens à procura de presas e, ao detectar movimento, dispara até a origem e salta para engoli-la. Link pode enganá-lo jogando Bombas remotas ou atirando Flechas explosivas na areia ao lado; se o Molduga-rei for atingido por uma dessas explosões enquanto está no ar, cai no chão e fica atordoado por um tempo, aberto a golpes.\n\nNa missão principal \"EX Champion Urbosa's Song\" (DLC 2), derrotá-lo faz o Santuário Keive Tala surgir da areia. Depois disso, ele reaparece nos East Barrens após cada Lua de sangue. Sua derrota não conta para a Medalha de honra: Molduga.",
+  "locations": [
+    "East Barrens, no Deserto Gerudo (somente com o DLC 2, The Champions' Ballad)."
+  ],
+  "obtaining": [
+    "Derrotá-lo durante \"EX Champion Urbosa's Song\" faz surgir o Santuário Keive Tala.",
+    "O compendium lista apenas \"tesouros\" como recompensa.",
+    "Reaparece nos East Barrens depois de cada Lua de sangue."
+  ],
+  "uses": [
+    "Etapa obrigatória da missão principal \"EX Champion Urbosa's Song\" (DLC 2)."
+  ],
+  "effects": [
+    "Investida sob a areia e salto para engolir a fonte do movimento detectado."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao detectar movimento, corre até a origem e salta para devorá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "As guerreiras Gerudo não conseguiram feri-lo com espadas, segundo Traysi. O momento de golpear é quando ele cai atordoado após uma explosão no ar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas explosivas atiradas na areia o atraem, e acertá-lo com a explosão durante o salto o derruba atordoado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito do fogo sobre ele."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Apesar da pele rica em ferro, as fontes não dizem se ele conduz ou sofre mais com eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "Vive sob a areia dos East Barrens; não há água no território."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões na areia próxima o fazem sair; atingido por uma explosão no ar, cai e fica atordoado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Bombas remotas lançadas na areia servem de isca; detonadas quando ele salta, o derrubam atordoado.",
+      "applications": [
+        "Isca e ataque com a mesma ferramenta, sem gastar flechas."
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "A pele contém ferro e há armas de metal cravadas nele, mas nenhuma fonte descreve o uso de Magnétis contra o Molduga-rei."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Nada pela areia dos East Barrens. Traysi observa a área do alto de uma mesa rochosa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Armas de quem tentou",
+      "text": "As armas presas ao couro do Molduga-rei — Lança Gerudo, Montante dourado, Espada enferrujada, Alabarda enferrujada e Lança de arremesso — indicam tentativas frustradas de abatê-lo.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A reportagem de Traysi",
+      "text": "Teake conta que o Molduga-rei foi avistado nos East Barrens e que Traysi foi investigar. Depois da vitória, Traysi pergunta se pode escrever sobre o feito, mas entende o silêncio de Link como um não.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Revive, mas não conta para a medalha",
+      "text": "Após ser derrotado, o Molduga-rei volta a cada Lua de sangue; ainda assim, a vitória contra ele não entra na contagem da Medalha de honra: Molduga, assim como o Tálus ígneo titã não conta para a dos Tálus.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Plantar uma Bomba remota na areia, recuar e detoná-la no exato instante do salto para atordoá-lo."
+  ],
+  "limitations": [
+    "Exclusivo do DLC 2 (The Champions' Ballad).",
+    "Fora do atordoamento, espadas praticamente não o ferem.",
+    "Não conta para a Medalha de honra: Molduga."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_molduga",
+      "relation": "Espécie da qual é subespécie"
+    },
+    {
+      "id": "botw_monster_igneo_talus_titan",
+      "relation": "Outro chefe da Provação do domador"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Isca e forma de atordoá-lo"
+    },
+    {
+      "id": "botw_arrow_bomb_arrow",
+      "relation": "Isca e forma de atordoá-lo"
+    },
+    {
+      "id": "botw_weapon_golden_claymore",
+      "relation": "Uma das armas cravadas no corpo dele"
+    },
+    {
+      "id": "botw_weapon_gerudo_spear",
+      "relation": "Uma das armas cravadas no corpo dele"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Faz o Molduga-rei reaparecer"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_molduga",
+      "relation": "Medalha para a qual ele não conta"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

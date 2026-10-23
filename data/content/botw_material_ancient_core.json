@@ -1,0 +1,206 @@
+{
+  "id": "botw_material_ancient_core",
+  "summary": "Cristal que alimentava as máquinas Sheikah, queda rara dos Guardiões fortes. Três dão a Estátis+ com Purah; no Forno ancestral, são o item caro do Conjunto ancestral e das armas ancestrais.",
+  "description": "O Núcleo ancestral é um cristal feito com tecnologia perdida que já foi a fonte de energia das máquinas antigas — \"muito valioso para pesquisadores\", avisa o jogo. É uma queda rara: só Guardiões batedores III e IV, Guardiões persecutórios, altívagos, torretas e Sentinelas podem deixá-lo. Também aparece em baús no mundo aberto e em santuários, como recompensa de amiibo, e Teli o vende a 320 rupias, mas apenas em dias de chuva.\n\nOs dois pesquisadores do jogo disputam os núcleos. No Laboratório de Tecnologia Ancestral de Hateno, Purah troca 3 deles pela Estátis+, que passa a congelar inimigos no tempo. No Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala, cada peça do Conjunto ancestral pede 3 núcleos e cada uma das armas de lâmina (Espada ancestral, Espada serrada ancestral e Lança ancestral) pede 2. Na Fonte da Grande Fada, o 3º nível do Conjunto ancestral e dos Elmos divinos pede 5 por peça. Na culinária, é parte de monstro de grau alto: 3:10 de duração e +30% de chance de crítico num elixir. Kilton paga 40 Mon.",
+  "locations": [
+    "Guardiões batedores III e IV (santuários e Feras Divinas), Guardiões persecutórios, altívagos, torretas e Sentinelas.",
+    "Baús no mundo aberto e em santuários.",
+    "Teli, entre o Forte Hateno e a Vila Hateno, somente em dias de chuva."
+  ],
+  "obtaining": [
+    "Derrotar os Guardiões citados acima (queda rara).",
+    "Abrir baús e escanear amiibo.",
+    "Comprar de Teli quando chover."
+  ],
+  "uses": [
+    "Missão secundária \"Slated for Upgrades\": 3 Núcleos ancestrais para Purah melhorar a Estátis para Estátis+.",
+    "Forno ancestral (Akkala): 3 núcleos por peça do Conjunto ancestral (Elmo, Couraça e Grevas, com 20 Engrenagens e 2.000 rupias); 2 na Espada ancestral, na Espada serrada ancestral e na Lança ancestral (com 1.000 rupias e outras peças).",
+    "Melhorias na Fonte da Grande Fada: 5 por peça no 3º nível do Conjunto ancestral e dos quatro Elmos divinos (35 no total).",
+    "Elixires: cozido com um bicho, acrescenta 3:10 de duração e +30% de chance de crítico.",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 80 rupias, ou 40 Mon na Fang and Bone."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; nos elixires, prolonga a duração (3:10) e aumenta a chance de crítico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "Purah",
+      "status": "confirmado",
+      "result": "Entregar 3 Núcleos ancestrais a Purah melhora a Estátis para Estátis+, que permite congelar inimigos no tempo por um curto período.",
+      "conditions": [
+        "Missão secundária \"Slated for Upgrades\" ativa."
+      ],
+      "side_effects": [
+        "Inimigos sob Estátis+ ficam imunes a congelamento, queimadura e choque enquanto durar o efeito, que acaba mais rápido do que em objetos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Slated for Upgrades",
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "Forno ancestral",
+      "status": "confirmado",
+      "result": "Faz parte do preço do Elmo, da Couraça e das Grevas ancestrais e da Espada ancestral, da Espada serrada ancestral e da Lança ancestral.",
+      "conditions": [
+        "Fornalha do laboratório de Akkala reacesa com a Chama azul (missão \"Robbie's Research\")."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ancient Oven",
+        "zw:Akkala Ancient Tech Lab"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem uso especial do núcleo solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um núcleo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Núcleo ancestral ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um núcleo largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do núcleo ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Apesar de ser uma antiga fonte de energia, nenhuma fonte descreve reação do núcleo à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Núcleo ancestral afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "O núcleo é descrito como um cristal; as fontes não informam se Magnétis o atrai."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um núcleo largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Parte de monstro de grau alto: com pelo menos um bicho, forma um elixir, acrescenta 3:10 de duração e dá 30% de chance de bônus crítico; não soma corações nem força ao efeito. Sem bicho, ou com comida comum, vira Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 80 rupias ou trocado por 40 Mon na Fang and Bone, de Kilton.",
+      "sources": [
+        "zw",
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Disputa entre pesquisadores",
+      "text": "Os 3 núcleos da Estátis+ competem com os 9 necessários para comprar o Conjunto ancestral inteiro, os 6 das três armas de lâmina e os 35 das melhorias. Purah sugere ver Impa antes, mas aceita fazer a melhoria assim que Link tiver os materiais.",
+      "sources": [
+        "zw:Slated for Upgrades",
+        "zw:Ancient Oven"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Teli guarda os núcleos para a chuva",
+      "text": "Teli só inclui Núcleos ancestrais (e Eixos ancestrais) no estoque nos dias de chuva; nos demais, vende apenas parafusos, molas e engrenagens.",
+      "sources": [
+        "zw:Teli",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para elixires, qualquer parte de grau alto (como Vísceras de Koboblin) dá os mesmos 3:10 e +30% de crítico; guarde os núcleos para Purah, Robbie e a Grande Fada."
+  ],
+  "limitations": [
+    "Queda rara, e só dos Guardiões mais fortes.",
+    "Não pode ser comido nem cozido com comida comum."
+  ],
+  "related": [
+    {
+      "id": "botw_rune_stasis",
+      "relation": "Melhorada para Estátis+ com 3 núcleos"
+    },
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Cada peça pede 3 núcleos no Forno e 5 no 3º nível"
+    },
+    {
+      "id": "botw_weapon_ancient_short_sword",
+      "relation": "Pede 2 núcleos no Forno ancestral"
+    },
+    {
+      "id": "botw_weapon_ancient_bladesaw",
+      "relation": "Pede 2 núcleos no Forno ancestral"
+    },
+    {
+      "id": "botw_weapon_ancient_spear",
+      "relation": "Pede 2 núcleos no Forno ancestral"
+    },
+    {
+      "id": "botw_material_giant_ancient_core",
+      "relation": "Versão maior e ainda mais rara"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Um dos Guardiões que podem deixá-lo"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Parte de grau alto equivalente na culinária"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

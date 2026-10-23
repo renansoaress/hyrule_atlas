@@ -1,0 +1,142 @@
+{
+  "id": "botw_creature_razorclaw_crab",
+  "summary": "Caranguejo de pinças excepcionalmente afiadas das praias do Mar de Necluda e de Necluda Oriental. Foge se Link se aproximar, mas é pego facilmente com furtividade. Cozido, dá Ataque aumentado.",
+  "description": "O Caranguejo espadachim vive perto da água, geralmente nas praias do Mar de Necluda e de Necluda Oriental. É conhecido, segundo o jogo, pelas pinças extremamente afiadas, cujo \"composto de força\" aumenta o poder de ataque quando cozido. Foge de lado se Link se aproximar, mas é apanhado com facilidade quando Link chega sorrateiramente.\n\nCru, recupera 1 coração. Na panela, dá Ataque aumentado temporário e serve para todas as receitas de caranguejo — Omelete de caranguejo com arroz, Risoto de caranguejo, Caranguejo salteado, Caranguejo grelhado no sal e Espetinho de frutos do mar — e para as receitas gerais de fruto do mar. Também é um dos ingredientes valentes que podem ser somados a um Elixir valente para que ele cure. No fogo vira Caranguejo tostado; no gelo, Caranguejo congelado.",
+  "locations": [
+    "Praias e águas rasas do Mar de Necluda e de Necluda Oriental."
+  ],
+  "obtaining": [
+    "Pegar à mão; aproximar-se agachado (furtividade) evita que ele fuja."
+  ],
+  "uses": [
+    "Receitas de caranguejo: Omelete de caranguejo com arroz, Risoto de caranguejo, Caranguejo salteado, Caranguejo grelhado no sal e Espetinho de frutos do mar.",
+    "Receitas gerais de fruto do mar, como Peixe no vapor e Frutos do mar à meunière, com Ataque aumentado.",
+    "Ingrediente valente de um Elixir valente, que passa a recuperar corações.",
+    "Venda: 8 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: Ataque aumentado temporário."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge se Link se aproximar, mas é apanhado facilmente quando Link chega de forma sorrateira.",
+      "conditions": ["Andar agachado aumenta a furtividade ao se aproximar de animais."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stealth"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um caranguejo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Caranguejo espadachim dão Ataque aumentado temporário.",
+      "produces": ["botw_food_crab_omelet_with_rice", "botw_food_crab_risotto", "botw_food_crab_stir_fry", "botw_food_salt_grilled_crab", "botw_food_seafood_skewer", "botw_food_steamed_fish"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Crab"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somado a um Elixir valente (Escaravelho brigão + parte de monstro), faz o elixir também recuperar corações.",
+      "side_effects": ["Sem o escaravelho, só com partes de monstro, o resultado é Comida duvidosa."],
+      "produces": ["botw_elixir_mighty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Mighty Elixir", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "sources": ["zw", "zw:Crab"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 8 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Caranguejo tostado, sem o efeito de ataque.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, vira Caranguejo tostado.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Caranguejo tostado.",
+      "produces": ["botw_food_blackened_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriado com gelo, vira Caranguejo congelado.",
+      "produces": ["botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Caranguejo congelado.",
+      "produces": ["botw_food_frozen_crab"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este caranguejo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Os três caranguejos são intercambiáveis nas receitas",
+      "text": "Todas as receitas de caranguejo pedem \"qualquer caranguejo\"; trocar o Caranguejo espadachim pelo couraçado ou pelo esperto só muda o efeito do prato (ataque, defesa ou vigor). Os três também viram os mesmos Caranguejo tostado e Caranguejo congelado.",
+      "sources": ["zw", "zw:Crab", "zw:Roasted Food"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Furtividade ajuda na praia",
+      "text": "Agachar-se aumenta a furtividade, e chuva e grama alta reduzem a chance de ser notado; já correr em disparada sempre faz barulho, qualquer que seja o nível de furtividade.",
+      "sources": ["zw:Stealth"]
+    }
+  ],
+  "advanced_uses": [
+    "Misturar com Bananas valentes, Ferromelo ou Protechofra, que também dão ataque, prolonga e pode elevar o nível do Ataque aumentado."
+  ],
+  "limitations": [
+    "Assado ou congelado, perde o Ataque aumentado.",
+    "Não é um bicho: sozinho com partes de monstro, não forma elixir."
+  ],
+  "related": [
+    { "id": "botw_food_blackened_crab", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_crab", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_food_crab_risotto", "relation": "Receita com qualquer caranguejo" },
+    { "id": "botw_elixir_mighty_elixir", "relation": "Pode ser somado como ingrediente valente" },
+    { "id": "botw_creature_ironshell_crab", "relation": "Caranguejo das mesmas praias, de efeito defensivo" },
+    { "id": "botw_creature_mighty_porgy", "relation": "Fruto do mar com o mesmo efeito" }
+  ],
+  "capabilities": ["cura", "ataque", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

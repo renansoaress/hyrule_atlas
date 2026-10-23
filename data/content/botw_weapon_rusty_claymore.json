@@ -1,0 +1,189 @@
+{
+  "id": "botw_weapon_rusty_claymore",
+  "summary": "Montante maltratado pela ferrugem (ataque 12, durabilidade 10). Vale mais como \"bilhete\": um Octoroc rochoso o limpa e devolve um montante do viajante, do soldado, do cavaleiro ou real.",
+  "description": "O Montante enferrujado pertence ao Equipamento enferrujado, as armas que ficaram expostas ao tempo. O jogo é direto: a espada não foi bem cuidada e não deve durar mais que alguns golpes. É comum na Pradaria de Hyrule e no Cânion de Eldin, abandonado ou nas mãos de inimigos.\n\nO segredo está nos Octorocs rochosos. Se um deles aspirar o montante ao inspirar, ele o mastiga e cospe de volta uma versão limpa, sorteada assim: 50% Montante do viajante, 35% Montante do soldado, 10% Montante do cavaleiro e 5% Montante real. Como arma, é de metal: conduz eletricidade, atrai raios, afunda e pode ser puxado com Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Cânion de Eldin, abandonado ou com inimigos."
+  ],
+  "obtaining": [
+    "Recolher nessas regiões ou derrotar inimigos que o carreguem.",
+    "Chance de sair de baús gerados pelo amiibo do Guardião (série Breath of the Wild).",
+    "Armas no mundo e com inimigos reaparecem após a Lua de sangue."
+  ],
+  "uses": [
+    "Matéria-prima para os Octorocs rochosos: trocar por um montante melhor.",
+    "Arma descartável do início do jogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo, com o giro carregado que gasta vigor. Quebra depois de poucos acertos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, faísca e atrai raios.",
+      "applications": [
+        "Largá-lo perto de inimigos durante a tempestade: objetos metálicos atraem as descargas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Recuperá-lo do fundo da água."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Colocado diante de um Octoroc rochoso, é aspirado e devolvido limpo: 50% Montante do viajante, 35% do soldado, 10% do cavaleiro e 5% real.",
+      "conditions": [
+        "O Octoroc precisa estar inspirando quando o montante estiver à frente dele."
+      ],
+      "side_effects": [
+        "Se Link tentar aparar a arma limpa cuspida pelo Octoroc com uma Defesa perfeita, ela atravessa Link."
+      ],
+      "produces": [
+        "botw_weapon_travelers_claymore",
+        "botw_weapon_soldiers_claymore",
+        "botw_weapon_knights_claymore",
+        "botw_weapon_royal_claymore"
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ],
+      "applications": [
+        "Largar o montante diante de um Octoroc rochoso enquanto ele inspira."
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A capacidade do Octoroc se esgota",
+      "text": "Cada Octoroc rochoso tem uma capacidade limitada de repor armas, reiniciada a cada Lua de sangue. Se um deles parar de limpar montantes, espere a próxima Lua de sangue ou procure outro Octoroc.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +11, Durabilidade aumentada de +1 a +2 ou Acerto crítico; no nível dourado (amarelo): Ataque de +12 a +22, Durabilidade de +3 a +5 ou Lançamento longo (×1,5 a ×2).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Junte vários Montantes enferrujados e leve-os aos Octorocs rochosos do Cânion de Eldin: em média, um em cada vinte vira Montante real."
+  ],
+  "limitations": [
+    "Durabilidade 10: só alguns golpes.",
+    "Metálico: perigoso em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Limpa o montante e devolve uma versão melhor"
+    },
+    {
+      "id": "botw_weapon_travelers_claymore",
+      "relation": "Resultado mais comum da limpeza (50%)"
+    },
+    {
+      "id": "botw_weapon_soldiers_claymore",
+      "relation": "Resultado da limpeza (35%)"
+    },
+    {
+      "id": "botw_weapon_knights_claymore",
+      "relation": "Resultado da limpeza (10%)"
+    },
+    {
+      "id": "botw_weapon_royal_claymore",
+      "relation": "Resultado mais raro da limpeza (5%)"
+    },
+    {
+      "id": "botw_weapon_rusty_broadsword",
+      "relation": "Arma de uma mão do Equipamento enferrujado"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Renova a capacidade dos Octorocs de repor armas"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

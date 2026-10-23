@@ -1,0 +1,150 @@
+{
+  "id": "botw_monster_guardian_skywatcher",
+  "summary": "Guardião voador que varre o terreno com um holofote vermelho e carrega o laser ao achar Link (1.500 de vida). Destruir as três hélices com flechas o derruba; ao morrer, cai e explode.",
+  "description": "O Guardião altívago é a versão voadora dos Guardiões, que o compendium descreve como uma melhoria do modelo com patas, capaz de atacar ou vigiar do alto. Ele patrulha o céu usando um holofote vermelho e, ao localizar Link, começa a carregar o laser. Há muitos ao redor do Castelo de Hyrule e das Ruínas da Cidadela de Akkala; esses estão todos corrompidos pela Malícia. Com o DLC 2 aparecem exemplares não corrompidos em Upland Zorana, na missão \"EX Champion Mipha's Song\", e dois na Provação Final.\n\nComo voa, exige táticas aéreas: aproximar-se com o Planador ou atacá-lo com flechas. Uma flecha no olho o atordoa — às vezes ele recolhe a cabeça para atrapalhar a mira, e pode estendê-la de novo enquanto Link mira. Ele voa com três hélices que podem ser danificadas: destruídas todas, o Guardião cai no chão e fica imobilizado. Com pouca vida, pode disparar lasers em sequência. Estátis+ aplicada enquanto carrega o laser também o atordoa depois.\n\nQuando é destruído, perde as hélices, despenca e explode. Pode deixar Parafuso, Mola, Engrenagem e Eixo ancestrais, Núcleo ancestral e Núcleo ancestral gigante. Curiosamente, o modelo é um Guardião torreta invertido, com os parafusos da cúpula trocados por hélices.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e no Altiplano de Akkala.",
+    "Pontos citados pelo Zelda Wiki: Castelo de Hyrule e seu fosso, Ruínas da Cidadela de Akkala, Castle Town Prison, Ilha do Labirinto Lomei, Quarry Ruins, Ankel Island, Tingel Island, Spring of Power e o caminho entre Piper Ridge e as Rayne Highlands.",
+    "Exemplares não corrompidos em Upland Zorana e na Provação Final (DLC 2); também na Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo pode render Parafuso, Mola, Engrenagem e Eixo ancestrais, Núcleo ancestral e Núcleo ancestral gigante.",
+    "Revive após cada Lua de sangue (inclusive os não corrompidos de Upland Zorana e da Provação Final)."
+  ],
+  "uses": [
+    "Fonte de materiais ancestrais, inclusive Núcleos."
+  ],
+  "effects": [
+    "Holofote vermelho de vigilância e laser de Guardião, que ateia fogo onde atinge."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Varre o terreno com um holofote vermelho; ao localizar Link, começa a carregar o laser.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha no olho o atordoa. Flechas nas hélices as danificam; destruídas as três, ele cai e fica imobilizado. Uma Flecha ancestral no olho destrói Guardiões instantaneamente.",
+      "side_effects": ["Ele recolhe e estende a cabeça para atrapalhar a mira."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só é alcançável corpo a corpo planando até ele ou depois de derrubá-lo pelas hélices. Armas ancestrais e a Espada Mestra são especialmente eficazes contra Guardiões corrompidos.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Guardian"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Como os lasers de Guardiões em geral, o dele pode ser devolvido com uma Defesa perfeita; o Escudo ancestral rebate lasers automaticamente.",
+      "kind": "mecanica",
+      "sources": ["zw:Perfect Guard", "zw:Ancient Shield"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O laser ateia fogo onde atinge. O efeito de fogo sobre o Guardião não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação relevante sobre água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Ao ser destruído, ele perde as hélices, cai e explode. O efeito de explosões externas sobre ele não é detalhado.",
+      "side_effects": ["Ficar embaixo dele no momento da queda é arriscado."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Estátis+ aplicada durante a carga do laser o deixa atordoado depois, mesmo sem golpes no intervalo.",
+      "conditions": ["Runa melhorada para Estátis+."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nele."
+    },
+    {
+      "action": "vento",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se correntes de vento afetam o voo dele."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Patrulha áreas abertas pelo ar, como o entorno do Castelo de Hyrule e da Cidadela de Akkala.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Uma torreta de cabeça para baixo",
+      "text": "O Guardião altívago é, no modelo, um Guardião torreta invertido, com os parafusos da meia cúpula substituídos por hélices.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Exemplares não corrompidos",
+      "text": "Três Guardiões altívagos não corrompidos aparecem em Upland Zorana durante \"EX Champion Mipha's Song\" e outros dois na Provação Final, ambos no DLC 2. Mesmo esses voltam com a Lua de sangue.",
+      "sources": ["zw", "zw:Blood Moon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Modo Mestre atrasa o disparo",
+      "text": "No Modo Mestre, ele às vezes leva mais tempo na carga do laser para desregular o tempo de Link.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Derrubar as três hélices com flechas e terminar a luta no chão, onde golpes corpo a corpo o alcançam."
+  ],
+  "limitations": [
+    "É preciso destruir as três hélices para fazê-lo cair.",
+    "Recolhe a cabeça para dificultar flechas no olho."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_turret", "relation": "Modelo do qual é uma versão invertida" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Versão terrestre" },
+    { "id": "botw_monster_sentry", "relation": "Outro Guardião voador, da Fera Divina Vah Rudania" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Destrói Guardiões ao acertar o olho" },
+    { "id": "botw_keyitem_paraglider", "relation": "Permite alcançá-lo no ar" },
+    { "id": "botw_rune_stasis", "relation": "Estátis+ o atordoa durante a carga" },
+    { "id": "botw_material_ancient_core", "relation": "Possível recompensa" },
+    { "id": "botw_material_giant_ancient_core", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["gera_fogo", "gera_explosao", "habilidade_especial"],
+  "verification_status": "verificado"
+}

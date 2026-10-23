@@ -1,0 +1,165 @@
+{
+  "id": "botw_weapon_feathered_edge",
+  "summary": "Espada leve de dois gumes forjada pelos artesãos Arás para que os guerreiros voem ao combate sem peso. Típica da Fronteira de Tabantha, onde dois Lagalfos azuis a empunham e a recuperam a cada Lua de sangue.",
+  "description": "O Gume plumado pertence ao arquétipo de equipamento Ará (Rito Gear). A descrição do jogo explica a ideia: uma espada de dois gumes leve o bastante para não atrapalhar o voo dos guerreiros Arás. É encontrada principalmente na Fronteira de Tabantha — em baús do Santuário Rota Ooh e de Dragon Bone Mire, e nas mãos de dois Lagalfos azuis que vivem perto da Ponte Kolami (Kolami Bridge): um num acampamento de monstros logo ao sul da ponte e outro escondido num caminho ao norte dela. Esses Lagalfos e as espadas reaparecem a cada Lua de sangue, o que torna a área uma fonte renovável.\n\nApesar de leve, é feita de metal: conduz eletricidade, atrai raios quando equipada durante tempestades, afunda na água e pode ser manipulada com Magnétis. Não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Fronteira de Tabantha (principal) e Pradaria de Hyrule, segundo o compendium.",
+    "Baús no Santuário Rota Ooh e em Dragon Bone Mire.",
+    "Com dois Lagalfos azuis perto da Ponte Kolami: um no acampamento ao sul da ponte, outro num caminho ao norte.",
+    "No Modo Mestre, há um baú extra com a espada na cachoeira de Hebra Plunge."
+  ],
+  "obtaining": [
+    "Abrir os baús citados ou derrotar os Lagalfos azuis da Ponte Kolami.",
+    "Os Lagalfos da ponte e suas espadas voltam a cada Lua de sangue.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão de nível intermediário (ataque 15, durabilidade 27).",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a arma voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, faísca e acaba atraindo um raio para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e manipulada com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Dois Lagalfos azuis da Fronteira de Tabantha, perto da Ponte Kolami, empunham a espada; ambos reaparecem com ela a cada Lua de sangue.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +4 a +6 (nível comum) ou +7 a +12 (nível dourado), bônus de durabilidade de +3 a +6 (ou +7 a +14 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Fonte renovável na Ponte Kolami",
+      "text": "Como os dois Lagalfos azuis da Ponte Kolami voltam a cada Lua de sangue com suas espadas, a área funciona como fonte recorrente de Gumes plumados, inclusive com chance de bônus.",
+      "sources": [
+        "zw",
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Voltar à Ponte Kolami depois de cada Lua de sangue para repor a espada."
+  ],
+  "limitations": [
+    "Metálica: perigosa em tempestades e contra inimigos elétricos.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_feathered_spear",
+      "relation": "Mesmo arquétipo (lança Ará)"
+    },
+    {
+      "id": "botw_bow_falcon_bow",
+      "relation": "Mesmo arquétipo (arco Ará)"
+    },
+    {
+      "id": "botw_monster_blue_lizalfos",
+      "relation": "Empunha a espada perto da Ponte Kolami"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Faz os Lagalfos e as espadas reaparecerem"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

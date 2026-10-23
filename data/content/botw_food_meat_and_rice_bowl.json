@@ -1,0 +1,109 @@
+{
+  "id": "botw_food_meat_and_rice_bowl",
+  "summary": "Tigela de Arroz hyliano com Carne de terceira levemente selada e Halita, \"presença constante em toda Hyrule\". Com carnes melhores, vira as tigelas de segunda ou de primeira.",
+  "description": "A Tigela de arroz com carne leva Arroz hyliano, Carne de terceira e Halita. Segundo a descrição do jogo, o prato de arroz com carne levemente selada é uma presença constante em toda Hyrule. Cura vários corações.\n\nNenhum dos três ingredientes tem efeito, então os dois espaços livres da panela decidem a versão: refrescante, isolante, tenaz, energizante, veloz, nutritiva, valente, discreta, picante ou blindada.\n\nA carne determina o nível da tigela: com Carne de terceira sai esta; com Carne de segunda ou Sobrecoxa, a Tigela de arroz com carne de segunda; com Carne de primeira, a Tigela de arroz com carne de primeira. A Coxa não aparece entre as carnes aceitas por esta receita no Zelda Wiki.",
+  "locations": [
+    "Carne de terceira: deixada por Javalis da mata, Bodes da montanha e Raposas do prado; vendida pelos mercadores Cambo e Mezer.",
+    "Arroz hyliano: colhido cortando grama em Necluda Oriental ou comprado na East Wind, na The Slippery Falcon, na Coral Reef, na General Shoppe e com Yammo.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Arroz hyliano + Carne de terceira + Halita."
+  ],
+  "uses": [
+    "Cura de vários corações com dois espaços livres para efeito.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum: recupera vários corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor).",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra).",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ingredientes extras de efeito definem a versão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Três tigelas, três carnes",
+      "text": "A mesma combinação de arroz e halita gera pratos diferentes conforme a carne: Carne de terceira para esta tigela, Carne de segunda ou Sobrecoxa para a de segunda e Carne de primeira para a de primeira.",
+      "sources": [
+        "zw",
+        "zw:Raw Bird Thigh",
+        "zw:Raw Gourmet Meat"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita Carne de terceira; outras carnes mudam o prato.",
+    "As fontes não informam o número exato de corações nem o preço."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne obrigatória"
+    },
+    {
+      "id": "botw_food_prime_meat_and_rice_bowl",
+      "relation": "Versão com Carne de segunda ou Sobrecoxa"
+    },
+    {
+      "id": "botw_food_gourmet_meat_and_rice_bowl",
+      "relation": "Versão com Carne de primeira"
+    },
+    {
+      "id": "botw_food_meaty_rice_balls",
+      "relation": "Arroz com qualquer carne, sem halita"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

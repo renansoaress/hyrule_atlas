@@ -1,0 +1,115 @@
+{
+  "id": "botw_creature_warm_darner",
+  "summary": "Libélula de áreas abertas do Altiplano de Akkala e da Pradaria de Hyrule, com um órgão que a faz suar muito. Com partes de monstro vira Elixir picante (Resistência ao frio).",
+  "description": "A Libélula cálida vive em áreas abertas e quentes do Altiplano de Akkala e da Pradaria de Hyrule. Segundo o jogo, ela tem um órgão especial que a faz suar em abundância, e o elixir feito com ela eleva a temperatura interna do corpo para resistir ao frio. Também é vendida pela mercadora ambulante Maypin e por Beedle em vários estábulos — Gerudo Canyon, Estábulo dos Arás (Rito Stable), Serenne e Snowfield.\n\nCozida com partes de monstro, produz o Elixir picante, que dá um nível de Resistência ao frio, útil no Monte Lanayru, nas Cordilheiras de Hebra e nas Montanhas Gerudo. Cada libélula acrescenta 2:30 de duração. Ingredientes picantes como Pimenta de fogo, Flamelo, Erva geleira e Truta rescaldada podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante vermelho.\n\nNa Missão secundária \"Little Sister's Big Request\", é uma das três libélulas que Jana, do Estábulo South Akkala, pede para o aniversário da irmã Gleema; o Zelda Wiki observa que ela é comum justamente na Pradaria de Hyrule e no Altiplano de Akkala, perto do estábulo.",
+  "locations": [
+    "Áreas abertas do Altiplano de Akkala e da Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Apanhar nas regiões indicadas.",
+    "Comprar de Maypin ou de Beedle (Estábulos Gerudo Canyon, dos Arás, Serenne e Snowfield) por 10 rupias."
+  ],
+  "uses": [
+    "Elixir picante: cozinhar com pelo menos uma parte de monstro.",
+    "Missão secundária \"Little Sister's Big Request\": uma das três libélulas pedidas por Jana (recompensa: Rupia prateada).",
+    "Ingrediente do corante vermelho na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Resistência ao frio de um nível; +2:30 de duração por libélula."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como a libélula reage à aproximação de Link. Em geral, agachar-se aumenta a furtividade perto de animais."
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma libélula viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir picante (Resistência ao frio). Cada libélula acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinada com a Borboleta estival, da mesma categoria."],
+      "applications": ["Somar Pimenta de fogo, Flamelo, Erva geleira ou Truta rescaldada para que o elixir também cure."],
+      "produces": ["botw_elixir_spicy_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Spicy Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com bichos de efeito oposto",
+      "status": "confirmado",
+      "result": "Misturada a um bicho refrescante (como a Libélula gélida) e a uma parte de monstro, os efeitos se anulam e o resultado é Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Maypin e Beedle cobram 10 (a infobox do Zelda Wiki indica 5, em conflito com a tabela de lojas).",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a libélula exposta ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre a libélula."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Elixir picante é só nível 1",
+      "text": "O Elixir picante dá um único nível de Resistência ao frio. O frio avançado começa abaixo de -10 °C, quando o dano acelera; certas águas gélidas causam dano rápido que nenhum elixir, comida ou armadura evita.",
+      "sources": ["zw:Spicy Elixir", "zw:Temperature"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Suor como defesa contra o frio",
+      "text": "O texto do jogo atribui o efeito a um órgão especial que faz a libélula suar muito; o elixir feito com ela \"eleva a temperatura interna\" de quem o bebe.",
+      "sources": ["comp", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar libélulas cálidas com Borboletas estivais e ingredientes picantes diferentes prolonga o Elixir picante e ajuda a atravessar montanhas nevadas sem roupas de frio."
+  ],
+  "limitations": [
+    "Não protege das águas gélidas que causam dano rápido.",
+    "Não misture com bichos refrescantes: os efeitos se anulam."
+  ],
+  "related": [
+    { "id": "botw_elixir_spicy_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_summerwing_butterfly", "relation": "Outro bicho picante" },
+    { "id": "botw_creature_cold_darner", "relation": "Libélula de efeito oposto, também pedida por Jana" },
+    { "id": "botw_creature_electric_darner", "relation": "Terceira libélula pedida por Jana" },
+    { "id": "botw_creature_sizzlefin_trout", "relation": "Ingrediente picante que faz o elixir curar" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante vermelho" }
+  ],
+  "capabilities": ["protege_frio", "item_de_missao"],
+  "verification_status": "parcial"
+}

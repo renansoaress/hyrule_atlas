@@ -1,0 +1,152 @@
+{
+  "id": "botw_monster_guardian_stalker",
+  "summary": "Guardião de seis patas que persegue Link e dispara lasers de até 58 de dano (1.500 de vida). Uma Defesa perfeita devolve o laser ao olho (500 de dano); cortar as patas ou acertar o olho o atordoa.",
+  "description": "O Guardião persecutório é a máquina de guerra criada pelos Sheikah para combater Ganon, hoje corrompida pela Malícia e brilhando em rosa. O compendium destaca as seis patas, que lhe dão mobilidade superior à de qualquer veículo atual, e o laser poderoso, muito acima das armas convencionais. Ele é mais comum ao redor do Castelo de Hyrule. Se Link está perto demais, tenta se afastar para disparar; caso contrário, persegue sem descanso até perdê-lo de vista. Com pouca vida, pode disparar lasers em sequência rápida enquanto Link não se afastar muito do ponto do último tiro.\n\nAs fraquezas são várias. A mais famosa é a Defesa perfeita: aparar o laser no momento exato o devolve ao olho e causa 500 de dano. O Escudo ancestral faz isso automaticamente (gastando durabilidade) e a Proteção de Daruk também rebate lasers. Uma flecha no olho atordoa o Guardião, e uma Flecha ancestral no olho o destrói na hora. Cortar as patas o atordoa, derruba peças ancestrais e pode tombá-lo. Estátis+ aplicada enquanto ele carrega o laser também o deixa atordoado depois. Armas ancestrais e da linha guardiã causam dano extra, e a Espada Mestra dobra de poder perto de Guardiões corrompidos.\n\nDerrotado, pode deixar qualquer combinação de Parafuso, Mola, Engrenagem e Eixo ancestrais, Núcleo ancestral e Núcleo ancestral gigante. No Modo Mestre, às vezes demora um pouco mais para disparar, justamente para atrapalhar o tempo da Defesa perfeita.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule; o Zelda Wiki aponta os arredores do Castelo de Hyrule como a área de maior concentração.",
+    "Pontos citados: Ruínas da cidade do Castelo de Hyrule, Hyrule Garrison Ruins, Castle Town Prison, Hyrule Forest Park, Ilha do Labirinto Lomei, Mabe Prairie e Ruínas da vila Mabe, Mable Ridge, Quarry Ruins, Ranch Ruins, Windvane Meadow, Biron Snowshelf, Jia Highlands, North Akkala Beach, Stalry Plateau, Torin Wetland, entre outros.",
+    "Também aparece na Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo pode render Parafuso ancestral, Mola ancestral, Engrenagem ancestral, Eixo ancestral, Núcleo ancestral e Núcleo ancestral gigante.",
+    "Cortar as patas durante a luta já faz cair peças ancestrais.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de materiais ancestrais para as armas e armaduras de Robbie e para as melhorias de runas de Purah.",
+    "Uma das fontes de Núcleo ancestral gigante."
+  ],
+  "effects": [
+    "Laser de até 58 de dano, que também ateia fogo onde atinge.",
+    "Rajadas rápidas de laser quando está com pouca vida."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Uma Defesa perfeita devolve o laser ao olho e causa 500 de dano. O Escudo ancestral rebate o laser sem precisar da Defesa perfeita, e a Proteção de Daruk também o rebate.",
+      "side_effects": ["O rebate automático do Escudo ancestral consome durabilidade, ao contrário da Defesa perfeita."],
+      "applications": ["Derrotá-lo com três aparadas bem cronometradas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Perfect Guard", "zw:Ancient Shield", "zw:Daruk's Protection"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes nas patas as decepam: o Guardião fica atordoado, solta materiais ancestrais e pode tombar. Armas ancestrais e da linha guardiã causam dano bem maior, e a Espada Mestra dobra de ataque perto de Guardiões corrompidos.",
+      "side_effects": ["Sem patas, ele tenta se reerguer e se afastar enquanto continua atirando."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Guardian", "zw:Master Sword"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no olho o atordoa brevemente; ele às vezes se move de lado para atrapalhar a mira. Uma Flecha ancestral no olho o destrói instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O laser dele ateia fogo onde atinge. O efeito de fogo sobre o próprio Guardião não é descrito.",
+      "side_effects": ["Lutar em campo de grama pode espalhar incêndios."],
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo sobre o Guardião persecutório."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre o Guardião persecutório na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Estátis+ aplicada enquanto ele carrega o laser o deixa atordoado depois, mesmo que não seja golpeado durante o congelamento.",
+      "conditions": ["Ter a runa melhorada para Estátis+."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis num Guardião persecutório ativo."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Persegue Link por longas distâncias até perdê-lo de vista; quando Link está perto demais, recua para conseguir atirar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Modo Mestre atrasa o disparo",
+      "text": "No Modo Mestre, o Guardião persecutório às vezes leva um pouco mais de tempo carregando o laser, para desregular o tempo da Defesa perfeita.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Proteção contra Guardiões",
+      "text": "O efeito Resistência a Guardiões (do Conjunto ancestral, das Tiaras de diamante, dos elmos das Feras Divinas e do Elmo de Midna) reduz em 20%, 30% e 50% o dano de Guardiões nos níveis 1 a 3, calculado depois da defesa.",
+      "sources": ["zw:Guardian Resist Up"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Inspirado nos Octorocs",
+      "text": "O desenho do Guardião persecutório partiu dos Octorocs do primeiro The Legend of Zelda, que pareciam enormes perto de Link aos olhos da equipe; daí o formato de cefalópode. O designer Takafumi Kiuchi buscou um visual neutro, inspirado na cerâmica do período Jomon, porque ainda não se sabia se os Guardiões seriam amigos ou inimigos.",
+      "sources": ["zw:Guardian"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O despertar de Zelda",
+      "text": "Na 17ª lembrança recuperada, é diante de um Guardião persecutório que Zelda desperta seu poder selador para salvar Link, desativando os Guardiões ao redor.",
+      "sources": ["zw:Master Sword", "zw:Champion"]
+    }
+  ],
+  "advanced_uses": [
+    "Treinar a Defesa perfeita: três lasers rebatidos derrotam um Guardião de 1.500 de vida.",
+    "Decepar as patas para tombá-lo e colher materiais ancestrais extras durante a luta."
+  ],
+  "limitations": [
+    "O laser é muito forte e, com pouca vida, ele dispara em rajadas.",
+    "A Espada Mestra só ganha o bônus perto de Guardiões corrompidos pela Malícia."
+  ],
+  "related": [
+    { "id": "botw_monster_decayed_guardian", "relation": "Versão sem patas, imóvel" },
+    { "id": "botw_monster_guardian_skywatcher", "relation": "Versão voadora" },
+    { "id": "botw_monster_guardian_turret", "relation": "Versão fixa" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Devolve o laser ao olho" },
+    { "id": "botw_shield_ancient_shield", "relation": "Rebate lasers automaticamente" },
+    { "id": "botw_ability_daruks_protection", "relation": "Também rebate lasers" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Destrói o Guardião ao acertar o olho" },
+    { "id": "botw_weapon_master_sword", "relation": "Dobra de poder perto de Guardiões corrompidos" },
+    { "id": "botw_rune_stasis", "relation": "Estátis+ o atordoa durante a carga do laser" },
+    { "id": "botw_material_ancient_core", "relation": "Possível recompensa" },
+    { "id": "botw_material_giant_ancient_core", "relation": "Possível recompensa" },
+    { "id": "botw_armorset_ancient_set", "relation": "Dá Resistência a Guardiões" }
+  ],
+  "capabilities": ["gera_fogo", "habilidade_especial", "vence_rapido"],
+  "verification_status": "verificado"
+}

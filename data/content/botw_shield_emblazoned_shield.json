@@ -1,0 +1,110 @@
+{
+  "id": "botw_shield_emblazoned_shield",
+  "summary": "Escudo de madeira com desenho tradicional de Necluda: pouco melhor que o Escudo de madeira (Defesa 3, durabilidade 12), popular pela aparência. Há um num baú do planalto inicial.",
+  "description": "O Escudo timbrado traz uma pintura tradicional da região de Necluda. A descrição do jogo é franca: em combate ele não é muito melhor que o Escudo de madeira comum, e sua popularidade vem do desenho. Os números confirmam — Defesa 3 e durabilidade 12, só um ponto de Defesa acima do Escudo de madeira.\n\nAparece com frequência em Necluda Oriental e nas Cordilheiras de Hebra, e vários viajantes o carregam pelas estradas. Um dos primeiros do jogo fica num baú nas ruínas da Gatepost Town, perto do Santuário Oman Au, no planalto inicial. Por ser de madeira, pega fogo, queima no calor de Eldin, flutua e não reage a Magnétis nem a raios.",
+  "locations": [
+    "Necluda Oriental e Cordilheiras de Hebra, segundo o compendium.",
+    "Baú nas ruínas da Gatepost Town (Gatepost Town Ruins), perto do Santuário Oman Au, no planalto inicial (Great Plateau).",
+    "Um exemplar no Equestrian Riding Course."
+  ],
+  "obtaining": [
+    "Abrir o baú das ruínas da Gatepost Town ou recolher o exemplar do Equestrian Riding Course.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos entre 3:00 e 3:15."
+  ],
+  "uses": [
+    "Escudo de reserva no começo do jogo.",
+    "Prancha para Surfar com escudo em neve e areia."
+  ],
+  "effects": [
+    "Nenhum efeito especial; o atrativo é apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia golpes leves; com Defesa 3, cada golpe forte consome bastante durabilidade. A Defesa perfeita não desgasta o escudo.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "side_effects": ["Em terreno pedregoso perde durabilidade rápido; em neve e areia não perde."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e vai se desintegrando: a queima consome a durabilidade aos poucos.",
+      "side_effects": ["Guardar o escudo ou molhá-lo apaga a chama."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo e acaba desintegrado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": ["As fontes ligam o derrubamento por choque aos escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser levantado com Magnétis.",
+      "sources": ["dm", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +6 (nível amarelo) e com Defesa do escudo aumentada de +2 a +6 (branco) ou +7 a +12 (amarelo). Com o bônus amarelo máximo, a Defesa sobe de 3 para 15.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um da família dos escudos decorados",
+      "text": "O Escudo timbrado, o Escudo do caçador e o Escudo do pescador formam um trio de escudos de madeira decorados com Defesa 3; o timbrado é o mais durável dos três (12 contra 10).",
+      "sources": ["zw:Shields in Breath of the Wild", "zw:Hunter's Shield"]
+    }
+  ],
+  "advanced_uses": [
+    "Pegar o exemplar da Gatepost Town logo no planalto inicial para ter um segundo escudo antes de descer do platô."
+  ],
+  "limitations": [
+    "Proteção praticamente igual à do Escudo de madeira.",
+    "Queima no calor de Eldin se estiver equipado."
+  ],
+  "related": [
+    { "id": "botw_shield_wooden_shield", "relation": "Escudo de madeira simples, com quase a mesma proteção" },
+    { "id": "botw_shield_hunters_shield", "relation": "Escudo de madeira decorado semelhante" },
+    { "id": "botw_shield_fishermans_shield", "relation": "Escudo de madeira decorado semelhante" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Prêmio do minijogo de surfe de Selmie" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

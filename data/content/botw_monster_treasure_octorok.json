@@ -1,0 +1,130 @@
+{
+  "id": "botw_monster_treasure_octorok",
+  "summary": "Octoroc que se enterra na areia ou na neve fingindo ser um baú do tesouro e ataca quem se aproxima. O \"baú\" não é magnético — Magnétis não o puxa —, e cada acerto faz o monstro soltar rupias.",
+  "description": "O compendium descreve o Octoroc do tesouro como um monstro especialmente esperto: ele se enterra fundo na areia ou na neve e se disfarça de baú enterrado, atacando quem chega perto. Depois de pular para fora, volta a cavar e foge de Link por baixo da terra. O compendium cita as Montanhas Gerudo e o Deserto Gerudo como locais comuns.\n\nO disfarce tem uma falha reveladora: o baú não é magnético. Baús de metal podem ser movidos com Magnétis, mas o do Octoroc não responde à runa — o compendium usa isso como prova de que o \"baú\" é parte do corpo do monstro. Acertado por uma Bomba remota, ele salta do chão desnorteado e fica exposto. Ao contrário da maioria dos Octorocs, não cospe pedras. O prêmio compensa: ele solta rupias sempre que é atingido ou derrotado — de rupias verdes até prateadas —, além de Tentáculo, Olho e Balão de Octoroc.",
+  "locations": [
+    "Areia e neve; o compendium cita as Montanhas Gerudo e o Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Solta rupias sempre que é atingido e ao ser derrotado (verde, azul, vermelha, roxa e prateada).",
+    "Pode deixar Tentáculo de Octoroc, Olho de Octoroc e Balão de Octoroc.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de rupias, além de partes de Octoroc.",
+    "Registro no compendium (entrada nº 96)."
+  ],
+  "effects": [
+    "Ataque surpresa ao sair do chão; não cospe pedras."
+  ],
+  "interactions": [
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "O baú falso não é magnético e não pode ser puxado com Magnétis — um jeito de distinguir o monstro de um baú verdadeiro.",
+      "applications": ["Testar baús enterrados na areia ou na neve com Magnétis antes de se aproximar."],
+      "kind": "mecanica",
+      "sources": ["comp", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Atingido por uma Bomba remota, ele pula do chão desnorteado e fica vulnerável.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Cada golpe faz o Octoroc soltar rupias; ao ser derrotado, deixa várias.",
+      "kind": "mecanica",
+      "sources": ["zw:Octorok", "zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas o atingem quando está exposto, e cada acerto também o faz soltar rupias.",
+      "kind": "mecanica",
+      "sources": ["zw:Octorok"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Chegar perto do \"baú\" faz o Octoroc saltar e atacar; depois ele cava de volta e foge por baixo da terra.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo no Octoroc do tesouro."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo no Octoroc do tesouro."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques no Octoroc do tesouro."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o Octoroc do tesouro na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão da Bomba remota o faz sair do esconderijo; o efeito de outras explosões não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Enterra-se fundo na areia ou na neve, com o \"baú\" à mostra como isca.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A prova do compendium",
+      "text": "O compendium usa a falta de magnetismo do baú como prova de que ele faz parte do corpo do monstro: um baú de metal de verdade responderia a Magnétis.",
+      "sources": ["comp", "zw:Magnesis"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Rupias a cada golpe",
+      "text": "O Octoroc do tesouro solta rupias tanto quando é atingido quanto quando é derrotado; a lista de espólios vai da rupia verde à prateada.",
+      "sources": ["zw:Octorok", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Em áreas de areia e neve, usar Magnétis em qualquer baú semienterrado: se não reagir, é um Octoroc do tesouro.",
+    "Jogar uma Bomba remota no baú falso para tirá-lo do chão antes de chegar perto."
+  ],
+  "limitations": [
+    "Depois de atacar, cava e foge para longe, o que pode prolongar a caçada."
+  ],
+  "related": [
+    { "id": "botw_treasure_treasure_chest", "relation": "Objeto que ele imita" },
+    { "id": "botw_rune_magnesis", "relation": "Revela o disfarce (o baú falso não é magnético)" },
+    { "id": "botw_rune_remote_bomb", "relation": "Tira-o do esconderijo" },
+    { "id": "botw_monster_snow_octorok", "relation": "Outro Octoroc que se enterra na neve" },
+    { "id": "botw_material_octo_balloon", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_octorok_eyeball", "relation": "Parte deixada ao ser derrotado" }
+  ],
+  "capabilities": ["vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}

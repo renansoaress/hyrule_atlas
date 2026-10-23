@@ -1,0 +1,155 @@
+{
+  "id": "botw_food_blueshell_escargot",
+  "summary": "Caramujo nutritivo assado na concha, que funciona como uma panelinha de cozimento lento. Cura 4,5 corações (cru, 3), mas continua valendo 15 rupias e perde os Corações extras.",
+  "description": "O Escargô nutritivo surge quando um Caramujo nutritivo, comum nas praias do Mar de Lanayru e do Mar de Necluda, entra em contato com o fogo ou com o clima escaldante. O texto do jogo diz que a concha agiu como uma pequena panela de cozimento lento e que há quem adore o amargor característico da carne da cauda.\n\nAssado, o caramujo passa de 3 para 4,5 corações de cura, mas não ganha valor de venda (15 rupias, como o cru) e perde a capacidade de dar Corações extras, efeito que o Caramujo nutritivo só confere quando cozido na Panela. A versão congelada do mesmo caramujo cura menos (3 corações), mas vale 18 rupias e refresca.",
+  "locations": [
+    "Prepara-se a partir de Caramujos nutritivos, que vivem nas praias do Mar de Lanayru e do Mar de Necluda, numa fogueira ou no chão escaldante de Eldin.",
+    "Entre os itens que o Rinox azul pode deixar ao ser derrotado."
+  ],
+  "obtaining": [
+    "Expor um Caramujo nutritivo ao fogo ou largá-lo no chão em clima escaldante.",
+    "Derrotar um Rinox azul: é uma das comidas mais raras da tabela dele (3%, lote de 5)."
+  ],
+  "uses": [
+    "Cura de 4,5 corações sem passar pela Panela.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Recupera 4,5 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Caramujo nutritivo — queima por alguns instantes e se transforma em Escargô nutritivo.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Escargô nutritivo.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Caramujo nutritivo no chão para que o ingrediente asse sozinho e vire Escargô nutritivo.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4,5 corações, contra 3 do Caramujo nutritivo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 15 rupias, o mesmo que o Caramujo nutritivo cru.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hearty Blueshell Snail"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Escargô nutritivo como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A concha como panela lenta",
+      "text": "Segundo a descrição do jogo, a concha do caramujo fez as vezes de uma minúscula panela de cozimento lento; o amargor da carne da cauda tem seus fãs.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assado ou congelado?",
+      "text": "O mesmo Caramujo nutritivo rende 4,5 corações assado ou 3 corações congelado (Caramujo nutritivo congelado). O congelado vale mais na venda (18 contra 15 rupias) e dá Resistência ao calor por um minuto; o assado só cura.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Raro no Rinox azul",
+      "text": "Na tabela de comidas do Rinox azul, o Escargô nutritivo divide com o Escargô discreto a menor chance: 3%.",
+      "sources": [
+        "zw",
+        "zw:Blue Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: esse efeito do caramujo só aparece em pratos de Panela.",
+    "Não se valoriza na venda."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_icy_hearty_blueshell_snail",
+      "relation": "Versão congelada do mesmo caramujo"
+    },
+    {
+      "id": "botw_food_sneaky_river_escargot",
+      "relation": "O outro escargô do jogo"
+    },
+    {
+      "id": "botw_monster_blue_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

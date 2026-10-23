@@ -1,0 +1,116 @@
+{
+  "id": "botw_elixir_electro_elixir",
+  "summary": "Elixir de Resistência a choques feito com Libélula do relâmpago ou Borboleta trovejante, bichos que só aparecem na chuva. Chega a três níveis e é o preparo indicado contra a Ira fulmínea de Ganon.",
+  "description": "O Elixir isolante reduz o dano que Link sofre de ataques elétricos. Diferente das resistências ao calor e ao frio, este efeito tem três níveis (baixo, médio e alto): o segundo exige quatro estrelas de potência e o terceiro, seis. A Libélula do relâmpago vale duas estrelas e a Borboleta trovejante, uma; ambas somam 2:30 de duração cada, e as partes de monstro acrescentam 1:10, 1:50 ou 3:10 conforme o grau, até o teto de 30:00.\n\nOs dois bichos são raros por um motivo prático: segundo as descrições do jogo, só aparecem quando chove. Ingredientes isolantes comuns (Fruta isolante, Aterramelo, Erva relampagueira e Truta voltaica) podem entrar na receita para que o elixir também recupere corações. Antes da batalha na Ponte Inogo, Sidon presenteia Link com um Elixir isolante e comenta que o remédio não faz efeito nos Zoras, talvez por ter sido feito para hylianos.",
+  "locations": [
+    "Libélulas do relâmpago: Cerros de Hyrule e Deserto Gerudo; Borboletas trovejantes: Cerros de Hyrule e Montanhas Gerudo — sempre durante a chuva.",
+    "Beedle vende Libélulas do relâmpago no Estábulo Riverside e Borboletas trovejantes nos estábulos Lakeside, Riverside e Tabantha Bridge."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela uma Libélula do relâmpago ou Borboleta trovejante com pelo menos uma parte de monstro.",
+    "Sidon presenteia Link com um Elixir isolante ao se despedir dele na Ponte Inogo."
+  ],
+  "uses": [
+    "Enfrentar Lagalfos elétricos, Chulchuls elétricos, Feitiçanos elétricos e Feitiçanos do trovão com menos dano.",
+    "Preparo recomendado para a Ira fulmínea de Ganon, chefe da Fera Divina Vah Naboris, cujos ataques causam muito dano elétrico."
+  ],
+  "effects": [
+    "Resistência a choques em até três níveis, com duração somada pelos ingredientes (máximo de 30:00).",
+    "Recupera corações se levar ingredientes isolantes que curam."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Ao beber, Link ganha Resistência a choques no nível definido pelas estrelas da receita, reduzindo o dano de ataques elétricos.",
+      "side_effects": ["Comer outro prato com efeito diferente substitui a resistência."],
+      "applications": ["Lutar contra a Ira fulmínea de Ganon com um elixir de nível alto."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Thunderblight Ganon", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "O jogo descreve o elixir como útil contra inimigos com ataques elétricos; o nível alto é o indicado para o chefe elétrico de Vah Naboris.",
+      "conditions": ["Efeito ativo no momento do choque."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Thunderblight Ganon"]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "largar a arma",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a resistência impede que Link solte armas de metal ao ser eletrocutado; só a Imunidade a raios do Elmo do trovão e o bônus do Conjunto de borracha são descritos como impedindo o desarme."
+    },
+    {
+      "action": "raio",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o efeito do elixir contra raios de tempestade. O bônus do Conjunto voe do deserto, que imita o nível 2 desta resistência, não reduz o dano da explosão do raio."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Bicho isolante + parte de monstro gera o elixir. Libélula do relâmpago vale ★★ e Borboleta trovejante ★, cada uma com +2:30. Quatro estrelas dão o nível 2 e seis, o nível 3.",
+      "conditions": [
+        "Ingredientes isolantes que curam: Truta voltaica (★★★), Aterramelo (★★), Fruta isolante (★) e Erva relampagueira (★), cada um com +2:30.",
+        "Partes de monstro somam 1:10, 1:50 ou 3:10 e não mudam a potência."
+      ],
+      "side_effects": [
+        "Misturar ingredientes de outro efeito resulta em Comida duvidosa.",
+        "Uma Fada na receita transforma tudo em Tônico de fada."
+      ],
+      "applications": ["Duas Libélulas do relâmpago já atingem as quatro estrelas do nível médio; três atingem o nível alto."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço variável: soma dos valores dos ingredientes multiplicada por 1,5 a 2,8 conforme a quantidade de ingredientes, arredondada para a dezena acima.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Remédio só para hylianos",
+      "text": "Ao entregar o elixir na Ponte Inogo, Sidon diz que ele não funciona nos Zoras e supõe que seja porque foi feito para hylianos.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bichos de chuva",
+      "text": "As descrições da Libélula do relâmpago e da Borboleta trovejante dizem que elas só se mostram quando chove. Dias chuvosos nos Cerros de Hyrule são a melhor hora para estocar.",
+      "sources": ["zw:Electric Darner", "zw:Thunderwing Butterfly"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Três níveis, não dois",
+      "text": "Resistência a choques é um dos efeitos de duração com três níveis; as resistências ao calor e ao frio param no segundo nível.",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Chill-Proof"]
+    }
+  ],
+  "advanced_uses": [
+    "O bônus \"Shock Damage Resist\" do Conjunto voe do deserto melhorado duas vezes imita o nível 2 desta resistência e soma com um efeito de nível 1."
+  ],
+  "limitations": [
+    "Os bichos só aparecem na chuva, o que torna o elixir difícil de preparar em clima seco.",
+    "Não há confirmação de que evite o desarme causado por choques nem o dano de raios."
+  ],
+  "related": [
+    { "id": "botw_creature_electric_darner", "relation": "Bicho isolante (★★, +2:30)" },
+    { "id": "botw_creature_thunderwing_butterfly", "relation": "Bicho isolante (★, +2:30)" },
+    { "id": "botw_creature_voltfin_trout", "relation": "Ingrediente isolante mais forte (★★★)" },
+    { "id": "botw_material_zapshroom", "relation": "Ingrediente isolante (★★)" },
+    { "id": "botw_material_voltfruit", "relation": "Ingrediente isolante (★)" },
+    { "id": "botw_material_electric_safflina", "relation": "Ingrediente isolante (★)" },
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Chefe contra o qual o elixir é recomendado" },
+    { "id": "botw_armorset_rubber_armor_set", "relation": "Conjunto com Resistência a choques e bônus que anula choques" },
+    { "id": "botw_armorset_desert_voe_set", "relation": "Bônus que imita o nível 2 de Resistência a choques" },
+    { "id": "botw_mechanic_electricity", "relation": "Regras de eletricidade" },
+    { "id": "botw_mechanic_rain", "relation": "Os bichos só aparecem na chuva" }
+  ],
+  "capabilities": ["protege_choque"],
+  "verification_status": "verificado"
+}

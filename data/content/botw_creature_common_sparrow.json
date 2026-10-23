@@ -1,0 +1,84 @@
+{
+  "id": "botw_creature_common_sparrow",
+  "summary": "O pardal mais difundido de Hyrule, verde com peito alaranjado, visto em campos, florestas e até vilarejos. Extremamente arisco, voa ao menor incômodo; abatido, deixa uma Noz.",
+  "description": "O Pardal comum é, como o nome diz, o pardal mais comum de Hyrule: vive principalmente em florestas e campos abertos, como a Pradaria de Hyrule e os Cerros de Hyrule, mas às vezes entra nos vilarejos. Tem plumagem verde, peito laranja-claro e barriga branca. É onívoro e come sobretudo nozes e pequenos insetos.\n\nO compendium observa que ele fica bonitinho saltitando, mas \"não tem muito amor pelas pessoas\": é extremamente arisco e voa assim que é perturbado. Como todos os pardais, deixa uma Noz ao morrer — a noz de que, segundo a descrição do item, os passarinhos tanto gostam.",
+  "locations": [
+    "Pradaria de Hyrule e Cerros de Hyrule (compendium); florestas, campos e ocasionalmente vilarejos de toda Hyrule."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Noz."
+  ],
+  "uses": [
+    "Fonte de Noz, ingrediente de Bolo de nozes e Nozes salteadas.",
+    "Registrar sua foto no compendium (entrada nº 30)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Extremamente arisco: voa assim que é perturbado por pessoas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Noz.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_chickaloo_tree_nut"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sparrow", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra pardais, que voam ao serem perturbados."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Seis pardais no compendium",
+      "text": "O compendium registra seis subespécies de pardal — comum, vermelho, azul, colorido, do deserto e dourado —, todas pequenas, ariscas e com o mesmo drop: uma Noz.",
+      "sources": ["zw:Sparrow"]
+    }
+  ],
+  "limitations": [
+    "Rende apenas uma Noz, item de pouco valor."
+  ],
+  "related": [
+    { "id": "botw_material_chickaloo_tree_nut", "relation": "Item deixado ao ser abatido" },
+    { "id": "botw_food_nutcake", "relation": "Receita que usa Noz" },
+    { "id": "botw_food_sauteed_nuts", "relation": "Receita que usa Noz" },
+    { "id": "botw_creature_red_sparrow", "relation": "Outro pardal do compendium" },
+    { "id": "botw_creature_blue_sparrow", "relation": "Outro pardal do compendium" },
+    { "id": "botw_creature_rainbow_sparrow", "relation": "Outro pardal do compendium" },
+    { "id": "botw_creature_sand_sparrow", "relation": "Outro pardal do compendium" },
+    { "id": "botw_creature_golden_sparrow", "relation": "Outro pardal do compendium" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

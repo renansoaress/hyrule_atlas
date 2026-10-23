@@ -1,0 +1,120 @@
+{
+  "id": "botw_shield_soldiers_shield",
+  "summary": "Escudo dos antigos guardas do Castelo de Hyrule: parece metálico, mas tem núcleo de madeira — por isso queima, flutua e ignora Magnétis e raios. Defesa 16; Russ o vende por 100 rupias.",
+  "description": "O Escudo do soldado era usado pelos guardas do Castelo de Hyrule. O jogo o descreve como fácil de manejar, mas avisa: o núcleo é de madeira, então ele pode pegar fogo. Essa é a pegadinha do escudo — apesar da aparência, segue todas as regras dos escudos de madeira: queima no fogo e no calor de Eldin, flutua na água, não é movido por Magnétis e não conduz eletricidade nem atrai raios. Com Defesa 16 e durabilidade 16, é um escudo de nível médio e pertence ao equipamento do soldado (Soldier's Gear).\n\nAparece em quase toda Hyrule; um ponto fácil é o Snowfield Stable, na Tabantha Tundra. Russ, dos Shield Breakers, vende um por 100 rupias e, depois da compra, chama Link de surfista de verdade e conta a lenda de Selmie.",
+  "locations": [
+    "Quase toda Hyrule; o compendium destaca a Fronteira de Tabantha e a Pradaria de Hyrule.",
+    "Ponto fácil: Snowfield Stable, na Tabantha Tundra."
+  ],
+  "obtaining": [
+    "Comprar de Russ, na Trilby Plain, por 100 rupias.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos entre 2:00 e 2:15.",
+    "Fazer um Octoroc rochoso aspirar um Escudo enferrujado: há 35% de chance de sair um Escudo do soldado.",
+    "Baús de amiibo: Link (Super Smash Bros.), Link (The Legend of Zelda), Toon Zelda (The Wind Waker), Link (Twilight Princess), Link (Skyward Sword), Zelda e Urbosa (Breath of the Wild) têm chance de contê-lo."
+  ],
+  "uses": [
+    "Escudo de nível médio para o começo do jogo, fácil de repor.",
+    "Prancha para Surfar com escudo; ao comprá-lo, Russ indica Selmie para quem quer se aprofundar no surfe."
+  ],
+  "effects": [
+    "Nenhum efeito especial além de bloquear ataques."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 16; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O núcleo de madeira pega fogo, e a queima vai consumindo a durabilidade aos poucos.",
+      "side_effects": ["Guardar o escudo ou molhá-lo interrompe a queima."],
+      "kind": "mecanica",
+      "sources": ["dm", "jogo", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado nas áreas escaldantes de Eldin, pega fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, apesar da aparência metálica.",
+      "side_effects": ["O derrubamento por choque é descrito para escudos metálicos; a página da Flecha eletrizante diz que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "applications": ["Opção segura de escudo de nível médio para explorar sob tempestade."],
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis não funciona nele, apesar da aparência metálica.",
+      "sources": ["dm", "zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +4 (nível branco) ou +5 a +6 (nível amarelo) e com Defesa do escudo aumentada de +6 a +12 (branco) ou +13 a +23 (amarelo). Com o bônus amarelo máximo, a Defesa chega a 39, perto do Escudo do cavaleiro.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Metal por fora, madeira por dentro",
+      "text": "É o caso mais claro de escudo que engana pela aparência: o próprio texto do jogo avisa que o núcleo é de madeira, e os parâmetros o marcam como inflamável, flutuante, não magnético e não condutor.",
+      "sources": ["jogo", "dm"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Limpeza de Escudo enferrujado",
+      "text": "Um Octoroc rochoso que aspira um Escudo enferrujado tem 35% de chance de devolvê-lo como Escudo do soldado.",
+      "sources": ["zw:Rock Octorok", "zw:Rusty Shield"]
+    }
+  ],
+  "advanced_uses": [
+    "Preferi-lo a escudos de metal de nível parecido em regiões com tempestades, já que não atrai raios."
+  ],
+  "limitations": [
+    "Queima: não serve para Eldin sem proteção contra o calor.",
+    "Não pode ser recuperado com Magnétis (mas flutua se cair na água)."
+  ],
+  "related": [
+    { "id": "botw_weapon_soldiers_broadsword", "relation": "Mesmo arquétipo (equipamento do soldado)" },
+    { "id": "botw_weapon_soldiers_claymore", "relation": "Mesmo arquétipo (equipamento do soldado)" },
+    { "id": "botw_weapon_soldiers_spear", "relation": "Mesmo arquétipo (equipamento do soldado)" },
+    { "id": "botw_bow_soldiers_bow", "relation": "Mesmo arquétipo (equipamento do soldado)" },
+    { "id": "botw_shield_rusty_shield", "relation": "Pode virar Escudo do soldado ao ser limpo por um Octoroc rochoso" },
+    { "id": "botw_shield_knights_shield", "relation": "Escudo de metal mais forte, também vendido por Russ" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Prêmio do minijogo de surfe de Selmie" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

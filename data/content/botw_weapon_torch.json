@@ -1,0 +1,204 @@
+{
+  "id": "botw_weapon_torch",
+  "summary": "Tocha de madeira que, acesa, fica queimando até ser guardada ou pegar chuva. Leva fogo para acender tochas fixas, grama e lenha, ilumina lugares escuros e guia Link pelos Bosques Perdidos. Como arma, é fraca (ataque 2).",
+  "description": "A Tocha é um item comum dos utensílios do dia a dia (Daily Use Goods) que serve principalmente para carregar fogo. Depois de acesa em contato com uma chama, permanece acesa até Link guardá-la ou até chover; o próprio jogo avisa que, se for guardada, a chama apaga até ser reacesa. Com ela, Link espalha o fogo para tochas fixas e objetos inflamáveis como grama, arbustos e lenha. Também ilumina áreas escuras, como as Ruínas de Thyphlo, e ajuda nos Bosques Perdidos: acendendo uma tocha e observando para onde o vento sopra a chama, Link descobre o caminho certo.\n\nOutro uso importante é levar a chama azul até os pedestais em volta dos laboratórios de tecnologia ancestral de Hateno e de Akkala, já que o trajeto é longo e a chama não pode se apagar. Logo no início, no Planalto, Link pode pegar a tocha do Velho; se disser que vai usá-la como arma, o Velho recomenda o Machado de lenhador. Por ser de madeira, não atrai raios, não conduz eletricidade e flutua na água.",
+  "locations": [
+    "Grande Floresta de Hyrule e Pradaria de Hyrule (locais comuns segundo o compendium).",
+    "Bosques Perdidos (Lost Woods), onde ajudam a achar o caminho.",
+    "Com o Velho, no Planalto, no começo do jogo."
+  ],
+  "obtaining": [
+    "Pegar a tocha do Velho no Planalto, logo após sair do Santuário da Ressurreição.",
+    "Recolher tochas nos Bosques Perdidos e em outros pontos de Hyrule.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Carregar fogo para acender tochas fixas, fogueiras, grama, arbustos e lenha.",
+    "Iluminar áreas escuras, como as Ruínas de Thyphlo.",
+    "Seguir a direção do vento nos Bosques Perdidos.",
+    "Levar a chama azul até os pedestais dos laboratórios de tecnologia ancestral de Hateno e de Akkala."
+  ],
+  "effects": [
+    "Acesa, emite luz e fogo; a chama dura até a tocha ser guardada ou pegar chuva."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Pode ser usada como arma de uma mão, mas o dano é muito baixo (2). A função principal é carregar fogo aceso.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Acende ao tocar uma chama e permanece acesa enquanto estiver na mão de Link, espalhando o fogo para tochas fixas, grama, arbustos e lenha.",
+      "conditions": [
+        "Encostar a tocha numa fonte de fogo."
+      ],
+      "side_effects": [
+        "Guardá-la na algibeira apaga a chama."
+      ],
+      "applications": [
+        "Acender tochas de quebra-cabeças.",
+        "Incendiar grama para criar correntes ascendentes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire",
+        "jogo"
+      ]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva apaga a tocha acesa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "side_effects": [
+        "A chuva das tempestades apaga a chama."
+      ],
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos, e a tocha é de madeira.",
+      "sources": [
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que usem tochas."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Nos Bosques Perdidos, a chama da tocha acesa indica a direção do vento, que aponta o caminho correto pela névoa.",
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A tocha do Velho",
+      "text": "Ao pegar a tocha do Velho no Planalto, ele pergunta o que Link pretende fazer com ela. Se a resposta for usá-la como arma, ele sugere levar o Machado de lenhador; se for para acender fogo, pede cuidado com a grama seca; se Link não responder, ele o deixa fazer o que quiser.",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Chama azul sem apagar",
+      "text": "Para reativar os laboratórios de Hateno e de Akkala, é preciso levar a chama azul de uma fornalha ancestral até os pedestais e o forno do laboratório. A tocha é útil porque mantém a chama acesa durante todo o trajeto longo, desde que Link não a guarde nem pegue chuva.",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a tocha pode surgir com bônus de ataque de +2 (nível comum) ou +3 a +4 (nível dourado), bônus de durabilidade de +1 a +2 (ou +3 a +4 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Acender tochas fixas com a Tocha em vez de gastar Flechas de fogo: segundo o Zelda Wiki, isso poupa recursos, já que a chama só se apaga quando ela é guardada."
+  ],
+  "limitations": [
+    "Ataque muito baixo (2).",
+    "Guardar a tocha ou pegar chuva apaga a chama."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_woodcutters_axe",
+      "relation": "Arma que o Velho recomenda no lugar da tocha"
+    },
+    {
+      "id": "botw_weapon_tree_branch",
+      "relation": "Outra arma de madeira que pode ser acesa"
+    },
+    {
+      "id": "botw_weapon_soup_ladle",
+      "relation": "Mesmo arquétipo (utensílios do dia a dia)"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Fonte de fogo para acender a tocha"
+    },
+    {
+      "id": "botw_mechanic_fire",
+      "relation": "Regras de propagação do fogo"
+    },
+    {
+      "id": "botw_mechanic_rain",
+      "relation": "A chuva apaga a tocha"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "ilumina",
+    "flutua",
+    "arremessavel",
+    "inflamavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

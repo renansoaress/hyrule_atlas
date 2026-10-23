@@ -1,0 +1,157 @@
+{
+  "id": "botw_weapon_silver_longsword",
+  "summary": "Espada longa de duas mãos feita pelos Zora com um metal especial (ataque 22, durabilidade 30). Popular entre hylianos pelo design prateado; há uma atrás do santuário Ne'ez Yohma.",
+  "description": "A Espada longa prateada faz parte do Equipamento Zora. O jogo observa que os Zora preferem lanças a espadas, mas ainda assim criaram esta arma de duas mãos com um metal especial, e que ela ficou popular entre os hylianos pelo design incomum. O estilo prateado e elegante é o mesmo de outras peças Zora, como a Lança escamada.\n\nÉ comum na Grande Nascente de Lanayru e na Palude de Lanayru, e um exemplar fixo fica atrás do santuário Ne'ez Yohma, no Domínio Zora (Zora's Domain). Apesar do \"metal especial\", comporta-se como qualquer arma metálica: não queima, afunda, atrai raios, conduz eletricidade e pode ser puxada com Magnétis — e Lanayru é uma das regiões onde ocorrem tempestades de raios.",
+  "locations": [
+    "Grande Nascente de Lanayru e Palude de Lanayru.",
+    "Atrás do santuário Ne'ez Yohma, no Domínio Zora."
+  ],
+  "obtaining": [
+    "Recolher na região de Lanayru, incluindo o exemplar atrás do santuário Ne'ez Yohma.",
+    "Armas deixadas no mundo reaparecem após a Lua de sangue, se não estiverem com Link.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Espada de duas mãos de nível intermediário (ataque 22) disponível na região de Lanayru.",
+    "Como espada, corta árvores; por ser metálica, acende sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o golpe carregado é o giro contínuo que consome vigor e termina numa pancada para baixo. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao acertar um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada em tempestades, faísca e atrai raios.",
+      "conditions": [
+        "Tempestades são possíveis em Lanayru, onde a espada é encontrada."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Não flutua: afunda se cair na água, mesmo sendo uma arma Zora.",
+      "applications": [
+        "Recuperá-la com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes não citam monstros que a empunhem."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +8, Durabilidade aumentada de +3 a +6 ou Acerto crítico; no nível dourado (amarelo): Ataque de +9 a +19, Durabilidade de +7 a +14 ou Lançamento longo (×1,5 a ×2). A faixa dourada de ataque é larga: um exemplar com +19 chega a 41.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Também chamada de espada longa Zora",
+      "text": "O Zelda Wiki registra a arma também como Zora Longsword, nome alternativo da Espada longa prateada.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em dias de tempestade em Lanayru, guarde a espada e use uma arma de madeira ou ancestral para não atrair raios."
+  ],
+  "limitations": [
+    "Metálica: atrai raios.",
+    "Afunda — cuidado ao lutar perto dos rios e lagos de Lanayru."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_silverscale_spear",
+      "relation": "Lança Zora de mesmo estilo prateado"
+    },
+    {
+      "id": "botw_weapon_zora_sword",
+      "relation": "Espada de uma mão do Equipamento Zora"
+    },
+    {
+      "id": "botw_weapon_zora_spear",
+      "relation": "Arma Zora"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Atrai raios quando equipada"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

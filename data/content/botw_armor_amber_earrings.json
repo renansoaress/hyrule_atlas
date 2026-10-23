@@ -1,0 +1,138 @@
+{
+  "id": "botw_armor_amber_earrings",
+  "summary": "Brincos da joalheria Starlight Memories, na Cidade Gerudo. Não têm efeito adicional, mas oferecem defesa alta para a cabeça (4 de base, 28 no nível máximo) com melhorias que só pedem âmbar e sílex.",
+  "description": "Os Brincos de âmbar são um acessório feito por Isha e vendido na Starlight Memories, a joalheria da Cidade Gerudo, por 100 rupias mais 10 unidades de Âmbar. A descrição do jogo diz que o âmbar “aproveita o poder da terra” para aumentar a defesa — e é só isso que eles fazem: não concedem nenhum efeito adicional e não pertencem a conjunto algum. Em compensação, partem de 4 de defesa e chegam a 28 com as quatro melhorias, o mesmo teto do Elmo ancestral e da Tiara de diamante.\n\nTodas as melhorias pedem Âmbar e 3 Sílex por nível. O âmbar é o gargalo: são 65 unidades do nível 1 ao 4 (5, 10, 20 e 30). Não podem ser tingidos na Tinturaria Kochi.",
+  "locations": [
+    "Starlight Memories, joalheria da Cidade Gerudo, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Comprar de Isha na Starlight Memories por 100 rupias e 10 Âmbar.",
+    "A joalheria só abre depois da missão secundária “Tools of the Trade”, na qual Link entrega 10 Sílex a Isha."
+  ],
+  "uses": [
+    "Defesa de cabeça alta quando nenhum efeito específico é necessário.",
+    "Venda: o valor cresce a cada nível de melhoria (ver tabela)."
+  ],
+  "effects": [
+    "Nenhum efeito adicional; a peça serve apenas para defesa."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa o espaço da cabeça e soma 4 de defesa (28 após as quatro melhorias). Não concede efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Joalheria fechada na chegada",
+      "text": "Quando Link chega à Cidade Gerudo, a Starlight Memories está fechada porque Isha ficou sem Sílex para trabalhar. Só depois de entregar 10 Sílex (missão “Tools of the Trade”) é possível comprar os brincos.",
+      "sources": [
+        "zw:Starlight Memories",
+        "zw:Tools of the Trade"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Joias unissex",
+      "text": "Segundo o Zelda Wiki, os acessórios da Starlight Memories são unissex e podem ser usados por homens e mulheres; as joias canalizam o poder natural das pedras, por isso Isha pede as gemas como parte do pagamento.",
+      "sources": [
+        "zw:Starlight Memories"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para quem só quer defesa na cabeça, o investimento até o nível máximo resume-se a 65 Âmbar e 12 Sílex, sem joias raras nem partes de dragão."
+  ],
+  "limitations": [
+    "Não pode ser tingido na Tinturaria Kochi.",
+    "Sem efeito adicional e sem conjunto, portanto nunca concede bônus de conjunto.",
+    "O número de melhorias disponíveis depende de quantas Grandes Fadas foram restauradas."
+  ],
+  "related": [
+    {
+      "id": "botw_material_amber",
+      "relation": "Material de compra e de todas as melhorias"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Material de melhoria (3 por nível) e da missão que abre a joalheria"
+    },
+    {
+      "id": "botw_armor_opal_earrings",
+      "relation": "Outros brincos da mesma joalheria"
+    },
+    {
+      "id": "botw_armor_topaz_earrings",
+      "relation": "Outros brincos da mesma joalheria"
+    },
+    {
+      "id": "botw_armor_diamond_circlet",
+      "relation": "Peça da mesma loja com o mesmo teto de defesa (28)"
+    },
+    {
+      "id": "botw_mechanic_great_fairy_fountain",
+      "relation": "Onde a peça é melhorada"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

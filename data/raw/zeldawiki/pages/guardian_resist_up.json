@@ -1,0 +1,9 @@
+{
+  "requested": "Guardian Resist Up",
+  "title": "Guardian Resist Up",
+  "url": "https://zeldawiki.wiki/wiki/Guardian_Resist_Up",
+  "revid": 1361032,
+  "timestamp": "2026-06-13T04:43:49Z",
+  "license": "GNU FDL 1.3 (Zelda Wiki)",
+  "wikitext": "{{Infobox Mechanic\n|image= \n{{Media\n |Sprite BotW= File:BotW Guardian Resist Up Icon.png\n}}\n|caption= \n|pronunciation= \n|game= BotW\n|other= \n|purpose= \n|related= \n{{List|\n * [[Added Effect]]\n * [[Armor]]\n}}\n}}\n{{Term/Store|Guardian Resist Up||Series, BotW}} is an [[Added Effect]] in {{BotW}}.<ref>{{Cite Guide|BotW Piggyback|page= 280|edition= Expanded Edition|year= 2018}}</ref>\n\n==Overview==    \nGuardian Resist Up is an [[Added Effect]] that decreases the damage [[Link]] takes from [[Guardian]] enemies by 20%, 30%, and 50% for levels one, two, and three respectively. The damage reduction is calculated after Link's total [[Defense]] is subtracted from the damage of the [[Enemy]] attack. This Effect does not affect damage from non-Guardian enemies wielding [[Ancient Weapon]]s, and it caps at level three.\n\nThe following [[Armor]] pieces grant Guardian Resist Up in {{BotW|-}}:\n\n* [[Ancient Helm]]\n* [[Ancient Cuirass]]\n* [[Ancient Greaves]]\n* [[Diamond Circlet]]\n* [[Vah Medoh Divine Helm]]\n* [[Vah Naboris Divine Helm]]\n* [[Vah Rudania Divine Helm]]\n* [[Vah Ruta Divine Helm]]\n* [[Midna's Helmet]]\n\n==Nomenclature==\n{{Nomenclature}}\n\n==See Also==\n{{See Also|\n * Added Effect\n * Guardian\n}}\n\n{{Ref}}\n\n{{Categories\n |Added Effects\n |mechanics= BotW\n}}"
+}

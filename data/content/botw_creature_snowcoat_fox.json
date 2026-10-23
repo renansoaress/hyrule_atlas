@@ -1,0 +1,87 @@
+{
+  "id": "botw_creature_snowcoat_fox",
+  "summary": "Raça da Raposa do prado adaptada ao frio, de pelo claro que serve de camuflagem na neve. Vive em Hebra, no Monte Lanayru e nas Montanhas Gerudo, foge de Link e de monstros e deixa Carne de segunda ou de primeira.",
+  "description": "A Raposa da neve é uma raça da Raposa do prado que se adaptou aos climas gelados. Em vez do pelo laranja dos parentes das planícies, tem uma pelagem muito clara — branca segundo o compendium, azul-pálida segundo o Zelda Wiki — que a camufla na neve, a ponto de ser preciso olho atento para vê-la. É mais comum em Hebra (o compendium cita as Cordilheiras de Hebra e a Fronteira de Tabantha), mas também vive em outros pontos frios, como o Monte Lanayru e as Montanhas Gerudo.\n\nFoge quando é assustada por Link ou por um inimigo. Abatida, rende carne bem melhor que a da Raposa do prado: Carne de segunda ou Carne de primeira.",
+  "locations": [
+    "Cordilheiras de Hebra e Fronteira de Tabantha (compendium); também Monte Lanayru e Montanhas Gerudo."
+  ],
+  "obtaining": [
+    "Não pode ser capturada; é caçada pela carne."
+  ],
+  "uses": [
+    "Fonte de Carne de segunda e Carne de primeira.",
+    "A Carne de primeira pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\").",
+    "Registrar sua foto no compendium (entrada nº 20)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando assustada por Link ou por um inimigo. O pelo claro a camufla na neve.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser abatida; deixa Carne de segunda ou Carne de primeira.",
+      "produces": ["botw_material_raw_prime_meat", "botw_material_raw_gourmet_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que a raposa pode ser abatida, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Também foge quando assustada por inimigos.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Animal de porte médio; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Branca ou azulada?",
+      "text": "O compendium diz que o pelo da Raposa da neve ficou branco como adaptação à neve; o Zelda Wiki descreve a cor como azul-pálida. As duas fontes concordam que a pelagem funciona como camuflagem natural.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "limitations": [
+    "Difícil de enxergar na neve por causa da camuflagem.",
+    "Vive em regiões frias."
+  ],
+  "related": [
+    { "id": "botw_creature_grassland_fox", "relation": "Raça de origem, das planícies" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatida" },
+    { "id": "botw_material_raw_gourmet_meat", "relation": "Carne deixada ao ser abatida" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

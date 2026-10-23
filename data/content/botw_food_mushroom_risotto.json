@@ -1,0 +1,112 @@
+{
+  "id": "botw_food_mushroom_risotto",
+  "summary": "Risoto de Arroz hyliano, Manteiga de cabra, Halita e qualquer cogumelo, cuja receita está no diário de Ivee, em Hateno. Trocando o cogumelo por Salmão nutritivo, vira Risoto de salmão.",
+  "description": "O Risoto de cogumelos é feito com Arroz hyliano, Manteiga de cabra, Halita e qualquer cogumelo; o inventário fala do aroma de cogumelos e manteiga que \"chama para a mesa\". O efeito vem do cogumelo, como nos outros pratos de cogumelo: Glacimelo, Flamelo, Aterramelo, Energimelo, Cogumelo tenaz, Agilimelo, Trufa ou Trufona nutritiva, Ferromelo, Silencimelo e Blindamelo dão cada um a sua variante. A versão comum só sai com Cogumelo hyliano ou com cogumelos de efeitos diferentes.\n\nA receita aparece no diário de Ivee, na casa dela na Vila Hateno: um maço de Arroz hyliano, uma porção de Manteiga de cabra, alguns Cogumelos hylianos e um pouco de Halita. No fim, Ivee sugere trocar os cogumelos por Salmão nutritivo para um prato \"para quem ama peixe\" — o Risoto de salmão. O risoto de cogumelos também está entre os pratos que Gotter, de \"A Royal Recipe\", sonhava em comer quando criança, imaginando a culinária da corte real.",
+  "locations": [
+    "A receita está escrita no diário de Ivee, na casa dela na Vila Hateno."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano, Manteiga de cabra, Halita e um cogumelo; um quinto ingrediente é opcional."
+  ],
+  "uses": [
+    "Recuperar corações e obter o efeito do cogumelo usado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (a quantidade depende dos ingredientes).",
+    "Efeito definido pelo cogumelo: Resistência ao calor (Glacimelo), Resistência ao frio (Flamelo), Resistência a choques (Aterramelo), Recuperação de vigor (Energimelo), Vigor extra (Cogumelo tenaz), Velocidade aumentada (Agilimelo), Corações extras (Trufa nutritiva e Trufona nutritiva), Ataque aumentado (Ferromelo), Defesa aumentada (Blindamelo) ou Furtividade aumentada (Silencimelo)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, nas variantes, aplica o efeito do cogumelo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Salmão nutritivo no lugar do cogumelo",
+      "status": "confirmado",
+      "result": "Usar Salmão nutritivo em vez de cogumelo produz Risoto de salmão, como sugere o diário de Ivee; com caranguejo ou com cenoura/abóbora a mesma base dá Risoto de caranguejo ou Risoto de legumes.",
+      "produces": [
+        "botw_food_salmon_risotto",
+        "botw_food_crab_risotto",
+        "botw_food_vegetable_risotto"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um prato da corte",
+      "text": "Ao pedir ajuda a Link em \"A Royal Recipe\", Gotter conta que, na infância pobre, sonhava com os pratos que a corte real teria comido e cita o risoto de cogumelos ao lado do Curry de frutos do mar e do Pudim de ovos.",
+      "sources": [
+        "zw:A Royal Recipe"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O último risoto da fila",
+      "text": "Na ordem em que o jogo testa as receitas, o Risoto de cogumelos vem depois dos risotos de salmão, de caranguejo e de legumes. Se a panela tiver cogumelo e um desses ingredientes juntos, o prato recebe o nome do outro risoto.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre.",
+    "Salmão, caranguejo, cenoura ou abóbora na panela mudam o tipo de risoto."
+  ],
+  "related": [
+    {
+      "id": "botw_food_salmon_risotto",
+      "relation": "Variação sugerida por Ivee, com Salmão nutritivo"
+    },
+    {
+      "id": "botw_food_vegetable_risotto",
+      "relation": "Mesma base com cenoura ou abóbora"
+    },
+    {
+      "id": "botw_food_crab_risotto",
+      "relation": "Mesma base com caranguejo"
+    },
+    {
+      "id": "botw_food_mushroom_rice_balls",
+      "relation": "Versão sem manteiga nem halita"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo da receita de Ivee"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

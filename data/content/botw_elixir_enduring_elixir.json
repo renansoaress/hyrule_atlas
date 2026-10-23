@@ -1,0 +1,91 @@
+{
+  "id": "botw_elixir_enduring_elixir",
+  "summary": "Elixir de Sapo obstinado que enche toda a roda de Vigor e acrescenta vigor temporário além do limite. O extra some conforme é gasto; não tem duração, e as partes de monstro só servem para formar o elixir.",
+  "description": "O Elixir tenaz restaura completamente o Medidor de vigor e o ultrapassa com vigor extra temporário, exibido como uma roda adicional que desaparece à medida que é usada. O único bicho que o produz é o Sapo obstinado, um sapo raro que, segundo o jogo, só sai na chuva, perto de lagoas da Grande Nascente de Lanayru e dos Cerros de Hyrule.\n\nA quantidade de vigor extra segue as estrelas dos ingredientes: cada estrela vale 1/5 de roda temporária. O Sapo obstinado vale uma estrela, a Cenoura tenaz vale duas e o Cogumelo tenaz meia. Como o efeito não é de duração, as partes de monstro não acrescentam tempo útil — elas apenas transformam a receita em elixir. Um sucesso crítico, por sua vez, adiciona mais dois quintos de roda.",
+  "locations": [
+    "Sapos obstinados: perto de lagoas da Grande Nascente de Lanayru e dos Cerros de Hyrule, apenas durante a chuva."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela pelo menos um Sapo obstinado com uma parte de monstro.",
+    "Sapos obstinados são vendidos por Beedle e pelo mercador Bugut por 100 rupias cada."
+  ],
+  "uses": [
+    "Escaladas longas e voos de Planador que exigem mais vigor do que Link possui.",
+    "Atravessar trechos de nado extensos sem esgotar o vigor."
+  ],
+  "effects": [
+    "Restaura todo o vigor e acrescenta vigor extra temporário (1/5 de roda por estrela da receita).",
+    "O vigor extra desaparece conforme é consumido; não há tempo de duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Enche a roda de Vigor e adiciona uma parcela temporária acima do máximo, que vai sumindo à medida que Link a gasta.",
+      "applications": ["Beber antes de iniciar uma escalada longa ou no meio dela, quando o vigor estiver acabando."],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Sapo obstinado (★) + parte de monstro gera o elixir; cada ★ dá 1/5 de roda extra. Cenoura tenaz (★★) e Cogumelo tenaz (meia ★) podem completar a receita e também curam.",
+      "conditions": [
+        "Pelo menos um Sapo obstinado e uma parte de monstro.",
+        "Mesmo um prato com um único Cogumelo tenaz dá 1/5 de roda temporária."
+      ],
+      "side_effects": [
+        "Sem parte de monstro (bicho sem parte de monstro), o resultado é Comida duvidosa.",
+        "Partes de monstro não aumentam a quantidade de vigor."
+      ],
+      "applications": ["Somar Cenouras tenazes ao sapo é o modo mais barato de aumentar a roda extra."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço calculado pela soma dos ingredientes vezes o multiplicador da quantidade (1,5 a 2,8). O Sapo obstinado vale 20 rupias como ingrediente, o que encarece o elixir.",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Tireless Frog"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Crítico e Extrato de monstro",
+      "text": "O bônus crítico de cozimento acrescenta dois quintos de roda ao vigor extra. Já o Extrato de monstro anula a chance de crítico e sorteia: ou reduz a potência a uma única estrela, ou aumenta o vigor extra em dois quintos.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Como pegar o sapo",
+      "text": "O Sapo obstinado foge ao ver Link. Dá para se aproximar com furtividade, atordoá-lo ou simplesmente persegui-lo.",
+      "sources": ["zw:Tireless Frog"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cama cara também enche a roda extra",
+      "text": "Dormir numa cama de 80 rupias de uma estalagem enche completamente a roda de vigor extra que Link tiver no momento, qualquer que seja a quantidade restante.",
+      "sources": ["zw:Inn"]
+    }
+  ],
+  "advanced_uses": [
+    "Beber o elixir quando a roda está quase vazia aproveita a restauração completa e ainda deixa a reserva extra para o final da escalada."
+  ],
+  "limitations": [
+    "O sapo só aparece na chuva e custa 100 rupias nas lojas.",
+    "Partes de monstro não prolongam nada: o efeito não é de duração."
+  ],
+  "related": [
+    { "id": "botw_creature_tireless_frog", "relation": "Único bicho que produz o elixir (★)" },
+    { "id": "botw_material_endura_carrot", "relation": "Ingrediente tenaz (★★)" },
+    { "id": "botw_material_endura_shroom", "relation": "Ingrediente tenaz (meia ★)" },
+    { "id": "botw_elixir_energizing_elixir", "relation": "Elixir que só restaura vigor, sem ultrapassar o máximo" },
+    { "id": "botw_mechanic_stamina", "relation": "Regras de Vigor" },
+    { "id": "botw_mechanic_climbing", "relation": "Uso principal do vigor extra" },
+    { "id": "botw_mechanic_rain", "relation": "O sapo só aparece na chuva" }
+  ],
+  "capabilities": ["vigor"],
+  "verification_status": "verificado"
+}

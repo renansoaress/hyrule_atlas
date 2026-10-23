@@ -1,0 +1,197 @@
+{
+  "id": "botw_material_rock_salt",
+  "summary": "Sal cristalizado de um mar antigo que sai dos depósitos de minério. Não pode ser comido assim, mas tempera 28 receitas: todos os grelhados no sal, as tigelas de arroz, risotos, omeletes, tortas salgadas e o Pão de trigo.",
+  "description": "A Halita (Rock Salt) é sal cristalizado de um \"mar antigo\", usado para temperar refeições; o próprio jogo avisa que ela não pode ser comida nessa forma. É o único ingrediente culinário que vem dos Depósitos de minério — cai junto com gemas e Sílex quando eles são quebrados — e também é vendida na Goron Gusto Shop (Cidade Goron), no Coral Reef (Domínio Zora), na banca de Spera (Cidade Gerudo) e pelos mercadores Mezer e Giro.\n\nNa tabela de culinária é neutra: não recupera corações e soma 1:00 à duração. Mesmo assim é indispensável, pois é obrigatória em 28 receitas — todos os grelhados no sal (de carne, de carne de segunda, de carne de primeira, de peixe, de caranguejo, de ervas e de cogumelos), as tigelas de arroz com carne, os risotos, as omeletes de cogumelos, de legumes e de caranguejo, as tortas de carne e de peixe, as sopas cremosas, os Bolinhos de arroz de monstro, o Arroz frito com frutos do mar e a Paella de frutos do mar. Halita com Trigo de Tabantha é uma combinação pré-definida que forma o Pão de trigo, uma das poucas receitas feitas só com ingredientes suplementares. Na Tinturaria Kochi, entra no corante pêssego (Peach Dye).",
+  "locations": [
+    "Depósitos de minério e Depósitos de minério raro de Toda Hyrule.",
+    "Goron Gusto Shop (Cidade Goron), Coral Reef (Domínio Zora), banca de Spera (Cidade Gerudo) e os mercadores Mezer (Dueling Peaks Stable) e Giro (Proxim Bridge–Dueling Peaks Stable)."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de minério (voltam após uma Lua de sangue).",
+    "Comprar nas lojas e mercadores citados (12 rupias)."
+  ],
+  "uses": [
+    "Receitas obrigatórias (28): Carne grelhada no sal (e as versões de segunda e de primeira), Peixe grelhado no sal, Caranguejo grelhado no sal, Ervas grelhadas no sal, Cogumelos grelhados no sal, as três Tigelas de arroz com carne, Risotos de caranguejo, de cogumelos, de legumes e de salmão, Omeletes de cogumelos, de legumes e de caranguejo com arroz, Tortas de carne e de peixe, Creme de cogumelos, Creme de legumes, Sopa cremosa de carne, Sopa cremosa de frutos do mar, Sopa cremosa de legumes, Bolinhos de arroz de monstro, Arroz frito com frutos do mar, Paella de frutos do mar e Pão de trigo.",
+    "Ingrediente do corante pêssego na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 1:00 à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "nao_aplicavel",
+      "result": "\"Não pode ser comida nessa forma\", diz o jogo: só serve como tempero na panela.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro: 0 de cura e 1:00 de duração. Com carne, peixe, ervas ou cogumelos forma os grelhados no sal; com Trigo de Tabantha, o Pão de trigo. Sozinha, ou só com suplementos incompatíveis, vira Comida duvidosa.",
+      "produces": [
+        "botw_food_salt_grilled_meat",
+        "botw_food_salt_grilled_fish",
+        "botw_food_salt_grilled_greens",
+        "botw_food_salt_grilled_mushrooms",
+        "botw_food_wheat_bread",
+        "botw_food_meat_and_rice_bowl",
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Jogada perto do fogo, queima até virar cinzas: só materiais que recuperam vida crus viram comida assada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada numa fogueira, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada da Halita na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; não há uso conhecido para a Halita largada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a Halita largada (golpear os depósitos de minério, sim, gera faíscas)."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Halita à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com a Halita largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a Halita é sal cristalizado.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Halita largada."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pão sem comida",
+      "text": "Normalmente, juntar só ingredientes suplementares (arroz, trigo, sal, açúcar, manteiga, tempero) dá Comida duvidosa. Trigo de Tabantha com Halita é uma das combinações pré-definidas que funcionam: o resultado é o Pão de trigo.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Tempero de mineração",
+      "text": "A Halita é o único ingrediente de cozinha que cai dos Depósitos de minério, ao lado das gemas e do Sílex — coerente com a descrição de sal cristalizado de um mar antigo.",
+      "sources": [
+        "zw",
+        "zw:Ore Deposit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Quebrar depósitos para juntar gemas e Sílex já abastece de sal todos os grelhados: guarde a Halita em vez de vendê-la por 2 rupias."
+  ],
+  "limitations": [
+    "Não pode ser comida, e vira cinzas se for jogada no fogo.",
+    "Não recupera corações por si só."
+  ],
+  "related": [
+    {
+      "id": "botw_food_wheat_bread",
+      "relation": "Halita com Trigo de Tabantha"
+    },
+    {
+      "id": "botw_food_salt_grilled_meat",
+      "relation": "Halita com Carne de terceira ou Coxa"
+    },
+    {
+      "id": "botw_food_salt_grilled_fish",
+      "relation": "Halita com qualquer peixe ou caramujo"
+    },
+    {
+      "id": "botw_food_salt_grilled_greens",
+      "relation": "Halita com qualquer legume, erva ou flor"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Parceiro no Pão de trigo"
+    },
+    {
+      "id": "botw_treasure_ore_deposit",
+      "relation": "Fonte natural de Halita"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Também cai dos depósitos de minério"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sozinha"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante pêssego"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

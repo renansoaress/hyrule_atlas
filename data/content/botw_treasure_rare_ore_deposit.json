@@ -1,0 +1,100 @@
+{
+  "id": "botw_treasure_rare_ore_deposit",
+  "summary": "Versão mais rica do depósito de minério, geralmente no meio de grupos de depósitos comuns. Quebrada, solta Topázio, Rubi, Safira e Diamante com frequência bem maior, além de Sílex. Só volta depois da Lua de sangue.",
+  "description": "O Depósito de minério raro (entrada nº 388 do compêndio) costuma aparecer junto de grupos de depósitos comuns. Como eles, é quebrado com golpes de arma ou com uma Bomba remota, e solta faíscas capazes de iniciar incêndios quando atingido por armas que não são de madeira ou por flechas, quebrado ou não. A diferença está no conteúdo: gemas raras como Topázio, Rubi, Safira e Diamante caem dele com frequência bem maior do que nos depósitos comuns, além de Sílex.\n\nComo os demais depósitos, não reaparece até a próxima Lua de sangue, o que torna difícil juntar gemas raras em grande quantidade. Os Tálus rochosos (raros) têm depósitos raros no corpo: é o ponto fraco deles, particularmente vulnerável à Marreta de ferro, a outras ferramentas de mineração e a Flechas explosivas.",
+  "locations": [
+    "Toda Hyrule, geralmente em meio a grupos de depósitos de minério comuns.",
+    "No corpo dos Tálus rochosos (raros), como ponto fraco."
+  ],
+  "obtaining": [
+    "Objeto do cenário; reaparece depois de cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte principal de Topázio, Rubi, Safira e Diamante fora de baús e inimigos.",
+    "Ponto fraco do Tálus rochoso (raro)."
+  ],
+  "effects": [
+    "Solta gemas (com maior chance de Topázio, Rubi, Safira e Diamante) e Sílex ao quebrar."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes quebram o depósito; armas que não são de madeira tiram faíscas a cada golpe.",
+      "side_effects": ["As faíscas podem incendiar a grama seca ao redor."],
+      "produces": ["botw_material_topaz", "botw_material_ruby", "botw_material_sapphire", "botw_material_diamond", "botw_material_amber", "botw_material_flint"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota quebra o depósito.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas que atingem o depósito geram faíscas capazes de iniciar incêndios.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O depósito funciona como fonte de faíscas: golpes de armas que não são de madeira ou flechas podem acender fogo ao redor.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "No Tálus rochoso (raro), o depósito raro é o único ponto vulnerável; atacá-lo causa muito dano e derruba o monstro. Marretas de ferro, outras ferramentas de mineração e Flechas explosivas são especialmente eficazes.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stone Talus (Rare)"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "É rocha, não metal; Magnétis não o afeta.",
+      "sources": ["zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Difícil de farmar",
+      "text": "Destruído, o depósito raro só volta depois da próxima Lua de sangue, o que limita a coleta de gemas raras em grande quantidade.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O que cai, segundo cada fonte",
+      "text": "O compêndio lista Rubi, Safira, Diamante, Âmbar, Topázio e Sílex. O Zelda Wiki acrescenta Halita, e a página da Opala diz que ela também sai de depósitos raros — itens que não constam da lista do compêndio.",
+      "sources": ["comp", "zw", "zw:Opal"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar o Sensor Sheikah + com o depósito raro registrado como alvo para localizar os mais próximos.",
+    "Procurar o depósito raro no meio de aglomerados de depósitos comuns e quebrá-lo primeiro com um martelo."
+  ],
+  "limitations": [
+    "Só reaparece após a Lua de sangue.",
+    "As faíscas podem iniciar incêndios indesejados."
+  ],
+  "related": [
+    { "id": "botw_treasure_ore_deposit", "relation": "Versão comum, que costuma cercá-lo" },
+    { "id": "botw_treasure_luminous_ore_deposit", "relation": "Outra variante de depósito" },
+    { "id": "botw_monster_stone_talus_rare", "relation": "Tem um depósito raro como ponto fraco" },
+    { "id": "botw_material_diamond", "relation": "Gema rara liberada" },
+    { "id": "botw_material_ruby", "relation": "Gema rara liberada" },
+    { "id": "botw_material_sapphire", "relation": "Gema rara liberada" },
+    { "id": "botw_material_topaz", "relation": "Gema rara liberada" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Especialmente eficaz contra o depósito do Tálus raro" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Eficaz contra o depósito do Tálus raro" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Faz o depósito reaparecer" }
+  ],
+  "capabilities": ["gera_fogo", "revela_recursos"],
+  "verification_status": "a_verificar"
+}

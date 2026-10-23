@@ -1,0 +1,112 @@
+{
+  "id": "botw_creature_smotherwing_butterfly",
+  "summary": "Borboleta rara das regiões vulcânicas, que voa à beira dos lagos de lava da Montanha da Morte e do Cânion de Eldin. Vira Elixir corta-fogo e é material dos níveis 3 e 4 do Conjunto antichamas.",
+  "description": "A Borboleta abrasadora, também chamada pelo nome científico Papilio vulcensis, vive nas áreas de clima abrasador da Montanha da Morte e do Cânion de Eldin, muitas vezes à beira dos lagos de lava. Segundo o jogo, é uma borboleta rara cujo corpo contém um líquido resistente ao calor, que pode virar um elixir de uso tópico contra as chamas. Beedle a vende nos Estábulos East Akkala e Wetland, por 10 rupias.\n\nCozida com partes de monstro, produz o Elixir corta-fogo, que concede Proteção contra chamas e impede Link de pegar fogo no clima abrasador. Cada borboleta acrescenta 2:30 de duração, e ela pode dividir o elixir com o Lagarto corta-fogo, da mesma categoria. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante cinza.\n\nNas Fontes da Grande Fada, é o material dos dois últimos níveis do Conjunto antichamas: 3 por peça no 3º nível (com 3 Vísceras de Moblin) e 5 por peça no 4º (com 2 Vísceras de Rinox).",
+  "locations": [
+    "Áreas de clima abrasador da Montanha da Morte e do Cânion de Eldin, frequentemente à beira de lagos de lava."
+  ],
+  "obtaining": [
+    "Apanhar nas áreas vulcânicas (é preciso proteção contra o fogo para circular por lá).",
+    "Comprar de Beedle nos Estábulos East Akkala e Wetland por 10 rupias."
+  ],
+  "uses": [
+    "Elixir corta-fogo: cozinhar com pelo menos uma parte de monstro.",
+    "Melhoria de armadura: 3 por peça do Conjunto antichamas no 3º nível (com 3 Vísceras de Moblin) e 5 por peça no 4º (com 2 Vísceras de Rinox).",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "No elixir: Proteção contra chamas; +2:30 de duração por borboleta."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como a borboleta reage à aproximação de Link. Em geral, agachar-se aumenta a furtividade perto de animais."
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Vive justamente no clima abrasador, à beira dos lagos de lava; Link precisa de Proteção contra chamas para não pegar fogo ao procurá-la.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma borboleta viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir corta-fogo (Proteção contra chamas). Cada borboleta acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinada com o Lagarto corta-fogo, da mesma categoria."],
+      "produces": ["botw_elixir_fireproof_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Fireproof Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinha ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Dubious Food", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comida crua: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 2 rupias; Beedle cobra 10.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com a borboleta exposta ao fogo, apesar de ela viver junto à lava."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre a borboleta."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Compre longe do vulcão",
+      "text": "Para os 24 exemplares que as três peças do Conjunto antichamas pedem nos níveis 3 e 4, Beedle vende a borboleta nos Estábulos East Akkala e Wetland, sem a necessidade de caçá-la entre os lagos de lava.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Proteção contra chamas em dois níveis",
+      "text": "O clima abrasador começa perto da Lagoa Medingo (Medingo Pool), onde basta um nível de Proteção contra chamas; depois da Mina Norte Abandonada (Abandoned North Mine) e da Ponte de Eldin (Bridge of Eldin), ele se intensifica e passa a exigir dois níveis.",
+      "sources": ["zw:Scorching Climate"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar borboletas abrasadoras e Lagartos corta-fogo com partes de monstro de maior duração rende um Elixir corta-fogo longo para explorar a Montanha da Morte."
+  ],
+  "limitations": [
+    "Cozida sem parte de monstro, vira Comida duvidosa.",
+    "O elixir só impede que Link pegue fogo; a imunidade a todo dano de fogo vem do bônus do Conjunto antichamas completo."
+  ],
+  "related": [
+    { "id": "botw_elixir_fireproof_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_fireproof_lizard", "relation": "Outro bicho corta-fogo" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Usa 3 e depois 5 por peça nos dois últimos níveis de melhoria" },
+    { "id": "botw_material_moblin_guts", "relation": "Acompanha a borboleta no 3º nível do Conjunto antichamas" },
+    { "id": "botw_material_hinox_guts", "relation": "Acompanha a borboleta no 4º nível do Conjunto antichamas" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante cinza" }
+  ],
+  "capabilities": ["protege_fogo"],
+  "verification_status": "parcial"
+}

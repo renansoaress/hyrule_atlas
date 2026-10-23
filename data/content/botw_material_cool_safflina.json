@@ -1,0 +1,128 @@
+{
+  "id": "botw_material_cool_safflina",
+  "summary": "Erva medicinal das altitudes nevadas de Hebra e das Montanhas Gerudo que, cozida, dá Resistência ao calor — apesar do nome PT-BR. Crua não cura. Também brota junto à fonte da Grande Fada Tera.",
+  "description": "A Erva fogueira (Cool Safflina, no original em inglês) é uma planta medicinal que cresce em grandes altitudes, como as montanhas das regiões de Hebra e Gerudo, inclusive na neve; ela também brota perto da Fonte da Grande Fada Tera, no Deserto Gerudo. Apesar do nome em português, seu efeito é refrescante: cozida na panela, concede Resistência ao calor, que protege Link do calor do deserto durante o dia. Crua, não recupera corações.\n\nNão tem versão assada na lista de comidas assadas nem é usada em melhorias de armadura. Na Tinturaria Kochi, em Hateno, serve como ingrediente do corante azul-claro.",
+  "locations": [
+    "Neve das Cordilheiras de Hebra e das Montanhas Gerudo (locais citados pelo compendium).",
+    "Arredores da Fonte da Grande Fada Tera, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Colher nos locais citados. Os dados estruturados não listam lojas que vendam a erva."
+  ],
+  "uses": [
+    "Pratos de Resistência ao calor.",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante azul-claro na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Cozida: Resistência ao calor (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a erva no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a erva largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada desta erva na lista de comidas assadas, e as fontes não dizem o que acontece se ela for exposta ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-la numa fogueira; ela não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Cresce na neve e não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da erva na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a erva não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência ao calor. Mais unidades prolongam o efeito; combinada com Melancia oásica ou Glacimelo (mesmo efeito), prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Heat Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Crua, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": ["comp", "zw:Flower"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Nome quente, efeito frio",
+      "text": "O nome em português pode confundir: apesar de \"fogueira\", esta é a erva das regiões nevadas (Cool Safflina, no original) que, segundo a descrição do jogo, aumenta a resistência ao calor. A erva de efeito oposto, das regiões quentes, é a Erva geleira.",
+      "sources": ["comp", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Para atravessar o deserto de dia",
+      "text": "O calor diurno do Deserto Gerudo fere Link aos poucos; pratos refrescantes, como os feitos com esta erva, evitam o dano. As três ervas desta família crescem juntas perto da fonte de Tera, no próprio deserto.",
+      "sources": ["zw:Heat", "zw", "zw:Warm Safflina", "zw:Electric Safflina"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Melancias oásicas e Glacimelos para Resistência ao calor de nível mais alto e mais duradoura."
+  ],
+  "limitations": [
+    "Crua não cura nada.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ela não está documentado.",
+    "Resistência ao calor não substitui a Proteção contra chamas exigida na região de Eldin."
+  ],
+  "related": [
+    { "id": "botw_material_warm_safflina", "relation": "Erva da mesma família, de efeito oposto (frio)" },
+    { "id": "botw_material_electric_safflina", "relation": "Erva da mesma família (choques)" },
+    { "id": "botw_material_hydromelon", "relation": "Outro ingrediente de Resistência ao calor" },
+    { "id": "botw_material_chillshroom", "relation": "Outro ingrediente de Resistência ao calor" },
+    { "id": "botw_elixir_chilly_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Cresce perto da fonte de Tera" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul-claro" }
+  ],
+  "capabilities": ["protege_calor"],
+  "verification_status": "parcial"
+}

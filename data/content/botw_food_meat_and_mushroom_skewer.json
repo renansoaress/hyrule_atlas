@@ -1,0 +1,97 @@
+{
+  "id": "botw_food_meat_and_mushroom_skewer",
+  "summary": "Espetinho de qualquer carne com cogumelos, \"ingredientes da montanha com bife ou carne de ave\". A carne é neutra, então o cogumelo decide a versão; a comum usa Cogumelo hyliano.",
+  "description": "O Espetinho de carne e cogumelo junta qualquer carne com cogumelos; a descrição do jogo fala de um prato farto de vários ingredientes da montanha grelhados com bife ou carne de ave. Cura vários corações. A versão comum sai com Cogumelo hyliano, que não tem efeito, ou com cogumelos de efeitos diferentes.\n\nComo a carne não muda o efeito, o cogumelo define a versão, numa correspondência direta: Glacimelo (refrescante), Aterramelo (isolante), Cogumelo tenaz (tenaz), Energimelo (energizante), Agilimelo (veloz), Trufa nutritiva ou Trufona nutritiva (nutritiva), Ferromelo (valente), Silencimelo (discreta), Flamelo (picante) e Blindamelo (blindada).\n\nA diferença para o Espetinho de peixe e cogumelo é que, lá, o peixe também pode trazer efeito; aqui, a carne serve só para curar, e qualquer carne vale — de Carne de terceira a Ave inteira.",
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer carne + qualquer cogumelo."
+  ],
+  "uses": [
+    "Cura de vários corações com o efeito do cogumelo.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (Cogumelo hyliano ou cogumelos de efeitos diferentes): recupera vários corações.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — Glacimelo.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — Aterramelo.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — Cogumelo tenaz.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — Energimelo.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — Agilimelo.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — Trufa nutritiva ou Trufona nutritiva.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — Ferromelo.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — Silencimelo.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — Flamelo.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — Blindamelo."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera vários corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O cogumelo usado define o efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Qualquer carne serve",
+      "text": "Ao contrário de curries, ensopados e tigelas, que mudam de nome conforme a qualidade da carne, este espetinho aceita qualquer carne — inclusive Carne de primeira e Ave inteira — sem virar outro prato.",
+      "sources": [
+        "zw",
+        "zw:Raw Whole Bird"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cogumelos de efeitos diferentes se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_food_fish_and_mushroom_skewer",
+      "relation": "Mesmo espetinho com peixe"
+    },
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Espetinho só de cogumelos"
+    },
+    {
+      "id": "botw_food_meat_skewer",
+      "relation": "Espetinho só de carne"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito, para a versão comum"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne aceita"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,164 @@
+{
+  "id": "botw_armor_tingles_hood",
+  "summary": "Capuz verde de Tingle, o homem que se dizia reencarnação de uma fada, do DLC The Master Trials. Sozinho não tem efeito; o Traje de Tingle completo deixa Link mais rápido à noite e assusta as pessoas.",
+  "description": "Segundo a descrição, houve um homem que dizia ser a reencarnação de uma fada e tinha grande estima por este capuz — “Kooloo-Limpah!”. Exclusivo do pacote de DLC The Master Trials, o capuz foi roubado do Castelo de Hyrule por Misko e é parte da missão secundária “EX Treasure: Fairy Clothes”: o diário de Misko nas Outpost Ruins aponta “as ruínas onde o comércio florescia”. O baú escondido está enterrado nas Exchange Ruins, na Pradaria de Hyrule, e precisa ser puxado do chão com Magnétis.\n\nSozinho, dá só 2 de defesa e não tem efeito. Com a Camisa e a Meia-calça de Tingle, o Traje de Tingle concede a Velocidade noturna sem nenhuma melhoria (entre 21h e 4h, Link corre 20% mais rápido), e as pessoas se assustam ao ver Link vestido assim. Não pode ser melhorado nem tingido. Depois de achado, Granté o vende por 50 rupias.",
+  "locations": [
+    "Exchange Ruins, na Pradaria de Hyrule (baú enterrado, puxado com Magnétis)."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Fairy Clothes” (DLC The Master Trials), iniciada pelo diário de Misko nas Outpost Ruins.",
+    "Reposição: Granté o vende por 50 rupias depois da primeira obtenção."
+  ],
+  "uses": [
+    "Completar o Traje de Tingle para correr mais rápido à noite."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Traje completo (sem melhorias): Velocidade noturna (+20% entre 21h e 4h)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça e soma 2 de defesa fixa; sozinho, não tem efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Traje de Tingle completo",
+      "status": "confirmado",
+      "result": "Com a Camisa e a Meia-calça de Tingle, Link corre 20% mais rápido entre 21h e 4h, sem precisar de melhorias.",
+      "conditions": [
+        "As três peças vestidas.",
+        "Horário do jogo entre 21h e 4h."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "pessoas",
+      "status": "confirmado",
+      "result": "Com o traje completo, outros personagens se assustam com Link, como acontece com o Conjunto sombrio.",
+      "kind": "curiosidade",
+      "sources": [
+        "zw:Tingle's Outfit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Velocidade noturna de graça",
+      "text": "Como as armaduras do DLC não podem ser melhoradas, o Traje de Tingle dá a Velocidade noturna só por estar completo — o Conjunto furtivo, que tem o mesmo bônus, exige as três peças a ★★.",
+      "sources": [
+        "zw:Armor Set",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "As outras duas peças",
+      "text": "O mesmo diário indica as “ruínas onde pecadores eram aprisionados” e “a vila ao lado das plantações”: a Camisa fica na Prisão da Cidade do Castelo (Castle Town Prison) e a Meia-calça, nas Mabe Village Ruins.",
+      "sources": [
+        "jogo",
+        "zw:Tingle's Outfit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para viagens a pé à noite, o traje dá o mesmo ganho de corrida do Conjunto sombrio, sem gastar Mon."
+  ],
+  "limitations": [
+    "Defesa de apenas 2, sem melhorias nem tingimento.",
+    "Exige o DLC The Master Trials."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_tingles_outfit",
+      "relation": "Traje do qual faz parte"
+    },
+    {
+      "id": "botw_armor_tingles_shirt",
+      "relation": "Peça do mesmo traje"
+    },
+    {
+      "id": "botw_armor_tingles_tights",
+      "relation": "Peça do mesmo traje"
+    },
+    {
+      "id": "botw_armor_dark_hood",
+      "relation": "Peça de outro conjunto com Velocidade noturna"
+    },
+    {
+      "id": "botw_armor_stealth_mask",
+      "relation": "Peça de outro conjunto com Velocidade noturna (★★)"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para desenterrar o baú"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,207 @@
+{
+  "id": "botw_monster_frost_talus",
+  "summary": "Tálus de gelo encantado (800 de vida) que congela Link ao toque, impedindo a escalada. Derreta o gelo com fogo ou use o bônus Imunidade a congelamento; o ponto fraco continua sendo o minério.",
+  "description": "O Tálus glacial é um Tálus feito de gelo encantado, encontrado nas regiões frias de Hebra e Gerudo — sobretudo nas Cordilheiras de Hebra e nas Montanhas Gerudo. Ele se disfarça de formação rochosa congelada e, como diz o compendium, só de tocar seu corpo Link pode sofrer congelamento grave, o que torna impossível escalá-lo normalmente.\n\nHá duas saídas: derreter o gelo com ataques de fogo, como Flechas incendiárias, ou ativar o bônus de conjunto Imunidade a congelamento, obtido com o Conjunto de pluma nevada melhorado ou com o Elmo de Zant. Com isso, Link pode subir e golpear o Depósito de minério. O minério também pode ser atingido de longe com flechas ou com a Fúria de Urbosa. As pedras que ele arremessa estão sempre cobertas de gelo.\n\nAo morrer, deixa Sílex, Opala, Safira e Diamante. O Tálus glacial do Coldsnap Hollow é alvo da missão secundária \"Face the Frost Talus\", do guarda Rito Gesane, que paga uma rupia prateada.",
+  "locations": [
+    "Segundo o compendium, é comum nas Cordilheiras de Hebra e nas Montanhas Gerudo.",
+    "Pontos citados pelo Zelda Wiki: Coldsnap Hollow, Laparoh Mesa, Pikida Stonegrove, oeste do Rospro Pass e oeste do Sapphia's Table.",
+    "Também é o chefe do 16º andar das Provações finais da Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Sílex, Opala, Safira e Diamante, em quantidades variadas.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Missão secundária \"Face the Frost Talus\": derrotar o Tálus glacial do Coldsnap Hollow e avisar Gesane, na Vila dos Arás, rende uma rupia prateada.",
+    "Fonte de Safiras e Diamantes.",
+    "Conta para a Medalha de honra: Tálus, de Kilton."
+  ],
+  "effects": [
+    "Contato com o corpo congela Link.",
+    "Pedras arremessadas cobertas de gelo, além dos golpes de braço e da queda de corpo típicos dos Tálus."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Disfarçado de formação rochosa congelada, desperta quando Link se aproxima. Tocar o corpo dele congela Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes corpo a corpo ferem apenas o Depósito de minério. Para alcançá-lo escalando, é preciso derreter o gelo ou ter Imunidade a congelamento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas no minério causam dano; o corpo congelado não é perfurado por flechas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Ataques de fogo, como Flechas incendiárias, derretem o gelo do corpo e permitem escalá-lo.",
+      "applications": [
+        "Derreter o gelo e subir até o minério sem equipamento especial."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de ataques de gelo sobre o Tálus glacial."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "A Fúria de Urbosa é citada como uma das formas de causar dano ao minério. Outros ataques elétricos não são descritos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "O próprio monstro congela quem o toca; com Imunidade a congelamento (Conjunto de pluma nevada melhorado ou Elmo de Zant), Link pode escalá-lo normalmente.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre o Tálus glacial na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre o Tálus glacial."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra esta variação."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Feito de pedra e gelo, não é afetado por Magnétis, que só move metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Vive em áreas frias e nevadas de Hebra e Gerudo, camuflado como rocha congelada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Duas formas de escalar",
+      "text": "Derreter o gelo com fogo é a solução sugerida pelo próprio compendium; a alternativa é o bônus Imunidade a congelamento, que vem do Conjunto de pluma nevada melhorado numa Fonte da Grande Fada ou do Elmo de Zant.",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O pavor de Gesane",
+      "text": "Gesane conta que viu o Tálus glacial no Coldsnap Hollow, fugiu \"como o vento\" e aposta que um Campeão o derrotaria sem problema. Quando Link o derrota, ele se espanta que um hyliano tenha vencido algo tão grande e paga a recompensa.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Conta para a Medalha de honra: Tálus",
+      "text": "Todos os Tálus glaciais entram na contagem de Kilton para a Medalha de honra: Tálus.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Atirar no minério de longe e completar com a Fúria de Urbosa, evitando o contato com o corpo congelante."
+  ],
+  "limitations": [
+    "Não pode ser escalado normalmente sem derreter o gelo ou sem Imunidade a congelamento.",
+    "As pedras arremessadas também estão congeladas."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_stone_talus",
+      "relation": "Forma comum da espécie"
+    },
+    {
+      "id": "botw_monster_igneo_talus",
+      "relation": "Variação oposta, de lava"
+    },
+    {
+      "id": "botw_arrow_fire_arrow",
+      "relation": "Derrete o gelo do corpo"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Melhorado, dá Imunidade a congelamento"
+    },
+    {
+      "id": "botw_armor_zants_helmet",
+      "relation": "Também dá Imunidade a congelamento"
+    },
+    {
+      "id": "botw_ability_urbosas_fury",
+      "relation": "Causa dano ao minério"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_talus",
+      "relation": "Prêmio de Kilton"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "reage_fogo",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

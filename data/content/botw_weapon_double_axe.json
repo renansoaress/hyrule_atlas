@@ -1,0 +1,172 @@
+{
+  "id": "botw_weapon_double_axe",
+  "summary": "Machado de lâmina dupla feito para a luta (ataque 18) e muito durável (52). Derruba árvores com um golpe graças ao multiplicador 7× contra troncos; metálico, conduz e atrai raios.",
+  "description": "O Lábris é um machado de duas lâminas projetado para o combate. A descrição do jogo admite que ele é um pouco difícil de manejar e exige técnica treinada para ser usado com eficiência. Aparece abandonado ou nas mãos de monstros em Necluda Ocidental e nas Montanhas Gerudo.\n\nO destaque é a durabilidade de 52, uma das maiores entre as armas comuns de duas mãos, e uma propriedade oculta compartilhada com o Machado de lenhador: contra árvores, o dano é multiplicado por 7, o que derruba o tronco com um só golpe. Pelos parâmetros, o mesmo multiplicador vale para andaimes (Scaffold) e placas (Signboard). Por ser de metal, conduz eletricidade, atrai raios em tempestades, afunda e pode ser puxado com Magnétis.",
+  "locations": [
+    "Necluda Ocidental e Montanhas Gerudo, abandonado ou com monstros."
+  ],
+  "obtaining": [
+    "Recolher onde estiver abandonado ou pegar a arma derrubada por monstros dessas regiões.",
+    "Armas no mundo e as carregadas por inimigos reaparecem com a Lua de sangue.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Coletar Madeira: derruba árvores com um golpe e depois o tronco caído pode ser golpeado para virar feixes de lenha.",
+    "Arma de duas mãos resistente para longas sequências de combate.",
+    "Metálico e não inflamável: acende sílex com um golpe."
+  ],
+  "effects": [
+    "Dano 7× contra árvores, andaimes e placas (multiplicador oculto)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o ataque carregado é um giro que consome vigor e termina numa pancada para baixo. O peso quebra a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado contra um inimigo, quebra no impacto e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; se Link for eletrocutado, o machado voa das mãos dele.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, faísca e atrai raios.",
+      "applications": [
+        "Largá-lo perto de inimigos durante a tempestade: objetos metálicos atraem as descargas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperar com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Contra árvores o dano é multiplicado por 7: um golpe basta para derrubá-las.",
+      "applications": [
+        "Golpear o tronco caído em seguida para obter feixes de Madeira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "A fonte diz apenas que monstros de Necluda Ocidental e das Montanhas Gerudo o usam, sem especificar quais."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +9 a +16, Durabilidade aumentada de +5 a +9 ou Acerto crítico; no nível dourado (amarelo): Ataque de +17 a +22, Durabilidade de +10 a +21 ou Lançamento longo (×1,5 a ×2). Com Durabilidade +21, o machado chega a 73 usos.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Andaimes e placas também",
+      "text": "A lista de alvos do multiplicador 7× nos parâmetros extraídos inclui, além de árvores (Tree), andaimes (Scaffold) e placas (Signboard) — a mesma lista do Machado de lenhador.",
+      "sources": [
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Prefira o Lábris ao Machado de lenhador quando precisar das duas funções: derruba árvores com um golpe e tem ataque seis vezes maior em combate."
+  ],
+  "limitations": [
+    "Metálico: atrai raios em tempestades.",
+    "Ataque modesto para uma arma de duas mãos (18)."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_woodcutters_axe",
+      "relation": "Mesmo multiplicador 7× contra árvores"
+    },
+    {
+      "id": "botw_object_tree",
+      "relation": "Derrubada com um golpe"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Obtida ao golpear o tronco derrubado"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Golpear sílex com arma metálica produz faíscas"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

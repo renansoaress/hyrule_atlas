@@ -1,0 +1,161 @@
+{
+  "id": "botw_material_fortified_pumpkin",
+  "summary": "Abóbora duríssima cultivada por Olkin em Kakariko. Cozida, aumenta bastante a defesa (Defesa aumentada); crua cura meio coração. É o segundo enigma de Walton e base da Abóbora recheada com carne.",
+  "description": "A Abóbora robusta é tão dura que, segundo o jogo, essa resistência se manifesta como um aumento considerável de defesa quando ela é cozida: os pratos de panela feitos com ela concedem Defesa aumentada. Crua, recupera meio coração; exposta ao fogo ou a um clima escaldante, vira Abóbora robusta assada (3/4 de coração), cuja casca dura serve de recipiente para a polpa cozida no vapor.\n\nÉ cultivada quase só pelo fazendeiro Sheikah Olkin, em Kakariko, que vende 8 abóboras na própria barraca (Olkin's Pumpkins) porque o rival Steen não deixa a esposa revendê-las — há nove pés na horta, mas só oito dão fruto. À noite, a esposa de Olkin, Mellie, prepara pratos com muitas abóboras, que ele considera muito melhores que cenouras. A abóbora é um dos três alimentos preferidos dos Sheikah, é a resposta do segundo enigma de Walton (\"Riddles of Hyrule\") e é obrigatória em três receitas: Abóbora recheada com carne, Torta de abóbora e Ensopado de abóbora.",
+  "locations": [
+    "Horta de Olkin, na Vila Kakariko (local citado pelo compendium).",
+    "Lojas: Olkin's Pumpkins (8 unidades) e o mercador ambulante Cambo — 20 rupias cada."
+  ],
+  "obtaining": [
+    "Comprar com Olkin ou Cambo.",
+    "Rinoxes comuns podem deixá-la ao serem derrotados."
+  ],
+  "uses": [
+    "Pratos de Defesa aumentada.",
+    "Obrigatória na Abóbora recheada com carne (com qualquer carne), na Torta de abóbora e no Ensopado de abóbora.",
+    "Aceita no lugar da cenoura no Curry de legumes, no Risoto de legumes e na Sopa cremosa de legumes.",
+    "Receitas genéricas de vegetal (Fritada de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, Frutas/Peixe/Cogumelos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, Creme de cogumelos).",
+    "Missão secundária \"Riddles of Hyrule\": resposta do segundo enigma de Walton.",
+    "Ingrediente do corante laranja na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozida: Defesa aumentada (+4, +12 ou +24 de defesa conforme o nível 1, 2 ou 3 do efeito)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largada no chão — é assim que se entrega a abóbora a Walton, sobre a folha à frente dele — e assa sozinha perto do fogo ou no calor de Eldin.",
+      "kind": "mecanica",
+      "sources": ["zw:Riddles of Hyrule", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Apesar da casca dura, as fontes não descrevem o efeito de golpear uma abóbora largada."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Assada pelo fogo, vira Abóbora robusta assada, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Defesa aumentada."],
+      "applications": ["Vender: assada vale 8 rupias, contra 5 da crua."],
+      "produces": ["botw_food_baked_fortified_pumpkin"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada junto a uma fogueira acesa, vira Abóbora robusta assada.",
+      "produces": ["botw_food_baked_fortified_pumpkin"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, assa ao ser largada no chão.",
+      "produces": ["botw_food_baked_fortified_pumpkin"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; vegetais não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da abóbora na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a abóbora não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Defesa aumentada. Mais abóboras prolongam o efeito; combinada com Blindamelo ou Amaranto blindado, prolonga e pode elevar o nível (até o 3, +24 de defesa).",
+      "side_effects": ["Não serve na Carne no vapor nem nas sopas cremosas que excluem cenouras e abóboras (Creme de legumes, Sopa cremosa de carne, Sopa cremosa de frutos do mar)."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Defense Up"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera meio coração, sem efeito.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 5 rupias; assada, vale 8.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Nove pés, oito abóboras",
+      "text": "A horta de Olkin tem nove pés de abóbora, mas só oito dão fruto — exatamente o estoque de 8 que ele vende.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rivalidade em Kakariko",
+      "text": "Olkin vende as próprias abóboras porque Steen, o produtor de cenouras, se recusa a deixar a loja da esposa estocá-las. Olkin, por sua vez, garante que os pratos de abóbora de Mellie são muito melhores que \"um barril de cenouras\".",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quanto rende a defesa",
+      "text": "Defesa aumentada soma 4, 12 ou 24 pontos de defesa nos níveis 1, 2 e 3; o nível 3 é o máximo.",
+      "sources": ["zw:Defense Up"]
+    }
+  ],
+  "advanced_uses": [
+    "Misture abóboras com Blindamelos e Amarantos blindados para buscar Defesa aumentada de nível 3 antes de lutas difíceis."
+  ],
+  "limitations": [
+    "Crua ou assada não dá Defesa aumentada; só cozida.",
+    "Excluída de algumas receitas de vegetal (Carne no vapor e as sopas cremosas que não aceitam cenoura ou abóbora)."
+  ],
+  "related": [
+    { "id": "botw_food_baked_fortified_pumpkin", "relation": "Resultado de expor a abóbora ao fogo" },
+    { "id": "botw_food_meat_stuffed_pumpkin", "relation": "Prato que exige abóbora" },
+    { "id": "botw_food_pumpkin_pie", "relation": "Prato que exige abóbora" },
+    { "id": "botw_food_pumpkin_stew", "relation": "Prato que exige abóbora" },
+    { "id": "botw_food_vegetable_curry", "relation": "Aceita cenoura ou abóbora" },
+    { "id": "botw_material_ironshroom", "relation": "Outro ingrediente de Defesa aumentada" },
+    { "id": "botw_material_armoranth", "relation": "Outro ingrediente de Defesa aumentada" },
+    { "id": "botw_material_swift_carrot", "relation": "Produto do rival Steen" },
+    { "id": "botw_elixir_tough_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_monster_hinox", "relation": "O Rinox comum pode deixá-la" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante laranja" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "defesa", "item_de_missao"],
+  "verification_status": "verificado"
+}

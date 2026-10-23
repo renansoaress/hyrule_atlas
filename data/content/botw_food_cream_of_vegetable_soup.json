@@ -1,0 +1,122 @@
+{
+  "id": "botw_food_cream_of_vegetable_soup",
+  "summary": "Sopa de legumes, ervas ou flores com Leite fresco e Halita. Cenouras e Abóbora robusta não entram (viram Sopa cremosa de legumes). A versão comum cura de 7 a 10 corações.",
+  "description": "O Creme de legumes é feito com Leite fresco, Halita e qualquer legume, erva ou flor, com uma exceção importante: Cenoura tenaz, Cenoura veloz e Abóbora robusta não podem entrar, senão o prato vira Sopa cremosa de legumes. A descrição do jogo diz que, feito cozinhando legumes no leite, este prato saudável é tão simples quanto seus ingredientes. A versão comum cura de 7 a 10 corações e vale de 40 a 60 rupias, conforme os ingredientes.\n\nAs versões com efeito dependem da planta: Rabanete nutritivo ou Rabanete nutritivo grande dão a nutritiva (70 rupias); Mel de abelha, a energizante (7 corações, 50 rupias); Violeta veloz, a veloz (40 rupias); Erva geleira (Warm Safflina), a picante; Erva relampagueira, a isolante; Protechofra, a valente (30 rupias); Amaranto blindado, a blindada (30 rupias); Beladona azul ou Princesa plácida, a discreta; e Erva fogueira (Cool Safflina), a refrescante, cuja descrição citada fala em resistência ao calor de nível médio.\n\nO Zelda Wiki registra um contraste forte: as versões feitas com ervas de efeito curam só 1 coração (as picante, isolante, discreta e refrescante valem 20 rupias), enquanto a comum chega a 10 corações.",
+  "locations": [
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: legume, erva ou flor (exceto cenouras e Abóbora robusta) + Leite fresco + Halita."
+  ],
+  "uses": [
+    "Cura de 7 a 10 corações na versão comum.",
+    "Versões de efeito com ervas e flores selvagens.",
+    "Venda: de 20 a 70 rupias."
+  ],
+  "effects": [
+    "Versão comum: recupera de 7 a 10 corações, conforme os ingredientes.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Rabanete nutritivo ou Rabanete nutritivo grande; 70 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Mel de abelha; 7 corações, 50 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Violeta veloz; 1 coração, 40 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Erva geleira; 1 coração, 20 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Erva relampagueira; 1 coração, 20 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Protechofra; 1 coração, 30 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com Amaranto blindado; 1 coração, 30 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — com Beladona azul ou Princesa plácida; 1 coração, 20 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Erva fogueira; nível médio segundo a descrição citada; 1 coração, 20 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera de 7 a 10 corações, conforme os ingredientes.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "A planta de efeito define a versão; as versões com ervas curam só 1 coração, segundo o Zelda Wiki, e a energizante (com Mel de abelha) cura 7.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale de 40 a 60 rupias na versão comum; as versões com efeito vão de 20 rupias (picante, isolante, discreta, refrescante) a 70 rupias (nutritiva).",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Cenoura ou abóbora mudam o prato",
+      "text": "Basta uma Cenoura veloz, uma Cenoura tenaz ou uma Abóbora robusta para a receita deixar de ser Creme de legumes e virar Sopa cremosa de legumes, que é feita justamente com cenoura ou abóbora, Leite fresco e Halita.",
+      "sources": [
+        "zw",
+        "zw:Veggie Cream Soup"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Efeito em troca de cura",
+      "text": "Nas versões feitas com ervas e flores de efeito, a sopa cura só 1 coração, contra 7 a 10 da versão comum. Vale a pena quando o objetivo é apenas o efeito (por exemplo, Resistência ao frio com Erva geleira).",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não aceita Cenoura veloz, Cenoura tenaz nem Abóbora robusta.",
+    "O Zelda Wiki não cita versão tenaz para esta sopa."
+  ],
+  "related": [
+    {
+      "id": "botw_food_veggie_cream_soup",
+      "relation": "Prato que surge ao usar cenoura ou abóbora"
+    },
+    {
+      "id": "botw_food_cream_of_mushroom_soup",
+      "relation": "Sopa cremosa com cogumelo, que aceita cenouras"
+    },
+    {
+      "id": "botw_food_creamy_meat_soup",
+      "relation": "Mesma base com carne"
+    },
+    {
+      "id": "botw_material_hearty_radish",
+      "relation": "Gera a versão nutritiva"
+    },
+    {
+      "id": "botw_material_warm_safflina",
+      "relation": "Erva geleira: gera a versão picante"
+    },
+    {
+      "id": "botw_material_cool_safflina",
+      "relation": "Erva fogueira: gera a versão refrescante"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

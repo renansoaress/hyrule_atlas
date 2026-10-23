@@ -1,0 +1,102 @@
+{
+  "id": "botw_mechanic_stable",
+  "summary": "Rede de 15 estábulos onde Link registra cavalos domados (20 rupias, com sela e rédea), guarda até cinco e chama qualquer um deles em outro estábulo. Também servem de estalagem (camas de 20 e 40 rupias).",
+  "description": "Os estábulos são tendas com um enorme enfeite em forma de cabeça de cavalo no telhado. Ali Link registra cavalos selvagens que domou: basta levá-lo perto do estábulo e falar com o responsável — não é preciso estar montado. No registro, Link vê os atributos do animal (força, velocidade, vigor, temperamento e laço com Link), dá a ele um nome de até nove caracteres e paga 20 rupias, que financiam a conservação e incluem sela e rédea locais. Cada pessoa pode manter até cinco cavalos registrados, trocando-os quando quiser.\n\nComo todos os estábulos são ligados em rede, qualquer cavalo registrado pode ser retirado em qualquer um deles. Os estábulos também funcionam como estalagem, com camas de 20 a 40 rupias — no Estábulo Highland a Cama macia (40) dá um coração extra —, e são ponto de encontro de viajantes, de Beedle e de várias missões secundárias. Em quatro deles, um funcionário troca sela, rédea e crina de cavalos com laço máximo.",
+  "locations": [
+    "Dueling Peaks e Lakeside (Necluda Ocidental); East Akkala (Coração de Akkala); South Akkala (Altiplano de Akkala); Foothill e Woodland (Cânion de Eldin); Gerudo Canyon; Highland (Prados de Faron); Outskirt e Riverside (Pradaria de Hyrule); Estábulo dos Arás (Fronteira de Tabantha); Serenne (Grande Floresta de Hyrule); Snowfield (Tundra de Tabantha); Tabantha Bridge (Cerros de Hyrule); Wetland (Palude de Lanayru)."
+  ],
+  "obtaining": [
+    "Levar um cavalo domado até um estábulo e falar com o responsável."
+  ],
+  "uses": [
+    "Registrar, guardar e retirar cavalos em qualquer ponto da rede.",
+    "Dormir para recuperar corações e passar o tempo.",
+    "Trocar o equipamento de montaria em quatro estábulos."
+  ],
+  "effects": [
+    "Cavalos registrados podem ser chamados com assobio (direcional para baixo) quando estão perto."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Registrar um cavalo domado custa 20 rupias, inclui sela e rédea e permite nomeá-lo (até nove caracteres). Até cinco cavalos podem ficar registrados, e qualquer um pode ser retirado em qualquer estábulo.",
+      "conditions": ["O cavalo precisa estar domado e perto do estábulo; não é preciso estar montado nele."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Para domar, Link se aproxima agachado por trás (ou cai de cima) e monta; o cavalo pula tentando derrubá-lo, e Link o acalma (L), gastando vigor. Cavalos tirados de Koboblins montados não precisam ser acalmados.",
+      "side_effects": ["Chegar por trás e ser notado faz o cavalo dar um coice."],
+      "kind": "mecanica",
+      "sources": ["zw:Horse", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "montar",
+      "variant": "não registráveis",
+      "status": "sem_efeito",
+      "result": "Stalcavalos e o Senhor da Montanha podem ser montados, mas os estábulos não os registram.",
+      "kind": "mecanica",
+      "sources": ["zw:Horse"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Selas e rédeas obtidas podem ser trocadas, junto com a crina, por Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) e Breen (Woodland), desde que o cavalo tenha laço máximo. Epona e o Cavalo gigante não aceitam troca. Só a sela e a rédea ancestrais têm efeito; as demais são cosméticas.",
+      "kind": "mecanica",
+      "sources": ["zw:Horse Gear", "zw:Horse"]
+    },
+    {
+      "action": "usar",
+      "variant": "estalagem",
+      "status": "confirmado",
+      "result": "Cada estábulo oferece camas de 20 a 40 rupias; no Highland, a Cama macia de 40 rupias dá um coração extra ao acordar.",
+      "kind": "mecanica",
+      "sources": ["zw:Inn", "zw:Highland Stable"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Malanya revive cavalos registrados",
+      "text": "Depois de libertado por 1.000 rupias, Malanya, o Deus dos Cavalos, revive cavalos registrados que morreram — de graça na primeira vez e, nas seguintes, em troca de uma Cenoura tenaz. Ele comenta, conforme a causa da morte, se foi um Guardião, uma explosão ou o próprio Link.",
+      "sources": ["zw:Malanya", "zw:Horse"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Escrita hyliana nos estábulos",
+      "text": "A placa sobre a janela da frente dos estábulos diz \"Estábulo\" em escrita hyliana, e as lonas das caixas de madeira dizem \"Cavalo\".",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Cavalo padrão para o final",
+      "text": "Se Link não tiver registrado nenhum cavalo antes de enfrentar Ganon, Besta Sombria, um cavalo padrão (crina e cascos pretos, força 4) aparece automaticamente para a batalha.",
+      "sources": ["zw:Horse"]
+    }
+  ],
+  "advanced_uses": [
+    "Alimentar o cavalo com Maçãs, Cenouras tenazes ou Cenouras velozes para aumentar o laço depressa; a Cenoura tenaz ainda dá três esporas extras.",
+    "Registrar um cavalo de alto vigor: cada ponto de vigor do cavalo é uma espora disponível."
+  ],
+  "limitations": [
+    "Máximo de cinco cavalos registrados.",
+    "Stalcavalos e o Senhor da Montanha não podem ser registrados."
+  ],
+  "related": [
+    { "id": "botw_creature_horse", "relation": "Animal registrado nos estábulos" },
+    { "id": "botw_creature_white_horse", "relation": "Cavalo especial registrável" },
+    { "id": "botw_creature_giant_horse", "relation": "Não aceita troca de sela e rédea" },
+    { "id": "botw_creature_epona", "relation": "Não aceita troca de sela e rédea" },
+    { "id": "botw_creature_stalhorse", "relation": "Montável, mas não registrável" },
+    { "id": "botw_creature_lord_of_the_mountain", "relation": "Montável, mas não registrável" },
+    { "id": "botw_keyitem_ancient_saddle", "relation": "Única sela com efeito" },
+    { "id": "botw_keyitem_travelers_saddle", "relation": "Sela trocável nos estábulos" },
+    { "id": "botw_material_endura_carrot", "relation": "Pagamento de Malanya e esporas extras" },
+    { "id": "botw_material_apple", "relation": "Aumenta o laço com o cavalo" }
+  ],
+  "capabilities": ["montavel"],
+  "verification_status": "verificado"
+}

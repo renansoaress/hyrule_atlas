@@ -1,0 +1,218 @@
+{
+  "id": "botw_material_armoranth",
+  "summary": "Planta medicinal de fibras duras e flexíveis que, cozida, dá Defesa aumentada. Crua não cura nada, mas tostada recupera meio coração. É a planta favorita de Jana, no South Akkala Stable.",
+  "description": "O Amaranto blindado é uma planta medicinal que, segundo o jogo, \"não pode ser quebrada, mas pode ser cozida\": suas fibras duráveis e flexíveis concedem Defesa aumentada aos pratos de panela. Cru, não recupera corações (o compendium registra 0). Exposto ao fogo, vira Amaranto blindado tostado, cuja fibra amolece o suficiente para ser comida e que, curiosamente, recupera meio coração — mais do que a planta crua.\n\nCresce nos Cerros de Hyrule e no Altiplano de Akkala, e é abundante ao redor da Fonte da Grande Fada Mija, nos arredores da Vila Tarrey. Também abre uma Missão secundária: Jana, no South Akkala Stable, só aceita conversar com Link se perceber que ele carrega um Amaranto blindado — a planta favorita dela —, o que dá início a \"Little Sister's Big Request\". Na Tinturaria Kochi, entra no corante roxo.",
+  "locations": [
+    "Cerros de Hyrule e Altiplano de Akkala (locais citados pelo compendium).",
+    "Abundante ao redor da Fonte da Grande Fada Mija, perto da Vila Tarrey."
+  ],
+  "obtaining": [
+    "Colher nos locais citados. Os dados estruturados não listam lojas que vendam a planta."
+  ],
+  "uses": [
+    "Pratos de Defesa aumentada.",
+    "Entregar a Jana para iniciar a Missão secundária \"Little Sister's Big Request\".",
+    "Receitas genéricas de vegetal, erva ou flor (Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Ingrediente do corante roxo na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Cozido: Defesa aumentada (+4, +12 ou +24 de defesa nos níveis 1, 2 e 3)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Roasted Armoranth",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "A descrição diz que a planta \"não pode ser quebrada\", mas as fontes não descrevem o que acontece ao golpeá-la largada no chão."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Em contato com o fogo, vira Amaranto blindado tostado, que recupera meio coração.",
+      "side_effects": [
+        "Perde a Defesa aumentada."
+      ],
+      "applications": [
+        "Transformar uma planta que não cura em cura empilhável; vale 8 rupias tostado, contra 5 cru."
+      ],
+      "produces": [
+        "botw_food_roasted_armoranth"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Armoranth",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Amaranto blindado tostado.",
+      "produces": [
+        "botw_food_roasted_armoranth"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Armoranth"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": [
+        "botw_food_roasted_armoranth"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Roasted Armoranth",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da planta na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a planta não é metálica, apesar do nome.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Defesa aumentada. Mais unidades prolongam o efeito; combinado com Blindamelo ou Abóbora robusta, prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Food",
+        "zw:Defense Up"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "sem_efeito",
+      "result": "Cru, não recupera corações: o compendium registra 0 e a tabela de flores não lista recuperação de vida.",
+      "sources": [
+        "comp",
+        "zw:Flower"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 5 rupias; tostado, vale 8.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Tostado cura mais que cru",
+      "text": "Cru, o Amaranto blindado não recupera nenhum coração; depois de tostado, recupera meio coração. O mesmo acontece com a Protechofra: o fogo cria cura numa planta que crua não curava nada.",
+      "sources": [
+        "comp",
+        "zw:Roasted Armoranth",
+        "zw:Roasted Mighty Thistle"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A chave para falar com Jana",
+      "text": "No South Akkala Stable, Jana ignora Link até notar que ele carrega um Amaranto blindado. Ela pede a planta, diz que é a favorita dela e só então se abre para a conversa que inicia \"Little Sister's Big Request\".",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Leve um Amaranto blindado na algibeira ao visitar o South Akkala Stable para destravar a missão de Jana.",
+    "Colha vários ao redor da fonte de Mija e misture com Blindamelos e Abóboras robustas para Defesa aumentada de nível alto."
+  ],
+  "limitations": [
+    "Cru não cura nada.",
+    "Tostado perde a Defesa aumentada."
+  ],
+  "related": [
+    {
+      "id": "botw_food_roasted_armoranth",
+      "relation": "Resultado de expor a planta ao fogo"
+    },
+    {
+      "id": "botw_material_ironshroom",
+      "relation": "Outro ingrediente de Defesa aumentada"
+    },
+    {
+      "id": "botw_material_fortified_pumpkin",
+      "relation": "Outro ingrediente de Defesa aumentada"
+    },
+    {
+      "id": "botw_elixir_tough_elixir",
+      "relation": "Elixir com o mesmo efeito"
+    },
+    {
+      "id": "botw_mechanic_great_fairy_fountain",
+      "relation": "Cresce em abundância perto da fonte de Mija"
+    },
+    {
+      "id": "botw_food_fried_wild_greens",
+      "relation": "Receita genérica de erva ou flor"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante roxo"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "reage_fogo",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

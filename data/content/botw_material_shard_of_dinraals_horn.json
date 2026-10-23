@@ -1,0 +1,234 @@
+{
+  "id": "botw_material_shard_of_dinraals_horn",
+  "summary": "Lasca do chifre de Dinraal, \"o poder do fogo cristalizado\". Sozinha leva um elixir ao máximo de 30 minutos, é a parte mais valiosa do dragão (300 rupias) e aparece numa missão do DLC.",
+  "description": "A Lasca do chifre de Dinraal é uma parte do espírito vermelho Dinraal, o dragão de fogo que, segundo o compendium, não tem má vontade com as pessoas. Ela se solta quando Link acerta uma flecha num dos chifres do dragão e cai no chão envolta em luz. Dinraal costuma voar pela região de Eldin e pela Fronteira de Tabantha; o Zelda Wiki registra passagens de madrugada pelo Cânion Tanagar (Tanagar Canyon), inclusive por baixo da Grande Ponte de Tabantha, e também sobrevoos do norte de Eldin, da Grande Floresta de Hyrule, de Akkala e de Hebra. O inventário diz que ela lascou e caiu do chifre do dragão; diz-se que esse chifre é o próprio poder do fogo cristalizado.\n\nNa panela, funciona como parte de monstro: com bichos forma um elixir e acrescenta 30:00, o que sozinho já leva o efeito ao limite de 30 minutos — sem bichos, vira Comida duvidosa. Vale 300 rupias ou 150 Mon, o maior valor entre as partes de Dinraal. Nas Grandes Fadas, é usada no 4º nível das Calças selvagens, da Máscara da Deidade Feroz e do Elmo bárbaro, e no 4º nível da Túnica do campeão. Na Tinturaria Kochi, entra no corante carmesim.",
+  "locations": [
+    "Céu de Eldin e da Fronteira de Tabantha, sobretudo de madrugada no Cânion Tanagar (Tanagar Canyon)."
+  ],
+  "obtaining": [
+    "Acertar uma flecha num dos chifres de Dinraal enquanto o dragão voa; a peça cai no chão envolta em luz.",
+    "Cada tipo de parte só cai uma vez por encontro com o dragão; os dragões voltam a aparecer a cada dia no jogo, em horários aproximadamente fixos."
+  ],
+  "uses": [
+    "Missão do DLC \"EX Champion Revali's Song\": acertar o chifre de Dinraal sobre o Cânion Tanagar faz surgir o Santuário Shira Gomar.",
+    "Melhoria de armadura: 2 no 4º nível da peça Calças selvagens do Conjunto do herói selvagem (com 1 Fragmento de estrela); 1 no 4º nível da Máscara da Deidade Feroz (com 2 Vísceras de Centaleão); 2 no 4º nível da Túnica do campeão (com Princesas plácidas); 1 no 4º nível da peça Elmo bárbaro (com 2 Vísceras de Centaleão) — 6 no total.",
+    "Elixires: cozida com um bicho, acrescenta 30:00 — a duração máxima de um elixir.",
+    "Corante carmesim na Tinturaria Kochi.",
+    "Venda: 300 rupias, ou 150 Mon na loja de Kilton, que a aceita como parte de monstro."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Lasca do chifre de Dinraal no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Lasca do chifre de Dinraal largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Lasca do chifre de Dinraal queima, some ou se transforma em contato com o fogo, apesar do calor descrito no inventário."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Lasca do chifre de Dinraal numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Lasca do chifre de Dinraal a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Lasca do chifre de Dinraal à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Lasca do chifre de Dinraal flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Lasca do chifre de Dinraal não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Lasca do chifre de Dinraal largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho forma um elixir e acrescenta 30:00 à duração — sozinha, já leva o efeito ao limite de 30 minutos que um elixir pode ter. Sem bichos (sozinha ou só com alimentos comuns), o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "side_effects": [
+        "Como o teto é de 30 minutos, outras partes de monstro ou um sucesso crítico não aumentam mais a duração quando a lasca de chifre já está na receita."
+      ],
+      "applications": [
+        "Fazer elixires de resistência ou de atributo com a duração máxima usando um único material."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 300 rupias em lojas e comerciantes, ou 150 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Onde mirar no dragão",
+      "text": "Dinraal solta uma peça diferente conforme a parte atingida por uma flecha: chifre (Lasca do chifre), dentes na parte de baixo da boca (Lasca da presa), mãos (Garra) ou o restante do corpo (Escama). A lasca de chifre sai quando a flecha acerta um dos chifres; a peça se solta e cai no chão envolta em luz. O primeiro acerto em cada dragão sempre rende uma escama, onde quer que a flecha pegue.",
+      "sources": [
+        "zw:Dinraal",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Planar na corrente do dragão",
+      "text": "Os dragões geram correntes de ar ascendentes ao voar, e abrir o Planador dentro delas recupera todo o vigor de Link. Isso permite acompanhar Dinraal no ar e mirar com calma — lembrando que chegar perto demais queima Link com o fogo que envolve o corpo do dragão; Elixires corta-fogo ou o Conjunto antichamas completo, melhorado duas vezes, evitam isso.",
+      "sources": [
+        "zw:Updraft",
+        "zw:Dinraal"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "EX Champion Revali's Song (DLC)",
+      "text": "Na missão principal \"EX Champion Revali's Song\", do pacote de conteúdo adicional, uma das provações pede acertar o chifre de Dinraal enquanto ele sobrevoa o Cânion Tanagar. Mazli comenta que o dragão tem passado por ali à noite e que seus chifres andam brilhando; o tiro faz surgir o Santuário Shira Gomar, em Upland Lindor.",
+      "sources": [
+        "zw",
+        "zw:EX Champion Revali's Song"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Calor só na descrição",
+      "text": "O inventário diz que a Lasca do chifre de Dinraal lascou e caiu do chifre do dragão; diz-se que esse chifre é o próprio poder do fogo cristalizado. Esse tema elemental não vira mecânica: como parte de monstro, ela não define o efeito do elixir (que vem do bicho usado), e as fontes não atribuem a ela dano ou proteção de fogo.",
+      "sources": [
+        "zw:Monster Part",
+        "zw:Elixir"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "São necessárias 6 lascas de chifre de Dinraal para todas as melhorias: 2 para as Calças selvagens, 2 para a Túnica do campeão, 1 para a Máscara da Deidade Feroz e 1 para o Elmo bárbaro.",
+    "Uma única lasca de chifre já garante a duração máxima; acrescentar outras partes de monstro à mesma receita não estende mais o elixir.",
+    "Cuidado ao se aproximar: chegar perto demais queima Link com o fogo que envolve o corpo do dragão; Elixires corta-fogo ou o Conjunto antichamas completo, melhorado duas vezes, evitam isso."
+  ],
+  "limitations": [
+    "Só uma unidade de cada tipo de parte por encontro com o dragão.",
+    "O calor citado no inventário é descritivo: as fontes não atribuem ao item efeito elemental nem proteção.",
+    "As fontes consultadas não ligam o reaparecimento dos dragões à Lua de sangue; o ciclo descrito é diário.",
+    "Por já atingir o teto de 30 minutos, não combina com outras partes de duração na mesma receita.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_dinraal",
+      "relation": "Dragão que a solta ao ser atingido por uma flecha"
+    },
+    {
+      "id": "botw_material_dinraals_scale",
+      "relation": "Outra parte de Dinraal (escama)"
+    },
+    {
+      "id": "botw_material_dinraals_claw",
+      "relation": "Outra parte de Dinraal (garra)"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_fang",
+      "relation": "Outra parte de Dinraal (lasca de presa)"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Equivalente de Naydra"
+    },
+    {
+      "id": "botw_material_shard_of_faroshs_horn",
+      "relation": "Equivalente de Farosh"
+    },
+    {
+      "id": "botw_armorset_hero_of_the_wild_set",
+      "relation": "Usa 2 nas Calças selvagens (4º nível)"
+    },
+    {
+      "id": "botw_armor_trousers_of_the_wild",
+      "relation": "Peça melhorada com ela no 4º nível"
+    },
+    {
+      "id": "botw_armor_fierce_deity_mask",
+      "relation": "Peça melhorada com ela no 4º nível"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Acompanha a lasca de chifre na melhoria da Máscara da Deidade Feroz"
+    },
+    {
+      "id": "botw_armor_champions_tunic",
+      "relation": "Usa 2 no 4º nível"
+    },
+    {
+      "id": "botw_armor_barbarian_helm",
+      "relation": "Usa 1 no 4º nível"
+    },
+    {
+      "id": "botw_elixir_fireproof_elixir",
+      "relation": "Protege do fogo de Dinraal"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Completo e melhorado duas vezes, protege do fogo de Dinraal"
+    },
+    {
+      "id": "botw_mechanic_updraft",
+      "relation": "O voo do dragão gera correntes ascendentes que recuperam o vigor"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante carmesim"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

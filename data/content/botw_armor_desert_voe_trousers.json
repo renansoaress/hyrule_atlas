@@ -1,0 +1,171 @@
+{
+  "id": "botw_armor_desert_voe_trousers",
+  "summary": "Calças masculinas Gerudo feitas com safira, que dão Resistência ao calor no deserto. Custam 650 rupias no Clube Secreto Gerudo ou na loja de Blucé, em Nício.",
+  "description": "As Calças voe do deserto completam o Conjunto voe do deserto com a Faixa voe do deserto e a Ombreira voe do deserto. São vendidas por 650 rupias no Clube Secreto Gerudo, na Cidade Gerudo, depois da Missão secundária \"The Secret Club's Secret\", e também na loja de Blucé (Rhondson Armor Boutique), na Vila de Nício, depois de \"From the Ground Up\". A descrição explica que a safira usada na costura aproveita o poder do gelo para tornar o calor tolerável.\n\nCada peça dá um nível de Resistência ao calor; duas peças já atingem o teto do efeito (nível 2), útil nas áreas do deserto acima de 50 °C. Com as três peças em ★★, o conjunto ativa a Resistência a dano elétrico (−66% de dano de eletricidade). A defesa vai de 3 a 20, com as mesmas melhorias da ombreira: Gelecas gélidas, Asas de Morci glacial, Caudas de Lagalfos glacial e, no último nível, 5 Safiras. Podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Clube Secreto Gerudo (Gerudo Secret Club), na Cidade Gerudo.",
+    "Loja de Blucé (Rhondson Armor Boutique), na Vila de Nício (Tarrey Town)."
+  ],
+  "obtaining": [
+    "Comprar por 650 rupias no Clube Secreto Gerudo, após a Missão secundária \"The Secret Club's Secret\".",
+    "Comprar por 650 rupias na loja de Blucé, depois da Missão secundária \"From the Ground Up\"."
+  ],
+  "uses": [
+    "Atravessar o Deserto Gerudo de dia.",
+    "Chegar ao nível 2 de Resistência ao calor junto com outra peça voe."
+  ],
+  "effects": [
+    "Resistência ao calor, nível 1.",
+    "Bônus de conjunto (três peças em ★★): Resistência a dano elétrico (−66%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Resistência ao calor. Com a Faixa voe do deserto, a Ombreira voe do deserto e as Calças voe do deserto, todas em ★★, ativa o bônus Resistência a dano elétrico (Shock Damage Resist).",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "calor do deserto",
+      "status": "confirmado",
+      "result": "Um nível de Resistência ao calor impede o dano do calor diurno do Deserto Gerudo acima de 40 °C. Acima de 50 °C o calor passa a ter dois níveis, e é preciso somar outra fonte de resistência (outra peça voe, a Tiara de safira, pratos ou elixires); o efeito tem teto no nível 2.",
+      "applications": [
+        "Atravessar o Deserto Gerudo de dia sem gastar Elixires refrescantes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Heat",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima escaldante",
+      "status": "sem_efeito",
+      "result": "Resistência ao calor não protege do clima escaldante da região da Montanha da Morte, onde Link pega fogo; para isso é preciso Proteção contra chamas (Conjunto antichamas ou Elixir corta-fogo).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "peça isolada",
+      "status": "sem_efeito",
+      "result": "A peça sozinha não concede Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "variant": "conjunto completo em ★★",
+      "status": "confirmado",
+      "result": "O bônus Resistência a dano elétrico imita o nível 2 de Resistência a choques e reduz em 66% o dano de eletricidade. Somado a um efeito de nível 1 (como um Elixir isolante), chega ao nível 3.",
+      "conditions": [
+        "Três peças voe do deserto equipadas, todas em ★★."
+      ],
+      "applications": [
+        "Enfrentar Lagalfos elétricos e Feitiçanos elétricos recebendo menos dano."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios (só armas, arcos e escudos metálicos equipados fazem isso). Mesmo com o bônus de conjunto ativo, a Resistência a dano elétrico não reduz o dano da explosão de um raio que atinja Link.",
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa de homem vendida às escondidas",
+      "text": "É proibido vender roupa masculina na Cidade Gerudo, mas há procura — por isso o Clube Secreto, escondido atrás da loja Fashion Passion e protegido por senha, vende o conjunto voe. Greta, a dona, sabe que Link é homem e não se importa.",
+      "sources": [
+        "zw:Gerudo Secret Club"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A costureira que se mudou para Nício",
+      "text": "Blucé não conseguiu trabalho como alfaiate no Deserto Gerudo e se mudou para a Vila de Nício durante \"From the Ground Up\", onde abriu a loja que vende o conjunto voe. Depois do casamento com Ticacé, ele passa a trabalhar com ela.",
+      "sources": [
+        "zw:Rhondson Armor Boutique"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Calças e ombreira voe já dão Resistência ao calor nível 2, o teto do efeito, deixando a cabeça livre para um elmo com outro efeito."
+  ],
+  "limitations": [
+    "Não podem ser usadas dentro da Cidade Gerudo fora do Clube Secreto.",
+    "Não protegem do clima escaldante da Montanha da Morte."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_desert_voe_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_desert_voe_headband",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_desert_voe_spaulder",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_sapphire_circlet",
+      "relation": "Outra peça com Resistência ao calor"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Alternativa consumível contra o calor"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "protege_choque"
+  ],
+  "verification_status": "verificado"
+}

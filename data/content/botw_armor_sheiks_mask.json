@@ -1,0 +1,149 @@
+{
+  "id": "botw_armor_sheiks_mask",
+  "summary": "Máscara do Sheikah que salvou o herói viajante do tempo, obtida só com o amiibo Sheik. Dá Furtividade aumentada nível 1; as melhorias são as que mais consomem Fragmentos de estrela: 10 no total.",
+  "description": "Segundo a descrição, a Máscara de Sheik teria sido usada por um Sheikah que salvou um herói viajante do tempo; é feita “com o melhor dos tecidos furtivos Sheikah” e seria a palavra final em disfarce. Só sai dos baús invocados pela runa amiibo com o amiibo Sheik da série Super Smash Bros.\n\nDá Furtividade aumentada nível 1, que reduz em 20% o barulho de Link (não afeta a visão dos inimigos). Não pertence a nenhum conjunto. A defesa vai de 2 a 16, baixa como a da Máscara furtiva, e as melhorias pedem Princesas plácidas e Fragmentos de estrela em quantidade crescente (1, 2, 3 e 4 de cada): são 10 fragmentos até o nível máximo, o maior gasto desse material entre as peças de cabeça.",
+  "locations": [
+    "Não há local fixo: surge em baús invocados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Ler o amiibo Sheik (Super Smash Bros.) com a runa amiibo; a máscara pode vir num dos baús sorteados."
+  ],
+  "uses": [
+    "Aproximar-se de animais e inimigos fazendo menos barulho.",
+    "Preparar ataques-surpresa."
+  ],
+  "effects": [
+    "Furtividade aumentada nível 1 (−20% de ruído)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 2 de defesa (16 no nível máximo) e dá Furtividade aumentada nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Link faz 20% menos ruído ao se mover, o que facilita chegar perto de inimigos e animais sem ser percebido.",
+      "side_effects": [
+        "Correr faz barulho independentemente da furtividade.",
+        "O efeito não reduz a detecção visual."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Stealth"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Furtividade nível 3 sem a Máscara furtiva",
+      "text": "Os níveis de Furtividade aumentada das peças se somam até o nível 3 (−70% de ruído). Com o Peitoral furtivo e a Meia-calça furtiva, a Máscara de Sheik mantém os três níveis, mas o bônus noturno do Conjunto furtivo só existe com a Máscara furtiva.",
+      "sources": [
+        "zw:Stealth",
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Vale guardar os Fragmentos de estrela para outras peças: a defesa máxima da máscara (16) é baixa para o custo de 10 fragmentos."
+  ],
+  "limitations": [
+    "Depende do amiibo Sheik.",
+    "Defesa baixa (2 a 16) e melhorias caras em Fragmentos de estrela.",
+    "As fontes não informam se pode ser tingida."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_stealth_mask",
+      "relation": "Peça de cabeça com o mesmo efeito, vendida em Kakariko"
+    },
+    {
+      "id": "botw_armor_stealth_chest_guard",
+      "relation": "Combina para chegar à Furtividade nível 3"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_skull",
+      "relation": "Outra peça de cabeça com Furtividade aumentada"
+    },
+    {
+      "id": "botw_material_silent_princess",
+      "relation": "Material de todas as melhorias"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Material de todas as melhorias (10 ao todo)"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Única forma de obtenção"
+    },
+    {
+      "id": "botw_mechanic_sneakstrike",
+      "relation": "Facilitado pela furtividade"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "furtividade"
+  ],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "botw_food_glazed_veggies",
+  "summary": "Legumes, ervas ou flores refogados no Mel de abelha, para quem não gosta de verdura. Com Capim hyruliano, que não tem efeito, sai energizante; plantas de outro efeito anulam o mel.",
+  "description": "Os Legumes glaceados combinam qualquer legume, erva ou flor com Mel de abelha. A descrição do jogo faz a propaganda: não gosta do sabor de legumes? Basta refogá-los no mel para um sabor doce e salgado.\n\nSó existe a versão energizante, que recupera parte do Medidor de vigor, e ela depende de uma planta que não atrapalhe o mel: o Zelda Wiki cita o Capim hyruliano, que não tem efeito. Plantas com efeito, como Cenoura veloz, Protechofra ou Rabanete nutritivo, anulam o mel e o prato sai na versão comum.",
+  "locations": [
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer legume, erva ou flor + Mel de abelha."
+  ],
+  "uses": [
+    "Recuperação de vigor usando Capim hyruliano.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Capim hyruliano.",
+    "Versão comum (planta de efeito diferente): recupera alguns corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera parte do Medidor de vigor e alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão energizante"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com planta de outro efeito, perde o efeito e apenas cura.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não há segredo conhecido além da dependência do Capim hyruliano para manter o efeito do mel.",
+  "limitations": [
+    "Só a versão energizante é possível, e quase todas as plantas a anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta neutra que mantém o efeito energizante"
+    },
+    {
+      "id": "botw_food_glazed_meat",
+      "relation": "Glaceado de carne"
+    },
+    {
+      "id": "botw_food_fried_wild_greens",
+      "relation": "Plantas sem mel, com várias versões"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

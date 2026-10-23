@@ -1,0 +1,89 @@
+{
+  "id": "botw_food_seafood_fried_rice",
+  "summary": "Arroz hyliano refogado com Halita e Caramujo nutritivo ou um pargo — \"quanto mais forte o fogo, mais gostoso\". Com manteiga e os dois frutos do mar, vira Paella.",
+  "description": "O Arroz frito com frutos do mar usa os mesmos três frutos do mar do Curry de frutos do mar — Caramujo nutritivo, Pargo valente ou Pargo blindado —, mas troca o Tempero Goron pela Halita: Arroz hyliano, Halita e o fruto do mar. O inventário brinca que, quanto mais forte o fogo, mais saboroso fica. O caramujo gera a versão com cura total e Corações extras, o Pargo valente a de Ataque aumentado e o Pargo blindado a de Defesa aumentada; dois desses frutos do mar com efeitos contraditórios dão a versão comum.\n\nA pegadinha está na ordem das receitas: Caramujo nutritivo, um pargo, arroz e Halita são quatro dos cinco ingredientes da Paella de frutos do mar. Se o quinto for Manteiga de cabra, a panela produz a Paella, uma das receitas de prioridade mais alta. Outros peixes com arroz e sal, por outro lado, formam apenas Bolinhos de arroz com frutos do mar.",
+  "obtaining": [
+    "Cozinhar numa Panela Arroz hyliano, Halita e um Caramujo nutritivo, Pargo valente ou Pargo blindado, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Prato de Corações extras, Ataque aumentado ou Defesa aumentada.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com Caramujo nutritivo: cura total com Corações extras.",
+    "Com Pargo valente: Ataque aumentado.",
+    "Com Pargo blindado: Defesa aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito do fruto do mar usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Manteiga de cabra com caramujo e pargo",
+      "status": "confirmado",
+      "result": "Caramujo nutritivo, um pargo, arroz, Halita e Manteiga de cabra formam Paella de frutos do mar.",
+      "produces": [
+        "botw_food_seafood_paella"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da relação com a Paella de frutos do mar e com o Curry de frutos do mar, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Só três frutos do mar formam este prato.",
+    "Manteiga de cabra com caramujo e pargo transforma o prato em Paella."
+  ],
+  "related": [
+    {
+      "id": "botw_food_seafood_paella",
+      "relation": "Receita de prioridade maior com os mesmos ingredientes e manteiga"
+    },
+    {
+      "id": "botw_food_seafood_curry",
+      "relation": "Mesmos frutos do mar com Tempero Goron"
+    },
+    {
+      "id": "botw_food_seafood_rice_balls",
+      "relation": "O que se obtém com outros peixes"
+    },
+    {
+      "id": "botw_creature_hearty_blueshell_snail",
+      "relation": "Fruto do mar da versão com Corações extras"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "ataque",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

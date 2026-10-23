@@ -1,0 +1,97 @@
+{
+  "id": "botw_food_monster_stew",
+  "summary": "Carne e frutos do mar cozidos no Extrato de monstro: o efeito pode vir do próprio peixe, caranguejo ou caramujo usado. Saboroso \"apesar dos ingredientes\", com cura sorteada.",
+  "description": "O Ensopado de monstro é o único prato de monstro sem arroz, trigo ou temperos: basta qualquer carne, qualquer fruto do mar e o Extrato de monstro. Por isso o efeito costuma vir do próprio fruto do mar — Truta glacial dá Resistência ao calor, Truta voltaica Resistência a choques, Robalo enérgico ou Caranguejo esperto Recuperação de vigor, Robalo nutritivo, Salmão nutritivo ou Caramujo nutritivo a cura total com Corações extras, Carpa valente, Pargo valente ou Caranguejo espadachim Ataque aumentado, Carpa blindada, Pargo blindado ou Caranguejo couraçado Defesa aumentada, Truta discreta ou Caramujo discreto Furtividade aumentada e Truta rescaldada Resistência ao frio. A versão comum sai com Robalo hyruliano ou Carpa tricolor, que não têm efeito, ou com frutos do mar de efeitos contraditórios.\n\nO extrato sorteia a cura e a força e a duração do efeito, como nos outros pratos de monstro. O inventário descreve o ensopado como saboroso, \"apesar dos ingredientes\". Note que ele é o último prato de monstro na ordem de prioridade: se houver também arroz com Tempero Goron ou com Halita, a panela produz Curry de monstro ou Bolinhos de arroz de monstro.",
+  "obtaining": [
+    "Cozinhar numa Panela qualquer carne, qualquer fruto do mar e Extrato de monstro, com até dois ingredientes extras.",
+    "O Extrato de monstro é vendido por Kilton, à noite, na loja Fang and Bone."
+  ],
+  "uses": [
+    "Recuperar corações e obter o efeito do fruto do mar usado, com resultado sorteado.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera uma quantidade aleatória de corações.",
+    "O efeito depende do fruto do mar (ou de outro ingrediente de efeito): Resistência ao calor, Resistência ao frio, Resistência a choques, Recuperação de vigor, Vigor extra, Velocidade aumentada, Corações extras, Ataque aumentado, Defesa aumentada ou Furtividade aumentada."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito herdado do fruto do mar ou dos ingredientes extras, com valores sorteados pelo extrato.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "fruto do mar com efeito",
+      "status": "confirmado",
+      "result": "O fruto do mar escolhido já define a variante; um ingrediente extra de efeito diferente anula o efeito e devolve a versão comum.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Corações extras sorteados",
+      "text": "Num Ensopado de monstro feito com peixe ou caramujo \"nutritivo\", o extrato sempre mexe na quantidade de Corações extras, nunca na cura comum: o resultado pode cair para o mínimo ou ganhar um coração extra a mais.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Cura e efeito imprevisíveis.",
+    "Arroz com tempero ou sal na mesma panela muda a receita para outro prato de monstro.",
+    "Nunca recebe bônus crítico."
+  ],
+  "related": [
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Ingrediente que torna o resultado aleatório"
+    },
+    {
+      "id": "botw_food_meat_and_seafood_fry",
+      "relation": "Carne com frutos do mar sem extrato"
+    },
+    {
+      "id": "botw_food_prime_meat_and_seafood_fry",
+      "relation": "Carne de segunda com frutos do mar sem extrato"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_creature_hearty_salmon",
+      "relation": "Fruto do mar que gera a versão com Corações extras"
+    },
+    {
+      "id": "botw_food_monster_curry",
+      "relation": "Prato de monstro com prioridade maior"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

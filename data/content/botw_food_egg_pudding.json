@@ -1,0 +1,117 @@
+{
+  "id": "botw_food_egg_pudding",
+  "summary": "Sobremesa de Leite fresco, Ovo e Cana-de-açúcar, sem trigo nem manteiga. A receita está no diário de Ivee, em Hateno, que avisa: sem açúcar, o pudim não dá certo.",
+  "description": "O Pudim de ovos precisa só de três ingredientes: Leite fresco, Ovo e Cana-de-açúcar. A descrição do jogo conta que ele é feito cozinhando ovos e leite numa forma especial e que a textura macia derrete na boca. A receita básica cura 6 corações e vale 20 rupias.\n\nA receita aparece no diário de Ivee, sobre a mesinha ao lado da cama dela, no andar de cima da East Wind, na Vila Hateno: alguns ovos, algumas garrafas de leite e \"várias porções\" de cana-de-açúcar, com o aviso de que o açúcar é difícil de conseguir, mas sem ele o prato falha. O pudim também está entre os pratos da corte com que Gotter, do Riverside Stable, sonha desde criança.\n\nCom três ingredientes obrigatórios, sobram dois espaços para efeitos. Segundo o Zelda Wiki, a versão refrescante é a que mais cura (7 corações) e a veloz é a mais valiosa (50 rupias), com descrição de velocidade de nível médio; a nutritiva vale 40 rupias, e as demais curam de 3 a 5 corações. Ao contrário da Torta de ovos, o pudim não leva Trigo de Tabantha nem Manteiga de cabra.",
+  "locations": [
+    "Diário de Ivee (receita): ao lado da cama dela, no andar de cima da East Wind, na Vila Hateno.",
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Ovo: achado em ninhos no alto das árvores ou comprado na East Wind, na High Spirits Produce e com Agus.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Leite fresco + Ovo + Cana-de-açúcar, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Cura de 6 corações na versão comum.",
+    "Dois espaços livres para ingredientes de efeito.",
+    "Venda: de 20 a 50 rupias."
+  ],
+  "effects": [
+    "Versão comum: recupera 6 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — 40 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — 4 corações, 40 rupias.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — 5 corações, 40 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — nível médio segundo a descrição citada; 3 corações, 50 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — 4 corações, 30 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — 7 corações, 40 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — 4 corações, 40 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — 4 corações, 40 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — 4 corações, 40 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — 4 corações, 30 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 6 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com ingredientes de efeito nos espaços livres, o pudim ganha esse efeito; a versão refrescante é a que mais cura (7 corações).",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 20 rupias na versão comum; as versões com efeito valem de 30 a 50 rupias, sendo a veloz a mais cara.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A receita do diário de Ivee",
+      "text": "Ivee anota o pudim como \"receita do dia\" com medidas vagas — alguns ovos, algumas garrafas de leite, várias porções de açúcar — e frisa que, sem cana-de-açúcar, o prato falha. O mesmo diário traz as receitas de Risoto de cogumelos e Pilaf de coxa.",
+      "sources": [
+        "zw:Ivee's Diary",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um dos pratos sonhados por Gotter",
+      "text": "Ao contar que um antepassado foi chef do Castelo de Hyrule, Gotter cita o pudim de ovos entre os pratos da corte com que sonhava na infância.",
+      "sources": [
+        "zw:A Royal Recipe"
+      ]
+    }
+  ],
+  "limitations": [
+    "Sem Cana-de-açúcar o prato não sai, como avisa o diário de Ivee."
+  ],
+  "related": [
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_egg_tart",
+      "relation": "Sobremesa de ovo com trigo e manteiga"
+    },
+    {
+      "id": "botw_food_mushroom_risotto",
+      "relation": "Outra receita do diário de Ivee"
+    },
+    {
+      "id": "botw_food_poultry_pilaf",
+      "relation": "Outra receita do diário de Ivee"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

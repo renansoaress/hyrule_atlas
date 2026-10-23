@@ -1,0 +1,57 @@
+{
+  "id": "botw_keyitem_medal_of_honor_hinox",
+  "summary": "Medalha que Kilton entrega, depois de Ganon, a Calamidade, ser derrotado, a quem eliminar todos os 40 Rinox e Stalnox de Hyrule. Homenagem \"solene\" sem efeito de jogo.",
+  "description": "A Medalha de honra: Rinox é uma das três medalhas de Kilton, o dono da loja Fang and Bone, uma para cada tipo de chefe do mundo aberto. Depois que Link derrota Ganon, a Calamidade, pela primeira vez, ele pode perguntar a Kilton sobre os monstros gigantes. Kilton conta que estuda os Rinox (o \"gigante da floresta\"), mas não consegue se aproximar por causa do tamanho deles, e pede que Link derrote todos para que ele possa analisar o cheiro dos fluidos que ficam no corpo de Link durante as lutas.\n\nPara a medalha contam todos os 40 Rinox e Stalnox do mapa. Se ainda faltar algum, Kilton informa quantos já foram derrotados, e durante a luta contra um chefe já vencido aparece \"★ Defeated\" ao lado da barra de vida. Quando Link completa a lista, Kilton sente o cheiro, entrega a medalha e diz que, enquanto Link a tiver, ele estará sempre com ele — e que Link não precisa mais \"sofrer em silêncio\" por matar monstros.\n\nA descrição da medalha a apresenta como uma homenagem solene: tirar a vida de um monstro nunca é fácil, mas às vezes é necessário. A medalha não tem efeito de jogo. Com a pesquisa, Kilton descobre que cada um dos quatro tipos de Rinox tem preferências alimentares diferentes.",
+  "locations": [
+    "Loja Fang and Bone, de Kilton (aberta das 21h às 5h)."
+  ],
+  "obtaining": [
+    "Derrotar Ganon, a Calamidade, ao menos uma vez e então derrotar todos os 40 Rinox e Stalnox; depois, falar com Kilton."
+  ],
+  "uses": [
+    "Troféu pela caçada completa aos Rinox; não tem uso prático."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "sem_efeito",
+      "result": "A medalha é apenas uma lembrança; não tem função de jogo.",
+      "sources": ["zw:Medal of Honor", "zw:Kilton"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Marcador \"★ Defeated\"",
+      "text": "Durante a caçada, chefes do mundo aberto que já foram derrotados exibem \"★ Defeated\" ao lado da barra de vida, e Kilton informa quantos ainda faltam. Os Stalnox entram na mesma contagem dos Rinox.",
+      "sources": ["zw:Medal of Honor"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Eu como qualquer coisa\"",
+      "text": "Depois da medalha, Kilton revela que já sabia dos quatro tipos de Rinox, mas acabou de descobrir que cada um tem preferências alimentares diferentes — e emenda que ele mesmo come de tudo.",
+      "sources": ["zw:Kilton"]
+    }
+  ],
+  "advanced_uses": [
+    "Peça a Kilton a contagem de Rinox derrotados para saber quantos faltam antes de vasculhar o mapa."
+  ],
+  "limitations": [
+    "Só fica disponível depois de derrotar Ganon, a Calamidade.",
+    "Sem efeito de jogo."
+  ],
+  "related": [
+    { "id": "botw_monster_hinox", "relation": "Monstro que precisa ser derrotado" },
+    { "id": "botw_monster_blue_hinox", "relation": "Variante que entra na contagem" },
+    { "id": "botw_monster_black_hinox", "relation": "Variante que entra na contagem" },
+    { "id": "botw_monster_stalnox", "relation": "Também entra na contagem dos 40" },
+    { "id": "botw_keyitem_medal_of_honor_talus", "relation": "Medalha de Kilton para os Tálus" },
+    { "id": "botw_keyitem_medal_of_honor_molduga", "relation": "Medalha de Kilton para os Molduga" },
+    { "id": "botw_monster_calamity_ganon", "relation": "Precisa ser derrotado antes do pedido de Kilton" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

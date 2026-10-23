@@ -1,0 +1,124 @@
+{
+  "id": "botw_mechanic_swimming",
+  "summary": "Link nada desde o início, mas nadar gasta vigor, não há mergulho e, se a roda acabar, ele afunda e volta à margem. A Armadura Zora acelera o nado e permite subir cachoeiras; água gelada fere e fontes termais curam.",
+  "description": "Nadar está disponível assim que Link sai do Santuário da Ressurreição, mas, diferente de outros jogos da série, consome vigor e não permite ir para debaixo d'água. Apertar X dá um impulso de nado rápido que gasta mais vigor — as dicas do jogo avisam que abusar dele pode fazer Link se afogar. Quando o vigor acaba, Link afunda e, se ainda tiver corações, é devolvido à terra firme. Ao travar a mira num inimigo dentro d'água, Link muda para o nado de lado.\n\nA água muda conforme o clima: nos lugares quentes, entrar nela protege do calor; nas regiões geladas, a água gelada tira meio coração a cada 0,5 s e nada protege contra isso; as fontes termais de Eldin e Hebra curam meio coração a cada 2 s com Link imerso até a cintura. A Armadura Zora dá Natação mais rápida e a habilidade de subir cachoeiras, e o Elixir veloz também acelera o nado. O metal afunda e a madeira boia, e Flechas eletrizantes transformam a água num campo de choque.",
+  "locations": [
+    "Rios, lagos e mares de toda Hyrule; água gelada em Hebra (Hebra Falls, Hebra Headspring, Hebra Plunge) e no Rio dos Mortos (Grande Planalto)."
+  ],
+  "obtaining": [
+    "Disponível desde o início do jogo."
+  ],
+  "uses": [
+    "Atravessar rios e lagos; fugir do calor do deserto entrando na água.",
+    "Subir cachoeiras com a Armadura Zora."
+  ],
+  "effects": [
+    "Consumo de vigor contínuo; sem vigor, Link afunda e volta à margem."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Nadar consome vigor e não há mergulho. X dá um impulso de nado rápido mais caro; se o vigor acabar, Link afunda e volta à terra firme, a menos que esteja sem corações.",
+      "side_effects": ["Travando a mira num inimigo, Link passa a nadar de lado."],
+      "applications": ["Usar o impulso (X) para chegar perto de cardumes antes que fujam."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Nadar em água gelada tira meio coração a cada 0,5 s; comida e roupas especiais não ajudam.",
+      "kind": "mecanica",
+      "sources": ["zw:Cold Water", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "agua",
+      "variant": "fonte termal",
+      "status": "confirmado",
+      "result": "Ficar imerso até a cintura numa fonte termal recupera meio coração a cada dois segundos.",
+      "kind": "mecanica",
+      "sources": ["zw:Hot Spring"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Submergir numa massa de água protege do calor do deserto.",
+      "kind": "mecanica",
+      "sources": ["zw:Heat", "zw:Temperature"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "A Armadura Zora dá Natação mais rápida nível 1 e permite subir cachoeiras: apertando A na base, Link sobe em linha reta sem poder desviar nem parar, a não ser desequipando a armadura. Natação mais rápida acelera 30%, 60% e 100% nos níveis 1 a 3; o Conjunto Zora melhorado duas vezes e o Conjunto de mergulhador reduzem em 75% o vigor do impulso e do giro na água.",
+      "kind": "mecanica",
+      "sources": ["zw:Zora Armor", "zw:Swim Up Waterfalls", "zw:Swim Speed Up", "zw:Set Bonus"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O Elixir veloz aumenta a velocidade de nado; o Elixir energizante é recomendado pelo jogo para repor vigor ao nadar.",
+      "kind": "mecanica",
+      "sources": ["zw:Hasty Elixir", "zw:Energizing Elixir"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Flecha eletrizante atirada na água cria uma área de choque ao redor do ponto de impacto, perigosa para quem estiver nadando ali.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins não sabem nadar e se afogam se forem empurrados para água funda.",
+      "kind": "mecanica",
+      "sources": ["zw:Bokoblin"]
+    },
+    {
+      "action": "gelitis",
+      "status": "confirmado",
+      "result": "Gelítis cria pilares de gelo na superfície da água, inclusive em cachoeiras, servindo de plataforma para sair do nado.",
+      "kind": "mecanica",
+      "sources": ["zw:Cryonis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O que afunda e o que boia",
+      "text": "Armas de madeira, osso e tecnologia ancestral boiam; armas de pedra e metal afundam — as de metal podem ser recuperadas do fundo com Magnétis.",
+      "sources": ["zw:Weapon", "zw:Tips and Tricks"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Armadura que não se vende",
+      "text": "A Armadura Zora foi feita por Mipha para Link e entregue pelo rei Dorephan; por causa dessa história, as peças do Conjunto Zora não podem ser vendidas.",
+      "sources": ["zw:Zora Armor"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar Armadura Zora e Elixir veloz para travessias longas, e o bônus do Conjunto Zora melhorado para usar o impulso com pouco custo.",
+    "Empurrar Koboblins para água funda é uma forma de derrotá-los sem gastar armas."
+  ],
+  "limitations": [
+    "Não há mergulho em BOTW.",
+    "Água gelada fere sem proteção possível.",
+    "Durante a subida da cachoeira, não dá para mudar de direção."
+  ],
+  "related": [
+    { "id": "botw_armor_zora_armor", "relation": "Nado mais rápido e subida de cachoeiras" },
+    { "id": "botw_armorset_zora_set", "relation": "Bônus de impulso no nado" },
+    { "id": "botw_armorset_salvager_armor_set", "relation": "Bônus de impulso no nado" },
+    { "id": "botw_elixir_hasty_elixir", "relation": "Acelera o nado" },
+    { "id": "botw_mechanic_stamina", "relation": "Nadar consome vigor" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Eletrifica a água" },
+    { "id": "botw_rune_cryonis", "relation": "Pilares de gelo sobre a água" },
+    { "id": "botw_rune_magnesis", "relation": "Recupera metal do fundo" },
+    { "id": "botw_monster_bokoblin", "relation": "Afoga-se em água funda" },
+    { "id": "botw_mechanic_temperature", "relation": "Água gelada e fontes termais" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

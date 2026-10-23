@@ -1,0 +1,140 @@
+{
+  "id": "botw_food_roasted_hearty_durian",
+  "summary": "Durião nutritivo assado inteiro na casca dura — e ainda com o cheiro forte, que o fogo não tira. Cura 4,5 corações (cru, 3), mas cai de 15 para 12 rupias e perde os Corações extras.",
+  "description": "O Durião nutritivo, fruta dos bosques dos Prados de Faron, vira Durião nutritivo assado ao encostar no fogo ou no clima escaldante de Eldin. O texto do jogo conta que ele foi assado inteiro dentro da casca dura e lamenta que o processo não tenha feito nada para remover o odor característico.\n\nComo comida de cura, rende bastante: 4,5 corações, contra 3 do cru, empatando com os melhores assados depois do Rabanete nutritivo grande assado. Mas perde valor (12 rupias, contra 15) e os Corações extras que daria na Panela.",
+  "locations": [
+    "Prepara-se a partir de Duriões nutritivos — árvores dos Prados de Faron; também vendidos por Chumin e na barraca de frutas de Lorn, na Cidade Gerudo — numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor um Durião nutritivo ao fogo ou largá-lo no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura de 4,5 corações por unidade.",
+    "Venda: 12 rupias."
+  ],
+  "effects": [
+    "Recupera 4,5 corações.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — o Durião nutritivo — queima por alguns instantes e se transforma em Durião nutritivo assado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Durião nutritivo assado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar o Durião nutritivo no chão para que o ingrediente asse sozinho e vire Durião nutritivo assado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4,5 corações, contra 3 do Durião nutritivo cru, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 12 rupias; o Durião nutritivo cru vale 15.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Hearty Durian"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Durião nutritivo assado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O cheiro sobrevive ao fogo",
+      "text": "A descrição do jogo lamenta que assar o durião inteiro dentro da casca não removeu seu odor característico.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Assar desvaloriza",
+      "text": "Ao contrário da maioria das frutas, que valem mais assadas, o durião cai de 15 para 12 rupias. Para vender, venda-o cru.",
+      "sources": [
+        "zw:Roasted Food",
+        "zw:Hearty Durian"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Corações extras: o efeito do durião só aparece em pratos de Panela.",
+    "Vale menos que a fruta crua."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hearty_durian",
+      "relation": "Ingrediente cru (Corações extras na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_big_radish",
+      "relation": "Único assado que cura mais"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Assa o durião ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

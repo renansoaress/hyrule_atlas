@@ -1,0 +1,107 @@
+{
+  "id": "botw_creature_mountain_goat",
+  "summary": "Bode selvagem de cascos fortes que escala pedras nos Cerros de Hyrule e na Grande Floresta de Hyrule. Lento, é alvo ideal para iniciantes; investe só uma vez se abordado de frente e deixa Carne de terceira.",
+  "description": "O Bode da montanha é um herbívoro comum dos campos abertos em áreas montanhosas e acidentadas, como os Cerros de Hyrule e a Grande Floresta de Hyrule. As pernas e os cascos fortes o ajudam a escalar rochas, mas ele não é rápido, e o compendium o aponta como bom alvo para quem está começando a caçar.\n\nQuando avista Link ou monstros por perto, foge. Se for abordado de frente, pode tentar uma investida — mas só uma vez: depois foge, tenha acertado Link ou não. Morto, deixa Carne de terceira. O artigo geral sobre cabras descreve o Bode da montanha como agressivo com Link, enquanto o artigo da espécie detalha que ele foge na maioria das situações.",
+  "locations": [
+    "Cerros de Hyrule e Grande Floresta de Hyrule (compendium), em campos abertos de áreas montanhosas e pedregosas."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; é caçado pela carne."
+  ],
+  "uses": [
+    "Fonte fácil de Carne de terceira, por ser lento.",
+    "Registrar sua foto no compendium (entrada nº 12)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano da investida."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge ao ver Link ou monstros. Abordado de frente, pode investir uma única vez e depois foge, acertando ou não.",
+      "side_effects": [
+        "O artigo geral sobre cabras o descreve como agressivo com Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Goat"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser abatido; deixa Carne de terceira. Por ser lento, é fácil de alcançar.",
+      "produces": [
+        "botw_material_raw_meat"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Raw Meat"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que o bode pode ser abatido, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": [
+        "zw:Mountain Buck"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Investida única",
+      "text": "O Bode da montanha só tenta investir contra Link uma vez; depois disso foge, independentemente de ter causado dano.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "A Carne de terceira vira Bife selado se exposta ao fogo e Carne de terceira congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Deixa apenas Carne de terceira."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_white_goat",
+      "relation": "Variedade doméstica, branca e invulnerável"
+    },
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Carne deixada ao ser abatido"
+    },
+    {
+      "id": "botw_food_seared_steak",
+      "relation": "Carne de terceira exposta ao fogo"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

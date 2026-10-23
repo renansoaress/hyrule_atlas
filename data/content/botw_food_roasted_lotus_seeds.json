@@ -1,0 +1,130 @@
+{
+  "id": "botw_food_roasted_lotus_seeds",
+  "summary": "Grãos de lótus-fugaz tostados na chama: é só tirar a casca para chegar ao miolo macio. Curam 3/4 de coração (crus, meio), valem 8 rupias e perdem a Velocidade aumentada.",
+  "description": "Os Grãos de lótus-fugaz, colhidos em áreas alagadas como a Palude de Lanayru e os arredores do Santuário Ne'ez Yohma, viram Grãos de lótus-fugaz tostados em contato com o fogo ou com o clima escaldante. O texto do jogo ensina a comê-los: puxar a pele para trás e chegar ao centro macio, que se desfaz.\n\nA cura sobe de meio coração para 3/4 e o valor de venda, de 5 para 8 rupias. Perde-se, porém, a Velocidade aumentada que os grãos crus dão na Panela.",
+  "locations": [
+    "Prepara-se a partir de Grãos de lótus-fugaz (áreas alagadas como a Palude de Lanayru; Stamm também os vende) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor Grãos de lótus-fugaz ao fogo ou largá-los no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração.",
+    "Venda: 8 rupias."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — os Grãos de lótus-fugaz — queima por alguns instantes e se transforma em Grãos de lótus-fugaz tostados.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Grãos de lótus-fugaz tostados.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar os Grãos de lótus-fugaz no chão para que o ingrediente asse sozinho e vire Grãos de lótus-fugaz tostados.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração dos grãos crus, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 8 rupias; os Grãos de lótus-fugaz crus valem 5.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Fleet-Lotus Seeds"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Grãos de lótus-fugaz tostados como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Modo de comer",
+      "text": "A descrição do jogo explica que basta puxar a casca para trás para chegar ao miolo macio e em lascas.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não dá Velocidade aumentada: o efeito dos grãos só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_fleet_lotus_seeds",
+      "relation": "Ingrediente cru (Velocidade aumentada na Panela)"
+    },
+    {
+      "id": "botw_food_roasted_swift_carrot",
+      "relation": "Outro ingrediente de velocidade que perde o efeito assado"
+    },
+    {
+      "id": "botw_food_toasty_rushroom",
+      "relation": "Outro ingrediente de velocidade que perde o efeito tostado"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

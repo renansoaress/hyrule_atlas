@@ -1,0 +1,141 @@
+{
+  "id": "botw_creature_grizzlemaw_bear",
+  "summary": "Variedade rara e mais feroz do Urso melívoro, de pelo escuro e focinho cinza, que vive na neve de Hebra e das Montanhas Gerudo. Ataca ao avistar Link, pode ser montado e deixa carne e até Salmão nutritivo.",
+  "description": "O Grão-urso é uma raça do Urso melívoro, distinguida pela pelagem mais escura e pelo focinho cinzento. Ainda mais feroz que o parente, é considerado o animal selvagem mais perigoso de Hyrule. Vive em regiões de clima gelado, longe dos povoados — principalmente nas Cordilheiras de Hebra e nas Montanhas Gerudo —, por isso encontrá-lo é raro; o compendium aconselha não arrumar briga com ele.\n\nSe avistar Link, ataca. Mesmo assim, está entre as poucas criaturas que Link pode montar e domar, desde que chegue sem ser visto; os estábulos, porém, recusam o registro porque ele não é um cavalo. Morto, deixa Carne de segunda e Carne de primeira e, curiosamente para um mamífero caçado, também pode deixar Salmão nutritivo.",
+  "locations": [
+    "Cordilheiras de Hebra e Montanhas Gerudo, em áreas de neve profunda longe dos vilarejos."
+  ],
+  "obtaining": [
+    "Aproximar-se furtivamente e montá-lo; a doma é como a de um cavalo. Não pode ser registrado."
+  ],
+  "uses": [
+    "Fonte de Carne de segunda, Carne de primeira e Salmão nutritivo ao ser abatido.",
+    "Montaria improvisada enquanto Link estiver nele.",
+    "Registrar sua foto no compendium (entrada nº 27)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link além do dano dos ataques."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Se avistar Link, o Grão-urso ataca. É agressivo e territorial.",
+      "side_effects": [
+        "O artigo geral sobre ursos descreve os ursos como animais que geralmente evitam Link e só atacam se provocados; o artigo específico do Grão-urso diz que ele ataca ao avistá-lo."
+      ],
+      "conditions": [
+        "Para montá-lo, é preciso chegar sem ser visto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Bear"
+      ]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado e domado. Levado a um estábulo, o responsável recusa o registro por não se tratar de um cavalo.",
+      "side_effects": [
+        "Não pode ser guardado nem chamado depois com assobio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bear"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser morto; deixa Carne de segunda, Carne de primeira e Salmão nutritivo.",
+      "side_effects": [
+        "Considerado o animal selvagem mais perigoso de Hyrule."
+      ],
+      "produces": [
+        "botw_material_raw_prime_meat",
+        "botw_material_raw_gourmet_meat",
+        "botw_creature_hearty_salmon"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes dizem que ele pode ser morto, mas não detalham o uso de flechas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um urso que deixa peixe",
+      "text": "Além das carnes, o Grão-urso pode deixar Salmão nutritivo ao morrer — o compendium lista o salmão entre os itens que ele fornece.",
+      "sources": [
+        "comp",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis de BOTW, ao lado do Cavalo, Cavalo gigante, Cavalo branco, Senhor da Montanha, Cervo e Corça da montanha, Stalcavalo e Urso melívoro.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "A Carne de primeira que ele deixa pode ser vendida a Trott, no Outskirt Stable, por 100 rupias cada (missão \"A Rare Find\")."
+  ],
+  "limitations": [
+    "Não pode ser registrado em estábulos.",
+    "Raro: vive longe de vilarejos, em áreas de neve com frio intenso."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_honeyvore_bear",
+      "relation": "Raça da qual é variedade"
+    },
+    {
+      "id": "botw_creature_hearty_salmon",
+      "relation": "Pode ser deixado ao abatê-lo"
+    },
+    {
+      "id": "botw_material_raw_prime_meat",
+      "relation": "Carne deixada ao ser abatido"
+    },
+    {
+      "id": "botw_material_raw_gourmet_meat",
+      "relation": "Carne deixada ao ser abatido"
+    },
+    {
+      "id": "botw_mechanic_stable",
+      "relation": "Os estábulos recusam o registro"
+    }
+  ],
+  "capabilities": [
+    "montavel"
+  ],
+  "verification_status": "verificado"
+}

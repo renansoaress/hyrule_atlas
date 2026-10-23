@@ -1,0 +1,184 @@
+{
+  "id": "botw_armor_zora_helm",
+  "summary": "Elmo Zora de escamas de dragão, num baú afundado no Toto Lake indicado por um dos monumentos Zora. Dá Natação mais rápida e um ataque giratório na água; o conjunto ★★ poupa 75% do vigor das arrancadas a nado.",
+  "description": "Feito de escamas de dragão, segundo a descrição, o Elmo Zora aumenta a velocidade de nado e permite girar para atacar na água. Está num baú afundado no Toto Lake, perto do Domínio Zora; um dos monumentos de pedra da missão “Zora Stone Monuments” dá a pista do tesouro. As outras peças do Conjunto Zora também vêm de missões da região: a Armadura Zora é dada pelo rei Dorephan na missão principal de Vah Ruta, e as Grevas Zora, por Laflat, em troca da foto de um Centaleão (“Lynel Safari”).\n\nDá Natação mais rápida nível 1 (+30%) e o efeito oculto Ataque giratório na água: com o botão Y, Link gira nadando, causa 5 de dano e pode rebater alguns projéteis inimigos. Com a Armadura e as Grevas Zora a ★★, ativa a Economia de vigor na arrancada a nado (Swim Dash Stamina Up): arrancadas e giros na água gastam 75% menos vigor. A defesa vai de 3 a 20; as melhorias usam partes de Lagalfos (15 Caudas ao todo), Robalos hyrulianos, Robalos nutritivos e 15 Opalas no último nível. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Toto Lake, perto do Domínio Zora: baú afundado no lago."
+  ],
+  "obtaining": [
+    "Encontrar o baú submerso no Toto Lake; a pista está num dos monumentos de pedra de “Zora Stone Monuments”."
+  ],
+  "uses": [
+    "Nadar mais rápido.",
+    "Atacar e rebater projéteis enquanto nada.",
+    "Completar o Conjunto Zora."
+  ],
+  "effects": [
+    "Natação mais rápida nível 1 (+30%).",
+    "Ataque giratório na água (efeito oculto): 5 de dano, rebate alguns projéteis.",
+    "Bônus de conjunto Economia de vigor na arrancada a nado (−75%) com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa (20 no nível máximo), Natação mais rápida nível 1 e o Ataque giratório na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Link nada 30% mais rápido e pode girar com o botão Y, causando 5 de dano e rebatendo alguns projéteis inimigos.",
+      "conditions": [
+        "Elmo vestido e Link nadando."
+      ],
+      "applications": [
+        "Atacar inimigos próximos sem sair da água."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "jogo"
+      ]
+    },
+    {
+      "action": "equipar",
+      "variant": "Conjunto Zora ★★",
+      "status": "confirmado",
+      "result": "Com Armadura e Grevas Zora, todas ★★, as arrancadas e os giros na água gastam 75% menos vigor.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Zora Set",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Giro que rebate projéteis",
+      "text": "O ataque giratório na água é exclusivo do Elmo Zora: além de causar 5 de dano, pode rebater alguns projéteis inimigos — e, com o conjunto ★★, custa 75% menos vigor.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Três missões, um conjunto",
+      "text": "As três peças do Conjunto Zora estão ligadas a missões dentro ou perto do Domínio Zora: o elmo à pista dos monumentos de pedra, a armadura ao rei Dorephan e as grevas a Laflat.",
+      "sources": [
+        "zw:Zora Set"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto completo a ★★, alternar arrancadas e giros na água quase sem gastar vigor para atravessar rios e lagos e lutar nadando."
+  ],
+  "limitations": [
+    "O bônus de conjunto exige as três peças a ★★.",
+    "O ataque giratório só funciona nadando."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_zora_armor",
+      "relation": "Peça do mesmo conjunto (sobe cachoeiras)"
+    },
+    {
+      "id": "botw_armor_zora_greaves",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_opal_earrings",
+      "relation": "Outra peça de cabeça com Natação mais rápida"
+    },
+    {
+      "id": "botw_armor_vah_ruta_divine_helm",
+      "relation": "Outra peça de cabeça com Natação mais rápida"
+    },
+    {
+      "id": "botw_armor_salvager_headwear",
+      "relation": "Peça de cabeça de outro conjunto com o mesmo bônus"
+    },
+    {
+      "id": "botw_material_lizalfos_tail",
+      "relation": "Material dos níveis 3 e 4"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_mechanic_swimming",
+      "relation": "Mecânica acelerada pelo efeito"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "velocidade",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

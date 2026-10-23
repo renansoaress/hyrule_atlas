@@ -1,0 +1,208 @@
+{
+  "id": "botw_monster_silver_moblin",
+  "summary": "O Moblin mais forte do modo normal: 1080 pontos de vida, fortalecido pela magia de Ganon. Além das partes de Moblin, pode deixar pedras preciosas, de Âmbar a Diamante.",
+  "description": "Segundo o compendium, a magia maligna de Ganon permitiu aos Moblins prateados superar até os pretos em força e resistência; são chamados de \"prateados\" pela cor do corpo e pela raridade, e os padrões roxos ajudam a destacá-los. Com 1080 pontos de vida, são os Moblins mais fortes do modo normal — no Modo Mestre, ficam abaixo apenas dos dourados.\n\nComportam-se como os outros Moblins (golpes pesados, pedras arremessadas, Koboblins usados como projéteis, afogamento em água funda), mas o espólio é bem mais valioso: além de Chifre, Presa e Vísceras de Moblin, podem deixar Âmbar, Opala, Topázio, Rubi, Safira e Diamante. Não têm local fixo no compendium; aparecem quando a progressão de inimigos está avançada.",
+  "locations": [
+    "Sem local característico no compendium; surge em acampamentos de toda Hyrule nos níveis altos da progressão de inimigos."
+  ],
+  "obtaining": [
+    "Pode deixar Chifre, Presa e Vísceras de Moblin e pedras preciosas: Âmbar, Opala, Topázio, Rubi, Safira e Diamante.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de pedras preciosas e de armas Moblin de alto nível.",
+    "Registro no compendium (entrada nº 112)."
+  ],
+  "effects": [
+    "Golpes muito pesados; arremessa pedras e Koboblins."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Com 1080 pontos de vida, é um dos inimigos comuns mais resistentes do modo normal.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Pedras atiradas por Moblins podem ser rebatidas com Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas na cabeça causam dano dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pode ser incendiado; armas Moblin, de madeira, queimam.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Fire Arrow",
+        "zw:Moblin Gear"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congela com Flecha congelante; quebrar o gelo com um golpe causa dano extra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Choques o atordoam e o fazem largar a arma; a resistência elétrica é atributo do Moblin dourado, não do prateado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Shock Arrow",
+        "zw:Great Thunderblade",
+        "zw:Golden Moblin"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Moblins não nadam e se afogam em água funda — um atalho contra a vida enorme do prateado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões de Barris explosivos e Flechas explosivas causam dano; a explosão da flecha também incendeia o alvo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Bomb Barrel",
+        "zw:Bomb Arrow"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Causa dano; inimigos podem chutar ou arremessar a bomba.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Remote Bomb"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ o paralisa, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Stasis"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Não é agarrado; objetos metálicos lançados com Magnétis o atingem.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Atira pedras a distância e usa Koboblins como projéteis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin"
+      ]
+    },
+    {
+      "action": "aproximar",
+      "variant": "com Máscara de Moblin",
+      "status": "confirmado",
+      "result": "As máscaras de Moblin e de Majora fazem os Moblins ignorarem Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Moblin Mask",
+        "zw:Majora's Mask (Item)"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Prateado pela raridade",
+      "text": "O compendium explica que \"prateado\" descreve a cor e a raridade; os padrões roxos no corpo servem para que se destaquem ainda mais.",
+      "sources": [
+        "comp"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pedras preciosas",
+      "text": "Assim como os outros monstros prateados, o Moblin prateado tem Âmbar, Opala, Topázio, Rubi, Safira e Diamante na lista de espólios.",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Atraí-lo para perto de água funda ou de um penhasco em vez de travar uma luta longa."
+  ],
+  "limitations": [
+    "Flecha ancestral o desintegra sem deixar as pedras preciosas."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Variante anterior"
+    },
+    {
+      "id": "botw_monster_golden_moblin_mm",
+      "relation": "Variante superior do Modo Mestre"
+    },
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Forma básica"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_sapphire",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_topaz",
+      "relation": "Pedra preciosa que pode deixar"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Parte de terceiro nível"
+    }
+  ],
+  "capabilities": [
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

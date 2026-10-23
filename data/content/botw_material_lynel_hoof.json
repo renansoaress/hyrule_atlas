@@ -1,0 +1,180 @@
+{
+  "id": "botw_material_lynel_hoof",
+  "summary": "Casco maior e mais pesado que o de um cavalo, drop garantido dos Centaleões. Acrescenta 1:50 aos elixires, melhora os conjuntos bárbaro e do soldado e é a resposta do último enigma de Walton.",
+  "description": "O Casco de Centaleão, segundo o inventário, só pode ser obtido da pata de um Centaleão e é maior e mais pesado que o casco de um cavalo. Todo Centaleão derrotado deixa um. Cozido com bichos, acrescenta 1:50 à duração do elixir, mas o jogo já avisa que ele \"pode ter outros usos\".\n\nUm deles é a missão secundária \"Riddles of Hyrule\": no alto da Grande Árvore Deko, na Floresta Korok, o Korok Walton propõe cinco enigmas, e o último pede um item que, no texto em inglês, \"começa com H e termina com oof\" e que é perigoso ter pisando em você. Basta colocar um Casco de Centaleão diante dele para concluir o desafio e ganhar um Diamante. Nas Grandes Fadas, o casco é pedido no 2º e 3º níveis do Conjunto bárbaro e no 4º do Conjunto do soldado, num total de 24; na Tinturaria Kochi, entra no corante preto.",
+  "locations": [
+    "Territórios dos Centaleões espalhados por Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Centaleão; o casco cai sempre.",
+    "Os Centaleões voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Missão secundária \"Riddles of Hyrule\" (Walton, Floresta Korok): resposta do quinto e último enigma; a recompensa final é um Diamante.",
+    "Melhoria de armadura: Conjunto bárbaro (2 por peça no 2º nível e 4 por peça no 3º) e Conjunto do soldado (2 por peça no 4º nível) — 24 no total.",
+    "Elixires: cozido com um bicho, acrescenta 1:50 à duração.",
+    "Corante preto na Tinturaria Kochi.",
+    "Venda: 50 rupias, ou 30 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurado e colocado diante de alguém: é assim que Link entrega o casco a Walton na missão \"Riddles of Hyrule\". Fora da missão, as fontes não descrevem efeito.",
+      "conditions": [
+        "Segurar o casco a partir da algibeira e colocá-lo sobre a folha diante de Walton, no alto da Grande Árvore Deko."
+      ],
+      "applications": [
+        "Responder ao último enigma de Walton."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Riddles of Hyrule"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Casco de Centaleão largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Casco de Centaleão queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Casco de Centaleão numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Casco de Centaleão a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Casco de Centaleão à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Casco de Centaleão flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Casco de Centaleão não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Casco de Centaleão largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 50 rupias em lojas e comerciantes, ou 30 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O quinto enigma de Walton",
+      "text": "Em \"Riddles of Hyrule\", Walton pede, em sequência, uma Maçã, uma Abóbora robusta, um Flamelo, uma Truta voltaica e, por fim, o item que \"começa com H e termina com oof\" e que é perigoso ter pisando em você: o Casco de Centaleão. Resolvidos os cinco, ele entrega um Diamante.",
+      "sources": [
+        "zw:Riddles of Hyrule",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Drop garantido, com riscos",
+      "text": "Todo Centaleão derrotado deixa casco, chifre e vísceras, além das armas e de um maço de flechas. Para vencê-los, o Zelda Wiki lembra que flechas na cabeça os atordoam e causam dano dobrado (dá para planar nas correntes de ar quente dos ataques de fogo deles para mirar do alto), que montar neles permite até cinco golpes sem gastar durabilidade e que Esquivas perfeitas e Defesas perfeitas abrem espaço para contra-ataques. Eles resistem a todos os elementos, então flechas elementais não dão vantagem extra.",
+      "sources": [
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guarde um casco antes de subir a Grande Árvore Deko: assim os cinco enigmas de Walton podem ser resolvidos na mesma visita.",
+    "Separe 24 cascos para os conjuntos bárbaro e do soldado antes de trocar o restante com Kilton (30 Mon cada)."
+  ],
+  "limitations": [
+    "Exige derrotar um Centaleão.",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Monstro que o deixa sempre"
+    },
+    {
+      "id": "botw_material_lynel_horn",
+      "relation": "Outro drop garantido dos Centaleões"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Outro drop garantido dos Centaleões"
+    },
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Usa 2 e 4 cascos por peça no 2º e 3º níveis"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 2 cascos por peça no 4º nível"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Recompensa final dos enigmas de Walton"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante preto"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,115 @@
+{
+  "id": "botw_elixir_fireproof_elixir",
+  "summary": "Elixir de Proteção contra chamas que impede Link de pegar fogo no clima escaldante da Montanha da Morte. Único elixir vendido pronto: Gaile cobra 60, 110 ou 150 rupias por 1, 2 ou 3 unidades.",
+  "description": "O Elixir corta-fogo concede Proteção contra chamas, o efeito que evita que o corpo de Link entre em combustão no clima escaldante do Cânion de Eldin e da Montanha da Morte. O jogo recomenda levá-lo para explorar a montanha, e as placas do caminho mostram por quê: perto do Lago Medingo um nível de proteção basta, mas na Mina Norte Abandonada e depois da Ponte de Eldin o calor exige dois níveis.\n\nÉ o único elixir com vendedores fixos. No Estábulo Foothill, Gaile o oferece a quem vai à Cidade Goron e recomenda levar pelo menos três, como fazem os viajantes habituais; na Cidade Goron, Offrak vende cada um por 60 rupias e resmunga que Link poderia muito bem fazer o seu. A receita usa Borboleta abrasadora (duas estrelas) ou Lagarto corta-fogo (uma estrela) com parte de monstro; cada bicho soma 2:30, e o segundo nível exige sete estrelas.",
+  "locations": [
+    "Estábulo Foothill, no Cânion de Eldin (Gaile).",
+    "Cidade Goron (Offrak).",
+    "Os bichos vivem nas áreas de clima escaldante da Montanha da Morte e do Cânion de Eldin, muitas vezes à beira de lagos de lava."
+  ],
+  "obtaining": [
+    "Comprar com Gaile: 60 rupias (1), 110 rupias (2) ou 150 rupias (3).",
+    "Comprar com Offrak, na Cidade Goron, por 60 rupias.",
+    "Cozinhar uma Borboleta abrasadora ou um Lagarto corta-fogo com pelo menos uma parte de monstro."
+  ],
+  "uses": [
+    "Subir a Montanha da Morte e explorar o Cânion de Eldin antes de ter a Armadura antichamas.",
+    "Completar o segundo nível de proteção exigido nas áreas mais quentes da montanha."
+  ],
+  "effects": [
+    "Proteção contra chamas em até dois níveis, com duração somada pelos ingredientes (máximo de 30:00)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Concede Proteção contra chamas: Link deixa de pegar fogo no clima escaldante de Eldin enquanto o efeito durar.",
+      "side_effects": ["Comer outro prato com efeito diferente cancela a proteção."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "O clima escaldante começa perto do Lago Medingo (um nível basta) e se intensifica na Mina Norte Abandonada e além da Ponte de Eldin, onde são necessários dois níveis.",
+      "conditions": ["Nível do efeito igual ou maior que o exigido na área."],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "deserto",
+      "status": "sem_efeito",
+      "result": "O calor diurno do Deserto Gerudo é combatido com Resistência ao calor (sombra, água, armaduras ou Elixir refrescante); a Proteção contra chamas não aparece entre as defesas citadas.",
+      "kind": "mecanica",
+      "sources": ["zw:Heat"]
+    },
+    {
+      "action": "fogo",
+      "variant": "ataques de fogo e lava",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o elixir reduz o dano de ataques de fogo, de Tálus ígneos ou da lava. A imunidade total ao fogo descrita pelo Zelda Wiki é a do bônus do Conjunto antichamas melhorado duas vezes, que também não protege da lava."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Borboleta abrasadora (★★) ou Lagarto corta-fogo (★) + parte de monstro; cada bicho soma 2:30. Sete estrelas dão o nível 2 (ex.: quatro borboletas).",
+      "conditions": [
+        "Não há ingredientes de refeição com Proteção contra chamas: só os dois bichos dão o efeito.",
+        "Partes de monstro somam 1:10, 1:50 ou 3:10."
+      ],
+      "side_effects": ["Cozinhado com ingredientes de outros efeitos, o Lagarto corta-fogo vira Comida duvidosa."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Cooking in Breath of the Wild", "zw:Flame Guard", "zw:Fireproof Lizard"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Na compra: 60 rupias cada (Gaile faz 110 por dois e 150 por três). Na venda, segue a regra geral de preço dos elixires (soma dos ingredientes × multiplicador).",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Vendedores insistentes",
+      "text": "Se Link recusa a compra, Gaile aconselha desistir da Cidade Goron; quando ele já tem três elixires, ela diz que está pronto. Offrak, por sua vez, fica irritado com a recusa e avisa para Link não vir chorar quando estiver pegando fogo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Descrição trocada",
+      "text": "A descrição do Lagarto corta-fogo no inventário diz que ele produz um elixir de \"resistência ao calor\", embora o elixir resultante conceda Proteção contra chamas.",
+      "sources": ["zw:Fireproof Lizard"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Lagartos valem uma armadura",
+      "text": "Na Mina Sul, Kima pede 10 Lagartos corta-fogo como lembrança da Cidade Goron e paga com uma Armadura antichamas (missão \"Fireproof Lizard Roundup\"); depois, compra três lagartos por 20 rupias.",
+      "sources": ["zw:Fireproof Lizard", "zw:Flamebreaker Armor"]
+    }
+  ],
+  "advanced_uses": [
+    "Comprar o pacote de três com Gaile (150 rupias) sai mais barato que três unidades avulsas (180 rupias com Offrak ou com a própria Gaile).",
+    "Para os trechos que exigem dois níveis, cozinhar quatro Borboletas abrasadoras (★★ cada) com uma parte de monstro: oito estrelas superam as sete do nível 2."
+  ],
+  "limitations": [
+    "Não substitui a Resistência ao calor no deserto.",
+    "Não há confirmação de que proteja armas, arcos e escudos de madeira, que pegam fogo no clima escaldante.",
+    "Flechas explosivas continuam explodindo assim que o arco é retesado na região vulcânica."
+  ],
+  "related": [
+    { "id": "botw_creature_smotherwing_butterfly", "relation": "Bicho corta-fogo (★★, +2:30)" },
+    { "id": "botw_creature_fireproof_lizard", "relation": "Bicho corta-fogo (★, +2:30)" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Conjunto com Proteção contra chamas e bônus de imunidade ao fogo" },
+    { "id": "botw_armor_flamebreaker_armor", "relation": "Recompensa da missão dos Lagartos corta-fogo" },
+    { "id": "botw_armor_vah_rudania_divine_helm", "relation": "Elmo com Proteção contra chamas" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Explode ao ser retesada no clima escaldante" },
+    { "id": "botw_elixir_chilly_elixir", "relation": "Elixir para o calor do deserto, não de Eldin" },
+    { "id": "botw_mechanic_temperature", "relation": "Regras de calor e clima escaldante" },
+    { "id": "botw_mechanic_fire", "relation": "Regras do fogo" }
+  ],
+  "capabilities": ["protege_fogo"],
+  "verification_status": "verificado"
+}

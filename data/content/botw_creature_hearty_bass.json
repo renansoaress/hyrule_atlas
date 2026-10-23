@@ -1,0 +1,142 @@
+{
+  "id": "botw_creature_hearty_bass",
+  "summary": "Peixe grande das margens de Necluda Ocidental e do Altiplano de Akkala. Cru recupera 2 corações; cozido dá Corações extras temporários. É material do 3º nível do Conjunto Zora.",
+  "description": "O Robalo nutritivo é um peixe grande que vive perto das margens; segundo o jogo, o corpo volumoso armazena muitos nutrientes. É encontrado nas águas de Necluda Ocidental e do Altiplano de Akkala, e o Zelda Wiki aponta cardumes em lagoas do Planalto Firly (Firly Plateau) e do Monte Rhoam (Mount Rhoam). Como todo peixe, foge quando Link chega perto, mas pode ser apanhado à mão nadando.\n\nCru, recupera 2 corações. Na panela, dá aos pratos o efeito Corações extras, que acrescenta corações temporários além do máximo. Também é um dos ingredientes nutritivos que podem ser somados a um Elixir nutritivo para aumentar os corações temporários. Exposto ao fogo vira Robalo nutritivo assado; congelado, Robalo nutritivo congelado.\n\nPara melhorar o Conjunto Zora ao terceiro nível numa Fonte da Grande Fada, são necessários 5 Robalos nutritivos (e 5 Caudas de Lagalfos) por peça.",
+  "locations": [
+    "Águas de Necluda Ocidental e do Altiplano de Akkala, perto das margens.",
+    "Cardumes em lagoas do Planalto Firly (Firly Plateau) e do Monte Rhoam (Mount Rhoam)."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ele, vivo ou morto."
+  ],
+  "uses": [
+    "Pratos de Corações extras: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Torta de peixe e as demais receitas de peixe ou fruto do mar.",
+    "Ingrediente nutritivo de um Elixir nutritivo, aumentando os corações temporários do elixir.",
+    "Melhoria de armadura: 5 unidades por peça do Conjunto Zora (Elmo Zora, Armadura Zora e Grevas Zora) para o 3º nível, junto com 5 Caudas de Lagalfos.",
+    "Venda: 18 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 2 corações.",
+    "Na panela: Corações extras (corações temporários acima do máximo)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhado à mão enquanto Link nada, vivo ou morto.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um Robalo nutritivo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos feitos com ele dão Corações extras temporários.",
+      "side_effects": ["Corações extras de pratos diferentes não se somam: vale o mais forte até os corações temporários se esgotarem."],
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_fish_pie", "botw_food_copious_seafood_skewers"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Food"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somado a um Elixir nutritivo (Lagarto nutritivo + parte de monstro), aumenta o número de corações temporários.",
+      "produces": ["botw_elixir_hearty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Hearty Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 2 corações.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 18 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Robalo nutritivo assado, que recupera mais corações porém sem o efeito de Corações extras.",
+      "produces": ["botw_food_roasted_hearty_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, assa e vira Robalo nutritivo assado.",
+      "produces": ["botw_food_roasted_hearty_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Robalo nutritivo assado.",
+      "produces": ["botw_food_roasted_hearty_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriado com gelo, vira Robalo nutritivo congelado, que dá Resistência ao calor temporária.",
+      "produces": ["botw_food_frozen_hearty_bass"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Robalo nutritivo congelado.",
+      "produces": ["botw_food_frozen_hearty_bass"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este peixe."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Corações extras não se acumulam",
+      "text": "Comer dois pratos com Corações extras não soma os bônus: fica valendo o mais forte (um prato +4 seguido de um +3 dá 4 corações temporários, não 7) até que esses corações sejam perdidos.",
+      "sources": ["zw:Food"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Cardumes para farmar",
+      "text": "As lagoas do Planalto Firly e do Monte Rhoam reúnem cardumes de Robalos nutritivos, o que facilita juntar os 15 necessários para levar as três peças do Conjunto Zora ao 3º nível.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Num Elixir nutritivo, combinar Robalos nutritivos com outros ingredientes nutritivos aumenta os corações temporários sem precisar de mais Lagartos nutritivos, que são raros."
+  ],
+  "limitations": [
+    "Assado ou congelado perde o efeito de Corações extras.",
+    "Cozido apenas com partes de monstro (sem bicho), resulta em Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_hearty_bass", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_hearty_bass", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Pode ser somado como ingrediente nutritivo" },
+    { "id": "botw_armorset_zora_set", "relation": "Usa 5 por peça no 3º nível de melhoria" },
+    { "id": "botw_creature_hearty_salmon", "relation": "Outro peixe de Corações extras" },
+    { "id": "botw_creature_hyrule_bass", "relation": "Robalo comum, usado no nível anterior do Conjunto Zora" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

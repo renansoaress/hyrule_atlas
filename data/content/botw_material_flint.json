@@ -1,0 +1,165 @@
+{
+  "id": "botw_material_flint",
+  "summary": "Pedra que solta faísca e chama ao ser golpeada com arma metálica. Largada junto de Madeira, vira fogueira duradoura; sozinha, a chama é breve. Gasta-se em um uso e também serve para reforjar armas dos Campeões.",
+  "description": "O Sílex é o acendedor portátil de Breath of the Wild. A descrição do jogo resume a regra: golpeado com uma arma metálica, ele gera uma faísca e se quebra depois de um único uso, mas produz uma chama duradoura se for usado perto de lenha. Na prática, o procedimento é largar um Sílex no chão ao lado de um feixe de Madeira (também largado) e acertar o Sílex com uma arma de metal: a pedra se consome numa rajada rápida de fogo, a madeira pega e vira uma Fogueira onde Link pode assar alimentos, sentar para passar o tempo e acender armas de madeira. Sem madeira por perto, o fogo é só um lampejo curto. O mesmo truque reacende fogueiras apagadas, inclusive as que ficam sob as Panelas.\n\nO Sílex sai de praticamente todo depósito mineral: Depósitos de minério, Depósitos de minério raro e Depósitos de pedra luminosa, além dos Tálus e Britas. Fora do fogo, tem usos importantes: Isha só reabre a joalheria Starlight Memories, na Cidade Gerudo, depois de receber 10 unidades; os artesãos que refazem as armas dos Campeões pedem 5 Sílex cada; as joias Gerudo usam 3 por nível de melhoria; e a Tinturaria Kochi o aceita para o corante preto.",
+  "locations": [
+    "Depósitos de minério, Depósitos de minério raro e Depósitos de pedra luminosa espalhados por Toda Hyrule (os depósitos destruídos só voltam depois de uma Lua de sangue).",
+    "Tálus rochosos (inclusive as variantes luminosa e rara), Tálus glaciais, Tálus ígneos e as Britas rochosa, glacial e ígnea também o deixam ao serem derrotados."
+  ],
+  "obtaining": [
+    "Quebrar depósitos minerais com armas (martelos quebram mais rápido) ou com Bomba remota.",
+    "Derrotar Tálus e Britas, que carregam depósitos no corpo."
+  ],
+  "uses": [
+    "Acender fogueiras: largar o Sílex ao lado de Madeira e golpeá-lo com arma metálica.",
+    "Reacender fogueiras apagadas, incluindo as que ficam sob as Panelas, para poder cozinhar.",
+    "Missão secundária \"Tools of the Trade\": entregar 10 Sílex a Isha reabre a Starlight Memories e rende, de presente, a Tiara de rubi, a Tiara de safira ou os Brincos de topázio.",
+    "Reforjar armas dos Campeões perdidas: 5 Sílex mais uma Lança Zora (Tridente cerimonial) ou Lança Zora e Diamante (Tridente escamado), com Dento; Diamante e Cimitarra Gerudo (Cimitarra das sete) ou Diamante e Escudo Gerudo (Resplendor da aurora), com Buliara; Esmaga-Fraga e Diamante (Racha-Rocha), com Rohan.",
+    "Melhorias na Fonte da Grande Fada: 3 Sílex por nível nos Brincos de âmbar e de opala (níveis 1 a 4) e nas Tiaras de rubi, safira e diamante e nos Brincos de topázio (níveis 1 e 2) — 48 no total.",
+    "Ingrediente do corante preto na Tinturaria Kochi, em Hateno.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser consumido ou carregado; sua função é gerar fogo quando golpeado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Precisa ser largado no chão para ser usado: é o Sílex solto, ao lado de Madeira também largada, que depois recebe o golpe.",
+      "conditions": ["Selecionar o Sílex na algibeira, segurá-lo e soltá-lo perto da Madeira ou da fogueira apagada."],
+      "applications": ["Montar uma fogueira em qualquer lugar: Madeira no chão, Sílex ao lado, golpe com arma metálica."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Campfire"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpeado com arma metálica, solta uma faísca e se consome numa rajada rápida de fogo. Se houver Madeira ou uma fogueira apagada ao lado, ela pega fogo e fica acesa; sem madeira, a chama dura pouco.",
+      "conditions": [
+        "Arma metálica, segundo a descrição do jogo e a página do Sílex (a página Fire fala em arma \"não inflamável\").",
+        "O Sílex precisa estar no chão, não na algibeira."
+      ],
+      "side_effects": [
+        "O Sílex se quebra no primeiro uso: cada fogueira consome uma unidade.",
+        "A chama é fogo real; cuidado com grama seca e com armas e escudos de madeira equipados por perto."
+      ],
+      "applications": [
+        "Acender uma fogueira para assar carnes e frutas, sentar e passar o tempo.",
+        "Reacender a fogueira sob uma Panela apagada para poder cozinhar."
+      ],
+      "produces": ["botw_object_campfire"],
+      "kind": "mecanica",
+      "sources": ["zw", "jogo", "zw:Campfire", "zw:Fire"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes descrevem apenas o Sílex como fonte de fogo; não dizem o que acontece se ele for exposto a chamas."
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Serve para reacender fogueiras apagadas, inclusive as que ficam sob as Panelas: basta largar o Sílex junto da lenha apagada e golpeá-lo com arma metálica.",
+      "conditions": ["Fogueira ou Panela apagada; arma metálica."],
+      "applications": ["Voltar a cozinhar numa Panela encontrada apagada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking Pot"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "A chuva apaga imediatamente qualquer fogo exposto (exceto a Chama azul), e Panelas expostas à chuva ficam inutilizáveis até ela parar. Fogos abrigados da chuva não são afetados.",
+      "conditions": ["Chuva ou tempestade sobre o local da fogueira."],
+      "applications": ["Para acender e manter uma fogueira durante a chuva, faça-a sob um abrigo, como os que existem à beira das estradas."],
+      "kind": "mecanica",
+      "sources": ["zw:Rain", "zw:Cooking Pot"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Sílex ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Sílex à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Sílex largado na água afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Sílex é uma pedra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um Sílex largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita que contenha Sílex vira Comida dura como pedra, que recupera apenas 1/4 de coração; a regra tem prioridade até sobre a Comida duvidosa.",
+      "produces": ["botw_food_rock_hard_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Rock-Hard Food"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 5 rupias aos comerciantes.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A joalheria Gerudo depende de Sílex",
+      "text": "Quando Link chega à Cidade Gerudo, a Starlight Memories está fechada porque Isha ficou sem Sílex para fazer as joias. Entregar 10 unidades (menos que isso ela recusa) conclui \"Tools of the Trade\", reabre a loja e dá direito a escolher a Tiara de rubi, a Tiara de safira ou os Brincos de topázio de graça. A missão é uma das quatro exigidas para ganhar o Elmo do trovão.",
+      "sources": ["zw:Tools of the Trade", "zw:Starlight Memories"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Faíscas sem Sílex",
+      "text": "Os próprios depósitos minerais também soltam faíscas capazes de iniciar fogo quando atingidos por arma que não seja de madeira ou por uma flecha, estejam quebrados ou não. Isso vale para os Depósitos de minério, os de minério raro e os de pedra luminosa.",
+      "sources": ["zw:Ore Deposit", "zw:Rare Ore Deposit", "zw:Luminous Stone Deposit"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Metálica ou \"não inflamável\"?",
+      "text": "A descrição do jogo e a página do Sílex falam em arma metálica. Já a página Fire do Zelda Wiki diz que o Sílex acende quando golpeado com uma arma não inflamável. Na dúvida, use uma arma de metal, que é a condição citada pelo próprio jogo.",
+      "sources": ["jogo", "zw", "zw:Fire"]
+    }
+  ],
+  "advanced_uses": [
+    "Carregar sempre alguns Sílex e feixes de Madeira permite assar comida e passar o tempo até a noite (ou até o dia) em qualquer ponto do mapa, sem depender de fogueiras prontas.",
+    "Guardar pelo menos 10 Sílex antes de chegar à Cidade Gerudo agiliza a reabertura da Starlight Memories e a missão do Elmo do trovão."
+  ],
+  "limitations": [
+    "Consome uma unidade por uso.",
+    "Sem Madeira ou fogueira apagada ao lado, a chama some quase imediatamente.",
+    "Fogo exposto é apagado pela chuva; Panelas na chuva não funcionam até a chuva passar.",
+    "Arruína qualquer receita: o resultado é Comida dura como pedra."
+  ],
+  "related": [
+    { "id": "botw_material_wood", "relation": "Combustível que transforma a faísca em fogueira" },
+    { "id": "botw_object_campfire", "relation": "Resultado de golpear o Sílex junto de Madeira" },
+    { "id": "botw_object_cooking_pot", "relation": "Pode ter a fogueira de baixo reacendida com Sílex" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Principal fonte de Sílex" },
+    { "id": "botw_treasure_luminous_ore_deposit", "relation": "Também deixa Sílex ao ser quebrado" },
+    { "id": "botw_weapon_travelers_sword", "relation": "Exemplo de arma metálica que acende o Sílex" },
+    { "id": "botw_armor_ruby_circlet", "relation": "Uma das joias oferecidas por Isha após receber 10 Sílex" },
+    { "id": "botw_armor_amber_earrings", "relation": "Usa 3 Sílex em cada nível de melhoria" },
+    { "id": "botw_weapon_boulder_breaker", "relation": "Arma de Campeão refeita com 5 Sílex" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado de cozinhar com Sílex" },
+    { "id": "botw_mechanic_rain", "relation": "A chuva apaga o fogo exposto" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante preto" }
+  ],
+  "capabilities": ["gera_fogo", "item_de_missao"],
+  "verification_status": "verificado"
+}

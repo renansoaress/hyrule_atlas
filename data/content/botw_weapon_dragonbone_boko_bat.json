@@ -1,0 +1,172 @@
+{
+  "id": "botw_weapon_dragonbone_boko_bat",
+  "summary": "Taco Kobo reforçado com osso fossilizado, arma dos Koboblins e Moblins mais fortes (ataque 36). Continua inflamável e flutua, mas bate seis vezes mais forte que o Taco Kobo comum.",
+  "description": "O Taco Kobo dracônico é o estágio final da linha de tacos dos Koboblins. Segundo o jogo, só os guerreiros Koboblin mais duros o usam, e o osso fossilizado preso à madeira lhe dá força para abater inimigos poderosos. Com ataque 36, é seis vezes mais forte que o Taco Kobo básico.\n\nAparece nas mãos de Koboblins pretos, prateados e dourados e também de Moblins pretos, prateados e dourados, sendo comum nos Cerros de Hyrule e no litoral do Mar de Necluda. Apesar do reforço de osso, os dados do jogo o tratam como arma de madeira: pega fogo, queima em clima escaldante e flutua, sem conduzir eletricidade, atrair raios ou responder a Magnétis.",
+  "locations": [
+    "Cerros de Hyrule e Mar de Necluda, com Koboblins e Moblins de nível alto."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins pretos, prateados ou dourados, ou Moblins pretos, prateados ou dourados que o empunhem.",
+    "Chance de aparecer em baús gerados pelo amiibo do Koboblin (série Breath of the Wild).",
+    "Armas carregadas por inimigos voltam com a Lua de sangue."
+  ],
+  "uses": [
+    "Arma de dano alto que não atrai raios — útil para lutar em tempestades.",
+    "Pode ser acesa para propagar fogo, como qualquer arma de madeira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o golpe carregado gira consumindo vigor e termina numa pancada para baixo. O peso derruba a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessado, quebra ao acertar o inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas, mesmo com o reforço de osso.",
+      "applications": [
+        "Acender uma fogueira ou incendiar grama."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado em clima escaldante, queima e se desfaz em cinzas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser movido com Magnétis.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Arma frequente de Koboblins pretos, prateados e dourados e de Moblins pretos, prateados e dourados.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +6 a +12, Durabilidade aumentada de +2 a +3 ou Acerto crítico; no nível dourado (amarelo): Ataque de +13 a +24, Durabilidade de +4 a +8 ou Lançamento longo (×1,5 a ×2). Um taco dracônico dourado pode chegar a 60 de ataque.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Osso que não muda o material",
+      "text": "Mesmo \"fortificado por osso fossilizado\", o taco mantém todas as propriedades de madeira nos dados do jogo: inflamável e flutuante.",
+      "sources": [
+        "jogo",
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em tempestades, trocar as armas metálicas por este taco evita os raios sem abrir mão de dano alto."
+  ],
+  "limitations": [
+    "Durabilidade 16, baixa para o nível de dano.",
+    "Queima em Eldin e em contato com fogo."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_boko_bat",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_spiked_boko_bat",
+      "relation": "Versão intermediária"
+    },
+    {
+      "id": "botw_monster_black_bokoblin",
+      "relation": "Costuma empunhá-lo"
+    },
+    {
+      "id": "botw_monster_silver_bokoblin",
+      "relation": "Costuma empunhá-lo"
+    },
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Costuma empunhá-lo"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_club",
+      "relation": "Clava de uma mão do mesmo nível"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

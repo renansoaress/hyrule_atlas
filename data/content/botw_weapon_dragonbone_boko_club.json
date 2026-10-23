@@ -1,0 +1,186 @@
+{
+  "id": "botw_weapon_dragonbone_boko_club",
+  "summary": "A clava Kobo mais forte: madeira reforçada com ossos fossilizados, pesada a ponto de só os Koboblins mais brutos a erguerem. Ataque 24, mas ainda é madeira — queima, flutua e não conduz eletricidade.",
+  "description": "A Clava Kobo dracônica é o topo da linha de clavas do arquétipo de equipamento dos Koboblins (Bokoblin Gear). O reforço com ossos fossilizados aumenta muito o dano, e a descrição do jogo diz que só os Koboblins mais fortes conseguem manejar seu peso. Por isso ela aparece com Koboblins pretos e prateados — e, no Modo Mestre, também com os Koboblins dourados — com destaque para os acampamentos dos Cerros de Hyrule e do litoral do Mar de Necluda.\n\nApesar dos ossos, a arma conta como madeira para o jogo: queima e acaba se desfazendo se ficar exposta ao fogo ou a clima escaldante, flutua na água, não atrai raios, não conduz eletricidade e não pode ser erguida com Magnétis. Os Koboblins usam esse fato a seu favor e acendem a clava em fogueiras para causar dano de fogo extra.",
+  "locations": [
+    "Cerros de Hyrule e Mar de Necluda, em acampamentos de Koboblins (locais comuns segundo o compendium e o Zelda Wiki)."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins pretos ou prateados (no Modo Mestre, também os dourados) que a empunhem.",
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Koboblin (série Breath of the Wild) com a runa amiibo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma de uma mão de dano alto para quem quer evitar metal em tempestades.",
+    "Fonte de fogo portátil quando acesa."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico; acesa, passa a causar dano de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Como arma contundente, não derruba árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e, com o tempo, se desintegra se ficar exposta ao fogo ou a clima escaldante.",
+      "applications": [
+        "Acesa por pouco tempo, serve para incendiar grama e lenha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Wood",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, ao contrário das armas de metal.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser erguida com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Empunhada por Koboblins pretos e prateados (e dourados no Modo Mestre), que acendem a clava em fogueiras para causar dano de fogo extra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bokoblin"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a clava pode surgir com bônus de ataque de +7 a +13 (nível comum) ou +14 a +26 (nível dourado), bônus de durabilidade de +2 a +4 (ou +5 a +9 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Osso que se comporta como madeira",
+      "text": "Mesmo reforçada com ossos fossilizados, a clava é marcada como inflamável nos parâmetros do jogo e queima como qualquer arma de madeira — diferente do Braço de Koboblin, que é de osso e não pega fogo.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Boa opção de dano em tempestades: não atrai raios, ao contrário das espadas de metal de força parecida."
+  ],
+  "limitations": [
+    "Queima e se desintegra perto do fogo e no clima escaldante de Eldin.",
+    "Durabilidade modesta (18).",
+    "Arma contundente: não corta árvores."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_boko_club",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_spiked_boko_club",
+      "relation": "Versão intermediária"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_bat",
+      "relation": "Mesmo nível (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_spear",
+      "relation": "Mesmo nível (lança)"
+    },
+    {
+      "id": "botw_bow_dragonbone_boko_bow",
+      "relation": "Mesmo nível (arco)"
+    },
+    {
+      "id": "botw_shield_dragonbone_boko_shield",
+      "relation": "Mesmo nível (escudo)"
+    },
+    {
+      "id": "botw_monster_black_bokoblin",
+      "relation": "Empunha a clava"
+    },
+    {
+      "id": "botw_monster_silver_bokoblin",
+      "relation": "Empunha a clava"
+    },
+    {
+      "id": "botw_monster_golden_bokoblin_mm",
+      "relation": "Empunha a clava no Modo Mestre"
+    },
+    {
+      "id": "botw_weapon_bokoblin_arm",
+      "relation": "Arma de osso que, ao contrário desta, não queima"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel",
+    "queima_inimigos"
+  ],
+  "verification_status": "verificado"
+}

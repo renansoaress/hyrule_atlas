@@ -1,0 +1,173 @@
+{
+  "id": "botw_bow_travelers_bow",
+  "summary": "Arco pequeno usado por viajantes para se proteger (ataque 5, durabilidade 22): dano baixo, uma flecha por vez e alcance padrão. De madeira, queima e flutua; não atrai raios.",
+  "description": "O Arco do viajante é um arco fraco que, segundo a descrição do jogo, não causa muito dano mas permite atacar inimigos à distância. É mais comum na Pradaria de Hyrule e em Necluda Ocidental, tanto em baús quanto nas mãos de monstros, e pertence ao equipamento do viajante, ao lado da Espada do viajante, do Montante do viajante, da Lança do viajante e do Escudo do viajante.\n\nNos parâmetros extraídos do jogo não tem nenhuma peculiaridade: uma flecha por disparo, 20 m de trajetória reta e tensionamento e recarga em velocidade padrão. Por ser de madeira, pega fogo (inclusive se equipado no clima escaldante de Eldin), flutua na água, não conduz eletricidade e não pode ser pego com Magnétis.\n\nNos materiais promocionais do jogo, Link aparece com um Arco do viajante junto de uma Espada larga do soldado e de um Escudo do viajante.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Ocidental (locais comuns segundo o compendium), em baús e com monstros."
+  ],
+  "obtaining": [
+    "Recolher em baús ou pegar o arco derrubado por monstros dessas regiões.",
+    "Pode sair de baús gerados pela runa amiibo com os amiibo Zelda (série Super Smash Bros.), Link arqueiro e Revali (série Breath of the Wild)."
+  ],
+  "uses": [
+    "Primeiro arco de uso geral do início do jogo, para atacar à distância sem gastar arcos melhores."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano das flechas disparadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Dispara uma flecha por vez. Pelos parâmetros do jogo, a flecha percorre 20 m em linha reta antes de começar a cair (gravidade padrão de 9,8 m/s²), e o tensionamento e a recarga têm velocidade padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Bow Parameters",
+        "zw:Arrow"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Por ser de madeira, pega fogo ao tocar chamas e, se continuar exposto, queima até se desfazer.",
+      "conditions": [
+        "Contato direto com fogo ou com uma área em chamas."
+      ],
+      "side_effects": [
+        "O arco é perdido se queimar por completo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado no clima escaldante do Cânion de Eldin e da Montanha da Morte, começa a arder e acaba virando cinzas.",
+      "side_effects": [
+        "A dica do próprio jogo recomenda usar equipamento de metal nessas áreas."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade: é de madeira.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades, ao contrário dos arcos de metal.",
+      "applications": [
+        "Pode ficar equipado com segurança sob uma tempestade de raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, o que facilita recuperá-lo.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não consegue pegá-lo.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco do viajante pode surgir com bônus de ataque de +3 a +5 (nível branco) ou de +6 a +8 (nível amarelo), e com bônus de durabilidade de +4 a +7 (branco) ou de +8 a +13 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Vindo de amiibo, o bônus sai no valor máximo",
+      "text": "Pode aparecer em baús gerados pela runa amiibo (Zelda da série Super Smash Bros., Link arqueiro e Revali da série Breath of the Wild). Equipamentos obtidos assim recebem o valor máximo do nível de bônus sorteado, embora o ícone mostre sempre a cor branca.",
+      "sources": [
+        "zw",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Parte do visual promocional de Link",
+      "text": "O Zelda Wiki registra que o Arco do viajante faz parte de um conjunto sem nome usado por Link em materiais promocionais, junto de uma Espada larga do soldado e de um Escudo do viajante.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Arco seguro para manter equipado durante tempestades de raios, já que não atrai descargas."
+  ],
+  "limitations": [
+    "Dano baixo (5) e durabilidade modesta (22).",
+    "Queima se ficar equipado no clima escaldante de Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_travelers_sword",
+      "relation": "Mesmo arquétipo (espada)"
+    },
+    {
+      "id": "botw_weapon_travelers_claymore",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_travelers_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_shield_travelers_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_bow_soldiers_bow",
+      "relation": "Arco do nível seguinte, feito para combate"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Baús de amiibo podem conter este arco"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua"
+  ],
+  "verification_status": "verificado"
+}

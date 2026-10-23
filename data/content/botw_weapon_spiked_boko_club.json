@@ -1,0 +1,182 @@
+{
+  "id": "botw_weapon_spiked_boko_club",
+  "summary": "Clava Kobo reforçada com ossos afiados cravados na madeira para maximizar o dano. É a primeira arma de Koboblin azul que Link vê, no acampamento perto da Torre do Planalto. Pega fogo, flutua e não conduz eletricidade.",
+  "description": "A Clava Kobo pontuda é a versão intermediária das clavas do equipamento dos Koboblins (Bokoblin Gear): ossos afiados cravados na madeira a tornam, segundo o jogo, uma arma brutal. Link costuma vê-la pela primeira vez no acampamento de monstros perto da Torre do Planalto, nas mãos de um Koboblin azul; depois, ela aparece em vários acampamentos de Koboblins, sobretudo nos Prados de Faron e em Necluda Oriental.\n\nComo é de madeira, queima no fogo e em clima escaldante — e os Koboblins costumam acendê-la numa fogueira antes de atacar para causar dano de fogo extra. Não atrai raios, não conduz eletricidade, flutua na água e não pode ser erguida com Magnétis.",
+  "locations": [
+    "Prados de Faron e Necluda Oriental (locais comuns segundo o compendium).",
+    "Acampamento de monstros perto da Torre do Planalto, com um Koboblin azul."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins que a empunhem ou recolhê-la nos acampamentos.",
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Koboblin (série Breath of the Wild) com a runa amiibo.",
+    "Armas com inimigos voltam a aparecer depois de cada Lua de sangue.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma de madeira de dano razoável (12) para o início do jogo.",
+    "Fonte de fogo portátil quando acesa."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico; acesa, passa a causar dano de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queima se exposta ao fogo ou a clima escaldante; acesa, causa dano de fogo.",
+      "side_effects": [
+        "Nas áreas escaldantes de Eldin, armas inflamáveis queimam e desaparecem se ficarem expostas por muito tempo."
+      ],
+      "applications": [
+        "Acender lenha para fazer uma fogueira.",
+        "Incendiar grama para criar uma corrente ascendente."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Fire",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, ao contrário das armas de metal.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis não consegue erguê-la.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins acendem a clava numa fogueira antes de atacar para causar dano de fogo extra. No acampamento perto da Torre do Planalto, quem a empunha é um Koboblin azul.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bokoblin"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a clava pode surgir com bônus de ataque de +3 a +6 (nível comum) ou +7 a +11 (nível dourado), bônus de durabilidade de +2 a +3 (ou +4 a +7 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Primeiro contato no Planalto",
+      "text": "O Koboblin azul do acampamento perto da Torre do Planalto costuma ser o primeiro inimigo que Link vê com esta clava.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Derrotar o Koboblin azul perto da Torre do Planalto cedo garante uma arma de 12 de ataque antes de sair do Planalto."
+  ],
+  "limitations": [
+    "Madeira: queima perto do fogo e em clima escaldante.",
+    "Arma contundente: não corta árvores."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_boko_club",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_club",
+      "relation": "Versão mais forte"
+    },
+    {
+      "id": "botw_weapon_spiked_boko_bat",
+      "relation": "Mesmo nível (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_spiked_boko_spear",
+      "relation": "Mesmo nível (lança)"
+    },
+    {
+      "id": "botw_bow_spiked_boko_bow",
+      "relation": "Mesmo nível (arco)"
+    },
+    {
+      "id": "botw_shield_spiked_boko_shield",
+      "relation": "Mesmo nível (escudo)"
+    },
+    {
+      "id": "botw_monster_blue_bokoblin",
+      "relation": "Empunha a clava no acampamento perto da Torre do Planalto"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Koboblins acendem a clava nas fogueiras"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel",
+    "queima_inimigos"
+  ],
+  "verification_status": "verificado"
+}

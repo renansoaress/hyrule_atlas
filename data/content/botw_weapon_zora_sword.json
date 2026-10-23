@@ -1,0 +1,162 @@
+{
+  "id": "botw_weapon_zora_sword",
+  "summary": "Espada de ornamentação tradicional Zora, forjada num metal prateado muito durável e à prova de ferrugem. Comum no Domínio Zora e arredores. Apesar da origem aquática, é metal: afunda, conduz eletricidade e atrai raios.",
+  "description": "A Espada Zora é a espada de uma mão do equipamento Zora (Zora Gear), armas feitas pelos Zoras com um tipo particular de metal prateado que lhes dá durabilidade e leveza. Segundo o jogo, sua lâmina traz ornamentos de design tradicional Zora e é forjada num metal muito durável e à prova de ferrugem. É comum em Necluda Oriental e na Grande Nascente de Lanayru, sobretudo dentro e ao redor do Domínio Zora.\n\nComo todo o equipamento Zora, é de metal: não queima no fogo nem em clima escaldante, mas atrai raios quando equipada em tempestades — e Lanayru, onde ela é comum, é uma das regiões com tempestades — e conduz eletricidade. Afunda se cair na água, podendo ser recuperada com Magnétis.",
+  "locations": [
+    "Necluda Oriental e Grande Nascente de Lanayru (locais comuns segundo o compendium), principalmente dentro e ao redor do Domínio Zora."
+  ],
+  "obtaining": [
+    "Recolher a espada nos arredores do Domínio Zora e nas regiões citadas.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Espada de uma mão de nível intermediário (ataque 15, durabilidade 27).",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Zora Gear"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a espada voa para o chão.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "conditions": [
+        "Tempestades ocorrem em Lanayru, onde a espada é comum."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água, apesar de ser feita pelos Zoras.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Zora Gear"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem a Espada Zora."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +4 a +6 (nível comum) ou +7 a +12 (nível dourado), bônus de durabilidade de +3 a +6 (ou +7 a +14 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Metal prateado dos Zoras",
+      "text": "O equipamento Zora é feito de um metal prateado especial, que o deixa mais durável e leve — no caso da espada, o jogo destaca que o metal é à prova de ferrugem; algumas peças da linha também são usadas tradicionalmente para pescar.",
+      "sources": [
+        "zw:Zora Gear",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Metálica: perigosa nas tempestades de Lanayru e contra inimigos elétricos.",
+    "Afunda na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_zora_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_weapon_silverscale_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_weapon_ceremonial_trident",
+      "relation": "Mesmo arquétipo (lança cerimonial)"
+    },
+    {
+      "id": "botw_weapon_lightscale_trident",
+      "relation": "Mesmo arquétipo (tridente)"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Atrai raios quando equipada"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

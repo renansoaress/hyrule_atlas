@@ -1,0 +1,122 @@
+{
+  "id": "botw_creature_white_horse",
+  "summary": "Garanhão de pelagem totalmente branca, sem manchas, possível neto do cavalo de Zelda. Vive sozinho no Safula Hill e tem vigor 5, o máximo para um cavalo registrável; mostrá-lo a Toffa rende a sela e a rédea reais.",
+  "description": "Os cavalos brancos eram montados pela família real de Hyrule para exibir seu direito divino. O exemplar que Link encontra é um macho de pelagem branca pura, sem nenhuma mancha, que vive isolado de outros bandos no Safula Hill, perto das ruínas do Sanidin Park (Sanidin Park Ruins). Toffa, do Outskirt Stable, acredita que ele seja neto do cavalo branco que Zelda montava há cem anos, e a própria princesa aparece com o seu cavalo branco em memórias recuperadas.\n\nComo montaria, destaca-se pelo vigor 5, o mais alto possível, ou seja, o maior número de esporas entre os cavalos registráveis. A doma exige pelo menos duas rodas de vigor. Depois de registrado e mostrado a Toffa, ele recebe imediatamente a Rédea real e a Sela real, mesmo que o vínculo com Link ainda não esteja no máximo.",
+  "locations": [
+    "Safula Hill, perto das Sanidin Park Ruins, sozinho e afastado dos outros bandos de cavalos.",
+    "Se morrer antes de ser registrado, volta a aparecer no Safula Hill no dia seguinte."
+  ],
+  "obtaining": [
+    "Aproximar-se agachado, montar e acalmar; são necessárias pelo menos duas rodas de vigor.",
+    "Registrar em qualquer estábulo (20 rupias) e falar com Toffa no Outskirt Stable para concluir \"The Royal White Stallion\"."
+  ],
+  "uses": [
+    "Montaria com o máximo de esporas entre os cavalos registráveis, ideal para longas viagens a galope.",
+    "Missão secundária \"The Royal White Stallion\": a recompensa é a Rédea real e a Sela real, colocadas nele na hora."
+  ],
+  "effects": [
+    "Vigor 5: o maior número de esporas possível para um cavalo comum ou especial registrável."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge ao notar Link, como os demais cavalos selvagens; é preciso chegar de forma furtiva.",
+      "conditions": ["Agachar e aproximar-se por trás."],
+      "kind": "mecanica",
+      "sources": ["zw:Horse", "zw:Wild Horse"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado e domado; a doma pede pelo menos duas rodas de vigor. Depois pode ser levado de volta ao Outskirt Stable.",
+      "conditions": ["Duas rodas de vigor ou mais."],
+      "applications": ["Se Link falar com Toffa antes de registrá-lo, Toffa pede que o registre primeiro e volte em seguida."],
+      "kind": "mecanica",
+      "sources": ["zw:The Royal White Stallion", "zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode morrer. Antes do registro, reaparece no Safula Hill no dia seguinte; depois de registrado, só volta se Malanya o reviver.",
+      "side_effects": ["Se for liberado do estábulo, volta a aparecer no Safula Hill."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de flechas sobre ele; a regra de morte e reaparecimento descrita em \"golpe com arma\" vale para qualquer causa."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Equipamento real sem precisar de vínculo",
+      "text": "Normalmente só é possível trocar sela e rédea com vínculo máximo. A Rédea real e a Sela real dadas por Toffa, feitas sob medida para um cavalo branco, são colocadas imediatamente, qualquer que seja o vínculo de Link com o cavalo.",
+      "sources": ["zw", "zw:The Royal White Stallion"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Missão concluída num só diálogo",
+      "text": "Se Link já tiver registrado o Cavalo branco antes de conhecer Toffa, basta falar com ele no Outskirt Stable: a missão começa e termina na mesma conversa.",
+      "sources": ["zw:The Royal White Stallion"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Reaparece até ser registrado",
+      "text": "Morto antes do registro, o Cavalo branco volta ao Safula Hill no dia seguinte. Registrado, deixa de reaparecer ali, a menos que seja liberado; se morrer, depende de Malanya.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O cavalo da princesa",
+      "text": "O cavalo branco original de Zelda usava a Sela e a Rédea reais e uma crina trançada. Ele aparece nas memórias \"Zelda's Resentment\" e \"To Mount Lanayru\" e na memória da DLC sobre Revali; na cena especial após concluir \"Captured Memories\" e \"Destroy Ganon\", Zelda tem um cavalo branco consigo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Referência a Ocarina of Time",
+      "text": "Em Ocarina of Time, Impa e Zelda fogem do castelo num cavalo branco; o Zelda Wiki considera os cavalos brancos de BOTW uma referência a essa cena, pela associação com a família real.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O sonho de Baddek",
+      "text": "Baddek comenta que as garotas sonham com príncipes em cavalos brancos, mas ele prefere ficar com o cavalo.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Registrá-lo antes de falar com Toffa para receber o equipamento real de imediato."
+  ],
+  "limitations": [
+    "Exige pelo menos duas rodas de vigor para ser domado.",
+    "Existe só um no mundo do jogo; depois de registrado, a perda depende de Malanya."
+  ],
+  "related": [
+    { "id": "botw_keyitem_royal_bridle", "relation": "Recompensa de Toffa, colocada nele na hora" },
+    { "id": "botw_keyitem_royal_saddle", "relation": "Recompensa de Toffa, colocada nele na hora" },
+    { "id": "botw_creature_horse", "relation": "Regras gerais de doma, registro e afeição" },
+    { "id": "botw_creature_giant_horse", "relation": "O extremo oposto: força 5 e vigor 0" },
+    { "id": "botw_creature_epona", "relation": "Outro cavalo especial único" },
+    { "id": "botw_mechanic_stable", "relation": "Precisa ser registrado para concluir a missão" }
+  ],
+  "capabilities": ["montavel", "velocidade", "item_de_missao"],
+  "verification_status": "verificado"
+}

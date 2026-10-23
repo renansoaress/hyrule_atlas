@@ -1,0 +1,76 @@
+{
+  "id": "botw_armorset_hero_of_the_wild_set",
+  "summary": "Recompensa por concluir os 120 santuários: três baús surgem no Templo Esquecido. Defesa máxima de 28 por peça e, em ★★, +50% no feixe da Espada Mestra. É o único conjunto de herói que aceita tingimento.",
+  "description": "O Conjunto do herói selvagem reúne o Gorro selvagem, a Túnica selvagem e as Calças selvagens. É o prêmio da Missão secundária \"A Gift from the Monks\": quando Link conclui o último dos 120 santuários do jogo base, o monge final avisa que preparou algo para um verdadeiro herói e o envia ao Templo Esquecido. Lá, três baús de pedra aparecem sob a Estátua da Deusa Mãe, com as três peças. Os santuários adicionados pela DLC não contam para esse total.\n\nSegundo as descrições, o modelo da roupa foi transmitido desde um passado distante, inspirado num herói que teria usado um traje semelhante. As peças não têm efeito individual, mas têm a defesa mais alta entre os conjuntos de herói (de 4 até 28 por peça). Com as três melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ativa o aumento do feixe da Espada Mestra (Master Sword Beam Up), +50% de dano no disparo de energia que a espada lança quando Link está com a vida cheia.\n\nAs melhorias pedem partes de dragão em todos os níveis, combinadas com Bolota, Mel de abelha e Escaravelho vibrante nos primeiros níveis e com Fragmento de estrela no último. Ao contrário dos conjuntos de herói dos amiibo, este pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Templo Esquecido (Forgotten Temple), sob a Estátua da Deusa Mãe, depois de concluir os 120 santuários do jogo base."
+  ],
+  "obtaining": [
+    "Concluir os 120 santuários do jogo base; o último monge inicia \"A Gift from the Monks\".",
+    "Viajar ao Santuário Rona Kachta, dentro do Templo Esquecido, e abrir os três baús de pedra que aparecem sob a Estátua da Deusa Mãe."
+  ],
+  "uses": [
+    "Defesa alta para o fim do jogo.",
+    "Reforçar o feixe da Espada Mestra quando as peças estão em ★★."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial.",
+    "Bônus de conjunto (três peças em ★★): +50% de dano no feixe da Espada Mestra."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças em ★★, o feixe da Espada Mestra causa 50% a mais de dano, acumulando com o aumento da espada desperta.",
+      "conditions": [
+        "Gorro, túnica e calças selvagens vestidos juntos, todos com ★★.",
+        "Disparar o feixe com a vida cheia."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Master Sword"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Santuários da DLC não contam",
+      "text": "O gatilho da recompensa são os 120 santuários do jogo base. Os santuários adicionados pela DLC não entram nessa conta.",
+      "sources": ["zw:A Gift from the Monks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Partes dos três dragões",
+      "text": "Cada peça usa partes de um dragão diferente nas melhorias: o gorro pede partes de Farosh, a túnica de Naydra e as calças de Dinraal, terminando com uma lasca de chifre e um Fragmento de estrela no último nível.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A roupa do \"herói que enfrentou a natureza sozinho\"",
+      "text": "O registro da missão descreve o presente como uma roupa verde feita especialmente para o herói que enfrentou as terras selvagens sozinho.",
+      "sources": ["zw:A Gift from the Monks"]
+    }
+  ],
+  "advanced_uses": [
+    "Como não depende de amiibo e pode ser tingido, é a forma mais acessível de ter o bônus do feixe da Espada Mestra com defesa alta."
+  ],
+  "limitations": [
+    "Exige concluir todos os 120 santuários do jogo base.",
+    "Melhorias consomem muitas partes de dragão (escamas, garras, lascas de presa e de chifre)."
+  ],
+  "related": [
+    { "id": "botw_armor_cap_of_the_wild", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_tunic_of_the_wild", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_trousers_of_the_wild", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_keyitem_spirit_orb", "relation": "Também recebido a cada santuário concluído" },
+    { "id": "botw_weapon_master_sword", "relation": "Arma cujo feixe o bônus fortalece" },
+    { "id": "botw_monster_farosh", "relation": "Fornece partes para as melhorias do gorro" },
+    { "id": "botw_monster_naydra", "relation": "Fornece partes para as melhorias da túnica" },
+    { "id": "botw_monster_dinraal", "relation": "Fornece partes para as melhorias das calças" },
+    { "id": "botw_material_star_fragment", "relation": "Exigido na última melhoria" },
+    { "id": "botw_armorset_hero_set", "relation": "Outro conjunto com o mesmo bônus" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["ataque", "defesa"],
+  "verification_status": "verificado"
+}

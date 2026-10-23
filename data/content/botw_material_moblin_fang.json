@@ -1,0 +1,156 @@
+{
+  "id": "botw_material_moblin_fang",
+  "summary": "Presa afiada de Moblins e Stalmoblins, dura demais para virar ferramenta. Acrescenta 1:50 aos elixires e é exigida no 2º nível do Conjunto antichamas (4 por peça).",
+  "description": "A Presa de Moblin, segundo o jogo, é afiada mas dura demais para ser remodelada como ferramenta — por isso o melhor destino dela é um ensopado com bichos, onde acrescenta 1:50 à duração do elixir. Cai de todos os tipos de Moblin e também de Stalmoblins.\n\nNa Fonte da Grande Fada, o Conjunto antichamas pede 4 presas por peça (com 3 Lagartos corta-fogo) para alcançar o 2º nível. Esse é justamente o nível que, segundo o Zelda Wiki, permite a Link se aproximar de Dinraal sem ser queimado quando o conjunto está completo. A presa também entra no corante cinza da Tinturaria Kochi.",
+  "locations": [
+    "Onde houver Moblins ou Stalmoblins em Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar Moblins de qualquer cor ou Stalmoblins.",
+    "Os monstros voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 4 por peça no 2º nível do Conjunto antichamas — 12 no total.",
+    "Corante cinza na Tinturaria Kochi.",
+    "Venda: 12 rupias, ou 6 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Presa de Moblin no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Presa de Moblin largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Presa de Moblin queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Presa de Moblin numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Presa de Moblin a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Presa de Moblin à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Presa de Moblin flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Presa de Moblin não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Presa de Moblin largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 12 rupias em lojas e comerciantes, ou 6 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "A presa que libera Dinraal de perto",
+      "text": "O Conjunto antichamas completo e melhorado duas vezes protege do fogo que envolve Dinraal. Com o conjunto no 2º nível — 6 chifres, 12 presas e 12 Lagartos corta-fogo no total —, Link pode se aproximar do dragão para mirar em partes específicas sem depender de Elixires corta-fogo.",
+      "sources": [
+        "zw",
+        "zw:Dinraal"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Junte 12 presas antes de caçar partes de Dinraal: o 2º nível do Conjunto antichamas evita queimaduras ao se aproximar do dragão."
+  ],
+  "limitations": [
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_moblin",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_stalmoblin",
+      "relation": "Também a deixa"
+    },
+    {
+      "id": "botw_material_moblin_horn",
+      "relation": "Usado no 1º nível do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Usado no 3º nível do mesmo conjunto"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Usa 4 presas por peça no 2º nível"
+    },
+    {
+      "id": "botw_monster_dinraal",
+      "relation": "O conjunto melhorado duas vezes protege do fogo do dragão"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante cinza"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "botw_keyitem_royal_bridle",
+  "summary": "Rédea dourada da família real, feita para o cavalo branco de Zelda e guardada pelo avô de Toffa. Entregue no Estábulo Outskirt ao registrar o Cavalo branco; aparece na cena pós-créditos.",
+  "description": "A Rédea real faz parte do equipamento de montaria real, ao lado da Sela real. Antes da Grande Calamidade, Zelda mandou fazer a rédea e a sela sob medida para seu Cavalo branco, numa tentativa de criar laços com o animal. Depois da Calamidade, o avô de Toffa herdou as peças e as passou ao neto. A descrição do jogo diz que a rédea era uma das favoritas da família real e que, apesar dos ornamentos dourados, seu verdadeiro valor está na fabricação sólida.\n\nPara obtê-la, Link deve completar a Missão secundária \"The Royal White Stallion\", de Toffa, no Estábulo Outskirt: encontrar o Cavalo branco perto das Ruínas do Parque Sanidin, na Colina Safula (Safula Hill), domá-lo (são necessárias pelo menos duas rodas de vigor completas), registrá-lo num estábulo e mostrá-lo a Toffa. Ele entrega a rédea e a sela e já as coloca no cavalo. Se o Cavalo branco já estiver registrado, a missão começa e termina na mesma conversa.\n\nA rédea é cosmética e pode ser trocada para qualquer cavalo com vínculo máximo nos estábulos Highland, Outskirt, South Akkala e Woodland, exceto Epona e o Cavalo gigante. Se a missão principal \"Captured Memories\" tiver sido concluída, a rédea aparece no cavalo branco de Zelda na cena especial depois dos créditos.",
+  "locations": [
+    "Estábulo Outskirt, com Toffa.",
+    "O Cavalo branco aparece perto das Ruínas do Parque Sanidin, na Colina Safula (Safula Hill)."
+  ],
+  "obtaining": [
+    "Domar e registrar o Cavalo branco e mostrá-lo a Toffa (\"The Royal White Stallion\"); ele entrega a Rédea real e a Sela real."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo; vem equipada de fábrica no Cavalo branco ao concluir a missão."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Toffa a coloca direto no Cavalo branco; depois, um funcionário de estábulo pode trocá-la para outro cavalo. Não altera atributos.",
+      "conditions": [
+        "Para trocar de cavalo: falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:The Royal White Stallion", "zw:Horse Gear"]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": ["zw:Horse Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Presente de Zelda para o cavalo",
+      "text": "Zelda encomendou a rédea e a sela para seu Cavalo branco tentando se aproximar dele. Toffa conta que, segundo o avô, ver a princesa montada no cavalo branco era a coisa mais bonita que ele podia imaginar, e acredita que o cavalo de Link seja neto do original.",
+      "sources": ["zw", "zw:The Royal White Stallion"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Na cena pós-créditos",
+      "text": "Com \"Captured Memories\" concluída, a cena especial após os créditos mostra o cavalo branco de Zelda usando a Rédea real.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para domar o Cavalo branco, garanta pelo menos duas rodas de vigor completas antes de montar nele."
+  ],
+  "limitations": [
+    "Apenas cosmética.",
+    "Exige domar e registrar o Cavalo branco."
+  ],
+  "related": [
+    { "id": "botw_keyitem_royal_saddle", "relation": "Outra peça do equipamento real" },
+    { "id": "botw_creature_white_horse", "relation": "Cavalo que recebe a rédea na missão" },
+    { "id": "botw_creature_horse", "relation": "Outros cavalos também podem usá-la" },
+    { "id": "botw_mechanic_stable", "relation": "Onde o cavalo é registrado e a rédea é trocada" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

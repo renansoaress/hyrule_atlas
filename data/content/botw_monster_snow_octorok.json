@@ -1,0 +1,119 @@
+{
+  "id": "botw_monster_snow_octorok",
+  "summary": "Octoroc dos campos nevados que se enterra na neve disfarçado de tufo de grama e cospe bolas de neve. Golpear a grama da cabeça o tira do esconderijo; a Defesa perfeita devolve a bola de neve.",
+  "description": "O Octoroc da neve vive em terrenos cobertos de neve e é capaz de cavar túneis nela. Fica escondido, disfarçado de um tufo de grama, até alguém entrar no alcance; então cospe bolas de neve no alvo. O compendium cita as Montanhas Gerudo e a Fronteira de Tabantha como locais comuns.\n\nSe Link chegar perto demais, ele se esconde na neve para se proteger. Para obrigá-lo a sair, basta atacar a grama na cabeça dele enquanto está escondido. As bolas de neve podem ser rebatidas com uma Defesa perfeita usando qualquer escudo. Tem 8 pontos de vida e pode deixar Tentáculo de Octoroc, Olho de Octoroc e Balão de Octoroc.",
+  "locations": [
+    "Campos nevados; o compendium cita as Montanhas Gerudo e a Fronteira de Tabantha."
+  ],
+  "obtaining": [
+    "Pode deixar Tentáculo de Octoroc, Olho de Octoroc e Balão de Octoroc.",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de partes de Octoroc em regiões frias.",
+    "Registro no compendium (entrada nº 95)."
+  ],
+  "effects": [
+    "Bolas de neve cuspidas a distância."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "A Defesa perfeita com qualquer escudo devolve a bola de neve contra ele.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Se chegar perto demais, ele se esconde na neve; atacar a grama da cabeça o força a sair do esconderijo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Atirar no disfarce de grama o obriga a se revelar.",
+      "kind": "mecanica",
+      "sources": ["zw:Octorok"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo no Octoroc da neve."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo no Octoroc da neve."
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Flechas eletrizantes eletrocutam e atordoam inimigos atingidos; nenhum efeito especial é descrito para ele.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o Octoroc da neve na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões sobre ele enterrado na neve."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio quando ele está exposto.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico; Magnétis não o agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Cava túneis na neve e se disfarça de tufo de grama até alguém chegar perto.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Grama que não pertence à neve",
+      "text": "O disfarce do Octoroc da neve é um tufo de grama no meio do campo nevado; atacar essa grama enquanto ele está escondido o força a sair.",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Manter distância média: longe o bastante para que ele não se esconda e com o escudo pronto para a Defesa perfeita."
+  ],
+  "limitations": [
+    "Ao ver Link de perto, mergulha na neve e só sai se o disfarce for atingido."
+  ],
+  "related": [
+    { "id": "botw_monster_forest_octorok", "relation": "Octoroc com disfarce vegetal semelhante" },
+    { "id": "botw_monster_water_octorok", "relation": "Octoroc aquático" },
+    { "id": "botw_monster_treasure_octorok", "relation": "Outro Octoroc que se enterra na neve" },
+    { "id": "botw_material_octo_balloon", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_octorok_tentacle", "relation": "Parte deixada ao ser derrotado" }
+  ],
+  "capabilities": ["vence_rapido"],
+  "verification_status": "parcial"
+}

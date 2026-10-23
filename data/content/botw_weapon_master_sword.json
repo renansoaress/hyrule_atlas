@@ -1,0 +1,196 @@
+{
+  "id": "botw_weapon_master_sword",
+  "summary": "A espada lendária que sela as trevas, guardada na Floresta Korok. Exige 13 corações, nunca quebra (só fica sem energia por 10 minutos), dobra o ataque para 60 perto do mal e dispara raios de espada com a vida cheia.",
+  "description": "A Espada Mestra é a lâmina sagrada ligada ao herói de Hyrule. Há dez mil anos, um herói a usou para selar Ganon, a Calamidade, e o Link de cem anos atrás também a empunhou. Danificada na batalha em que Link caiu, ela falou com Zelda, que a levou ao pedestal da Floresta Korok, além dos Bosques Perdidos (Lost Woods), prometendo que seu dono voltaria. Para sacá-la, Link precisa de pelo menos 13 corações; a Grande Árvore Deko avisa que quem for considerado fraco perderá a vida tentando. Obtê-la não é obrigatório para derrotar Ganon, a Calamidade.\n\nO ataque base é 30, mas o poder sagrado desperta na presença do mal: dentro das Feras Divinas e de outras masmorras, perto de Guardiões ou de Malícia, a lâmina brilha em azul e o ataque dobra para 60, com energia que dura muito mais. Em vez de quebrar, ela esgota a energia e fica inutilizável por 10 minutos. Não pode ser arremessada: com a vida cheia, segurar e soltar o botão de arremesso dispara um raio de espada. É de metal — conduz eletricidade e atrai raios em tempestades —, mas, ao contrário das outras armas, nunca é derrubada das mãos de Link, não pode ser largada nem pendurada no suporte de armas da casa de Link e não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Pedestal na Floresta Korok, no coração dos Bosques Perdidos (Lost Woods)."
+  ],
+  "obtaining": [
+    "Atravessar os Bosques Perdidos pelo caminho certo até a Floresta Korok e sacá-la do pedestal com pelo menos 13 corações.",
+    "Ao sacá-la, a algibeira de armas de Link ganha um espaço extra.",
+    "Como não quebra, nunca precisa ser obtida de novo: ao esgotar a energia, volta a funcionar após 10 minutos."
+  ],
+  "uses": [
+    "Arma principal contra Guardiões, Malícia, as Iras de Ganon e Ganon, a Calamidade, graças ao ataque dobrado.",
+    "Raio de espada à distância quando Link está com a vida cheia.",
+    "Entrada para a Provação da Espada (DLC The Master Trials): recolocá-la no pedestal abre o desafio."
+  ],
+  "effects": [
+    "Ataque 30; sobe para 60 perto de Guardiões, Malícia e dentro das masmorras.",
+    "Não quebra: esgota a energia e recarrega em 10 minutos.",
+    "Raio de espada com a vida cheia (10 de dano)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão com ataque giratório carregado e uso junto do escudo. Desperta (brilho azul, ataque 60) perto do mal; ao gastar toda a energia, fica inutilizável por 10 minutos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "zw:Durability"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "sem_efeito",
+      "result": "Não pode ser arremessada. No lugar, com a vida cheia, segurar e soltar o botão de arremesso dispara um raio de espada (disco de energia azul) que causa 10 de dano.",
+      "conditions": [
+        "Link com todos os corações cheios."
+      ],
+      "side_effects": [
+        "Cada raio gasta um pouco da energia da espada, até a Provação da Espada ser concluída."
+      ],
+      "applications": [
+        "Atingir inimigos distantes sem gastar flechas; o alcance aumenta com o número de Recipientes de coração."
+      ],
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade, mas é uma das duas únicas armas (com o Obliterador) que não voam das mãos de Link quando ele é eletrocutado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios.",
+      "side_effects": [
+        "Como não pode ser largada, a única forma de evitar o raio é desequipá-la a tempo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "nao_aplicavel",
+      "result": "A Espada Mestra não pode ser largada nem derrubada, então nunca cai na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "nao_aplicavel",
+      "result": "Como não pode ser largada nem derrubada, a espada nunca fica solta no mundo para ser movida com Magnétis."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Perto de Guardiões corrompidos, dentro das masmorras ou na presença de Malícia, o ataque dobra para 60 e a energia passa a aguentar cerca de 11.400 de dano antes de esgotar.",
+      "applications": [
+        "Enfrentar Guardiões persecutórios e as Iras de Ganon com a espada desperta."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Guardian"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Provação da Espada e despertar permanente",
+      "text": "Com o DLC The Master Trials, recolocar a Espada Mestra no pedestal abre a Provação da Espada (Sword Monk's Shrine): 54 andares (45 de combate e 9 de descanso), começando sem armas, armaduras, materiais nem comida. Concluir as etapas inicial, intermediária e final eleva o ataque base para 40, 50 e, por fim, 60 permanente, com durabilidade 188. Depois disso, o raio de espada deixa de gastar energia.",
+      "sources": [
+        "zw",
+        "zw:Sword Monk's Shrine"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem bônus de arma",
+      "text": "Todas as faixas de bônus da Espada Mestra nos parâmetros extraídos são zero, e ela não pode receber o bônus de acerto crítico: é uma das armas que nunca aparece com modificadores.",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem energia, sem provação",
+      "text": "Se a espada estiver sem energia, a Provação da Espada não pode ser iniciada; é preciso esperar os 10 minutos de recarga.",
+      "sources": [
+        "zw:Sword Monk's Shrine",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A espada que fala",
+      "text": "Nas Memórias recuperadas, Zelda pergunta a Link se ele consegue ouvir a Espada Mestra falando com ele, e, na memória \"Zelda's Awakening\", é a espada que fala com Zelda e lhe diz o que fazer para salvar Link e Hyrule.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rumores pelo caminho",
+      "text": "Vários personagens comentam a lenda: Riju lembra que a \"espada que sela as trevas\" teria sido escondida pela princesa numa floresta, e Aliza duvida que Link seja o herói por não carregá-la.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar a Espada Mestra para Guardiões e chefes, onde o ataque dobra, e usar armas comuns contra monstros normais para não esgotar a energia.",
+    "Manter a vida cheia para usar o raio de espada como ataque à distância gratuito."
+  ],
+  "limitations": [
+    "Exige 13 corações para ser sacada.",
+    "Fora da presença do mal, o ataque é só 30 e a energia dura pouco (40).",
+    "Sem energia, fica inutilizável por 10 minutos.",
+    "Não pode ser arremessada nem exposta no suporte de armas da casa de Link."
+  ],
+  "related": [
+    {
+      "id": "botw_mechanic_trial_of_the_sword",
+      "relation": "Desafio do DLC que desperta a espada permanentemente"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "A espada foi forjada para se opor à Calamidade"
+    },
+    {
+      "id": "botw_monster_guardian_stalker",
+      "relation": "Desperta o poder da espada"
+    },
+    {
+      "id": "botw_weapon_royal_guards_sword",
+      "relation": "Réplica sheikah da Espada Mestra"
+    },
+    {
+      "id": "botw_weapon_one_hit_obliterator",
+      "relation": "A outra arma que não voa das mãos ao ser eletrocutado"
+    },
+    {
+      "id": "botw_mechanic_durability",
+      "relation": "Exceção à regra de quebra"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

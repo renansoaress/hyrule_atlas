@@ -1,0 +1,82 @@
+{
+  "id": "botw_armorset_radiant_set",
+  "summary": "Traje de esqueleto do clube secreto da Cidade Gerudo, pintado com pedras luminosas que brilham no escuro. Em ★★ engana monstros Stal e dá +80% de ataque com armas e arcos de osso.",
+  "description": "O Conjunto radiante é formado pela Máscara radiante, pela Camisa radiante e pela Meia-calça radiante. As peças são vendidas no clube secreto Gerudo (Gerudo Secret Club), na Cidade Gerudo, depois da Missão secundária \"The Secret Club's Secret\", que revela a senha da porta. Cada peça custa 800 rupias e 3 Pedras luminosas (2.400 rupias e 9 pedras no total). Segundo as descrições do jogo, elas são pintadas com um corante feito de Pedras luminosas esmagadas, o que faz as marcas de esqueleto brilharem de forma misteriosa no escuro.\n\nAs peças não têm efeito individual. Com as três melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ativa dois bônus: o Disfarce Stal (Stal Disguise), que faz Stalboblins, Stalmoblins e Stallagalfos ignorarem Link e engana temporariamente os Stalnox, e o Ataque com ossos aumentado (Bone Atk. Up), +80% de ataque com armas e arcos de osso, multiplicativo com o Ataque aumentado.\n\nAs melhorias usam Pedras luminosas em todos os níveis, combinadas com Vísceras de Koboblin, Moblin, Molduga e, por fim, Centaleão. Ao contrário do Conjunto de Ganon Fantasma, que dá os mesmos bônus sem melhorias, o radiante pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Clube secreto Gerudo (Gerudo Secret Club), na Cidade Gerudo, atrás da loja Fashion Passion."
+  ],
+  "obtaining": [
+    "Descobrir a senha do clube (\"GSC♦\") na Missão secundária \"The Secret Club's Secret\" e comprar cada peça por 800 rupias e 3 Pedras luminosas."
+  ],
+  "uses": [
+    "Andar entre monstros Stal à noite sem ser atacado (em ★★).",
+    "Reforçar armas e arcos de osso em 80% (em ★★).",
+    "Visual que brilha no escuro."
+  ],
+  "effects": [
+    "Peças individuais: nenhum efeito especial (brilham no escuro).",
+    "Bônus de conjunto (três peças em ★★): Disfarce Stal e Ataque com ossos aumentado (+80%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Com as três peças em ★★, Link fica disfarçado entre monstros Stal e causa 80% a mais de dano com armas e arcos de osso.",
+      "conditions": ["Máscara, camisa e meia-calça radiantes vestidas juntas, todas com ★★."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Bone Weapon Proficiency"]
+    },
+    {
+      "action": "monstros",
+      "variant": "monstros Stal",
+      "status": "confirmado",
+      "result": "Em ★★, Stalboblins, Stalmoblins e Stallagalfos não atacam a menos que Link ataque primeiro; Stalnox são enganados só por algum tempo.",
+      "side_effects": ["O disfarce acaba se um inimigo não afetado por ele começar a atacar Link."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus", "zw:Disguise (Mechanic)"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "\"Atrai monstros Stal\" que não existe",
+      "text": "Um guia oficial lista para cada peça um efeito oculto chamado Stal Lure, que aumentaria o aparecimento de monstros Stal, mas o Zelda Wiki não encontrou indício de que ele funcione no jogo.",
+      "sources": ["zw:Added Effect"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Corante de pedra luminosa",
+      "text": "As descrições dizem que a tinta vem de Pedras luminosas esmagadas, um tipo de corante de Hateno, e que dá às peças um brilho \"sinistro\" e \"misterioso\" no escuro.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mesmos bônus do Conjunto de Ganon Fantasma",
+      "text": "O Conjunto de Ganon Fantasma oferece exatamente os mesmos dois bônus sem precisar de melhorias, além de Furtividade aumentada; em troca, não pode ser melhorado nem tingido, e o radiante pode.",
+      "sources": ["zw:Set Bonus", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine o conjunto em ★★ com uma Clava Moblin dracônica ou um Arco Kobo dracônico: o bônus de 80% vale para armas e arcos de osso e multiplica com comida de Ataque aumentado."
+  ],
+  "limitations": [
+    "Sem ★★ nas três peças, o conjunto não tem nenhum efeito.",
+    "O disfarce só funciona com monstros Stal.",
+    "As melhorias consomem muitas Pedras luminosas e vísceras de monstros fortes."
+  ],
+  "related": [
+    { "id": "botw_armor_radiant_mask", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_radiant_shirt", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_radiant_tights", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_material_luminous_stone", "relation": "Usada na compra, no corante das peças e nas melhorias" },
+    { "id": "botw_armorset_phantom_ganon_set", "relation": "Mesmos bônus, sem melhorias" },
+    { "id": "botw_monster_stalmoblin", "relation": "Enganado pelo Disfarce Stal" },
+    { "id": "botw_monster_stalnox", "relation": "Enganado apenas temporariamente" },
+    { "id": "botw_weapon_dragonbone_moblin_club", "relation": "Arma de osso beneficiada pelo bônus" },
+    { "id": "botw_bow_dragonbone_boko_bow", "relation": "Arco de osso beneficiado pelo bônus" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["ataque", "habilidade_especial"],
+  "verification_status": "verificado"
+}

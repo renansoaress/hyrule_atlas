@@ -1,0 +1,174 @@
+{
+  "id": "botw_material_fire_keese_wing",
+  "summary": "Asa morna do Morci ígneo, que não queima quem a segura. Acrescenta 1:50 aos elixires e é a mais pedida de duas melhorias: 4º nível do Conjunto de escalada e 3º do de pluma nevada.",
+  "description": "A Asa de Morci ígneo vem dos Morcis envoltos em chamas que vivem em climas escaldantes como Eldin e também aparecem em Akkala. O texto do jogo explica que não sobra Morci ígneo suficiente na asa para queimar ninguém, embora ela ainda guarde um leve calor. Esse calor é só descrição: as fontes não registram nenhum efeito de fogo ou de proteção contra o frio vindo do item.\n\nNa panela, funciona como qualquer parte de monstro e acrescenta 1:50 à duração do elixir. Nas Fontes das Grandes Fadas, é exigida no 4º nível do Conjunto de escalada (5 por peça) e no 3º nível do Conjunto de pluma nevada (8 por peça), somando 39 unidades. Na Tinturaria Kochi, faz parte do corante vermelho.",
+  "locations": [
+    "Regiões de clima escaldante, sobretudo Eldin, e também Akkala. De dia ficam no teto de cavernas; à noite, ao ar livre."
+  ],
+  "obtaining": [
+    "Derrotar Morcis ígneos. Feitiçanos ígneos e meteóricos também podem invocá-los durante a luta."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 5 por peça no 4º nível do Conjunto de escalada e 8 por peça no 3º nível do Conjunto de pluma nevada — 39 no total.",
+    "Corante vermelho na Tinturaria Kochi.",
+    "Venda: 6 rupias, ou 6 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Asa de Morci ígneo no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Asa de Morci ígneo largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Asa de Morci ígneo queima, some ou se transforma em contato com o fogo, apesar de vir de um monstro de fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Asa de Morci ígneo numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Asa de Morci ígneo a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Asa de Morci ígneo à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Asa de Morci ígneo flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Asa de Morci ígneo não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Asa de Morci ígneo largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 6 rupias em lojas e comerciantes, ou 6 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O tema elemental não define o elixir",
+      "text": "Apesar de o leve calor citado na descrição, a Asa de Morci ígneo não dá efeito próprio ao elixir. No sistema de BOTW, o efeito vem da categoria dos bichos (e de alguns outros materiais); a parte de monstro só entra com a duração. Cozida com uma Libélula gélida, por exemplo, ela resulta num Elixir refrescante, de resistência ao calor — o oposto do tema da asa.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part",
+        "zw:Cold Darner"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Chuva apaga o Morci ígneo",
+      "text": "Se começar a chover, as chamas dos Morcis ígneos se apagam e eles morrem em poucos segundos. A fonte não diz se, nesse caso, a asa é deixada como num abate normal.",
+      "sources": [
+        "zw:Fire Keese"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Calor que não queima",
+      "text": "Segundo o texto do inventário, não sobrou Morci ígneo suficiente preso à asa para queimar Link — ela só tem \"um leve calor\".",
+      "sources": [
+        "jogo"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao caçar em Eldin, junte 39 asas de uma vez: 24 para o 3º nível do Conjunto de pluma nevada e 15 para o último nível do Conjunto de escalada.",
+    "Cuidado ao lutar com Morcis ígneos sobre grama: eles incendeiam superfícies inflamáveis em que tocam."
+  ],
+  "limitations": [
+    "O calor da asa é apenas descritivo; não protege do frio nem gera fogo segundo as fontes.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_fire_keese",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Usa 5 por peça no 4º nível"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Usa 8 por peça no 3º nível"
+    },
+    {
+      "id": "botw_material_keese_wing",
+      "relation": "Asa comum do 1º nível do Conjunto de escalada"
+    },
+    {
+      "id": "botw_material_red_chuchu_jelly",
+      "relation": "Material dos níveis anteriores do Conjunto de pluma nevada"
+    },
+    {
+      "id": "botw_monster_fire_wizzrobe",
+      "relation": "Pode invocar Morcis ígneos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante vermelho"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

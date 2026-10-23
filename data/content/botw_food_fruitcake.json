@@ -1,0 +1,131 @@
+{
+  "id": "botw_food_fruitcake",
+  "summary": "Bolo favorito da princesa Zelda, receita secreta da família real nos livros do Castelo de Hyrule: Maçã ou Framboesa, outra fruta, trigo e açúcar. Entregá-lo a Gotter conclui \"A Royal Recipe\".",
+  "description": "O Bolo de frutas é feito com Maçã ou Framboesa, qualquer outra fruta, Trigo de Tabantha e Cana-de-açúcar — sem manteiga. A versão comum sai com ingredientes sem efeito; com uma fruta de efeito, o bolo ganha esse efeito: Melancia oásica (refrescante), Fruta isolante (isolante), Grãos de lótus-fugaz (veloz), Durião nutritivo (nutritiva), Bananas valentes (valente) ou Pimenta de fogo (picante). A descrição do jogo diz que o bolo aproveita frutas de toda Hyrule e é indispensável em comemorações.\n\nUm livro da biblioteca do Castelo de Hyrule traz a \"Receita Secreta nº 1 da Família Real: o favorito da princesa, bolo de frutas\" — ferver duas ou mais frutas com trigo de Tabantha e cana-de-açúcar por um bom tempo. Segundo o texto, comer o prato ajuda a clarear a mente e a se concentrar em coisas como a pesquisa de tecnologia ancestral.\n\nNa Missão secundária \"A Royal Recipe\", Gotter, do Riverside Stable, cujo antepassado foi chef do castelo, quer provar um prato da família real. Não é preciso ler o livro: basta chegar com um Bolo de frutas (ou um Bolo de monstro) na algibeira. Se houver os dois, Gotter escolhe o Bolo de frutas, descreve o sabor com entusiasmo — lembra galopar pelas planícies e a emoção de ser avistado por um Guardião — e paga com uma rupia prateada.",
+  "locations": [
+    "Receita: livro da biblioteca do Castelo de Hyrule (Castle Library Book).",
+    "Gotter, que pede o bolo: no Riverside Stable.",
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Maçã ou Framboesa + outra fruta + Trigo de Tabantha + Cana-de-açúcar."
+  ],
+  "uses": [
+    "Missão secundária \"A Royal Recipe\": entregar a Gotter, no Riverside Stable (recompensa: rupia prateada).",
+    "Prato de efeito com frutas.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão comum (só ingredientes sem efeito): recupera alguns corações.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Melancia oásica.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Fruta isolante.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Grãos de lótus-fugaz.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Durião nutritivo.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Bananas valentes.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Pimenta de fogo.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — com um ingrediente tenaz.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com um ingrediente energizante.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — com um ingrediente discreto.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com um ingrediente blindado."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Uma fruta ou ingrediente de efeito define a versão; as descrições citadas são de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor. Antes de vender, guarde um para a missão de Gotter, que paga uma rupia prateada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Não precisa invadir o castelo",
+      "text": "Gotter aceita o bolo mesmo que Link nunca tenha lido o livro de receitas do Castelo de Hyrule. Se Link tiver Bolo de frutas e Bolo de monstro, o de frutas tem prioridade.",
+      "sources": [
+        "zw:A Royal Recipe"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Comida de pesquisadora",
+      "text": "O livro do castelo diz que o bolo ajuda a clarear a cabeça e a focar em pesquisas de tecnologia ancestral.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A crítica gastronômica de Gotter",
+      "text": "Ao provar o bolo, Gotter fala de um aroma refrescante que lembra galopar pelas planícies, mas corrige-se: o prato tem a intensidade de quando se é avistado por um Guardião.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "limitations": [
+    "Precisa de Maçã ou Framboesa, além de uma segunda fruta.",
+    "Não leva Manteiga de cabra; com manteiga e uma única fruta, a receita é de torta."
+  ],
+  "related": [
+    {
+      "id": "botw_food_monster_cake",
+      "relation": "A outra receita real aceita por Gotter"
+    },
+    {
+      "id": "botw_food_fruit_pie",
+      "relation": "Torta de fruta com manteiga"
+    },
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Torta de maçã com manteiga"
+    },
+    {
+      "id": "botw_material_apple",
+      "relation": "Fruta aceita como base"
+    },
+    {
+      "id": "botw_material_wildberry",
+      "relation": "Fruta aceita como base"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

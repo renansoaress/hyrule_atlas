@@ -1,0 +1,105 @@
+{
+  "id": "botw_food_creamy_meat_soup",
+  "summary": "Sopa de carne, uma planta (legume, erva ou flor), Leite fresco e Halita, com \"porções generosas de carne\". Cenouras e abóbora não entram; a versão veloz é a mais cara (80 rupias).",
+  "description": "A Sopa cremosa de carne leva qualquer carne, qualquer legume, erva ou flor, Leite fresco e Halita. Como no Creme de legumes, Cenoura tenaz, Cenoura veloz e Abóbora robusta estão proibidas: com elas, o resultado é a Sopa cremosa de legumes. A descrição do jogo fala de uma sopa nutritiva com porções generosas de carne levemente refogada e muitos legumes. A versão comum, sem efeito ou com efeitos que se anulam, cura 6 corações e vale 60 rupias.\n\nO efeito vem da planta: Rabanete nutritivo ou Rabanete nutritivo grande dão a versão nutritiva (70 rupias); Mel de abelha, a energizante; Violeta veloz, a veloz, que é a mais valiosa (80 rupias); Erva geleira (Warm Safflina), a picante; Erva relampagueira, a isolante; Protechofra, a valente; Amaranto blindado, a blindada; Beladona azul ou Princesa plácida, a discreta; e Erva fogueira (Cool Safflina), a refrescante. Quase todas curam 4 corações e valem 60 rupias.\n\nA carne faz diferença: com as mesmas ervas de efeito, o Creme de legumes cura só 1 coração e vale 20 a 30 rupias, enquanto esta sopa cura 4 e vale 60.",
+  "locations": [
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Halita: sai de depósitos de minério e é vendida na Goron Gusto Shop, na Coral Reef e pelo mercador Mezer."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer carne + legume, erva ou flor (exceto cenouras e Abóbora robusta) + Leite fresco + Halita."
+  ],
+  "uses": [
+    "Versões de efeito com ervas que ainda curam 4 corações.",
+    "Venda: de 60 a 80 rupias."
+  ],
+  "effects": [
+    "Versão comum: recupera 6 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — com Rabanete nutritivo ou Rabanete nutritivo grande; 70 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Mel de abelha.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — com Violeta veloz; 4 corações, 80 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — com Erva geleira; 4 corações, 60 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — com Erva relampagueira; 4 corações, 60 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — com Protechofra; 4 corações, 60 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — com Amaranto blindado; 4 corações, 60 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — com Beladona azul ou Princesa plácida; nível médio segundo a descrição citada; 4 corações, 60 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — com Erva fogueira; nível médio segundo a descrição citada; 4 corações, 60 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 6 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "A planta de efeito define a versão; as versões temporárias curam 4 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 60 rupias na versão comum e na maioria das versões com efeito; a nutritiva vale 70 e a veloz, 80.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A carne compensa a cura",
+      "text": "Com as mesmas ervas de efeito, o Creme de legumes cura só 1 coração, enquanto a Sopa cremosa de carne cura 4 e vale o triplo. A carne não muda o efeito, mas sustenta a cura e o preço.",
+      "sources": [
+        "zw",
+        "zw:Cream of Vegetable Soup"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não aceita Cenoura veloz, Cenoura tenaz nem Abóbora robusta.",
+    "Ocupa quatro espaços, deixando um único espaço livre."
+  ],
+  "related": [
+    {
+      "id": "botw_food_cream_of_vegetable_soup",
+      "relation": "Mesma base sem carne"
+    },
+    {
+      "id": "botw_food_creamy_seafood_soup",
+      "relation": "Mesma base com fruto do mar"
+    },
+    {
+      "id": "botw_food_veggie_cream_soup",
+      "relation": "Prato que surge ao usar cenoura ou abóbora"
+    },
+    {
+      "id": "botw_material_swift_violet",
+      "relation": "Gera a versão veloz, a mais cara"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_rock_salt",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

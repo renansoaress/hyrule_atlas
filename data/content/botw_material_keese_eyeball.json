@@ -1,0 +1,169 @@
+{
+  "id": "botw_material_keese_eyeball",
+  "summary": "Olho raro deixado por qualquer tipo de Morci. Apesar de vir de um monstro com 1 de vida, acrescenta 3:10 aos elixires, o máximo entre partes de monstro comuns.",
+  "description": "O Olho de Morci é o drop raro de todos os Morcis — comuns, ígneos, glaciais e elétricos. O texto do jogo brinca que ele é \"divertido de olhar\" e parece não ter muita utilidade à primeira vista, \"mas deve servir para alguma coisa\". Serve: cozido com bichos, acrescenta 3:10 à duração do elixir, o mesmo valor das vísceras de Koboblin, Moblin e Centaleão, embora caia de um inimigo que morre com um único golpe.\n\nO olho é só um material: as fontes não atribuem a ele nenhum efeito de visão, brilho ou detecção, apesar do olho brilhante característico dos Morcis. Fora da panela, é exigido no 2º nível do Conjunto do soldado (3 por peça) e entra no corante laranja da Tinturaria Kochi.",
+  "locations": [
+    "Onde houver Morcis de qualquer tipo: cavernas, céu noturno e regiões quentes, frias ou elétricas onde vivem as variantes."
+  ],
+  "obtaining": [
+    "Derrotar Morcis comuns, ígneos, glaciais ou elétricos; o inventário o descreve como material raro."
+  ],
+  "uses": [
+    "Elixires: cozido com um bicho, acrescenta 3:10 à duração.",
+    "Melhoria de armadura: 3 por peça no 2º nível do Conjunto do soldado — 9 no total.",
+    "Corante laranja na Tinturaria Kochi.",
+    "Venda: 20 rupias, ou 10 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Olho de Morci no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Olho de Morci largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Olho de Morci queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Olho de Morci numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Olho de Morci a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Olho de Morci à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Olho de Morci flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Olho de Morci não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Olho de Morci largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 20 rupias em lojas e comerciantes, ou 10 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Duração máxima com o inimigo mais frágil",
+      "text": "Os Morcis têm 1 de vida e podem ser derrotados até com uma Defesa perfeita, mas o olho deles acrescenta 3:10 aos elixires — o mesmo que partes caras como as Vísceras de Centaleão. Caçar bandos de Morcis é um jeito barato de juntar ingredientes de longa duração.",
+      "sources": [
+        "zw:Keese",
+        "zw:Monster Part"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Comum a todas as variantes",
+      "text": "Ao contrário das asas, que mudam conforme o tipo de Morci, o olho é o mesmo item para Morcis comuns, ígneos, glaciais e elétricos.",
+      "sources": [
+        "zw",
+        "zw:Keese"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use os olhos excedentes para alongar elixires de resistência antes de expedições longas, guardando as vísceras raras para as melhorias de armadura."
+  ],
+  "limitations": [
+    "Não tem efeito de luz, visão ou detecção registrado; é apenas ingrediente.",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_keese",
+      "relation": "Deixa o olho"
+    },
+    {
+      "id": "botw_monster_fire_keese",
+      "relation": "Também deixa o olho"
+    },
+    {
+      "id": "botw_monster_ice_keese",
+      "relation": "Também deixa o olho"
+    },
+    {
+      "id": "botw_monster_electric_keese",
+      "relation": "Também deixa o olho"
+    },
+    {
+      "id": "botw_material_keese_wing",
+      "relation": "Drop comum dos Morcis"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 3 olhos por peça no 2º nível"
+    },
+    {
+      "id": "botw_material_moblin_guts",
+      "relation": "Acompanha o olho no 2º nível do Conjunto do soldado"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante laranja"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

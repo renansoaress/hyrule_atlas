@@ -1,0 +1,140 @@
+{
+  "id": "botw_creature_armored_porgy",
+  "summary": "Pargo marinho de escamas duras como armadura, dos mares de Necluda e Lanayru. Cozido, dá Defesa aumentada e serve para Pargo à meunière, Paella, Curry e Arroz frito com frutos do mar.",
+  "description": "O Pargo blindado é um peixe de água salgada do Mar de Necluda e do Mar de Lanayru, com o corpo coberto de escamas tão duras quanto armadura. Segundo o jogo, os compostos dessas escamas, quando cozidos, fortalecem os ossos e concedem Defesa aumentada temporária. Pode ser comprado de Mubs, no mercado de peixes de Vila Lurelin, e do mercador ambulante Chumin.\n\nCru, recupera 1 coração. Como o Pargo valente, serve como \"qualquer pargo\" no Pargo à meunière (com Manteiga de cabra e Trigo de Tabantha) e, no lugar de um Caramujo nutritivo, no Curry de frutos do mar e no Arroz frito com frutos do mar; a Paella de frutos do mar pede um pargo e um Caramujo nutritivo juntos. Entra também nas receitas gerais de peixe.\n\nExposto ao fogo vira Pargo assado; congelado, Pargo congelado — os mesmos itens do Pargo valente, sem o efeito de defesa.",
+  "locations": [
+    "Mar de Necluda e Mar de Lanayru."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ele, vivo ou morto.",
+    "Comprar de Mubs, em Vila Lurelin (20 rupias), ou do mercador ambulante Chumin (40 rupias); 3 em estoque em cada, renovável."
+  ],
+  "uses": [
+    "Pargo à meunière: qualquer pargo + Manteiga de cabra + Trigo de Tabantha.",
+    "Curry de frutos do mar, Arroz frito com frutos do mar e Paella de frutos do mar (receitas que pedem pargo ou Caramujo nutritivo).",
+    "Receitas gerais de peixe e fruto do mar, como Peixe grelhado no sal e Espetinho de peixe, com Defesa aumentada.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Cru: recupera 1 coração.",
+    "Na panela: Defesa aumentada temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhado à mão enquanto Link nada, vivo ou morto.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um pargo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Pargo blindado dão Defesa aumentada; é um dos peixes das receitas exclusivas de pargo.",
+      "side_effects": ["A receita genérica Frutos do mar à meunière exclui pargos."],
+      "produces": ["botw_food_porgy_meuniere", "botw_food_seafood_curry", "botw_food_seafood_fried_rice", "botw_food_seafood_paella", "botw_food_salt_grilled_fish", "botw_food_fish_skewer"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Porgy"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "desconhecido",
+      "result": "A página do Elixir blindado no Zelda Wiki não lista ingredientes adicionais; não há confirmação de que o pargo possa ser somado a um elixir de defesa."
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 10 rupias; custa 20 em Vila Lurelin e 40 com Chumin.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimado pelo fogo, vira Pargo assado, sem o efeito de defesa.",
+      "produces": ["botw_food_roasted_porgy"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, assa e vira Pargo assado.",
+      "produces": ["botw_food_roasted_porgy"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Pargo assado.",
+      "produces": ["botw_food_roasted_porgy"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriado com gelo, vira Pargo congelado.",
+      "produces": ["botw_food_frozen_porgy"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Pargo congelado.",
+      "produces": ["botw_food_frozen_porgy"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este peixe."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Dois pargos, um só papel nas receitas",
+      "text": "Nas receitas de pargo, Pargo blindado e Pargo valente são intercambiáveis: a escolha só muda o efeito do prato (defesa ou ataque). O mesmo vale para assá-los ou congelá-los, que dá Pargo assado ou Pargo congelado em ambos os casos.",
+      "sources": ["zw", "zw:Porgy", "zw:Roasted Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Escamas de armadura",
+      "text": "Tanto este pargo quanto a Carpa blindada têm escamas descritas como duras como armadura, e o jogo explica o efeito dos dois pelo fortalecimento dos ossos.",
+      "sources": ["comp", "zw:Armored Carp"]
+    }
+  ],
+  "advanced_uses": [
+    "Para uma Paella de frutos do mar com Defesa aumentada, use este pargo junto com o Caramujo nutritivo; o efeito predominante decide o resultado, então evite misturar com o Pargo valente."
+  ],
+  "limitations": [
+    "Não serve para Frutos do mar à meunière.",
+    "Assado ou congelado, perde a Defesa aumentada."
+  ],
+  "related": [
+    { "id": "botw_creature_mighty_porgy", "relation": "O outro pargo, de efeito ofensivo" },
+    { "id": "botw_creature_armored_carp", "relation": "Peixe de água doce com o mesmo efeito" },
+    { "id": "botw_food_porgy_meuniere", "relation": "Receita exclusiva de pargo" },
+    { "id": "botw_food_seafood_fried_rice", "relation": "Receita com pargo ou caramujo" },
+    { "id": "botw_food_roasted_porgy", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_frozen_porgy", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_creature_hearty_blueshell_snail", "relation": "Alternativa ou complemento nas receitas de pargo" }
+  ],
+  "capabilities": ["cura", "defesa", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

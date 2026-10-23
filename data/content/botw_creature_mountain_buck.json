@@ -1,0 +1,116 @@
+{
+  "id": "botw_creature_mountain_buck",
+  "summary": "Cervo macho de galhada enorme, arisco mas montável com boa furtividade. Rápido, porém sem esporas e sem registro; é a \"fera de coroa de osso\" que revela o Santuário Mezza Lo e o alvo do minijogo de caça de Dantz.",
+  "description": "O Cervo da montanha é o macho do cervo-da-montanha: pelo castanho desgrenhado com pintas claras no dorso e uma galhada grande e ramificada, que ele balança em autodefesa se ameaçado. Vive em florestas de folhas caducas por quase toda Hyrule — o compendium cita a Pradaria de Hyrule e a Grande Nascente de Lanayru, mas ele também ocorre em Necluda, Faron e Akkala —, geralmente acompanhado de três ou quatro Corças da montanha. Apesar do porte, é arisco e foge ao perceber Link; quando à vontade, pasta e às vezes se deita para descansar.\n\nCom furtividade suficiente, Link pode montá-lo. O cervo tenta derrubá-lo até ser acalmado e então corre bem, mas a utilidade é limitada: não aceita esporas, foge assim que Link desmonta e os estábulos se recusam a registrá-lo, por oferecerem o serviço só a cavalos. É peça-chave de duas atividades: a missão de santuário \"The Crowned Beast\", em Rabia Plain, e o minijogo de caça de Dantz na floresta Retsam, perto de Hateno. Morto, deixa Carne de segunda.",
+  "locations": [
+    "Florestas de Hyrule; o compendium cita a Pradaria de Hyrule e a Grande Nascente de Lanayru, e ele também aparece em Necluda, Faron e Akkala.",
+    "Rabia Plain, onde fica o pedestal da missão \"The Crowned Beast\".",
+    "Floresta Retsam (Retsam Forest), perto da vila de Hateno, usada no minijogo de caça."
+  ],
+  "obtaining": [
+    "Montar com furtividade e acalmá-lo até que aceite o comando; não pode ser registrado."
+  ],
+  "uses": [
+    "Missão de santuário \"The Crowned Beast\": montado num Cervo da montanha, parar sobre o pedestal em Rabia Plain faz o Santuário Mezza Lo surgir.",
+    "Minijogo de caça de Dantz, no pasto de Hateno: caçar o máximo de cervos na Floresta Retsam em um minuto rende rupias.",
+    "Fonte de Carne de segunda."
+  ],
+  "effects": [
+    "Corre rápido quando montado, mas sem esporas."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge ao avistar Link. Se ameaçado de perto, pode balançar a galhada em autodefesa.",
+      "conditions": ["Furtividade alta para chegar sem ser visto."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:The Crowned Beast"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado: tenta derrubar Link até ser acalmado e depois aceita ser cavalgado. Não tem esporas, foge quando Link desmonta e não pode ser registrado.",
+      "conditions": ["Chegar furtivamente até ele."],
+      "side_effects": ["O estábulo responde que o registro é só para cavalos."],
+      "applications": ["Levá-lo até o pedestal de Rabia Plain para revelar o Santuário Mezza Lo."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Deer", "zw:The Crowned Beast"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser caçado com armas; ao morrer deixa Carne de segunda.",
+      "produces": ["botw_material_raw_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Deer"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "É o alvo do minijogo de caça de Dantz, que recomenda um arco forte, capaz de derrubar o cervo com uma só flecha, e aproximação furtiva.",
+      "applications": ["Abater os 10 cervos da Floresta Retsam em um minuto para ganhar a rupia roxa."],
+      "produces": ["botw_material_raw_prime_meat"],
+      "kind": "mecanica",
+      "sources": ["zw:Deer Hunting"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A fera de coroa de osso",
+      "text": "Em Rabia Plain, Kass canta sobre \"uma fera que usa uma coroa de osso\" que deve ser posta \"sobre o seu trono\". A fera é o Cervo da montanha: estar montado nele quando ele pisa no pedestal próximo o faz brilhar e o Santuário Mezza Lo surge do chão. É preciso furtividade alta para montar um dos cervos da planície.",
+      "sources": ["zw", "zw:The Crowned Beast"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Tabela de prêmios de Dantz",
+      "text": "No minijogo de caça, Dantz paga uma rupia verde por 1 a 3 cervos, azul por 4 a 6, vermelha por 7 a 9 e roxa pelos 10 cervos da Floresta Retsam. Sem nenhum abate, não há prêmio; afastar-se demais da floresta encerra a prova.",
+      "sources": ["zw:Deer Hunting"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Caça para salvar a floresta",
+      "text": "Dantz pede a ajuda de Link porque os cervos estão superpovoando a Floresta Retsam e destruindo a mata.",
+      "sources": ["zw:Deer Hunting", "zw:Deer"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma das nove criaturas montáveis",
+      "text": "É uma das nove criaturas montáveis de BOTW, ao lado do Cavalo, Cavalo gigante, Cavalo branco, Senhor da Montanha, Corça da montanha, Stalcavalo, Urso melívoro e Grão-urso.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para \"The Crowned Beast\", use roupas ou refeições de furtividade e aproxime-se agachado na grama de Rabia Plain.",
+    "No minijogo de Dantz, um arco forte que mate com uma flecha economiza tempo, como o próprio Dantz aconselha."
+  ],
+  "limitations": [
+    "Sem esporas; foge quando Link desmonta.",
+    "Não pode ser registrado em estábulos."
+  ],
+  "related": [
+    { "id": "botw_creature_mountain_doe", "relation": "A fêmea, que costuma acompanhá-lo" },
+    { "id": "botw_creature_tabantha_moose", "relation": "O único cervo que não pode ser montado" },
+    { "id": "botw_material_raw_prime_meat", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_creature_horse", "relation": "A doma funciona como a de um cavalo" },
+    { "id": "botw_mechanic_stable", "relation": "Os estábulos recusam o registro" }
+  ],
+  "capabilities": ["montavel", "item_de_missao"],
+  "verification_status": "verificado"
+}

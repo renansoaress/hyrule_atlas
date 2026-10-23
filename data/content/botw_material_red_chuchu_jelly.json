@@ -1,0 +1,275 @@
+{
+  "id": "botw_material_red_chuchu_jelly",
+  "summary": "Geleca que solta calor o tempo todo e, golpeada, explode numa bola de fogo que incendeia inimigos próximos. Vem de Chulchuls ígneos ou de aquecer a Geleca de Chulchul comum.",
+  "description": "A Geleca ígnea é a forma de fogo da geleca de Chulchul. O inventário diz que ela costuma vir de um Chulchul ígneo, solta calor constantemente e, se for golpeada, explode numa bola de fogo. Na prática, isso a transforma num pequeno explosivo incendiário: largada no chão e atingida por um golpe de arma, ela incendeia os inimigos próximos — e, como qualquer fogo, também pode queimar Link e espalhar chamas pela grama. Além dos Chulchuls ígneos, ela cai de Chulchuls comuns derrotados com armas de fogo e pode ser produzida pondo fogo numa Geleca de Chulchul comum, por exemplo numa fogueira.\n\nComo as outras gelecas, muda de forma com outros elementos: gelo a converte em Geleca gélida e eletricidade, em Geleca elétrica. Na panela, funciona como parte de monstro e acrescenta 1:50 à duração do elixir — o calor dela não muda o tipo de efeito. Nas Grandes Fadas, é o material dos dois primeiros níveis do Conjunto de pluma nevada; na Tinturaria Kochi, entra no corante vermelho.",
+  "locations": [
+    "Regiões quentes como Eldin, onde vivem os Chulchuls ígneos.",
+    "Qualquer lugar com Chulchuls comuns e uma fonte de fogo para derrotá-los ou para aquecer a geleca comum."
+  ],
+  "obtaining": [
+    "Derrotar Chulchuls ígneos (Feitiçanos ígneos e meteóricos também os invocam).",
+    "Derrotar Chulchuls comuns com armas ou flechas de fogo.",
+    "Expor uma Geleca de Chulchul comum ao fogo, por exemplo colocando-a numa fogueira."
+  ],
+  "uses": [
+    "Combate: largada e golpeada, explode numa bola de fogo que incendeia inimigos próximos.",
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 3 por peça no 1º nível e 5 por peça no 2º nível do Conjunto de pluma nevada — 24 no total.",
+    "Corante vermelho na Tinturaria Kochi.",
+    "Venda: 10 rupias, ou 5 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Golpeada, explode numa bola de fogo que incendeia o que estiver perto.",
+    "Na culinária, não tem efeito próprio; só prolonga a duração de elixires."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurada e largada no mundo a partir da algibeira; é assim que a Geleca ígnea fica exposta a golpes e a outros elementos.",
+      "conditions": [
+        "Selecionar a geleca na algibeira, segurá-la e soltá-la no chão."
+      ],
+      "applications": [
+        "Preparar uma armadilha de fogo diante de inimigos antes de golpeá-la."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly",
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Explode numa bola de fogo que incendeia os inimigos próximos.",
+      "conditions": [
+        "Geleca largada no mundo e atingida por um golpe de arma (ataque físico)."
+      ],
+      "side_effects": [
+        "O fogo também queima Link se ele estiver no alcance, e se espalha por grama e objetos de madeira.",
+        "Armas, escudos e arcos de madeira podem pegar fogo em contato com as chamas."
+      ],
+      "applications": [
+        "Incendiar um grupo de inimigos de uma vez.",
+        "Criar fogo onde não há fonte: acender grama para gerar uma corrente de ar quente e subir com o Planador."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Chuchu Jelly",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes falam em golpe de arma ou ataque físico, mas não especificam se uma flecha comum também detona a geleca. Disparar de longe seria a forma mais segura de detoná-la, mas isso não está confirmado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "A Geleca ígnea já é a forma de fogo; as fontes não descrevem efeito adicional ao expô-la a chamas (por exemplo, se o fogo a faz explodir)."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes usam a fogueira como meio de criar Geleca ígnea a partir da comum, mas não descrevem o que acontece com uma Geleca ígnea colocada no fogo.",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca gélida.",
+      "conditions": [
+        "Exposição a um ataque ou efeito de gelo, como uma Varinha de gelo."
+      ],
+      "side_effects": [
+        "A Geleca gélida resultante libera névoa congelante quando golpeada, não fogo."
+      ],
+      "produces": [
+        "botw_material_white_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca elétrica.",
+      "conditions": [
+        "Exposição a um ataque ou efeito elétrico."
+      ],
+      "side_effects": [
+        "A Geleca elétrica resultante libera uma descarga elétrica quando golpeada."
+      ],
+      "produces": [
+        "botw_material_yellow_chuchu_jelly"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes só descrevem a água fria transformando a Geleca de Chulchul comum em gélida; não dizem o que acontece com a Geleca ígnea na água.",
+      "sources": [
+        "zw:White Chuchu Jelly"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Geleca ígnea não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Geleca ígnea largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "applications": [
+        "Prolongar elixires em 1:50 por unidade, mais que a Geleca de Chulchul comum (1:10)."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 10 rupias em lojas e comerciantes, ou 5 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Explosivo de bolso",
+      "text": "Largar a geleca perto de um grupo de inimigos e golpeá-la libera o efeito elemental sobre todos ao redor. Como as fontes descrevem a explosão atingindo o que está próximo, convém golpear com uma arma de alcance maior, como uma lança — a mesma recomendação que o compendium faz para lutar contra os Chulchuls elementais, que explodem quando derrotados de perto.",
+      "sources": [
+        "zw:Chuchu Jelly",
+        "zw:Fire Chuchu",
+        "zw:Ice Chuchu",
+        "zw:Electric Chuchu"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Do frio de Naydra ao Conjunto de pluma nevada",
+      "text": "As 24 Gelecas ígneas (com 9 Ervas geleiras) levam as três peças do Conjunto de pluma nevada ao 2º nível. Segundo o Zelda Wiki, o conjunto completo melhorado duas vezes protege Link da aura congelante de Naydra — útil para mirar nas partes da dragoa de perto.",
+      "sources": [
+        "zw",
+        "zw:Naydra"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fogo para resistir ao frio",
+      "text": "O conjunto que protege do frio é melhorado justamente com materiais de fogo: Geleca ígnea no 1º e 2º níveis, Asa de Morci ígneo no 3º e Cauda de Lagalfos ígneo no 4º.",
+      "sources": [
+        "zw",
+        "zw:Fire Keese Wing",
+        "zw:Fire-Breath Lizalfos Tail"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Chulchul ígneo \"apagado\"",
+      "text": "Depois de atacar, o Chulchul ígneo perde temporariamente a camada de fogo e fica mais escuro e vulnerável. Derrotado enquanto está em chamas, ele explode numa rajada de fogo — por isso o compendium recomenda lanças ou flechas.",
+      "sources": [
+        "zw:Fire Chuchu",
+        "zw:Chuchu"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Carregue Gelecas de Chulchul comuns e aqueça-as numa fogueira só quando precisar de Gelecas ígneas.",
+    "Para converter uma Geleca ígnea que sobrou, exponha-a ao gelo ou à eletricidade conforme a necessidade."
+  ],
+  "limitations": [
+    "O calor que ela emite é descritivo: as fontes não indicam que carregá-la proteja do frio.",
+    "A explosão pode atingir Link e incendiar grama e equipamento de madeira próximos.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Geleca comum que vira ígnea com fogo"
+    },
+    {
+      "id": "botw_material_white_chuchu_jelly",
+      "relation": "Forma obtida expondo-a ao gelo"
+    },
+    {
+      "id": "botw_material_yellow_chuchu_jelly",
+      "relation": "Forma obtida expondo-a à eletricidade"
+    },
+    {
+      "id": "botw_monster_fire_chuchu",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_monster_chuchu",
+      "relation": "Deixa Geleca ígnea se derrotado com fogo"
+    },
+    {
+      "id": "botw_armorset_snowquill_set",
+      "relation": "Usa 3 e 5 por peça nos dois primeiros níveis"
+    },
+    {
+      "id": "botw_monster_naydra",
+      "relation": "O Conjunto de pluma nevada melhorado duas vezes protege da sua aura"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Converte a geleca comum em ígnea"
+    },
+    {
+      "id": "botw_mechanic_fire",
+      "relation": "Mecânica de fogo gerada pela explosão"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante vermelho"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "queima_inimigos",
+    "reage_gelo",
+    "reage_eletricidade"
+  ],
+  "verification_status": "verificado"
+}

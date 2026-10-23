@@ -1,0 +1,178 @@
+{
+  "id": "botw_material_molduga_guts",
+  "summary": "Órgão gigante e raro do Molduga, única cura para o marido de Malena na missão \"Medicinal Molduga\". Acrescenta 3:10 aos elixires e melhora o Conjunto radiante e as Botas de areia.",
+  "description": "As Vísceras de Molduga são um órgão gigante, difícil de conseguir, cujo uso o inventário diz estar \"envolto em mistério\". Só caem dos quatro Molduga que nadam sob a areia do Deserto Gerudo. Cozidas com bichos, acrescentam 3:10 à duração do elixir.\n\nO mistério se resolve na Cidade Gerudo: na missão secundária \"Medicinal Molduga\", Malena explica que o marido, Platt, contraiu uma doença rara cuja única cura são as vísceras de um Molduga — e nenhuma soldada se dispõe a caçar um. Entregá-las rende uma Rupia dourada, e a missão é uma das quatro exigidas para receber o Elmo do trovão de Riju. Nas Grandes Fadas, as vísceras são usadas no 3º nível do Conjunto radiante (2 por peça) e no 3º e 4º níveis das Botas de areia (2 e 4), num total de 12; na Tinturaria Kochi, entram no corante verde.",
+  "locations": [
+    "Deserto Gerudo, nos territórios dos quatro Molduga."
+  ],
+  "obtaining": [
+    "Derrotar um Molduga.",
+    "Os Molduga voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Missão secundária \"Medicinal Molduga\" (Malena, quartel da Cidade Gerudo): recompensa de uma Rupia dourada.",
+    "Melhoria de armadura: Conjunto radiante (2 por peça no 3º nível) e Botas de areia (2 no 3º nível e 4 no 4º) — 12 no total.",
+    "Elixires: cozidas com um bicho, acrescentam 3:10 à duração.",
+    "Corante verde na Tinturaria Kochi.",
+    "Venda: 110 rupias, ou 55 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não têm efeito culinário próprio; nos elixires, só prolongam a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar as Vísceras de Molduga no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear as Vísceras de Molduga largadas no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se as Vísceras de Molduga queimam, somem ou se transformam em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar as Vísceras de Molduga numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação das Vísceras de Molduga a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor as Vísceras de Molduga à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se as Vísceras de Molduga flutuam ou afundam quando largadas na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e as Vísceras de Molduga não são de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada às Vísceras de Molduga largadas no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinhas ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 110 rupias em lojas e comerciantes, ou 55 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "\"Medicinal Molduga\" e o Elmo do trovão",
+      "text": "Malena pede ajuda no quartel da Cidade Gerudo porque o marido, Platt, só pode ser curado com vísceras de Molduga. Ao recebê-las, ela dá a Link uma Rupia dourada. A missão é uma das quatro que precisam ser concluídas para obter o Elmo do trovão de Riju em \"The Thunder Helm\".",
+      "sources": [
+        "zw:Medicinal Molduga",
+        "zw"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Da missão ao Farosh",
+      "text": "O Elmo do trovão, desbloqueado também graças a esta missão, concede imunidade a raios — e o Zelda Wiki indica que é uma das formas de se aproximar de Farosh sem levar choques ao caçar suas partes.",
+      "sources": [
+        "zw:Medicinal Molduga",
+        "zw:Farosh"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Barulho atordoa o Molduga",
+      "text": "Os Molduga são sensíveis a sons: uma Bomba remota ou Flecha explosiva detonada perto deles os faz saltar da areia e cair atordoados, vulneráveis a ataques. Também é possível enfrentá-los surfando com escudo puxado por uma Morsareia. Há apenas quatro, todos no Deserto Gerudo: Toruma Dunes, Southern Oasis, North Dragon's Exile e Arbiter's Grounds.",
+      "sources": [
+        "zw:Molduga",
+        "zw:Medicinal Molduga"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Se a missão de Malena ainda não estiver concluída, guarde uma unidade antes de vender: ela rende a Rupia dourada e conta para o Elmo do trovão."
+  ],
+  "limitations": [
+    "Só há quatro Molduga no mundo.",
+    "Cozidas sem bichos, só produzem Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_molduga",
+      "relation": "Monstro que as deixa"
+    },
+    {
+      "id": "botw_material_molduga_fin",
+      "relation": "Outro material do Molduga"
+    },
+    {
+      "id": "botw_armor_thunder_helm",
+      "relation": "A missão de Malena é uma das quatro necessárias para obtê-lo"
+    },
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Usa 2 por peça no 3º nível"
+    },
+    {
+      "id": "botw_armor_sand_boots",
+      "relation": "Usa 2 e 4 vísceras no 3º e 4º níveis"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_molduga",
+      "relation": "Prêmio de Kilton por derrotar os quatro Molduga"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante verde"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-las sem bichos"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

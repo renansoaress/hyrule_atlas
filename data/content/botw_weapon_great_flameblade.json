@@ -1,0 +1,226 @@
+{
+  "id": "botw_weapon_great_flameblade",
+  "summary": "Grã-espada mágica forjada pelos Gorons na Montanha da Morte (ataque 34). Quando brilha em vermelho, solta chamas: acende fogueiras, mata inimigos de gelo com um golpe e dá Resistência ao frio.",
+  "description": "A Grã-Espada flamejante pertence ao Equipamento mágico, o grupo de armas com poder elemental. Segundo o jogo, foi forjada nas chamas da Montanha da Morte por ferreiros Goron de uma era antiga, e basta atacar quando a lâmina brilha em vermelho para expelir chamas. O golpe carregado de energia soma 10 de dano de fogo ao ataque base de 34.\n\nÉ uma das armas mais úteis fora do combate: um golpe transforma Madeira numa fogueira, e mantê-la equipada concede um nível de Resistência ao frio. Contra inimigos de gelo, como o Feitiçano glacial e o Lagalfos glacial, cada golpe flamejante os derrota de uma vez. A lâmina gasta energia a cada golpe elemental e se recarrega sozinha; enquanto estiver sem carga, golpeia apenas com dano físico. Apesar do elemento, é de metal: conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Toco Ancestral (Ancient Tree Stump).",
+    "Ruínas do Coliseu (Coliseum Ruins), apenas depois de acalmar as quatro Feras Divinas.",
+    "Docas do Castelo de Hyrule.",
+    "Esqueleto de Eldin (Eldin Great Skeleton).",
+    "Ilha do Labirinto de Lomei (Lomei Labyrinth Island).",
+    "O compendium lista a Pradaria de Hyrule e o Cânion de Eldin como locais comuns."
+  ],
+  "obtaining": [
+    "Recolher nos locais fixos acima; armas deixadas no mundo reaparecem após a Lua de sangue, desde que não estejam com Link.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Acender fogueiras com um golpe na Madeira, sem precisar de sílex.",
+    "Proteção contra o frio: equipada, dá um nível de Resistência ao frio.",
+    "Derrotar inimigos de gelo (Feitiçano glacial, Lagalfos glacial) com um golpe."
+  ],
+  "effects": [
+    "Golpes com a lâmina brilhando expelem fogo e somam 10 de dano elemental.",
+    "Um nível de Resistência ao frio enquanto equipada."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos, sem escudo. Quando a lâmina brilha em vermelho, o golpe solta uma rajada de fogo que incendeia o alvo; cada golpe elemental gasta energia, que se recupera depois de alguns instantes sem atacar. O ataque carregado é o giro que consome vigor.",
+      "conditions": [
+        "Lâmina brilhando (com energia)."
+      ],
+      "side_effects": [
+        "O fogo pode se espalhar pela grama seca em volta."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "dm",
+        "zw:Weapon",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "side_effects": [
+        "Perde-se uma arma elemental de recarga infinita."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante; é ela que gera as chamas.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Equipada, concede um nível de Resistência ao frio.",
+      "applications": [
+        "Atravessar áreas frias leves sem roupa ou elixir de frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos de gelo, como o Feitiçano glacial e o Lagalfos glacial, morrem com um só golpe flamejante.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Golpear uma Madeira no chão a transforma numa fogueira acesa, onde Link pode descansar.",
+      "produces": [
+        "botw_object_campfire"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quantas rajadas por carga",
+      "text": "Pelos parâmetros extraídos, a lâmina tem 2.000 unidades de energia e cada golpe elemental gasta 500 — quatro rajadas com a carga cheia. A recarga começa 60 quadros após o último ataque, a 20 unidades por quadro (cerca de 100 quadros para encher do zero). Trocar de arma recarrega a energia na hora.",
+      "sources": [
+        "dm",
+        "zw:Template:BotW Weapon Parameters"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +7 a +12, Durabilidade aumentada de +5 a +15 ou Acerto crítico; no nível dourado (amarelo): Ataque de +13 a +21, Durabilidade de +16 a +30 ou Lançamento longo (×1,5 a ×2).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A espada no toco da árvore",
+      "text": "Em Hyrule Warriors: Age of Imprisonment, o personagem Calamo diz que quase se queimou ao usar uma espada de fogo para se aquecer. O Zelda Wiki sugere que a fala seja uma referência à Grã-Espada flamejante cravada no Toco Ancestral.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Alternar para outra arma e voltar recarrega a lâmina instantaneamente, permitindo emendar rajadas de fogo."
+  ],
+  "limitations": [
+    "Sem energia, os golpes não soltam fogo até a lâmina recarregar.",
+    "Metálica: atrai raios em tempestades, apesar de ser uma arma de fogo.",
+    "Nas Ruínas do Coliseu só aparece depois das quatro Feras Divinas."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_flameblade",
+      "relation": "Versão de uma mão"
+    },
+    {
+      "id": "botw_weapon_great_frostblade",
+      "relation": "Grã-espada de gelo"
+    },
+    {
+      "id": "botw_weapon_great_thunderblade",
+      "relation": "Grã-espada elétrica"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Vira fogueira com um golpe"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Criada ao golpear Madeira"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Derrotado com um golpe"
+    },
+    {
+      "id": "botw_monster_ice_breath_lizalfos",
+      "relation": "Derrotado com um golpe"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "queima_inimigos",
+    "protege_frio",
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

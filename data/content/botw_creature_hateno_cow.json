@@ -1,0 +1,87 @@
+{
+  "id": "botw_creature_hateno_cow",
+  "summary": "Vaca leiteira de chifres enfeitados, criada a partir do Búfalo-d'água e originária do pasto de Hateno. Link não consegue feri-la nem matá-la, por isso ela não deixa nenhum item.",
+  "description": "A Vaca de Hateno é a versão domesticada do Búfalo-d'água, obtida por cruzamento seletivo: tem chifres menores e é muito mais dócil, portanto mais fácil de criar. Originou-se no pasto de Hateno (Hateno Pasture), na vila de Hateno, e hoje pasta em povoados de Necluda Oriental e dos Prados de Faron. É criada principalmente pelo Leite fresco, e quando sai para pastar tem os chifres decorados com cores vivas.\n\nNão há como caçá-la: é impossível para Link causar dano ou matar uma Vaca de Hateno, e por isso ela não tem itens a deixar. Também é um dos animais domésticos que fogem assustados ao ver um Stalcavalo.",
+  "locations": [
+    "Necluda Oriental e Prados de Faron (compendium), em povoados e pastos.",
+    "Pasto de Hateno (Hateno Pasture), na vila de Hateno, de onde a raça se originou."
+  ],
+  "obtaining": [
+    "Não pode ser obtida nem abatida; pode apenas ser fotografada para o compendium (entrada nº 17)."
+  ],
+  "uses": [
+    "Registrar sua foto no compendium.",
+    "É a fonte do Leite fresco nos vilarejos, segundo o compendium."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "O compendium a descreve como muito mais dócil que o búfalo. Ela foge de Stalcavalos, assustada com a aparência monstruosa deles.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw:Stalhorse"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "sem_efeito",
+      "result": "É impossível para Link ferir ou matar uma Vaca de Hateno; por isso ela não deixa itens.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "sem_efeito",
+      "result": "Pela mesma regra, flechas não conseguem feri-la nem matá-la.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes dizem que ela não pode ser ferida, mas não descrevem especificamente a reação ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem especificamente a reação à eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montada: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Invulnerável",
+      "text": "Diferente do Búfalo-d'água, do qual descende, a Vaca de Hateno não pode sofrer dano nem morrer pelas mãos de Link, e por isso não tem drops.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Chifres decorados",
+      "text": "Quando são levadas ao pasto, as vacas têm os chifres enfeitados com cores vivas.",
+      "sources": ["comp"]
+    }
+  ],
+  "limitations": [
+    "Não deixa itens: não pode ser ferida nem morta."
+  ],
+  "related": [
+    { "id": "botw_creature_water_buffalo", "relation": "Ancestral selvagem" },
+    { "id": "botw_material_fresh_milk", "relation": "Produto para o qual a vaca é criada" },
+    { "id": "botw_creature_white_goat", "relation": "Outro animal leiteiro doméstico, também invulnerável" },
+    { "id": "botw_creature_highland_sheep", "relation": "Divide os pastos com as vacas" },
+    { "id": "botw_creature_stalhorse", "relation": "A vaca foge dele" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

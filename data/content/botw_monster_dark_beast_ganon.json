@@ -1,0 +1,141 @@
+{
+  "id": "botw_monster_dark_beast_ganon",
+  "summary": "A forma final de Ganon, uma fera colossal coberta de Malícia, enfrentada na Pradaria de Hyrule com o Arco da Luz. Só os pontos de luz que Zelda abre na Malícia recebem dano; o golpe final vai no olho que surge no corpo.",
+  "description": "Ganon, Besta Sombria — \"o ódio e a Malícia encarnados\" — é o chefe final de Breath of the Wild. Depois de derrotado no Castelo de Hyrule, Ganon foge para a Pradaria de Hyrule, abandona a tentativa de reencarnar como Ganon, a Calamidade e, reunindo toda a sua Malícia, assume a forma de uma fera gigantesca de aspecto suíno. O compendium explica que esta seria a forma original de Ganon, mas com a consciência totalmente consumida pela Malícia, restando apenas o desejo de devastar. Zelda leva Link para junto do seu cavalo e lhe entrega o Arco da Luz, a única arma inquebrável capaz de enfrentá-lo.\n\nA Malícia que cobre o corpo torna inúteis os ataques comuns. Zelda então segura a Malícia e faz surgir sigilos de luz em pontos do corpo — ombros, costelas e coxas, dos dois lados —, pedindo que Link atire neles. Se Link demorar, ela perde as forças e os círculos somem até ela se recuperar. Enquanto isso, Ganon dispara da boca um feixe de energia sombria de 72 de dano básico, que também cria correntes ascendentes. Depois de seis acertos, surge um sigilo na barriga; atingido, ele expõe o núcleo do seu ser, um olho enorme, e o céu fica vermelho como numa Lua de sangue.\n\nPara alcançar o núcleo, Link usa as correntes ascendentes dos feixes ou o Vendaval de Revali e, no alto, dispara o golpe final com o Arco da Luz. Zelda emerge do núcleo, brilhando com luz sagrada, arranca de Ganon a forma física e, quando ele tenta atacá-la, o envolve numa esfera de luz dourada que o destrói. Além do Arco da Luz, também ferem a Besta as Flechas ancestrais, o Arco do crepúsculo, a Fúria de Urbosa e os feixes da Espada Mestra.",
+  "locations": [
+    "Pradaria de Hyrule, após a derrota de Ganon, a Calamidade no castelo."
+  ],
+  "obtaining": [
+    "Não deixa itens: vencê-lo encerra a história.",
+    "O Arco da Luz é entregue por Zelda no início desta luta."
+  ],
+  "uses": [
+    "Batalha final do jogo."
+  ],
+  "effects": [
+    "Feixe de energia sombria disparado da boca (72 de dano básico), que gera correntes ascendentes."
+  ],
+  "interactions": [
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Só os sigilos de luz abertos por Zelda e, no fim, o núcleo recebem dano das Flechas de luz do Arco da Luz. Flechas ancestrais e o Arco do crepúsculo também o ferem.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Bow of Light", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes comuns não atravessam a Malícia. Da Espada Mestra, só os feixes de espada são citados como capazes de feri-lo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "A Fúria de Urbosa está entre as formas capazes de causar dano a ele.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "Os feixes de energia sombria criam correntes ascendentes; elas, ou o Vendaval de Revali, permitem subir até a altura do núcleo exposto.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "A Besta não pode ser montada; quem acompanha Link na luta é o próprio cavalo dele, levado por Zelda ao campo."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito do fogo sobre a Besta."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ela."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre água nesta luta."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não citam explosões entre as formas de feri-lo."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nesta luta."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Os sigilos de luz aparecem nos ombros, costelas e coxas, dos dois lados; somem se Link demorar, até Zelda recuperar as forças. Com o núcleo exposto, o céu fica vermelho como numa Lua de sangue.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Formas alternativas de causar dano",
+      "text": "Embora a luta seja pensada para o Arco da Luz, a Besta também pode ser ferida pelo Arco do crepúsculo (amiibo de Zelda da série Super Smash Bros.), por Flechas ancestrais, pela Fúria de Urbosa e pelos feixes de espada da Espada Mestra.",
+      "sources": ["zw", "zw:Bow of Light", "zw:Ancient Arrow"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O Arco da Luz",
+      "text": "O arco que Zelda entrega tem 100 de ataque, dispara Flechas de luz infinitas e não perde durabilidade.",
+      "sources": ["zw:Bow of Light"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem Lua de sangue na luta final",
+      "text": "O jogo não permite que uma Lua de sangue programada aconteça enquanto Ganon, Besta Sombria está sendo enfrentado.",
+      "sources": ["zw:Blood Moon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A forma original de Ganon",
+      "text": "Zelda explica que Ganon desistiu de reencarnar e assumiu sua forma pura e enfurecida; o compendium acrescenta que, nesse estado, a consciência dele foi totalmente tomada pela Malícia.",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar o Vendaval de Revali para subir instantaneamente até o núcleo quando ele for exposto."
+  ],
+  "limitations": [
+    "Ataques fora dos sigilos de luz não causam dano.",
+    "Os sigilos desaparecem se Link demorar a atingi-los."
+  ],
+  "related": [
+    { "id": "botw_monster_calamity_ganon", "relation": "Forma anterior, enfrentada no castelo" },
+    { "id": "botw_bow_bow_of_light", "relation": "Arma entregue por Zelda para esta luta" },
+    { "id": "botw_arrow_light_arrow", "relation": "Munição do Arco da Luz" },
+    { "id": "botw_bow_twilight_bow", "relation": "Também fere a Besta" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Também fere a Besta" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Também fere a Besta" },
+    { "id": "botw_ability_revalis_gale", "relation": "Leva Link até o núcleo" },
+    { "id": "botw_weapon_master_sword", "relation": "Os feixes de espada também o ferem" },
+    { "id": "botw_creature_horse", "relation": "Zelda transporta Link para junto do cavalo dele" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

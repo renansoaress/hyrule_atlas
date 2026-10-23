@@ -1,0 +1,128 @@
+{
+  "id": "botw_creature_sanke_carp",
+  "summary": "Carpa de exposição com manchas coloridas que não existem na natureza, encontrada só ao pé da cachoeira Lantern Falls, em Vila Kakariko. Não tem efeito culinário, mas vale 20 rupias.",
+  "description": "A Carpa tricolor é uma subespécie da Carpa blindada que, segundo o jogo, foi criada até se tornar um peixe premiado: suas manchas coloridas não ocorrem na natureza. Ela só existe num lugar de Hyrule, o lago ao pé da cachoeira Lantern Falls, em Vila Kakariko (o compendium registra Necluda Ocidental como região).\n\nNa cozinha, o próprio texto do jogo avisa que ela não oferece efeitos especiais: crua recupera 1 coração e, na panela, só soma corações, servindo em qualquer receita de peixe ou de fruto do mar. Exposta ao fogo vira Carpa assada; congelada, Carpa congelada. O ponto forte é o preço: vale 20 rupias, o dobro da Carpa blindada da qual descende e o maior valor de venda entre os peixes.",
+  "locations": [
+    "Exclusivamente ao pé da cachoeira Lantern Falls, em Vila Kakariko (Necluda Ocidental)."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ela, viva ou morta."
+  ],
+  "uses": [
+    "Venda: 20 rupias, o maior valor entre os peixes.",
+    "Ingrediente sem efeito para receitas de peixe ou fruto do mar: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Frutos do mar à meunière etc."
+  ],
+  "effects": [
+    "Crua: recupera 1 coração.",
+    "Na panela: nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhada à mão enquanto Link nada, viva ou morta.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma carpa viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Não oferece efeito especial: na panela, apenas soma corações ao prato.",
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 20 rupias, valor bem acima das outras carpas (10).",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Carpa assada.",
+      "side_effects": ["A Carpa assada vale 15 rupias, menos que a carpa crua."],
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada perto do fogo, assa e vira Carpa assada.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima abrasador, vira Carpa assada.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congelada pelo gelo, vira Carpa congelada.",
+      "produces": ["botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gélido ou água gelada, vira Carpa congelada.",
+      "produces": ["botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre esta carpa."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Peixe de criação",
+      "text": "O jogo descreve a Carpa tricolor como uma Carpa blindada selvagem criada até virar um peixe de concurso. Segundo o Zelda Wiki, ela só é encontrada na base da cachoeira Lantern Falls, em Vila Kakariko.",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Melhor vendida crua",
+      "text": "Crua, rende 20 rupias; assada, vira uma Carpa assada comum, que vale 15. Para lucro, venda-a sem cozinhar.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Recolher as carpas do lago da cachoeira de Kakariko é uma fonte de rupias rápida no início do jogo, já que cada uma vale o dobro de uma carpa comum."
+  ],
+  "limitations": [
+    "Nenhum efeito culinário, nem mesmo o de defesa da Carpa blindada.",
+    "Só existe num único lago de Vila Kakariko."
+  ],
+  "related": [
+    { "id": "botw_creature_armored_carp", "relation": "Espécie da qual foi criada" },
+    { "id": "botw_food_roasted_carp", "relation": "Resultado de expô-la ao fogo" },
+    { "id": "botw_food_frozen_carp", "relation": "Resultado de congelá-la" },
+    { "id": "botw_creature_hyrule_bass", "relation": "Outro peixe sem efeito culinário" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

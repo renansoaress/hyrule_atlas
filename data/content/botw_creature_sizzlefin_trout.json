@@ -1,0 +1,143 @@
+{
+  "id": "botw_creature_sizzlefin_trout",
+  "summary": "Truta vermelha das fontes termais de Eldin, com um órgão que armazena calor. Cozida, dá Resistência ao frio. É vendida no Domínio Zora e pelo mercador Stamm.",
+  "description": "A Truta rescaldada é uma truta vermelha que prefere águas quentes e nada nas fontes termais do Cânion de Eldin e da Cordilheira de Eldin. O jogo explica que ela tem um órgão especial só para armazenar calor; cozida, essa característica vira Resistência ao frio temporária, útil no Monte Lanayru, nas Cordilheiras de Hebra e nas Montanhas Gerudo. Também pode ser comprada de Cleff, na loja Coral Reef do Domínio Zora, e do mercador Stamm.\n\nCrua, recupera 1 coração. Além das receitas de peixe e fruto do mar, é um dos ingredientes picantes que podem ser somados a um Elixir picante para que ele também cure. Exposta ao fogo vira Truta assada; congelada, Truta congelada.",
+  "locations": [
+    "Fontes termais do Cânion de Eldin e da Cordilheira de Eldin."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ela, viva ou morta.",
+    "Comprar de Cleff na loja Coral Reef (Domínio Zora) ou do mercador Stamm, por 24 rupias cada (2 em estoque, que se renova)."
+  ],
+  "uses": [
+    "Pratos de Resistência ao frio: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Frutos do mar à meunière e as demais receitas de peixe ou fruto do mar.",
+    "Ingrediente picante de um Elixir picante, que passa a curar além de proteger do frio.",
+    "Venda: 6 rupias."
+  ],
+  "effects": [
+    "Crua: recupera 1 coração.",
+    "Na panela: Resistência ao frio temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhada à mão enquanto Link nada, viva ou morta.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma truta viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Truta rescaldada dão Resistência ao frio temporária.",
+      "applications": ["Subir montanhas nevadas sem roupas de frio."],
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somada a um Elixir picante (Borboleta estival ou Libélula cálida + parte de monstro), faz o elixir também recuperar corações.",
+      "produces": ["botw_elixir_spicy_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Spicy Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 6 rupias; custa 24 na Coral Reef e com Stamm.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Truta assada, sem o efeito de Resistência ao frio.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada perto do fogo, assa e vira Truta assada.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima abrasador, vira Truta assada.",
+      "produces": ["botw_food_roasted_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resfriada com gelo, vira Truta congelada — que dá Resistência ao calor, o contrário do efeito original.",
+      "produces": ["botw_food_frozen_trout"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gélido ou água gelada, vira Truta congelada.",
+      "side_effects": ["Cuidado ao largá-la na neve: a proteção contra o frio se perde e o item resultante protege do calor."],
+      "produces": ["botw_food_frozen_trout"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre esta truta."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um peixe de fonte termal",
+      "text": "Enquanto quase todos os peixes vivem em rios, lagos ou no mar, a Truta rescaldada nada nas fontes termais de Eldin, e o texto do jogo atribui a ela um órgão dedicado a armazenar calor.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Congelada, inverte o efeito",
+      "text": "Todo alimento congelado ganha Resistência ao calor de nível baixo. Assim, uma Truta rescaldada congelada deixa de proteger do frio e passa a proteger do calor.",
+      "sources": ["zw:Food", "zw:Frozen Food"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar com outros ingredientes picantes (Pimenta de fogo, Flamelo, Erva geleira) aumenta o nível ou a duração da Resistência ao frio."
+  ],
+  "limitations": [
+    "Assada ou congelada, perde a Resistência ao frio.",
+    "Misturada a ingredientes com outro efeito, o prato fica só com o efeito predominante."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_trout", "relation": "Resultado de expô-la ao fogo" },
+    { "id": "botw_food_frozen_trout", "relation": "Resultado de congelá-la" },
+    { "id": "botw_elixir_spicy_elixir", "relation": "Pode ser somada como ingrediente picante" },
+    { "id": "botw_creature_chillfin_trout", "relation": "Truta de efeito oposto (calor)" },
+    { "id": "botw_creature_summerwing_butterfly", "relation": "Bicho base do Elixir picante" },
+    { "id": "botw_creature_warm_darner", "relation": "Bicho base do Elixir picante" },
+    { "id": "botw_material_spicy_pepper", "relation": "Outro ingrediente de Resistência ao frio" }
+  ],
+  "capabilities": ["cura", "protege_frio", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

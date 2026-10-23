@@ -1,0 +1,62 @@
+{
+  "Red Chuchu Jelly": {
+    "ptbr": "Geleca ígnea",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "A fonte grafou \"Gelecca Ígnea\"; corrigido o erro de digitação para manter o padrão das demais gelecas (\"Geleca Gélida\", \"Geleca Elétrica\")."
+  },
+  "Hylian Rice": {
+    "ptbr": "Arroz hyliano",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "A fonte grafou \"Arrox Hyliano\"; corrigido o erro de digitação evidente."
+  },
+  "Vicious Sickle": {
+    "ptbr": "Foice brutal",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "A fonte lista o nome em inglês como \"Vicous Sickle\" (erro de digitação)."
+  },
+  "West Necluda": {
+    "ptbr": "Necluda Ocidental",
+    "status": "nao_oficial",
+    "source": "Tradução do Hyrule Atlas",
+    "note": "A Coelho News lista \"West Necluda → Necluda Oriental\", o mesmo nome de \"East Necluda\" — erro evidente na transcrição. Usado \"Necluda Ocidental\" até confirmação."
+  },
+  "Bow of Light": {
+    "ptbr": "Arco da Luz",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "Mantida a inicial maiúscula de \"Luz\" por se tratar de nome próprio de arma lendária."
+  },
+  "Razorshroom": {
+    "ptbr": "Ferromelo",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "Não confirmado em fonte primária. O radical \"ferro\" combinaria mais com o Ironshroom (que a fonte não lista); possível troca na transcrição."
+  },
+  "amiibo (Rune)": {
+    "ptbr": "amiibo",
+    "status": "oficial",
+    "source": "Zelda Wiki — Nomenclature (ptB)",
+    "note": "Nome da runa no jogo; a marca amiibo é grafada em minúsculas."
+  },
+  "Moblin": {
+    "ptbr": "Moblin",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "A espécie não aparece isolada na lista, mas suas partes são \"Chifre de Moblin\", \"Presa de Moblin\" e \"Vísceras de Moblin\"."
+  },
+  "Cool Safflina": {
+    "ptbr": "Erva fogueira",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "Nome da lista oficial transcrita pela Coelho News. Atenção: a Cool Safflina (protege do calor) recebeu o nome \"Erva fogueira\" e a Warm Safflina (protege do frio) \"Erva geleira\"; o padrão de outros nomes (Glacimelo protege do calor, Flamelo do frio) sugere possível troca na transcrição. Não confirmado em fonte primária."
+  },
+  "Warm Safflina": {
+    "ptbr": "Erva geleira",
+    "status": "oficial_secundaria",
+    "source": "Coelho News (transcrição da localização oficial PT-BR)",
+    "note": "Nome da lista oficial transcrita pela Coelho News. Atenção: a Cool Safflina (protege do calor) recebeu o nome \"Erva fogueira\" e a Warm Safflina (protege do frio) \"Erva geleira\"; o padrão de outros nomes (Glacimelo protege do calor, Flamelo do frio) sugere possível troca na transcrição. Não confirmado em fonte primária."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "botw_food_sauteed_peppers",
+  "summary": "Prato feito exclusivamente de Pimentas de fogo: sempre dá Resistência ao frio, com 2:30 e 1 coração por pimenta. Qualquer outro ingrediente muda a receita.",
+  "description": "As Pimentas salteadas exigem apenas Pimentas de fogo e mais nada; o inventário diz que o calor do cozimento quebra a ardência e deixa a pimenta adocicada. Como a pimenta é \"picante\", não existe versão comum: o prato é sempre a versão apimentada, com Resistência ao frio. Pela tabela de receitas do prato, cada pimenta soma 1 coração de cura e 2:30 de resistência, de 2:30 com uma até 12:30 com cinco.\n\nA tabela de lógica de receitas do Zelda Wiki observa que esta receita só vale se a pimenta for o único ingrediente. Qualquer acréscimo leva a outro prato: carne forma Bife apimentado, frutos do mar formam Frutos do mar apimentados, outra fruta forma Compota de frutas (a pimenta conta como fruta) e um Ovo forma Omelete.",
+  "obtaining": [
+    "Cozinhar numa Panela de uma a cinco Pimentas de fogo, sem nenhum outro ingrediente."
+  ],
+  "uses": [
+    "Resistência ao frio com um ingrediente barato e comum.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Resistência ao frio: 2:30 por pimenta (até 12:30 com cinco).",
+    "Recupera 1 coração por pimenta (até 5 corações)."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Concede Resistência ao frio de nível baixo e recupera corações conforme o número de pimentas.",
+      "conditions": [
+        "Com uma pimenta: 2:30 e 1 coração; com cinco: 12:30 e 5 corações."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "qualquer outro ingrediente",
+      "status": "confirmado",
+      "result": "A receita exige que a pimenta seja o único ingrediente; com carne, frutos do mar, outra fruta ou ovo, o resultado é Bife apimentado, Frutos do mar apimentados, Compota de frutas ou Omelete.",
+      "produces": [
+        "botw_food_pepper_steak",
+        "botw_food_pepper_seafood",
+        "botw_food_simmered_fruit",
+        "botw_food_omelet"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw"
+      ],
+      "side_effects": [
+        "Pela tabela do prato: 10 rupias com uma ou duas pimentas, 20 com três, 30 com quatro e 50 com cinco."
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sem versão comum",
+      "text": "Como o único ingrediente possível já é picante, as Pimentas salteadas não têm versão sem efeito — ao contrário do Bife apimentado ou dos Frutos do mar apimentados, que podem perder o efeito com um ingrediente contrário.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só oferece Resistência ao frio.",
+    "Qualquer outro ingrediente muda a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Único ingrediente"
+    },
+    {
+      "id": "botw_food_charred_pepper",
+      "relation": "Pimenta tostada na fogueira, sem panela"
+    },
+    {
+      "id": "botw_food_pepper_steak",
+      "relation": "Pimenta com carne"
+    },
+    {
+      "id": "botw_food_pepper_seafood",
+      "relation": "Pimenta com frutos do mar"
+    },
+    {
+      "id": "botw_elixir_spicy_elixir",
+      "relation": "Elixir com o mesmo efeito de Resistência ao frio"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

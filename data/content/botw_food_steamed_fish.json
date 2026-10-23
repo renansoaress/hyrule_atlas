@@ -1,0 +1,102 @@
+{
+  "id": "botw_food_steamed_fish",
+  "summary": "Peixe fresco embrulhado em folhas aromáticas e cozido: fruto do mar mais um legume, erva ou flor. Combinar peixe e planta do mesmo efeito reforça a variante.",
+  "description": "O Peixe no vapor é feito com um fruto do mar e um legume, erva ou flor; o inventário o chama de prato refinado, de peixe fresco embrulhado em verduras perfumadas. A versão comum sai com Robalo hyliano ou Carpa tricolor e Capim hyruliano, todos sem efeito, ou com ingredientes de efeitos contraditórios. O interessante é que tanto o peixe quanto a planta trazem efeito, e os dois podem se reforçar: Robalo nutritivo ou Salmão nutritivo com Rabanete nutritivo (Corações extras), Truta rescaldada com Erva geleira (Resistência ao frio), Truta voltaica com Erva relampagueira (Resistência a choques), Carpa ou Pargo valente com Protechofra (Ataque aumentado), Carpa ou Pargo blindado com Amaranto blindado ou Abóbora robusta (Defesa aumentada), Truta discreta com Beladona azul ou Princesa plácida (Furtividade aumentada) e Truta glacial com Erva fogueira (Resistência ao calor). Robalo enérgico dá Recuperação de vigor; Cenoura tenaz, Vigor extra; Cenoura veloz e Violeta veloz, Velocidade aumentada.\n\nUse um só tipo de fruto do mar: pela tabela de prioridades do Zelda Wiki, dois frutos do mar diferentes formam um espetinho (de peixe ou de frutos do mar), testado antes. Carne junto leva a uma fritada, e uma Pimenta de fogo, a Frutos do mar apimentados.",
+  "obtaining": [
+    "Cozinhar numa Panela um fruto do mar e um legume, erva ou flor, com até três ingredientes extras."
+  ],
+  "uses": [
+    "Combinar peixe e planta do mesmo efeito para efeitos mais fortes.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Efeito definido pelo peixe e pela planta: Corações extras, Recuperação de vigor, Vigor extra, Velocidade aumentada, Resistência ao frio, Resistência a choques, Ataque aumentado, Defesa aumentada, Furtividade aumentada ou Resistência ao calor."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica o efeito comum ao peixe e à planta usados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "segundo fruto do mar, carne ou pimenta",
+      "status": "confirmado",
+      "result": "Um segundo tipo de fruto do mar leva a um espetinho; carne, a uma fritada de carne e frutos do mar; Pimenta de fogo, a Frutos do mar apimentados.",
+      "produces": [
+        "botw_food_fish_skewer",
+        "botw_food_seafood_skewer",
+        "botw_food_meat_and_seafood_fry",
+        "botw_food_pepper_seafood"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Peixe e planta do mesmo efeito",
+      "text": "Ingredientes diferentes com o mesmo efeito temporizado prolongam o efeito e podem elevar seu nível. No Peixe no vapor, isso é fácil: Carpa valente com Protechofra, por exemplo, somam dois ingredientes \"valentes\" diferentes num prato de dois espaços obrigatórios.",
+      "sources": [
+        "zw:Food",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um tipo de fruto do mar.",
+    "Efeitos diferentes entre peixe e planta se anulam."
+  ],
+  "related": [
+    {
+      "id": "botw_material_hyrule_herb",
+      "relation": "Planta sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_creature_hyrule_bass",
+      "relation": "Peixe sem efeito para a versão comum"
+    },
+    {
+      "id": "botw_food_steamed_meat",
+      "relation": "Mesmo preparo com carne"
+    },
+    {
+      "id": "botw_food_steamed_mushrooms",
+      "relation": "Mesmo preparo com cogumelo"
+    },
+    {
+      "id": "botw_food_steamed_fruit",
+      "relation": "Mesmo preparo com fruta"
+    },
+    {
+      "id": "botw_food_fish_skewer",
+      "relation": "Resultado com dois peixes diferentes"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,206 @@
+{
+  "id": "botw_monster_fireblight_ganon",
+  "summary": "Ira de Ganon que tomou Vah Rudania e matou Daruk. Luta com espadão e magia de fogo, é fraca contra gelo e, na segunda fase, só uma Bomba remota sugada pela esfera de fogo a atordoa. Deixa a Proteção de Daruk.",
+  "description": "A Ira ígnea de Ganon é a Ira de Ganon (Blight Ganon) que atacou a Fera Divina Vah Rudania e causou a morte do Campeão Daruk. O compendium diz que ela ataca com um espadão e magia de fogo, e o Zelda Wiki acrescenta que é particularmente fraca contra gelo. Quando Link tenta ativar o terminal principal, uma poça de Malícia gira e dá forma à Ira; se a Fera não for libertada, ela aparece no centro do Castelo de Hyrule antes de Ganon, a Calamidade.\n\nNa primeira fase, se Link mantém distância, ela atira várias pequenas bolas de fogo; de perto, tenta acertá-lo com a espada — e uma Esquiva perfeita nesse golpe abre um Frenesi. Depois de golpes suficientes, ela fica atordoada. Com metade da vida, teletransporta-se para junto do terminal principal e invoca uma espada e um escudo em chamas.\n\nNa segunda fase, a espada fica alaranjada e uma esfera de fogo, parecida com a Proteção de Daruk, envolve a Ira e bloqueia todos os ataques, exceto uma Bomba remota. O truque é jogar a bomba quando ela estiver criando uma corrente em espiral que puxa o ar para si: a bomba é sugada, explode e a deixa atordoada por um tempo. Ao se levantar, ela volta a lutar como na primeira fase. Derrotada, deixa um Contêiner de coração; Daruk aparece, pede desculpas por não tê-la vencido sozinho e entrega a Proteção de Daruk.",
+  "locations": [
+    "Interior da Fera Divina Vah Rudania, ao tentar ativar o terminal principal.",
+    "Centro do Castelo de Hyrule (Sanctum), apenas se Vah Rudania não tiver sido libertada.",
+    "Reino ilusório de Vah Rudania, na missão \"EX Champion Daruk's Song\" (DLC 2)."
+  ],
+  "obtaining": [
+    "Derrotá-la rende um Contêiner de coração; Daruk então concede a Proteção de Daruk.",
+    "Não volta com a Lua de sangue; só pode ser reenfrentada no Reino ilusório do DLC 2."
+  ],
+  "uses": [
+    "Libertar a Fera Divina Vah Rudania, que depois ajuda a enfraquecer Ganon, a Calamidade.",
+    "Obter um Contêiner de coração e a Proteção de Daruk."
+  ],
+  "effects": [
+    "Bolas de fogo à distância, golpes de espadão e, na segunda fase, espada e escudo em chamas com uma esfera de fogo protetora."
+  ],
+  "interactions": [
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "É particularmente fraca contra ataques de gelo.",
+      "applications": [
+        "Levar Flechas congelantes ou armas de gelo para a luta."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Na segunda fase, só a Bomba remota atravessa a esfera de fogo — e apenas quando a Ira está criando a corrente em espiral que puxa o ar para si. A explosão a deixa atordoada.",
+      "conditions": [
+        "Lançar a bomba durante a sucção em espiral e detoná-la junto dela."
+      ],
+      "kind": "tecnica_avancada",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Na primeira fase recebe golpes normalmente e fica atordoada depois de vários acertos. A esfera de fogo da segunda fase bloqueia todos os ataques, exceto a Bomba remota. Dentro da Fera Divina, a Espada Mestra tem o poder dobrado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Master Sword"
+      ]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Uma Esquiva perfeita no golpe de espada dela abre um Frenesi.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Usa fogo o tempo todo: bolas de fogo, espada e escudo flamejantes e uma esfera de fogo protetora.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "A página não detalha o efeito de flechas comuns; apenas a fraqueza a gelo é citada."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ela."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre água nesta luta."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Na segunda fase, a explosão de uma Bomba remota sugada pela espiral é o único ataque que atravessa a esfera de fogo. Outras explosões não são descritas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ela."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nesta luta."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Nasce de uma poça de Malícia junto ao terminal principal e, na metade da luta, teletransporta-se para perto dele para invocar as armas em chamas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "A bomba que entra na esfera",
+      "text": "A esfera de fogo da segunda fase imita a Proteção de Daruk e bloqueia tudo, exceto uma Bomba remota lançada enquanto a Ira suga o ar em espiral. Sem a Bomba remota, a segunda fase não tem abertura descrita.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "A vida depende da ordem",
+      "text": "A primeira Ira enfrentada numa Fera Divina tem 800 de vida, a segunda 1.200, a terceira 1.600 e a quarta 2.000. No Reino ilusório do DLC 2 todas têm 1.500, e no Sanctum do castelo sempre 2.000.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O aviso de Daruk",
+      "text": "Antes da luta, Daruk avisa que aquela coisa feia é obra de Ganon e que ela o venceu há 100 anos. Depois da vitória, desculpa-se por não ter conseguido derrotá-la sozinho.",
+      "sources": [
+        "zw:Phantom Ganon",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Contêiner esquecido",
+      "text": "Se Link não pegar o Contêiner de coração e ativar o terminal principal, o contêiner aparece ao lado dele depois que ele é transportado para fora da Fera Divina.",
+      "sources": [
+        "zw:Divine Beast"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar a Bomba remota (de preferência já pronta) para o instante da sucção em espiral na segunda fase.",
+    "Usar Esquiva perfeita contra a espada na primeira fase para encaixar Frenesis."
+  ],
+  "limitations": [
+    "Na segunda fase, a esfera de fogo bloqueia qualquer ataque que não seja a Bomba remota sugada."
+  ],
+  "related": [
+    {
+      "id": "botw_ability_daruks_protection",
+      "relation": "Dom recebido após a vitória; a esfera dela o imita"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Única forma de romper a esfera de fogo"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Ataque de gelo, ao qual ela é fraca"
+    },
+    {
+      "id": "botw_mechanic_flurry_rush",
+      "relation": "Aberto após Esquiva perfeita contra a espada"
+    },
+    {
+      "id": "botw_monster_sentry",
+      "relation": "Guardiões lançados por Vah Rudania na subida"
+    },
+    {
+      "id": "botw_monster_windblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_thunderblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_waterblight_ganon",
+      "relation": "Outra Ira de Ganon"
+    },
+    {
+      "id": "botw_monster_calamity_ganon",
+      "relation": "Criador das Iras"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "reage_gelo",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

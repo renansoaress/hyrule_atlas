@@ -1,0 +1,247 @@
+{
+  "id": "botw_material_octo_balloon",
+  "summary": "Órgão inflável de Octoroc que, preso a um objeto, o faz flutuar. Ergue barris e lajes não metálicas, resolve quebra-cabeças e é a chave da missão \"Balloon Flight\".",
+  "description": "O Balão de Octoroc é um órgão inflável dos Octorocs com grande poder de sustentação. Diferentemente das outras partes de monstro, tem uma função no mundo: o inventário instrui a segurá-lo nas mãos e encostá-lo num objeto para prendê-lo, fazendo esse objeto flutuar. O Zelda Wiki cita barris e lajes de pedra como exemplos e destaca o balão como um jeito de erguer objetos não metálicos — justamente os que Magnétis não consegue mover. É esse mecanismo que os Octorocs celestes do Modo Mestre usam para sustentar plataformas de madeira no ar, e é a mesma bolsa de ar que faz os Octorocs aquáticos inflarem e flutuarem quando chove.\n\nNa missão secundária \"Balloon Flight\", a menina Shamae, do Estábulo da Floresta (Woodland Stable), sonha em ver balões subindo ao céu e pede que Link faça um barril flutuar: são necessários pelo menos dois balões. A recompensa é um Fragmento de estrela. Fora disso, o balão é uma parte de monstro barata: acrescenta 1:10 aos elixires, vale 5 rupias e só 1 Mon, é usado no 2º nível das Botas de neve e entra no corante roxo da Tinturaria Kochi.",
+  "locations": [
+    "Dropado por Octorocs aquáticos, da floresta, rochosos, da neve e do tesouro.",
+    "À venda com Beedle nos estábulos Dueling Peaks e Highland, e no barco mercante da Vila Lurelin."
+  ],
+  "obtaining": [
+    "Derrotar Octorocs (exceto os celestes do Modo Mestre, que não deixam materiais).",
+    "Comprar por 20 rupias com Beedle (Dueling Peaks Stable e Highland Stable) ou no barco mercante (Merchant Boat) da Vila Lurelin; o estoque se renova."
+  ],
+  "uses": [
+    "Fazer objetos flutuarem: barris, lajes de pedra e outros objetos não metálicos.",
+    "Missão secundária \"Balloon Flight\" (Shamae, Estábulo da Floresta): pelo menos dois balões presos a um barril.",
+    "Elixires: cozido com um bicho, acrescenta 1:10 à duração.",
+    "Melhoria de armadura: 5 no 2º nível das Botas de neve.",
+    "Corante roxo na Tinturaria Kochi.",
+    "Venda: 5 rupias, ou 1 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Preso a um objeto, faz esse objeto flutuar.",
+    "Na culinária, não tem efeito próprio; só prolonga a duração de elixires."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurado a partir da algibeira e colocado sobre um objeto, ao qual se prende. As fontes não descrevem o que acontece com um balão largado sozinho, sem objeto.",
+      "conditions": [
+        "Selecionar o balão na algibeira, segurá-lo e encostá-lo no objeto desejado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Preso a um objeto, o balão gera sustentação e o faz flutuar. É a função descrita no próprio inventário: \"prenda-o a itens que você quer ver flutuar\".",
+      "conditions": [
+        "Segurar o balão e encostá-lo no objeto para prendê-lo.",
+        "Um único balão pode não bastar: um barril precisa de pelo menos dois para começar a subir."
+      ],
+      "applications": [
+        "Erguer barris e lajes de pedra para resolver quebra-cabeças simples.",
+        "Levantar objetos não metálicos, que Magnétis não consegue mover.",
+        "Cumprir a missão secundária \"Balloon Flight\", de Shamae."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "jogo",
+        "zw",
+        "zw:Balloon Flight"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o balão estoura ou se solta do objeto ao ser golpeado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Balão de Octoroc queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Balão de Octoroc numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Balão de Octoroc a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Balão de Octoroc à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Balão de Octoroc flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Balão de Octoroc não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Balão de Octoroc largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 5 rupias em lojas e comerciantes, ou 1 Mon na loja de Kilton (Fang and Bone); Beedle e o barco mercante de Lurelin o vendem por 20 rupias.",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    },
+    {
+      "action": "cenario",
+      "variant": "objetos de metal",
+      "status": "desconhecido",
+      "result": "O Zelda Wiki destaca o balão como forma de erguer objetos não metálicos, em contraste com Magnétis, mas não diz se ele se prende ou consegue erguer objetos de metal.",
+      "sources": [
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "\"Balloon Flight\": dois balões no barril",
+      "text": "Shamae, do Estábulo da Floresta, pede que Link encha o céu de balões. Basta prender pelo menos dois Balões de Octoroc ao barril ao lado dela para que ele comece a subir; ela recompensa Link com um Fragmento de estrela, que diz ser \"um tesouro do céu\".",
+      "sources": [
+        "zw:Balloon Flight",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Referências a Skyward Sword",
+      "text": "A missão de Shamae homenageia Skyward Sword: ela acredita que pessoas viviam no céu (uma alusão a Skyloft), sonha em montar um pássaro gigante (os Loftwings) e dá como recompensa um Fragmento de estrela, que lembra os Gratitude Crystals daquele jogo.",
+      "sources": [
+        "zw:Balloon Flight"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O balão dentro do Octoroc",
+      "text": "O compendium explica que a queda de pressão atmosférica durante a chuva faz inflar uma bolsa de ar dos Octorocs aquáticos, que passam a flutuar acima da água — o Zelda Wiki identifica essa bolsa como o Balão de Octoroc interno.",
+      "sources": [
+        "zw:Water Octorok"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Plataformas voadoras do Modo Mestre",
+      "text": "No Modo Mestre, Octorocs celestes usam a mesma propriedade para manter no ar plataformas de madeira com baús e inimigos. Eles caem com uma única flecha, mas não deixam materiais — nem balões.",
+      "sources": [
+        "zw",
+        "zw:Sky Octorok"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O menor valor em Mon",
+      "text": "Kilton paga apenas 1 Mon por balão, o menor valor em Mon de toda a tabela de partes de monstro.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Quando um objeto de madeira ou pedra está fora de alcance e não responde a Magnétis, prender balões a ele pode ser a alternativa.",
+    "Para a missão de Shamae, leve ao menos dois balões; se não houver Octorocs por perto, Beedle os vende nos estábulos Dueling Peaks e Highland."
+  ],
+  "limitations": [
+    "Um único balão não basta para erguer um barril; as fontes não detalham quantos são necessários para outros objetos.",
+    "As fontes não confirmam se ele se prende a objetos de metal.",
+    "Vale só 1 Mon com Kilton.",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_water_octorok",
+      "relation": "Infla o balão interno na chuva e o deixa ao ser derrotado"
+    },
+    {
+      "id": "botw_monster_sky_octorok_mm",
+      "relation": "Usa a mesma propriedade para erguer plataformas"
+    },
+    {
+      "id": "botw_object_barrel",
+      "relation": "Objeto erguido na missão \"Balloon Flight\""
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Recompensa da missão \"Balloon Flight\""
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Alternativa para erguer objetos de metal"
+    },
+    {
+      "id": "botw_armor_snow_boots",
+      "relation": "Usa 5 balões no 2º nível"
+    },
+    {
+      "id": "botw_material_octorok_tentacle",
+      "relation": "Outra parte de Octoroc das Botas de neve"
+    },
+    {
+      "id": "botw_material_octorok_eyeball",
+      "relation": "Outra parte de Octoroc das Botas de neve"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante roxo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [
+    "faz_flutuar",
+    "item_de_missao",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

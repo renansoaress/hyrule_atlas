@@ -1,0 +1,66 @@
+{
+  "id": "botw_armorset_fierce_deity_set",
+  "summary": "Conjunto amiibo inspirado na Deidade Feroz de Majora's Mask, obtido com o amiibo de Link de Majora's Mask. Cada peça dá Ataque aumentado; em ★★ os ataques carregados gastam metade do vigor.",
+  "description": "O Conjunto da Deidade Feroz é formado pela Máscara da Deidade Feroz, pela Armadura da Deidade Feroz e pelas Botas da Deidade Feroz. Ele reproduz a armadura usada por Link na forma de Deidade Feroz em The Legend of Zelda: Majora's Mask e só pode ser obtido com a runa amiibo, escaneando o amiibo de Link da série Majora's Mask.\n\nCada leitura do amiibo faz surgir um baú com pequena chance de conter uma das peças. Como cada amiibo só pode ser usado uma vez por dia real, montar o conjunto leva no mínimo três dias reais. Cada peça concede um nível de Ataque aumentado; com as três, o efeito chega ao nível 3 (+50% de ataque), o mesmo resultado do Conjunto bárbaro. Com todas as peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ganha a economia de vigor no ataque carregado (Charge Atk. Stamina Up), que corta pela metade o vigor desses golpes.\n\nAs melhorias pedem partes de Rinox, partes de dragão e, no último nível, Vísceras de Centaleão. O conjunto não pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Não aparece no mapa: surge em baús criados pela runa amiibo."
+  ],
+  "obtaining": [
+    "Escanear o amiibo de Link (Majora's Mask) com a runa amiibo; cada leitura gera um baú com pequena chance de conter uma peça.",
+    "Limite de uma leitura por dia real para cada amiibo: o conjunto exige pelo menos três dias reais."
+  ],
+  "uses": [
+    "Aumentar o dano de todas as armas em até 50%.",
+    "Economizar vigor em golpes carregados quando o conjunto está em ★★."
+  ],
+  "effects": [
+    "Cada peça: Ataque aumentado (um nível por peça; o conjunto completo chega ao nível 3).",
+    "Bônus de conjunto (três peças em ★★): ataques carregados consomem 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Ataque aumentado de nível 3; em ★★ ativam a redução de 50% no vigor dos ataques carregados.",
+      "conditions": [
+        "Máscara, armadura e botas da Deidade Feroz vestidas juntas.",
+        "Para o bônus de vigor: todas as peças com ★★."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Referência a Majora's Mask",
+      "text": "O visual reproduz a armadura usada por Link na forma de Deidade Feroz (Fierce Deity Link) em Majora's Mask, e o conjunto só é liberado pelo amiibo de Link dessa série.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mesmo bônus do Conjunto bárbaro",
+      "text": "A economia de vigor no ataque carregado é compartilhada pelo Conjunto bárbaro (★★), pelo Conjunto da Deidade Feroz (★★) e pelo Conjunto da guarda real, este último sem precisar de melhorias.",
+      "sources": ["zw:Set Bonus"]
+    }
+  ],
+  "advanced_uses": [
+    "Para quem tem o amiibo, é uma alternativa ao Conjunto bárbaro sem precisar enfrentar os labirintos de Lomei."
+  ],
+  "limitations": [
+    "Depende do amiibo de Link (Majora's Mask) e da sorte nos baús, com limite diário de leitura.",
+    "Não pode ser tingido.",
+    "As melhorias consomem partes dos três dragões e Vísceras de Rinox e de Centaleão."
+  ],
+  "related": [
+    { "id": "botw_armor_fierce_deity_mask", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_fierce_deity_armor", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_fierce_deity_boots", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para obter as peças" },
+    { "id": "botw_armorset_barbarian_set", "relation": "Conjunto com os mesmos efeitos" },
+    { "id": "botw_material_hinox_toenail", "relation": "Material da primeira melhoria" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" }
+  ],
+  "capabilities": ["ataque"],
+  "verification_status": "verificado"
+}

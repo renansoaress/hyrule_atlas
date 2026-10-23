@@ -1,0 +1,95 @@
+{
+  "id": "botw_ability_daruks_protection",
+  "summary": "Bênção de Daruk que, segurando ZL, ergue uma barreira vermelha que anula qualquer ataque e rebate até raios de Guardião, mesmo sem escudo. 3 usos por recarga de 18 min reais (6 min na versão +).",
+  "description": "A Proteção de Daruk é o poder deixado pelo espírito do Campeão goron. Link a recebe depois de derrotar a Ira ígnea de Ganon e acalmar a Fera Divina Vah Rudania. Enquanto Link segura ZL em postura de defesa, a bênção cria automaticamente uma barreira de cristal vermelho ao redor dele, que o protege de todos os ataques e danos e ainda rebate certos golpes, como os raios dos Guardiões. Funciona até sem escudo equipado.\n\nSão três ativações antes da recarga, que leva 18 minutos em tempo real (6 minutos dentro do Castelo de Hyrule). Se Link fizer uma Defesa perfeita com o escudo enquanto a barreira está disponível, a carga não é gasta. A bênção pode ser desativada no menu de itens-chave e não funciona dentro de Santuários.\n\nA versão Proteção de Daruk +, da DLC The Champions' Ballad, vem da missão \"EX Champion Daruk's Song\" e reduz a recarga normal para 6 minutos e a do castelo para 2 minutos.",
+  "locations": [
+    "Fera Divina Vah Rudania (versão normal).",
+    "Monumento no Cânion de Eldin, sobre o rio Golow, onde começa a missão da versão + (DLC)."
+  ],
+  "obtaining": [
+    "Derrotar a Ira ígnea de Ganon e acalmar a Fera Divina Vah Rudania; o espírito de Daruk entrega a bênção.",
+    "Proteção de Daruk + (DLC The Champions' Ballad): concluir \"EX Champion Daruk's Song\" — derrotar o Tálus ígneo titã no Lago Darman (santuário Kamia Omuna), seguir os anéis luminosos do topo da Montanha da Morte (Sharo Lun) e cair no anel sobre a lava do lago Darb (Rinu Honika), reunir os três Emblemas de Rudania e vencer o fantasma da Ira ígnea no Reino Ilusório."
+  ],
+  "uses": [
+    "Anular um golpe que não daria para evitar a tempo: a barreira protege de todos os ataques e danos.",
+    "Rebater raios de Guardiões sem precisar acertar o tempo da Defesa perfeita.",
+    "Defender-se quando o escudo quebrou ou não está equipado."
+  ],
+  "effects": [
+    "Barreira que anula todo o dano enquanto ativa e rebate certos ataques.",
+    "3 usos por recarga. Recarga: 18 min reais (6 min no Castelo de Hyrule). Versão +: 6 min (2 min no castelo)."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Ao segurar ZL, a barreira surge quando um ataque chega e anula o dano; uma Defesa perfeita feita com o escudo nesse momento não consome a carga.",
+      "conditions": ["Bênção ativada e com cargas; fora de Santuários."],
+      "applications": ["Treinar a Defesa perfeita com segurança: se o tempo estiver certo, a carga é preservada."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Funciona mesmo sem escudo equipado: basta segurar ZL.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Rebate certos ataques de volta, como os raios dos Guardiões.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Yunobo herdou o poder",
+      "text": "Yunobo, descendente de Daruk, também consegue usar essa proteção: é ela que o protege quando Link ou o líder goron Bludo o disparam com o canhão contra Vah Rudania, já que balas de canhão comuns não funcionam.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma cópia nas mãos do inimigo",
+      "text": "Na segunda fase da luta, a Ira ígnea de Ganon se cerca de uma bola de fogo semelhante à Proteção de Daruk, que bloqueia todos os ataques exceto a Bomba remota.",
+      "sources": ["zw:Fireblight Ganon"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O Campeão que tinha medo de cães",
+      "text": "Na segunda memória da DLC, Daruk ativa a barreira apavorado diante de um Pastor hyliano que ele mesmo tinha salvado dos monstros sem perceber — Daruk temia cães.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Equipamento fixo no desafio da versão +",
+      "text": "No Reino Ilusório, Link enfrenta a Ira ígnea com um inventário trocado pela missão, que inclui o Conjunto antichamas melhorado duas vezes e o Racha-Rocha.",
+      "sources": ["zw:EX Champion Daruk's Song"]
+    }
+  ],
+  "advanced_uses": [
+    "Manter ZL pressionado diante de um Guardião: a barreira rebate o raio mesmo que o tempo da Defesa perfeita falhe.",
+    "Tentar Defesas perfeitas contra golpes fortes sabendo que a barreira cobre o erro, e que o acerto não gasta carga."
+  ],
+  "limitations": [
+    "Não funciona dentro de Santuários.",
+    "Só três ativações por recarga.",
+    "Só age enquanto Link segura ZL."
+  ],
+  "related": [
+    { "id": "botw_monster_fireblight_ganon", "relation": "Derrotá-la libera a bênção" },
+    { "id": "botw_keyitem_rudanias_emblem", "relation": "Três emblemas abrem o desafio da versão +" },
+    { "id": "botw_mechanic_perfect_guard", "relation": "Uma Defesa perfeita não consome a carga" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Seus raios são rebatidos pela barreira" },
+    { "id": "botw_monster_igneo_talus_titan", "relation": "Provação da versão +" },
+    { "id": "botw_weapon_boulder_breaker", "relation": "Arma de Daruk" },
+    { "id": "botw_ability_miphas_grace", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_revalis_gale", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_urbosas_fury", "relation": "Outra bênção dos Campeões" }
+  ],
+  "capabilities": ["defesa", "reflete_laser", "habilidade_especial"],
+  "verification_status": "verificado"
+}

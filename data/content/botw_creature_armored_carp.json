@@ -1,0 +1,135 @@
+{
+  "id": "botw_creature_armored_carp",
+  "summary": "Carpa \"ancestral\" de água doce cujas escamas, cheias de cálcio, são duras como armadura. Cozida, dá Defesa aumentada. A Carpa tricolor de Kakariko é uma subespécie criada a partir dela.",
+  "description": "A Carpa blindada é um peixe de água doce presente em rios e lagos de toda Hyrule; o compendium cita a Grande Nascente de Lanayru e Necluda Oriental como locais comuns. O jogo a descreve como um peixe antigo cujas escamas acumulam tanto cálcio que ficam duras como armadura — e, cozida, ela \"fortalece os ossos\", concedendo Defesa aumentada temporária.\n\nCrua, recupera 1 coração. Entra nas receitas de peixe e de fruto do mar. Como as demais carpas, vira Carpa assada no fogo e Carpa congelada no gelo, perdendo o efeito de defesa.\n\nA Carpa tricolor, encontrada só ao pé da cachoeira Lantern Falls, em Vila Kakariko, é descrita pelo jogo como uma Carpa blindada selvagem que foi criada até virar um peixe de exposição — e que, nesse processo, perdeu o efeito culinário.",
+  "locations": [
+    "Água doce de toda Hyrule; o compendium cita a Grande Nascente de Lanayru e Necluda Oriental."
+  ],
+  "obtaining": [
+    "Pegar à mão nadando até ela, viva ou morta."
+  ],
+  "uses": [
+    "Pratos de Defesa aumentada: Espetinho de peixe, Peixe grelhado no sal, Peixe no vapor, Frutos do mar à meunière e as demais receitas de peixe ou fruto do mar.",
+    "Venda: 10 rupias."
+  ],
+  "effects": [
+    "Crua: recupera 1 coração.",
+    "Na panela: Defesa aumentada temporária."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima, mas pode ser apanhada à mão enquanto Link nada, viva ou morta.",
+      "kind": "mecanica",
+      "sources": ["zw:Fish"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com uma carpa viva largada da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Carpa blindada dão Defesa aumentada temporária.",
+      "produces": ["botw_food_fish_skewer", "botw_food_salt_grilled_fish", "botw_food_steamed_fish", "botw_food_seafood_meuniere"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "desconhecido",
+      "result": "A página do Elixir blindado no Zelda Wiki não lista ingredientes adicionais, então não há confirmação de que a carpa possa ser somada a um elixir de defesa para que ele cure."
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 10 rupias.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposta ao fogo, vira Carpa assada, sem o efeito de defesa.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largada perto do fogo, assa e vira Carpa assada.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largada no chão em clima abrasador, vira Carpa assada.",
+      "produces": ["botw_food_roasted_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congelada pelo gelo, vira Carpa congelada.",
+      "produces": ["botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largada em clima gélido ou água gelada, vira Carpa congelada.",
+      "produces": ["botw_food_frozen_carp"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre esta carpa."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Ancestral da Carpa tricolor",
+      "text": "A Carpa tricolor é uma subespécie da Carpa blindada, criada artificialmente até ganhar manchas coloridas que não existem na natureza. O preço de venda dobra (20 rupias), mas o efeito de defesa desaparece.",
+      "sources": ["comp", "zw:Sanke Carp"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Armadura de cálcio",
+      "text": "Tanto a carpa quanto o Pargo blindado têm escamas descritas como \"duras como armadura\"; nos dois casos o jogo explica o efeito de defesa pelo fortalecimento dos ossos de quem come o prato.",
+      "sources": ["comp", "zw:Armored Porgy"]
+    }
+  ],
+  "advanced_uses": [
+    "Misturar a carpa com outros ingredientes de defesa (como Blindamelo, Amaranto blindado ou Caranguejo couraçado) prolonga o efeito e pode elevar o nível da Defesa aumentada."
+  ],
+  "limitations": [
+    "Assada ou congelada, perde a Defesa aumentada.",
+    "Misturada a ingredientes com outro efeito, o prato fica só com o efeito predominante."
+  ],
+  "related": [
+    { "id": "botw_creature_sanke_carp", "relation": "Subespécie criada a partir dela, sem efeito" },
+    { "id": "botw_creature_armored_porgy", "relation": "Peixe de água salgada com o mesmo efeito" },
+    { "id": "botw_creature_ironshell_crab", "relation": "Fruto do mar com o mesmo efeito" },
+    { "id": "botw_food_roasted_carp", "relation": "Resultado de expô-la ao fogo" },
+    { "id": "botw_food_frozen_carp", "relation": "Resultado de congelá-la" },
+    { "id": "botw_creature_mighty_carp", "relation": "Outra carpa, de efeito ofensivo" }
+  ],
+  "capabilities": ["cura", "defesa", "reage_fogo", "reage_gelo"],
+  "verification_status": "verificado"
+}

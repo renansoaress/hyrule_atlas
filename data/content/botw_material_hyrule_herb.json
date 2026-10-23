@@ -1,0 +1,114 @@
+{
+  "id": "botw_material_hyrule_herb",
+  "summary": "Erva saudável dos campos da Pradaria de Hyrule e do Altiplano de Akkala. Sem efeito especial, mas cura 1 coração crua — a única erva ou flor que cura sem cozinhar — e aumenta a cura dos pratos.",
+  "description": "O Capim hyruliano cresce em abundância nas planícies, sobretudo na Pradaria de Hyrule e no Altiplano de Akkala. Diferentemente das flores medicinais, que cruas não curam nada, ele recupera 1 coração inteiro quando comido cru. O jogo recomenda cozinhá-lo: os pratos que o levam recuperam mais corações do que sem ele, embora a erva não acrescente nenhum efeito especial.\n\nNa panela, conta como \"vegetal, erva ou flor\" e entra em todas as receitas desse grupo, como a Fritada de ervas e as Ervas grelhadas no sal. Não tem versão assada na lista de comidas assadas e não é usado em melhorias de armadura. Na Tinturaria Kochi, entra no corante verde.",
+  "locations": [
+    "Campos da Pradaria de Hyrule e do Altiplano de Akkala (locais citados pelo compendium e pelo Zelda Wiki)."
+  ],
+  "obtaining": [
+    "Colher nos campos. Os dados estruturados não listam lojas que vendam a erva."
+  ],
+  "uses": [
+    "Cura rápida de 1 coração crua.",
+    "Aumentar a cura de pratos de panela sem mudar o efeito deles.",
+    "Receitas de vegetal, erva ou flor: Fritada de ervas, Fritada farta de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, Peixe/Carne/Frutas/Cogumelos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, Creme de cogumelos, Creme de legumes, Sopa cremosa de carne e Sopa cremosa de frutos do mar.",
+    "Ingrediente do corante verde na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito especial; aumenta os corações recuperados pelo prato."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem nenhum efeito especial ao largar a erva no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear a erva largada."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão assada do Capim hyruliano na lista de comidas assadas, e as fontes não dizem o que acontece se ele for exposto ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o resultado de largá-lo numa fogueira; ele não tem versão assada."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; plantas não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento da erva na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a erva não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ela."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Sem efeito próprio, aumenta a quantidade de corações recuperados pelo prato. Como ingrediente sem efeito, também soma um pouco de duração a pratos com efeito.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Crua, recupera 1 coração.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 3 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não há segredo ou mecânica especial documentada para o Capim hyruliano além de curar 1 coração cru, aumentar a cura dos pratos e servir de ingrediente do corante verde.",
+  "advanced_uses": [
+    "Use-o para completar panelas de efeito com cura extra: por não ter efeito próprio, ele não disputa com o efeito principal do prato."
+  ],
+  "limitations": [
+    "Não dá nenhum efeito especial.",
+    "Não tem versão assada conhecida; o efeito do fogo sobre ele não está documentado."
+  ],
+  "related": [
+    { "id": "botw_food_fried_wild_greens", "relation": "Receita de vegetal, erva ou flor" },
+    { "id": "botw_food_salt_grilled_greens", "relation": "Receita de vegetal, erva ou flor" },
+    { "id": "botw_food_herb_saute", "relation": "Receita de vegetal, erva ou flor" },
+    { "id": "botw_food_steamed_mushrooms", "relation": "Receita que combina cogumelo e erva" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante verde" }
+  ],
+  "capabilities": ["cura"],
+  "verification_status": "parcial"
+}

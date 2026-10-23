@@ -1,0 +1,116 @@
+{
+  "id": "botw_monster_guardian_scout_iv",
+  "summary": "O batedor mais forte (3.000 de vida), chefe dos Santuários \"A Major Test of Strength\": maneja três armas da linha guardiã 3.0 de uma vez e pode deixar Núcleo ancestral.",
+  "description": "O Guardião batedor 4.0 é a versão máxima dos batedores e o adversário dos Santuários \"A Major Test of Strength\" (prova de força maior), que só se concluem com a destruição dele. O compendium o descreve como muito resistente, equipado com função de três lâminas para empunhar três armas, e diz que é preciso muita força e confiança para enfrentá-lo.\n\nAs três armas saem de qualquer combinação de Espada guardiã 3.0, Escudo guardião 3.0, Lança guardiã 3.0 e Acha ancestral 3.0. Como os demais batedores dos Santuários de prova de força, queima o chão ao redor com o laser e, quando está quase destruído, carrega um laser mais forte que não pode ser interrompido.\n\nAo ser destruído, deixa as armas que usava e pode render Parafuso, Mola, Engrenagem e Eixo ancestrais e Núcleo ancestral.",
+  "locations": [
+    "Santuários \"A Major Test of Strength\" e outros: Chaas Qeta, Goma Asaagh, Hia Miu, Kema Kosassa, Mozo Shenno, Saas Ko'sah, Tena Ko'sah, Tutsuwa Nima e Ruvo Korbah (DLC 2).",
+    "Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende as armas que empunhava (linha guardiã 3.0) e pode render Parafuso, Mola, Engrenagem e Eixo ancestrais e Núcleo ancestral.",
+    "Os batedores dos Santuários voltam após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte da linha guardiã 3.0, a mais forte da linha guardiã.",
+    "Fonte de Núcleos ancestrais."
+  ],
+  "effects": [
+    "Ataques com três armas guardiãs, laser e laser que queima o chão ao redor."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Ataca com três armas ao mesmo tempo, escolhidas entre a linha guardiã 3.0.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Escudos da linha guardiã desviam os feixes dos batedores, e lasers de Guardiões podem ser devolvidos com Defesa perfeita.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian Gear", "zw:Perfect Guard"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "O olho é o ponto fraco: flechas nele causam dano extra e atordoam, e uma Flecha ancestral no olho destrói Guardiões.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Queima o chão em volta com o laser repetidamente, empurrando Link, e perto do fim carrega um laser mais forte que não pode ser interrompido.",
+      "kind": "mecanica",
+      "sources": ["zw:Guardian"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre ele."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre ele na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis nele; as armas guardiãs não são metálicas."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Fonte das armas guardiãs 3.0",
+      "text": "As armas de nível máximo da linha guardiã (Espada, Lança e Escudo guardiões 3.0 e Acha ancestral 3.0) são justamente as que este batedor empunha nos Santuários de prova de força maior.",
+      "sources": ["zw", "zw:Guardian Gear"]
+    }
+  ],
+  "advanced_uses": [
+    "Reservar Flechas ancestrais para o olho: destroem o Guardião de uma vez, poupando a luta contra três armas."
+  ],
+  "limitations": [
+    "3.000 de vida e três armas simultâneas tornam a luta longa sem bom equipamento."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_scout_iii", "relation": "Versão anterior, com duas armas" },
+    { "id": "botw_monster_guardian_scout_i", "relation": "Versão mais fraca" },
+    { "id": "botw_weapon_guardian_sword_plus_plus", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_weapon_guardian_spear_plus_plus", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_shield_guardian_shield_plus_plus", "relation": "Escudo que pode portar e deixar" },
+    { "id": "botw_weapon_ancient_battle_axe_plus_plus", "relation": "Arma que pode portar e deixar" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Destrói Guardiões ao acertar o olho" },
+    { "id": "botw_material_ancient_core", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "parcial"
+}

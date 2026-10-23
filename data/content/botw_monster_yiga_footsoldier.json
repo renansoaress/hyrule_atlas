@@ -1,0 +1,135 @@
+{
+  "id": "botw_monster_yiga_footsoldier",
+  "summary": "O soldado de menor patente do Clã Yiga, disfarçado de viajante até Link puxar conversa. Teleporta-se, atira com o Arco duplo ou golpeia do alto com a Foice brutal; derrotado, some deixando rupias e Bananas valentes.",
+  "description": "Os Soldados Yiga são a base do Clã Yiga, os Sheikah renegados que juraram lealdade a Ganon. O compendium resume a missão deles: espalhados por Hyrule, procuram Link para acabar com a vida dele, muitas vezes disfarçados de viajantes ou aldeões — por isso vale desconfiar de gente suspeita na estrada. O disfarce só cai quando Link fala com eles. Os Yiga começam a aparecer pelo mundo depois que Link conversa com Impa (o espião Dorian avisa o clã) e se tornam mais frequentes e mais fortes depois da derrota de Mestre Kohga, quando passam também a surgir do nada para emboscadas e a oferecer Bananas valentes à venda antes de atacar.\n\nSão muito ágeis. Teleportam-se pela área, levitam enquanto disparam com o Arco duplo e, quando empunham Foice brutal ou Trinchador demoníaco, reaparecem acima de Link e descem cravando a arma no chão. Esse golpe é anunciado por um anel vermelho de nove letras hylianas ao redor de Link — um bom sinal para se afastar. Depois da morte de Kohga, passam a carregar Trinchadores demoníacos e ficam mais resistentes.\n\nQuando derrotados, não morrem: teletransportam-se para longe, largando a arma, Bananas valentes e uma quantia aleatória de rupias. No Esconderijo do Clã Yiga, os Espadachins Yiga convocam dois Soldados Yiga com Arcos duplos quando Link é descoberto.",
+  "locations": [
+    "Por toda Hyrule, disfarçados de viajantes, depois que Link fala com Impa; após a derrota de Mestre Kohga, também em emboscadas repentinas.",
+    "Esconderijo do Clã Yiga, convocados pelos Espadachins Yiga quando Link é avistado."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende a arma que usava (Arco duplo, Foice brutal ou, após Kohga, Trinchador demoníaco), Bananas valentes e rupias verdes, azuis, vermelhas ou roxas.",
+    "Os viajantes disfarçados voltam a aparecer com a Lua de sangue; as emboscadas surgem de forma dinâmica e não dependem dela."
+  ],
+  "uses": [
+    "Única fonte das armas do Clã Yiga: Arco duplo, Foice brutal e Trinchador demoníaco.",
+    "Fonte de rupias e de Bananas valentes."
+  ],
+  "effects": [
+    "Flechadas com o Arco duplo enquanto levita; golpe descendente após teletransporte, anunciado por um anel vermelho de letras."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Disfarçado de viajante, parece inofensivo até Link falar com ele; então revela a identidade e ataca. Alguns oferecem Bananas valentes à venda antes de atacar.",
+      "applications": ["Desconfiar de viajantes que estejam fora do lugar ou que insistam em conversar."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Pode ser ferido normalmente; ao perder toda a vida, teletransporta-se para longe em vez de morrer, largando a arma, rupias e bananas.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem pontos fracos específicos dos Soldados Yiga contra flechas."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de fogo sobre eles."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre eles."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do efeito de eletricidade sobre eles."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre eles na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre eles."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas contra eles."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre Soldados Yiga."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre os soldados.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Teleportam-se pela área e levitam para atirar. O golpe descendente vem precedido de um anel vermelho de nove letras hylianas no chão.",
+      "applications": ["Sair do anel vermelho assim que ele aparecer para evitar o golpe."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "As nove letras do anel",
+      "text": "O anel do teletransporte forma as letras \"RPTSKJRZZ\", iniciais dos nove selos kuji-in do budismo japonês (Rin, Pyō, Tō, Sha, Kai, Jin, Retsu, Zai, Zen). O Monge Maz Koshia usa o mesmo conjunto de letras, mas na escrita Sheikah.",
+      "sources": ["zw", "zw:Monk Maz Koshia"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O espião de Kakariko",
+      "text": "Dorian, guarda do portão de Vila Kakariko, era um espião Yiga que tentou deixar o clã por amor à família; o clã matou a esposa dele e o obrigou a continuar espionando. É ele quem avisa os Yiga de que Link despertou, o que faz os soldados começarem a aparecer depois da conversa com Impa.",
+      "sources": ["zw:Yiga Clan"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Mais fortes depois de Kohga",
+      "text": "Com a derrota de Mestre Kohga, os Soldados Yiga passam de 72 para 128 de vida na versão viajante/corpo a corpo, aparecem em emboscadas e começam a portar Trinchadores demoníacos.",
+      "sources": ["zw", "zw:Yiga Clan"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Lembrança no bazar",
+      "text": "Na sétima lembrança recuperada de Link (\"Blades of the Yiga\"), Zelda é atacada por um grupo de Soldados Yiga no Bazar Kara Kara e salva por Link.",
+      "sources": ["zw:Yiga Clan"]
+    }
+  ],
+  "advanced_uses": [
+    "Aguardar o anel vermelho, sair dele e contra-atacar enquanto o soldado se recupera do golpe no chão."
+  ],
+  "limitations": [
+    "Não morre de fato: some ao ser derrotado, e novos soldados continuam aparecendo.",
+    "Os disfarces dificultam reconhecê-los antes de falar com eles."
+  ],
+  "related": [
+    { "id": "botw_monster_yiga_blademaster", "relation": "Elite do Clã Yiga, que os convoca no esconderijo" },
+    { "id": "botw_monster_master_kohga", "relation": "Líder do clã; sua derrota fortalece os soldados" },
+    { "id": "botw_bow_duplex_bow", "relation": "Arco que usam" },
+    { "id": "botw_weapon_vicious_sickle", "relation": "Arma corpo a corpo que usam" },
+    { "id": "botw_weapon_demon_carver", "relation": "Arma usada após a derrota de Kohga" },
+    { "id": "botw_material_mighty_bananas", "relation": "Fruta que deixam e oferecem à venda" },
+    { "id": "botw_monster_monk_maz_koshia", "relation": "Usa as mesmas letras ao se teletransportar" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

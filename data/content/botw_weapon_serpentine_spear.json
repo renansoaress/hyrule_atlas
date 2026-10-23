@@ -1,0 +1,187 @@
+{
+  "id": "botw_weapon_serpentine_spear",
+  "summary": "Lança Sheikah de ponta em meia-lua, feita para enganchar o oponente e cortá-lo (ataque 12, durabilidade 35). Comum perto da Vila Kakariko; a haste lembra uma cobra-coral.",
+  "description": "A Lança lunar tem uma ponta de desenho exclusivamente Sheikah: os mestres lanceiros dessa tribo usam o formato em meia-lua para enganchar o oponente e desferir cortes brutais. Pertence ao equipamento Sheikah, com a Katana Sheikah, a Katana da desconfiança e a Lâmina da dualidade, e aparece na Necluda Oriental, sobretudo em torno da Vila Kakariko, e na Pradaria de Hyrule.\n\nSendo de metal, conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser movida com Magnétis; não queima com fogo nem no calor de Eldin.",
+  "locations": [
+    "Necluda Oriental, principalmente nos arredores da Vila Kakariko.",
+    "Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Encontrada nessas regiões, especialmente perto da Vila Kakariko."
+  ],
+  "uses": [
+    "Lança de metal de durabilidade boa para o começo e o meio do jogo.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem a Lança lunar."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Cores de cobra-coral",
+      "text": "O padrão repetido de preto, amarelo e vermelho na haste da lança lembra a coloração de uma cobra-coral — o que combina com o nome original, Serpentine Spear (\"lança serpentina\").",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança lunar pode surgir com um bônus branco (comum) — ataque +4 a +7, durabilidade +4 a +7 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +8 a +12, durabilidade +8 a +16 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "limitations": [
+    "Atrai raios em tempestades.",
+    "Afunda na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_eightfold_blade",
+      "relation": "Mesmo arquétipo (Sheikah), uma mão"
+    },
+    {
+      "id": "botw_weapon_eightfold_longblade",
+      "relation": "Mesmo arquétipo (Sheikah), duas mãos"
+    },
+    {
+      "id": "botw_weapon_edge_of_duality",
+      "relation": "Mesmo arquétipo (Sheikah)"
+    },
+    {
+      "id": "botw_shield_shield_of_the_minds_eye",
+      "relation": "Escudo Sheikah"
+    },
+    {
+      "id": "botw_bow_phrenic_bow",
+      "relation": "Arco Sheikah"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

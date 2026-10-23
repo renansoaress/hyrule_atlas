@@ -1,0 +1,121 @@
+{
+  "id": "botw_weapon_ancient_bladesaw",
+  "summary": "Espada de duas mãos com lâminas giratórias, fabricada pelo Forno ancestral de Robbie (ataque 55, durabilidade 50). Causa 1,5× de dano em Guardiões e Ganon — o maior multiplicador ancestral.",
+  "description": "A Espada serrada ancestral faz parte do Equipamento de soldado ancestral criado por Robbie: não é encontrada no mundo, e sim produzida pelo Forno ancestral do Laboratório de Tecnologia Ancestral de Akkala em troca de 1.000 rupias, 15 Parafusos ancestrais, 5 Eixos ancestrais e 2 Núcleos ancestrais. A descrição do jogo destaca as lâminas rotativas, de grande poder de corte, que \"fatiam\" os inimigos.\n\nDiferente das achas dos Guardiões batedores, que causam 1,3× de dano extra, os parâmetros da espada serrada aplicam 1,5× contra Guardiões (inclusive pernas e hélices), as Iras de Ganon, Ganon, a Calamidade e Ganon, Besta Sombria. Também combina ataque alto com boa durabilidade, o oposto das armas ancestrais frágeis dos santuários. Por ser de tecnologia ancestral, flutua, não queima, não conduz eletricidade, não atrai raios e não pode ser movida com Magnétis.",
+  "locations": [
+    "Laboratório de Tecnologia Ancestral de Akkala (Akkala Ancient Tech Lab), no Forno ancestral."
+  ],
+  "obtaining": [
+    "Comprar no Forno ancestral por 1.000 rupias + 15 Parafusos ancestrais + 5 Eixos ancestrais + 2 Núcleos ancestrais.",
+    "O forno só funciona depois de reacender a fornalha do laboratório com a Chama azul, durante a missão \"Robbie's Research\".",
+    "Pode ser fabricada de novo sempre que houver materiais, o que a torna substituível."
+  ],
+  "uses": [
+    "Principal arma de duas mãos contra Guardiões e na batalha final contra Ganon, graças ao multiplicador de 1,5×.",
+    "Arma de reposição garantida para o fim de jogo, já que pode ser fabricada quantas vezes for preciso.",
+    "Segura para tempestades, para o calor de Eldin e para acender sílex."
+  ],
+  "effects": [
+    "Dano 1,5× maior contra Guardiões, Ganon e suas Iras (multiplicador oculto)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e pesados de duas mãos, sem escudo. O ataque carregado é o giro contínuo que gasta vigor e termina numa pancada para baixo; o peso derruba escudos inimigos.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "side_effects": ["Arma cara de repor: o arremesso consome todos os materiais investidos."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ser usada no Cânion de Eldin e na Montanha da Morte.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não pode ser erguida com Magnétis.",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Contra Guardiões e Guardiões batedores (pernas e hélices incluídas), Iras de Ganon, Ganon, a Calamidade e Ganon, Besta Sombria, cada golpe vale 1,5×.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Guardian"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Nunca vem com bônus",
+      "text": "Os parâmetros da espada serrada trazem faixas de bônus (Ataque de +11 a +20 no nível comum e +21 a +33 no dourado, por exemplo), mas, por ser uma arma vendida em loja, ela nunca recebe bônus na prática — todas saem do forno com os valores básicos.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Multiplicador maior que o das achas",
+      "text": "As armas do Equipamento guardião (como a Acha ancestral) multiplicam o dano por 1,3 contra os alvos ligados à Calamidade; a Espada serrada ancestral usa 1,5 contra o mesmo grupo de alvos.",
+      "sources": ["dm"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O forno que já se chamou Cherry",
+      "text": "O Forno ancestral é uma antiga Pedra Guia de Kakariko remodelada por Robbie, que a batizou de Cherry em homenagem ao primeiro amor; depois de casar com Jerrin, ele deixou de usar o nome.",
+      "sources": ["zw:Ancient Oven"]
+    }
+  ],
+  "advanced_uses": [
+    "Estocar Parafusos, Eixos e Núcleos ancestrais antes da batalha final permite fabricar várias espadas serradas e enfrentar Ganon, a Calamidade com o multiplicador de 1,5×."
+  ],
+  "limitations": [
+    "Custo alto: 1.000 rupias e materiais ancestrais por unidade.",
+    "Sem bônus aleatórios.",
+    "Não pode ser recuperada com Magnétis."
+  ],
+  "related": [
+    { "id": "botw_material_ancient_screw", "relation": "15 unidades por espada" },
+    { "id": "botw_material_ancient_shaft", "relation": "5 unidades por espada" },
+    { "id": "botw_material_ancient_core", "relation": "2 unidades por espada" },
+    { "id": "botw_weapon_ancient_short_sword", "relation": "Arma de uma mão do mesmo equipamento" },
+    { "id": "botw_weapon_ancient_spear", "relation": "Lança do mesmo equipamento" },
+    { "id": "botw_weapon_ancient_battle_axe", "relation": "Arma ancestral de duas mãos dos santuários (multiplicador 1,3×)" },
+    { "id": "botw_monster_calamity_ganon", "relation": "Recebe dano 1,5×" }
+  ],
+  "capabilities": ["flutua", "arremessavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

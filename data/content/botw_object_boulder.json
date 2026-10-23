@@ -1,0 +1,96 @@
+{
+  "id": "botw_object_boulder",
+  "summary": "Rocha grande que pode ser empurrada ou lançada com Estátis. Em vários quebra-cabeças Korok, colocá-la num buraco revela o Korok e sua semente. Rochas rolando também podem ser detidas com Estátis.",
+  "description": "As rochas grandes (Boulders) de BOTW aparecem sobretudo como peças de quebra-cabeça. Em vários pontos de Hyrule, um Korok escondido só se revela quando Link coloca uma rocha num buraco próximo: às vezes o buraco fica no pé de uma ladeira e basta empurrar a rocha morro abaixo; outras vezes está em terreno plano, e a rocha precisa ser lançada com Estátis, acumulando energia com golpes de arma até ela voar na direção certa. Assim que pelo menos uma rocha cai no buraco, o Korok aparece e entrega uma Semente Korok.\n\nA mesma runa resolve o problema contrário: rochas rolando que ameaçam Link podem ser congeladas no tempo com Estátis. Rinox comuns e azuis, por sua vez, arremessam rochas menores em Link quando ele escala para fora do alcance, e Koboblins também pegam rochas grandes para jogá-las. Os Tálus rochosos começam o combate disfarçados como um amontoado de rochas.",
+  "locations": [
+    "Por toda Hyrule, com destaque para os quebra-cabeças Korok em ladeiras e terrenos planos."
+  ],
+  "obtaining": [
+    "Objeto do cenário; não pode ser guardado na algibeira."
+  ],
+  "uses": [
+    "Resolver quebra-cabeças Korok levando a rocha até um buraco.",
+    "Servir de projétil pesado lançado com Estátis."
+  ],
+  "effects": [
+    "Nenhum efeito próprio além do impacto quando rola ou é lançada."
+  ],
+  "interactions": [
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Pode ser congelada no tempo; golpeada durante a Estátis, acumula energia e é lançada quando o efeito acaba. Rochas rolando também podem ser detidas.",
+      "applications": ["Lançar a rocha até o buraco de um quebra-cabeça Korok em terreno plano."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "usar",
+      "variant": "empurrar",
+      "status": "confirmado",
+      "result": "Link pode empurrar a rocha; em alguns quebra-cabeças, ela fica no alto de uma ladeira e o buraco, no pé dela.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Rochas não são metálicas e não respondem a Magnétis; nas variações metálicas do quebra-cabeça, o objeto é uma esfera de ferro.",
+      "sources": ["zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Rinox comuns e azuis arremessam rochas pequenas em Link quando ele escala para fora do alcance; Koboblins também pegam rochas grandes para atirá-las.",
+      "kind": "mecanica",
+      "sources": ["zw:Hinox", "zw:Bokoblin"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de uma Bomba remota sobre essas rochas (elas tratam à parte das rochas rachadas e dos montes de pedra destrutíveis)."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Fora da Estátis, as fontes não dizem se golpes movem ou quebram a rocha."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Um buraco, uma semente",
+      "text": "Nos quebra-cabeças de rocha e buraco, basta que uma rocha entre no buraco para o Korok aparecer, dizer \"Yahaha! You found me!\" e entregar a Semente Korok.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Rochas que se levantam",
+      "text": "O Tálus rochoso parece apenas um amontoado de rochas até Link se aproximar; então as pedras se juntam e formam o monstro.",
+      "sources": ["zw:Stone Talus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A rocha que Daruk segurou",
+      "text": "Na quarta memória recuperada, \"Daruk's Mettle\", Daruk protege Link de uma rocha que despenca durante um tremor usando sua barreira.",
+      "sources": ["zw:Daruk's Protection"]
+    }
+  ],
+  "advanced_uses": [
+    "Golpear a rocha várias vezes durante a Estátis com uma arma pesada para aumentar o alcance do lançamento; a seta amarela indica a direção."
+  ],
+  "limitations": [
+    "Não pode ser erguida com Magnétis.",
+    "Em terreno plano, só se move de forma útil com a ajuda de Estátis."
+  ],
+  "related": [
+    { "id": "botw_rune_stasis", "relation": "Congela e lança a rocha" },
+    { "id": "botw_keyitem_korok_seed", "relation": "Recompensa dos quebra-cabeças de rocha e buraco" },
+    { "id": "botw_monster_hinox", "relation": "Arremessa rochas pequenas em Link" },
+    { "id": "botw_monster_bokoblin", "relation": "Pega rochas grandes para atirar" },
+    { "id": "botw_monster_stone_talus", "relation": "Disfarça-se de amontoado de rochas" },
+    { "id": "botw_ability_daruks_protection", "relation": "Daruk segura uma rocha numa memória" }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

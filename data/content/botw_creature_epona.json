@@ -1,0 +1,113 @@
+{
+  "id": "botw_creature_epona",
+  "summary": "A égua clássica da série, invocada pela runa amiibo na primeira leitura do Link de Super Smash Bros. ou do Link de Twilight Princess. Já vem domada e tem 4 em força, velocidade e vigor.",
+  "description": "Em BOTW, Epona não vive na natureza: ela surge quando Link usa a runa amiibo com um amiibo do Link da série Super Smash Bros. ou do Link de Twilight Princess (linha The Legend of Zelda) pela primeira vez naquele jogo salvo. Diferente de qualquer outro cavalo, não precisa ser domada e pode ser montada imediatamente. Seus atributos são altos e equilibrados: 4 em velocidade, vigor e força.\n\nOs estábulos a tratam como lenda. Ao registrá-la, os funcionários a reconhecem e obrigam Link a manter o nome Epona, e ela recebe um conjunto exclusivo de sela e rédea. Assim como o Cavalo gigante, não pode trocar de equipamento nem de crina: os responsáveis acham que ela detestaria. Se morrer, só volta pelas mãos de Malanya, porque depois de registrada o amiibo não a invoca outra vez.",
+  "locations": [
+    "Não aparece no mundo: é invocada pela runa amiibo, desde que o local permita cavalos (fora de santuários, da provação de Eventide e do santuário do Monge da Espada)."
+  ],
+  "obtaining": [
+    "Ler pela primeira vez, no mesmo jogo salvo, um amiibo do Link da série Super Smash Bros. ou do Link (Twilight Princess) da série The Legend of Zelda com a runa amiibo.",
+    "Depois de registrada num estábulo, não pode ser obtida de novo pelo amiibo, nem se morrer."
+  ],
+  "uses": [
+    "Montaria pronta desde o início, sem doma, com atributos 4/4/4.",
+    "Vence de imediato o desafio de doma de Rensa (\"Wild Horses\") se for invocada logo no início da prova."
+  ],
+  "effects": [
+    "Força, velocidade e vigor 4: alto e equilibrado."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "nao_aplicavel",
+      "result": "Ela não é encontrada na natureza; surge ao lado de Link quando o amiibo é lido."
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montada na hora, sem precisar ser acalmada. Registrada, o nome Epona é obrigatório e ela recebe o equipamento exclusivo.",
+      "side_effects": ["Funcionários de Highland, Outskirt, South Akkala e Woodland Stable se recusam a mudar crina ou equipamento dela."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse Gear"]
+    },
+    {
+      "action": "usar",
+      "variant": "invocar com amiibo",
+      "status": "confirmado",
+      "result": "Na primeira leitura de um amiibo de Link compatível, a runa invoca Epona e nenhum outro item. Em áreas onde cavalos não são permitidos, a runa entrega itens normais.",
+      "conditions": ["Primeira leitura daquele amiibo no jogo salvo.", "Runa amiibo ativada nas opções."],
+      "kind": "mecanica",
+      "sources": ["zw:Amiibo (Ability)", "zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Epona pode morrer; nesse caso, só Malanya a revive.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de flechas em Epona."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Vitória instantânea contra Rensa",
+      "text": "No desafio de doma do Dueling Peaks Stable (\"Wild Horses\"), invocar Epona com a runa amiibo logo após o início conta como vitória.",
+      "sources": ["zw:Wild Horses"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Uma única invocação",
+      "text": "Depois de registrada, Epona não pode ser obtida de novo pelo amiibo, mesmo morta; a única forma de recuperá-la é com Malanya.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Fora do compendium",
+      "text": "Criaturas e equipamentos exclusivos de amiibo não entram no Hyrule Compendium, por isso Epona não tem entrada nele.",
+      "sources": ["zw:Hyrule Compendium"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A Epona Co.",
+      "text": "Embora o jogo não diga explicitamente, Epona dá nome à Epona Co., empresa de 150 anos que fabrica artigos para cavalos, de selas a escovas e roupas de montaria usadas pelos funcionários dos estábulos. O logotipo aparece nos chapéus deles e na base da estátua de cavalo das Sanidin Park Ruins.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Ler o amiibo cedo no jogo para ter uma montaria 4/4/4 antes de procurar cavalos especiais."
+  ],
+  "limitations": [
+    "Não aceita troca de crina, sela ou rédea.",
+    "O nome não pode ser alterado no registro.",
+    "Só uma Epona por jogo salvo; morta, depende de Malanya."
+  ],
+  "related": [
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa usada para invocá-la" },
+    { "id": "botw_creature_horse", "relation": "Regras gerais de registro, afeição e ressurreição" },
+    { "id": "botw_creature_giant_horse", "relation": "O outro cavalo que não aceita troca de equipamento" },
+    { "id": "botw_creature_white_horse", "relation": "Outro cavalo especial único" },
+    { "id": "botw_mechanic_stable", "relation": "Registro com nome obrigatório" }
+  ],
+  "capabilities": ["montavel", "velocidade", "habilidade_especial"],
+  "verification_status": "verificado"
+}

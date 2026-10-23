@@ -1,0 +1,79 @@
+{
+  "id": "botw_keyitem_sheikah_slate",
+  "summary": "Tabuleta multifuncional com o brasão Sheikah, obtida no Santuário da Ressurreição. Guarda o mapa, abre santuários e torres, permite viajar entre portais e recebe as runas — de Magnétis à Câmera.",
+  "description": "A Tabuleta Sheikah é o primeiro item do jogo: Link a recebe logo depois de ser despertado por uma voz no Santuário da Ressurreição e precisa dela para sair de lá. Ele não se lembra do aparelho, mas o acha familiar; a tabuleta foi feita especificamente para o herói escolhido e, antes da Grande Calamidade, era usada para ativar as Feras Divinas.\n\nEla mostra o mapa de Hyrule, com a temperatura, a hora, os marcadores e os carimbos, e dá acesso aos Santuários e às Torres Sheikah; ativar cada torre transfere o mapa da região para a tabuleta. Os portais de viagem (Travel Gates) diante de cada santuário, no topo das torres e nos dois laboratórios de tecnologia ancestral servem como destinos de teletransporte. Apertar o analógico direito ativa a luneta, uma visão em primeira pessoa para colocar marcadores à distância.\n\nA tabuleta também recebe runas extraídas de Pedras-guia, sobretudo nos quatro santuários do Grande Platô: Magnétis, Bomba remota, Estátis e Gelítis. A Câmera, o Álbum e o Compêndio de Hyrule começam criptografados e só são restaurados quando Link leva a tabuleta a Purah, no Laboratório de Tecnologia Ancestral de Hateno; o Álbum traz 12 fotos tiradas por Zelda cem anos antes. Purah também melhora Bomba remota, Estátis e o Sensor Sheikah em troca de materiais ancestrais, e Maz Koshia acrescenta a runa do Corcel de Hyrule zero ao fim da DLC The Champions' Ballad.",
+  "locations": [
+    "Santuário da Ressurreição, no início do jogo."
+  ],
+  "obtaining": [
+    "Recebida automaticamente no Santuário da Ressurreição, logo após o despertar de Link."
+  ],
+  "uses": [
+    "Ver o mapa, a temperatura e a hora; marcar pontos com marcadores e carimbos.",
+    "Ativar Santuários e Torres Sheikah e viajar instantaneamente entre os portais.",
+    "Usar runas: Magnétis, Bomba remota, Estátis, Gelítis, Câmera, Sensor Sheikah, amiibo e, com a DLC, Corcel de Hyrule zero.",
+    "Registrar o Compêndio de Hyrule com a Câmera."
+  ],
+  "effects": [
+    "Concede as runas e funções descritas; não tem efeito em atributos."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Encaixada em pedestais, ativa santuários e torres, extrai runas das Pedras-guia e transfere mapas regionais; pela algibeira, dá acesso ao mapa, à luneta e às runas.",
+      "conditions": ["Runas da Câmera, do Álbum e do Compêndio só depois da restauração com Purah."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Rune", "zw:Travel Gate"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Runas melhoradas por Purah",
+      "text": "No Laboratório de Hateno, Purah transforma a Bomba remota em Bomba remota + (3 Eixos ancestrais), a Estátis em Estátis + (3 Núcleos ancestrais) e o Sensor Sheikah em Sensor Sheikah + (3 Parafusos ancestrais), que passa a detectar qualquer coisa registrada no Compêndio.",
+      "sources": ["zw:Rune"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem runa, sem saída",
+      "text": "Se Link chegar ao fim de um dos quatro primeiros santuários sem ter extraído a runa da Pedra-guia, o monge manda que ele volte e a pegue antes de concluir o santuário.",
+      "sources": ["zw:Rune"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Inspirada no GamePad do Wii U",
+      "text": "Segundo Eiji Aonuma, a tabuleta foi desenhada para lembrar o GamePad do Wii U, mas acabou parecida também com o Nintendo Switch.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O sensor de vida da demo",
+      "text": "Na demo da E3 2016, a luneta da tabuleta mostrava os pontos de vida de um inimigo depois de um segundo apontada para ele. No jogo final, uma habilidade parecida passou para a Túnica do campeão.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Use a luneta para marcar santuários, torres e alvos ao longe com marcadores antes de partir.",
+    "Depois de restaurar a Câmera, fotografe criaturas e itens para o Compêndio e ative o Sensor Sheikah + para rastrear um alvo específico."
+  ],
+  "limitations": [
+    "A Câmera, o Álbum e o Compêndio exigem a visita a Purah em Hateno.",
+    "Os mapas de cada região só aparecem depois de ativar a torre correspondente."
+  ],
+  "related": [
+    { "id": "botw_rune_magnesis", "relation": "Runa obtida no Santuário Oman Au" },
+    { "id": "botw_rune_remote_bomb", "relation": "Runa obtida no Santuário Ja Baij" },
+    { "id": "botw_rune_stasis", "relation": "Runa obtida no Santuário Owa Daim" },
+    { "id": "botw_rune_cryonis", "relation": "Runa obtida no Santuário Keh Namut" },
+    { "id": "botw_rune_camera", "relation": "Restaurada por Purah em Hateno" },
+    { "id": "botw_rune_sheikah_sensor", "relation": "Detecta santuários; melhorado por Purah" },
+    { "id": "botw_rune_amiibo_rune", "relation": "Runa ativada nas opções" },
+    { "id": "botw_rune_master_cycle_zero", "relation": "Runa recebida ao fim da DLC" },
+    { "id": "botw_keyitem_travel_medallion", "relation": "Cria um portal de viagem portátil" },
+    { "id": "botw_armor_champions_tunic", "relation": "Herdou o sensor de vida da demo" },
+    { "id": "botw_keyitem_paraglider", "relation": "Outro item essencial do Grande Platô" }
+  ],
+  "capabilities": ["habilidade_especial", "revela_recursos", "item_de_missao"],
+  "verification_status": "verificado"
+}

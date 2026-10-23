@@ -1,0 +1,163 @@
+{
+  "id": "botw_monster_blue_maned_lynel",
+  "summary": "Centaleão de juba azul: mais resistente que o vermelho (3.000 de vida), porta a linha centaleônica forte e costuma atirar Flechas eletrizantes. O da primeira guarita do Castelo de Hyrule nunca muda de tipo.",
+  "description": "O Centaleão de juba azul é o segundo nível da espécie. O compendium o descreve como bem mais resistente que o Centaleão comum e equipado com armas muito mais fortes: ele carrega a linha centaleônica forte (Espada, Lança e Maça centaleônica forte, Defesa centaleônica forte e Arco centaleônico forte). No Modo Mestre, em que os monstros sobem um nível, ele passa a portar a linha centaleônica básica.\n\nO comportamento é o mesmo de todos os Centaleões: encara Link por um tempo antes de atacar, resiste a todos os elementos, não é derrubado por golpes e pode ser montado depois de atordoado. A diferença prática está nas flechas: o mais comum é que use Flechas eletrizantes, embora alguns carreguem Flechas congelantes ou incendiárias — e elas caem em maço quando ele morre.\n\nConforme o nível do mundo progride, a maioria dos Centaleões vermelhos vira de juba azul, e muitos de juba azul evoluem para tipos ainda mais fortes. A exceção é o Centaleão de juba azul da primeira guarita (First Gatehouse) do Castelo de Hyrule, que permanece assim o jogo inteiro.",
+  "locations": [
+    "Segundo o compendium, é comum na Pradaria de Hyrule e no Coração de Akkala.",
+    "Um fica fixo na primeira guarita (First Gatehouse) do Castelo de Hyrule e nunca evolui de tipo."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Chifre, Casco e Vísceras de Centaleão, as armas da linha centaleônica forte que portava e um maço das flechas que usava.",
+    "Revive após cada Lua de sangue, como quase todos os inimigos."
+  ],
+  "uses": [
+    "Fonte da linha centaleônica forte (no modo normal).",
+    "Fonte frequente de maços de Flechas eletrizantes.",
+    "Partes de Centaleão para elixires, melhorias de armadura e troca por Mon."
+  ],
+  "effects": [
+    "Ataques com armas centaleônicas fortes, investidas, pisoteio e bolas de fogo.",
+    "Disparos com Flechas eletrizantes (às vezes congelantes ou incendiárias)."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Como outros Centaleões, costuma encarar Link por um curto período antes de atacar.",
+      "conditions": ["Não sacar arma, não mirar arco, não usar runas e não chegar perto demais durante a encarada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lynel"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Não é derrubado por golpes (nenhum Centaleão é), então não larga a arma até morrer.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha na cabeça atordoa e causa dano dobrado, como em toda a espécie.",
+      "applications": ["Atordoar para montar e golpear sem gastar durabilidade."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Resistente ao fogo e aos efeitos dele, como todo Centaleão.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Resistente ao gelo e ao congelamento, como todo Centaleão.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Resistente à eletricidade; só a Fúria de Urbosa ignora essa resistência.",
+      "side_effects": ["Ele mesmo costuma atacar com Flechas eletrizantes."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação de BOTW sobre o Centaleão de juba azul na água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Usar qualquer runa à vista dele encerra a encarada e inicia o combate; o dano específico da bomba não é detalhado.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Usar a runa encerra a encarada, mas o efeito de Estátis+ sobre o Centaleão de juba azul não é descrito."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos; o monstro em si não pode ser erguido.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Pode ser montado após ser atordoado, por trás sem ser visto, caindo do Planador ou depois de uma investida; montado, Link golpeia até cinco vezes sem perder durabilidade.",
+      "conditions": ["Vigor suficiente; sem vigor, Link é derrubado e perde um quarto de coração."],
+      "kind": "mecanica",
+      "sources": ["zw:Lynel", "zw:Durability"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "A maioria dos ataques admite Defesa perfeita ou Esquiva perfeita, abrindo espaço para contra-ataques.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Teletransporta-se quando fica preso no terreno ou se afasta demais do território.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Equipamento depende do modo",
+      "text": "No modo normal, o Centaleão de juba azul porta a linha centaleônica forte; no Modo Mestre, como os Centaleões carregam o equipamento um nível abaixo do habitual, ele aparece com a linha centaleônica básica.",
+      "sources": ["zw", "zw:Lynel Gear"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O guardião fixo do castelo",
+      "text": "Embora a maioria dos Centaleões evolua com o nível do mundo, o Centaleão de juba azul da primeira guarita do Castelo de Hyrule continua sempre com juba azul.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Flechas variam por indivíduo",
+      "text": "O tipo mais comum de munição é a Flecha eletrizante, mas certos Centaleões de juba azul carregam Flechas congelantes ou incendiárias. As flechas usadas são deixadas em maço ao derrotá-lo.",
+      "sources": ["zw", "zw:Lynel"]
+    }
+  ],
+  "advanced_uses": [
+    "Ciclo de flecha na cabeça seguido de montaria para aproveitar golpes sem desgaste.",
+    "Enfrentá-lo para renovar o estoque de Flechas eletrizantes."
+  ],
+  "limitations": [
+    "Truques elementais não funcionam (exceto a Fúria de Urbosa).",
+    "No Modo Mestre rende equipamento de nível inferior ao do modo normal."
+  ],
+  "related": [
+    { "id": "botw_monster_lynel", "relation": "Variação mais fraca (juba vermelha)" },
+    { "id": "botw_monster_white_maned_lynel", "relation": "Variação seguinte (juba branca)" },
+    { "id": "botw_weapon_mighty_lynel_sword", "relation": "Arma da linha centaleônica forte" },
+    { "id": "botw_weapon_mighty_lynel_crusher", "relation": "Arma da linha centaleônica forte" },
+    { "id": "botw_weapon_mighty_lynel_spear", "relation": "Arma da linha centaleônica forte" },
+    { "id": "botw_shield_mighty_lynel_shield", "relation": "Escudo da linha centaleônica forte" },
+    { "id": "botw_bow_mighty_lynel_bow", "relation": "Arco da linha centaleônica forte" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Munição mais comum dele" },
+    { "id": "botw_material_lynel_horn", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lynel_hoof", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_lynel_guts", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_mechanic_master_mode", "relation": "Muda o equipamento que ele porta" }
+  ],
+  "capabilities": ["gera_fogo", "gera_eletricidade", "montavel", "habilidade_especial"],
+  "verification_status": "verificado"
+}

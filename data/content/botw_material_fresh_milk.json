@@ -1,0 +1,186 @@
+{
+  "id": "botw_material_fresh_milk",
+  "summary": "Leite do Pasto de Hateno. Cru cura meio coração; sozinho na panela vira Leite quente com bônus de cura, combina com qualquer ingrediente suplementar e é base de sopas, ensopados e crepes.",
+  "description": "O Leite fresco vem das vacas de Hateno e das cabras brancas criadas na Vila Hateno, e é vendido na loja East Wind da própria vila e pelos mercadores Agus e Yammo. O jogo diz que ele é gostoso puro, mas também serve de ingrediente em sopas e ensopados. Bebido cru, recupera apenas meio coração.\n\nNa panela, o leite tem duas vantagens pouco óbvias. Cozido sozinho, vira Leite quente e ganha meio coração extra de cura (o bônus só vale quando o leite é o único ingrediente). E, junto com o Ovo, é um dos dois ingredientes suplementares que combinam com qualquer outro suplemento sem virar Comida duvidosa. É obrigatório em 18 receitas, de cremes e ensopados (Ensopado de carne, Creme de mariscos, Sopa cremosa do coração) a doces (Pudim de ovos e os três crepes), e soma 1:20 de duração a pratos com efeito. Na Tinturaria Kochi, entra no corante branco. O texto em hyliano do item diz \"Lon Lon\", uma referência ao leite do Rancho Lon Lon de outros jogos.",
+  "locations": [
+    "Loja East Wind, na Vila Hateno (o leite vem do Pasto de Hateno).",
+    "Mercadores Agus (Vila Hateno–Dueling Peaks Stable) e Yammo (Tabantha Bridge Stable–Serenne Stable)."
+  ],
+  "obtaining": [
+    "Comprar na East Wind ou com Agus e Yammo (12 rupias)."
+  ],
+  "uses": [
+    "Leite quente: cozinhar o leite sozinho.",
+    "Receitas obrigatórias: Ensopado de cenoura, Creme de mariscos, Creme de cogumelos, Creme de legumes, Sopa cremosa do coração, Sopa cremosa de carne, Sopa cremosa de frutos do mar, Pudim de ovos, Ensopado de carne de primeira, Crepe de mel, Ensopado de carne, Sopa de monstro, Crepe simples, Ensopado de carne de segunda, Ensopado de abóbora, Sopa cremosa de legumes, Leite quente e Crepe de framboesa.",
+    "Ingrediente do corante branco na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio; numa receita com efeito, acrescenta 1:20 à duração."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Bebido cru, recupera meio coração.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro (0,5 coração, dobrado na panela; 1:20 de duração). Sozinho, vira Leite quente com meio coração de bônus; combina com qualquer outro ingrediente suplementar sem gerar Comida duvidosa.",
+      "produces": [
+        "botw_food_warm_milk",
+        "botw_food_egg_pudding",
+        "botw_food_meat_stew",
+        "botw_food_creamy_heart_soup",
+        "botw_food_cream_of_mushroom_soup",
+        "botw_food_plain_crepe",
+        "botw_food_clam_chowder"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não existe versão aquecida do leite na lista de Comidas assadas; as fontes não descrevem o que acontece com o leite exposto ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com o leite largado numa fogueira (o Leite quente só é feito na panela)."
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não há versão congelada do leite na lista de Comidas congeladas.",
+      "sources": [
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem uso especial do leite largado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear o leite largado."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do leite à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com o leite largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o leite não é metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao leite largado."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Leite quente cura mais que a soma",
+      "text": "Pela regra geral, cozinhar dobra a cura do leite (de 0,5 para 1 coração). O Leite quente ainda recebe meio coração de bônus, mas só quando o Leite fresco é o único ingrediente da panela.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Leite Lon Lon",
+      "text": "O texto em hyliano no Leite fresco se traduz como \"Lon Lon\", referência ao leite do Rancho Lon Lon de jogos anteriores da série.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Como combina com qualquer suplemento, o leite é seguro para completar receitas com Trigo de Tabantha, Manteiga de cabra e Cana-de-açúcar sem cair em Comida duvidosa."
+  ],
+  "limitations": [
+    "Cura muito pouco cru (meio coração).",
+    "As fontes só citam lojas e mercadores como forma de obtê-lo."
+  ],
+  "related": [
+    {
+      "id": "botw_food_warm_milk",
+      "relation": "Prato feito só com leite"
+    },
+    {
+      "id": "botw_food_egg_pudding",
+      "relation": "Leite, Ovo e Cana-de-açúcar"
+    },
+    {
+      "id": "botw_food_creamy_heart_soup",
+      "relation": "Sopa que exige leite"
+    },
+    {
+      "id": "botw_creature_hateno_cow",
+      "relation": "Uma das origens do leite"
+    },
+    {
+      "id": "botw_creature_white_goat",
+      "relation": "Uma das origens do leite (e da manteiga)"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "O outro suplemento que combina com qualquer outro"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Feita com o leite das cabras brancas"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante branco"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

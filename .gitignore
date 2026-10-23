@@ -1,0 +1,10 @@
+node_modules/
+build-cache/
+test-results/
+playwright-report/
+dist/
+release/
+data/raw/images/
+scripts/deploy/deploy.local.json
+reports/e2e-results.json
+src/generated/

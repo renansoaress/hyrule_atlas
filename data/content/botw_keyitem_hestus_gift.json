@@ -1,0 +1,68 @@
+{
+  "id": "botw_keyitem_hestus_gift",
+  "summary": "\"Presente de amizade\" que Ruri dá na Floresta Korok a quem entrega as 900 Sementes Korok com a algibeira já ampliada ao máximo. Segundo a descrição, cheira bem mal — e não tem nenhuma utilidade.",
+  "description": "O Presente de Ruri é a recompensa por encontrar todos os 900 Koroks escondidos. Quando a última semente é coletada, uma mensagem na tela avisa que Link deve contar a novidade a Ruri. Na Floresta Korok, Ruri comemora que todas as \"crianças da floresta\" voltaram para casa e imagina que Link teve um exército ajudando na busca; se Link disser que fez tudo sozinho, ele explode de alegria (\"NO WAY!\").\n\nComo, a essa altura, todos os estoques da algibeira já estão no máximo, Ruri entrega o presente no lugar de uma ampliação e pergunta se Link gostou. A descrição do item o chama de presente de amizade e admite que ele \"cheira bem mal\".\n\nO presente não tem função de jogo: Ruri apenas convida Link a voltar sempre que quiser para vê-lo dançar.",
+  "locations": [
+    "Floresta Korok, com Ruri."
+  ],
+  "obtaining": [
+    "Encontrar os 900 Koroks e falar com Ruri na Floresta Korok com todos os estoques de armas, arcos e escudos já ampliados."
+  ],
+  "uses": [
+    "Nenhum uso prático; marca a conclusão da coleção de Sementes Korok."
+  ],
+  "effects": [
+    "Nenhum efeito especial."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "sem_efeito",
+      "result": "O item não tem função; depois de entregá-lo, Ruri apenas convida Link a assistir às suas danças quando quiser.",
+      "sources": [
+        "zw",
+        "zw:Hestu"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Um presente com cheiro",
+      "text": "A descrição diz que o presente cheira bem mal. O diretor do jogo, Hidemaro Fujibayashi, confirmou que as próprias Sementes Korok são fezes de Korok.",
+      "sources": [
+        "zw",
+        "zw:Korok Seed"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Não, só eu.\"",
+      "text": "Ruri supõe que Link teve um exército de ajudantes para achar os 900 Koroks. Quando Link responde que fez tudo sozinho, Ruri reage com euforia e entrega o presente.",
+      "sources": [
+        "zw:Hestu"
+      ]
+    }
+  ],
+  "advanced_uses": [],
+  "limitations": [
+    "Exige os 900 Koroks e todas as ampliações feitas (441 sementes gastas).",
+    "Não tem efeito de jogo."
+  ],
+  "related": [
+    {
+      "id": "botw_keyitem_korok_seed",
+      "relation": "É preciso entregar as 900 sementes"
+    },
+    {
+      "id": "botw_keyitem_hestus_maracas",
+      "relation": "Item que inicia a relação com Ruri"
+    },
+    {
+      "id": "botw_armor_korok_mask",
+      "relation": "Ajuda a encontrar os Koroks que faltam"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

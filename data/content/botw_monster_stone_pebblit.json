@@ -1,0 +1,134 @@
+{
+  "id": "botw_monster_stone_pebblit",
+  "summary": "Filhote de Tálus rochoso escondido entre pedras comuns. Armas normais não o ferem, mas ele é leve: erga-o e arremesse-o para que se despedace. Bombas, marretas, Flechas explosivas e água também o eliminam na hora.",
+  "description": "A Brita rochosa é um Tálus rochoso muito jovem. O compendium explica que o corpo endurece com a idade até ficar duro como uma rocha na fase adulta; na infância, porém, é leve o bastante para ser erguido e frágil o bastante para quebrar ao ser arremessado. Aparece em toda Hyrule, geralmente no meio de grupos de pedras comuns, e sua aparência muda conforme o terreno em que se esconde. Quando Link se aproxima, sai do chão, vai até ele e tenta acertá-lo com um braço (16 de dano base).\n\nArmas comuns não funcionam contra ela, mas há muitas saídas: detonar uma Bomba remota, ou simplesmente pegá-la e jogá-la longe, o que a faz se estilhaçar. Segurá-la por tempo demais, porém, a faz explodir — a explosão não fere outros inimigos, mas causa 16 de dano base a Link. Marretas e martelos como Racha-Rocha, Esmaga-Fraga, Perfuradeira, Marreta de ferro e Quebra-Pedra, além de Flechas ancestrais e Flechas explosivas, a destroem instantaneamente, independentemente do dano; submergi-la na água também a mata na hora. Cada uma deixa um único minério aleatório ou Sílex (o compendium lista Sílex, Âmbar e Opala).",
+  "locations": [
+    "Toda Hyrule, em meio a grupos de pedras comuns, com aparência adaptada ao terreno."
+  ],
+  "obtaining": [
+    "Deixa um único item: Sílex ou um minério aleatório (o compendium lista Sílex, Âmbar e Opala).",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de Sílex, Âmbar e Opala.",
+    "Registro no compendium (entrada nº 143)."
+  ],
+  "effects": [
+    "Golpe com o braço (16 de dano base); se explodir nas mãos de Link, 16 de dano base."
+  ],
+  "interactions": [
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Pode ser erguida e arremessada; ao cair, se despedaça. Segurada por tempo demais, explode nas mãos de Link (16 de dano base, sem ferir outros inimigos).",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Armas comuns não funcionam. Racha-Rocha, Esmaga-Fraga, Perfuradeira, Marreta de ferro e Quebra-Pedra a destroem instantaneamente, qualquer que seja o dano.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas ancestrais e Flechas explosivas a destroem instantaneamente, independentemente do dano.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Morre instantaneamente se for submersa na água.",
+      "applications": ["Arremessá-la num lago ou rio próximo."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "A explosão de uma Flecha explosiva a destrói instantaneamente.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Detonar uma Bomba remota a derrota com facilidade.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de fogo na Brita rochosa."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo na Brita rochosa."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de choques na Brita rochosa."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "É de pedra, não de metal; Magnétis não a agarra.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Esconde-se entre pedras comuns, com aparência que muda conforme o terreno.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Morte instantânea, qualquer que seja o dano",
+      "text": "Racha-Rocha, Esmaga-Fraga, Perfuradeira, Marreta de ferro, Quebra-Pedra, Flechas ancestrais e Flechas explosivas destroem a Brita rochosa na hora, independentemente do dano que causariam.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um Tálus em miniatura",
+      "text": "O compendium diz que a Brita é um Tálus rochoso muito jovem: o corpo endurece com a idade até ficar duro como rocha, mas na infância é leve e frágil.",
+      "sources": ["comp"]
+    }
+  ],
+  "advanced_uses": [
+    "Erguer a Brita e arremessá-la imediatamente, antes que exploda nas mãos."
+  ],
+  "limitations": [
+    "Armas comuns não a ferem.",
+    "Segurá-la por muito tempo faz com que exploda em Link."
+  ],
+  "related": [
+    { "id": "botw_monster_stone_talus", "relation": "Forma adulta" },
+    { "id": "botw_monster_frost_pebblit", "relation": "Brita de gelo" },
+    { "id": "botw_monster_igneo_pebblit", "relation": "Brita de fogo" },
+    { "id": "botw_weapon_boulder_breaker", "relation": "Destrói-a instantaneamente" },
+    { "id": "botw_weapon_stone_smasher", "relation": "Destrói-a instantaneamente" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Destrói-a instantaneamente" },
+    { "id": "botw_arrow_bomb_arrow", "relation": "Destrói-a instantaneamente" },
+    { "id": "botw_material_flint", "relation": "Pode ser deixado" },
+    { "id": "botw_material_amber", "relation": "Pode ser deixado" },
+    { "id": "botw_material_opal", "relation": "Pode ser deixado" }
+  ],
+  "capabilities": ["arremessavel", "vence_rapido", "habilidade_especial"],
+  "verification_status": "verificado"
+}

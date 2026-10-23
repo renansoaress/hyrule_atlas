@@ -1,0 +1,100 @@
+{
+  "id": "botw_object_metal_box",
+  "summary": "Caixa de ferro (pequena ou grande) comum em Santuários. Por ser metálica, é erguida com Magnétis e vira arma ao cair sobre inimigos; conduz a eletricidade de Flechas eletrizantes e resiste a lanças e armas de uma mão.",
+  "description": "As caixas de metal (Iron Boxes) aparecem em BOTW em dois tamanhos, ambos registrados em Santuários pelo Zelda Wiki. O artigo da enciclopédia sobre BOTW ainda é um esboço, mas outras páginas descrevem o comportamento delas. Por serem de metal, são o alvo clássico de Magnétis: Link pode erguê-las, movê-las e largá-las de cima sobre monstros para causar dano, o que poupa a durabilidade das armas.\n\nO metal também conduz eletricidade: Flechas eletrizantes mandam descargas através de objetos condutores como caixas de metal. A resistência é outra característica: lanças e armas de uma mão não as danificam, e a Perfuradeira é a única lança capaz de destruí-las.",
+  "locations": [
+    "Santuários, nas versões pequena e grande."
+  ],
+  "obtaining": [
+    "Objeto do cenário; não pode ser guardado na algibeira."
+  ],
+  "uses": [
+    "Peça de quebra-cabeça movida com Magnétis.",
+    "Arma improvisada: largá-la de cima sobre monstros com Magnétis.",
+    "Condutor para levar a descarga de uma Flecha eletrizante adiante."
+  ],
+  "effects": [
+    "Nenhum efeito próprio; causa dano por impacto quando largada sobre inimigos."
+  ],
+  "interactions": [
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida, movida e largada com Magnétis; deixá-la cair sobre inimigos causa dano.",
+      "applications": ["Atacar monstros sem gastar armas.", "Resolver quebra-cabeças de santuário."],
+      "kind": "mecanica",
+      "sources": ["zw:Magnesis", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade: uma Flecha eletrizante envia a descarga através de caixas de metal.",
+      "kind": "mecanica",
+      "sources": ["zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Objetos metálicos atraem raios durante tempestades, segundo a regra geral do jogo; é bom manter distância deles nessas horas.",
+      "kind": "mecanica",
+      "sources": ["zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Lanças e armas de uma mão não causam dano às caixas de metal; entre as lanças, só a Perfuradeira consegue destruí-las.",
+      "kind": "mecanica",
+      "sources": ["zw:Drillshaft"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes de BOTW consultadas não descrevem o uso de Estátis numa caixa de metal."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a caixa afunda ou flutua."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da caixa de metal ao fogo."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não informam se explosões danificam ou movem a caixa."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Arremesso magnético",
+      "text": "As dicas do jogo recomendam balançar objetos metálicos pesados ou largá-los sobre a cabeça dos inimigos para poupar as armas, e lançá-los num acampamento cheio de monstros para causar muito dano.",
+      "sources": ["zw:Tips and Tricks"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Só a Perfuradeira entre as lanças",
+      "text": "A Perfuradeira, lança goron feita de metal reciclado com a ponta de uma broca de escavação, é a única arma do tipo lança capaz de destruir caixas de metal.",
+      "sources": ["zw:Drillshaft"]
+    }
+  ],
+  "advanced_uses": [
+    "Erguer a caixa com Magnétis acima de um grupo de inimigos e soltá-la de uma vez."
+  ],
+  "limitations": [
+    "Imune a lanças (exceto a Perfuradeira) e a armas de uma mão.",
+    "Atrai raios em tempestades, como todo objeto metálico."
+  ],
+  "related": [
+    { "id": "botw_rune_magnesis", "relation": "Runa que move a caixa" },
+    { "id": "botw_arrow_shock_arrow", "relation": "Sua descarga atravessa a caixa" },
+    { "id": "botw_weapon_drillshaft", "relation": "Única lança que destrói caixas de metal" },
+    { "id": "botw_object_wooden_box", "relation": "Versão de madeira, quebrável e inflamável" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Objetos metálicos atraem raios" }
+  ],
+  "capabilities": ["magnetico", "conduz_eletricidade", "atrai_raios"],
+  "verification_status": "parcial"
+}

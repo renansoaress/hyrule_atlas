@@ -1,0 +1,92 @@
+{
+  "id": "botw_mechanic_dye",
+  "summary": "Na Tinturaria Kochi, em Hateno, Sayge tinge todo o traje de Link de uma vez por 20 rupias e cinco materiais da mesma cor. São 15 cores; dá para refazer a tinta ou voltar à cor original.",
+  "description": "O Tingimento é feito na Tinturaria Kochi, a única loja do gênero em Hyrule, na Vila Hateno. Sayge cuida da tinturaria e sua esposa Senna recebe os clientes na porta. Antes, a loja preparava os próprios ingredientes de tintura, mas o aumento de monstros dificultou a coleta; hoje o cliente traz cinco materiais da cor desejada e paga 20 rupias, valor que já inclui a taxa de serviço.\n\nO processo é sempre o mesmo: Link é levado à plataforma, escolhe a cor (ou troca de roupa antes), entrega os cinco materiais e paga; Sayge pede que ele fique parado e o derruba, junto com os materiais, na bacia de tinta. Por tradição de Hateno, o traje inteiro — cabeça, torso e pernas — é tingido de uma vez. Se Link estiver usando alguma peça que não pode ser tingida, Sayge avisa antes. Ele também oferece refazer a tinta e pode devolver as roupas à cor original.",
+  "locations": [
+    "Tinturaria Kochi, na Vila Hateno (Necluda Oriental)."
+  ],
+  "obtaining": [
+    "Falar com Sayge na Tinturaria Kochi e escolher uma das 15 cores."
+  ],
+  "uses": [
+    "Personalizar a aparência das armaduras sem alterar defesa ou efeitos.",
+    "Dar destino útil a materiais baratos que sobram."
+  ],
+  "effects": [
+    "Muda só a cor das peças equipadas."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Sayge tinge todas as peças vestidas de uma vez por 20 rupias, mais cinco materiais da cor escolhida.",
+      "conditions": [
+        "Estar vestindo as peças a tingir; peças que não aceitam tinta geram um aviso.",
+        "Cinco materiais pertencentes à cor escolhida."
+      ],
+      "side_effects": ["Os materiais são consumidos."],
+      "applications": ["Pedir para refazer se não gostar do resultado; também é possível voltar à cor original."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hateno Dye"]
+    },
+    {
+      "action": "misturar",
+      "variant": "cores e materiais",
+      "status": "confirmado",
+      "result": "Cada cor aceita materiais específicos. Exemplos: azul (Glacimelo, Beladona azul, Safira, Lagarto nutritivo), vermelho (Maçã, Pimenta de fogo, Rubi, Geleca ígnea), amarelo (Bananas valentes, Ovo, Topázio, Vísceras de Rinox), branco (Princesa plácida, Arroz hyliano, Leite fresco, Diamante), preto (Trufa nutritiva, Trufona nutritiva, Sílex, Casco de Centaleão), roxo (Agilimelo, Extrato de monstro, Vísceras de Koboblin), verde (Melancia oásica, Capim hyruliano, Cauda de Lagalfos), azul-claro (Silencimelo, Geleca de Chulchul, partes de Naydra), azul-marinho (Escaravelho brigão, Pedra luminosa), laranja (Fruta isolante, Mel de abelha, Âmbar), pêssego (Framboesa, Rabanete nutritivo, Rabanete nutritivo grande, Halita), carmesim (Ferromelo, Tempero Goron, partes de Dinraal, Sapo obstinado), amarelo-claro (Durião nutritivo, Coco, Opala, partes de Farosh), marrom (Blindamelo, Bolota, Unha de Rinox, Dente de Rinox) e cinza (Chifres de Koboblin e Moblin, peças ancestrais).",
+      "kind": "mecanica",
+      "sources": ["zw:Hateno Dye"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Nem toda armadura aceita tinta: o Conjunto de mergulhador, por exemplo, não pode ser tingido; Armadura antichamas, Armadura de borracha, Conjunto voe do deserto, Armadura Zora e Gibão aquecido podem.",
+      "kind": "mecanica",
+      "sources": ["zw:Salvager Armor Set", "zw:Flamebreaker Armor", "zw:Rubber Armor", "zw:Desert Voe Set", "zw:Zora Armor", "zw:Warm Doublet"]
+    },
+    {
+      "action": "vender",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se uma peça tingida muda de preço de venda."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A tinta \"pêssego\" é rosa",
+      "text": "A cor rosada se chama \"peach\" em inglês por tradução direta do japonês, em que o nome vem da cor da flor do pessegueiro, não da polpa alaranjada da fruta.",
+      "sources": ["zw:Hateno Dye"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Receita de tinta num romance",
+      "text": "A receita de tinta vermelha de BOTW apareceu por acidente no romance \"A Traveler at the Gates of Wisdom\", de John Boyne, porque o principal resultado de busca sobre tingir roupas de vermelho levava ao guia do jogo.",
+      "sources": ["zw:Hateno Dye"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Escrita hyliana",
+      "text": "As placas e estandartes ao redor da tinturaria trazem escrita hyliana que, traduzida, significa \"Cores\". À noite, Sefaro, filho de Sayge, dorme numa das camas da loja resmungando sobre uma garota Sheikah.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Gastar materiais de baixo valor (como Chifres de Koboblin, que tingem de cinza) em vez de gemas ou partes de dragão."
+  ],
+  "limitations": [
+    "Tinge todas as peças vestidas de uma vez; para tingir peças com cores diferentes é preciso trocar de roupa entre as aplicações.",
+    "Algumas peças não aceitam tinta."
+  ],
+  "related": [
+    { "id": "botw_material_chuchu_jelly", "relation": "Material da tinta azul-clara" },
+    { "id": "botw_material_spicy_pepper", "relation": "Material da tinta vermelha" },
+    { "id": "botw_material_flint", "relation": "Material da tinta preta" },
+    { "id": "botw_creature_bladed_rhino_beetle", "relation": "Material da tinta azul-marinho" },
+    { "id": "botw_material_bokoblin_horn", "relation": "Material da tinta cinza" },
+    { "id": "botw_material_monster_extract", "relation": "Material da tinta roxa" },
+    { "id": "botw_armorset_salvager_armor_set", "relation": "Conjunto que não pode ser tingido" },
+    { "id": "botw_armor_warm_doublet", "relation": "Peça que aceita tinta" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

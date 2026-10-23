@@ -1,0 +1,152 @@
+{
+  "id": "botw_material_diamond",
+  "summary": "A gema mais valiosa de Hyrule (500 rupias). Compra e melhora a Tiara de diamante (resistência a Guardiões) e é exigida para refazer quatro das armas dos Campeões. Ledo troca 10 Pedras luminosas por um Diamante.",
+  "description": "O Diamante é descrito pelo jogo como a gema mais preciosa de Hyrule, cujo brilho encanta os hylianos há gerações — por isso vale 500 rupias, o maior preço entre as gemas. Fora da venda, tem três funções. Na Starlight Memories, na Cidade Gerudo, 3 Diamantes e 1.500 rupias compram a Tiara de diamante, que \"aproveita o poder da luz\" para reduzir o dano de inimigos ancestrais (Resistência a Guardiões) e, de forma oculta, aumenta em 20% o dano das armas ancestrais. Também é a única gema exigida para refazer as armas perdidas dos Campeões: o Tridente escamado de Mipha, o Arco da harpia de Revali, o Racha-Rocha de Daruk e a Cimitarra das sete e o Resplendor da aurora de Urbosa.\n\nDiamantes são raros nos depósitos (saem mais dos Depósitos de minério raro) e em inimigos — Tálus rochosos raros e luminosos, Tálus glaciais e ígneos e inimigos prateados ou dourados —, mas há fontes garantidas: baús em oito santuários, várias missões secundárias e a troca contínua com Ledo, no Domínio Zora, que dá um Diamante a cada 10 Pedras luminosas. Só a Ore and More (2.000 rupias) e Kairo, quando chove, os vendem. Na panela, o Diamante só produz Comida dura como pedra.",
+  "locations": [
+    "Depósitos de minério e, com mais frequência, Depósitos de minério raro.",
+    "Baús dos santuários Bareeda Naag, Gee Ha'rah, Kaam Ya'tak, Kah Mael, Keeha Yoog, Maka Rah, Misae Suma e Mozo Shenno."
+  ],
+  "obtaining": [
+    "Quebrar depósitos minerais (voltam após uma Lua de sangue).",
+    "Derrotar Tálus rochosos raros e luminosos, Tálus glaciais e ígneos e inimigos prateados e dourados (Koboblins, Moblins, Lagalfos e Centaleões).",
+    "Comprar na Ore and More, na Vila Tarrey, ou de Kairo nos dias de chuva, quando ele acrescenta gemas raras ao estoque.",
+    "Missões: \"Luminous Stone Gathering\" (2 de Ledo e, depois, 1 a cada 10 Pedras luminosas), \"From the Ground Up\" (3 de Hudson), \"Rushroom Rush!\" (Pirou troca por 55 Agilimelos), \"Zora Stone Monuments\" (Jiahto), \"Riddles of Hyrule\" (Walton) e a última recompensa de \"The Weapon Connoisseur\" (Nebb).",
+    "Podem surgir ao escanear os amiibo de Ganondorf e Zelda (Super Smash Bros.), Zelda (série The Legend of Zelda), Zelda, Mipha, Revali, Daruk e Urbosa (série Breath of the Wild)."
+  ],
+  "uses": [
+    "Comprar a Tiara de diamante na Starlight Memories: 3 Diamantes e 1.500 rupias.",
+    "Melhorar a Tiara de diamante na Fonte da Grande Fada: 2, 4, 6 e 10 Diamantes por nível (22 no total), a única peça que os pede.",
+    "Refazer armas dos Campeões: Tridente escamado (Dento: Lança Zora, Diamante e 5 Sílex), Arco da harpia (Harth: Arco da andorinha, Diamante e 5 Madeiras), Racha-Rocha (Rohan: Esmaga-Fraga, Diamante e 5 Sílex), Cimitarra das sete (Buliara: Cimitarra Gerudo, Diamante e 5 Sílex) e Resplendor da aurora (Buliara: Escudo Gerudo, Diamante e 5 Sílex).",
+    "Ingrediente do corante branco na Tinturaria Kochi.",
+    "Venda: 500 rupias; Ramella paga 5.500 rupias por 10 (10% acima das 5.000 de uma loja)."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregado; a Resistência a Guardiões vem da Tiara de diamante."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "joalheria",
+      "status": "confirmado",
+      "result": "Paga a Tiara de diamante na Starlight Memories (3 Diamantes e 1.500 rupias). A tiara usa o \"poder da luz\" do diamante para dar Resistência a Guardiões nível 1 e o efeito oculto Poder ancestral aumentado (+20% de dano com armas ancestrais e guardiãs).",
+      "conditions": ["Starlight Memories reaberta pela missão \"Tools of the Trade\"."],
+      "kind": "mecanica",
+      "sources": ["zw:Diamond Circlet", "zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "armas dos Campeões",
+      "status": "confirmado",
+      "result": "Um Diamante é exigido pelos artesãos para refazer o Tridente escamado, o Arco da harpia, o Racha-Rocha, a Cimitarra das sete e o Resplendor da aurora, caso se quebrem. O Tridente cerimonial é a exceção: Dento o refaz só com Lança Zora e Sílex.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Flint", "zw:Wood"]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem reação ou uso especial do Diamante solto.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um Diamante largado."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Diamante ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um Diamante largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Diamante ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do Diamante à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Diamante afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Diamante é uma gema.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um Diamante largado."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Usar Diamante numa receita resulta em Comida dura como pedra (1/4 de coração, sem efeito) — um desperdício de 500 rupias.",
+      "produces": ["botw_food_rock_hard_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 500 rupias. Ramella, na Cidade Goron, pode oferecer 5.500 rupias por um lote de 10, em vez das 5.000 de uma loja.",
+      "conditions": ["Missão \"The Jewel Trade\" concluída e Diamante como gema sorteada por Ramella."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:The Jewel Trade"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pedras luminosas viram Diamantes",
+      "text": "Na missão \"Luminous Stone Gathering\", Ledo pede 10 Pedras luminosas para os reparos do Domínio Zora e paga com 2 Diamantes (um mais um bônus). Depois disso, ele troca qualquer lote de 10 Pedras luminosas por 1 Diamante, sem limite — a forma mais previsível de conseguir Diamantes.",
+      "sources": ["zw:Luminous Stone Gathering", "zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Recompensa guardada com a algibeira cheia",
+      "text": "Se Link já tiver 999 Diamantes e uma missão oferecer mais um, quem dá a recompensa a guarda até que haja espaço na algibeira.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Kairo e a chuva",
+      "text": "Kairo normalmente vende Âmbar, Opala, Rubi, Safira e Topázio. Nos dias de chuva, ele acrescenta gemas raras ao estoque, como o Diamante.",
+      "sources": ["zw:Kairo"]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de vender Diamantes, reserve pelo menos um para cada arma de Campeão que você pretenda usar até quebrar: elas só voltam com o Diamante e os demais materiais.",
+    "Juntar Pedras luminosas em Upland Zorana e trocá-las com Ledo é uma fonte renovável de Diamantes, já que os depósitos voltam a cada Lua de sangue."
+  ],
+  "limitations": [
+    "Estraga qualquer receita (Comida dura como pedra).",
+    "Só a Tiara de diamante usa Diamantes nas melhorias."
+  ],
+  "related": [
+    { "id": "botw_armor_diamond_circlet", "relation": "Joia comprada e melhorada com Diamantes" },
+    { "id": "botw_material_luminous_stone", "relation": "10 Pedras luminosas trocadas com Ledo rendem 1 Diamante" },
+    { "id": "botw_weapon_lightscale_trident", "relation": "Refeito por Dento com Diamante" },
+    { "id": "botw_bow_great_eagle_bow", "relation": "Refeito por Harth com Diamante" },
+    { "id": "botw_weapon_boulder_breaker", "relation": "Refeito por Rohan com Diamante" },
+    { "id": "botw_weapon_scimitar_of_the_seven", "relation": "Refeita por Buliara com Diamante" },
+    { "id": "botw_shield_daybreaker", "relation": "Refeito por Buliara com Diamante" },
+    { "id": "botw_treasure_rare_ore_deposit", "relation": "Fonte mais provável de Diamantes" },
+    { "id": "botw_material_rushroom", "relation": "55 Agilimelos rendem um Diamante com Pirou" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado de cozinhar com Diamante" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante branco" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

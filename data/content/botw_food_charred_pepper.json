@@ -1,0 +1,134 @@
+{
+  "id": "botw_food_charred_pepper",
+  "summary": "Pimenta de fogo tostada na chama, \"bem menos ardida agora\". Cura 3/4 de coração (crua, meio) e vale 5 rupias, mas perde a Resistência ao frio que a pimenta dá cozida na Panela.",
+  "description": "A Pimenta tostada resulta do contato da Pimenta de fogo com o fogo ou com o clima escaldante. O texto do jogo resume a mudança: a pimenta, \"acariciada\" por uma chama aberta, ficou muito menos ardida. A cura sobe de meio coração para 3/4 e o preço de venda, de 3 para 5 rupias.\n\nA ardência perdida é justamente o que importa: cozida crua na Panela, a Pimenta de fogo dá Resistência ao frio, enquanto a tostada não tem efeito nenhum. Isso pesa logo no início — a pimenta cresce no Grande Platô, onde o frio do Monte Hylia exige proteção — e vale também perto do Gerudo Canyon Stable e na Fronteira de Tabantha, onde ela também é encontrada.",
+  "locations": [
+    "Prepara-se a partir de Pimentas de fogo (Grande Platô, arredores do Gerudo Canyon Stable e Fronteira de Tabantha) numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Pimenta de fogo ao fogo ou largá-la no chão em clima escaldante."
+  ],
+  "uses": [
+    "Cura leve: 3/4 de coração.",
+    "Venda: 5 rupias, mais que as 3 da pimenta crua."
+  ],
+  "effects": [
+    "Recupera 3/4 de coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Pimenta de fogo — queima por alguns instantes e se transforma em Pimenta tostada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Pimenta tostada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Pimenta de fogo no chão para que o ingrediente asse sozinho e vire Pimenta tostada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 3/4 de coração, contra meio coração da Pimenta de fogo crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 5 rupias; a Pimenta de fogo crua vale 3.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Spicy Pepper"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Pimenta tostada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sem ardência, sem calor",
+      "text": "Comida assada não carrega efeitos, e o próprio texto do jogo diz que a pimenta tostada é bem menos ardida. Para enfrentar o frio — já no Grande Platô, onde a pimenta cresce e o Monte Hylia é uma região de clima congelante —, cozinhe a Pimenta de fogo crua na Panela (dá Resistência ao frio) em vez de tostá-la.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Spicy Pepper",
+        "zw:Mount Hylia",
+        "zw:Freezing Climate"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não protege do frio: a Resistência ao frio da Pimenta de fogo só aparece em pratos de Panela."
+  ],
+  "related": [
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Ingrediente cru (Resistência ao frio na Panela)"
+    },
+    {
+      "id": "botw_elixir_spicy_elixir",
+      "relation": "Alternativa para resistir ao frio"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Tosta a pimenta ao contato"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

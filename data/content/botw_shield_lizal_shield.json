@@ -1,0 +1,184 @@
+{
+  "id": "botw_shield_lizal_shield",
+  "summary": "Escudo de metal malfeito dos Lagalfos comuns: Defesa 15, mas só 8 de durabilidade. Por ser metálico, conduz eletricidade e atrai raios — inclusive nas mãos dos próprios Lagalfos.",
+  "description": "O Escudo Lagal é o escudo comum entre os Lagalfos. O jogo observa que ele é de metal, mas que o acabamento descuidado lhe dá pouca durabilidade: são só 8 pontos, um dos menores valores entre os escudos, para uma Defesa de 15. É a base do equipamento Lagalfos (Lizalfos Gear), que evolui para o Escudo Lagal reforçado e o Escudo Lagal de aço.\n\nÉ carregado pelos Lagalfos mais fracos e às vezes também pelos Lagalfos ígneos, glaciais e elétricos; o compendium o associa ao Lago Hylia e a Necluda Oriental. Ao contrário do Escudo Kobo, é metálico: conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser movido com Magnétis, mas não queima.",
+  "locations": [
+    "Lago Hylia e Necluda Oriental, segundo o compendium, nas mãos de Lagalfos."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos comuns ou elementais que o carregam."
+  ],
+  "uses": [
+    "Escudo de metal descartável no início do jogo, melhor em Defesa que os escudos de madeira básicos.",
+    "Pode ser usado em Eldin sem queimar."
+  ],
+  "effects": [
+    "Nenhum efeito especial além de bloquear ataques."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 15, mas os 8 pontos de durabilidade acabam rápido. A Defesa perfeita não gasta durabilidade.",
+      "conditions": [
+        "Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Shield"
+      ]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1); em pedra a durabilidade baixa se esgota rapidamente.",
+      "conditions": [
+        "Pular e apertar A enquanto segura ZL no ar."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw:Shield Surfing"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "side_effects": [
+        "Os arcos elétricos dos Lagalfos elétricos — que também podem usar este escudo — fazem Link largar escudos metálicos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Shields in Breath of the Wild",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link. Equipamento metálico nas mãos de inimigos também solta faíscas e atrai raios.",
+      "conditions": [
+        "Tempestade de raios; escudo equipado por Link ou por um Lagalfos."
+      ],
+      "applications": [
+        "Em tempestades, um Lagalfos que empunha este escudo atrai o raio para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-lo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Usado pelos Lagalfos mais fracos e, às vezes, pelos Lagalfos ígneos, glaciais e elétricos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +1 a +2 (nível branco) ou +3 (nível amarelo) e com Defesa do escudo aumentada de +2 a +4 (branco) ou +5 a +6 (amarelo).",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo como escudo provisório em Eldin no começo do jogo, já que, ao contrário dos escudos de madeira baratos, não pega fogo no calor."
+  ],
+  "limitations": [
+    "Durabilidade de apenas 8.",
+    "Metálico: perigoso em tempestades e contra Lagalfos elétricos."
+  ],
+  "related": [
+    {
+      "id": "botw_shield_reinforced_lizal_shield",
+      "relation": "Versão reforçada"
+    },
+    {
+      "id": "botw_shield_steel_lizal_shield",
+      "relation": "Versão mais forte, com placas de metal"
+    },
+    {
+      "id": "botw_weapon_lizal_spear",
+      "relation": "Mesmo arquétipo (equipamento Lagalfos)"
+    },
+    {
+      "id": "botw_weapon_lizal_boomerang",
+      "relation": "Mesmo arquétipo (equipamento Lagalfos)"
+    },
+    {
+      "id": "botw_bow_lizal_bow",
+      "relation": "Mesmo arquétipo (equipamento Lagalfos)"
+    },
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Monstro que o empunha"
+    },
+    {
+      "id": "botw_monster_electric_lizalfos",
+      "relation": "Pode usá-lo; seus arcos elétricos fazem Link largar escudos de metal"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,170 @@
+{
+  "id": "botw_bow_golden_bow",
+  "summary": "Arco de metal feito pelas Gerudo, com ornamentos nos braços, projetado para atingir alvos distantes: ao mirar, a câmera aproxima muito mais que o normal, e a flecha segue 40 m em linha reta. Ataque 14, durabilidade 60.",
+  "description": "O Arco dourado é fabricado pelas Gerudo e famoso pelos ornamentos finos ao longo dos braços. Segundo a descrição do jogo, serve tanto para a caça quanto para a guerra e foi projetado para atingir alvos distantes. É comum no Deserto Gerudo, em especial nos arredores da Cidade Gerudo, e nas Montanhas Gerudo, e pertence ao equipamento Gerudo.\n\nSeu diferencial é a mira com zoom: ao usá-lo, a câmera aproxima bem mais que o normal, o que facilita enxergar e acertar alvos distantes e, segundo o Zelda Wiki, aumenta o alcance dos disparos. Só ele e o Arco de precisão têm essa característica. Nos parâmetros extraídos do jogo, a flecha percorre 40 m em linha reta, o dobro da maioria dos arcos.\n\nPor ser de metal, não queima, afunda na água, pode ser movido com Magnétis, conduz eletricidade e atrai raios em tempestades.",
+  "locations": [
+    "Deserto Gerudo (especialmente perto da Cidade Gerudo) e Montanhas Gerudo, locais comuns segundo o compendium."
+  ],
+  "obtaining": [
+    "Abrir baús ou derrotar inimigos dessas regiões."
+  ],
+  "uses": [
+    "Atirar em alvos muito distantes com a ajuda do zoom.",
+    "Arco de metal para o deserto e a região de Eldin, onde não queima."
+  ],
+  "effects": [
+    "Zoom ampliado ao mirar."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao mirar, a câmera aproxima muito mais que o normal, deixando o alvo distante mais visível. Dispara uma flecha por vez, que percorre 40 m em linha reta antes de começar a cair; tensionamento e recarga são padrão.",
+      "conditions": [
+        "Precisa de flechas na algibeira; aceita qualquer tipo de flecha."
+      ],
+      "applications": [
+        "Acertar a cabeça de inimigos distantes para obter acerto crítico (dano dobrado)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bow",
+        "dm",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima: é feito de metal.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Pode ficar equipado no clima escaldante de Eldin sem pegar fogo — é o tipo de arco que a dica do próprio jogo recomenda para a região.",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Descargas elétricas, como os arcos de energia do Lagalfos elétrico, fazem Link soltar arcos de metal.",
+      "side_effects": [
+        "Ficar sem o arco em mãos no meio do combate."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Electric Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado ao ar livre durante uma tempestade de raios, começa a soltar faíscas e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; o arco precisa estar equipado."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo, a menos que Link desequipe o arco a tempo ou use o Elmo do trovão."
+      ],
+      "applications": [
+        "Inimigos que empunham arcos de metal também atraem raios para a própria posição."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-lo do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguido e movido com Magnétis.",
+      "applications": [
+        "Resgatar o arco caído na água ou em um lugar fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o Arco dourado pode surgir com bônus de ataque de +3 a +7 (nível branco) ou de +8 a +12 (nível amarelo), e com bônus de durabilidade de +6 a +12 (branco) ou de +13 a +30 (amarelo). No nível amarelo também pode vir o disparo rápido, que multiplica a velocidade de tensionamento por um valor entre 1,1 e 1,3. Não pode receber o disparo quíntuplo (PoweredSharpAddSpreadFire desativado). Segundo o Zelda Wiki, no nível branco as chances são de 50% para ataque e 50% para durabilidade; no amarelo, 25% ataque, 33,3% durabilidade e 41,7% disparo rápido. O nível do bônus acompanha o nível do mundo: com o avanço do jogo os arcos passam a vir com bônus brancos e depois amarelos, até os brancos praticamente desaparecerem.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O zoom que quase virou bônus",
+      "text": "Existe nos dados do jogo um bônus de arco não utilizado, chamado internamente de AddZoomRapid, que daria a qualquer arco uma mira com zoom parecida com a do Arco dourado e a do Arco de precisão. Nenhum arco o recebe na versão final (o parâmetro PoweredSharpAddZoomRapid está desativado em todos).",
+      "sources": [
+        "zw:Weapon Bonus",
+        "dm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use o zoom para localizar e abater vigias em postos de observação: um tiro na cabeça os derrota na hora."
+  ],
+  "limitations": [
+    "Ataque baixo (14).",
+    "Atrai raios em tempestades e afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_bow_phrenic_bow",
+      "relation": "O outro arco com mira de zoom"
+    },
+    {
+      "id": "botw_weapon_gerudo_scimitar",
+      "relation": "Mesmo arquétipo (equipamento Gerudo)"
+    },
+    {
+      "id": "botw_shield_gerudo_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_mechanic_critical_hit",
+      "relation": "Tiros na cabeça causam dano dobrado"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

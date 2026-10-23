@@ -1,0 +1,144 @@
+{
+  "id": "botw_monster_stone_talus",
+  "summary": "Gigante de pedra camuflado como formação rochosa (300 de vida). Só sofre dano no Depósito de minério das costas: suba nele ou acerte o minério com flechas. A Marreta de ferro causa dano quádruplo.",
+  "description": "O Tálus rochoso parece apenas um amontoado de rochas até Link se aproximar; então as pedras se juntam num enorme golem. O compendium resume o desafio: nem espada nem flecha atravessam seu corpo de pedra, mas um aventureiro esperto escala o monstro e ataca o minério que brota do topo. Esse minério é um Depósito de minério, geralmente no alto ou nas costas, e é o único ponto vulnerável.\n\nÉ muito lento, então quem fica atrás ou embaixo dele está relativamente seguro. Ataca com socos e varridas dos braços, despenca de frente para esmagar quem está à frente e arremessa grandes fragmentos do próprio corpo. Quando Link está em cima golpeando o minério, o Tálus se sacode para derrubá-lo. Armas de duas mãos causam o dobro de dano no minério e a Marreta de ferro, o quádruplo. Uma Bomba remota pode explodir os braços e atrapalhá-lo por um tempo (eles se regeneram logo), e flechas no minério o fazem cair de cara no chão, deixando o ponto fraco ao alcance.\n\nAo morrer, deixa gemas: Sílex, Âmbar, Opala e Rubi. Kilton contabiliza 40 Tálus em Hyrule, de todos os tipos, para a Medalha de honra: Tálus. Dois exemplares especiais, o \"Júnior\" e o \"Sênior\", ficam em lados opostos dos Dueling Peaks.",
+  "locations": [
+    "Segundo o compendium, é comum em Necluda Ocidental e Necluda Oriental.",
+    "Pontos citados pelo Zelda Wiki: Grande Planalto (Great Plateau), Lago Deya, norte dos Dueling Peaks (Sênior), sul dos Dueling Peaks (Júnior), oeste do Lago Nabi, norte de Mable Ridge, Martha's Landing, Lago Floria, Gama Cove, Ovli Plain e Cliffs of Quince.",
+    "Também é o chefe do 6º andar das Provações iniciais da Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende uma seleção de Sílex, Âmbar, Opala e Rubi.",
+    "Revive após cada Lua de sangue, como os demais inimigos."
+  ],
+  "uses": [
+    "Fonte repetível de Sílex, Âmbar, Opala e Rubi.",
+    "Conta para a Medalha de honra: Tálus, de Kilton."
+  ],
+  "effects": [
+    "Socos e varridas, queda de corpo inteiro para a frente e fragmentos de rocha arremessados."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Disfarçado de formação rochosa, só se monta e se levanta quando Link se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só o Depósito de minério recebe dano. Armas de duas mãos causam o dobro e a Marreta de ferro, quatro vezes o dano. Golpeado, o Tálus se sacode para jogar Link no chão.",
+      "conditions": ["Estar em cima do Tálus ou alcançar o minério quando ele cai."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas no corpo de pedra não ferem, mas acertar o Depósito de minério o atordoa e o faz cair de cara no chão.",
+      "applications": ["Derrubá-lo para golpear o minério sem precisar escalar."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem efeito do fogo no Tálus rochoso."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre o Tálus rochoso na água."
+    },
+    {
+      "action": "explosao",
+      "status": "confirmado",
+      "result": "Explosões destroem os braços temporariamente; o Zelda Wiki também lista Flechas explosivas entre as fraquezas do Tálus rochoso.",
+      "side_effects": ["Os braços se regeneram pouco depois."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota pode arrancar os braços do Tálus, atrapalhando-o temporariamente e facilitando a escalada até o minério.",
+      "side_effects": ["Ele regenera as partes perdidas em pouco tempo."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Tálus rochoso."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Feito de pedra, não pode ser erguido por Magnétis, que só move objetos metálicos.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na forma inativa se confunde com as rochas do terreno. É muito lento: ficar atrás ou embaixo dele mantém Link fora do alcance dos golpes.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Medalha de honra: Tálus",
+      "text": "Depois de derrotar Ganon, a Calamidade pela primeira vez, Link pode perguntar a Kilton sobre o \"colosso de pedra\". Kilton pede que ele derrote todos os Tálus de Hyrule — 40 ao todo, contando luminosos, raros, glaciais e ígneos — para analisar o cheiro dos fluidos deles, e entrega a Medalha de honra: Tálus no fim. A pesquisa revela a estrutura musculoesquelética e a dieta dos Tálus.",
+      "sources": ["zw", "jogo", "zw:Kilton"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Júnior e Sênior",
+      "text": "Dois Tálus rochosos únicos, chamados Júnior e Sênior, ficam em lados opostos dos Dueling Peaks.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Nome provisório",
+      "text": "Em versões iniciais do desenvolvimento, os Tálus rochosos se chamavam \"Steppe Taluses\" (Tálus da estepe).",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Levar uma Marreta de ferro: o dano no minério é quadruplicado.",
+    "Derrubá-lo com uma flecha no minério e golpear o ponto fraco no chão, sem escalar."
+  ],
+  "limitations": [
+    "Golpes e flechas no corpo de pedra não causam dano.",
+    "Os braços destruídos por bombas se regeneram."
+  ],
+  "related": [
+    { "id": "botw_monster_stone_talus_luminous", "relation": "Variação com depósito de pedra luminosa" },
+    { "id": "botw_monster_stone_talus_rare", "relation": "Variação com depósito de minério raro" },
+    { "id": "botw_monster_frost_talus", "relation": "Variação de gelo" },
+    { "id": "botw_monster_igneo_talus", "relation": "Variação de lava" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Ponto fraco que ele carrega" },
+    { "id": "botw_weapon_iron_sledgehammer", "relation": "Causa dano quádruplo no minério" },
+    { "id": "botw_rune_remote_bomb", "relation": "Arranca os braços temporariamente" },
+    { "id": "botw_material_flint", "relation": "Recompensa" },
+    { "id": "botw_material_amber", "relation": "Recompensa" },
+    { "id": "botw_material_opal", "relation": "Recompensa" },
+    { "id": "botw_material_ruby", "relation": "Recompensa" },
+    { "id": "botw_keyitem_medal_of_honor_talus", "relation": "Prêmio de Kilton por derrotar todos os Tálus" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

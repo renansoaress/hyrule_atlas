@@ -1,0 +1,113 @@
+{
+  "id": "botw_treasure_luminous_ore_deposit",
+  "summary": "Depósito que brilha à noite e, quebrado, solta Pedras luminosas e às vezes Sílex. É mais abundante em volta do Domínio Zora, na Grande Nascente de Lanayru, e só volta depois da Lua de sangue.",
+  "description": "O Depósito de pedra luminosa (entrada nº 389 do compêndio) guarda bastante Pedra luminosa, um mineral fácil de processar, segundo o compêndio. Ele existe por toda Hyrule, mas é mais abundante em volta do Domínio Zora, na Grande Nascente de Lanayru, e é fácil de achar à noite, quando as Pedras luminosas brilham. Quebra-se com golpes de arma ou com uma Bomba remota e, ao se partir, solta Pedras luminosas e possivelmente Sílex — às vezes só um dos dois.\n\nComo os outros depósitos, solta faíscas capazes de iniciar incêndios quando atingido por armas que não são de madeira ou por flechas, quebrado ou não, e só reaparece depois da Lua de sangue. Os Tálus rochosos (luminosos) carregam um depósito de pedra luminosa no corpo como ponto fraco: golpeá-lo causa muito dano e derruba o monstro.",
+  "locations": [
+    "Toda Hyrule, com maior concentração em volta do Domínio Zora, na Grande Nascente de Lanayru.",
+    "Na entrada da Passagem Leste (East Passage) do Castelo de Hyrule, que leva à biblioteca.",
+    "No corpo dos Tálus rochosos (luminosos), como ponto fraco."
+  ],
+  "obtaining": [
+    "Objeto do cenário; reaparece depois de cada Lua de sangue."
+  ],
+  "uses": [
+    "Obter Pedras luminosas para a missão de Ledo no Domínio Zora, para o corante azul-marinho da Tinturaria Kochi e para o Conjunto radiante.",
+    "Obter Sílex.",
+    "Ponto fraco do Tálus rochoso (luminoso)."
+  ],
+  "effects": [
+    "Solta Pedra luminosa e/ou Sílex ao quebrar."
+  ],
+  "interactions": [
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpes quebram o depósito, que solta Pedras luminosas e possivelmente Sílex; armas que não são de madeira tiram faíscas.",
+      "side_effects": ["As faíscas podem incendiar a grama seca ao redor."],
+      "produces": ["botw_material_luminous_stone", "botw_material_flint"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota quebra o depósito.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas que atingem o depósito geram faíscas capazes de iniciar incêndios.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O depósito funciona como fonte de faíscas: golpes de armas que não são de madeira ou flechas podem acender fogo ao redor.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "aproximar",
+      "variant": "à noite",
+      "status": "confirmado",
+      "result": "À noite, os depósitos de pedra luminosa podem ser identificados pelo brilho.",
+      "kind": "mecanica",
+      "sources": ["zw:Luminous Stone"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "No Tálus rochoso (luminoso), o depósito é o único ponto vulnerável: golpeá-lo causa dano enorme e derruba o monstro.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stone Talus (Luminous)"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "É rocha, não metal; Magnétis não o afeta.",
+      "sources": ["zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Pedras para Ledo",
+      "text": "Ledo, no Domínio Zora, pede 10 Pedras luminosas para continuar seus reparos na Missão secundária \"Luminous Stone Gathering\" e paga 2 Diamantes; depois disso, troca cada novo lote de 10 Pedras luminosas por 1 Diamante.",
+      "sources": ["zw:Luminous Stone"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Sinalização no castelo",
+      "text": "Uma das formas de entrar no Castelo de Hyrule é a Passagem Leste, cuja entrada é marcada por depósitos de pedra luminosa e leva à biblioteca do castelo.",
+      "sources": ["zw:Parcy"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Almas dos mortos?",
+      "text": "A descrição da Pedra luminosa diz que o brilho azul-claro que ela emite no escuro é tido por alguns como as almas dos mortos.",
+      "sources": ["zw:Luminous Stone"]
+    }
+  ],
+  "advanced_uses": [
+    "Explorar a Grande Nascente de Lanayru à noite, quando os depósitos brilham, para coletar muitas Pedras luminosas e trocá-las por Diamantes com Ledo."
+  ],
+  "limitations": [
+    "Pode soltar só Pedra luminosa ou só Sílex, não necessariamente os dois.",
+    "Só reaparece após a Lua de sangue."
+  ],
+  "related": [
+    { "id": "botw_material_luminous_stone", "relation": "Material liberado" },
+    { "id": "botw_material_flint", "relation": "Pode ser liberado" },
+    { "id": "botw_material_diamond", "relation": "Recompensa de Ledo pelas Pedras luminosas" },
+    { "id": "botw_monster_stone_talus_luminous", "relation": "Tem este depósito como ponto fraco" },
+    { "id": "botw_armorset_radiant_set", "relation": "Comprado e melhorado com Pedras luminosas" },
+    { "id": "botw_treasure_ore_deposit", "relation": "Depósito comum de gemas" },
+    { "id": "botw_treasure_rare_ore_deposit", "relation": "Depósito de gemas raras" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Faz o depósito reaparecer" }
+  ],
+  "capabilities": ["gera_fogo", "ilumina", "revela_recursos"],
+  "verification_status": "verificado"
+}

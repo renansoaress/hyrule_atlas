@@ -1,0 +1,9 @@
+{
+  "requested": "Mon",
+  "title": "Mon",
+  "url": "https://zeldawiki.wiki/wiki/Mon",
+  "revid": 1315300,
+  "timestamp": "2026-01-20T06:01:46Z",
+  "license": "GNU FDL 1.3 (Zelda Wiki)",
+  "wikitext": "{{Infobox Object\n|image= \n{{Media\n |Sprite BotW= [[File:BotW Mon Icon.png|320x320px]]\n}}\n|caption= \n|game= BotW\n|other= \n|uses= Buying at [[Fang and Bone]]\n|comp= [[Rupee]]\n|theme= \n}}\n'''Mon''' are [[Item]]s in {{BotW}}.\n\n{{Terminology\n|-\n| {{Term/Store|Mon|Mon|Series, BotW}}\n| {{BotW}}<ref name=\"BotW Kilton\"/>\n}}\n\n==Location and Uses==\nMon is a type of [[Currency]] invented by [[Kilton]] which can be obtained by exchanging Monster Parts with him.<ref name=\"BotW Kilton\" /><ref name=\"BotW Kilton 2\"/> Mon can be used in Kilton's [[Shop]], the [[Fang and Bone]], to buy different types of [[Monster Gear]].<ref name=\"BotW Kilton 3\"/>\n\n{{Collapsible\n|header= Monster Part Values\n|frame= true\n|collapse= false\n|content=\n{{Data Table Copy\n|fromPage= Monster Part\n|storedAs= Monster Parts\n|columns= Monster Part, Mon [As:Mon Value]\n}}\n}}\n\n==Nomenclature==\n{{Nomenclature}}\n\n==See Also==\n{{See Also|\n * Currency\n * Fang and Bone\n * Kilton\n}}\n\n{{Ref|\n<!-- Breath of the Wild -->\n<ref name=\"BotW Kilton\">{{Cite|{{Color BotW|Red|Mon}} is a {{Color BotW|Red|currency}} I invented to destabilize the market and fight the establishment!|Kilton|BotW}}</ref>\n<ref name=\"BotW Kilton 2\">{{Cite|Here's the deal: if you bring me {{Color BotW|Blue|monster parts}}, I'll exchange them for {{Color BotW|Red|mon}}.|Kilton|BotW}}</ref>\n<ref name=\"BotW Kilton 3\">{{Cite|Anyway, you can spend your {{Color BotW|Red|mon}} on various types of {{Color BotW|Blue|monster gear}} that I've created based on my research.|Kilton|BotW}}</ref>\n}}\n\n{{Categories\n |Currencies\n |objects= BotW\n}}"
+}

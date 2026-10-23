@@ -1,0 +1,114 @@
+{
+  "id": "botw_weapon_windcleaver",
+  "summary": "Espada preferida pela elite do Clã Yiga (ataque 40). Cada golpe dispara um projétil de ar de curto alcance, o golpe carregado é um corte frontal com projétil de 10 a 40 de dano e, arremessada, voa em linha reta.",
+  "description": "O Corta-Vento é a arma do Equipamento do Clã Yiga favorita dos membros de alto escalão. O jogo diz que, nas mãos de um lutador habilidoso, seu formato único corta o próprio vento e cria um vácuo — e isso aparece na prática: é a única arma corpo a corpo cujo golpe solta um projétil de curto alcance à frente da lâmina. O projétil pode ser usado algumas vezes antes de a espada precisar recarregar.\n\nO golpe carregado também é diferente: como na Katana da desconfiança, Link recolhe a espada e corta para a frente em alta velocidade, derrubando inimigos grandes e lançando os pequenos, e o corte libera um projétil que cresce em tamanho, duração e dano (de 10 a 40) conforme o tempo de carga. Arremessada, voa em linha reta por um trecho antes de cair. A espada é deixada pelos Espadachins Yiga quando eles fogem derrotados. É metálica: conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Com os Espadachins Yiga, no Esconderijo do Clã Yiga e em vários pontos de Hyrule.",
+    "O compendium lista as Montanhas Gerudo e Necluda Ocidental como locais comuns."
+  ],
+  "obtaining": [
+    "Derrotar um Espadachim Yiga: ao fugir, ele deixa o Corta-Vento e Bananas valentes para trás.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Ataque de média distância: os projéteis de ar atingem inimigos um pouco além do alcance da lâmina.",
+    "Missão secundária \"The Weapon Connoisseur\": é a quinta arma pedida por Nebb, na Vila Hateno, e rende uma rupia prateada.",
+    "Como espada, corta árvores; por ser metálica, acende sílex."
+  ],
+  "effects": [
+    "Cada golpe emite um projétil de ar de curto alcance (com recarga após alguns usos).",
+    "O golpe carregado dispara um projétil de 10 a 40 de dano, conforme o tempo de carga."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de duas mãos, sem escudo, que soltam um projétil de ar à frente. Ao carregar o ataque, Link puxa a espada para trás e corta para a frente em alta velocidade, derrubando inimigos grandes, lançando os pequenos e disparando um projétil que fica maior e mais forte quanto mais tempo a carga for segurada.",
+      "side_effects": ["Depois de alguns projéteis, a lâmina precisa recarregar antes de disparar de novo."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, voa em linha reta por um curto trecho antes de a gravidade agir (alcance 20 nos parâmetros, contra 5 das armas de duas mãos comuns); ao acertar um inimigo, quebra e causa acerto crítico.",
+      "applications": ["Acertar alvos mais distantes com o arremesso do que seria possível com outro montante."],
+      "kind": "mecanica",
+      "sources": ["zw", "dm", "zw:Template:BotW Weapon Parameters", "zw:Weapon"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lightning", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É a arma dos Espadachins Yiga, que lançam rajadas de ar a longa distância com ela; derrotados, eles fogem e deixam a espada para trás.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Yiga Blademaster"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +8, Durabilidade aumentada de +6 a +15 ou Acerto crítico; no nível dourado (amarelo): Ataque de +9 a +14, Durabilidade de +16 a +24 ou Lançamento longo. Neste caso, o multiplicador do Lançamento longo vai de 1,0 a 2,0, em vez do 1,5 a 2,0 habitual — um exemplar pode trazer o bônus sem ganho de distância.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Template:BotW Weapon Parameters"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma arma \"rara\" em Hateno",
+      "text": "Nebb diz ter ouvido que o Corta-Vento não é comum por perto de Hateno e fica empolgado ao vê-lo, pagando uma rupia prateada. É a quinta das oito armas da missão.",
+      "sources": ["zw", "zw:The Weapon Connoisseur"]
+    }
+  ],
+  "advanced_uses": [
+    "Segure o golpe carregado até o máximo para disparar o projétil de 40 de dano e derrubar o alvo à frente — útil contra inimigos grandes que se aproximam em linha reta."
+  ],
+  "limitations": [
+    "Os projéteis de ar se esgotam e exigem recarga.",
+    "O golpe carregado é frontal, sem o giro das outras armas de duas mãos.",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    { "id": "botw_monster_yiga_blademaster", "relation": "Inimigo que a empunha e a deixa ao fugir" },
+    { "id": "botw_weapon_eightfold_longblade", "relation": "Mesmo tipo de golpe carregado frontal" },
+    { "id": "botw_weapon_demon_carver", "relation": "Outra arma do Clã Yiga" },
+    { "id": "botw_material_mighty_bananas", "relation": "Deixadas pelo Espadachim Yiga junto da espada" },
+    { "id": "botw_weapon_ancient_battle_axe_plus", "relation": "Outra arma pedida por Nebb" },
+    { "id": "botw_weapon_moblin_club", "relation": "Outra arma pedida por Nebb" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel", "habilidade_especial", "item_de_missao"],
+  "verification_status": "verificado"
+}

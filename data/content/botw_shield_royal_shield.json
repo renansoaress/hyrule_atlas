@@ -1,0 +1,123 @@
+{
+  "id": "botw_shield_royal_shield",
+  "summary": "Escudo ornamentado da guarda pessoal da família real, hoje peça de colecionador: Defesa 55, durabilidade 29. Só nove no mapa; é o prêmio máximo de Selmie, que o considera o melhor desenho para surfar.",
+  "description": "O Escudo real era entregue à guarda pessoal da família real de Hyrule. Com Defesa 55 e durabilidade 29, destaca-se entre os escudos de metal, mas o jogo observa que, por causa dos ornamentos, hoje ele é mais uma peça de colecionador. Pertence ao equipamento real (Royal Gear), ao lado da Espada, do Montante, da Alabarda e do Arco reais.\n\nÉ raro: há apenas nove no mapa (dez no Modo Mestre), seis deles nas mãos de inimigos. Selmie tem um pendurado na cabana e diz que é, de longe, o melhor desenho para surfar que já viu; é também o prêmio que ela dá pelo melhor tempo do curso avançado. Curiosamente, os parâmetros de surfe do Escudo real são os padrões — atrito e desgaste 1 —, então a fama vem mais do gosto de Selmie que dos números.\n\nComo é de metal, conduz eletricidade, atrai raios, afunda e pode ser movido com Magnétis; não queima.",
+  "locations": [
+    "Baú sob a Sarjon Bridge, em Faron Woods.",
+    "Sob uma escada em espiral no Castelo de Hyrule.",
+    "Pradaria de Hyrule e Cordilheiras de Hebra, segundo o compendium; nove exemplares no total (dez no Modo Mestre), seis com inimigos."
+  ],
+  "obtaining": [
+    "Recolher os exemplares fixos ou derrotar os inimigos que o carregam.",
+    "Prêmio de Selmie no curso avançado de surfe com escudo, para tempos abaixo de 1:30.",
+    "Fazer um Octoroc rochoso aspirar um Escudo enferrujado: há 5% de chance de sair um Escudo real.",
+    "Baús de amiibo: Toon Zelda (The Wind Waker) e Zelda (Breath of the Wild) têm chance de conter este escudo."
+  ],
+  "uses": [
+    "Um dos escudos de metal mais fortes que não são únicos.",
+    "Item de coleção cobiçado pelos surfistas de escudo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além da defesa alta."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 55; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1), apesar dos elogios de Selmie.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing", "zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo com Magnétis — vale o esforço, dado o número limitado de exemplares."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +5 a +10 (nível branco) ou +11 a +19 (nível amarelo) e com Defesa do escudo aumentada de +5 a +10 (branco) ou +11 a +20 (amarelo). Exemplares de baús de amiibo vêm com o valor máximo da faixa.",
+      "sources": ["dm", "zw:Weapon Bonus", "zw:Amiibo Rune"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Ferrugem premiada",
+      "text": "Um Octoroc rochoso que aspira um Escudo enferrujado o devolve limpo, com 5% de chance de ser um Escudo real. Com os Escudos enferrujados comuns na Pradaria de Hyrule e em Necluda Oriental, é uma forma de obter mais exemplares além dos nove do mapa.",
+      "sources": ["zw:Rock Octorok", "zw:Rusty Shield"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O escudo na lareira de Selmie",
+      "text": "Ao ver o Escudo real, Selmie conta que tem um pendurado na cabana e que é \"o melhor desenho para surfar\" que já viu. Ao bater o recorde abaixo de 1:30, ela entrega \"um escudo novinho para um recorde novinho\".",
+      "sources": ["zw", "jogo", "zw:Selmie"]
+    }
+  ],
+  "advanced_uses": [
+    "Combinar o minijogo de Selmie (abaixo de 1:30) com a limpeza de Escudos enferrujados por Octorocs rochosos para juntar Escudos reais sem depender dos poucos exemplares do mapa."
+  ],
+  "limitations": [
+    "Poucos exemplares fixos.",
+    "Metálico: atrai raios e cai das mãos com choques."
+  ],
+  "related": [
+    { "id": "botw_weapon_royal_broadsword", "relation": "Mesmo arquétipo (equipamento real)" },
+    { "id": "botw_weapon_royal_claymore", "relation": "Mesmo arquétipo (equipamento real)" },
+    { "id": "botw_weapon_royal_halberd", "relation": "Mesmo arquétipo (equipamento real)" },
+    { "id": "botw_bow_royal_bow", "relation": "Mesmo arquétipo (equipamento real)" },
+    { "id": "botw_shield_rusty_shield", "relation": "Pode virar Escudo real ao ser limpo por um Octoroc rochoso" },
+    { "id": "botw_monster_rock_octorok", "relation": "Limpa Escudos enferrujados" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Prêmio máximo do minijogo de Selmie" },
+    { "id": "botw_armor_thunder_helm", "relation": "Neutraliza o raio atraído pelo escudo" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

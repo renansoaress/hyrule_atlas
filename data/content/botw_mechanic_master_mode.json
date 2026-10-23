@@ -1,0 +1,99 @@
+{
+  "id": "botw_mechanic_master_mode",
+  "summary": "Modo difícil da DLC The Master Trials: inimigos um nível acima, que percebem Link mais fácil e regeneram vida; monstros dourados; Octorocs celestes com plataformas no céu; sem a proteção contra morte de um golpe e com um único salvamento automático.",
+  "description": "O Modo Mestre faz parte do pacote de DLC The Master Trials e começa um jogo separado, com dados salvos à parte do modo normal e um pequeno triângulo da Triforce no canto inferior esquerdo da tela. A maioria dos inimigos e chefes sobe um nível de força (não há Koboblins vermelhos comuns desde o início, por exemplo), detecta a aproximação de Link com mais facilidade e regenera vida aos poucos durante o combate, até um limite. Centaleões aparecem em mais lugares, inclusive no Grande Planalto.\n\nO modo introduz os monstros dourados — Koboblin, Moblin, Lagalfos e Centaleão dourados —, uma categoria acima dos prateados, com mais vida e mais resistência a choque, gelo e fogo. Pelo céu flutuam plataformas seguradas por Octorocs celestes, com inimigos e baús que costumam guardar armas raras como as da guarda real. Duas regras pesam no dia a dia: some o mecanismo que deixa Link vivo com um quarto de coração depois de um golpe que seria fatal, e há apenas um espaço de salvamento automático.",
+  "locations": [
+    "Toda Hyrule, num arquivo de jogo próprio; plataformas aéreas perto de pontes, Torres Sheikah e sobre a água."
+  ],
+  "obtaining": [
+    "Comprar o pacote de DLC The Master Trials e iniciar o Modo Mestre no menu."
+  ],
+  "uses": [
+    "Desafio maior para quem já terminou o jogo.",
+    "Acesso a baús aéreos com armas fortes logo cedo."
+  ],
+  "effects": [
+    "Inimigos mais fortes, atentos e regenerativos; monstros dourados; Octorocs celestes."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Inicia um jogo à parte, com dados salvos separados e apenas um salvamento automático; a Triforce no canto inferior esquerdo indica o modo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "A maioria dos inimigos e chefes sobe um nível, percebe Link mais facilmente e recupera vida ao longo do combate (com limite). Monstros dourados têm mais vida (Koboblin 1.080, Lagalfos 1.296, Moblin 1.620, Centaleão 7.500) e se recuperam mais rápido de choques, gelo e fogo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Gold Enemy"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc celeste",
+      "status": "confirmado",
+      "result": "Octorocs celestes, em grupos de três ou quatro, seguram plataformas com baús e inimigos. Morrem com uma flecha e derrubam o conteúdo da plataforma, não atacam, não deixam materiais e reaparecem sem depender da Lua de sangue. Sobem ao ouvir um chifre de Koboblin ou o assobio de Link.",
+      "applications": ["Abater os Octorocs para derrubar a plataforma e pegar os baús em terra."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Sky Octorok"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "proteção contra golpe fatal",
+      "status": "sem_efeito",
+      "result": "No modo normal, um mecanismo impede que ataques poderosos matem Link de um só golpe, deixando-o com um quarto de coração; no Modo Mestre essa proteção não existe.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Centaleões surgem em mais áreas, inclusive no Grande Planalto (onde um Centaleão de juba branca usa Flechas explosivas); um Moblin com Flechas explosivas fica perto de Spectacle Rock.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Bomb Arrow"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Antes se chamava Hard Mode",
+      "text": "No anúncio do Passe de Expansão, o Modo Mestre era chamado de \"Hard Mode\".",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Provação da Espada mais dura",
+      "text": "No Modo Mestre os andares da Provação da Espada trocam vários inimigos por versões mais fortes (Koboblins azuis no lugar de vermelhos, Centaleão de juba branca no lugar do de juba azul, Moblin dourado nas Provas Finais).",
+      "sources": ["zw:Sword Monk's Shrine"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Escudos de Centaleão mais escassos",
+      "text": "No Modo Mestre os Centaleões de juba azul passam a usar a Defesa centaleônica, normalmente carregada pelos Centaleões comuns.",
+      "sources": ["zw:Lynel Shield"]
+    }
+  ],
+  "advanced_uses": [
+    "Atacar em sequência rápida: como os inimigos regeneram vida, pausas longas no combate desperdiçam o dano causado.",
+    "Manter a vida acima do necessário para golpes fortes, já que não há sobrevivência com um quarto de coração."
+  ],
+  "limitations": [
+    "Um único salvamento automático.",
+    "Exige a DLC The Master Trials."
+  ],
+  "related": [
+    { "id": "botw_monster_golden_bokoblin_mm", "relation": "Monstro dourado exclusivo do modo" },
+    { "id": "botw_monster_golden_moblin_mm", "relation": "Monstro dourado exclusivo do modo" },
+    { "id": "botw_monster_golden_lizalfos_mm", "relation": "Monstro dourado exclusivo do modo" },
+    { "id": "botw_monster_golden_lynel_mm", "relation": "Monstro dourado exclusivo do modo" },
+    { "id": "botw_monster_sky_octorok_mm", "relation": "Segura plataformas aéreas com baús" },
+    { "id": "botw_monster_white_maned_lynel", "relation": "Aparece no Grande Planalto neste modo" },
+    { "id": "botw_mechanic_trial_of_the_sword", "relation": "Outro conteúdo da mesma DLC" },
+    { "id": "botw_mechanic_heros_path_mode", "relation": "Outro recurso da mesma DLC" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "Inimigos percebem Link mais fácil" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

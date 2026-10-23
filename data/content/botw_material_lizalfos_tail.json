@@ -1,0 +1,173 @@
+{
+  "id": "botw_material_lizalfos_tail",
+  "summary": "Cauda que continua se mexendo depois de cortada, deixada por Lagalfos azuis ou mais fortes. Acrescenta 3:10 aos elixires e é o material mais pedido do Conjunto Zora.",
+  "description": "A Cauda de Lagalfos continua se contorcendo mesmo depois de separada do corpo, e é essa \"vitalidade\", diz o inventário, que a torna tão valorizada em elixires: cozida com bichos, acrescenta 3:10 à duração, o máximo para partes de monstro comuns. A página do item aponta os Lagalfos azuis e pretos como fonte; as páginas dos Lagalfos prateados e dourados (Modo Mestre) também a listam entre os espólios. As variantes elementais deixam caudas próprias, não esta.\n\nÉ uma das partes de monstro vendidas em loja: o Bazar Kara Kara (Kara Kara Bazaar), no Deserto Gerudo, tem 1 unidade por 112 rupias. Nas Grandes Fadas, é usada no 3º nível do Conjunto do soldado (2 por peça) e nos dois últimos níveis do Conjunto Zora (5 e 10 por peça), num total de 51. Na Tinturaria Kochi, entra no corante verde.",
+  "locations": [
+    "Áreas com Lagalfos azuis, pretos ou prateados.",
+    "Bazar Kara Kara, no Deserto Gerudo."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos azuis ou pretos; Lagalfos prateados e dourados (Modo Mestre) também podem deixá-la.",
+    "Comprar no Bazar Kara Kara por 112 rupias (estoque de 1, que se renova)."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 3:10 à duração.",
+    "Melhoria de armadura: Conjunto do soldado (2 por peça no 3º nível) e Conjunto Zora (5 por peça no 3º nível e 10 por peça no 4º) — 51 no total.",
+    "Corante verde na Tinturaria Kochi.",
+    "Venda: 28 rupias, ou 12 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Cauda de Lagalfos no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Cauda de Lagalfos largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Cauda de Lagalfos queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Cauda de Lagalfos numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Cauda de Lagalfos a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Cauda de Lagalfos à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Cauda de Lagalfos flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Cauda de Lagalfos não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Cauda de Lagalfos largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 28 rupias em lojas e comerciantes, ou 12 Mon na loja de Kilton (Fang and Bone); comprada no Bazar Kara Kara, custa 112 rupias.",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A cauda que não para de se mexer",
+      "text": "Segundo o inventário, a cauda continua se contorcendo depois de separada do corpo, e é justamente essa vitalidade que a faz valorizada como ingrediente de elixires.",
+      "sources": [
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Peça mais exigida do Conjunto Zora",
+      "text": "O Conjunto Zora consome 45 caudas entre o 3º e o 4º níveis — junto com Robalos nutritivos no 3º e Opalas no 4º. Somadas às 6 do Conjunto do soldado, são 51 caudas.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Antes de vender caudas, separe 51 se pretende completar o Conjunto Zora e o 3º nível do Conjunto do soldado."
+  ],
+  "limitations": [
+    "Não cai de Lagalfos comuns nem dos Stallagalfos, segundo as listas de espólios consultadas.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_blue_lizalfos",
+      "relation": "Deixa a cauda"
+    },
+    {
+      "id": "botw_monster_black_lizalfos",
+      "relation": "Deixa a cauda"
+    },
+    {
+      "id": "botw_monster_silver_lizalfos",
+      "relation": "Também a lista entre os espólios"
+    },
+    {
+      "id": "botw_armorset_zora_set",
+      "relation": "Usa 5 e 10 caudas por peça no 3º e 4º níveis"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 2 caudas por peça no 3º nível"
+    },
+    {
+      "id": "botw_material_red_lizalfos_tail",
+      "relation": "Cauda da variante ígnea"
+    },
+    {
+      "id": "botw_material_icy_lizalfos_tail",
+      "relation": "Cauda da variante glacial"
+    },
+    {
+      "id": "botw_material_yellow_lizalfos_tail",
+      "relation": "Cauda da variante elétrica"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante verde"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

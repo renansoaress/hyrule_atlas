@@ -1,0 +1,19 @@
+[
+  {
+    "kind": "propriedades_ignoradas",
+    "name": "Ancient Orb",
+    "note": "Objeto de cenário (orbe ancestral de quebra-cabeças), não é item de inventário."
+  },
+  {
+    "kind": "propriedades_ignoradas",
+    "name": "Horn",
+    "note": "Corneta usada por monstros; objeto sem página de BOTW (stub), não é item de inventário."
+  },
+  {
+    "kind": "dlc_divergente",
+    "name": "Korok Mask",
+    "lista": "TCB",
+    "pagina_do_item": "TMT",
+    "escolhido": "TMT"
+  }
+]

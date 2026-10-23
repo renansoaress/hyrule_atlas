@@ -1,0 +1,205 @@
+{
+  "id": "botw_material_star_fragment",
+  "summary": "Cai do céu à noite e some às 5h. Na panela, garante o bônus crítico; na Grande Fada, é pedido em 88 melhorias (conjuntos amiibo, tiaras, Máscara de Sheik). Vale 300 rupias e ninguém o vende.",
+  "description": "O Fragmento de estrela é uma pedra misteriosa que caiu do céu — o \"Tesouro da estrela cadente\" do boato de Traysi, no volume 4 do Rumor Mill: à noite, um risco de luz cruza o céu, e há um tesouro esperando onde a estrela aterrissa. Os fragmentos caem durante a noite em pontos variados do mapa e desaparecem às 5h da manhã do dia seguinte, então é preciso ir atrás deles assim que a estrela cadente é vista; as imagens do Zelda Wiki mostram o fragmento caído projetando um feixe de luz. Também aparecem em alguns baús (como o baú de metal nos penhascos do Tal Tal Peak, sobre a Spool Bight, no Mar de Lanayru), muito raramente em Centaleões, nos tesouros revelados pelos cães de Lurelin e do Snowfield Stable, e como recompensa da missão \"My Hero\".\n\nO uso mais conhecido é na Fonte da Grande Fada: os conjuntos dos heróis do passado (do herói, do céu, dos ventos, do tempo e do crepúsculo) pedem um fragmento por peça em cada nível, e ele também aparece nos níveis finais do Conjunto do herói selvagem, do Conjunto ancestral, dos Elmos divinos, das tiaras e dos Brincos de topázio, além de todos os níveis da Máscara de Sheik. Na culinária, é um ingrediente neutro que garante 100% de chance de bônus crítico, mas não recupera corações por si só. Ninguém o vende.",
+  "locations": [
+    "Qualquer ponto onde uma estrela cadente aterrisse durante a noite.",
+    "Baú de metal nos penhascos do Tal Tal Peak, com vista para a Spool Bight, no Mar de Lanayru (e outros baús específicos).",
+    "Baús enterrados revelados pelos Pastores hylianos da Vila Lurelin e do Snowfield Stable."
+  ],
+  "obtaining": [
+    "Seguir uma estrela cadente vista à noite até o ponto de queda e recolher o fragmento antes das 5h.",
+    "Missão secundária \"My Hero\": mostrar a Espada Mestra a Aliza, sob a árvore em frente ao Outskirt Stable.",
+    "Raramente, derrotar Centaleões (o compendium lista o fragmento entre os espólios do Centaleão prateado).",
+    "Alimentar três vezes o cão da Vila Lurelin ou o do Snowfield Stable enquanto estiver feliz, para que leve Link ao baú."
+  ],
+  "uses": [
+    "Melhorias na Fonte da Grande Fada (88 no total): 1 por peça em cada nível dos conjuntos do herói, do herói do céu, do herói dos ventos, do herói do tempo e do herói do crepúsculo; 1 no 4º nível de cada peça do Conjunto do herói selvagem, do Conjunto ancestral e dos quatro Elmos divinos; 1 nos níveis 3 e 4 das Tiaras de rubi, safira e diamante e dos Brincos de topázio; 1, 2, 3 e 4 na Máscara de Sheik.",
+    "Culinária: garante o bônus crítico do prato (corações extras, duração maior ou efeito mais forte).",
+    "Ingrediente do corante branco na Tinturaria Kochi.",
+    "Venda: 300 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregado; na panela, garante o bônus crítico e soma 1:30 à duração."
+  ],
+  "interactions": [
+    {
+      "action": "cenario",
+      "variant": "estrela cadente",
+      "status": "confirmado",
+      "result": "À noite, uma estrela cadente risca o céu e deixa um Fragmento de estrela onde cai. O fragmento some às 5h da manhã seguinte.",
+      "conditions": [
+        "Noite no jogo; avistar o risco de luz e ir até o ponto de queda."
+      ],
+      "applications": [
+        "Marcar a direção da queda e correr (ou planar) até o local antes do amanhecer."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Rumor Mill"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro com 100% de chance de bônus crítico: o prato ganha 3 corações extras, 5:00 a mais de duração ou um nível a mais de efeito. Não recupera corações e soma 1:30 à duração.",
+      "conditions": [
+        "Precisa de pelo menos um alimento: como ingrediente suplementar sozinho, o resultado é Comida duvidosa."
+      ],
+      "side_effects": [
+        "O Extrato de monstro anula qualquer chance de bônus crítico, inclusive a do fragmento.",
+        "Ao calcular o preço de venda do prato, o fragmento conta como se valesse só 1 rupia."
+      ],
+      "applications": [
+        "Garantir o crítico num prato importante, como um de Corações extras ou de efeito de nível alto."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "O Zelda Wiki afirma que fragmentos que caem em qualquer corpo d'água desaparecem na hora, mas a própria página marca a informação como carente de fonte."
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; as fontes não descrevem uso especial do fragmento solto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um Fragmento de estrela."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do fragmento ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com um fragmento largado numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do fragmento ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação do fragmento à eletricidade."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o jogo descreve o fragmento como um pedaço de pedra.",
+      "sources": [
+        "zw:Magnesis",
+        "jogo"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a um fragmento."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 300 rupias; nenhuma loja o vende.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "nao_verificado",
+      "title": "Fragmento que cai na água",
+      "text": "Segundo o Zelda Wiki, um fragmento que aterrissa em qualquer corpo d'água some instantaneamente. A página marca a afirmação com pedido de fonte, então trate-a como relato não confirmado."
+    },
+    {
+      "kind": "mecanica",
+      "title": "O herói da Aliza",
+      "text": "Aliza espera o herói de Hyrule sob uma árvore \"sagrada\" em frente ao Outskirt Stable. Ela só aceita Link como herói se ele tiver a Espada Mestra; ao vê-la, entrega um Fragmento de estrela (ou pede que ele volte se a algibeira estiver cheia).",
+      "sources": [
+        "zw:My Hero"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Tesouro da estrela cadente\"",
+      "text": "Traysi recomenda o boato com quatro estrelas no volume 4 do Rumor Mill, encontrado no East Akkala Stable: \"da próxima vez que vir uma estrela cadente, por que não segui-la para ver onde cai?\"",
+      "sources": [
+        "zw",
+        "zw:Rumor Mill"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Reserve fragmentos para pratos críticos garantidos em vez de depender da chance de 5% por ingrediente ou da janela da Lua de sangue (entre 23h30 e 0h15), que também garante o bônus.",
+    "Os conjuntos amiibo dos heróis consomem 60 fragmentos só entre eles (4 por peça, 15 peças): planeje antes de vendê-los."
+  ],
+  "limitations": [
+    "Desaparece às 5h da manhã se não for recolhido.",
+    "Não pode ser comprado.",
+    "Sozinho com outros ingredientes suplementares, gera Comida duvidosa; com Extrato de monstro, perde a garantia de crítico."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_sheiks_mask",
+      "relation": "Pede fragmentos em todos os níveis (10 no total)"
+    },
+    {
+      "id": "botw_armor_cap_of_the_hero",
+      "relation": "Exemplo de peça amiibo que pede 1 fragmento por nível"
+    },
+    {
+      "id": "botw_armor_ancient_helm",
+      "relation": "Pede 1 fragmento no 4º nível"
+    },
+    {
+      "id": "botw_armor_ruby_circlet",
+      "relation": "Pede 1 fragmento nos níveis 3 e 4"
+    },
+    {
+      "id": "botw_monster_silver_lynel",
+      "relation": "Pode deixar fragmentos ao ser derrotado"
+    },
+    {
+      "id": "botw_creature_hylian_retriever",
+      "relation": "Cães de Lurelin e do Snowfield Stable levam a fragmentos"
+    },
+    {
+      "id": "botw_weapon_master_sword",
+      "relation": "Exigida para a recompensa de \"My Hero\""
+    },
+    {
+      "id": "botw_mechanic_great_fairy_fountain",
+      "relation": "Onde os fragmentos são usados nas melhorias"
+    },
+    {
+      "id": "botw_material_monster_extract",
+      "relation": "Anula o bônus crítico garantido"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante branco"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "parcial"
+}

@@ -1,0 +1,184 @@
+{
+  "id": "botw_weapon_savage_lynel_crusher",
+  "summary": "A arma de duas mãos de maior ataque base do jogo (78), forjada pelos Centaleões com um metal raro do pico da Montanha da Morte. Vem dos Centaleões de juba branca e prateados.",
+  "description": "A Maça centaleônica Feroz é o topo do Equipamento centaleônico. Segundo o jogo, um metal raro do pico da Montanha da Morte a torna imensamente pesada, e a força do seu golpe descendente está numa categoria à parte. Com 78 de ataque base, é a arma de duas mãos de maior ataque base de Breath of the Wild — o Zelda Wiki a coloca entre as poucas que superam a Espada Mestra aprimorada.\n\nÉ usada pelos Centaleões de nível alto: os de juba branca e os prateados, além dos Centaleões dourados do Modo Mestre, comuns na Cordilheira de Eldin e nas Cordilheiras de Hebra. Nas mãos deles, a maça golpeia o chão criando uma semiesfera de fogo ou gira para derrubar Link. Para Link, é uma arma de duas mãos longa e pesada, feita de metal: conduz eletricidade, atrai raios, afunda e pode ser puxada com Magnétis.",
+  "locations": [
+    "Cordilheira de Eldin e Cordilheiras de Hebra, com Centaleões de juba branca e Centaleões prateados (e dourados no Modo Mestre)."
+  ],
+  "obtaining": [
+    "Derrotar um Centaleão de juba branca, prateado ou dourado (Modo Mestre) que a empunhe.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma de dano máximo para chefes, Centaleões e Ganon.",
+    "Quebrar a guarda de inimigos com escudo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos e devastadores de duas mãos, sem escudo. O giro carregado gasta vigor e termina numa pancada descendente — o golpe que dá fama à arma. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao acertar um inimigo e causa acerto crítico: 156 de dano com o ataque base.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um choque faz Link largá-la.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, faísca e atrai raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lightning",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda se cair na água.",
+      "applications": [
+        "Recuperá-la com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Arma de Centaleões de juba branca, Centaleões prateados e, no Modo Mestre, Centaleões dourados. Eles a batem no chão para criar uma semiesfera de fogo ou giram com ela para derrubar Link.",
+      "side_effects": [
+        "O fogo desses ataques cria correntes ascendentes que Link pode usar com o Planador para atirar na cabeça do Centaleão, atordoando-o e causando dano dobrado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Lynel"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +8 a +15, Durabilidade aumentada de +4 a +7 ou Acerto crítico; no nível dourado (amarelo): Ataque de +16 a +30, Durabilidade de +8 a +16 ou Lançamento longo (×1,5 a ×2). Com Ataque +30 a maça chega a 108.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Cinco golpes de graça",
+      "text": "Montado num Centaleão — chegando por trás sem ser visto, saltando nele quando estiver atordoado ou planando por cima —, Link pode golpeá-lo até cinco vezes sem gastar durabilidade da arma. Com a Maça centaleônica Feroz, isso permite castigar outros Centaleões sem desgastar a maça.",
+      "sources": [
+        "zw:Lynel",
+        "zw:Durability"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Acima da Espada Mestra",
+      "text": "O Zelda Wiki lista a Maça centaleônica Feroz entre as poucas armas mais fortes que a Espada Mestra aprimorada (60), junto com o Montante da guarda real e a Acha ancestral 3.0.",
+      "sources": [
+        "zw",
+        "zw:Master Sword"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine a maça com o bônus de Acerto crítico: a última pancada de cada sequência vale o dobro, ou seja, 156 com o ataque base."
+  ],
+  "limitations": [
+    "Durabilidade 35.",
+    "Só vem de Centaleões de nível alto (juba branca, prateados e, no Modo Mestre, dourados).",
+    "Metálica: perigosa em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_mighty_lynel_crusher",
+      "relation": "Versão anterior (juba azul)"
+    },
+    {
+      "id": "botw_weapon_lynel_crusher",
+      "relation": "Versão básica"
+    },
+    {
+      "id": "botw_monster_white_maned_lynel",
+      "relation": "Inimigo que a empunha"
+    },
+    {
+      "id": "botw_monster_silver_lynel",
+      "relation": "Inimigo que a empunha"
+    },
+    {
+      "id": "botw_monster_golden_lynel_mm",
+      "relation": "Empunha-a no Modo Mestre"
+    },
+    {
+      "id": "botw_weapon_savage_lynel_sword",
+      "relation": "Arma de uma mão do mesmo nível"
+    },
+    {
+      "id": "botw_weapon_royal_guards_claymore",
+      "relation": "Outra arma de duas mãos acima da Espada Mestra"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "botw_creature_hearty_lizard",
+  "summary": "Lagarto raro das palmeiras do Deserto Gerudo e do litoral do Mar de Necluda. É o único bicho do Elixir nutritivo, que restaura todos os corações e dá Corações extras. Beedle o vende por 100 rupias.",
+  "description": "O Lagarto nutritivo é um dos três lagartos de Hyrule e é considerado raro. Segundo o Zelda Wiki, costuma descansar em palmeiras do Deserto Gerudo e nas margens do Mar de Necluda. O texto do jogo diz que ele se alimenta de comidas muito nutritivas, o que lhe dá grande vitalidade. Como os outros lagartos, foge ao notar Link e acaba sumindo; para pegá-lo, é preciso se aproximar com furtividade, alcançá-lo na corrida ou atordoá-lo com uma flecha ou uma Bomba remota.\n\nÉ o único bicho que produz o Elixir nutritivo: cozido com uma parte de monstro, gera um elixir que restaura todos os corações de Link e ainda acrescenta Corações extras temporários, perdidos conforme ele leva dano. Ingredientes nutritivos como Robalo nutritivo, Salmão nutritivo, Caramujo nutritivo, Durião nutritivo, rabanetes e trufas nutritivas podem ser somados para aumentar os corações extras. Sem parte de monstro, o resultado é Comida duvidosa.\n\nNa Tinturaria Kochi, é um dos ingredientes do corante azul. Vale 20 rupias na venda e custa 100 com Beedle.",
+  "locations": [
+    "Palmeiras do Deserto Gerudo.",
+    "Margens do Mar de Necluda."
+  ],
+  "obtaining": [
+    "Pegar à mão: aproximar-se agachado, correr atrás dele ou atordoá-lo com uma flecha ou uma Bomba remota.",
+    "Comprar de Beedle por 100 rupias em alguns estábulos."
+  ],
+  "uses": [
+    "Elixir nutritivo: cozinhar com pelo menos uma parte de monstro.",
+    "Ingrediente do corante azul na Tinturaria Kochi.",
+    "Venda: 20 rupias."
+  ],
+  "effects": [
+    "No elixir: restaura todos os corações e acrescenta Corações extras temporários."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima e acaba desaparecendo; pode ser apanhado com furtividade ou alcançado na corrida.",
+      "conditions": ["Andar agachado; chuva e grama alta ajudam a não ser notado."],
+      "kind": "mecanica",
+      "sources": ["zw:Lizard", "zw:Stealth"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha atordoa o lagarto, permitindo pegá-lo antes que fuja.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lizard"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota atordoa o lagarto.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lizard"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Costuma descansar em palmeiras do deserto e nas margens do mar; lagartos em geral também podem aparecer ao se levantar pedras ou cortar grama.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Lizard"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um lagarto vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir nutritivo, que restaura todos os corações e dá Corações extras. É o único bicho dessa categoria.",
+      "applications": ["Somar Robalo nutritivo, Salmão nutritivo, Caramujo nutritivo, Durião nutritivo, Rabanete nutritivo ou Trufa nutritiva para aumentar os corações extras."],
+      "produces": ["botw_elixir_hearty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Hearty Elixir", "zw:Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com outros ingredientes, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dubious Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 20 rupias; Beedle cobra 100.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o lagarto exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o lagarto."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Elixir sem duração",
+      "text": "Na tabela de bichos do Zelda Wiki, o Lagarto nutritivo não acrescenta duração (N/A): o efeito do Elixir nutritivo não é temporizado — os corações extras duram até Link levar dano suficiente para perdê-los.",
+      "sources": ["zw:Elixir", "zw:Hearty Elixir", "zw:Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "\"Vive no fundo das florestas\"?",
+      "text": "O texto do jogo diz que este lagarto raro vive no fundo das florestas, mas o compendium e o Zelda Wiki o situam no Deserto Gerudo e no litoral do Mar de Necluda, descansando em palmeiras.",
+      "sources": ["jogo", "comp", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Um Elixir nutritivo antes de uma luta difícil enche toda a barra de corações e ainda acrescenta corações temporários; somar outros ingredientes nutritivos aumenta esse bônus."
+  ],
+  "limitations": [
+    "Corações extras de fontes diferentes não se somam: vale o bônus mais forte.",
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "Raro e caro: Beedle cobra cinco vezes o valor de venda."
+  ],
+  "related": [
+    { "id": "botw_elixir_hearty_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_hearty_bass", "relation": "Ingrediente nutritivo que reforça o elixir" },
+    { "id": "botw_creature_hearty_salmon", "relation": "Ingrediente nutritivo que reforça o elixir" },
+    { "id": "botw_creature_hearty_blueshell_snail", "relation": "Ingrediente nutritivo que reforça o elixir" },
+    { "id": "botw_material_hearty_durian", "relation": "Ingrediente nutritivo que reforça o elixir" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul" }
+  ],
+  "capabilities": ["cura"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "botw_keyitem_royal_saddle",
+  "summary": "Sela com o brasão cintilante da família real, usada pela própria Zelda no seu Cavalo branco. Toffa a entrega no Estábulo Outskirt quando Link registra o descendente desse cavalo. Puramente cosmética.",
+  "description": "A Sela real é a contraparte da Rédea real no equipamento de montaria real. A descrição do jogo diz que o brasão cintilante indica sua origem na família real de Hyrule e que, segundo dizem, a própria princesa Zelda a usava em seu amado cavalo. Antes da Grande Calamidade, Zelda mandou fazer a sela sob medida para o Cavalo branco; depois, o avô de Toffa herdou a peça e a passou ao neto.\n\nNa Missão secundária \"The Royal White Stallion\", Toffa, do Estábulo Outskirt, pede a Link que encontre e registre o cavalo branco da família real, visto na Colina Safula (Safula Hill). Quando Link aparece com ele registrado, Toffa se emociona — \"o vovô não estava mentindo!\" — e entrega a sela e a rédea \"feitas sob medida para o cavalo branco real\", já colocando as duas no animal.\n\nA sela é cosmética e pode ser passada para qualquer cavalo com vínculo máximo nos estábulos Highland, Outskirt, South Akkala e Woodland, exceto Epona e o Cavalo gigante. Com \"Captured Memories\" concluída, ela aparece no cavalo de Zelda na cena especial após os créditos.",
+  "locations": [
+    "Estábulo Outskirt, com Toffa."
+  ],
+  "obtaining": [
+    "Registrar o Cavalo branco e mostrá-lo a Toffa (\"The Royal White Stallion\")."
+  ],
+  "uses": [
+    "Decorar um cavalo registrado com vínculo máximo; o Cavalo branco já a recebe ao fim da missão."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas visual."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Toffa a coloca no Cavalo branco; depois, um funcionário de estábulo pode trocá-la para outro cavalo. Não altera atributos.",
+      "conditions": [
+        "Para trocar de cavalo: falar com Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:The Royal White Stallion", "zw:Horse Gear"]
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não altera velocidade, vigor nem força do cavalo.",
+      "sources": ["zw:Horse Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Missão concluída numa conversa",
+      "text": "Se Link domar e registrar o Cavalo branco antes de falar com Toffa, basta conversar com ele depois do registro: a missão começa e termina na hora, com a entrega da sela e da rédea.",
+      "sources": ["zw:The Royal White Stallion"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O cavalo exige vigor",
+      "text": "Domar o Cavalo branco exige pelo menos duas rodas de vigor completas. Ele tem vigor 5, o máximo entre os cavalos registráveis.",
+      "sources": ["zw:The Royal White Stallion", "zw:Horse"]
+    }
+  ],
+  "advanced_uses": [
+    "Registre o Cavalo branco no Estábulo Outskirt mesmo, para falar com Toffa logo em seguida."
+  ],
+  "limitations": [
+    "Apenas cosmética.",
+    "Exige domar e registrar o Cavalo branco."
+  ],
+  "related": [
+    { "id": "botw_keyitem_royal_bridle", "relation": "Outra peça do equipamento real" },
+    { "id": "botw_creature_white_horse", "relation": "Cavalo que recebe a sela na missão" },
+    { "id": "botw_creature_horse", "relation": "Outros cavalos também podem usá-la" },
+    { "id": "botw_mechanic_stable", "relation": "Onde o cavalo é registrado e a sela é trocada" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

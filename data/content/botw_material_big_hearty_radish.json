@@ -1,0 +1,149 @@
+{
+  "id": "botw_material_big_hearty_radish",
+  "summary": "Versão crescida do Rabanete nutritivo, marcada por um talo bifurcado e florido. Cru cura 4 corações e assado, 6; cozido, dá Corações extras. Nenhuma loja o vende.",
+  "description": "O Rabanete nutritivo grande é uma versão maior do Rabanete nutritivo, rica em compostos revigorantes. Como é uma raiz, só aparece quando é arrancado: o que o denuncia nos campos é o talo bifurcado e florido. Cru, recupera 4 corações; cozido na panela, concede Corações extras. Assado, vira Rabanete nutritivo grande assado, que cura 6 corações sem efeito — a descrição do jogo comenta que levar ao fogo um vegetal tão precioso é quase uma extravagância.\n\nO compendium o localiza no Altiplano de Akkala e na Grande Nascente de Lanayru, e o Zelda Wiki fala em várias áreas gramadas de Hyrule. Não há loja listada que o venda. Na culinária, vale como o rabanete da Sopa cremosa do coração, e na Tinturaria Kochi entra no corante pêssego (rosa).",
+  "locations": [
+    "Áreas gramadas de Hyrule; o compendium cita o Altiplano de Akkala e a Grande Nascente de Lanayru.",
+    "Procure o talo bifurcado com flores rosadas."
+  ],
+  "obtaining": [
+    "Arrancar do solo. Os dados estruturados não listam lojas que o vendam."
+  ],
+  "uses": [
+    "Pratos de Corações extras.",
+    "Sopa cremosa do coração: vale como o rabanete exigido.",
+    "Receitas genéricas de vegetal (Fritada de ervas, Legumes glaceados, Ervas salteadas, Ervas grelhadas no sal, pratos no vapor, Omelete de legumes, Bolinhos de arroz com legumes, cremes e sopas cremosas).",
+    "Cura grande sem panela: 4 corações cru, 6 assado.",
+    "Ingrediente do corante pêssego (rosa) na Tinturaria Kochi.",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Cozido: Corações extras — aumento temporário do máximo de corações."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, assa sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um rabanete largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Assado pelo fogo, vira Rabanete nutritivo grande assado, que recupera 6 corações sem efeito.",
+      "side_effects": ["Perde os Corações extras."],
+      "applications": ["Vender: assado vale 24 rupias, contra 15 do cru."],
+      "produces": ["botw_food_roasted_big_radish"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food", "zw:Roasted Big Radish"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Assado sobre uma fogueira, vira Rabanete nutritivo grande assado.",
+      "produces": ["botw_food_roasted_big_radish"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante de Eldin, assa ao ser largado no chão.",
+      "produces": ["botw_food_roasted_big_radish"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; vegetais não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do rabanete na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o rabanete não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Corações extras. Mais unidades, ou outros ingredientes do mesmo efeito, aumentam a quantidade de corações extras.",
+      "side_effects": ["Corações extras de pratos diferentes não se somam: vale o mais forte.", "O total de corações de Link não passa de 30."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Extra Hearts"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera 4 corações, sem efeito.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 15 rupias; assado, vale 24.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Assar vale a pena na venda",
+      "text": "O Rabanete nutritivo grande assado vale 24 rupias, contra 15 do cru, e cura 6 corações em vez de 4. Se o objetivo não for o efeito Corações extras, assá-lo melhora tanto a cura quanto o preço.",
+      "sources": ["zw", "zw:Roasted Food", "zw:Roasted Big Radish"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma raiz escondida",
+      "text": "O vegetal em si não fica visível antes de ser colhido; só o talo bifurcado e florido aparece acima da terra.",
+      "sources": ["zw", "zw:Flower"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Trufonas nutritivas e Duriões nutritivos para pratos de muitos Corações extras antes de lutas longas."
+  ],
+  "limitations": [
+    "Cru ou assado não dá Corações extras.",
+    "Não é vendido em lojas nem usado em melhorias de armadura."
+  ],
+  "related": [
+    { "id": "botw_food_roasted_big_radish", "relation": "Resultado de expor o rabanete ao fogo" },
+    { "id": "botw_material_hearty_radish", "relation": "Versão menor" },
+    { "id": "botw_food_creamy_heart_soup", "relation": "Exige qualquer rabanete" },
+    { "id": "botw_material_big_hearty_truffle", "relation": "Outro ingrediente forte de Corações extras" },
+    { "id": "botw_material_hearty_durian", "relation": "Outro ingrediente de Corações extras" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante pêssego" }
+  ],
+  "capabilities": ["cura", "reage_fogo"],
+  "verification_status": "verificado"
+}

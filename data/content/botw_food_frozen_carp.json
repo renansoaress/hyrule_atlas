@@ -1,0 +1,175 @@
+{
+  "id": "botw_food_frozen_carp",
+  "summary": "Carpa congelada de textura crocante e gelada, \"uma iguaria\" segundo o jogo. Sai de qualquer carpa, cura 1 coração como a crua, dá Resistência ao calor por 1 minuto e vale 18 rupias.",
+  "description": "Carpa valente, Carpa blindada e Carpa tricolor viram a mesma Carpa congelada no clima congelante, na água gelada ou sob ataques de gelo. A descrição do jogo trata a textura crocante e gelada como uma verdadeira iguaria e avisa que comê-la aumenta temporariamente a resistência ao calor.\n\nA cura fica em 1 coração, como a da carpa crua, e o efeito é Resistência ao calor de nível 1 por um minuto. Na venda, vale 18 rupias: lucro sobre a Carpa valente e a blindada (10 cruas) e sobre a Carpa assada (15), mas ligeiro prejuízo para a Carpa tricolor, que vale 20 crua.",
+  "locations": [
+    "Prepara-se a partir de qualquer carpa em regiões de clima congelante — Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia — ou na água gelada de Hebra Falls, Hebra Headspring, Hebra Plunge e do River of the Dead."
+  ],
+  "obtaining": [
+    "Largar uma carpa no chão de uma região de clima congelante, como as Cordilheiras de Hebra ou o Monte Lanayru.",
+    "Jogar uma carpa na água gelada (Cold Water), como a de Hebra Plunge ou a do River of the Dead.",
+    "Acertar uma carpa com uma Flecha congelante ou com Espada álgida, Grã-Espada álgida ou Lança congelante."
+  ],
+  "uses": [
+    "Refresco rápido para o calor diurno do Deserto Gerudo.",
+    "Venda: 18 rupias."
+  ],
+  "effects": [
+    "Recupera 1 coração.",
+    "Resistência ao calor de nível 1 (baixo) por 1 minuto."
+  ],
+  "interactions": [
+    {
+      "action": "frio_extremo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: basta largar uma carpa (Carpa valente, Carpa blindada ou Carpa tricolor) no chão de uma região de clima congelante para que o ingrediente endureça e vire Carpa congelada.",
+      "conditions": [
+        "Clima congelante: Cordilheiras de Hebra, Monte Lanayru, Montanhas Gerudo, Monte Hylia (no pico nevado do Grande Platô) ou pontos altos como o topo do Castelo de Hyrule."
+      ],
+      "side_effects": [
+        "O mesmo frio fere Link aos poucos se ele não tiver Resistência ao frio."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Freezing Climate",
+        "zw:Mount Hylia"
+      ]
+    },
+    {
+      "action": "agua",
+      "variant": "água gelada",
+      "status": "confirmado",
+      "result": "Jogar uma carpa (Carpa valente, Carpa blindada ou Carpa tricolor) na água gelada (Cold Water) das regiões frias também congela o ingrediente, que vira Carpa congelada.",
+      "conditions": [
+        "Água gelada, como a de Hebra Falls, Hebra Headspring e Hebra Plunge (Fronteira de Tabantha) e a do River of the Dead, no Grande Platô."
+      ],
+      "side_effects": [
+        "Não entre na água: nadar nela tira meio coração a cada 0,5 s, e nenhuma roupa ou comida protege."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cold Water",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Atingir uma carpa (Carpa valente, Carpa blindada ou Carpa tricolor) com uma Flecha congelante ou com golpes de Espada álgida, Grã-Espada álgida ou Lança congelante também produz Carpa congelada.",
+      "applications": [
+        "Congelar a pesca ou a caça na hora, longe das regiões frias."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Ice Arrow"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1 coração — o mesmo da carpa crua — e concede Resistência ao calor de nível 1 por 1 minuto.",
+      "side_effects": [
+        "Como todo efeito temporário de comida, a Resistência ao calor substitui qualquer outro efeito de comida ou elixir que estiver ativo — inclusive um efeito refrescante mais forte ou mais longo."
+      ],
+      "applications": [
+        "Proteção curta contra o calor diurno do Deserto Gerudo sem passar pela Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 18 rupias; cruas, a Carpa valente e a blindada valem 10, e a tricolor, 20.",
+      "sources": [
+        "zw",
+        "zw:Frozen Food",
+        "zw:Mighty Carp",
+        "zw:Armored Carp",
+        "zw:Sanke Carp"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Carpa congelada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece ao expor Carpa congelada ao fogo (se descongela ou se vira a versão assada)."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Melhor destino para carpas comuns",
+      "text": "Para a Carpa valente e a blindada (10 rupias cruas), congelar rende 18 rupias, mais que assar (15). Só a Carpa tricolor vale mais crua (20).",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Roasted Food",
+        "zw:Sanke Carp"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Nível 1 e só contra o calor do deserto",
+      "text": "Toda comida congelada dá um nível de Resistência ao calor por um minuto. Esse efeito evita o dano do calor do Deserto Gerudo de dia, mas as zonas de calor extremo do sul e do oeste do deserto pedem dois níveis, e ele não ajuda contra o clima escaldante, o fogo ou a lava de Eldin.",
+      "sources": [
+        "zw:Food",
+        "zw:Frozen Food",
+        "zw:Added Effect",
+        "zw:Extremely Hot Zone",
+        "zw:Heat"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Dá só Resistência ao calor de nível 1: não basta para as zonas de calor extremo do sul e do oeste do Deserto Gerudo, que exigem nível 2.",
+    "Não serve para Eldin: Resistência ao calor não protege do clima escaldante, do fogo nem da lava — para isso é preciso Proteção contra chamas.",
+    "Comer durante outro efeito temporário (ataque, defesa, um Elixir refrescante etc.) troca esse efeito pela Resistência ao calor de 1 minuto."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_mighty_carp",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_armored_carp",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_creature_sanke_carp",
+      "relation": "Ingrediente cru (vale mais cru)"
+    },
+    {
+      "id": "botw_food_roasted_carp",
+      "relation": "Versão assada das mesmas carpas"
+    },
+    {
+      "id": "botw_arrow_ice_arrow",
+      "relation": "Congela o ingrediente cru à distância"
+    },
+    {
+      "id": "botw_elixir_chilly_elixir",
+      "relation": "Resistência ao calor mais longa e mais forte"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_calor"
+  ],
+  "verification_status": "verificado"
+}

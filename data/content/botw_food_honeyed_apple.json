@@ -1,0 +1,104 @@
+{
+  "id": "botw_food_honeyed_apple",
+  "summary": "Maçã cozida com Mel de abelha, sobremesa da mãe de Koko e recompensa da missão \"Koko's Specialty\", em Kakariko. Só com maçã e mel é sempre energizante.",
+  "description": "A Maçã com mel combina Maçã e Mel de abelha; a descrição do jogo fala de um prato suculento e agridoce, com maçãs recém-amadurecidas e mel. Só com esses dois ingredientes, a versão é sempre energizante: recupera parte do Medidor de vigor, cura 5 corações e vale 30 rupias. A versão comum exige uma fruta ou legume com efeito diferente do mel, que anule o efeito; ela cura 6 corações e vale 40 rupias.\n\nNa Vila Kakariko, depois das três primeiras missões de Koko, ela decide fazer Maçã com mel de sobremesa, o doce preferido da mãe falecida — que preparava a maçã com mel para Koko quando ela tinha febre. Falta o Mel de abelha, que Koko não consegue colher sozinha porque as abelhas atacam. Na Missão secundária \"Koko's Specialty\", Link leva o mel e recebe de recompensa uma Maçã com mel energizante. A anotação da missão traz a receita: mergulhar a maçã no mel e aquecer até ficar no ponto de fatiar, servindo quente.\n\nPara outras frutas com mel, a receita é Frutas com mel; com Manteiga de cabra no lugar do mel, Maçã quente na manteiga.",
+  "locations": [
+    "Koko: cozinha na panela pública da Vila Kakariko a partir das 11h, quando oferece suas missões.",
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Maçã + Mel de abelha.",
+    "Recompensa da Missão secundária \"Koko's Specialty\", na Vila Kakariko (versão energizante)."
+  ],
+  "uses": [
+    "Recuperação de vigor com ingredientes simples.",
+    "Venda: 30 ou 40 rupias."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — só Maçã e mel; 5 corações, 30 rupias.",
+    "Versão comum (fruta ou legume de efeito diferente): recupera 6 corações, 40 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera parte do Medidor de vigor e 5 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão energizante"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com um ingrediente de efeito diferente, perde o efeito e cura 6 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 30 rupias na versão energizante e 40 na versão comum.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A sobremesa da mãe de Koko",
+      "text": "Ao provar a Maçã com mel, Koko se lembra de que a mãe fazia o doce para ela quando estava com febre e chora de emoção, prometendo continuar aprendendo a cozinhar.",
+      "sources": [
+        "zw:Koko's Specialty",
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Última missão da série de Koko",
+      "text": "\"Koko's Specialty\" só aparece depois de \"Koko's Kitchen\", \"Cooking with Koko\" e \"Koko Cuisine\".",
+      "sources": [
+        "zw:Koko's Specialty",
+        "zw:Koko"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita Maçã; outras frutas levam a Frutas com mel.",
+    "A versão comum exige um terceiro ingrediente de efeito diferente."
+  ],
+  "related": [
+    {
+      "id": "botw_material_apple",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório e item pedido por Koko"
+    },
+    {
+      "id": "botw_food_honeyed_fruits",
+      "relation": "Mesma ideia com outras frutas"
+    },
+    {
+      "id": "botw_food_hot_buttered_apple",
+      "relation": "Maçã com manteiga, outra receita de Koko"
+    },
+    {
+      "id": "botw_food_meat_stuffed_pumpkin",
+      "relation": "Prato da missão anterior de Koko"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

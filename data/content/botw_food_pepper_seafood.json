@@ -1,0 +1,92 @@
+{
+  "id": "botw_food_pepper_seafood",
+  "summary": "Fruto do mar grelhado com Pimenta de fogo, cujas sementes realçam o sabor. Quase sempre sai com Resistência ao frio; só fica sem efeito com um fruto do mar de efeito contrário.",
+  "description": "Os Frutos do mar apimentados juntam uma Pimenta de fogo e qualquer fruto do mar; segundo o inventário, as sementes de pimenta grelhadas com o peixe realçam o sabor e o aroma. Como a pimenta é um ingrediente \"picante\", o prato normalmente sai na versão com Resistência ao frio — é o que acontece com Robalo hyliano ou Carpa tricolor, que não têm efeito, e com a Truta rescaldada, que também é picante. A versão comum, sem efeito, só aparece quando o fruto do mar tem um efeito diferente do da pimenta (por exemplo, Carpa valente), e os dois se anulam.\n\nNa culinária de BOTW a Pimenta de fogo conta como fruta, e a receita apimentada vem antes de Espetinho de frutos do mar, Espetinho de peixe e Peixe no vapor na ordem de prioridade: por isso até um caranguejo com pimenta forma este prato. Já carne na mesma panela leva a uma das fritadas de carne e frutos do mar, e outra fruta junto da pimenta leva à Compota de frutas, ambas testadas antes.",
+  "obtaining": [
+    "Cozinhar numa Panela uma Pimenta de fogo e qualquer peixe, caranguejo ou caramujo."
+  ],
+  "uses": [
+    "Prato rápido de Resistência ao frio feito com peixe comum e pimenta.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Na versão apimentada (com Robalo hyliano, Carpa tricolor ou Truta rescaldada): Resistência ao frio.",
+    "Com fruto do mar de efeito diferente do da pimenta: os efeitos se anulam e o prato não tem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e, na versão apimentada, concede Resistência ao frio de nível baixo.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "fruto do mar de outro efeito",
+      "status": "confirmado",
+      "result": "Um fruto do mar com efeito diferente do picante anula o efeito da pimenta: sai a versão comum.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 2 ingredientes obrigatórios o fator é 1,8×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Uma única variante",
+      "text": "Ao contrário da maioria dos pratos de frutos do mar, este só tem uma variante com efeito, a picante. Peixes, caranguejos e caramujos com outros efeitos não criam versões novas: apenas cancelam a pimenta.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Não serve para obter outros efeitos além da Resistência ao frio.",
+    "Carne na panela muda a receita para uma fritada; outra fruta, para Compota de frutas."
+  ],
+  "related": [
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Ingrediente obrigatório (conta como fruta)"
+    },
+    {
+      "id": "botw_creature_sizzlefin_trout",
+      "relation": "Peixe picante que reforça a versão apimentada"
+    },
+    {
+      "id": "botw_food_pepper_steak",
+      "relation": "Mesma ideia com carne"
+    },
+    {
+      "id": "botw_food_sauteed_peppers",
+      "relation": "Prato feito só de pimentas"
+    },
+    {
+      "id": "botw_food_meat_and_seafood_fry",
+      "relation": "Receita que tem prioridade se houver carne"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "protege_frio"
+  ],
+  "verification_status": "verificado"
+}

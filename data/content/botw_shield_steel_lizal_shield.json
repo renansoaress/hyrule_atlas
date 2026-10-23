@@ -1,0 +1,128 @@
+{
+  "id": "botw_shield_steel_lizal_shield",
+  "summary": "O Escudo Lagal mais forte, reforçado com placas de metal: Defesa 35, desgaste reduzido pela metade ao surfar e, segundo Selmie, um espinho que vale \"pontos de estilo\" nas descidas.",
+  "description": "O Escudo Lagal de aço é a versão final do escudo dos Lagalfos, reforçada com várias carapaças de metal. O jogo diz que a defesa é alta, mas que o peso exige um soldado habilidoso para carregá-lo. Com Defesa 35 e durabilidade 15, encerra a linha do equipamento Lagalfos (Lizalfos Gear).\n\nTem uma vantagem pouco óbvia nos parâmetros: o desgaste ao Surfar com escudo é multiplicado por 0,5, metade do normal, o mesmo valor do Resplendor da aurora. Selmie parece concordar com a escolha — ao vê-lo, diz que o espinho vale muitos pontos de estilo para quem quer parecer radical na encosta.\n\nÉ carregado pelos Lagalfos pretos, prateados e dourados (estes só no Modo Mestre) e, depois que os inimigos sobem de nível pela segunda vez, também pelos Lagalfos ígneos, glaciais e elétricos. Como é metálico, conduz eletricidade, atrai raios, afunda e pode ser movido com Magnétis; não queima.",
+  "locations": [
+    "Cordilheiras de Hebra e Altiplano de Akkala, segundo o compendium, nas mãos de Lagalfos fortes."
+  ],
+  "obtaining": [
+    "Derrotar Lagalfos pretos ou prateados (ou dourados, no Modo Mestre).",
+    "Mais tarde no jogo, derrotar Lagalfos ígneos, glaciais e elétricos, que passam a usá-lo após o segundo aumento de nível dos inimigos."
+  ],
+  "uses": [
+    "Escudo de metal de defesa alta para o meio do jogo.",
+    "Prancha de surfe com desgaste reduzido pela metade."
+  ],
+  "effects": [
+    "Desgaste ao surfar reduzido pela metade (multiplicador 0,5)."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 35; cada golpe consome durabilidade, exceto na Defesa perfeita.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "kind": "mecanica",
+      "sources": ["zw:Shield", "zw:Perfect Guard", "dm"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Ao Surfar com escudo, perde durabilidade pela metade do normal (multiplicador 0,5); o atrito é o padrão.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "side_effects": ["Lagalfos elétricos, que também passam a usar este escudo, soltam arcos elétricos que fazem Link largar escudos metálicos."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipado durante tempestades, atrai raios — nas mãos de Link ou de um Lagalfos.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-lo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantado e movido com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Usado por Lagalfos pretos, prateados e dourados; depois do segundo aumento de nível dos inimigos, também pelos Lagalfos elementais.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +1 a +2 (nível branco) ou +3 (nível amarelo) e com Defesa do escudo aumentada de +5 a +10 (branco) ou +11 a +19 (amarelo). Com o bônus amarelo máximo, a Defesa chega a 54.",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Um escudo de monstro bom de surfe",
+      "text": "Entre os escudos de monstros, é o único com desgaste de surfe reduzido. Só cinco escudos têm esse multiplicador abaixo de 1: Escudo ancestral (0,2), Resplendor da aurora e Escudo Lagal de aço (0,5), Escudo luminescente (0,6) e Escudo Gerudo (0,7).",
+      "sources": ["dm", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Pontos de estilo",
+      "text": "Selmie elogia o escudo: \"Esse espinho vale muitos pontos de estilo quando você quer parecer radical na encosta!\"",
+      "sources": ["zw", "jogo"]
+    }
+  ],
+  "advanced_uses": [
+    "Usá-lo como prancha em trajetos que misturam neve e pedra: o desgaste reduzido preserva a durabilidade nos trechos rochosos."
+  ],
+  "limitations": [
+    "Durabilidade de 15 para um escudo de defesa alta.",
+    "Metálico: atrai raios e cai das mãos com choques."
+  ],
+  "related": [
+    { "id": "botw_shield_lizal_shield", "relation": "Versão básica" },
+    { "id": "botw_shield_reinforced_lizal_shield", "relation": "Versão intermediária" },
+    { "id": "botw_weapon_forked_lizal_spear", "relation": "Mesmo arquétipo (equipamento Lagalfos)" },
+    { "id": "botw_weapon_lizal_tri_boomerang", "relation": "Mesmo arquétipo (equipamento Lagalfos)" },
+    { "id": "botw_bow_steel_lizal_bow", "relation": "Mesmo arquétipo e reforço de aço" },
+    { "id": "botw_monster_black_lizalfos", "relation": "Monstro que o empunha" },
+    { "id": "botw_monster_silver_lizalfos", "relation": "Monstro que o empunha" },
+    { "id": "botw_monster_golden_lizalfos_mm", "relation": "Monstro que o empunha (Modo Mestre)" },
+    { "id": "botw_shield_daybreaker", "relation": "Mesmo multiplicador de desgaste no surfe (0,5)" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico"],
+  "verification_status": "verificado"
+}

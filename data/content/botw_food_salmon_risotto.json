@@ -1,0 +1,89 @@
+{
+  "id": "botw_food_salmon_risotto",
+  "summary": "Risoto de Salmão nutritivo, Arroz hyliano, Manteiga de cabra e Halita, sugerido no diário de Ivee como prato \"para quem ama peixe\". Cura tudo e dá Corações extras.",
+  "description": "O Risoto de salmão leva Salmão nutritivo, Arroz hyliano, Manteiga de cabra e Halita. O inventário descreve um risoto encorpado em que o arroz absorve o sabor leve do salmão. Como o salmão é \"nutritivo\", a receita original já sai na única variante, que cura todos os corações e dá Corações extras; a versão comum só aparece com um quinto ingrediente de efeito diferente.\n\nNo diário de Ivee, na Vila Hateno, a receita aparece como variação do Risoto de cogumelos: basta trocar os Cogumelos hylianos por um Salmão nutritivo para obter um prato \"para quem ama peixe\". Comparado ao Salmão à meunière, o risoto exige quatro ingredientes em vez de três, então sobra apenas um espaço para reforçar os corações extras. Na ordem do jogo, ele é o primeiro risoto testado, à frente dos de caranguejo, legumes e cogumelos.",
+  "locations": [
+    "A sugestão da receita está no diário de Ivee, na casa dela na Vila Hateno."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela Salmão nutritivo, Arroz hyliano, Manteiga de cabra e Halita."
+  ],
+  "uses": [
+    "Cura completa com Corações extras.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Na receita original: cura todos os corações e concede Corações extras temporários.",
+    "Com ingrediente de efeito diferente: apenas recupera corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Restaura toda a vida e aumenta temporariamente o número máximo de corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "cogumelo no lugar do salmão",
+      "status": "confirmado",
+      "result": "A mesma base com cogumelo em vez de salmão forma Risoto de cogumelos; com o salmão presente, o risoto de salmão tem prioridade.",
+      "produces": [
+        "botw_food_mushroom_risotto"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 4 ingredientes obrigatórios o fator é 2,4×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Além da sugestão do diário de Ivee e da prioridade sobre os outros risotos, as fontes não descrevem particularidades deste prato.",
+  "limitations": [
+    "Só um espaço livre.",
+    "Só existe a variante nutritiva."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_salmon",
+      "relation": "Ingrediente obrigatório que dá os corações extras"
+    },
+    {
+      "id": "botw_food_mushroom_risotto",
+      "relation": "Receita de origem no diário de Ivee"
+    },
+    {
+      "id": "botw_food_salmon_meuniere",
+      "relation": "Outro prato exclusivo do Salmão nutritivo, com um espaço livre a mais"
+    },
+    {
+      "id": "botw_food_crab_risotto",
+      "relation": "Risoto com caranguejo"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

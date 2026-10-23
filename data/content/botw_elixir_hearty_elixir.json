@@ -1,0 +1,84 @@
+{
+  "id": "botw_elixir_hearty_elixir",
+  "summary": "Elixir de Lagarto nutritivo que restaura todos os corações e acrescenta Corações extras amarelos, perdidos conforme Link sofre dano. Cada estrela de potência vale um coração extra; não há duração.",
+  "description": "O Elixir nutritivo cura Link por completo e aumenta temporariamente o máximo de corações: os Corações extras ficam acima da barra normal e vão sumindo à medida que Link leva dano. É feito com o Lagarto nutritivo, um lagarto raro que repousa em coqueiros do Deserto Gerudo e nas margens do Mar de Necluda.\n\nNa tabela de culinária do Zelda Wiki, cada estrela de potência acrescenta um coração extra, e o Lagarto nutritivo vale quatro estrelas. Ingredientes nutritivos de refeição aumentam ainda mais o bônus: Rabanete nutritivo grande (cinco estrelas), Trufona nutritiva, Durião nutritivo e Salmão nutritivo (quatro), Rabanete nutritivo e Caramujo nutritivo (três), Robalo nutritivo (duas) e Trufa nutritiva (uma). Como o efeito não tem tempo, as partes de monstro apenas tornam a receita um elixir.",
+  "locations": [
+    "Lagartos nutritivos: coqueiros do Deserto Gerudo e margens do Mar de Necluda."
+  ],
+  "obtaining": [
+    "Cozinhar um Lagarto nutritivo com pelo menos uma parte de monstro.",
+    "Beedle vende Lagartos nutritivos por 100 rupias."
+  ],
+  "uses": [
+    "Encarar chefes ou Centaleões com uma reserva de corações acima do normal.",
+    "Cura total de emergência."
+  ],
+  "effects": [
+    "Restaura todos os corações.",
+    "Corações extras temporários (um por estrela de potência), perdidos conforme Link sofre dano."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Enche a barra de vida e acrescenta Corações extras acima do máximo; esses corações somem à medida que Link leva dano.",
+      "kind": "mecanica",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Lagarto nutritivo (★★★★) + parte de monstro; cada ★ vale um coração extra. Ingredientes nutritivos somam estrelas e corações extras.",
+      "conditions": ["Pelo menos um Lagarto nutritivo e uma parte de monstro."],
+      "side_effects": [
+        "Cozinhado com outros ingredientes sem parte de monstro, o lagarto vira Comida duvidosa.",
+        "Ingredientes de outro efeito anulam tudo."
+      ],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild", "zw:Hearty Lizard"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Preço pela regra geral dos elixires (soma dos ingredientes × 1,5 a 2,8). O Lagarto nutritivo vale 20 rupias como ingrediente.",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Hearty Lizard"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Crítico e Extrato de monstro",
+      "text": "O bônus crítico de cozimento acrescenta mais um coração extra (o bônus de cura não é sorteado, porque a vida já fica cheia). O Extrato de monstro sempre mexe na potência deste efeito, nunca na cura: ou reduz a uma estrela, ou soma um coração extra.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Estalagens também dão Corações extras",
+      "text": "As camas caras das estalagens concedem um coração extra (40 rupias) ou dois (80 rupias), mas não acumulam: só repõem até o nível que oferecem.",
+      "sources": ["zw:Inn"]
+    }
+  ],
+  "advanced_uses": [
+    "A Panela aceita cinco ingredientes: além do lagarto e da parte de monstro, sobram três vagas, e Rabanetes nutritivos grandes (★★★★★) são os que mais acrescentam corações extras por vaga."
+  ],
+  "limitations": [
+    "Os corações extras não se regeneram: depois de perdidos, só outro prato ou elixir nutritivo os devolve.",
+    "O lagarto é raro e caro nas lojas."
+  ],
+  "related": [
+    { "id": "botw_creature_hearty_lizard", "relation": "Único bicho que produz o elixir (★★★★)" },
+    { "id": "botw_material_big_hearty_radish", "relation": "Ingrediente nutritivo mais forte (★★★★★)" },
+    { "id": "botw_material_big_hearty_truffle", "relation": "Ingrediente nutritivo (★★★★)" },
+    { "id": "botw_material_hearty_durian", "relation": "Ingrediente nutritivo (★★★★)" },
+    { "id": "botw_creature_hearty_salmon", "relation": "Ingrediente nutritivo (★★★★)" },
+    { "id": "botw_material_hearty_radish", "relation": "Ingrediente nutritivo (★★★)" },
+    { "id": "botw_creature_hearty_blueshell_snail", "relation": "Ingrediente nutritivo (★★★)" },
+    { "id": "botw_creature_hearty_bass", "relation": "Ingrediente nutritivo (★★)" },
+    { "id": "botw_material_hearty_truffle", "relation": "Ingrediente nutritivo (★)" },
+    { "id": "botw_material_monster_extract", "relation": "Altera aleatoriamente a quantidade de corações extras" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras de cozimento" }
+  ],
+  "capabilities": ["cura"],
+  "verification_status": "verificado"
+}

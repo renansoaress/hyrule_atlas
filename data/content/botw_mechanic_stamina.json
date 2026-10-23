@@ -1,0 +1,120 @@
+{
+  "id": "botw_mechanic_stamina",
+  "summary": "Roda verde que limita correr, escalar, nadar, planar, ataques giratórios e mira aérea. Recupera-se sozinha quando não é usada; cresce com Recipientes de vigor (4 Orbes espirituais cada, 5 por roda, até 3 rodas).",
+  "description": "O Vigor é o recurso físico de Link, representado pelo Medidor de vigor (roda de vigor). Correr (segurando B), escalar, nadar, usar o Planador e carregar ataques giratórios só são possíveis enquanto há vigor; mirar o arco no ar, com o tempo desacelerado, também o drena depressa. Quando não está sendo usado, ele se recupera sozinho. Se acabar no meio de uma escalada, Link solta a parede e cai; no meio do voo, o Planador se fecha; no nado, Link afunda e, se ainda tiver corações, volta para a terra firme.\n\nLink começa com uma roda. Cada Recipiente de vigor, trocado por quatro Orbes espirituais numa Estátua da Deusa, acrescenta um quinto de roda; com dez recipientes ele chega a três rodas completas. Quem prefere 30 corações só consegue sete recipientes, mas a Estátua cornuda da Vila Hateno troca recipientes por Contêineres de coração (e vice-versa) por 100 rupias na venda e 120 na compra. Elixires e pratos energizantes repõem vigor, e os tenazes criam uma reserva extra temporária.",
+  "locations": [
+    "Estátuas da Deusa em todos os grandes povoados (troca de Orbes espirituais).",
+    "Estátua cornuda, no caminho para o Lago Firly, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Recipientes de vigor: quatro Orbes espirituais numa Estátua da Deusa; há 120 orbes no jogo base, mais 4 da DLC The Champions' Ballad."
+  ],
+  "uses": [
+    "Escaladas, travessias a nado, voos de Planador, corridas e ataques carregados."
+  ],
+  "effects": [
+    "Ações físicas consomem vigor; sem vigor, Link não corre, solta a parede, fecha o Planador ou afunda."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Correr, ataques giratórios, escalar, nadar e planar consomem vigor; parado, ele se recupera sozinho. Mirar o arco no ar desacelera o tempo e drena o vigor rapidamente.",
+      "side_effects": [
+        "Sem vigor, não é possível correr.",
+        "Se acabar durante o voo, Link guarda o Planador e cai; sem vigor, ainda pode abri-lo por um segundo uma única vez para amortecer a queda."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Sprinting", "zw:Paraglider", "zw:Bow", "zw:Swimming"]
+    },
+    {
+      "action": "cenario",
+      "variant": "escalada",
+      "status": "confirmado",
+      "result": "Escalar gasta vigor de forma contínua, mais em paredes íngremes; saltar na parede (X) gasta muito. Escadas não gastam, exceto ao saltar, e permitem subir devagar mesmo sem vigor. Se o vigor acabar numa parede comum, Link perde o apoio e cai.",
+      "kind": "mecanica",
+      "sources": ["zw:Climbing", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Nadar consome vigor, e o impulso de nado rápido (X) gasta ainda mais. Se o vigor acabar, Link afunda e, a menos que esteja sem corações, é devolvido à terra firme.",
+      "kind": "mecanica",
+      "sources": ["zw:Swimming", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Pratos e elixires energizantes repõem vigor na hora; os tenazes enchem a roda e acrescentam vigor extra temporário que some ao ser gasto.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "vento",
+      "status": "confirmado",
+      "result": "Abrir o Planador nas correntes ascendentes dos dragões regenera todo o vigor; as correntes do campo de voo dos Arás também o recarregam (exceto em \"EX Champion Revali's Song\").",
+      "kind": "mecanica",
+      "sources": ["zw:Updraft"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Bônus de conjunto reduzem custos: salto na escalada -50% (Conjunto de escalada melhorado duas vezes; oculto no Conjunto da guarda real), impulso e giro no nado -75% (Conjunto Zora melhorado duas vezes, Conjunto de mergulhador; oculto na guarda real) e ataques carregados -50% (Conjunto bárbaro melhorado duas vezes, guarda real, Deidade Feroz melhorado duas vezes).",
+      "side_effects": ["Escalada mais rápida não aumenta a distância total: o gasto de vigor acompanha a velocidade."],
+      "kind": "mecanica",
+      "sources": ["zw:Set Bonus", "zw:Wall-Climb Speed Up"]
+    },
+    {
+      "action": "montar",
+      "status": "confirmado",
+      "result": "Acalmar um cavalo selvagem recém-montado drena o vigor de Link. Montado num Centaleão, se o vigor acabar, Link é arremessado e perde um quarto de coração.",
+      "side_effects": ["O \"vigor\" dos cavalos é outro atributo: define quantas esporas eles têm."],
+      "kind": "mecanica",
+      "sources": ["zw:Horse", "zw:Lynel"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Trocar corações por vigor",
+      "text": "A Estátua cornuda compra um Recipiente de vigor ou Contêiner de coração por 100 rupias e vende o outro por 120, permitindo redistribuir as escolhas feitas nas Estátuas da Deusa ao custo de 20 rupias por troca. Ela recusa reduzir abaixo de 3 corações ou de 1 roda de vigor.",
+      "sources": ["zw:Stamina Vessel", "zw:Horned Statue"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Cama cara enche a roda extra",
+      "text": "Dormir numa cama de 80 rupias de estalagem enche por completo a roda de vigor extra que Link tiver, qualquer que seja o quanto restava.",
+      "sources": ["zw:Inn"]
+    },
+    {
+      "kind": "glitch",
+      "title": "Venda com 999.999 rupias",
+      "text": "Tentar vender uma essência à Estátua cornuda com 999.999 rupias trava o jogo.",
+      "sources": ["zw:Horned Statue"]
+    }
+  ],
+  "advanced_uses": [
+    "Impulsionar-se para longe da parede (direcional para baixo + X) e abrir o Planador logo em seguida, como sugerem as dicas do jogo, leva a lugares que a escalada sozinha não alcança.",
+    "Escolher paredes menos íngremes: o custo de vigor da escalada aumenta com a inclinação."
+  ],
+  "limitations": [
+    "Máximo de três rodas permanentes.",
+    "Correr não é possível com a roda vazia."
+  ],
+  "related": [
+    { "id": "botw_keyitem_spirit_orb", "relation": "Trocado por Recipientes de vigor" },
+    { "id": "botw_keyitem_paraglider", "relation": "Planar consome vigor" },
+    { "id": "botw_elixir_energizing_elixir", "relation": "Repõe vigor" },
+    { "id": "botw_elixir_enduring_elixir", "relation": "Cria vigor extra temporário" },
+    { "id": "botw_armorset_climbing_set", "relation": "Reduz o custo do salto na escalada" },
+    { "id": "botw_armorset_zora_set", "relation": "Reduz o custo do nado rápido" },
+    { "id": "botw_armorset_royal_guard_set", "relation": "Bônus ocultos de vigor" },
+    { "id": "botw_armorset_barbarian_set", "relation": "Reduz o custo dos ataques carregados" },
+    { "id": "botw_monster_lynel", "relation": "Montaria que exige vigor" },
+    { "id": "botw_mechanic_climbing", "relation": "Principal consumo de vigor" },
+    { "id": "botw_mechanic_swimming", "relation": "Nadar consome vigor" },
+    { "id": "botw_mechanic_updraft", "relation": "Correntes que regeneram vigor" }
+  ],
+  "capabilities": ["vigor"],
+  "verification_status": "verificado"
+}

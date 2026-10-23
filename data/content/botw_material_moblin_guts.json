@@ -1,0 +1,161 @@
+{
+  "id": "botw_material_moblin_guts",
+  "summary": "Ingrediente \"valioso\" de cheiro forte, deixado só por Moblins azuis ou mais fortes. Acrescenta 3:10 aos elixires e é pedido em três conjuntos de armadura.",
+  "description": "As Vísceras de Moblin têm, segundo o jogo, um odor forte demais para a culinária normal, mas são valorizadas no preparo de elixires: cozidas com bichos, somam 3:10 à duração, o teto entre as partes de monstro comuns. A página do item lista como fontes os Moblins azuis, pretos, prateados e, no Modo Mestre, dourados; os Stalmoblins deixam apenas chifres e presas.\n\nNas Fontes das Grandes Fadas, são usadas no 3º nível do Conjunto antichamas (3 por peça) e no 2º nível dos conjuntos radiante e do soldado (3 por peça em cada), num total de 27. Na Tinturaria Kochi, entram no corante azul-claro.",
+  "locations": [
+    "Áreas com Moblins azuis, pretos ou prateados."
+  ],
+  "obtaining": [
+    "Derrotar Moblins azuis, pretos ou prateados (e dourados no Modo Mestre).",
+    "Os monstros voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Elixires: cozidas com um bicho, acrescentam 3:10 à duração.",
+    "Melhoria de armadura: 3 por peça no 3º nível do Conjunto antichamas, no 2º nível do Conjunto radiante e no 2º nível do Conjunto do soldado — 27 no total.",
+    "Corante azul-claro na Tinturaria Kochi.",
+    "Venda: 25 rupias, ou 12 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não têm efeito culinário próprio; nos elixires, só prolongam a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar as Vísceras de Moblin no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear as Vísceras de Moblin largadas no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se as Vísceras de Moblin queimam, somem ou se transformam em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar as Vísceras de Moblin numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação das Vísceras de Moblin a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor as Vísceras de Moblin à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se as Vísceras de Moblin flutuam ou afundam quando largadas na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e as Vísceras de Moblin não são de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada às Vísceras de Moblin largadas no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 3:10 à duração do efeito; sozinhas ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 25 rupias em lojas e comerciantes, ou 12 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Peça comum a três conjuntos",
+      "text": "As Vísceras de Moblin são o único material de monstro presente ao mesmo tempo nos conjuntos antichamas, radiante e do soldado. No radiante e no do soldado, substituem as Vísceras de Koboblin usadas no nível anterior.",
+      "sources": [
+        "zw",
+        "zw:Bokoblin Guts"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Reserve 27 unidades para cobrir os três conjuntos antes de trocá-las por Mon."
+  ],
+  "limitations": [
+    "O Moblin vermelho comum não aparece na lista de monstros que as deixam, e os Stalmoblins não as deixam.",
+    "Cozidas sem bichos, só produzem Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_blue_moblin",
+      "relation": "Variante mais fraca que já pode deixá-las"
+    },
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Também as deixa"
+    },
+    {
+      "id": "botw_monster_silver_moblin",
+      "relation": "Também as deixa"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Usa 3 por peça no 3º nível"
+    },
+    {
+      "id": "botw_armorset_radiant_set",
+      "relation": "Usa 3 por peça no 2º nível"
+    },
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Usa 3 por peça no 2º nível"
+    },
+    {
+      "id": "botw_material_bokoblin_guts",
+      "relation": "Mesmo acréscimo de 3:10 e uso no nível anterior dos mesmos conjuntos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul-claro"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-las sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

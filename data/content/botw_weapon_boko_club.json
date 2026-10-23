@@ -1,0 +1,204 @@
+{
+  "id": "botw_weapon_boko_club",
+  "summary": "Clava tosca de madeira feita pelos Koboblins, praticamente um pedaço de pau. Pega fogo, flutua, não conduz eletricidade e é a arma típica dos Koboblins vermelhos do Planalto.",
+  "description": "A Clava Kobo é a arma mais básica do arquétipo de equipamento dos Koboblins (Bokoblin Gear), feita para \"bater em presas pequenas\". Como a própria descrição do jogo admite, é essencialmente um galho, por isso tem durabilidade baixa. É muito comum nas mãos dos Koboblins vermelhos, especialmente no Planalto, e no chão de acampamentos da Pradaria de Hyrule e de Necluda Ocidental.\n\nPor ser de madeira, queima se tocar no fogo ou em clima escaldante — e os próprios Koboblins exploram isso: quando estão perto de uma fogueira, acendem a clava para causar dano de fogo extra em Link. Link pode fazer o mesmo, acendendo a clava numa chama para levá-la como fonte de fogo. Em compensação, não atrai raios, não conduz eletricidade e flutua se cair na água.",
+  "locations": [
+    "Pradaria de Hyrule e Necluda Ocidental (locais comuns segundo o compendium).",
+    "Muito frequente no Planalto, com os Koboblins vermelhos."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins vermelhos ou recolher a clava em acampamentos de monstros.",
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Koboblin (série Breath of the Wild) com a runa amiibo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma descartável do começo do jogo.",
+    "Fonte de fogo portátil: acesa numa chama, pode incendiar grama, lenha e cipós.",
+    "Arremesso de emergência: o golpe final antes de quebrar é sempre crítico."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico; acesa, passa a causar dano de fogo."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Como arma contundente, não derruba árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas ou em clima escaldante. Acesa, pode ser usada como arma de fogo e para espalhar chamas.",
+      "side_effects": [
+        "Nas áreas escaldantes de Eldin, armas inflamáveis queimam e desaparecem se ficarem expostas por muito tempo."
+      ],
+      "applications": [
+        "Acender uma fogueira com lenha.",
+        "Queimar grama para criar correntes ascendentes."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon",
+        "zw:Fire",
+        "zw:Wood"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, ao contrário das armas de metal.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálica e não pode ser movida com Magnétis.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Koboblins com armas de madeira perto de uma fonte de fogo acendem a clava antes de atacar, causando dano de fogo extra.",
+      "conditions": [
+        "Koboblin armado com a clava perto de uma fogueira ou outra chama."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Bokoblin"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a clava pode surgir com bônus de ataque de +2 a +4 (nível comum) ou +5 a +7 (nível dourado), bônus de durabilidade de +2 a +3 (ou +4 a +6 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Divergência na durabilidade",
+      "text": "O compendium e a tabela de armas do Zelda Wiki dão durabilidade 8 à clava, mas o parâmetro interno Life extraído do jogo vale 12. As fontes não explicam a diferença.",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Gatilho dos Stalboblins no Planalto",
+      "text": "Os Stalboblins só aparecem em pontos predefinidos até Link pegar uma Clava Kobo pela primeira vez ou sair do Planalto.",
+      "sources": [
+        "zw:Stalkoblin"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Acender a clava numa fogueira inimiga e usá-la para incendiar a grama em volta de um acampamento, criando fogo e uma corrente ascendente para atacar do alto com o Planador."
+  ],
+  "limitations": [
+    "Durabilidade muito baixa.",
+    "Queima e se perde se ficar exposta ao clima escaldante de Eldin por muito tempo.",
+    "Arma contundente: não corta árvores."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_spiked_boko_club",
+      "relation": "Versão reforçada (pontuda)"
+    },
+    {
+      "id": "botw_weapon_dragonbone_boko_club",
+      "relation": "Versão mais forte (dracônica)"
+    },
+    {
+      "id": "botw_weapon_boko_bat",
+      "relation": "Mesmo arquétipo (duas mãos)"
+    },
+    {
+      "id": "botw_weapon_boko_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_bow_boko_bow",
+      "relation": "Mesmo arquétipo (arco)"
+    },
+    {
+      "id": "botw_shield_boko_shield",
+      "relation": "Mesmo arquétipo (escudo)"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Koboblins vermelhos a empunham"
+    },
+    {
+      "id": "botw_monster_stalkoblin",
+      "relation": "Aparição ligada à primeira Clava Kobo"
+    },
+    {
+      "id": "botw_object_campfire",
+      "relation": "Koboblins acendem a clava nas fogueiras"
+    },
+    {
+      "id": "botw_material_wood",
+      "relation": "Clava acesa acende lenha"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel",
+    "queima_inimigos"
+  ],
+  "verification_status": "a_verificar"
+}

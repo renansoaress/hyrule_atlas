@@ -1,0 +1,192 @@
+{
+  "id": "botw_food_seared_steak",
+  "summary": "Carne de terceira assada na chama, mais saborosa e com mais cura (1,5 coração, contra 1). Assa nos espetos das fogueiras dos acampamentos de monstros, que a Lua de sangue reabastece.",
+  "description": "O Bife selado é a Carne de terceira — deixada por Javali da mata, Bode da montanha e Raposa do prado — depois de passar pelo fogo ou pelo clima escaldante de Eldin. Segundo o texto do jogo, cozinhá-la aumentou o sabor e a quantidade de corações: 1,5 coração, contra 1 da crua. Na venda passa de 8 para 12 rupias.\n\nÉ o assado mais fácil de achar pronto. Os Koboblins assam bifes em espetos sobre as fogueiras dos seus acampamentos, e esses bifes voltam a aparecer a cada Lua de sangue. Também é vendido por 30 rupias na Protein Palace (Cidade Goron), na barraca de Estan (Cidade Gerudo) e por Maike, no Bazar Kara Kara, e é a comida mais provável deixada pelo Rinox preto.",
+  "locations": [
+    "Fogueiras dos acampamentos de monstros, assando em espetos dos Koboblins.",
+    "Lojas: Protein Palace (Cidade Goron), barraca de Estan (Cidade Gerudo) e Maike, no Bazar Kara Kara.",
+    "Prepara-se a partir de Carne de terceira numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Pegar os bifes que assam nas fogueiras dos acampamentos de monstros; eles reaparecem com a Lua de sangue.",
+    "Comprar por 30 rupias na Protein Palace, com Estan ou com Maike.",
+    "Expor Carne de terceira ao fogo ou largá-la no chão em clima escaldante.",
+    "Derrotar um Rinox preto: 40% de chance, a maior da tabela de comidas dele (lote de 5 a 6).",
+    "DLC: faz parte do kit fixo entregue na batalha contra a Ira ígnea de Ganon no Reino ilusório (\"EX Champion Daruk's Song\")."
+  ],
+  "uses": [
+    "Cura de 1,5 coração.",
+    "Venda: 12 rupias."
+  ],
+  "effects": [
+    "Recupera 1,5 coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Carne de terceira — queima por alguns instantes e se transforma em Bife selado.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Bife selado.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Carne de terceira no chão para que o ingrediente asse sozinho e vire Bife selado.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 1,5 coração, contra 1 coração da Carne de terceira crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 12 rupias; a Carne de terceira crua vale 8.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Raw Meat"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Bife selado como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Os Koboblins assam Bife selado em espetos sobre as fogueiras dos acampamentos; Link pode pegar os bifes, e a Lua de sangue os repõe.",
+      "conditions": [
+        "Acampamento de monstros com fogueira e espeto."
+      ],
+      "applications": [
+        "Fonte gratuita e renovável de cura ao limpar acampamentos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Campfire",
+        "zw:Blood Moon"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Reposto pela Lua de sangue",
+      "text": "Entre o que a Lua de sangue revive, o Zelda Wiki lista os Bifes selados nas fogueiras dos acampamentos de monstros — além dos próprios monstros.",
+      "sources": [
+        "zw:Blood Moon"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O preferido do Rinox preto",
+      "text": "Na tabela de comidas do Rinox preto, o Bife selado tem a maior chance (40%), seguido pela Coxa assada (34%).",
+      "sources": [
+        "zw",
+        "zw:Black Hinox"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Ração do Reino ilusório",
+      "text": "Na missão principal \"EX Champion Daruk's Song\", da DLC, a comida do kit fixo de Link é Bife selado, Blindamelo tostado e Maçã assada.",
+      "sources": [
+        "zw:EX Champion Daruk's Song"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Congelada vale mais",
+      "text": "A mesma Carne de terceira congelada (Carne de terceira congelada) vale 15 rupias, três a mais que o Bife selado, mas cura só 1 coração.",
+      "sources": [
+        "zw:Frozen Food",
+        "zw:Roasted Food"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não concede efeitos.",
+    "Comprá-lo (30 rupias) custa mais que o dobro do que ele rende na venda (12)."
+  ],
+  "related": [
+    {
+      "id": "botw_material_raw_meat",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_icy_meat",
+      "relation": "Versão congelada da mesma carne"
+    },
+    {
+      "id": "botw_monster_bokoblin",
+      "relation": "Assa bifes nos espetos dos acampamentos"
+    },
+    {
+      "id": "botw_mechanic_blood_moon",
+      "relation": "Repõe os bifes dos acampamentos"
+    },
+    {
+      "id": "botw_monster_black_hinox",
+      "relation": "Pode deixá-lo cair ao ser derrotado"
+    },
+    {
+      "id": "botw_food_seared_prime_steak",
+      "relation": "Bife da carne de segunda"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

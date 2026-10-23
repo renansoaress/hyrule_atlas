@@ -1,0 +1,141 @@
+{
+  "id": "botw_food_roasted_acorn",
+  "summary": "Bolota tostada no calor direto, com o aroma de castanha realçado. Cura meio coração — o dobro da bolota crua (1/4) — mas continua valendo 2 rupias.",
+  "description": "Bolotas são inflamáveis: em contato com o fogo ou com o clima escaldante de Eldin, pegam fogo e viram Bolotas tostadas. O texto do jogo diz que o calor direto amplificou o aroma de castanha.\n\nCrua, a bolota cura apenas 1/4 de coração; tostada, chega a meio coração, o dobro. O valor de venda não muda (2 rupias). Bolotas caem ao pé das árvores, ao derrubá-las e de esquilos, e também aparecem dentro de caixas de madeira — que, incendiadas, já liberam o conteúdo assado.",
+  "locations": [
+    "Prepara-se a partir de Bolotas, encontradas ao pé de árvores em toda Hyrule, numa fogueira ou no chão escaldante de Eldin."
+  ],
+  "obtaining": [
+    "Expor uma Bolota ao fogo ou largá-la no chão em clima escaldante.",
+    "Incendiar uma Caixa de madeira que contenha bolotas: o fogo abre a caixa e assa os alimentos de dentro."
+  ],
+  "uses": [
+    "Cura mínima: meio coração.",
+    "Venda: 2 rupias."
+  ],
+  "effects": [
+    "Recupera meio coração.",
+    "Nenhum efeito adicional: comida assada só cura."
+  ],
+  "interactions": [
+    {
+      "action": "fogo",
+      "variant": "preparo a partir do ingrediente cru",
+      "status": "confirmado",
+      "result": "É assim que se obtém: em contato com chamas, o ingrediente cru — a Bolota — queima por alguns instantes e se transforma em Bolota tostada.",
+      "conditions": [
+        "Fogo direto: chamas de uma fogueira, uma Flecha incendiária ou golpes de Espada flamejante, Grã-Espada flamejante ou Lança carbonizante."
+      ],
+      "applications": [
+        "Acertar o ingrediente largado com uma Flecha incendiária assa-o à distância, sem precisar de fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado encostado numa fogueira acesa, o ingrediente cru pega fogo e vira Bolota tostada.",
+      "conditions": [
+        "Fogueira acesa; o ingrediente precisa tocar as chamas.",
+        "Serve uma fogueira improvisada: madeira e sílex no chão, golpeando o sílex com uma arma de metal."
+      ],
+      "side_effects": [
+        "A fogueira só aumenta a cura: receitas e efeitos especiais exigem a Panela."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Campfire",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "No clima escaldante do Cânion de Eldin e da Montanha da Morte, basta largar a Bolota no chão para que o ingrediente asse sozinho e vire Bolota tostada.",
+      "conditions": [
+        "Estar numa área de clima escaldante; sem Proteção contra chamas, o próprio Link pega fogo."
+      ],
+      "applications": [
+        "Assar vários ingredientes de uma vez durante a subida da Montanha da Morte, sem fogueira."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera meio coração, o dobro do 1/4 de coração da Bolota crua, sem nenhum efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Acorn"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 2 rupias, o mesmo que a Bolota crua.",
+      "sources": [
+        "zw",
+        "zw:Roasted Food",
+        "zw:Acorn"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não informam se é possível usar Bolota tostada como ingrediente na Panela; as receitas descritas pelo Zelda Wiki citam o ingrediente cru."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Inflamável por natureza",
+      "text": "A página da Bolota destaca que ela é inflamável: basta o contato com fogo ou com o clima escaldante para que pegue fogo e vire Bolota tostada.",
+      "sources": [
+        "zw:Acorn"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Caixa queimada, bolota tostada",
+      "text": "Caixas de madeira podem guardar bolotas. Em BOTW, incendiar a caixa abre-a, mas transforma em comida assada todos os alimentos que estavam dentro.",
+      "sources": [
+        "zw:Wooden Box"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Empilha até 999 unidades num único espaço da algibeira de comida, ao contrário dos pratos feitos na Panela, que ocupam um espaço cada — dá para estocar muita cura sem lotar os 60 espaços de comida."
+  ],
+  "limitations": [
+    "Não se valoriza na venda.",
+    "Na Panela, a primeira Bolota crua da receita acrescenta 10 segundos à duração do efeito do prato; para a versão tostada, as fontes não indicam esse uso."
+  ],
+  "related": [
+    {
+      "id": "botw_material_acorn",
+      "relation": "Ingrediente cru"
+    },
+    {
+      "id": "botw_food_roasted_tree_nut",
+      "relation": "A outra noz tostada do jogo"
+    },
+    {
+      "id": "botw_object_wooden_box",
+      "relation": "Pode guardar bolotas; queimada, assa o conteúdo"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,125 @@
+{
+  "id": "botw_armor_soldiers_greaves",
+  "summary": "Grevas de placas de metal dos guardas hylianos, vendidas por 200 rupias em Hateno. Sem efeito especial; chegam a 28 de defesa com partes de monstros comuns.",
+  "description": "As Grevas do soldado completam o Conjunto do soldado com o Elmo e a Armadura do soldado e custam 200 rupias na Ventest Clothing Boutique, na Vila Hateno. A descrição diz que eram as preferidas dos guardas de Hyrule e que a defesa alta vem das placas de metal — embora o peso extra \"leve algum tempo para acostumar\".\n\nNão dão efeito nem bônus de conjunto, só defesa: de 4 a 28, com a mesma escada de materiais da armadura (Geleca de Chulchul, vísceras de Koboblin, Moblin e Rinox, Olhos de Morci, Caudas de Lagalfos e, no último nível, Cascos e Vísceras de Centaleão). Podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Comprar por 200 rupias na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Defesa alta para as pernas sem depender de efeitos."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas defesa."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só aumenta a defesa; não há efeito adicional, e o Conjunto do soldado não tem bônus de conjunto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles. Isso vale mesmo para esta peça feita de placas de metal: as fontes só citam armas, arcos e escudos.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O peso das placas",
+      "text": "A descrição menciona que o peso das placas de metal exige costume, mas o Zelda Wiki descreve as grevas apenas como peça de defesa, sem nenhum outro efeito registrado.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Combine as grevas em nível alto com peças de efeito na cabeça e no torso para ter boa defesa total sem abrir mão de efeitos como Resistência ao frio ou ao calor."
+  ],
+  "limitations": [
+    "Sem efeito e sem bônus de conjunto."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_soldiers_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_soldiers_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_material_keese_eyeball",
+      "relation": "Material do 2º nível de melhoria"
+    },
+    {
+      "id": "botw_material_hinox_guts",
+      "relation": "Material do 3º nível"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Material do último nível"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

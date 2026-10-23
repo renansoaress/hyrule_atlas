@@ -1,0 +1,158 @@
+{
+  "id": "botw_material_chuchu_jelly",
+  "summary": "Gelatina azul-clara deixada por Chulchuls comuns. Sozinha é inerte, mas muda de forma com estímulos elementais: vira Geleca ígnea no fogo, Geleca gélida no gelo e Geleca elétrica com eletricidade.",
+  "description": "A Geleca de Chulchul é a parte de monstro deixada pelos Chulchuls comuns. A descrição do jogo diz que ela é inutilizável nesse estado, mas que \"um pouco de estímulo elemental\" muda sua forma, e é aí que está o seu interesse: ao ser exposta ao fogo, ao gelo ou à eletricidade, ela se converte nas variantes ígnea, gélida ou elétrica, que explodem com efeito elemental quando golpeadas. A versão comum, ao contrário, estoura sem causar dano quando atingida, apenas deixando Link molhado. Na culinária funciona como parte de monstro: cozida com bichos (insetos, lagartos, sapos ou fadas) vira elixir e acrescenta 1:10 de duração ao efeito; cozida apenas com alimentos comuns resulta em Comida duvidosa.",
+  "locations": [
+    "Derrubada por Chulchuls comuns, monstros gelatinosos encontrados em quase toda Hyrule (o compendium cita a Pradaria de Hyrule e Necluda Ocidental como locais comuns)."
+  ],
+  "obtaining": [
+    "Derrotar Chulchuls comuns. Chulchuls ígneos, glaciais e elétricos deixam as variantes correspondentes.",
+    "O tipo de geleca deixado depende de como o Chulchul morre: derrotar um Chulchul comum com uma arma de fogo faz cair Geleca ígnea em vez da comum."
+  ],
+  "uses": [
+    "Matéria-prima para obter as três variantes elementais, expondo-a ao fogo, ao gelo ou à eletricidade.",
+    "Ingrediente de elixires: cozida com um bicho, acrescenta 1:10 à duração do efeito.",
+    "Ingrediente do corante azul-claro na Tinturaria Kochi, em Hateno.",
+    "Melhoria de armadura: 5 unidades por peça para levar o Conjunto do soldado ao primeiro nível numa Fonte da Grande Fada.",
+    "Venda: 5 rupias, ou 3 Mon na loja de Kilton (Fang and Bone)."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser segurada e largada no chão a partir da algibeira, o que permite expô-la a elementos ou golpeá-la no mundo.",
+      "conditions": ["Selecionar a geleca na algibeira, segurá-la e soltá-la."],
+      "applications": ["Preparar a conversão em variantes elementais colocando-a sobre uma fogueira."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "A geleca comum estoura sem causar dano, mas deixa Link com o estado \"molhado\".",
+      "conditions": ["Geleca comum largada no chão e atingida por um golpe."],
+      "side_effects": ["Ao contrário das variantes elementais, não gera fogo, gelo nem eletricidade."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca ígnea.",
+      "conditions": ["Exposição direta ao fogo — por exemplo, colocar a geleca sobre uma fogueira acesa."],
+      "side_effects": ["A Geleca ígnea resultante explode numa bola de fogo se for golpeada; mantenha-a longe de grama seca e de armas de madeira equipadas."],
+      "applications": ["Produzir Gelecas ígneas quando faltam Chulchuls ígneos por perto."],
+      "produces": ["botw_material_red_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Red Chuchu Jelly"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Colocada numa fogueira acesa, vira Geleca ígnea — o exemplo de conversão citado pela própria fonte.",
+      "conditions": ["Fogueira acesa; a geleca precisa estar em contato com as chamas."],
+      "produces": ["botw_material_red_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca gélida.",
+      "conditions": ["Exposição a um ataque ou efeito de gelo."],
+      "side_effects": ["A Geleca gélida libera uma névoa congelante quando golpeada."],
+      "produces": ["botw_material_white_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Converte-se em Geleca elétrica.",
+      "conditions": ["Exposição a um ataque ou efeito elétrico."],
+      "side_effects": ["A Geleca elétrica libera uma descarga elétrica quando golpeada."],
+      "produces": ["botw_material_yellow_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "agua",
+      "variant": "água fria",
+      "status": "confirmado",
+      "result": "Largada em água fria, congela e vira Geleca gélida.",
+      "conditions": ["A água precisa ser fria (como a das regiões geladas); a fonte não descreve o efeito em água comum."],
+      "applications": ["Obter Gelecas gélidas sem armas ou flechas de gelo."],
+      "produces": ["botw_material_white_chuchu_jelly"],
+      "kind": "mecanica",
+      "sources": ["zw:White Chuchu Jelly"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a geleca não é metálica.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma geleca largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 de duração; sem bicho, o prato vira Comida duvidosa.",
+      "conditions": ["Cozinhar numa panela; pelo menos um bicho na receita para obter elixir."],
+      "applications": ["Prolongar elixires de resistência sem gastar partes de monstro mais caras."],
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Monster Part"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 5 rupias a comerciantes ou trocada por 3 Mon na loja de Kilton.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Conversão entre as próprias variantes",
+      "text": "A conversão não se limita à geleca comum: a fonte descreve que expor outras formas de geleca ao gelo ou à eletricidade também as converte. Uma Geleca ígnea atingida por gelo, por exemplo, vira Geleca gélida.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Escolher a geleca pela forma de matar o Chulchul",
+      "text": "A entrada do compendium sobre o Chulchul explica que o tipo de geleca depende de o Chulchul ter sido aquecido, resfriado ou eletrocutado. Derrotar um Chulchul comum com uma arma de fogo já rende Geleca ígnea, dispensando a conversão posterior.",
+      "sources": ["zw:Chuchu", "zw:Red Chuchu Jelly"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A única geleca \"inofensiva\"",
+      "text": "Entre as quatro gelecas, só a comum estoura sem efeito elemental; o máximo que faz é deixar Link molhado.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Carregar Gelecas comuns e convertê-las conforme a necessidade (fogo, gelo ou eletricidade) em vez de estocar as três variantes."
+  ],
+  "limitations": [
+    "Na forma comum não serve como arma: estoura sem causar dano.",
+    "Cozida sem bichos, produz Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_material_red_chuchu_jelly", "relation": "Variante obtida com fogo" },
+    { "id": "botw_material_white_chuchu_jelly", "relation": "Variante obtida com gelo" },
+    { "id": "botw_material_yellow_chuchu_jelly", "relation": "Variante obtida com eletricidade" },
+    { "id": "botw_monster_chuchu", "relation": "Monstro que a deixa ao ser derrotado" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-la sem bichos" },
+    { "id": "botw_armorset_soldiers_set", "relation": "Usa 5 gelecas por peça no 1º nível de melhoria" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul-claro" }
+  ],
+  "capabilities": ["reage_fogo", "reage_gelo", "reage_eletricidade"],
+  "verification_status": "verificado"
+}

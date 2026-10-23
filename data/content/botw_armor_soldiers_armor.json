@@ -1,0 +1,126 @@
+{
+  "id": "botw_armor_soldiers_armor",
+  "summary": "Armadura de aço dos guardas hylianos vendida por 250 rupias em Hateno. Sem efeito especial, mas chega a 28 de defesa com materiais de monstros comuns.",
+  "description": "A Armadura do soldado é vendida por 250 rupias na Ventest Clothing Boutique, na Vila Hateno, junto com o Elmo e as Grevas do soldado. É composta de ombreiras, manoplas e um peitoral inteiro, tudo de aço; a descrição diz que os guardas de Hyrule a elogiavam pela defesa superior e pela qualidade das placas de metal.\n\nNão tem efeito além da defesa, e o Conjunto do soldado não tem bônus de conjunto. O ponto forte é a defesa: 4 no início e 28 no quarto nível, entre as maiores do jogo, usando materiais de monstros comuns — Geleca de Chulchul e Vísceras de Koboblin, Olhos de Morci e Vísceras de Moblin, Caudas de Lagalfos e Vísceras de Rinox e, no último nível, Cascos e Vísceras de Centaleão. Pode ser tingida na Tinturaria Kochi, que fica na mesma vila.",
+  "locations": [
+    "Ventest Clothing Boutique, na Vila Hateno."
+  ],
+  "obtaining": [
+    "Comprar por 250 rupias na Ventest Clothing Boutique."
+  ],
+  "uses": [
+    "Defesa alta sem depender de efeitos.",
+    "Base para tingir, já que a Tinturaria Kochi fica na mesma vila."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas defesa."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Só aumenta a defesa; não há efeito adicional, e o Conjunto do soldado não tem bônus de conjunto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Armor Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles. Isso vale mesmo para esta peça feita de placas de metal: as fontes só citam armas, arcos e escudos.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Compre e tinja na mesma vila",
+      "text": "Ao fim do passeio por Hateno, Seldon apresenta a Ventest Clothing Boutique como sua loja e sugere: compre aqui primeiro, antes de ir à Tinturaria Kochi.",
+      "sources": [
+        "zw:Ventest Clothing Boutique"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Quem não precisa de efeitos especiais pode levar o Conjunto do soldado a 28 de defesa por peça usando só partes de inimigos comuns, sem dragões nem Fragmentos de estrela."
+  ],
+  "limitations": [
+    "Sem efeito e sem bônus de conjunto.",
+    "O último nível exige partes de Centaleão."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_soldiers_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_soldiers_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_soldiers_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Material do 1º nível de melhoria"
+    },
+    {
+      "id": "botw_material_lynel_hoof",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Pode ser tingida em Hateno"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

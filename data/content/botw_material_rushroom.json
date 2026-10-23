@@ -1,0 +1,153 @@
+{
+  "id": "botw_material_rushroom",
+  "summary": "Cogumelo roxo que prefere tetos e penhascos íngremes. Cozido, dá Velocidade aumentada. Pirou troca 55 Agilimelos por um diamante e depois paga o dobro do valor; também melhora o Conjunto de escalada.",
+  "description": "O Agilimelo é um cogumelo roxo que cresce quase em qualquer lugar, mas prefere tetos e penhascos íngremes — o compendium cita as Montanhas Gerudo e os Cerros de Hyrule. Cru, recupera meio coração; cozido, concede Velocidade aumentada. Exposto ao fogo, vira Agilimelo tostado (3/4 de coração), que, como diz a própria descrição, \"pode ter perdido as propriedades velozes\", mas ficou gostoso.\n\nNo Gerudo Canyon Stable, o idoso Pirou come Agilimelos todos os dias desde os cinco anos e não vive sem eles: na Missão secundária \"Rushroom Rush!\", ele dá um diamante por 55 Agilimelos e, depois, continua comprando lotes de 55 pelo dobro do valor normal. Nas Grandes Fadas, o cogumelo entra no 1º nível do Conjunto de escalada (3 por peça) e no nível ★★★ das Botas de areia e das Botas de neve (15 cada). É vendido na Spore Store, na Floresta Korok, por 12 rupias, e na Tinturaria Kochi entra no corante roxo.",
+  "locations": [
+    "Montanhas, penhascos e tetos de pedra, principalmente nas Montanhas Gerudo e nos Cerros de Hyrule.",
+    "Loja: Spore Store, na Floresta Korok, por 12 rupias."
+  ],
+  "obtaining": [
+    "Colher em encostas e penhascos (muitas vezes é preciso escalar).",
+    "Comprar na Spore Store."
+  ],
+  "uses": [
+    "Pratos de Velocidade aumentada.",
+    "Missão secundária \"Rushroom Rush!\": 55 Agilimelos para Pirou, no Gerudo Canyon Stable, em troca de um Diamante; depois, ele compra novos lotes de 55 pelo dobro do valor.",
+    "Melhoria de armadura: 3 por peça (+3 Asas de Morci) no 1º nível de Bandana, Traje e Botas de escalada.",
+    "Melhoria de armadura: 15 no nível ★★★ das Botas de areia (+2 Vísceras de Molduga) e das Botas de neve (+5 Olhos de Octoroc).",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante roxo na Tinturaria Kochi.",
+    "Venda: 3 rupias."
+  ],
+  "effects": [
+    "Cozido: Velocidade aumentada (efeito temporário)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão; perto do fogo ou no clima escaldante de Eldin, tosta sozinho.",
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Rushroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimado pelo fogo, vira Agilimelo tostado, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Velocidade aumentada."],
+      "applications": ["Vender: tostado vale 5 rupias, contra 3 do cru."],
+      "produces": ["botw_food_toasty_rushroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Toasty Rushroom", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Agilimelo tostado.",
+      "produces": ["botw_food_toasty_rushroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Toasty Rushroom"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_rushroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Toasty Rushroom", "zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Velocidade aumentada. Mais unidades prolongam o efeito; combinado com Cenoura veloz, Violeta veloz ou Grãos de lótus-fugaz, prolonga e pode elevar o nível.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não acelera.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 3 rupias; tostado, vale 5. Depois de \"Rushroom Rush!\", Pirou paga o dobro do valor por lotes de 55.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O viciado em Agilimelos",
+      "text": "Pirou conta que provou Agilimelos aos cinco anos, comeu todos os dias desde então e ganhava todas as corridas graças a eles; 55 anos depois, mal se levanta sem o cogumelo. Ele oferece um Diamante por 55 Agilimelos e, completada a missão, aceita novos lotes de 55 pagando o dobro do valor de venda.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Quanto separar para as melhorias",
+      "text": "O cogumelo aparece em três melhorias: 9 para o 1º nível do Conjunto de escalada (3 por peça) e 15 para o nível ★★★ das Botas de areia e outras 15 para o das Botas de neve — 39 no total.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Junte 55 Agilimelos para Pirou: além do Diamante da missão, as trocas seguintes rendem o dobro do que os cogumelos valeriam num comerciante comum.",
+    "Combine com Cenouras velozes e Violetas velozes para Velocidade aumentada de nível mais alto."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Velocidade aumentada; só cozido.",
+    "Cresce em lugares altos e íngremes, o que torna a coleta lenta."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_rushroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_material_diamond", "relation": "Recompensa de Pirou por 55 Agilimelos" },
+    { "id": "botw_armorset_climbing_set", "relation": "1º nível: 3 Agilimelos + 3 Asas de Morci por peça" },
+    { "id": "botw_armor_sand_boots", "relation": "Nível ★★★: 2 Vísceras de Molduga + 15 Agilimelos" },
+    { "id": "botw_armor_snow_boots", "relation": "Nível ★★★: 5 Olhos de Octoroc + 15 Agilimelos" },
+    { "id": "botw_material_swift_carrot", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_material_swift_violet", "relation": "Outro ingrediente de Velocidade aumentada" },
+    { "id": "botw_elixir_hasty_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante roxo" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "velocidade", "item_de_missao"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "botw_food_salmon_meuniere",
+  "summary": "Salmão nutritivo frito com Trigo de Tabantha e Manteiga de cabra, de pele crocante. Cura tudo e dá Corações extras, e é o prato que Genli exige na missão do Ninho dos Cantores.",
+  "description": "O Salmão à meunière é feito com Salmão nutritivo, Trigo de Tabantha e Manteiga de cabra; o inventário diz que a pele crocante do salmão frito dá ao prato uma textura única. Como o salmão é \"nutritivo\", a receita original já sai na única variante, que cura todos os corações e concede Corações extras temporários. A versão comum exige anular esse efeito com um ingrediente de outro tipo. Com três ingredientes obrigatórios, sobram dois espaços — um segundo Salmão nutritivo ou outro ingrediente nutritivo aumentam os corações extras.\n\nO prato é central na Missão de santuário \"Recital at Warbler's Nest\": depois de Vah Medoh ser acalmada, Kheel pede que Link reúna as irmãs para o ensaio, e Genli se recusa a sair da cozinha da vila dos Arás sem Salmão à meunière. Cada irmã entrega um ingrediente — Cree, a Manteiga de cabra comprada na The Slippery Falcon; Kotts, o Salmão nutritivo pescado no lago da entrada da vila; Notts, o Trigo de Tabantha —, e Genli fareja o prato na algibeira de Link. Depois de comer, ela vai ao ensaio, e a canção das cinco irmãs dá a Link a pista para fazer surgir o Santuário Voo Lota.",
+  "obtaining": [
+    "Cozinhar numa Panela Salmão nutritivo, Trigo de Tabantha e Manteiga de cabra.",
+    "Durante \"Recital at Warbler's Nest\", as irmãs Cree, Kotts e Notts entregam os três ingredientes."
+  ],
+  "uses": [
+    "Missão de santuário \"Recital at Warbler's Nest\": entregar o prato a Genli, na cozinha da vila dos Arás (Rito Village).",
+    "Cura completa com Corações extras.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Na receita original: cura todos os corações e concede Corações extras temporários.",
+    "Com ingrediente de efeito diferente: apenas recupera corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Restaura toda a vida e aumenta temporariamente o número máximo de corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Halita",
+      "status": "confirmado",
+      "result": "Acrescentar Halita ao salmão, trigo e manteiga produz Torta de peixe, receita verificada antes das meunières.",
+      "produces": [
+        "botw_food_fish_pie"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A fome de Genli",
+      "text": "Genli não quer ensaiar e usa a fome como desculpa. Depois de comer o salmão, ela admite que gosta de cantar, mas fica nervosa diante dos outros. Mais tarde, quando Kass volta à vila, ela decide comer Salmão à meunière, já que pode praticar mais no dia seguinte.",
+      "sources": [
+        "zw:Genli",
+        "zw:Recital at Warbler's Nest"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Prioridade sobre as outras meunières",
+      "text": "Com Salmão nutritivo, Trigo de Tabantha e Manteiga de cabra na panela, o prato é Salmão à meunière mesmo que haja pargos ou outros peixes: a receita do salmão é testada antes do Pargo à meunière e da Frutos do mar à meunière.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Use os dois espaços livres para outro Salmão nutritivo ou outro ingrediente nutritivo e aumentar os corações extras."
+  ],
+  "limitations": [
+    "Só existe a variante nutritiva.",
+    "Halita na panela transforma o prato em Torta de peixe."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_hearty_salmon",
+      "relation": "Ingrediente obrigatório que dá os corações extras"
+    },
+    {
+      "id": "botw_food_salmon_risotto",
+      "relation": "Outro prato exclusivo do Salmão nutritivo"
+    },
+    {
+      "id": "botw_food_porgy_meuniere",
+      "relation": "Meunière exclusiva dos pargos"
+    },
+    {
+      "id": "botw_food_seafood_meuniere",
+      "relation": "Meunière dos demais frutos do mar"
+    },
+    {
+      "id": "botw_food_fish_pie",
+      "relation": "Resultado ao acrescentar Halita"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

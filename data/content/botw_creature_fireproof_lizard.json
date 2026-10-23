@@ -1,0 +1,133 @@
+{
+  "id": "botw_creature_fireproof_lizard",
+  "summary": "Lagarto raro do clima abrasador da Montanha da Morte e do Cânion de Eldin, de escamas resistentes ao calor. Vira Elixir corta-fogo e é a moeda de troca de Kima pela Armadura antichamas.",
+  "description": "O Lagarto corta-fogo só é encontrado na região de Eldin, em especial nas áreas de clima abrasador da Montanha da Morte e do Cânion de Eldin. Segundo o jogo, suas escamas têm propriedades resistentes ao calor. Como os demais lagartos, foge ao perceber Link e acaba sumindo; pode ser apanhado com furtividade, numa perseguição ou depois de atordoado por uma flecha ou uma Bomba remota. Na Mina do Sul (Southern Mine), é abundante: aparece tomando sol ou debaixo de pedras, e o Sensor Sheikah ajuda a localizá-lo.\n\nCozido com partes de monstro, produz o Elixir corta-fogo, que concede Proteção contra chamas — Link deixa de pegar fogo no clima abrasador. Cada lagarto acrescenta 2:30 de duração. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, entra no corante cinza.\n\nNa Missão secundária \"Fireproof Lizard Roundup\", Kima, na Mina do Sul, pede 10 Lagartos corta-fogo como lembrança de viagem e paga com a própria Armadura antichamas. Depois disso, compra três lagartos por 20 rupias sempre que Link levar mais. Os lagartos também são os primeiros materiais de melhoria do Conjunto antichamas.",
+  "locations": [
+    "Áreas de clima abrasador da Montanha da Morte e do Cânion de Eldin.",
+    "Abundante na Mina do Sul (Southern Mine), tomando sol ou sob pedras."
+  ],
+  "obtaining": [
+    "Pegar à mão: aproximar-se agachado, perseguir ou atordoar com flecha ou Bomba remota.",
+    "Comprar de Beedle por 25 rupias."
+  ],
+  "uses": [
+    "Elixir corta-fogo: cozinhar com pelo menos uma parte de monstro.",
+    "Missão secundária \"Fireproof Lizard Roundup\": 10 lagartos rendem a Armadura antichamas de Kima; depois, ele paga 20 rupias por cada três.",
+    "Melhoria de armadura: 1 por peça do Conjunto antichamas no 1º nível (com 2 Chifres de Moblin) e 3 por peça no 2º (com 4 Presas de Moblin).",
+    "Ingrediente do corante cinza na Tinturaria Kochi.",
+    "Venda: 5 rupias."
+  ],
+  "effects": [
+    "No elixir: Proteção contra chamas (impede que Link pegue fogo); +2:30 de duração por lagarto."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Foge quando Link se aproxima e acaba desaparecendo. Kima reclama que esses lagartos são rápidos demais para ele.",
+      "conditions": ["Andar agachado reduz a chance de ser notado."],
+      "kind": "mecanica",
+      "sources": ["zw:Lizard", "jogo", "zw:Stealth"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha atordoa o lagarto, permitindo pegá-lo antes que fuja.",
+      "side_effects": ["Flechas sacadas em clima abrasador pegam fogo e causam dano de fogo em alvos inflamáveis."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lizard", "zw:Scorching Climate"]
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A explosão de uma Bomba remota atordoa o lagarto.",
+      "kind": "tecnica_avancada",
+      "sources": ["zw:Lizard"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Na Mina do Sul, aparece tomando sol ou ao se levantar pedras; o Sensor Sheikah pode apontar os que estão por perto.",
+      "kind": "mecanica",
+      "sources": ["zw:Fireproof Lizard Roundup"]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um lagarto vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir corta-fogo (Proteção contra chamas). Cada lagarto acrescenta 2:30 de duração.",
+      "conditions": ["Pode ser combinado com a Borboleta abrasadora, que é da mesma categoria."],
+      "produces": ["botw_elixir_fireproof_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Elixir", "zw:Fireproof Elixir"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Cozido com outros ingredientes, sem parte de monstro, resulta em Comida duvidosa.",
+      "produces": ["botw_food_dubious_food"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Dubious Food"]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 5 rupias a comerciantes; Kima paga 20 rupias por cada três após a missão; Beedle o vende por 25.",
+      "sources": ["zw", "zw:Fireproof Lizard Roundup"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o lagarto exposto ao fogo, apesar de ele viver em clima abrasador."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o lagarto."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Armadura antichamas de graça",
+      "text": "Link pode obter a Armadura antichamas de Kima entregando 10 Lagartos corta-fogo na Mina do Sul. Kima, porém, não cede o Elmo antichamas, alegando que é caro demais, e manda Link comprar o seu em Cidade Goron.",
+      "sources": ["zw", "zw:Fireproof Lizard Roundup"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Comerciantes de elixir",
+      "text": "Kima diz que quer os lagartos para fazer Elixires corta-fogo. Em Cidade Goron, Offrak vende o elixir pronto por 60 rupias e comenta baixinho que Link poderia facilmente fazer o seu.",
+      "sources": ["zw:Fireproof Lizard Roundup", "zw:Fireproof Elixir"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine com Borboletas abrasadoras e partes de monstro de maior duração para um Elixir corta-fogo longo antes de subir a Montanha da Morte.",
+    "Depois da missão de Kima, os lagartos excedentes podem ser trocados com ele (20 rupias por três), mais do que os 15 que três renderiam em lojas."
+  ],
+  "limitations": [
+    "O elixir apenas impede que Link pegue fogo; a imunidade a todo dano de fogo vem do bônus do Conjunto antichamas completo.",
+    "Cozido sem parte de monstro, vira Comida duvidosa."
+  ],
+  "related": [
+    { "id": "botw_elixir_fireproof_elixir", "relation": "Elixir produzido com partes de monstro" },
+    { "id": "botw_creature_smotherwing_butterfly", "relation": "Outro bicho corta-fogo" },
+    { "id": "botw_armorset_fireproof_armor", "relation": "Usa 1 e depois 3 por peça nos dois primeiros níveis de melhoria" },
+    { "id": "botw_armor_flamebreaker_armor", "relation": "Recompensa de Kima por 10 lagartos" },
+    { "id": "botw_rune_sheikah_sensor", "relation": "Ajuda a localizar os lagartos" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de cozinhá-lo sem partes de monstro" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante cinza" }
+  ],
+  "capabilities": ["protege_fogo", "item_de_missao"],
+  "verification_status": "verificado"
+}

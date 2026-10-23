@@ -1,0 +1,162 @@
+{
+  "id": "botw_armor_thunder_helm",
+  "summary": "Relíquia das chefes Gerudo que guarda parte do poder de Urbosa. Torna Link imune a raios e eletricidade, inclusive em tempestades com armas de metal na mão. Emprestado por Riju após quatro missões.",
+  "description": "O Elmo do trovão — também chamado de herança da chefe — é um tesouro cultural passado entre as Gerudo e usado só pela chefe, Lady Riju; segundo ela, ainda guarda parte do poder de Urbosa. O Clã Yiga o roubou, e na missão principal “Divine Beast Vah Naboris” Link o recupera num baú perto do abismo do Esconderijo do Clã Yiga, depois de derrotar o Mestre Kohga. Riju o usa para absorver os raios de Vah Naboris enquanto Link se aproxima da Fera.\n\nDepois de Naboris, o elmo fica num pedestal ao lado do trono. Riju aceita emprestá-lo se Link conquistar a confiança do povo, na missão “The Thunder Helm”: é preciso concluir “Tools of the Trade”, “The Mystery Polluter”, “Medicinal Molduga” e “The Search for Barta”. Vestido, dá o efeito Imunidade a raios (Lightning Proof): Link não sofre dano de eletricidade nem de raios e não é arremessado nem desarmado por eles. A defesa é 3 e o elmo não pode ser melhorado pelas Grandes Fadas.",
+  "locations": [
+    "Esconderijo do Clã Yiga (primeira obtenção, durante a missão principal).",
+    "Cidade Gerudo, num pequeno pedestal ao lado do trono de Riju (empréstimo definitivo)."
+  ],
+  "obtaining": [
+    "Recuperá-lo num baú do Esconderijo do Clã Yiga após derrotar o Mestre Kohga e devolvê-lo a Riju.",
+    "Depois de Vah Naboris, concluir as quatro missões de “The Thunder Helm” e falar com Riju, que o empresta a Link."
+  ],
+  "uses": [
+    "Ignorar raios em tempestades, mesmo com armas, arcos e escudos metálicos equipados.",
+    "Lutar contra inimigos elétricos sem sofrer dano nem ser desarmado.",
+    "Substituir o Véu Gerudo no disfarce da Cidade Gerudo."
+  ],
+  "effects": [
+    "Imunidade a raios: nenhum dano de eletricidade ou de raios, sem recuo nem desarme."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 3 de defesa e concede Imunidade a raios.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Os raios das tempestades não causam dano a Link: o elmo neutraliza a descarga atraída por equipamentos metálicos.",
+      "conditions": [
+        "Elmo vestido."
+      ],
+      "side_effects": [
+        "Armas, arcos e escudos metálicos continuam atraindo os raios — o elmo apenas anula o dano."
+      ],
+      "applications": [
+        "Manter equipamento metálico em mãos durante tempestades."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Lightning",
+        "zw:Added Effect",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Ataques elétricos não causam dano, não arremessam Link e não o fazem largar o equipamento.",
+      "applications": [
+        "Enfrentar Chulchuls elétricos, Lagalfos elétricos, Feitiçanos elétricos e Morcis elétricos sem perder a arma."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "glitch",
+      "title": "Elmo perdido com a algibeira cheia",
+      "text": "Por um descuido do jogo, se Link receber o elmo de Riju com o espaço de armaduras da algibeira lotado, o item é “entregue” mas não aparece no inventário, não volta ao pedestal e não pode ser pedido de novo — ele se perde para sempre. Libere espaço antes de falar com Riju.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Compatível com o disfarce Gerudo",
+      "text": "O elmo é uma das três peças que não quebram o disfarce do Traje Gerudo: pode substituir o Véu Gerudo, assim como as Botas de areia e as Botas de neve substituem o Sirwal.",
+      "sources": [
+        "zw",
+        "zw:Disguise (Mechanic)"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Não funciona contra Naboris antes da hora",
+      "text": "Se Link conseguir o elmo antes de concluir a Fera Divina Vah Naboris, ele não bloqueia os raios disparados pela Fera.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o elmo, Link pode carregar armas e escudos de metal em tempestades sem medo — o raio cai, mas não causa dano.",
+    "No combate a Ira fulmínea de Ganon e a inimigos elétricos, o elmo evita o dano e o desarme."
+  ],
+  "limitations": [
+    "Não pode ser melhorado: a defesa fica em 3.",
+    "Só pode ser emprestado depois de Vah Naboris e das quatro missões da Cidade Gerudo.",
+    "As fontes não informam se pode ser tingido."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_master_kohga",
+      "relation": "Derrotá-lo leva ao baú do elmo"
+    },
+    {
+      "id": "botw_ability_urbosas_fury",
+      "relation": "O elmo guarda parte do poder de Urbosa"
+    },
+    {
+      "id": "botw_armor_gerudo_veil",
+      "relation": "Pode ser substituído pelo elmo no disfarce"
+    },
+    {
+      "id": "botw_armor_rubber_helm",
+      "relation": "Outra peça de cabeça contra eletricidade (parcial)"
+    },
+    {
+      "id": "botw_mechanic_thunderstorm",
+      "relation": "Tempestades deixam de ser perigosas com o elmo"
+    },
+    {
+      "id": "botw_monster_thunderblight_ganon",
+      "relation": "Chefe elétrico de Vah Naboris"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_choque",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

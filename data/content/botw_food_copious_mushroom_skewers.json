@@ -1,0 +1,59 @@
+{
+  "id": "botw_food_copious_mushroom_skewers",
+  "summary": "Espetinho farto feito com pelo menos quatro tipos diferentes de cogumelo. Os efeitos dos cogumelos se chocam, então só existe a versão comum, \"muito saciante\" segundo o jogo.",
+  "description": "Os Espetinhos fartos de cogumelo surgem quando pelo menos quatro tipos diferentes de cogumelo vão juntos para a panela. A descrição do jogo diz que os fãs de culinária com fungos não resistem a esse espetinho simples e que ele é muito saciante. É a versão farta (Copious) do Espetinho de cogumelos.\n\nSegundo o Zelda Wiki, a variedade de efeitos dos cogumelos torna impossível criar qualquer versão com efeito: com quatro tipos diferentes, os efeitos se chocam e sai apenas o prato comum. Quem quer um espetinho de cogumelo com efeito precisa recorrer ao Espetinho de cogumelos simples, com cogumelos de um mesmo efeito.",
+  "obtaining": [
+    "Cozinhar numa Panela pelo menos quatro tipos diferentes de cogumelo."
+  ],
+  "uses": [
+    "Cura sem efeito, aproveitando cogumelos variados."
+  ],
+  "effects": [
+    "Somente a versão comum: recupera corações; não há versão com efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações, sem efeito adicional.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Nenhum segredo conhecido além da impossibilidade de efeito; as fontes não informam a quantidade de corações nem o preço.",
+  "limitations": [
+    "Não aceita efeitos.",
+    "Com menos de quatro tipos de cogumelo, o resultado é o Espetinho de cogumelos."
+  ],
+  "related": [
+    {
+      "id": "botw_food_mushroom_skewer",
+      "relation": "Versão simples, que pode ter efeito"
+    },
+    {
+      "id": "botw_food_copious_fried_wild_greens",
+      "relation": "Outro prato farto sem efeito possível"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo sem efeito"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "parcial"
+}

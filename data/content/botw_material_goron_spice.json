@@ -1,0 +1,208 @@
+{
+  "id": "botw_material_goron_spice",
+  "summary": "Tempero secreto dos Gorons, ardido e depois doce. Não pode ser comido puro e é neutro: não dá resistência ao frio. Base dos curries e espetinhos temperados; Lester o troca por Arroz hyliano.",
+  "description": "O Tempero Goron é uma mistura de vários condimentos, segredo transmitido pelos Gorons há gerações: segundo o jogo, \"uma onda inicial de ardor abre caminho para a doçura\". É vendido na Goron Gusto Shop, na Cidade Goron, e pelos mercadores Yammo e Stamm. Não pode ser comido puro.\n\nApesar do sabor picante, na tabela de culinária ele é um ingrediente neutro: não recupera corações, não dá o efeito Picante (resistência ao frio) e apenas soma 1:30 à duração, além de 10% de chance extra de bônus crítico. Sua importância está nas receitas: é obrigatório em 17 pratos, incluindo todos os curries (de carne, de coxa, de frutos do mar, de legumes, de monstro e o Arroz com curry), os espetinhos temperados, o Caranguejo salteado, as Ervas salteadas e os Cogumelos salteados aromáticos. Na Missão secundária \"Curry for What Ails You\", Lester, no Estábulo dos Arás, tem o arroz mas não o tempero para fazer Arroz com curry: ele paga 50 rupias pelo primeiro frasco e, depois, troca cada Tempero Goron por Arroz hyliano.",
+  "locations": [
+    "Goron Gusto Shop, na Cidade Goron.",
+    "Mercadores Yammo (Tabantha Bridge Stable–Serenne Stable) e Stamm (South Akkala Stable–Vila Tarrey)."
+  ],
+  "obtaining": [
+    "Comprar na Goron Gusto Shop ou com Yammo e Stamm (16 rupias)."
+  ],
+  "uses": [
+    "Receitas obrigatórias (17): Arroz com curry, Pilaf ao curry, Curry de carne, Curry de carne de segunda, Curry de carne de primeira, Curry de coxa, Curry de sobrecoxa, Curry de ave inteira, Curry de frutos do mar, Curry de legumes, Curry de monstro, Espetinho temperado de carne (e as versões de segunda e de primeira), Caranguejo salteado, Ervas salteadas e Cogumelos salteados aromáticos.",
+    "Missão secundária \"Curry for What Ails You\": entregar a Lester, no Estábulo dos Arás, por 50 rupias; depois, trocar por Arroz hyliano.",
+    "Ingrediente de corante na Tinturaria Kochi (carmesim, pela tabela de corantes).",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito culinário próprio (não dá o efeito Picante); acrescenta 1:30 à duração e +10% de chance de crítico."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "nao_aplicavel",
+      "result": "Não pode ser comido puro; só serve como ingrediente na panela.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Ingrediente neutro: 0 de cura, 1:30 de duração e +10% de chance de bônus crítico. Com arroz forma o Arroz com curry; com carne, os espetinhos temperados; com carne e arroz, os curries. Sozinho ou só com suplementos incompatíveis, vira Comida duvidosa.",
+      "produces": [
+        "botw_food_curry_rice",
+        "botw_food_spiced_meat_skewer",
+        "botw_food_meat_curry",
+        "botw_food_crab_stir_fry",
+        "botw_food_herb_saute",
+        "botw_food_fragrant_mushroom_saute",
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "usar",
+      "variant": "troca com Lester",
+      "status": "confirmado",
+      "result": "Lester, no Estábulo dos Arás, paga 50 rupias pelo primeiro Tempero Goron e, depois da missão, troca cada tempero por Arroz hyliano.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Jogado perto do fogo, queima até virar cinzas: só materiais que recuperam vida crus viram comida assada.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Roasted Food"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado numa fogueira, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não congela: só carnes e frutos do mar viram Comida congelada.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio nem congela: é um ingrediente neutro, sem o efeito Picante, e não há versão congelada dele.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Frozen Food"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurado e largado no chão; não há uso conhecido para o tempero largado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear o tempero largado."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do tempero à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o que acontece com o tempero largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o frasco de tempero não é descrito como metálico.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao tempero largado."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias numa loja; Lester paga 50 rupias pelo primeiro, na missão.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Ardido, mas neutro",
+      "text": "O Tempero Goron está na lista de materiais neutros do Zelda Wiki: não acrescenta nenhum efeito ao prato. Para resistência ao frio, o efeito Picante vem de ingredientes como a Pimenta de fogo, não do tempero.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild",
+        "zw:Spicy Pepper"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Uma receita de tingimento que foi parar num romance",
+      "text": "O rótulo do tempero traz escrita hyliana que se traduz como \"Spice\" (tempero). E a receita de tingimento vermelho de Breath of the Wild, que inclui o Tempero Goron, apareceu por engano no romance A Traveler at the Gates of Wisdom, de John Boyne, porque o primeiro resultado do Google para tingir roupas de vermelho levava à receita do jogo.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Depois de \"Curry for What Ails You\", Lester vira uma fonte fixa de Arroz hyliano no Estábulo dos Arás: basta levar Tempero Goron."
+  ],
+  "limitations": [
+    "Não pode ser comido puro e queima no fogo.",
+    "A página do tempero diz que ele faz corante vermelho, mas a tabela de corantes do Zelda Wiki o lista no corante carmesim (Crimson)."
+  ],
+  "related": [
+    {
+      "id": "botw_food_curry_rice",
+      "relation": "Prato de Lester feito com tempero e arroz"
+    },
+    {
+      "id": "botw_food_spiced_meat_skewer",
+      "relation": "Tempero com Carne de terceira"
+    },
+    {
+      "id": "botw_food_meat_curry",
+      "relation": "Exemplo de curry que exige o tempero"
+    },
+    {
+      "id": "botw_food_monster_curry",
+      "relation": "Curry com Extrato de monstro"
+    },
+    {
+      "id": "botw_material_hylian_rice",
+      "relation": "Parceiro dos curries; obtido de Lester em troca do tempero"
+    },
+    {
+      "id": "botw_material_spicy_pepper",
+      "relation": "Fonte real do efeito Picante"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem combinação válida"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente de corante"
+    }
+  ],
+  "capabilities": [
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

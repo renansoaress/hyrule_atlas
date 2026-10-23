@@ -1,0 +1,94 @@
+{
+  "id": "botw_creature_highland_sheep",
+  "summary": "Ovelha tímida, originária das montanhas e domesticada pela lã, que vive em rebanhos no pasto de Hateno e em alguns estábulos. É o alvo dos monstros na missão \"The Sheep Rustlers\".",
+  "description": "A Ovelha do planalto vivia originalmente nas regiões montanhosas, mas foi domesticada pela lã, tosquiada quando cresce para fazer roupas e roupas de cama. É calma e tímida, anda em pequenos rebanhos e costuma dividir o pasto com Vacas de Hateno e Bodes brancos, sobretudo no pasto de Hateno (Hateno Pasture) e em certos estábulos. Herbívora, come ervas, frutas e legumes deixados por perto.\n\nNo pasto de Hateno, monstros vindos da praia de Hateno têm roubado ovelhas. Na missão secundária \"The Sheep Rustlers\", Link encontra duas ovelhas presas no acampamento de monstros da praia; derrotados os monstros, as ovelhas somem, e Koyin, mais tranquila com o rebanho, recompensa Link com 10 Leites frescos. Como os demais animais domésticos, foge de Stalcavalos.",
+  "locations": [
+    "Necluda Oriental e Altiplano de Akkala (compendium).",
+    "Pasto de Hateno e alguns estábulos.",
+    "Acampamento de monstros da praia de Hateno (Hateno Beach), durante a missão \"The Sheep Rustlers\"."
+  ],
+  "obtaining": [
+    "Não pode ser obtida; pode ser fotografada para o compendium (entrada nº 18)."
+  ],
+  "uses": [
+    "Missão secundária \"The Sheep Rustlers\": derrotar os monstros que mantêm duas ovelhas presas na praia de Hateno rende 10 Leites frescos de Koyin.",
+    "Registrar sua foto no compendium."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "É calma e tímida e anda em pequenos rebanhos. Foge de Stalcavalos.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Stalhorse"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar",
+      "status": "confirmado",
+      "result": "Come ervas, frutas e legumes que estejam por perto.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Monstros da praia de Hateno roubam ovelhas do pasto; duas ficam presas no acampamento deles durante \"The Sheep Rustlers\".",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece se a ovelha for atacada."
+    },
+    {
+      "action": "flecha",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre flechas acertando a ovelha."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montada: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "As ovelhas que somem",
+      "text": "Em \"The Sheep Rustlers\", as duas ovelhas presas no acampamento da praia desaparecem assim que os monstros são derrotados; ao voltar, Link encontra o rebanho de Koyin mais calmo.",
+      "sources": ["zw"]
+    }
+  ],
+  "limitations": [
+    "Não deixa itens conhecidos."
+  ],
+  "related": [
+    { "id": "botw_material_fresh_milk", "relation": "Recompensa da missão \"The Sheep Rustlers\" (10 unidades)" },
+    { "id": "botw_creature_hateno_cow", "relation": "Divide o pasto de Hateno" },
+    { "id": "botw_creature_white_goat", "relation": "Divide o pasto de Hateno" },
+    { "id": "botw_creature_stalhorse", "relation": "A ovelha foge dele" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "parcial"
+}

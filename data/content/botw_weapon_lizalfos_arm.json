@@ -1,0 +1,158 @@
+{
+  "id": "botw_weapon_lizalfos_arm",
+  "summary": "Braço de Stallagalfos que continua se debatendo mesmo depois de morto. Muito frágil, mas age como bumerangue quando arremessado e, por ser de osso, flutua, não queima e não conduz eletricidade.",
+  "description": "O Braço de Lagalfos é o braço decepado de um Stallagalfos, os esqueletos de Lagalfos que saem da terra à noite, e só pode ser obtido derrotando esses monstros. A descrição do jogo diz que ele continua a lutar mesmo na morte e que dá para senti-lo se mexendo quando Link o prende às costas. Serve como arma de uma mão, mas é muito quebradiço.\n\nSua particularidade é o arremesso: em vez de se despedaçar no impacto, ele age como um bumerangue e faz a curva de volta até Link. Sendo de osso, flutua na água, não atrai raios, não conduz eletricidade e não queima no fogo nem em clima escaldante — uma opção segura em noites de tempestade.",
+  "locations": [
+    "Toda Hyrule, à noite, onde surgem Stallagalfos."
+  ],
+  "obtaining": [
+    "Derrotar um Stallagalfos; é a única forma de conseguir o braço.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma de emergência noturna com arremesso que retorna.",
+    "Arma segura durante tempestades, pois não atrai raios."
+  ],
+  "effects": [
+    "Arremessado, volta para Link como um bumerangue."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Funciona como arma de uma mão comum (golpes de velocidade média, ataque giratório carregado, uso com escudo), mas é muito frágil.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Lançado, age como bumerangue: faz a curva e volta para Link em vez de quebrar no impacto.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem quando equipado em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água, por ser de osso.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico e não responde a Magnétis.",
+      "sources": [
+        "dm",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Vem dos Stallagalfos, que desmontam com qualquer golpe e se remontam sozinhos; um Stallagalfos só é derrotado de vez se a cabeça for destruída antes de o corpo se reconstruir.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Stalizalfos"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, o braço pode surgir com bônus de ataque de +1 a +5 (nível comum) ou +6 a +8 (nível dourado) e bônus de durabilidade de +2 a +5 (ou +6 a +8 no nível dourado). O multiplicador de lançamento longo fica em 1×, então esse bônus não aumenta o alcance. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Bumerangue de osso",
+      "text": "Nos parâmetros, o Braço de Lagalfos é classificado como bumerangue (com a mesma rotação de 1500 no ar dos bumerangues Lagal) e como arma que não quebra ao ser lançada — diferente do Braço de Koboblin, que se despedaça no arremesso.",
+      "sources": [
+        "dm",
+        "zw:Bokoblin Arm"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em noites de tempestade, trocar armas de metal pelo braço evita que raios caiam sobre Link, e o arremesso que retorna ajuda a atacar à distância."
+  ],
+  "limitations": [
+    "Muito quebradiço (durabilidade 8).",
+    "Só aparece à noite, quando os Stallagalfos estão ativos."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_stalizalfos",
+      "relation": "Monstro de onde vem o braço"
+    },
+    {
+      "id": "botw_weapon_bokoblin_arm",
+      "relation": "Equivalente dos Stalboblins"
+    },
+    {
+      "id": "botw_weapon_moblin_arm",
+      "relation": "Equivalente dos Stalmoblins"
+    },
+    {
+      "id": "botw_weapon_lizal_boomerang",
+      "relation": "Arma Lagalfos que também retorna"
+    },
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Os Stallagalfos são restos de Lagalfos"
+    }
+  ],
+  "capabilities": [
+    "flutua",
+    "arremessavel",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

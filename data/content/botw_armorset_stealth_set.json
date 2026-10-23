@@ -1,0 +1,79 @@
+{
+  "id": "botw_armorset_stealth_set",
+  "summary": "Traje Sheikah de infiltração vendido na loja Enchanted, em Kakariko. Cada peça dá Furtividade aumentada (até -70% de barulho); em ★★ Link também corre mais rápido à noite. Defesa baixa.",
+  "description": "O Conjunto furtivo reúne a Máscara furtiva, o Peitoral furtivo e a Meia-calça furtiva. As três peças são vendidas na loja Enchanted, em Vila Kakariko, por 500, 700 e 600 rupias (1.800 no total). Os Sheikah o projetaram para missões discretas e, ao contrário das roupas comuns dos Sheikah, que eles se recusam a vender para outros povos, o conjunto furtivo é vendido a qualquer um, como Link ou Bugut.\n\nCada peça dá um nível de Furtividade aumentada, que reduz o barulho feito por Link em 20%, 40% e 70% nos níveis 1 a 3; com as três peças, o efeito chega ao nível 3, o máximo. O efeito diminui apenas o som: os inimigos ainda podem ver Link. Com as três peças melhoradas pelo menos duas vezes (★★) por uma Grande Fada, o conjunto ganha a Velocidade noturna (Night Speed Up): entre 21h e 4h a corrida fica 20% mais rápida, como uma Velocidade aumentada de nível 2, somável a um efeito de nível 1.\n\nA contrapartida é a defesa, menor que a de outros conjuntos (de 2 a 16 por peça). As melhorias usam ingredientes de furtividade: Beladona azul, Vaga-lume do poente, Silencimelo, Caramujo discreto, Truta discreta e Princesa plácida. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Loja Enchanted, em Vila Kakariko."
+  ],
+  "obtaining": [
+    "Comprar: Máscara furtiva por 500, Peitoral furtivo por 700 e Meia-calça furtiva por 600 rupias."
+  ],
+  "uses": [
+    "Aproximar-se de inimigos para Ataques-surpresa e de animais ariscos sem ser ouvido.",
+    "Em ★★, correr mais rápido à noite."
+  ],
+  "effects": [
+    "Cada peça: Furtividade aumentada (um nível por peça; as três chegam ao nível 3, -70% de barulho).",
+    "Bônus de conjunto (três peças em ★★): Velocidade noturna, +20% de corrida entre 21h e 4h."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "As três peças somam Furtividade aumentada de nível 3; em ★★ Link corre 20% mais rápido entre 21h e 4h.",
+      "conditions": ["Máscara, peitoral e meia-calça furtivos vestidos juntos; para a velocidade noturna, todos com ★★."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Set Bonus", "zw:Added Effect"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Reduz o barulho que Link faz, o que dificulta que inimigos o percebam pelo som; a detecção visual não muda.",
+      "kind": "mecanica",
+      "sources": ["zw:Added Effect"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Roupa Sheikah à venda para todos",
+      "text": "Sagessa reclama que os moradores de Kakariko têm roupas incríveis para trabalhar na chuva, mas que só os Sheikah podem usá-las. O Conjunto furtivo é a exceção: está à venda para qualquer um.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Mudança de visual no desenvolvimento",
+      "text": "A arte conceitual mostra que o conjunto lembrava as roupas do dia a dia dos Sheikah e foi redesenhado depois para parecer o traje dos guerreiros Sheikah.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Furtividade já no máximo",
+      "text": "Como a Furtividade aumentada tem teto no nível 3, comer pratos ou elixires discretos com as três peças vestidas não aumenta mais o efeito.",
+      "sources": ["zw:Added Effect"]
+    }
+  ],
+  "advanced_uses": [
+    "Para Ataques-surpresa, aproxime-se agachado e por trás: a furtividade só abafa o som, então ficar fora do campo de visão continua essencial.",
+    "Em ★★, à noite, o conjunto acumula furtividade máxima e velocidade extra, útil para caçar ou atravessar acampamentos."
+  ],
+  "limitations": [
+    "Defesa baixa comparada a outros conjuntos.",
+    "Não impede que inimigos vejam Link.",
+    "A velocidade noturna exige as três peças em ★★ e só vale das 21h às 4h."
+  ],
+  "related": [
+    { "id": "botw_armor_stealth_mask", "relation": "Peça de cabeça do conjunto" },
+    { "id": "botw_armor_stealth_chest_guard", "relation": "Peça de torso do conjunto" },
+    { "id": "botw_armor_stealth_tights", "relation": "Peça de pernas do conjunto" },
+    { "id": "botw_armorset_dark_series", "relation": "Dá Velocidade noturna sem melhorias" },
+    { "id": "botw_armorset_phantom_ganon_set", "relation": "Outro conjunto com Furtividade aumentada" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "A furtividade facilita Ataques-surpresa" },
+    { "id": "botw_material_silent_princess", "relation": "Material da última melhoria" },
+    { "id": "botw_elixir_sneaky_elixir", "relation": "Elixir com o mesmo tipo de efeito" },
+    { "id": "botw_mechanic_great_fairy_fountain", "relation": "Onde as peças são melhoradas" },
+    { "id": "botw_mechanic_dye", "relation": "As peças podem ser tingidas" }
+  ],
+  "capabilities": ["furtividade", "velocidade"],
+  "verification_status": "verificado"
+}

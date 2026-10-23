@@ -1,0 +1,146 @@
+{
+  "id": "botw_monster_guardian_turret",
+  "summary": "Guardião fixo que defende o Castelo de Hyrule, inclusive a entrada do Sanctum, onde está Ganon (1.500 de vida). Atingido pelas costas, entra em pane e atira para a frente; uma flecha no olho o atordoa.",
+  "description": "O Guardião torreta é um modelo estacionário criado para defender estruturas importantes. O compendium observa que o poder ofensivo é igual ao dos outros Guardiões e que dispensar as patas barateou a fabricação. No jogo base ele só aparece ao redor do Castelo de Hyrule — vários guardam a entrada do Sanctum, onde Ganon, a Calamidade aguarda —, além da Provação da Espada e da Provação Final. Quase todos estão corrompidos; um não corrompido fica em Upland Zorana, na missão \"EX Champion Mipha's Song\", e outro na Provação Final.\n\nAo avistar Link, ergue a cabeça e carrega o laser. Com pouca vida, pode atirar em sequência rápida enquanto Link não se afastar muito do ponto do último disparo, e alguns conseguem prender Link entre uma parede e a própria torreta durante essas rajadas. Uma peculiaridade útil: se for atingido pelas costas, entra em pane como um Guardião deteriorado e passa a disparar na direção para a qual estiver virado.\n\nUma flecha no olho o atordoa — ele às vezes recolhe ou estende a cabeça para atrapalhar a mira —, e Estátis+ aplicada durante a carga também o atordoa depois. Pode deixar Parafuso, Mola, Engrenagem e Eixo ancestrais, Núcleo ancestral e Núcleo ancestral gigante.",
+  "locations": [
+    "Castelo de Hyrule (o compendium o lista como área comum), inclusive na entrada do Sanctum.",
+    "Provação da Espada (DLC 1) e Provação Final (DLC 2); um não corrompido em Upland Zorana (DLC 2)."
+  ],
+  "obtaining": [
+    "Derrotá-lo pode render Parafuso, Mola, Engrenagem e Eixo ancestrais, Núcleo ancestral e Núcleo ancestral gigante.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de materiais ancestrais dentro do Castelo de Hyrule."
+  ],
+  "effects": [
+    "Laser de Guardião, que ateia fogo onde atinge, e rajadas de lasers quando está com pouca vida."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Ao avistar Link, eleva a cabeça e começa a carregar o laser.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Golpeado pelas costas, entra em pane e dispara lasers na direção em que estiver virado. Armas ancestrais e a Espada Mestra são especialmente eficazes contra Guardiões corrompidos.",
+      "applications": ["Atacar pelas costas para que os disparos em pane saiam para longe de Link."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Guardian"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha no olho o atordoa; ele recolhe ou estende a cabeça para atrapalhar a mira. Uma Flecha ancestral no olho destrói Guardiões na hora.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ancient Arrow"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "O laser pode ser devolvido com Defesa perfeita, como os lasers de Guardiões em geral; o Escudo ancestral rebate automaticamente.",
+      "kind": "mecanica",
+      "sources": ["zw:Perfect Guard", "zw:Ancient Shield"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "O laser ateia fogo onde atinge. O efeito de fogo sobre a torreta não é descrito.",
+      "kind": "mecanica",
+      "sources": ["zw:Fire"]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de gelo sobre ele."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação relevante sobre água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não detalham o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Estátis+ usada enquanto ele carrega o laser o deixa atordoado em seguida.",
+      "conditions": ["Runa melhorada para Estátis+."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Magnétis numa torreta."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica preso ao lugar, protegendo pontos-chave do castelo. Durante as rajadas, alguns podem encurralar Link entre a parede e a torreta por um bom tempo.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Economia sem patas",
+      "text": "Segundo o compendium, o modelo torreta tem o mesmo poder ofensivo dos outros Guardiões, mas eliminar as patas manteve baixo o custo de fabricação.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Pane pelas costas",
+      "text": "Um golpe por trás faz a torreta se comportar como um Guardião deteriorado em pane, disparando para onde estiver virada — uma forma de virar o perigo para longe de Link.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Trilha emprestada",
+      "text": "Na Provação da Espada, as torretas usam a mesma música de encontro dos Guardiões deteriorados.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Modo Mestre atrasa o disparo",
+      "text": "No Modo Mestre, às vezes demora mais na carga do laser para atrapalhar o tempo da Defesa perfeita.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Contornar a torreta e atacá-la pelas costas para usar a pane a seu favor."
+  ],
+  "limitations": [
+    "Fica sempre no mesmo lugar, mas costuma proteger acessos obrigatórios do castelo."
+  ],
+  "related": [
+    { "id": "botw_monster_guardian_skywatcher", "relation": "Versão voadora derivada do mesmo modelo" },
+    { "id": "botw_monster_decayed_guardian", "relation": "Comportamento de pane semelhante" },
+    { "id": "botw_monster_guardian_stalker", "relation": "Versão móvel" },
+    { "id": "botw_monster_calamity_ganon", "relation": "As torretas guardam a entrada do Sanctum" },
+    { "id": "botw_arrow_ancient_arrow", "relation": "Destrói Guardiões ao acertar o olho" },
+    { "id": "botw_rune_stasis", "relation": "Estátis+ o atordoa durante a carga" },
+    { "id": "botw_material_ancient_core", "relation": "Possível recompensa" },
+    { "id": "botw_material_giant_ancient_core", "relation": "Possível recompensa" }
+  ],
+  "capabilities": ["gera_fogo", "habilidade_especial"],
+  "verification_status": "verificado"
+}

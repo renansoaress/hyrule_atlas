@@ -1,0 +1,122 @@
+{
+  "id": "botw_shield_boko_shield",
+  "summary": "Casca de árvore com uma alça presa pelos Koboblins: o escudo menos durável do jogo (5 usos). É de madeira, então queima e flutua, mas não atrai raios.",
+  "description": "O Escudo Kobo é feito pelos Koboblins prendendo uma alça a qualquer pedaço plano de casca de árvore achado no chão. A própria descrição do jogo avisa que é malfeito e não vai durar: com durabilidade 5, é o escudo de menor durabilidade de toda a lista de BOTW, e sua Defesa (3) também é das mais baixas. Faz parte do equipamento dos Koboblins (Bokoblin Gear), ao lado das clavas, lanças e arcos Kobo.\n\nÉ muito comum nas mãos de Koboblins comuns na Pradaria de Hyrule — em especial no planalto inicial (Great Plateau) — e em Necluda Ocidental, o que faz dele um dos primeiros escudos que Link costuma pegar. Por ser de madeira, pega fogo, queima no calor de Eldin, flutua na água e é ignorado por Magnétis e pelos raios das tempestades.",
+  "locations": [
+    "Pradaria de Hyrule (em especial o planalto inicial, Great Plateau) e Necluda Ocidental, nas mãos de Koboblins comuns."
+  ],
+  "obtaining": [
+    "Derrotar Koboblins que o empunham ou recolhê-lo em acampamentos de Koboblins.",
+    "Baú invocado pelo amiibo de Koboblin (série Breath of the Wild), com chance de conter um Escudo Kobo."
+  ],
+  "uses": [
+    "Escudo descartável do começo do jogo, para aprender a bloquear e a fazer Defesa perfeita.",
+    "Prancha barata para Surfar com escudo em encostas de neve ou areia, onde não se desgasta."
+  ],
+  "effects": [
+    "Nenhum efeito especial além de bloquear ataques fracos."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia ataques, mas com apenas 5 de durabilidade quebra depois de poucos golpes. A Defesa perfeita não desgasta o escudo e desequilibra o inimigo.",
+      "conditions": ["Segurar ZL para bloquear; apertar A no instante do golpe para a Defesa perfeita."],
+      "applications": ["Treinar o tempo da Defesa perfeita sem medo de perder um escudo valioso."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "zw:Perfect Guard"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Serve para Surfar com escudo com atrito e desgaste padrão (multiplicadores 1). Em pedra perde durabilidade rapidamente — com 5 pontos, quebra logo.",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "applications": ["Surfar em neve ou areia, onde o escudo não perde durabilidade."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing", "zw:Template:BotW Shield Parameters"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo e vai perdendo durabilidade aos poucos enquanto queima.",
+      "conditions": ["Contato com chamas, flechas incendiárias ou ataques de fogo."],
+      "side_effects": ["Guardar o escudo ou molhá-lo apaga o fogo; deixado queimando, vira cinzas."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipado na região escaldante de Eldin, pega fogo sozinho e acaba virando cinzas.",
+      "conditions": ["Estar com o escudo equipado no Cânion de Eldin ou na Montanha da Morte."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, por ser de madeira.",
+      "side_effects": ["As fontes atribuem o derrubamento do escudo por choque aos escudos metálicos; a página da Flecha eletrizante diz, de forma genérica, que qualquer equipamento em uso cai quando Link é eletrocutado."],
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Shock Arrow"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios em tempestades.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é metálico, então Magnétis não o move.",
+      "sources": ["dm", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "É o escudo típico dos Koboblins comuns; derrotá-los é a forma mais fácil de consegui-lo.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +1 (nível branco) ou +2 (nível amarelo) e com Defesa do escudo aumentada de +2 a +4 (branco) ou +5 a +6 (amarelo).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O escudo mais frágil de Hyrule",
+      "text": "Na tabela de escudos de BOTW, nenhum outro tem durabilidade tão baixa quanto os 5 pontos do Escudo Kobo; o Escudo Kobo pontudo (7) e o Escudo Kobo dracônico (8) vêm logo atrás.",
+      "sources": ["zw:Shields in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar alguns como \"pranchas\" de neve: em neve e areia o surfe não gasta durabilidade, então até o escudo mais fraco serve."
+  ],
+  "limitations": [
+    "Durabilidade 5: quebra quase imediatamente se usado para bloquear golpes fortes ou surfar em pedra.",
+    "Não pode ser equipado em Eldin sem proteção, pois queima."
+  ],
+  "related": [
+    { "id": "botw_shield_spiked_boko_shield", "relation": "Versão reforçada com ossos" },
+    { "id": "botw_shield_dragonbone_boko_shield", "relation": "Versão mais forte, reforçada com osso fossilizado" },
+    { "id": "botw_weapon_boko_club", "relation": "Mesmo arquétipo (equipamento dos Koboblins)" },
+    { "id": "botw_weapon_boko_spear", "relation": "Mesmo arquétipo (equipamento dos Koboblins)" },
+    { "id": "botw_bow_boko_bow", "relation": "Mesmo arquétipo (equipamento dos Koboblins)" },
+    { "id": "botw_monster_bokoblin", "relation": "Monstro que o empunha" },
+    { "id": "botw_rune_amiibo_rune", "relation": "O amiibo de Koboblin pode invocá-lo num baú" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Pode ser usado como prancha" }
+  ],
+  "capabilities": ["inflamavel", "flutua"],
+  "verification_status": "verificado"
+}

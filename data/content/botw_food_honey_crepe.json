@@ -1,0 +1,89 @@
+{
+  "id": "botw_food_honey_crepe",
+  "summary": "Crepe com Leite fresco, Ovo, Trigo de Tabantha, Cana-de-açúcar e Mel de abelha, que ocupa os cinco espaços da panela. Sempre energizante: recupera 2/5 do Medidor de vigor e 10 corações.",
+  "description": "O Crepe de mel exige cinco ingredientes: Leite fresco, Ovo, Trigo de Tabantha, Cana-de-açúcar e Mel de abelha. Segundo a descrição do jogo, o mel regado sobre os crepes finos realça sua doçura e sabor natural.\n\nComo a receita preenche a panela inteira, não sobra espaço para nenhum ingrediente que mude ou anule o efeito do mel. Por isso, só existe a versão energizante, que recupera dois quintos do Medidor de vigor e 10 corações.\n\nO crepe é primo do Crepe simples, que leva Manteiga de cabra no lugar do mel, e do Crepe de framboesa, que troca o mel pela Framboesa.",
+  "locations": [
+    "Leite fresco: vendido na East Wind (Vila Hateno) e pelos mercadores Agus e Yammo.",
+    "Ovo: achado em ninhos no alto das árvores ou comprado na East Wind, na High Spirits Produce e com Agus.",
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo.",
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Leite fresco + Ovo + Trigo de Tabantha + Cana-de-açúcar + Mel de abelha."
+  ],
+  "uses": [
+    "Cura de 10 corações com recuperação de vigor garantida.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — única versão; 2/5 do Medidor de vigor e 10 corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera dois quintos do Medidor de vigor e 10 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor. Por usar cinco ingredientes, usa o máximo de ingredientes que uma panela comporta.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Panela cheia, efeito garantido",
+      "text": "Com os cinco espaços ocupados pela receita, não há como acrescentar um ingrediente de efeito contrário: o crepe é sempre energizante.",
+      "sources": [
+        "zw",
+        "zw:Cooking Pot"
+      ]
+    }
+  ],
+  "limitations": [
+    "Sem versão comum nem outros efeitos.",
+    "Exige ingredientes de várias lojas, além do mel."
+  ],
+  "related": [
+    {
+      "id": "botw_food_plain_crepe",
+      "relation": "Crepe com Manteiga de cabra no lugar do mel"
+    },
+    {
+      "id": "botw_food_wildberry_crepe",
+      "relation": "Crepe com Framboesa no lugar do mel"
+    },
+    {
+      "id": "botw_food_honey_candy",
+      "relation": "Prato só de mel"
+    },
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório, fonte do efeito"
+    },
+    {
+      "id": "botw_material_fresh_milk",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

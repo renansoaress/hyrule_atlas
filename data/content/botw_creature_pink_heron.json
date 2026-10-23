@@ -1,0 +1,82 @@
+{
+  "id": "botw_creature_pink_heron",
+  "summary": "Garça grande, branca com asas e crista rosadas, que vive em campos secos e áridos caçando insetos no capim — ao contrário da Garça azulada, que pesca. Voa ao sentir perigo e deixa uma Coxa.",
+  "description": "A Garça rosada é uma garça grande de pernas longas e pescoço comprido, branca com as pontas das asas e a crista rosadas e pernas e bico pretos. Diferente da parente Garça azulada, que vive à beira d'água, ela habita regiões gramadas e áridas, como os Cerros de Hyrule e a Pradaria de Hyrule, onde se alimenta de insetos que vivem no capim.\n\nAnda em grupos de duas ou mais, caminhando devagar à procura de comida, e levanta voo quando sente perigo ou quando Link se aproxima. Abatida, deixa uma Coxa.",
+  "locations": [
+    "Cerros de Hyrule e Pradaria de Hyrule (compendium), em campos gramados e áridos."
+  ],
+  "obtaining": [
+    "Não pode ser capturada; abatida, deixa uma Coxa."
+  ],
+  "uses": [
+    "Fonte de Coxa.",
+    "Registrar sua foto no compendium (entrada nº 43)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Levanta voo quando sente perigo ou quando Link se aproxima.",
+      "kind": "mecanica",
+      "sources": ["zw", "comp", "zw:Heron"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatida à distância; ao morrer, deixa uma Coxa.",
+      "conditions": ["Como voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_raw_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Heron", "zw:Raw Bird Drumstick", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra a garça, que voa quando Link se aproxima."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nela."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave; não é montaria."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Duas garças, duas dietas",
+      "text": "Hyrule tem apenas duas garças: a azulada, que pesca peixes e sapos na beira d'água, e a rosada, que caça insetos em campos secos.",
+      "sources": ["zw:Heron", "comp"]
+    }
+  ],
+  "advanced_uses": [
+    "A Coxa vira Coxa assada se exposta ao fogo e Coxa congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Rende só Coxa, a carne de ave mais simples."
+  ],
+  "related": [
+    { "id": "botw_creature_blue_winged_heron", "relation": "A outra garça de Hyrule, da beira d'água" },
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Carne deixada ao ser abatida" },
+    { "id": "botw_food_roasted_bird_drumstick", "relation": "Coxa exposta ao fogo" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

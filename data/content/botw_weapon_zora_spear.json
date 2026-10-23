@@ -1,0 +1,208 @@
+{
+  "id": "botw_weapon_zora_spear",
+  "summary": "Arma preferida dos Zora, mais leve do que parece por ser de um metal especial (ataque 9, durabilidade 40). Serve para pescar e defender o território — e Vegari (Dento) a exige para refazer os tridentes.",
+  "description": "A Lança Zora é a arma de escolha do povo Zora: feita de um metal especial, é mais leve do que aparenta, e os Zora a usam tanto para pescar quanto para proteger seu território. Pertence ao equipamento Zora e é usada pelas guardas do Território Zora — Tida (Dunma), Giocé (Gaddison) e Harmi (Torfeau) —, além de aparecer nas mãos de Lagalfos na Grande Nascente de Lanayru e no Lago Hylia.\n\nA importância dela vai além do combate: Vegari (Dento), na oficina Hammerhead, pede uma Lança Zora para refazer tanto o Tridente cerimonial (com 5 Sílex) quanto o Tridente escamado de Mipha (com 1 Diamante e 5 Sílex). Apesar da leveza, é de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Grande Nascente de Lanayru e Lago Hylia, nas mãos de Lagalfos.",
+    "Território Zora, com as guardas."
+  ],
+  "obtaining": [
+    "Derrotar os Lagalfos que a empunham na Grande Nascente de Lanayru e no Lago Hylia.",
+    "O amiibo de Mipha (série Breath of the Wild) pode gerar um baú com uma Lança Zora.",
+    "A Lua de sangue revive os monstros e repõe as armas que eles empunham."
+  ],
+  "uses": [
+    "Material para Vegari (Dento) refazer o Tridente cerimonial: 1 Lança Zora e 5 Sílex.",
+    "Material para refazer o Tridente escamado: 1 Lança Zora, 1 Diamante e 5 Sílex.",
+    "Lança de metal durável (40) para o começo do jogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto — guarde ao menos uma se pretende refazer um tridente."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Lagalfos da Grande Nascente de Lanayru e do Lago Hylia a empunham.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A peça-chave de Vegari",
+      "text": "Depois que Vah Ruta é acalmada, Vegari (Dento) refaz os dois tridentes Zora que se quebrarem, e ambas as receitas começam por uma Lança Zora: com 5 Sílex ele refaz o Tridente cerimonial; com 1 Diamante e 5 Sílex, o Tridente escamado.",
+      "sources": [
+        "zw",
+        "zw:Dento",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança Zora pode surgir com um bônus branco (comum) — ataque +3 a +4, durabilidade +4 a +8 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +5 a +7, durabilidade +9 a +18 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer. Exemplares tirados de baús de amiibo vêm com o valor máximo da faixa sorteada, embora o bônus apareça sempre em branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mantenha sempre uma Lança Zora guardada se usa o Tridente escamado como arma principal."
+  ],
+  "limitations": [
+    "Dano limitado (9).",
+    "Afunda na água e atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_lightscale_trident",
+      "relation": "Vegari (Dento) usa a lança para refazê-lo"
+    },
+    {
+      "id": "botw_weapon_ceremonial_trident",
+      "relation": "Vegari (Dento) usa a lança para refazê-lo"
+    },
+    {
+      "id": "botw_weapon_silverscale_spear",
+      "relation": "Lança Zora dos guardas masculinos"
+    },
+    {
+      "id": "botw_weapon_zora_sword",
+      "relation": "Mesmo arquétipo (Zora), uma mão"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Combinado com a lança nas receitas de Vegari"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Combinado com a lança para refazer o Tridente escamado"
+    },
+    {
+      "id": "botw_monster_lizalfos",
+      "relation": "Lagalfos da região Zora a empunham"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

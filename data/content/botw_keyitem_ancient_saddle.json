@@ -1,0 +1,75 @@
+{
+  "id": "botw_keyitem_ancient_saddle",
+  "summary": "Sela de tecnologia ancestral (DLC The Champions' Ballad) escondida atrás da Fonte de Malanya. Com ela, o assobio teleporta o cavalo para perto de Link mesmo quando ele está longe demais para ouvir.",
+  "description": "A Sela ancestral é feita com tecnologia ancestral Sheikah e forma, com a Rédea ancestral, o equipamento de montaria ancestral da DLC The Champions' Ballad. A Missão secundária \"EX Ancient Horse Rumors\" leva à Super Rumor Mill V3, no Estábulo Highland, onde Traysi conta que a sela estaria perto da fonte onde vive um espírito equino. Ela está num baú metálico enterrado atrás da Fonte de Malanya, o deus dos cavalos, e é preciso Magnétis para puxá-lo do chão.\n\nSem a sela, um cavalo registrado só atende ao assobio se estiver ao alcance de ouvir e então corre até Link. Com a Sela ancestral, o assobio passa a teletransportar o cavalo para perto de Link praticamente de qualquer lugar onde um cavalo possa estar, como resume o registro da missão: o cavalo \"vem correndo sempre que você chamar, não importa a distância\".\n\nComo as demais selas, ela é colocada por funcionários de quatro estábulos e só em cavalos com vínculo máximo; Epona e o Cavalo gigante não a aceitam.",
+  "locations": [
+    "Fonte de Malanya (Malanya Spring), em baú metálico enterrado atrás da fonte."
+  ],
+  "obtaining": [
+    "Com a DLC The Champions' Ballad, ler a Super Rumor Mill V3 no Estábulo Highland (\"EX Ancient Horse Rumors\"; a missão também é ativada ao carregar o mundo depois de sair do Grande Platô).",
+    "Puxar com Magnétis o baú enterrado atrás da Fonte de Malanya."
+  ],
+  "uses": [
+    "Chamar o cavalo de qualquer distância com o assobio, sem precisar voltar a um estábulo.",
+    "Enfeitar o cavalo com o visual de tecnologia ancestral."
+  ],
+  "effects": [
+    "O assobio teletransporta o cavalo equipado para perto de Link mesmo fora do alcance de audição."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Com a sela equipada, assobiar (botão direcional para baixo) faz o cavalo aparecer perto de Link mesmo que ele esteja longe demais para ouvir e correr até lá.",
+      "conditions": [
+        "Sela colocada por Phanna (Highland), Canni (Outskirt), Tenne (South Akkala) ou Breen (Woodland).",
+        "Cavalo com vínculo máximo.",
+        "Link precisa estar num lugar onde cavalos possam estar."
+      ],
+      "side_effects": ["Não pode ser colocada em Epona nem no Cavalo gigante."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Horse Gear", "jogo"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "O baú da sela está enterrado e é desenterrado com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["zw:EX Ancient Horse Rumors", "zw:Ancient Horse Gear"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O assobio normal tem alcance",
+      "text": "Cavalos registrados respondem ao assobio de Link apenas se estiverem dentro do alcance, correndo até ele. A Sela ancestral elimina esse limite, trazendo o cavalo por teletransporte.",
+      "sources": ["zw:Horse", "zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Guardada pelo deus dos cavalos",
+      "text": "A sela fica na Fonte de Malanya, onde o deus dos cavalos revive montarias mortas de Link em troca de uma Cenoura tenaz, desde que tivessem vínculo máximo.",
+      "sources": ["zw:Horse", "zw:EX Ancient Horse Rumors"]
+    }
+  ],
+  "advanced_uses": [
+    "Combine a Sela ancestral com a Rédea ancestral no mesmo cavalo: ele passa a ter duas esporas a mais e pode ser chamado de qualquer lugar.",
+    "Ao se teletransportar pelo mapa, assobie ao chegar para ter o cavalo ao lado sem voltar ao estábulo."
+  ],
+  "limitations": [
+    "Só funciona onde um cavalo pode estar.",
+    "Equipável apenas em quatro estábulos e em cavalos com vínculo máximo; não serve em Epona nem no Cavalo gigante.",
+    "Exige a DLC The Champions' Ballad."
+  ],
+  "related": [
+    { "id": "botw_keyitem_ancient_bridle", "relation": "Outra peça do equipamento de montaria ancestral" },
+    { "id": "botw_creature_horse", "relation": "Montaria que recebe a sela" },
+    { "id": "botw_creature_epona", "relation": "Não aceita selas" },
+    { "id": "botw_creature_giant_horse", "relation": "Não aceita selas" },
+    { "id": "botw_material_endura_carrot", "relation": "Oferenda de Malanya para reviver cavalos" },
+    { "id": "botw_mechanic_stable", "relation": "Onde a sela é colocada" },
+    { "id": "botw_rune_magnesis", "relation": "Necessária para desenterrar o baú" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,218 @@
+{
+  "id": "botw_monster_dinraal",
+  "summary": "Dragão do fogo que serve à Fonte do Poder e cruza Eldin e Tabantha de madrugada. Não é inimigo nem pode ser derrotado: flechas em partes diferentes do corpo soltam Escama, Garra, Lasca da presa ou do chifre.",
+  "description": "Dinraal é um espírito do fogo que tomou a forma de um dragão gigante. Segundo o compendium, vive na região de Eldin e serve à Fonte do Poder desde tempos antigos; um velho ditado diz que \"o dragão sobe aos céus quando o sol começa a se pôr\", mas ninguém presenciou isso na era atual. As chamas que cobrem o corpo tornam perigoso chegar perto, mas Dinraal não tem má vontade com as pessoas. É um dos três dragões que vagam por Hyrule, ao lado de Naydra e Farosh, e é invencível: não tenta ferir Link, mas o calor do corpo e os orbes de fogo que ele solta queimam quem se aproxima demais. Elixires corta-fogo ou o Conjunto antichamas completo, melhorado duas vezes, evitam as queimaduras.\n\nO interesse prático está nas partes. Atirar com o arco em pontos diferentes do corpo faz cair, envolta em luz, uma parte diferente: o chifre solta a Lasca do chifre de Dinraal, os dentes soltam a Lasca da presa, as mãos soltam a Garra e o restante do corpo solta a Escama. O primeiro tiro que Link acerta nele sempre rende uma Escama, onde quer que acerte. Esses materiais servem para melhorar armaduras nas Fontes da Grande Fada, fazer o corante carmesim na Tinturaria Kochi e cozinhar — o chifre rende pratos com efeito de 30 minutos —, além de valerem bem em rupias e em Mon.\n\nUma Escama de Dinraal é o \"artigo sagrado\" que Hylia pede na Fonte do Poder: oferecê-la abre o Santuário Tutsuwa Nima. No DLC 2, a missão \"EX Champion Revali's Song\" exige atingir o chifre de Dinraal, que passa a voar com frequência pelo Tanagar Canyon à noite; o tiro faz surgir o Santuário Shira Gomar.",
+  "locations": [
+    "Segundo o compendium, é visto na Cordilheira de Eldin e na Fronteira de Tabantha; o Zelda Wiki cita o Tanagar Canyon e o norte de Eldin como trajetos frequentes.",
+    "Rota de exemplo do Zelda Wiki (os horários variam, mas os intervalos se mantêm): por volta da meia-noite desce nas Deplian Badlands rumo ao grande esqueleto de Eldin; entre 1h e 6h percorre a Fronteira de Tabantha pelo Tanagar Canyon, passando sob a grande ponte de Tabantha; entre 7h e 8h sobe para oeste, para fora de Hyrule, e some no céu."
+  ],
+  "obtaining": [
+    "Não pode ser derrotado; as partes são obtidas atirando nele com o arco: Escama de Dinraal (corpo), Garra de Dinraal (mãos), Lasca da presa de Dinraal (dentes) e Lasca do chifre de Dinraal (chifre).",
+    "Uma Escama de Dinraal também está num baú do Castelo de Hyrule.",
+    "Volta a aparecer nas noites seguintes, permitindo repetir a coleta."
+  ],
+  "uses": [
+    "Fonte das quatro partes de Dinraal, usadas em melhorias de armadura, no corante carmesim e na culinária.",
+    "Missão de santuário \"The Spring of Power\": oferecer uma Escama de Dinraal na Fonte do Poder abre o Santuário Tutsuwa Nima.",
+    "Missão principal \"EX Champion Revali's Song\" (DLC 2): acertar o chifre de Dinraal faz surgir o Santuário Shira Gomar."
+  ],
+  "effects": [
+    "Corpo envolto em chamas que queima Link de perto; solta orbes de fogo e espalha grandes incêndios por onde passa."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Não ataca, mas chegar perto demais queima Link com o fogo que emana do corpo e com os orbes de fogo que ele solta.",
+      "conditions": [
+        "Elixir corta-fogo ou Conjunto antichamas completo melhorado duas vezes evitam as queimaduras."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Dragon",
+        "comp"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Cada flecha que acerta solta uma parte, que cai brilhando no chão: chifre → Lasca do chifre, dentes → Lasca da presa, mãos → Garra, resto do corpo → Escama. O primeiro acerto sempre dá uma Escama.",
+      "side_effects": [
+        "Segundo a página da Lasca da presa, cada tipo de parte só cai uma vez por encontro com o dragão."
+      ],
+      "applications": [
+        "Planar perto da rota e atirar nos pontos certos para escolher a parte."
+      ],
+      "produces": [
+        "botw_material_dinraals_scale",
+        "botw_material_dinraals_claw",
+        "botw_material_shard_of_dinraals_fang",
+        "botw_material_shard_of_dinraals_horn"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Dinraal's Scale",
+        "zw:Dinraal's Claw",
+        "zw:Shard of Dinraal's Fang",
+        "zw:Shard of Dinraal's Horn"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Os dragões são invencíveis; as fontes não descrevem o que acontece ao golpeá-lo com armas corpo a corpo."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "É ele a fonte de fogo: o corpo flamejante queima quem chega perto e provoca grandes incêndios por onde passa.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre Dinraal."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre ele."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "Não há informação sobre Dinraal e água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de explosões sobre ele."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Bombas remotas nele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do uso de Estátis em Dinraal."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; não age sobre o dragão.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Segue uma rota no céu, aparecendo em geral de madrugada, e espalha fogo pelo caminho.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Uma Escama garantida",
+      "text": "O primeiro tiro que Link acerta em Dinraal sempre rende uma Escama, qualquer que seja o ponto atingido. Depois disso, para obter Escamas é preciso acertar o corpo, fora chifres, dentes e garras.",
+      "sources": [
+        "zw:Dinraal's Scale"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O chifre que brilha",
+      "text": "Durante \"EX Champion Revali's Song\", Mazli comenta que Dinraal tem voado muito pelo Tanagar Canyon à noite e que os chifres dele têm se iluminado; o tiro no chifre faz surgir o Santuário Shira Gomar.",
+      "sources": [
+        "zw:Shard of Dinraal's Horn"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Drops de um dragão morto",
+      "text": "Os arquivos do jogo têm dados não usados com o que Dinraal deixaria se fosse morto, incluindo todos os materiais que os três dragões podem soltar.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Valores das partes",
+      "text": "Pelos valores do Zelda Wiki, a Escama vale 150 rupias (60 Mon), a Garra 180 rupias (80 Mon), a Lasca da presa 250 rupias (110 Mon) e a Lasca do chifre 300 rupias (150 Mon).",
+      "sources": [
+        "zw:Dinraal's Scale",
+        "zw:Dinraal's Claw",
+        "zw:Shard of Dinraal's Fang",
+        "zw:Shard of Dinraal's Horn"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar a rota no Tanagar Canyon com proteção contra fogo e mirar no chifre, a parte mais valiosa."
+  ],
+  "limitations": [
+    "Não pode ser derrotado nem afugentado.",
+    "Sem proteção contra fogo, ficar perto dele queima Link.",
+    "Os horários de passagem variam; o Zelda Wiki indica que costuma aparecer entre 23h e 5h."
+  ],
+  "related": [
+    {
+      "id": "botw_material_dinraals_scale",
+      "relation": "Parte obtida ao acertar o corpo"
+    },
+    {
+      "id": "botw_material_dinraals_claw",
+      "relation": "Parte obtida ao acertar as mãos"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_fang",
+      "relation": "Parte obtida ao acertar os dentes"
+    },
+    {
+      "id": "botw_material_shard_of_dinraals_horn",
+      "relation": "Parte obtida ao acertar o chifre"
+    },
+    {
+      "id": "botw_monster_naydra",
+      "relation": "Dragão do gelo"
+    },
+    {
+      "id": "botw_monster_farosh",
+      "relation": "Dragão do raio"
+    },
+    {
+      "id": "botw_elixir_fireproof_elixir",
+      "relation": "Protege do fogo do corpo dele"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Melhorado duas vezes, protege do fogo"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "As partes fazem o corante carmesim"
+    },
+    {
+      "id": "botw_mechanic_great_fairy_fountain",
+      "relation": "As partes melhoram armaduras"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

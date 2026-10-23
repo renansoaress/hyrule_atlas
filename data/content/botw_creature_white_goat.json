@@ -1,0 +1,89 @@
+{
+  "id": "botw_creature_white_goat",
+  "summary": "Cabra doméstica de sino no pescoço, criada nos estábulos e no pasto de Hateno pelo leite e pela lã. Come qualquer fruta, noz, legume, cogumelo ou flor oferecido e não pode ser ferida por Link.",
+  "description": "O Bode branco é a variante doméstica do Bode da montanha, de pelagem branca e temperamento dócil. Vive em cercados de alguns estábulos e no pasto de Hateno (Hateno Pasture); o compendium cita Necluda Ocidental e o Cânion de Eldin. O sino que usa no pescoço é sinal de domesticação: permite que os criadores o encontrem depois de soltá-lo para pastar.\n\nÉ herbívoro e come qualquer fruta, noz, legume, cogumelo ou flor que lhe seja oferecido. É criado por vários motivos: o leite pode ser bebido ou transformado em Manteiga de cabra, e a lã macia vira roupa. Assim como a Vaca de Hateno, não pode ser ferido por Link e foge assustado de Stalcavalos.",
+  "locations": [
+    "Necluda Ocidental e Cânion de Eldin (compendium).",
+    "Cercados de alguns estábulos e pasto de Hateno."
+  ],
+  "obtaining": [
+    "Não pode ser obtido nem abatido; pode ser fotografado para o compendium (entrada nº 13)."
+  ],
+  "uses": [
+    "Registrar sua foto no compendium.",
+    "Segundo o compendium, é criado pelo leite (Leite fresco e Manteiga de cabra) e pela lã."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "É dócil. Foge de Stalcavalos por causa da aparência monstruosa deles.",
+      "kind": "mecanica",
+      "sources": ["zw:Goat", "zw:Stalhorse"]
+    },
+    {
+      "action": "usar",
+      "variant": "alimentar",
+      "status": "confirmado",
+      "result": "Come qualquer fruta, noz, legume, cogumelo ou flor que lhe seja apresentado.",
+      "kind": "curiosidade",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "sem_efeito",
+      "result": "Bodes brancos não podem ser feridos por Link.",
+      "sources": ["zw:Goat"]
+    },
+    {
+      "action": "flecha",
+      "status": "sem_efeito",
+      "result": "Pela mesma regra, flechas não conseguem feri-lo.",
+      "sources": ["zw:Goat"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes dizem que ele não pode ser ferido, mas não descrevem especificamente a reação ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem especificamente a reação à eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "sem_efeito",
+      "result": "Não pode ser montado: não está entre as nove criaturas montáveis de BOTW.",
+      "sources": ["zw:Mountain Buck"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "O sino da domesticação",
+      "text": "O sino no pescoço dos bodes brancos serve para os criadores os encontrarem com facilidade depois de soltá-los para pastar.",
+      "sources": ["comp", "zw"]
+    }
+  ],
+  "limitations": [
+    "Não deixa itens: não pode ser ferido."
+  ],
+  "related": [
+    { "id": "botw_creature_mountain_goat", "relation": "Parente selvagem, que pode ser caçado" },
+    { "id": "botw_material_fresh_milk", "relation": "Produzido por bodes brancos e vacas" },
+    { "id": "botw_material_goat_butter", "relation": "Feita com o leite do bode branco" },
+    { "id": "botw_creature_hateno_cow", "relation": "Outro animal doméstico leiteiro" },
+    { "id": "botw_creature_stalhorse", "relation": "O bode branco foge dele" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,210 @@
+{
+  "id": "botw_weapon_ice_rod",
+  "summary": "Varinha de gelo refinado das Cordilheiras de Hebra que solta ondas de ar congelante, usada pelos Feitiçanos glaciais. Ótima para magia, péssima no corpo a corpo; derrota inimigos de fogo com um disparo.",
+  "description": "A Varinha de gelo é a versão mais fraca do Cajado glacial. A descrição do jogo resume: excelente para magia, nada boa para combate corpo a corpo. Cada movimento gera uma corrente de gelo que avança em frente, e o ataque giratório solta cinco disparos de uma vez em direções diferentes. Seus disparos derrotam com um único acerto inimigos de fogo, como Feitiçanos ígneos e Lagalfos ígneos. Os Feitiçanos glaciais a usam para soprar ar gelado e invocar Chulchuls glaciais e Morcis glaciais, e a deixam cair quando derrotados.\n\nComo toda varinha, quebra fácil se atingir diretamente objetos ou inimigos e também se gasta com o uso prolongado; usada em excesso, perde a magia por um tempo até recarregar. Enquanto equipada, dá um nível de resistência ao calor, que não funciona no clima escaldante. Não é inflamável nem metálica: não queima, não conduz eletricidade, não atrai raios, flutua em água funda e não responde a Magnétis.",
+  "locations": [
+    "Montanhas Gerudo e Cânion de Eldin (locais comuns segundo o compendium).",
+    "Nas mãos dos Feitiçanos glaciais, comuns perto de ruínas nas Montanhas Gerudo e na Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Derrotar um Feitiçano glacial: ele deixa cair a varinha.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Congelar inimigos à distância e eliminar inimigos de fogo com um disparo.",
+    "Missão secundária \"A Freezing Rod\": mostrá-la equipada a Kula, na Floresta Korok, rende uma rupia prateada.",
+    "Resistência ao calor de um nível enquanto equipada."
+  ],
+  "effects": [
+    "Uma corrente de gelo por golpe; cinco no ataque giratório.",
+    "Um nível de resistência ao calor enquanto equipada (sem efeito no clima escaldante)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada golpe gera uma corrente de gelo que avança em linha reta; o ataque giratório solta cinco disparos ao redor de Link.",
+      "conditions": [
+        "A varinha precisa ter energia mágica; após uso excessivo, fica sem magia até recarregar."
+      ],
+      "side_effects": [
+        "Bater diretamente em objetos ou inimigos quebra a varinha com facilidade."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Weapon",
+        "jogo"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "O botão de arremesso não solta a varinha: Link a mantém na mão e lança uma corrente de gelo na direção do movimento.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Os disparos são de gelo e congelam os inimigos atingidos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:A Freezing Rod",
+        "zw"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não é inflamável: pode ser usada perto de fogo e em clima escaldante sem queimar.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "side_effects": [
+        "Segundo a página geral de armas, se Link for eletrocutado por outra fonte, qualquer arma (exceto Espada Mestra e Obliterador) voa de suas mãos."
+      ],
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua em águas suficientemente fundas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Não é magnética e não pode ser manipulada com Magnétis.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Feitiçanos glaciais a usam para lançar rajadas de ar frio, invocar Chulchuls e Morcis glaciais e criar nevascas; ao serem derrotados, deixam a varinha.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Ice Wizzrobe",
+        "zw:Wizzrobe"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "inimigos de fogo",
+      "status": "confirmado",
+      "result": "Os disparos derrotam com um acerto inimigos de fogo, como Feitiçanos ígneos e Lagalfos ígneos.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire Wizzrobe"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Energia mágica e recarga",
+      "text": "Nos parâmetros extraídos, a energia máxima da varinha é 400 e cada uso consome 100: quatro disparos seguidos antes de esgotar. A energia volta aos poucos (taxa de recuperação 10 a cada intervalo de 90, em unidades internas do jogo).",
+      "sources": [
+        "dm"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Alcance menor que o do Cajado glacial",
+      "text": "O raio de efeito do disparo (MagicRadius) é 3 na Varinha de gelo e 15 no Cajado glacial, e o poder da magia é 10 contra 30 — a diferença que o jogo descreve ao chamar o cajado de capaz de lançar frio extremo \"em uma área ampla\".",
+      "sources": [
+        "dm",
+        "zw:Blizzard Rod"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a varinha pode surgir com bônus de ataque de +3 (nível comum) ou +4 a +8 (nível dourado) e bônus de durabilidade de +2 a +3 (ou +4 a +7 no nível dourado). O multiplicador de lançamento fica em 1×, então o bônus de lançamento longo não muda nada. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Levar a varinha para enfrentar Feitiçanos ígneos: um disparo de gelo basta para derrotá-los.",
+    "Na missão de Kula, mostrar um Cajado glacial em vez da Varinha de gelo rende uma rupia dourada no lugar da prateada."
+  ],
+  "limitations": [
+    "Muito frágil no corpo a corpo.",
+    "Quatro disparos seguidos esgotam a magia até a recarga.",
+    "A resistência ao calor não serve no clima escaldante."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_blizzard_rod",
+      "relation": "Versão mais forte"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Monstro que a empunha e derruba"
+    },
+    {
+      "id": "botw_weapon_fire_rod",
+      "relation": "Equivalente de fogo"
+    },
+    {
+      "id": "botw_weapon_lightning_rod",
+      "relation": "Equivalente elétrico"
+    },
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Arma de gelo de uma mão corpo a corpo"
+    },
+    {
+      "id": "botw_monster_fire_wizzrobe",
+      "relation": "Derrotado com um disparo"
+    },
+    {
+      "id": "botw_monster_fire_breath_lizalfos",
+      "relation": "Derrotado com um disparo"
+    }
+  ],
+  "capabilities": [
+    "gera_gelo",
+    "congela_inimigos",
+    "protege_calor",
+    "flutua",
+    "habilidade_especial",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

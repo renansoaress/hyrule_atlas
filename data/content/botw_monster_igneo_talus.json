@@ -1,0 +1,216 @@
+{
+  "id": "botw_monster_igneo_talus",
+  "summary": "Tálus de lava do Cânion de Eldin (800 de vida) que incendeia Link ao toque. Armas de gelo o resfriam por um tempo; o bônus antichamas do Conjunto antichamas melhorado também permite escalá-lo.",
+  "description": "O Tálus ígneo é a variação de lava do Tálus, nativa do Cânion de Eldin, onde se camufla entre as rochas derretidas. Os ataques são os de qualquer Tálus — lançar pedaços dos braços, despencar sobre Link, varrer o chão com um golpe largo —, mas qualquer contato direto com o corpo faz Link pegar fogo. O compendium resume: nem espada nem flecha atravessam seu corpo ardente, mas é possível escalá-lo se algo resfriar as chamas.\n\nAs soluções citadas são duas: atacar com armas de gelo, que o resfriam temporariamente, ou usar o Conjunto antichamas melhorado duas vezes por uma Grande Fada, cujo bônus de conjunto protege do fogo. O ponto fraco é o Depósito de minério que sai do corpo; dá para alcançá-lo subindo quando o Tálus cai, usando uma arma de alcance maior ou acertando-o com flechas. Uma Bomba remota pode derrubá-lo e deixar o minério mais acessível. Ao ser golpeado, o minério às vezes solta Sílex, Opala, Rubi ou Diamante.\n\nNa missão secundária \"The Road to Respect\", o Goron Fugo, encarregado pelo ferreiro Rohan de derrotar todos os Tálus ígneos ao redor da Cidade Goron, não consegue chegar ao do Lago Darunia; se Link o derrotar, Fugo propõe comprar o feito e paga com uma rupia prateada. No Lago Darman, o DLC 2 traz um parente gigante, o Tálus ígneo titã.",
+  "locations": [
+    "Segundo o compendium, é comum no Cânion de Eldin.",
+    "Pontos citados pelo Zelda Wiki: Darb Pond, Lago Darman, Lago Darunia, Lago Gorko e norte do Lago Goronbi.",
+    "Também é o chefe do 11º andar das Provações finais da Provação da Espada (DLC 1)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Sílex, Opala, Rubi e Diamante; o minério também solta essas pedras ocasionalmente quando golpeado.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Missão secundária \"The Road to Respect\": derrotar o Tálus ígneo do Lago Darunia e falar com Fugo, que paga uma rupia prateada pelo feito.",
+    "Fonte de Rubis, Opalas e Diamantes.",
+    "Conta para a Medalha de honra: Tálus, de Kilton."
+  ],
+  "effects": [
+    "Contato com o corpo incendeia Link.",
+    "Pedaços de braço arremessados, queda de corpo e golpes de braço."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Disfarçado de rocha derretida, desperta quando Link chega perto. Tocar o corpo dele faz Link pegar fogo.",
+      "conditions": [
+        "Sem proteção contra fogo."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só o Depósito de minério recebe dano. Armas de alcance maior ajudam a atingi-lo sem encostar no corpo em chamas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flechas no minério causam dano; o corpo de lava não é perfurado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "É ele quem incendeia: o contato direto ateia fogo em Link. O Conjunto antichamas melhorado duas vezes (bônus antichamas) evita isso.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Ataques com armas de gelo o resfriam temporariamente, permitindo tocá-lo e escalá-lo.",
+      "applications": [
+        "Resfriá-lo com uma arma de gelo (como a Espada álgida ou a Varinha de gelo) antes de subir até o minério."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de eletricidade sobre o Tálus ígneo."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não dizem se água esfria o Tálus ígneo; só armas de gelo são citadas."
+    },
+    {
+      "action": "gelitis",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve o uso de Gelítis contra o Tálus ígneo (a runa só cria blocos de gelo sobre a água)."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "Além da Bomba remota, as fontes não detalham o efeito de outras explosões."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "Uma Bomba remota pode fazê-lo cair, deixando o minério mais fácil de alcançar.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre ele."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Feito de rocha derretida, não é afetado por Magnétis, que só move metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Habita os lagos de lava do Cânion de Eldin, camuflado como rocha derretida.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Fugo compra a glória",
+      "text": "Fugo não alcança o Tálus ígneo do Lago Darunia e, ao saber que Link o derrotou, oferece comprar a façanha por 100 rupias e paga com uma rupia prateada. Fugo tinha recebido de Rohan a ordem de derrotar todos os Tálus ígneos ao redor da Cidade Goron como parte do treino.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Minério que solta pedras durante a luta",
+      "text": "O depósito do Tálus ígneo às vezes deixa cair Sílex, Opala, Rubi ou Diamante quando golpeado, antes mesmo do fim da luta.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Conta para a Medalha de honra: Tálus",
+      "text": "Todos os Tálus ígneos do Cânion de Eldin entram na contagem de Kilton para a Medalha de honra: Tálus. O Tálus ígneo titã, do DLC 2, não conta.",
+      "sources": [
+        "zw",
+        "zw:Igneo Talus Titan"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Derrubá-lo com uma Bomba remota e resfriá-lo com gelo para golpear o minério sem se queimar."
+  ],
+  "limitations": [
+    "Sem proteção contra fogo ou sem resfriá-lo, encostar nele incendeia Link.",
+    "O resfriamento por gelo é temporário."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_igneo_talus_titan",
+      "relation": "Subespécie gigante do Lago Darman (DLC 2)"
+    },
+    {
+      "id": "botw_monster_stone_talus",
+      "relation": "Forma comum da espécie"
+    },
+    {
+      "id": "botw_monster_frost_talus",
+      "relation": "Variação oposta, de gelo"
+    },
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Melhorado duas vezes, protege do fogo do corpo dele"
+    },
+    {
+      "id": "botw_weapon_frostblade",
+      "relation": "Arma de gelo que pode resfriá-lo"
+    },
+    {
+      "id": "botw_weapon_ice_rod",
+      "relation": "Arma de gelo que pode resfriá-lo"
+    },
+    {
+      "id": "botw_rune_remote_bomb",
+      "relation": "Derruba o Tálus"
+    },
+    {
+      "id": "botw_material_ruby",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Possível recompensa"
+    },
+    {
+      "id": "botw_keyitem_medal_of_honor_talus",
+      "relation": "Prêmio de Kilton"
+    }
+  ],
+  "capabilities": [
+    "gera_fogo",
+    "reage_gelo",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

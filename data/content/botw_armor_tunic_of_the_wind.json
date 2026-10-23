@@ -1,0 +1,151 @@
+{
+  "id": "botw_armor_tunic_of_the_wind",
+  "summary": "Túnica do herói que navegou o Grande Mar (The Wind Waker), presente da avó dele. Sai de um baú de metal ao ler o amiibo de Link Cartoon; melhorada com Opalas.",
+  "description": "A Túnica do vento é a peça de torso do Conjunto do herói dos ventos, com o Gorro e as Calças do vento, que reproduzem a roupa de Link em The Wind Waker. Ela sai de um baú de metal invocado ao ler com a runa amiibo o amiibo de Link Cartoon da série Super Smash Bros. ou o da série do 30º aniversário, com pequena chance a cada leitura. A descrição diz que o herói que navegou o Grande Mar a estimava muito e que teria sido presente da avó dele.\n\nNão tem efeito individual. Com as três peças em ★★, o conjunto ativa o Raio da Espada Mestra aumentado (+50%). A defesa vai de 3 a 20; cada melhoria pede um Fragmento de estrela e Opalas (1, 3, 5 e 10). Pode ser melhorada, mas não tingida.",
+  "locations": [
+    "Não fica no mapa: surge de um baú invocado pela runa amiibo."
+  ],
+  "obtaining": [
+    "Ler o amiibo de Link Cartoon (Super Smash Bros. ou 30º aniversário, estilo The Wind Waker) com a runa amiibo; o baú de metal tem pequena chance de trazer a túnica."
+  ],
+  "uses": [
+    "Completar o Conjunto do herói dos ventos para fortalecer o raio da Espada Mestra.",
+    "Visual de Link em The Wind Waker."
+  ],
+  "effects": [
+    "Nenhum efeito individual.",
+    "Bônus de conjunto (três peças em ★★): Raio da Espada Mestra aumentado (+50%)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Sozinha, a peça só aumenta a defesa. Com o Gorro do vento, a Túnica do vento e as Calças do vento vestidos, todos em ★★, ativa o bônus Raio da Espada Mestra aumentado (Master Sword Beam Up): o raio disparado pela Espada Mestra causa 50% a mais de dano, somando-se ao aumento de poder da espada desperta.",
+      "conditions": [
+        "As três peças do conjunto em pelo menos ★★.",
+        "O raio só sai da Espada Mestra quando Link está com a vida cheia."
+      ],
+      "applications": [
+        "Atacar à distância com a Espada Mestra enquanto a vida estiver cheia."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Master Sword",
+        "zw:Of the Wind Set"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Sorte e paciência com o amiibo",
+      "text": "Cada leitura de um amiibo de Link Cartoon pela runa amiibo faz surgir um baú com pequena chance de trazer uma peça do conjunto. Cada figura só pode ser lida uma vez por dia real, então juntar o conjunto leva pelo menos dois dias com as duas figuras; peças que Link já tem não voltam a sair até o conjunto estar completo.",
+      "sources": [
+        "zw:Of the Wind Set",
+        "zw:Amiibo (Ability)"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "A camisa por baixo",
+      "text": "A camisa azul que o mesmo herói usava em casa também existe em Breath of the Wild: é a Camisa da lagosta insular, do pacote The Champions' Ballad, que dá Resistência ao calor.",
+      "sources": [
+        "zw:Island Lobster Shirt"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para variar o visual sem perder o efeito de calor, a Camisa da lagosta insular pode substituir a túnica — mas o bônus da Espada Mestra se perde."
+  ],
+  "limitations": [
+    "Não pode ser tingida na Tinturaria Kochi.",
+    "Cada nível de melhoria pede um Fragmento de estrela (4 por peça), além de Opalas.",
+    "O bônus só afeta o raio da Espada Mestra, que exige vida cheia."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_hero_of_winds_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_cap_of_the_wind",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_trousers_of_the_wind",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_armor_island_lobster_shirt",
+      "relation": "Outra roupa do Herói dos Ventos"
+    },
+    {
+      "id": "botw_material_opal",
+      "relation": "Gema usada em todas as melhorias"
+    },
+    {
+      "id": "botw_material_star_fragment",
+      "relation": "Um por nível de melhoria"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Runa usada para obtê-la"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque"
+  ],
+  "verification_status": "verificado"
+}

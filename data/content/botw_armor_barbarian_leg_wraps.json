@@ -1,0 +1,137 @@
+{
+  "id": "botw_armor_barbarian_leg_wraps",
+  "summary": "Faixas de perna com marcas tribais de Faron que aumentam o ataque. Ficam no Santuário Qaza Tokki, no centro do Labirinto de Lomei Norte; completam o Conjunto bárbaro.",
+  "description": "As Faixas de perna bárbaras são a peça de pernas do Conjunto bárbaro, ao lado do Elmo bárbaro e da Armadura bárbara. Estão no Santuário Qaza Tokki, no centro do Labirinto de Lomei Norte (North Lomei Labyrinth); depois de obtidas, Granté passa a vendê-las por 4.000 rupias na Vila de Nício (Tarrey Town). Segundo a descrição, as marcas tradicionais pintadas nelas reforçam o espírito de luta.\n\nConcedem um nível de Ataque aumentado (+20%). Com as três peças em ★★, o conjunto ativa o Ataque carregado econômico, que corta pela metade o vigor dos ataques carregados. A defesa vai de 3 a 20; as melhorias são as mesmas da armadura (chifres, cascos e vísceras de Centaleão), exceto a última, que troca a lasca de Farosh por uma Lasca do chifre de Naydra. Podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Santuário Qaza Tokki, no centro do Labirinto de Lomei Norte (North Lomei Labyrinth).",
+    "À venda com Granté, na Vila de Nício (Tarrey Town), depois da primeira obtenção."
+  ],
+  "obtaining": [
+    "Encontrar no Santuário Qaza Tokki, ao fim do Labirinto de Lomei Norte.",
+    "Recomprar de Granté por 4.000 rupias depois de já tê-las obtido."
+  ],
+  "uses": [
+    "Aumentar o dano de qualquer arma.",
+    "Completar o Conjunto bárbaro."
+  ],
+  "effects": [
+    "Ataque aumentado, nível 1 (+20%).",
+    "Bônus de conjunto (três peças em ★★): ataques carregados custam 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Ataque aumentado (+20%; +30% com dois níveis e +50% com três, o teto do efeito). Com o Elmo bárbaro, a Armadura bárbara e as Faixas de perna bárbaras vestidos, todos em ★★, ativa o bônus Ataque carregado econômico (Charge Atk. Stamina Up): ataques carregados gastam 50% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "applications": [
+        "Golpes carregados mais frequentes, como o giro contínuo das armas de duas mãos, sem esgotar o Medidor de vigor tão rápido."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Peças que se somam até o teto",
+      "text": "O Ataque aumentado das faixas se soma ao das outras peças bárbaras até o nível 3 (+50%), o máximo do efeito.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Mesmo sem o conjunto completo, as faixas combinam bem com uma peça de torso de outro conjunto quando se quer um pouco de ataque extra sem abrir mão de um efeito de torso, como a Resistência ao frio."
+  ],
+  "limitations": [
+    "Melhorias dependem de partes de Centaleão em todos os níveis e de uma Lasca do chifre de Naydra no último."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_barbarian_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_barbarian_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_material_lynel_hoof",
+      "relation": "Material de melhoria"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Material da última melhoria"
+    },
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Fonte dos materiais de melhoria"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

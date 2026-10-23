@@ -1,0 +1,161 @@
+{
+  "id": "botw_material_lynel_horn",
+  "summary": "Chifre tão duro que a maioria das lâminas não o arranha, deixado por todo Centaleão. Vale 40 rupias, mas rende só 1:10 nos elixires; é o primeiro material do Conjunto bárbaro.",
+  "description": "O Chifre de Centaleão cai de todos os tipos de Centaleão, sempre: ao lado do casco e das vísceras, é um dos três drops garantidos desses monstros. O inventário brinca que o Centaleão \"certamente sente falta dele\" e diz que o chifre é excepcionalmente duro — tanto que a maioria das lâminas não consegue arranhá-lo.\n\nApesar de valer 40 rupias, é o chifre mais caro entre as partes que acrescentam só 1:10 a um elixir, o mesmo que um Chifre de Koboblin de 3 rupias. O valor real está no Conjunto bárbaro: 1 chifre por peça no 1º nível e 3 por peça no 2º (com Cascos de Centaleão), num total de 12. Na Tinturaria Kochi, entra no corante branco.",
+  "locations": [
+    "Territórios dos Centaleões espalhados por Hyrule (22 no mundo normal, segundo o Zelda Wiki)."
+  ],
+  "obtaining": [
+    "Derrotar qualquer Centaleão (juba vermelha, azul ou branca, prateado ou, no Modo Mestre, dourado); o chifre cai sempre.",
+    "Os Centaleões voltam após a Lua de sangue, como os demais monstros."
+  ],
+  "uses": [
+    "Melhoria de armadura: 1 por peça no 1º nível e 3 por peça no 2º nível do Conjunto bárbaro — 12 no total.",
+    "Elixires: cozido com um bicho, acrescenta só 1:10 à duração.",
+    "Corante branco na Tinturaria Kochi.",
+    "Venda: 40 rupias, ou 20 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Chifre de Centaleão no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Chifre de Centaleão largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Chifre de Centaleão queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Chifre de Centaleão numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Chifre de Centaleão a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Chifre de Centaleão à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Chifre de Centaleão flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Chifre de Centaleão não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Chifre de Centaleão largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:10 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 40 rupias em lojas e comerciantes, ou 20 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Drop garantido, com riscos",
+      "text": "Todo Centaleão derrotado deixa casco, chifre e vísceras, além das armas e de um maço de flechas. Para vencê-los, o Zelda Wiki lembra que flechas na cabeça os atordoam e causam dano dobrado (dá para planar nas correntes de ar quente dos ataques de fogo deles para mirar do alto), que montar neles permite até cinco golpes sem gastar durabilidade e que Esquivas perfeitas e Defesas perfeitas abrem espaço para contra-ataques. Eles resistem a todos os elementos, então flechas elementais não dão vantagem extra.",
+      "sources": [
+        "zw:Lynel"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Não gaste na panela",
+      "text": "Na tabela de partes de monstro, o Chifre de Centaleão acrescenta o mesmo 1:10 que chifres de 3 a 10 rupias. Para elixires, ele é a escolha menos econômica; vale mais vendido ou guardado para o Conjunto bárbaro.",
+      "sources": [
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Doze chifres cobrem os dois primeiros níveis das três peças do Conjunto bárbaro; o excedente rende 40 rupias cada."
+  ],
+  "limitations": [
+    "Acréscimo mínimo de duração (1:10) apesar do preço alto.",
+    "Exige derrotar um dos monstros mais perigosos do jogo.",
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_lynel",
+      "relation": "Monstro que o deixa sempre"
+    },
+    {
+      "id": "botw_material_lynel_hoof",
+      "relation": "Outro drop garantido dos Centaleões"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Outro drop garantido dos Centaleões"
+    },
+    {
+      "id": "botw_armorset_barbarian_set",
+      "relation": "Usa 1 e 3 chifres por peça nos dois primeiros níveis"
+    },
+    {
+      "id": "botw_material_bokoblin_horn",
+      "relation": "Mesmo acréscimo de 1:10 por uma fração do preço"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante branco"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

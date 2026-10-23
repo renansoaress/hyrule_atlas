@@ -1,0 +1,131 @@
+{
+  "id": "botw_mechanic_trial_of_the_sword",
+  "summary": "Desafio da DLC The Master Trials: 54 andares em três etapas, começando sem armas, roupas nem comida. Recolocar a Espada Mestra no pedestal da Floresta Korok abre a prova; concluí-la desperta a espada de forma permanente.",
+  "description": "A Provação da Espada acontece no Santuário dos Monges da Espada (Sword Monk's Shrine), acessado ao devolver a Espada Mestra ao pedestal na Floresta Korok — o que exige que a espada tenha energia. Ao entrar, Link perde temporariamente todas as armas, escudos, arcos, flechas, armaduras, materiais e comidas; mantém os corações, o vigor e os efeitos temporários que tinha. As runas da Tabuleta Sheikah podem ser usadas, mas as habilidades dos Campeões não.\n\nCada andar só se abre depois que todos os inimigos são derrotados, com o que Link encontrar no próprio andar. São três etapas: Provas Iniciais (13 andares, floresta e água), Provas Intermediárias (17, santuários com correntes ascendentes, floresta escura e Guardiões batedores) e Provas Finais (24, selva com tempestade, vulcão, gelo e ruínas com Guardiões). Ao todo há 54 andares, 45 de combate e 9 de descanso, com Panela, Fadas e baús. Cada etapa concluída pode ser pulada nas tentativas seguintes, mas Link sempre recomeça de mãos vazias. Ao fim de cada etapa a Espada Mestra ganha poder; ao fim de tudo, fica desperta de vez.",
+  "locations": [
+    "Pedestal da Espada Mestra, na Floresta Korok (Grande Floresta de Hyrule)."
+  ],
+  "obtaining": [
+    "Ter a DLC The Master Trials e a Espada Mestra com energia; colocá-la de volta no pedestal."
+  ],
+  "uses": [
+    "Despertar permanentemente a Espada Mestra (60 de ataque sempre, feixe de espada sem custo de energia).",
+    "Treinar combate sem equipamento."
+  ],
+  "effects": [
+    "Recompensa final: Espada Mestra permanentemente desperta."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Devolver a Espada Mestra ao pedestal leva Link ao santuário; cada andar exige derrotar todos os inimigos para avançar.",
+      "conditions": ["A Espada Mestra precisa ter energia; descarregada, a prova não pode ser iniciada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Master Sword"]
+    },
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ao entrar, Link fica sem armas, escudos, arcos, flechas, armaduras, materiais e comidas; conserva corações, vigor e efeitos temporários ativos (inclusive corações extras ou perdidos). Itens obtidos lá dentro são perdidos ao sair.",
+      "applications": ["Entrar com um Elixir nutritivo ou de defesa ativo, já que os efeitos temporários são mantidos."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "runas e Campeões",
+      "status": "confirmado",
+      "result": "As runas funcionam normalmente; as habilidades dos Campeões (como a Fúria de Urbosa) ficam indisponíveis.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Os cinco primeiros andares das Provas Finais são uma selva sob tempestade, com inimigos Stal; armas de metal equipadas ali atraem raios como em qualquer tempestade.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Thunderstorm"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Os andares 6 a 11 das Provas Finais têm tema vulcânico e temperatura escaldante; o descanso do andar 6 traz Botas antichamas num baú.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Os andares 13 a 17 das Provas Finais têm tema de gelo, com temperaturas baixas, Tálus glacial no andar 16 e Centaleão no 17.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Há andares de chefe: Tálus rochoso, Rinox azul e Rinox preto, Stalnox, Tálus ígneo e Tálus glacial, além de Guardiões batedores I a IV e Guardiões persecutório, altívago e torreta. Os monstros têm força fixa e não contam para a escala oculta de dificuldade do mundo.",
+      "side_effects": ["Andares com cavalos e Stalcavalos não exigem derrotá-los para avançar."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Os andares de descanso têm Panela, de uma a três Fadas e três baús (com itens como Calças hylianas, Túnica hyliana, Escudo da guarda real, Quebra-Pedra, Espada real, Escudo real e Arco real).",
+      "applications": ["Cozinhar o que foi coletado nos andares anteriores e transformar Fadas em Tônico de fada."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Os sete monges e os Sábios",
+      "text": "No último andar, sete monges sem nome cercam o pedestal final e declaram Link digno da espada desperta. As poses dos braços deles imitam as dos sete Sábios selando Ganon em Ocarina of Time.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Caverna das Provas",
+      "text": "No anúncio do Passe de Expansão, o santuário se chamava \"Cave of Trials\".",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Sem Lua de sangue lá dentro",
+      "text": "Uma Lua de sangue programada não acontece enquanto Link estiver no Santuário dos Monges da Espada: ela é adiada para outra noite.",
+      "sources": ["zw:Blood Moon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Espada desperta para sempre",
+      "text": "Depois da prova, a Espada Mestra fica permanentemente desperta, e usar o feixe de espada deixa de gastar sua energia.",
+      "sources": ["zw:Master Sword"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar Magnétis, Estátis, Bomba remota e Gelítis para vencer os primeiros andares sem armas — as runas continuam disponíveis.",
+    "Aproveitar a chuva da tempestade nas Provas Finais para se aproximar dos Stal sem ser notado, e evitar armas de metal nesses andares."
+  ],
+  "limitations": [
+    "Tudo o que é coletado se perde ao sair.",
+    "Exige a DLC The Master Trials e a Espada Mestra com energia."
+  ],
+  "related": [
+    { "id": "botw_weapon_master_sword", "relation": "Arma despertada pela prova" },
+    { "id": "botw_monster_stone_talus", "relation": "Chefe do andar 6 das Provas Iniciais" },
+    { "id": "botw_monster_blue_hinox", "relation": "Chefe do andar 12 das Provas Iniciais" },
+    { "id": "botw_monster_black_hinox", "relation": "Chefe das Provas Intermediárias" },
+    { "id": "botw_monster_stalnox", "relation": "Chefe das Provas Finais" },
+    { "id": "botw_monster_igneo_talus", "relation": "Chefe das Provas Finais" },
+    { "id": "botw_monster_frost_talus", "relation": "Chefe das Provas Finais" },
+    { "id": "botw_monster_guardian_scout_iv", "relation": "Inimigo das Provas Intermediárias" },
+    { "id": "botw_armor_flamebreaker_boots", "relation": "Baú do descanso das Provas Finais" },
+    { "id": "botw_elixir_fairy_tonic", "relation": "Fadas dos andares de descanso" },
+    { "id": "botw_mechanic_master_mode", "relation": "Inimigos mais fortes nos andares" },
+    { "id": "botw_mechanic_thunderstorm", "relation": "Andares sob tempestade" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

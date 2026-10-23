@@ -1,0 +1,161 @@
+{
+  "id": "botw_material_sunshroom",
+  "summary": "Cogumelo vermelho de climas quentes, \"imbuído do poder do calor\": cozido, dá Resistência ao frio. É o cogumelo da missão do Sensor Sheikah+ de Symin, o terceiro enigma de Walton e material do Conjunto de pluma nevada.",
+  "description": "O Flamelo é um cogumelo vermelho brilhante que cresce perto das árvores em regiões quentes — o compendium cita o Cânion de Eldin e as Montanhas Gerudo, e Symin indica a Retsam Forest. Segundo o jogo, ele carrega o poder do calor: os pratos de panela feitos com ele concedem Resistência ao frio. Cru, recupera meio coração; exposto ao fogo, vira Flamelo tostado (3/4 de coração), que perde o efeito.\n\nÉ o cogumelo mais presente em missões. Em \"Sunshroom Sensing\", depois que Link recebe o Sensor Sheikah+, Symin pede uma foto de um Flamelo (há um atrás do laboratório de Hateno) e depois três Flamelos encontrados com o sensor, pagando com 3 Trufas nutritivas. Em \"Riddles of Hyrule\", é a resposta do terceiro enigma de Walton. Nas Grandes Fadas, cada peça do Conjunto de pluma nevada pede 5 Flamelos (com 8 Asas de Morci ígneo) no nível ★★★. Vende-se na The Slippery Falcon, na Vila dos Arás, na barraca de Ardin, na Cidade Gerudo, e com o mercador Kanny.",
+  "locations": [
+    "Perto das árvores no Cânion de Eldin e nas Montanhas Gerudo (locais citados pelo compendium); Retsam Forest, segundo Symin; atrás do Laboratório de Tecnologia Ancestral de Hateno.",
+    "Lojas: The Slippery Falcon (Vila dos Arás), barraca de Ardin (Cidade Gerudo) e Kanny — 16 rupias."
+  ],
+  "obtaining": [
+    "Colher perto das árvores em regiões quentes; com o Sensor Sheikah+ sintonizado na foto do Flamelo, fica fácil encontrá-lo.",
+    "Comprar nas lojas citadas."
+  ],
+  "uses": [
+    "Pratos de Resistência ao frio.",
+    "Missão secundária \"Sunshroom Sensing\": fotografar um Flamelo e entregar 3 a Symin, em troca de 3 Trufas nutritivas.",
+    "Missão secundária \"Riddles of Hyrule\": resposta do terceiro enigma de Walton.",
+    "Melhoria de armadura: 5 por peça (+8 Asas de Morci ígneo) no nível ★★★ de Cocar, Túnica e Calças de pluma nevada.",
+    "Receitas de cogumelo (Espetinho de cogumelos, Espetinhos fartos de cogumelo, Cogumelos grelhados no sal, Cogumelos glaceados, Risoto de cogumelos, Omelete de cogumelos, Creme de cogumelos, Cogumelos no vapor e outras).",
+    "Ingrediente do corante vermelho na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "Cozido: Resistência ao frio (nível máximo 2)."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Pode ser largado no chão — é assim que se entrega o Flamelo a Walton, sobre a folha à frente dele — e tosta sozinho perto do fogo ou no calor de Eldin.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Riddles of Hyrule", "zw:Scorching Climate"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear um cogumelo largado."
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Queimado pelo fogo, vira Flamelo tostado, que recupera 3/4 de coração.",
+      "side_effects": ["Perde a Resistência ao frio."],
+      "applications": ["Vender: tostado vale 6 rupias, contra 4 do cru."],
+      "produces": ["botw_food_toasty_sunshroom"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado junto a uma fogueira acesa, vira Flamelo tostado.",
+      "produces": ["botw_food_toasty_sunshroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Campfire", "zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Em clima escaldante, tosta ao ser largado no chão.",
+      "produces": ["botw_food_toasty_sunshroom"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate"]
+    },
+    {
+      "action": "gelo",
+      "status": "sem_efeito",
+      "result": "Não tem versão congelada: só carnes, peixes, caranguejos e caramujos viram Comida congelada.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não congela; cogumelos não constam na lista de Comidas congeladas.",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam o comportamento do cogumelo na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o cogumelo não é metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a ele."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Concede Resistência ao frio e cura mais do que cru. Mais unidades prolongam o efeito; combinado com Pimenta de fogo ou Erva geleira, prolonga e pode chegar ao nível 2, o máximo desse efeito.",
+      "side_effects": ["Resistência ao frio não protege contra ataques de gelo nem contra água gelada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Food", "zw:Cold Resistance"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Cru, recupera meio coração e não aquece.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias; tostado, vale 6.",
+      "sources": ["zw", "zw:Roasted Food"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O cogumelo-tutorial do Sensor Sheikah+",
+      "text": "Depois da melhoria do Sensor Sheikah no laboratório de Hateno, Symin usa o Flamelo para ensinar o recurso: Link fotografa o cogumelo atrás do laboratório, sintoniza o sensor nessa foto do compendium e encontra mais três. A recompensa são 3 Trufas nutritivas.",
+      "sources": ["zw", "jogo"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Registro automático no compendium",
+      "text": "Como a missão exige fotografá-lo, o Flamelo é registrado no compendium automaticamente, e por isso Symin não vende a foto dele (as fotos só são vendidas após a missão). A imagem padrão do compendium continua existindo nos arquivos do jogo.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Do calor para o frio",
+      "text": "Embora cresça em regiões quentes, o Flamelo é o material do nível ★★★ do Conjunto de pluma nevada, a roupa dos Arás contra o frio: 5 por peça, 15 para o conjunto.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Depois de \"Sunshroom Sensing\", mantenha o sensor sintonizado no Flamelo para coletar os 15 necessários ao Conjunto de pluma nevada.",
+    "Guarde um Flamelo para o enigma de Walton, no alto da Grande Árvore Deko."
+  ],
+  "limitations": [
+    "Cru ou tostado não dá Resistência ao frio; só cozido.",
+    "A Resistência ao frio não vale contra ataques de gelo nem água gelada."
+  ],
+  "related": [
+    { "id": "botw_food_toasty_sunshroom", "relation": "Resultado de expor o cogumelo ao fogo" },
+    { "id": "botw_rune_sheikah_sensor", "relation": "A missão de Symin ensina a rastrear o Flamelo" },
+    { "id": "botw_material_hearty_truffle", "relation": "Recompensa por entregar 3 Flamelos a Symin" },
+    { "id": "botw_armorset_snowquill_set", "relation": "Nível ★★★: 5 Flamelos por peça" },
+    { "id": "botw_material_fire_keese_wing", "relation": "Acompanha o Flamelo na melhoria do Conjunto de pluma nevada" },
+    { "id": "botw_material_spicy_pepper", "relation": "Outro ingrediente de Resistência ao frio" },
+    { "id": "botw_material_warm_safflina", "relation": "Outro ingrediente de Resistência ao frio" },
+    { "id": "botw_material_chillshroom", "relation": "Cogumelo de efeito oposto (calor)" },
+    { "id": "botw_elixir_spicy_elixir", "relation": "Elixir com o mesmo efeito" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante vermelho" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "protege_frio", "item_de_missao"],
+  "verification_status": "verificado"
+}

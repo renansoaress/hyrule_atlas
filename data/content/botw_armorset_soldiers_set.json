@@ -1,0 +1,96 @@
+{
+  "id": "botw_armorset_soldiers_set",
+  "summary": "Armadura padrão dos soldados de Hyrule, vendida em Hateno por 630 rupias. Não tem efeitos nem bônus de conjunto, mas sua defesa é bem maior que a da maioria das armaduras: até 28 por peça.",
+  "description": "O Conjunto do soldado é formado pelo Elmo do soldado, pela Armadura do soldado e pelas Grevas do soldado. As três peças são vendidas na Ventest Clothing Boutique, em Hateno, por 180, 250 e 200 rupias, respectivamente (630 no total). Como equipamento padrão dos soldados de Hyrule, tem defesa bem maior que a de outras armaduras, mas nenhum efeito especial nem bônus de conjunto.\n\nA defesa vai de 4 a 28 por peça com as melhorias das Grandes Fadas, o mesmo patamar do Conjunto ancestral. Os materiais seguem uma escada de monstros: Geleca de Chulchul e Vísceras de Koboblin no primeiro nível, Olho de Morci e Vísceras de Moblin no segundo, Cauda de Lagalfos e Vísceras de Rinox no terceiro e Casco e Vísceras de Centaleão no último.\n\nAlguns hylianos usam partes do conjunto: Hoz e Savelle usam o elmo, e Nell veste a armadura. As peças podem ser tingidas na Tinturaria Kochi.",
+  "locations": [
+    "Ventest Clothing Boutique, em Hateno."
+  ],
+  "obtaining": [
+    "Comprar: Elmo do soldado por 180, Armadura do soldado por 250 e Grevas do soldado por 200 rupias."
+  ],
+  "uses": [
+    "Defesa alta e barata para quem não precisa de efeitos especiais.",
+    "Conjunto de combate geral quando a prioridade é reduzir o dano recebido."
+  ],
+  "effects": [
+    "Nenhum efeito especial; apenas defesa (de 4 a 28 por peça)."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "sem_efeito",
+      "result": "Vestir as três peças não ativa bônus de conjunto; o ganho é apenas a defesa somada.",
+      "sources": [
+        "zw",
+        "zw:Armor Set"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Como a defesa funciona",
+      "text": "Cada ponto de dano de um ataque equivale a um quarto de coração, e a defesa total é subtraída desse valor. Se a defesa for igual ou maior que a força do ataque, o dano cai para um quarto de coração, que é o mínimo — por isso uma armadura de defesa alta como esta reduz muito os golpes fracos.",
+      "sources": [
+        "zw:Armor"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Quem ainda usa o uniforme",
+      "text": "Hoz e Savelle usam o Elmo do soldado, e Nell veste a Armadura do soldado.",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para lutas difíceis em que não é preciso resistência elemental, o conjunto em nível máximo protege tanto quanto o Conjunto ancestral."
+  ],
+  "limitations": [
+    "Sem efeitos especiais e sem bônus de conjunto.",
+    "As melhorias finais pedem partes de Rinox e de Centaleão."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_soldiers_helm",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_soldiers_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_armor_soldiers_greaves",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_material_chuchu_jelly",
+      "relation": "Material do primeiro nível de melhoria"
+    },
+    {
+      "id": "botw_material_lynel_guts",
+      "relation": "Material do último nível de melhoria"
+    },
+    {
+      "id": "botw_armorset_ancient_set",
+      "relation": "Tem defesa equivalente e efeitos contra Guardiões"
+    },
+    {
+      "id": "botw_armorset_hylian_armor_series",
+      "relation": "Outro conjunto sem bônus, com defesa menor"
+    },
+    {
+      "id": "botw_mechanic_great_fairy_fountain",
+      "relation": "Onde as peças são melhoradas"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "As peças podem ser tingidas"
+    }
+  ],
+  "capabilities": [
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

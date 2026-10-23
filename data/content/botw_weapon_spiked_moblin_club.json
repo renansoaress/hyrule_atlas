@@ -1,0 +1,105 @@
+{
+  "id": "botw_weapon_spiked_moblin_club",
+  "summary": "Clava Moblin com ossos de animais presos para aumentar o dano (ataque 27, durabilidade 18). Arma típica dos Moblins azuis; de madeira, pega fogo, flutua e não atrai raios.",
+  "description": "A Clava Moblin pontuda é a versão intermediária das clavas dos Moblins: segundo o jogo, ossos de animais foram fixados à clava para melhorar bastante o dano. Com 27 de ataque, tem três vezes o poder da Clava Moblin comum. Faz parte do Equipamento Moblin e é empunhada sobretudo por Moblins azuis, em especial na Pradaria de Hyrule e no Altiplano de Akkala.\n\nApesar dos ossos, conta como arma de madeira: flutua, pega fogo e queima em clima escaldante, não conduz eletricidade, não atrai raios em tempestades e não pode ser erguida com Magnétis.",
+  "locations": [
+    "Pradaria de Hyrule e Altiplano de Akkala, nas mãos de Moblins azuis."
+  ],
+  "obtaining": [
+    "Derrotar Moblins azuis que a empunhem.",
+    "Armas carregadas por inimigos reaparecem após a Lua de sangue.",
+    "Pode vir com bônus aleatórios (ver bônus possíveis)."
+  ],
+  "uses": [
+    "Arma de duas mãos de dano médio que pode ser usada em tempestades.",
+    "Acesa, leva fogo a grama, tochas ou Madeira."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes lentos de duas mãos, sem escudo; o golpe carregado gira consumindo vigor e termina numa pancada para baixo. O peso desfaz a guarda de inimigos com escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra ao atingir um inimigo e causa acerto crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo em contato com chamas e pode ser usada acesa para propagá-las.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Fire"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada em clima escaldante, queima até virar cinzas.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios durante tempestades.",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua se cair na água.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis não a captura.",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Arma mais comum dos Moblins azuis, sobretudo na Pradaria de Hyrule e no Altiplano de Akkala.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos, no nível comum (branco): Ataque aumentado de +5 a +9, Durabilidade aumentada de +2 a +4 ou Acerto crítico; no nível dourado (amarelo): Ataque de +10 a +17, Durabilidade de +5 a +9 ou Lançamento longo (×1,5 a ×2). Com o máximo, chega a 44 de ataque — praticamente o da Clava Moblin dracônica (45).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    }
+  ],
+  "no_secrets_note": "Além dos bônus aleatórios, as fontes não registram segredos próprios desta clava.",
+  "advanced_uses": [
+    "Uma Clava Moblin pontuda com Ataque aumentado dourado equivale à versão dracônica e não atrai raios — boa arma de tempestade para o meio do jogo."
+  ],
+  "limitations": [
+    "Durabilidade 18.",
+    "Queima em contato com fogo e no calor de Eldin."
+  ],
+  "related": [
+    { "id": "botw_weapon_moblin_club", "relation": "Versão básica" },
+    { "id": "botw_weapon_dragonbone_moblin_club", "relation": "Versão máxima" },
+    { "id": "botw_monster_blue_moblin", "relation": "Costuma empunhá-la" },
+    { "id": "botw_weapon_spiked_moblin_spear", "relation": "Lança do mesmo nível" }
+  ],
+  "capabilities": ["inflamavel", "flutua", "arremessavel"],
+  "verification_status": "verificado"
+}

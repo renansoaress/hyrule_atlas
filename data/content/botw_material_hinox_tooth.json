@@ -1,0 +1,172 @@
+{
+  "id": "botw_material_hinox_tooth",
+  "summary": "Dente tão grande que mal parece real, deixado por Rinox e também pelos Stalnox noturnos. Acrescenta 1:50 aos elixires e é usado no 2º nível do Conjunto da Deidade Feroz.",
+  "description": "O Dente de Rinox, diz o inventário, é tão grande que é difícil acreditar que seja um dente de verdade. Diferentemente da unha e das vísceras, ele também cai dos Stalnox, os esqueletos de Rinox que só ficam ativos à noite — e é o único material de monstro que eles deixam, além das armas cravadas no corpo. Cozido com bichos, acrescenta 1:50 à duração do elixir.\n\nNa Fonte da Grande Fada, cada peça do Conjunto da Deidade Feroz pede 5 dentes e uma garra de dragão (Dinraal, Naydra ou Farosh, conforme a peça) para chegar ao 2º nível — 15 dentes no total. Na Tinturaria Kochi, entra no corante marrom.",
+  "locations": [
+    "Clareiras de floresta onde dormem os Rinox.",
+    "Locais dos Stalnox, que ficam ativos das 21h às 5h."
+  ],
+  "obtaining": [
+    "Derrotar um Rinox comum, azul ou preto, ou um Stalnox.",
+    "Os monstros voltam após a Lua de sangue."
+  ],
+  "uses": [
+    "Melhoria de armadura: 5 por peça no 2º nível do Conjunto da Deidade Feroz — 15 no total.",
+    "Elixires: cozido com um bicho, acrescenta 1:50 à duração.",
+    "Corante marrom na Tinturaria Kochi.",
+    "Venda: 35 rupias, ou 18 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar o Dente de Rinox no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear o Dente de Rinox largado no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se o Dente de Rinox queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar o Dente de Rinox numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação do Dente de Rinox a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor o Dente de Rinox à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se o Dente de Rinox flutua ou afunda quando largado na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e o Dente de Rinox não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada ao Dente de Rinox largado no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinho ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 35 rupias em lojas e comerciantes, ou 18 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Stalnox: o olho é o alvo",
+      "text": "Uma flecha no olho do Stalnox o atordoa; depois da metade da vida, o tiro arranca o olho, e o corpo desmonta por alguns instantes, enquanto o olho pode ser atacado ou até carregado para longe. Uma Flecha explosiva remove o olho em qualquer momento. Se o dia nascer durante a luta, o Stalnox se enterra e foge até a noite seguinte.",
+      "sources": [
+        "zw:Stalnox"
+      ]
+    },
+    {
+      "kind": "tecnica_avancada",
+      "title": "Como derrubar um Rinox",
+      "text": "Uma flecha no olho atordoa o Rinox e abre espaço para ataques; depois da metade da vida, ele passa a cobrir o olho. As grevas de madeira dos Rinox azuis queimam com fogo, e as de metal dos Rinox pretos conduzem eletricidade, atordoando-os. Enquanto ele dorme, dá para roubar com furtividade as armas do colar.",
+      "sources": [
+        "zw:Hinox"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "À noite, os Stalnox são uma segunda fonte de dentes nos mesmos territórios de Rinox, sem as vísceras e unhas."
+  ],
+  "limitations": [
+    "Cozido sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_hinox",
+      "relation": "Monstro que o deixa"
+    },
+    {
+      "id": "botw_monster_stalnox",
+      "relation": "Versão esquelética, que só deixa o dente entre as partes"
+    },
+    {
+      "id": "botw_armorset_fierce_deity_set",
+      "relation": "Usa 5 dentes por peça no 2º nível"
+    },
+    {
+      "id": "botw_material_dinraals_claw",
+      "relation": "Acompanha o dente na Máscara da Deidade Feroz"
+    },
+    {
+      "id": "botw_material_naydras_claw",
+      "relation": "Acompanha o dente na Armadura da Deidade Feroz"
+    },
+    {
+      "id": "botw_material_faroshs_claw",
+      "relation": "Acompanha o dente nas Botas da Deidade Feroz"
+    },
+    {
+      "id": "botw_material_hinox_toenail",
+      "relation": "Parte do nível anterior do mesmo conjunto"
+    },
+    {
+      "id": "botw_material_hinox_guts",
+      "relation": "Parte do nível seguinte do mesmo conjunto"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante marrom"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

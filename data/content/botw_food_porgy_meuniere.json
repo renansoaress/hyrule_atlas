@@ -1,0 +1,99 @@
+{
+  "id": "botw_food_porgy_meuniere",
+  "summary": "Pargo valente ou Pargo blindado com Manteiga de cabra e Trigo de Tabantha, prato querido no litoral. O pargo define o efeito: Ataque aumentado ou Defesa aumentada.",
+  "description": "O Pargo à meunière é a meunière exclusiva dos pargos: Pargo valente ou Pargo blindado, Manteiga de cabra e Trigo de Tabantha. O inventário diz que esse pargo suculento é popular entre os moradores das regiões costeiras. Como os dois pargos têm efeito, a variante sai naturalmente: Pargo valente gera a versão com Ataque aumentado e Pargo blindado a versão com Defesa aumentada. A versão comum exige anular o efeito — usando os dois tipos de pargo juntos ou acrescentando um ingrediente de efeito diferente.\n\nOs pargos têm uma receita própria porque ela é testada antes da Frutos do mar à meunière, que aceita qualquer outro fruto do mar. Duas pegadinhas da ordem de prioridade: com Salmão nutritivo na panela o prato vira Salmão à meunière, e com Halita junto do trigo e da manteiga vira Torta de peixe.",
+  "obtaining": [
+    "Cozinhar numa Panela um Pargo valente ou Pargo blindado, Manteiga de cabra e Trigo de Tabantha, com até dois ingredientes extras."
+  ],
+  "uses": [
+    "Prato de Ataque aumentado ou Defesa aumentada feito com pargos pescados.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações.",
+    "Com Pargo valente: Ataque aumentado.",
+    "Com Pargo blindado: Defesa aumentada.",
+    "Com os dois pargos, ou com ingrediente de efeito diferente: sem efeito."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações e aplica Ataque aumentado ou Defesa aumentada, conforme o pargo usado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "Halita ou salmão",
+      "status": "confirmado",
+      "result": "Halita junto do trigo e da manteiga transforma o prato em Torta de peixe; Salmão nutritivo na panela o transforma em Salmão à meunière.",
+      "produces": [
+        "botw_food_fish_pie",
+        "botw_food_salmon_meuniere"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Só com os 3 ingredientes obrigatórios o fator é 2,1×; cada ingrediente extra o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Dois pargos iguais",
+      "text": "Com dois espaços livres, colocar mais um pargo do mesmo tipo (ou outro ingrediente do mesmo efeito, como uma Carpa valente no caso do ataque) prolonga e pode fortalecer o efeito.",
+      "sources": [
+        "zw:Food",
+        "zw"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só aceita os dois pargos; outros peixes formam Frutos do mar à meunière.",
+    "Halita na panela transforma o prato em Torta de peixe."
+  ],
+  "related": [
+    {
+      "id": "botw_creature_mighty_porgy",
+      "relation": "Pargo que gera a versão com Ataque aumentado"
+    },
+    {
+      "id": "botw_creature_armored_porgy",
+      "relation": "Pargo que gera a versão com Defesa aumentada"
+    },
+    {
+      "id": "botw_food_seafood_meuniere",
+      "relation": "Meunière para os demais frutos do mar"
+    },
+    {
+      "id": "botw_food_salmon_meuniere",
+      "relation": "Meunière exclusiva do Salmão nutritivo"
+    },
+    {
+      "id": "botw_food_fish_pie",
+      "relation": "Resultado ao acrescentar Halita"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "ataque",
+    "defesa"
+  ],
+  "verification_status": "verificado"
+}

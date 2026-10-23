@@ -1,0 +1,149 @@
+{
+  "id": "botw_monster_hinox",
+  "summary": "O maior monstro de Hyrule: um ciclope que dorme em clareiras com um colar de armas. Dá para roubar as armas enquanto ele dorme; uma flecha no olho o atordoa e, ao morrer, deixa frutas assadas.",
+  "description": "O Rinox é um gigante de um olho só, parecido com um Koboblin enorme, e o compendium o apresenta como o maior monstro que vive em Hyrule. Fica quase sempre dormindo, em geral numa clareira de floresta, e usa no pescoço um colar enfeitado com várias armas. Quem se aproxima com cuidado consegue roubar essas armas sem acordá-lo — o próprio compendium sugere isso. Existem três cores (vermelho, azul e preto) e uma versão esquelética noturna, o Stalnox.\n\nAcordado, ataca com tapas e socos, arranca árvores inteiras para usá-las como arma e, se Link subir para fora do alcance, atira pequenas rochas. O olho é o ponto fraco: uma flecha nele atordoa o Rinox e o deixa aberto a golpes até se recuperar. Depois que a vida cai pela metade, ele passa a cobrir o olho com a mão, bloqueando novas flechadas, embora ainda possa ser atingido durante algumas ações ou atacado do alto. Empurrado para água funda, ele nada atrás de Link por pouco tempo e depois se afoga.\n\nAo morrer, deixa Unha, Dente e Vísceras de Rinox, as armas do colar que não tiverem sido roubadas e comida assada — no caso do Rinox vermelho, frutas. O Rinox vermelho é o mais fraco dos três (600 de vida); o mais novo dos \"três irmãos gigantes\" do Monte Taran é um deles.",
+  "locations": [
+    "Segundo o compendium, é comum em Necluda Oriental e Necluda Ocidental.",
+    "Pontos citados pelo Zelda Wiki: Platô Kamah (Kamah Plateau), Ilha Kincean, Lagoa Hanu (o \"irmão mais novo\"), Altiplano Phalian (Phalian Highlands), Lago Purifier, Tobio's Hollow e o oeste do porto de Loshlo (West Loshlo Harbor)."
+  ],
+  "obtaining": [
+    "Derrotá-lo rende Unha de Rinox, Dente de Rinox e Vísceras de Rinox, as armas restantes do colar e frutas assadas (Maçã, Framboesa, Fruta isolante, Coco, Bananas valentes, Abóbora robusta ou Durião nutritivo, em versão assada).",
+    "As armas do colar podem ser roubadas antes da luta, chegando perto sem acordá-lo.",
+    "Revive após cada Lua de sangue."
+  ],
+  "uses": [
+    "Fonte de partes de Rinox para elixires, melhorias de armadura e troca por Mon com Kilton.",
+    "Fonte de armas extras sem combate, roubando o colar.",
+    "Missão de santuário \"The Three Giant Brothers\": o Rinox (irmão mais novo) da Lagoa Hanu guarda um dos orbes que abrem o Santuário Tawa Jinn.",
+    "Conta para a Medalha de honra: Rinox, dada por Kilton."
+  ],
+  "effects": [
+    "Tapas, socos, árvores arrancadas usadas como porrete e rochas arremessadas contra quem está fora de alcance."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Dormindo, permite que Link se aproxime e roube as armas do colar sem ser detectado, desde que vá com furtividade.",
+      "conditions": ["Chegar sem acordá-lo (andar agachado ajuda)."],
+      "applications": ["Pegar as armas do colar sem lutar."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Recebe dano de golpes; o momento ideal é depois de atordoá-lo com uma flecha no olho, quando fica exposto até se recuperar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Flecha no olho atordoa o Rinox. Com metade da vida ou menos, ele cobre o olho para bloquear flechas, mas ainda pode ser atingido durante algumas ações ou de cima.",
+      "applications": ["Abrir janelas de ataque corpo a corpo."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes só descrevem efeito do fogo nas grevas de madeira do Rinox azul; para o Rinox vermelho não há detalhe."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de gelo sobre o Rinox."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "O atordoamento elétrico é citado para o Rinox preto, por causa das grevas de metal; para o vermelho, as fontes não dizem."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Empurrado para água funda, nada atrás de Link por tempo limitado e acaba se afogando.",
+      "applications": ["Lutar perto de um lago fundo e empurrá-lo para a água."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes de BOTW não detalham explosões como fraqueza do Rinox vermelho."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "desconhecido",
+      "result": "Não há descrição específica do uso de Bombas remotas contra ele."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há descrição do efeito de Estátis+ sobre o Rinox."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; o Rinox vermelho não usa peças de metal no corpo.",
+      "sources": ["zw:Magnesis", "zw"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Arranca árvores próximas para usar como arma ou arremessar. Se Link escalar algo fora do alcance, ele joga pequenas rochas.",
+      "side_effects": ["Subir em penhascos não é abrigo seguro: as rochas chegam lá."],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A comida assada indica a cor",
+      "text": "Cada tipo de Rinox deixa uma comida assada diferente: o vermelho deixa frutas, o azul deixa peixes e frutos do mar, e o preto deixa carnes. A pesquisa de Kilton, por sua vez, conclui que cada tipo de Rinox tem preferências alimentares próprias.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Medalha de honra: Rinox",
+      "text": "Depois de derrotar Ganon, a Calamidade pela primeira vez, Link pode perguntar a Kilton sobre o \"gigante da floresta\". Kilton pede que ele derrote todos os Rinox de Hyrule — contando também os azuis, os pretos e os Stalnox — para estudar o cheiro deixado no corpo de Link, e entrega a Medalha de honra: Rinox quando a tarefa é cumprida.",
+      "sources": ["zw", "zw:Kilton"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Os três irmãos gigantes",
+      "text": "Na missão de santuário \"The Three Giant Brothers\", três Rinox do Monte Taran guardam orbes ancestrais: o irmão mais novo (vermelho) na Lagoa Hanu, o do meio (azul) no Pântano Uten e o mais velho (preto) nas terras úmidas de Rabella.",
+      "sources": ["zw", "zw:Blue Hinox", "zw:Black Hinox"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Revive com a Lua de sangue",
+      "text": "Como quase todo inimigo abatido, o Rinox volta ao seu lugar na meia-noite da Lua de sangue, e as armas do colar também reaparecem se não estiverem com Link.",
+      "sources": ["zw:Blood Moon"]
+    }
+  ],
+  "advanced_uses": [
+    "Roubar o colar com furtividade e, só depois, decidir se vale lutar.",
+    "Alternar flecha no olho e golpes enquanto ele ainda não protege o olho; depois da metade da vida, atacar do alto."
+  ],
+  "limitations": [
+    "Com menos da metade da vida, bloqueia as flechas no olho com a mão.",
+    "As armas do colar só ficam disponíveis no fim da luta se não tiverem sido roubadas antes."
+  ],
+  "related": [
+    { "id": "botw_monster_blue_hinox", "relation": "Variação com grevas de madeira" },
+    { "id": "botw_monster_black_hinox", "relation": "Variação mais forte, com grevas de metal" },
+    { "id": "botw_monster_stalnox", "relation": "Versão esquelética noturna" },
+    { "id": "botw_material_hinox_toenail", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_hinox_tooth", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_material_hinox_guts", "relation": "Parte deixada ao ser derrotado" },
+    { "id": "botw_keyitem_medal_of_honor_hinox", "relation": "Prêmio de Kilton por derrotar todos os Rinox" },
+    { "id": "botw_mechanic_sneakstrike", "relation": "Aproximação furtiva para roubar o colar" },
+    { "id": "botw_object_tree", "relation": "Árvores arrancadas e usadas como arma" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Revive o monstro" }
+  ],
+  "capabilities": ["habilidade_especial", "vence_rapido"],
+  "verification_status": "verificado"
+}

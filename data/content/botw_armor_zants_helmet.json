@@ -1,0 +1,155 @@
+{
+  "id": "botw_armor_zants_helmet",
+  "summary": "Elmo do Rei Usurpador do Reino do Crepúsculo, do DLC The Champions' Ballad, enterrado num pântano de Tobio's Hollow. Impede que Link seja congelado, mas não protege do frio do ambiente.",
+  "description": "O Elmo de Zant lembra o que o implacável Rei Usurpador do Reino do Crepúsculo usava. Exclusivo do pacote de DLC The Champions' Ballad, é o objetivo da missão secundária “EX Treasure: Usurper King”: o diário de Misko nas Deya Village Ruins diz que o elmo do “autoproclamado Rei das Sombras” está no pântano do vale das árvores mortas, ao sul dos Dueling Peaks. O baú escondido fica entre duas árvores mortas, no meio de um atoleiro sem fundo de Tobio's Hollow, e precisa ser puxado do chão com Magnétis.\n\nDá a Imunidade a congelamento (Unfreezable): Link não sofre dano de ataques de gelo e não pode ser congelado. Mesmo assim, continua perdendo vida em ambientes gelados e na água gelada — o elmo não substitui a Resistência ao frio. Tem também o efeito oculto Poder ancestral aumentado (+20% com armas ancestrais). A defesa é 3 e não muda: não pode ser melhorado nem tingido. Depois de achado, Granté o vende por 50 rupias.",
+  "locations": [
+    "Tobio's Hollow, ao sul dos Dueling Peaks: baú enterrado entre duas árvores mortas, no meio do pântano."
+  ],
+  "obtaining": [
+    "Missão secundária “EX Treasure: Usurper King” (DLC The Champions' Ballad), iniciada pelo diário de Misko nas Deya Village Ruins; o baú é retirado com Magnétis.",
+    "Reposição: Granté o vende por 50 rupias depois da primeira obtenção."
+  ],
+  "uses": [
+    "Enfrentar inimigos de gelo sem ser congelado.",
+    "Aumentar o ataque das armas ancestrais."
+  ],
+  "effects": [
+    "Imunidade a congelamento: nenhum dano de ataques de gelo e nenhum congelamento.",
+    "Poder ancestral aumentado (oculto): +20% com armas ancestrais."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Soma 3 de defesa fixa, Imunidade a congelamento e o efeito oculto Poder ancestral aumentado.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Ataques de gelo não causam dano e Link não congela.",
+      "applications": [
+        "Lutar contra Feitiçanos glaciais, Chulchuls glaciais e Lagalfos glaciais sem ser congelado."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: Link continua perdendo vida em ambientes gelados e na água gelada mesmo com o elmo.",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Vestir esta peça não protege contra chamas nem contra ataques de fogo: entre as armaduras, a imunidade ao fogo só existe como bônus do Conjunto antichamas com as três peças melhoradas a ★★. Nenhuma fonte descreve a peça sendo queimada ou danificada pelo fogo.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do calor diurno do Deserto Gerudo (exige Resistência ao calor) nem do clima escaldante da Montanha da Morte e do Cânion de Eldin (exige Proteção contra chamas).",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O único elmo imune ao gelo sozinho",
+      "text": "O Elmo de Zant é a única peça que dá Imunidade a congelamento individualmente; fora dele, o mesmo efeito só vem do Conjunto de pluma nevada completo a ★★.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Poder ancestral escondido",
+      "text": "O elmo também tem o efeito oculto Poder ancestral aumentado, que eleva em 20% o ataque das armas ancestrais e não aparece no inventário.",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Em regiões geladas, combinar o elmo com pratos de Resistência ao frio: ele bloqueia o congelamento, e a comida cuida da temperatura."
+  ],
+  "limitations": [
+    "Não protege da temperatura nem da água gelada.",
+    "Defesa fixa em 3, sem melhorias nem tingimento.",
+    "Exige o DLC The Champions' Ballad."
+  ],
+  "related": [
+    {
+      "id": "botw_armor_snowquill_headdress",
+      "relation": "O Conjunto de pluma nevada ★★ dá a mesma imunidade"
+    },
+    {
+      "id": "botw_armor_midnas_helmet",
+      "relation": "Outro elmo de Twilight Princess roubado por Misko"
+    },
+    {
+      "id": "botw_armor_ravios_hood",
+      "relation": "Relíquia apontada pelo mesmo diário de Misko"
+    },
+    {
+      "id": "botw_monster_ice_wizzrobe",
+      "relation": "Inimigo de gelo neutralizado pelo elmo"
+    },
+    {
+      "id": "botw_rune_magnesis",
+      "relation": "Necessária para desenterrar o baú"
+    },
+    {
+      "id": "botw_mechanic_ice",
+      "relation": "Congelamento evitado pelo elmo"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

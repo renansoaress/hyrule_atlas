@@ -1,0 +1,107 @@
+{
+  "id": "botw_food_egg_tart",
+  "summary": "Torta de Trigo de Tabantha, Ovo, Cana-de-açúcar e Manteiga de cabra; o jogo diz que se sabe que está pronta pelo cheiro. Base de 4 corações e 30 rupias; todas as versões com efeito valem 50.",
+  "description": "A Torta de ovos combina Trigo de Tabantha, Ovo, Cana-de-açúcar e Manteiga de cabra. Segundo a descrição do jogo, dá para saber que essa sobremesa simples está pronta quando o cheiro fica delicioso. A receita básica cura 4 corações e vale 30 rupias.\n\nCom quatro ingredientes obrigatórios, o quinto espaço define a versão. O Zelda Wiki registra um padrão uniforme: todas as versões com efeito valem 50 rupias, e quase todas curam 5 corações — as exceções são a refrescante (4 corações), a tenaz (6 corações, que restaura o Medidor de vigor e aumenta temporariamente o máximo) e a nutritiva, que restaura todos os corações.\n\nA torta usa a mesma base de trigo, açúcar e manteiga da Torta de maçã, com Ovo no lugar da fruta. Já o Pudim de ovos dispensa trigo e manteiga e usa Leite fresco.",
+  "locations": [
+    "Trigo de Tabantha: colhido cortando grama na Fronteira de Tabantha ou comprado na The Slippery Falcon (Vila Rito) e com o mercador Yammo.",
+    "Ovo: achado em ninhos no alto das árvores ou comprado na East Wind, na High Spirits Produce e com Agus.",
+    "Cana-de-açúcar: vendida na The Slippery Falcon, na Goron Gusto Shop (Cidade Goron), na General Shoppe e pelo mercador Yammo.",
+    "Manteiga de cabra: vendida na High Spirits Produce (Vila Kakariko), na The Slippery Falcon e pelo mercador Agus."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: Trigo de Tabantha + Ovo + Cana-de-açúcar + Manteiga de cabra, com um quinto ingrediente opcional."
+  ],
+  "uses": [
+    "Cura de 4 corações na versão comum.",
+    "Versões com efeito de valor fixo (50 rupias)."
+  ],
+  "effects": [
+    "Versão comum: recupera 4 corações.",
+    "Versão nutritiva (Hearty): restaura todos os corações e concede Corações extras temporários — 50 rupias.",
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — 5 corações, 50 rupias.",
+    "Versão tenaz (Enduring): restaura o Medidor de vigor e o ultrapassa temporariamente (Vigor extra) — 6 corações, 50 rupias.",
+    "Versão veloz (Hasty): concede Velocidade aumentada por tempo limitado — 5 corações, 50 rupias.",
+    "Versão picante (Spicy): concede Resistência ao frio por tempo limitado — 5 corações, 50 rupias.",
+    "Versão refrescante (Chilly): concede Resistência ao calor por tempo limitado — 4 corações, 50 rupias.",
+    "Versão isolante (Electro): concede Resistência a choques por tempo limitado — 5 corações, 50 rupias.",
+    "Versão valente (Mighty): concede Ataque aumentado por tempo limitado — 5 corações, 50 rupias.",
+    "Versão blindada (Tough): concede Defesa aumentada por tempo limitado — 5 corações, 50 rupias.",
+    "Versão discreta (Sneaky): concede Furtividade aumentada por tempo limitado — nível médio segundo a descrição citada; 5 corações, 50 rupias."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera 4 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "O quinto ingrediente dá o efeito; a maioria das versões cura 5 corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versões com efeito"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vale 30 rupias na versão comum e 50 rupias em qualquer versão com efeito.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Preço fixo nas versões com efeito",
+      "text": "Diferente de pratos como a Torta de maçã, em que a versão veloz vale mais, aqui todas as versões com efeito são vendidas pelo mesmo valor: 50 rupias.",
+      "sources": [
+        "zw",
+        "zw:Apple Pie"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só um espaço livre para ingrediente de efeito."
+  ],
+  "related": [
+    {
+      "id": "botw_food_egg_pudding",
+      "relation": "Sobremesa de ovo com leite, sem trigo nem manteiga"
+    },
+    {
+      "id": "botw_food_apple_pie",
+      "relation": "Mesma base de trigo, açúcar e manteiga, com Maçã"
+    },
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_tabantha_wheat",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_cane_sugar",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_goat_butter",
+      "relation": "Ingrediente obrigatório"
+    }
+  ],
+  "capabilities": [
+    "cura"
+  ],
+  "verification_status": "verificado"
+}

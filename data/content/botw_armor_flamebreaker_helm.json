@@ -1,0 +1,179 @@
+{
+  "id": "botw_armor_flamebreaker_helm",
+  "summary": "Elmo de pedra feito por artesãos Goron para os turistas da Cidade Goron. Dá Proteção contra chamas nível 1 no clima escaldante de Eldin; com o conjunto ★★, Link fica imune a fogo.",
+  "description": "Vendido por 2.000 rupias na Ripped and Shredded, a loja de armaduras da Cidade Goron, o Elmo antichamas é um capacete de pedra que, brinca a descrição, além de resistir às chamas “ainda cobre a cabeça inteira”. Dá Proteção contra chamas nível 1, que impede Link de pegar fogo e perder vida no clima escaldante da Montanha da Morte e do Cânion de Eldin. Um nível basta para o começo da região, perto de Medingo Pool; a partir da Mina Norte Abandonada (Abandoned North Mine) e da Ponte de Eldin são necessários dois níveis, o que exige mais uma peça do conjunto (os níveis das peças se somam).\n\nA Proteção contra chamas não protege de ataques de fogo, de lava nem do calor do deserto. A imunidade ao fogo vem do bônus À prova de fogo (Fireproof): com a Armadura antichamas e as Botas antichamas a ★★, Link deixa de sofrer dano de fogo e de ataques de fogo — mas lava e o calor do deserto continuam perigosos. A defesa vai de 3 a 20; as melhorias usam Lagartos corta-fogo, partes de Moblin, Borboletas abrasadoras e 2 Vísceras de Rinox no último nível. Pode ser tingido na Tinturaria Kochi.",
+  "locations": [
+    "Ripped and Shredded, loja de armaduras da Cidade Goron, em Eldin."
+  ],
+  "obtaining": [
+    "Comprar na Ripped and Shredded por 2.000 rupias."
+  ],
+  "uses": [
+    "Subir a Montanha da Morte sem pegar fogo.",
+    "Completar o Conjunto antichamas para ficar imune a fogo."
+  ],
+  "effects": [
+    "Proteção contra chamas nível 1 (clima escaldante).",
+    "Bônus de conjunto À prova de fogo com as três peças ★★."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Ocupa a cabeça, soma 3 de defesa (20 no nível máximo) e dá Proteção contra chamas nível 1.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "clima escaldante (Eldin)",
+      "status": "confirmado",
+      "result": "Impede que Link pegue fogo e perca vida no clima escaldante. O nível 1 vale para a área de Medingo Pool; da Mina Norte Abandonada e da Ponte de Eldin em diante são necessários dois níveis.",
+      "conditions": [
+        "Para o nível 2, vestir mais uma peça antichamas; os níveis das peças se somam até o teto de 2."
+      ],
+      "side_effects": [
+        "Armas, arcos e escudos de madeira equipados continuam pegando fogo no clima escaldante."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "variant": "calor do deserto",
+      "status": "sem_efeito",
+      "result": "A Proteção contra chamas não evita o dano do calor do Deserto Gerudo, que exige Resistência ao calor.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Sozinho, o elmo não reduz o dano de chamas nem de ataques de fogo: a Proteção contra chamas só atua sobre o clima escaldante.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Fireproof Armor"
+      ]
+    },
+    {
+      "action": "fogo",
+      "variant": "Conjunto antichamas ★★",
+      "status": "confirmado",
+      "result": "Com Armadura e Botas antichamas, todas ★★, Link não sofre dano de fogo nem de ataques baseados em fogo e não pode ser incendiado.",
+      "conditions": [
+        "As três peças vestidas e melhoradas ao menos duas vezes."
+      ],
+      "side_effects": [
+        "Não protege de lava nem das zonas de calor extremo do deserto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Set Bonus",
+        "zw:Fireproof Armor"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: durante tempestades, só armas, arcos e escudos metálicos equipados faíscam e atraem descargas. A peça também não reduz o dano de um raio; entre as armaduras, isso só acontece com o Elmo do trovão ou com o bônus do Conjunto de borracha ★★.",
+      "side_effects": [
+        "Armas, arcos e escudos metálicos equipados continuam atraindo raios normalmente."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning",
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano de ataques elétricos: a peça não tem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não protege do frio: abaixo de 0 °C Link perde vida lentamente, e abaixo de −10 °C mais depressa, a menos que tenha Resistência ao frio de outra fonte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Dois nomes parecidos, duas proteções",
+      "text": "O próprio Zelda Wiki chama atenção para a semelhança dos nomes: o efeito das peças, que protege do clima vulcânico, se chama Flame Guard (Proteção contra chamas), enquanto o bônus do conjunto, que impede Link de ser incendiado, se chama Fireproof (À prova de fogo).",
+      "sources": [
+        "zw:Fireproof Armor"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Os marcos da estrada indicam o nível",
+      "text": "Os marcos da Montanha da Morte informam a intensidade do calor: o marco nº 2, rumo à Cidade Goron, mostra “Heat level: ★”, e os nº 6 (Mina Norte Abandonada) e nº 8 (Ponte de Eldin), “★★”. Cada estrela corresponde a um nível de Proteção contra chamas.",
+      "sources": [
+        "zw:Scorching Climate"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Com o conjunto completo a ★★, é possível enfrentar inimigos de fogo, como Lagalfos ígneos e Feitiçanos ígneos, sem sofrer dano das chamas."
+  ],
+  "limitations": [
+    "Não protege contra lava nem contra o calor do deserto.",
+    "Sozinho, não reduz dano de ataques de fogo.",
+    "Não impede que equipamentos de madeira queimem no clima escaldante."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_fireproof_armor",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_flamebreaker_armor",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_flamebreaker_boots",
+      "relation": "Peça do mesmo conjunto"
+    },
+    {
+      "id": "botw_armor_vah_rudania_divine_helm",
+      "relation": "Outra peça de cabeça com Proteção contra chamas"
+    },
+    {
+      "id": "botw_creature_fireproof_lizard",
+      "relation": "Material dos dois primeiros níveis"
+    },
+    {
+      "id": "botw_creature_smotherwing_butterfly",
+      "relation": "Material dos dois últimos níveis"
+    },
+    {
+      "id": "botw_mechanic_fire",
+      "relation": "O conjunto ★★ anula o dano de fogo"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "protege_calor",
+    "protege_fogo"
+  ],
+  "verification_status": "verificado"
+}

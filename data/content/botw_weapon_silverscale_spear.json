@@ -1,0 +1,200 @@
+{
+  "id": "botw_weapon_silverscale_spear",
+  "summary": "Lança dos guerreiros Zora mais hábeis, com elegante desenho de cauda de peixe (ataque 12, durabilidade 40). Perfura até as escamas mais duras; é de metal e afunda.",
+  "description": "A Lança escamada é empunhada pelos guerreiros Zora mais habilidosos. O belo desenho em cauda de peixe esconde uma força impressionante: segundo a descrição, a ponta perfura até as escamas mais duras. Pertence ao equipamento Zora e é a arma dos guardas masculinos do Território Zora, como Baxi (Bazz) — mas Link não pode tomá-la deles, e atacar os guardas provoca retaliação.\n\nHá uma Lança escamada sem dono sob a água corrente do Território Zora; outras estão com Lagalfos na Grande Nascente de Lanayru e no Altiplano de Akkala, e um Moblin preto empunha uma no salão de jantar do Castelo de Hyrule. Sendo de metal, conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis.",
+  "locations": [
+    "Sob a água corrente do Território Zora (um exemplar sem dono).",
+    "Grande Nascente de Lanayru e Altiplano de Akkala, com Lagalfos.",
+    "Salão de jantar do Castelo de Hyrule, com um Moblin preto."
+  ],
+  "obtaining": [
+    "Recolher o exemplar submerso no Território Zora.",
+    "Derrotar os Lagalfos ou o Moblin preto que a empunham.",
+    "O amiibo de Mipha (série Breath of the Wild) pode gerar baús com Lanças escamadas.",
+    "A Lua de sangue revive os monstros e repõe as armas que eles empunham."
+  ],
+  "uses": [
+    "Lança de metal durável, comum na região Zora.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo nem queima nas áreas escaldantes de Eldin: só armas de madeira são inflamáveis.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Lagalfos da Grande Nascente de Lanayru e do Altiplano de Akkala a empunham, assim como um Moblin preto no salão de jantar do Castelo de Hyrule.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "A lança que os guardas não entregam",
+      "text": "Os guardas masculinos do Território Zora, como Baxi (Bazz), carregam Lanças escamadas, mas Link não pode pegá-las; atacar os guardas provoca retaliação.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança escamada pode surgir com um bônus branco (comum) — ataque +4 a +7, durabilidade +4 a +8 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +8 a +12, durabilidade +9 a +18 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer. Exemplares tirados de baús de amiibo vêm com o valor máximo da faixa sorteada, embora o bônus apareça sempre em branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    }
+  ],
+  "limitations": [
+    "Atrai raios em tempestades, que também ocorrem na região de Lanayru.",
+    "Afunda na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_zora_spear",
+      "relation": "Lança Zora mais simples, usada pelas guardas"
+    },
+    {
+      "id": "botw_weapon_lightscale_trident",
+      "relation": "Tridente Zora da campeã Mipha"
+    },
+    {
+      "id": "botw_weapon_ceremonial_trident",
+      "relation": "Réplica Zora do tridente de Mipha"
+    },
+    {
+      "id": "botw_weapon_zora_sword",
+      "relation": "Mesmo arquétipo (Zora), uma mão"
+    },
+    {
+      "id": "botw_weapon_silver_longsword",
+      "relation": "Mesmo arquétipo (Zora), duas mãos"
+    },
+    {
+      "id": "botw_monster_black_moblin",
+      "relation": "Um deles a empunha no Castelo de Hyrule"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

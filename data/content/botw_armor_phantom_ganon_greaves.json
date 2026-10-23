@@ -1,0 +1,180 @@
+{
+  "id": "botw_armor_phantom_ganon_greaves",
+  "summary": "Grevas de Ganon Fantasma (DLC 2), enterradas junto à estátua de pássaro quebrada da Floresta Ebara. Dão Furtividade aumentada e completam um conjunto que engana monstros Stal.",
+  "description": "As Grevas de Ganon Fantasma completam o Conjunto de Ganon Fantasma, do pacote The Champions' Ballad (DLC 2), com o Crânio e a Armadura de Ganon Fantasma. Segundo o Diário EX 2 de Misko, ficam \"na ave de pedra quebrada da Floresta Ebara\": o baú metálico está enterrado ao lado dessa estátua, em Faron, e precisa ser desenterrado com Magnétis (Missão secundária \"EX Treasure: Dark Armor\").\n\nConcedem um nível de Furtividade aumentada; com as três peças, o efeito chega ao nível 3 (−70% de barulho) e ativa, sem melhorias, o Ataque com ossos aumentado e o Disfarce Stal. Não podem ser melhoradas nem tingidas (defesa 4). Granté passa a vendê-las por 50 rupias depois de obtidas, e moradores se assustam ao ver Link com o conjunto.",
+  "locations": [
+    "Floresta Ebara (Ebara Forest), em Faron: baú enterrado ao lado de uma estátua de pássaro quebrada."
+  ],
+  "obtaining": [
+    "Missão secundária \"EX Treasure: Dark Armor\" (DLC 2): desenterrar o baú com Magnétis.",
+    "Recomprar de Granté por 50 rupias depois de obtê-las."
+  ],
+  "uses": [
+    "Furtividade para Ataques-surpresa e para chegar perto de animais.",
+    "Completar o Conjunto de Ganon Fantasma."
+  ],
+  "effects": [
+    "Furtividade aumentada, nível 1.",
+    "Conjunto completo (sem melhorias): Ataque com ossos aumentado e Disfarce Stal."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Furtividade aumentada (Link faz 20% menos barulho; 40% e 70% com dois e três níveis). Com o Crânio de Ganon Fantasma, a Armadura de Ganon Fantasma e as Grevas de Ganon Fantasma vestidos, ativa dois bônus sem precisar de melhorias: Ataque com ossos aumentado (Bone Atk. Up), +80% de dano com armas de osso, e o Disfarce Stal.",
+      "conditions": [
+        "As três peças do conjunto equipadas; elas não podem ser melhoradas, então os bônus valem desde que o conjunto é reunido."
+      ],
+      "side_effects": [
+        "Moradores ficam assustados por um momento ao ver Link com o conjunto."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Set Bonus",
+        "zw:Evil Spirit Set"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "monstros Stal",
+      "status": "confirmado",
+      "result": "Com o bônus de conjunto ativo, Stalboblins, Stalmoblins e Stallagalfos não atacam Link a menos que ele ataque primeiro; em vez disso, seguem e observam Link. Stalnox são enganados apenas por um tempo.",
+      "conditions": [
+        "Crânio, Armadura e Grevas de Ganon Fantasma equipados."
+      ],
+      "side_effects": [
+        "O disfarce acaba antes se um inimigo que não é afetado por ele começar a atacar Link."
+      ],
+      "applications": [
+        "Explorar à noite, quando esses esqueletos saem da terra, sem ser incomodado por eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "monstros",
+      "variant": "furtividade",
+      "status": "confirmado",
+      "result": "Reduz o barulho que Link faz, facilitando aproximar-se sem ser notado; não afeta a detecção visual, e correr faz barulho de qualquer forma.",
+      "applications": [
+        "Ataques-surpresa em inimigos adormecidos ou distraídos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Stealth"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Quais armas contam como \"de osso\"",
+      "text": "O Ataque com ossos aumentado vale para: Braço de Koboblin, Braço de Lagalfos, Braço de Moblin, Taco Kobo dracônico, Clava Kobo dracônica, Lança Kobo dracônica, Clava Moblin dracônica, Lança Moblin dracônica, Taco Kobo pontudo, Clava Kobo pontuda, Lança Kobo pontuda, Clava Moblin pontuda, Lança Moblin espinhosa, Arco Kobo pontudo e Arco Lagal.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Disfarce que engana até o Stalnox",
+      "text": "Com o conjunto completo, até o Stalnox é enganado — mas só temporariamente.",
+      "sources": [
+        "zw:Set Bonus"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Para chegar ao nível 3 de Furtividade aumentada sem o conjunto inteiro, combine as grevas com outras duas peças de furtividade, como a Máscara furtiva e o Peitoral furtivo."
+  ],
+  "limitations": [
+    "Não podem ser melhoradas nem tingidas.",
+    "A furtividade não esconde Link visualmente."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_phantom_ganon_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_skull",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_phantom_ganon_armor",
+      "relation": "Peça de torso do conjunto"
+    },
+    {
+      "id": "botw_monster_stalnox",
+      "relation": "Enganado temporariamente pelo disfarce"
+    },
+    {
+      "id": "botw_mechanic_sneakstrike",
+      "relation": "Favorecido pela furtividade"
+    },
+    {
+      "id": "botw_armor_stealth_tights",
+      "relation": "Outra peça de pernas com Furtividade aumentada"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "furtividade",
+    "ataque",
+    "habilidade_especial"
+  ],
+  "verification_status": "verificado"
+}

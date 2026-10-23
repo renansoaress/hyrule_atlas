@@ -1,0 +1,148 @@
+{
+  "id": "botw_mechanic_durability",
+  "summary": "Armas, escudos e arcos têm usos limitados e se partem ao zerar. Só gasta quando há contato; o golpe que quebra é sempre crítico; Octorocs rochosos restauram o desgaste; a Espada Mestra apenas descarrega.",
+  "description": "Em BOTW todo equipamento de combate tem durabilidade. Armas perdem uso quando acertam algo: balançar no vazio, cortar grama, acionar interruptores, bater no chão ou golpear árvores com arma contundente não gasta nada (a exceção são armas corpo a corpo que disparam projéteis, como as varinhas). Escudos se desgastam ao receber golpes durante a defesa e ao surfar em terreno áspero; uma Defesa perfeita não os desgasta, salvo os escudos de Centaleão.\n\nA interface avisa o estado do item: um brilho no canto do ícone indica durabilidade cheia, e com três usos ou menos o ícone pisca em vermelho e aparece um aviso de que o item está muito danificado. O golpe que quebra uma arma é sempre crítico, e armas arremessadas quebram no impacto com dano dobrado. A Espada Mestra é a exceção: não se parte, mas perde energia e precisa de 10 minutos para recarregar.",
+  "locations": [
+    "Regra geral de todo o equipamento do jogo."
+  ],
+  "obtaining": [
+    "Bônus aleatórios \"Durability Up\" aumentam a durabilidade de armas, arcos e escudos encontrados."
+  ],
+  "uses": [
+    "Planejar o uso de armas boas e descartáveis.",
+    "Transformar armas quase quebradas em críticos arremessados."
+  ],
+  "effects": [
+    "Item quebra ao chegar a zero; o golpe que o quebra causa dano dobrado."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Cada uso com contato reduz a durabilidade; com três usos ou menos, o ícone pisca em vermelho e o jogo avisa que o item está muito danificado.",
+      "conditions": ["Brilho no canto do ícone = durabilidade cheia."],
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Só golpes que fazem contato gastam a arma. Cortar grama, acertar interruptores, bater no terreno, balançar no vazio e golpear árvores com arma contundente não consomem durabilidade.",
+      "side_effects": [
+        "Armas corpo a corpo que disparam projéteis (varinhas) gastam mesmo sem contato.",
+        "Varinhas de elemento quebram com facilidade se acertarem objetos ou inimigos diretamente."
+      ],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Rod"]
+    },
+    {
+      "action": "golpe_arma",
+      "variant": "golpe final",
+      "status": "confirmado",
+      "result": "O último ataque de uma arma antes de quebrar é sempre um Acerto crítico, com o dobro do dano.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arma arremessada que acerta um inimigo quebra imediatamente e causa dano dobrado.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Weapon"]
+    },
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Cada golpe recebido com o escudo erguido gasta durabilidade; a Defesa perfeita não gasta. Escudos de Centaleão perdem durabilidade ao aparar.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield"]
+    },
+    {
+      "action": "cenario",
+      "variant": "surfar com escudo",
+      "status": "confirmado",
+      "result": "Surfar com escudo em terreno áspero desgasta o escudo; em neve ou areia, não.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield Surfing"]
+    },
+    {
+      "action": "montar",
+      "variant": "Centaleão",
+      "status": "confirmado",
+      "result": "Montado num Centaleão, Link pode golpeá-lo até cinco vezes com qualquer arma sem gastar durabilidade.",
+      "side_effects": ["Se o vigor acabar, Link é arremessado e perde um quarto de coração."],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Lynel"]
+    },
+    {
+      "action": "monstros",
+      "variant": "Octoroc rochoso",
+      "status": "confirmado",
+      "result": "Armas e escudos aspirados e cuspidos por um Octoroc rochoso voltam com a durabilidade restaurada. Equipamento enferrujado volta limpo: 50% do viajante, 35% do soldado, 10% do cavaleiro e 5% real.",
+      "conditions": ["Largar o item no caminho do sopro enquanto o Octoroc inspira."],
+      "side_effects": ["A Lua de sangue renova a capacidade de cada Octoroc rochoso de restaurar armas."],
+      "produces": ["botw_weapon_travelers_sword", "botw_weapon_soldiers_broadsword", "botw_weapon_knights_broadsword", "botw_weapon_royal_broadsword"],
+      "kind": "tecnica_avancada",
+      "sources": ["zw", "zw:Rock Octorok", "zw:Blood Moon"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Equipamento de madeira pega fogo e, se continuar queimando, desintegra-se em cinzas — no fogo ou equipado no clima escaldante de Eldin. Desequipar o item em chamas apaga o fogo.",
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Tips and Tricks", "zw:Korok Leaf"]
+    },
+    {
+      "action": "usar",
+      "variant": "Espada Mestra",
+      "status": "confirmado",
+      "result": "A Espada Mestra não quebra: perde energia a cada golpe e, ao esgotar, fica 10 minutos recarregando. Com três usos ou menos, aparece o aviso de pouca energia.",
+      "side_effects": ["Sem energia, a Provação da Espada não pode ser iniciada."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Master Sword", "zw:Sword Monk's Shrine"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Reciclagem de ferrugem",
+      "text": "Uma Espada enferrujada largada diante de um Octoroc rochoso que está inspirando é engolida, mastigada e devolvida como Espada do viajante, Espada larga do soldado, Espada do cavaleiro ou Espada real. O mesmo vale para montantes, alabardas e o Escudo enferrujado.",
+      "sources": ["zw:Rock Octorok"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Espada Mestra desperta",
+      "text": "Desperta (perto de Guardiões, em calabouços ou perto de Malícia), a energia da Espada Mestra dura muito mais, cerca de 11.400 de dano antes de recarregar. Concluída a Provação da Espada, ela fica desperta permanentemente e o feixe de espada deixa de gastar energia.",
+      "sources": ["zw:Master Sword"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Folha Korok não gasta no vento",
+      "text": "Balançar uma Folha Korok sem acertar nada sólido não reduz a durabilidade dela, mesmo produzindo a rajada de vento.",
+      "sources": ["zw:Korok Leaf"]
+    }
+  ],
+  "advanced_uses": [
+    "Cortar grama e derrubar árvores com o lado contundente não custa nada; use armas fracas apenas quando houver contato com inimigos.",
+    "Guardar armas com três usos ou menos para arremessar como críticos garantidos."
+  ],
+  "limitations": [
+    "Armas quebradas somem; só algumas armas únicas podem ser refeitas por artesãos.",
+    "Varinhas elementais gastam a cada disparo."
+  ],
+  "related": [
+    { "id": "botw_mechanic_critical_hit", "relation": "Golpe final e arremesso críticos" },
+    { "id": "botw_monster_rock_octorok", "relation": "Restaura e limpa equipamentos" },
+    { "id": "botw_weapon_rusty_broadsword", "relation": "Arma enferrujada que o Octoroc limpa" },
+    { "id": "botw_shield_rusty_shield", "relation": "Escudo enferrujado que o Octoroc limpa" },
+    { "id": "botw_weapon_master_sword", "relation": "Descarrega em vez de quebrar" },
+    { "id": "botw_shield_lynel_shield", "relation": "Gasta ao aparar" },
+    { "id": "botw_weapon_fire_rod", "relation": "Varinha que gasta a cada disparo" },
+    { "id": "botw_weapon_korok_leaf", "relation": "Não gasta ao soprar no vazio" },
+    { "id": "botw_monster_lynel", "relation": "Golpes montados não gastam durabilidade" },
+    { "id": "botw_mechanic_shield_surfing", "relation": "Desgaste do escudo conforme o terreno" },
+    { "id": "botw_mechanic_trial_of_the_sword", "relation": "Desperta a Espada Mestra de forma permanente" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

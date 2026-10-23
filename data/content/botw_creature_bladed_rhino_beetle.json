@@ -1,0 +1,170 @@
+{
+  "id": "botw_creature_bladed_rhino_beetle",
+  "summary": "Besouro de chifres afiados que vive em árvores de Necluda. Com partes de monstro vira Elixir valente; é o único bicho do corante azul-marinho, e Beedle troca um Elixir valente por ele.",
+  "description": "O Escaravelho brigão é encontrado em árvores da região de Necluda — o compendium cita Necluda Ocidental e Oriental. O jogo avisa que os chifres dele são afiados como navalhas e exigem cuidado ao manuseá-lo; fervidos com partes de monstro, rendem um elixir que aumenta o poder de ataque.\n\nCozido com partes de monstro, produz o Elixir valente (Ataque aumentado), que fortalece corpo e mente e vale para todas as armas; cada escaravelho acrescenta 0:50 de duração. Ingredientes valentes como Bananas valentes, Ferromelo, Protechofra, Carpa valente, Pargo valente e Caranguejo espadachim podem ser somados para que o elixir também cure. Sem parte de monstro, o resultado é Comida duvidosa. Na Tinturaria Kochi, é um dos dois únicos ingredientes do corante azul-marinho, ao lado da Pedra luminosa.\n\nBeedle adora escaravelhos: se Link falar com ele levando um Escaravelho brigão, ele pede o besouro em troca de um Elixir valente, promete cuidar dele \"pelo resto dos meus dias\" e o acrescenta à sua coleção.",
+  "locations": [
+    "Árvores da região de Necluda (Necluda Ocidental e Necluda Oriental)."
+  ],
+  "obtaining": [
+    "Apanhar nas árvores de Necluda."
+  ],
+  "uses": [
+    "Elixir valente: cozinhar com pelo menos uma parte de monstro.",
+    "Troca com Beedle por um Elixir valente.",
+    "Ingrediente do corante azul-marinho na Tinturaria Kochi.",
+    "Venda: 4 rupias."
+  ],
+  "effects": [
+    "No elixir: Ataque aumentado com todas as armas; +0:50 de duração por escaravelho."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como o escaravelho reage à aproximação de Link; indicam apenas que ele fica em árvores."
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Fica pousado em árvores da região de Necluda.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "comp"
+      ]
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um escaravelho vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "variant": "com partes de monstro",
+      "status": "confirmado",
+      "result": "Forma um Elixir valente (Ataque aumentado). Cada escaravelho acrescenta 0:50 de duração.",
+      "applications": [
+        "Somar Bananas valentes, Ferromelo, Protechofra, Carpa valente, Pargo valente ou Caranguejo espadachim para que o elixir também cure."
+      ],
+      "produces": [
+        "botw_elixir_mighty_elixir"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Elixir",
+        "zw:Mighty Elixir"
+      ]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "sem partes de monstro",
+      "status": "confirmado",
+      "result": "Sozinho ou só com alimentos comuns, resulta em Comida duvidosa.",
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Dubious Food",
+        "zw:Food"
+      ]
+    },
+    {
+      "action": "comer",
+      "status": "desconhecido",
+      "result": "As fontes não confirmam que possa ser comido cru: a tabela de materiais do Zelda Wiki só lista o uso em elixires, e o compendium registra 0 corações."
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 4 rupias. Beedle prefere trocá-lo por um Elixir valente.",
+      "sources": [
+        "zw"
+      ]
+    },
+    {
+      "action": "vender",
+      "variant": "troca com Beedle",
+      "status": "confirmado",
+      "result": "Com um Escaravelho brigão na algibeira, Beedle pede o besouro e oferece um Elixir valente. Se Link aceitar, Beedle pede que ele volte só no dia seguinte com outro; se recusar, Beedle diz que se enganou sobre o caráter de Link.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo",
+        "zw:Beedle"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com o escaravelho exposto ao fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre o escaravelho."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Para a coleção de Beedle",
+      "text": "Ao receber o besouro, Beedle comemora que vai acrescentá-lo à sua coleção de escaravelhos e promete cuidar dele pelo resto da vida. Se Link voltar no mesmo dia, Beedle diz que ainda está concentrando todo o seu amor no novo besouro e pede que traga outro no dia seguinte.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Duração curta",
+      "text": "Na tabela de bichos do Zelda Wiki, o Escaravelho brigão acrescenta só 0:50 por unidade, menos que borboletas e libélulas (2:30). Para um Elixir valente longo, conte com partes de monstro de maior duração.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Usar ingredientes valentes diferentes (escaravelho, Carpa valente, Ferromelo) na mesma receita prolonga o efeito e pode elevar o Ataque aumentado para nível médio ou alto."
+  ],
+  "limitations": [
+    "Cozido sem parte de monstro, vira Comida duvidosa.",
+    "Depois de uma troca, Beedle pede que Link volte só no dia seguinte para entregar outro escaravelho."
+  ],
+  "related": [
+    {
+      "id": "botw_elixir_mighty_elixir",
+      "relation": "Elixir produzido com partes de monstro"
+    },
+    {
+      "id": "botw_creature_mighty_carp",
+      "relation": "Ingrediente valente que faz o elixir curar"
+    },
+    {
+      "id": "botw_creature_razorclaw_crab",
+      "relation": "Ingrediente valente que faz o elixir curar"
+    },
+    {
+      "id": "botw_creature_rugged_rhino_beetle",
+      "relation": "Outro escaravelho que Beedle troca por elixir"
+    },
+    {
+      "id": "botw_creature_energetic_rhino_beetle",
+      "relation": "O escaravelho favorito de Beedle"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-lo sem partes de monstro"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante azul-marinho"
+    }
+  ],
+  "capabilities": [
+    "ataque"
+  ],
+  "verification_status": "parcial"
+}

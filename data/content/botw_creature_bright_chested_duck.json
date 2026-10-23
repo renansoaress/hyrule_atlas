@@ -1,0 +1,83 @@
+{
+  "id": "botw_creature_bright_chested_duck",
+  "summary": "Pato de peito verde que vive em pequenos bandos em lagos e rios, mergulhando a frente do corpo para comer. Voa junto com o bando quando assustado; a carne gordurosa é considerada de alta qualidade e rende uma Coxa.",
+  "description": "O Pato de peito verde é uma ave comum, encontrada em pequenos bandos — muitas vezes de três ou mais — na superfície de lagos e rios de toda Hyrule; o compendium cita os Cerros de Hyrule e a Pradaria de Hyrule. Passa a maior parte do tempo na água, remando com os pés palmados, e de vez em quando mergulha a frente do corpo, usando o pescoço comprido, para se alimentar.\n\nQuando se assusta, o bando inteiro levanta voo. A carne é bastante gordurosa e considerada de alta qualidade. Abatido, deixa uma Coxa.",
+  "locations": [
+    "Lagos, lagoas e rios de toda Hyrule; o compendium cita os Cerros de Hyrule e a Pradaria de Hyrule."
+  ],
+  "obtaining": [
+    "Não pode ser capturado; abatido, deixa uma Coxa."
+  ],
+  "uses": [
+    "Fonte de Coxa.",
+    "Registrar sua foto no compendium (entrada nº 41)."
+  ],
+  "effects": [
+    "Nenhum efeito para Link."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Quando assustado, o bando inteiro levanta voo.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Duck"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Pode ser abatido à distância; ao morrer, deixa uma Coxa.",
+      "conditions": ["Como fica na água e voa ao perceber Link, o abate costuma exigir ataque à distância; o jogo descreve o Arco de madeira como excelente para caçar animais pequenos."],
+      "produces": ["botw_material_raw_bird_drumstick"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Raw Bird Drumstick", "zw:Wooden Bow"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem ataques corpo a corpo contra o pato, que voa ao ser assustado."
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Vive na superfície da água, remando com os pés palmados e mergulhando a frente do corpo para comer.",
+      "kind": "curiosidade",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre reação a eletricidade."
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "Não há informação verificada sobre o uso de Estátis nele."
+    },
+    {
+      "action": "montar",
+      "status": "nao_aplicavel",
+      "result": "Ave pequena; não é montaria."
+    }
+  ],
+  "secrets": [],
+  "no_secrets_note": "Não tem mecânica especial conhecida: apesar de o compendium elogiar a carne gordurosa, o drop é a Coxa comum, a mesma de pombos silvestres, corvos e garças.",
+  "advanced_uses": [
+    "A Coxa vira Coxa assada se exposta ao fogo e Coxa congelada se exposta ao gelo."
+  ],
+  "limitations": [
+    "Rende só Coxa, a carne de ave que menos recupera corações crua (um coração)."
+  ],
+  "related": [
+    { "id": "botw_material_raw_bird_drumstick", "relation": "Carne deixada ao ser abatido" },
+    { "id": "botw_food_roasted_bird_drumstick", "relation": "Coxa exposta ao fogo" },
+    { "id": "botw_creature_blue_winged_heron", "relation": "Outra ave de beira d'água" }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

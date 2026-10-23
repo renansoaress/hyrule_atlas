@@ -1,0 +1,161 @@
+{
+  "id": "botw_material_electric_keese_wing",
+  "summary": "Asa do Morci elétrico, segura de manusear porque a eletricidade do monstro não fica nas asas. Acrescenta 1:50 aos elixires e é usada no 2º nível do Conjunto de escalada.",
+  "description": "A Asa de Morci elétrico vem dos Morcis carregados de eletricidade, mais comuns em Necluda Oriental, na Grande Nascente de Lanayru e no Deserto Gerudo. Enquanto o monstro vivo dá choques que atordoam Link e o fazem largar armas de metal, a asa é inofensiva: o próprio texto do jogo explica que a parte do Morci que produz eletricidade não fica nas asas, então ela \"não vai dar choque\".\n\nNa panela, acrescenta 1:50 à duração do elixir. Nas Grandes Fadas, o Conjunto de escalada pede 5 asas por peça (com 5 Lagartos fujões) no 2º nível. Na Tinturaria Kochi, entra no corante amarelo.",
+  "locations": [
+    "Necluda Oriental, Grande Nascente de Lanayru e Deserto Gerudo, onde os Morcis elétricos são mais comuns; ficam no teto de cavernas a qualquer hora e voam à noite."
+  ],
+  "obtaining": [
+    "Derrotar Morcis elétricos. Feitiçanos elétricos e do trovão também podem invocá-los."
+  ],
+  "uses": [
+    "Elixires: cozida com um bicho, acrescenta 1:50 à duração.",
+    "Melhoria de armadura: 5 por peça no 2º nível do Conjunto de escalada — 15 no total.",
+    "Corante amarelo na Tinturaria Kochi.",
+    "Venda: 6 rupias, ou 6 Mon na loja de Kilton."
+  ],
+  "effects": [
+    "Não tem efeito culinário próprio; nos elixires, só prolonga a duração do efeito do bicho usado."
+  ],
+  "interactions": [
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem nenhum efeito ao largar a Asa de Morci elétrico no chão."
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação ao golpear a Asa de Morci elétrico largada no chão. Nas fontes consultadas, explosão elemental ao ser golpeado só é descrita para as gelecas de Chulchul."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Asa de Morci elétrico queima, some ou se transforma em contato com o fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "Não há registro de efeito ao colocar a Asa de Morci elétrico numa fogueira. A transformação em comida assada descrita para fogueiras vale para materiais crus comestíveis, e as fontes não incluem partes de monstro nesse caso.",
+      "sources": [
+        "zw:Campfire"
+      ]
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem reação da Asa de Morci elétrico a gelo ou congelamento."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Não há fonte sobre o que acontece ao expor a Asa de Morci elétrico à eletricidade; o jogo só afirma que a asa em si não dá choque."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não dizem se a Asa de Morci elétrico flutua ou afunda quando largada na água."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só ergue objetos metálicos, e a Asa de Morci elétrico não é de metal.",
+      "sources": [
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada à Asa de Morci elétrico largada no chão."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Com pelo menos um bicho (inseto, lagarto, sapo ou fada) forma um elixir e acrescenta 1:50 à duração do efeito; sozinha ou só com alimentos comuns, o resultado é Comida duvidosa.",
+      "conditions": [
+        "Cozinhar numa panela, com pelo menos um bicho na receita para obter elixir.",
+        "Os bichos e materiais usados não podem ser de categorias de efeito diferentes, senão o resultado também é Comida duvidosa."
+      ],
+      "produces": [
+        "botw_food_dubious_food"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Elixir",
+        "zw:Dubious Food"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Cada unidade vale 6 rupias em lojas e comerciantes, ou 6 Mon na loja de Kilton (Fang and Bone).",
+      "sources": [
+        "zw",
+        "zw:Monster Part",
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "Por que a asa não dá choque",
+      "text": "O inventário explica que a eletricidade do Morci elétrico é produzida em outra parte do corpo, não nas asas — por isso a asa coletada pode ser manuseada sem risco.",
+      "sources": [
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "O tema elemental não define o elixir",
+      "text": "Apesar de vir de um monstro elétrico, a Asa de Morci elétrico não dá efeito próprio ao elixir. No sistema de BOTW, o efeito vem da categoria dos bichos (e de alguns outros materiais); a parte de monstro só entra com a duração. Cozida com um Lagarto fujão, por exemplo, ela resulta num Elixir veloz, sem nenhuma relação com eletricidade.",
+      "sources": [
+        "zw:Elixir",
+        "zw:Monster Part",
+        "zw:Lizard"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Ao enfrentar Morcis elétricos, guarde armas metálicas: o choque deles faz Link largar a arma. Flechas ou armas não metálicas evitam o problema enquanto você colhe as asas."
+  ],
+  "limitations": [
+    "Não gera eletricidade nem protege contra choques, segundo as fontes.",
+    "Cozida sem bichos, só produz Comida duvidosa."
+  ],
+  "related": [
+    {
+      "id": "botw_monster_electric_keese",
+      "relation": "Monstro que a deixa"
+    },
+    {
+      "id": "botw_armorset_climbing_set",
+      "relation": "Usa 5 por peça no 2º nível"
+    },
+    {
+      "id": "botw_creature_hightail_lizard",
+      "relation": "Acompanha a asa na mesma melhoria"
+    },
+    {
+      "id": "botw_material_keese_wing",
+      "relation": "Asa do nível anterior do Conjunto de escalada"
+    },
+    {
+      "id": "botw_monster_electric_wizzrobe",
+      "relation": "Pode invocar Morcis elétricos"
+    },
+    {
+      "id": "botw_mechanic_dye",
+      "relation": "Ingrediente do corante amarelo"
+    },
+    {
+      "id": "botw_food_dubious_food",
+      "relation": "Resultado de cozinhá-la sem bichos"
+    }
+  ],
+  "capabilities": [],
+  "verification_status": "verificado"
+}

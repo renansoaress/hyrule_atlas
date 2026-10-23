@@ -1,0 +1,140 @@
+{
+  "id": "botw_material_luminous_stone",
+  "summary": "Mineral que brilha em azul-claro no escuro, extraído dos depósitos luminosos abundantes perto do Domínio Zora. Ledo troca cada 10 por um Diamante, e é a moeda do Conjunto radiante no Clube Secreto Gerudo.",
+  "description": "A Pedra luminosa é um mineral misterioso que emite um brilho azul-claro no escuro — há quem acredite, diz o jogo, que esse brilho são as almas dos mortos. A descrição acrescenta que a pedra serve de base para \"roupas especiais\", e é exatamente o que acontece: cada peça do Conjunto radiante, vendida no Clube Secreto Gerudo, na Cidade Gerudo, custa 3 Pedras luminosas e 800 rupias, e todas as melhorias do conjunto também a exigem.\n\nEla sai dos Depósitos de pedra luminosa, que se reconhecem à noite pelo próprio brilho e são mais numerosos ao redor do Domínio Zora, na Grande Nascente de Lanayru, e dos Tálus rochosos (luminosos). Os depósitos são fáceis de explorar, mas só voltam depois de uma Lua de sangue. Seu maior trunfo é Ledo: na missão \"Luminous Stone Gathering\", ele pede 10 pedras para os reparos do Domínio Zora e paga 2 Diamantes; depois, troca cada novo lote de 10 por 1 Diamante. Em rupias a troca não compensa (10 pedras valem 700 numa loja, um Diamante vale 500), mas é a fonte mais previsível de Diamantes do jogo.",
+  "locations": [
+    "Depósitos de pedra luminosa em Toda Hyrule, sobretudo ao redor do Domínio Zora, na Grande Nascente de Lanayru (Upland Zorana é citada por Ledo como local abundante).",
+    "Tálus rochosos (luminosos), que têm um depósito luminoso no corpo."
+  ],
+  "obtaining": [
+    "Quebrar Depósitos de pedra luminosa com armas ou Bomba remota; eles também podem soltar Sílex (às vezes só um dos dois).",
+    "Derrotar Tálus rochosos (luminosos).",
+    "Os depósitos destruídos só reaparecem depois de uma Lua de sangue."
+  ],
+  "uses": [
+    "Comprar as peças do Conjunto radiante no Clube Secreto Gerudo: 3 Pedras luminosas e 800 rupias por peça.",
+    "Melhorias na Fonte da Grande Fada: Máscara, Camisa e Meia-calça radiantes pedem 5, 8, 10 e 20 por nível (129 no total para o conjunto).",
+    "Missão secundária \"Luminous Stone Gathering\": 10 pedras para Ledo rendem 2 Diamantes; depois, cada lote de 10 vale 1 Diamante.",
+    "Ingrediente do corante azul-marinho na Tinturaria Kochi.",
+    "Venda: 70 rupias."
+  ],
+  "effects": [
+    "Nenhum efeito ao ser carregada; o Conjunto radiante feito com ela atrai monstros Stal."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "variant": "troca com Ledo",
+      "status": "confirmado",
+      "result": "Entregar 10 Pedras luminosas a Ledo, no Domínio Zora, rende 2 Diamantes na primeira vez e 1 Diamante em cada troca seguinte.",
+      "conditions": ["Ter falado com o rei Dorephan antes de abordar Ledo.", "Lotes exatos de 10 pedras."],
+      "side_effects": ["Se a algibeira já tiver 999 Diamantes, Ledo guarda a recompensa até haver espaço."],
+      "kind": "mecanica",
+      "sources": ["zw:Luminous Stone Gathering", "zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "Conjunto radiante",
+      "status": "confirmado",
+      "result": "Faz parte do preço de cada peça do Conjunto radiante no Clube Secreto Gerudo (3 pedras e 800 rupias) e de todas as quatro melhorias do conjunto.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "largar",
+      "status": "confirmado",
+      "result": "Como qualquer material, pode ser segurada e largada no chão; as fontes não descrevem uso especial da pedra solta.",
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o efeito de golpear uma Pedra luminosa largada (golpear o depósito, sim, gera faíscas)."
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Pedra luminosa ao fogo."
+    },
+    {
+      "action": "fogueira",
+      "status": "desconhecido",
+      "result": "As fontes não dizem o que acontece com uma Pedra luminosa largada numa fogueira."
+    },
+    {
+      "action": "gelo",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Pedra luminosa ao gelo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "Nenhuma fonte descreve reação da Pedra luminosa à eletricidade."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não informam se a Pedra luminosa afunda ou flutua."
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só levanta objetos metálicos; a Pedra luminosa é um mineral não metálico.",
+      "sources": ["zw:Magnesis"]
+    },
+    {
+      "action": "estatis",
+      "status": "desconhecido",
+      "result": "As fontes não informam se Estátis pode ser aplicada a uma Pedra luminosa largada."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Qualquer receita com Pedra luminosa vira Comida dura como pedra (1/4 de coração, sem efeito).",
+      "produces": ["botw_food_rock_hard_food"],
+      "kind": "mecanica",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Rock-Hard Food"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendida por 70 rupias.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Depósitos que se acendem à noite",
+      "text": "Os Depósitos de pedra luminosa são identificados pelo brilho durante a noite, o que facilita encontrá-los de longe. Golpeá-los com arma que não seja de madeira ou com flecha gera faíscas capazes de iniciar fogo, quebrados ou não.",
+      "sources": ["zw:Luminous Stone Deposit"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Almas dos mortos",
+      "text": "A descrição do jogo diz que algumas pessoas acreditam que o brilho azul-claro da pedra seja a alma dos mortos — uma ponte temática com as \"roupas especiais\" do Conjunto radiante, feitas com ela.",
+      "sources": ["jogo", "zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Para quem precisa de Diamantes (Tiara de diamante, armas dos Campeões), farmar depósitos luminosos ao redor do Domínio Zora após cada Lua de sangue e trocar com Ledo é a fonte mais previsível.",
+    "O Conjunto radiante completo, até o nível máximo, consome 138 Pedras luminosas (9 nas compras e 129 nas melhorias)."
+  ],
+  "limitations": [
+    "Vender 10 pedras rende 700 rupias, mais que o valor de venda do Diamante obtido com Ledo (500): a troca só vale a pena se você precisar do Diamante.",
+    "Estraga qualquer receita (Comida dura como pedra)."
+  ],
+  "related": [
+    { "id": "botw_treasure_luminous_ore_deposit", "relation": "Depósito que fornece a pedra" },
+    { "id": "botw_monster_stone_talus_luminous", "relation": "Tálus com depósito luminoso no corpo" },
+    { "id": "botw_material_diamond", "relation": "Obtido trocando 10 pedras com Ledo" },
+    { "id": "botw_armorset_radiant_set", "relation": "Conjunto comprado e melhorado com a pedra" },
+    { "id": "botw_armor_radiant_mask", "relation": "Peça do Conjunto radiante (3 pedras na compra)" },
+    { "id": "botw_material_flint", "relation": "Também cai dos depósitos luminosos" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado de cozinhar com a pedra" },
+    { "id": "botw_mechanic_dye", "relation": "Ingrediente do corante azul-marinho" }
+  ],
+  "capabilities": ["item_de_missao"],
+  "verification_status": "verificado"
+}

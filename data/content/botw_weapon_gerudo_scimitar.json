@@ -1,0 +1,176 @@
+{
+  "id": "botw_weapon_gerudo_scimitar",
+  "summary": "Cimitarra curta e curva que as mulheres Gerudo carregam para se defender, comum no Deserto Gerudo. Além de boa espada metálica, é ingrediente obrigatório para Buliara refazer a Cimitarra das sete.",
+  "description": "A Cimitarra Gerudo é a espada típica do equipamento Gerudo (Gerudo Gear), reconhecível pela lâmina curta e curva. É carregada pelas mulheres Gerudo, especialmente as viajantes que cruzam o deserto, quase sempre acompanhada do Escudo Gerudo. Aparece com frequência no Deserto Gerudo — sobretudo perto da Cidade Gerudo e do Bazar Kara Kara (Kara Kara Bazaar) — e nas Montanhas Gerudo; também pode ser encontrada dentro da Cidade Gerudo e nas mãos de inimigos do deserto, como os Lagalfos elétricos.\n\nTem uma utilidade especial: se a Cimitarra das sete, arma de Urbosa, for perdida, Buliara a refaz em troca de um Diamante, cinco Sílex e uma Cimitarra Gerudo. Por ser de metal, atrai raios em tempestades, conduz eletricidade, afunda na água e pode ser manipulada com Magnétis, mas não queima no fogo nem em clima escaldante.",
+  "locations": [
+    "Deserto Gerudo (principalmente perto da Cidade Gerudo e do Bazar Kara Kara) e Montanhas Gerudo.",
+    "Dentro da Cidade Gerudo."
+  ],
+  "obtaining": [
+    "Recolher na Cidade Gerudo ou derrotar inimigos do deserto que a empunham, como Lagalfos elétricos.",
+    "Pode aparecer nos baús gerados ao escanear o amiibo de Urbosa (série Breath of the Wild) com a runa amiibo.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Material para refazer a Cimitarra das sete com Buliara (1 Diamante, 5 Sílex e 1 Cimitarra Gerudo).",
+    "Espada de uma mão de nível intermediário (ataque 16, durabilidade 23).",
+    "Lâmina: corta árvores; como arma metálica, também serve para golpear sílex."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Arma de uma mão de velocidade média, com ataque giratório carregado e uso junto do escudo. Por ter lâmina, corta árvores.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é crítico (dano dobrado).",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não queima no fogo nem em clima escaldante.",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a arma voa para o chão.",
+      "side_effects": [
+        "Arriscada contra os Lagalfos elétricos do deserto, que geram campos elétricos com os chifres."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm",
+        "zw:Weapon",
+        "zw:Lizalfos"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade, atrai raios para Link.",
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser erguida e manipulada com Magnétis.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "dm"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos do Deserto Gerudo, como os Lagalfos elétricos, podem empunhar a cimitarra.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Chave para recuperar a Cimitarra das sete",
+      "text": "Buliara refaz a Cimitarra das sete se ela for perdida: basta levar um Diamante, cinco Sílex e uma Cimitarra Gerudo. Por isso vale guardar sempre uma Cimitarra Gerudo na algibeira depois de receber a arma de Urbosa.",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a cimitarra pode surgir com bônus de ataque de +3 a +5 (nível comum) ou +6 a +8 (nível dourado), bônus de durabilidade de +3 a +5 (ou +6 a +12 no nível dourado) e lançamento longo de 1,5× a 2×. Pode receber o bônus de acerto crítico, que faz o último golpe de uma sequência causar dano dobrado — mas esse bônus só surge aleatoriamente enquanto o sistema oculto de pontos, baseado nos inimigos derrotados, não passa de certo limite.",
+      "sources": [
+        "dm",
+        "zw:Permanently Missable Items",
+        "zw:Critical Hit"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "Manter uma cimitarra de reserva para o caso de a Cimitarra das sete quebrar."
+  ],
+  "limitations": [
+    "Metálica: perigosa em tempestades e contra os Lagalfos elétricos comuns no deserto.",
+    "Afunda se cair na água."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_scimitar_of_the_seven",
+      "relation": "Necessária para que Buliara a refaça"
+    },
+    {
+      "id": "botw_shield_gerudo_shield",
+      "relation": "Mesmo arquétipo; costuma acompanhar a cimitarra"
+    },
+    {
+      "id": "botw_weapon_gerudo_spear",
+      "relation": "Mesmo arquétipo (lança)"
+    },
+    {
+      "id": "botw_material_diamond",
+      "relation": "Material para refazer a Cimitarra das sete"
+    },
+    {
+      "id": "botw_material_flint",
+      "relation": "Material para refazer a Cimitarra das sete (5)"
+    },
+    {
+      "id": "botw_monster_electric_lizalfos",
+      "relation": "Pode empunhar a cimitarra no deserto"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel",
+    "item_de_missao"
+  ],
+  "verification_status": "verificado"
+}

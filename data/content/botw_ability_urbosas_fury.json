@@ -1,0 +1,97 @@
+{
+  "id": "botw_ability_urbosas_fury",
+  "summary": "Bênção de Urbosa disparada por um ataque giratório carregado por cerca de 2 s: uma cúpula de raios causa 150 de dano a todos os inimigos ao redor e atordoa quem sobrevive. 3 usos a cada 12 min (4 min na versão +).",
+  "description": "A Fúria de Urbosa é o poder deixado pelo espírito da Campeã gerudo. Link a recebe depois de derrotar a Ira fulmínea de Ganon e acalmar a Fera Divina Vah Naboris. Para usá-la, Link carrega um ataque giratório com qualquer arma (segurando Y) por cerca de dois segundos — com a maioria das armas, quando o som de carga toca duas vezes — e solta: em vez do giro comum, uma grande semiesfera verde de raios cobre a área e causa dano elétrico a todos os inimigos dentro dela. Os que sobrevivem ficam atordoados. Criaturas (animais) não são afetadas.\n\nSão três usos por recarga, que leva 12 minutos em tempo real (4 minutos dentro do Castelo de Hyrule). Como as outras bênçãos, pode ser desativada no menu de itens-chave.\n\nA versão Fúria de Urbosa +, da DLC The Champions' Ballad, vem da missão \"EX Champion Urbosa's Song\" e reduz a recarga para 4 minutos (1 minuto e 20 segundos no castelo).",
+  "locations": [
+    "Fera Divina Vah Naboris (versão normal).",
+    "Monumento em East Gerudo Mesa, a sudeste de Vah Naboris, onde começa a missão da versão + (DLC)."
+  ],
+  "obtaining": [
+    "Derrotar a Ira fulmínea de Ganon e acalmar a Fera Divina Vah Naboris; o espírito de Urbosa entrega a bênção.",
+    "Fúria de Urbosa + (DLC The Champions' Ballad): concluir \"EX Champion Urbosa's Song\" — derrotar o Molduga-rei em East Barrens (santuário Keive Tala), passar pelos anéis luminosos puxado por uma Morsareia em West Barrens (Takama Shiri) e levar uma Orbe sagrada do Esconderijo do Clã Yiga até o abismo do lado de fora (Kihiro Moh), reunir os três Emblemas de Naboris e vencer o fantasma da Ira fulmínea no Reino Ilusório."
+  ],
+  "uses": [
+    "Limpar grupos de inimigos de uma vez.",
+    "Atordoar inimigos fortes para atacá-los em seguida.",
+    "Atingir Octorocs aquáticos mesmo quando estão escondidos sob a água."
+  ],
+  "effects": [
+    "150 de dano elétrico em área a todos os inimigos dentro da cúpula; os sobreviventes ficam atordoados.",
+    "3 usos por recarga. Recarga: 12 min reais (4 min no Castelo de Hyrule). Versão +: 4 min (1 min 20 s no castelo)."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Carregar o ataque giratório por cerca de 2 segundos e soltar dispara a cúpula de raios no lugar do giro normal.",
+      "conditions": ["Ter uma arma de combate corpo a corpo equipada; bênção ativada e com cargas."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Spin Attack"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "O dano é elétrico e atordoa os inimigos que sobrevivem.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Thunderblight Ganon"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Atinge todos os inimigos na área. Funciona até contra Centaleões, que resistem a todos os outros ataques elementais, e contra Octorocs aquáticos submersos; serve também para danificar o depósito de minério dos Tálus e o próprio Ganon, Besta Sombria. O Mestre Kohga é o único inimigo imune.",
+      "kind": "mecanica",
+      "sources": ["zw:Lynel", "zw:Water Octorok", "zw:Frost Talus", "zw:Dark Beast Ganon", "zw:Master Kohga"]
+    },
+    {
+      "action": "usar",
+      "variant": "contra criaturas (animais)",
+      "status": "sem_efeito",
+      "result": "Animais e outras criaturas não são afetados pela Fúria de Urbosa.",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Exceção à resistência dos Centaleões",
+      "text": "Todos os Centaleões resistem a ataques elementais e aos seus efeitos; a Fúria de Urbosa é a única exceção a essa regra.",
+      "sources": ["zw:Lynel"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Um estalar de dedos",
+      "text": "Na sexta memória recuperada, \"Urbosa's Hand\", Urbosa estala os dedos e cria um raio para acordar Zelda, que dormia em seus braços. Na memória \"Champion Urbosa's Song\", da DLC, ela usa o poder contra Soldados Yiga.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Tempo de carga fixo",
+      "text": "Qualquer que seja a arma, a carga leva cerca de dois segundos; com a maioria delas, o sinal é ouvir o som de carga do ataque giratório duas vezes.",
+      "sources": ["zw"]
+    }
+  ],
+  "advanced_uses": [
+    "Guardar as cargas para acampamentos grandes ou para abrir a guarda de um Centaleão antes de um combo.",
+    "Usar contra Octorocs aquáticos mesmo quando estão escondidos sob a água."
+  ],
+  "limitations": [
+    "Exige carregar o ataque giratório por cerca de 2 segundos, o que deixa Link exposto.",
+    "Só três usos por recarga.",
+    "O Mestre Kohga é imune."
+  ],
+  "related": [
+    { "id": "botw_monster_thunderblight_ganon", "relation": "Derrotá-la libera a bênção" },
+    { "id": "botw_keyitem_naboriss_emblem", "relation": "Três emblemas abrem o desafio da versão +" },
+    { "id": "botw_monster_lynel", "relation": "Afetado apesar da resistência elemental" },
+    { "id": "botw_monster_water_octorok", "relation": "Atingido mesmo submerso" },
+    { "id": "botw_monster_master_kohga", "relation": "Único inimigo imune" },
+    { "id": "botw_monster_molduking", "relation": "Provação da versão +" },
+    { "id": "botw_monster_dark_beast_ganon", "relation": "Pode ser ferido pela bênção" },
+    { "id": "botw_weapon_scimitar_of_the_seven", "relation": "Arma de Urbosa" },
+    { "id": "botw_ability_miphas_grace", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_revalis_gale", "relation": "Outra bênção dos Campeões" },
+    { "id": "botw_ability_daruks_protection", "relation": "Outra bênção dos Campeões" }
+  ],
+  "capabilities": ["gera_eletricidade", "eletrocuta_inimigos", "habilidade_especial"],
+  "verification_status": "verificado"
+}

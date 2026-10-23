@@ -1,0 +1,143 @@
+{
+  "id": "botw_creature_hearty_blueshell_snail",
+  "summary": "Caramujo de concha azul que vive em grande número nas praias de areia dos mares de Lanayru e Necluda. Cozido, dá Corações extras; é obrigatório na Paella de frutos do mar e no Creme de mariscos.",
+  "description": "O Caramujo nutritivo vive em grande número nas praias de areia do Mar de Lanayru e do Mar de Necluda. Segundo o jogo, a carne dele tem grande quantidade de estimulantes, e por isso os pratos preparados com ele aumentam temporariamente o máximo de corações (efeito Corações extras). Também é vendido pelo mercador ambulante Chumin.\n\nNa panela, é o ingrediente obrigatório do Creme de mariscos e da Paella de frutos do mar, e pode substituir o pargo no Curry de frutos do mar e no Arroz frito com frutos do mar. Também serve para o Peixe grelhado no sal, o Espetinho de frutos do mar e as receitas gerais de fruto do mar, e pode reforçar um Elixir nutritivo. No fogo, a concha funciona como uma pequena panela e ele vira Escargô nutritivo; no gelo, Caramujo nutritivo congelado.\n\nO Zelda Wiki informa que, cru, ele recupera 3 corações — valor coerente com o Escargô nutritivo (4,5 corações, 50% a mais). A API do Hyrule Compendium, porém, registra apenas 1 coração, então o valor exato precisa de confirmação.\n\nNa Missão secundária \"What's for Dinner?\", em Vila Lurelin, Kiana pede a Link um Caramujo nutritivo e Manteiga de cabra para preparar a Paella de frutos do mar da família.",
+  "locations": [
+    "Praias de areia do Mar de Lanayru e do Mar de Necluda, em grande número."
+  ],
+  "obtaining": [
+    "Pegar à mão nas praias.",
+    "Comprar do mercador ambulante Chumin por 60 rupias (3 em estoque, renovável)."
+  ],
+  "uses": [
+    "Ingrediente obrigatório do Creme de mariscos e da Paella de frutos do mar.",
+    "Alternativa ao pargo no Curry de frutos do mar (Tempero Goron + Arroz hyliano) e no Arroz frito com frutos do mar (Arroz hyliano + Halita).",
+    "Peixe grelhado no sal (com Halita), Espetinho de frutos do mar e receitas gerais de fruto do mar.",
+    "Ingrediente nutritivo de um Elixir nutritivo.",
+    "Missão secundária \"What's for Dinner?\" (Kiana, em Vila Lurelin).",
+    "Venda: 15 rupias."
+  ],
+  "effects": [
+    "Cru: recupera corações (3 segundo o Zelda Wiki; 1 segundo a API do compendium).",
+    "Na panela: Corações extras temporários."
+  ],
+  "interactions": [
+    {
+      "action": "aproximar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem como o caramujo reage à aproximação de Link; apenas indicam que ele vive em grande número nas praias de areia."
+    },
+    {
+      "action": "largar",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem o que acontece com um caramujo vivo largado da algibeira."
+    },
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Pratos com Caramujo nutritivo dão Corações extras. É obrigatório no Creme de mariscos e na Paella de frutos do mar e substitui o pargo no Curry e no Arroz frito com frutos do mar.",
+      "produces": ["botw_food_clam_chowder", "botw_food_seafood_paella", "botw_food_seafood_curry", "botw_food_seafood_fried_rice", "botw_food_salt_grilled_fish", "botw_food_seafood_skewer"],
+      "kind": "mecanica",
+      "sources": ["zw", "comp"]
+    },
+    {
+      "action": "cozinhar",
+      "variant": "em elixir",
+      "status": "confirmado",
+      "result": "Somado a um Elixir nutritivo (Lagarto nutritivo + parte de monstro), aumenta os corações temporários do elixir.",
+      "produces": ["botw_elixir_hearty_elixir"],
+      "kind": "mecanica",
+      "sources": ["zw:Hearty Elixir"]
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Pode ser comido cru. O Zelda Wiki indica 3 corações; a API do compendium registra 1 — valor em conflito.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Materials in Breath of the Wild", "comp"]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Vendido por 15 rupias; Chumin cobra 60.",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Exposto ao fogo, vira Escargô nutritivo, assado dentro da própria concha; recupera 4,5 corações, sem efeitos.",
+      "produces": ["botw_food_blueshell_escargot"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Roasted Food"]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Largado perto do fogo, vira Escargô nutritivo.",
+      "produces": ["botw_food_blueshell_escargot"],
+      "kind": "mecanica",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Largado no chão em clima abrasador, vira Escargô nutritivo.",
+      "produces": ["botw_food_blueshell_escargot"],
+      "kind": "mecanica",
+      "sources": ["zw:Scorching Climate", "zw:Roasted Food"]
+    },
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Congelado pelo gelo, vira Caramujo nutritivo congelado, que dá Resistência ao calor temporária.",
+      "produces": ["botw_food_icy_hearty_blueshell_snail"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Frozen Food"]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "confirmado",
+      "result": "Largado em clima gélido ou água gelada, vira Caramujo nutritivo congelado.",
+      "produces": ["botw_food_icy_hearty_blueshell_snail"],
+      "kind": "mecanica",
+      "sources": ["zw:Frozen Food"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não descrevem o efeito de eletricidade sobre este caramujo."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "curiosidade",
+      "title": "A concha como panela",
+      "text": "A descrição do Escargô nutritivo diz que a concha do caramujo funcionou como uma pequena panela de cozimento lento enquanto ele assava, e que há quem adore o amargor característico da carne da cauda.",
+      "sources": ["zw:Roasted Food"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O jantar de Kiana",
+      "text": "Em \"What's for Dinner?\", Kiana, de uma família de pescadores de Vila Lurelin, pede um Caramujo nutritivo e Manteiga de cabra. Ao recebê-los, paga uma Rupia roxa e divide com Link a Paella de frutos do mar — pedindo que ele abra espaço na algibeira se estiver cheia.",
+      "sources": ["zw", "zw:What's for Dinner?"]
+    }
+  ],
+  "advanced_uses": [
+    "Para a Paella de frutos do mar, leve o caramujo junto de um pargo, Arroz hyliano, Manteiga de cabra e Halita: são os cinco ingredientes da receita de Kiana."
+  ],
+  "limitations": [
+    "Assado ou congelado, perde o efeito de Corações extras.",
+    "O número de corações recuperados cru diverge entre as fontes (3 no Zelda Wiki, 1 na API do compendium)."
+  ],
+  "related": [
+    { "id": "botw_food_seafood_paella", "relation": "Receita que o exige" },
+    { "id": "botw_food_clam_chowder", "relation": "Receita que o exige" },
+    { "id": "botw_food_blueshell_escargot", "relation": "Resultado de expô-lo ao fogo" },
+    { "id": "botw_food_icy_hearty_blueshell_snail", "relation": "Resultado de congelá-lo" },
+    { "id": "botw_elixir_hearty_elixir", "relation": "Pode ser somado como ingrediente nutritivo" },
+    { "id": "botw_creature_sneaky_river_snail", "relation": "O outro caramujo, de água doce" },
+    { "id": "botw_material_goat_butter", "relation": "Pedido junto com o caramujo por Kiana" }
+  ],
+  "capabilities": ["cura", "reage_fogo", "reage_gelo", "item_de_missao"],
+  "verification_status": "a_verificar"
+}

@@ -1,0 +1,217 @@
+{
+  "id": "botw_weapon_wooden_mop",
+  "summary": "Esfregão doméstico de construção caprichada, com algum valor em combate (ataque 5, durabilidade 8, a menor entre as lanças). Kilton vende um por 19 Mon; é de madeira.",
+  "description": "Aos olhos leigos, o Esfregão de madeira é só um utensílio de limpeza, mas, segundo o jogo, deve a construção robusta a um verdadeiro artesão e por isso tem algum valor em combate. Faz parte dos utensílios de uso diário de Hyrule, com a Tocha, a Concha de madeira, a Enxada e o Remo, e aparece em vilarejos como Hateno e em ruínas da Necluda Oriental e da Pradaria de Hyrule.\n\nKilton também vende um exemplar por 19 Mon na loja Fang and Bone, que funciona à noite perto dos principais povoados. Por ser de madeira, flutua, pega fogo, não conduz eletricidade, não atrai raios e não pode ser movido com Magnétis. Com 8 de durabilidade, é a lança que menos aguenta golpes — e, segundo o Zelda Wiki, só aparece com bônus brancos.",
+  "locations": [
+    "Vilarejos como Hateno e ruínas da Necluda Oriental e da Pradaria de Hyrule.",
+    "Loja Fang and Bone, de Kilton."
+  ],
+  "obtaining": [
+    "Recolher nos vilarejos e ruínas dessas regiões.",
+    "Comprar de Kilton, na Fang and Bone, por 19 Mon (1 unidade em estoque). A loja abre das 21h às 5h perto dos principais povoados, exceto a Cidade Goron, depois do primeiro encontro com Kilton.",
+    "A Lua de sangue repõe as armas largadas pelo mundo."
+  ],
+  "uses": [
+    "Arma improvisada de madeira para o começo do jogo.",
+    "Pode ser aceso para espalhar fogo ou acender fogueiras."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Com só 8 golpes de durabilidade, o arremesso crítico é um bom destino para ele."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Pega fogo quando exposta a chamas; acesa, pode ser empunhada para espalhar o fogo.",
+      "conditions": [
+        "Encostar a lança numa fogueira, numa tocha acesa ou em outra fonte de fogo."
+      ],
+      "side_effects": [
+        "Cuidado com grama seca e com o próprio Link: o fogo se espalha de objeto em objeto.",
+        "As fontes não dizem por quanto tempo uma lança acesa dura fora das regiões escaldantes, onde a madeira queima até sumir."
+      ],
+      "applications": [
+        "Incendiar grama: o fogo espalhado gera correntes de ar quente que levantam Link com o Planador.",
+        "Golpear inimigos com a lança em chamas para queimá-los — a mesma tática que os Koboblins usam contra Link."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon",
+        "zw:Fire",
+        "zw:Bokoblin"
+      ]
+    },
+    {
+      "action": "fogueira",
+      "status": "confirmado",
+      "result": "Encostada numa fogueira, pega fogo; acesa, também serve para acender um feixe de Madeira e criar uma nova fogueira.",
+      "applications": [
+        "Acender fogueiras para cozinhar sem precisar de Sílex."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Wood",
+        "zw:Fire",
+        "dm"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "confirmado",
+      "result": "Equipada nas áreas escaldantes de Eldin (Cânion de Eldin e Montanha da Morte), pega fogo sozinha e acaba virando cinzas.",
+      "side_effects": [
+        "A lança é perdida."
+      ],
+      "applications": [
+        "Trocar por uma arma de metal antes de entrar nas zonas de calor de Eldin."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Scorching Climate",
+        "zw:Fire"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não conduz eletricidade, por ser de madeira.",
+      "side_effects": [
+        "Ainda assim, se Link for eletrocutado com ela na mão, a lança voa para o chão — isso vale para quase todas as armas."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: pode ficar equipada durante tempestades.",
+      "side_effects": [
+        "Escudos e arcos de metal equipados continuam atraindo raios."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Thunderstorm"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Flutua na água, por ser de madeira.",
+      "applications": [
+        "Pode ser recolhida na superfície, o que compensa o fato de Magnétis não alcançá-la."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Magnétis só move objetos metálicos, e esta lança é de madeira.",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes consultadas não citam monstros que empunhem o Esfregão de madeira."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus aleatórios",
+      "text": "Os parâmetros extraídos do jogo preveem bônus brancos (ataque +2 a +4, durabilidade +1 a +2 ou acerto crítico) e também faixas amarelas (ataque +5, durabilidade +3 a +4, arremesso longo de 1,5× a 2×). Na prática, porém, o Zelda Wiki registra que o Esfregão de madeira só aparece com bônus brancos, nunca amarelos.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Utensílio à venda numa loja de monstros",
+      "text": "A Fang and Bone, de Kilton, é especializada em artigos de monstros e cobra em Mon, a moeda obtida trocando partes de monstro; ainda assim, um dos itens da loja é o humilde Esfregão de madeira.",
+      "sources": [
+        "zw:Fang and Bone"
+      ]
+    }
+  ],
+  "limitations": [
+    "Durabilidade mínima (8), a menor entre as lanças.",
+    "Queima e vira cinzas se equipado nas áreas escaldantes de Eldin."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_soup_ladle",
+      "relation": "Outro utensílio de uso diário"
+    },
+    {
+      "id": "botw_weapon_farming_hoe",
+      "relation": "Outro utensílio de uso diário"
+    },
+    {
+      "id": "botw_weapon_boat_oar",
+      "relation": "Outro utensílio de uso diário"
+    },
+    {
+      "id": "botw_weapon_torch",
+      "relation": "Outro utensílio de uso diário"
+    },
+    {
+      "id": "botw_weapon_farmers_pitchfork",
+      "relation": "Outra ferramenta usada como lança"
+    }
+  ],
+  "capabilities": [
+    "inflamavel",
+    "flutua",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

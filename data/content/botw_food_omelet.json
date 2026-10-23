@@ -1,0 +1,111 @@
+{
+  "id": "botw_food_omelet",
+  "summary": "Prato comum em toda Hyrule: basta um Ovo na panela. Com quatro espaços livres, ganha o efeito de cogumelos, legumes ou frutas somados; carne ou peixe levam a outra receita.",
+  "description": "A Omelete é a receita mais simples com ovo: um único Ovo cozido na Panela já basta, e o inventário a descreve como um prato comum em toda Hyrule, em que é só fritar o ovo até ficar fofinho. Sem outros ingredientes, apenas recupera corações. Como sobram quatro espaços, ela é uma boa \"base\" para somar ingredientes de efeito: um ingrediente \"refrescante\" dá Resistência ao calor, um \"picante\" Resistência ao frio, um \"nutritivo\" cura tudo e dá Corações extras, e assim por diante.\n\nA Omelete fica quase no fim da ordem em que o jogo testa as receitas, então o que se junta ao ovo pode mudar o prato. Arroz faz Ovo frito com arroz; cogumelo com Manteiga de cabra e Halita faz Omelete de cogumelos; e carne, peixe ou caranguejo têm receitas de espetinho testadas antes da Omelete, de modo que o ovo acaba num Espetinho de carne, de peixe ou de frutos do mar. Já um único tipo de cogumelo, legume ou fruta (mesmo repetido) mantém a Omelete; dois tipos diferentes podem formar outra receita, como Espetinho de cogumelos, Compota de frutas ou Cogumelos no vapor.",
+  "obtaining": [
+    "Cozinhar um Ovo numa Panela, sozinho ou com até quatro ingredientes que não formem outra receita."
+  ],
+  "uses": [
+    "Cura rápida com um único ingrediente.",
+    "Base para pratos de efeito com cogumelos, legumes ou frutas.",
+    "Venda a comerciantes."
+  ],
+  "effects": [
+    "Recupera corações (a quantidade depende dos ingredientes).",
+    "Com ingredientes de efeito, ganha a versão correspondente: Resistência ao calor (ingrediente \"refrescante\"), Resistência ao frio (\"picante\"), Resistência a choques (\"isolante\"), Recuperação de vigor (\"energizante\"), Vigor extra (\"tenaz\"), Velocidade aumentada (\"veloz\"), cura total com Corações extras (\"nutritivo\"), Ataque aumentado (\"valente\"), Defesa aumentada (\"blindado\") ou Furtividade aumentada (\"discreto\")."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera corações; nas variantes, aplica o efeito dos ingredientes adicionados.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "carne, peixe ou caranguejo",
+      "status": "confirmado",
+      "result": "O ovo junto de carne, peixe ou caranguejo vira espetinho, porque Espetinho de carne, Espetinho de peixe e Espetinho de frutos do mar são testados antes da Omelete.",
+      "produces": [
+        "botw_food_meat_skewer",
+        "botw_food_fish_skewer",
+        "botw_food_seafood_skewer"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "misturar",
+      "variant": "arroz ou cogumelo com manteiga e halita",
+      "status": "confirmado",
+      "result": "Ovo com Arroz hyliano resulta em Ovo frito com arroz; ovo com cogumelo, Manteiga de cabra e Halita resulta em Omelete de cogumelos (com legume no lugar do cogumelo, Omelete de legumes).",
+      "produces": [
+        "botw_food_fried_egg_and_rice",
+        "botw_food_mushroom_omelet",
+        "botw_food_vegetable_omelet"
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes por um preço que depende dos ingredientes: soma-se o valor de venda de cada um e multiplica-se por um fator ligado à quantidade de ingredientes, arredondando para cima até a dezena.",
+      "conditions": [
+        "Com um único ingrediente o fator é 1,5×; cada ingrediente a mais o eleva (até 2,8× com cinco)."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "O ovo favorece o crítico",
+      "text": "O Ovo dá 10% de chance extra de bônus crítico, somados aos 5% por ingrediente diferente na panela. Mesmo uma omelete simples tem, assim, uma chance razoável de sair com 3 corações a mais.",
+      "sources": [
+        "zw:Cooking in Breath of the Wild"
+      ]
+    }
+  ],
+  "limitations": [
+    "Carne, peixe, caranguejo ou arroz mudam a receita."
+  ],
+  "related": [
+    {
+      "id": "botw_material_bird_egg",
+      "relation": "Único ingrediente obrigatório"
+    },
+    {
+      "id": "botw_food_mushroom_omelet",
+      "relation": "Omelete com cogumelo, manteiga e halita"
+    },
+    {
+      "id": "botw_food_vegetable_omelet",
+      "relation": "Omelete com legume, manteiga e halita"
+    },
+    {
+      "id": "botw_food_fried_egg_and_rice",
+      "relation": "Resultado ao juntar arroz"
+    },
+    {
+      "id": "botw_food_campfire_egg",
+      "relation": "Ovo assado na fogueira, sem panela"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

@@ -1,0 +1,148 @@
+{
+  "id": "botw_armor_fierce_deity_armor",
+  "summary": "Armadura do herói de um mundo onde a lua ameaçava cair, obtida só pelo amiibo de Link (Majora's Mask). Aumenta o ataque e não pode ser tingida; melhorias pedem partes de Naydra.",
+  "description": "A Armadura da Deidade Feroz é a peça de torso do Conjunto da Deidade Feroz, com a Máscara da Deidade Feroz e as Botas da Deidade Feroz, e imita a armadura de Link na forma de Deidade Feroz em Majora's Mask. Ela só sai de baús que surgem ao ler o amiibo de Link no estilo Majora's Mask com a runa amiibo, com pequena chance a cada leitura. A descrição diz que vesti-la faz sentir \"um poder feroz, divino\".\n\nConcede um nível de Ataque aumentado (+20%). Com as três peças em ★★, o conjunto dá o Ataque carregado econômico, que reduz pela metade o vigor dos ataques carregados. A defesa vai de 3 a 20; as melhorias combinam partes de Rinox com partes de Naydra (escama, garra, lasca da presa e lasca do chifre) e, no último nível, Vísceras de Centaleão — as partes do dragão de gelo são o gargalo. Pode ser melhorada por Grandes Fadas, mas não pode ser tingida na Tinturaria Kochi.",
+  "locations": [
+    "Não fica no mapa: surge de um baú invocado pela runa amiibo."
+  ],
+  "obtaining": [
+    "Ler o amiibo de Link (série The Legend of Zelda, estilo Majora's Mask) com a runa amiibo; o baú que aparece tem pequena chance de conter a armadura."
+  ],
+  "uses": [
+    "Aumentar o dano de qualquer arma.",
+    "Completar o Conjunto da Deidade Feroz."
+  ],
+  "effects": [
+    "Ataque aumentado, nível 1 (+20%).",
+    "Bônus de conjunto (três peças em ★★): ataques carregados custam 50% menos vigor."
+  ],
+  "interactions": [
+    {
+      "action": "equipar",
+      "status": "confirmado",
+      "result": "Concede um nível de Ataque aumentado (+20%; até +50% no nível 3, o teto). Com a Máscara da Deidade Feroz, a Armadura da Deidade Feroz e as Botas da Deidade Feroz vestidas, todas em ★★, ativa o Ataque carregado econômico (Charge Atk. Stamina Up): ataques carregados gastam 50% menos vigor.",
+      "conditions": [
+        "Para o bônus de conjunto: as três peças em pelo menos ★★."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Added Effect",
+        "zw:Set Bonus"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não oferece proteção contra chamas: fogo e ataques de fogo atingem Link normalmente. No jogo, só o bônus À prova de fogo (Fireproof), do Conjunto antichamas com as três peças em ★★, anula esse dano.",
+      "sources": [
+        "zw:Set Bonus",
+        "zw:Added Effect"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "sem_efeito",
+      "result": "Não atrai raios: em tempestades, apenas armas, arcos e escudos metálicos equipados soltam faíscas e chamam descargas sobre Link; peças de armadura não estão entre eles.",
+      "side_effects": [
+        "Também não protege do raio que cair por causa de uma arma metálica equipada."
+      ],
+      "sources": [
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "sem_efeito",
+      "result": "Não reduz o dano elétrico: a peça não está entre as que concedem Resistência a choques.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Shock Resistance"
+      ]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao calor nem Proteção contra chamas: sem outra proteção, Link perde vida no calor diurno do Deserto Gerudo e pega fogo no clima escaldante da Montanha da Morte.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Heat",
+        "zw:Scorching Climate"
+      ]
+    },
+    {
+      "action": "frio_extremo",
+      "status": "sem_efeito",
+      "result": "Não concede Resistência ao frio: abaixo de 0 °C Link perde vida aos poucos (e mais depressa abaixo de −10 °C) se não tiver outra proteção.",
+      "sources": [
+        "zw:Added Effect",
+        "zw:Temperature"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Uma tentativa por dia no amiibo",
+      "text": "Cada leitura do amiibo de Link (Majora's Mask) pela runa amiibo faz surgir um baú com pequena chance de conter uma peça do conjunto. Como cada figura só pode ser lida uma vez por dia real, montar o conjunto leva no mínimo três dias; peças já obtidas não voltam a sair até que o conjunto esteja completo.",
+      "sources": [
+        "zw:Fierce Deity Armor (Set)",
+        "zw:Amiibo (Ability)"
+      ]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "O herói do mundo da lua",
+      "text": "A descrição atribui a armadura ao herói \"de um mundo em que a lua ameaçava cair\" — referência ao enredo de Majora's Mask.",
+      "sources": [
+        "jogo",
+        "zw"
+      ]
+    }
+  ],
+  "advanced_uses": [
+    "O conjunto completo dá Ataque aumentado nível 3 (+50%), o mesmo do Conjunto bárbaro, com o mesmo bônus de ataque carregado em ★★."
+  ],
+  "limitations": [
+    "Depende de amiibo: sem a figura, não há como obtê-la.",
+    "Não pode ser tingida.",
+    "As melhorias exigem escamas, garras e lascas de Naydra."
+  ],
+  "related": [
+    {
+      "id": "botw_armorset_fierce_deity_set",
+      "relation": "Conjunto do qual faz parte"
+    },
+    {
+      "id": "botw_armor_fierce_deity_mask",
+      "relation": "Peça de cabeça do conjunto"
+    },
+    {
+      "id": "botw_armor_fierce_deity_boots",
+      "relation": "Peça de pernas do conjunto"
+    },
+    {
+      "id": "botw_rune_amiibo_rune",
+      "relation": "Runa usada para obtê-la"
+    },
+    {
+      "id": "botw_material_naydras_scale",
+      "relation": "Material do 1º nível de melhoria"
+    },
+    {
+      "id": "botw_material_shard_of_naydras_horn",
+      "relation": "Material do último nível"
+    },
+    {
+      "id": "botw_armor_barbarian_armor",
+      "relation": "Peça com o mesmo efeito e o mesmo bônus de conjunto"
+    }
+  ],
+  "capabilities": [
+    "defesa",
+    "ataque",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

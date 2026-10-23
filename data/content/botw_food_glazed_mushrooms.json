@@ -1,0 +1,92 @@
+{
+  "id": "botw_food_glazed_mushrooms",
+  "summary": "Cogumelos com Mel de abelha. Com Cogumelo hyliano (neutro) ou Energimelo (mesmo efeito do mel) sai energizante; qualquer outro cogumelo anula o mel e dá a versão comum.",
+  "description": "Os Cogumelos glaceados combinam qualquer cogumelo com Mel de abelha; a descrição do jogo diz que o mel dá ao prato um sabor doce e complexo, com final salgado. Só existe uma versão com efeito, a energizante, que recupera parte do Medidor de vigor.\n\nO cogumelo decide se o efeito do mel sobrevive. O Cogumelo hyliano não tem efeito e deixa o mel agir sozinho; o Energimelo tem o mesmo efeito energizante e soma ao do mel. Qualquer outro cogumelo — Agilimelo, Ferromelo, Trufa nutritiva etc. — tem efeito diferente, anula o mel e produz a versão comum. É o oposto dos Cogumelos salteados aromáticos, em que cada cogumelo gera uma versão própria.",
+  "locations": [
+    "Mel de abelha: colmeias presas a árvores, mais comuns em Necluda; as abelhas atacam quem se aproxima."
+  ],
+  "obtaining": [
+    "Cozinhar numa Panela: qualquer cogumelo + Mel de abelha."
+  ],
+  "uses": [
+    "Recuperação de vigor com Cogumelo hyliano ou Energimelo.",
+    "Venda."
+  ],
+  "effects": [
+    "Versão energizante (Energizing): recupera na hora parte do Medidor de vigor (Recuperação de vigor) — com Cogumelo hyliano ou Energimelo.",
+    "Versão comum (cogumelo de efeito diferente do mel): recupera alguns corações."
+  ],
+  "interactions": [
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Recupera parte do Medidor de vigor e alguns corações.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "jogo"
+      ],
+      "variant": "versão energizante"
+    },
+    {
+      "action": "comer",
+      "status": "confirmado",
+      "result": "Com cogumelo de efeito diferente, perde o efeito e apenas cura.",
+      "kind": "mecanica",
+      "sources": [
+        "zw"
+      ],
+      "variant": "versão comum"
+    },
+    {
+      "action": "vender",
+      "status": "confirmado",
+      "result": "Pode ser vendido a comerciantes, mas as fontes consultadas não dão o valor deste prato. O livro Chef Aurie Taamu, Vol. 2 ensina que um prato cozido costuma valer mais que os ingredientes separados e que, quanto mais ingredientes, maior o valor.",
+      "kind": "mecanica",
+      "sources": [
+        "zw:Chef Aurie Taamu, Vol. 2"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Energimelo reforça o mel",
+      "text": "Mel de abelha e Energimelo são ingredientes diferentes com o mesmo efeito energizante; juntos, fortalecem o prato mais do que repetir só o mel.",
+      "sources": [
+        "zw",
+        "zw:Food"
+      ]
+    }
+  ],
+  "limitations": [
+    "Só a versão energizante é possível; cogumelos de outros efeitos anulam o mel."
+  ],
+  "related": [
+    {
+      "id": "botw_material_courser_bee_honey",
+      "relation": "Ingrediente obrigatório"
+    },
+    {
+      "id": "botw_material_hylian_shroom",
+      "relation": "Cogumelo neutro que mantém o efeito energizante"
+    },
+    {
+      "id": "botw_material_stamella_shroom",
+      "relation": "Cogumelo energizante que reforça o mel"
+    },
+    {
+      "id": "botw_food_glazed_meat",
+      "relation": "Glaceado de carne"
+    },
+    {
+      "id": "botw_food_fragrant_mushroom_saute",
+      "relation": "Cogumelos com Tempero Goron, com dez versões"
+    }
+  ],
+  "capabilities": [
+    "cura",
+    "vigor"
+  ],
+  "verification_status": "verificado"
+}

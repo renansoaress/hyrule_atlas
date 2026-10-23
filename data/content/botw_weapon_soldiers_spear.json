@@ -1,0 +1,201 @@
+{
+  "id": "botw_weapon_soldiers_spear",
+  "summary": "Lança longa dos antigos guardas do Castelo de Hyrule, fácil de usar e difícil de dominar (ataque 7, durabilidade 35). Ponta de ferro e haste que não queima; é de metal.",
+  "description": "A Lança do soldado era usada pelos guardas do Castelo de Hyrule. A descrição do jogo a define como fácil de usar, mas difícil de dominar: a ponta de ferro é muito resistente e a haste não queima quando exposta ao fogo. Pertence ao equipamento do soldado, com a Espada larga do soldado e o Montante do soldado, e hoje é comum nas mãos de inimigos na Pradaria de Hyrule e nos Prados de Faron.\n\nTambém pode vir de baús gerados pelos amiibo de Link (Link's Awakening) e de Mipha, ou da limpeza de uma Alabarda enferrujada por um Octoroc rochoso (35% de chance). Como arma de metal, conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser movida com Magnétis. A durabilidade de 35 é alta para o ataque modesto.",
+  "locations": [
+    "Pradaria de Hyrule e Prados de Faron, nas mãos de inimigos."
+  ],
+  "obtaining": [
+    "Derrotar os inimigos que a empunham.",
+    "Deixar um Octoroc rochoso aspirar uma Alabarda enferrujada: 35% de chance de ela voltar como Lança do soldado.",
+    "Baús gerados pelos amiibo de Link (Link's Awakening) e de Mipha (série Breath of the Wild) podem contê-la.",
+    "A Lua de sangue revive os monstros e repõe as armas que eles empunham."
+  ],
+  "uses": [
+    "Lança de metal durável para o começo do jogo.",
+    "Golpear Sílex para fazer fogo."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Estocadas rápidas e de longo alcance, com dano baixo por golpe; segurar o botão de ataque carrega uma rajada de estocadas. Como toda lança, não pode ser usada junto com escudo.",
+      "side_effects": [
+        "Lanças não cortam árvores: só armas com lâmina derrubam troncos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Spear",
+        "zw:Weapon",
+        "zw:Weapons in Breath of the Wild"
+      ]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao acertar um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": [
+        "Acertar diretamente um inimigo com a lança lançada."
+      ],
+      "side_effects": [
+        "A lança é perdida no impacto."
+      ],
+      "applications": [
+        "Aproveitar uma lança quase quebrada para causar o dobro do dano à distância."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw:Weapon",
+        "zw:Durability",
+        "dm"
+      ]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo: além da ponta de ferro, a própria descrição do jogo garante que a haste não queima em contato com chamas.",
+      "applications": [
+        "Serve de arma segura na Montanha da Morte e no Cânion de Eldin, onde o próprio jogo recomenda equipamento de metal."
+      ],
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Scorching Climate",
+        "jogo"
+      ]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a lança voa para o chão.",
+      "side_effects": [
+        "Ficar desarmado no meio do combate contra inimigos elétricos."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Weapon"
+      ]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, começa a faiscar e acaba atraindo um raio para Link.",
+      "conditions": [
+        "Tempestade com raios; a lança precisa estar equipada."
+      ],
+      "side_effects": [
+        "O raio causa dano altíssimo: desequipe a lança assim que ela começar a faiscar."
+      ],
+      "applications": [
+        "Largá-la perto de inimigos para que o raio caia sobre eles.",
+        "Com o Elmo do trovão equipado, o raio é neutralizado.",
+        "Inimigos que empunham esta lança numa tempestade também atraem raios para si."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Thunderstorm",
+        "zw:Lightning"
+      ]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": [
+        "Recuperá-la do fundo com Magnétis."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw"
+      ]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": [
+        "Resgatar a lança caída na água ou em locais fora de alcance."
+      ],
+      "kind": "mecanica",
+      "sources": [
+        "dm",
+        "zw",
+        "zw:Magnesis"
+      ]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Inimigos da Pradaria de Hyrule e dos Prados de Faron a empunham. O Octoroc rochoso a produz em 35% das limpezas de Alabardas enferrujadas.",
+      "kind": "mecanica",
+      "sources": [
+        "zw",
+        "zw:Rock Octorok"
+      ]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a Lança do soldado pode surgir com um bônus branco (comum) — ataque +2 a +3, durabilidade +1 a +2 ou acerto crítico, que aumenta a chance de o último golpe de uma sequência causar dano dobrado — ou com um bônus amarelo (dourado) — ataque +4 a +5, durabilidade +3 ou arremesso longo, que multiplica a distância do arremesso por 1,5 a 2. Na maioria das armas, o sorteio favorece o acerto crítico entre os brancos e o arremesso longo entre os amarelos (41,7% cada). Conforme o nível do mundo sobe, os bônus brancos (inclusive o crítico) deixam de aparecer. Exemplares tirados de baús de amiibo vêm com o valor máximo da faixa sorteada, embora o bônus apareça sempre em branco.",
+      "sources": [
+        "dm",
+        "zw:Weapon Bonus"
+      ]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Saída da boca de um Octoroc",
+      "text": "Depois da Lança do viajante (50%), a Lança do soldado é o resultado mais comum (35%) quando um Octoroc rochoso limpa uma Alabarda enferrujada.",
+      "sources": [
+        "zw:Rock Octorok",
+        "zw:Rusty Halberd"
+      ]
+    }
+  ],
+  "limitations": [
+    "Ataque modesto (7).",
+    "Atrai raios em tempestades."
+  ],
+  "related": [
+    {
+      "id": "botw_weapon_soldiers_broadsword",
+      "relation": "Mesmo arquétipo (soldado), uma mão"
+    },
+    {
+      "id": "botw_weapon_soldiers_claymore",
+      "relation": "Mesmo arquétipo (soldado), duas mãos"
+    },
+    {
+      "id": "botw_shield_soldiers_shield",
+      "relation": "Escudo do soldado"
+    },
+    {
+      "id": "botw_bow_soldiers_bow",
+      "relation": "Arco do soldado"
+    },
+    {
+      "id": "botw_weapon_rusty_halberd",
+      "relation": "Pode ser limpa e virar Lança do soldado (35%)"
+    },
+    {
+      "id": "botw_monster_rock_octorok",
+      "relation": "Limpa Alabardas enferrujadas"
+    }
+  ],
+  "capabilities": [
+    "conduz_eletricidade",
+    "atrai_raios",
+    "magnetico",
+    "arremessavel"
+  ],
+  "verification_status": "verificado"
+}

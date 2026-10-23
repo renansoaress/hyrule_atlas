@@ -1,0 +1,130 @@
+{
+  "id": "botw_shield_mighty_lynel_shield",
+  "summary": "Escudo centaleônico reforçado com armadura e mais lâminas: ao aparar com A, rasga armaduras e causa 13 de dano. Perde durabilidade ao aparar. O Centaleão de juba azul da Primeira Guarita do castelo sempre o carrega.",
+  "description": "A Defesa centaleônica forte é a versão da Defesa centaleônica reforçada com armadura e ainda mais lâminas. É mais forte nos dois sentidos: Defesa 44 e durabilidade 15, e o movimento de aparar (A enquanto segura ZL) atravessa armaduras básicas e causa 13 de dano cortante. Faz parte do equipamento centaleônico (Lynel Gear).\n\nComo toda a linha centaleônica, perde durabilidade ao aparar, até na Defesa perfeita. É usada pelos Centaleões de juba azul (e pelos de juba branca no Modo Mestre) e fica mais rara conforme os Centaleões evoluem; o Centaleão de juba azul da Primeira Guarita (First Gatehouse) do Castelo de Hyrule nunca muda e é uma fonte permanente.\n\nÉ de metal: conduz eletricidade, atrai raios, afunda e pode ser movida com Magnétis; não queima.",
+  "locations": [
+    "Pradaria de Hyrule e Grande Nascente de Lanayru, segundo o compendium.",
+    "Castelo de Hyrule, Primeira Guarita: o Centaleão de juba azul local sempre a carrega."
+  ],
+  "obtaining": [
+    "Derrotar Centaleões de juba azul (no Modo Mestre, também os de juba branca).",
+    "Voltar à Primeira Guarita do Castelo de Hyrule quando os outros Centaleões já tiverem evoluído."
+  ],
+  "uses": [
+    "Aparar causando 13 de dano cortante.",
+    "Escudo de metal de defesa alta."
+  ],
+  "effects": [
+    "As lâminas causam 13 de dano ao aparar e rasgam armaduras básicas."
+  ],
+  "interactions": [
+    {
+      "action": "defender",
+      "status": "confirmado",
+      "result": "Bloqueia com Defesa 44. Aparar com A golpeia o inimigo com as lâminas, causando 13 de dano.",
+      "conditions": ["Segurar ZL e apertar A."],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Shield", "jogo"]
+    },
+    {
+      "action": "defender",
+      "variant": "Defesa perfeita",
+      "status": "confirmado",
+      "result": "A Defesa perfeita funciona normalmente, mas este escudo perde durabilidade a cada aparada.",
+      "side_effects": ["Com 15 de durabilidade, aparar repetidamente o esgota rápido."],
+      "kind": "mecanica",
+      "sources": ["zw:Durability", "zw:Perfect Guard"]
+    },
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Surfar com escudo com atrito e desgaste padrão (multiplicadores 1).",
+      "conditions": ["Pular e apertar A enquanto segura ZL no ar."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Shield Surfing"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo.",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "calor_extremo",
+      "status": "sem_efeito",
+      "result": "Não queima nas áreas escaldantes de Eldin.",
+      "sources": ["zw", "zw:Scorching Climate"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade; um ataque elétrico em Link faz o escudo cair no chão.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Shields in Breath of the Wild", "zw:Electric Lizalfos"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante tempestades, atrai raios para Link.",
+      "conditions": ["Tempestade de raios; escudo equipado."],
+      "applications": ["Desequipar antes do raio cair ou usar o Elmo do trovão."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Lightning"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água.",
+      "applications": ["Recuperá-la com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "kind": "mecanica",
+      "sources": ["dm", "zw", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Usada pelos Centaleões de juba azul e, no Modo Mestre, pelos de juba branca.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, pode surgir com Durabilidade aumentada de +2 a +3 (nível branco) ou +4 (nível amarelo) e com Defesa do escudo aumentada de +5 a +9 (branco) ou +10 a +17 (amarelo).",
+      "sources": ["dm", "zw:Weapon Bonus"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Centaleão que não evolui",
+      "text": "Os Centaleões do Monte Ploymus e das duas guaritas do Castelo de Hyrule não sobem de nível com o mundo. O de juba azul da Primeira Guarita garante que a Defesa centaleônica forte nunca se esgote.",
+      "sources": ["zw", "zw:Lynel"]
+    }
+  ],
+  "advanced_uses": [
+    "Usar as aparadas como fonte extra de dano em lutas corpo a corpo, reservando outro escudo para bloqueios simples e assim poupar durabilidade."
+  ],
+  "limitations": [
+    "Perde durabilidade ao aparar, inclusive na Defesa perfeita.",
+    "Durabilidade baixa (15) para um escudo de defesa alta."
+  ],
+  "related": [
+    { "id": "botw_shield_lynel_shield", "relation": "Versão básica (7 de dano ao aparar)" },
+    { "id": "botw_shield_savage_lynel_shield", "relation": "Versão máxima (21 de dano ao aparar)" },
+    { "id": "botw_weapon_mighty_lynel_sword", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_weapon_mighty_lynel_spear", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_weapon_mighty_lynel_crusher", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_bow_mighty_lynel_bow", "relation": "Mesmo arquétipo e nível" },
+    { "id": "botw_monster_blue_maned_lynel", "relation": "Monstro que a empunha" },
+    { "id": "botw_monster_white_maned_lynel", "relation": "Também a usa no Modo Mestre" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "habilidade_especial"],
+  "verification_status": "verificado"
+}

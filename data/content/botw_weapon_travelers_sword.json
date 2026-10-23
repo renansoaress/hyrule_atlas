@@ -1,0 +1,114 @@
+{
+  "id": "botw_weapon_travelers_sword",
+  "summary": "Espada de uma mão básica dos viajantes (ataque 5, durabilidade 20). Metálica: conduz eletricidade, atrai raios em tempestades, afunda na água e pode ser puxada com Magnétis.",
+  "description": "A Espada do viajante é a arma de uma mão mais simples do jogo, descrita como uma espada comum que viajantes carregam para afastar pequenas feras — razoavelmente durável, mas pouco confiável contra monstros. Pertence ao arquétipo do equipamento do viajante, junto do Montante do viajante, da Lança do viajante, do Arco do viajante e do Escudo do viajante. Por ser de uma mão, permite usar escudo ao mesmo tempo e golpes carregados giratórios. Por ser de metal, herda todas as interações metálicas: é atraída por Magnétis, afunda na água, conduz eletricidade e atrai raios se estiver equipada durante uma tempestade.",
+  "locations": [
+    "Muito comum no início do jogo: em baús, acampamentos e nas mãos de monstros de nível baixo por toda Hyrule."
+  ],
+  "obtaining": [
+    "Recolher em baús e acampamentos de monstros, ou pegar a arma derrubada por inimigos.",
+    "Pode surgir com bônus aleatórios (ver modificadores possíveis)."
+  ],
+  "uses": [
+    "Arma de reserva para o começo do jogo, cortar árvores e grama (lâminas cortam troncos) e acender fogo batendo em sílex.",
+    "Arremesso de emergência quando estiver quase quebrada: o golpe final de qualquer arma é sempre crítico."
+  ],
+  "effects": [
+    "Nenhum efeito especial além do dano físico."
+  ],
+  "interactions": [
+    {
+      "action": "usar",
+      "status": "confirmado",
+      "result": "Golpes de velocidade média; segurar o botão de ataque carrega um golpe giratório que consome vigor. Pode ser usada junto com escudo.",
+      "kind": "mecanica",
+      "sources": ["zw:Weapon"]
+    },
+    {
+      "action": "arremessar",
+      "status": "confirmado",
+      "result": "Arremessada, quebra imediatamente ao atingir um inimigo, e esse golpe é sempre crítico (dano dobrado).",
+      "conditions": ["Acertar diretamente um inimigo com a arma lançada."],
+      "side_effects": ["A arma é perdida no impacto."],
+      "applications": ["Aproveitar uma espada quase quebrada para causar o dobro de dano à distância."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Durability", "dm"]
+    },
+    {
+      "action": "fogo",
+      "status": "sem_efeito",
+      "result": "Não pega fogo: apenas armas de madeira são inflamáveis.",
+      "sources": ["dm", "zw:Weapon"]
+    },
+    {
+      "action": "eletricidade",
+      "status": "confirmado",
+      "result": "Conduz eletricidade. Se Link for eletrocutado com ela na mão, a arma voa para o chão.",
+      "side_effects": ["Ficar desarmado no meio do combate contra inimigos elétricos."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Weapon"]
+    },
+    {
+      "action": "raio",
+      "status": "confirmado",
+      "result": "Equipada durante uma tempestade de raios, atrai descargas para Link.",
+      "conditions": ["Tempestade com raios; a arma precisa estar equipada."],
+      "applications": ["Largar a espada perto de inimigos para que o raio caia sobre eles."],
+      "kind": "mecanica",
+      "sources": ["zw:Weapon", "zw:Thunderstorm"]
+    },
+    {
+      "action": "agua",
+      "status": "confirmado",
+      "result": "Afunda na água por ser de metal.",
+      "applications": ["Recuperá-la do fundo com Magnétis."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Weapon"]
+    },
+    {
+      "action": "magnetis",
+      "status": "confirmado",
+      "result": "Pode ser levantada e movida com Magnétis.",
+      "applications": ["Resgatar a espada caída na água ou em locais fora de alcance."],
+      "kind": "mecanica",
+      "sources": ["dm", "zw:Magnesis"]
+    },
+    {
+      "action": "monstros",
+      "status": "desconhecido",
+      "result": "As fontes da ficha não detalham quais monstros a empunham com frequência."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Bônus possíveis",
+      "text": "Pelos parâmetros extraídos do jogo, a espada pode surgir com bônus de ataque de +3 a +5 (nível comum) ou +6 a +8 (nível dourado), bônus de durabilidade de +1 a +2 (ou +3 no nível dourado) e lançamento longo de 1,5× a 2×. Ela não pode receber o bônus de acerto crítico.",
+      "sources": ["dm"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Polvo que conserta armas",
+      "text": "Octorocs rochosos aspiram armas e escudos e os devolvem com a durabilidade restaurada — truque útil para recuperar uma espada gasta.",
+      "sources": ["zw:Durability"]
+    }
+  ],
+  "advanced_uses": [
+    "Equipá-la durante uma tempestade e depois largá-la junto a um acampamento faz os raios caírem sobre os inimigos, não sobre Link."
+  ],
+  "limitations": [
+    "Dano baixo (5) e durabilidade modesta (20) — perde utilidade fora do início do jogo.",
+    "Arremessada contra um inimigo, quebra no impacto."
+  ],
+  "related": [
+    { "id": "botw_weapon_travelers_claymore", "relation": "Mesmo arquétipo (duas mãos)" },
+    { "id": "botw_weapon_travelers_spear", "relation": "Mesmo arquétipo (lança)" },
+    { "id": "botw_bow_travelers_bow", "relation": "Mesmo arquétipo (arco)" },
+    { "id": "botw_shield_travelers_shield", "relation": "Mesmo arquétipo (escudo)" },
+    { "id": "botw_material_flint", "relation": "Golpear sílex com arma metálica produz faíscas" },
+    { "id": "botw_monster_rock_octorok", "relation": "Restaura a durabilidade de armas aspiradas" },
+    { "id": "botw_mechanic_durability", "relation": "Regras de desgaste e golpe final crítico" }
+  ],
+  "capabilities": ["conduz_eletricidade", "atrai_raios", "magnetico", "arremessavel"],
+  "verification_status": "verificado"
+}

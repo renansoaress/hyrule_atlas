@@ -1,0 +1,108 @@
+{
+  "id": "botw_object_cooking_pot",
+  "summary": "Panela de pedra sobre base metálica e fogueira, onde Link combina até 5 ingredientes em pratos e elixires com efeitos. Só funciona acesa e fica inutilizável na chuva; cozinhar na Lua de sangue garante bônus.",
+  "description": "A Panela é um utensílio rústico de pedra apoiado numa base de metal sobre uma fogueira. É o único lugar em que a culinária de BOTW funciona por completo: Link segura até cinco materiais e os joga dentro, e a combinação resulta num prato, num elixir (com pelo menos um bicho e uma parte de monstro), num Tônico de fada ou, se os ingredientes não combinarem, em Comida duvidosa ou Comida dura como pedra. Ao contrário de assar na fogueira, cozinhar na panela dobra a recuperação de corações dos ingredientes comestíveis e é a única forma de ativar os efeitos especiais (resistências, ataque, defesa, vigor etc.).\n\nFora a culinária, a panela funciona como uma fogueira comum: Link pode sentar ao lado para passar o tempo até a manhã, o meio-dia ou a noite, e a temperatura sobe um pouco perto dela. Normalmente está acesa, mas há panelas apagadas, que exigem acender a lenha por baixo; com o fogo apagado, não é possível cozinhar. Exposta à chuva, fica inutilizável até a chuva parar.",
+  "locations": [
+    "Vilas, estábulos e acampamentos por toda Hyrule; no Planalto, há uma na Floresta dos Espíritos.",
+    "Panelas mencionadas pelo Zelda Wiki incluem a do Campo de Voo dos Arás e a que Kiana usa ao lado de casa das 15h às 21h."
+  ],
+  "obtaining": [
+    "Não pode ser carregada; é um objeto fixo do cenário."
+  ],
+  "uses": [
+    "Preparar pratos e elixires com efeitos especiais.",
+    "Dobrar a recuperação de corações dos ingredientes comestíveis.",
+    "Passar o tempo sentando ao lado, como numa fogueira.",
+    "Aquecer-se ligeiramente em regiões frias."
+  ],
+  "effects": [
+    "Até 5 ingredientes por receita.",
+    "Chance de bônus crítico a cada preparo (melodia durante a animação): +3 corações, +5:00 de duração ou efeito mais forte."
+  ],
+  "interactions": [
+    {
+      "action": "cozinhar",
+      "status": "confirmado",
+      "result": "Combina até 5 materiais num prato, elixir ou Tônico de fada; combinações incompatíveis viram Comida duvidosa ou Comida dura como pedra.",
+      "conditions": ["A panela precisa estar acesa e fora da chuva."],
+      "produces": ["botw_food_dubious_food", "botw_food_rock_hard_food", "botw_elixir_fairy_tonic"],
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Cooking in Breath of the Wild", "zw:Tips and Tricks"]
+    },
+    {
+      "action": "fogo",
+      "status": "confirmado",
+      "result": "Panelas apagadas voltam a funcionar quando a lenha embaixo é acesa, por exemplo com a faísca de um Sílex.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Flint"]
+    },
+    {
+      "action": "chuva",
+      "status": "confirmado",
+      "result": "Exposta à chuva, a panela fica inutilizável até a chuva parar.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Rain"]
+    },
+    {
+      "action": "aproximar",
+      "status": "confirmado",
+      "result": "Perto de uma panela acesa, a temperatura de Link aumenta um pouco.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "usar",
+      "variant": "sentar",
+      "status": "confirmado",
+      "result": "Sentar junto à panela permite avançar o tempo até a manhã, o meio-dia ou a noite.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "magnetis",
+      "status": "desconhecido",
+      "result": "A panela repousa sobre uma base metálica, mas as fontes não dizem se ela pode ser erguida com Magnétis."
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "tecnica_avancada",
+      "title": "Bônus garantido na Lua de sangue",
+      "text": "Cozinhar entre 23h30 e 0h15 numa noite de Lua de sangue garante o bônus crítico no prato.",
+      "sources": ["zw:Cooking in Breath of the Wild", "zw:Blood Moon"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Como o bônus crítico se manifesta",
+      "text": "O bônus pode dar 3 corações extras de recuperação, 5 minutos a mais de duração ou um nível a mais de efeito (ou um coração extra a mais, no caso do efeito de corações extras). Uma melodia curta durante a animação indica que ele ocorreu.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Fadas na panela",
+      "text": "Uma Fada acrescenta 10 corações de recuperação à receita, e produz um Tônico de fada se não houver outros ingredientes ou se a receita fosse virar elixir, Comida duvidosa ou Comida dura como pedra.",
+      "sources": ["zw:Cooking in Breath of the Wild"]
+    }
+  ],
+  "advanced_uses": [
+    "Esperar a janela da Lua de sangue (23h30–0h15) para cozinhar pratos e elixires valiosos com bônus garantido.",
+    "Usar mais de um ingrediente com o mesmo efeito para aumentar a força do efeito no prato."
+  ],
+  "limitations": [
+    "Não funciona apagada nem sob chuva.",
+    "Não pode ser transportada.",
+    "Combinar ingredientes incompatíveis estraga a receita (Comida duvidosa ou Comida dura como pedra)."
+  ],
+  "related": [
+    { "id": "botw_object_campfire", "relation": "A panela fica sobre uma fogueira e tem as mesmas funções básicas" },
+    { "id": "botw_mechanic_cooking", "relation": "Regras completas da culinária" },
+    { "id": "botw_mechanic_blood_moon", "relation": "Cozinhar na Lua de sangue garante bônus" },
+    { "id": "botw_food_dubious_food", "relation": "Resultado de receitas incompatíveis" },
+    { "id": "botw_food_rock_hard_food", "relation": "Resultado de receitas com ingredientes não comestíveis" },
+    { "id": "botw_elixir_fairy_tonic", "relation": "Resultado de cozinhar Fadas" },
+    { "id": "botw_material_flint", "relation": "Reacende a lenha sob a panela" },
+    { "id": "botw_mechanic_rain", "relation": "Deixa a panela inutilizável" }
+  ],
+  "capabilities": ["habilidade_especial"],
+  "verification_status": "verificado"
+}

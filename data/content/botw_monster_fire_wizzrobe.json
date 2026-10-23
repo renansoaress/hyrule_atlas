@@ -1,0 +1,135 @@
+{
+  "id": "botw_monster_fire_wizzrobe",
+  "summary": "Feiticeiro que lança bolas de fogo com a Varinha de fogo, invoca Chulchuls e Morcis ígneos e eleva a temperatura da área. Fica invisível entre ataques, mas qualquer ataque de gelo o evapora na hora.",
+  "description": "O Feitiçano ígneo aparece em toda Hyrule, sobretudo nas ruínas de antigos povoados hylianos; o compendium cita a Pradaria de Hyrule e a Grande Floresta de Hyrule. Ele usa a Varinha de fogo para conjurar bolas de fogo ou invocar monstros flamejantes, como Chulchuls ígneos e Morcis ígneos, e é capaz de elevar bastante a temperatura ao redor, a ponto de o calor ferir Link sem proteção adequada. Segundo o compendium, o clima volta ao normal assim que o Feitiçano é derrotado.\n\nComo os demais Feitiçanos, fica invisível depois de atacar, mas deixa ondulações no ar a cada passo — dá para segui-las. Uma flecha na cabeça o atordoa, abrindo espaço para atacar. A fraqueza decisiva é o gelo: Flecha congelante, Varinha de gelo ou qualquer ataque de gelo o evaporam imediatamente. Tem 150 pontos de vida e, ao ser derrotado, deixa a própria Varinha de fogo.",
+  "locations": [
+    "Ruínas de antigos povoados hylianos em toda Hyrule; o compendium cita a Pradaria de Hyrule e a Grande Floresta de Hyrule."
+  ],
+  "obtaining": [
+    "Deixa a Varinha de fogo ao ser derrotado (o compendium não lista partes de monstro).",
+    "Volta à vida na Lua de sangue."
+  ],
+  "uses": [
+    "Fonte da Varinha de fogo, que lança bolas de fogo e dá um nível de resistência ao frio quando equipada.",
+    "A Varinha de fogo é pedida por Nebb na missão secundária \"The Weapon Connoisseur\", que rende uma rupia roxa.",
+    "Registro no compendium (entrada nº 97)."
+  ],
+  "effects": [
+    "Bolas de fogo que incendeiam Link; o aumento de temperatura causa dano por calor sem proteção."
+  ],
+  "interactions": [
+    {
+      "action": "gelo",
+      "status": "confirmado",
+      "result": "Qualquer ataque de gelo o evapora instantaneamente — uma única Flecha congelante ou um golpe da Varinha de gelo basta.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Ice Arrow", "zw:Ice Rod", "zw:Enemy"]
+    },
+    {
+      "action": "flecha",
+      "status": "confirmado",
+      "result": "Uma flecha na cabeça o atordoa, dando tempo para atacar.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "golpe_arma",
+      "status": "confirmado",
+      "result": "Fica invisível após atacar, mas as ondulações no ar a cada passo revelam onde está; atordoado por flecha, fica vulnerável a golpes.",
+      "kind": "mecanica",
+      "sources": ["zw"]
+    },
+    {
+      "action": "fogo",
+      "status": "desconhecido",
+      "result": "As fontes não informam se ele é imune ou resistente a fogo."
+    },
+    {
+      "action": "eletricidade",
+      "status": "desconhecido",
+      "result": "As fontes do Feitiçano ígneo não descrevem o efeito de choques nele; pela regra geral, choques atordoam inimigos."
+    },
+    {
+      "action": "agua",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem interação do Feitiçano ígneo com água."
+    },
+    {
+      "action": "explosao",
+      "status": "desconhecido",
+      "result": "As fontes não descrevem um efeito específico de explosões no Feitiçano ígneo."
+    },
+    {
+      "action": "bomba_remota",
+      "status": "confirmado",
+      "result": "A Bomba remota fere inimigos no raio, como qualquer explosão da runa.",
+      "kind": "mecanica",
+      "sources": ["zw:Remote Bomb"]
+    },
+    {
+      "action": "estatis",
+      "status": "confirmado",
+      "result": "Só a Estátis+ paralisa inimigos, por pouco tempo; durante o efeito ficam imunes a gelo — não combine com a Flecha congelante.",
+      "kind": "mecanica",
+      "sources": ["zw:Stasis"]
+    },
+    {
+      "action": "magnetis",
+      "status": "sem_efeito",
+      "result": "Nem o Feitiçano nem a Varinha de fogo são metálicos; a varinha não pode ser manipulada com Magnétis.",
+      "sources": ["zw:Magnesis", "zw:Fire Rod"]
+    },
+    {
+      "action": "cenario",
+      "status": "confirmado",
+      "result": "Eleva fortemente a temperatura da área; o clima volta ao normal quando ele é derrotado.",
+      "kind": "mecanica",
+      "sources": ["comp", "zw"]
+    },
+    {
+      "action": "monstros",
+      "status": "confirmado",
+      "result": "Invoca Chulchuls ígneos e Morcis ígneos durante a luta.",
+      "kind": "mecanica",
+      "sources": ["zw", "zw:Fire Chuchu", "zw:Fire Keese"]
+    }
+  ],
+  "secrets": [
+    {
+      "kind": "mecanica",
+      "title": "Seguir as pegadas invisíveis",
+      "text": "Quando o Feitiçano fica invisível, cada passo dele deixa ondulações no ar. Seguir esse rastro permite prever onde ele vai reaparecer.",
+      "sources": ["zw"]
+    },
+    {
+      "kind": "mecanica",
+      "title": "Clima volta ao normal",
+      "text": "O calor provocado pelo Feitiçano ígneo é temporário: o compendium afirma que o clima se normaliza assim que ele é derrotado.",
+      "sources": ["comp"]
+    },
+    {
+      "kind": "curiosidade",
+      "title": "Varinha cobiçada em Hateno",
+      "text": "Na missão secundária \"The Weapon Connoisseur\", Nebb, de Hateno, fica empolgado ao ver uma Varinha de fogo — arma rara na região — e dá uma rupia roxa a Link.",
+      "sources": ["zw:Fire Rod"]
+    }
+  ],
+  "advanced_uses": [
+    "Levar uma Flecha congelante pronta: um único acerto encerra a luta e libera a Varinha de fogo."
+  ],
+  "limitations": [
+    "Invisível na maior parte do tempo; lutar sem arco é mais demorado.",
+    "A Varinha de fogo obtida quebra facilmente se golpear objetos ou inimigos diretamente."
+  ],
+  "related": [
+    { "id": "botw_weapon_fire_rod", "relation": "Arma que deixa" },
+    { "id": "botw_monster_meteo_wizzrobe", "relation": "Versão mais forte" },
+    { "id": "botw_monster_ice_wizzrobe", "relation": "Feitiçano do elemento oposto" },
+    { "id": "botw_monster_fire_chuchu", "relation": "Monstro que invoca" },
+    { "id": "botw_monster_fire_keese", "relation": "Monstro que invoca" },
+    { "id": "botw_arrow_ice_arrow", "relation": "Mata-o com um acerto" },
+    { "id": "botw_weapon_ice_rod", "relation": "Mata-o com um acerto" }
+  ],
+  "capabilities": ["gera_fogo", "reage_gelo", "vence_rapido", "habilidade_especial"],
+  "verification_status": "parcial"
+}
